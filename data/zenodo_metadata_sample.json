@@ -1,0 +1,3330 @@
+[
+  {
+    "created": "2024-06-01T19:51:24.952378+00:00",
+    "modified": "2024-06-01T19:51:25.119001+00:00",
+    "id": 11412908,
+    "conceptrecid": "11412907",
+    "doi": "10.5281/zenodo.11412908",
+    "conceptdoi": "10.5281/zenodo.11412907",
+    "doi_url": "https://doi.org/10.5281/zenodo.11412908",
+    "metadata": {
+      "title": "Human Developing Retina Atlas (Source data)",
+      "doi": "10.5281/zenodo.11412908",
+      "publication_date": "2024-06-01",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Zuo, Zhen",
+          "affiliation": null,
+          "orcid": "0000-0003-1555-1756"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Zuo, Zhen",
+          "affiliation": null,
+          "type": "DataCurator",
+          "orcid": "0000-0003-1555-1756"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "11412907"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Human Developing Retina Atlas (Source data)",
+    "links": {
+      "self": "https://zenodo.org/api/records/11412908",
+      "self_html": "https://zenodo.org/records/11412908",
+      "preview_html": "https://zenodo.org/records/11412908?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.11412908",
+      "self_doi": "https://doi.org/10.5281/zenodo.11412908",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11412908",
+      "reserve_doi": "https://zenodo.org/api/records/11412908/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/11412907",
+      "parent_html": "https://zenodo.org/records/11412907",
+      "parent_doi": "https://doi.org/10.5281/zenodo.11412907",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11412907",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:11412908/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:11412908/sequence/default",
+      "files": "https://zenodo.org/api/records/11412908/files",
+      "media_files": "https://zenodo.org/api/records/11412908/media-files",
+      "archive": "https://zenodo.org/api/records/11412908/files-archive",
+      "archive_media": "https://zenodo.org/api/records/11412908/media-files-archive",
+      "latest": "https://zenodo.org/api/records/11412908/versions/latest",
+      "latest_html": "https://zenodo.org/records/11412908/latest",
+      "versions": "https://zenodo.org/api/records/11412908/versions",
+      "draft": "https://zenodo.org/api/records/11412908/draft",
+      "access_links": "https://zenodo.org/api/records/11412908/access/links",
+      "access_grants": "https://zenodo.org/api/records/11412908/access/grants",
+      "access_users": "https://zenodo.org/api/records/11412908/access/users",
+      "access_request": "https://zenodo.org/api/records/11412908/access/request",
+      "access": "https://zenodo.org/api/records/11412908/access",
+      "communities": "https://zenodo.org/api/records/11412908/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/11412908/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/11412908/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/11412908/file-modification",
+      "requests": "https://zenodo.org/api/records/11412908/requests"
+    },
+    "updated": "2024-06-01T19:51:25.119001+00:00",
+    "recid": "11412908",
+    "revision": 4,
+    "files": [
+      {
+        "id": "736af8cf-33fb-4962-a5a1-aad5406d3a62",
+        "key": "Source Data.zip",
+        "size": 12616931624,
+        "checksum": "md5:7d0e59186f00a52d2078fd48a08cbc11",
+        "links": {
+          "self": "https://zenodo.org/api/records/11412908/files/Source Data.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1076386"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 6,
+      "unique_downloads": 6,
+      "views": 46,
+      "unique_views": 44,
+      "version_downloads": 6,
+      "version_unique_downloads": 6,
+      "version_unique_views": 44,
+      "version_views": 46
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 12616931624
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retina dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9709871878095344,
+      "confidence": 0.9709871878095344
+    }
+  },
+  {
+    "created": "2024-03-24T17:40:41.884014+00:00",
+    "modified": "2024-05-30T19:41:55.827835+00:00",
+    "id": 10866349,
+    "conceptrecid": "10866348",
+    "doi": "10.5281/zenodo.10866349",
+    "conceptdoi": "10.5281/zenodo.10866348",
+    "doi_url": "https://doi.org/10.5281/zenodo.10866349",
+    "metadata": {
+      "title": "Human Developing Retina Atlas (Intermediate Data Object)",
+      "doi": "10.5281/zenodo.10866349",
+      "publication_date": "2024-03-24",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Zuo, Zhen",
+          "affiliation": "Baylor College of Medicine",
+          "orcid": "0000-0003-1555-1756"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "10866348"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Human Developing Retina Atlas (Intermediate Data Object)",
+    "links": {
+      "self": "https://zenodo.org/api/records/10866349",
+      "self_html": "https://zenodo.org/records/10866349",
+      "preview_html": "https://zenodo.org/records/10866349?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.10866349",
+      "self_doi": "https://doi.org/10.5281/zenodo.10866349",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10866349",
+      "reserve_doi": "https://zenodo.org/api/records/10866349/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/10866348",
+      "parent_html": "https://zenodo.org/records/10866348",
+      "parent_doi": "https://doi.org/10.5281/zenodo.10866348",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10866348",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10866349/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10866349/sequence/default",
+      "files": "https://zenodo.org/api/records/10866349/files",
+      "media_files": "https://zenodo.org/api/records/10866349/media-files",
+      "archive": "https://zenodo.org/api/records/10866349/files-archive",
+      "archive_media": "https://zenodo.org/api/records/10866349/media-files-archive",
+      "latest": "https://zenodo.org/api/records/10866349/versions/latest",
+      "latest_html": "https://zenodo.org/records/10866349/latest",
+      "versions": "https://zenodo.org/api/records/10866349/versions",
+      "draft": "https://zenodo.org/api/records/10866349/draft",
+      "access_links": "https://zenodo.org/api/records/10866349/access/links",
+      "access_grants": "https://zenodo.org/api/records/10866349/access/grants",
+      "access_users": "https://zenodo.org/api/records/10866349/access/users",
+      "access_request": "https://zenodo.org/api/records/10866349/access/request",
+      "access": "https://zenodo.org/api/records/10866349/access",
+      "communities": "https://zenodo.org/api/records/10866349/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/10866349/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/10866349/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/10866349/file-modification",
+      "requests": "https://zenodo.org/api/records/10866349/requests"
+    },
+    "updated": "2024-05-30T19:41:55.827835+00:00",
+    "recid": "10866349",
+    "revision": 6,
+    "files": [
+      {
+        "id": "46b7c0da-ab96-4ba6-8b96-6d10843156f2",
+        "key": "Archive.zip",
+        "size": 39581715075,
+        "checksum": "md5:b0994ca9f7624b66c8b6cd86f665867e",
+        "links": {
+          "self": "https://zenodo.org/api/records/10866349/files/Archive.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1076386"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 47,
+      "unique_downloads": 40,
+      "views": 138,
+      "unique_views": 123,
+      "version_downloads": 47,
+      "version_unique_downloads": 40,
+      "version_unique_views": 123,
+      "version_views": 138
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 39581715075
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retina dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9706508596914148,
+      "confidence": 0.9706508596914148
+    }
+  },
+  {
+    "created": "2025-06-11T16:56:07.754211+00:00",
+    "modified": "2025-06-23T15:09:17.970347+00:00",
+    "id": 15054026,
+    "conceptrecid": "15054025",
+    "doi": "10.5281/zenodo.15054026",
+    "conceptdoi": "10.5281/zenodo.15054025",
+    "doi_url": "https://doi.org/10.5281/zenodo.15054026",
+    "metadata": {
+      "title": "OCT images of sodium iodate induced retinal degeneration and corresponding ML models for image segmentation",
+      "doi": "10.5281/zenodo.15054026",
+      "publication_date": "2025-03-20",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Zeng, Yong",
+          "affiliation": "National Eye Institute"
+        },
+        {
+          "name": "Qian, Haohua",
+          "affiliation": "National Eye Institute",
+          "orcid": "0000-0002-1114-4697"
+        },
+        {
+          "name": "Zhou, Jiaming",
+          "affiliation": "National Eye Institute"
+        }
+      ],
+      "version": "1.0.0",
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "15054025"
+            }
+          }
+        ]
+      }
+    },
+    "title": "OCT images of sodium iodate induced retinal degeneration and corresponding ML models for image segmentation",
+    "links": {
+      "self": "https://zenodo.org/api/records/15054026",
+      "self_html": "https://zenodo.org/records/15054026",
+      "preview_html": "https://zenodo.org/records/15054026?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.15054026",
+      "self_doi": "https://doi.org/10.5281/zenodo.15054026",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15054026",
+      "reserve_doi": "https://zenodo.org/api/records/15054026/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/15054025",
+      "parent_html": "https://zenodo.org/records/15054025",
+      "parent_doi": "https://doi.org/10.5281/zenodo.15054025",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15054025",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15054026/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15054026/sequence/default",
+      "files": "https://zenodo.org/api/records/15054026/files",
+      "media_files": "https://zenodo.org/api/records/15054026/media-files",
+      "archive": "https://zenodo.org/api/records/15054026/files-archive",
+      "archive_media": "https://zenodo.org/api/records/15054026/media-files-archive",
+      "latest": "https://zenodo.org/api/records/15054026/versions/latest",
+      "latest_html": "https://zenodo.org/records/15054026/latest",
+      "versions": "https://zenodo.org/api/records/15054026/versions",
+      "draft": "https://zenodo.org/api/records/15054026/draft",
+      "access_links": "https://zenodo.org/api/records/15054026/access/links",
+      "access_grants": "https://zenodo.org/api/records/15054026/access/grants",
+      "access_users": "https://zenodo.org/api/records/15054026/access/users",
+      "access_request": "https://zenodo.org/api/records/15054026/access/request",
+      "access": "https://zenodo.org/api/records/15054026/access",
+      "communities": "https://zenodo.org/api/records/15054026/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/15054026/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/15054026/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/15054026/file-modification",
+      "requests": "https://zenodo.org/api/records/15054026/requests"
+    },
+    "updated": "2025-06-23T15:09:17.970347+00:00",
+    "recid": "15054026",
+    "revision": 6,
+    "files": [
+      {
+        "id": "8709850b-c760-4738-9032-4440e884bc46",
+        "key": "NaIO3 project.zip",
+        "size": 160996061,
+        "checksum": "md5:7cd268a99d5ec3bad9613e58d0c89305",
+        "links": {
+          "self": "https://zenodo.org/api/records/15054026/files/NaIO3 project.zip/content"
+        }
+      },
+      {
+        "id": "cae31bec-9818-44e6-8572-a5caea864bee",
+        "key": "Models.zip",
+        "size": 539968532,
+        "checksum": "md5:855daceff69708da4db570346e3fe858",
+        "links": {
+          "self": "https://zenodo.org/api/records/15054026/files/Models.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1198287"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 8,
+      "unique_downloads": 7,
+      "views": 35,
+      "unique_views": 31,
+      "version_downloads": 8,
+      "version_unique_downloads": 7,
+      "version_unique_views": 31,
+      "version_views": 35
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 2,
+      "total_imaging_size": 0,
+      "total_archive_size": 700964593
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retinal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9704435493786396,
+      "confidence": 0.9704435493786396
+    }
+  },
+  {
+    "created": "2025-05-13T08:05:57.403730+00:00",
+    "modified": "2025-05-13T08:05:57.629822+00:00",
+    "id": 15393819,
+    "conceptrecid": "15393818",
+    "doi": "10.5281/zenodo.15393819",
+    "conceptdoi": "10.5281/zenodo.15393818",
+    "doi_url": "https://doi.org/10.5281/zenodo.15393819",
+    "metadata": {
+      "title": "fundus-dataset",
+      "doi": "10.5281/zenodo.15393819",
+      "publication_date": "2025-05-13",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Huang, Yijin",
+          "affiliation": null
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "15393818"
+            }
+          }
+        ]
+      }
+    },
+    "title": "fundus-dataset",
+    "links": {
+      "self": "https://zenodo.org/api/records/15393819",
+      "self_html": "https://zenodo.org/records/15393819",
+      "preview_html": "https://zenodo.org/records/15393819?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.15393819",
+      "self_doi": "https://doi.org/10.5281/zenodo.15393819",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15393819",
+      "reserve_doi": "https://zenodo.org/api/records/15393819/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/15393818",
+      "parent_html": "https://zenodo.org/records/15393818",
+      "parent_doi": "https://doi.org/10.5281/zenodo.15393818",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15393818",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15393819/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15393819/sequence/default",
+      "files": "https://zenodo.org/api/records/15393819/files",
+      "media_files": "https://zenodo.org/api/records/15393819/media-files",
+      "archive": "https://zenodo.org/api/records/15393819/files-archive",
+      "archive_media": "https://zenodo.org/api/records/15393819/media-files-archive",
+      "latest": "https://zenodo.org/api/records/15393819/versions/latest",
+      "latest_html": "https://zenodo.org/records/15393819/latest",
+      "versions": "https://zenodo.org/api/records/15393819/versions",
+      "draft": "https://zenodo.org/api/records/15393819/draft",
+      "access_links": "https://zenodo.org/api/records/15393819/access/links",
+      "access_grants": "https://zenodo.org/api/records/15393819/access/grants",
+      "access_users": "https://zenodo.org/api/records/15393819/access/users",
+      "access_request": "https://zenodo.org/api/records/15393819/access/request",
+      "access": "https://zenodo.org/api/records/15393819/access",
+      "communities": "https://zenodo.org/api/records/15393819/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/15393819/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/15393819/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/15393819/file-modification",
+      "requests": "https://zenodo.org/api/records/15393819/requests"
+    },
+    "updated": "2025-05-13T08:05:57.629822+00:00",
+    "recid": "15393819",
+    "revision": 4,
+    "files": [
+      {
+        "id": "ddb85acb-c3b2-49d0-bb70-adf709a01cfe",
+        "key": "good.zip",
+        "size": 2070516517,
+        "checksum": "md5:e1a46ae4656870152f74bf07a4ba77c6",
+        "links": {
+          "self": "https://zenodo.org/api/records/15393819/files/good.zip/content"
+        }
+      },
+      {
+        "id": "b40e117e-9340-4514-82a5-ddcaaaa0f9b3",
+        "key": "usable.zip",
+        "size": 1086832113,
+        "checksum": "md5:708dd1d5e6ecedc736fba61b722b412a",
+        "links": {
+          "self": "https://zenodo.org/api/records/15393819/files/usable.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "138840"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 39,
+      "unique_downloads": 29,
+      "views": 48,
+      "unique_views": 43,
+      "version_downloads": 39,
+      "version_unique_downloads": 29,
+      "version_unique_views": 43,
+      "version_views": 48
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 2,
+      "total_imaging_size": 0,
+      "total_archive_size": 3157348630
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "ocular fundus imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9700866625631739,
+      "confidence": 0.9700866625631739
+    }
+  },
+  {
+    "created": "2023-09-29T11:46:48.239735+00:00",
+    "modified": "2023-09-30T02:27:06.593253+00:00",
+    "id": 8391062,
+    "conceptrecid": "8391061",
+    "doi": "10.5281/zenodo.8391062",
+    "conceptdoi": "10.5281/zenodo.8391061",
+    "doi_url": "https://doi.org/10.5281/zenodo.8391062",
+    "metadata": {
+      "title": "CarolinRi/CorneaAI: Dataset of Corneal samples",
+      "doi": "10.5281/zenodo.8391062",
+      "publication_date": "2023-09-29",
+      "description": "No description provided.",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Carolin Rickert",
+          "affiliation": "Technical University of Munich"
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/CarolinRi/CorneaAI/tree/cornea",
+          "relation": "isSupplementTo",
+          "scheme": "url"
+        }
+      ],
+      "version": "cornea",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "other-open"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "8391061"
+            }
+          }
+        ]
+      }
+    },
+    "title": "CarolinRi/CorneaAI: Dataset of Corneal samples",
+    "links": {
+      "self": "https://zenodo.org/api/records/8391062",
+      "self_html": "https://zenodo.org/records/8391062",
+      "preview_html": "https://zenodo.org/records/8391062?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.8391062",
+      "self_doi": "https://doi.org/10.5281/zenodo.8391062",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8391062",
+      "reserve_doi": "https://zenodo.org/api/records/8391062/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/8391061",
+      "parent_html": "https://zenodo.org/records/8391061",
+      "parent_doi": "https://doi.org/10.5281/zenodo.8391061",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8391061",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8391062/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8391062/sequence/default",
+      "files": "https://zenodo.org/api/records/8391062/files",
+      "media_files": "https://zenodo.org/api/records/8391062/media-files",
+      "archive": "https://zenodo.org/api/records/8391062/files-archive",
+      "archive_media": "https://zenodo.org/api/records/8391062/media-files-archive",
+      "latest": "https://zenodo.org/api/records/8391062/versions/latest",
+      "latest_html": "https://zenodo.org/records/8391062/latest",
+      "versions": "https://zenodo.org/api/records/8391062/versions",
+      "draft": "https://zenodo.org/api/records/8391062/draft",
+      "access_links": "https://zenodo.org/api/records/8391062/access/links",
+      "access_grants": "https://zenodo.org/api/records/8391062/access/grants",
+      "access_users": "https://zenodo.org/api/records/8391062/access/users",
+      "access_request": "https://zenodo.org/api/records/8391062/access/request",
+      "access": "https://zenodo.org/api/records/8391062/access",
+      "communities": "https://zenodo.org/api/records/8391062/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/8391062/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/8391062/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/8391062/file-modification",
+      "requests": "https://zenodo.org/api/records/8391062/requests"
+    },
+    "updated": "2023-09-30T02:27:06.593253+00:00",
+    "recid": "8391062",
+    "revision": 3,
+    "files": [
+      {
+        "id": "6e76cacf-2c59-4529-9565-25d016885337",
+        "key": "CarolinRi/CorneaAI-cornea.zip",
+        "size": 182493,
+        "checksum": "md5:7126c71a423e449444e605c0c539a2fd",
+        "links": {
+          "self": "https://zenodo.org/api/records/8391062/files/CarolinRi/CorneaAI-cornea.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "386449"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 4,
+      "unique_downloads": 4,
+      "views": 28,
+      "unique_views": 28,
+      "version_downloads": 4,
+      "version_unique_downloads": 4,
+      "version_unique_views": 27,
+      "version_views": 27
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 182493
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "corneal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9700664604227551,
+      "confidence": 0.9700664604227551
+    }
+  },
+  {
+    "created": "2025-09-16T09:50:15.201315+00:00",
+    "modified": "2025-09-16T09:50:15.335571+00:00",
+    "id": 17131153,
+    "conceptrecid": "17131113",
+    "doi": "10.5281/zenodo.17131153",
+    "conceptdoi": "10.5281/zenodo.17131113",
+    "doi_url": "https://doi.org/10.5281/zenodo.17131153",
+    "metadata": {
+      "title": "snubhretina/SERVAL: v1",
+      "doi": "10.5281/zenodo.17131153",
+      "publication_date": "2025-09-16",
+      "description": "<p>SERVAL : SEoul Retinal Vessel Assessment Library</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "snubhretina",
+          "affiliation": null
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/snubhretina/SERVAL/tree/v1",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1",
+      "custom": {
+        "code:codeRepository": "https://github.com/snubhretina/SERVAL"
+      },
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 1,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "17131113"
+            }
+          }
+        ]
+      }
+    },
+    "title": "snubhretina/SERVAL: v1",
+    "links": {
+      "self": "https://zenodo.org/api/records/17131153",
+      "self_html": "https://zenodo.org/records/17131153",
+      "preview_html": "https://zenodo.org/records/17131153?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.17131153",
+      "self_doi": "https://doi.org/10.5281/zenodo.17131153",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17131153",
+      "reserve_doi": "https://zenodo.org/api/records/17131153/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/17131113",
+      "parent_html": "https://zenodo.org/records/17131113",
+      "parent_doi": "https://doi.org/10.5281/zenodo.17131113",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17131113",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17131153/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17131153/sequence/default",
+      "files": "https://zenodo.org/api/records/17131153/files",
+      "media_files": "https://zenodo.org/api/records/17131153/media-files",
+      "archive": "https://zenodo.org/api/records/17131153/files-archive",
+      "archive_media": "https://zenodo.org/api/records/17131153/media-files-archive",
+      "latest": "https://zenodo.org/api/records/17131153/versions/latest",
+      "latest_html": "https://zenodo.org/records/17131153/latest",
+      "versions": "https://zenodo.org/api/records/17131153/versions",
+      "draft": "https://zenodo.org/api/records/17131153/draft",
+      "access_links": "https://zenodo.org/api/records/17131153/access/links",
+      "access_grants": "https://zenodo.org/api/records/17131153/access/grants",
+      "access_users": "https://zenodo.org/api/records/17131153/access/users",
+      "access_request": "https://zenodo.org/api/records/17131153/access/request",
+      "access": "https://zenodo.org/api/records/17131153/access",
+      "communities": "https://zenodo.org/api/records/17131153/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/17131153/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/17131153/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/17131153/file-modification",
+      "requests": "https://zenodo.org/api/records/17131153/requests"
+    },
+    "updated": "2025-09-16T09:50:15.335571+00:00",
+    "recid": "17131153",
+    "revision": 4,
+    "files": [
+      {
+        "id": "9c98db2f-d096-42fa-b7bf-4b1ac25a0e80",
+        "key": "snubhretina/SERVAL-v1.zip",
+        "size": 453625,
+        "checksum": "md5:ad89cc497e7febc4b4619188e1311687",
+        "links": {
+          "self": "https://zenodo.org/api/records/17131153/files/snubhretina/SERVAL-v1.zip/content"
+        }
+      }
+    ],
+    "swh": {
+      "swhid": "swh:1:dir:62359387ec847662dd1f93f465d3ecc2258c6060;origin=https://doi.org/10.5281/zenodo.17131113;visit=swh:1:snp:13bdf36ad9ef0074a5641a56007dd13e799d3ecc;anchor=swh:1:rel:824376a66bf3dced43d9a99e589da6d1dd001dd8;path=snubhretina-SERVAL-cb7c590"
+    },
+    "owners": [
+      {
+        "id": "1411817"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 7,
+      "unique_downloads": 7,
+      "views": 49,
+      "unique_views": 42,
+      "version_downloads": 4,
+      "version_unique_downloads": 4,
+      "version_unique_views": 30,
+      "version_views": 36
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 453625
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retinal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9700563779144995,
+      "confidence": 0.9700563779144995
+    }
+  },
+  {
+    "created": "2018-10-16T14:05:28.838310+00:00",
+    "modified": "2020-01-25T07:26:00.170328+00:00",
+    "id": 1464026,
+    "conceptrecid": "1464025",
+    "doi": "10.5281/zenodo.1464026",
+    "conceptdoi": "10.5281/zenodo.1464025",
+    "doi_url": "https://doi.org/10.5281/zenodo.1464026",
+    "metadata": {
+      "title": "OCTSEG",
+      "doi": "10.5281/zenodo.1464026",
+      "publication_date": "2018-10-16",
+      "description": "Analyze retinal optical coherence tomography images.",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Ranguelova, Elena",
+          "affiliation": "Netherlands eScience Center"
+        }
+      ],
+      "keywords": [
+        "retina",
+        "OCT scan",
+        "automated segmentation",
+        "Optical Coherence Tomography Imaging"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/NLeSC/OCTSegmentation/tree/0.2",
+          "relation": "isSupplementTo",
+          "scheme": "url"
+        }
+      ],
+      "version": "0.2",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "apache2.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "1464025"
+            }
+          }
+        ]
+      }
+    },
+    "title": "OCTSEG",
+    "links": {
+      "self": "https://zenodo.org/api/records/1464026",
+      "self_html": "https://zenodo.org/records/1464026",
+      "preview_html": "https://zenodo.org/records/1464026?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.1464026",
+      "self_doi": "https://doi.org/10.5281/zenodo.1464026",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1464026",
+      "reserve_doi": "https://zenodo.org/api/records/1464026/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/1464025",
+      "parent_html": "https://zenodo.org/records/1464025",
+      "parent_doi": "https://doi.org/10.5281/zenodo.1464025",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1464025",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:1464026/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:1464026/sequence/default",
+      "files": "https://zenodo.org/api/records/1464026/files",
+      "media_files": "https://zenodo.org/api/records/1464026/media-files",
+      "archive": "https://zenodo.org/api/records/1464026/files-archive",
+      "archive_media": "https://zenodo.org/api/records/1464026/media-files-archive",
+      "latest": "https://zenodo.org/api/records/1464026/versions/latest",
+      "latest_html": "https://zenodo.org/records/1464026/latest",
+      "versions": "https://zenodo.org/api/records/1464026/versions",
+      "draft": "https://zenodo.org/api/records/1464026/draft",
+      "access_links": "https://zenodo.org/api/records/1464026/access/links",
+      "access_grants": "https://zenodo.org/api/records/1464026/access/grants",
+      "access_users": "https://zenodo.org/api/records/1464026/access/users",
+      "access_request": "https://zenodo.org/api/records/1464026/access/request",
+      "access": "https://zenodo.org/api/records/1464026/access",
+      "communities": "https://zenodo.org/api/records/1464026/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/1464026/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/1464026/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/1464026/file-modification",
+      "requests": "https://zenodo.org/api/records/1464026/requests"
+    },
+    "updated": "2020-01-25T07:26:00.170328+00:00",
+    "recid": "1464026",
+    "revision": 20,
+    "files": [
+      {
+        "id": "019013ea-5f6f-4607-badb-dd326e51f6ba",
+        "key": "NLeSC/OCTSegmentation-0.2.zip",
+        "size": 5892686,
+        "checksum": "md5:a65eda865cb9bd47844799f9a65edb9c",
+        "links": {
+          "self": "https://zenodo.org/api/records/1464026/files/NLeSC/OCTSegmentation-0.2.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "20124"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 43,
+      "unique_downloads": 40,
+      "views": 21726,
+      "unique_views": 16151,
+      "version_downloads": 42,
+      "version_unique_downloads": 39,
+      "version_unique_views": 16150,
+      "version_views": 21725
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 5892686
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retinal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.970033810395272,
+      "confidence": 0.970033810395272
+    }
+  },
+  {
+    "created": "2024-08-18T09:17:14.764013+00:00",
+    "modified": "2024-08-18T09:17:16.056771+00:00",
+    "id": 12166457,
+    "conceptrecid": "12166456",
+    "doi": "10.5281/zenodo.12166457",
+    "conceptdoi": "10.5281/zenodo.12166456",
+    "doi_url": "https://doi.org/10.5281/zenodo.12166457",
+    "metadata": {
+      "title": "Dynamic evaluation of corneal cross-linking and osmotic diffusion effects using optical coherence elastography",
+      "doi": "10.5281/zenodo.12166457",
+      "publication_date": "2024-06-19",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Frigelli, Matteo",
+          "affiliation": "University of Bern",
+          "orcid": "0000-0002-6725-3112"
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "10.1038/s41598-024-67278-1",
+          "relation": "isPublishedIn",
+          "resource_type": "publication-article",
+          "scheme": "doi"
+        }
+      ],
+      "custom": {
+        "code:programmingLanguage": [
+          {
+            "id": "matlab",
+            "title": {
+              "en": "MATLAB"
+            }
+          }
+        ]
+      },
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "communities": [
+        {
+          "id": "oberon"
+        }
+      ],
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "12166456"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Dynamic evaluation of corneal cross-linking and osmotic diffusion effects using optical coherence elastography",
+    "links": {
+      "self": "https://zenodo.org/api/records/12166457",
+      "self_html": "https://zenodo.org/records/12166457",
+      "preview_html": "https://zenodo.org/records/12166457?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.12166457",
+      "self_doi": "https://doi.org/10.5281/zenodo.12166457",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12166457",
+      "reserve_doi": "https://zenodo.org/api/records/12166457/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/12166456",
+      "parent_html": "https://zenodo.org/records/12166456",
+      "parent_doi": "https://doi.org/10.5281/zenodo.12166456",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12166456",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12166457/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12166457/sequence/default",
+      "files": "https://zenodo.org/api/records/12166457/files",
+      "media_files": "https://zenodo.org/api/records/12166457/media-files",
+      "archive": "https://zenodo.org/api/records/12166457/files-archive",
+      "archive_media": "https://zenodo.org/api/records/12166457/media-files-archive",
+      "latest": "https://zenodo.org/api/records/12166457/versions/latest",
+      "latest_html": "https://zenodo.org/records/12166457/latest",
+      "versions": "https://zenodo.org/api/records/12166457/versions",
+      "draft": "https://zenodo.org/api/records/12166457/draft",
+      "access_links": "https://zenodo.org/api/records/12166457/access/links",
+      "access_grants": "https://zenodo.org/api/records/12166457/access/grants",
+      "access_users": "https://zenodo.org/api/records/12166457/access/users",
+      "access_request": "https://zenodo.org/api/records/12166457/access/request",
+      "access": "https://zenodo.org/api/records/12166457/access",
+      "communities": "https://zenodo.org/api/records/12166457/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/12166457/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/12166457/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/12166457/file-modification",
+      "requests": "https://zenodo.org/api/records/12166457/requests"
+    },
+    "updated": "2024-08-18T09:17:16.056771+00:00",
+    "recid": "12166457",
+    "revision": 4,
+    "files": [
+      {
+        "id": "1759b740-d1fc-43fe-b4f7-c698220876b4",
+        "key": "Dextran7_3.mat",
+        "size": 591349752,
+        "checksum": "md5:fa068321c09692b456616363bee96c2c",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran7_3.mat/content"
+        }
+      },
+      {
+        "id": "c5288cab-7dc2-4c92-b211-0de8c62dc94d",
+        "key": "PBS_1.mat",
+        "size": 668959300,
+        "checksum": "md5:4e889e03e2ab4d6a83fd0df1aadda702",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/PBS_1.mat/content"
+        }
+      },
+      {
+        "id": "021bb02a-c32e-439c-a8ff-7e166d8178df",
+        "key": "PBS_3.mat",
+        "size": 901722855,
+        "checksum": "md5:ba2e08ee6430a2772fdfda5469302e1f",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/PBS_3.mat/content"
+        }
+      },
+      {
+        "id": "71f67f76-00ac-49a5-9b7b-71b40403374b",
+        "key": "Dextran7_2.mat",
+        "size": 886170681,
+        "checksum": "md5:a1f82acd6d18f92e1903c790855f9b55",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran7_2.mat/content"
+        }
+      },
+      {
+        "id": "930729b1-da8b-43a2-a8f0-58346c6e92c5",
+        "key": "Dextran7_1.mat",
+        "size": 854645032,
+        "checksum": "md5:ca5966a2e4949dcae8a373f87fedb0b8",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran7_1.mat/content"
+        }
+      },
+      {
+        "id": "82900fc2-0ba8-468c-b69b-adcbfa0500df",
+        "key": "PBS_2.mat",
+        "size": 837255407,
+        "checksum": "md5:163144ecb0ad4eda30c7d52cb3e7050c",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/PBS_2.mat/content"
+        }
+      },
+      {
+        "id": "57076ca5-ccd8-41e2-8e80-012b76bf3b7a",
+        "key": "Dextran5_1.mat",
+        "size": 700504430,
+        "checksum": "md5:e6b9287a76b9cb1df3bf54acbf0dcb55",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran5_1.mat/content"
+        }
+      },
+      {
+        "id": "a6b2344d-a415-487a-b9fb-b39cbc37cc33",
+        "key": "Dextran5_3.mat",
+        "size": 891253262,
+        "checksum": "md5:e99e4a4513c33bf766f3da0c037b4be1",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran5_3.mat/content"
+        }
+      },
+      {
+        "id": "55c2075d-67c2-4dfc-b2e8-eaf8dd88eb93",
+        "key": "Dextran5_2.mat",
+        "size": 886130881,
+        "checksum": "md5:3835fa854f439dfa0f98ae3b5aef19eb",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/Dextran5_2.mat/content"
+        }
+      },
+      {
+        "id": "e681bd32-9ae8-4381-ad6a-d55046e07bd4",
+        "key": "CXL_PBS_4.mat",
+        "size": 1197206024,
+        "checksum": "md5:bc67fadcd4a0abb03e4a0afe2fbab138",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_4.mat/content"
+        }
+      },
+      {
+        "id": "321f0982-98fd-4a39-b58e-f2685f0f1946",
+        "key": "CXL_RIBO_2.mat",
+        "size": 1227387753,
+        "checksum": "md5:09debcc8f1d91890c6c40dc63723e58f",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_2.mat/content"
+        }
+      },
+      {
+        "id": "d0b1a0a7-0e76-460a-964a-468fe14eb8a3",
+        "key": "CXL_RIBO_3.mat",
+        "size": 1191984262,
+        "checksum": "md5:2bcff0bc9c817cf23109aaf2dfc0cd3f",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_3.mat/content"
+        }
+      },
+      {
+        "id": "5e65ed37-b2f9-4900-83cf-00aa736a3380",
+        "key": "CXL_RIBO_1.mat",
+        "size": 1201689641,
+        "checksum": "md5:f95228cb6d93c033f9e3c18969e3f2aa",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_1.mat/content"
+        }
+      },
+      {
+        "id": "a229a5ca-d890-4d4b-99d6-c3a0f8362f18",
+        "key": "CXL_PBSUV_3.mat",
+        "size": 1212549859,
+        "checksum": "md5:123f39f3c8a6cc9a1846f279d75d7b19",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_3.mat/content"
+        }
+      },
+      {
+        "id": "2cf126c8-91e1-4fb7-9601-86ea70a6316a",
+        "key": "CXL_RIBO_4.mat",
+        "size": 1206507895,
+        "checksum": "md5:ccf4a0006088317d7c5f1dcc4d2c16d9",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_4.mat/content"
+        }
+      },
+      {
+        "id": "b7a64383-f248-40e6-a381-b1aa01b1ce38",
+        "key": "CXL_PBSUV_5.mat",
+        "size": 1227385131,
+        "checksum": "md5:d792d4a521cd5f09775a0dcaa468359f",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_5.mat/content"
+        }
+      },
+      {
+        "id": "fb381beb-77e7-4f0a-83d3-2ec8dba8d5dc",
+        "key": "CXL_PBS_1.mat",
+        "size": 1027649856,
+        "checksum": "md5:fcdcadfe47eb97994f56b58bc46d45ba",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_1.mat/content"
+        }
+      },
+      {
+        "id": "f4b89e0b-a051-4596-8088-2ec3ec2df401",
+        "key": "CXL_RIBO_5.mat",
+        "size": 1202876391,
+        "checksum": "md5:1e29b94daf354da8250598077eb72954",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_5.mat/content"
+        }
+      },
+      {
+        "id": "586cb57d-936d-4d99-9785-dd542fed59a5",
+        "key": "CXL_RIBO_6.mat",
+        "size": 1227661700,
+        "checksum": "md5:3378d8e70a89ceb19d164dc4d01054f1",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_RIBO_6.mat/content"
+        }
+      },
+      {
+        "id": "e61e4c03-9a82-4061-a913-f6b364d3656d",
+        "key": "CXL_PBSUV_1.mat",
+        "size": 1179822866,
+        "checksum": "md5:ef3be85ab20fe3b0631b313b23563b54",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_1.mat/content"
+        }
+      },
+      {
+        "id": "2cef6ec9-9f53-4f37-941a-6e0a776dc777",
+        "key": "CXL_PBSUV_2.mat",
+        "size": 1227999137,
+        "checksum": "md5:f87314f95e0a56dd00919d54e414b540",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_2.mat/content"
+        }
+      },
+      {
+        "id": "4f0a3b67-a094-41ed-8f7e-1e7fb43e455b",
+        "key": "CXL_PBS_3.mat",
+        "size": 1227759976,
+        "checksum": "md5:e83943be5b8a9b4487ecd60b45d3745f",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_3.mat/content"
+        }
+      },
+      {
+        "id": "8971418e-c479-47e5-ad87-6ad789287ffb",
+        "key": "CXL_PBSUV_4.mat",
+        "size": 1227886943,
+        "checksum": "md5:6cc83ba1c4cad5d1b9cfe7548cfb4c7c",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_4.mat/content"
+        }
+      },
+      {
+        "id": "29f4250f-17a0-4ba5-b0dc-8fb20fed8905",
+        "key": "CXL_PBSUV_6.mat",
+        "size": 1223183575,
+        "checksum": "md5:fdf58e55603048ce3121ee95675959c7",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBSUV_6.mat/content"
+        }
+      },
+      {
+        "id": "cf2e2d37-835a-40c5-8353-a9ed05a2a5fa",
+        "key": "CXL_2.mat",
+        "size": 1228875997,
+        "checksum": "md5:977b82e1e028125268a629fabc5ba2ae",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_2.mat/content"
+        }
+      },
+      {
+        "id": "6d5962e7-915b-4dca-84d5-2c5d19190568",
+        "key": "CXL_PBS_2.mat",
+        "size": 1197510383,
+        "checksum": "md5:796a2abbbade3693cbed97236ecc3d00",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_2.mat/content"
+        }
+      },
+      {
+        "id": "1fd63dd3-110e-41f4-b37e-b2d0c8895325",
+        "key": "CXL_1.mat",
+        "size": 1228392610,
+        "checksum": "md5:bf5a3473b6f90bb88ba5f0de4565ab02",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_1.mat/content"
+        }
+      },
+      {
+        "id": "61d744f7-4b57-4a11-bd5c-33d498f66710",
+        "key": "CXL_PBS_5.mat",
+        "size": 1227079143,
+        "checksum": "md5:91b8f6f2c62455d266d9202e644b8386",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_5.mat/content"
+        }
+      },
+      {
+        "id": "6846f50c-0c5f-43e3-8e85-9fac04682d70",
+        "key": "CXL_PBS_6.mat",
+        "size": 1227089979,
+        "checksum": "md5:4f93174ade86dcf0ac7f4180abee5857",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_PBS_6.mat/content"
+        }
+      },
+      {
+        "id": "aa5c21dc-8395-46a7-b873-5148695d1682",
+        "key": "CXL_4.mat",
+        "size": 1196558819,
+        "checksum": "md5:93a03a3c4640fa62bf2750b84b875826",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_4.mat/content"
+        }
+      },
+      {
+        "id": "18dccf25-f39c-4421-b749-eb8654d96749",
+        "key": "CXL_3.mat",
+        "size": 1228594098,
+        "checksum": "md5:4bb3fd49e077ad42f32c24488a80972a",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_3.mat/content"
+        }
+      },
+      {
+        "id": "50948643-dbc9-458d-9c18-71293a64bddd",
+        "key": "CXL_6.mat",
+        "size": 1196558819,
+        "checksum": "md5:f1bb162bdd515c40670c5c4152f38662",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_6.mat/content"
+        }
+      },
+      {
+        "id": "db8936f7-1e4e-4696-b6ae-3a32136be924",
+        "key": "CXL_5.mat",
+        "size": 1090233257,
+        "checksum": "md5:707dac0ed04a5463bf3064883e54476c",
+        "links": {
+          "self": "https://zenodo.org/api/records/12166457/files/CXL_5.mat/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1142632"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 356,
+      "unique_downloads": 355,
+      "views": 43,
+      "unique_views": 42,
+      "version_downloads": 356,
+      "version_unique_downloads": 355,
+      "version_unique_views": 42,
+      "version_views": 43
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": true,
+      "has_archives": false,
+      "imaging_file_count": 33,
+      "archive_count": 0,
+      "total_imaging_size": 36048435714,
+      "total_archive_size": 0
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "corneal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9677227942584101,
+      "confidence": 0.9677227942584101
+    }
+  },
+  {
+    "created": "2021-03-23T16:55:01.844347+00:00",
+    "modified": "2021-03-24T00:27:31.772955+00:00",
+    "id": 4630801,
+    "conceptrecid": "4630800",
+    "doi": "10.5281/zenodo.4630801",
+    "conceptdoi": "10.5281/zenodo.4630800",
+    "doi_url": "https://doi.org/10.5281/zenodo.4630801",
+    "metadata": {
+      "title": "Project Gap Junctions MEA",
+      "doi": "10.5281/zenodo.4630801",
+      "publication_date": "2021-03-23",
+      "description": "<p>Data set used for student project to estimate cross correlation strength in different retinas.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Gerrit Hilgen",
+          "affiliation": "Northumbria University",
+          "orcid": "0000-0001-5008-5493"
+        }
+      ],
+      "keywords": [
+        "retina"
+      ],
+      "version": "2020/2021",
+      "language": "eng",
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "4630800"
+            }
+          }
+        ]
+      },
+      "notes": "for education purposes only"
+    },
+    "title": "Project Gap Junctions MEA",
+    "links": {
+      "self": "https://zenodo.org/api/records/4630801",
+      "self_html": "https://zenodo.org/records/4630801",
+      "preview_html": "https://zenodo.org/records/4630801?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.4630801",
+      "self_doi": "https://doi.org/10.5281/zenodo.4630801",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4630801",
+      "reserve_doi": "https://zenodo.org/api/records/4630801/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/4630800",
+      "parent_html": "https://zenodo.org/records/4630800",
+      "parent_doi": "https://doi.org/10.5281/zenodo.4630800",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4630800",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4630801/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4630801/sequence/default",
+      "files": "https://zenodo.org/api/records/4630801/files",
+      "media_files": "https://zenodo.org/api/records/4630801/media-files",
+      "archive": "https://zenodo.org/api/records/4630801/files-archive",
+      "archive_media": "https://zenodo.org/api/records/4630801/media-files-archive",
+      "latest": "https://zenodo.org/api/records/4630801/versions/latest",
+      "latest_html": "https://zenodo.org/records/4630801/latest",
+      "versions": "https://zenodo.org/api/records/4630801/versions",
+      "draft": "https://zenodo.org/api/records/4630801/draft",
+      "access_links": "https://zenodo.org/api/records/4630801/access/links",
+      "access_grants": "https://zenodo.org/api/records/4630801/access/grants",
+      "access_users": "https://zenodo.org/api/records/4630801/access/users",
+      "access_request": "https://zenodo.org/api/records/4630801/access/request",
+      "access": "https://zenodo.org/api/records/4630801/access",
+      "communities": "https://zenodo.org/api/records/4630801/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/4630801/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/4630801/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/4630801/file-modification",
+      "requests": "https://zenodo.org/api/records/4630801/requests"
+    },
+    "updated": "2021-03-24T00:27:31.772955+00:00",
+    "recid": "4630801",
+    "revision": 2,
+    "files": [
+      {
+        "id": "368869c3-f4b1-473c-b78f-817d1194e442",
+        "key": "ProjectGapJunctionsMEA.zip",
+        "size": 253144825,
+        "checksum": "md5:2d0ca49dc646c3dfa64f072e1cc38e73",
+        "links": {
+          "self": "https://zenodo.org/api/records/4630801/files/ProjectGapJunctionsMEA.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "24853"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 17,
+      "unique_downloads": 16,
+      "views": 254,
+      "unique_views": 244,
+      "version_downloads": 17,
+      "version_unique_downloads": 16,
+      "version_unique_views": 243,
+      "version_views": 253
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 253144825
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retina dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9673675698653934,
+      "confidence": 0.9673675698653934
+    }
+  },
+  {
+    "created": "2023-01-20T20:43:40.209161+00:00",
+    "modified": "2024-07-12T19:16:53.784212+00:00",
+    "id": 7555837,
+    "conceptrecid": "7555836",
+    "doi": "10.5281/zenodo.7555837",
+    "conceptdoi": "10.5281/zenodo.7555836",
+    "doi_url": "https://doi.org/10.5281/zenodo.7555837",
+    "metadata": {
+      "title": "Macular Drusen H&E",
+      "doi": "10.5281/zenodo.7555837",
+      "publication_date": "2023-01-20",
+      "description": "<p>Histological section of the right eye of a 92 year old female donor with atrophic (early-intermediate) age-related macular degeneration (AMD) shows the presence of drusen beneath the retina pigment epithelium. Eyes were fixed in 4% paraformaldehyde for 2 hours followed by washing in PBS, infiltration in graded sucrose and embedment in sucrose-OCT. Sections collected at 7&micro;m were stained with hematoxylin-eosin stain. Photomicrography was performed using an Olympus BX41 microscope with SPOT-RT digital camera using a 20x objective lens. Scalebar = 100&micro;m</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Robert Mullins",
+          "affiliation": "University of Iowa Institute for Vision Research"
+        }
+      ],
+      "keywords": [
+        "drusen, macula, choroid, retina"
+      ],
+      "resource_type": {
+        "title": "Figure",
+        "type": "image",
+        "subtype": "figure"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "7555836"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Macular Drusen H&E",
+    "links": {
+      "self": "https://zenodo.org/api/records/7555837",
+      "self_html": "https://zenodo.org/records/7555837",
+      "preview_html": "https://zenodo.org/records/7555837?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.7555837",
+      "self_doi": "https://doi.org/10.5281/zenodo.7555837",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7555837",
+      "reserve_doi": "https://zenodo.org/api/records/7555837/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/7555836",
+      "parent_html": "https://zenodo.org/records/7555836",
+      "parent_doi": "https://doi.org/10.5281/zenodo.7555836",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7555836",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7555837/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7555837/sequence/default",
+      "files": "https://zenodo.org/api/records/7555837/files",
+      "media_files": "https://zenodo.org/api/records/7555837/media-files",
+      "thumbnails": {
+        "10": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E10,/0/default.jpg",
+        "50": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E50,/0/default.jpg",
+        "100": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E100,/0/default.jpg",
+        "250": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E250,/0/default.jpg",
+        "750": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E750,/0/default.jpg",
+        "1200": "https://zenodo.org/api/iiif/record:7555837:10-020-ODmac20x1%20macular%20drusen%20copy+100um.jpg/full/%5E1200,/0/default.jpg"
+      },
+      "archive": "https://zenodo.org/api/records/7555837/files-archive",
+      "archive_media": "https://zenodo.org/api/records/7555837/media-files-archive",
+      "latest": "https://zenodo.org/api/records/7555837/versions/latest",
+      "latest_html": "https://zenodo.org/records/7555837/latest",
+      "versions": "https://zenodo.org/api/records/7555837/versions",
+      "draft": "https://zenodo.org/api/records/7555837/draft",
+      "access_links": "https://zenodo.org/api/records/7555837/access/links",
+      "access_grants": "https://zenodo.org/api/records/7555837/access/grants",
+      "access_users": "https://zenodo.org/api/records/7555837/access/users",
+      "access_request": "https://zenodo.org/api/records/7555837/access/request",
+      "access": "https://zenodo.org/api/records/7555837/access",
+      "communities": "https://zenodo.org/api/records/7555837/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/7555837/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/7555837/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/7555837/file-modification",
+      "requests": "https://zenodo.org/api/records/7555837/requests"
+    },
+    "updated": "2024-07-12T19:16:53.784212+00:00",
+    "recid": "7555837",
+    "revision": 4,
+    "files": [
+      {
+        "id": "10098b2f-e3e4-4acb-bc1a-3df4aed5b00b",
+        "key": "10-020-ODmac20x1 macular drusen copy+100um.jpg",
+        "size": 1879510,
+        "checksum": "md5:9fa9204dff4a455bd4544d41d46685c4",
+        "links": {
+          "self": "https://zenodo.org/api/records/7555837/files/10-020-ODmac20x1 macular drusen copy+100um.jpg/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "483885"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 42,
+      "unique_downloads": 40,
+      "views": 74,
+      "unique_views": 71,
+      "version_downloads": 42,
+      "version_unique_downloads": 40,
+      "version_unique_views": 71,
+      "version_views": 74
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": true,
+      "has_archives": false,
+      "imaging_file_count": 1,
+      "archive_count": 0,
+      "total_imaging_size": 1879510,
+      "total_archive_size": 0
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retina dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9672735570276244,
+      "confidence": 0.9672735570276244
+    }
+  },
+  {
+    "created": "2025-02-07T08:42:36.031252+00:00",
+    "modified": "2025-02-07T08:42:38.556005+00:00",
+    "id": 14831266,
+    "conceptrecid": "14831265",
+    "doi": "10.5281/zenodo.14831266",
+    "conceptdoi": "10.5281/zenodo.14831265",
+    "doi_url": "https://doi.org/10.5281/zenodo.14831266",
+    "metadata": {
+      "title": "Retrospective study of Modifications in Foveal Choroidal Vessel Diameter and Thickness as Indicators for Retreatment of Polypoidal Choroidal Vasculopathy",
+      "doi": "10.5281/zenodo.14831266",
+      "publication_date": "2025-02-07",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Wei, Ying",
+          "affiliation": null
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "14831265"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Retrospective study of Modifications in Foveal Choroidal Vessel Diameter and Thickness as Indicators for Retreatment of Polypoidal Choroidal Vasculopathy",
+    "links": {
+      "self": "https://zenodo.org/api/records/14831266",
+      "self_html": "https://zenodo.org/records/14831266",
+      "preview_html": "https://zenodo.org/records/14831266?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.14831266",
+      "self_doi": "https://doi.org/10.5281/zenodo.14831266",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14831266",
+      "reserve_doi": "https://zenodo.org/api/records/14831266/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/14831265",
+      "parent_html": "https://zenodo.org/records/14831265",
+      "parent_doi": "https://doi.org/10.5281/zenodo.14831265",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14831265",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14831266/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14831266/sequence/default",
+      "files": "https://zenodo.org/api/records/14831266/files",
+      "media_files": "https://zenodo.org/api/records/14831266/media-files",
+      "thumbnails": {
+        "10": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E10,/0/default.jpg",
+        "50": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E50,/0/default.jpg",
+        "100": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E100,/0/default.jpg",
+        "250": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E250,/0/default.jpg",
+        "750": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E750,/0/default.jpg",
+        "1200": "https://zenodo.org/api/iiif/record:14831266:%E9%A9%AC%E7%8E%89%E6%B8%85%202019-09-02%20CRT.jpg/full/%5E1200,/0/default.jpg"
+      },
+      "archive": "https://zenodo.org/api/records/14831266/files-archive",
+      "archive_media": "https://zenodo.org/api/records/14831266/media-files-archive",
+      "latest": "https://zenodo.org/api/records/14831266/versions/latest",
+      "latest_html": "https://zenodo.org/records/14831266/latest",
+      "versions": "https://zenodo.org/api/records/14831266/versions",
+      "draft": "https://zenodo.org/api/records/14831266/draft",
+      "access_links": "https://zenodo.org/api/records/14831266/access/links",
+      "access_grants": "https://zenodo.org/api/records/14831266/access/grants",
+      "access_users": "https://zenodo.org/api/records/14831266/access/users",
+      "access_request": "https://zenodo.org/api/records/14831266/access/request",
+      "access": "https://zenodo.org/api/records/14831266/access",
+      "communities": "https://zenodo.org/api/records/14831266/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/14831266/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/14831266/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/14831266/file-modification",
+      "requests": "https://zenodo.org/api/records/14831266/requests"
+    },
+    "updated": "2025-02-07T08:42:38.556005+00:00",
+    "recid": "14831266",
+    "revision": 3,
+    "files": [
+      {
+        "id": "f1e094c5-3beb-4c0c-9571-71773368bd24",
+        "key": "\u9a6c\u7389\u6e05 2019-09-02 CRT.jpg",
+        "size": 695554,
+        "checksum": "md5:d69ea5ebce50986fec417ce9fc5bbf17",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-02 CRT.jpg/content"
+        }
+      },
+      {
+        "id": "354e049b-1136-4a74-9283-292c71c3c1b3",
+        "key": "\u9a6c\u7389\u6e05 2019-09-30 \u5212\u7ebf.jpg",
+        "size": 491264,
+        "checksum": "md5:0abc99be93b8db542fa6332213d60e08",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-30 \u5212\u7ebf.jpg/content"
+        }
+      },
+      {
+        "id": "fc4c8653-f581-44f4-b40c-d88e6eb26183",
+        "key": "\u9a6c\u7389\u6e052019-07-18  \u56fe \u5212\u7ebf.jpg",
+        "size": 565487,
+        "checksum": "md5:045fcbf78f1220e39403ee17f7c6653b",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e052019-07-18  \u56fe \u5212\u7ebf.jpg/content"
+        }
+      },
+      {
+        "id": "78186586-d864-4803-b04b-9b3e28341b57",
+        "key": "\u9a6c\u7389\u6e05 2019-07-27 CRT \u56fe.jpg",
+        "size": 661840,
+        "checksum": "md5:c56de4428e67f164137bd696d09b6611",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-07-27 CRT \u56fe.jpg/content"
+        }
+      },
+      {
+        "id": "8a76c3f5-1c6c-4035-b9b0-191be80c868b",
+        "key": "\u9a6c\u7389\u6e052019-07-18  CRT  \u56fe.jpg",
+        "size": 683583,
+        "checksum": "md5:67a1eff16106965dbcac92ace2e29338",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e052019-07-18  CRT  \u56fe.jpg/content"
+        }
+      },
+      {
+        "id": "bc336590-a173-4f1b-8994-7793f12d917b",
+        "key": "\u9a6c\u7389\u6e05 2020-01-06.jpg",
+        "size": 460491,
+        "checksum": "md5:e4ad82c5f98348583467350f368c7e74",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2020-01-06.jpg/content"
+        }
+      },
+      {
+        "id": "0fdcee0f-f278-4e32-a64e-3d834b810f53",
+        "key": "\u9a6c\u7389\u6e05 2019-07-27 \u56fe \u5212\u7ebf.jpg",
+        "size": 493454,
+        "checksum": "md5:714cf4cfc638a6bfe7da1b08a5db6a29",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-07-27 \u56fe \u5212\u7ebf.jpg/content"
+        }
+      },
+      {
+        "id": "27afde6b-d845-4a3b-87d9-7a205d7fef06",
+        "key": "\u9a6c\u7389\u6e05 2019-09-02 \u5212\u7ebf.jpg",
+        "size": 490772,
+        "checksum": "md5:5dcb0d7cf1a814b7c90acd600c43890b",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-02 \u5212\u7ebf.jpg/content"
+        }
+      },
+      {
+        "id": "e7d49739-ff0b-4d24-a7a0-8ebdae70fe7f",
+        "key": "\u9a6c\u7389\u6e05 2020-01-06 \u5212\u7ebf.jpg",
+        "size": 497349,
+        "checksum": "md5:ee8c0aef9367985624020db4f144b51b",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2020-01-06 \u5212\u7ebf.jpg/content"
+        }
+      },
+      {
+        "id": "64679803-69a7-416c-beb4-03bd1a819555",
+        "key": "\u9a6c\u7389\u6e05.pdf",
+        "size": 663541,
+        "checksum": "md5:8df7ea9c69ccd1d0fa77ceafb0f3776b",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05.pdf/content"
+        }
+      },
+      {
+        "id": "79edf99b-9c0d-45a9-80d3-dabf731d6403",
+        "key": "\u9a6c\u7389\u6e05 2019-07-27 \u56fe.jpg",
+        "size": 461817,
+        "checksum": "md5:f51d49b0e518f001428ec5c400b42813",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-07-27 \u56fe.jpg/content"
+        }
+      },
+      {
+        "id": "969a57f6-30da-40ba-9dd2-c1c0f37aa5ac",
+        "key": "\u9a6c\u7389\u6e05 2019-09-02.jpg",
+        "size": 463927,
+        "checksum": "md5:7aa62adf792dcfd633081378467dbbc2",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-02.jpg/content"
+        }
+      },
+      {
+        "id": "a6ce45f4-dbba-4340-b536-3fc8a761a1d7",
+        "key": "\u9a6c\u7389\u6e05 2020-01-06 CRT.jpg",
+        "size": 659677,
+        "checksum": "md5:6cd790633af04e69967b098f6350911e",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2020-01-06 CRT.jpg/content"
+        }
+      },
+      {
+        "id": "eede7a7e-c3af-4691-b491-2ea0b80b95d6",
+        "key": "\u9a6c\u7389\u6e05 2019-10-23 CRT.jpg",
+        "size": 650179,
+        "checksum": "md5:2a77cbe278308434c4eaffd61104993e",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-10-23 CRT.jpg/content"
+        }
+      },
+      {
+        "id": "6c032a3b-6929-4f44-a6ec-ce6c2e91bbc6",
+        "key": "\u9a6c\u7389\u6e05 2019-09-30 CRT.jpg",
+        "size": 667446,
+        "checksum": "md5:df69c5c50c9edc41d425ae343f10d8e9",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-30 CRT.jpg/content"
+        }
+      },
+      {
+        "id": "11f7dc25-b22e-4411-ad5f-534f0c88cca7",
+        "key": "\u9a6c\u7389\u6e05 2019-09-30.jpg",
+        "size": 461581,
+        "checksum": "md5:223884e10effd27db4c19e7c3305ea55",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-09-30.jpg/content"
+        }
+      },
+      {
+        "id": "cbb8600a-b5d9-4f7a-87f1-321143ec8892",
+        "key": "\u9a6c\u7389\u6e052019-07-18  \u56fe.jpg",
+        "size": 532846,
+        "checksum": "md5:793f791b0a2c9b6cf0bb43f087641f9d",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e052019-07-18  \u56fe.jpg/content"
+        }
+      },
+      {
+        "id": "4b1b7d9b-a238-434c-aba0-d076106d92f6",
+        "key": "\u9a6c\u7389\u6e05 2019-10-23.jpg",
+        "size": 443418,
+        "checksum": "md5:1ad8df464908c46b32c674411a4017cf",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-10-23.jpg/content"
+        }
+      },
+      {
+        "id": "b364152a-19ab-4a14-964a-994c0fce4dde",
+        "key": "\u9a6c\u7389\u6e05 2019-10-23 \u5212\u7ebf.jpg",
+        "size": 473270,
+        "checksum": "md5:1872e167cf687a8622b1083972fbf65f",
+        "links": {
+          "self": "https://zenodo.org/api/records/14831266/files/\u9a6c\u7389\u6e05 2019-10-23 \u5212\u7ebf.jpg/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1262029"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 273,
+      "unique_downloads": 273,
+      "views": 47,
+      "unique_views": 46,
+      "version_downloads": 273,
+      "version_unique_downloads": 273,
+      "version_unique_views": 46,
+      "version_views": 47
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": true,
+      "has_archives": false,
+      "imaging_file_count": 18,
+      "archive_count": 0,
+      "total_imaging_size": 9853955,
+      "total_archive_size": 0
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "foveal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9669986098140659,
+      "confidence": 0.9669986098140659
+    }
+  },
+  {
+    "created": "2024-10-28T22:09:09.393373+00:00",
+    "modified": "2024-10-28T22:09:09.555227+00:00",
+    "id": 14004377,
+    "conceptrecid": "14004376",
+    "doi": "10.5281/zenodo.14004377",
+    "conceptdoi": "10.5281/zenodo.14004376",
+    "doi_url": "https://doi.org/10.5281/zenodo.14004377",
+    "metadata": {
+      "title": "cobriniklab/chevreuldata: generate doi on zenodo",
+      "doi": "10.5281/zenodo.14004377",
+      "publication_date": "2024-10-28",
+      "description": "Retinal scRNA-seq datasets from the Cobrinik lab at CHLA for processing and visualization using Chevreul",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Kevin Stachelek",
+          "affiliation": null
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/cobriniklab/chevreuldata/tree/v1.0.1",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1.0.1",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "14004376"
+            }
+          }
+        ]
+      }
+    },
+    "title": "cobriniklab/chevreuldata: generate doi on zenodo",
+    "links": {
+      "self": "https://zenodo.org/api/records/14004377",
+      "self_html": "https://zenodo.org/records/14004377",
+      "preview_html": "https://zenodo.org/records/14004377?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.14004377",
+      "self_doi": "https://doi.org/10.5281/zenodo.14004377",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14004377",
+      "reserve_doi": "https://zenodo.org/api/records/14004377/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/14004376",
+      "parent_html": "https://zenodo.org/records/14004376",
+      "parent_doi": "https://doi.org/10.5281/zenodo.14004376",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14004376",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14004377/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14004377/sequence/default",
+      "files": "https://zenodo.org/api/records/14004377/files",
+      "media_files": "https://zenodo.org/api/records/14004377/media-files",
+      "archive": "https://zenodo.org/api/records/14004377/files-archive",
+      "archive_media": "https://zenodo.org/api/records/14004377/media-files-archive",
+      "latest": "https://zenodo.org/api/records/14004377/versions/latest",
+      "latest_html": "https://zenodo.org/records/14004377/latest",
+      "versions": "https://zenodo.org/api/records/14004377/versions",
+      "draft": "https://zenodo.org/api/records/14004377/draft",
+      "access_links": "https://zenodo.org/api/records/14004377/access/links",
+      "access_grants": "https://zenodo.org/api/records/14004377/access/grants",
+      "access_users": "https://zenodo.org/api/records/14004377/access/users",
+      "access_request": "https://zenodo.org/api/records/14004377/access/request",
+      "access": "https://zenodo.org/api/records/14004377/access",
+      "communities": "https://zenodo.org/api/records/14004377/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/14004377/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/14004377/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/14004377/file-modification",
+      "requests": "https://zenodo.org/api/records/14004377/requests"
+    },
+    "updated": "2024-10-28T22:09:09.555227+00:00",
+    "recid": "14004377",
+    "revision": 4,
+    "files": [
+      {
+        "id": "06e1f7e5-4fde-48a9-8da7-20f029a49b6a",
+        "key": "cobriniklab/chevreuldata-v1.0.1.zip",
+        "size": 32027,
+        "checksum": "md5:c120858e8dd5f7eab62928dfb8509716",
+        "links": {
+          "self": "https://zenodo.org/api/records/14004377/files/cobriniklab/chevreuldata-v1.0.1.zip/content"
+        }
+      }
+    ],
+    "swh": {
+      "swhid": "swh:1:dir:9aa0eee1ccf5ef2b7fa3748b32fe369a9d226243;origin=https://doi.org/10.5281/zenodo.14004376;visit=swh:1:snp:50060a0f9cde59dc93e552a408d1685907f9160d;anchor=swh:1:rel:c25841c3712071715946f1f04225634e10fde280;path=/"
+    },
+    "owners": [
+      {
+        "id": "560877"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 2,
+      "unique_downloads": 2,
+      "views": 6,
+      "unique_views": 6,
+      "version_downloads": 2,
+      "version_unique_downloads": 2,
+      "version_unique_views": 6,
+      "version_views": 6
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 32027
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retinal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9667310982312072,
+      "confidence": 0.9667310982312072
+    }
+  },
+  {
+    "created": "2023-11-28T02:41:40.264249+00:00",
+    "modified": "2023-11-28T02:41:40.407067+00:00",
+    "id": 10211882,
+    "conceptrecid": "10211881",
+    "doi": "10.5281/zenodo.10211882",
+    "conceptdoi": "10.5281/zenodo.10211881",
+    "doi_url": "https://doi.org/10.5281/zenodo.10211882",
+    "metadata": {
+      "title": "Mingsenli/corneal-single-cells: v1.0",
+      "doi": "10.5281/zenodo.10211882",
+      "publication_date": "2023-11-28",
+      "description": "<p>single cell codes</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Mingsenli lab",
+          "affiliation": null
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/Mingsenli/corneal-single-cells/tree/publish",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "publish",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "10211881"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Mingsenli/corneal-single-cells: v1.0",
+    "links": {
+      "self": "https://zenodo.org/api/records/10211882",
+      "self_html": "https://zenodo.org/records/10211882",
+      "preview_html": "https://zenodo.org/records/10211882?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.10211882",
+      "self_doi": "https://doi.org/10.5281/zenodo.10211882",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10211882",
+      "reserve_doi": "https://zenodo.org/api/records/10211882/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/10211881",
+      "parent_html": "https://zenodo.org/records/10211881",
+      "parent_doi": "https://doi.org/10.5281/zenodo.10211881",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10211881",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10211882/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10211882/sequence/default",
+      "files": "https://zenodo.org/api/records/10211882/files",
+      "media_files": "https://zenodo.org/api/records/10211882/media-files",
+      "archive": "https://zenodo.org/api/records/10211882/files-archive",
+      "archive_media": "https://zenodo.org/api/records/10211882/media-files-archive",
+      "latest": "https://zenodo.org/api/records/10211882/versions/latest",
+      "latest_html": "https://zenodo.org/records/10211882/latest",
+      "versions": "https://zenodo.org/api/records/10211882/versions",
+      "draft": "https://zenodo.org/api/records/10211882/draft",
+      "access_links": "https://zenodo.org/api/records/10211882/access/links",
+      "access_grants": "https://zenodo.org/api/records/10211882/access/grants",
+      "access_users": "https://zenodo.org/api/records/10211882/access/users",
+      "access_request": "https://zenodo.org/api/records/10211882/access/request",
+      "access": "https://zenodo.org/api/records/10211882/access",
+      "communities": "https://zenodo.org/api/records/10211882/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/10211882/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/10211882/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/10211882/file-modification",
+      "requests": "https://zenodo.org/api/records/10211882/requests"
+    },
+    "updated": "2023-11-28T02:41:40.407067+00:00",
+    "recid": "10211882",
+    "revision": 4,
+    "files": [
+      {
+        "id": "a007e2d3-703f-467c-8925-5d484777f05d",
+        "key": "Mingsenli/corneal-single-cells-publish.zip",
+        "size": 74768,
+        "checksum": "md5:d942dac9ce66ec0cf05ff69de5214961",
+        "links": {
+          "self": "https://zenodo.org/api/records/10211882/files/Mingsenli/corneal-single-cells-publish.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1033658"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 21,
+      "unique_downloads": 19,
+      "views": 116,
+      "unique_views": 112,
+      "version_downloads": 21,
+      "version_unique_downloads": 19,
+      "version_unique_views": 112,
+      "version_views": 116
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 74768
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "corneal imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9666289674825769,
+      "confidence": 0.9666289674825769
+    }
+  },
+  {
+    "created": "2024-02-18T10:38:52.325136+00:00",
+    "modified": "2024-02-18T10:38:52.604633+00:00",
+    "id": 10674885,
+    "conceptrecid": "10674884",
+    "doi": "10.5281/zenodo.10674885",
+    "conceptdoi": "10.5281/zenodo.10674884",
+    "doi_url": "https://doi.org/10.5281/zenodo.10674885",
+    "metadata": {
+      "title": "Diabetic Glaucoma(ORIGA,REFUGE,ACRIMA)",
+      "doi": "10.5281/zenodo.10674885",
+      "publication_date": "2024-02-18",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Zhuo, Zhang",
+          "affiliation": null
+        },
+        {
+          "name": "Shou Yin, Feng",
+          "affiliation": null
+        },
+        {
+          "name": "Liu, Jiang",
+          "affiliation": null
+        },
+        {
+          "name": "Kee Wong, Wing",
+          "affiliation": null
+        },
+        {
+          "name": "Meng Tan, Ngan",
+          "affiliation": null
+        },
+        {
+          "name": "Hai Lee, Beng",
+          "affiliation": null
+        },
+        {
+          "name": "Cheng, Jun",
+          "affiliation": null
+        },
+        {
+          "name": "Yin Wong, Tien",
+          "affiliation": null
+        },
+        {
+          "name": "Fu, Huazhu",
+          "affiliation": null
+        },
+        {
+          "name": "Li, Fei",
+          "affiliation": null
+        },
+        {
+          "name": "IgnacioOrlando, Jos\u00e9",
+          "affiliation": null
+        },
+        {
+          "name": "Bogunovi\u0107, Hrvoje",
+          "affiliation": null
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "10674884"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Diabetic Glaucoma(ORIGA,REFUGE,ACRIMA)",
+    "links": {
+      "self": "https://zenodo.org/api/records/10674885",
+      "self_html": "https://zenodo.org/records/10674885",
+      "preview_html": "https://zenodo.org/records/10674885?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.10674885",
+      "self_doi": "https://doi.org/10.5281/zenodo.10674885",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10674885",
+      "reserve_doi": "https://zenodo.org/api/records/10674885/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/10674884",
+      "parent_html": "https://zenodo.org/records/10674884",
+      "parent_doi": "https://doi.org/10.5281/zenodo.10674884",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10674884",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10674885/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10674885/sequence/default",
+      "files": "https://zenodo.org/api/records/10674885/files",
+      "media_files": "https://zenodo.org/api/records/10674885/media-files",
+      "archive": "https://zenodo.org/api/records/10674885/files-archive",
+      "archive_media": "https://zenodo.org/api/records/10674885/media-files-archive",
+      "latest": "https://zenodo.org/api/records/10674885/versions/latest",
+      "latest_html": "https://zenodo.org/records/10674885/latest",
+      "versions": "https://zenodo.org/api/records/10674885/versions",
+      "draft": "https://zenodo.org/api/records/10674885/draft",
+      "access_links": "https://zenodo.org/api/records/10674885/access/links",
+      "access_grants": "https://zenodo.org/api/records/10674885/access/grants",
+      "access_users": "https://zenodo.org/api/records/10674885/access/users",
+      "access_request": "https://zenodo.org/api/records/10674885/access/request",
+      "access": "https://zenodo.org/api/records/10674885/access",
+      "communities": "https://zenodo.org/api/records/10674885/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/10674885/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/10674885/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/10674885/file-modification",
+      "requests": "https://zenodo.org/api/records/10674885/requests"
+    },
+    "updated": "2024-02-18T10:38:52.604633+00:00",
+    "recid": "10674885",
+    "revision": 4,
+    "files": [
+      {
+        "id": "9ae26e4a-649b-4329-ba54-d275dd6cd376",
+        "key": "ORIGA.rar",
+        "size": 475035599,
+        "checksum": "md5:308b66f83325a18da09504a3b6c1c5cd",
+        "links": {
+          "self": "https://zenodo.org/api/records/10674885/files/ORIGA.rar/content"
+        }
+      },
+      {
+        "id": "39816d6e-fb57-41dc-8d9d-bc0c75d826b4",
+        "key": "ACRIMA.rar",
+        "size": 47522690,
+        "checksum": "md5:5079808bc17438dac6a63704cb645fcc",
+        "links": {
+          "self": "https://zenodo.org/api/records/10674885/files/ACRIMA.rar/content"
+        }
+      },
+      {
+        "id": "43e07a85-be96-41ef-ba91-66f3e43eb7b8",
+        "key": "REFUGE.rar",
+        "size": 3214069606,
+        "checksum": "md5:f39117a8d02b109e20b2fc83e988f5ae",
+        "links": {
+          "self": "https://zenodo.org/api/records/10674885/files/REFUGE.rar/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "19050"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 84,
+      "unique_downloads": 83,
+      "views": 133,
+      "unique_views": 130,
+      "version_downloads": 84,
+      "version_unique_downloads": 83,
+      "version_unique_views": 130,
+      "version_views": 133
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 3,
+      "total_imaging_size": 0,
+      "total_archive_size": 3736627895
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "glaucoma imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9663707026416846,
+      "confidence": 0.9663707026416846
+    }
+  },
+  {
+    "created": "2025-06-30T15:16:29.286175+00:00",
+    "modified": "2025-06-30T15:16:29.643772+00:00",
+    "id": 15775510,
+    "conceptrecid": "15775509",
+    "doi": "10.5281/zenodo.15775510",
+    "conceptdoi": "10.5281/zenodo.15775509",
+    "doi_url": "https://doi.org/10.5281/zenodo.15775510",
+    "metadata": {
+      "title": "Visual Defect Detection dataset",
+      "doi": "10.5281/zenodo.15775510",
+      "publication_date": "2025-06-30",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Fernandez-Gauna, Borja",
+          "affiliation": "Universidad Del Pais Vasco",
+          "orcid": "0000-0001-9233-2333"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "15775509"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Visual Defect Detection dataset",
+    "links": {
+      "self": "https://zenodo.org/api/records/15775510",
+      "self_html": "https://zenodo.org/records/15775510",
+      "preview_html": "https://zenodo.org/records/15775510?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.15775510",
+      "self_doi": "https://doi.org/10.5281/zenodo.15775510",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15775510",
+      "reserve_doi": "https://zenodo.org/api/records/15775510/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/15775509",
+      "parent_html": "https://zenodo.org/records/15775509",
+      "parent_doi": "https://doi.org/10.5281/zenodo.15775509",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15775509",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15775510/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15775510/sequence/default",
+      "files": "https://zenodo.org/api/records/15775510/files",
+      "media_files": "https://zenodo.org/api/records/15775510/media-files",
+      "archive": "https://zenodo.org/api/records/15775510/files-archive",
+      "archive_media": "https://zenodo.org/api/records/15775510/media-files-archive",
+      "latest": "https://zenodo.org/api/records/15775510/versions/latest",
+      "latest_html": "https://zenodo.org/records/15775510/latest",
+      "versions": "https://zenodo.org/api/records/15775510/versions",
+      "draft": "https://zenodo.org/api/records/15775510/draft",
+      "access_links": "https://zenodo.org/api/records/15775510/access/links",
+      "access_grants": "https://zenodo.org/api/records/15775510/access/grants",
+      "access_users": "https://zenodo.org/api/records/15775510/access/users",
+      "access_request": "https://zenodo.org/api/records/15775510/access/request",
+      "access": "https://zenodo.org/api/records/15775510/access",
+      "communities": "https://zenodo.org/api/records/15775510/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/15775510/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/15775510/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/15775510/file-modification",
+      "requests": "https://zenodo.org/api/records/15775510/requests"
+    },
+    "updated": "2025-06-30T15:16:29.643772+00:00",
+    "recid": "15775510",
+    "revision": 4,
+    "files": [
+      {
+        "id": "67c37cde-a8d6-43ca-a534-e75fda1ca318",
+        "key": "Class3.zip",
+        "size": 202923699,
+        "checksum": "md5:57a337e93e38c71e01d15770e252f46d",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class3.zip/content"
+        }
+      },
+      {
+        "id": "45cdfa07-df65-44df-8bb1-3599c647f405",
+        "key": "Class1.zip",
+        "size": 267943772,
+        "checksum": "md5:9ed7f0480aea9bd0a83b429a17e3e750",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class1.zip/content"
+        }
+      },
+      {
+        "id": "4504dc50-88a5-4eac-8cf0-da632d96c490",
+        "key": "Class2.zip",
+        "size": 228042837,
+        "checksum": "md5:024f1f6c6d11d72ee12f19dcc98aa3d8",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class2.zip/content"
+        }
+      },
+      {
+        "id": "23a20e91-607f-423c-baa4-e64a270aaa56",
+        "key": "Class5.zip",
+        "size": 215005526,
+        "checksum": "md5:463a932d87a5c0e02ee10cdb3265c318",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class5.zip/content"
+        }
+      },
+      {
+        "id": "3eb51671-eb03-457f-b608-08fadccb2b4d",
+        "key": "Class4.zip",
+        "size": 196885903,
+        "checksum": "md5:d6852ae3667db59e6a4d586d98633540",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class4.zip/content"
+        }
+      },
+      {
+        "id": "17abef60-34fa-4f3d-8486-ce1dad9f0ca6",
+        "key": "Class6.zip",
+        "size": 260830045,
+        "checksum": "md5:40ba70f232fe1cb891a46c1b77dc4940",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class6.zip/content"
+        }
+      },
+      {
+        "id": "e41bbe3f-937b-4076-857c-5f3614f5b32f",
+        "key": "Class7.zip",
+        "size": 380424293,
+        "checksum": "md5:67571381c8aa5f82d5180e6e8838f735",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class7.zip/content"
+        }
+      },
+      {
+        "id": "c05fa4e1-3c9d-4052-8b19-010578225894",
+        "key": "Class8.zip",
+        "size": 392568394,
+        "checksum": "md5:d02a892a8b6180893c8ea018848606cb",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class8.zip/content"
+        }
+      },
+      {
+        "id": "45a1c554-3329-43cd-b340-cc020e17a688",
+        "key": "Class9.zip",
+        "size": 392362320,
+        "checksum": "md5:083d8da49d46614202a332f9e9dd1bca",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class9.zip/content"
+        }
+      },
+      {
+        "id": "8968bcba-e950-48fd-93f8-e96aeb305a8e",
+        "key": "Class10.zip",
+        "size": 410358784,
+        "checksum": "md5:2743ebc79cb91551b51599a67f0e7528",
+        "links": {
+          "self": "https://zenodo.org/api/records/15775510/files/Class10.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1251922"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 26,
+      "unique_downloads": 26,
+      "views": 36,
+      "unique_views": 33,
+      "version_downloads": 26,
+      "version_unique_downloads": 26,
+      "version_unique_views": 33,
+      "version_views": 36
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 10,
+      "total_imaging_size": 0,
+      "total_archive_size": 2947345573
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "glaucoma detection dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9655302314586615,
+      "confidence": 0.9655302314586615
+    }
+  },
+  {
+    "created": "2022-03-31T21:09:30.284173+00:00",
+    "modified": "2024-07-16T23:21:44.571821+00:00",
+    "id": 6403238,
+    "conceptrecid": "6403237",
+    "doi": "10.5061/dryad.pzgmsbck6",
+    "doi_url": "https://doi.org/10.5061/dryad.pzgmsbck6",
+    "metadata": {
+      "title": "Supplementary data for: Abducens nerve palsy with ipsilateral excessive eye tearing attributed to internal carotid artery sympathetic plexus schwannoma",
+      "doi": "10.5061/dryad.pzgmsbck6",
+      "publication_date": "2022-03-31",
+      "description": "<p>A 65-year-old man developed subacute horizontal diplopia due to left-abducens nerve (AN) palsy and excessive left-eye tearing. Brain-MRI revealed a hyperintense T2-lesion with an elongated course within the left-carotid canal, presenting homogenous contrast-enhancement (Figure-1). The imaging findings were characteristic for an internal-carotid-artery sympathetic plexus (ICSP) schwannoma compressing the left-AN. Subsequent irritation of the deep petrosal nerve originating directly from ICSP and continuing as the vidian nerve may have led to the lacrimal gland edema and excessive left-eye tearing (Figure-2).</p>\n\n<p>ICSP schwannoma represents an uncommon cause of AN palsy that may also manifest with excessive ipsilateral-eye tearing due to vidian nerve involvement.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Palaiodimou, Lina",
+          "affiliation": "National and Kapodistrian University of Athens"
+        },
+        {
+          "name": "Lachanis, Stefanos",
+          "affiliation": "Iatropolis Magnetic Resonance Diagnostic Centre*"
+        },
+        {
+          "name": "Bakola, Eleni",
+          "affiliation": "National and Kapodistrian University of Athens"
+        },
+        {
+          "name": "Zis, Panagiotis",
+          "affiliation": "University of Cyprus"
+        },
+        {
+          "name": "Kararizou, Evangelia",
+          "affiliation": "National and Kapodistrian University of Athens"
+        },
+        {
+          "name": "Papadopoulou, Marianna",
+          "affiliation": "National and Kapodistrian University of Athens",
+          "orcid": "0000-0002-0163-7455"
+        },
+        {
+          "name": "Tsivgoulis, Georgios",
+          "affiliation": "National and Kapodistrian University of Athens"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-zero"
+      },
+      "communities": [
+        {
+          "id": "dryad"
+        }
+      ],
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "6403237"
+            }
+          }
+        ]
+      }
+    },
+    "title": "Supplementary data for: Abducens nerve palsy with ipsilateral excessive eye tearing attributed to internal carotid artery sympathetic plexus schwannoma",
+    "links": {
+      "self": "https://zenodo.org/api/records/6403238",
+      "self_html": "https://zenodo.org/records/6403238",
+      "preview_html": "https://zenodo.org/records/6403238?preview=1",
+      "doi": "https://doi.org/10.5061/dryad.pzgmsbck6",
+      "self_doi": "https://doi.org/10.5061/dryad.pzgmsbck6",
+      "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.pzgmsbck6",
+      "reserve_doi": "https://zenodo.org/api/records/6403238/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/6403237",
+      "parent_html": "https://zenodo.org/records/6403237",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6403238/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6403238/sequence/default",
+      "files": "https://zenodo.org/api/records/6403238/files",
+      "media_files": "https://zenodo.org/api/records/6403238/media-files",
+      "thumbnails": {
+        "10": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E10,/0/default.jpg",
+        "50": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E50,/0/default.jpg",
+        "100": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E100,/0/default.jpg",
+        "250": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E250,/0/default.jpg",
+        "750": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E750,/0/default.jpg",
+        "1200": "https://zenodo.org/api/iiif/record:6403238:vidian_cartoon_figure.tif/full/%5E1200,/0/default.jpg"
+      },
+      "archive": "https://zenodo.org/api/records/6403238/files-archive",
+      "archive_media": "https://zenodo.org/api/records/6403238/media-files-archive",
+      "latest": "https://zenodo.org/api/records/6403238/versions/latest",
+      "latest_html": "https://zenodo.org/records/6403238/latest",
+      "versions": "https://zenodo.org/api/records/6403238/versions",
+      "draft": "https://zenodo.org/api/records/6403238/draft",
+      "access_links": "https://zenodo.org/api/records/6403238/access/links",
+      "access_grants": "https://zenodo.org/api/records/6403238/access/grants",
+      "access_users": "https://zenodo.org/api/records/6403238/access/users",
+      "access_request": "https://zenodo.org/api/records/6403238/access/request",
+      "access": "https://zenodo.org/api/records/6403238/access",
+      "communities": "https://zenodo.org/api/records/6403238/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/6403238/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/6403238/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/6403238/file-modification",
+      "requests": "https://zenodo.org/api/records/6403238/requests"
+    },
+    "updated": "2024-07-16T23:21:44.571821+00:00",
+    "recid": "6403238",
+    "revision": 7,
+    "files": [
+      {
+        "id": "d07b86dc-450a-48c7-ad50-fa52a27b28a8",
+        "key": "Supplementary_data.docx",
+        "size": 707229,
+        "checksum": "md5:bf06e8506778bff3576b31604bab86d7",
+        "links": {
+          "self": "https://zenodo.org/api/records/6403238/files/Supplementary_data.docx/content"
+        }
+      },
+      {
+        "id": "92537d28-e294-4f04-97b3-2d9cbc757d3e",
+        "key": "vidian_cartoon_figure.tif",
+        "size": 2424324,
+        "checksum": "md5:e01b48b1c3878a7dc563a0aec75215cd",
+        "links": {
+          "self": "https://zenodo.org/api/records/6403238/files/vidian_cartoon_figure.tif/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "90070"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 22,
+      "unique_downloads": 22,
+      "views": 162,
+      "unique_views": 162,
+      "version_downloads": 22,
+      "version_unique_downloads": 22,
+      "version_unique_views": 161,
+      "version_views": 161
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": true,
+      "has_archives": false,
+      "imaging_file_count": 1,
+      "archive_count": 0,
+      "total_imaging_size": 2424324,
+      "total_archive_size": 0
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "optic nerve imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9652836455769062,
+      "confidence": 0.9652836455769062
+    }
+  },
+  {
+    "created": "2022-12-04T20:18:09.380019+00:00",
+    "modified": "2022-12-05T02:26:51.384806+00:00",
+    "id": 7396604,
+    "conceptrecid": "7396603",
+    "doi": "10.5281/zenodo.7396604",
+    "conceptdoi": "10.5281/zenodo.7396603",
+    "doi_url": "https://doi.org/10.5281/zenodo.7396604",
+    "metadata": {
+      "title": "sbarrington/cornea-iris-dataset: DOI identifier",
+      "doi": "10.5281/zenodo.7396604",
+      "publication_date": "2022-12-04",
+      "description": "<p>Release for initialisation of DOI</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Sarah Barrington",
+          "affiliation": "UC Berkeley"
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/sbarrington/cornea-iris-dataset/tree/doi-release",
+          "relation": "isSupplementTo",
+          "scheme": "url"
+        }
+      ],
+      "version": "doi-release",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "other-open"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "7396603"
+            }
+          }
+        ]
+      }
+    },
+    "title": "sbarrington/cornea-iris-dataset: DOI identifier",
+    "links": {
+      "self": "https://zenodo.org/api/records/7396604",
+      "self_html": "https://zenodo.org/records/7396604",
+      "preview_html": "https://zenodo.org/records/7396604?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.7396604",
+      "self_doi": "https://doi.org/10.5281/zenodo.7396604",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7396604",
+      "reserve_doi": "https://zenodo.org/api/records/7396604/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/7396603",
+      "parent_html": "https://zenodo.org/records/7396603",
+      "parent_doi": "https://doi.org/10.5281/zenodo.7396603",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7396603",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7396604/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7396604/sequence/default",
+      "files": "https://zenodo.org/api/records/7396604/files",
+      "media_files": "https://zenodo.org/api/records/7396604/media-files",
+      "archive": "https://zenodo.org/api/records/7396604/files-archive",
+      "archive_media": "https://zenodo.org/api/records/7396604/media-files-archive",
+      "latest": "https://zenodo.org/api/records/7396604/versions/latest",
+      "latest_html": "https://zenodo.org/records/7396604/latest",
+      "versions": "https://zenodo.org/api/records/7396604/versions",
+      "draft": "https://zenodo.org/api/records/7396604/draft",
+      "access_links": "https://zenodo.org/api/records/7396604/access/links",
+      "access_grants": "https://zenodo.org/api/records/7396604/access/grants",
+      "access_users": "https://zenodo.org/api/records/7396604/access/users",
+      "access_request": "https://zenodo.org/api/records/7396604/access/request",
+      "access": "https://zenodo.org/api/records/7396604/access",
+      "communities": "https://zenodo.org/api/records/7396604/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/7396604/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/7396604/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/7396604/file-modification",
+      "requests": "https://zenodo.org/api/records/7396604/requests"
+    },
+    "updated": "2022-12-05T02:26:51.384806+00:00",
+    "recid": "7396604",
+    "revision": 3,
+    "files": [
+      {
+        "id": "a6a32177-dd71-4ee2-a1a3-46ef80db885b",
+        "key": "sbarrington/cornea-iris-dataset-doi-release.zip",
+        "size": 82031036,
+        "checksum": "md5:031554269f1b6d963b657811ecc8ed27",
+        "links": {
+          "self": "https://zenodo.org/api/records/7396604/files/sbarrington/cornea-iris-dataset-doi-release.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "427164"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 20,
+      "unique_downloads": 13,
+      "views": 41,
+      "unique_views": 41,
+      "version_downloads": 20,
+      "version_unique_downloads": 13,
+      "version_unique_views": 40,
+      "version_views": 40
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 82031036
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "cornea imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9651710536684214,
+      "confidence": 0.9651710536684214
+    }
+  },
+  {
+    "created": "2023-07-14T21:42:15.160965+00:00",
+    "modified": "2023-07-15T02:26:52.606704+00:00",
+    "id": 8148674,
+    "conceptrecid": "8148673",
+    "doi": "10.5281/zenodo.8148674",
+    "conceptdoi": "10.5281/zenodo.8148673",
+    "doi_url": "https://doi.org/10.5281/zenodo.8148674",
+    "metadata": {
+      "title": "xfeng89/widebandOCE: wideband OCE code",
+      "doi": "10.5281/zenodo.8148674",
+      "publication_date": "2023-07-14",
+      "description": "Ultra-wideband optical coherence elastography from acoustic to ultrasonic frequencies",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "XuFeng",
+          "affiliation": null
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/xfeng89/widebandOCE/tree/v1.0.0",
+          "relation": "isSupplementTo",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1.0.0",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "other-open"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "8148673"
+            }
+          }
+        ]
+      }
+    },
+    "title": "xfeng89/widebandOCE: wideband OCE code",
+    "links": {
+      "self": "https://zenodo.org/api/records/8148674",
+      "self_html": "https://zenodo.org/records/8148674",
+      "preview_html": "https://zenodo.org/records/8148674?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.8148674",
+      "self_doi": "https://doi.org/10.5281/zenodo.8148674",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8148674",
+      "reserve_doi": "https://zenodo.org/api/records/8148674/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/8148673",
+      "parent_html": "https://zenodo.org/records/8148673",
+      "parent_doi": "https://doi.org/10.5281/zenodo.8148673",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8148673",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8148674/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8148674/sequence/default",
+      "files": "https://zenodo.org/api/records/8148674/files",
+      "media_files": "https://zenodo.org/api/records/8148674/media-files",
+      "archive": "https://zenodo.org/api/records/8148674/files-archive",
+      "archive_media": "https://zenodo.org/api/records/8148674/media-files-archive",
+      "latest": "https://zenodo.org/api/records/8148674/versions/latest",
+      "latest_html": "https://zenodo.org/records/8148674/latest",
+      "versions": "https://zenodo.org/api/records/8148674/versions",
+      "draft": "https://zenodo.org/api/records/8148674/draft",
+      "access_links": "https://zenodo.org/api/records/8148674/access/links",
+      "access_grants": "https://zenodo.org/api/records/8148674/access/grants",
+      "access_users": "https://zenodo.org/api/records/8148674/access/users",
+      "access_request": "https://zenodo.org/api/records/8148674/access/request",
+      "access": "https://zenodo.org/api/records/8148674/access",
+      "communities": "https://zenodo.org/api/records/8148674/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/8148674/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/8148674/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/8148674/file-modification",
+      "requests": "https://zenodo.org/api/records/8148674/requests"
+    },
+    "updated": "2023-07-15T02:26:52.606704+00:00",
+    "recid": "8148674",
+    "revision": 3,
+    "files": [
+      {
+        "id": "1f3e23e3-74ee-42c3-bea7-820caff15d91",
+        "key": "xfeng89/widebandOCE-v1.0.0.zip",
+        "size": 4120411,
+        "checksum": "md5:8fa0aee01646a2ab8f600ba5e3943281",
+        "links": {
+          "self": "https://zenodo.org/api/records/8148674/files/xfeng89/widebandOCE-v1.0.0.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "583482"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 70,
+      "unique_downloads": 66,
+      "views": 211,
+      "unique_views": 205,
+      "version_downloads": 70,
+      "version_unique_downloads": 66,
+      "version_unique_views": 205,
+      "version_views": 211
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 4120411
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "optical coherence tomography dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9651454088032398,
+      "confidence": 0.9651454088032398
+    }
+  },
+  {
+    "created": "2023-12-13T07:32:41.314169+00:00",
+    "modified": "2023-12-13T07:32:42.338343+00:00",
+    "id": 10369285,
+    "conceptrecid": "10254192",
+    "doi": "10.5281/zenodo.10369285",
+    "conceptdoi": "10.5281/zenodo.10254192",
+    "doi_url": "https://doi.org/10.5281/zenodo.10369285",
+    "metadata": {
+      "title": "anears-vuno/DRAC22_MICCAI_FAI: v1.0.0",
+      "doi": "10.5281/zenodo.10369285",
+      "publication_date": "2023",
+      "description": "DRAC 2022 Diabetic Retinopathy Analysis Challenge on MICCAI",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Gitaek Kwon / \uad8c\uae30\ud0dd",
+          "affiliation": null
+        },
+        {
+          "name": "Jaeyoung Kim / \uae40\uc7ac\uc601",
+          "affiliation": null
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/anears-vuno/DRAC22_MICCAI_FAI/tree/v1.0.0",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 2,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "10254192"
+            }
+          }
+        ]
+      }
+    },
+    "title": "anears-vuno/DRAC22_MICCAI_FAI: v1.0.0",
+    "links": {
+      "self": "https://zenodo.org/api/records/10369285",
+      "self_html": "https://zenodo.org/records/10369285",
+      "preview_html": "https://zenodo.org/records/10369285?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.10369285",
+      "self_doi": "https://doi.org/10.5281/zenodo.10369285",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10369285",
+      "reserve_doi": "https://zenodo.org/api/records/10369285/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/10254192",
+      "parent_html": "https://zenodo.org/records/10254192",
+      "parent_doi": "https://doi.org/10.5281/zenodo.10254192",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10254192",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10369285/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10369285/sequence/default",
+      "files": "https://zenodo.org/api/records/10369285/files",
+      "media_files": "https://zenodo.org/api/records/10369285/media-files",
+      "archive": "https://zenodo.org/api/records/10369285/files-archive",
+      "archive_media": "https://zenodo.org/api/records/10369285/media-files-archive",
+      "latest": "https://zenodo.org/api/records/10369285/versions/latest",
+      "latest_html": "https://zenodo.org/records/10369285/latest",
+      "versions": "https://zenodo.org/api/records/10369285/versions",
+      "draft": "https://zenodo.org/api/records/10369285/draft",
+      "access_links": "https://zenodo.org/api/records/10369285/access/links",
+      "access_grants": "https://zenodo.org/api/records/10369285/access/grants",
+      "access_users": "https://zenodo.org/api/records/10369285/access/users",
+      "access_request": "https://zenodo.org/api/records/10369285/access/request",
+      "access": "https://zenodo.org/api/records/10369285/access",
+      "communities": "https://zenodo.org/api/records/10369285/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/10369285/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/10369285/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/10369285/file-modification",
+      "requests": "https://zenodo.org/api/records/10369285/requests"
+    },
+    "updated": "2023-12-13T07:32:42.338343+00:00",
+    "recid": "10369285",
+    "revision": 4,
+    "files": [
+      {
+        "id": "8a048ae6-0f58-4ef5-a599-865c8317404c",
+        "key": "DRAC22_MODELS-20231213T055338Z-002.zip",
+        "size": 1937194578,
+        "checksum": "md5:d3fb0ae5c3b924b519de409b80a088bb",
+        "links": {
+          "self": "https://zenodo.org/api/records/10369285/files/DRAC22_MODELS-20231213T055338Z-002.zip/content"
+        }
+      },
+      {
+        "id": "5daed4ee-8c70-42ad-97ea-5ed2e33ab026",
+        "key": "DRAC22_MODELS-20231213T055338Z-003.zip",
+        "size": 1937098734,
+        "checksum": "md5:d292581ae5ca8e9b6150ac61e4ce192f",
+        "links": {
+          "self": "https://zenodo.org/api/records/10369285/files/DRAC22_MODELS-20231213T055338Z-003.zip/content"
+        }
+      },
+      {
+        "id": "398a92e1-cf0b-4ce7-b1e5-3dcd24845651",
+        "key": "anears-vuno/DRAC22_MICCAI_FAI-v1.0.0.zip",
+        "size": 1048932,
+        "checksum": "md5:a99a952d4da8a9e7db1a55e97dce6059",
+        "links": {
+          "self": "https://zenodo.org/api/records/10369285/files/anears-vuno/DRAC22_MICCAI_FAI-v1.0.0.zip/content"
+        }
+      },
+      {
+        "id": "9c588411-ad0d-4143-8cc9-eaba08bfa96d",
+        "key": "DRAC22_MODELS-20231213T055338Z-001.zip",
+        "size": 1589455796,
+        "checksum": "md5:f685f2a0df331607fdfcee649cfe8aa7",
+        "links": {
+          "self": "https://zenodo.org/api/records/10369285/files/DRAC22_MODELS-20231213T055338Z-001.zip/content"
+        }
+      },
+      {
+        "id": "698f34a6-a353-4c6d-9698-23fd7635daf1",
+        "key": "DRAC22_MODELS-20231213T055338Z-004.zip",
+        "size": 968931028,
+        "checksum": "md5:c1c64c8371a44349458989d198b37da5",
+        "links": {
+          "self": "https://zenodo.org/api/records/10369285/files/DRAC22_MODELS-20231213T055338Z-004.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1037191"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 132,
+      "unique_downloads": 122,
+      "views": 390,
+      "unique_views": 268,
+      "version_downloads": 63,
+      "version_unique_downloads": 63,
+      "version_unique_views": 54,
+      "version_views": 59
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 5,
+      "total_imaging_size": 0,
+      "total_archive_size": 6433729068
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "diabetic retinopathy imag*",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.963695974875363,
+      "confidence": 0.963695974875363
+    }
+  },
+  {
+    "created": "2024-07-13T15:48:34.143386+00:00",
+    "modified": "2024-07-13T15:48:34.280650+00:00",
+    "id": 12737836,
+    "conceptrecid": "11250482",
+    "doi": "10.5281/zenodo.12737836",
+    "conceptdoi": "10.5281/zenodo.11250482",
+    "doi_url": "https://doi.org/10.5281/zenodo.12737836",
+    "metadata": {
+      "title": "zhenzuo2/Human-Developmental-Retina-Atlas: v1.0.2",
+      "doi": "10.5281/zenodo.12737836",
+      "publication_date": "2024-07-13",
+      "description": "No description provided.",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Zhen Zuo",
+          "affiliation": "Baylor College of Medicine"
+        }
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/zhenzuo2/Human-Developmental-Retina-Atlas/tree/v1.0.2",
+          "relation": "isSupplementTo",
+          "resource_type": "software",
+          "scheme": "url"
+        }
+      ],
+      "version": "v1.0.2",
+      "resource_type": {
+        "title": "Software",
+        "type": "software"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 4,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "11250482"
+            }
+          }
+        ]
+      }
+    },
+    "title": "zhenzuo2/Human-Developmental-Retina-Atlas: v1.0.2",
+    "links": {
+      "self": "https://zenodo.org/api/records/12737836",
+      "self_html": "https://zenodo.org/records/12737836",
+      "preview_html": "https://zenodo.org/records/12737836?preview=1",
+      "doi": "https://doi.org/10.5281/zenodo.12737836",
+      "self_doi": "https://doi.org/10.5281/zenodo.12737836",
+      "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12737836",
+      "reserve_doi": "https://zenodo.org/api/records/12737836/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/11250482",
+      "parent_html": "https://zenodo.org/records/11250482",
+      "parent_doi": "https://doi.org/10.5281/zenodo.11250482",
+      "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11250482",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12737836/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12737836/sequence/default",
+      "files": "https://zenodo.org/api/records/12737836/files",
+      "media_files": "https://zenodo.org/api/records/12737836/media-files",
+      "archive": "https://zenodo.org/api/records/12737836/files-archive",
+      "archive_media": "https://zenodo.org/api/records/12737836/media-files-archive",
+      "latest": "https://zenodo.org/api/records/12737836/versions/latest",
+      "latest_html": "https://zenodo.org/records/12737836/latest",
+      "versions": "https://zenodo.org/api/records/12737836/versions",
+      "draft": "https://zenodo.org/api/records/12737836/draft",
+      "access_links": "https://zenodo.org/api/records/12737836/access/links",
+      "access_grants": "https://zenodo.org/api/records/12737836/access/grants",
+      "access_users": "https://zenodo.org/api/records/12737836/access/users",
+      "access_request": "https://zenodo.org/api/records/12737836/access/request",
+      "access": "https://zenodo.org/api/records/12737836/access",
+      "communities": "https://zenodo.org/api/records/12737836/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/12737836/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/12737836/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/12737836/file-modification",
+      "requests": "https://zenodo.org/api/records/12737836/requests"
+    },
+    "updated": "2024-07-13T15:48:34.280650+00:00",
+    "recid": "12737836",
+    "revision": 4,
+    "files": [
+      {
+        "id": "b2cc1f34-422a-4d93-887a-ca904d5c2826",
+        "key": "zhenzuo2/Human-Developmental-Retina-Atlas-v1.0.2.zip",
+        "size": 1645807,
+        "checksum": "md5:50d579985340d08269ff3318462a4b05",
+        "links": {
+          "self": "https://zenodo.org/api/records/12737836/files/zhenzuo2/Human-Developmental-Retina-Atlas-v1.0.2.zip/content"
+        }
+      }
+    ],
+    "swh": null,
+    "owners": [
+      {
+        "id": "1076386"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 130,
+      "unique_downloads": 122,
+      "views": 453,
+      "unique_views": 416,
+      "version_downloads": 114,
+      "version_unique_downloads": 106,
+      "version_unique_views": 340,
+      "version_views": 372
+    },
+    "state": "done",
+    "submitted": true,
+    "_file_analysis": {
+      "has_imaging_files": false,
+      "has_archives": true,
+      "imaging_file_count": 0,
+      "archive_count": 1,
+      "total_imaging_size": 0,
+      "total_archive_size": 1645807
+    },
+    "_dataset_links": [],
+    "_platform": "zenodo",
+    "_search_term": "retina dataset",
+    "_classification": {
+      "label": "EYE_IMAGING",
+      "prob_eye_imaging": 0.9636260774542333,
+      "confidence": 0.9636260774542333
+    }
+  }
+]
