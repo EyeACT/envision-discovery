@@ -100,6 +100,17 @@ Generated combinations of anatomy terms with data suffixes:
 - `{anatomy} imag*` (e.g., "retina imag*", "fundus imag*")
 - `{anatomy} dataset` (e.g., "macular dataset", "corneal dataset")
 - `{anatomy} data` (e.g., "OCT data", "choroidal data")
+- `{disease} imag*` (e.g., "diabetic retinopathy imag*")
+- `{brand} OCT/fundus/retina*/ophthalmol*` (e.g., "Zeiss OCT", "Heidelberg fundus")
+
+### AI/ML Specific Terms
+```
+retinal deep learning, fundus neural network, OCT machine learning,
+glaucoma detection dataset, diabetic retinopathy classification,
+retinal vessel segmentation, optic disc segmentation, macular hole detection
+```
+
+**Total: 249 unique search terms**
 
 ## Classification Approach
 
