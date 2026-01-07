@@ -1,6 +1,6 @@
-# ENVISION-Zenodo: Eye Imaging Dataset Discovery
+# ENVISION: Eye Imaging Dataset Discovery
 
-A systematic collection and classification of ophthalmic imaging datasets from Zenodo using few-shot learning. This is an ongoing project with classification results pending manual validation.
+A systematic collection and classification of ophthalmic imaging datasets using few-shot learning. This is an ongoing project with classification results pending manual validation.
 
 ## Project Status
 
@@ -26,7 +26,7 @@ We validated our results against datasets cited in the Envision Portal white pap
 | Fundus photography (DR) | zenodo.org/records/4891308 | ✅ Found (96.1% confidence) |
 | OCTA (Diabetic Retinopathy) | zenodo.org/records/10400092 | ✅ Found (96.8% confidence, restricted) |
 
-The OCTA dataset was initially missed because it has **restricted access** — the Zenodo API doesn't expose file information for such datasets. This discovery led us to run a separate classification pass on 1,289 restricted/embargoed records, identifying 285 additional eye imaging datasets.
+The OCTA dataset was initially missed because it has **restricted access** — the API's such as Zenodo API don't expose file information for such datasets. This discovery led us to run a separate classification pass on 1,289 restricted/embargoed records, identifying 285 additional eye imaging datasets.
 
 ### Why 579 Candidates?
 
