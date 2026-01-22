@@ -1,213 +1,150 @@
 # ENVISION: Eye Imaging Dataset Discovery
 
-A systematic collection and classification of ophthalmic imaging datasets using few-shot learning. This is an ongoing project with classification results pending manual validation.
+A systematic collection and classification of ophthalmic imaging datasets using few-shot learning.
 
-## Project Status
+## Installation
 
-**Work in Progress** — The classifier has been trained on a limited set of examples and requires further refinement to capture edge cases that may contain eye imaging data.
+```bash
+# Clone and install
+git clone https://github.com/EyeACT/envision-discovery.git
+cd envision-discovery
+pip install -e .
 
-## Current Results
+# Or install directly from GitHub
+pip install git+https://github.com/EyeACT/envision-discovery.git
+```
+
+## Usage
+
+```bash
+# Run classifier (trains model and classifies Zenodo metadata)
+python -m envision.classifier
+
+# Run scraper to collect new metadata
+python -m envision.scraper
+```
+
+## Current Results (v2 - January 2025)
 
 | Metric | Value |
 |--------|-------|
 | Total Zenodo records scraped | 30,439 |
-| Records with data files/links (open access) | 9,881 |
-| Open access eye imaging candidates | 579 |
-| Restricted access eye imaging candidates | 285 |
-| **Total eye imaging candidates** | **864** |
-| Total estimated data volume (open access) | ~1.14 TB |
+| Records with data files | 9,881 |
+| **Eye imaging datasets** | **380** |
+| Eye imaging software/tools | 70 |
+| Edge cases (research papers, etc.) | ~2,500 |
+| Negative (unrelated) | ~6,900 |
+
+### Classification Improvements
+
+The v2 classifier addresses key issues from v1:
+
+1. **4-class system**: Separates `EYE_SOFTWARE` (code/models) from `EYE_IMAGING` (actual datasets)
+2. **~620 training examples**: Up from ~210, including 200+ curated false positive patterns
+3. **Better model**: `Alibaba-NLP/gte-large-en-v1.5` (8K context) vs `thenlper/gte-large` (512 tokens)
+4. **False positive filtering**: Extensive negative examples for taxonomy papers, cardiovascular OCT, industrial imaging, etc.
 
 ### White Paper Validation
 
-We validated our results against datasets cited in the Envision Portal white paper:
+Datasets cited in the Envision Portal white paper:
 
 | Dataset | DOI | Status |
 |---------|-----|--------|
-| Fundus photography (DR) | zenodo.org/records/4891308 | ✅ Found (96.1% confidence) |
-| OCTA (Diabetic Retinopathy) | zenodo.org/records/10400092 | ✅ Found (96.8% confidence, restricted) |
-
-The OCTA dataset was initially missed because it has **restricted access** — the API's such as Zenodo API don't expose file information for such datasets. This discovery led us to run a separate classification pass on 1,289 restricted/embargoed records, identifying 285 additional eye imaging datasets.
-
-### Why 579 Candidates?
-
-These 579 records were classified as likely eye imaging datasets based on:
-- High semantic similarity to known ophthalmic imaging terminology (fundus, OCT, retinal, macular, etc.)
-- Presence of data files (images, archives) or links to dataset repositories
-- Low similarity to known false positive categories (cardiovascular OCT, industrial imaging, etc.)
-
-However, this count represents **preliminary candidates**, not confirmed datasets. The classifier may:
-- **Miss edge cases**: Datasets with unconventional descriptions or niche terminology
-- **Include false positives**: Records that match keywords but contain non-ophthalmic data
-- **Undercount**: Many edge case records (3,521) may contain relevant eye imaging data
-
-### Confidence Distribution
-
-| Confidence Level | Count | Notes |
-|-----------------|-------|-------|
-| High (≥0.95) | 63 | Likely accurate, still require verification |
-| Medium (0.80-0.95) | 173 | Probable eye imaging, manual review recommended |
-| Lower (<0.80) | 343 | Uncertain, higher false positive risk |
-
-## Next Steps
-
-1. **Manual Validation**: Review a stratified sample of candidates to measure precision
-2. **Edge Case Analysis**: Examine the 3,521 "edge case" records for missed eye imaging datasets
-3. **Classifier Refinement**: Incorporate validated labels to improve few-shot training
-4. **Expanded Negative Training**: Add additional false positive patterns as discovered
-
-## Search Keywords
-
-The scraper queried Zenodo using combinations of the following terms:
-
-### Ophthalmic Anatomy
-```
-eye, ophthalmic, ocular, retina, retinal, macula, macular, fovea, foveal,
-optic disc, optic nerve head, choroid, choroidal, cornea, corneal,
-anterior segment, posterior segment, vitreous, lens, iris, sclera,
-conjunctiva, fundus
-```
-
-### Imaging Modalities
-```
-OCT, optical coherence tomography, fundus photography, fundus imaging,
-OCTA, OCT angiography, fluorescein angiography, FA, ICG angiography,
-slit lamp, corneal topography, confocal microscopy, meibography,
-adaptive optics, scanning laser ophthalmoscopy, SLO
-```
-
-### Eye Diseases
-```
-diabetic retinopathy, glaucoma, macular degeneration, AMD, DME,
-diabetic macular edema, geographic atrophy, drusen, CNV,
-choroidal neovascularization, retinal detachment, macular hole,
-epiretinal membrane, keratoconus, cataract, retinitis pigmentosa
-```
-
-### Equipment Brands
-```
-Zeiss, Heidelberg, Spectralis, Cirrus, Topcon, Maestro, Triton,
-Optos, Nidek, Canon, Huvitz, Tomey
-```
-
-### Benchmark Dataset Names
-```
-DRIVE, STARE, CHASE_DB1, HRF, MESSIDOR, IDRiD, APTOS, REFUGE,
-RIM-ONE, ORIGA, ACRIMA, AIROGS, EyePACS, RFMiD, OLIVES
-```
-
-### Wildcard Search Patterns
-Generated combinations of anatomy terms with data suffixes:
-- `{anatomy} imag*` (e.g., "retina imag*", "fundus imag*")
-- `{anatomy} dataset` (e.g., "macular dataset", "corneal dataset")
-- `{anatomy} data` (e.g., "OCT data", "choroidal data")
-- `{disease} imag*` (e.g., "diabetic retinopathy imag*")
-- `{brand} OCT/fundus/retina*/ophthalmol*` (e.g., "Zeiss OCT", "Heidelberg fundus")
-
-### AI/ML Specific Terms
-```
-retinal deep learning, fundus neural network, OCT machine learning,
-glaucoma detection dataset, diabetic retinopathy classification,
-retinal vessel segmentation, optic disc segmentation, macular hole detection
-```
-
-**Total: 249 unique search terms**
+| Fundus photography (DR) | zenodo.org/records/4891308 | ✅ Found |
+| OCTA (Diabetic Retinopathy) | zenodo.org/records/10400092 | ✅ Found |
 
 ## Classification Approach
 
 ### SetFit Few-Shot Learning
 
-We used SetFit, a few-shot learning framework, due to limited labeled training data:
+We use SetFit, a few-shot learning framework optimized for limited labeled data:
 
-- **Base Model**: `thenlper/gte-large` (1024-dim sentence transformer)
+- **Base Model**: `Alibaba-NLP/gte-large-en-v1.5` (1024-dim, 8K context)
 - **Training**: 2 epochs, batch size 16
-- **Classes**: 
-  - `EYE_IMAGING` — Likely ophthalmic imaging datasets
-  - `EDGE_CASE` — Eye-related but uncertain (papers, code, non-imaging research)
-  - `NEGATIVE` — Not eye-related or known false positive patterns
+- **Classes**:
+  - `EYE_IMAGING` — Actual ophthalmic imaging datasets (fundus, OCT, OCTA, cornea, etc.)
+  - `EYE_SOFTWARE` — Code, tools, models for eye imaging (no actual data)
+  - `EDGE_CASE` — Eye research (papers, reviews, non-imaging data)
+  - `NEGATIVE` — Not eye-related
 
-### Training Data (Limited)
+### Training Data
 
 | Class | Examples | Description |
 |-------|----------|-------------|
-| POSITIVE | ~90 | Synthetic examples based on known eye imaging datasets |
-| EDGE_CASE | ~55 | Eye research papers, code repositories, animal studies |
-| NEGATIVE | ~65 | Non-eye data + known false positive patterns |
+| EYE_IMAGING | 137 | Known benchmark datasets + curated positives |
+| EYE_SOFTWARE | 29 | GitHub repos, model weights, toolboxes |
+| EDGE_CASE | 100 | Papers, reviews, animal studies, adjacent imaging |
+| NEGATIVE | 255 | Non-eye data + extensive false positive patterns |
 
-**Limitation**: Training examples were synthetically generated from domain knowledge, not manually labeled from actual Zenodo records. This introduces potential bias and may not capture the full variety of dataset descriptions.
-
-### Known False Positive Patterns
-
-The following categories were added to negative training to reduce misclassification:
+### Known False Positive Patterns (in NEGATIVE training)
 
 - **Cardiovascular OCT**: Intravascular OCT (IVOCT), coronary artery imaging
-- **Endoscopic imaging**: Colonoscopy, laparoscopy, bronchoscopy
+- **Taxonomy papers**: Biology papers with "FIGURES 1-10 in..." titles
 - **Industrial OCT/CT**: Material inspection, pharmaceutical, art conservation
-- **Dental OCT**: Tooth structure analysis
-- **Dermatology OCT**: Skin imaging, dermoscopy
-- **Pulmonary imaging**: Chest CT, lung nodule detection
+- **Non-ophthalmic medical**: Brain MRI, cardiac CT, mammography, dermoscopy
+- **Microscopy**: Cryo-EM, confocal, STORM (non-retinal)
+- **Acousto-optics**: Photonics, optical sensors, fiber optics
+- **Robotics**: Hand-eye calibration, machine vision
 
-Additional false positive patterns will be added as they are identified during manual review.
+## Search Keywords
 
-## Data Filtering
+The scraper queries Zenodo using 249 unique search terms across:
 
-Records were only considered for classification if they contained:
-1. **Data files** with extensions: `.dcm`, `.nii`, `.jpg`, `.png`, `.tif`, `.mat`, `.h5`, `.npy`, `.zip`, `.tar`, `.gz`
-2. **Dataset links** to: Kaggle, GitHub, Google Drive, HuggingFace, OSF, Dryad, etc.
-
-Records without data files or dataset references were excluded to focus on actual datasets rather than publications.
-
-## Output Files
-
-| File | Description |
-|------|-------------|
-| `results/zenodo_eye_imaging_v2.json` | 579 open access candidates (preliminary) |
-| `results/zenodo_eye_imaging_v2.tsv` | Tab-separated for spreadsheet review |
-| `results/zenodo_restricted_eye_imaging.json` | 285 restricted access candidates |
-| `data/zenodo_metadata_sample.json` | Sample of 20 high-confidence records |
-
-## Limitations
-
-1. **Unvalidated Results**: Classification has not been manually verified
-2. **Synthetic Training Data**: Model trained on generated examples, not labeled records
-3. **Keyword Bias**: May miss datasets with unusual or domain-specific terminology
-4. **Single Platform**: Currently only covers Zenodo; Figshare analysis in progress
-5. **Edge Case Gap**: 3,521 records classified as "edge cases" may contain relevant data
-6. **Restricted Access**: 285 restricted datasets identified separately (no file verification possible)
+- **Ophthalmic Anatomy**: retina, macula, fundus, cornea, optic disc, choroid
+- **Imaging Modalities**: OCT, OCTA, fundus photography, fluorescein angiography
+- **Eye Diseases**: diabetic retinopathy, glaucoma, AMD, DME, keratoconus
+- **Equipment Brands**: Zeiss, Heidelberg, Topcon, Optos
+- **Benchmark Datasets**: DRIVE, STARE, IDRiD, REFUGE, OLIVES, AIROGS
 
 ## Repository Structure
 
 ```
-envision_zenodo/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
+envision-discovery/
+├── envision/                  # Python package
+│   ├── __init__.py
+│   ├── classifier.py          # 4-class SetFit classifier
+│   └── scraper.py             # Zenodo metadata scraper
 ├── data/
 │   └── zenodo_metadata_sample.json
 ├── results/
-│   ├── zenodo_eye_imaging_v2.json
-│   └── zenodo_eye_imaging_v2.tsv
-├── scripts/
-│   ├── scraper.py              # Zenodo API scraper
-│   └── classifier.py           # SetFit classifier
-└── models/                      # For trained model weights (pending)
+│   ├── zenodo_eye_imaging.json
+│   └── zenodo_software.json
+├── pyproject.toml             # pip install configuration
+├── requirements.txt
+└── README.md
 ```
 
 ## Requirements
 
 ```
-python>=3.10
+python>=3.9
+torch>=2.0.0
 setfit>=1.0.0
 sentence-transformers>=2.2.0
-torch>=2.0.0
-requests>=2.28.0
+datasets>=2.0.0
+transformers>=4.30.0
 ```
+
+## Data Filtering
+
+Records are only classified if they contain:
+1. **Data files**: `.dcm`, `.nii`, `.jpg`, `.png`, `.tif`, `.mat`, `.h5`, `.npy`, `.zip`, `.tar`, `.gz`
+2. **Dataset links**: Kaggle, GitHub, Google Drive, HuggingFace, OSF, Dryad
+
+## Limitations
+
+1. Results require manual validation
+2. Single platform (Zenodo only; Figshare planned)
+3. Restricted access datasets identified separately
+4. May miss datasets with unusual terminology
 
 ## Contributing
 
-Manual validation contributions are welcome. To help:
-1. Review records in `results/zenodo_eye_imaging_v2.tsv`
-2. Visit each Zenodo URL to verify dataset contents
-3. Report false positives or missed datasets for classifier refinement
+Contributions welcome:
+1. Review records in `results/zenodo_eye_imaging.json`
+2. Visit Zenodo URLs to verify dataset contents
+3. Report false positives or missed datasets
 
 ## License
 
-This project collects metadata from publicly available Zenodo records. Individual dataset licenses vary — please check each dataset's license before use.
+MIT License. Individual dataset licenses vary — check each dataset before use.
