@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envision"
+version = "0.2.0"
+description = "Eye imaging dataset discovery and classification from Zenodo"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "James O'Neill"}
+]
+keywords = ["eye imaging", "ophthalmology", "OCT", "fundus", "retina", "machine learning", "dataset discovery"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.35.0",
+    "setfit>=1.0.0",
+    "datasets>=2.14.0",
+    "scikit-learn>=1.3.0",
+    "pandas>=2.0.0",
+    "requests>=2.31.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/joneill/envision"
+Repository = "https://github.com/joneill/envision"
+
+[project.scripts]
+envision-classify = "envision.classifier:main"
+envision-scrape = "envision.scraper:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["envision*"]
+
+[tool.setuptools.package-data]
+envision = ["*.json"]
+
