@@ -24,7 +24,7 @@ python -m envision.classifier
 python -m envision.scraper
 ```
 
-## Current Results (v2 - January 2025)
+## Current Results (January 2026)
 
 | Metric | Value |
 |--------|-------|
