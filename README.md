@@ -24,27 +24,26 @@ python -m envision.classifier
 python -m envision.scraper
 ```
 
-## Current Results (v2 - January 2026)
+## Current Results
 
 | Metric | Value |
 |--------|-------|
 | Total Zenodo records scraped | 30,439 |
 | Records with data files | 9,448 |
 | **Eye imaging datasets** | **524** |
-| Eye software (needs review) | 1,150 |
-| Edge cases (research papers, etc.) | 99 |
+| Eye software/code | 1,150 |
+| Edge cases (papers, etc.) | 99 |
 | Negative (unrelated) | 7,675 |
 
-> **Note**: The EYE_SOFTWARE class is over-inclusive, capturing general software repos. Manual review recommended for this category.
+### Confidence Distribution (EYE_IMAGING)
 
-### Classification Improvements
+| Confidence Level | Count | Notes |
+|-----------------|-------|-------|
+| High (≥0.95) | 485 | Strong candidates |
+| Medium (0.80-0.95) | 20 | Likely eye imaging |
+| Lower (<0.80) | 19 | Manual review recommended |
 
-The v2 classifier addresses key issues from v1:
-
-1. **4-class system**: Separates `EYE_SOFTWARE` (code/models) from `EYE_IMAGING` (actual datasets)
-2. **~620 training examples**: Up from ~210, including 200+ curated false positive patterns
-3. **Better model**: `Alibaba-NLP/gte-large-en-v1.5` (8K context) vs `thenlper/gte-large` (512 tokens)
-4. **False positive filtering**: Extensive negative examples for taxonomy papers, cardiovascular OCT, industrial imaging, etc.
+> **Note**: The EYE_SOFTWARE class captures general code repos beyond eye-specific software. Manual review recommended.
 
 ### White Paper Validation
 
@@ -108,11 +107,10 @@ envision-discovery/
 │   ├── __init__.py
 │   ├── classifier.py          # 4-class SetFit classifier
 │   └── scraper.py             # Zenodo metadata scraper
-├── data/
-│   └── zenodo_metadata_sample.json
 ├── results/
-│   ├── zenodo_eye_imaging.json
-│   └── zenodo_software.json
+│   ├── zenodo_eye_imaging.json    # 524 eye imaging datasets
+│   ├── zenodo_software.json       # 1,150 software/code repos
+│   └── zenodo_all_results.json    # All 9,448 classified records
 ├── pyproject.toml             # pip install configuration
 ├── requirements.txt
 └── README.md
