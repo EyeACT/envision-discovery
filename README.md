@@ -24,16 +24,18 @@ python -m envision.classifier
 python -m envision.scraper
 ```
 
-## Current Results (January 2026)
+## Current Results (v2 - January 2026)
 
 | Metric | Value |
 |--------|-------|
 | Total Zenodo records scraped | 30,439 |
-| Records with data files | 9,881 |
-| **Eye imaging datasets** | **380** |
-| Eye imaging software/tools | 70 |
-| Edge cases (research papers, etc.) | ~2,500 |
-| Negative (unrelated) | ~6,900 |
+| Records with data files | 9,448 |
+| **Eye imaging datasets** | **524** |
+| Eye software (needs review) | 1,150 |
+| Edge cases (research papers, etc.) | 99 |
+| Negative (unrelated) | 7,675 |
+
+> **Note**: The EYE_SOFTWARE class is over-inclusive, capturing general software repos. Manual review recommended for this category.
 
 ### Classification Improvements
 
@@ -71,10 +73,12 @@ We use SetFit, a few-shot learning framework optimized for limited labeled data:
 
 | Class | Examples | Description |
 |-------|----------|-------------|
-| EYE_IMAGING | 137 | Known benchmark datasets + curated positives |
-| EYE_SOFTWARE | 29 | GitHub repos, model weights, toolboxes |
-| EDGE_CASE | 100 | Papers, reviews, animal studies, adjacent imaging |
-| NEGATIVE | 255 | Non-eye data + extensive false positive patterns |
+| EYE_IMAGING | 99 | Known benchmark datasets + curated positives |
+| EYE_SOFTWARE | 30 | GitHub repos, model weights, toolboxes |
+| EDGE_CASE | 90 | Papers, reviews, animal studies, adjacent imaging |
+| NEGATIVE | 233 | Non-eye data + extensive false positive patterns |
+
+**Total: 452 training examples**
 
 ### Known False Positive Patterns (in NEGATIVE training)
 
