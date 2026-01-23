@@ -648,14 +648,21 @@ def main():
         total_size = sum(f.get('size', 0) for f in files)
         return img_count, arch_count, total_size
     
-    # Load records
+    # Load records (each file is a single record)
     records = []
-    for json_file in sorted(METADATA_DIR.glob("zenodo_*.json")):
-        with open(json_file) as f:
-            batch = json.load(f)
-            for r in batch:
-                if has_data_files(r):
-                    records.append(r)
+    json_files = list(METADATA_DIR.glob("*.json"))
+    print(f"Found {len(json_files):,} metadata files")
+    
+    for json_file in sorted(json_files):
+        try:
+            with open(json_file) as f:
+                record = json.load(f)
+            # Add zenodo_id from record
+            record['_zenodo_id'] = str(record.get('id', json_file.stem))
+            if has_data_files(record):
+                records.append(record)
+        except Exception as e:
+            pass  # Skip malformed files
     
     print(f"Loaded {len(records):,} records with data files")
     
