@@ -29,21 +29,31 @@ python -m envision.scraper
 | Metric | Value |
 |--------|-------|
 | Total Zenodo records scraped | 30,439 |
-| Records with data files | 9,448 |
-| **Eye imaging datasets** | **524** |
-| Eye software/code | 1,150 |
-| Edge cases (papers, etc.) | 99 |
-| Negative (unrelated) | 7,675 |
+| Records with data files | 10,016 |
+| **Eye imaging datasets** | **529** |
+| Eye software/code | 1,109 |
+| Edge cases (papers, etc.) | 141 |
+| Negative (unrelated) | 8,237 |
 
 ### Confidence Distribution (EYE_IMAGING)
 
 | Confidence Level | Count | Notes |
 |-----------------|-------|-------|
-| High (≥0.95) | 485 | Strong candidates |
-| Medium (0.80-0.95) | 20 | Likely eye imaging |
-| Lower (<0.80) | 19 | Manual review recommended |
+| High (≥0.95) | 482 | Strong candidates |
+| Medium (0.80-0.95) | 22 | Likely eye imaging |
+| Lower (<0.80) | 25 | Manual review recommended |
 
-> **Note**: The EYE_SOFTWARE class captures general code repos beyond eye-specific software. Manual review recommended.
+### Resource Type Breakdown (EYE_IMAGING)
+
+| Resource Type | Count | % |
+|---------------|-------|---|
+| Dataset | 311 | 58.8% |
+| Software | 72 | 13.6% |
+| Image/Figure | 67 | 12.7% |
+| Publication | 57 | 10.8% |
+| Other | 22 | 4.1% |
+
+> **Note**: ~60% are actual datasets. Recommend filtering by `resource_type == "dataset"` for pure data.
 
 ### White Paper Validation
 
@@ -130,8 +140,57 @@ transformers>=4.30.0
 ## Data Filtering
 
 Records are only classified if they contain:
-1. **Data files**: `.dcm`, `.nii`, `.jpg`, `.png`, `.tif`, `.mat`, `.h5`, `.npy`, `.zip`, `.tar`, `.gz`
-2. **Dataset links**: Kaggle, GitHub, Google Drive, HuggingFace, OSF, Dryad
+
+### Supported File Types
+
+| Category | Extensions |
+|----------|------------|
+| Standard Images | `.jpg`, `.jpeg`, `.png`, `.tif`, `.tiff`, `.bmp`, `.gif` |
+| Medical/Scientific | `.dcm`, `.dicom`, `.nii`, `.nii.gz`, `.mat`, `.h5`, `.hdf5`, `.npy`, `.npz` |
+| OCT-Specific | `.fds` (Topcon), `.e2e` (Heidelberg), `.vol` (Zeiss), `.oct`, `.fda` (Optovue), `.img` |
+| Archives | `.zip`, `.tar`, `.gz`, `.tar.gz`, `.rar`, `.7z` |
+
+### External Dataset Links
+
+Records with links to these platforms are also included:
+- Kaggle, HuggingFace, GitHub
+- Google Drive, OSF, Dryad, Figshare
+- OpenNeuro, PhysioNet, Synapse
+- Grand Challenge
+
+## Output Format
+
+Each record in `zenodo_eye_imaging.json` includes:
+
+```json
+{
+  "zenodo_id": "12166457",
+  "doi": "10.5281/zenodo.12166457",
+  "url": "https://zenodo.org/records/12166457",
+  
+  "label": "EYE_IMAGING",
+  "confidence": 0.9998847,
+  "prob_eye_imaging": 0.9998847,
+  
+  "title": "Corneal OCT elastography dataset",
+  "description": "Raw OCT data from corneal cross-linking study...",
+  "keywords": ["cornea", "OCT", "elastography"],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "resource_type": "dataset",
+  
+  "file_types": [".mat"],
+  "file_names": ["CXL_1.mat", "CXL_2.mat", ...],
+  "file_count": 33,
+  "img_count": 0,
+  "medical_count": 33,
+  "archive_count": 0,
+  "size_mb": 34378.5,
+  
+  "dataset_links": [],
+  "related_dois": ["10.1038/s41598-024-67278-1"]
+}
+```
 
 ## Limitations
 
@@ -139,6 +198,9 @@ Records are only classified if they contain:
 2. Single platform (Zenodo only; Figshare planned)
 3. Restricted access datasets identified separately
 4. May miss datasets with unusual terminology
+5. **Archive contents not inspected** - We only see top-level files; contents of `.zip`/`.7z` are not known without downloading
+6. **Mixed resource types** - Current scrape includes publications, figures, etc. (only ~24% are datasets)
+7. **GWAS/genomics filtering** - Records with only genomics files (`.fasta`, `.h5ad`, `.vcf`) are now excluded
 
 ## Contributing
 

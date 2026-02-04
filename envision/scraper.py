@@ -345,16 +345,26 @@ class ZenodoScraper:
         self.download_dir.mkdir(parents=True, exist_ok=True)
         self.metadata_dir.mkdir(parents=True, exist_ok=True)
     
-    def search(self, query: str, max_results: int = 1000) -> List[Dict]:
-        """Search Zenodo for records matching query."""
+    def search(self, query: str, max_results: int = 1000, datasets_only: bool = True) -> List[Dict]:
+        """Search Zenodo for records matching query.
+        
+        Args:
+            query: Search query string
+            max_results: Maximum number of results to return
+            datasets_only: If True, filter for resource_type=dataset only
+        """
         records = []
         page = 1
         per_page = 25  # Zenodo API max is 25
         
         while len(records) < max_results:
-            # Simple query - no filters, just the search terms
+            # Build query with optional dataset filter
+            full_query = query
+            if datasets_only:
+                full_query = f'({query}) AND resource_type.type:dataset'
+            
             params = {
-                'q': query,
+                'q': full_query,
                 'page': page,
                 'size': per_page,
             }
