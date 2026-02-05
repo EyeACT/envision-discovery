@@ -419,13 +419,25 @@ class ZenodoScraper:
     
     SEARCH_URL = "https://zenodo.org/api/records/"
     
-    def __init__(self, output_dir: Path):
+    def __init__(self, output_dir: Path, resume: bool = True):
         self.session = requests.Session()
         self.session.headers.update({'Accept': 'application/json'})
         self.seen_records: Set[int] = set()
         self.output_dir = Path(output_dir)
         self.metadata_dir = self.output_dir / "metadata" / "zenodo"
         self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Load existing records to avoid re-scraping
+        if resume:
+            existing = list(self.metadata_dir.glob("*.json"))
+            for f in existing:
+                try:
+                    record_id = int(f.stem)
+                    self.seen_records.add(record_id)
+                except ValueError:
+                    pass
+            if self.seen_records:
+                logger.info(f"Resuming: loaded {len(self.seen_records)} existing records")
         
         # Stats
         self.stats = {
@@ -435,6 +447,7 @@ class ZenodoScraper:
             'with_dataset_links': 0,
             'with_genomics_only': 0,
             'zips_inspected': 0,
+            'skipped_existing': 0,
         }
     
     def search(self, query: str, max_results: int = 1000, 
@@ -492,6 +505,9 @@ class ZenodoScraper:
                     if record_id and record_id not in self.seen_records:
                         self.seen_records.add(record_id)
                         self.stats['total_searched'] += 1
+                    elif record_id in self.seen_records:
+                        self.stats['skipped_existing'] += 1
+                        continue
                         
                         # Enrich record with analysis
                         enriched = self._enrich_record(hit, inspect_zips)
