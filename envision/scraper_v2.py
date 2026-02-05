@@ -465,8 +465,23 @@ class ZenodoScraper:
             }
             
             try:
-                response = self.session.get(self.SEARCH_URL, params=params, timeout=30)
-                response.raise_for_status()
+                # Rate limiting with exponential backoff
+                max_retries = 3
+                for attempt in range(max_retries):
+                    response = self.session.get(self.SEARCH_URL, params=params, timeout=30)
+                    
+                    if response.status_code == 429:
+                        wait_time = 5 * (2 ** attempt)  # 5, 10, 20 seconds
+                        logger.warning(f"Rate limited, waiting {wait_time}s (attempt {attempt + 1}/{max_retries})")
+                        time.sleep(wait_time)
+                        continue
+                    
+                    response.raise_for_status()
+                    break
+                else:
+                    logger.warning(f"Max retries exceeded for query '{query}'")
+                    break
+                
                 hits = response.json().get('hits', {}).get('hits', [])
                 
                 if not hits:
@@ -489,7 +504,7 @@ class ZenodoScraper:
                             self.stats['datasets_found'] += 1
                 
                 page += 1
-                time.sleep(1.0)  # Rate limit
+                time.sleep(2.0)  # Rate limit - 2 sec between pages
                 
                 if len(hits) < per_page:
                     break
@@ -643,6 +658,9 @@ def run_scrape(output_dir: Path,
         
         all_records.extend(results)
         logger.info(f"  Found {len(results)} matching datasets (total: {len(all_records)})")
+        
+        # Pause between search terms to avoid rate limiting
+        time.sleep(3.0)
     
     # Save summary
     summary = {
