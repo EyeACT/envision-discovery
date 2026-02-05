@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """
-Enhanced Eye Imaging Data Scraper for Zenodo
-=============================================
+ENVISION Eye Imaging Dataset Scraper
+=====================================
+Scrapes Zenodo for eye imaging datasets with intelligent filtering.
+
 Features:
 - Filters for datasets only (resource_type=dataset)
 - Inspects ZIP contents via HTTP Range requests (no full download needed)
 - Detects external dataset links (GitHub, Kaggle, HuggingFace, etc.)
 - Extracts weblinks to potential data files from descriptions
 - Excludes GWAS/genomics files (fasta, h5ad, vcf, etc.)
-- Stores rich metadata for downstream classification
 
-Author: ENVISION Team
+Part of the ENVISION project by the FAIR Data Innovations Hub.
+https://github.com/EyeACT/envision-discovery
 """
 
 import os
@@ -410,9 +412,9 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
 # ENHANCED ZENODO SCRAPER
 # =============================================================================
 
-class EnhancedZenodoScraper:
+class ZenodoScraper:
     """
-    Enhanced Zenodo scraper with ZIP inspection and link detection.
+    Zenodo scraper with ZIP inspection and link detection.
     """
     
     SEARCH_URL = "https://zenodo.org/api/records/"
@@ -611,22 +613,22 @@ PRIORITY_SEARCH_TERMS = [
 ]
 
 
-def run_enhanced_search(output_dir: Path, 
-                        datasets_only: bool = True,
-                        inspect_zips: bool = True,
-                        max_per_query: int = 500) -> List[Dict]:
+def run_scrape(output_dir: Path, 
+               datasets_only: bool = True,
+               inspect_zips: bool = True,
+               max_per_query: int = 500) -> List[Dict]:
     """
-    Run enhanced search with all features enabled.
+    Run full scrape with ZIP inspection and link detection.
     """
     logger.info("=" * 70)
-    logger.info("ENVISION Enhanced Scraper")
+    logger.info("ENVISION Zenodo Scraper")
     logger.info("=" * 70)
     logger.info(f"Output: {output_dir}")
     logger.info(f"Datasets only: {datasets_only}")
     logger.info(f"ZIP inspection: {inspect_zips}")
     logger.info(f"Search terms: {len(PRIORITY_SEARCH_TERMS)}")
     
-    scraper = EnhancedZenodoScraper(output_dir)
+    scraper = ZenodoScraper(output_dir)
     all_records = []
     
     for i, term in enumerate(PRIORITY_SEARCH_TERMS, 1):
@@ -662,22 +664,22 @@ def main():
     """Main entry point."""
     import argparse
     
-    parser = argparse.ArgumentParser(description="ENVISION Enhanced Zenodo Scraper")
+    parser = argparse.ArgumentParser(description="ENVISION Zenodo Scraper")
     parser.add_argument('--output', '-o', type=Path, 
                         default=Path('/home/joneill/Nextcloud/vaults/jmind/calmi2/envision-discovery/data'),
                         help='Output directory for scraped data')
-    parser.add_argument('--no-datasets-only', action='store_true',
+    parser.add_argument('--all-types', action='store_true',
                         help='Include all resource types, not just datasets')
     parser.add_argument('--no-zip-inspect', action='store_true',
-                        help='Skip ZIP content inspection')
+                        help='Skip ZIP content inspection (faster but less info)')
     parser.add_argument('--max-per-query', type=int, default=500,
                         help='Maximum results per search term')
     
     args = parser.parse_args()
     
-    run_enhanced_search(
+    run_scrape(
         output_dir=args.output,
-        datasets_only=not args.no_datasets_only,
+        datasets_only=not args.all_types,
         inspect_zips=not args.no_zip_inspect,
         max_per_query=args.max_per_query
     )
