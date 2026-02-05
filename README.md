@@ -199,9 +199,11 @@ Each record in `zenodo_eye_imaging.json` includes:
 3. Restricted access datasets identified separately
 4. May miss datasets with unusual terminology
 
-## Enhanced Scraper Features
+## Scraper
 
-The new `enhanced_scraper.py` adds:
+The scraper (`scraper_v2.py`) collects eye imaging datasets from Zenodo with intelligent filtering:
+
+### Features
 
 1. **ZIP Content Inspection** - Uses HTTP Range requests to read the last 64KB of ZIP files, extracting the file manifest without downloading the full archive. Works on multi-GB files!
 
@@ -224,11 +226,14 @@ The new `enhanced_scraper.py` adds:
 ### Usage
 
 ```bash
-# Full scrape with all features
-python -m envision.enhanced_scraper --output ./data
+# Full scrape
+python -m envision.scraper_v2 --output ./data
 
-# Quick test (no ZIP inspection)
-python -m envision.enhanced_scraper --output ./data --no-zip-inspect --max-per-query 50
+# Quick test (skip ZIP inspection)
+python -m envision.scraper_v2 --output ./data --no-zip-inspect --max-per-query 50
+
+# Include all resource types (not just datasets)
+python -m envision.scraper_v2 --output ./data --all-types
 ```
 
 ## Contributing
