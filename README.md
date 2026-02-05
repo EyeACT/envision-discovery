@@ -198,9 +198,38 @@ Each record in `zenodo_eye_imaging.json` includes:
 2. Single platform (Zenodo only; Figshare planned)
 3. Restricted access datasets identified separately
 4. May miss datasets with unusual terminology
-5. **Archive contents not inspected** - We only see top-level files; contents of `.zip`/`.7z` are not known without downloading
-6. **Mixed resource types** - Current scrape includes publications, figures, etc. (only ~24% are datasets)
-7. **GWAS/genomics filtering** - Records with only genomics files (`.fasta`, `.h5ad`, `.vcf`) are now excluded
+
+## Enhanced Scraper Features
+
+The new `enhanced_scraper.py` adds:
+
+1. **ZIP Content Inspection** - Uses HTTP Range requests to read the last 64KB of ZIP files, extracting the file manifest without downloading the full archive. Works on multi-GB files!
+
+2. **Dataset Links Detection** - Extracts links from `related_identifiers` and descriptions pointing to:
+   - GitHub, GitLab, Bitbucket
+   - Kaggle, HuggingFace, Google Drive
+   - OSF, Dryad, Figshare, Dataverse
+   - Cloud storage (S3, GCS, Azure)
+
+3. **Weblinks Extraction** - Parses descriptions for URLs to potential data files
+
+4. **Genomics Exclusion** - Automatically skips records with only genomics files:
+   - Sequences: `.fasta`, `.fastq`, `.fa`
+   - Single-cell: `.h5ad`, `.loom`, `.mtx`
+   - Alignments: `.bam`, `.sam`, `.cram`
+   - Variants: `.vcf`, `.bcf`
+
+5. **Datasets-Only Filter** - Searches only `resource_type=dataset`, skipping publications/figures
+
+### Usage
+
+```bash
+# Full scrape with all features
+python -m envision.enhanced_scraper --output ./data
+
+# Quick test (no ZIP inspection)
+python -m envision.enhanced_scraper --output ./data --no-zip-inspect --max-per-query 50
+```
 
 ## Contributing
 
