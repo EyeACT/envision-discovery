@@ -543,7 +543,8 @@ def main():
     
     # Configuration - edit for your environment
     BASE_DIR = Path(__file__).resolve().parent.parent
-    METADATA_DIR = BASE_DIR / "data" / "metadata_v2" / "zenodo"
+    # Use new clean scraped data (datasets only, with ZIP inspection)
+    METADATA_DIR = BASE_DIR / "data" / "metadata" / "zenodo"
     OUTPUT_DIR = BASE_DIR / "models" / "setfit_v6"
     RESULTS_DIR = BASE_DIR / "results"
     

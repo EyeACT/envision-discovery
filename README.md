@@ -28,32 +28,35 @@ python -m envision.scraper
 
 | Metric | Value |
 |--------|-------|
-| Total Zenodo records scraped | 30,439 |
-| Records with data files | 10,016 |
-| **Eye imaging datasets** | **529** |
-| Eye software/code | 1,109 |
-| Edge cases (papers, etc.) | 141 |
-| Negative (unrelated) | 8,237 |
+| Total Zenodo datasets scraped | 515 |
+| Datasets with data files | 514 |
+| **Eye imaging datasets** | **120** |
+| Eye software/code | 66 |
+| Edge cases | 3 |
+| Negative (unrelated) | 325 |
 
 ### Confidence Distribution (EYE_IMAGING)
 
 | Confidence Level | Count | Notes |
 |-----------------|-------|-------|
-| High (≥0.95) | 482 | Strong candidates |
-| Medium (0.80-0.95) | 22 | Likely eye imaging |
-| Lower (<0.80) | 25 | Manual review recommended |
+| High (≥0.95) | 117 | Strong candidates (97.5%) |
+| Medium (0.80-0.95) | 2 | Likely eye imaging |
+| Lower (<0.80) | 1 | Manual review recommended |
 
-### Resource Type Breakdown (EYE_IMAGING)
+### File Types in Eye Imaging Datasets
 
-| Resource Type | Count | % |
-|---------------|-------|---|
-| Dataset | 311 | 58.8% |
-| Software | 72 | 13.6% |
-| Image/Figure | 67 | 12.7% |
-| Publication | 57 | 10.8% |
-| Other | 22 | 4.1% |
+| File Type | Count |
+|-----------|-------|
+| .zip | 80 |
+| .rar | 10 |
+| .mat | 10 |
+| .tif | 7 |
+| .jpg | 4 |
+| .tar.gz | 4 |
+| .png | 3 |
+| .h5 | 3 |
 
-> **Note**: ~60% are actual datasets. Recommend filtering by `resource_type == "dataset"` for pure data.
+> **Note**: All records are `resource_type=dataset` (filtered during scraping). ZIP contents inspected via HTTP Range requests.
 
 ### White Paper Validation
 
