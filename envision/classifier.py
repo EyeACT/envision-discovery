@@ -592,40 +592,79 @@ def main():
     })
     print(f"Training dataset: {len(train_dataset)} examples")
     
-    # Train model
-    print(f"\n{'='*70}")
-    print(f"Training SetFit model with {MODEL_NAME}")
-    print("=" * 70)
+    # Check for --classify-only flag to skip training
+    import sys
+    classify_only = '--classify-only' in sys.argv
     
-    model = SetFitModel.from_pretrained(
-        MODEL_NAME,
-        labels=LABELS,
-        device=DEVICE,
-        trust_remote_code=True,
-    )
-    
-    args = TrainingArguments(
-        output_dir=str(OUTPUT_DIR / "checkpoints"),
-        batch_size=16,
-        num_epochs=2,
-        evaluation_strategy="no",
-        save_strategy="no",
-        logging_steps=50,
-    )
-    
-    trainer = Trainer(
-        model=model,
-        args=args,
-        train_dataset=train_dataset,
-    )
-    
-    print("Starting training...")
-    trainer.train()
-    
-    # Save model
-    OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
-    model.save_pretrained(str(OUTPUT_DIR))
-    print(f"Model saved to: {OUTPUT_DIR}")
+    if classify_only and (OUTPUT_DIR / "model.safetensors").exists():
+        # Load existing model
+        print(f"\n{'='*70}")
+        print(f"Loading existing model from {OUTPUT_DIR}")
+        print("=" * 70)
+        
+        # Workaround for SetFit bug with local model loading
+        from sentence_transformers import SentenceTransformer
+        import joblib
+        
+        # Load the sentence transformer backbone
+        st_model = SentenceTransformer(str(OUTPUT_DIR), trust_remote_code=True)
+        st_model = st_model.to(DEVICE)
+        
+        # Load the classification head
+        model_head = joblib.load(OUTPUT_DIR / "model_head.pkl")
+        
+        # Create a minimal wrapper for predictions
+        class LoadedModel:
+            def __init__(self, encoder, head, labels):
+                self.encoder = encoder
+                self.head = head
+                self.labels = labels
+            
+            def predict(self, texts):
+                embeddings = self.encoder.encode(texts, convert_to_numpy=True)
+                return self.head.predict(embeddings)
+            
+            def predict_proba(self, texts):
+                embeddings = self.encoder.encode(texts, convert_to_numpy=True)
+                return self.head.predict_proba(embeddings)
+        
+        model = LoadedModel(st_model, model_head, LABELS)
+        print("Model loaded successfully")
+    else:
+        # Train model
+        print(f"\n{'='*70}")
+        print(f"Training SetFit model with {MODEL_NAME}")
+        print("=" * 70)
+        
+        model = SetFitModel.from_pretrained(
+            MODEL_NAME,
+            labels=LABELS,
+            device=DEVICE,
+            trust_remote_code=True,
+        )
+        
+        args = TrainingArguments(
+            output_dir=str(OUTPUT_DIR / "checkpoints"),
+            batch_size=16,
+            num_epochs=2,
+            evaluation_strategy="no",
+            save_strategy="no",
+            logging_steps=50,
+        )
+        
+        trainer = Trainer(
+            model=model,
+            args=args,
+            train_dataset=train_dataset,
+        )
+        
+        print("Starting training...")
+        trainer.train()
+        
+        # Save model
+        OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+        model.save_pretrained(str(OUTPUT_DIR))
+        print(f"Model saved to: {OUTPUT_DIR}")
     
     # Load and classify Zenodo records
     print(f"\n{'='*70}")
@@ -721,6 +760,14 @@ def main():
                     url = link.get('url', link.get('identifier', ''))
                     if url:
                         links.append(str(url))
+        
+        # Check _weblinks from scraper (data_platform type = GitHub, Kaggle, etc.)
+        weblinks = record.get('_weblinks', [])
+        for wl in weblinks:
+            if isinstance(wl, dict) and wl.get('type') == 'data_platform':
+                url = wl.get('url', '')
+                if url:
+                    links.append(str(url))
         
         # Deduplicate - ensure all items are strings
         unique_links = []
@@ -900,7 +947,12 @@ def main():
             metadata_details = get_metadata_details(r)
             dataset_links = extract_dataset_links(r)
             
-            pred_int = {"NEGATIVE": 0, "EDGE_CASE": 1, "EYE_SOFTWARE": 2, "EYE_IMAGING": 3}.get(str(pred), int(pred) if isinstance(pred, (int, float)) else 0)
+            # Handle both string labels and integer predictions (including numpy types)
+            import numpy as np
+            if isinstance(pred, (int, float, np.integer)):
+                pred_int = int(pred)
+            else:
+                pred_int = {"NEGATIVE": 0, "EDGE_CASE": 1, "EYE_SOFTWARE": 2, "EYE_IMAGING": 3}.get(str(pred), 0)
             label = LABELS[pred_int]
             
             result = {
