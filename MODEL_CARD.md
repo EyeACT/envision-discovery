@@ -28,20 +28,28 @@ Uses `Alibaba-NLP/gte-large-en-v1.5` as backbone with 4-class classification:
 
 ## Results on Zenodo
 
+Tested on 515 Zenodo datasets (filtered to `resource_type=dataset` only):
+
 | Class | Count |
 |-------|-------|
-| EYE_IMAGING | 524 |
-| EYE_SOFTWARE | 1,150 |
-| EDGE_CASE | 99 |
-| NEGATIVE | 7,675 |
+| EYE_IMAGING | 120 |
+| EYE_SOFTWARE | 66 |
+| EDGE_CASE | 3 |
+| NEGATIVE | 325 |
 
 ### Confidence Distribution (EYE_IMAGING)
 
-| Confidence | Count |
-|------------|-------|
-| High (≥0.95) | 485 |
-| Medium (0.80-0.95) | 20 |
-| Lower (<0.80) | 19 |
+| Confidence | Count | % |
+|------------|-------|---|
+| High (≥0.95) | 117 | 97.5% |
+| Medium (0.80-0.95) | 2 | 1.7% |
+| Lower (<0.80) | 1 | 0.8% |
+
+### Data Pipeline
+
+- Scraped with datasets-only filter
+- ZIP contents inspected via HTTP Range requests (31,958 files catalogued)
+- Genomics files excluded (.fasta, .h5ad, .vcf, etc.)
 
 ## Training
 
