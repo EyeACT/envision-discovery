@@ -13,7 +13,8 @@ from huggingface_hub import HfApi, create_repo
 # Configuration
 MODEL_DIR = Path(__file__).parent / "models" / "setfit_v6"
 MODEL_CARD = Path(__file__).parent / "MODEL_CARD.md"
-REPO_ID = "EyeACT/envision-eye-imaging-classifier"
+# Use personal namespace - EyeACT org requires special permissions
+REPO_ID = "jimnoneill/envision-eye-imaging-classifier"
 
 def main():
     print(f"Uploading model to {REPO_ID}")
