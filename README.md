@@ -43,6 +43,8 @@ python -m envision.scraper
 | Medium (0.80-0.95) | 2 | Likely eye imaging |
 | Lower (<0.80) | 1 | Manual review recommended |
 
+**Records with external dataset links: 14** (GitHub, IEEE DataPort, etc.)
+
 ### File Types in Eye Imaging Datasets
 
 | File Type | Count |
