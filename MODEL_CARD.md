@@ -63,7 +63,7 @@ Tested on 515 Zenodo datasets (filtered to `resource_type=dataset` only):
 from sentence_transformers import SentenceTransformer
 import joblib
 
-model = SentenceTransformer("jimnoneill/envision-eye-imaging-classifier", trust_remote_code=True)
+model = SentenceTransformer("fairdataihub/envision-eye-imaging-classifier", trust_remote_code=True)
 head = joblib.load("model_head.pkl")
 
 embeddings = model.encode(["Retinal OCT dataset for diabetic retinopathy"])
