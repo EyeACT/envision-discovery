@@ -30,7 +30,7 @@ https://github.com/EyeACT/envision-discovery
 
 ### HuggingFace Model
 ```
-https://huggingface.co/jimnoneill/envision-eye-imaging-classifier
+https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 ```
 
 ---
@@ -303,4 +303,5 @@ def import_results(json_path, db_connection):
 # Usage:
 # import_results('results/zenodo_eye_imaging.json', conn)
 ```
+
 

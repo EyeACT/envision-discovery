@@ -186,7 +186,7 @@ A record qualifies for classification if it has:
 | Resource | Link |
 |----------|------|
 | GitHub Repository | https://github.com/EyeACT/envision-discovery |
-| HuggingFace Model | https://huggingface.co/jimnoneill/envision-eye-imaging-classifier |
+| HuggingFace Model | https://huggingface.co/fairdataihub/envision-eye-imaging-classifier |
 | Results JSON | `results/zenodo_eye_imaging.json` |
 | Validation Doc | `docs/SPOT_CHECK_VALIDATION.md` |
 
@@ -206,4 +206,5 @@ A record qualifies for classification if it has:
 | 0.80-0.95 | Likely valid | Light review |
 | 0.60-0.80 | Uncertain | Manual verification |
 | <0.60 | Probably not eye imaging | Exclude unless flagged |
+
 
