@@ -1,0 +1,188 @@
+{
+  "created": "2025-06-11T16:56:07.754211+00:00",
+  "modified": "2025-06-23T15:09:17.970347+00:00",
+  "id": 15054026,
+  "conceptrecid": "15054025",
+  "doi": "10.5281/zenodo.15054026",
+  "conceptdoi": "10.5281/zenodo.15054025",
+  "doi_url": "https://doi.org/10.5281/zenodo.15054026",
+  "metadata": {
+    "title": "OCT images of sodium iodate induced retinal degeneration and corresponding ML models for image segmentation",
+    "doi": "10.5281/zenodo.15054026",
+    "publication_date": "2025-03-20",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zeng, Yong",
+        "affiliation": "National Eye Institute"
+      },
+      {
+        "name": "Qian, Haohua",
+        "affiliation": "National Eye Institute",
+        "orcid": "0000-0002-1114-4697"
+      },
+      {
+        "name": "Zhou, Jiaming",
+        "affiliation": "National Eye Institute"
+      }
+    ],
+    "version": "1.0.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15054025"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCT images of sodium iodate induced retinal degeneration and corresponding ML models for image segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/15054026",
+    "self_html": "https://zenodo.org/records/15054026",
+    "preview_html": "https://zenodo.org/records/15054026?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15054026",
+    "self_doi": "https://doi.org/10.5281/zenodo.15054026",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15054026",
+    "reserve_doi": "https://zenodo.org/api/records/15054026/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15054025",
+    "parent_html": "https://zenodo.org/records/15054025",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15054025",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15054025",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15054026/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15054026/sequence/default",
+    "files": "https://zenodo.org/api/records/15054026/files",
+    "media_files": "https://zenodo.org/api/records/15054026/media-files",
+    "archive": "https://zenodo.org/api/records/15054026/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15054026/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15054026/versions/latest",
+    "latest_html": "https://zenodo.org/records/15054026/latest",
+    "versions": "https://zenodo.org/api/records/15054026/versions",
+    "draft": "https://zenodo.org/api/records/15054026/draft",
+    "access_links": "https://zenodo.org/api/records/15054026/access/links",
+    "access_grants": "https://zenodo.org/api/records/15054026/access/grants",
+    "access_users": "https://zenodo.org/api/records/15054026/access/users",
+    "access_request": "https://zenodo.org/api/records/15054026/access/request",
+    "access": "https://zenodo.org/api/records/15054026/access",
+    "communities": "https://zenodo.org/api/records/15054026/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15054026/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15054026/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15054026/file-modification",
+    "requests": "https://zenodo.org/api/records/15054026/requests"
+  },
+  "updated": "2025-06-23T15:09:17.970347+00:00",
+  "recid": "15054026",
+  "revision": 6,
+  "files": [
+    {
+      "id": "8709850b-c760-4738-9032-4440e884bc46",
+      "key": "NaIO3 project.zip",
+      "size": 160996061,
+      "checksum": "md5:7cd268a99d5ec3bad9613e58d0c89305",
+      "links": {
+        "self": "https://zenodo.org/api/records/15054026/files/NaIO3 project.zip/content"
+      }
+    },
+    {
+      "id": "cae31bec-9818-44e6-8572-a5caea864bee",
+      "key": "Models.zip",
+      "size": 539968532,
+      "checksum": "md5:855daceff69708da4db570346e3fe858",
+      "links": {
+        "self": "https://zenodo.org/api/records/15054026/files/Models.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1198287"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 26,
+    "unique_downloads": 21,
+    "views": 53,
+    "unique_views": 45,
+    "version_downloads": 26,
+    "version_unique_downloads": 21,
+    "version_unique_views": 45,
+    "version_views": 53
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 700964593,
+    "top_level_files": [
+      {
+        "name": "NaIO3 project.zip",
+        "size": 160996061
+      },
+      {
+        "name": "Models.zip",
+        "size": 539968532
+      }
+    ],
+    "zip_contents": {
+      "models.zip": {
+        "total_files": 40,
+        "total_directories": 23,
+        "total_uncompressed_bytes": 600516806,
+        "file_types": {
+          ".h5": 20
+        },
+        "imaging_file_count": 20,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "models/wt model/model_wt8/model_wt8.h5",
+          "models/wt model/model_wt6/model_wt6.h5",
+          "models/wt model/model_wt1/model_wt1.h5",
+          "models/wt model/model_wt7/model_wt7.h5",
+          "models/wt model/model_wt9/model_wt9.h5",
+          "models/wt model/model_wt2/model_wt2.h5",
+          "models/wt model/model_wt5/model_wt5.h5",
+          "models/wt model/model_wt4/model_wt4.h5",
+          "models/wt model/model_wt3/model_wt3.h5",
+          "models/wt model/model_wt10/model_wt10.h5"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "models/wt model/model_wt8/model_wt8.h5",
+      "models/wt model/model_wt6/model_wt6.h5",
+      "models/wt model/model_wt1/model_wt1.h5",
+      "models/wt model/model_wt7/model_wt7.h5",
+      "models/wt model/model_wt9/model_wt9.h5",
+      "models/wt model/model_wt2/model_wt2.h5",
+      "models/wt model/model_wt5/model_wt5.h5",
+      "models/wt model/model_wt4/model_wt4.h5",
+      "models/wt model/model_wt3/model_wt3.h5",
+      "models/wt model/model_wt10/model_wt10.h5"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:51.537460"
+}

@@ -1,0 +1,351 @@
+{
+  "created": "2023-04-09T17:22:27.795314+00:00",
+  "modified": "2023-04-10T02:26:37.834968+00:00",
+  "id": 7806898,
+  "conceptrecid": "7806897",
+  "doi": "10.5281/zenodo.7806898",
+  "conceptdoi": "10.5281/zenodo.7806897",
+  "doi_url": "https://doi.org/10.5281/zenodo.7806898",
+  "metadata": {
+    "title": "High-resolution structural and functional retinal imaging in the awake behaving mouse",
+    "doi": "10.5281/zenodo.7806898",
+    "publication_date": "2023-04-06",
+    "description": "<p>Source data presented in Communications Biology paper Feng et al. 2023 &ndash; &lsquo;High-resolution structural and functional retinal imaging in the awake behaving mouse&rsquo;. Complete processed data presented in Figures 2 and 3 are uploaded along with the raw simultaneously recorded rotary encoder data. Raw SLO video data of only one animal is provided due to the large size. All raw OCT&nbsp;and AOSLO&nbsp; images presented in Figures 4,6-10 are included. Codes for data analysis are available at GitHub: https://github.com/GP-Feng/Awake_Mouse_Imaging_CommBio. For additional data or questions, please contact authors Guanping Feng (gfeng4@ur.rochester.edu) or Jesse Schallek (jschall3@ur.rochester.edu).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Guanping Feng",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Aby Joseph",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Kosha Dholakia",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Fei Shang",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Charles W. Pfeifer",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Derek Power",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Krishnan Padmanabhan",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Jesse Schallek",
+        "affiliation": "University of Rochester"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7806897"
+          }
+        }
+      ]
+    }
+  },
+  "title": "High-resolution structural and functional retinal imaging in the awake behaving mouse",
+  "links": {
+    "self": "https://zenodo.org/api/records/7806898",
+    "self_html": "https://zenodo.org/records/7806898",
+    "preview_html": "https://zenodo.org/records/7806898?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7806898",
+    "self_doi": "https://doi.org/10.5281/zenodo.7806898",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7806898",
+    "reserve_doi": "https://zenodo.org/api/records/7806898/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7806897",
+    "parent_html": "https://zenodo.org/records/7806897",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7806897",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7806897",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7806898/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7806898/sequence/default",
+    "files": "https://zenodo.org/api/records/7806898/files",
+    "media_files": "https://zenodo.org/api/records/7806898/media-files",
+    "archive": "https://zenodo.org/api/records/7806898/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7806898/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7806898/versions/latest",
+    "latest_html": "https://zenodo.org/records/7806898/latest",
+    "versions": "https://zenodo.org/api/records/7806898/versions",
+    "draft": "https://zenodo.org/api/records/7806898/draft",
+    "access_links": "https://zenodo.org/api/records/7806898/access/links",
+    "access_grants": "https://zenodo.org/api/records/7806898/access/grants",
+    "access_users": "https://zenodo.org/api/records/7806898/access/users",
+    "access_request": "https://zenodo.org/api/records/7806898/access/request",
+    "access": "https://zenodo.org/api/records/7806898/access",
+    "communities": "https://zenodo.org/api/records/7806898/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7806898/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7806898/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7806898/file-modification",
+    "requests": "https://zenodo.org/api/records/7806898/requests"
+  },
+  "updated": "2023-04-10T02:26:37.834968+00:00",
+  "recid": "7806898",
+  "revision": 2,
+  "files": [
+    {
+      "id": "a29214e1-a8a4-43b6-a190-28771782555b",
+      "key": "Figure10.zip",
+      "size": 4304229988,
+      "checksum": "md5:bae15cbf7d41efb4e38cb3a348877f2b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure10.zip/content"
+      }
+    },
+    {
+      "id": "a56ca4fb-ee9d-433c-8724-bb2451c0f9c7",
+      "key": "Figure4.zip",
+      "size": 1095127102,
+      "checksum": "md5:e266a7f1bb3ff7dc4f03b9faf72cd533",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure4.zip/content"
+      }
+    },
+    {
+      "id": "eacf9522-4b05-4edc-8d1a-c619808c600c",
+      "key": "Figure6_7.zip",
+      "size": 520732481,
+      "checksum": "md5:9467e05af42111af0080636c2cf75de4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure6_7.zip/content"
+      }
+    },
+    {
+      "id": "b18cdccf-9678-4711-b5a1-e075164f8a49",
+      "key": "Figure8_9.zip",
+      "size": 1312743594,
+      "checksum": "md5:5c3ca40e37d4de28305dba0c8ff6760a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure8_9.zip/content"
+      }
+    },
+    {
+      "id": "6df722d9-70e4-41b8-94cb-1befffc1ad45",
+      "key": "Figure2.zip",
+      "size": 3459532432,
+      "checksum": "md5:b82f4086754a195541181a0f7b7be393",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure2.zip/content"
+      }
+    },
+    {
+      "id": "740f6408-38bd-4252-b7de-1d70434b9674",
+      "key": "Figure3.zip",
+      "size": 3439856871,
+      "checksum": "md5:28d24fdfa4f9e2d0cd6790f81b05dbe7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7806898/files/Figure3.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "361207"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 250,
+    "unique_downloads": 219,
+    "views": 133,
+    "unique_views": 124,
+    "version_downloads": 250,
+    "version_unique_downloads": 219,
+    "version_unique_views": 124,
+    "version_views": 133
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 6,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 14132222468,
+    "top_level_files": [
+      {
+        "name": "Figure10.zip",
+        "size": 4304229988
+      },
+      {
+        "name": "Figure4.zip",
+        "size": 1095127102
+      },
+      {
+        "name": "Figure6_7.zip",
+        "size": 520732481
+      },
+      {
+        "name": "Figure8_9.zip",
+        "size": 1312743594
+      },
+      {
+        "name": "Figure2.zip",
+        "size": 3459532432
+      },
+      {
+        "name": "Figure3.zip",
+        "size": 3439856871
+      }
+    ],
+    "zip_contents": {
+      "figure4.zip": {
+        "total_files": 24,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 1611810888,
+        "file_types": {
+          ".tif": 12
+        },
+        "imaging_file_count": 12,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_16h_45m_53.436s.tif",
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_16h_57m_25.578s.tif",
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_12m_07.42s.tif",
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_27m_29.175s.tif",
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_42m_12.121s.tif",
+          "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_57m_30.136s.tif",
+          "figure4/awake_wfs/wf_awake_2020-02-05_16h_32m_52.213s.tif",
+          "figure4/awake_wfs/wf_awake_2020-02-05_16h_50m_20.768s.tif",
+          "figure4/awake_wfs/wf_awake_2020-02-05_17h_05m_31.83s.tif",
+          "figure4/awake_wfs/wf_awake_2020-02-05_17h_21m_20.1s.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "figure6_7.zip": {
+        "total_files": 18,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 739952640,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "figure8_9.zip": {
+        "total_files": 47,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 1936719872,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "figure2.zip": {
+        "total_files": 188,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 18085821708,
+        "file_types": {
+          ".mat": 85,
+          ".tif": 1
+        },
+        "imaging_file_count": 86,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "figure2/raw_video/02328_10-03-19_pupilscale.tif",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_000_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_001_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_002_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_003_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_004_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_005_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_006_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_007_output.mat",
+          "figure2/tracked_pupil/02473_10-3-19_pupil_008_output.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "figure3.zip": {
+        "total_files": 187,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 18072867001,
+        "file_types": {
+          ".mat": 85
+        },
+        "imaging_file_count": 85,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "figure3/retinal tracking output/02473_10-3-19_retina_000_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_001_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_002_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_003_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_004_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_005_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_006_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_007_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_008_output.mat",
+          "figure3/retinal tracking output/02473_10-3-19_retina_009_output.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_16h_45m_53.436s.tif",
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_16h_57m_25.578s.tif",
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_12m_07.42s.tif",
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_27m_29.175s.tif",
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_42m_12.121s.tif",
+      "figure4/anesthesia_wfs/wf_anesthetized_2020-07-11_17h_57m_30.136s.tif",
+      "figure4/awake_wfs/wf_awake_2020-02-05_16h_32m_52.213s.tif",
+      "figure4/awake_wfs/wf_awake_2020-02-05_16h_50m_20.768s.tif",
+      "figure4/awake_wfs/wf_awake_2020-02-05_17h_05m_31.83s.tif",
+      "figure4/awake_wfs/wf_awake_2020-02-05_17h_21m_20.1s.tif",
+      "figure2/raw_video/02328_10-03-19_pupilscale.tif",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_000_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_001_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_002_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_003_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_004_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_005_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_006_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_007_output.mat",
+      "figure2/tracked_pupil/02473_10-3-19_pupil_008_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_000_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_001_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_002_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_003_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_004_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_005_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_006_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_007_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_008_output.mat",
+      "figure3/retinal tracking output/02473_10-3-19_retina_009_output.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/GP-Feng/Awake_Mouse_Imaging_CommBio",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:01.472666"
+}

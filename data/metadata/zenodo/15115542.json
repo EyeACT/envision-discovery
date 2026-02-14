@@ -1,0 +1,210 @@
+{
+  "created": "2025-03-31T17:14:53.762934+00:00",
+  "modified": "2025-03-31T17:35:19.811632+00:00",
+  "id": 15115542,
+  "conceptrecid": "14884614",
+  "doi": "10.5281/zenodo.15115542",
+  "conceptdoi": "10.5281/zenodo.14884614",
+  "doi_url": "https://doi.org/10.5281/zenodo.15115542",
+  "metadata": {
+    "title": "Dataset and codes for paper: VSOT: Volume-Surface Optimization for Accurate Ultrastructure Analysis of Dendritic Spines",
+    "doi": "10.5281/zenodo.15115542",
+    "publication_date": "2025-03-31",
+    "description": "<h1>VSOT: Volume-Surface Optimization for Accurate Ultrastructure Analysis of Dendritic Spines.</h1>\n<p>VSOT is a method based on volume-surface optimization that is designed for the accurate structural analysis of dendritic reconstruction. VSOT accurately segments dendritic reconstructions into compartments, including spine, spine head and neck, by leveraging advanced optimization techniques that integrate local surface and global volumetric information. Our tests on public datasets of spine segmentation, as well as on a first-of-its-kind dataset of head-neck segmentation that we manually constructed, show that VSOT offers more accurate results than peer methods. When applied to a large EM dataset of different brain layers, VSOT reveals how the structure of dendrites varies across brain areas. Furthermore, we explored the structural relationships between neurons and astrocytes in tripartite synapses. With the newly developed computation methods, neuroscientists can exploit the large-scale volumetric EM data to address various scientific questions and advance the understanding of neural circuits.</p>\n<h2>Contents:</h2>\n<h2>'performance_testing_level_1_segmentation.zip'</h2>\n<p>A ground truth dataset designed for testing the performance of dendritic spine and shaft segmentation. This data was acquired by converting the 3D reconstruction of dendrite #5 from the dataset published by Kasthuri <em>et al.</em> (2015)</p>\n<h2>'performance_testing_level_2_segmentation.zip'</h2>\n<p>Ground truth dataset for performance testing the spine head-neck segmentation. It contains over 700 dendritic spines that are segmented from the MICrONS dataset (Consortium et al. 2021) with annotations. It involves independent labeling of the cut between the spine head and spine neck by three annotators. Quality control was implemented by retaining only those that reached a consensus, resulting in 636 samples. Additionally, we included 67 stubby spines.</p>\n<h2>'segmentation_example_data.zip'</h2>\n<p>Demo data for the complete VSOT pipeline, featuring the segmentation of a single dendrite alongside the nearby astrocyte segmentation. Users can utilize this example data to evaluate the level-1 and level-2 segmentation and the quantification modules of VSOT.&nbsp;</p>\n<h2>'results.zip'</h2>\n<p>Results for the two performance tests and the results after applying VSOT to the example dataset.</p>\n<h2>'VSOT-main.zip'</h2>\n<p>Codes for VSOT, containing the codes for preprocessing, level-1, level-2, experiments and quantification. It is also stored in Github <a href=\"https://github.com/yu-lab-vt/VSOT.git\">https://github.com/yu-lab-vt/VSOT.git</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Lyu, Boyu",
+        "affiliation": "Virginia Tech",
+        "orcid": "0000-0002-9534-3377"
+      },
+      {
+        "name": "Wang, Jiangxiong",
+        "affiliation": null
+      },
+      {
+        "name": "Yu, Guoqiang",
+        "affiliation": "Tsinghua University",
+        "orcid": "0000-0002-6743-7413"
+      },
+      {
+        "name": "Risher, W Christopher",
+        "affiliation": "Marshall University",
+        "orcid": "0000-0002-2230-2865"
+      }
+    ],
+    "references": [
+      "Kasthuri, Narayanan, et al. \"Saturated reconstruction of a volume of neocortex.\" Cell 162.3 (2015): 648-661.",
+      "MICrONs Consortium et al. Functional connectomics spanning multiple areas of mouse visual cortex. bioRxiv 2021.07.28.454025; doi: https://doi.org/10.1101/2021.07.28.454025"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/yu-lab-vt/VSOT"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14884614"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset and codes for paper: VSOT: Volume-Surface Optimization for Accurate Ultrastructure Analysis of Dendritic Spines",
+  "links": {
+    "self": "https://zenodo.org/api/records/15115542",
+    "self_html": "https://zenodo.org/records/15115542",
+    "preview_html": "https://zenodo.org/records/15115542?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15115542",
+    "self_doi": "https://doi.org/10.5281/zenodo.15115542",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15115542",
+    "reserve_doi": "https://zenodo.org/api/records/15115542/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14884614",
+    "parent_html": "https://zenodo.org/records/14884614",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14884614",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14884614",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15115542/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15115542/sequence/default",
+    "files": "https://zenodo.org/api/records/15115542/files",
+    "media_files": "https://zenodo.org/api/records/15115542/media-files",
+    "archive": "https://zenodo.org/api/records/15115542/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15115542/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15115542/versions/latest",
+    "latest_html": "https://zenodo.org/records/15115542/latest",
+    "versions": "https://zenodo.org/api/records/15115542/versions",
+    "draft": "https://zenodo.org/api/records/15115542/draft",
+    "access_links": "https://zenodo.org/api/records/15115542/access/links",
+    "access_grants": "https://zenodo.org/api/records/15115542/access/grants",
+    "access_users": "https://zenodo.org/api/records/15115542/access/users",
+    "access_request": "https://zenodo.org/api/records/15115542/access/request",
+    "access": "https://zenodo.org/api/records/15115542/access",
+    "communities": "https://zenodo.org/api/records/15115542/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15115542/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15115542/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15115542/file-modification",
+    "requests": "https://zenodo.org/api/records/15115542/requests"
+  },
+  "updated": "2025-03-31T17:35:19.811632+00:00",
+  "recid": "15115542",
+  "revision": 6,
+  "files": [
+    {
+      "id": "4bd8d37d-790b-4ce8-92fd-47c14a34212c",
+      "key": "VSOT-main.zip",
+      "size": 467121078,
+      "checksum": "md5:bc7e3176bcbd4aa0cef1b783936db3c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/15115542/files/VSOT-main.zip/content"
+      }
+    },
+    {
+      "id": "1b235608-bad5-4498-96e1-8718218a1062",
+      "key": "performance_testing_level_1_segmentation.zip",
+      "size": 546953144,
+      "checksum": "md5:061a5ce7f2a1d6c9baac5c00b2e970d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/15115542/files/performance_testing_level_1_segmentation.zip/content"
+      }
+    },
+    {
+      "id": "5f7d40fa-8484-4736-a75f-65e57ae065e5",
+      "key": "segmentation_example_data.zip",
+      "size": 1532000121,
+      "checksum": "md5:7095d11f972004b60158d13088d92ce8",
+      "links": {
+        "self": "https://zenodo.org/api/records/15115542/files/segmentation_example_data.zip/content"
+      }
+    },
+    {
+      "id": "e384b262-1ab0-43b9-8d1e-4df831617551",
+      "key": "performance_testing_level_2_segmentation.zip",
+      "size": 750333032,
+      "checksum": "md5:fecee85afb9ff4be3ef46a0faf0404f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/15115542/files/performance_testing_level_2_segmentation.zip/content"
+      }
+    },
+    {
+      "id": "82304506-5cbc-4c00-914c-4660b70c814d",
+      "key": "results.zip",
+      "size": 748929597,
+      "checksum": "md5:46bc76bc16234f2f3088f6b47f30d8dd",
+      "links": {
+        "self": "https://zenodo.org/api/records/15115542/files/results.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1123847"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 261,
+    "unique_downloads": 258,
+    "views": 142,
+    "unique_views": 121,
+    "version_downloads": 150,
+    "version_unique_downloads": 149,
+    "version_unique_views": 56,
+    "version_views": 64
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4045336972,
+    "top_level_files": [
+      {
+        "name": "VSOT-main.zip",
+        "size": 467121078
+      },
+      {
+        "name": "performance_testing_level_1_segmentation.zip",
+        "size": 546953144
+      },
+      {
+        "name": "segmentation_example_data.zip",
+        "size": 1532000121
+      },
+      {
+        "name": "performance_testing_level_2_segmentation.zip",
+        "size": 750333032
+      },
+      {
+        "name": "results.zip",
+        "size": 748929597
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/yu-lab-vt/VSOT.git",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:33.329340"
+}

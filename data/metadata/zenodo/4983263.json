@@ -1,0 +1,481 @@
+{
+  "created": "2021-06-18T12:21:55.082370+00:00",
+  "modified": "2022-05-27T20:04:14.335373+00:00",
+  "id": 4983263,
+  "conceptrecid": "4983262",
+  "doi": "10.5061/dryad.dd00m",
+  "doi_url": "https://doi.org/10.5061/dryad.dd00m",
+  "metadata": {
+    "title": "Data from: Rapid mobilization of abdominal fat in migrating eared grebes",
+    "doi": "10.5061/dryad.dd00m",
+    "publication_date": "2016-08-23",
+    "description": "Eared grebes Podiceps nigricollis, like shorebirds and other long-distance migrants, lay down large amounts of fat to power their journeys. To investigate the pattern of how fat and soft tissue might be mobilized, we used grebes killed in migration and applied computed tomography to reconstruct how stores in the chest, thorax, and abdomen were reduced as body weight decreased. Fat and soft tissue were each mobilized at a constant rate through the entire migration. Fat stores in birds embarking on migration were greater in the abdomen than thorax than chest. In contrast to previous studies indicating that abdominal fat was mobilized first, we found that fat from all areas was mobilized concurrently, but that abdominal fat was catabolized at a greater rate. We suggest why this pattern might be advantageous, consider whether inter-depot differences in fat composition might be involved, and note possible energetic consequences. Whether our findings pertain to other obese or long distance migrants remains to be determined.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Straker, Lorian Cobra",
+        "affiliation": "National Museum of Natural History"
+      },
+      {
+        "name": "Jehl Jr., Joseph R.",
+        "affiliation": "Division of Birds, U. S. National Museum of Natural History; Washington DC USA*"
+      },
+      {
+        "name": "Jehl, Joseph R.",
+        "affiliation": "National Museum of Natural History"
+      }
+    ],
+    "keywords": [
+      "Grebe",
+      "Podicipedidae",
+      "Fat mobilization",
+      "Podiceps nigricollis"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1111/jav.01007",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "locations": [
+      {
+        "place": "United States"
+      },
+      {
+        "place": "Wyoming"
+      },
+      {
+        "place": "Great Salt Lake"
+      },
+      {
+        "place": "Utah"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4983262"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">CTvsEXT fat measurements<div class=\"o-metadata__file-name\">CTvsEXT_table.csv<br></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">CT measurements table<div class=\"o-metadata__file-name\">CT_Fat_table_complete.csv<br></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">D06 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-06) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D06-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">CC43 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (CC-43) downed in Cedar City, UT, during Fall migration leaving Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">CC43-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">CC53 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (CC-53) downed in Cedar City, UT, during Fall migration leaving Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">CC53-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">CC56 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (CC-56) downed in Cedar City, UT, during Fall migration leaving Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">CC56-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">CC67 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (CC-67) downed in Cedar City, UT, during Fall migration leaving Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">CC67-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">CC74 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (CC-74) downed in Cedar City UT, during Fall migration leaving Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">CC74-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D05 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-05) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D05-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D13 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-13) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D13-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D15 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-15) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D15-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D16 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-16) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D16-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D17 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-17) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D17-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D18 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-18) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D18-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D22 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-22) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D22-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D27 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-27) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D27-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D34 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-34) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D34-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">D36 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (D-36) downed in Dugway, UT, during Spring migration towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">D36-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">G07 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (G-07) downed in Green River, WY, leaving breeding grounds and migrating towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">G07-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">G10 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (G-10) downed in Green River, WY, leaving breeding grounds and migrating towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">G10-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">G12 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (G-12) downed in Green River, WY, leaving breeding grounds and migrating towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">G12-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">G13 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (G-13) downed in Green River, WY, leaving breeding grounds and migrating towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">G13-fat.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">G14 fat tissue segmentation<div class=\"o-metadata__file-description\">Eared grebe (G-14) downed in Green River, WY, leaving breeding grounds and migrating towards Great Salt Lake. After segmentation in Mimics, jpg files were exported with fat tissue highlighted. Images allowed landmark identification and slice range for each ROI (region of interest) - chest, thorax and abdomen. Also, a txt file with fat area measurement for each slice was generated. Depot fat measurement was calculated by matching ROI slice range and fat values.</div><div class=\"o-metadata__file-name\">G14-fat.zip<br></div></div>"
+  },
+  "title": "Data from: Rapid mobilization of abdominal fat in migrating eared grebes",
+  "links": {
+    "self": "https://zenodo.org/api/records/4983263",
+    "self_html": "https://zenodo.org/records/4983263",
+    "preview_html": "https://zenodo.org/records/4983263?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.dd00m",
+    "self_doi": "https://doi.org/10.5061/dryad.dd00m",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.dd00m",
+    "reserve_doi": "https://zenodo.org/api/records/4983263/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4983262",
+    "parent_html": "https://zenodo.org/records/4983262",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4983263/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4983263/sequence/default",
+    "files": "https://zenodo.org/api/records/4983263/files",
+    "media_files": "https://zenodo.org/api/records/4983263/media-files",
+    "archive": "https://zenodo.org/api/records/4983263/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4983263/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4983263/versions/latest",
+    "latest_html": "https://zenodo.org/records/4983263/latest",
+    "versions": "https://zenodo.org/api/records/4983263/versions",
+    "draft": "https://zenodo.org/api/records/4983263/draft",
+    "access_links": "https://zenodo.org/api/records/4983263/access/links",
+    "access_grants": "https://zenodo.org/api/records/4983263/access/grants",
+    "access_users": "https://zenodo.org/api/records/4983263/access/users",
+    "access_request": "https://zenodo.org/api/records/4983263/access/request",
+    "access": "https://zenodo.org/api/records/4983263/access",
+    "communities": "https://zenodo.org/api/records/4983263/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4983263/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4983263/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4983263/file-modification",
+    "requests": "https://zenodo.org/api/records/4983263/requests"
+  },
+  "updated": "2022-05-27T20:04:14.335373+00:00",
+  "recid": "4983263",
+  "revision": 3,
+  "files": [
+    {
+      "id": "5a2342f1-915e-4d1e-b71c-747211e1705c",
+      "key": "CC56-fat.zip",
+      "size": 38560943,
+      "checksum": "md5:ae7a557cec6b441fcb17d2fa3735c862",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CC56-fat.zip/content"
+      }
+    },
+    {
+      "id": "0c4e0c57-6898-4b12-b54e-e198f4bad55c",
+      "key": "CC74-fat.zip",
+      "size": 33368192,
+      "checksum": "md5:817265b5ad15d4e54fd15c6fe3a2b0d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CC74-fat.zip/content"
+      }
+    },
+    {
+      "id": "804a315b-2d74-4bbe-8a62-1a5546096d39",
+      "key": "CC67-fat.zip",
+      "size": 56194261,
+      "checksum": "md5:78a476d943c57751835e3f157bc76918",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CC67-fat.zip/content"
+      }
+    },
+    {
+      "id": "69885e24-54b3-4d03-83e6-7c2e16197f95",
+      "key": "CTvsEXT_table.csv",
+      "size": 2227,
+      "checksum": "md5:7cd50f5a53da45b9bec4b6716541e5b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CTvsEXT_table.csv/content"
+      }
+    },
+    {
+      "id": "56fbf038-5f4d-44b1-bb1d-57ad94816a30",
+      "key": "D05-fat.zip",
+      "size": 24434131,
+      "checksum": "md5:5e301597a0d137adf77d87ee8f18904b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D05-fat.zip/content"
+      }
+    },
+    {
+      "id": "bf81c4fb-de0f-4acb-957b-6f740bb022db",
+      "key": "CT_Fat_table_complete.csv",
+      "size": 1970,
+      "checksum": "md5:e4465ae9a287e950d35ca961f328c8b1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CT_Fat_table_complete.csv/content"
+      }
+    },
+    {
+      "id": "18f9e892-0c1c-469e-bf17-76df779e4e99",
+      "key": "D06-fat.zip",
+      "size": 58199252,
+      "checksum": "md5:6e19a289d2610b2c1e1f7264c08d79f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D06-fat.zip/content"
+      }
+    },
+    {
+      "id": "2090abc0-a0b3-453a-a9c5-a6dd97a754e4",
+      "key": "D34-fat.zip",
+      "size": 26014022,
+      "checksum": "md5:5732b36dfbec67709a5c3095b0298130",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D34-fat.zip/content"
+      }
+    },
+    {
+      "id": "0538d238-9a53-48d2-a6ee-bd7a4ea51cc6",
+      "key": "D13-fat.zip",
+      "size": 14718706,
+      "checksum": "md5:af749bfe7705ece587ab2b5bca818bbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D13-fat.zip/content"
+      }
+    },
+    {
+      "id": "fa20f297-8669-4bfb-9779-a3a24a7435d4",
+      "key": "CC53-fat.zip",
+      "size": 30344820,
+      "checksum": "md5:453c6399ac19a6158300f86847fee237",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CC53-fat.zip/content"
+      }
+    },
+    {
+      "id": "5dcaec4e-a84a-48a5-b164-2381c2ba8c28",
+      "key": "D15-fat.zip",
+      "size": 64667439,
+      "checksum": "md5:3fc12dfce4b107bee65d81d125122314",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D15-fat.zip/content"
+      }
+    },
+    {
+      "id": "876cd262-cf00-42ab-9381-735c8f13d3f7",
+      "key": "D36-fat.zip",
+      "size": 33606969,
+      "checksum": "md5:1c02b9174273d47e5fe8c103cb5d9861",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D36-fat.zip/content"
+      }
+    },
+    {
+      "id": "53444a8b-74a4-46ee-994d-d83c15d0bb07",
+      "key": "D16-fat.zip",
+      "size": 20653147,
+      "checksum": "md5:ee4a6270b1518da9253a8330b172bc57",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D16-fat.zip/content"
+      }
+    },
+    {
+      "id": "c674ee49-2ecc-4fb8-8972-f872146b7508",
+      "key": "CC43-fat.zip",
+      "size": 32581526,
+      "checksum": "md5:4020552a08d8e3791ba025bf8e1fb234",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/CC43-fat.zip/content"
+      }
+    },
+    {
+      "id": "c92748b0-632a-4af9-92a6-a343d9bae8ee",
+      "key": "D27-fat.zip",
+      "size": 46034876,
+      "checksum": "md5:336a008f318c05b07c13977c19ae26c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D27-fat.zip/content"
+      }
+    },
+    {
+      "id": "bb814e4b-c639-45ca-ad41-b8c62153d793",
+      "key": "README_for_CTvsEXT_table.rtf",
+      "size": 1244,
+      "checksum": "md5:be14d6dbac3001ba52b6f91eb3a2efcf",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/README_for_CTvsEXT_table.rtf/content"
+      }
+    },
+    {
+      "id": "21ac097e-6b66-47fb-9c95-5cc75ee2c073",
+      "key": "README_for_CT_Fat_table_complete.rtf",
+      "size": 2160,
+      "checksum": "md5:24f97d835b076d15c44cc45273f0f9fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/README_for_CT_Fat_table_complete.rtf/content"
+      }
+    },
+    {
+      "id": "f0ce60ea-93ed-4f88-9012-263c6c8df584",
+      "key": "G14-fat.zip",
+      "size": 54780827,
+      "checksum": "md5:fca0184dbdb7f164839cb1c53fee1223",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/G14-fat.zip/content"
+      }
+    },
+    {
+      "id": "b6d4bb61-71a0-4cb0-a49c-d8f526fb45fb",
+      "key": "D17-fat.zip",
+      "size": 47381303,
+      "checksum": "md5:beee4eb12d0f9e23a222ed7fc52654b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D17-fat.zip/content"
+      }
+    },
+    {
+      "id": "e0b849a1-eb2c-422a-b49b-7280de2923b7",
+      "key": "G13-fat.zip",
+      "size": 85932235,
+      "checksum": "md5:1fdc9dc5fe5e03cd1b3a15aa6dfc0ed1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/G13-fat.zip/content"
+      }
+    },
+    {
+      "id": "918ec6e2-d740-42b7-b781-3faa258649b9",
+      "key": "G07-fat.zip",
+      "size": 48337319,
+      "checksum": "md5:38a04fc92a818bf93a60215dc233121b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/G07-fat.zip/content"
+      }
+    },
+    {
+      "id": "4c2afae7-f653-4d39-831a-b88b720af068",
+      "key": "D22-fat.zip",
+      "size": 53010881,
+      "checksum": "md5:b70c2f9a58063be11c95111f703ea0f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D22-fat.zip/content"
+      }
+    },
+    {
+      "id": "630300c9-a229-45a7-a087-eb0281fec4a3",
+      "key": "D18-fat.zip",
+      "size": 92885412,
+      "checksum": "md5:b0d7a37b55e883b881f87164f885b0d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/D18-fat.zip/content"
+      }
+    },
+    {
+      "id": "89ffa054-47b3-465b-883e-742f1cb8dfc9",
+      "key": "G10-fat.zip",
+      "size": 51688496,
+      "checksum": "md5:43deb7dcb1af38c420b241af6dd84ee8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/G10-fat.zip/content"
+      }
+    },
+    {
+      "id": "c0da3b11-3e36-474d-94b2-bddd782ea1d9",
+      "key": "G12-fat.zip",
+      "size": 45190038,
+      "checksum": "md5:111a4b1a035f89a2007fd7dba045e3ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/4983263/files/G12-fat.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 495,
+    "unique_downloads": 471,
+    "views": 121,
+    "unique_views": 120,
+    "version_downloads": 495,
+    "version_unique_downloads": 471,
+    "version_unique_views": 120,
+    "version_views": 121
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 21,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 958584795,
+    "top_level_files": [
+      {
+        "name": "CC56-fat.zip",
+        "size": 38560943
+      },
+      {
+        "name": "CC74-fat.zip",
+        "size": 33368192
+      },
+      {
+        "name": "CC67-fat.zip",
+        "size": 56194261
+      },
+      {
+        "name": "CTvsEXT_table.csv",
+        "size": 2227
+      },
+      {
+        "name": "D05-fat.zip",
+        "size": 24434131
+      },
+      {
+        "name": "CT_Fat_table_complete.csv",
+        "size": 1970
+      },
+      {
+        "name": "D06-fat.zip",
+        "size": 58199252
+      },
+      {
+        "name": "D34-fat.zip",
+        "size": 26014022
+      },
+      {
+        "name": "D13-fat.zip",
+        "size": 14718706
+      },
+      {
+        "name": "CC53-fat.zip",
+        "size": 30344820
+      },
+      {
+        "name": "D15-fat.zip",
+        "size": 64667439
+      },
+      {
+        "name": "D36-fat.zip",
+        "size": 33606969
+      },
+      {
+        "name": "D16-fat.zip",
+        "size": 20653147
+      },
+      {
+        "name": "CC43-fat.zip",
+        "size": 32581526
+      },
+      {
+        "name": "D27-fat.zip",
+        "size": 46034876
+      },
+      {
+        "name": "README_for_CTvsEXT_table.rtf",
+        "size": 1244
+      },
+      {
+        "name": "README_for_CT_Fat_table_complete.rtf",
+        "size": 2160
+      },
+      {
+        "name": "G14-fat.zip",
+        "size": 54780827
+      },
+      {
+        "name": "D17-fat.zip",
+        "size": 47381303
+      },
+      {
+        "name": "G13-fat.zip",
+        "size": 85932235
+      },
+      {
+        "name": "G07-fat.zip",
+        "size": 48337319
+      },
+      {
+        "name": "D22-fat.zip",
+        "size": 53010881
+      },
+      {
+        "name": "D18-fat.zip",
+        "size": 92885412
+      },
+      {
+        "name": "G10-fat.zip",
+        "size": 51688496
+      },
+      {
+        "name": "G12-fat.zip",
+        "size": 45190038
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:28.989439"
+}

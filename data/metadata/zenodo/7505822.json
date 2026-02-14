@@ -1,0 +1,176 @@
+{
+  "created": "2023-01-05T11:57:26.277743+00:00",
+  "modified": "2023-01-06T05:21:15.044993+00:00",
+  "id": 7505822,
+  "conceptrecid": "7505821",
+  "doi": "10.5281/zenodo.7505822",
+  "conceptdoi": "10.5281/zenodo.7505821",
+  "doi_url": "https://doi.org/10.5281/zenodo.7505822",
+  "metadata": {
+    "title": "Retinal Fundus Multi-Disease Image Dataset (RFMiD) 2.0",
+    "doi": "10.5281/zenodo.7505822",
+    "publication_date": "2023-01-05",
+    "description": "<p>Retinal Fundus Multi-disease Image Dataset (RFMiD 2.0) is an auxiliary dataset to our previously published dataset. RFMiD 2.0 is a more challenging dataset to research society to develop the computer-based disease diagnosis system. Diabetic Retinopathy, cataracts, and refractive error in the eye are leading diseases that may&nbsp;lead to&nbsp;permanent vision loss more frequently. Therefore, developing an AI-based model to classify these diseases is useful for ophthalmologists. This dataset consists of 860 images of frequently and rarely observed 51 diseases. However, some images are labeled with multiple diseases. This dataset is useful for the research and development of AI-based medical healthcare systems in ophthalmology.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Sachin Panchal",
+        "affiliation": "Center of Excellence in Signal and Image Processing, Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded, Maharashtra 431606, India",
+        "orcid": "0000-0002-9162-8324"
+      },
+      {
+        "name": "Ankita Naik",
+        "affiliation": "Center of Excellence in Signal and Image Processing, Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded, Maharashtra 431606, India",
+        "orcid": "0000-0002-2370-4057"
+      },
+      {
+        "name": "Manesh Kokare",
+        "affiliation": "Center of Excellence in Signal and Image Processing, Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded, Maharashtra 431606, India",
+        "orcid": "0000-0002-6947-4090"
+      },
+      {
+        "name": "Samiksha Pachade",
+        "affiliation": "The University of Texas Health Science Center at Houston",
+        "orcid": "0000-0001-5226-6706"
+      },
+      {
+        "name": "Rushikesh Naigaonkar",
+        "affiliation": "Shri Ganapati Netralaya State of Art Eye Care Hospital, Jalna, Maharashtra, India"
+      },
+      {
+        "name": "Prerana Phadnis",
+        "affiliation": "Lions Eye Hospital, Nanded, Maharashtra, India"
+      },
+      {
+        "name": "Archana Bhange",
+        "affiliation": "Keya Eye Clinic, Pune, Maharashtra, India"
+      }
+    ],
+    "keywords": [
+      "Data Analysis; Ocular Diseases; Retinal Fundus Image Dataset; Data Annotation; Multilabel Classification."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7505821"
+          }
+        }
+      ]
+    },
+    "notes": "RFMiD2.0 Dataset is classified into three sub-classes with disease distribution. The training set, validation set, and test set are three subfolders consisting of multi-labeled images. Each folder includes images and a .csv file containing labels. This distributed data can be utilized for the development of AI-based models."
+  },
+  "title": "Retinal Fundus Multi-Disease Image Dataset (RFMiD) 2.0",
+  "links": {
+    "self": "https://zenodo.org/api/records/7505822",
+    "self_html": "https://zenodo.org/records/7505822",
+    "preview_html": "https://zenodo.org/records/7505822?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7505822",
+    "self_doi": "https://doi.org/10.5281/zenodo.7505822",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7505822",
+    "reserve_doi": "https://zenodo.org/api/records/7505822/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7505821",
+    "parent_html": "https://zenodo.org/records/7505821",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7505821",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7505821",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7505822/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7505822/sequence/default",
+    "files": "https://zenodo.org/api/records/7505822/files",
+    "media_files": "https://zenodo.org/api/records/7505822/media-files",
+    "archive": "https://zenodo.org/api/records/7505822/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7505822/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7505822/versions/latest",
+    "latest_html": "https://zenodo.org/records/7505822/latest",
+    "versions": "https://zenodo.org/api/records/7505822/versions",
+    "draft": "https://zenodo.org/api/records/7505822/draft",
+    "access_links": "https://zenodo.org/api/records/7505822/access/links",
+    "access_grants": "https://zenodo.org/api/records/7505822/access/grants",
+    "access_users": "https://zenodo.org/api/records/7505822/access/users",
+    "access_request": "https://zenodo.org/api/records/7505822/access/request",
+    "access": "https://zenodo.org/api/records/7505822/access",
+    "communities": "https://zenodo.org/api/records/7505822/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7505822/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7505822/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7505822/file-modification",
+    "requests": "https://zenodo.org/api/records/7505822/requests"
+  },
+  "updated": "2023-01-06T05:21:15.044993+00:00",
+  "recid": "7505822",
+  "revision": 3,
+  "files": [
+    {
+      "id": "777beff1-c037-4cac-9cfe-521f2220b460",
+      "key": "RFMiD2_0.zip",
+      "size": 63658404,
+      "checksum": "md5:f9fe268dd74825fd89a9e212c1e48624",
+      "links": {
+        "self": "https://zenodo.org/api/records/7505822/files/RFMiD2_0.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "288441"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 3551,
+    "unique_downloads": 2614,
+    "views": 8478,
+    "unique_views": 7622,
+    "version_downloads": 3502,
+    "version_unique_downloads": 2566,
+    "version_unique_views": 7566,
+    "version_views": 8413
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 63658404,
+    "top_level_files": [
+      {
+        "name": "RFMiD2_0.zip",
+        "size": 63658404
+      }
+    ],
+    "zip_contents": {
+      "rfmid2_0.zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 63667441,
+        "file_types": {
+          ".zip": 3
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:54.022186"
+}

@@ -1,0 +1,213 @@
+{
+  "created": "2022-02-04T18:47:50.857356+00:00",
+  "modified": "2022-06-05T02:33:31.442631+00:00",
+  "id": 5974905,
+  "conceptrecid": "5974904",
+  "doi": "10.5061/dryad.2v6wwpzp4",
+  "doi_url": "https://doi.org/10.5061/dryad.2v6wwpzp4",
+  "metadata": {
+    "title": "PRMI: A dataset of minirhizotron images for diverse plant root study",
+    "doi": "10.5061/dryad.2v6wwpzp4",
+    "publication_date": "2022-02-04",
+    "description": "<p>Understanding a plant's root system architecture (RSA) is crucial for a variety of plant science problem domains including sustainability and climate adaptation. Minirhizotron (MR) technology is a widely-used approach for phenotyping RSA non-destructively by capturing root imagery over time. Precisely segmenting roots from the soil in MR imagery is a critical step in studying RSA features. In this paper, we introduce a large-scale dataset of plant root images captured by MR technology. In total, there are over 72K RGB root images across six different species including cotton, papaya, peanut, sesame, sunflower, and switchgrass in the dataset. The images span a variety of conditions including varied root age, root structures, soil types, and depths under the soil surface. All of the images have been annotated with weak image-level labels indicating whether each image contains roots or not. The image-level labels can be used to support weakly supervised learning in plant root segmentation tasks. In addition, 63K images have been manually annotated to generate pixel-level binary masks indicating whether each pixel corresponds to root or not. These pixel-level binary masks can be used as ground truth for supervised learning in semantic segmentation tasks. By introducing this dataset, we aim to facilitate the automatic segmentation of roots and the research of RSA with deep learning and other image analysis algorithms.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Xu, Weihuang",
+        "affiliation": "University of Florida",
+        "orcid": "0000-0001-8463-9319"
+      },
+      {
+        "name": "Yu, Guohao",
+        "affiliation": "University of Florida"
+      },
+      {
+        "name": "Cui, Yiming",
+        "affiliation": "University of Florida"
+      },
+      {
+        "name": "Gloaguen, Romain",
+        "affiliation": "InTerACT Research Unit*",
+        "orcid": "0000-0003-2895-7413"
+      },
+      {
+        "name": "Zare, Alina",
+        "affiliation": "University of Florida",
+        "orcid": "0000-0002-4847-7604"
+      },
+      {
+        "name": "Bonnette, Jason",
+        "affiliation": "The University of Texas at Austin"
+      },
+      {
+        "name": "Reyes-Cabrera, Joel",
+        "affiliation": "University of Missouri",
+        "orcid": "0000-0002-3535-8665"
+      },
+      {
+        "name": "Rajurkar, Ashish",
+        "affiliation": "University of Missouri"
+      },
+      {
+        "name": "Rowland, Diane",
+        "affiliation": "University of Maine"
+      },
+      {
+        "name": "Matamala, Roser",
+        "affiliation": "Argonne National Laboratory"
+      },
+      {
+        "name": "Jastrow, Julie D.",
+        "affiliation": "Argonne National Laboratory"
+      },
+      {
+        "name": "Juenger, Thomas E.",
+        "affiliation": "The University of Texas at Austin",
+        "orcid": "0000-0001-9550-9288"
+      },
+      {
+        "name": "Fritschi, Felix B.",
+        "affiliation": "University of Missouri"
+      }
+    ],
+    "keywords": [
+      "computer vision",
+      "Transfer learning",
+      "weakly-supervised learning",
+      "Agricultural science"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.compag.2020.105466",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5974904"
+          }
+        }
+      ]
+    },
+    "notes": "<p>This dataset is mainly used for plant root segmentation tasks. We have pixel-level annotation (binary masks) for supervised learning and image-level annotation (whether image contains root) for weakly-supervised learning.</p>"
+  },
+  "title": "PRMI: A dataset of minirhizotron images for diverse plant root study",
+  "links": {
+    "self": "https://zenodo.org/api/records/5974905",
+    "self_html": "https://zenodo.org/records/5974905",
+    "preview_html": "https://zenodo.org/records/5974905?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.2v6wwpzp4",
+    "self_doi": "https://doi.org/10.5061/dryad.2v6wwpzp4",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.2v6wwpzp4",
+    "reserve_doi": "https://zenodo.org/api/records/5974905/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5974904",
+    "parent_html": "https://zenodo.org/records/5974904",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5974905/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5974905/sequence/default",
+    "files": "https://zenodo.org/api/records/5974905/files",
+    "media_files": "https://zenodo.org/api/records/5974905/media-files",
+    "archive": "https://zenodo.org/api/records/5974905/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5974905/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5974905/versions/latest",
+    "latest_html": "https://zenodo.org/records/5974905/latest",
+    "versions": "https://zenodo.org/api/records/5974905/versions",
+    "draft": "https://zenodo.org/api/records/5974905/draft",
+    "access_links": "https://zenodo.org/api/records/5974905/access/links",
+    "access_grants": "https://zenodo.org/api/records/5974905/access/grants",
+    "access_users": "https://zenodo.org/api/records/5974905/access/users",
+    "access_request": "https://zenodo.org/api/records/5974905/access/request",
+    "access": "https://zenodo.org/api/records/5974905/access",
+    "communities": "https://zenodo.org/api/records/5974905/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5974905/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5974905/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5974905/file-modification",
+    "requests": "https://zenodo.org/api/records/5974905/requests"
+  },
+  "updated": "2022-06-05T02:33:31.442631+00:00",
+  "recid": "5974905",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e86c3e10-bb94-46d7-813e-997a4db88fb5",
+      "key": "PRMI_official.zip",
+      "size": 9748189339,
+      "checksum": "md5:659fc0fc1bcba81112cf7a0ca0ff52d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/5974905/files/PRMI_official.zip/content"
+      }
+    },
+    {
+      "id": "d69dd441-3ed1-4798-8775-f64d013b77a8",
+      "key": "README",
+      "size": 10981,
+      "checksum": "md5:9312933852e2067db6289506395a1dcb",
+      "links": {
+        "self": "https://zenodo.org/api/records/5974905/files/README/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 411,
+    "unique_downloads": 332,
+    "views": 263,
+    "unique_views": 250,
+    "version_downloads": 409,
+    "version_unique_downloads": 330,
+    "version_unique_views": 249,
+    "version_views": 261
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 9748189339,
+    "top_level_files": [
+      {
+        "name": "PRMI_official.zip",
+        "size": 9748189339
+      },
+      {
+        "name": "README",
+        "size": 10981
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:32.075204"
+}

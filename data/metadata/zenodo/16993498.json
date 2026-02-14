@@ -1,0 +1,169 @@
+{
+  "created": "2025-08-29T11:25:19.729594+00:00",
+  "modified": "2025-08-29T11:25:19.893923+00:00",
+  "id": 16993498,
+  "conceptrecid": "16993497",
+  "doi": "10.5281/zenodo.16993498",
+  "conceptdoi": "10.5281/zenodo.16993497",
+  "doi_url": "https://doi.org/10.5281/zenodo.16993498",
+  "metadata": {
+    "title": "Data for 'Maybe you don't need a U-Net: convolutional feature upsampling for materials micrograph segmentation'",
+    "doi": "10.5281/zenodo.16993498",
+    "publication_date": "2025-08-29",
+    "description": "<p>Figure data for 'Maybe you don&rsquo;t need a U-Net: convolutional feature upsampling for materials micrograph segmentation'. Includes subsets of three existing segmentation datasets with sparse labels:<br><br></p>\n<p>1) 'Ni_superalloy_SEM': Microstructure segmentation with deep learning encoders pre-trained on a large microscopy dataset, Stuckner, Joshua and Harder, Bryan and Smith, Timothy M., https://doi.org/10.1038/s41524-022-00878-5</p>\n<p>2) 'T_cell_TEM': Semi-automatic determination of cell surface areas used in systems biology., Morath, Volker and Keuper, Margret and Rodriguez-Franco, Marta and Deswal, Sumit and Fiala, Gina and Blumenthal, Britta and Kaschek, Daniel and Timmer, Jens and Neuhaus, Gunther and Ehl, Stephan and Ronneberger, Olaf and Schamel, Wolfgang Werner A.m, https://doi.org/10.2741/e635</p>\n<p>3) 'Cu_ore_RLM': Deep learning semantic segmentation of opaque and non-opaque minerals from epoxy resin in reflected light microscopy images, Filippo, Michel Pedro and Gomes, Ot&aacute;vio da Fonseca Martins and Costa, Gilson Alexandre Ostwald Pedro da and Mota, Guilherme Lucio Abelha, https://doi.org/10.1016/j.mineng.2021.107007</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Docherty, Ronan",
+        "affiliation": null,
+        "orcid": "0000-0002-7332-0924"
+      },
+      {
+        "name": "Vamvakeros, Antonis",
+        "affiliation": "Imperial College London",
+        "orcid": "0000-0002-4745-0602"
+      },
+      {
+        "name": "Cooper, Samuel John",
+        "affiliation": "Imperial College London",
+        "orcid": "0000-0003-4055-6903"
+      }
+    ],
+    "keywords": [
+      "segmentation"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/tldr-group/vulture",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16993497"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data for 'Maybe you don't need a U-Net: convolutional feature upsampling for materials micrograph segmentation'",
+  "links": {
+    "self": "https://zenodo.org/api/records/16993498",
+    "self_html": "https://zenodo.org/records/16993498",
+    "preview_html": "https://zenodo.org/records/16993498?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16993498",
+    "self_doi": "https://doi.org/10.5281/zenodo.16993498",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16993498",
+    "reserve_doi": "https://zenodo.org/api/records/16993498/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16993497",
+    "parent_html": "https://zenodo.org/records/16993497",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16993497",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16993497",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16993498/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16993498/sequence/default",
+    "files": "https://zenodo.org/api/records/16993498/files",
+    "media_files": "https://zenodo.org/api/records/16993498/media-files",
+    "archive": "https://zenodo.org/api/records/16993498/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16993498/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16993498/versions/latest",
+    "latest_html": "https://zenodo.org/records/16993498/latest",
+    "versions": "https://zenodo.org/api/records/16993498/versions",
+    "draft": "https://zenodo.org/api/records/16993498/draft",
+    "access_links": "https://zenodo.org/api/records/16993498/access/links",
+    "access_grants": "https://zenodo.org/api/records/16993498/access/grants",
+    "access_users": "https://zenodo.org/api/records/16993498/access/users",
+    "access_request": "https://zenodo.org/api/records/16993498/access/request",
+    "access": "https://zenodo.org/api/records/16993498/access",
+    "communities": "https://zenodo.org/api/records/16993498/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16993498/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16993498/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16993498/file-modification",
+    "requests": "https://zenodo.org/api/records/16993498/requests"
+  },
+  "updated": "2025-08-29T11:25:19.893923+00:00",
+  "recid": "16993498",
+  "revision": 4,
+  "files": [
+    {
+      "id": "cc74be6f-3bfc-4161-b37a-86860b3c43b6",
+      "key": "fig_data.zip",
+      "size": 87625042,
+      "checksum": "md5:5ad753bf7900ae22413a37ec38f53839",
+      "links": {
+        "self": "https://zenodo.org/api/records/16993498/files/fig_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1114849"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 17,
+    "unique_downloads": 17,
+    "views": 34,
+    "unique_views": 34,
+    "version_downloads": 17,
+    "version_unique_downloads": 17,
+    "version_unique_views": 34,
+    "version_views": 34
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 87625042,
+    "top_level_files": [
+      {
+        "name": "fig_data.zip",
+        "size": 87625042
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1038/s41524-022-00878-5",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.2741/e635",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.mineng.2021.107007",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:05.164432"
+}

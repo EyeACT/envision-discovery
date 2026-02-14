@@ -1,0 +1,166 @@
+{
+  "created": "2025-05-15T17:45:00.193559+00:00",
+  "modified": "2025-05-15T17:45:00.402133+00:00",
+  "id": 15426725,
+  "conceptrecid": "13321077",
+  "doi": "10.5281/zenodo.15426725",
+  "conceptdoi": "10.5281/zenodo.13321077",
+  "doi_url": "https://doi.org/10.5281/zenodo.15426725",
+  "metadata": {
+    "title": "Brazilian Flora: Brazilian Flora DwCA",
+    "doi": "10.5281/zenodo.15426725",
+    "publication_date": "2025-05-15",
+    "description": "Flora do Brasil 2020 under construction. Jardim Bot\u00e2nico do Rio de Janeiro. Available at: <p></p>http://floradobrasil.jbrj.gov.br/ . Accessed on: 10 Oct. 2019\n\nThe Brazilian Flora 2020 project is part of the Reflora Programme and is being conducted with the support of the Sistema de Informa\u00e7\u00e3o sobre a Biodiversidade Brasileira (SiBBr). At the moment has nearly 700 scientists working in a network to prepare the monographs. These researchers are also responsible for nomenclatural information and geographic distribution (coverage in Brazil, endemism and biomes), as well as valuable data regarding life forms, substrate and vegetation types for each species.<p></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Encyclopedia of Life",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "active"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://editors.eol.org/eol_php_code/applications/content_server/resources/Brazilian_Flora.tar.gz",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://eol.org/resources/753",
+        "relation": "isSourceOf",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      },
+      {
+        "type": "updated"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "eol"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 10,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13321077"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Brazilian Flora: Brazilian Flora DwCA",
+  "links": {
+    "self": "https://zenodo.org/api/records/15426725",
+    "self_html": "https://zenodo.org/records/15426725",
+    "preview_html": "https://zenodo.org/records/15426725?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15426725",
+    "self_doi": "https://doi.org/10.5281/zenodo.15426725",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15426725",
+    "reserve_doi": "https://zenodo.org/api/records/15426725/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13321077",
+    "parent_html": "https://zenodo.org/records/13321077",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13321077",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13321077",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15426725/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15426725/sequence/default",
+    "files": "https://zenodo.org/api/records/15426725/files",
+    "media_files": "https://zenodo.org/api/records/15426725/media-files",
+    "archive": "https://zenodo.org/api/records/15426725/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15426725/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15426725/versions/latest",
+    "latest_html": "https://zenodo.org/records/15426725/latest",
+    "versions": "https://zenodo.org/api/records/15426725/versions",
+    "draft": "https://zenodo.org/api/records/15426725/draft",
+    "access_links": "https://zenodo.org/api/records/15426725/access/links",
+    "access_grants": "https://zenodo.org/api/records/15426725/access/grants",
+    "access_users": "https://zenodo.org/api/records/15426725/access/users",
+    "access_request": "https://zenodo.org/api/records/15426725/access/request",
+    "access": "https://zenodo.org/api/records/15426725/access",
+    "communities": "https://zenodo.org/api/records/15426725/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15426725/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15426725/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15426725/file-modification",
+    "requests": "https://zenodo.org/api/records/15426725/requests"
+  },
+  "updated": "2025-05-15T17:45:00.402133+00:00",
+  "recid": "15426725",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f63777d1-f0d8-4fa8-a223-72f766d21977",
+      "key": "Brazilian_Flora.tar.gz",
+      "size": 37575248,
+      "checksum": "md5:b6c748af68839619449688c0a3f0dde6",
+      "links": {
+        "self": "https://zenodo.org/api/records/15426725/files/Brazilian_Flora.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1158728"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 350,
+    "unique_downloads": 349,
+    "views": 463,
+    "unique_views": 429,
+    "version_downloads": 59,
+    "version_unique_downloads": 59,
+    "version_unique_views": 63,
+    "version_views": 71
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 37575248,
+    "top_level_files": [
+      {
+        "name": "Brazilian_Flora.tar.gz",
+        "size": 37575248
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://floradobrasil.jbrj.gov.br/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:37.333402"
+}

@@ -1,0 +1,213 @@
+{
+  "created": "2025-10-10T12:40:24.032899+00:00",
+  "modified": "2025-10-10T12:40:24.316277+00:00",
+  "id": 16744782,
+  "conceptrecid": "16744781",
+  "doi": "10.5281/zenodo.16744782",
+  "conceptdoi": "10.5281/zenodo.16744781",
+  "doi_url": "https://doi.org/10.5281/zenodo.16744782",
+  "metadata": {
+    "title": "HRF-Seg+: A Multi-Structure Annotated Fundus Image Dataset with Optic Disc, Cup, Vessels, Alpha and Beta Zones",
+    "doi": "10.5281/zenodo.16744782",
+    "publication_date": "2025-08-05",
+    "description": "<p>HRF-Seg+ is an extended version of the public HRF (High-Resolution Fundus) dataset that includes pixel-wise annotated segmentation masks for five key retinal structures:&nbsp;<br>- Optic Disc (purple)<br>- Optic Cup (brown)<br>- Retinal Vessels (orange)<br>- Peripapillary Alpha Zone (blue-green)<br>- Peripapillary Beta Zone (green)</p>\n<p>The dataset includes:</p>\n<p>- Folder 1: Segmented Optic Disc masks<br>- Folder 2: Segmented Optic Cup masks<br>- Folder 3: Segmented Retinal Vessel masks<br>- Folder 4: Segmented Alpha and Beta Zones<br>- Folder 5: Merged Ground Truth masks (all structures in one image)<br>- Folder 6: Original HRF images (from: https://www5.cs.fau.de/research/data/fundus-images/)<br>- CSV file: Color legend for all masks</p>\n<p>This dataset is intended to support research in ophthalmology, glaucoma detection, and deep learning-based segmentation. All annotations were performed manually and reviewed by experts.&nbsp;</p>\n<p>Original data is sourced from the HRF dataset [Budai et al., 2013]. Segmentation annotations were added by the authors of this dataset.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kako, Najdavan",
+        "affiliation": "Duhok Polytechnic University",
+        "orcid": "0000-0003-2869-1256"
+      }
+    ],
+    "keywords": [
+      "HRF",
+      "Fundus Images",
+      "Retinal Segmentation",
+      "Optic Disc",
+      "Optic Cup",
+      "Alpha Zone",
+      "Beta Zone",
+      "Medical Imaging"
+    ],
+    "dates": [
+      {
+        "type": "created",
+        "description": "HRF-Seg+ is an enhanced version of the publicly available High-Resolution Fundus (HRF) dataset, developed to support advanced research in retinal image analysis, especially for glaucoma and peripapillary zone assessment."
+      }
+    ],
+    "version": "1.0",
+    "references": [
+      "https://doi.org/10.1016/j.heliyon.2024.e36996"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        },
+        {
+          "id": "jupyter_notebook",
+          "title": {
+            "en": "Jupyter Notebook"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "thesis": {
+      "university": "Duhok Polytechnic University"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16744781"
+          }
+        }
+      ]
+    }
+  },
+  "title": "HRF-Seg+: A Multi-Structure Annotated Fundus Image Dataset with Optic Disc, Cup, Vessels, Alpha and Beta Zones",
+  "links": {
+    "self": "https://zenodo.org/api/records/16744782",
+    "self_html": "https://zenodo.org/records/16744782",
+    "preview_html": "https://zenodo.org/records/16744782?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16744782",
+    "self_doi": "https://doi.org/10.5281/zenodo.16744782",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16744782",
+    "reserve_doi": "https://zenodo.org/api/records/16744782/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16744781",
+    "parent_html": "https://zenodo.org/records/16744781",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16744781",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16744781",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16744782/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16744782/sequence/default",
+    "files": "https://zenodo.org/api/records/16744782/files",
+    "media_files": "https://zenodo.org/api/records/16744782/media-files",
+    "archive": "https://zenodo.org/api/records/16744782/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16744782/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16744782/versions/latest",
+    "latest_html": "https://zenodo.org/records/16744782/latest",
+    "versions": "https://zenodo.org/api/records/16744782/versions",
+    "draft": "https://zenodo.org/api/records/16744782/draft",
+    "access_links": "https://zenodo.org/api/records/16744782/access/links",
+    "access_grants": "https://zenodo.org/api/records/16744782/access/grants",
+    "access_users": "https://zenodo.org/api/records/16744782/access/users",
+    "access_request": "https://zenodo.org/api/records/16744782/access/request",
+    "access": "https://zenodo.org/api/records/16744782/access",
+    "communities": "https://zenodo.org/api/records/16744782/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16744782/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16744782/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16744782/file-modification",
+    "requests": "https://zenodo.org/api/records/16744782/requests"
+  },
+  "updated": "2025-10-10T12:40:24.316277+00:00",
+  "recid": "16744782",
+  "revision": 4,
+  "files": [
+    {
+      "id": "70c39739-881f-43c5-9e33-4396619f9768",
+      "key": "HRF-Seg+.zip",
+      "size": 3376625,
+      "checksum": "md5:10d09d9dfda676071cbc278d2bad36de",
+      "links": {
+        "self": "https://zenodo.org/api/records/16744782/files/HRF-Seg+.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1324578"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 17,
+    "unique_downloads": 16,
+    "views": 106,
+    "unique_views": 97,
+    "version_downloads": 17,
+    "version_unique_downloads": 16,
+    "version_unique_views": 97,
+    "version_views": 106
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3376625,
+    "top_level_files": [
+      {
+        "name": "HRF-Seg+.zip",
+        "size": 3376625
+      }
+    ],
+    "zip_contents": {
+      "hrf-seg+.zip": {
+        "total_files": 272,
+        "total_directories": 7,
+        "total_uncompressed_bytes": 3781793,
+        "file_types": {
+          ".png": 225,
+          ".jpg": 45
+        },
+        "imaging_file_count": 270,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "hrf-seg+/folder_1_optic_disc/01_dr.png",
+          "hrf-seg+/folder_1_optic_disc/01_g.png",
+          "hrf-seg+/folder_1_optic_disc/01_h.png",
+          "hrf-seg+/folder_1_optic_disc/02_dr.png",
+          "hrf-seg+/folder_1_optic_disc/02_g.png",
+          "hrf-seg+/folder_1_optic_disc/02_h.png",
+          "hrf-seg+/folder_1_optic_disc/03_dr.png",
+          "hrf-seg+/folder_1_optic_disc/03_g.png",
+          "hrf-seg+/folder_1_optic_disc/03_h.png",
+          "hrf-seg+/folder_1_optic_disc/04_dr.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "hrf-seg+/folder_1_optic_disc/01_dr.png",
+      "hrf-seg+/folder_1_optic_disc/01_g.png",
+      "hrf-seg+/folder_1_optic_disc/01_h.png",
+      "hrf-seg+/folder_1_optic_disc/02_dr.png",
+      "hrf-seg+/folder_1_optic_disc/02_g.png",
+      "hrf-seg+/folder_1_optic_disc/02_h.png",
+      "hrf-seg+/folder_1_optic_disc/03_dr.png",
+      "hrf-seg+/folder_1_optic_disc/03_g.png",
+      "hrf-seg+/folder_1_optic_disc/03_h.png",
+      "hrf-seg+/folder_1_optic_disc/04_dr.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www5.cs.fau.de/research/data/fundus-images/",
+      "type": "potential_download"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:01.057296"
+}

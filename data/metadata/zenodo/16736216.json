@@ -1,0 +1,192 @@
+{
+  "created": "2025-08-05T02:46:01.326246+00:00",
+  "modified": "2025-08-05T02:46:01.696461+00:00",
+  "id": 16736216,
+  "conceptrecid": "16736215",
+  "doi": "10.5281/zenodo.16736216",
+  "conceptdoi": "10.5281/zenodo.16736215",
+  "doi_url": "https://doi.org/10.5281/zenodo.16736216",
+  "metadata": {
+    "title": "Ground truth for DCASE2025Task4EvaluationDataset",
+    "doi": "10.5281/zenodo.16736216",
+    "publication_date": "2025-08-05",
+    "description": "<div>This dataset provides the ground truth data for the DCASE2025Task4EvaluationDataset. It contains the ground truth separation sounds for the target sound events in the 2290 mixtures of evaluation set.</div>\n<div>&nbsp;</div>\n<div>This dataset is intended to be used in conjunction with the following datasets and the script:</div>\n<div>\n<ul>\n<li>Training and validation data: <a href=\"https://zenodo.org/records/15117227\">DCASE2025Task4Dataset: The Dataset for Spatial Semantic Segmentation of Sound Scenes</a></li>\n<li>Evaluation data:&nbsp;<a href=\"https://zenodo.org/records/15553984\">DCASE2025Task4EvaluationDataset : The Evaluation Dataset for Spatial Semantic Segmentation of Sound Scenes</a></li>\n<li>Script for evaluation:&nbsp;<a href=\"https://github.com/nttrd-cslabs/dcase2025_SpatialSemanticSegmentation_evaluator\">nttrd-cslabs/dcase2025_SpatialSemanticSegmentation_evaluator</a></li>\n</ul>\n</div>\n<div>&nbsp;</div>\n<div>Other resources:</div>\n<div>\n<ul>\n<li>Description page of DCASE2025 task4:&nbsp;<a href=\"https://dcase.community/challenge2025/task-spatial-semantic-segmentation-of-sound-scenes\">Spatial Semantic Segmentation of Sound Scenes - DCASE</a></li>\n<li>Baseline System Github page: <a href=\"https://github.com/nttcslab/dcase2025_task4_baseline\">nttcslab/dcase2025_task4_baseline</a></li>\n<li>arXiv paper describing this dataset: <a href=\"https://arxiv.org/abs/2506.10676\">[2506.10676] Description and Discussion on DCASE 2025 Challenge Task 4: Spatial Semantic Segmentation of Sound Scenes</a></li>\n</ul>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yasuda, Masahiro",
+        "affiliation": "NTT, Inc.",
+        "orcid": "0000-0003-2776-9701"
+      },
+      {
+        "name": "Nguyen, Thien Binh",
+        "affiliation": "NTT, Inc."
+      },
+      {
+        "name": "Harada, Noboru",
+        "affiliation": "NTT, Inc.",
+        "orcid": "0000-0002-1759-4533"
+      },
+      {
+        "name": "Daiki, Takeuchi",
+        "affiliation": "NTT, Inc."
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "other-nc"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16736215"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Ground truth for DCASE2025Task4EvaluationDataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/16736216",
+    "self_html": "https://zenodo.org/records/16736216",
+    "preview_html": "https://zenodo.org/records/16736216?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16736216",
+    "self_doi": "https://doi.org/10.5281/zenodo.16736216",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16736216",
+    "reserve_doi": "https://zenodo.org/api/records/16736216/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16736215",
+    "parent_html": "https://zenodo.org/records/16736215",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16736215",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16736215",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16736216/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16736216/sequence/default",
+    "files": "https://zenodo.org/api/records/16736216/files",
+    "media_files": "https://zenodo.org/api/records/16736216/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:16736216:LISENCEv2.2.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/16736216/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16736216/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16736216/versions/latest",
+    "latest_html": "https://zenodo.org/records/16736216/latest",
+    "versions": "https://zenodo.org/api/records/16736216/versions",
+    "draft": "https://zenodo.org/api/records/16736216/draft",
+    "access_links": "https://zenodo.org/api/records/16736216/access/links",
+    "access_grants": "https://zenodo.org/api/records/16736216/access/grants",
+    "access_users": "https://zenodo.org/api/records/16736216/access/users",
+    "access_request": "https://zenodo.org/api/records/16736216/access/request",
+    "access": "https://zenodo.org/api/records/16736216/access",
+    "communities": "https://zenodo.org/api/records/16736216/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16736216/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16736216/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16736216/file-modification",
+    "requests": "https://zenodo.org/api/records/16736216/requests"
+  },
+  "updated": "2025-08-05T02:46:01.696461+00:00",
+  "recid": "16736216",
+  "revision": 4,
+  "files": [
+    {
+      "id": "24a9d9de-cf31-4df1-8848-dc21c1473dc6",
+      "key": "DCASE2025Task4EvaluationGroundTruth.zip",
+      "size": 399000767,
+      "checksum": "md5:509258a9ad7bf5a550f05ef5ef7109bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/16736216/files/DCASE2025Task4EvaluationGroundTruth.zip/content"
+      }
+    },
+    {
+      "id": "3f66f374-33b1-40e6-b8a1-b1ed367ad1c4",
+      "key": "DCASE2025Task4EvaluationGroundTruth.z01",
+      "size": 536870912,
+      "checksum": "md5:c9ac0e494079f45ce945d5e0daf1e6d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/16736216/files/DCASE2025Task4EvaluationGroundTruth.z01/content"
+      }
+    },
+    {
+      "id": "c645b0fc-c6cd-46cb-9510-adc9905c97c6",
+      "key": "LISENCEv2.2.pdf",
+      "size": 365064,
+      "checksum": "md5:69d0ece7dcafd353d3135c81312ca087",
+      "links": {
+        "self": "https://zenodo.org/api/records/16736216/files/LISENCEv2.2.pdf/content"
+      }
+    },
+    {
+      "id": "5247a98a-fee6-4532-9294-0a346ffc51e8",
+      "key": "DCASE2025Task4EvaluationGroundTruth.z02",
+      "size": 536870912,
+      "checksum": "md5:fc10d9ece69ec9de3b2723720329119c",
+      "links": {
+        "self": "https://zenodo.org/api/records/16736216/files/DCASE2025Task4EvaluationGroundTruth.z02/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "294813"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 627,
+    "unique_downloads": 469,
+    "views": 139,
+    "unique_views": 118,
+    "version_downloads": 627,
+    "version_unique_downloads": 469,
+    "version_unique_views": 118,
+    "version_views": 139
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 399000767,
+    "top_level_files": [
+      {
+        "name": "DCASE2025Task4EvaluationGroundTruth.zip",
+        "size": 399000767
+      },
+      {
+        "name": "DCASE2025Task4EvaluationGroundTruth.z01",
+        "size": 536870912
+      },
+      {
+        "name": "LISENCEv2.2.pdf",
+        "size": 365064
+      },
+      {
+        "name": "DCASE2025Task4EvaluationGroundTruth.z02",
+        "size": 536870912
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:02.630801"
+}

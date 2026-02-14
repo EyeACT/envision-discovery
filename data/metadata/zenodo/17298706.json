@@ -1,0 +1,513 @@
+{
+  "created": "2025-10-10T06:34:26.154666+00:00",
+  "modified": "2026-01-22T02:21:06.003581+00:00",
+  "id": 17298706,
+  "conceptrecid": "17298705",
+  "doi": "10.5281/zenodo.17298706",
+  "conceptdoi": "10.5281/zenodo.17298705",
+  "doi_url": "https://doi.org/10.5281/zenodo.17298706",
+  "metadata": {
+    "title": "Data for 'Multidimensional Data Analysis and Classification using SMIAL'",
+    "doi": "10.5281/zenodo.17298706",
+    "publication_date": "2025-10-09",
+    "description": "<p>This deposit contains the raw image files used in 'Multidimensional Data Analysis and Classification using SMIAL'. This includes hyperspectral autofluorescence images of melanoma COLO679 and A375 cells, and fibroblast 142BR. Autofluorescence images of mitochondrial networks in retinal h1RPE7 cells is also stored here.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Goldys, Ewa",
+        "affiliation": "UNSW Sydney",
+        "orcid": "0000-0003-2470-7118"
+      },
+      {
+        "name": "Handley, Shannon",
+        "affiliation": null,
+        "orcid": "0009-0009-3242-125X"
+      },
+      {
+        "name": "Knab, Aline",
+        "affiliation": null,
+        "orcid": "0009-0006-4715-4252"
+      },
+      {
+        "name": "Bhargava, Akanksha",
+        "affiliation": "UNSW Canberra",
+        "orcid": "0000-0001-8297-6055"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      }
+    ],
+    "version": "1.00",
+    "custom": {
+      "code:codeRepository": "https://doi.org/10.5281/zenodo.18237844"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17298705"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data for 'Multidimensional Data Analysis and Classification using SMIAL'",
+  "links": {
+    "self": "https://zenodo.org/api/records/17298706",
+    "self_html": "https://zenodo.org/records/17298706",
+    "preview_html": "https://zenodo.org/records/17298706?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17298706",
+    "self_doi": "https://doi.org/10.5281/zenodo.17298706",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17298706",
+    "reserve_doi": "https://zenodo.org/api/records/17298706/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17298705",
+    "parent_html": "https://zenodo.org/records/17298705",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17298705",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17298705",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17298706/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17298706/sequence/default",
+    "files": "https://zenodo.org/api/records/17298706/files",
+    "media_files": "https://zenodo.org/api/records/17298706/media-files",
+    "archive": "https://zenodo.org/api/records/17298706/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17298706/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17298706/versions/latest",
+    "latest_html": "https://zenodo.org/records/17298706/latest",
+    "versions": "https://zenodo.org/api/records/17298706/versions",
+    "draft": "https://zenodo.org/api/records/17298706/draft",
+    "access_links": "https://zenodo.org/api/records/17298706/access/links",
+    "access_grants": "https://zenodo.org/api/records/17298706/access/grants",
+    "access_users": "https://zenodo.org/api/records/17298706/access/users",
+    "access_request": "https://zenodo.org/api/records/17298706/access/request",
+    "access": "https://zenodo.org/api/records/17298706/access",
+    "communities": "https://zenodo.org/api/records/17298706/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17298706/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17298706/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17298706/file-modification",
+    "requests": "https://zenodo.org/api/records/17298706/requests"
+  },
+  "updated": "2026-01-22T02:21:06.003581+00:00",
+  "recid": "17298706",
+  "revision": 6,
+  "files": [
+    {
+      "id": "9f962e77-5238-446a-8ff8-402bc122f61b",
+      "key": "Melanoma A375.zip",
+      "size": 2729324337,
+      "checksum": "md5:121ed4df8a3fd7357c0d677c8da83f7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Melanoma A375.zip/content"
+      }
+    },
+    {
+      "id": "5b9efdb1-a68d-4676-a8f6-47ce028e621f",
+      "key": "Retinal control 24hrs.zip",
+      "size": 429292916,
+      "checksum": "md5:48e9385cc5357c5b54eba5683efac205",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Retinal control 24hrs.zip/content"
+      }
+    },
+    {
+      "id": "36dcd221-71a9-445f-8349-6116bb6e1f6f",
+      "key": "Retinal rotenone 24hrs.zip",
+      "size": 406237036,
+      "checksum": "md5:6ecbe1481c9b3f89d6104726303ce23d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Retinal rotenone 24hrs.zip/content"
+      }
+    },
+    {
+      "id": "85252a33-d370-4565-bda9-208dba3528ef",
+      "key": "Retinal rotenone 48hrs.zip",
+      "size": 472720088,
+      "checksum": "md5:7d7a3b2c968b9576b4c840419b963516",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Retinal rotenone 48hrs.zip/content"
+      }
+    },
+    {
+      "id": "e38d331a-ca0c-4b54-afba-83a043b2231e",
+      "key": "Retinal rotenone 72hrs.zip",
+      "size": 386952524,
+      "checksum": "md5:f7a0912bda25289c3dcd2088735c3c4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Retinal rotenone 72hrs.zip/content"
+      }
+    },
+    {
+      "id": "f7f5df43-004b-4fdd-92d3-a42ee7df7957",
+      "key": "Melanoma COLO679.zip",
+      "size": 2759601021,
+      "checksum": "md5:453b77d16aa0d3165b83b5e0a84219bc",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Melanoma COLO679.zip/content"
+      }
+    },
+    {
+      "id": "169df0f0-ecba-4ae3-85e3-7e5d405ecbf0",
+      "key": "Retinal control 72hrs.zip",
+      "size": 418279100,
+      "checksum": "md5:7b217a1a0813e7376b976d20d2818173",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Retinal control 72hrs.zip/content"
+      }
+    },
+    {
+      "id": "10dcc16a-0d75-4f86-9f0a-37a0ceec7a0b",
+      "key": "Fibroblast 142BR.zip",
+      "size": 3340340817,
+      "checksum": "md5:ac9729b9a56af7146083636283b37509",
+      "links": {
+        "self": "https://zenodo.org/api/records/17298706/files/Fibroblast 142BR.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1428066"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 16,
+    "unique_downloads": 16,
+    "views": 45,
+    "unique_views": 29,
+    "version_downloads": 16,
+    "version_unique_downloads": 16,
+    "version_unique_views": 29,
+    "version_views": 45
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 8,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 10942747839,
+    "top_level_files": [
+      {
+        "name": "Melanoma A375.zip",
+        "size": 2729324337
+      },
+      {
+        "name": "Retinal control 24hrs.zip",
+        "size": 429292916
+      },
+      {
+        "name": "Retinal rotenone 24hrs.zip",
+        "size": 406237036
+      },
+      {
+        "name": "Retinal rotenone 48hrs.zip",
+        "size": 472720088
+      },
+      {
+        "name": "Retinal rotenone 72hrs.zip",
+        "size": 386952524
+      },
+      {
+        "name": "Melanoma COLO679.zip",
+        "size": 2759601021
+      },
+      {
+        "name": "Retinal control 72hrs.zip",
+        "size": 418279100
+      },
+      {
+        "name": "Fibroblast 142BR.zip",
+        "size": 3340340817
+      }
+    ],
+    "zip_contents": {
+      "melanoma a375.zip": {
+        "total_files": 43,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2772973597,
+        "file_types": {
+          ".mat": 43
+        },
+        "imaging_file_count": 43,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "melanoma a375/20230130_a375_p7_1-1.mat",
+          "melanoma a375/20230130_a375_p7_1-2.mat",
+          "melanoma a375/20230130_a375_p7_1-3.mat",
+          "melanoma a375/20230130_a375_p7_1-4.mat",
+          "melanoma a375/20230130_a375_p7_1-5.mat",
+          "melanoma a375/20230130_a375_p7_1-6.mat",
+          "melanoma a375/20230130_a375_p7_1-7.mat",
+          "melanoma a375/20230130_a375_p7_1-8.mat",
+          "melanoma a375/20230130_a375_p7_1-9.mat",
+          "melanoma a375/20230130_a375_p7_2-1.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "retinal control 24hrs.zip": {
+        "total_files": 37,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 475173116,
+        "file_types": {
+          ".mat": 37
+        },
+        "imaging_file_count": 37,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp1.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp10.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp11.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp12.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp13.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp14.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp15.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp16.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp17.mat",
+          "retinal control 24hrs/20231121_h1rpe7_p18_control_samp18.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "retinal rotenone 24hrs.zip": {
+        "total_files": 35,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 449511071,
+        "file_types": {
+          ".mat": 35
+        },
+        "imaging_file_count": 35,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp1.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp10.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp11.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp12.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp13.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp14.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp15.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp16.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp17.mat",
+          "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp18.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "retinal rotenone 48hrs.zip": {
+        "total_files": 40,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 521334573,
+        "file_types": {
+          ".mat": 40
+        },
+        "imaging_file_count": 40,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp1.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp10.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp11.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp12.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp13.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp14.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp15.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp16.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp17.mat",
+          "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp18.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "retinal rotenone 72hrs.zip": {
+        "total_files": 33,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 427407118,
+        "file_types": {
+          ".mat": 33
+        },
+        "imaging_file_count": 33,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp1.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp10.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp11.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp12.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp13.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp14.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp15.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp16.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp17.mat",
+          "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp18.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "melanoma colo679.zip": {
+        "total_files": 47,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2808414243,
+        "file_types": {
+          ".mat": 47
+        },
+        "imaging_file_count": 47,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "melanoma colo679/20220809_melanoma1-1.mat",
+          "melanoma colo679/20220809_melanoma1-10.mat",
+          "melanoma colo679/20220809_melanoma1-11.mat",
+          "melanoma colo679/20220809_melanoma1-2.mat",
+          "melanoma colo679/20220809_melanoma1-3.mat",
+          "melanoma colo679/20220809_melanoma1-4.mat",
+          "melanoma colo679/20220809_melanoma1-5.mat",
+          "melanoma colo679/20220809_melanoma1-6.mat",
+          "melanoma colo679/20220809_melanoma1-7.mat",
+          "melanoma colo679/20220809_melanoma1-8.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "retinal control 72hrs.zip": {
+        "total_files": 36,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 463072850,
+        "file_types": {
+          ".mat": 36
+        },
+        "imaging_file_count": 36,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp1.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp10.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp11.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp12.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp13.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp14.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp15.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp16.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp17.mat",
+          "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp18.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "fibroblast 142br.zip": {
+        "total_files": 57,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3399756623,
+        "file_types": {
+          ".mat": 57
+        },
+        "imaging_file_count": 57,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "fibroblast 142br/20220810_fibroblast1-1.mat",
+          "fibroblast 142br/20220810_fibroblast1-2.mat",
+          "fibroblast 142br/20220810_fibroblast1-3.mat",
+          "fibroblast 142br/20220810_fibroblast1-4.mat",
+          "fibroblast 142br/20220810_fibroblast1-5.mat",
+          "fibroblast 142br/20220810_fibroblast1-6.mat",
+          "fibroblast 142br/20220810_fibroblast1-7.mat",
+          "fibroblast 142br/20220810_fibroblast1-8.mat",
+          "fibroblast 142br/20220810_fibroblast1-9.mat",
+          "fibroblast 142br/20220810_fibroblast2-1.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "melanoma a375/20230130_a375_p7_1-1.mat",
+      "melanoma a375/20230130_a375_p7_1-2.mat",
+      "melanoma a375/20230130_a375_p7_1-3.mat",
+      "melanoma a375/20230130_a375_p7_1-4.mat",
+      "melanoma a375/20230130_a375_p7_1-5.mat",
+      "melanoma a375/20230130_a375_p7_1-6.mat",
+      "melanoma a375/20230130_a375_p7_1-7.mat",
+      "melanoma a375/20230130_a375_p7_1-8.mat",
+      "melanoma a375/20230130_a375_p7_1-9.mat",
+      "melanoma a375/20230130_a375_p7_2-1.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp1.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp10.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp11.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp12.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp13.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp14.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp15.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp16.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp17.mat",
+      "retinal control 24hrs/20231121_h1rpe7_p18_control_samp18.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp1.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp10.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp11.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp12.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp13.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp14.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp15.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp16.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp17.mat",
+      "retinal rotenone 24hrs/20231122_h1rpe7_p18_roteone_24hrs_samp18.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp1.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp10.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp11.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp12.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp13.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp14.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp15.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp16.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp17.mat",
+      "retinal rotenone 48hrs/20231123_h1rpe7_p18_roteone_48hrs_samp18.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp1.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp10.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp11.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp12.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp13.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp14.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp15.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp16.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp17.mat",
+      "retinal rotenone 72hrs/20231124_h1rpe7_rotenone_72hrs_samp18.mat",
+      "melanoma colo679/20220809_melanoma1-1.mat",
+      "melanoma colo679/20220809_melanoma1-10.mat",
+      "melanoma colo679/20220809_melanoma1-11.mat",
+      "melanoma colo679/20220809_melanoma1-2.mat",
+      "melanoma colo679/20220809_melanoma1-3.mat",
+      "melanoma colo679/20220809_melanoma1-4.mat",
+      "melanoma colo679/20220809_melanoma1-5.mat",
+      "melanoma colo679/20220809_melanoma1-6.mat",
+      "melanoma colo679/20220809_melanoma1-7.mat",
+      "melanoma colo679/20220809_melanoma1-8.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp1.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp10.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp11.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp12.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp13.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp14.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp15.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp16.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp17.mat",
+      "retinal control 72hrs/20231124_h1rpe7_control_72hrs_samp18.mat",
+      "fibroblast 142br/20220810_fibroblast1-1.mat",
+      "fibroblast 142br/20220810_fibroblast1-2.mat",
+      "fibroblast 142br/20220810_fibroblast1-3.mat",
+      "fibroblast 142br/20220810_fibroblast1-4.mat",
+      "fibroblast 142br/20220810_fibroblast1-5.mat",
+      "fibroblast 142br/20220810_fibroblast1-6.mat",
+      "fibroblast 142br/20220810_fibroblast1-7.mat",
+      "fibroblast 142br/20220810_fibroblast1-8.mat",
+      "fibroblast 142br/20220810_fibroblast1-9.mat",
+      "fibroblast 142br/20220810_fibroblast2-1.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:22.639895"
+}

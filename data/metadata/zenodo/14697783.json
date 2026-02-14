@@ -1,0 +1,200 @@
+{
+  "created": "2025-01-20T15:02:44.462123+00:00",
+  "modified": "2025-02-05T17:42:25.983068+00:00",
+  "id": 14697783,
+  "conceptrecid": "14697782",
+  "doi": "10.5281/zenodo.14697783",
+  "conceptdoi": "10.5281/zenodo.14697782",
+  "doi_url": "https://doi.org/10.5281/zenodo.14697783",
+  "metadata": {
+    "title": "CARLA Equirectangular Dataset",
+    "doi": "10.5281/zenodo.14697783",
+    "publication_date": "2025-01-20",
+    "description": "<p>An equirectangular dataset collected in CARLA 0.9.14 containing RGB images, instance segmentation, semantic segmentation, and range maps. The dataset consitst of 5,550 images for training, 2,000 images for testing, and 100 images for validation.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Reichert, Hannes",
+        "affiliation": "Aschaffenburg University of Applied Sciences",
+        "orcid": "0000-0002-8710-9409"
+      },
+      {
+        "name": "Hetzel, Manuel",
+        "affiliation": "Aschaffenburg University of Applied Sciences",
+        "orcid": "0000-0002-6737-8935"
+      },
+      {
+        "name": "Hubert, Andreas",
+        "affiliation": "Aschaffenburg University of Applied Sciences",
+        "orcid": "0000-0002-3970-0253"
+      },
+      {
+        "name": "Doll, Konrad",
+        "affiliation": "Aschaffenburg University of Applied Sciences",
+        "orcid": "0000-0002-3746-2319"
+      },
+      {
+        "name": "Sick, Bernhard",
+        "affiliation": "University of Kassel",
+        "orcid": "0000-0001-9467-656X"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://openaccess.thecvf.com/content/CVPR2024W/OmniCV2024/html/Reichert_Sensor_Equivariance_A_Framework_for_Semantic_Segmentation_with_Diverse_Camera_CVPRW_2024_paper.html",
+        "relation": "isDescribedBy",
+        "resource_type": "publication",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "submitted"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/kav-hareichert/CARLA_MV_RIG",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)"
+    },
+    "meeting": {
+      "title": "Computer Vision and Pattern Recognition",
+      "acronym": "CVPR",
+      "dates": "18. June 2024",
+      "place": "Workshops",
+      "url": "https://sites.google.com/view/omnicv2024/home",
+      "session": "OmniCV Workshop"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14697782"
+          }
+        }
+      ]
+    }
+  },
+  "title": "CARLA Equirectangular Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/14697783",
+    "self_html": "https://zenodo.org/records/14697783",
+    "preview_html": "https://zenodo.org/records/14697783?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14697783",
+    "self_doi": "https://doi.org/10.5281/zenodo.14697783",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14697783",
+    "reserve_doi": "https://zenodo.org/api/records/14697783/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14697782",
+    "parent_html": "https://zenodo.org/records/14697782",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14697782",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14697782",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14697783/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14697783/sequence/default",
+    "files": "https://zenodo.org/api/records/14697783/files",
+    "media_files": "https://zenodo.org/api/records/14697783/media-files",
+    "archive": "https://zenodo.org/api/records/14697783/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14697783/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14697783/versions/latest",
+    "latest_html": "https://zenodo.org/records/14697783/latest",
+    "versions": "https://zenodo.org/api/records/14697783/versions",
+    "draft": "https://zenodo.org/api/records/14697783/draft",
+    "access_links": "https://zenodo.org/api/records/14697783/access/links",
+    "access_grants": "https://zenodo.org/api/records/14697783/access/grants",
+    "access_users": "https://zenodo.org/api/records/14697783/access/users",
+    "access_request": "https://zenodo.org/api/records/14697783/access/request",
+    "access": "https://zenodo.org/api/records/14697783/access",
+    "communities": "https://zenodo.org/api/records/14697783/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14697783/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14697783/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14697783/file-modification",
+    "requests": "https://zenodo.org/api/records/14697783/requests"
+  },
+  "updated": "2025-02-05T17:42:25.983068+00:00",
+  "recid": "14697783",
+  "revision": 4,
+  "files": [
+    {
+      "id": "821764a0-c6f6-41a5-a924-1947558f58fc",
+      "key": "README.md",
+      "size": 22145,
+      "checksum": "md5:d8fe1f2e1cb65ed25a9f19f2a711ff7f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14697783/files/README.md/content"
+      }
+    },
+    {
+      "id": "41113d18-2dfc-42fb-b1f0-1cf80a498d96",
+      "key": "Carla.zip",
+      "size": 73410018025,
+      "checksum": "md5:1973cf70e060fd5543aa093950c9e2d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14697783/files/Carla.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "455234"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 90,
+    "unique_downloads": 86,
+    "views": 87,
+    "unique_views": 81,
+    "version_downloads": 90,
+    "version_unique_downloads": 86,
+    "version_unique_views": 81,
+    "version_views": 87
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 73410018025,
+    "top_level_files": [
+      {
+        "name": "README.md",
+        "size": 22145
+      },
+      {
+        "name": "Carla.zip",
+        "size": 73410018025
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:58.092943"
+}

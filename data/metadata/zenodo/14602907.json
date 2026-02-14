@@ -1,0 +1,131 @@
+{
+  "created": "2025-01-06T04:15:42.435041+00:00",
+  "modified": "2025-01-06T04:15:42.622316+00:00",
+  "id": 14602907,
+  "conceptrecid": "14602906",
+  "doi": "10.5281/zenodo.14602907",
+  "conceptdoi": "10.5281/zenodo.14602906",
+  "doi_url": "https://doi.org/10.5281/zenodo.14602907",
+  "metadata": {
+    "title": "lidar and ionospheric data on 31 Oct 2024",
+    "doi": "10.5281/zenodo.14602907",
+    "publication_date": "2025-01-06",
+    "description": "<p>In this link, we present the lidar and ionospheric data observed at low latitude Hainan China on 31 October 2024, including the Ca ion density profile observed by a Ca+ lidar, VHF radar backscatter echoes and the corresponding interferometry results, the ionospheric profile observed by ionosonde and GNSS ROTI maps. The files are restored as .mat or .txt format that could be easily read by matlab.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Sun, Wenjie",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14602906"
+          }
+        }
+      ]
+    }
+  },
+  "title": "lidar and ionospheric data on 31 Oct 2024",
+  "links": {
+    "self": "https://zenodo.org/api/records/14602907",
+    "self_html": "https://zenodo.org/records/14602907",
+    "preview_html": "https://zenodo.org/records/14602907?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14602907",
+    "self_doi": "https://doi.org/10.5281/zenodo.14602907",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14602907",
+    "reserve_doi": "https://zenodo.org/api/records/14602907/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14602906",
+    "parent_html": "https://zenodo.org/records/14602906",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14602906",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14602906",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14602907/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14602907/sequence/default",
+    "files": "https://zenodo.org/api/records/14602907/files",
+    "media_files": "https://zenodo.org/api/records/14602907/media-files",
+    "archive": "https://zenodo.org/api/records/14602907/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14602907/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14602907/versions/latest",
+    "latest_html": "https://zenodo.org/records/14602907/latest",
+    "versions": "https://zenodo.org/api/records/14602907/versions",
+    "draft": "https://zenodo.org/api/records/14602907/draft",
+    "access_links": "https://zenodo.org/api/records/14602907/access/links",
+    "access_grants": "https://zenodo.org/api/records/14602907/access/grants",
+    "access_users": "https://zenodo.org/api/records/14602907/access/users",
+    "access_request": "https://zenodo.org/api/records/14602907/access/request",
+    "access": "https://zenodo.org/api/records/14602907/access",
+    "communities": "https://zenodo.org/api/records/14602907/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14602907/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14602907/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14602907/file-modification",
+    "requests": "https://zenodo.org/api/records/14602907/requests"
+  },
+  "updated": "2025-01-06T04:15:42.622316+00:00",
+  "recid": "14602907",
+  "revision": 4,
+  "files": [
+    {
+      "id": "c160d9ca-d2b7-43ec-a958-853799262927",
+      "key": "lidar and ionospheric data on 31 Oct 2024.rar",
+      "size": 337239576,
+      "checksum": "md5:d5d78a43ff354211dd183a62a3931543",
+      "links": {
+        "self": "https://zenodo.org/api/records/14602907/files/lidar and ionospheric data on 31 Oct 2024.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1201081"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 31,
+    "unique_downloads": 30,
+    "views": 56,
+    "unique_views": 47,
+    "version_downloads": 31,
+    "version_unique_downloads": 30,
+    "version_unique_views": 47,
+    "version_views": 56
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 337239576,
+    "top_level_files": [
+      {
+        "name": "lidar and ionospheric data on 31 Oct 2024.rar",
+        "size": 337239576
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:30.318777"
+}

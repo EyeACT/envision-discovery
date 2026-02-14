@@ -1,0 +1,160 @@
+{
+  "created": "2024-09-13T12:29:42.571978+00:00",
+  "modified": "2024-09-13T12:29:42.726177+00:00",
+  "id": 13759203,
+  "conceptrecid": "13759202",
+  "doi": "10.5281/zenodo.13759203",
+  "conceptdoi": "10.5281/zenodo.13759202",
+  "doi_url": "https://doi.org/10.5281/zenodo.13759203",
+  "metadata": {
+    "title": "Nonlinear spatial integration allows the retina to detect the sign of defocus in natural scenes",
+    "doi": "10.5281/zenodo.13759203",
+    "publication_date": "2024-09-13",
+    "description": "<p>The dataset comprises three types of data. First, multi-electrode array recordings of mouse retinal ganglion cells performed by Awen Louboutin and Tom Quetu. Second, point spread functions from mouse and human optical eye models, and associated convolved natural images. Third, results from a convolutional neural network model trainings.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Goethals, Sarah",
+        "affiliation": "EssilorLuxottica (France)",
+        "orcid": "0000-0003-2390-9180"
+      },
+      {
+        "name": "Louboutin, Awen",
+        "affiliation": "Sorbonne Universit\u00e9"
+      },
+      {
+        "name": "Hamlaoui, Samy",
+        "affiliation": "EssilorLuxottica (France)"
+      },
+      {
+        "name": "Quetu, Tom",
+        "affiliation": "Sorbonne Universit\u00e9"
+      },
+      {
+        "name": "Virgili, Samuele",
+        "affiliation": "Sorbonne Universit\u00e9"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Marre, Olivier",
+        "affiliation": "Sorbonne Universit\u00e9",
+        "type": "ProjectLeader"
+      },
+      {
+        "name": "Baranton, Konogan",
+        "affiliation": "EssilorLuxottica (France)",
+        "type": "ProjectLeader"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13759202"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Nonlinear spatial integration allows the retina to detect the sign of defocus in natural scenes",
+  "links": {
+    "self": "https://zenodo.org/api/records/13759203",
+    "self_html": "https://zenodo.org/records/13759203",
+    "preview_html": "https://zenodo.org/records/13759203?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13759203",
+    "self_doi": "https://doi.org/10.5281/zenodo.13759203",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13759203",
+    "reserve_doi": "https://zenodo.org/api/records/13759203/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13759202",
+    "parent_html": "https://zenodo.org/records/13759202",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13759202",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13759202",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13759203/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13759203/sequence/default",
+    "files": "https://zenodo.org/api/records/13759203/files",
+    "media_files": "https://zenodo.org/api/records/13759203/media-files",
+    "archive": "https://zenodo.org/api/records/13759203/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13759203/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13759203/versions/latest",
+    "latest_html": "https://zenodo.org/records/13759203/latest",
+    "versions": "https://zenodo.org/api/records/13759203/versions",
+    "draft": "https://zenodo.org/api/records/13759203/draft",
+    "access_links": "https://zenodo.org/api/records/13759203/access/links",
+    "access_grants": "https://zenodo.org/api/records/13759203/access/grants",
+    "access_users": "https://zenodo.org/api/records/13759203/access/users",
+    "access_request": "https://zenodo.org/api/records/13759203/access/request",
+    "access": "https://zenodo.org/api/records/13759203/access",
+    "communities": "https://zenodo.org/api/records/13759203/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13759203/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13759203/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13759203/file-modification",
+    "requests": "https://zenodo.org/api/records/13759203/requests"
+  },
+  "updated": "2024-09-13T12:29:42.726177+00:00",
+  "recid": "13759203",
+  "revision": 4,
+  "files": [
+    {
+      "id": "063f0743-6c54-472b-9248-f8b63e3ec883",
+      "key": "Defocus detection data.zip",
+      "size": 19698316495,
+      "checksum": "md5:fee8470e295aea23f9699d6d56f800fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/13759203/files/Defocus detection data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "82675"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 16,
+    "unique_downloads": 16,
+    "views": 117,
+    "unique_views": 98,
+    "version_downloads": 16,
+    "version_unique_downloads": 16,
+    "version_unique_views": 98,
+    "version_views": 117
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 19698316495,
+    "top_level_files": [
+      {
+        "name": "Defocus detection data.zip",
+        "size": 19698316495
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:30.860990"
+}

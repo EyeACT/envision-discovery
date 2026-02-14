@@ -1,0 +1,790 @@
+{
+  "created": "2025-02-24T15:58:35.751996+00:00",
+  "modified": "2025-02-24T15:58:37.237004+00:00",
+  "id": 14918858,
+  "conceptrecid": "14918857",
+  "doi": "10.5281/zenodo.14918858",
+  "conceptdoi": "10.5281/zenodo.14918857",
+  "doi_url": "https://doi.org/10.5281/zenodo.14918858",
+  "metadata": {
+    "title": "AMPERE Summary Plot Movies (2022-Oct)",
+    "doi": "10.5281/zenodo.14918858",
+    "publication_date": "2025-02-24",
+    "description": "<p>2022-Oct AMPERE summary plot movies. See included zenodo_summary_plot_movie_description document for details.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Anderson, Brian J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-2543-0149"
+      },
+      {
+        "name": "Vines, Sarah",
+        "affiliation": "Southwest Research Institute",
+        "orcid": "0000-0002-7515-3285"
+      },
+      {
+        "name": "Waters, Colin",
+        "affiliation": "University of Newcastle Australia",
+        "orcid": "0000-0003-2121-6962"
+      },
+      {
+        "name": "Barnes, Robin J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory"
+      },
+      {
+        "name": "Romeo, Giuseppe",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-0190-3194"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "AMPERE",
+      "ionosphere",
+      "magnetosphere",
+      "convection",
+      "rst",
+      "electrodynamics"
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "ampere"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14918857"
+          }
+        }
+      ]
+    }
+  },
+  "title": "AMPERE Summary Plot Movies (2022-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14918858",
+    "self_html": "https://zenodo.org/records/14918858",
+    "preview_html": "https://zenodo.org/records/14918858?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14918858",
+    "self_doi": "https://doi.org/10.5281/zenodo.14918858",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14918858",
+    "reserve_doi": "https://zenodo.org/api/records/14918858/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14918857",
+    "parent_html": "https://zenodo.org/records/14918857",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14918857",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14918857",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14918858/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14918858/sequence/default",
+    "files": "https://zenodo.org/api/records/14918858/files",
+    "media_files": "https://zenodo.org/api/records/14918858/media-files",
+    "archive": "https://zenodo.org/api/records/14918858/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14918858/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14918858/versions/latest",
+    "latest_html": "https://zenodo.org/records/14918858/latest",
+    "versions": "https://zenodo.org/api/records/14918858/versions",
+    "draft": "https://zenodo.org/api/records/14918858/draft",
+    "access_links": "https://zenodo.org/api/records/14918858/access/links",
+    "access_grants": "https://zenodo.org/api/records/14918858/access/grants",
+    "access_users": "https://zenodo.org/api/records/14918858/access/users",
+    "access_request": "https://zenodo.org/api/records/14918858/access/request",
+    "access": "https://zenodo.org/api/records/14918858/access",
+    "communities": "https://zenodo.org/api/records/14918858/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14918858/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14918858/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14918858/file-modification",
+    "requests": "https://zenodo.org/api/records/14918858/requests"
+  },
+  "updated": "2025-02-24T15:58:37.237004+00:00",
+  "recid": "14918858",
+  "revision": 5,
+  "files": [
+    {
+      "id": "1a7beab6-dd6d-4e75-85ea-549a374fc642",
+      "key": "20221006.zip",
+      "size": 95762269,
+      "checksum": "md5:0dbc435fd234c3d3f050e57cda462e57",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221006.zip/content"
+      }
+    },
+    {
+      "id": "9a08d754-93c9-4a3d-9cf4-68ef84d621c8",
+      "key": "20221017.zip",
+      "size": 91766535,
+      "checksum": "md5:deca4687afd6e7c16456acf392fe370e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221017.zip/content"
+      }
+    },
+    {
+      "id": "a74dbba6-9e63-494e-8c80-2c78b5325a3d",
+      "key": "20221031.zip",
+      "size": 95242931,
+      "checksum": "md5:6351974241a6da7780502b38df396fdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221031.zip/content"
+      }
+    },
+    {
+      "id": "d9ae8145-9da9-4cc5-ae57-d6c7097193f0",
+      "key": "20221018.zip",
+      "size": 97339316,
+      "checksum": "md5:c7a3f48efcea7120c9fc987342cc2d61",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221018.zip/content"
+      }
+    },
+    {
+      "id": "a2263066-eb78-443a-a3cd-d3e890a94294",
+      "key": "20221003.zip",
+      "size": 95717988,
+      "checksum": "md5:a85b4e8eee926ed4f4fc2f0af4f63905",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221003.zip/content"
+      }
+    },
+    {
+      "id": "cafa55c6-6320-4244-9750-45a5254aa088",
+      "key": "20221015.zip",
+      "size": 93163731,
+      "checksum": "md5:4e2bbf8e2c1b5744db33aa08874e3070",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221015.zip/content"
+      }
+    },
+    {
+      "id": "9a4c9903-f2c3-482a-b809-065361325f9c",
+      "key": "20221022.zip",
+      "size": 96542642,
+      "checksum": "md5:d5425325d06b052af1207017c92772d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221022.zip/content"
+      }
+    },
+    {
+      "id": "2f8cc92c-1e2c-4050-bffc-f7ba421ec88c",
+      "key": "20221016.zip",
+      "size": 93521151,
+      "checksum": "md5:e75cfa5dfd09af8f3d5247d5a744ca81",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221016.zip/content"
+      }
+    },
+    {
+      "id": "e5058891-800a-47b8-8519-c88019c09f71",
+      "key": "20221019.zip",
+      "size": 91299350,
+      "checksum": "md5:7eec1966f63766b10a01d43c3ae26a29",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221019.zip/content"
+      }
+    },
+    {
+      "id": "2a29b7a9-e550-47a1-8c40-db2843b2cc2b",
+      "key": "20221002.zip",
+      "size": 100253039,
+      "checksum": "md5:ddaf8727cd867c5b785336b4094deeb2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221002.zip/content"
+      }
+    },
+    {
+      "id": "b24aead1-80b1-4f61-a7d4-dd6549fe5d6c",
+      "key": "20221011.zip",
+      "size": 93380426,
+      "checksum": "md5:0c75187b46d928f2eac1f6512906e208",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221011.zip/content"
+      }
+    },
+    {
+      "id": "7eb392d8-79fa-49f6-b920-8ab5283016c4",
+      "key": "20221004.zip",
+      "size": 93011874,
+      "checksum": "md5:d91037554ffe48e3dbe2b87c7b344fb6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221004.zip/content"
+      }
+    },
+    {
+      "id": "c94ef072-9f1a-43b9-9460-5841796473f9",
+      "key": "20221001.zip",
+      "size": 95658857,
+      "checksum": "md5:3ad99d26d937c3610084ead481eefec2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221001.zip/content"
+      }
+    },
+    {
+      "id": "f63d6d53-5844-4b3e-b6c2-7d1ceaa9b0fe",
+      "key": "20221008.zip",
+      "size": 92864244,
+      "checksum": "md5:c8f40bbea7f3f51880efcd9df20cb1f3",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221008.zip/content"
+      }
+    },
+    {
+      "id": "6d5d4f58-2c8c-479e-8a17-2dc944c164c4",
+      "key": "20221028.zip",
+      "size": 100642222,
+      "checksum": "md5:69f734b718de15021d958b36ed8193a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221028.zip/content"
+      }
+    },
+    {
+      "id": "4cc3cdf7-3423-46e8-a84a-723927824568",
+      "key": "20221030.zip",
+      "size": 91602444,
+      "checksum": "md5:1b5e7890d92369a7188682902ecad8e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221030.zip/content"
+      }
+    },
+    {
+      "id": "fa9f2e68-d4a7-4382-8ad8-bb9b1df755e5",
+      "key": "20221009.zip",
+      "size": 91080016,
+      "checksum": "md5:46970a22a0ce6c01f059d3143a814f27",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221009.zip/content"
+      }
+    },
+    {
+      "id": "e8c7291a-d788-4bae-829e-9ecfdef3a4c8",
+      "key": "20221012.zip",
+      "size": 97836071,
+      "checksum": "md5:c25396578d3fcd43b47560d530f7cd54",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221012.zip/content"
+      }
+    },
+    {
+      "id": "764f5a93-b622-4b24-97d4-5f86bbf62e96",
+      "key": "20221021.zip",
+      "size": 93859708,
+      "checksum": "md5:04fbe7cdc1c8698b6d1e045bbad1f49f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221021.zip/content"
+      }
+    },
+    {
+      "id": "8d36fedb-e125-4470-8c5b-5ac2ea0be962",
+      "key": "20221027.zip",
+      "size": 92920819,
+      "checksum": "md5:db8e6863b3df633e8944e22528fed372",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221027.zip/content"
+      }
+    },
+    {
+      "id": "dfb5c80c-15df-4ace-a957-a9084411a5fd",
+      "key": "20221005.zip",
+      "size": 97066435,
+      "checksum": "md5:f05e2da1b590972f61d6a54aa7044132",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221005.zip/content"
+      }
+    },
+    {
+      "id": "cc3373f5-3f3f-450f-a431-3a0981d19cf8",
+      "key": "20221007.zip",
+      "size": 88862740,
+      "checksum": "md5:4a474eae9f99632b7ad3bff0eb55f485",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221007.zip/content"
+      }
+    },
+    {
+      "id": "8be292f5-b705-4538-b8a8-64301b0035cf",
+      "key": "20221020.zip",
+      "size": 94152700,
+      "checksum": "md5:4c4781783f5e97f01f6412216f4ea79d",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221020.zip/content"
+      }
+    },
+    {
+      "id": "b5f72fa3-0e58-4169-a437-7f9f91a1520f",
+      "key": "20221029.zip",
+      "size": 88237586,
+      "checksum": "md5:01ba8570e85381d800fec59f48f88841",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221029.zip/content"
+      }
+    },
+    {
+      "id": "d3c413d2-e37d-4263-841e-174d4c7bf543",
+      "key": "20221014.zip",
+      "size": 90040191,
+      "checksum": "md5:24184ef46bddd203fbbe2fa2202959ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221014.zip/content"
+      }
+    },
+    {
+      "id": "18190178-6c30-4f8e-8ba0-cd824d24cb17",
+      "key": "20221013.zip",
+      "size": 96147413,
+      "checksum": "md5:3867f124ec672f11ead424fd6681f95e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221013.zip/content"
+      }
+    },
+    {
+      "id": "14e5b602-be67-4216-be0d-f624b4292198",
+      "key": "20221010.zip",
+      "size": 92884692,
+      "checksum": "md5:a54bdbb6fcd051b22a4f9e651129ecdd",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221010.zip/content"
+      }
+    },
+    {
+      "id": "f49c7e5b-5e49-402b-844a-40abbaaee5ba",
+      "key": "20221025.zip",
+      "size": 92604192,
+      "checksum": "md5:99e5910e8ed752c2bef4a0e77db28db9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221025.zip/content"
+      }
+    },
+    {
+      "id": "ac9b1132-2362-41c6-8836-dc49aba54979",
+      "key": "20221023.zip",
+      "size": 97043043,
+      "checksum": "md5:66038078269bb3bd0c83489d5bcacd77",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221023.zip/content"
+      }
+    },
+    {
+      "id": "bad9bed7-b0ad-42b2-bf76-5a71a0585d94",
+      "key": "20221024.zip",
+      "size": 89409401,
+      "checksum": "md5:e3d1d8d901d9225993cafe44d082ce0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221024.zip/content"
+      }
+    },
+    {
+      "id": "4cd7b9dc-05f0-46d4-9f4a-ff69813627ba",
+      "key": "20221026.zip",
+      "size": 100488800,
+      "checksum": "md5:3c71ed4a8719ad4033674ff639d80da8",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/20221026.zip/content"
+      }
+    },
+    {
+      "id": "ac59393d-b74a-417f-ab53-a1af74c28cf2",
+      "key": "zenodo_summary_plot_movie_description_2025_0212.docx",
+      "size": 834170,
+      "checksum": "md5:6cff3f5e749885e6bb32956dfce4a055",
+      "links": {
+        "self": "https://zenodo.org/api/records/14918858/files/zenodo_summary_plot_movie_description_2025_0212.docx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1224282"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 922,
+    "unique_downloads": 921,
+    "views": 34,
+    "unique_views": 30,
+    "version_downloads": 922,
+    "version_unique_downloads": 921,
+    "version_unique_views": 30,
+    "version_views": 34
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 31,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2920402826,
+    "top_level_files": [
+      {
+        "name": "20221006.zip",
+        "size": 95762269
+      },
+      {
+        "name": "20221017.zip",
+        "size": 91766535
+      },
+      {
+        "name": "20221031.zip",
+        "size": 95242931
+      },
+      {
+        "name": "20221018.zip",
+        "size": 97339316
+      },
+      {
+        "name": "20221003.zip",
+        "size": 95717988
+      },
+      {
+        "name": "20221015.zip",
+        "size": 93163731
+      },
+      {
+        "name": "20221022.zip",
+        "size": 96542642
+      },
+      {
+        "name": "20221016.zip",
+        "size": 93521151
+      },
+      {
+        "name": "20221019.zip",
+        "size": 91299350
+      },
+      {
+        "name": "20221002.zip",
+        "size": 100253039
+      },
+      {
+        "name": "20221011.zip",
+        "size": 93380426
+      },
+      {
+        "name": "20221004.zip",
+        "size": 93011874
+      },
+      {
+        "name": "20221001.zip",
+        "size": 95658857
+      },
+      {
+        "name": "20221008.zip",
+        "size": 92864244
+      },
+      {
+        "name": "20221028.zip",
+        "size": 100642222
+      },
+      {
+        "name": "20221030.zip",
+        "size": 91602444
+      },
+      {
+        "name": "20221009.zip",
+        "size": 91080016
+      },
+      {
+        "name": "20221012.zip",
+        "size": 97836071
+      },
+      {
+        "name": "20221021.zip",
+        "size": 93859708
+      },
+      {
+        "name": "20221027.zip",
+        "size": 92920819
+      },
+      {
+        "name": "20221005.zip",
+        "size": 97066435
+      },
+      {
+        "name": "20221007.zip",
+        "size": 88862740
+      },
+      {
+        "name": "20221020.zip",
+        "size": 94152700
+      },
+      {
+        "name": "20221029.zip",
+        "size": 88237586
+      },
+      {
+        "name": "20221014.zip",
+        "size": 90040191
+      },
+      {
+        "name": "20221013.zip",
+        "size": 96147413
+      },
+      {
+        "name": "20221010.zip",
+        "size": 92884692
+      },
+      {
+        "name": "20221025.zip",
+        "size": 92604192
+      },
+      {
+        "name": "20221023.zip",
+        "size": 97043043
+      },
+      {
+        "name": "20221024.zip",
+        "size": 89409401
+      },
+      {
+        "name": "20221026.zip",
+        "size": 100488800
+      },
+      {
+        "name": "zenodo_summary_plot_movie_description_2025_0212.docx",
+        "size": 834170
+      }
+    ],
+    "zip_contents": {
+      "20221022.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 96559648,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221022.k060_m08.north.60.smr.png",
+          "ampere.20221022.k060_m08.north.40.smr.png",
+          "ampere.20221022.k060_m08.south.60.smr.png",
+          "ampere.20221022.k060_m08.south.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221021.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 93879605,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221021.k060_m08.north.60.smr.png",
+          "ampere.20221021.k060_m08.south.40.smr.png",
+          "ampere.20221021.k060_m08.north.40.smr.png",
+          "ampere.20221021.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221005.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 97084735,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221005.k060_m08.north.40.smr.png",
+          "ampere.20221005.k060_m08.south.40.smr.png",
+          "ampere.20221005.k060_m08.north.60.smr.png",
+          "ampere.20221005.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221007.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 88882925,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221007.k060_m08.south.40.smr.png",
+          "ampere.20221007.k060_m08.north.40.smr.png",
+          "ampere.20221007.k060_m08.south.60.smr.png",
+          "ampere.20221007.k060_m08.north.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221020.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 94172069,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221020.k060_m08.north.60.smr.png",
+          "ampere.20221020.k060_m08.south.40.smr.png",
+          "ampere.20221020.k060_m08.north.40.smr.png",
+          "ampere.20221020.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221014.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 90059319,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221014.k060_m08.north.40.smr.png",
+          "ampere.20221014.k060_m08.north.60.smr.png",
+          "ampere.20221014.k060_m08.south.60.smr.png",
+          "ampere.20221014.k060_m08.south.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221013.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 96167207,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221013.k060_m08.north.60.smr.png",
+          "ampere.20221013.k060_m08.north.40.smr.png",
+          "ampere.20221013.k060_m08.south.60.smr.png",
+          "ampere.20221013.k060_m08.south.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221010.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 92904652,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221010.k060_m08.south.40.smr.png",
+          "ampere.20221010.k060_m08.north.40.smr.png",
+          "ampere.20221010.k060_m08.north.60.smr.png",
+          "ampere.20221010.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221024.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 89429889,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221024.k060_m08.south.40.smr.png",
+          "ampere.20221024.k060_m08.north.60.smr.png",
+          "ampere.20221024.k060_m08.south.60.smr.png",
+          "ampere.20221024.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20221026.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 100506522,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20221026.k060_m08.north.40.smr.png",
+          "ampere.20221026.k060_m08.south.60.smr.png",
+          "ampere.20221026.k060_m08.south.40.smr.png",
+          "ampere.20221026.k060_m08.north.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "ampere.20221022.k060_m08.north.60.smr.png",
+      "ampere.20221022.k060_m08.north.40.smr.png",
+      "ampere.20221022.k060_m08.south.60.smr.png",
+      "ampere.20221022.k060_m08.south.40.smr.png",
+      "ampere.20221021.k060_m08.north.60.smr.png",
+      "ampere.20221021.k060_m08.south.40.smr.png",
+      "ampere.20221021.k060_m08.north.40.smr.png",
+      "ampere.20221021.k060_m08.south.60.smr.png",
+      "ampere.20221005.k060_m08.north.40.smr.png",
+      "ampere.20221005.k060_m08.south.40.smr.png",
+      "ampere.20221005.k060_m08.north.60.smr.png",
+      "ampere.20221005.k060_m08.south.60.smr.png",
+      "ampere.20221007.k060_m08.south.40.smr.png",
+      "ampere.20221007.k060_m08.north.40.smr.png",
+      "ampere.20221007.k060_m08.south.60.smr.png",
+      "ampere.20221007.k060_m08.north.60.smr.png",
+      "ampere.20221020.k060_m08.north.60.smr.png",
+      "ampere.20221020.k060_m08.south.40.smr.png",
+      "ampere.20221020.k060_m08.north.40.smr.png",
+      "ampere.20221020.k060_m08.south.60.smr.png",
+      "ampere.20221014.k060_m08.north.40.smr.png",
+      "ampere.20221014.k060_m08.north.60.smr.png",
+      "ampere.20221014.k060_m08.south.60.smr.png",
+      "ampere.20221014.k060_m08.south.40.smr.png",
+      "ampere.20221013.k060_m08.north.60.smr.png",
+      "ampere.20221013.k060_m08.north.40.smr.png",
+      "ampere.20221013.k060_m08.south.60.smr.png",
+      "ampere.20221013.k060_m08.south.40.smr.png",
+      "ampere.20221010.k060_m08.south.40.smr.png",
+      "ampere.20221010.k060_m08.north.40.smr.png",
+      "ampere.20221010.k060_m08.north.60.smr.png",
+      "ampere.20221010.k060_m08.south.60.smr.png",
+      "ampere.20221024.k060_m08.south.40.smr.png",
+      "ampere.20221024.k060_m08.north.60.smr.png",
+      "ampere.20221024.k060_m08.south.60.smr.png",
+      "ampere.20221024.k060_m08.north.40.smr.png",
+      "ampere.20221026.k060_m08.north.40.smr.png",
+      "ampere.20221026.k060_m08.south.60.smr.png",
+      "ampere.20221026.k060_m08.south.40.smr.png",
+      "ampere.20221026.k060_m08.north.60.smr.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:12.995119"
+}

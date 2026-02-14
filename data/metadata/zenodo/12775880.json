@@ -1,0 +1,134 @@
+{
+  "created": "2024-07-19T02:43:47.335537+00:00",
+  "modified": "2024-07-25T01:26:01.301920+00:00",
+  "id": 12775880,
+  "conceptrecid": "12702719",
+  "doi": "10.5281/zenodo.12775880",
+  "conceptdoi": "10.5281/zenodo.12702719",
+  "doi_url": "https://doi.org/10.5281/zenodo.12775880",
+  "metadata": {
+    "title": "ROSE: Retinal OCT-Angiography segmentation dataset",
+    "doi": "10.5281/zenodo.12775880",
+    "publication_date": "2021-07-19",
+    "description": "<p>Retinal OCT-Angiography Vessel Segmentation Dataset (ROSE) is now open source. It includes two subsets:&nbsp;<strong>ROSE-1</strong>&nbsp;and&nbsp;<strong>ROSE-2</strong>.&nbsp;</p>\n<ul>\n<li><strong>ROSE-1</strong>&nbsp;subset consists of a total of&nbsp;<strong>117&nbsp;</strong>OCTA images from 39 subjects (26 with disease &nbsp;and the rest are healthy control) and was split into 90 images for training and 27 images for testing. Each subject has&nbsp;<em>en face</em>&nbsp;angiograms of superficial (SVC), deep (DVC), and the inner retinal vascular plexus that includes both SVC and DVC (SVC+DVC)&nbsp;respectively. All the OCTA scans were captured by the&nbsp;<u>RTVue XR Avanti SD-OCT system (Optovue, USA) equipped with AngioVue software</u>, with image resolution of 304 &times; 304 pixels. The scan area was 3&times;3 mm<sup>2</sup>&nbsp;area centred at the fovea. The manual annotations of these vascular network were graded &nbsp;by image experts and clinicians, and the consensus of them was then used as the groundtruth.&nbsp;Two different types of vessel annotations are available:&nbsp;<strong>centerline-level</strong>&nbsp;and&nbsp;<strong>pixel-level</strong>&nbsp;annotation.&nbsp;</li>\n<li><strong>ROSE-2</strong>&nbsp;subset contains a total of&nbsp;<strong>112</strong>&nbsp;OCT-A images of 112 eyes acquired by&nbsp;<u>Heidelberg OCT2 system with Spectralis software (Heidelberg Engineering, Heidelberg, Germany)&nbsp;</u>and was split into 90 images for training and 22 images for testing. All the images in this dataset are the en face angiograms of SVC within a 3&times;3 mm<sup>2</sup> area centred at the fovea, and each image was resized into a grayscale image with 840 &times; 840 pixels. All the visible retinal vessels were manually traced using an in-house program written in Matlab (Mathworks R2018, Natwick) by an experienced clinical ophthalmologist.&nbsp;</li>\n</ul>\n<p>code: <a href=\"https://github.com/iMED-Lab/OCTA-Net-OCTA-Vessel-Segmentation-Network\">iMED-Lab/OCTA-Net-OCTA-Vessel-Segmentation-Network (github.com)</a></p>\n<p><strong>ROSE-O</strong>&nbsp;is a retinal structure detection dataset of OCTA images, with precise manual annotations of RV, RVJ and the FAZ. It contains 117 images which were captured using the&nbsp;<u>Optovue Avanti RTVue XR with AngioVue software (Optovue, Fremont, USA)</u>: the images have a resolution of 304&times;304 pixels. The SVC, DVC and IVC angiograms of each participant were obtained by the device.&nbsp;</p>\n<p>code: <a href=\"https://github.com/iMED-Lab/VAFF-Net\">https://github.com/iMED-Lab/VAFF-Net</a></p>",
+    "access_right": "restricted",
+    "creators": [
+      {
+        "name": "iMED",
+        "affiliation": null
+      }
+    ],
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "IEEE Transactions on Medical Imaging"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12702719"
+          }
+        }
+      ]
+    }
+  },
+  "title": "ROSE: Retinal OCT-Angiography segmentation dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/12775880",
+    "self_html": "https://zenodo.org/records/12775880",
+    "preview_html": "https://zenodo.org/records/12775880?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12775880",
+    "self_doi": "https://doi.org/10.5281/zenodo.12775880",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12775880",
+    "reserve_doi": "https://zenodo.org/api/records/12775880/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12702719",
+    "parent_html": "https://zenodo.org/records/12702719",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12702719",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12702719",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12775880/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12775880/sequence/default",
+    "files": "https://zenodo.org/api/records/12775880/files",
+    "media_files": "https://zenodo.org/api/records/12775880/media-files",
+    "archive": "https://zenodo.org/api/records/12775880/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12775880/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12775880/versions/latest",
+    "latest_html": "https://zenodo.org/records/12775880/latest",
+    "versions": "https://zenodo.org/api/records/12775880/versions",
+    "draft": "https://zenodo.org/api/records/12775880/draft",
+    "access_links": "https://zenodo.org/api/records/12775880/access/links",
+    "access_grants": "https://zenodo.org/api/records/12775880/access/grants",
+    "access_users": "https://zenodo.org/api/records/12775880/access/users",
+    "access_request": "https://zenodo.org/api/records/12775880/access/request",
+    "access": "https://zenodo.org/api/records/12775880/access",
+    "communities": "https://zenodo.org/api/records/12775880/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12775880/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12775880/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12775880/file-modification",
+    "requests": "https://zenodo.org/api/records/12775880/requests"
+  },
+  "updated": "2024-07-25T01:26:01.301920+00:00",
+  "recid": "12775880",
+  "revision": 10,
+  "files": [],
+  "swh": null,
+  "owners": [
+    {
+      "id": "290703"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1174,
+    "unique_downloads": 744,
+    "views": 6035,
+    "unique_views": 4580,
+    "version_downloads": 1111,
+    "version_unique_downloads": 693,
+    "version_unique_views": 4119,
+    "version_views": 5472
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/iMED-Lab/VAFF-Net",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:50.324830"
+}

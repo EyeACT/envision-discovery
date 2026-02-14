@@ -1,0 +1,286 @@
+{
+  "created": "2024-01-26T10:32:43.780387+00:00",
+  "modified": "2024-01-26T10:32:44.368362+00:00",
+  "id": 10390573,
+  "conceptrecid": "10390572",
+  "doi": "10.5281/zenodo.10390573",
+  "conceptdoi": "10.5281/zenodo.10390572",
+  "doi_url": "https://doi.org/10.5281/zenodo.10390573",
+  "metadata": {
+    "title": "FastSurferVINN Checkpoints",
+    "doi": "10.5281/zenodo.10390573",
+    "publication_date": "2022-09-28",
+    "description": "<p>Training checkpoints for FastSurferVINN (https://github.com/Deep-MI/FastSurfer) - please cite the paper when using this resource (https://doi.org/10.1016/j.neuroimage.2022.118933).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Henschel, Leonie",
+        "affiliation": "German Center for Neurodegenerative Diseases"
+      },
+      {
+        "name": "K\u00fcgler, David",
+        "affiliation": "German Center for Neurodegenerative Diseases"
+      },
+      {
+        "name": "Reuter, Martin",
+        "affiliation": "German Center for Neurodegenerative Diseases"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Henschel, Leonie",
+        "affiliation": "German Center for Neurodegenerative Diseases",
+        "type": "Researcher"
+      },
+      {
+        "name": "K\u00fcgler, David",
+        "affiliation": "German Center for Neurodegenerative Diseases",
+        "type": "Researcher"
+      },
+      {
+        "name": "Reuter, Martin",
+        "affiliation": "German Center for Neurodegenerative Diseases",
+        "type": "Supervisor"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      }
+    ],
+    "version": "2.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "pages": "118933",
+      "title": "Neuroimage",
+      "volume": "251"
+    },
+    "license": {
+      "id": "apache2.0"
+    },
+    "communities": [
+      {
+        "id": "fastsurfer"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10390572"
+          }
+        }
+      ]
+    }
+  },
+  "title": "FastSurferVINN Checkpoints",
+  "links": {
+    "self": "https://zenodo.org/api/records/10390573",
+    "self_html": "https://zenodo.org/records/10390573",
+    "preview_html": "https://zenodo.org/records/10390573?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10390573",
+    "self_doi": "https://doi.org/10.5281/zenodo.10390573",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10390573",
+    "reserve_doi": "https://zenodo.org/api/records/10390573/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10390572",
+    "parent_html": "https://zenodo.org/records/10390572",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10390572",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10390572",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10390573/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10390573/sequence/default",
+    "files": "https://zenodo.org/api/records/10390573/files",
+    "media_files": "https://zenodo.org/api/records/10390573/media-files",
+    "archive": "https://zenodo.org/api/records/10390573/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10390573/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10390573/versions/latest",
+    "latest_html": "https://zenodo.org/records/10390573/latest",
+    "versions": "https://zenodo.org/api/records/10390573/versions",
+    "draft": "https://zenodo.org/api/records/10390573/draft",
+    "access_links": "https://zenodo.org/api/records/10390573/access/links",
+    "access_grants": "https://zenodo.org/api/records/10390573/access/grants",
+    "access_users": "https://zenodo.org/api/records/10390573/access/users",
+    "access_request": "https://zenodo.org/api/records/10390573/access/request",
+    "access": "https://zenodo.org/api/records/10390573/access",
+    "communities": "https://zenodo.org/api/records/10390573/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10390573/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10390573/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10390573/file-modification",
+    "requests": "https://zenodo.org/api/records/10390573/requests"
+  },
+  "updated": "2024-01-26T10:32:44.368362+00:00",
+  "recid": "10390573",
+  "revision": 4,
+  "files": [
+    {
+      "id": "9248bd80-f112-4924-a995-78e6a7a973f1",
+      "key": "aparc_vinn_coronal_v2.0.0.pkl",
+      "size": 22399783,
+      "checksum": "md5:fa699af3d60ca9ee06950e62ed04c288",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_vinn_coronal_v2.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "281da80a-580a-4a05-8027-e22278a346f7",
+      "key": "aparc_cnn_axial_v1.0.0.pkl",
+      "size": 21677617,
+      "checksum": "md5:3272d2ed82f542f0c38323b160974f01",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_axial_v1.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "6a7f4cb0-eb2f-407f-bec9-094f4186c5c4",
+      "key": "aparc_cnn_sagittal_v2.0.0.pkl",
+      "size": 19363182,
+      "checksum": "md5:d9eb9895c72df4d901c5af934e885f79",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_sagittal_v2.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "1fefbe0e-b87e-4eea-9770-775f17e4bb39",
+      "key": "aparc_cnn_sagittal_v1.0.0.pkl",
+      "size": 21655777,
+      "checksum": "md5:36f1475107c0114b5f5162890721485c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_sagittal_v1.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "2979adb3-bb2b-4a51-857d-f0a518dddb07",
+      "key": "aparc_cnn_coronal_v1.0.0.pkl",
+      "size": 21677617,
+      "checksum": "md5:8b7e1b1991b1859e5141723ffcb04f93",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_coronal_v1.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "906fe5ec-49ed-4a8f-9fd6-e133a543e7be",
+      "key": "aparc_cnn_coronal_v2.0.0.pkl",
+      "size": 19386908,
+      "checksum": "md5:5c684410eb0b33e4f1c680ee08271a88",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_coronal_v2.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "e4dd09d9-601e-4570-8766-a2646bc9fc22",
+      "key": "aparc_cnn_axial_v2.0.0.pkl",
+      "size": 19387352,
+      "checksum": "md5:55df5bca0324e939664e0133a2e26e0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_cnn_axial_v2.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "d31da002-2a7f-470a-a230-983344eef399",
+      "key": "aparc_vinn_sagittal_v2.0.0.pkl",
+      "size": 22375598,
+      "checksum": "md5:f28ab87df75492ad91f9ff5e49a2583c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_vinn_sagittal_v2.0.0.pkl/content"
+      }
+    },
+    {
+      "id": "621fb130-0594-4b06-a8e5-38af3b9090f2",
+      "key": "aparc_vinn_axial_v2.0.0.pkl",
+      "size": 22399769,
+      "checksum": "md5:f16e78dd069eed2ec659674e0fdb697b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10390573/files/aparc_vinn_axial_v2.0.0.pkl/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1040980"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5610,
+    "unique_downloads": 5036,
+    "views": 185,
+    "unique_views": 174,
+    "version_downloads": 5610,
+    "version_unique_downloads": 5036,
+    "version_unique_views": 174,
+    "version_views": 185
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "aparc_vinn_coronal_v2.0.0.pkl",
+        "size": 22399783
+      },
+      {
+        "name": "aparc_cnn_axial_v1.0.0.pkl",
+        "size": 21677617
+      },
+      {
+        "name": "aparc_cnn_sagittal_v2.0.0.pkl",
+        "size": 19363182
+      },
+      {
+        "name": "aparc_cnn_sagittal_v1.0.0.pkl",
+        "size": 21655777
+      },
+      {
+        "name": "aparc_cnn_coronal_v1.0.0.pkl",
+        "size": 21677617
+      },
+      {
+        "name": "aparc_cnn_coronal_v2.0.0.pkl",
+        "size": 19386908
+      },
+      {
+        "name": "aparc_cnn_axial_v2.0.0.pkl",
+        "size": 19387352
+      },
+      {
+        "name": "aparc_vinn_sagittal_v2.0.0.pkl",
+        "size": 22375598
+      },
+      {
+        "name": "aparc_vinn_axial_v2.0.0.pkl",
+        "size": 22399769
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/Deep-MI/FastSurfer",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.neuroimage.2022.118933",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.373953"
+}

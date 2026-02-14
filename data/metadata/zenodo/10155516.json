@@ -1,0 +1,181 @@
+{
+  "created": "2023-11-18T21:22:43.070400+00:00",
+  "modified": "2024-10-19T22:23:36.157745+00:00",
+  "id": 10155516,
+  "conceptrecid": "10155515",
+  "doi": "10.5281/zenodo.10155516",
+  "conceptdoi": "10.5281/zenodo.10155515",
+  "doi_url": "https://doi.org/10.5281/zenodo.10155516",
+  "metadata": {
+    "title": "Code and Source Data for \"Knowledge-Guided Machine Learning can improve C cycle quantification in agroecosystems\"",
+    "doi": "10.5281/zenodo.10155516",
+    "publication_date": "2023-11-18",
+    "description": "<p>Datasets for code and Source Data for the study \"Knowledge-Guided Machine Learning can improve C cycle quantification in agroecosystems\" https://doi.org/10.1038/s41467-023-43860-5. All files belong to Licheng Liu and Zhenong Jin at University of Minnesota. deposit_code_v2.zip contains packaged codes and sample runs for KGML-ag-Carbon training, validation and implementations. Source Data.zip contains data for generating the figures inside the study.&nbsp;</p>\n<p>Note: We used Pytorch 1.6.0 (<a href=\"https://pytorch.org/get-started/previous-versions/\">https://pytorch.org/get-started/previous-versions/</a>, last access: 21 Oct 2023) and Python 3.7.11 (<a href=\"https://www.python.org/downloads/release/python-3711/\">https://www.python.org/downloads/release/python-3711/</a>, last access: 21 Oct 2023) as the programming environment for model development. Statistical analysis, such as linear regression, was conducted using Statsmodels 0.14.0 (<a href=\"https://github.com/statsmodels/statsmodels/\">https://github.com/statsmodels/statsmodels/</a>, last access: 21 Oct 2023) In order to use a GPU to speed-up the training process, we installed the CUDA Toolkit 10.1.243 (<a href=\"https://developer.nvidia.com/cuda-toolkit\">https://developer.nvidia.com/cuda-toolkit</a>, last access: 21 Oct 2023).&nbsp;</p>\n<p><strong>To use the full kgml_lib function, please create a new environment with the same python and libs above.</strong></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "LIU, LICHENG",
+        "affiliation": "University of Minnesota",
+        "orcid": "0000-0002-9649-1056"
+      },
+      {
+        "name": "Jin, Zhenong",
+        "affiliation": "University of Minnesota",
+        "orcid": "0000-0002-1252-2514"
+      }
+    ],
+    "keywords": [
+      "Machine learning",
+      "KGML",
+      "Knowledge-guide machine learning",
+      "KGML-ag-Carbon",
+      "Agriculture",
+      "Carbon Cycle"
+    ],
+    "version": "v1.1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10155515"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Code and Source Data for \"Knowledge-Guided Machine Learning can improve C cycle quantification in agroecosystems\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/10155516",
+    "self_html": "https://zenodo.org/records/10155516",
+    "preview_html": "https://zenodo.org/records/10155516?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10155516",
+    "self_doi": "https://doi.org/10.5281/zenodo.10155516",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10155516",
+    "reserve_doi": "https://zenodo.org/api/records/10155516/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10155515",
+    "parent_html": "https://zenodo.org/records/10155515",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10155515",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10155515",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10155516/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10155516/sequence/default",
+    "files": "https://zenodo.org/api/records/10155516/files",
+    "media_files": "https://zenodo.org/api/records/10155516/media-files",
+    "archive": "https://zenodo.org/api/records/10155516/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10155516/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10155516/versions/latest",
+    "latest_html": "https://zenodo.org/records/10155516/latest",
+    "versions": "https://zenodo.org/api/records/10155516/versions",
+    "draft": "https://zenodo.org/api/records/10155516/draft",
+    "access_links": "https://zenodo.org/api/records/10155516/access/links",
+    "access_grants": "https://zenodo.org/api/records/10155516/access/grants",
+    "access_users": "https://zenodo.org/api/records/10155516/access/users",
+    "access_request": "https://zenodo.org/api/records/10155516/access/request",
+    "access": "https://zenodo.org/api/records/10155516/access",
+    "communities": "https://zenodo.org/api/records/10155516/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10155516/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10155516/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10155516/file-modification",
+    "requests": "https://zenodo.org/api/records/10155516/requests"
+  },
+  "updated": "2024-10-19T22:23:36.157745+00:00",
+  "recid": "10155516",
+  "revision": 12,
+  "files": [
+    {
+      "id": "2aa891f6-197b-4324-b985-0c6bd50e777d",
+      "key": "Source Data.zip",
+      "size": 767872644,
+      "checksum": "md5:8abbb0d2d951a910439217587a3ab5ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155516/files/Source Data.zip/content"
+      }
+    },
+    {
+      "id": "2b933f68-95e9-4f07-b0b8-532298859814",
+      "key": "deposit_code_v2.zip",
+      "size": 2094235046,
+      "checksum": "md5:1592e4aceb8689a74444901cd4ad885b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155516/files/deposit_code_v2.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "253682"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1062,
+    "unique_downloads": 721,
+    "views": 1470,
+    "unique_views": 1309,
+    "version_downloads": 1062,
+    "version_unique_downloads": 721,
+    "version_unique_views": 1309,
+    "version_views": 1470
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2862107690,
+    "top_level_files": [
+      {
+        "name": "Source Data.zip",
+        "size": 767872644
+      },
+      {
+        "name": "deposit_code_v2.zip",
+        "size": 2094235046
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1038/s41467-023-43860-5",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://pytorch.org/get-started/previous-versions/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://www.python.org/downloads/release/python-3711/",
+      "type": "potential_download"
+    },
+    {
+      "url": "https://github.com/statsmodels/statsmodels/",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://developer.nvidia.com/cuda-toolkit",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:45.550936"
+}

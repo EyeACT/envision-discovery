@@ -1,0 +1,270 @@
+{
+  "created": "2023-02-11T01:33:35.421151+00:00",
+  "modified": "2024-07-12T15:58:26.387335+00:00",
+  "id": 7631354,
+  "conceptrecid": "7628732",
+  "doi": "10.5281/zenodo.7631354",
+  "conceptdoi": "10.5281/zenodo.7628732",
+  "doi_url": "https://doi.org/10.5281/zenodo.7631354",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo Res-UNet model for NOAA ERI/4-class segmentation of RGB 512x512 images",
+    "doi": "10.5281/zenodo.7631354",
+    "publication_date": "2023-02-10",
+    "description": "<p>This Residual-UNet model is trained on 1,179 pairs of human-generated segmentation labels and images from Emergency Response Imagery (ERI) collected by US National Oceanic and Atmospheric Administration (NOAA) after Hurricane Barry, Delta, Dorian, Florence, Ida, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon. The dataset is available here: https://doi.org/10.5281/zenodo.7268082</p>\n\n<p>Models have been created using Segmentation Gym:</p>\n\n<p>Code - https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>Paper - https://doi.org/10.1029/2022EA002332</p>\n\n<p>&nbsp;</p>\n\n<p>The model takes input images that are 512 x 512 x 3 pixels, and the output is 512 x 512 x 4, corresponding to 4 classes:</p>\n\n<ol>\n\t<li>water</li>\n\t<li>bare sediment</li>\n\t<li>vegetation</li>\n\t<li>development (roads, buildings, power lines, parking lots, etc.)</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>Included here are 6 files with the same root name:</p>\n\n<ol>\n\t<li>&nbsp;&#39;.json&#39; config file: this is the file that was used by Segmentation Gym to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction.</li>\n\t<li>&#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym function `seg_images_in_folder.py`.</li>\n\t<li>&nbsp;&#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</li>\n\t<li>&nbsp;&#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</li>\n\t<li>&#39;.zip&#39; of the model in the Tensorflow &lsquo;saved model&rsquo; format. It is created by the Segmentation Gym function `utils/gen_saved_model.py`</li>\n\t<li>&#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</li>\n</ol>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Goldstein, Evan B.",
+        "affiliation": "UNC Greensboro",
+        "orcid": "0000-0001-9358-1016"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "semantic segmentation",
+      "Residual UNet",
+      "UNet",
+      "aerial imagery",
+      "hurricane"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.7268083",
+        "relation": "cites",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1029/2022EA002332",
+        "relation": "cites",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.1",
+    "references": [
+      "https://doi.org/10.5281/zenodo.7268083",
+      "https://doi.org/10.1029/2022EA002332"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7628732"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo Res-UNet model for NOAA ERI/4-class segmentation of RGB 512x512 images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7631354",
+    "self_html": "https://zenodo.org/records/7631354",
+    "preview_html": "https://zenodo.org/records/7631354?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7631354",
+    "self_doi": "https://doi.org/10.5281/zenodo.7631354",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7631354",
+    "reserve_doi": "https://zenodo.org/api/records/7631354/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7628732",
+    "parent_html": "https://zenodo.org/records/7628732",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7628732",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7628732",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7631354/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7631354/sequence/default",
+    "files": "https://zenodo.org/api/records/7631354/files",
+    "media_files": "https://zenodo.org/api/records/7631354/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7631354:NOAA_Feb_23_small_trainhist_8.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7631354/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7631354/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7631354/versions/latest",
+    "latest_html": "https://zenodo.org/records/7631354/latest",
+    "versions": "https://zenodo.org/api/records/7631354/versions",
+    "draft": "https://zenodo.org/api/records/7631354/draft",
+    "access_links": "https://zenodo.org/api/records/7631354/access/links",
+    "access_grants": "https://zenodo.org/api/records/7631354/access/grants",
+    "access_users": "https://zenodo.org/api/records/7631354/access/users",
+    "access_request": "https://zenodo.org/api/records/7631354/access/request",
+    "access": "https://zenodo.org/api/records/7631354/access",
+    "communities": "https://zenodo.org/api/records/7631354/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7631354/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7631354/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7631354/file-modification",
+    "requests": "https://zenodo.org/api/records/7631354/requests"
+  },
+  "updated": "2024-07-12T15:58:26.387335+00:00",
+  "recid": "7631354",
+  "revision": 5,
+  "files": [
+    {
+      "id": "625f0de2-e26c-4bcc-8e25-39c63952f39f",
+      "key": "NOAA_Feb_23_small_fullmodel_model.zip",
+      "size": 21518614,
+      "checksum": "md5:c94e12a1fc5cbebfdb6e4c32b6c450a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small_fullmodel_model.zip/content"
+      }
+    },
+    {
+      "id": "89a2ff49-9327-4276-a3a4-8bcbb6a14ba0",
+      "key": "NOAA_Feb_23_small_modelcard.json",
+      "size": 2343,
+      "checksum": "md5:86cccc6d8942f2f7c5abe0ebacf40f14",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small_modelcard.json/content"
+      }
+    },
+    {
+      "id": "1ef8d6cd-6bc4-4016-bb39-bbb0d8726f55",
+      "key": "NOAA_Feb_23_small_fullmodel.h5",
+      "size": 69406128,
+      "checksum": "md5:a83c52df76813c0aa80e930f0ffc8da2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "55536e3a-91f0-47c3-b943-5c142df5f2c8",
+      "key": "NOAA_Feb_23_small_model_history.npz",
+      "size": 3940,
+      "checksum": "md5:3c41fc0eddc3c8e876863605c404d3a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small_model_history.npz/content"
+      }
+    },
+    {
+      "id": "a3940949-6533-421b-bbcd-ae66eaf70edc",
+      "key": "NOAA_Feb_23_small.json",
+      "size": 851,
+      "checksum": "md5:50b9f2bdcbd2751bebe8a3eb7f4e7962",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small.json/content"
+      }
+    },
+    {
+      "id": "24a213c1-65f6-4a9a-88c7-a36980cc1d60",
+      "key": "BEST_MODEL.txt",
+      "size": 32,
+      "checksum": "md5:47e517c746f8beebd3a6c1bff79a8f51",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "b514a63b-daa6-464e-aaa9-21e87606a1a6",
+      "key": "NOAA_Feb_23_small_trainhist_8.png",
+      "size": 230067,
+      "checksum": "md5:037acb110fcea924be73341da795961a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7631354/files/NOAA_Feb_23_small_trainhist_8.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "44489"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 406,
+    "unique_downloads": 390,
+    "views": 280,
+    "unique_views": 268,
+    "version_downloads": 338,
+    "version_unique_downloads": 324,
+    "version_unique_views": 232,
+    "version_views": 240
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 69640135,
+    "total_archive_size": 21518614,
+    "top_level_files": [
+      {
+        "name": "NOAA_Feb_23_small_fullmodel_model.zip",
+        "size": 21518614
+      },
+      {
+        "name": "NOAA_Feb_23_small_modelcard.json",
+        "size": 2343
+      },
+      {
+        "name": "NOAA_Feb_23_small_fullmodel.h5",
+        "size": 69406128
+      },
+      {
+        "name": "NOAA_Feb_23_small_model_history.npz",
+        "size": 3940
+      },
+      {
+        "name": "NOAA_Feb_23_small.json",
+        "size": 851
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 32
+      },
+      {
+        "name": "NOAA_Feb_23_small_trainhist_8.png",
+        "size": 230067
+      }
+    ],
+    "zip_contents": {
+      "noaa_feb_23_small_fullmodel_model.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 25131320,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.7268082",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:27.355897"
+}

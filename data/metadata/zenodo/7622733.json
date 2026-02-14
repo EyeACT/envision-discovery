@@ -1,0 +1,460 @@
+{
+  "created": "2023-02-08T20:11:42.744955+00:00",
+  "modified": "2024-07-12T16:15:28.574863+00:00",
+  "id": 7622733,
+  "conceptrecid": "7613105",
+  "doi": "10.5281/zenodo.7622733",
+  "conceptdoi": "10.5281/zenodo.7613105",
+  "doi_url": "https://doi.org/10.5281/zenodo.7622733",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for segmentation of AAAI/flooded buildings in RGB 1024x1024 high-res. images",
+    "doi": "10.5281/zenodo.7622733",
+    "publication_date": "2023-02-06",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for segmentation of AAAI/flooded buildings in RGB 1024x1024 high-res. images</strong></em></p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**: https://github.com/FrontierDevelopmentLab/multi3net</p>\n\n<p>These Residual-UNet model data are based on 1m spatial footprint images and associated labels of flooded buildings in Houston. Imagery made available through DigitalGlobe***</p>\n\n<p>Image size used by model: 1024 x 1024 x 3 pixels</p>\n\n<p>classes:<br>\nother<br>\nflooded building</p>\n\n<p><br>\nFile descriptions</p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>References<br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Rudner, T. G. J.; Ru&szlig;wurm, M.; Fil, J.; Pelich, R.; Bischke, B.; Kopa\u010dkov&aacute;, V.; Bili\u0144ski, P. Segmenting Flooded Buildings via Fusion of Multiresolution, Multisensor, and Multitemporal Satellite Imagery. In AAAI 2019. https://arxiv.org/pdf/1812.01756.pdf</p>\n\n<p>***DigitalGlobe. 2018. DigitalGlobe Open Data Program. https://www.digitalglobe.com/opendata. Online; accessed 2018-09-01.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "deep learning",
+      "semantic segmentation",
+      "UNet",
+      "Residual UNet",
+      "flooded building",
+      "Seg2Map",
+      "The Doodleverse",
+      "aerial/high-res."
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7613105"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for segmentation of AAAI/flooded buildings in RGB 1024x1024 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7622733",
+    "self_html": "https://zenodo.org/records/7622733",
+    "preview_html": "https://zenodo.org/records/7622733?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7622733",
+    "self_doi": "https://doi.org/10.5281/zenodo.7622733",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7622733",
+    "reserve_doi": "https://zenodo.org/api/records/7622733/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7613105",
+    "parent_html": "https://zenodo.org/records/7613105",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7613105",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7613105",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7622733/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7622733/sequence/default",
+    "files": "https://zenodo.org/api/records/7622733/files",
+    "media_files": "https://zenodo.org/api/records/7622733/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7622733:aaai_flood_RGB_1024_v4_trainhist_7.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7622733/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7622733/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7622733/versions/latest",
+    "latest_html": "https://zenodo.org/records/7622733/latest",
+    "versions": "https://zenodo.org/api/records/7622733/versions",
+    "draft": "https://zenodo.org/api/records/7622733/draft",
+    "access_links": "https://zenodo.org/api/records/7622733/access/links",
+    "access_grants": "https://zenodo.org/api/records/7622733/access/grants",
+    "access_users": "https://zenodo.org/api/records/7622733/access/users",
+    "access_request": "https://zenodo.org/api/records/7622733/access/request",
+    "access": "https://zenodo.org/api/records/7622733/access",
+    "communities": "https://zenodo.org/api/records/7622733/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7622733/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7622733/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7622733/file-modification",
+    "requests": "https://zenodo.org/api/records/7622733/requests"
+  },
+  "updated": "2024-07-12T16:15:28.574863+00:00",
+  "recid": "7622733",
+  "revision": 5,
+  "files": [
+    {
+      "id": "2d1f9f92-daba-4471-8a5a-fd63ebab85e8",
+      "key": "aaai_flood_RGB_1024_v3_model_history.npz",
+      "size": 3498,
+      "checksum": "md5:7bfb5b98e55e4ef6e45ae8ea16d89aae",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "483afe84-a07d-4a9d-acf0-3c51ff3f7a6a",
+      "key": "readme.txt",
+      "size": 2981,
+      "checksum": "md5:68aa17f9216a85c2e0518eca2969b187",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "99a62979-ce69-48f2-b065-9afc89f0dfa2",
+      "key": "classes.txt",
+      "size": 22,
+      "checksum": "md5:83dfdba20b88da70a589671882232803",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "4576227b-3fbe-46ae-b6f6-3783da89bcad",
+      "key": "BEST_MODEL.txt",
+      "size": 35,
+      "checksum": "md5:32f35a7315f194ce40a9eee72956fecd",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "201ee7b4-2a0b-4697-8861-ba70bcfe84be",
+      "key": "aaai_flood_RGB_1024_v4_model_history.npz",
+      "size": 3376,
+      "checksum": "md5:d0df718c2086c7a1c42b9f4dcc7a6993",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "4ed97692-6fcc-49ba-9dc7-bff101dd6f22",
+      "key": "aaai_flood_RGB_1024_v2.json",
+      "size": 1052,
+      "checksum": "md5:d730e0d4b720f4e6d23745cc055103a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v2.json/content"
+      }
+    },
+    {
+      "id": "d76498c5-4853-4e24-a40f-2c2adeee3d22",
+      "key": "aaai_flood_RGB_1024_v2_modelcard.json",
+      "size": 2232,
+      "checksum": "md5:d889e36542cb1e067f841958b1d134d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "85e01661-88ec-4c54-a4a9-51291d4f2126",
+      "key": "aaai_flood_RGB_1024_v2_model_history.npz",
+      "size": 3983,
+      "checksum": "md5:3628ebc569a434aeab7ad2cf8534e8ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "85046eb5-c712-4ca4-b079-ebc3fd5599af",
+      "key": "aaai_flood_RGB_1024_v3_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:630b388968f494648ed1e5dca9b42884",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "e09e19c8-09eb-4788-91c4-917b521535f5",
+      "key": "aaai_flood_RGB_1024_v1.json",
+      "size": 1053,
+      "checksum": "md5:afb0430df1460e38cb058892bb65975e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v1.json/content"
+      }
+    },
+    {
+      "id": "8e1faa3e-5795-4651-b044-593b526b61f4",
+      "key": "aaai_flood_RGB_1024_v3.json",
+      "size": 1053,
+      "checksum": "md5:e3c9142046ce824c805f8b97a099c0c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v3.json/content"
+      }
+    },
+    {
+      "id": "cfe32e4d-b605-4770-8eb1-a7c55ff164c6",
+      "key": "aaai_flood_RGB_1024_v3_modelcard.json",
+      "size": 2232,
+      "checksum": "md5:8d4c3ab591293f80759ea0fc9d115608",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "c6ff2ffa-20f9-4c8b-a1f8-64d96f0d085e",
+      "key": "aaai_flood_RGB_1024_v4_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:a2ab347731d2a773cde803eb723fc83e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "9727fc77-a55f-405b-bb06-b6f92bc942ef",
+      "key": "aaai_flood_RGB_1024_v4_modelcard.json",
+      "size": 2232,
+      "checksum": "md5:d934bd2e84ae1501ec2813ed37be5445",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "7ccc88f2-6297-49d8-b5c1-c547937b12bf",
+      "key": "aaai_flood_RGB_1024_v4.json",
+      "size": 1053,
+      "checksum": "md5:92189ec9096aa0ea69a70b68a856b146",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v4.json/content"
+      }
+    },
+    {
+      "id": "22e48309-37f9-42b5-983b-88ef3434e7a3",
+      "key": "aaai_flood_RGB_1024_v1_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:6d77e163b1ce213a0283b1dca0507153",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "9480f78d-7267-477b-ac4a-770ef7d5585a",
+      "key": "aaai_flood_RGB_1024_v1_modelcard.json",
+      "size": 2232,
+      "checksum": "md5:473f7d0ef3de2cb574dce022cddef2c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "4980feb6-a63c-4997-99b5-d237c9019d80",
+      "key": "aaai_flood_RGB_1024_v1_model_history.npz",
+      "size": 3933,
+      "checksum": "md5:7c38ac001ce95b3d50884e415be29eb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "46e45069-8751-4a54-9833-fe3f75c1ddf4",
+      "key": "aaai_flood_RGB_1024_v2_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:e3e9c5898a0e98cd9954be5470111238",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "f4334ea7-02ed-454c-8b0e-2f04d43e986d",
+      "key": "aaai_flood_RGB_1024_v4_trainhist_7.png",
+      "size": 272953,
+      "checksum": "md5:601334c56b1ee4eb0cec0663759f0772",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v4_trainhist_7.png/content"
+      }
+    },
+    {
+      "id": "ff4a254f-474f-4d03-aa5a-23ec5918d6d0",
+      "key": "aaai_flood_RGB_1024_v2_trainhist_7.png",
+      "size": 242119,
+      "checksum": "md5:1c959c9cab217b47808c054be4151087",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v2_trainhist_7.png/content"
+      }
+    },
+    {
+      "id": "6e249378-d0c1-41fb-96fc-a0a60837fe08",
+      "key": "aaai_flood_RGB_1024_v3_trainhist_7.png",
+      "size": 289697,
+      "checksum": "md5:979332c5c07de771ea3ffb194e25c3eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v3_trainhist_7.png/content"
+      }
+    },
+    {
+      "id": "9aa25285-ccb9-4d0b-969d-65b45855d6e7",
+      "key": "aaai_flood_RGB_1024_v1_trainhist_7.png",
+      "size": 291194,
+      "checksum": "md5:0c38bb6812e01197a773dcc787191dd2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7622733/files/aaai_flood_RGB_1024_v1_trainhist_7.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1540,
+    "unique_downloads": 1513,
+    "views": 307,
+    "unique_views": 299,
+    "version_downloads": 774,
+    "version_unique_downloads": 750,
+    "version_unique_views": 169,
+    "version_views": 174
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 12,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 278801529,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "aaai_flood_RGB_1024_v3_model_history.npz",
+        "size": 3498
+      },
+      {
+        "name": "readme.txt",
+        "size": 2981
+      },
+      {
+        "name": "classes.txt",
+        "size": 22
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 35
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v4_model_history.npz",
+        "size": 3376
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v2.json",
+        "size": 1052
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v2_modelcard.json",
+        "size": 2232
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v2_model_history.npz",
+        "size": 3983
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v3_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v1.json",
+        "size": 1053
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v3.json",
+        "size": 1053
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v3_modelcard.json",
+        "size": 2232
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v4_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v4_modelcard.json",
+        "size": 2232
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v4.json",
+        "size": 1053
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v1_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v1_modelcard.json",
+        "size": 2232
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v1_model_history.npz",
+        "size": 3933
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v2_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v4_trainhist_7.png",
+        "size": 272953
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v2_trainhist_7.png",
+        "size": 242119
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v3_trainhist_7.png",
+        "size": 289697
+      },
+      {
+        "name": "aaai_flood_RGB_1024_v1_trainhist_7.png",
+        "size": 291194
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/FrontierDevelopmentLab/multi3net",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1812.01756.pdf",
+      "type": "unknown"
+    },
+    {
+      "url": "https://www.digitalglobe.com/opendata",
+      "type": "potential_download"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.440007"
+}

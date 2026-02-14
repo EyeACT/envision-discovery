@@ -1,0 +1,307 @@
+{
+  "created": "2020-11-30T22:46:49.768756+00:00",
+  "modified": "2022-06-03T03:20:09.671257+00:00",
+  "id": 4299195,
+  "conceptrecid": "4299194",
+  "doi": "10.5061/dryad.xgxd254d1",
+  "doi_url": "https://doi.org/10.5061/dryad.xgxd254d1",
+  "metadata": {
+    "title": "Systemic paralogy and function of retinal determination network homologs in arachnids",
+    "doi": "10.5061/dryad.xgxd254d1",
+    "publication_date": "2020-11-30",
+    "description": "<p>Arachnids are important components of cave ecosystems and display many examples of troglomorphisms, such as blindness, depigmentation, and elongate appendages. Little is known about how the eyes of arachnids are specified genetically, let alone the mechanisms for eye reduction and loss in troglomorphic arachnids. Additionally, paralogy of Retinal Determination Gene Network (RDGN) homologs in spiders has convoluted functional inferences extrapolated from single-copy homologs in pancrustacean models. Here, we investigated a sister species pair of Israeli cave whip spiders (Arachnopulmonata, Amblypygi, <i>Charinus</i>) of which one species has reduced eyes. We generated the first embryonic transcriptomes for Amblypygi, and discovered that several RDGN homologs exhibit duplications. We show that paralogy of RDGN homologs is systemic across arachnopulmonates (arachnid orders that bear book lungs), rather than being a spider-specific phenomenon. A differential gene expression (DGE) analysis comparing the expression of RDGN genes in field-collected embryos of both species identified candidate RDGN genes involved in the formation and reduction of eyes in whip spiders. To ground bioinformatic inference of expression patterns with functional experiments, we interrogated the function of three candidate RDGN genes identified from DGE in a spider, using RNAi in the spider <i>Parasteatoda tepidariorum</i>. We provide functional evidence that one of these paralogs, <i>sine oculis/Six1 A </i>(<i>soA</i>), is necessary for the development of all arachnid eye types. Our results support the conservation of at least one RDGN component across Arthropoda and establish a framework for investigating the role of gene duplications in arachnid eye diversity.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Gainett, Guilherme",
+        "affiliation": "University of Wisconsin-Madison",
+        "orcid": "0000-0002-9040-4863"
+      },
+      {
+        "name": "A. Ballesteros, Jes\u00fas",
+        "affiliation": "University of Wisconsin-Madison"
+      },
+      {
+        "name": "R. Kanzler, Charlotte",
+        "affiliation": "University of Wisconsin-Madison",
+        "orcid": "0000-0003-3438-1713"
+      },
+      {
+        "name": "T. Zehms, Jakob",
+        "affiliation": "University of Wisconsin-Madison"
+      },
+      {
+        "name": "M. Zern, John",
+        "affiliation": "University of Wisconsin-Madison"
+      },
+      {
+        "name": "Aharon, Shlomi",
+        "affiliation": "Hebrew University of Jerusalem"
+      },
+      {
+        "name": "Gavish-Regev, Efrat",
+        "affiliation": "Hebrew University of Jerusalem"
+      },
+      {
+        "name": "P. Sharma, Prashant",
+        "affiliation": "University of Wisconsin-Madison"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1186/s12864-020-07149-x",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4299194"
+          }
+        }
+      ]
+    },
+    "notes": "<p>README file for \"Systemic paralogy and function of retinal determination network homologs in arachnids\"</p>\n\n<p>BMC Genomics<br>\nhttps://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07149-x<br>\nGainett, G., Ballesteros, J.A., Kanzler, C.R. et al. Systemic paralogy and function of retinal determination network homologs in arachnids. BMC Genomics 21, 811 (2020). https://doi.org/10.1186/s12864-020-07149-x</p>\n\n<p>Contact information:<br>\nGuilherme Gainett: guilherme.gainett@wisc.edu<br>\nJes\u00fas Ballesteros: ballesterosc@wisc.edu</p>\n\n<p>This dataset includes the following:</p>\n\n<p>Additional file 3:<br>\nVideo S1: Time-lapse imaging of a postembryo ~\u200924\u2009h after hatching of Parasteatoda tepidariorum from the dH2O-injected treatment (negative control). Pictures were taken every 30\u2009min, in a room at 22\u2009\u00b0C. Normal molting time after hatching is ~\u200948\u2009h at 26\u2009\u00b0C. Video S2: Time-lapse imaging of a postembryo ~\u200924\u2009h after hatching of Parasteatoda tepidariorum from the Ptep-soA-injected treatment. Pictures were taken every 30\u2009min, in a room at 22\u2009\u00b0C. Normal molting time after hatching is ~\u200948\u2009h at 26\u2009\u00b0C. (.zip).</p>\n\n<p>Additional file 4:<br>\nDataset S1: Dataset of the orthology analyses. Alignments and sequences of Charinus RDGN genes identified in this study and gene trees in Newick format; alignments of opsins and arrestins. (.zip).\u00a0</p>\n\n<p>Additional file 5:<br>\nDataset S2: Dataset for the differential gene expression analyses. DESeq2 dataset (DESeq (dds); filtered for padj\u2009&gt;\u20090.5) of the DGE analysis of Comparison 1, 2.1 and 2.2 (see \"Material and Methods\" for explanation). run_ddseq2.r: custom R script used to run all three analysis. (.zip).\u00a0</p>\n\n<p>Additional file 6:<br>\nDataset S3: Dataset for the GOseq enrichment analyses. This folder contains the complete GOseq results of enriched/depleted (FDR\u2009\u2264\u20090.05) GO terms of up- (Log2FC\u2009&gt;\u20091) and down-regulated (Log2FC\u2009&lt;\u20091) genes in Comparisons 1, 2.1 and 2.2. The twelve spreadsheets (.xls) are named as follows: Comparison#,_UP/DOWN_enriched/depleted. (.zip).\u00a0</p>\n\n<p>Additional file 7:<br>\nDataset S4. (a): High resolution Additional file 1 Fig. S14. (b): Spreadsheets with the raw counts and sum of counts used to generate the distribution bar plots of the Ptep-soA RNAi experiment. (c) raw counts and sum of counts used to generate the distribution bar plots of the effects of Ptep-soA RNAi per eye type. (d) Primer sequences for the amplified fragments of Ptep-soA, Ptep-otdB and Ptep-OptixB. (.zip).\u00a0</p>\n<p>Funding provided by: National Geographic Society<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100006363<br>Award Number: NGS-271R-18</p><p>Funding provided by: National Science Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000001<br>Award Number: IOS-1552610</p>"
+  },
+  "title": "Systemic paralogy and function of retinal determination network homologs in arachnids",
+  "links": {
+    "self": "https://zenodo.org/api/records/4299195",
+    "self_html": "https://zenodo.org/records/4299195",
+    "preview_html": "https://zenodo.org/records/4299195?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.xgxd254d1",
+    "self_doi": "https://doi.org/10.5061/dryad.xgxd254d1",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.xgxd254d1",
+    "reserve_doi": "https://zenodo.org/api/records/4299195/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4299194",
+    "parent_html": "https://zenodo.org/records/4299194",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4299195/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4299195/sequence/default",
+    "files": "https://zenodo.org/api/records/4299195/files",
+    "media_files": "https://zenodo.org/api/records/4299195/media-files",
+    "archive": "https://zenodo.org/api/records/4299195/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4299195/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4299195/versions/latest",
+    "latest_html": "https://zenodo.org/records/4299195/latest",
+    "versions": "https://zenodo.org/api/records/4299195/versions",
+    "draft": "https://zenodo.org/api/records/4299195/draft",
+    "access_links": "https://zenodo.org/api/records/4299195/access/links",
+    "access_grants": "https://zenodo.org/api/records/4299195/access/grants",
+    "access_users": "https://zenodo.org/api/records/4299195/access/users",
+    "access_request": "https://zenodo.org/api/records/4299195/access/request",
+    "access": "https://zenodo.org/api/records/4299195/access",
+    "communities": "https://zenodo.org/api/records/4299195/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4299195/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4299195/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4299195/file-modification",
+    "requests": "https://zenodo.org/api/records/4299195/requests"
+  },
+  "updated": "2022-06-03T03:20:09.671257+00:00",
+  "recid": "4299195",
+  "revision": 3,
+  "files": [
+    {
+      "id": "5936cfb2-7939-4a89-b2ff-920bd57eb9c2",
+      "key": "Additional_file3_Videos.zip",
+      "size": 8632330,
+      "checksum": "md5:f4bf3b28fdc492629b4de16a04a91cff",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/Additional_file3_Videos.zip/content"
+      }
+    },
+    {
+      "id": "18488f88-5560-4b3b-9724-ba56d778ca40",
+      "key": "Additional_file4_Dataset_S1_Orthology_results.zip",
+      "size": 180175,
+      "checksum": "md5:d401e2eff2b62fce7cee50251193d3d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/Additional_file4_Dataset_S1_Orthology_results.zip/content"
+      }
+    },
+    {
+      "id": "5ab89c0f-fc82-4242-990f-4343487f1c40",
+      "key": "README_Dryad",
+      "size": 2449,
+      "checksum": "md5:643ea6e27d89d012b9a5b058f4bdbd34",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/README_Dryad/content"
+      }
+    },
+    {
+      "id": "af9c73ac-6e2e-4554-8c79-3036602f5da6",
+      "key": "Additional_file7_Dataset_S4_RNAi_results.zip",
+      "size": 20538929,
+      "checksum": "md5:93c8e2422a1ee759f3c8a4392e35c717",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/Additional_file7_Dataset_S4_RNAi_results.zip/content"
+      }
+    },
+    {
+      "id": "1af36034-1bd5-4f75-a2d7-d766ecceb1c6",
+      "key": "Additional_file6_Dataset_S3_GOseq_results.zip",
+      "size": 296312,
+      "checksum": "md5:d4308b091f9f13493504c0ecaa6f08b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/Additional_file6_Dataset_S3_GOseq_results.zip/content"
+      }
+    },
+    {
+      "id": "8ff327d4-3b4b-4c41-9a06-3de6f798e23f",
+      "key": "Additional_file5_Dataset_S2_DESeq_results.zip",
+      "size": 30414810,
+      "checksum": "md5:5040de778b5a42fe3b80a141b72c1c23",
+      "links": {
+        "self": "https://zenodo.org/api/records/4299195/files/Additional_file5_Dataset_S2_DESeq_results.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 103,
+    "unique_downloads": 93,
+    "views": 214,
+    "unique_views": 214,
+    "version_downloads": 103,
+    "version_unique_downloads": 93,
+    "version_unique_views": 214,
+    "version_views": 214
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 60062556,
+    "top_level_files": [
+      {
+        "name": "Additional_file3_Videos.zip",
+        "size": 8632330
+      },
+      {
+        "name": "Additional_file4_Dataset_S1_Orthology_results.zip",
+        "size": 180175
+      },
+      {
+        "name": "README_Dryad",
+        "size": 2449
+      },
+      {
+        "name": "Additional_file7_Dataset_S4_RNAi_results.zip",
+        "size": 20538929
+      },
+      {
+        "name": "Additional_file6_Dataset_S3_GOseq_results.zip",
+        "size": 296312
+      },
+      {
+        "name": "Additional_file5_Dataset_S2_DESeq_results.zip",
+        "size": 30414810
+      }
+    ],
+    "zip_contents": {
+      "additional_file3_videos.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 8680141,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "additional_file4_dataset_s1_orthology_results.zip": {
+        "total_files": 26,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 870807,
+        "file_types": {
+          ".fasta": 11
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 11,
+        "sample_imaging_files": [],
+        "sample_genomics_files": [
+          "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_pax6_cds.fasta",
+          "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_otd.fasta",
+          "__macosx/additional_file4_dataset_s1_orthology_results/._dataset_s1_charinus_otd.fasta",
+          "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_eyegone_cds.fasta",
+          "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_sineoculis.fasta"
+        ]
+      },
+      "additional_file7_dataset_s4_rnai_results.zip": {
+        "total_files": 4,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 20972202,
+        "file_types": {
+          ".jpg": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "additional_file7_dataset_s4_rnai_results/dataset_s4_a_fig_s15.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "additional_file6_dataset_s3_goseq_results.zip": {
+        "total_files": 20,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 967023,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "additional_file5_dataset_s2_deseq_results.zip": {
+        "total_files": 8,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 92618791,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "additional_file7_dataset_s4_rnai_results/dataset_s4_a_fig_s15.jpg"
+    ],
+    "zip_genomics_files": [
+      "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_pax6_cds.fasta",
+      "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_otd.fasta",
+      "__macosx/additional_file4_dataset_s1_orthology_results/._dataset_s1_charinus_otd.fasta",
+      "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_eyegone_cds.fasta",
+      "additional_file4_dataset_s1_orthology_results/dataset_s1_charinus_sineoculis.fasta"
+    ]
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:28.317031"
+}

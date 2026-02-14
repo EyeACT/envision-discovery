@@ -1,0 +1,151 @@
+{
+  "created": "2023-10-29T15:59:06.947974+00:00",
+  "modified": "2024-05-22T06:55:29.820815+00:00",
+  "id": 10051265,
+  "conceptrecid": "10051264",
+  "doi": "10.5281/zenodo.10051265",
+  "conceptdoi": "10.5281/zenodo.10051264",
+  "doi_url": "https://doi.org/10.5281/zenodo.10051265",
+  "metadata": {
+    "title": "Vine Trunk Semantic Segmentation using Individual Vine Trunks",
+    "doi": "10.5281/zenodo.10051265",
+    "publication_date": "2023-10-29",
+    "description": "<p>Automatically labeled semantic segmentation dataset of vine trunk thumbnails extracted from VIneSet and other supplementary data.</p>\n<p>Source paper of this dataset is \"Generating vine trunk semantic segmentation dataset via semi-supervised learning and object detection\" published in MDPI Robotics https://www.mdpi.com/2218-6581/13/2/20.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Petar, Slavi\u010dek",
+        "affiliation": null,
+        "orcid": "0009-0003-8850-4827"
+      }
+    ],
+    "keywords": [
+      "Semantic Segmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.5114141",
+        "relation": "isVariantFormOf",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Andr\u00e9 Silva Aguiar, & Sandro Magalh\u00e3es. (2021). Grape bunch and vine trunk dataset for Deep Learning object detection. [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5139598"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10051264"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Vine Trunk Semantic Segmentation using Individual Vine Trunks",
+  "links": {
+    "self": "https://zenodo.org/api/records/10051265",
+    "self_html": "https://zenodo.org/records/10051265",
+    "preview_html": "https://zenodo.org/records/10051265?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10051265",
+    "self_doi": "https://doi.org/10.5281/zenodo.10051265",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10051265",
+    "reserve_doi": "https://zenodo.org/api/records/10051265/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10051264",
+    "parent_html": "https://zenodo.org/records/10051264",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10051264",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10051264",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10051265/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10051265/sequence/default",
+    "files": "https://zenodo.org/api/records/10051265/files",
+    "media_files": "https://zenodo.org/api/records/10051265/media-files",
+    "archive": "https://zenodo.org/api/records/10051265/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10051265/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10051265/versions/latest",
+    "latest_html": "https://zenodo.org/records/10051265/latest",
+    "versions": "https://zenodo.org/api/records/10051265/versions",
+    "draft": "https://zenodo.org/api/records/10051265/draft",
+    "access_links": "https://zenodo.org/api/records/10051265/access/links",
+    "access_grants": "https://zenodo.org/api/records/10051265/access/grants",
+    "access_users": "https://zenodo.org/api/records/10051265/access/users",
+    "access_request": "https://zenodo.org/api/records/10051265/access/request",
+    "access": "https://zenodo.org/api/records/10051265/access",
+    "communities": "https://zenodo.org/api/records/10051265/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10051265/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10051265/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10051265/file-modification",
+    "requests": "https://zenodo.org/api/records/10051265/requests"
+  },
+  "updated": "2024-05-22T06:55:29.820815+00:00",
+  "recid": "10051265",
+  "revision": 6,
+  "files": [
+    {
+      "id": "00f2872c-a21d-4e1c-881e-a074001e2543",
+      "key": "vineset_thumbnails.zip",
+      "size": 1305802028,
+      "checksum": "md5:180216bf62810b4f1d6aff4502e5c773",
+      "links": {
+        "self": "https://zenodo.org/api/records/10051265/files/vineset_thumbnails.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1012113"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 58,
+    "unique_downloads": 58,
+    "views": 199,
+    "unique_views": 191,
+    "version_downloads": 58,
+    "version_unique_downloads": 58,
+    "version_unique_views": 191,
+    "version_views": 199
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1305802028,
+    "top_level_files": [
+      {
+        "name": "vineset_thumbnails.zip",
+        "size": 1305802028
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.mdpi.com/2218-6581/13/2/20",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.613047"
+}

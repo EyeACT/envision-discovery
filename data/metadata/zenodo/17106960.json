@@ -1,0 +1,171 @@
+{
+  "created": "2025-09-12T13:51:42.665089+00:00",
+  "modified": "2025-09-26T09:43:31.276382+00:00",
+  "id": 17106960,
+  "conceptrecid": "17106959",
+  "doi": "10.5281/zenodo.17106960",
+  "conceptdoi": "10.5281/zenodo.17106959",
+  "doi_url": "https://doi.org/10.5281/zenodo.17106960",
+  "metadata": {
+    "title": "Cambridge Arboreal Modelling Panoptic 3D (CAMP3D) Dataset",
+    "doi": "10.5281/zenodo.17106960",
+    "publication_date": "2025-09-12",
+    "description": "<p>Accurate tree segmentation is a key step in extracting individual-tree metrics from forest laser scans, which are essential for understanding ecosystem functions in carbon cycling and beyond. Over the past decade, tree segmentation algorithms have advanced rapidly with developments in AI. However, existing public 3D forest datasets remain too small to support robust segmentation systems. Motivated by the success of synthetic data in domains such as autonomous driving, we investigate whether similar approaches can benefit tree segmentation. By replacing expensive field data collection and annotation with synthetic data for pretraining, only minimal real plot annotation is required for fine-tuning.</p>\n<p>We introduce a new synthetic data generation pipeline for forest vision tasks, integrating modern game engines with physics-based LiDAR simulation. This has produced a large-scale, diverse, annotated 3D forest dataset of unprecedented scope. Experiments with a state-of-the-art tree segmentation algorithm and a widely used real dataset demonstrate that our synthetic data can substantially reduce the need for labelled real data. Dataset generation pipeline: <a href=\"https://github.com/yihshe/CAMP3D.git\" target=\"_new\" rel=\"noopener\">https://github.com/yihshe/CAMP3D.git</a></p>\n<p>The current dataset provides virtual UAV laser scans for 12 forest scenes, including 4 coniferous and 6 deciduous forests (focused on European types), along with two additional scenes (Rainforest and Redwood). It contains instance labels for individual trees and three semantic classes: ground, leaf, and wood. To prepare the data for machine learning, point clouds from each scene are merged, tiled into 50 m &times; 50 m plots, and split into training (70%), validation (15%), and test (15%) sets. All plots have a point density greater than 1,000 points per square metre, ensuring sufficient resolution for effective tree segmentation learning.&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "She, Yihang",
+        "affiliation": "University of Cambridge",
+        "orcid": "0009-0004-4205-1874"
+      },
+      {
+        "name": "Andrew, Blake",
+        "affiliation": "University of Cambridge"
+      },
+      {
+        "name": "Coomes, David",
+        "affiliation": "University of Cambridge",
+        "orcid": "0000-0002-8261-2582"
+      },
+      {
+        "name": "Keshav, Srinivasan",
+        "affiliation": "University of Cambridge",
+        "orcid": "0000-0002-6549-0464"
+      }
+    ],
+    "keywords": [
+      "LiDAR",
+      "Synthetic Data",
+      "Segmentation"
+    ],
+    "version": "v0.1.0",
+    "references": [
+      "Scaling Up Forest Vision With Synthetic Data. Yihang She, Andrew Blake, David Coomes, and Srinivasan Keshav. 2025. Preprint: https://arxiv.org/abs/2509.11201"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/yihshe/CAMP3D.git",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17106959"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Cambridge Arboreal Modelling Panoptic 3D (CAMP3D) Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/17106960",
+    "self_html": "https://zenodo.org/records/17106960",
+    "preview_html": "https://zenodo.org/records/17106960?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17106960",
+    "self_doi": "https://doi.org/10.5281/zenodo.17106960",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17106960",
+    "reserve_doi": "https://zenodo.org/api/records/17106960/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17106959",
+    "parent_html": "https://zenodo.org/records/17106959",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17106959",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17106959",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17106960/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17106960/sequence/default",
+    "files": "https://zenodo.org/api/records/17106960/files",
+    "media_files": "https://zenodo.org/api/records/17106960/media-files",
+    "archive": "https://zenodo.org/api/records/17106960/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17106960/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17106960/versions/latest",
+    "latest_html": "https://zenodo.org/records/17106960/latest",
+    "versions": "https://zenodo.org/api/records/17106960/versions",
+    "draft": "https://zenodo.org/api/records/17106960/draft",
+    "access_links": "https://zenodo.org/api/records/17106960/access/links",
+    "access_grants": "https://zenodo.org/api/records/17106960/access/grants",
+    "access_users": "https://zenodo.org/api/records/17106960/access/users",
+    "access_request": "https://zenodo.org/api/records/17106960/access/request",
+    "access": "https://zenodo.org/api/records/17106960/access",
+    "communities": "https://zenodo.org/api/records/17106960/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17106960/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17106960/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17106960/file-modification",
+    "requests": "https://zenodo.org/api/records/17106960/requests"
+  },
+  "updated": "2025-09-26T09:43:31.276382+00:00",
+  "recid": "17106960",
+  "revision": 8,
+  "files": [
+    {
+      "id": "cc7885b1-c71c-4127-a990-ee661934bcfc",
+      "key": "Cambridge_Arboreal_Modelling_Panoptic_3D_Dataset.zip",
+      "size": 21443447628,
+      "checksum": "md5:60ef0b0588cac1772af39cab714f2720",
+      "links": {
+        "self": "https://zenodo.org/api/records/17106960/files/Cambridge_Arboreal_Modelling_Panoptic_3D_Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1194372"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 83,
+    "unique_downloads": 61,
+    "views": 287,
+    "unique_views": 266,
+    "version_downloads": 83,
+    "version_unique_downloads": 61,
+    "version_unique_views": 266,
+    "version_views": 287
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 21443447628,
+    "top_level_files": [
+      {
+        "name": "Cambridge_Arboreal_Modelling_Panoptic_3D_Dataset.zip",
+        "size": 21443447628
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/yihshe/CAMP3D.git",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:25.564932"
+}

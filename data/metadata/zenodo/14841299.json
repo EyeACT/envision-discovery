@@ -1,0 +1,311 @@
+{
+  "created": "2025-02-10T20:50:48.290570+00:00",
+  "modified": "2025-03-10T13:54:08.807024+00:00",
+  "id": 14841299,
+  "conceptrecid": "12759487",
+  "doi": "10.5281/zenodo.14841299",
+  "conceptdoi": "10.5281/zenodo.12759487",
+  "doi_url": "https://doi.org/10.5281/zenodo.14841299",
+  "metadata": {
+    "title": "Data from: Segmentation of dense and multi-species bacterial colonies using models trained on synthetic microscopy images",
+    "doi": "10.5281/zenodo.14841299",
+    "publication_date": "2025",
+    "description": "<p>This repository contains the relevant data and code for the article \"Segmentation of dense and multi-species bacterial colonies using models trained on synthetic microscopy images\" by Vincent Hickl, Abid Khan, Ren&eacute; M. Rossi, Bruno F. B. Silva, and Katharina Maniura-Weber (arXiv version 3):</p>\n<ul>\n<li>Raw synthetic images of rod-shaped and circular cells</li>\n<li>Confocal microscopy images of densely packed colonies of&nbsp;<em>Pseduomonas aeruginosa</em>, and of mixed colonies of&nbsp;<em>P. aeruginosa</em> and&nbsp;<em>Staphylococcus aureus</em></li>\n<li>Brigthfield microscopy images of rod-shaped and circular cells</li>\n<li>Synthetic images processed by cycleGAN, used as training data for segmentation models.</li>\n<li>A selection of trained segmentation models for dense&nbsp;<em>Pseudomonas</em> monolayers, and rod-shaped/circular cells in both confocal and brightfield microscopy images.</li>\n<li>Manually annotated experimental test images used to compare the segmentation of the synthetic model to other models from the literature, and to calculate PQ vs IoU cutoff curves.</li>\n</ul>\n<p>The code for processing raw synthetic images using CycleGAN can be found at <a href=\"https://github.com/abid1214/cyclegan\">https://github.com/abid1214/cyclegan</a></p>\n<p>Further relevant code can be found at <a href=\"https://github.com/vhickl/synth-bacteria-segmentation\">https://github.com/vhickl/synth-bacteria-segmentation</a>, including code to:</p>\n<ul>\n<li>generate raw synthetic images of rod-shaped and spherical bacteria</li>\n<li>analyze orientational order in densely-packed colonies of rod-shaped cells</li>\n<li>quantitatively compare segmentation masks of bacterial colonies</li>\n</ul>\n<p>Please contact the authors (vincent.hickl@empa.ch) if there are any issues or questions regarding this data.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hickl, Vincent",
+        "affiliation": "Swiss Federal Laboratories for Materials Science and Technology",
+        "orcid": "0000-0003-2928-9568"
+      },
+      {
+        "name": "Maniura-Weber, Katharina",
+        "affiliation": "Swiss Federal Laboratories for Materials Science and Technology",
+        "orcid": "0000-0001-7895-3563"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12759487"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data from: Segmentation of dense and multi-species bacterial colonies using models trained on synthetic microscopy images",
+  "links": {
+    "self": "https://zenodo.org/api/records/14841299",
+    "self_html": "https://zenodo.org/records/14841299",
+    "preview_html": "https://zenodo.org/records/14841299?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14841299",
+    "self_doi": "https://doi.org/10.5281/zenodo.14841299",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14841299",
+    "reserve_doi": "https://zenodo.org/api/records/14841299/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12759487",
+    "parent_html": "https://zenodo.org/records/12759487",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12759487",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12759487",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14841299/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14841299/sequence/default",
+    "files": "https://zenodo.org/api/records/14841299/files",
+    "media_files": "https://zenodo.org/api/records/14841299/media-files",
+    "archive": "https://zenodo.org/api/records/14841299/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14841299/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14841299/versions/latest",
+    "latest_html": "https://zenodo.org/records/14841299/latest",
+    "versions": "https://zenodo.org/api/records/14841299/versions",
+    "draft": "https://zenodo.org/api/records/14841299/draft",
+    "access_links": "https://zenodo.org/api/records/14841299/access/links",
+    "access_grants": "https://zenodo.org/api/records/14841299/access/grants",
+    "access_users": "https://zenodo.org/api/records/14841299/access/users",
+    "access_request": "https://zenodo.org/api/records/14841299/access/request",
+    "access": "https://zenodo.org/api/records/14841299/access",
+    "communities": "https://zenodo.org/api/records/14841299/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14841299/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14841299/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14841299/file-modification",
+    "requests": "https://zenodo.org/api/records/14841299/requests"
+  },
+  "updated": "2025-03-10T13:54:08.807024+00:00",
+  "recid": "14841299",
+  "revision": 6,
+  "files": [
+    {
+      "id": "0f27094c-8532-4c2f-b347-65de0e3337ca",
+      "key": "Synthetic Images.zip",
+      "size": 9178544,
+      "checksum": "md5:774ed9a213ba2c60602b62c32e460dd6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14841299/files/Synthetic Images.zip/content"
+      }
+    },
+    {
+      "id": "4a3215f7-2674-4518-8b51-15da71af6dde",
+      "key": "Real images.zip",
+      "size": 61462990,
+      "checksum": "md5:6069b454ee9382c7f68f216d9d94b4e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/14841299/files/Real images.zip/content"
+      }
+    },
+    {
+      "id": "9d467c71-88e8-4618-ba24-07ae1157ae16",
+      "key": "Processed synthetic images.zip",
+      "size": 262949589,
+      "checksum": "md5:0619718ccf4e70693849c0178417570e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14841299/files/Processed synthetic images.zip/content"
+      }
+    },
+    {
+      "id": "2e033b41-3d91-44ba-9e6e-1a6073fa54cf",
+      "key": "Trained segmentation models.zip",
+      "size": 200040147,
+      "checksum": "md5:357165625398b052ea7750d08c018178",
+      "links": {
+        "self": "https://zenodo.org/api/records/14841299/files/Trained segmentation models.zip/content"
+      }
+    },
+    {
+      "id": "e5c9aab9-397a-4d73-880c-8d67b1e5e33d",
+      "key": "real_test_images.zip",
+      "size": 1055108,
+      "checksum": "md5:95d527028da8564379b848d08d54fa3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14841299/files/real_test_images.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1160969"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 322,
+    "unique_downloads": 309,
+    "views": 231,
+    "unique_views": 202,
+    "version_downloads": 203,
+    "version_unique_downloads": 194,
+    "version_unique_views": 86,
+    "version_views": 105
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 534686378,
+    "top_level_files": [
+      {
+        "name": "Synthetic Images.zip",
+        "size": 9178544
+      },
+      {
+        "name": "Real images.zip",
+        "size": 61462990
+      },
+      {
+        "name": "Processed synthetic images.zip",
+        "size": 262949589
+      },
+      {
+        "name": "Trained segmentation models.zip",
+        "size": 200040147
+      },
+      {
+        "name": "real_test_images.zip",
+        "size": 1055108
+      }
+    ],
+    "zip_contents": {
+      "synthetic images.zip": {
+        "total_files": 45,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 572973966,
+        "file_types": {
+          ".tif": 45
+        },
+        "imaging_file_count": 45,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "synthetic images/dense pseudomonas monolayers/20x6_clustered4432.tif",
+          "synthetic images/dense pseudomonas monolayers/20x6_clustered4432_masks.tif",
+          "synthetic images/dense pseudomonas monolayers/20x6_clustered4569.tif",
+          "synthetic images/dense pseudomonas monolayers/20x6_clustered4569_masks.tif",
+          "synthetic images/dense pseudomonas monolayers/20x6_random4595.tif",
+          "synthetic images/dense pseudomonas monolayers/20x6_random4595_masks.tif",
+          "synthetic images/dense pseudomonas monolayers/30x6_aligned5671.tif",
+          "synthetic images/dense pseudomonas monolayers/30x6_aligned5671_masks.tif",
+          "synthetic images/dense pseudomonas monolayers/30x6_clustered2960.tif",
+          "synthetic images/dense pseudomonas monolayers/30x6_clustered2960_masks.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "real images.zip": {
+        "total_files": 30,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 226914625,
+        "file_types": {
+          ".tif": 30
+        },
+        "imaging_file_count": 30,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "real images/brightfield mixed/1.tif",
+          "real images/brightfield mixed/2.tif",
+          "real images/brightfield mixed/3.tif",
+          "real images/brightfield mixed/4.tif",
+          "real images/brightfield mixed/5.tif",
+          "real images/brightfield mixed/6.tif",
+          "real images/confocal mixed/edit_flat01.tif",
+          "real images/confocal mixed/edit_flat02.tif",
+          "real images/confocal mixed/edit_flat03.tif",
+          "real images/confocal mixed/edit_flat04.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "trained segmentation models.zip": {
+        "total_files": 8,
+        "total_directories": 8,
+        "total_uncompressed_bytes": 212921796,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "real_test_images.zip": {
+        "total_files": 66,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1720817,
+        "file_types": {
+          ".png": 52,
+          ".tif": 12,
+          ".tiff": 1
+        },
+        "imaging_file_count": 65,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "cropped/dilute4_minip_011_000.tif",
+          "cropped/dilute4_minip_011_001.tif",
+          "cropped/dilute4_minip_011_002.tif",
+          "cropped/dilute4_minip_011_003.tif",
+          "cropped/dilute4_minip_011_cp_manual_masks_000.png",
+          "cropped/dilute4_minip_011_cp_manual_masks_001.png",
+          "cropped/dilute4_minip_011_cp_manual_masks_002.png",
+          "cropped/dilute4_minip_011_cp_manual_masks_003.png",
+          "cropped/dilute4_minip_011_cp_omni_masks_000.png",
+          "cropped/dilute4_minip_011_cp_omni_masks_001.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "synthetic images/dense pseudomonas monolayers/20x6_clustered4432.tif",
+      "synthetic images/dense pseudomonas monolayers/20x6_clustered4432_masks.tif",
+      "synthetic images/dense pseudomonas monolayers/20x6_clustered4569.tif",
+      "synthetic images/dense pseudomonas monolayers/20x6_clustered4569_masks.tif",
+      "synthetic images/dense pseudomonas monolayers/20x6_random4595.tif",
+      "synthetic images/dense pseudomonas monolayers/20x6_random4595_masks.tif",
+      "synthetic images/dense pseudomonas monolayers/30x6_aligned5671.tif",
+      "synthetic images/dense pseudomonas monolayers/30x6_aligned5671_masks.tif",
+      "synthetic images/dense pseudomonas monolayers/30x6_clustered2960.tif",
+      "synthetic images/dense pseudomonas monolayers/30x6_clustered2960_masks.tif",
+      "real images/brightfield mixed/1.tif",
+      "real images/brightfield mixed/2.tif",
+      "real images/brightfield mixed/3.tif",
+      "real images/brightfield mixed/4.tif",
+      "real images/brightfield mixed/5.tif",
+      "real images/brightfield mixed/6.tif",
+      "real images/confocal mixed/edit_flat01.tif",
+      "real images/confocal mixed/edit_flat02.tif",
+      "real images/confocal mixed/edit_flat03.tif",
+      "real images/confocal mixed/edit_flat04.tif",
+      "cropped/dilute4_minip_011_000.tif",
+      "cropped/dilute4_minip_011_001.tif",
+      "cropped/dilute4_minip_011_002.tif",
+      "cropped/dilute4_minip_011_003.tif",
+      "cropped/dilute4_minip_011_cp_manual_masks_000.png",
+      "cropped/dilute4_minip_011_cp_manual_masks_001.png",
+      "cropped/dilute4_minip_011_cp_manual_masks_002.png",
+      "cropped/dilute4_minip_011_cp_manual_masks_003.png",
+      "cropped/dilute4_minip_011_cp_omni_masks_000.png",
+      "cropped/dilute4_minip_011_cp_omni_masks_001.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/abid1214/cyclegan",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/vhickl/synth-bacteria-segmentation",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:23.987136"
+}

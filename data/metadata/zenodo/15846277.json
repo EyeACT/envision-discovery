@@ -1,0 +1,157 @@
+{
+  "created": "2025-07-14T20:29:20.148471+00:00",
+  "modified": "2025-09-17T13:40:53.863828+00:00",
+  "id": 15846277,
+  "conceptrecid": "15846276",
+  "doi": "10.5281/zenodo.15846277",
+  "conceptdoi": "10.5281/zenodo.15846276",
+  "doi_url": "https://doi.org/10.5281/zenodo.15846277",
+  "metadata": {
+    "title": "Assimilation of Ground and Satellite Magnetic Observations Unravels the Ionospheric, Magnetospheric, and Induced Fields During the May and October 2024 Geomagnetic Storms",
+    "doi": "10.5281/zenodo.15846277",
+    "publication_date": "2025-07-09",
+    "description": "<p>This dataset contains two SH expansion models of magnetospheric, ionospheric and corresponding induced fields for the period 1 Jan 2024 -- 30 Oct 2024.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Grayver, Alexander",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-2.5"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15846276"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Assimilation of Ground and Satellite Magnetic Observations Unravels the Ionospheric, Magnetospheric, and Induced Fields During the May and October 2024 Geomagnetic Storms",
+  "links": {
+    "self": "https://zenodo.org/api/records/15846277",
+    "self_html": "https://zenodo.org/records/15846277",
+    "preview_html": "https://zenodo.org/records/15846277?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15846277",
+    "self_doi": "https://doi.org/10.5281/zenodo.15846277",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15846277",
+    "reserve_doi": "https://zenodo.org/api/records/15846277/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15846276",
+    "parent_html": "https://zenodo.org/records/15846276",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15846276",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15846276",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15846277/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15846277/sequence/default",
+    "files": "https://zenodo.org/api/records/15846277/files",
+    "media_files": "https://zenodo.org/api/records/15846277/media-files",
+    "archive": "https://zenodo.org/api/records/15846277/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15846277/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15846277/versions/latest",
+    "latest_html": "https://zenodo.org/records/15846277/latest",
+    "versions": "https://zenodo.org/api/records/15846277/versions",
+    "draft": "https://zenodo.org/api/records/15846277/draft",
+    "access_links": "https://zenodo.org/api/records/15846277/access/links",
+    "access_grants": "https://zenodo.org/api/records/15846277/access/grants",
+    "access_users": "https://zenodo.org/api/records/15846277/access/users",
+    "access_request": "https://zenodo.org/api/records/15846277/access/request",
+    "access": "https://zenodo.org/api/records/15846277/access",
+    "communities": "https://zenodo.org/api/records/15846277/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15846277/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15846277/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15846277/file-modification",
+    "requests": "https://zenodo.org/api/records/15846277/requests"
+  },
+  "updated": "2025-09-17T13:40:53.863828+00:00",
+  "recid": "15846277",
+  "revision": 6,
+  "files": [
+    {
+      "id": "e73c21b8-13e0-4a28-b33b-e6e16028480c",
+      "key": "sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=0-55_GG.h5",
+      "size": 485117008,
+      "checksum": "md5:011578dc9a7dedb2e0216633850623f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/15846277/files/sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=0-55_GG.h5/content"
+      }
+    },
+    {
+      "id": "68551d09-3dc1-431b-8141-c776b9e6787e",
+      "key": "README.txt",
+      "size": 1577,
+      "checksum": "md5:addff6c5222c9c6d0c2d1400ebc77d51",
+      "links": {
+        "self": "https://zenodo.org/api/records/15846277/files/README.txt/content"
+      }
+    },
+    {
+      "id": "81aa3f04-94ce-41d3-a441-fb9556ae78bb",
+      "key": "sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=8-45_GG.h5",
+      "size": 485117008,
+      "checksum": "md5:d7de16a70f05dcc78801013c56847a6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/15846277/files/sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=8-45_GG.h5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "140469"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 46,
+    "unique_downloads": 31,
+    "views": 46,
+    "unique_views": 28,
+    "version_downloads": 46,
+    "version_unique_downloads": 31,
+    "version_unique_views": 28,
+    "version_views": 46
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 970234016,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=0-55_GG.h5",
+        "size": 485117008
+      },
+      {
+        "name": "README.txt",
+        "size": 1577
+      },
+      {
+        "name": "sh_total_20240101T003000_20241030T233000_nmax=3_mmax=3_kmax=90_qdlat=8-45_GG.h5",
+        "size": 485117008
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:34:29.224618"
+}

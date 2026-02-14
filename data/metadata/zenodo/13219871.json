@@ -1,0 +1,178 @@
+{
+  "created": "2024-08-05T07:50:59.548547+00:00",
+  "modified": "2024-08-05T07:50:59.727225+00:00",
+  "id": 13219871,
+  "conceptrecid": "13219870",
+  "doi": "10.5281/zenodo.13219871",
+  "conceptdoi": "10.5281/zenodo.13219870",
+  "doi_url": "https://doi.org/10.5281/zenodo.13219871",
+  "metadata": {
+    "title": "bioimage.io upload: ilastik/platynereis_em_training_data",
+    "doi": "10.5281/zenodo.13219871",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=ilastik/platynereis_em_training_data\">View on bioimage.io</a> # Platynereis EM Traning Data </p>\n<h1>Platynereis EM Segmentation Training Data</h1>\n<p>Training data for segmentation of cellular membranes, nuclei, cuticle and cilia in Platynereis dumerilii.\nThe training data is extracted from a whole body EM volume of a Platynereis larva that was used\nto train networks for segmentation in <a href=\"https://doi.org/10.1016/j.cell.2021.07.017\">Whole-body integration of gene expression and single-cell morphology</a>.\nFor each organelle several blocks of training data are available, extracted at dfferent resolutions:\n20x20x25nm for cellular membranes, 80x80x100nm for nuclei, 40x40x50nm for cuticle and 10x10x25nm for cilia.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Constantin Pape",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "electron-microscopy",
+      "platynereis",
+      "cells",
+      "cilia",
+      "nuclei",
+      "instance-segmentation",
+      "3D"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13219870"
+          }
+        }
+      ]
+    },
+    "notes": "Training data for EM segmentation of cellular membranes, nuclei, cuticle and cilia in Platynereis.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: ilastik/platynereis_em_training_data",
+  "links": {
+    "self": "https://zenodo.org/api/records/13219871",
+    "self_html": "https://zenodo.org/records/13219871",
+    "preview_html": "https://zenodo.org/records/13219871?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13219871",
+    "self_doi": "https://doi.org/10.5281/zenodo.13219871",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219871",
+    "reserve_doi": "https://zenodo.org/api/records/13219871/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13219870",
+    "parent_html": "https://zenodo.org/records/13219870",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13219870",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219870",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13219871/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13219871/sequence/default",
+    "files": "https://zenodo.org/api/records/13219871/files",
+    "media_files": "https://zenodo.org/api/records/13219871/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13219871:platy-cover0.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13219871/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13219871/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13219871/versions/latest",
+    "latest_html": "https://zenodo.org/records/13219871/latest",
+    "versions": "https://zenodo.org/api/records/13219871/versions",
+    "draft": "https://zenodo.org/api/records/13219871/draft",
+    "access_links": "https://zenodo.org/api/records/13219871/access/links",
+    "access_grants": "https://zenodo.org/api/records/13219871/access/grants",
+    "access_users": "https://zenodo.org/api/records/13219871/access/users",
+    "access_request": "https://zenodo.org/api/records/13219871/access/request",
+    "access": "https://zenodo.org/api/records/13219871/access",
+    "communities": "https://zenodo.org/api/records/13219871/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13219871/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13219871/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13219871/file-modification",
+    "requests": "https://zenodo.org/api/records/13219871/requests"
+  },
+  "updated": "2024-08-05T07:50:59.727225+00:00",
+  "recid": "13219871",
+  "revision": 4,
+  "files": [
+    {
+      "id": "da70fb57-7d49-4f5e-9466-2a3c9fcc6de3",
+      "key": "rdf.yaml",
+      "size": 1534,
+      "checksum": "md5:67c5d25047fc6cb74338e0efa3ee67b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219871/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "4f423d38-b4c3-45ba-b3fc-972194a9bb53",
+      "key": "platy-cover0.png",
+      "size": 92728,
+      "checksum": "md5:622b6a70904590f8f8a9a4d8d297e78d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219871/files/platy-cover0.png/content"
+      }
+    },
+    {
+      "id": "3d5aab0b-3edf-45a8-98f1-2f7bb2679379",
+      "key": "platy.md",
+      "size": 608,
+      "checksum": "md5:91f41836f993e3a67c5ab389e317d5a0",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219871/files/platy.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 29,
+    "unique_downloads": 28,
+    "views": 37,
+    "unique_views": 28,
+    "version_downloads": 29,
+    "version_unique_downloads": 28,
+    "version_unique_views": 28,
+    "version_views": 37
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 92728,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "rdf.yaml",
+        "size": 1534
+      },
+      {
+        "name": "platy-cover0.png",
+        "size": 92728
+      },
+      {
+        "name": "platy.md",
+        "size": 608
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:06.760957"
+}

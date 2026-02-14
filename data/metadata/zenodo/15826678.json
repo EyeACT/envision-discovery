@@ -1,0 +1,168 @@
+{
+  "created": "2025-07-07T07:39:44.666474+00:00",
+  "modified": "2025-07-07T07:39:44.819122+00:00",
+  "id": 15826678,
+  "conceptrecid": "15826677",
+  "doi": "10.5281/zenodo.15826678",
+  "conceptdoi": "10.5281/zenodo.15826677",
+  "doi_url": "https://doi.org/10.5281/zenodo.15826678",
+  "metadata": {
+    "title": "Post-processed time series at FINO1 in 2007",
+    "doi": "10.5281/zenodo.15826678",
+    "publication_date": "2025-07-07",
+    "description": "<h1>Post-processed sonic anemometer data from the FINO1 platform &ndash; hourly time series at 40, 60 and 80 m (2007)</h1>\n<p><strong>Description</strong>:<br>This dataset contains one year of post-processed time series from three sonic anemometers located at 40 m, 60 m and 80 m above sea level on the FINO1 offshore research platform.&nbsp; The dataset covers the year 2007 and was used in the <a href=\"https://doi.org/10.1007/s10546-018-0382-2\">Cheynet et al. (2018) </a>[1].</p>\n<p>The raw data are not publicly available due to data ownership restrictions. This dataset includes hourly time series that have been processed and corrected using the planar fit method to remove the influence of sensor tilt.</p>\n<h3>File Structure</h3>\n<p>The archive contains <code>.mat</code> files named as follows:</p>\n<ul>\n<li>\n<p><code>u_year_month_PF1.mat</code></p>\n</li>\n<li>\n<p><code>v_year_month_PF1.mat</code></p>\n</li>\n<li>\n<p><code>w_year_month_PF1.mat</code></p>\n</li>\n</ul>\n<p>The suffix <code>PF1</code> indicates that the planar fit tilt correction has been applied.</p>\n<p>The variables <code>u</code>, <code>v</code>, and <code>w</code> represent the along-wind, across-wind, and vertical wind velocity components, respectively. These follow the right-handed coordinate system and sign conventions described in Kaimal and Finnigan (1994) [2].</p>\n<h3>Variables in Each File</h3>\n<ul>\n<li>\n<p><code>u</code>, <code>v</code>, <code>w</code>: 3D arrays of size 3 &times; N &times; 36000, where:</p>\n<ul>\n<li>\n<p>3 refers to the three heights (80 m, 60 m, 40 m), <strong>---&gt; descending order!</strong></p>\n</li>\n<li>\n<p>N is the number of hourly records in the month</p>\n</li>\n<li>\n<p>36000 corresponds to the number of samples per hour (10 Hz).</p>\n</li>\n</ul>\n</li>\n<li>\n<p><code>T</code>: Sonic temperature, stored as a 3D array of size 3 &times; N &times; 36000. Available only in the <code>u_year_month_PF1.mat</code> files.</p>\n</li>\n<li>\n<p><code>Dir</code>: Mean wind direction (in degrees from north), stored as a 3 &times; N array.</p>\n</li>\n<li>\n<p><code>t</code>: 1 &times; 36000 time vector for one hour in seconds. It can be used to compute sampling frequency.</p>\n</li>\n<li>\n<p><code>time</code>: N &times; 1 vectors containing hourly timestamps in <code>datenum</code>&nbsp;formats.</p>\n</li>\n<li>\n<p><code>flagDir</code>, <code>flagT</code>, <code>flagVel</code>, <code>flagW</code>: Quality control flags. These can be ignored.</p>\n</li>\n</ul>\n<h3>Notes</h3>\n<ul>\n<li>\n<p>Time series are recorded at 10 Hz and aggregated into hourly files.</p>\n</li>\n<li>\n<p>Missing data are padded with <code>NaN</code>. The first and last hours of each monthly file may contain data from adjacent months due to overlap.</p>\n</li>\n<li>\n<p>The data availability is slightly less than 100%.</p>\n</li>\n<li>Data <strong>have not been filtered </strong>for mast shadowing (Wind directions from 90 deg to 180 deg may have to be removed, maybe even more).</li>\n</ul>\n<h3>References</h3>\n<p>[1] Cheynet, Etienne, Jasna B. Jakobsen, and Joachim Reuder. \"Velocity spectra and coherence estimates in the marine atmospheric boundary layer.\" <em>Boundary-Layer Meteorology</em> 169.3 (2018): 429&ndash;460. <a href=\"https://doi.org/10.1007/s10546-018-0382-2\">https://doi.org/10.1007/s10546-018-0382-2</a></p>\n<p>[2] Kaimal, J.C., and J.J. Finnigan. <em>Atmospheric Boundary Layer Flows: Their Structure and Measurement</em>. Oxford University Press, 1994.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cheynet, Etienne",
+        "affiliation": "University of Bergen",
+        "orcid": "0000-0002-4854-1469"
+      }
+    ],
+    "keywords": [
+      "wind energy",
+      "turbulence",
+      "meteorolgy"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1007/s10546-018-0382-2",
+        "relation": "isDescribedBy",
+        "resource_type": "publication",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Cheynet, Etienne, Jasna B. Jakobsen, and Joachim Reuder. \"Velocity spectra and coherence estimates in the marine atmospheric boundary layer.\" Boundary-Layer Meteorology 169.3 (2018): 429\u2013460. https://doi.org/10.1007/s10546-018-0382-2"
+    ],
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "matlab",
+          "title": {
+            "en": "MATLAB"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "10.1007/s10546-018-0382-2"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15826677"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Post-processed time series at FINO1 in 2007",
+  "links": {
+    "self": "https://zenodo.org/api/records/15826678",
+    "self_html": "https://zenodo.org/records/15826678",
+    "preview_html": "https://zenodo.org/records/15826678?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15826678",
+    "self_doi": "https://doi.org/10.5281/zenodo.15826678",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15826678",
+    "reserve_doi": "https://zenodo.org/api/records/15826678/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15826677",
+    "parent_html": "https://zenodo.org/records/15826677",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15826677",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15826677",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15826678/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15826678/sequence/default",
+    "files": "https://zenodo.org/api/records/15826678/files",
+    "media_files": "https://zenodo.org/api/records/15826678/media-files",
+    "archive": "https://zenodo.org/api/records/15826678/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15826678/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15826678/versions/latest",
+    "latest_html": "https://zenodo.org/records/15826678/latest",
+    "versions": "https://zenodo.org/api/records/15826678/versions",
+    "draft": "https://zenodo.org/api/records/15826678/draft",
+    "access_links": "https://zenodo.org/api/records/15826678/access/links",
+    "access_grants": "https://zenodo.org/api/records/15826678/access/grants",
+    "access_users": "https://zenodo.org/api/records/15826678/access/users",
+    "access_request": "https://zenodo.org/api/records/15826678/access/request",
+    "access": "https://zenodo.org/api/records/15826678/access",
+    "communities": "https://zenodo.org/api/records/15826678/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15826678/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15826678/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15826678/file-modification",
+    "requests": "https://zenodo.org/api/records/15826678/requests"
+  },
+  "updated": "2025-07-07T07:39:44.819122+00:00",
+  "recid": "15826678",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e76aaada-55e1-4087-bc46-b32fdb880dbe",
+      "key": "2007_FINO1.zip",
+      "size": 25512151541,
+      "checksum": "md5:09ee6554ad06119f02e5eeec8c3eaf75",
+      "links": {
+        "self": "https://zenodo.org/api/records/15826678/files/2007_FINO1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "99936"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 25,
+    "unique_downloads": 17,
+    "views": 48,
+    "unique_views": 35,
+    "version_downloads": 25,
+    "version_unique_downloads": 17,
+    "version_unique_views": 35,
+    "version_views": 48
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 25512151541,
+    "top_level_files": [
+      {
+        "name": "2007_FINO1.zip",
+        "size": 25512151541
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1007/s10546-018-0382-2",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:41.546615"
+}

@@ -1,0 +1,301 @@
+{
+  "created": "2025-11-14T12:56:15.646595+00:00",
+  "modified": "2025-11-14T12:56:16.025307+00:00",
+  "id": 17609451,
+  "conceptrecid": "15705585",
+  "doi": "10.5281/zenodo.17609451",
+  "conceptdoi": "10.5281/zenodo.15705585",
+  "doi_url": "https://doi.org/10.5281/zenodo.17609451",
+  "metadata": {
+    "title": "Multispectral and InSAR datasets for the Fernandina 2024 eruption, Gal\u00e1pagos Islands",
+    "doi": "10.5281/zenodo.17609451",
+    "publication_date": "2025-11-14",
+    "description": "<p>This archive contains remote sensing datasets computed as part of the study <em>Lava Tube System Development Defined by Multispectral Imaging and InSAR: the Case of the 2024 Eruption of Fernandina Volcano (Gal&aacute;pagos)</em>, which has been submitted for possible publication in <em>Journal of Geophysical Research - Solid Earth.</em> The following datasets are available:</p>\n<ul>\n<li>\n<p>Landsat 8/9 images, cropped on the lava field. Two composite image are given: (1) lava-flow composite image from bands 10, 7 and 6; and (2) true-colours. The images cover a period from Mar. 2024 to Oct. 2024. The archive name is <em>Fernandina2024_lavaflow_Landsat_images.</em><em>zip</em>.</p>\n</li>\n<li>\n<p>Sentinel-2 images, cropped on the lava field. The composite images are created from&nbsp;<em>SWIR, </em>NIR and Red bands. The images cover a period from Feb. 2024 to Oct. 2024. The archive name is <em>Fernandina2024_lavaflow_</em><em>Sentinel2</em><em>_images.zip</em>.</p>\n</li>\n<li>\n<p>&nbsp;Sentinel-1 InSAR coherence images are given in <em>Fernandina2024_lavaflow_Sentinel1_images</em><em>.zip</em>. In details, the images are Sentinel-1 Ascending (relative orbit: 106) and Sentinel-1 Descending (relative orbit: 128) images between Feb. 2024 and Oct. 2024.</p>\n</li>\n<li>\n<p>The maps of InSAR estimates (displacements, thickness, etc.) performed on the lava field are provided by the file <em>Fernandina2024_lavaflow_Sentinel1_results</em>.zip.</p>\n</li>\n<li>\n<p>The file <em>Fernandina2024_lavaflow_vector</em><em>.zip</em> includes the vector files used in the study.</p>\n</li>\n<li>\n<p>The file <em>TS_displacement_summit_2024.txt&nbsp;</em>includes the InSAR vertical displacements between Feb. 2024 and Oct. 2024, for a point at the summit of Fernandina.</p>\n</li>\n</ul>\n<p>&nbsp;</p>\n<p>Raster and vector data are given in Geotiff format and shapefile, with CRS codes EPSG:32615 and EPSG:32715. Futher information can be found in the metadata.</p>\n<p>Coherence images are given in <em>uchar</em> format. Please rescale the pixel values between 0 and 1 before use.&nbsp;</p>\n<blockquote>\n<p>The datasets are derived from original satellite imagery as follows:</p>\n<p>Copernicus Sentinel-1 data are retrieved from ASF DAAC and Copernicus Data Space Ecosystem (2024), processed by ESA. Copernicus Sentinel-2 data are retrieved from Copernicus Data Space Ecosystem (2024), processed by ESA. LandSat-8/9 and ICESAT-2 data are retrieved from USGS Earth Explorer (2024), processed by NASA. Copernicus DEM (free license): &copy;DLR e.V. 2010-2014 and &copy;Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved (<a href=\"https://doi.org/10.5270/ESA-c5d3d65\"><u>https://doi.org/10.5270/ESA-c5d3d65</u></a><u>).</u></p>\n</blockquote>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hrysiewicz, Alexis",
+        "affiliation": "University College Dublin",
+        "orcid": "0000-0002-7518-5084"
+      },
+      {
+        "name": "Holohan, Eoghan",
+        "affiliation": "University College Dublin",
+        "orcid": "0000-0002-5930-6712"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-sa-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15705585"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Multispectral and InSAR datasets for the Fernandina 2024 eruption, Gal\u00e1pagos Islands",
+  "links": {
+    "self": "https://zenodo.org/api/records/17609451",
+    "self_html": "https://zenodo.org/records/17609451",
+    "preview_html": "https://zenodo.org/records/17609451?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17609451",
+    "self_doi": "https://doi.org/10.5281/zenodo.17609451",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17609451",
+    "reserve_doi": "https://zenodo.org/api/records/17609451/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15705585",
+    "parent_html": "https://zenodo.org/records/15705585",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15705585",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15705585",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17609451/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17609451/sequence/default",
+    "files": "https://zenodo.org/api/records/17609451/files",
+    "media_files": "https://zenodo.org/api/records/17609451/media-files",
+    "archive": "https://zenodo.org/api/records/17609451/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17609451/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17609451/versions/latest",
+    "latest_html": "https://zenodo.org/records/17609451/latest",
+    "versions": "https://zenodo.org/api/records/17609451/versions",
+    "draft": "https://zenodo.org/api/records/17609451/draft",
+    "access_links": "https://zenodo.org/api/records/17609451/access/links",
+    "access_grants": "https://zenodo.org/api/records/17609451/access/grants",
+    "access_users": "https://zenodo.org/api/records/17609451/access/users",
+    "access_request": "https://zenodo.org/api/records/17609451/access/request",
+    "access": "https://zenodo.org/api/records/17609451/access",
+    "communities": "https://zenodo.org/api/records/17609451/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17609451/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17609451/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17609451/file-modification",
+    "requests": "https://zenodo.org/api/records/17609451/requests"
+  },
+  "updated": "2025-11-14T12:56:16.025307+00:00",
+  "recid": "17609451",
+  "revision": 4,
+  "files": [
+    {
+      "id": "704a29f1-5bcc-4c65-90a6-5a4cb9f0b238",
+      "key": "Fernandina2024_lavaflow_vector.zip",
+      "size": 199220,
+      "checksum": "md5:59e53297b88d4c4fac85a26cf2841144",
+      "links": {
+        "self": "https://zenodo.org/api/records/17609451/files/Fernandina2024_lavaflow_vector.zip/content"
+      }
+    },
+    {
+      "id": "628ce7c1-8605-4645-8202-e6a0d938c827",
+      "key": "Fernandina2024_lavaflow_Sentinel1_images.zip",
+      "size": 234544393,
+      "checksum": "md5:a92fec62dadbce96d6ad1b2200b7a0af",
+      "links": {
+        "self": "https://zenodo.org/api/records/17609451/files/Fernandina2024_lavaflow_Sentinel1_images.zip/content"
+      }
+    },
+    {
+      "id": "a847967c-99d5-419a-8892-db1bb2fd9b26",
+      "key": "Fernandina2024_lavaflow_Sentinel1_results.zip",
+      "size": 38870805,
+      "checksum": "md5:57697b394af9791c58047c2eb2a40328",
+      "links": {
+        "self": "https://zenodo.org/api/records/17609451/files/Fernandina2024_lavaflow_Sentinel1_results.zip/content"
+      }
+    },
+    {
+      "id": "6cdb19f8-ce9e-48c6-9c9d-3198eff5603b",
+      "key": "Fernandina2024_lavaflow_Landsat_images.zip",
+      "size": 19815489,
+      "checksum": "md5:af67077654eb9eb54048580f11e30073",
+      "links": {
+        "self": "https://zenodo.org/api/records/17609451/files/Fernandina2024_lavaflow_Landsat_images.zip/content"
+      }
+    },
+    {
+      "id": "a5c2b904-5d83-4eab-b148-817b06c804e9",
+      "key": "Fernandina2024_lavaflow_Sentinel2_images.zip",
+      "size": 48740432,
+      "checksum": "md5:aee0cd1cea8efd3385cb2c78e84cf38a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17609451/files/Fernandina2024_lavaflow_Sentinel2_images.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "367411"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 57,
+    "unique_downloads": 46,
+    "views": 124,
+    "unique_views": 90,
+    "version_downloads": 17,
+    "version_unique_downloads": 17,
+    "version_unique_views": 24,
+    "version_views": 35
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 342170339,
+    "top_level_files": [
+      {
+        "name": "Fernandina2024_lavaflow_vector.zip",
+        "size": 199220
+      },
+      {
+        "name": "Fernandina2024_lavaflow_Sentinel1_images.zip",
+        "size": 234544393
+      },
+      {
+        "name": "Fernandina2024_lavaflow_Sentinel1_results.zip",
+        "size": 38870805
+      },
+      {
+        "name": "Fernandina2024_lavaflow_Landsat_images.zip",
+        "size": 19815489
+      },
+      {
+        "name": "Fernandina2024_lavaflow_Sentinel2_images.zip",
+        "size": 48740432
+      }
+    ],
+    "zip_contents": {
+      "fernandina2024_lavaflow_vector.zip": {
+        "total_files": 78,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 258277,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "fernandina2024_lavaflow_sentinel1_results.zip": {
+        "total_files": 8,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 45432414,
+        "file_types": {
+          ".tif": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "insar_lavaflow/sigma_phase_residues.tif",
+          "insar_lavaflow/sigma_horizontal_disprates.tif",
+          "insar_lavaflow/horizontal_disprates.tif",
+          "insar_lavaflow/phase_residues.tif",
+          "insar_lavaflow/sigma_thickness.tif",
+          "insar_lavaflow/sigma_vertical_disprates.tif",
+          "insar_lavaflow/thickness.tif",
+          "insar_lavaflow/vertical_disprates.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "fernandina2024_lavaflow_landsat_images.zip": {
+        "total_files": 60,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 33530040,
+        "file_types": {
+          ".tif": 60
+        },
+        "imaging_file_count": 60,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "landsat_images/lc08_l2sp_018060_20240307_20240315_02_lavaflow.tif",
+          "landsat_images/lc08_l2sp_018060_20240307_20240315_02_truecolor.tif",
+          "landsat_images/lc08_l2sp_018060_20240323_20240403_02_lavaflow.tif",
+          "landsat_images/lc08_l2sp_018060_20240323_20240403_02_truecolor.tif",
+          "landsat_images/lc08_l2sp_018060_20240408_20240418_02_lavaflow.tif",
+          "landsat_images/lc08_l2sp_018060_20240408_20240418_02_truecolor.tif",
+          "landsat_images/lc08_l2sp_018060_20240424_20240510_02_lavaflow.tif",
+          "landsat_images/lc08_l2sp_018060_20240510_20240520_02_lavaflow.tif",
+          "landsat_images/lc08_l2sp_018060_20240510_20240520_02_truecolor.tif",
+          "landsat_images/lc08_l2sp_018060_20240526_20240610_02_lavaflow.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "fernandina2024_lavaflow_sentinel2_images.zip": {
+        "total_files": 54,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 67875408,
+        "file_types": {
+          ".tif": 54
+        },
+        "imaging_file_count": 54,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "sentinel2_images/t15mxv_20240410t163309_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240619t163309_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240205t163301_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240210t163309_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240215t163301_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240220t163309_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240225t163301_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240301t163309_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240306t163311_swir_20m.tif",
+          "sentinel2_images/t15mxv_20240311t163259_swir_20m.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "insar_lavaflow/sigma_phase_residues.tif",
+      "insar_lavaflow/sigma_horizontal_disprates.tif",
+      "insar_lavaflow/horizontal_disprates.tif",
+      "insar_lavaflow/phase_residues.tif",
+      "insar_lavaflow/sigma_thickness.tif",
+      "insar_lavaflow/sigma_vertical_disprates.tif",
+      "insar_lavaflow/thickness.tif",
+      "insar_lavaflow/vertical_disprates.tif",
+      "landsat_images/lc08_l2sp_018060_20240307_20240315_02_lavaflow.tif",
+      "landsat_images/lc08_l2sp_018060_20240307_20240315_02_truecolor.tif",
+      "landsat_images/lc08_l2sp_018060_20240323_20240403_02_lavaflow.tif",
+      "landsat_images/lc08_l2sp_018060_20240323_20240403_02_truecolor.tif",
+      "landsat_images/lc08_l2sp_018060_20240408_20240418_02_lavaflow.tif",
+      "landsat_images/lc08_l2sp_018060_20240408_20240418_02_truecolor.tif",
+      "landsat_images/lc08_l2sp_018060_20240424_20240510_02_lavaflow.tif",
+      "landsat_images/lc08_l2sp_018060_20240510_20240520_02_lavaflow.tif",
+      "landsat_images/lc08_l2sp_018060_20240510_20240520_02_truecolor.tif",
+      "landsat_images/lc08_l2sp_018060_20240526_20240610_02_lavaflow.tif",
+      "sentinel2_images/t15mxv_20240410t163309_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240619t163309_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240205t163301_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240210t163309_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240215t163301_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240220t163309_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240225t163301_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240301t163309_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240306t163311_swir_20m.tif",
+      "sentinel2_images/t15mxv_20240311t163259_swir_20m.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5270/ESA-c5d3d65",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:30.232592"
+}

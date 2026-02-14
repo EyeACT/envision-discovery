@@ -1,0 +1,153 @@
+{
+  "created": "2025-05-27T15:21:20.551176+00:00",
+  "modified": "2025-05-27T15:22:43.579436+00:00",
+  "id": 15528321,
+  "conceptrecid": "15528320",
+  "doi": "10.7910/DVN/D3ODGT",
+  "doi_url": "https://doi.org/10.7910/DVN/D3ODGT",
+  "metadata": {
+    "title": "Electrical and Electronic Components Dataset",
+    "doi": "10.7910/DVN/D3ODGT",
+    "publication_date": "2024-08-30",
+    "description": "<table>\n<tbody>\n<tr>\n<td>\n<div>The \"Electrical and Electronic Components Dataset\" is a comprehensive collection of 3D mesh models representing various electrical and electronic components. The dataset is designed to serve multiple purposes, including but not limited to, machine learning, computer vision applications, and computational geometry research. It can be an invaluable resource for researchers and practitioners in the fields of electrical engineering, computer science, and data science. A unique aspect of this dataset is the inclusion of labels from three independent expert raters. These labels specifically focus on the semantic segmentation of different features within each 3D model. The involvement of multiple raters adds a layer of robustness and allows for the evaluation of inter-rater reliability, which is a key factor in the development and validation of semantic segmentation algorithms. The multi-rater labeled data is ideal for training and evaluating machine learning models geared towards semantic part segmentation. It opens the door for creating more accurate and reliable segmentation algorithms that can be employed in various applications such as quality control, automated assembly, and advanced robotics in the electrical and electronics domain.</div>\n</td>\n</tr>\n</tbody>\n</table>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Scheffler, Benedikt",
+        "affiliation": null,
+        "orcid": "0000-0003-2637-9066"
+      },
+      {
+        "name": "Br\u00fcndl, Patrick",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg Lehrstuhl f\u00fcr Fertigungsautomatisierung und Produktionssystematik (FAPS)",
+        "orcid": "0000-0002-3694-907X"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41597-024-03155-w",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1007/s10845-023-02267-1",
+        "relation": "describes",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "faps"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15528320"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electrical and Electronic Components Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15528321",
+    "self_html": "https://zenodo.org/records/15528321",
+    "preview_html": "https://zenodo.org/records/15528321?preview=1",
+    "doi": "https://doi.org/10.7910/DVN/D3ODGT",
+    "self_doi": "https://doi.org/10.7910/DVN/D3ODGT",
+    "self_doi_html": "https://zenodo.org/doi/10.7910/DVN/D3ODGT",
+    "reserve_doi": "https://zenodo.org/api/records/15528321/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15528320",
+    "parent_html": "https://zenodo.org/records/15528320",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15528321/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15528321/sequence/default",
+    "files": "https://zenodo.org/api/records/15528321/files",
+    "media_files": "https://zenodo.org/api/records/15528321/media-files",
+    "archive": "https://zenodo.org/api/records/15528321/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15528321/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15528321/versions/latest",
+    "latest_html": "https://zenodo.org/records/15528321/latest",
+    "versions": "https://zenodo.org/api/records/15528321/versions",
+    "draft": "https://zenodo.org/api/records/15528321/draft",
+    "access_links": "https://zenodo.org/api/records/15528321/access/links",
+    "access_grants": "https://zenodo.org/api/records/15528321/access/grants",
+    "access_users": "https://zenodo.org/api/records/15528321/access/users",
+    "access_request": "https://zenodo.org/api/records/15528321/access/request",
+    "access": "https://zenodo.org/api/records/15528321/access",
+    "communities": "https://zenodo.org/api/records/15528321/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15528321/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15528321/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15528321/file-modification",
+    "requests": "https://zenodo.org/api/records/15528321/requests"
+  },
+  "updated": "2025-05-27T15:22:43.579436+00:00",
+  "recid": "15528321",
+  "revision": 6,
+  "files": [
+    {
+      "id": "cea9e12a-5acb-403b-9269-4ce616520dd7",
+      "key": "Electrical and Electronic Components Dataset.zip",
+      "size": 234320992,
+      "checksum": "md5:1846bdbcf36e91406056b2c828052346",
+      "links": {
+        "self": "https://zenodo.org/api/records/15528321/files/Electrical and Electronic Components Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1329429"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 40,
+    "unique_downloads": 36,
+    "views": 221,
+    "unique_views": 206,
+    "version_downloads": 40,
+    "version_unique_downloads": 36,
+    "version_unique_views": 206,
+    "version_views": 221
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 234320992,
+    "top_level_files": [
+      {
+        "name": "Electrical and Electronic Components Dataset.zip",
+        "size": 234320992
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:48.745517"
+}

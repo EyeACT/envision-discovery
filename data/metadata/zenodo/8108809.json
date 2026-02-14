@@ -1,0 +1,233 @@
+{
+  "created": "2023-07-03T12:31:48.437489+00:00",
+  "modified": "2023-07-03T14:26:46.094140+00:00",
+  "id": 8108809,
+  "conceptrecid": "8108808",
+  "doi": "10.25747/TD00-7K67",
+  "doi_url": "https://doi.org/10.25747/TD00-7K67",
+  "metadata": {
+    "title": "Heart and Clavicle Segmentation References in Chest Radiography - Montgomery Dataset",
+    "doi": "10.25747/TD00-7K67",
+    "publication_date": "2023-05-08",
+    "description": "<p>The analysis of chest radiography imaging is of paramount importance for healthcare institutions since it is one of the most used imaging modalities for patient diagnosis, management and follow-up. In recent years, several studies have demonstrated that automatic algorithms, namely using deep learning, can successfully detect and segment the anatomical structures seen in chest radiography images, namely the lungs, heart and clavicles. However, only a limited number of public data is available for training, particularly for the heart and clavicles. This dataset provides segmentation masks for the heart and clavicles in the Montgomery dataset, a public repository of 138 chest radiographies for which lung segmentation masks are publicly available (Jaeger et al. Two public chest x-ray datasets for computer-aided screening of pulmonary diseases. Quant. Imaging Med. Surg., 4(6):475&ndash;477, December 2014.). Segmentation masks were obtained through manual annotation by a PhD candidate in biomedical Image analysis with experience in chest radiography imaging using the Heartex Label Studio software.</p>\n\n<p>For additional information please refer to our manuscript: R. Brioso et al &quot;Semi-supervised Multi-structure Segmentation in Chest X-Ray Imaging&quot; CBMS 2023</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Brioso, Ricardo",
+        "affiliation": "INESC TEC and FEUP",
+        "orcid": "0000-0003-1635-0489"
+      },
+      {
+        "name": "Pedrosa, Jo\u00e3o",
+        "affiliation": "INESC TEC and FEUP",
+        "orcid": "0000-0002-7588-8927"
+      },
+      {
+        "name": "Mendon\u00e7a, Ana Maria",
+        "affiliation": "INESC TEC and FEUP",
+        "orcid": "0000-0002-4319-738X"
+      },
+      {
+        "name": "Campilho, Aur\u00e9lio",
+        "affiliation": "INESC TEC and FEUP",
+        "orcid": "0000-0002-5317-6275"
+      }
+    ],
+    "keywords": [
+      "Chest Radiography",
+      "Clavicles",
+      "Heart",
+      "Segmentation"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8108808"
+          }
+        }
+      ]
+    },
+    "notes": "This work is financed by the ERDF - European Regional Development Fund, through the Norte Portugal Regional Operational Programme - NORTE 2020 under the Portugal 2020 Partnership Agreement, and by National Funds through the FCT - Portuguese Foundation for Science and Technology, I.P. on the scope of the CMU Portugal Program within project TAMI, with reference NORTE-01-0247-FEDER-045905."
+  },
+  "title": "Heart and Clavicle Segmentation References in Chest Radiography - Montgomery Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/8108809",
+    "self_html": "https://zenodo.org/records/8108809",
+    "preview_html": "https://zenodo.org/records/8108809?preview=1",
+    "doi": "https://doi.org/10.25747/TD00-7K67",
+    "self_doi": "https://doi.org/10.25747/TD00-7K67",
+    "self_doi_html": "https://zenodo.org/doi/10.25747/TD00-7K67",
+    "reserve_doi": "https://zenodo.org/api/records/8108809/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8108808",
+    "parent_html": "https://zenodo.org/records/8108808",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8108809/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8108809/sequence/default",
+    "files": "https://zenodo.org/api/records/8108809/files",
+    "media_files": "https://zenodo.org/api/records/8108809/media-files",
+    "archive": "https://zenodo.org/api/records/8108809/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8108809/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8108809/versions/latest",
+    "latest_html": "https://zenodo.org/records/8108809/latest",
+    "versions": "https://zenodo.org/api/records/8108809/versions",
+    "draft": "https://zenodo.org/api/records/8108809/draft",
+    "access_links": "https://zenodo.org/api/records/8108809/access/links",
+    "access_grants": "https://zenodo.org/api/records/8108809/access/grants",
+    "access_users": "https://zenodo.org/api/records/8108809/access/users",
+    "access_request": "https://zenodo.org/api/records/8108809/access/request",
+    "access": "https://zenodo.org/api/records/8108809/access",
+    "communities": "https://zenodo.org/api/records/8108809/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8108809/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8108809/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8108809/file-modification",
+    "requests": "https://zenodo.org/api/records/8108809/requests"
+  },
+  "updated": "2023-07-03T14:26:46.094140+00:00",
+  "recid": "8108809",
+  "revision": 2,
+  "files": [
+    {
+      "id": "783d85ec-75cb-4d5b-9361-de122a9f8a8c",
+      "key": "masksheart.zip",
+      "size": 2184549,
+      "checksum": "md5:77a78b439d4e81b93f49a8b4b8a4ef2a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8108809/files/masksheart.zip/content"
+      }
+    },
+    {
+      "id": "39e5769f-87a1-4b2f-8070-0df69a7dfb30",
+      "key": "masksclavicles.zip",
+      "size": 1863592,
+      "checksum": "md5:caaffdc5f26f5b3a21e917ea6ac82353",
+      "links": {
+        "self": "https://zenodo.org/api/records/8108809/files/masksclavicles.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "502819"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 89,
+    "unique_downloads": 83,
+    "views": 246,
+    "unique_views": 236,
+    "version_downloads": 89,
+    "version_unique_downloads": 83,
+    "version_unique_views": 229,
+    "version_views": 238
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4048141,
+    "top_level_files": [
+      {
+        "name": "masksheart.zip",
+        "size": 2184549
+      },
+      {
+        "name": "masksclavicles.zip",
+        "size": 1863592
+      }
+    ],
+    "zip_contents": {
+      "masksheart.zip": {
+        "total_files": 138,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 4660545,
+        "file_types": {
+          ".png": 138
+        },
+        "imaging_file_count": 138,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "masks_heart/mcucxr_0001_0.png",
+          "masks_heart/mcucxr_0002_0.png",
+          "masks_heart/mcucxr_0003_0.png",
+          "masks_heart/mcucxr_0004_0.png",
+          "masks_heart/mcucxr_0005_0.png",
+          "masks_heart/mcucxr_0006_0.png",
+          "masks_heart/mcucxr_0008_0.png",
+          "masks_heart/mcucxr_0011_0.png",
+          "masks_heart/mcucxr_0013_0.png",
+          "masks_heart/mcucxr_0015_0.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "masksclavicles.zip": {
+        "total_files": 138,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 4317612,
+        "file_types": {
+          ".png": 138
+        },
+        "imaging_file_count": 138,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "masks_clavicles/mcucxr_0001_0.png",
+          "masks_clavicles/mcucxr_0002_0.png",
+          "masks_clavicles/mcucxr_0003_0.png",
+          "masks_clavicles/mcucxr_0004_0.png",
+          "masks_clavicles/mcucxr_0005_0.png",
+          "masks_clavicles/mcucxr_0006_0.png",
+          "masks_clavicles/mcucxr_0008_0.png",
+          "masks_clavicles/mcucxr_0011_0.png",
+          "masks_clavicles/mcucxr_0013_0.png",
+          "masks_clavicles/mcucxr_0015_0.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "masks_heart/mcucxr_0001_0.png",
+      "masks_heart/mcucxr_0002_0.png",
+      "masks_heart/mcucxr_0003_0.png",
+      "masks_heart/mcucxr_0004_0.png",
+      "masks_heart/mcucxr_0005_0.png",
+      "masks_heart/mcucxr_0006_0.png",
+      "masks_heart/mcucxr_0008_0.png",
+      "masks_heart/mcucxr_0011_0.png",
+      "masks_heart/mcucxr_0013_0.png",
+      "masks_heart/mcucxr_0015_0.png",
+      "masks_clavicles/mcucxr_0001_0.png",
+      "masks_clavicles/mcucxr_0002_0.png",
+      "masks_clavicles/mcucxr_0003_0.png",
+      "masks_clavicles/mcucxr_0004_0.png",
+      "masks_clavicles/mcucxr_0005_0.png",
+      "masks_clavicles/mcucxr_0006_0.png",
+      "masks_clavicles/mcucxr_0008_0.png",
+      "masks_clavicles/mcucxr_0011_0.png",
+      "masks_clavicles/mcucxr_0013_0.png",
+      "masks_clavicles/mcucxr_0015_0.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:51.017926"
+}

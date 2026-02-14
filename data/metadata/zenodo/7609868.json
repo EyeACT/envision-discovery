@@ -1,0 +1,176 @@
+{
+  "created": "2023-02-06T09:30:54.185004+00:00",
+  "modified": "2023-03-28T19:04:09.257114+00:00",
+  "id": 7609868,
+  "conceptrecid": "7609867",
+  "doi": "10.5061/dryad.ngf1vhhvp",
+  "doi_url": "https://doi.org/10.5061/dryad.ngf1vhhvp",
+  "metadata": {
+    "title": "Behavioral responses in an object segmentation task and neural responses during passive viewing",
+    "doi": "10.5061/dryad.ngf1vhhvp",
+    "publication_date": "2023-02-09",
+    "description": "<p>The rodent visual system has attracted great interest in recent years due to its experimental tractability, but the fundamental mechanisms used by the mouse to represent the visual world remain unclear. In the primate, researchers have argued from both behavioral and neural evidence that a key step in visual representation is \"figure-ground segmentation,\" the delineation of figures as distinct from backgrounds [<a href=\"https://www.biorxiv.org/content/10.1101/2021.07.04.451059v1#ref-1\">1</a>\u2013<a href=\"https://www.biorxiv.org/content/10.1101/2021.07.04.451059v1#ref-4\">4</a>]. To determine if mice also show behavioral and neural signatures of figure-ground segmentation, we trained mice on a figure-ground segmentation task where figures were defined by gratings and naturalistic textures moving counterphase to the background. Unlike primates, mice were severely limited in their ability to segment figure from ground using the opponent motion cue, with segmentation behavior strongly dependent on the specific carrier pattern. Remarkably, when mice were forced to localize naturalistic patterns defined by opponent motion, they adopted a strategy of brute force memorization of texture patterns. In contrast, primates, including humans, macaques, and mouse lemurs, could readily segment figures independent of carrier pattern using the opponent motion cue. Consistent with mouse behavior, neural responses to the same stimuli recorded in mouse visual areas V1, RL, and LM also did not support texture-invariant segmentation of figures using opponent motion. Modeling revealed that the texture dependence of both the mouse's behavior and neural responses could be explained by a feedforward neural network lacking explicit segmentation capabilities. These findings reveal a fundamental limitation in the ability of mice to segment visual objects compared to primates.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Luongo, Francisco",
+        "affiliation": "California Institute of Technology",
+        "orcid": "0000-0002-6648-682X"
+      },
+      {
+        "name": "Liu, Lu",
+        "affiliation": "California Institute of Technology"
+      },
+      {
+        "name": "Hesse, Janis",
+        "affiliation": "California Institute of Technology"
+      },
+      {
+        "name": "Chun Lum, Andy Ho",
+        "affiliation": "University of Geneva"
+      },
+      {
+        "name": "Wekselblatt, Joseph",
+        "affiliation": "California Institute of Technology"
+      },
+      {
+        "name": "LanFranchi, Frank",
+        "affiliation": "California Institute of Technology"
+      },
+      {
+        "name": "Huber, Daniel",
+        "affiliation": "University of Geneva"
+      },
+      {
+        "name": "Tsao, Doris",
+        "affiliation": "California Institute of Technology"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7609867"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Instructions for loading data are included in README.MD</p>"
+  },
+  "title": "Behavioral responses in an object segmentation task and neural responses during passive viewing",
+  "links": {
+    "self": "https://zenodo.org/api/records/7609868",
+    "self_html": "https://zenodo.org/records/7609868",
+    "preview_html": "https://zenodo.org/records/7609868?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.ngf1vhhvp",
+    "self_doi": "https://doi.org/10.5061/dryad.ngf1vhhvp",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.ngf1vhhvp",
+    "reserve_doi": "https://zenodo.org/api/records/7609868/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7609867",
+    "parent_html": "https://zenodo.org/records/7609867",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7609868/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7609868/sequence/default",
+    "files": "https://zenodo.org/api/records/7609868/files",
+    "media_files": "https://zenodo.org/api/records/7609868/media-files",
+    "archive": "https://zenodo.org/api/records/7609868/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7609868/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7609868/versions/latest",
+    "latest_html": "https://zenodo.org/records/7609868/latest",
+    "versions": "https://zenodo.org/api/records/7609868/versions",
+    "draft": "https://zenodo.org/api/records/7609868/draft",
+    "access_links": "https://zenodo.org/api/records/7609868/access/links",
+    "access_grants": "https://zenodo.org/api/records/7609868/access/grants",
+    "access_users": "https://zenodo.org/api/records/7609868/access/users",
+    "access_request": "https://zenodo.org/api/records/7609868/access/request",
+    "access": "https://zenodo.org/api/records/7609868/access",
+    "communities": "https://zenodo.org/api/records/7609868/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7609868/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7609868/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7609868/file-modification",
+    "requests": "https://zenodo.org/api/records/7609868/requests"
+  },
+  "updated": "2023-03-28T19:04:09.257114+00:00",
+  "recid": "7609868",
+  "revision": 3,
+  "files": [
+    {
+      "id": "0d57b7a1-2ca3-4204-9be3-a5d44bdce645",
+      "key": "README.MD",
+      "size": 2990,
+      "checksum": "md5:efedf44d1dd502fe07b9c7133f9a731d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7609868/files/README.MD/content"
+      }
+    },
+    {
+      "id": "18d5ced7-23e2-4d18-b596-67ea6f8c500d",
+      "key": "luongo_etal_dryad_export.zip",
+      "size": 86769961,
+      "checksum": "md5:9d6eb065b72beacc2a588fc48f53f0c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7609868/files/luongo_etal_dryad_export.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 27,
+    "unique_downloads": 27,
+    "views": 122,
+    "unique_views": 119,
+    "version_downloads": 27,
+    "version_unique_downloads": 27,
+    "version_unique_views": 117,
+    "version_views": 120
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 86769961,
+    "top_level_files": [
+      {
+        "name": "README.MD",
+        "size": 2990
+      },
+      {
+        "name": "luongo_etal_dryad_export.zip",
+        "size": 86769961
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:12.681236"
+}

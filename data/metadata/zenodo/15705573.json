@@ -1,0 +1,147 @@
+{
+  "created": "2025-06-23T07:55:52.842868+00:00",
+  "modified": "2025-06-23T07:55:53.101846+00:00",
+  "id": 15705573,
+  "conceptrecid": "15705572",
+  "doi": "10.5281/zenodo.15705573",
+  "conceptdoi": "10.5281/zenodo.15705572",
+  "doi_url": "https://doi.org/10.5281/zenodo.15705573",
+  "metadata": {
+    "title": "Synchrotron nanoprobe X-ray fluorescence elemental maps of adult mouse retina.",
+    "doi": "10.5281/zenodo.15705573",
+    "publication_date": "2025-06-20",
+    "description": "<p>This repository contains processed data from an experiment performed on beamline ID16B, ESRF, under proposal number LS-2443.</p>\n<p>The data held here are associated with the following publication, which is currently under review by Scientific Reports:&nbsp;</p>\n<p>&ldquo;Nanoprobe synchrotron X-ray fluorescence microscopy reveals selenium microspheres in mouse retinal pigment epithelium&rdquo;.</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Geraki, Kalotina",
+        "affiliation": "Diamond Light Source",
+        "orcid": "0000-0001-6055-7060"
+      },
+      {
+        "name": "Ugarte, Marta",
+        "affiliation": "Manchester University NHS Foundation Trust"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15705572"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Synchrotron nanoprobe X-ray fluorescence elemental maps of adult mouse retina.",
+  "links": {
+    "self": "https://zenodo.org/api/records/15705573",
+    "self_html": "https://zenodo.org/records/15705573",
+    "preview_html": "https://zenodo.org/records/15705573?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15705573",
+    "self_doi": "https://doi.org/10.5281/zenodo.15705573",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15705573",
+    "reserve_doi": "https://zenodo.org/api/records/15705573/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15705572",
+    "parent_html": "https://zenodo.org/records/15705572",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15705572",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15705572",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15705573/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15705573/sequence/default",
+    "files": "https://zenodo.org/api/records/15705573/files",
+    "media_files": "https://zenodo.org/api/records/15705573/media-files",
+    "archive": "https://zenodo.org/api/records/15705573/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15705573/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15705573/versions/latest",
+    "latest_html": "https://zenodo.org/records/15705573/latest",
+    "versions": "https://zenodo.org/api/records/15705573/versions",
+    "draft": "https://zenodo.org/api/records/15705573/draft",
+    "access_links": "https://zenodo.org/api/records/15705573/access/links",
+    "access_grants": "https://zenodo.org/api/records/15705573/access/grants",
+    "access_users": "https://zenodo.org/api/records/15705573/access/users",
+    "access_request": "https://zenodo.org/api/records/15705573/access/request",
+    "access": "https://zenodo.org/api/records/15705573/access",
+    "communities": "https://zenodo.org/api/records/15705573/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15705573/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15705573/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15705573/file-modification",
+    "requests": "https://zenodo.org/api/records/15705573/requests"
+  },
+  "updated": "2025-06-23T07:55:53.101846+00:00",
+  "recid": "15705573",
+  "revision": 4,
+  "files": [
+    {
+      "id": "6e413031-5599-41be-93f3-c4ab44bb9fcf",
+      "key": "ProcessedElementalMaps.zip",
+      "size": 12504534,
+      "checksum": "md5:28617ad82395085bef095fec1c0008d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/15705573/files/ProcessedElementalMaps.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1346700"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 8,
+    "unique_downloads": 7,
+    "views": 31,
+    "unique_views": 24,
+    "version_downloads": 8,
+    "version_unique_downloads": 7,
+    "version_unique_views": 24,
+    "version_views": 31
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 12504534,
+    "top_level_files": [
+      {
+        "name": "ProcessedElementalMaps.zip",
+        "size": 12504534
+      }
+    ],
+    "zip_contents": {
+      "processedelementalmaps.zip": {
+        "total_files": 21,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 30424686,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:30.636292"
+}

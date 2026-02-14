@@ -1,0 +1,295 @@
+{
+  "created": "2026-02-03T12:05:37.917871+00:00",
+  "modified": "2026-02-03T12:05:38.331566+00:00",
+  "id": 18457948,
+  "conceptrecid": "14672259",
+  "doi": "10.5281/zenodo.18457948",
+  "conceptdoi": "10.5281/zenodo.14672259",
+  "doi_url": "https://doi.org/10.5281/zenodo.18457948",
+  "metadata": {
+    "title": "Dataset for: Methodology for creation of labeled image datasets of entrained air voids and aggregates in concrete surfaces using confocal laser scanning microscopy",
+    "doi": "10.5281/zenodo.18457948",
+    "publication_date": "2026-02-03",
+    "description": "<h2>Please click through the Versions in order to access publication specific datasets:</h2>\n<h1><strong>Version v3:&nbsp;</strong></h1>\n<h2>Data for \"Combining Confocal Microscopy and Deep Learning for Concrete Microstructural Analysis\"</h2>\n<h3>Description of the <strong>additional dataset</strong></h3>\n<p>Training and test data associated with the publication \"Combining Confocal Microscopy and Deep Learning for Concrete Microstructural Analysis\" (DOI will be provided as soon as it is available). This dataset contains all files of Version v1 as well as additionally labeled data with a magnification of 240x and a resolution of 0,69 &micro;m/pixel.</p>\n<p>&nbsp;</p>\n<h2>Version v2:</h2>\n<h3>Description of the <strong>additional dataset</strong></h3>\n<p>Several files of different magnification levels and resolutions as of &micro;m/pixel have been added for benchmark purposes.</p>\n<p>&nbsp;</p>\n<h2>Version v1:</h2>\n<h3>Description of the<em> </em><strong>initial dataset</strong></h3>\n<p>This dataset is created and associated with the publication \"<strong>Methodology for creation of labeled image datasets of</strong><br><strong>entrained air voids and aggregates in concrete surfaces using confocal laser scanning microscopy</strong>\" (Available at:<a title=\"Persistent link using digital object identifier\" href=\"https://doi.org/10.1016/j.aei.2025.103500\" target=\"_blank\" rel=\"noreferrer noopener\"> https://doi.org/10.1016/j.aei.2025.103500</a>). The dataset contains high-quality RGB-images and their corresponding surface height-data&nbsp; of various polished concrete specimen captured with Confocal Laser Scanning Microscopy (CLSM) with a magnification of 240x and a resolution of 0,69 &micro;m/pixel. Furthermore, labeled segmentation masks were created with the method described in the associated publication. The masks contain locations of air voids, aggregates and cement paste, and are intended for further development of neural network applications for the characterization of freeze-thaw resistance of concretes. (See f.e. DIN EN 480-11 or ASTM C457)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kostic, Viktor",
+        "affiliation": "Technical University of Munich",
+        "orcid": "0009-0007-7592-1831"
+      },
+      {
+        "name": "Khan, Qadeer",
+        "affiliation": "Technical University of Munich",
+        "orcid": "0000-0002-7674-0596"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14672259"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset for: Methodology for creation of labeled image datasets of entrained air voids and aggregates in concrete surfaces using confocal laser scanning microscopy",
+  "links": {
+    "self": "https://zenodo.org/api/records/18457948",
+    "self_html": "https://zenodo.org/records/18457948",
+    "preview_html": "https://zenodo.org/records/18457948?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18457948",
+    "self_doi": "https://doi.org/10.5281/zenodo.18457948",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18457948",
+    "reserve_doi": "https://zenodo.org/api/records/18457948/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14672259",
+    "parent_html": "https://zenodo.org/records/14672259",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14672259",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14672259",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18457948/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18457948/sequence/default",
+    "files": "https://zenodo.org/api/records/18457948/files",
+    "media_files": "https://zenodo.org/api/records/18457948/media-files",
+    "archive": "https://zenodo.org/api/records/18457948/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18457948/media-files-archive",
+    "latest": "https://zenodo.org/api/records/18457948/versions/latest",
+    "latest_html": "https://zenodo.org/records/18457948/latest",
+    "versions": "https://zenodo.org/api/records/18457948/versions",
+    "draft": "https://zenodo.org/api/records/18457948/draft",
+    "access_links": "https://zenodo.org/api/records/18457948/access/links",
+    "access_grants": "https://zenodo.org/api/records/18457948/access/grants",
+    "access_users": "https://zenodo.org/api/records/18457948/access/users",
+    "access_request": "https://zenodo.org/api/records/18457948/access/request",
+    "access": "https://zenodo.org/api/records/18457948/access",
+    "communities": "https://zenodo.org/api/records/18457948/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18457948/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18457948/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18457948/file-modification",
+    "requests": "https://zenodo.org/api/records/18457948/requests"
+  },
+  "updated": "2026-02-03T12:05:38.331566+00:00",
+  "recid": "18457948",
+  "revision": 4,
+  "files": [
+    {
+      "id": "305580d3-ffe1-437e-9aba-5d2684d1f131",
+      "key": "training_masks.zip",
+      "size": 11911683,
+      "checksum": "md5:7f1ddcc5d0aaf254ec9d6714f5cb8937",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/training_masks.zip/content"
+      }
+    },
+    {
+      "id": "66c7bd47-681f-4358-ac48-3dbcbbf9e290",
+      "key": "test_masks.zip",
+      "size": 2064219,
+      "checksum": "md5:b9c9283a2fb589e2090264d86d144d07",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/test_masks.zip/content"
+      }
+    },
+    {
+      "id": "b8ffabaa-028f-45df-b755-439bdb2411fe",
+      "key": "test_files.zip",
+      "size": 1513370184,
+      "checksum": "md5:935aced3e06e03df73275f8d349440f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/test_files.zip/content"
+      }
+    },
+    {
+      "id": "f136972b-bdc0-4298-bcc4-2255ac221f6c",
+      "key": "training_files_RGB.zip",
+      "size": 2489109244,
+      "checksum": "md5:e27800f33cb46eca77e4403605a5a0e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/training_files_RGB.zip/content"
+      }
+    },
+    {
+      "id": "e6b1505e-2644-4660-b917-d6ddb1d9284a",
+      "key": "training_files_height-data (part 1).zip",
+      "size": 2382040753,
+      "checksum": "md5:0aae040e378235339cb6a8054296c1be",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/training_files_height-data (part 1).zip/content"
+      }
+    },
+    {
+      "id": "0c2488eb-c070-4ccf-8755-28a0cc5f260f",
+      "key": "training_files_height-data (part 2).zip",
+      "size": 2385520445,
+      "checksum": "md5:35a4b47748e01f67c365b8d8bda3d420",
+      "links": {
+        "self": "https://zenodo.org/api/records/18457948/files/training_files_height-data (part 2).zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1249106"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 148,
+    "unique_downloads": 146,
+    "views": 237,
+    "unique_views": 152,
+    "version_downloads": 8,
+    "version_unique_downloads": 7,
+    "version_unique_views": 2,
+    "version_views": 5
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 6,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8784016528,
+    "top_level_files": [
+      {
+        "name": "training_masks.zip",
+        "size": 11911683
+      },
+      {
+        "name": "test_masks.zip",
+        "size": 2064219
+      },
+      {
+        "name": "test_files.zip",
+        "size": 1513370184
+      },
+      {
+        "name": "training_files_RGB.zip",
+        "size": 2489109244
+      },
+      {
+        "name": "training_files_height-data (part 1).zip",
+        "size": 2382040753
+      },
+      {
+        "name": "training_files_height-data (part 2).zip",
+        "size": 2385520445
+      }
+    ],
+    "zip_contents": {
+      "test_masks.zip": {
+        "total_files": 153,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 2555580,
+        "file_types": {
+          ".png": 153
+        },
+        "imaging_file_count": 153,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_105_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_109_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_111_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_136_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_142_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_144_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_153_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_161_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_167_mask.png",
+          "test_masks/m1/m1s1_1_p_o1-gr2020_10_171_mask.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "test_files.zip": {
+        "total_files": 306,
+        "total_directories": 10,
+        "total_uncompressed_bytes": 4147922912,
+        "file_types": {
+          ".png": 153
+        },
+        "imaging_file_count": 153,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_105_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_109_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_111_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_136_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_142_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_144_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_153_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_161_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_167_rgb-image.png",
+          "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_171_rgb-image.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "training_files_height-data (part 1).zip": {
+        "total_files": 363,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 8372906826,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "training_files_height-data (part 2).zip": {
+        "total_files": 370,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 8542878150,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_105_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_109_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_111_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_136_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_142_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_144_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_153_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_161_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_167_mask.png",
+      "test_masks/m1/m1s1_1_p_o1-gr2020_10_171_mask.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_105_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_109_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_111_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_136_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_142_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_144_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_153_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_161_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_167_rgb-image.png",
+      "test_files/m1/rgb/m1s1_1_p_o1-gr2020_10_171_rgb-image.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1016/j.aei.2025.103500",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:31.105182"
+}

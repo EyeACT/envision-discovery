@@ -1,0 +1,4083 @@
+{
+  "created": "2022-03-15T09:58:18.785834+00:00",
+  "modified": "2024-07-17T09:05:09.528286+00:00",
+  "id": 6355622,
+  "conceptrecid": "6355621",
+  "doi": "10.5281/zenodo.6355622",
+  "conceptdoi": "10.5281/zenodo.6355621",
+  "doi_url": "https://doi.org/10.5281/zenodo.6355622",
+  "metadata": {
+    "title": "Multiple Nuclei HeLa cell ground truth images with four labels (nuclear envelope, nucleus, rest of the cell, and background) for deep learning architecture training.",
+    "doi": "10.5281/zenodo.6355622",
+    "publication_date": "2022-03-15",
+    "description": "<p>This is a data set that contains <strong>labelled&nbsp;HeLa cell images</strong>, indicating the four different classes - nuclear envelope, nucleus, rest of the cell, and background. Similar ground truth have been published for this data set, but in this case, multiple nuclei have been labelled, whilst previous ones only focused on the central cell (https://doi.org/10.5281/zenodo.3874949)</p>\n\n<p>Details of the imaging, preparation and segmentation have been published in:</p>\n\n<ul>\n\t<li>Cefa&nbsp;Karaba\u011f,&nbsp;Martin L.&nbsp;Jones,&nbsp;Christopher J.&nbsp;Peddie,&nbsp;Anne E.&nbsp;Weston,&nbsp;Lucy M.&nbsp;Collinson,&nbsp;Constantino Carlos&nbsp;Reyes-Aldasoro. Segmentation and Modelling of the Nuclear Envelope of HeLa Cells Imaged with Serial Block Face Scanning Electron Microscopy.&nbsp;<em>J. Imaging</em>&nbsp;<strong>2019</strong>,&nbsp;<em>5</em>(9), 75;&nbsp;<a href=\"https://doi.org/10.3390/jimaging5090075\">https://doi.org/10.3390/jimaging5090075</a></li>\n\t<li>Cefa&nbsp;Karaba\u011f,&nbsp;Martin L.&nbsp;Jones,&nbsp;Christopher J.&nbsp;Peddie,&nbsp;Anne E.&nbsp;Weston,&nbsp;Lucy M.&nbsp;Collinson,&nbsp;Constantino Carlos&nbsp;Reyes-Aldasoro. Semantic segmentation of HeLa cells: An objective comparison between one traditional algorithm and four deep-learning architectures, PLOS ONE, <strong>2020</strong>;&nbsp; <a href=\"https://doi.org/10.1371/journal.pone.0230605\">https://doi.org/10.1371/journal.pone.0230605</a></li>\n\t<li>\n\t<p>Cefa&nbsp;Karaba\u011f,&nbsp;Martin L.&nbsp;Jones, Constantino Carlos&nbsp;Reyes-Aldasoro, Segmentation of the Plasma Membrane of HeLa Cells,<em> J. Imaging</em> <strong>2021</strong>, <em>7</em>(6), 93; <a href=\"https://doi.org/10.3390/jimaging7060093\">https://doi.org/10.3390/jimaging7060093</a></p>\n\t</li>\n</ul>\n\n<ul>\n\t<li>The&nbsp;data sets&nbsp;are freely available through EMPIAR: http://dx.doi.org/10.6019/EMPIAR-10094 EMPIAR.</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Karaba\u011f, Cefa",
+        "affiliation": "City, University of London",
+        "orcid": "0000-0003-4424-0471"
+      },
+      {
+        "name": "Jones, Martin",
+        "affiliation": "Francis Crick Institute",
+        "orcid": "0000-0003-0994-5652"
+      },
+      {
+        "name": "Reyes-Aldasoro, Constantino Carlos",
+        "affiliation": "City, University of London",
+        "orcid": "0000-0002-9466-2018"
+      }
+    ],
+    "keywords": [
+      "HeLa",
+      "Electron Microscopy",
+      "Deep Learning",
+      "Training Data",
+      "Ground Truth"
+    ],
+    "references": [
+      "Cefa Karaba\u011f, Martin L. Jones, Christopher J. Peddie, Anne E. Weston, Lucy M. Collinson, Constantino Carlos Reyes-Aldasoro. Semantic segmentation of HeLa cells: An objective comparison between one traditional algorithm and four deep-learning architectures, PLOS ONE, 2020;  https://doi.org/10.1371/journal.pone.0230605",
+      "Cefa Karaba\u011f, Martin L. Jones, Christopher J. Peddie, Anne E. Weston, Lucy M. Collinson, Constantino Carlos Reyes-Aldasoro. Segmentation and Modelling of the Nuclear Envelope of HeLa Cells Imaged with Serial Block Face Scanning Electron Microscopy. J. Imaging 2019, 5(9), 75; https://doi.org/10.3390/jimaging5090075",
+      "Cefa Karaba\u011f, Martin L. Jones, Constantino Carlos Reyes-Aldasoro, Segmentation of the Plasma Membrane of HeLa Cells, J. Imaging 2021, 7(6), 93; https://doi.org/10.3390/jimaging7060093"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6355621"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Multiple Nuclei HeLa cell ground truth images with four labels (nuclear envelope, nucleus, rest of the cell, and background) for deep learning architecture training.",
+  "links": {
+    "self": "https://zenodo.org/api/records/6355622",
+    "self_html": "https://zenodo.org/records/6355622",
+    "preview_html": "https://zenodo.org/records/6355622?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6355622",
+    "self_doi": "https://doi.org/10.5281/zenodo.6355622",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6355622",
+    "reserve_doi": "https://zenodo.org/api/records/6355622/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6355621",
+    "parent_html": "https://zenodo.org/records/6355621",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6355621",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6355621",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6355622/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6355622/sequence/default",
+    "files": "https://zenodo.org/api/records/6355622/files",
+    "media_files": "https://zenodo.org/api/records/6355622/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6355622:GT_multinuclei.gif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6355622/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6355622/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6355622/versions/latest",
+    "latest_html": "https://zenodo.org/records/6355622/latest",
+    "versions": "https://zenodo.org/api/records/6355622/versions",
+    "draft": "https://zenodo.org/api/records/6355622/draft",
+    "access_links": "https://zenodo.org/api/records/6355622/access/links",
+    "access_grants": "https://zenodo.org/api/records/6355622/access/grants",
+    "access_users": "https://zenodo.org/api/records/6355622/access/users",
+    "access_request": "https://zenodo.org/api/records/6355622/access/request",
+    "access": "https://zenodo.org/api/records/6355622/access",
+    "communities": "https://zenodo.org/api/records/6355622/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6355622/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6355622/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6355622/file-modification",
+    "requests": "https://zenodo.org/api/records/6355622/requests"
+  },
+  "updated": "2024-07-17T09:05:09.528286+00:00",
+  "recid": "6355622",
+  "revision": 6,
+  "files": [
+    {
+      "id": "595c3fbc-bc38-457f-84ff-0bc164f00710",
+      "key": "GT_Slice_103.mat",
+      "size": 64764,
+      "checksum": "md5:7d32641053675443be9d0eb13d0b0f49",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_103.mat/content"
+      }
+    },
+    {
+      "id": "51c6ed16-c336-4093-9741-3ff60a47d2ed",
+      "key": "GT_Slice_290.mat",
+      "size": 74261,
+      "checksum": "md5:0475d9aaf7b2dd6ca0997b0bff9de859",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_290.mat/content"
+      }
+    },
+    {
+      "id": "84800f6d-5235-4e18-9f67-47946d00e329",
+      "key": "GT_Slice_289.mat",
+      "size": 74261,
+      "checksum": "md5:0475d9aaf7b2dd6ca0997b0bff9de859",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_289.mat/content"
+      }
+    },
+    {
+      "id": "33e54cd7-767c-48b1-8adb-11f3bbd37ba7",
+      "key": "GT_Slice_288.mat",
+      "size": 74133,
+      "checksum": "md5:2c6d071b1f30ca3a3325f5e116754112",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_288.mat/content"
+      }
+    },
+    {
+      "id": "95346e0b-bfb4-4664-b34e-c6046c654e16",
+      "key": "GT_Slice_287.mat",
+      "size": 74133,
+      "checksum": "md5:2c6d071b1f30ca3a3325f5e116754112",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_287.mat/content"
+      }
+    },
+    {
+      "id": "5a721078-64b0-44b4-b6a1-82964f9b8109",
+      "key": "GT_Slice_286.mat",
+      "size": 73084,
+      "checksum": "md5:1ed071047e4af8e401b3e2e2a904d455",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_286.mat/content"
+      }
+    },
+    {
+      "id": "92bab7fe-5b08-490b-96eb-079e1313fe8c",
+      "key": "GT_Slice_285.mat",
+      "size": 73084,
+      "checksum": "md5:1ed071047e4af8e401b3e2e2a904d455",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_285.mat/content"
+      }
+    },
+    {
+      "id": "aae680ae-2d5b-42c2-853c-8a106ca571b0",
+      "key": "GT_Slice_284.mat",
+      "size": 74479,
+      "checksum": "md5:ef385cea9ff8d00583d172a8c1644d50",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_284.mat/content"
+      }
+    },
+    {
+      "id": "c9d310bd-289a-446b-b7f7-f83fe27b225c",
+      "key": "GT_Slice_283.mat",
+      "size": 74479,
+      "checksum": "md5:ef385cea9ff8d00583d172a8c1644d50",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_283.mat/content"
+      }
+    },
+    {
+      "id": "1cf01a1e-6fd2-4f1f-80cb-cbb16122ac81",
+      "key": "GT_Slice_282.mat",
+      "size": 73120,
+      "checksum": "md5:f4df950de62ec5327788ea3ac6502687",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_282.mat/content"
+      }
+    },
+    {
+      "id": "39e2ebee-8f91-43ba-8370-74a59b56c2c6",
+      "key": "GT_Slice_281.mat",
+      "size": 73120,
+      "checksum": "md5:f4df950de62ec5327788ea3ac6502687",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_281.mat/content"
+      }
+    },
+    {
+      "id": "21a78c1b-f0ae-4018-a278-72bdf5152017",
+      "key": "GT_Slice_280.mat",
+      "size": 70841,
+      "checksum": "md5:65858b348dc8931138f10a0871d51c9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_280.mat/content"
+      }
+    },
+    {
+      "id": "fb523ec5-535e-4b15-99e9-53181f913593",
+      "key": "GT_Slice_279.mat",
+      "size": 70841,
+      "checksum": "md5:65858b348dc8931138f10a0871d51c9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_279.mat/content"
+      }
+    },
+    {
+      "id": "f04ac78d-415a-4733-8d41-0bae58e52fd3",
+      "key": "GT_Slice_278.mat",
+      "size": 69592,
+      "checksum": "md5:59272048eafdc3d414871f02c7e4471b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_278.mat/content"
+      }
+    },
+    {
+      "id": "6d1e5463-1fbc-4512-a4e0-51ab40c354b8",
+      "key": "GT_Slice_277.mat",
+      "size": 69592,
+      "checksum": "md5:59272048eafdc3d414871f02c7e4471b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_277.mat/content"
+      }
+    },
+    {
+      "id": "beeb8011-4935-4656-9877-d3b2e9d47559",
+      "key": "GT_Slice_276.mat",
+      "size": 69242,
+      "checksum": "md5:62ec68ce3340595f22b82d969b5c473d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_276.mat/content"
+      }
+    },
+    {
+      "id": "5af061c9-e17e-4768-85b1-7b2969fa31bb",
+      "key": "GT_Slice_275.mat",
+      "size": 69242,
+      "checksum": "md5:62ec68ce3340595f22b82d969b5c473d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_275.mat/content"
+      }
+    },
+    {
+      "id": "ba4c46d7-3679-459f-9e67-72fe998c43f3",
+      "key": "GT_Slice_274.mat",
+      "size": 68906,
+      "checksum": "md5:87a358a0377809f67de4515b3ea7ed4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_274.mat/content"
+      }
+    },
+    {
+      "id": "12306b3c-05eb-44ff-8943-94ee75372412",
+      "key": "GT_Slice_273.mat",
+      "size": 68906,
+      "checksum": "md5:87a358a0377809f67de4515b3ea7ed4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_273.mat/content"
+      }
+    },
+    {
+      "id": "568a823e-c49c-4285-81bd-5e0f9324519d",
+      "key": "GT_Slice_272.mat",
+      "size": 68933,
+      "checksum": "md5:c3e4b74aba3387493c20a691377e825b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_272.mat/content"
+      }
+    },
+    {
+      "id": "f9219ef6-990e-4d95-a993-7cccd9f2d6f0",
+      "key": "GT_Slice_271.mat",
+      "size": 68933,
+      "checksum": "md5:c3e4b74aba3387493c20a691377e825b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_271.mat/content"
+      }
+    },
+    {
+      "id": "8fca8243-7d12-4c22-9e0c-38562391bf45",
+      "key": "GT_Slice_270.mat",
+      "size": 68124,
+      "checksum": "md5:7cd21b231879ff364f4acf516a415071",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_270.mat/content"
+      }
+    },
+    {
+      "id": "4233979e-30be-4111-bdda-03d3238440a5",
+      "key": "GT_Slice_269.mat",
+      "size": 68124,
+      "checksum": "md5:7cd21b231879ff364f4acf516a415071",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_269.mat/content"
+      }
+    },
+    {
+      "id": "6eff3c59-6c83-48f5-8dc2-67da330a2637",
+      "key": "GT_Slice_268.mat",
+      "size": 68593,
+      "checksum": "md5:a8641a300175baf2faddd7996d2f2a8f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_268.mat/content"
+      }
+    },
+    {
+      "id": "29d297e9-6d71-4e2f-9059-f04b389e9fd3",
+      "key": "GT_Slice_267.mat",
+      "size": 68593,
+      "checksum": "md5:a8641a300175baf2faddd7996d2f2a8f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_267.mat/content"
+      }
+    },
+    {
+      "id": "020a3faa-4d83-4182-80e6-6faa0e2fff45",
+      "key": "GT_Slice_266.mat",
+      "size": 68204,
+      "checksum": "md5:34e341f3aade3699cba4ec6e43c80dc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_266.mat/content"
+      }
+    },
+    {
+      "id": "89af20ed-75f3-4f42-9eb6-67731ebca0ed",
+      "key": "GT_Slice_265.mat",
+      "size": 68204,
+      "checksum": "md5:34e341f3aade3699cba4ec6e43c80dc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_265.mat/content"
+      }
+    },
+    {
+      "id": "4f99dc0c-5921-4f2a-a0d6-0d38dc0c179f",
+      "key": "GT_Slice_264.mat",
+      "size": 67478,
+      "checksum": "md5:32b96e2e412142e4d589246ddf123069",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_264.mat/content"
+      }
+    },
+    {
+      "id": "133d7a9a-cb66-48c9-a835-8523a666a21f",
+      "key": "GT_Slice_263.mat",
+      "size": 67478,
+      "checksum": "md5:32b96e2e412142e4d589246ddf123069",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_263.mat/content"
+      }
+    },
+    {
+      "id": "a79e47ae-8355-41c5-9040-1b4d247f0cf0",
+      "key": "GT_Slice_262.mat",
+      "size": 71104,
+      "checksum": "md5:ed0a6e47d1c34a1deb66bf9ef8ef1552",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_262.mat/content"
+      }
+    },
+    {
+      "id": "9777e0c5-9449-48f7-875c-62146a0a3a29",
+      "key": "GT_Slice_261.mat",
+      "size": 71104,
+      "checksum": "md5:ed0a6e47d1c34a1deb66bf9ef8ef1552",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_261.mat/content"
+      }
+    },
+    {
+      "id": "616a527c-12e5-4290-9495-94ae3e3196c8",
+      "key": "GT_Slice_260.mat",
+      "size": 69537,
+      "checksum": "md5:6c59138fc10c780ac00f4fe9047e58e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_260.mat/content"
+      }
+    },
+    {
+      "id": "e6134e2f-1575-4cf6-a65c-e0d1d70f4339",
+      "key": "GT_Slice_259.mat",
+      "size": 69537,
+      "checksum": "md5:6c59138fc10c780ac00f4fe9047e58e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_259.mat/content"
+      }
+    },
+    {
+      "id": "58d40a30-c3df-4377-9dac-5e3385c0b71d",
+      "key": "GT_Slice_291.mat",
+      "size": 75005,
+      "checksum": "md5:fc80d9cb112d8f286996c80ebcf9dfac",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_291.mat/content"
+      }
+    },
+    {
+      "id": "d2799589-537c-462f-852a-df063765f43a",
+      "key": "GT_Slice_292.mat",
+      "size": 75005,
+      "checksum": "md5:fc80d9cb112d8f286996c80ebcf9dfac",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_292.mat/content"
+      }
+    },
+    {
+      "id": "df0cab5b-2273-4848-86bf-ff7edc3fa9ce",
+      "key": "GT_Slice_293.mat",
+      "size": 75175,
+      "checksum": "md5:39b3390b402c5638ab59477133222826",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_293.mat/content"
+      }
+    },
+    {
+      "id": "fb27d9b9-f805-49fb-b35c-ee9e30525403",
+      "key": "GT_Slice_294.mat",
+      "size": 75175,
+      "checksum": "md5:39b3390b402c5638ab59477133222826",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_294.mat/content"
+      }
+    },
+    {
+      "id": "fb948c8c-8733-430b-980b-d3cc250d876b",
+      "key": "GT_Slice_295.mat",
+      "size": 73779,
+      "checksum": "md5:5ebc03e0da5652a4a9f56a0f6f7bc8d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_295.mat/content"
+      }
+    },
+    {
+      "id": "07c4a983-0f7f-44c2-a4d4-5c71db2fbc6e",
+      "key": "GT_Slice_296.mat",
+      "size": 73779,
+      "checksum": "md5:5ebc03e0da5652a4a9f56a0f6f7bc8d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_296.mat/content"
+      }
+    },
+    {
+      "id": "55a04f54-7362-43d1-8214-fdf2adc31147",
+      "key": "GT_Slice_297.mat",
+      "size": 72623,
+      "checksum": "md5:acdfed25e49c4626364275a40f164d03",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_297.mat/content"
+      }
+    },
+    {
+      "id": "eda3daa5-9ecd-4cb6-ad1f-f6323a5532e3",
+      "key": "GT_Slice_298.mat",
+      "size": 72623,
+      "checksum": "md5:acdfed25e49c4626364275a40f164d03",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_298.mat/content"
+      }
+    },
+    {
+      "id": "11ac0292-b593-4a13-afa1-e8fac3fba094",
+      "key": "GT_Slice_299.mat",
+      "size": 73130,
+      "checksum": "md5:1392252485b8a5ed42067dae8731046d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_299.mat/content"
+      }
+    },
+    {
+      "id": "e27d987a-ae2b-4d7c-92ea-980a2e81c329",
+      "key": "GT_Slice_300.mat",
+      "size": 71663,
+      "checksum": "md5:3f936a04ba01dc2aae7b4e6b5ceaa63c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_300.mat/content"
+      }
+    },
+    {
+      "id": "89adbc1f-bb55-4e48-9afe-237a1dac058a",
+      "key": "GT_Slice_258.mat",
+      "size": 70624,
+      "checksum": "md5:2a8ab8b2f5d02cdae7396845da405fab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_258.mat/content"
+      }
+    },
+    {
+      "id": "8887906e-d3b8-42f6-8476-888092e55694",
+      "key": "GT_Slice_257.mat",
+      "size": 70624,
+      "checksum": "md5:2a8ab8b2f5d02cdae7396845da405fab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_257.mat/content"
+      }
+    },
+    {
+      "id": "d1199746-9764-476e-8b36-5cf0f596f762",
+      "key": "GT_Slice_256.mat",
+      "size": 70958,
+      "checksum": "md5:cd42fde194b907cbc9364292a45919ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_256.mat/content"
+      }
+    },
+    {
+      "id": "ad122f42-762b-465c-a74b-0cdfbff6a7ff",
+      "key": "GT_Slice_255.mat",
+      "size": 70958,
+      "checksum": "md5:cd42fde194b907cbc9364292a45919ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_255.mat/content"
+      }
+    },
+    {
+      "id": "7c64074a-1f26-4474-b97e-e78d7f8ff264",
+      "key": "GT_Slice_254.mat",
+      "size": 69953,
+      "checksum": "md5:0bd6090540eaa532d47768b4244a9584",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_254.mat/content"
+      }
+    },
+    {
+      "id": "6aa9d201-0351-4e16-a93e-5948c6c965f2",
+      "key": "GT_Slice_253.mat",
+      "size": 69953,
+      "checksum": "md5:0bd6090540eaa532d47768b4244a9584",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_253.mat/content"
+      }
+    },
+    {
+      "id": "3df0c765-2577-4bef-859b-bc69d777aea0",
+      "key": "GT_Slice_252.mat",
+      "size": 70297,
+      "checksum": "md5:ae656d5c26c5d0e19215ce356e31b4c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_252.mat/content"
+      }
+    },
+    {
+      "id": "7e35c6f5-d6c1-4154-886d-8554f10017a3",
+      "key": "GT_Slice_251.mat",
+      "size": 70297,
+      "checksum": "md5:ae656d5c26c5d0e19215ce356e31b4c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_251.mat/content"
+      }
+    },
+    {
+      "id": "a69b3309-c0ae-43bc-a6e0-58239a4dfa2e",
+      "key": "GT_Slice_250.mat",
+      "size": 71653,
+      "checksum": "md5:3aa7cca1534140dcfc95a5844e4ee75a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_250.mat/content"
+      }
+    },
+    {
+      "id": "9e18e7fd-766f-41db-a841-473df4a8aa57",
+      "key": "GT_Slice_249.mat",
+      "size": 71653,
+      "checksum": "md5:3aa7cca1534140dcfc95a5844e4ee75a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_249.mat/content"
+      }
+    },
+    {
+      "id": "b05b62c8-6d08-4eb9-bbcc-a8718327e138",
+      "key": "GT_Slice_248.mat",
+      "size": 73587,
+      "checksum": "md5:9d4da40106dae9a3984d596ac9165b12",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_248.mat/content"
+      }
+    },
+    {
+      "id": "4e6ca521-9075-4ebd-8af9-f397fd83dc94",
+      "key": "GT_Slice_247.mat",
+      "size": 73587,
+      "checksum": "md5:9d4da40106dae9a3984d596ac9165b12",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_247.mat/content"
+      }
+    },
+    {
+      "id": "b34c1b29-b3c1-495d-af4a-8d453c427807",
+      "key": "GT_Slice_246.mat",
+      "size": 70232,
+      "checksum": "md5:ef9ff452ea72dacbcef7be3a30f6a939",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_246.mat/content"
+      }
+    },
+    {
+      "id": "d3d13a77-7e40-4685-a5e9-004ea7c0a906",
+      "key": "GT_Slice_245.mat",
+      "size": 70232,
+      "checksum": "md5:ef9ff452ea72dacbcef7be3a30f6a939",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_245.mat/content"
+      }
+    },
+    {
+      "id": "0eb0c71c-558f-4c70-b906-663bb129b9b5",
+      "key": "GT_Slice_244.mat",
+      "size": 70255,
+      "checksum": "md5:25d292edd8a7fe26a5a344dd63463e40",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_244.mat/content"
+      }
+    },
+    {
+      "id": "7a8ca007-1109-4ab5-ad67-ed9809c057e8",
+      "key": "GT_Slice_243.mat",
+      "size": 70255,
+      "checksum": "md5:25d292edd8a7fe26a5a344dd63463e40",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_243.mat/content"
+      }
+    },
+    {
+      "id": "8551aaf6-0d07-4f73-b079-157183f25b5b",
+      "key": "GT_Slice_242.mat",
+      "size": 72030,
+      "checksum": "md5:cc104705f8fbacd83fb43138901e1770",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_242.mat/content"
+      }
+    },
+    {
+      "id": "c6d7d080-c9b2-429a-b73f-746d4a90a89b",
+      "key": "GT_Slice_241.mat",
+      "size": 72045,
+      "checksum": "md5:f649e058d83919bb6eb7263b1ee6ef7a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_241.mat/content"
+      }
+    },
+    {
+      "id": "42987f86-a89b-4507-8c00-64db59ba2974",
+      "key": "GT_Slice_240.mat",
+      "size": 69832,
+      "checksum": "md5:9521557f55dcbfdf1bd55045b220881a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_240.mat/content"
+      }
+    },
+    {
+      "id": "0074b0a4-5caa-4fc4-93ef-05d386d0be95",
+      "key": "GT_Slice_239.mat",
+      "size": 69855,
+      "checksum": "md5:f1125be22ad86bba5a1c2e51d6e2440b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_239.mat/content"
+      }
+    },
+    {
+      "id": "bbc9ac51-d233-4e23-814e-0a5ba25483e5",
+      "key": "GT_Slice_238.mat",
+      "size": 69896,
+      "checksum": "md5:06ed5a39d9fee68e65455412eccf98c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_238.mat/content"
+      }
+    },
+    {
+      "id": "477c1b3c-7033-4869-a70d-60100ee14b2d",
+      "key": "GT_Slice_237.mat",
+      "size": 69897,
+      "checksum": "md5:d37229dd1beec659e5cefa86df8e0e70",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_237.mat/content"
+      }
+    },
+    {
+      "id": "bbc60087-1267-4f81-80bd-245b77049055",
+      "key": "GT_Slice_236.mat",
+      "size": 67536,
+      "checksum": "md5:a057ac0ebde8850ed930cded7907386c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_236.mat/content"
+      }
+    },
+    {
+      "id": "16fc18e0-ac13-4fc9-8f00-4f57639938da",
+      "key": "GT_Slice_235.mat",
+      "size": 67523,
+      "checksum": "md5:32b2369c20a335168c133646130040ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_235.mat/content"
+      }
+    },
+    {
+      "id": "70c29741-b06d-4eec-aae6-d845377d2187",
+      "key": "GT_Slice_234.mat",
+      "size": 68107,
+      "checksum": "md5:1d48db62a525567494ef769ff5bca749",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_234.mat/content"
+      }
+    },
+    {
+      "id": "7df0251e-8a01-4b14-ba57-15d7d912d3e2",
+      "key": "GT_Slice_233.mat",
+      "size": 68097,
+      "checksum": "md5:aea5bc7f0e8155caf879128a428651e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_233.mat/content"
+      }
+    },
+    {
+      "id": "75bd0d11-b983-4afc-ae74-3db463ae75cf",
+      "key": "GT_Slice_232.mat",
+      "size": 67457,
+      "checksum": "md5:d48692a2eec74ad22236aa19ba936fa6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_232.mat/content"
+      }
+    },
+    {
+      "id": "028cce21-a145-40f9-9e5c-16977588d243",
+      "key": "GT_Slice_231.mat",
+      "size": 67446,
+      "checksum": "md5:dafd656941bf121f75cb43a85dfc1762",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_231.mat/content"
+      }
+    },
+    {
+      "id": "2dacc0d1-8184-4a61-b19e-24b9db5bb362",
+      "key": "GT_Slice_230.mat",
+      "size": 69397,
+      "checksum": "md5:708a7764b6dcb1d51a316dba3ffdda19",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_230.mat/content"
+      }
+    },
+    {
+      "id": "a933da70-5982-4713-be47-ce576e27becc",
+      "key": "GT_Slice_229.mat",
+      "size": 69370,
+      "checksum": "md5:f31f3ad3f35106c244c6a8849d85bb24",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_229.mat/content"
+      }
+    },
+    {
+      "id": "65c73ddc-3846-4b99-80f3-d43bde90970f",
+      "key": "GT_Slice_228.mat",
+      "size": 70408,
+      "checksum": "md5:fbfe33c5b306b04bff57abab13b78c09",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_228.mat/content"
+      }
+    },
+    {
+      "id": "412c2269-aa4b-4970-850d-1d2ba469f174",
+      "key": "GT_Slice_227.mat",
+      "size": 70442,
+      "checksum": "md5:2488a39e57da4313cf2391b0ceea8598",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_227.mat/content"
+      }
+    },
+    {
+      "id": "8d84ad8a-bfb5-4cf6-90ed-d9f97284c029",
+      "key": "GT_Slice_226.mat",
+      "size": 68110,
+      "checksum": "md5:4c47bb63fbc51a9cbd809fe6e126a693",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_226.mat/content"
+      }
+    },
+    {
+      "id": "6e6210f4-e7cb-4087-bee8-d8cc53efbd7e",
+      "key": "GT_Slice_225.mat",
+      "size": 68116,
+      "checksum": "md5:feeb3803fa99874667c2167bc3e19150",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_225.mat/content"
+      }
+    },
+    {
+      "id": "931904dc-1b7a-459d-adf4-e0c2c795f34a",
+      "key": "GT_Slice_224.mat",
+      "size": 66938,
+      "checksum": "md5:de3f24ab6838f1abf6b5858df21983bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_224.mat/content"
+      }
+    },
+    {
+      "id": "326f8829-5542-4f3c-a5a3-9b46e1cc5dec",
+      "key": "GT_Slice_223.mat",
+      "size": 66929,
+      "checksum": "md5:26ff24e027801182a55c4e67c08191f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_223.mat/content"
+      }
+    },
+    {
+      "id": "5c18556b-becc-47b8-b162-e3f33147a99c",
+      "key": "GT_Slice_222.mat",
+      "size": 69890,
+      "checksum": "md5:0fbe74f8d650fcd50b22e43373ab0b11",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_222.mat/content"
+      }
+    },
+    {
+      "id": "1c89036b-b602-45e9-91f6-65f2efc054b7",
+      "key": "GT_Slice_221.mat",
+      "size": 69838,
+      "checksum": "md5:fbebf4931d64e2e030544d3b6122613d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_221.mat/content"
+      }
+    },
+    {
+      "id": "a6745b32-82b9-46cc-9a2e-c5b0f87c5a32",
+      "key": "GT_Slice_220.mat",
+      "size": 69150,
+      "checksum": "md5:7c4fa89a533f52b4566565e8048701d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_220.mat/content"
+      }
+    },
+    {
+      "id": "298e1870-3153-49a2-9960-e9845aa70107",
+      "key": "GT_Slice_219.mat",
+      "size": 69154,
+      "checksum": "md5:0a69a1d7c4f18838e7a3b9cc8a930c60",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_219.mat/content"
+      }
+    },
+    {
+      "id": "b16fa0f9-dc77-48a3-991f-6e7049ba7bdd",
+      "key": "GT_Slice_218.mat",
+      "size": 70994,
+      "checksum": "md5:fef001448c926bfae8887ae135335128",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_218.mat/content"
+      }
+    },
+    {
+      "id": "13a5a5b0-689e-4e52-afb0-0a161b9e1057",
+      "key": "GT_Slice_217.mat",
+      "size": 70968,
+      "checksum": "md5:91e4fb26f80fcdc7de576d8a23a3b8be",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_217.mat/content"
+      }
+    },
+    {
+      "id": "6982b76d-cd24-4525-a1ee-ec253baafb5b",
+      "key": "GT_Slice_216.mat",
+      "size": 71579,
+      "checksum": "md5:ec908ccc685f7a6fa1e649066e02a06d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_216.mat/content"
+      }
+    },
+    {
+      "id": "d1b62f38-8cf2-4292-8c77-c2eee293dded",
+      "key": "GT_Slice_215.mat",
+      "size": 71579,
+      "checksum": "md5:ec908ccc685f7a6fa1e649066e02a06d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_215.mat/content"
+      }
+    },
+    {
+      "id": "d1d8ba25-10c4-4c5a-9ad5-0481934eb9a9",
+      "key": "GT_Slice_214.mat",
+      "size": 72678,
+      "checksum": "md5:d3bf801d4849603a0c9e40c19354a3d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_214.mat/content"
+      }
+    },
+    {
+      "id": "5bff2bf3-c73a-419f-b3aa-823dd3003d82",
+      "key": "GT_Slice_213.mat",
+      "size": 70816,
+      "checksum": "md5:81608becb3125ef804cea2da0b09ad87",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_213.mat/content"
+      }
+    },
+    {
+      "id": "e019115c-053f-41b4-a6dd-d2aecdda0130",
+      "key": "GT_Slice_212.mat",
+      "size": 70505,
+      "checksum": "md5:24aec9a86a26fb23b5cf5b986e7aadb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_212.mat/content"
+      }
+    },
+    {
+      "id": "80cc7229-c5c5-49a3-b28a-e8cd478ae7be",
+      "key": "GT_Slice_211.mat",
+      "size": 68845,
+      "checksum": "md5:9ee869e5cac02ba5e76e610bbe05fabf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_211.mat/content"
+      }
+    },
+    {
+      "id": "43283e36-576c-482b-ba27-84eb9dbd5005",
+      "key": "GT_Slice_210.mat",
+      "size": 68910,
+      "checksum": "md5:4f9c9e5a9809f24f10454f0a060d8ddd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_210.mat/content"
+      }
+    },
+    {
+      "id": "5cbcbc57-8899-4ce2-b2d3-e63643363397",
+      "key": "GT_Slice_209.mat",
+      "size": 68734,
+      "checksum": "md5:3a8f5b8c0836b3cf01d0f5a469c1dd86",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_209.mat/content"
+      }
+    },
+    {
+      "id": "bd103fc6-1961-40d3-aa0e-354547824c63",
+      "key": "GT_Slice_208.mat",
+      "size": 68439,
+      "checksum": "md5:72dd85b8a7d7190a0cea676e6d821db4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_208.mat/content"
+      }
+    },
+    {
+      "id": "c584c6bf-e39c-4e07-904d-dad220c7980b",
+      "key": "GT_Slice_207.mat",
+      "size": 69093,
+      "checksum": "md5:64ec8f7f5c2f0b6ae5c6b51da8f0bb5b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_207.mat/content"
+      }
+    },
+    {
+      "id": "6556e47d-2a88-45fe-a9a2-c89fa1d83e78",
+      "key": "GT_Slice_206.mat",
+      "size": 68625,
+      "checksum": "md5:22bcf79b122fd41661231ba83d5ed497",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_206.mat/content"
+      }
+    },
+    {
+      "id": "35026960-b62a-4c30-84cf-64f800a68097",
+      "key": "GT_Slice_205.mat",
+      "size": 67384,
+      "checksum": "md5:8ca21b1efedbad4d0ac7eca81a65888b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_205.mat/content"
+      }
+    },
+    {
+      "id": "00858e02-1f64-456b-a1ce-3e9389d56a38",
+      "key": "GT_Slice_204.mat",
+      "size": 65932,
+      "checksum": "md5:f46c100f4245ebd5b28a9321866e867f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_204.mat/content"
+      }
+    },
+    {
+      "id": "abc07bdf-149a-41a3-9a47-44ab3794a4a7",
+      "key": "GT_Slice_203.mat",
+      "size": 65527,
+      "checksum": "md5:8e2423e89c742641307ca4413d7bfa9d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_203.mat/content"
+      }
+    },
+    {
+      "id": "afdef73b-f301-4c34-ac2d-f17ee8f6b85a",
+      "key": "GT_Slice_202.mat",
+      "size": 66660,
+      "checksum": "md5:e9d292100226bee826e839b216df0ff2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_202.mat/content"
+      }
+    },
+    {
+      "id": "d7861056-c027-408a-8dda-54423fd46aaa",
+      "key": "GT_Slice_201.mat",
+      "size": 65253,
+      "checksum": "md5:c57c5f262cde99ce3e52673e0fd1ea00",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_201.mat/content"
+      }
+    },
+    {
+      "id": "cc661496-dad9-4de0-bd38-9ed587f70ee4",
+      "key": "GT_Slice_200.mat",
+      "size": 65901,
+      "checksum": "md5:c35b8efbe1349e514ca5cad303b2c7d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_200.mat/content"
+      }
+    },
+    {
+      "id": "637993ac-8aad-4139-9e49-45ed6c24d220",
+      "key": "GT_Slice_199.mat",
+      "size": 65418,
+      "checksum": "md5:13af18d2375512cceeda8dd7afce27c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_199.mat/content"
+      }
+    },
+    {
+      "id": "0b4838a3-94d5-4422-8a78-e73ce964d5d8",
+      "key": "GT_Slice_198.mat",
+      "size": 65531,
+      "checksum": "md5:51e29f5b2a93c16ba7aff75332c4d8f3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_198.mat/content"
+      }
+    },
+    {
+      "id": "d20f239a-5336-4955-977d-b97aedde8a50",
+      "key": "GT_Slice_197.mat",
+      "size": 66301,
+      "checksum": "md5:caa2abeae263adfdf70c901c30bd0a14",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_197.mat/content"
+      }
+    },
+    {
+      "id": "3d6b624a-0f10-438c-b984-336456269fa5",
+      "key": "GT_Slice_196.mat",
+      "size": 66540,
+      "checksum": "md5:03a353461c1bbda0ae59f490931470cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_196.mat/content"
+      }
+    },
+    {
+      "id": "6ebfabd2-7f76-408c-ae05-7210b78a2b1a",
+      "key": "GT_Slice_195.mat",
+      "size": 64168,
+      "checksum": "md5:55f8d5c7565f3a39fcc3e5ef8bd99525",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_195.mat/content"
+      }
+    },
+    {
+      "id": "423f6413-00f1-430a-b641-96e7e41934c2",
+      "key": "GT_Slice_194.mat",
+      "size": 66094,
+      "checksum": "md5:d1cd6fc5de217031029bfdede8816c28",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_194.mat/content"
+      }
+    },
+    {
+      "id": "c80baf57-f8f2-4626-a582-64f8d580cfce",
+      "key": "GT_Slice_193.mat",
+      "size": 66418,
+      "checksum": "md5:3922fd6b0668516d794a74912c10e704",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_193.mat/content"
+      }
+    },
+    {
+      "id": "ff24339c-2a8b-4602-b1dd-45af9bf7e155",
+      "key": "GT_Slice_192.mat",
+      "size": 65577,
+      "checksum": "md5:147af564e70ad04f0781ade9eda551ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_192.mat/content"
+      }
+    },
+    {
+      "id": "49578674-394f-4e62-88ee-bde43650a802",
+      "key": "GT_Slice_191.mat",
+      "size": 67984,
+      "checksum": "md5:7d6d5aaa68c5e0dc24ab493770a10b70",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_191.mat/content"
+      }
+    },
+    {
+      "id": "467e367e-cc98-4b7f-ad0d-8ae4d50e9047",
+      "key": "GT_Slice_190.mat",
+      "size": 68514,
+      "checksum": "md5:5ae8276594737a4dee9cab7b6718c9e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_190.mat/content"
+      }
+    },
+    {
+      "id": "7913dbec-7d6f-4597-beee-875d2c34a471",
+      "key": "GT_Slice_189.mat",
+      "size": 69777,
+      "checksum": "md5:4689e190996ba70fe300c3a88613691d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_189.mat/content"
+      }
+    },
+    {
+      "id": "aa346c3f-69e1-4f55-911e-accb0848a709",
+      "key": "GT_Slice_188.mat",
+      "size": 69478,
+      "checksum": "md5:b878cbb4357e53b5acc8e0cc3ee7b7b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_188.mat/content"
+      }
+    },
+    {
+      "id": "f4f977b8-6d2b-4085-8117-b30fe711652a",
+      "key": "GT_Slice_187.mat",
+      "size": 71551,
+      "checksum": "md5:ce22e44955b59cdd9017657f9ff8d481",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_187.mat/content"
+      }
+    },
+    {
+      "id": "05f3be0f-3886-4f64-b171-68d090596aba",
+      "key": "GT_Slice_186.mat",
+      "size": 72037,
+      "checksum": "md5:a1cc77f018c2a800cef1210aead3b468",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_186.mat/content"
+      }
+    },
+    {
+      "id": "9a838b58-5b97-47c3-a82f-6e345d50dd19",
+      "key": "GT_Slice_185.mat",
+      "size": 71344,
+      "checksum": "md5:63d13f47f0b79e74137fec1ff492b538",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_185.mat/content"
+      }
+    },
+    {
+      "id": "c2776288-02e8-47ee-9313-f50cba0fc700",
+      "key": "GT_Slice_184.mat",
+      "size": 71454,
+      "checksum": "md5:5c61e0677533974a4ca3ed2d4f317aeb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_184.mat/content"
+      }
+    },
+    {
+      "id": "6fe8e060-4914-4a9a-8fc5-e92cd93bc03c",
+      "key": "GT_Slice_183.mat",
+      "size": 71225,
+      "checksum": "md5:3836ffda4125c7e6aca198fd8ce8f5af",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_183.mat/content"
+      }
+    },
+    {
+      "id": "0da62220-decf-46fa-ac60-395b58e93beb",
+      "key": "GT_Slice_182.mat",
+      "size": 71182,
+      "checksum": "md5:ae7701e3856369d07b39e5fe0a62a8ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_182.mat/content"
+      }
+    },
+    {
+      "id": "cac3742e-06d8-474d-a8b7-c94f73015a01",
+      "key": "GT_Slice_181.mat",
+      "size": 70534,
+      "checksum": "md5:40bd78d634472ef6746c0658c9fd79b4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_181.mat/content"
+      }
+    },
+    {
+      "id": "e395f9ae-129e-47ba-816a-60c7f676d52a",
+      "key": "GT_Slice_180.mat",
+      "size": 70468,
+      "checksum": "md5:2ffb2272344e1b5831b1f8eb7feac8f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_180.mat/content"
+      }
+    },
+    {
+      "id": "652b7679-65dd-4d71-a04c-486f9593aa2b",
+      "key": "GT_Slice_179.mat",
+      "size": 70596,
+      "checksum": "md5:95a6a73bc9f377ee73d535d6ebc1b6a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_179.mat/content"
+      }
+    },
+    {
+      "id": "573c907c-9a8a-459e-a7d2-db8de5585f1f",
+      "key": "GT_Slice_178.mat",
+      "size": 69069,
+      "checksum": "md5:0096a7def2c8f80b3fd8afe4de618158",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_178.mat/content"
+      }
+    },
+    {
+      "id": "76cc8af2-825c-42fb-9935-b89bbcad1a69",
+      "key": "GT_Slice_177.mat",
+      "size": 69911,
+      "checksum": "md5:888a3db32d2ce0cb8d5b51660a4bf36f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_177.mat/content"
+      }
+    },
+    {
+      "id": "af72c0ce-8a6a-460c-a30f-5d9bfe21e17e",
+      "key": "GT_Slice_176.mat",
+      "size": 69084,
+      "checksum": "md5:e469c0e6a99d6bfb87bb32ccd846139f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_176.mat/content"
+      }
+    },
+    {
+      "id": "9fe731b4-9499-4eac-a9e7-8eec32f950cf",
+      "key": "GT_Slice_175.mat",
+      "size": 68160,
+      "checksum": "md5:ab54f43ba2672a5ab81b0186392fc42d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_175.mat/content"
+      }
+    },
+    {
+      "id": "1e473b5f-b9bc-4dcf-872f-3153a9049897",
+      "key": "GT_Slice_174.mat",
+      "size": 69842,
+      "checksum": "md5:7e6cb86edb1e5f7af7ca7b878909bef7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_174.mat/content"
+      }
+    },
+    {
+      "id": "14a103cb-9a13-45e8-a1db-a6e0a5d0f2cc",
+      "key": "GT_Slice_173.mat",
+      "size": 69538,
+      "checksum": "md5:a8eae725422a51295c8f03c3d67aec78",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_173.mat/content"
+      }
+    },
+    {
+      "id": "0d665cc9-4dab-43da-ab42-8853f0267ad2",
+      "key": "GT_Slice_172.mat",
+      "size": 70191,
+      "checksum": "md5:904542347b68aae6b7ea9cf845ee57df",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_172.mat/content"
+      }
+    },
+    {
+      "id": "b458f49e-506c-40ac-8fa8-bf58bc3a6611",
+      "key": "GT_Slice_171.mat",
+      "size": 68780,
+      "checksum": "md5:b8aa4ad879ad880f1ad971ca13592711",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_171.mat/content"
+      }
+    },
+    {
+      "id": "53bf9c77-1045-4228-9cd8-27bcc738eb5a",
+      "key": "GT_Slice_170.mat",
+      "size": 67370,
+      "checksum": "md5:e64d122b9d9bee352ec1a43a4d13cf57",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_170.mat/content"
+      }
+    },
+    {
+      "id": "371c3329-46da-467f-a215-cea755eda038",
+      "key": "GT_Slice_169.mat",
+      "size": 67781,
+      "checksum": "md5:bc453a2db1931e6bc3e67161de23e5e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_169.mat/content"
+      }
+    },
+    {
+      "id": "02195f48-ba7d-4ce1-84c9-37c396bc57a1",
+      "key": "GT_Slice_168.mat",
+      "size": 67329,
+      "checksum": "md5:6cd1f60009a464981f4f5d6394167c95",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_168.mat/content"
+      }
+    },
+    {
+      "id": "1ad9aa94-63f0-40de-8847-5a09cdb271fa",
+      "key": "GT_Slice_167.mat",
+      "size": 67453,
+      "checksum": "md5:e4e671b948e4c487b575d85de2f872ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_167.mat/content"
+      }
+    },
+    {
+      "id": "cd466034-040d-464b-97db-9438ffcd7397",
+      "key": "GT_Slice_166.mat",
+      "size": 67435,
+      "checksum": "md5:1db201c8261751a26fc7d49377a010fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_166.mat/content"
+      }
+    },
+    {
+      "id": "8186e32e-6dcb-4ae9-8e2f-78ca455519c2",
+      "key": "GT_Slice_165.mat",
+      "size": 65700,
+      "checksum": "md5:c400bc44d9ec4ad7a14215b6d2367473",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_165.mat/content"
+      }
+    },
+    {
+      "id": "756eaae2-fcac-4760-905a-d49634a7663c",
+      "key": "GT_Slice_164.mat",
+      "size": 66528,
+      "checksum": "md5:1224c73b19be2634a7b577039e2988de",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_164.mat/content"
+      }
+    },
+    {
+      "id": "afc3e57d-fdf2-42e0-9576-0f00c83c652e",
+      "key": "GT_Slice_163.mat",
+      "size": 64211,
+      "checksum": "md5:2ceb84685e387ec39c151ca90a995530",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_163.mat/content"
+      }
+    },
+    {
+      "id": "bdc1af03-8a0e-4b4a-abbd-730a36ed61ae",
+      "key": "GT_Slice_162.mat",
+      "size": 63095,
+      "checksum": "md5:6228f973b7c39959410e1c25fd5c4a42",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_162.mat/content"
+      }
+    },
+    {
+      "id": "f703d6b3-7763-4882-92fd-24f56e780f6b",
+      "key": "GT_Slice_161.mat",
+      "size": 63821,
+      "checksum": "md5:e5ccef9dd4b4edf01beaca3d5a5bdc5b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_161.mat/content"
+      }
+    },
+    {
+      "id": "a1d81fb5-2ffa-4136-8462-e06d08dbc8c8",
+      "key": "GT_Slice_160.mat",
+      "size": 64623,
+      "checksum": "md5:51974a1abbadf402249a7b6af76c2b79",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_160.mat/content"
+      }
+    },
+    {
+      "id": "4cdfeb82-d58a-4e88-9b72-b0d2b0cc5d9b",
+      "key": "GT_Slice_159.mat",
+      "size": 63803,
+      "checksum": "md5:497e2a3e436c036d192cc34b8a2df158",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_159.mat/content"
+      }
+    },
+    {
+      "id": "d3a25d0d-7070-4934-9de6-5efdc736294e",
+      "key": "GT_Slice_158.mat",
+      "size": 62760,
+      "checksum": "md5:b59df5b6ab8e3141c260981abff2d28d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_158.mat/content"
+      }
+    },
+    {
+      "id": "91079200-7f8e-405c-9e4c-4d8a97abd745",
+      "key": "GT_Slice_157.mat",
+      "size": 65036,
+      "checksum": "md5:74cbe7e7590eeba4f9d4d18fc9c82ee8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_157.mat/content"
+      }
+    },
+    {
+      "id": "7300cea5-b05a-41a0-9a05-420730293690",
+      "key": "GT_Slice_156.mat",
+      "size": 64798,
+      "checksum": "md5:e6ad4fcd6f4be64fb3ac2e02fa4328ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_156.mat/content"
+      }
+    },
+    {
+      "id": "c828b697-2274-4b8d-8061-6b7049087cd8",
+      "key": "GT_Slice_155.mat",
+      "size": 64738,
+      "checksum": "md5:939c4eedb11c0fc3ef0631bc308bad8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_155.mat/content"
+      }
+    },
+    {
+      "id": "861c79f2-3982-4e22-a4e7-65455b221058",
+      "key": "GT_Slice_154.mat",
+      "size": 63405,
+      "checksum": "md5:1624096d3f99d6417e0f1e38bd4304fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_154.mat/content"
+      }
+    },
+    {
+      "id": "18b7e063-cfae-49cf-98c5-076ad8d9309f",
+      "key": "GT_Slice_153.mat",
+      "size": 62272,
+      "checksum": "md5:9eec0e1e9437f1d844b3ea8d98314fac",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_153.mat/content"
+      }
+    },
+    {
+      "id": "a34e1027-08a1-48cb-ba59-94ba76565b4f",
+      "key": "GT_Slice_152.mat",
+      "size": 62673,
+      "checksum": "md5:3d9ac60b8e3aa33aad853bb4f68b8558",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_152.mat/content"
+      }
+    },
+    {
+      "id": "12058e2f-a03b-4ccd-b3bb-1317caf73d52",
+      "key": "GT_Slice_151.mat",
+      "size": 62862,
+      "checksum": "md5:902c2fb40f4cbf93e2b0a4b53f194fa8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_151.mat/content"
+      }
+    },
+    {
+      "id": "027a70a9-6d48-40be-8582-e872ab1d8e6b",
+      "key": "GT_Slice_150.mat",
+      "size": 63500,
+      "checksum": "md5:770c1cb4068b79ef288435e7e77cf37e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_150.mat/content"
+      }
+    },
+    {
+      "id": "da5ea52a-18fb-4438-a7a5-5e79bafbe33f",
+      "key": "GT_Slice_149.mat",
+      "size": 63961,
+      "checksum": "md5:996b733e60583392fc8184baae9b41bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_149.mat/content"
+      }
+    },
+    {
+      "id": "14daf90b-d325-4314-8b0a-d6bc097dbd8a",
+      "key": "GT_Slice_148.mat",
+      "size": 65714,
+      "checksum": "md5:25766594ef9e1db29908ba192d02a3a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_148.mat/content"
+      }
+    },
+    {
+      "id": "0fcb590b-df81-44c2-a436-726b0febef10",
+      "key": "GT_Slice_147.mat",
+      "size": 64896,
+      "checksum": "md5:bc2fdf66e5e03272d5871819b4fcb105",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_147.mat/content"
+      }
+    },
+    {
+      "id": "429edd2a-a3d2-491a-8938-72f62c4f3834",
+      "key": "GT_Slice_146.mat",
+      "size": 62779,
+      "checksum": "md5:b926fdc29bee23d79192aa532e3e6761",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_146.mat/content"
+      }
+    },
+    {
+      "id": "e8c883e4-8e64-4bce-9ab5-0251af2a9ebc",
+      "key": "GT_Slice_145.mat",
+      "size": 63100,
+      "checksum": "md5:ac2a3a8f93f67089165873843e9a6209",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_145.mat/content"
+      }
+    },
+    {
+      "id": "1aa6261b-2419-4eae-b41c-774e41c8fb5e",
+      "key": "GT_Slice_144.mat",
+      "size": 63205,
+      "checksum": "md5:940200dc455ca7affa36989e0cce8c2c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_144.mat/content"
+      }
+    },
+    {
+      "id": "ed2221e0-4044-4097-9554-8b82a4e83ba1",
+      "key": "GT_Slice_143.mat",
+      "size": 68452,
+      "checksum": "md5:9e0a20848c51e4cac056210eeb5f0f87",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_143.mat/content"
+      }
+    },
+    {
+      "id": "b0d9970c-3fad-4f3d-8b8e-c5bb96e72ae9",
+      "key": "GT_Slice_142.mat",
+      "size": 65365,
+      "checksum": "md5:bed3ea478b39864222b6f665c42ddf15",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_142.mat/content"
+      }
+    },
+    {
+      "id": "b9797e4f-fd77-436c-8401-61b53b4fb54e",
+      "key": "GT_Slice_141.mat",
+      "size": 67055,
+      "checksum": "md5:bf517c7782d2ba9a189603c7bba695c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_141.mat/content"
+      }
+    },
+    {
+      "id": "3e8c43e6-c163-49e0-a8e7-5a6e9ea07d24",
+      "key": "GT_Slice_140.mat",
+      "size": 69604,
+      "checksum": "md5:40b6edfda287f6dca20fc425443c0d33",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_140.mat/content"
+      }
+    },
+    {
+      "id": "46ccf2fe-2b6f-458a-b597-c9c94781c22b",
+      "key": "GT_Slice_139.mat",
+      "size": 67703,
+      "checksum": "md5:81649c471159925b0b199e68677ef353",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_139.mat/content"
+      }
+    },
+    {
+      "id": "18d224ee-5785-4fb0-9bb8-84921d0d062f",
+      "key": "GT_Slice_138.mat",
+      "size": 66634,
+      "checksum": "md5:6c38a13b1704cd98f7fd90b1043ffa7c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_138.mat/content"
+      }
+    },
+    {
+      "id": "370439e3-1a68-40a8-9e5c-4c041ae0231b",
+      "key": "GT_Slice_137.mat",
+      "size": 66163,
+      "checksum": "md5:7925011f5bc2c3849a94f7cb7cdb1d73",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_137.mat/content"
+      }
+    },
+    {
+      "id": "75d605da-dcf1-4726-8ccc-afc250d168d8",
+      "key": "GT_Slice_136.mat",
+      "size": 65324,
+      "checksum": "md5:dd715d037282c5d5c38c130b661c7c6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_136.mat/content"
+      }
+    },
+    {
+      "id": "852710d6-9ef4-4483-a210-7c924598d57a",
+      "key": "GT_Slice_135.mat",
+      "size": 66795,
+      "checksum": "md5:5dbba62512599500cb31184b6cb6bf6f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_135.mat/content"
+      }
+    },
+    {
+      "id": "a3ba2880-4ce7-48ff-829f-730d522cea82",
+      "key": "GT_Slice_134.mat",
+      "size": 65715,
+      "checksum": "md5:5511f3aa6fcbc6211034de63c15e21e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_134.mat/content"
+      }
+    },
+    {
+      "id": "947e7fab-72b4-487c-a5d0-1ec8429b0987",
+      "key": "GT_Slice_133.mat",
+      "size": 66990,
+      "checksum": "md5:9d196b5d6d216d3a31c68c23eda49f42",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_133.mat/content"
+      }
+    },
+    {
+      "id": "65cfa87d-df65-4747-8261-d5c90a0ada04",
+      "key": "GT_Slice_132.mat",
+      "size": 67553,
+      "checksum": "md5:d9a665ddb165916d9486b4ad35290ece",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_132.mat/content"
+      }
+    },
+    {
+      "id": "9c302658-8718-440b-a997-88e7f44ec152",
+      "key": "GT_Slice_131.mat",
+      "size": 66283,
+      "checksum": "md5:55fedd383ff4b1f21846f73eb74e3ece",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_131.mat/content"
+      }
+    },
+    {
+      "id": "f5488a27-117d-4151-8768-a99b736d28c0",
+      "key": "GT_Slice_130.mat",
+      "size": 66974,
+      "checksum": "md5:61c8551a07b29eafd328e0422ae1139d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_130.mat/content"
+      }
+    },
+    {
+      "id": "c5c313a3-9842-424b-b7f3-2e4bb3d6eb21",
+      "key": "GT_Slice_129.mat",
+      "size": 65264,
+      "checksum": "md5:0e488c72e4560a67cda1aa40e142ad87",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_129.mat/content"
+      }
+    },
+    {
+      "id": "5d9ce01e-a768-48b9-80b8-939d05b3c577",
+      "key": "GT_Slice_128.mat",
+      "size": 62964,
+      "checksum": "md5:dd7db8959c938e8c155ae5b4f5ef335b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_128.mat/content"
+      }
+    },
+    {
+      "id": "8ac10938-1599-4876-aa28-37e1b5fa0002",
+      "key": "GT_Slice_127.mat",
+      "size": 62471,
+      "checksum": "md5:c90af84c9069cacd9c537c83aaf73ddf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_127.mat/content"
+      }
+    },
+    {
+      "id": "5047e6d2-2b3a-43f2-a1b3-7c7ea5ee569d",
+      "key": "GT_Slice_126.mat",
+      "size": 62695,
+      "checksum": "md5:0f761bd31a32f44f65fd534a16c12354",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_126.mat/content"
+      }
+    },
+    {
+      "id": "6f8368af-bc98-40ee-bfa5-d99fd2dd4706",
+      "key": "GT_Slice_125.mat",
+      "size": 63936,
+      "checksum": "md5:80bb916ad0827b292a459988da33055f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_125.mat/content"
+      }
+    },
+    {
+      "id": "5513cf20-f8ae-4cfa-8ca5-4525677997d3",
+      "key": "GT_Slice_124.mat",
+      "size": 64066,
+      "checksum": "md5:15180eab4b6cdf14ca8cf5a59a662b76",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_124.mat/content"
+      }
+    },
+    {
+      "id": "4283aafe-6507-4c83-af39-5dce5477c3df",
+      "key": "GT_Slice_123.mat",
+      "size": 64575,
+      "checksum": "md5:491f56fadd3a1d6395471a74d0a4b831",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_123.mat/content"
+      }
+    },
+    {
+      "id": "88d635d6-a2d6-4325-b0ea-ada3c2aee6f5",
+      "key": "GT_Slice_122.mat",
+      "size": 64795,
+      "checksum": "md5:ecf06fb7f4652141b809ac3be9951f6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_122.mat/content"
+      }
+    },
+    {
+      "id": "63e05e0c-9ff6-4664-b5b0-6fecaf163fbf",
+      "key": "GT_Slice_121.mat",
+      "size": 63729,
+      "checksum": "md5:8bffe7b1a48adc6f0e62c32aa62f0fc0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_121.mat/content"
+      }
+    },
+    {
+      "id": "baa55eda-341b-4b1b-8cf8-548c886b6003",
+      "key": "GT_Slice_120.mat",
+      "size": 62221,
+      "checksum": "md5:ceec2d8587ab175d7adfcde04a54ab56",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_120.mat/content"
+      }
+    },
+    {
+      "id": "8af5baf3-df98-41bd-967c-43583817648c",
+      "key": "GT_Slice_119.mat",
+      "size": 61288,
+      "checksum": "md5:f64795534f014018f91d239ea1606745",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_119.mat/content"
+      }
+    },
+    {
+      "id": "a380d0df-094d-4bf9-9782-e45fe46a72de",
+      "key": "GT_Slice_118.mat",
+      "size": 60476,
+      "checksum": "md5:e3d8ebcfec475a7d21e234d4d4c784a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_118.mat/content"
+      }
+    },
+    {
+      "id": "2c6fb674-a195-464f-b92e-42e22fc69e58",
+      "key": "GT_Slice_117.mat",
+      "size": 60964,
+      "checksum": "md5:b42759f3e84579a061c42a2bec6fcaf0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_117.mat/content"
+      }
+    },
+    {
+      "id": "3acb0aa3-2ac2-4fb4-8f09-d302065986bf",
+      "key": "GT_Slice_116.mat",
+      "size": 61278,
+      "checksum": "md5:5550208cb962b0d8bca062332b0cc0c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_116.mat/content"
+      }
+    },
+    {
+      "id": "4512e3a1-69db-47ac-8d54-d7e5eec1c941",
+      "key": "GT_Slice_115.mat",
+      "size": 61646,
+      "checksum": "md5:d863de0657ba4109188e7221b00942f8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_115.mat/content"
+      }
+    },
+    {
+      "id": "38ff1289-d601-48fa-bc50-ee4773acc42f",
+      "key": "GT_Slice_114.mat",
+      "size": 62437,
+      "checksum": "md5:2bfd62fd20e04dfa368355abcf810bd7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_114.mat/content"
+      }
+    },
+    {
+      "id": "c01f3f98-27c8-4cbb-b358-ea6984203f35",
+      "key": "GT_Slice_113.mat",
+      "size": 62538,
+      "checksum": "md5:b847ad1d79791136cfd2c150ec2ab783",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_113.mat/content"
+      }
+    },
+    {
+      "id": "38896be1-41e7-42e6-8ea9-4207f0223f97",
+      "key": "GT_Slice_112.mat",
+      "size": 62054,
+      "checksum": "md5:a3d539d441d0eafbf6240d4e47e867c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_112.mat/content"
+      }
+    },
+    {
+      "id": "91b317a3-0518-4fc9-b71d-12603fa2d97a",
+      "key": "GT_Slice_111.mat",
+      "size": 62456,
+      "checksum": "md5:d2c5a2ac2271d433b4c5dc59a23d9aea",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_111.mat/content"
+      }
+    },
+    {
+      "id": "c6723f7e-e173-4922-bc24-123bd4fe7eeb",
+      "key": "GT_Slice_110.mat",
+      "size": 62195,
+      "checksum": "md5:61e5c1a72cf6820c4105a56939a3b62b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_110.mat/content"
+      }
+    },
+    {
+      "id": "5f106bdd-976c-4ee9-80eb-d1a1f0017d6b",
+      "key": "GT_Slice_109.mat",
+      "size": 61101,
+      "checksum": "md5:e8e99b5951b1fc49e4c3447fee39b362",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_109.mat/content"
+      }
+    },
+    {
+      "id": "0aba5983-b8e9-4d6f-908b-7fab77a6f508",
+      "key": "GT_Slice_108.mat",
+      "size": 61511,
+      "checksum": "md5:1595fe0d57db84b8ec0ea395fd710bb7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_108.mat/content"
+      }
+    },
+    {
+      "id": "1e79d9ab-b1d9-4c16-9e8c-30b1ca7dea9d",
+      "key": "GT_Slice_107.mat",
+      "size": 62221,
+      "checksum": "md5:7fb12f7e24808207a0fcbd4da13849e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_107.mat/content"
+      }
+    },
+    {
+      "id": "a9a39e41-c521-401a-8fb2-e57790bb1776",
+      "key": "GT_Slice_106.mat",
+      "size": 63308,
+      "checksum": "md5:e3f8470a0f6d89672049b8c2869af57f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_106.mat/content"
+      }
+    },
+    {
+      "id": "8e27ff2a-5c43-439d-89a2-acf9b4d9c3b8",
+      "key": "GT_Slice_105.mat",
+      "size": 64241,
+      "checksum": "md5:7a277ff7487b82529ead040b42bc3b63",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_105.mat/content"
+      }
+    },
+    {
+      "id": "c4589d16-e257-4f16-9c41-44b01f4f84e1",
+      "key": "GT_Slice_104.mat",
+      "size": 62912,
+      "checksum": "md5:3a56212bc1639d6b2f0671b6abb9b35c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_104.mat/content"
+      }
+    },
+    {
+      "id": "cafa3432-e2cb-45b1-898e-2e751722affa",
+      "key": "GT_Slice_102.mat",
+      "size": 62759,
+      "checksum": "md5:350071b9f6a4e40bea7d3f32032e0bab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_102.mat/content"
+      }
+    },
+    {
+      "id": "e4b5c205-98aa-4ab3-bb39-626021fd3cff",
+      "key": "GT_Slice_101.mat",
+      "size": 64758,
+      "checksum": "md5:eb4dfc95c9a869a2e976e139b6fc9b40",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_101.mat/content"
+      }
+    },
+    {
+      "id": "22d52178-9a50-4c50-9453-c583e732589e",
+      "key": "GT_Slice_100.mat",
+      "size": 64357,
+      "checksum": "md5:8b1e9a00a95b88cddca8ef260e73fca7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_100.mat/content"
+      }
+    },
+    {
+      "id": "be819aa5-939f-43b3-8679-78d8800d9c73",
+      "key": "GT_Slice_099.mat",
+      "size": 63928,
+      "checksum": "md5:591c25df5c05d1cffea1b8b703def661",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_099.mat/content"
+      }
+    },
+    {
+      "id": "35938727-2b42-4ba1-961a-6042107dd420",
+      "key": "GT_Slice_098.mat",
+      "size": 64181,
+      "checksum": "md5:95f701f1da008327f19fae53444d1203",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_098.mat/content"
+      }
+    },
+    {
+      "id": "5f39b359-6ee5-4014-a062-c9991d5d1907",
+      "key": "GT_Slice_097.mat",
+      "size": 63046,
+      "checksum": "md5:f75e60201cde7f44505f8fc268d2d8f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_097.mat/content"
+      }
+    },
+    {
+      "id": "625efade-9fe0-4eb3-b02b-b16ff435b0fa",
+      "key": "GT_Slice_096.mat",
+      "size": 63678,
+      "checksum": "md5:0d45765e117ea5297094a79df37faf20",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_096.mat/content"
+      }
+    },
+    {
+      "id": "240bc24e-a723-47ad-816f-4ef2e5b31e7c",
+      "key": "GT_Slice_095.mat",
+      "size": 63470,
+      "checksum": "md5:a656b4101fe6741044a1d16e9ecaf53b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_095.mat/content"
+      }
+    },
+    {
+      "id": "3fa5a934-8382-4ec6-8d7f-bd36af2031d8",
+      "key": "GT_Slice_094.mat",
+      "size": 64308,
+      "checksum": "md5:ae9a2fb8c2b5c92688aeff010ede518e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_094.mat/content"
+      }
+    },
+    {
+      "id": "48202b22-24a2-4c3a-9894-259936f133c9",
+      "key": "GT_Slice_093.mat",
+      "size": 64771,
+      "checksum": "md5:0c350f16f2301dc3bb6d17a9ec97145d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_093.mat/content"
+      }
+    },
+    {
+      "id": "51532651-7c9c-4c00-ae3f-6abaa5b537c6",
+      "key": "GT_Slice_092.mat",
+      "size": 65056,
+      "checksum": "md5:e67b021a5e9e835afdc8aefaf89cd1dd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_092.mat/content"
+      }
+    },
+    {
+      "id": "c8c756b5-1795-43ec-99e1-418ee85022da",
+      "key": "GT_Slice_091.mat",
+      "size": 65386,
+      "checksum": "md5:587facff9c78102f89a8c49d641f971a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_091.mat/content"
+      }
+    },
+    {
+      "id": "bd29f7d4-19e7-415d-b6b1-8f9159d2aa23",
+      "key": "GT_Slice_090.mat",
+      "size": 66011,
+      "checksum": "md5:4ace2be7040948cab35c2f6043b21cb0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_090.mat/content"
+      }
+    },
+    {
+      "id": "76d9d2fc-8d23-4818-a390-1a1f173d0f24",
+      "key": "GT_Slice_089.mat",
+      "size": 63238,
+      "checksum": "md5:1a31f18fa562fda8c3f8309e20964145",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_089.mat/content"
+      }
+    },
+    {
+      "id": "c2a4307a-bc71-4e1e-ab1c-07abda9247b5",
+      "key": "GT_Slice_088.mat",
+      "size": 63189,
+      "checksum": "md5:7b60d09ca841f1ebd93cc0e7f4dd3513",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_088.mat/content"
+      }
+    },
+    {
+      "id": "558afe23-bd00-4992-8e6d-6aa7a24dec06",
+      "key": "GT_Slice_087.mat",
+      "size": 65182,
+      "checksum": "md5:6da19ef2e6d8152c8a19f09c94974b8b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_087.mat/content"
+      }
+    },
+    {
+      "id": "0a5977ae-a0dd-4aaf-ae92-c08f736835df",
+      "key": "GT_Slice_086.mat",
+      "size": 66784,
+      "checksum": "md5:5e8245f4b06b1eb965a7d7663414a7e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_086.mat/content"
+      }
+    },
+    {
+      "id": "dbd1a284-9ef6-40b6-8fe3-c46bec4f90a6",
+      "key": "GT_Slice_085.mat",
+      "size": 68960,
+      "checksum": "md5:0547aeade246c9e818a56f2f35625603",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_085.mat/content"
+      }
+    },
+    {
+      "id": "1022a646-0473-4198-9186-4a024377078f",
+      "key": "GT_Slice_084.mat",
+      "size": 67333,
+      "checksum": "md5:fbd98a855c03a46a626a3606be2aa510",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_084.mat/content"
+      }
+    },
+    {
+      "id": "fed1e1c5-925a-4686-a5ec-5212522311e3",
+      "key": "GT_Slice_083.mat",
+      "size": 68627,
+      "checksum": "md5:4bec84b48a2889ebf69d9b2df6f21bd1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_083.mat/content"
+      }
+    },
+    {
+      "id": "a1136a87-f210-411c-b5f3-ae962de22762",
+      "key": "GT_Slice_082.mat",
+      "size": 67965,
+      "checksum": "md5:0f31218b04b60eb8d97d30cafcabe995",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_082.mat/content"
+      }
+    },
+    {
+      "id": "ca3cbfc5-a61c-42b9-ba11-d362766d882a",
+      "key": "GT_Slice_081.mat",
+      "size": 67619,
+      "checksum": "md5:ffab833e17f93fd2a39619b469eab946",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_081.mat/content"
+      }
+    },
+    {
+      "id": "31d305ba-fcbd-4a72-b3aa-5bfb5cec9a62",
+      "key": "GT_Slice_080.mat",
+      "size": 69005,
+      "checksum": "md5:3331e41c148efc734c1d0ccf2c5f4add",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_080.mat/content"
+      }
+    },
+    {
+      "id": "5da62293-8a33-4ca2-abf6-cfcdb0d10f0d",
+      "key": "GT_Slice_079.mat",
+      "size": 67422,
+      "checksum": "md5:7d48a249a1ddf674de8024bec6f2211a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_079.mat/content"
+      }
+    },
+    {
+      "id": "4d7fe8f0-0006-404c-a1eb-1df78d147b62",
+      "key": "GT_Slice_078.mat",
+      "size": 67015,
+      "checksum": "md5:be92e0bbb8c20a67880825176c1bbc84",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_078.mat/content"
+      }
+    },
+    {
+      "id": "3f13a30e-3137-4744-9b66-49752611f306",
+      "key": "GT_Slice_077.mat",
+      "size": 66765,
+      "checksum": "md5:c2548811de6c22e1f06bb7c273e8778e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_077.mat/content"
+      }
+    },
+    {
+      "id": "b48a56a8-d54b-4954-90dc-a61f9ddafefb",
+      "key": "GT_Slice_076.mat",
+      "size": 69227,
+      "checksum": "md5:5967e3538d04b5c7dd0443a85607bb03",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_076.mat/content"
+      }
+    },
+    {
+      "id": "2818fa7c-5c08-4b5f-aa87-bd9508036596",
+      "key": "GT_Slice_075.mat",
+      "size": 69490,
+      "checksum": "md5:b03e52270aa45c8d78f2f14a1d0471ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_075.mat/content"
+      }
+    },
+    {
+      "id": "b3baef0d-149b-4113-80cd-06392e239c3e",
+      "key": "GT_Slice_074.mat",
+      "size": 67365,
+      "checksum": "md5:1fa28bba2d7555dcb7bc0ea899fd31f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_074.mat/content"
+      }
+    },
+    {
+      "id": "44c9a5db-c61f-48e0-b105-66952132190d",
+      "key": "GT_Slice_073.mat",
+      "size": 69772,
+      "checksum": "md5:b792024d5a8cd798ce1955ab95e6aed9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_073.mat/content"
+      }
+    },
+    {
+      "id": "eccc032c-f234-4ab6-b6ce-60643df572e5",
+      "key": "GT_Slice_072.mat",
+      "size": 66437,
+      "checksum": "md5:127263054c1990d418faac1d2ef9890f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_072.mat/content"
+      }
+    },
+    {
+      "id": "ad816ca9-ef54-4a17-9417-e3393a5aa6b4",
+      "key": "GT_Slice_071.mat",
+      "size": 68935,
+      "checksum": "md5:25ad1619d1e0bbc22dabcf1cfccdac2f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_071.mat/content"
+      }
+    },
+    {
+      "id": "ef72713a-5f0c-4bc7-8364-f04cbcb31981",
+      "key": "GT_Slice_070.mat",
+      "size": 69462,
+      "checksum": "md5:250ae06b233886f345cbf4cad8f35714",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_070.mat/content"
+      }
+    },
+    {
+      "id": "00003cf4-fa47-49fb-a108-d7e9a444488b",
+      "key": "GT_Slice_069.mat",
+      "size": 69992,
+      "checksum": "md5:83d9471b678d1e1005f61507a92e90a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_069.mat/content"
+      }
+    },
+    {
+      "id": "8ea3bca9-687e-4a4f-b6c1-0ed56b1c20e2",
+      "key": "GT_Slice_068.mat",
+      "size": 70386,
+      "checksum": "md5:398838366eca3904e2e237a9f58cca1a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_068.mat/content"
+      }
+    },
+    {
+      "id": "fe89d6c4-8344-4682-bf38-680cc9a2e543",
+      "key": "GT_Slice_067.mat",
+      "size": 71472,
+      "checksum": "md5:79227739cb6e65703b8c6ea2f9abbd01",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_067.mat/content"
+      }
+    },
+    {
+      "id": "55aab970-bcbd-41a4-b1be-afae9d5740d6",
+      "key": "GT_Slice_066.mat",
+      "size": 71996,
+      "checksum": "md5:5ed4f1244cb142eac693c7c6b4da2edf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_066.mat/content"
+      }
+    },
+    {
+      "id": "739f0340-2ae7-4866-b17a-d9dcb0b41397",
+      "key": "GT_Slice_065.mat",
+      "size": 71194,
+      "checksum": "md5:d7ceee50b5a4f2c14724ef93aa1d9621",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_065.mat/content"
+      }
+    },
+    {
+      "id": "0a9d9368-6d83-41c7-b015-d78e8c392a9e",
+      "key": "GT_Slice_064.mat",
+      "size": 73210,
+      "checksum": "md5:e107894881dc476f448e61e8c80009a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_064.mat/content"
+      }
+    },
+    {
+      "id": "9b7f74a4-0630-43d1-83b7-23be82329c8d",
+      "key": "GT_Slice_063.mat",
+      "size": 72543,
+      "checksum": "md5:41c17fff8154f5c48ba02155eea4d0fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_063.mat/content"
+      }
+    },
+    {
+      "id": "d90834f1-57c2-4f06-903e-b5fe50cb129b",
+      "key": "GT_Slice_062.mat",
+      "size": 75188,
+      "checksum": "md5:f56fd7901f844cf5464a6cf08e511100",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_062.mat/content"
+      }
+    },
+    {
+      "id": "5e345f4d-c6dd-45ed-945d-a0c563f5e417",
+      "key": "GT_Slice_061.mat",
+      "size": 75413,
+      "checksum": "md5:9440b682bb4237ad92da1145953fc3fd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_061.mat/content"
+      }
+    },
+    {
+      "id": "f63df6d1-3ade-4d84-86f0-659c63e28f73",
+      "key": "GT_Slice_060.mat",
+      "size": 76129,
+      "checksum": "md5:df010962400fba137dd8799cb2027e55",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_060.mat/content"
+      }
+    },
+    {
+      "id": "471cb27c-a2d2-4c4d-8965-8ef658e6882a",
+      "key": "GT_Slice_059.mat",
+      "size": 75042,
+      "checksum": "md5:a2c0a3bfd1445219f030615e7d04e5d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_059.mat/content"
+      }
+    },
+    {
+      "id": "016936d0-aed4-4c18-8082-569853a73df6",
+      "key": "GT_Slice_058.mat",
+      "size": 76252,
+      "checksum": "md5:0cf63d34509611c35a1707232c2e7cc4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_058.mat/content"
+      }
+    },
+    {
+      "id": "94069cd5-72c3-4abe-a6a8-07341e04c9f0",
+      "key": "GT_Slice_057.mat",
+      "size": 75396,
+      "checksum": "md5:ce009eac5ddb6869a3a0063f20693e14",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_057.mat/content"
+      }
+    },
+    {
+      "id": "700dcfd4-3fda-402a-a63f-bf661ba93ad8",
+      "key": "GT_Slice_056.mat",
+      "size": 74137,
+      "checksum": "md5:b9c8f38cc89b3282286eda41b9a245b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_056.mat/content"
+      }
+    },
+    {
+      "id": "097b197e-a250-4f9b-b43a-5d160539e16e",
+      "key": "GT_Slice_055.mat",
+      "size": 75346,
+      "checksum": "md5:d0a1daeed63e8d56a9996c626b4e5409",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_055.mat/content"
+      }
+    },
+    {
+      "id": "25060d29-1311-4d29-8255-8a49d988baba",
+      "key": "GT_Slice_054.mat",
+      "size": 75678,
+      "checksum": "md5:44021b899b7a66136245eb476956259e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_054.mat/content"
+      }
+    },
+    {
+      "id": "d2055fbb-4996-4a0b-a8c5-f0551a7ef087",
+      "key": "GT_Slice_053.mat",
+      "size": 76553,
+      "checksum": "md5:7ea72f7ff4d61073e909cfaa77125077",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_053.mat/content"
+      }
+    },
+    {
+      "id": "014dcd86-c408-4b7f-95f1-91d9ad517a53",
+      "key": "GT_Slice_052.mat",
+      "size": 76608,
+      "checksum": "md5:afbe2dab4628f009a641929f88f6acc9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_052.mat/content"
+      }
+    },
+    {
+      "id": "63f5b7d4-2b81-4190-a468-33f26f5d7830",
+      "key": "GT_Slice_051.mat",
+      "size": 76600,
+      "checksum": "md5:97acda6d303e6c78113628cf7cd3c664",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_051.mat/content"
+      }
+    },
+    {
+      "id": "197c95d8-0d15-428e-b3cf-5ea2a8fcabf4",
+      "key": "GT_Slice_050.mat",
+      "size": 74563,
+      "checksum": "md5:2d8d42f0282a5cd27d34fa9101b8eecf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_050.mat/content"
+      }
+    },
+    {
+      "id": "31bf4f4f-2e15-4e40-a52d-2a6f94a8fc5b",
+      "key": "GT_Slice_049.mat",
+      "size": 74105,
+      "checksum": "md5:47c027a816031ec075d85fcdf48c35b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_049.mat/content"
+      }
+    },
+    {
+      "id": "94176c5d-e8ab-490a-9d3c-c55050f156fc",
+      "key": "GT_Slice_048.mat",
+      "size": 75987,
+      "checksum": "md5:3ccb463db5417725599600c98640a860",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_048.mat/content"
+      }
+    },
+    {
+      "id": "c02dea4f-70ea-4ab4-9746-870c3d87713c",
+      "key": "GT_Slice_047.mat",
+      "size": 76635,
+      "checksum": "md5:c0126e0c43ebfba387c4f14d53e3c751",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_047.mat/content"
+      }
+    },
+    {
+      "id": "02de773d-8793-4838-83d0-68877843a9f2",
+      "key": "GT_Slice_046.mat",
+      "size": 74276,
+      "checksum": "md5:d729813802306fa83aa2bdf0a0093114",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_046.mat/content"
+      }
+    },
+    {
+      "id": "db5a2f12-ab91-4598-ac1b-0e696d16dde3",
+      "key": "GT_Slice_045.mat",
+      "size": 73948,
+      "checksum": "md5:cb6751e2b025f3728bf2d8e3e5fdad1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_045.mat/content"
+      }
+    },
+    {
+      "id": "b01ac90f-3ca3-4c47-b635-50f4847fffdf",
+      "key": "GT_Slice_044.mat",
+      "size": 72633,
+      "checksum": "md5:af8403f66c440564dd44a30a1ed9c8bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_044.mat/content"
+      }
+    },
+    {
+      "id": "6ab0e06c-d076-43b3-bba7-8e3d2b96c745",
+      "key": "GT_Slice_043.mat",
+      "size": 71487,
+      "checksum": "md5:8d1d057eb333be6fb80b28d54307ae30",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_043.mat/content"
+      }
+    },
+    {
+      "id": "20f3097a-6beb-407f-9263-72d393465862",
+      "key": "GT_Slice_042.mat",
+      "size": 71698,
+      "checksum": "md5:11bb1620fafc0152249779fa1371e657",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_042.mat/content"
+      }
+    },
+    {
+      "id": "58566258-56a1-4f57-98ad-3bebe87d5f9c",
+      "key": "GT_Slice_041.mat",
+      "size": 71115,
+      "checksum": "md5:024cdc084ccca338a56dce405e70a606",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_041.mat/content"
+      }
+    },
+    {
+      "id": "b3ed856e-8f8a-46a1-9c58-99b188904a4c",
+      "key": "GT_Slice_040.mat",
+      "size": 70103,
+      "checksum": "md5:546341ee6566b38f4f796824a74738b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_040.mat/content"
+      }
+    },
+    {
+      "id": "b1757763-bae3-425d-8da1-807a03ed0be8",
+      "key": "GT_Slice_039.mat",
+      "size": 70155,
+      "checksum": "md5:8dcbf9091cde46073426697232571c11",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_039.mat/content"
+      }
+    },
+    {
+      "id": "e3eb3a8a-53e7-4cc7-b9cf-a9c7b2a55ffa",
+      "key": "GT_Slice_038.mat",
+      "size": 68758,
+      "checksum": "md5:d38504bba9912a0b99f33caf547b94ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_038.mat/content"
+      }
+    },
+    {
+      "id": "ede711dd-b634-4ece-bd15-0624d5b465f0",
+      "key": "GT_Slice_037.mat",
+      "size": 68741,
+      "checksum": "md5:d7e309d33ac9234f253056df80de5fde",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_037.mat/content"
+      }
+    },
+    {
+      "id": "8c0bb22b-af8f-4b66-afc5-6060e5ffadc3",
+      "key": "GT_Slice_036.mat",
+      "size": 67658,
+      "checksum": "md5:e0b12ddae80553646f13835f5e3c8674",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_036.mat/content"
+      }
+    },
+    {
+      "id": "df990973-499e-463b-8387-2619d4fb3b02",
+      "key": "GT_Slice_035.mat",
+      "size": 65848,
+      "checksum": "md5:25176685160d46681ce23ba56985abdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_035.mat/content"
+      }
+    },
+    {
+      "id": "ebe0286a-3f06-4f74-a662-a6f3a7256961",
+      "key": "GT_Slice_034.mat",
+      "size": 65848,
+      "checksum": "md5:25176685160d46681ce23ba56985abdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_034.mat/content"
+      }
+    },
+    {
+      "id": "71cdd37f-fe08-4987-bdce-cbdb1ad8d2eb",
+      "key": "GT_Slice_033.mat",
+      "size": 64383,
+      "checksum": "md5:04091991881943db64443e3a035eaf15",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_033.mat/content"
+      }
+    },
+    {
+      "id": "7fd9dd3f-cf59-40e3-a7db-5513a1f229c5",
+      "key": "GT_Slice_032.mat",
+      "size": 64383,
+      "checksum": "md5:04091991881943db64443e3a035eaf15",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_032.mat/content"
+      }
+    },
+    {
+      "id": "6a2b9d62-cd80-4587-86ac-6f027b24d014",
+      "key": "GT_Slice_031.mat",
+      "size": 65635,
+      "checksum": "md5:5b886538706847480f95d2d3b7aef84a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_031.mat/content"
+      }
+    },
+    {
+      "id": "b3bdf4bc-2ae5-446a-81d7-ea5d4da173f6",
+      "key": "GT_Slice_030.mat",
+      "size": 65635,
+      "checksum": "md5:5b886538706847480f95d2d3b7aef84a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_030.mat/content"
+      }
+    },
+    {
+      "id": "cae79ad6-832b-422a-b31d-33f44c80701f",
+      "key": "GT_Slice_029.mat",
+      "size": 64532,
+      "checksum": "md5:1ab0baf873b2d3036eecb3d6a8eba9aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_029.mat/content"
+      }
+    },
+    {
+      "id": "4d5924d3-4af3-4ece-b859-4a39c43c2e46",
+      "key": "GT_Slice_028.mat",
+      "size": 64532,
+      "checksum": "md5:1ab0baf873b2d3036eecb3d6a8eba9aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_028.mat/content"
+      }
+    },
+    {
+      "id": "8102ad30-758d-432d-b7fe-3709be9aa724",
+      "key": "GT_Slice_027.mat",
+      "size": 64997,
+      "checksum": "md5:72228792562826af4fcc0f5cd8278153",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_027.mat/content"
+      }
+    },
+    {
+      "id": "3253cfc6-0721-49c6-8cd8-5f4e9789ee18",
+      "key": "GT_Slice_026.mat",
+      "size": 64997,
+      "checksum": "md5:72228792562826af4fcc0f5cd8278153",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_026.mat/content"
+      }
+    },
+    {
+      "id": "8c92214e-167e-4f8d-9b5d-fb1dc19129f4",
+      "key": "GT_Slice_025.mat",
+      "size": 65716,
+      "checksum": "md5:b9b671c9c7fea805fe969584b7a2e398",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_025.mat/content"
+      }
+    },
+    {
+      "id": "4e3ed8e1-6099-4b3a-9186-7aee5fe597cc",
+      "key": "GT_Slice_024.mat",
+      "size": 65716,
+      "checksum": "md5:b9b671c9c7fea805fe969584b7a2e398",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_024.mat/content"
+      }
+    },
+    {
+      "id": "2bb31d2a-ceaa-4a50-ab18-d1681a956851",
+      "key": "GT_Slice_023.mat",
+      "size": 68957,
+      "checksum": "md5:0672f7f3c13cb7f8c0705e3710105abf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_023.mat/content"
+      }
+    },
+    {
+      "id": "79a12d59-b447-40e4-b778-785d6374a960",
+      "key": "GT_Slice_022.mat",
+      "size": 68957,
+      "checksum": "md5:0672f7f3c13cb7f8c0705e3710105abf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_022.mat/content"
+      }
+    },
+    {
+      "id": "9f7dd403-ec1b-41e7-be46-d1e877f89a3f",
+      "key": "GT_Slice_021.mat",
+      "size": 69829,
+      "checksum": "md5:740448449fb3244509fbd8a3e7ad519d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_021.mat/content"
+      }
+    },
+    {
+      "id": "8309bf14-c92a-4a00-b285-08f3253fc5e0",
+      "key": "GT_Slice_020.mat",
+      "size": 69829,
+      "checksum": "md5:740448449fb3244509fbd8a3e7ad519d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_020.mat/content"
+      }
+    },
+    {
+      "id": "9db09a67-fe78-4c55-ad55-0dab954864f9",
+      "key": "GT_Slice_019.mat",
+      "size": 70660,
+      "checksum": "md5:d273976a855fbd74f47ae72186327757",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_019.mat/content"
+      }
+    },
+    {
+      "id": "61e91ad9-ca6e-4b60-9398-82e99b8c790c",
+      "key": "GT_Slice_018.mat",
+      "size": 70660,
+      "checksum": "md5:d273976a855fbd74f47ae72186327757",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_018.mat/content"
+      }
+    },
+    {
+      "id": "756ac0be-614d-475a-a0eb-02885b2404df",
+      "key": "GT_Slice_017.mat",
+      "size": 70527,
+      "checksum": "md5:017e6db12ab164ae900ad4f822d55ca7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_017.mat/content"
+      }
+    },
+    {
+      "id": "404f8941-cff7-4867-b75f-d48ff186a8eb",
+      "key": "GT_Slice_016.mat",
+      "size": 70527,
+      "checksum": "md5:017e6db12ab164ae900ad4f822d55ca7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_016.mat/content"
+      }
+    },
+    {
+      "id": "d34857bf-c3f4-4b00-a89f-fb3dbbb843cd",
+      "key": "GT_Slice_015.mat",
+      "size": 72905,
+      "checksum": "md5:399d07edc8a7ee118c14db63e2656943",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_015.mat/content"
+      }
+    },
+    {
+      "id": "f5cc55bc-8403-420d-8ddd-b05a453a9226",
+      "key": "GT_Slice_014.mat",
+      "size": 72905,
+      "checksum": "md5:399d07edc8a7ee118c14db63e2656943",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_014.mat/content"
+      }
+    },
+    {
+      "id": "5da64f84-f406-4e74-acad-51736c5ba602",
+      "key": "GT_Slice_013.mat",
+      "size": 73648,
+      "checksum": "md5:c42fcd0dc45382cf1a010f137e6317cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_013.mat/content"
+      }
+    },
+    {
+      "id": "0edfdde2-194b-48d3-b7b0-2a3c4ed2f017",
+      "key": "GT_Slice_012.mat",
+      "size": 73648,
+      "checksum": "md5:c42fcd0dc45382cf1a010f137e6317cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_012.mat/content"
+      }
+    },
+    {
+      "id": "e81a52a6-21b2-41a1-b9fa-a2ba2926e001",
+      "key": "GT_Slice_011.mat",
+      "size": 73251,
+      "checksum": "md5:e5dc1508dba297cb6cea839fc1a6447b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_011.mat/content"
+      }
+    },
+    {
+      "id": "56120acb-76db-4887-95c5-ebb61d81c7d1",
+      "key": "GT_Slice_010.mat",
+      "size": 73251,
+      "checksum": "md5:e5dc1508dba297cb6cea839fc1a6447b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_010.mat/content"
+      }
+    },
+    {
+      "id": "c28c326d-8475-4f78-afd0-eba2b87aed6d",
+      "key": "GT_Slice_009.mat",
+      "size": 72950,
+      "checksum": "md5:f19e1455c408c266d15fe92893fecaa9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_009.mat/content"
+      }
+    },
+    {
+      "id": "00dd2db7-5f40-4020-9e97-149ec01f6a37",
+      "key": "GT_Slice_008.mat",
+      "size": 72950,
+      "checksum": "md5:f19e1455c408c266d15fe92893fecaa9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_008.mat/content"
+      }
+    },
+    {
+      "id": "eb85bb1e-045d-4c50-8d38-7400e9507d17",
+      "key": "GT_Slice_007.mat",
+      "size": 70552,
+      "checksum": "md5:f1f827ae425368375491c5456e8a56c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_007.mat/content"
+      }
+    },
+    {
+      "id": "b87cd634-0797-4c80-9eff-81ea7bcb8528",
+      "key": "GT_Slice_006.mat",
+      "size": 70552,
+      "checksum": "md5:f1f827ae425368375491c5456e8a56c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_006.mat/content"
+      }
+    },
+    {
+      "id": "ebf67acf-7bfd-4158-8168-39404d937df2",
+      "key": "GT_Slice_005.mat",
+      "size": 71269,
+      "checksum": "md5:914b14eb9cd481fdf403212b69fccef4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_005.mat/content"
+      }
+    },
+    {
+      "id": "0fa8786f-08d1-4a64-bda4-8ef7df18c2f5",
+      "key": "GT_Slice_004.mat",
+      "size": 71269,
+      "checksum": "md5:914b14eb9cd481fdf403212b69fccef4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_004.mat/content"
+      }
+    },
+    {
+      "id": "80c1986b-2215-477e-af91-ae3bf0981aac",
+      "key": "GT_Slice_003.mat",
+      "size": 71421,
+      "checksum": "md5:d274b5e8d12d9cf3bc9c2438d092b47a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_003.mat/content"
+      }
+    },
+    {
+      "id": "cc66cac6-3ecd-4f54-9f5e-c1b1c795b5f5",
+      "key": "GT_Slice_002.mat",
+      "size": 72318,
+      "checksum": "md5:05b1b357258fc892d65036f129513257",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_002.mat/content"
+      }
+    },
+    {
+      "id": "c909588c-23d5-4934-8657-144cd1389ff7",
+      "key": "GT_Slice_001.mat",
+      "size": 74283,
+      "checksum": "md5:becff69d536be52e9ed3a1147b703a35",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_Slice_001.mat/content"
+      }
+    },
+    {
+      "id": "3085ffa9-c662-462a-933b-1b3484812a9f",
+      "key": "GT_multinuclei.gif",
+      "size": 2870017,
+      "checksum": "md5:39d4ec4234df73c35f974b8fd04401e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6355622/files/GT_multinuclei.gif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "45200"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 8602,
+    "unique_downloads": 7691,
+    "views": 331,
+    "unique_views": 305,
+    "version_downloads": 8600,
+    "version_unique_downloads": 7689,
+    "version_unique_views": 303,
+    "version_views": 329
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 301,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 23446407,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "GT_Slice_103.mat",
+        "size": 64764
+      },
+      {
+        "name": "GT_Slice_290.mat",
+        "size": 74261
+      },
+      {
+        "name": "GT_Slice_289.mat",
+        "size": 74261
+      },
+      {
+        "name": "GT_Slice_288.mat",
+        "size": 74133
+      },
+      {
+        "name": "GT_Slice_287.mat",
+        "size": 74133
+      },
+      {
+        "name": "GT_Slice_286.mat",
+        "size": 73084
+      },
+      {
+        "name": "GT_Slice_285.mat",
+        "size": 73084
+      },
+      {
+        "name": "GT_Slice_284.mat",
+        "size": 74479
+      },
+      {
+        "name": "GT_Slice_283.mat",
+        "size": 74479
+      },
+      {
+        "name": "GT_Slice_282.mat",
+        "size": 73120
+      },
+      {
+        "name": "GT_Slice_281.mat",
+        "size": 73120
+      },
+      {
+        "name": "GT_Slice_280.mat",
+        "size": 70841
+      },
+      {
+        "name": "GT_Slice_279.mat",
+        "size": 70841
+      },
+      {
+        "name": "GT_Slice_278.mat",
+        "size": 69592
+      },
+      {
+        "name": "GT_Slice_277.mat",
+        "size": 69592
+      },
+      {
+        "name": "GT_Slice_276.mat",
+        "size": 69242
+      },
+      {
+        "name": "GT_Slice_275.mat",
+        "size": 69242
+      },
+      {
+        "name": "GT_Slice_274.mat",
+        "size": 68906
+      },
+      {
+        "name": "GT_Slice_273.mat",
+        "size": 68906
+      },
+      {
+        "name": "GT_Slice_272.mat",
+        "size": 68933
+      },
+      {
+        "name": "GT_Slice_271.mat",
+        "size": 68933
+      },
+      {
+        "name": "GT_Slice_270.mat",
+        "size": 68124
+      },
+      {
+        "name": "GT_Slice_269.mat",
+        "size": 68124
+      },
+      {
+        "name": "GT_Slice_268.mat",
+        "size": 68593
+      },
+      {
+        "name": "GT_Slice_267.mat",
+        "size": 68593
+      },
+      {
+        "name": "GT_Slice_266.mat",
+        "size": 68204
+      },
+      {
+        "name": "GT_Slice_265.mat",
+        "size": 68204
+      },
+      {
+        "name": "GT_Slice_264.mat",
+        "size": 67478
+      },
+      {
+        "name": "GT_Slice_263.mat",
+        "size": 67478
+      },
+      {
+        "name": "GT_Slice_262.mat",
+        "size": 71104
+      },
+      {
+        "name": "GT_Slice_261.mat",
+        "size": 71104
+      },
+      {
+        "name": "GT_Slice_260.mat",
+        "size": 69537
+      },
+      {
+        "name": "GT_Slice_259.mat",
+        "size": 69537
+      },
+      {
+        "name": "GT_Slice_291.mat",
+        "size": 75005
+      },
+      {
+        "name": "GT_Slice_292.mat",
+        "size": 75005
+      },
+      {
+        "name": "GT_Slice_293.mat",
+        "size": 75175
+      },
+      {
+        "name": "GT_Slice_294.mat",
+        "size": 75175
+      },
+      {
+        "name": "GT_Slice_295.mat",
+        "size": 73779
+      },
+      {
+        "name": "GT_Slice_296.mat",
+        "size": 73779
+      },
+      {
+        "name": "GT_Slice_297.mat",
+        "size": 72623
+      },
+      {
+        "name": "GT_Slice_298.mat",
+        "size": 72623
+      },
+      {
+        "name": "GT_Slice_299.mat",
+        "size": 73130
+      },
+      {
+        "name": "GT_Slice_300.mat",
+        "size": 71663
+      },
+      {
+        "name": "GT_Slice_258.mat",
+        "size": 70624
+      },
+      {
+        "name": "GT_Slice_257.mat",
+        "size": 70624
+      },
+      {
+        "name": "GT_Slice_256.mat",
+        "size": 70958
+      },
+      {
+        "name": "GT_Slice_255.mat",
+        "size": 70958
+      },
+      {
+        "name": "GT_Slice_254.mat",
+        "size": 69953
+      },
+      {
+        "name": "GT_Slice_253.mat",
+        "size": 69953
+      },
+      {
+        "name": "GT_Slice_252.mat",
+        "size": 70297
+      },
+      {
+        "name": "GT_Slice_251.mat",
+        "size": 70297
+      },
+      {
+        "name": "GT_Slice_250.mat",
+        "size": 71653
+      },
+      {
+        "name": "GT_Slice_249.mat",
+        "size": 71653
+      },
+      {
+        "name": "GT_Slice_248.mat",
+        "size": 73587
+      },
+      {
+        "name": "GT_Slice_247.mat",
+        "size": 73587
+      },
+      {
+        "name": "GT_Slice_246.mat",
+        "size": 70232
+      },
+      {
+        "name": "GT_Slice_245.mat",
+        "size": 70232
+      },
+      {
+        "name": "GT_Slice_244.mat",
+        "size": 70255
+      },
+      {
+        "name": "GT_Slice_243.mat",
+        "size": 70255
+      },
+      {
+        "name": "GT_Slice_242.mat",
+        "size": 72030
+      },
+      {
+        "name": "GT_Slice_241.mat",
+        "size": 72045
+      },
+      {
+        "name": "GT_Slice_240.mat",
+        "size": 69832
+      },
+      {
+        "name": "GT_Slice_239.mat",
+        "size": 69855
+      },
+      {
+        "name": "GT_Slice_238.mat",
+        "size": 69896
+      },
+      {
+        "name": "GT_Slice_237.mat",
+        "size": 69897
+      },
+      {
+        "name": "GT_Slice_236.mat",
+        "size": 67536
+      },
+      {
+        "name": "GT_Slice_235.mat",
+        "size": 67523
+      },
+      {
+        "name": "GT_Slice_234.mat",
+        "size": 68107
+      },
+      {
+        "name": "GT_Slice_233.mat",
+        "size": 68097
+      },
+      {
+        "name": "GT_Slice_232.mat",
+        "size": 67457
+      },
+      {
+        "name": "GT_Slice_231.mat",
+        "size": 67446
+      },
+      {
+        "name": "GT_Slice_230.mat",
+        "size": 69397
+      },
+      {
+        "name": "GT_Slice_229.mat",
+        "size": 69370
+      },
+      {
+        "name": "GT_Slice_228.mat",
+        "size": 70408
+      },
+      {
+        "name": "GT_Slice_227.mat",
+        "size": 70442
+      },
+      {
+        "name": "GT_Slice_226.mat",
+        "size": 68110
+      },
+      {
+        "name": "GT_Slice_225.mat",
+        "size": 68116
+      },
+      {
+        "name": "GT_Slice_224.mat",
+        "size": 66938
+      },
+      {
+        "name": "GT_Slice_223.mat",
+        "size": 66929
+      },
+      {
+        "name": "GT_Slice_222.mat",
+        "size": 69890
+      },
+      {
+        "name": "GT_Slice_221.mat",
+        "size": 69838
+      },
+      {
+        "name": "GT_Slice_220.mat",
+        "size": 69150
+      },
+      {
+        "name": "GT_Slice_219.mat",
+        "size": 69154
+      },
+      {
+        "name": "GT_Slice_218.mat",
+        "size": 70994
+      },
+      {
+        "name": "GT_Slice_217.mat",
+        "size": 70968
+      },
+      {
+        "name": "GT_Slice_216.mat",
+        "size": 71579
+      },
+      {
+        "name": "GT_Slice_215.mat",
+        "size": 71579
+      },
+      {
+        "name": "GT_Slice_214.mat",
+        "size": 72678
+      },
+      {
+        "name": "GT_Slice_213.mat",
+        "size": 70816
+      },
+      {
+        "name": "GT_Slice_212.mat",
+        "size": 70505
+      },
+      {
+        "name": "GT_Slice_211.mat",
+        "size": 68845
+      },
+      {
+        "name": "GT_Slice_210.mat",
+        "size": 68910
+      },
+      {
+        "name": "GT_Slice_209.mat",
+        "size": 68734
+      },
+      {
+        "name": "GT_Slice_208.mat",
+        "size": 68439
+      },
+      {
+        "name": "GT_Slice_207.mat",
+        "size": 69093
+      },
+      {
+        "name": "GT_Slice_206.mat",
+        "size": 68625
+      },
+      {
+        "name": "GT_Slice_205.mat",
+        "size": 67384
+      },
+      {
+        "name": "GT_Slice_204.mat",
+        "size": 65932
+      },
+      {
+        "name": "GT_Slice_203.mat",
+        "size": 65527
+      },
+      {
+        "name": "GT_Slice_202.mat",
+        "size": 66660
+      },
+      {
+        "name": "GT_Slice_201.mat",
+        "size": 65253
+      },
+      {
+        "name": "GT_Slice_200.mat",
+        "size": 65901
+      },
+      {
+        "name": "GT_Slice_199.mat",
+        "size": 65418
+      },
+      {
+        "name": "GT_Slice_198.mat",
+        "size": 65531
+      },
+      {
+        "name": "GT_Slice_197.mat",
+        "size": 66301
+      },
+      {
+        "name": "GT_Slice_196.mat",
+        "size": 66540
+      },
+      {
+        "name": "GT_Slice_195.mat",
+        "size": 64168
+      },
+      {
+        "name": "GT_Slice_194.mat",
+        "size": 66094
+      },
+      {
+        "name": "GT_Slice_193.mat",
+        "size": 66418
+      },
+      {
+        "name": "GT_Slice_192.mat",
+        "size": 65577
+      },
+      {
+        "name": "GT_Slice_191.mat",
+        "size": 67984
+      },
+      {
+        "name": "GT_Slice_190.mat",
+        "size": 68514
+      },
+      {
+        "name": "GT_Slice_189.mat",
+        "size": 69777
+      },
+      {
+        "name": "GT_Slice_188.mat",
+        "size": 69478
+      },
+      {
+        "name": "GT_Slice_187.mat",
+        "size": 71551
+      },
+      {
+        "name": "GT_Slice_186.mat",
+        "size": 72037
+      },
+      {
+        "name": "GT_Slice_185.mat",
+        "size": 71344
+      },
+      {
+        "name": "GT_Slice_184.mat",
+        "size": 71454
+      },
+      {
+        "name": "GT_Slice_183.mat",
+        "size": 71225
+      },
+      {
+        "name": "GT_Slice_182.mat",
+        "size": 71182
+      },
+      {
+        "name": "GT_Slice_181.mat",
+        "size": 70534
+      },
+      {
+        "name": "GT_Slice_180.mat",
+        "size": 70468
+      },
+      {
+        "name": "GT_Slice_179.mat",
+        "size": 70596
+      },
+      {
+        "name": "GT_Slice_178.mat",
+        "size": 69069
+      },
+      {
+        "name": "GT_Slice_177.mat",
+        "size": 69911
+      },
+      {
+        "name": "GT_Slice_176.mat",
+        "size": 69084
+      },
+      {
+        "name": "GT_Slice_175.mat",
+        "size": 68160
+      },
+      {
+        "name": "GT_Slice_174.mat",
+        "size": 69842
+      },
+      {
+        "name": "GT_Slice_173.mat",
+        "size": 69538
+      },
+      {
+        "name": "GT_Slice_172.mat",
+        "size": 70191
+      },
+      {
+        "name": "GT_Slice_171.mat",
+        "size": 68780
+      },
+      {
+        "name": "GT_Slice_170.mat",
+        "size": 67370
+      },
+      {
+        "name": "GT_Slice_169.mat",
+        "size": 67781
+      },
+      {
+        "name": "GT_Slice_168.mat",
+        "size": 67329
+      },
+      {
+        "name": "GT_Slice_167.mat",
+        "size": 67453
+      },
+      {
+        "name": "GT_Slice_166.mat",
+        "size": 67435
+      },
+      {
+        "name": "GT_Slice_165.mat",
+        "size": 65700
+      },
+      {
+        "name": "GT_Slice_164.mat",
+        "size": 66528
+      },
+      {
+        "name": "GT_Slice_163.mat",
+        "size": 64211
+      },
+      {
+        "name": "GT_Slice_162.mat",
+        "size": 63095
+      },
+      {
+        "name": "GT_Slice_161.mat",
+        "size": 63821
+      },
+      {
+        "name": "GT_Slice_160.mat",
+        "size": 64623
+      },
+      {
+        "name": "GT_Slice_159.mat",
+        "size": 63803
+      },
+      {
+        "name": "GT_Slice_158.mat",
+        "size": 62760
+      },
+      {
+        "name": "GT_Slice_157.mat",
+        "size": 65036
+      },
+      {
+        "name": "GT_Slice_156.mat",
+        "size": 64798
+      },
+      {
+        "name": "GT_Slice_155.mat",
+        "size": 64738
+      },
+      {
+        "name": "GT_Slice_154.mat",
+        "size": 63405
+      },
+      {
+        "name": "GT_Slice_153.mat",
+        "size": 62272
+      },
+      {
+        "name": "GT_Slice_152.mat",
+        "size": 62673
+      },
+      {
+        "name": "GT_Slice_151.mat",
+        "size": 62862
+      },
+      {
+        "name": "GT_Slice_150.mat",
+        "size": 63500
+      },
+      {
+        "name": "GT_Slice_149.mat",
+        "size": 63961
+      },
+      {
+        "name": "GT_Slice_148.mat",
+        "size": 65714
+      },
+      {
+        "name": "GT_Slice_147.mat",
+        "size": 64896
+      },
+      {
+        "name": "GT_Slice_146.mat",
+        "size": 62779
+      },
+      {
+        "name": "GT_Slice_145.mat",
+        "size": 63100
+      },
+      {
+        "name": "GT_Slice_144.mat",
+        "size": 63205
+      },
+      {
+        "name": "GT_Slice_143.mat",
+        "size": 68452
+      },
+      {
+        "name": "GT_Slice_142.mat",
+        "size": 65365
+      },
+      {
+        "name": "GT_Slice_141.mat",
+        "size": 67055
+      },
+      {
+        "name": "GT_Slice_140.mat",
+        "size": 69604
+      },
+      {
+        "name": "GT_Slice_139.mat",
+        "size": 67703
+      },
+      {
+        "name": "GT_Slice_138.mat",
+        "size": 66634
+      },
+      {
+        "name": "GT_Slice_137.mat",
+        "size": 66163
+      },
+      {
+        "name": "GT_Slice_136.mat",
+        "size": 65324
+      },
+      {
+        "name": "GT_Slice_135.mat",
+        "size": 66795
+      },
+      {
+        "name": "GT_Slice_134.mat",
+        "size": 65715
+      },
+      {
+        "name": "GT_Slice_133.mat",
+        "size": 66990
+      },
+      {
+        "name": "GT_Slice_132.mat",
+        "size": 67553
+      },
+      {
+        "name": "GT_Slice_131.mat",
+        "size": 66283
+      },
+      {
+        "name": "GT_Slice_130.mat",
+        "size": 66974
+      },
+      {
+        "name": "GT_Slice_129.mat",
+        "size": 65264
+      },
+      {
+        "name": "GT_Slice_128.mat",
+        "size": 62964
+      },
+      {
+        "name": "GT_Slice_127.mat",
+        "size": 62471
+      },
+      {
+        "name": "GT_Slice_126.mat",
+        "size": 62695
+      },
+      {
+        "name": "GT_Slice_125.mat",
+        "size": 63936
+      },
+      {
+        "name": "GT_Slice_124.mat",
+        "size": 64066
+      },
+      {
+        "name": "GT_Slice_123.mat",
+        "size": 64575
+      },
+      {
+        "name": "GT_Slice_122.mat",
+        "size": 64795
+      },
+      {
+        "name": "GT_Slice_121.mat",
+        "size": 63729
+      },
+      {
+        "name": "GT_Slice_120.mat",
+        "size": 62221
+      },
+      {
+        "name": "GT_Slice_119.mat",
+        "size": 61288
+      },
+      {
+        "name": "GT_Slice_118.mat",
+        "size": 60476
+      },
+      {
+        "name": "GT_Slice_117.mat",
+        "size": 60964
+      },
+      {
+        "name": "GT_Slice_116.mat",
+        "size": 61278
+      },
+      {
+        "name": "GT_Slice_115.mat",
+        "size": 61646
+      },
+      {
+        "name": "GT_Slice_114.mat",
+        "size": 62437
+      },
+      {
+        "name": "GT_Slice_113.mat",
+        "size": 62538
+      },
+      {
+        "name": "GT_Slice_112.mat",
+        "size": 62054
+      },
+      {
+        "name": "GT_Slice_111.mat",
+        "size": 62456
+      },
+      {
+        "name": "GT_Slice_110.mat",
+        "size": 62195
+      },
+      {
+        "name": "GT_Slice_109.mat",
+        "size": 61101
+      },
+      {
+        "name": "GT_Slice_108.mat",
+        "size": 61511
+      },
+      {
+        "name": "GT_Slice_107.mat",
+        "size": 62221
+      },
+      {
+        "name": "GT_Slice_106.mat",
+        "size": 63308
+      },
+      {
+        "name": "GT_Slice_105.mat",
+        "size": 64241
+      },
+      {
+        "name": "GT_Slice_104.mat",
+        "size": 62912
+      },
+      {
+        "name": "GT_Slice_102.mat",
+        "size": 62759
+      },
+      {
+        "name": "GT_Slice_101.mat",
+        "size": 64758
+      },
+      {
+        "name": "GT_Slice_100.mat",
+        "size": 64357
+      },
+      {
+        "name": "GT_Slice_099.mat",
+        "size": 63928
+      },
+      {
+        "name": "GT_Slice_098.mat",
+        "size": 64181
+      },
+      {
+        "name": "GT_Slice_097.mat",
+        "size": 63046
+      },
+      {
+        "name": "GT_Slice_096.mat",
+        "size": 63678
+      },
+      {
+        "name": "GT_Slice_095.mat",
+        "size": 63470
+      },
+      {
+        "name": "GT_Slice_094.mat",
+        "size": 64308
+      },
+      {
+        "name": "GT_Slice_093.mat",
+        "size": 64771
+      },
+      {
+        "name": "GT_Slice_092.mat",
+        "size": 65056
+      },
+      {
+        "name": "GT_Slice_091.mat",
+        "size": 65386
+      },
+      {
+        "name": "GT_Slice_090.mat",
+        "size": 66011
+      },
+      {
+        "name": "GT_Slice_089.mat",
+        "size": 63238
+      },
+      {
+        "name": "GT_Slice_088.mat",
+        "size": 63189
+      },
+      {
+        "name": "GT_Slice_087.mat",
+        "size": 65182
+      },
+      {
+        "name": "GT_Slice_086.mat",
+        "size": 66784
+      },
+      {
+        "name": "GT_Slice_085.mat",
+        "size": 68960
+      },
+      {
+        "name": "GT_Slice_084.mat",
+        "size": 67333
+      },
+      {
+        "name": "GT_Slice_083.mat",
+        "size": 68627
+      },
+      {
+        "name": "GT_Slice_082.mat",
+        "size": 67965
+      },
+      {
+        "name": "GT_Slice_081.mat",
+        "size": 67619
+      },
+      {
+        "name": "GT_Slice_080.mat",
+        "size": 69005
+      },
+      {
+        "name": "GT_Slice_079.mat",
+        "size": 67422
+      },
+      {
+        "name": "GT_Slice_078.mat",
+        "size": 67015
+      },
+      {
+        "name": "GT_Slice_077.mat",
+        "size": 66765
+      },
+      {
+        "name": "GT_Slice_076.mat",
+        "size": 69227
+      },
+      {
+        "name": "GT_Slice_075.mat",
+        "size": 69490
+      },
+      {
+        "name": "GT_Slice_074.mat",
+        "size": 67365
+      },
+      {
+        "name": "GT_Slice_073.mat",
+        "size": 69772
+      },
+      {
+        "name": "GT_Slice_072.mat",
+        "size": 66437
+      },
+      {
+        "name": "GT_Slice_071.mat",
+        "size": 68935
+      },
+      {
+        "name": "GT_Slice_070.mat",
+        "size": 69462
+      },
+      {
+        "name": "GT_Slice_069.mat",
+        "size": 69992
+      },
+      {
+        "name": "GT_Slice_068.mat",
+        "size": 70386
+      },
+      {
+        "name": "GT_Slice_067.mat",
+        "size": 71472
+      },
+      {
+        "name": "GT_Slice_066.mat",
+        "size": 71996
+      },
+      {
+        "name": "GT_Slice_065.mat",
+        "size": 71194
+      },
+      {
+        "name": "GT_Slice_064.mat",
+        "size": 73210
+      },
+      {
+        "name": "GT_Slice_063.mat",
+        "size": 72543
+      },
+      {
+        "name": "GT_Slice_062.mat",
+        "size": 75188
+      },
+      {
+        "name": "GT_Slice_061.mat",
+        "size": 75413
+      },
+      {
+        "name": "GT_Slice_060.mat",
+        "size": 76129
+      },
+      {
+        "name": "GT_Slice_059.mat",
+        "size": 75042
+      },
+      {
+        "name": "GT_Slice_058.mat",
+        "size": 76252
+      },
+      {
+        "name": "GT_Slice_057.mat",
+        "size": 75396
+      },
+      {
+        "name": "GT_Slice_056.mat",
+        "size": 74137
+      },
+      {
+        "name": "GT_Slice_055.mat",
+        "size": 75346
+      },
+      {
+        "name": "GT_Slice_054.mat",
+        "size": 75678
+      },
+      {
+        "name": "GT_Slice_053.mat",
+        "size": 76553
+      },
+      {
+        "name": "GT_Slice_052.mat",
+        "size": 76608
+      },
+      {
+        "name": "GT_Slice_051.mat",
+        "size": 76600
+      },
+      {
+        "name": "GT_Slice_050.mat",
+        "size": 74563
+      },
+      {
+        "name": "GT_Slice_049.mat",
+        "size": 74105
+      },
+      {
+        "name": "GT_Slice_048.mat",
+        "size": 75987
+      },
+      {
+        "name": "GT_Slice_047.mat",
+        "size": 76635
+      },
+      {
+        "name": "GT_Slice_046.mat",
+        "size": 74276
+      },
+      {
+        "name": "GT_Slice_045.mat",
+        "size": 73948
+      },
+      {
+        "name": "GT_Slice_044.mat",
+        "size": 72633
+      },
+      {
+        "name": "GT_Slice_043.mat",
+        "size": 71487
+      },
+      {
+        "name": "GT_Slice_042.mat",
+        "size": 71698
+      },
+      {
+        "name": "GT_Slice_041.mat",
+        "size": 71115
+      },
+      {
+        "name": "GT_Slice_040.mat",
+        "size": 70103
+      },
+      {
+        "name": "GT_Slice_039.mat",
+        "size": 70155
+      },
+      {
+        "name": "GT_Slice_038.mat",
+        "size": 68758
+      },
+      {
+        "name": "GT_Slice_037.mat",
+        "size": 68741
+      },
+      {
+        "name": "GT_Slice_036.mat",
+        "size": 67658
+      },
+      {
+        "name": "GT_Slice_035.mat",
+        "size": 65848
+      },
+      {
+        "name": "GT_Slice_034.mat",
+        "size": 65848
+      },
+      {
+        "name": "GT_Slice_033.mat",
+        "size": 64383
+      },
+      {
+        "name": "GT_Slice_032.mat",
+        "size": 64383
+      },
+      {
+        "name": "GT_Slice_031.mat",
+        "size": 65635
+      },
+      {
+        "name": "GT_Slice_030.mat",
+        "size": 65635
+      },
+      {
+        "name": "GT_Slice_029.mat",
+        "size": 64532
+      },
+      {
+        "name": "GT_Slice_028.mat",
+        "size": 64532
+      },
+      {
+        "name": "GT_Slice_027.mat",
+        "size": 64997
+      },
+      {
+        "name": "GT_Slice_026.mat",
+        "size": 64997
+      },
+      {
+        "name": "GT_Slice_025.mat",
+        "size": 65716
+      },
+      {
+        "name": "GT_Slice_024.mat",
+        "size": 65716
+      },
+      {
+        "name": "GT_Slice_023.mat",
+        "size": 68957
+      },
+      {
+        "name": "GT_Slice_022.mat",
+        "size": 68957
+      },
+      {
+        "name": "GT_Slice_021.mat",
+        "size": 69829
+      },
+      {
+        "name": "GT_Slice_020.mat",
+        "size": 69829
+      },
+      {
+        "name": "GT_Slice_019.mat",
+        "size": 70660
+      },
+      {
+        "name": "GT_Slice_018.mat",
+        "size": 70660
+      },
+      {
+        "name": "GT_Slice_017.mat",
+        "size": 70527
+      },
+      {
+        "name": "GT_Slice_016.mat",
+        "size": 70527
+      },
+      {
+        "name": "GT_Slice_015.mat",
+        "size": 72905
+      },
+      {
+        "name": "GT_Slice_014.mat",
+        "size": 72905
+      },
+      {
+        "name": "GT_Slice_013.mat",
+        "size": 73648
+      },
+      {
+        "name": "GT_Slice_012.mat",
+        "size": 73648
+      },
+      {
+        "name": "GT_Slice_011.mat",
+        "size": 73251
+      },
+      {
+        "name": "GT_Slice_010.mat",
+        "size": 73251
+      },
+      {
+        "name": "GT_Slice_009.mat",
+        "size": 72950
+      },
+      {
+        "name": "GT_Slice_008.mat",
+        "size": 72950
+      },
+      {
+        "name": "GT_Slice_007.mat",
+        "size": 70552
+      },
+      {
+        "name": "GT_Slice_006.mat",
+        "size": 70552
+      },
+      {
+        "name": "GT_Slice_005.mat",
+        "size": 71269
+      },
+      {
+        "name": "GT_Slice_004.mat",
+        "size": 71269
+      },
+      {
+        "name": "GT_Slice_003.mat",
+        "size": 71421
+      },
+      {
+        "name": "GT_Slice_002.mat",
+        "size": 72318
+      },
+      {
+        "name": "GT_Slice_001.mat",
+        "size": 74283
+      },
+      {
+        "name": "GT_multinuclei.gif",
+        "size": 2870017
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.3874949",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.3390/jimaging5090075",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1371/journal.pone.0230605",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.3390/jimaging7060093",
+      "type": "doi_reference"
+    },
+    {
+      "url": "http://dx.doi.org/10.6019/EMPIAR-10094",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.916263"
+}

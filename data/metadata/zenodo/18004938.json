@@ -1,0 +1,166 @@
+{
+  "created": "2025-12-21T03:11:27.987319+00:00",
+  "modified": "2025-12-21T15:45:21.917760+00:00",
+  "id": 18004938,
+  "conceptrecid": "18004937",
+  "doi": "10.5281/zenodo.18004938",
+  "conceptdoi": "10.5281/zenodo.18004937",
+  "doi_url": "https://doi.org/10.5281/zenodo.18004938",
+  "metadata": {
+    "title": "Grapevine leaf lobe detection model",
+    "doi": "10.5281/zenodo.18004938",
+    "publication_date": "2025-12-21",
+    "description": "<p>From the segmented RGB mask of a leaf, full vein prediction mask, primary vein prediction mask, midvein prediction mask, and the predicted coordinate of the petiolar junction, a pixel segmentation model that classifies the blade of the leaf as the midvein lobe, distal lobes, proximal lobes, or primary vasculature. (Note that transformations on the training data are recorded in the folder of the full vein prediction model.)</p>\n<p>The following is a summary showing the relationship of this model to others:</p>\n<p><strong>Segmentation of RGB leaf masks</strong></p>\n<ul>\n<li><code>LEAF_SEGMENTATION</code>: <a href=\"https://zenodo.org/records/16883916\">https://zenodo.org/records/16883916</a></li>\n<li><code>FINAL_MASKS</code>: <a href=\"https://zenodo.org/records/16883403\">https://zenodo.org/records/16883403</a></li>\n</ul>\n<p><strong>Segmentation of full vein mask</strong></p>\n<ul>\n<li><code>Vein segmentation of pre-segmented grapevine leaves using the radial Euler Characteristic Transform</code>: <a href=\"https://zenodo.org/records/17741713\">https://zenodo.org/records/17741713</a></li>\n</ul>\n<p><strong>Segmentation of primary veins</strong></p>\n<ul>\n<li><code>Primary vein segmentation in grapevine leaves</code>: <a href=\"https://zenodo.org/records/17881166\">https://zenodo.org/records/17881166</a></li>\n</ul>\n<p><strong>Segmentation of midvein</strong></p>\n<ul>\n<li><code>Midvein segmentation of grapevine leaves</code>: <a href=\"https://zenodo.org/records/18005383\">https://zenodo.org/records/18005383</a></li>\n</ul>\n<p><strong>Gaussian heatmap estimation of petiolar junction coordinate</strong></p>\n<ul>\n<li><code>Grapevine leaf petiolar junction detection</code>: <a href=\"https://zenodo.org/records/17922822\">https://zenodo.org/records/17922822</a></li>\n</ul>\n<p><strong>Segmentation of midvein, distal, and proximal lobes</strong></p>\n<ul>\n<li><code>Grapevine leaf lobe detection model</code>: <a href=\"https://zenodo.org/records/18004938\">https://zenodo.org/records/18004938</a></li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chitwood, Daniel",
+        "affiliation": "Michigan State University",
+        "orcid": "0000-0003-4875-1447"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "grapevine_leaves"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "18004937"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Grapevine leaf lobe detection model",
+  "links": {
+    "self": "https://zenodo.org/api/records/18004938",
+    "self_html": "https://zenodo.org/records/18004938",
+    "preview_html": "https://zenodo.org/records/18004938?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18004938",
+    "self_doi": "https://doi.org/10.5281/zenodo.18004938",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18004938",
+    "reserve_doi": "https://zenodo.org/api/records/18004938/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/18004937",
+    "parent_html": "https://zenodo.org/records/18004937",
+    "parent_doi": "https://doi.org/10.5281/zenodo.18004937",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18004937",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18004938/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18004938/sequence/default",
+    "files": "https://zenodo.org/api/records/18004938/files",
+    "media_files": "https://zenodo.org/api/records/18004938/media-files",
+    "archive": "https://zenodo.org/api/records/18004938/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18004938/media-files-archive",
+    "latest": "https://zenodo.org/api/records/18004938/versions/latest",
+    "latest_html": "https://zenodo.org/records/18004938/latest",
+    "versions": "https://zenodo.org/api/records/18004938/versions",
+    "draft": "https://zenodo.org/api/records/18004938/draft",
+    "access_links": "https://zenodo.org/api/records/18004938/access/links",
+    "access_grants": "https://zenodo.org/api/records/18004938/access/grants",
+    "access_users": "https://zenodo.org/api/records/18004938/access/users",
+    "access_request": "https://zenodo.org/api/records/18004938/access/request",
+    "access": "https://zenodo.org/api/records/18004938/access",
+    "communities": "https://zenodo.org/api/records/18004938/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18004938/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18004938/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18004938/file-modification",
+    "requests": "https://zenodo.org/api/records/18004938/requests"
+  },
+  "updated": "2025-12-21T15:45:21.917760+00:00",
+  "recid": "18004938",
+  "revision": 6,
+  "files": [
+    {
+      "id": "9e11c284-62d8-42f3-a29d-3722d096e661",
+      "key": "leaf_lobes.zip",
+      "size": 17223822751,
+      "checksum": "md5:75c5f06cd85c409c3130bbddecf274ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/18004938/files/leaf_lobes.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "121621"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 26,
+    "unique_downloads": 25,
+    "views": 62,
+    "unique_views": 52,
+    "version_downloads": 26,
+    "version_unique_downloads": 25,
+    "version_unique_views": 52,
+    "version_views": 62
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 17223822751,
+    "top_level_files": [
+      {
+        "name": "leaf_lobes.zip",
+        "size": 17223822751
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://zenodo.org/records/16883916",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/16883403",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17741713",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17881166",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/18005383",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17922822",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/18004938",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:48.964235"
+}

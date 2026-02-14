@@ -1,0 +1,195 @@
+{
+  "created": "2025-02-06T15:42:02.714707+00:00",
+  "modified": "2025-02-06T15:42:03.122706+00:00",
+  "id": 14826246,
+  "conceptrecid": "14826245",
+  "doi": "10.5281/zenodo.14826246",
+  "conceptdoi": "10.5281/zenodo.14826245",
+  "doi_url": "https://doi.org/10.5281/zenodo.14826246",
+  "metadata": {
+    "title": "bioimage.io upload: divine-melon",
+    "doi": "10.5281/zenodo.14826246",
+    "publication_date": "2025-02-06",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=divine-melon\">View on bioimage.io</a> # CartoCell </p>\n<p>Documentation at <a href=\"https://zenodo.org/records/10973241\">https://zenodo.org/records/10973241</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Daniel Franco-Barranco",
+        "affiliation": "MRC LMB",
+        "orcid": "0000-0002-1109-110X"
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "instance-segmentation",
+      "3D",
+      "cyst",
+      "biapy",
+      "fluorescence"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14826245"
+          }
+        }
+      ]
+    },
+    "notes": "CartoCell is a deep learning-based image processing pipeline for the high-content segmentation of whole epithelial cysts acquired at low resolution with minimal human intervention. This pipeline enables high-precision cell segmentation that allows a single cell cartography study of major interest for the search of cellular patterns.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: divine-melon",
+  "links": {
+    "self": "https://zenodo.org/api/records/14826246",
+    "self_html": "https://zenodo.org/records/14826246",
+    "preview_html": "https://zenodo.org/records/14826246?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14826246",
+    "self_doi": "https://doi.org/10.5281/zenodo.14826246",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14826246",
+    "reserve_doi": "https://zenodo.org/api/records/14826246/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14826245",
+    "parent_html": "https://zenodo.org/records/14826245",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14826245",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14826245",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14826246/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14826246/sequence/default",
+    "files": "https://zenodo.org/api/records/14826246/files",
+    "media_files": "https://zenodo.org/api/records/14826246/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14826246:cartocell.thumbnail.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14826246/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14826246/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14826246/versions/latest",
+    "latest_html": "https://zenodo.org/records/14826246/latest",
+    "versions": "https://zenodo.org/api/records/14826246/versions",
+    "draft": "https://zenodo.org/api/records/14826246/draft",
+    "access_links": "https://zenodo.org/api/records/14826246/access/links",
+    "access_grants": "https://zenodo.org/api/records/14826246/access/grants",
+    "access_users": "https://zenodo.org/api/records/14826246/access/users",
+    "access_request": "https://zenodo.org/api/records/14826246/access/request",
+    "access": "https://zenodo.org/api/records/14826246/access",
+    "communities": "https://zenodo.org/api/records/14826246/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14826246/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14826246/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14826246/file-modification",
+    "requests": "https://zenodo.org/api/records/14826246/requests"
+  },
+  "updated": "2025-02-06T15:42:03.122706+00:00",
+  "recid": "14826246",
+  "revision": 4,
+  "files": [
+    {
+      "id": "11882791-5c4f-4a24-8934-af59251dc272",
+      "key": "cartocell.thumbnail.png",
+      "size": 11911,
+      "checksum": "md5:389ca21e9109152a3ed9ecd886f22367",
+      "links": {
+        "self": "https://zenodo.org/api/records/14826246/files/cartocell.thumbnail.png/content"
+      }
+    },
+    {
+      "id": "53ca6cd1-39be-4025-a25e-d6c452542bb0",
+      "key": "rdf.yaml",
+      "size": 1341,
+      "checksum": "md5:ef2faf5e2e5d053c121a24a7646e835e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14826246/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "96e6b989-ddf1-4b0c-884d-750b8b8105b6",
+      "key": "CartoCell.md",
+      "size": 55,
+      "checksum": "md5:c90eb2273985918254983635df13e3b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14826246/files/CartoCell.md/content"
+      }
+    },
+    {
+      "id": "fb26d312-098f-4be7-89bb-b4955372430f",
+      "key": "cartocell.gif",
+      "size": 4449329,
+      "checksum": "md5:37c2dbf14c381242391e61fdcfc8bda8",
+      "links": {
+        "self": "https://zenodo.org/api/records/14826246/files/cartocell.gif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 48,
+    "unique_downloads": 48,
+    "views": 23,
+    "unique_views": 19,
+    "version_downloads": 48,
+    "version_unique_downloads": 48,
+    "version_unique_views": 19,
+    "version_views": 23
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 4461240,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "cartocell.thumbnail.png",
+        "size": 11911
+      },
+      {
+        "name": "rdf.yaml",
+        "size": 1341
+      },
+      {
+        "name": "CartoCell.md",
+        "size": 55
+      },
+      {
+        "name": "cartocell.gif",
+        "size": 4449329
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://zenodo.org/records/10973241",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:02.805471"
+}

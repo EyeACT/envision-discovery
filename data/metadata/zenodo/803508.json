@@ -1,0 +1,236 @@
+{
+  "created": "2017-06-10T05:58:55.460515+00:00",
+  "modified": "2024-08-03T10:23:09.445054+00:00",
+  "id": 803508,
+  "conceptrecid": "803507",
+  "doi": "10.5281/zenodo.803508",
+  "conceptdoi": "10.5281/zenodo.803507",
+  "doi_url": "https://doi.org/10.5281/zenodo.803508",
+  "metadata": {
+    "title": "A Dataset for Sanskrit Word Segmentation",
+    "doi": "10.5281/zenodo.803508",
+    "publication_date": "2017-06-07",
+    "description": "<p>The work was accepted in Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, colocated with ACL 2017</p>\n\n<p>The last decade saw a surge in digitisation efforts for ancient manuscripts in Sanskrit. Due to various linguistic peculiarities inherent to the language, even the preliminary tasks such as word segmentation are non-trivial in Sanskrit. Elegant models for Word Segmentation in Sanskrit are indispensable for further syntactic and semantic processing of the manuscripts. Current works in word segmentation for Sanskrit, though commendable in their novelty, often have variations in their objective and evaluation criteria. In this work, we set the record straight. We formally define the objectives and the requirements for the word segmentation task. In order to encourage research in the field and to alleviate the time and effort required in pre-processing, we release a dataset of 115,000 sentences for word segmentation. For each sentence in the dataset we include the input character sequence, ground truth segmentation, and additionally lexical and morphological information about all the phonetically possible segments for the given sentence. In this work, we also discuss the linguistic considerations made while generating the candidate space of the possible segments.\u00a0</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Krishna, Amrith",
+        "affiliation": "IIT Kharagpur"
+      },
+      {
+        "name": "Satuluri, Pavankumar",
+        "affiliation": "Chinmaya Vishwavidyapeeth, CEG Campus"
+      },
+      {
+        "name": "Goyal, Pawan",
+        "affiliation": "IIT Kharagpur"
+      }
+    ],
+    "keywords": [
+      "sanskrit, sanskrit computational linguistics, word segmentation, nlp, nlproc"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, ACL 2017",
+      "acronym": "LaTeCH-CLfL 2017, ACL",
+      "dates": "july 30 - August 4 2017",
+      "place": "Vancouver, Canada",
+      "url": "https://sighum.wordpress.com/events/latech-clfl-2017/"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "803507"
+          }
+        }
+      ]
+    },
+    "notes": "The work was accepted in Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, colocated with ACL 2017"
+  },
+  "title": "A Dataset for Sanskrit Word Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/803508",
+    "self_html": "https://zenodo.org/records/803508",
+    "preview_html": "https://zenodo.org/records/803508?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.803508",
+    "self_doi": "https://doi.org/10.5281/zenodo.803508",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.803508",
+    "reserve_doi": "https://zenodo.org/api/records/803508/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/803507",
+    "parent_html": "https://zenodo.org/records/803507",
+    "parent_doi": "https://doi.org/10.5281/zenodo.803507",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.803507",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:803508/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:803508/sequence/default",
+    "files": "https://zenodo.org/api/records/803508/files",
+    "media_files": "https://zenodo.org/api/records/803508/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:803508:paper.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/803508/files-archive",
+    "archive_media": "https://zenodo.org/api/records/803508/media-files-archive",
+    "latest": "https://zenodo.org/api/records/803508/versions/latest",
+    "latest_html": "https://zenodo.org/records/803508/latest",
+    "versions": "https://zenodo.org/api/records/803508/versions",
+    "draft": "https://zenodo.org/api/records/803508/draft",
+    "access_links": "https://zenodo.org/api/records/803508/access/links",
+    "access_grants": "https://zenodo.org/api/records/803508/access/grants",
+    "access_users": "https://zenodo.org/api/records/803508/access/users",
+    "access_request": "https://zenodo.org/api/records/803508/access/request",
+    "access": "https://zenodo.org/api/records/803508/access",
+    "communities": "https://zenodo.org/api/records/803508/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/803508/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/803508/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/803508/file-modification",
+    "requests": "https://zenodo.org/api/records/803508/requests"
+  },
+  "updated": "2024-08-03T10:23:09.445054+00:00",
+  "recid": "803508",
+  "revision": 10,
+  "files": [
+    {
+      "id": "c9ddf5eb-5230-439d-a7ea-7b9a3b102ae0",
+      "key": "DCS_pick.zip",
+      "size": 199818951,
+      "checksum": "md5:556395ddc0f087fbf0a199a0581775d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/DCS_pick.zip/content"
+      }
+    },
+    {
+      "id": "2a75bb1c-25de-46b5-9baa-55f3ab48ea1b",
+      "key": "DCS_999.p",
+      "size": 397,
+      "checksum": "md5:b2a95744ed82b35e9be55e6a06444a59",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/DCS_999.p/content"
+      }
+    },
+    {
+      "id": "77266373-6eca-43b8-a089-bdac0d2244bd",
+      "key": "graphFiles",
+      "size": 1766728,
+      "checksum": "md5:230d651dc203eeaedd5973ee519fcc29",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/graphFiles/content"
+      }
+    },
+    {
+      "id": "a75e71ce-c850-4eff-bcd7-f307563a92e9",
+      "key": "paper.pdf",
+      "size": 318926,
+      "checksum": "md5:422c8ee62d17c2daea9d080e93c27c81",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/paper.pdf/content"
+      }
+    },
+    {
+      "id": "9e8126ab-f843-44f9-b091-d746c5517ed5",
+      "key": "pickleReader.py",
+      "size": 737,
+      "checksum": "md5:0f8fd7b758a1d179c2aaadbdf1233eba",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/pickleReader.py/content"
+      }
+    },
+    {
+      "id": "4415ec31-84ad-4b6f-b23b-93da26c711dc",
+      "key": "sample_999.graphml",
+      "size": 32602,
+      "checksum": "md5:0a5130686d65b820f80a520dfbf55ae0",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/sample_999.graphml/content"
+      }
+    },
+    {
+      "id": "d5344955-33cb-4059-bc11-0ff251f47aa4",
+      "key": "skt.zip",
+      "size": 650777615,
+      "checksum": "md5:28dd25046e118747ade96525e96d617d",
+      "links": {
+        "self": "https://zenodo.org/api/records/803508/files/skt.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "31962"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2678,
+    "unique_downloads": 1948,
+    "views": 3725,
+    "unique_views": 3438,
+    "version_downloads": 2668,
+    "version_unique_downloads": 1940,
+    "version_unique_views": 3420,
+    "version_views": 3707
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 850596566,
+    "top_level_files": [
+      {
+        "name": "DCS_pick.zip",
+        "size": 199818951
+      },
+      {
+        "name": "DCS_999.p",
+        "size": 397
+      },
+      {
+        "name": "graphFiles",
+        "size": 1766728
+      },
+      {
+        "name": "paper.pdf",
+        "size": 318926
+      },
+      {
+        "name": "pickleReader.py",
+        "size": 737
+      },
+      {
+        "name": "sample_999.graphml",
+        "size": 32602
+      },
+      {
+        "name": "skt.zip",
+        "size": 650777615
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.750068"
+}

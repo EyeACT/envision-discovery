@@ -1,0 +1,175 @@
+{
+  "created": "2019-11-10T22:04:52.762715+00:00",
+  "modified": "2020-01-24T19:24:01.034142+00:00",
+  "id": 3382874,
+  "conceptrecid": "3382873",
+  "doi": "10.5281/zenodo.3382874",
+  "conceptdoi": "10.5281/zenodo.3382873",
+  "doi_url": "https://doi.org/10.5281/zenodo.3382874",
+  "metadata": {
+    "title": "Scanning precession electron diffraction data of partly overlapping magnesium oxide nanoparticles",
+    "doi": "10.5281/zenodo.3382874",
+    "publication_date": "2019-11-09",
+    "description": "<p>Scanning precession electron diffraction (SPED) data of cubical magnesium oxide (MgO) nanoparticles are provided. The MgO particles in the data are partly overlapping and some share the same orientation. The dataset was used for demonstration of nanocrystal segmentation in SPED data, which is presented in the article entitled &quot;Nanocrystal segmentation in scanning precession electron diffraction data&quot; [1]. In this publication, two methods for nanocrystal segmentation are presented based on; i) virtual dark-field imaging and ii) non-negative matrix factorisation, both incorporating watershed image segmentation. The workflows and code used for the segmentation demonstrated in the article are available open-source [2].</p>\n\n<p>Here, two files are provided based on one raw SPED dataset:</p>\n\n<p>- &quot;SPED_MgO_1.hdf5&quot;: raw data cropped in navigation space to dimensions (219, 228|144, 144) and exported to hdf5, and</p>\n\n<p>- &quot;SPED_MgO.hdf5&quot;: the same data binned by 2 in navigation space to yield dimensions (109, 114|144, 144).</p>\n\n<p>Adrian Lervik is acknowledged for specimen preparation.</p>\n\n<p>[1] Bergh, T., Johnstone, D., Crout, P., H&oslash;g&aring;s, S., Midgley, P., Holmestad, R., Vullum, P. And Van Helvoort, A. (2019), Nanocrystal segmentation in scanning precession electron diffraction data. Journal of Microscopy. doi:<a href=\"https://doi.org/10.1111/jmi.12850\">10.1111/Jmi.12850</a></p>\n\n<p>[2] Duncan N. Johnstone, Phillip Crout, Simon H&oslash;g&aring;s, Tina Bergh, Joonatan Laulainen, &amp; Stef Smeets. (2019). pyxem/pyxem-demos: pyxem-demos v0.10.0. Zenodo. http://doi.org/10.5281/zenodo.3533670</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tina Bergh",
+        "affiliation": "Department of Physics, Norwegian University of Science and Technology (NTNU), Trondheim, Norway",
+        "orcid": "0000-0003-3757-3876"
+      }
+    ],
+    "keywords": [
+      "scanning precession electron diffraction",
+      "magnesium oxide nanoparticles",
+      "transmission electron microscopy",
+      "nanocrystal segmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.3533670",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1111/Jmi.12850",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Johnstone, D.N. et al. (2019) pyxem/pyxem-demos v0.10.0. DOI: 10.5281/zenodo.3533670",
+      "Johnstone, D.N. et al. (2019) pyxem/pyxem v0.10.0. DOI: 10.5281/zenodo.3533653",
+      "de la Pe\u00f1a, F. et al. (2019) hyperspy/hyperspy v1.5.2. DOI: 10.5281/zenodo.3396791"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3382873"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Scanning precession electron diffraction data of partly overlapping magnesium oxide nanoparticles",
+  "links": {
+    "self": "https://zenodo.org/api/records/3382874",
+    "self_html": "https://zenodo.org/records/3382874",
+    "preview_html": "https://zenodo.org/records/3382874?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3382874",
+    "self_doi": "https://doi.org/10.5281/zenodo.3382874",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3382874",
+    "reserve_doi": "https://zenodo.org/api/records/3382874/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3382873",
+    "parent_html": "https://zenodo.org/records/3382873",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3382873",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3382873",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3382874/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3382874/sequence/default",
+    "files": "https://zenodo.org/api/records/3382874/files",
+    "media_files": "https://zenodo.org/api/records/3382874/media-files",
+    "archive": "https://zenodo.org/api/records/3382874/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3382874/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3382874/versions/latest",
+    "latest_html": "https://zenodo.org/records/3382874/latest",
+    "versions": "https://zenodo.org/api/records/3382874/versions",
+    "draft": "https://zenodo.org/api/records/3382874/draft",
+    "access_links": "https://zenodo.org/api/records/3382874/access/links",
+    "access_grants": "https://zenodo.org/api/records/3382874/access/grants",
+    "access_users": "https://zenodo.org/api/records/3382874/access/users",
+    "access_request": "https://zenodo.org/api/records/3382874/access/request",
+    "access": "https://zenodo.org/api/records/3382874/access",
+    "communities": "https://zenodo.org/api/records/3382874/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3382874/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3382874/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3382874/file-modification",
+    "requests": "https://zenodo.org/api/records/3382874/requests"
+  },
+  "updated": "2020-01-24T19:24:01.034142+00:00",
+  "recid": "3382874",
+  "revision": 5,
+  "files": [
+    {
+      "id": "44d3f9dd-35e2-4ffb-b1e4-76dab7784e62",
+      "key": "SPED_MgO.hdf5",
+      "size": 277959915,
+      "checksum": "md5:0f70103c9fbd0b1f9e69ded89462c508",
+      "links": {
+        "self": "https://zenodo.org/api/records/3382874/files/SPED_MgO.hdf5/content"
+      }
+    },
+    {
+      "id": "a8a72549-2800-4d29-bac7-ffd08ae832e6",
+      "key": "SPED_MgO_1.hdf5",
+      "size": 593807764,
+      "checksum": "md5:c86b483440e04a28847ab82cb83669e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/3382874/files/SPED_MgO_1.hdf5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "75982"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 128,
+    "unique_downloads": 110,
+    "views": 726,
+    "unique_views": 695,
+    "version_downloads": 128,
+    "version_unique_downloads": 110,
+    "version_unique_views": 695,
+    "version_views": 726
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 871767679,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "SPED_MgO.hdf5",
+        "size": 277959915
+      },
+      {
+        "name": "SPED_MgO_1.hdf5",
+        "size": 593807764
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://doi.org/10.5281/zenodo.3533670",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.073490"
+}

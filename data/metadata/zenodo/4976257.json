@@ -1,0 +1,166 @@
+{
+  "created": "2021-06-17T19:19:18.366033+00:00",
+  "modified": "2022-06-04T18:35:40.635451+00:00",
+  "id": 4976257,
+  "conceptrecid": "4976256",
+  "doi": "10.5061/dryad.4xgxd2593",
+  "doi_url": "https://doi.org/10.5061/dryad.4xgxd2593",
+  "metadata": {
+    "title": "The cell adhesion molecule Sdk1 shapes assembly of a retinal circuit that detects localized edges",
+    "doi": "10.5061/dryad.4xgxd2593",
+    "publication_date": "2021-09-21",
+    "description": "<p>Nearly 50 different mouse retinal ganglion cell (RGC) types sample the visual scene for distinct features. RGC feature selectivity arises from its synapses with a specific subset of amacrine (AC) and bipolar cell (BC) types, but how RGC dendrites arborize and collect input from these specific subsets remains poorly understood. Here we examine the hypothesis that RGCs employ molecular recognition systems to meet this challenge. By combining calcium imaging and type-specific histological stains we define a family of circuits that express the recognition molecule Sidekick 1 (Sdk1) which include a novel RGC type (S1-RGC) that responds to local edges. Genetic and physiological studies revealed that Sdk1 loss selectively disrupts S1-RGC visual responses which result from a loss of excitatory and inhibitory inputs and selective dendritic deficits on this neuron. We conclude that Sdk1 shapes dendrite growth and wiring to help S1-RGCs become feature selective.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Rochon, Pierre-Luc",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Theriault, Catherine",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Rangel Olguin, Aline Giselle",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Krishnaswamy, Arjun",
+        "affiliation": "McGill University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.7554/eLife.70870",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4976256"
+          }
+        }
+      ]
+    },
+    "notes": "<p><u><strong>1) Sample registration data.</strong></u> Stitch2p is a function that registeres 2p and 1p images of retina.</p>\n\n<p>INPUT:</p>\n\n<ul>\n\t<li>PATH: is the string path where the recordings are saved.</li>\n\t<li>RANGE is a 1x2 matrix that defines the range of movies to include in the analysis this works because each recording is assigned a number matching their order(movie_n). eg: calling [0 3] will analyze movie_0 to movie_3 in the specified path.</li>\n\t<li>CENTER is a path containing the blood vessel pattern acquired during the recording session.</li>\n</ul>\n\n<p>OUTPUT:</p>\n\n<ul>\n\t<li>ROIS =\u00a0 struct with all the 2p recording movies and bloodvessels used in the stiching</li>\n\t<li>STITCHED: Array with raw stitched image</li>\n\t<li>TESTIMAGE: converted 8bit image with color multiplier for visualization</li>\n\t<li>to use with provided sample images open matlab and set the path and center variables.</li>\n</ul>\n\n<p>For example:</p>\n\n<ol>\n\t<li>path = \"C:\\Downloads\\Remapping process files\\sample 2p recordings\"</li>\n\t<li>center = \"C:\\Downloads\\Remapping process files\\sample 2p recordings\\movie_10\"</li>\n\t<li>Stich2p(path,[0 3],center);</li>\n</ol>\n\n<p>Should display a stitched image and save it, along with a matfile, to the path defined in 'center'</p>\n\n<p>Example images: any folder in the \"sample 2p recordings\" folder will contain example files of remapped images along with original recording<br>\ndata. Remapped images are based on the image in the \"confocal ROIs\" folder.</p>\n\n<p>File naming definitions:</p>\n\n<ul>\n\t<li>\n<u>RoiSet: </u>mask containing the cells of interest.</li>\n\t<li>\n<u>bloodvessels:</u> mask containing the bloodvessels for marker intensity calculations</li>\n\t<li>\n<u>stim_x:</u> individual presented stimuli along with relevant information</li>\n\t<li>\n<u>expression_23_06_20_mx:</u> CSV file containing assigned markers</li>\n\t<li>\n<u>remap:</u> the remapped image from which the markers where assigned</li>\n\t<li>\n<u>remap_points:</u> land mark points used to make the Remapped image landmark points are listed as the confocal and 2p image.</li>\n</ul>\n\n<p><u><strong>2) Visual response data:</strong></u></p>\n\n<p>Matfile (*.mat) containing a single struct called 'compiled'.</p>\n\n<p>Struct field definitions:</p>\n\n<ul>\n\t<li>mb: struct containing\n\t<ul>\n\t\t<li>rawTrace: Response averaged from 2 presentations of a bar moving in 8 different directions. Bar velocity = 1000um/sec. 8-bar sequence was preceded by a brief (.5s) flash.</li>\n\t\t<li>stimTrace: vector showing stimulus timing</li>\n\t\t<li>allignedTrace: Time x bar array with RGC responses corrected for position</li>\n\t\t<li>mbAngleOrder: bar direction vcctor</li>\n\t\t<li>rawTime: time vector for rawTrace</li>\n\t\t<li>allignedTime: time vector for allignedTrace</li>\n\t</ul>\n\t</li>\n\t<li>ff: struct containing\n\t<ul>\n\t\t<li>rawTrace: response averaged from 3 presentations of a full field flash.</li>\n\t\t<li>rawtime: time vector for rawTrace</li>\n\t\t<li>stimTrace: vector showing stimulus timing</li>\n\t</ul>\n\t</li>\n\t<li>mbs: struct ordered the same way as mb. Contains data averaged from 2 presentations of a bar moving in 8 different directions. Bar velocity = 200um/sec. 8-bar sequence was preceded by a brief (.5s) flash.</li>\n\t<li>ROI: struct containing:</li>\n\t<li>mask - binary mask that defines RGC.</li>\n\t<li>xy: Roi centroid position.</li>\n\t<li>ost, Brn3c, nr2, calb, gfp: 8bit intensity of the indicated marker within RGC ROI defined by mask.</li>\n\t<li>size: Roi area.</li>\n\t<li>mrk: Marker classification.</li>\n\t<li>theta: angular preference computed from moving bar stimulus and set relative to retinal orientation.</li>\n\t<li>dsi: direction selective index computed from moving bar stimulus.</li>\n\t<li>osi: orientation selective index computed from moving bar stimulus.</li>\n</ul>\n\n<p>\u00a0</p>\n<p>Funding provided by: Canadian Institutes of Health Research<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000024<br>Award Number: </p><p>Funding provided by: Natural Sciences and Engineering Research Council of Canada<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000038<br>Award Number: </p><p>Funding provided by: Alfred P. Sloan Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000879<br>Award Number: </p><p>Funding provided by: Scottish Rite Charitable Foundation of Canada<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000096<br>Award Number: </p><p>Funding provided by: Canada Research Chairs<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100001804<br>Award Number: </p><p>Funding provided by: Canadian Foundation for Innovation (JELF)<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000196<br>Award Number: </p>"
+  },
+  "title": "The cell adhesion molecule Sdk1 shapes assembly of a retinal circuit that detects localized edges",
+  "links": {
+    "self": "https://zenodo.org/api/records/4976257",
+    "self_html": "https://zenodo.org/records/4976257",
+    "preview_html": "https://zenodo.org/records/4976257?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.4xgxd2593",
+    "self_doi": "https://doi.org/10.5061/dryad.4xgxd2593",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.4xgxd2593",
+    "reserve_doi": "https://zenodo.org/api/records/4976257/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4976256",
+    "parent_html": "https://zenodo.org/records/4976256",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4976257/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4976257/sequence/default",
+    "files": "https://zenodo.org/api/records/4976257/files",
+    "media_files": "https://zenodo.org/api/records/4976257/media-files",
+    "archive": "https://zenodo.org/api/records/4976257/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4976257/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4976257/versions/latest",
+    "latest_html": "https://zenodo.org/records/4976257/latest",
+    "versions": "https://zenodo.org/api/records/4976257/versions",
+    "draft": "https://zenodo.org/api/records/4976257/draft",
+    "access_links": "https://zenodo.org/api/records/4976257/access/links",
+    "access_grants": "https://zenodo.org/api/records/4976257/access/grants",
+    "access_users": "https://zenodo.org/api/records/4976257/access/users",
+    "access_request": "https://zenodo.org/api/records/4976257/access/request",
+    "access": "https://zenodo.org/api/records/4976257/access",
+    "communities": "https://zenodo.org/api/records/4976257/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4976257/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4976257/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4976257/file-modification",
+    "requests": "https://zenodo.org/api/records/4976257/requests"
+  },
+  "updated": "2022-06-04T18:35:40.635451+00:00",
+  "recid": "4976257",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b03f36ea-225e-48ef-910c-88912f0db656",
+      "key": "Remapping_process_files.zip",
+      "size": 3448960886,
+      "checksum": "md5:887b6eec04e910b68b23cbad59d485ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/4976257/files/Remapping_process_files.zip/content"
+      }
+    },
+    {
+      "id": "c2faf120-6267-4376-ad5d-0ab41294560b",
+      "key": "Sdk1RGCData.mat",
+      "size": 4082095,
+      "checksum": "md5:4c33d24bb98c5eefb679517b28224ed9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4976257/files/Sdk1RGCData.mat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 47,
+    "unique_downloads": 46,
+    "views": 213,
+    "unique_views": 213,
+    "version_downloads": 47,
+    "version_unique_downloads": 46,
+    "version_unique_views": 212,
+    "version_views": 212
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 4082095,
+    "total_archive_size": 3448960886,
+    "top_level_files": [
+      {
+        "name": "Remapping_process_files.zip",
+        "size": 3448960886
+      },
+      {
+        "name": "Sdk1RGCData.mat",
+        "size": 4082095
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:44.589295"
+}

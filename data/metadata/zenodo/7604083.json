@@ -1,0 +1,268 @@
+{
+  "created": "2023-02-25T23:43:45.054270+00:00",
+  "modified": "2024-07-12T17:03:23.222939+00:00",
+  "id": 7604083,
+  "conceptrecid": "7604082",
+  "doi": "10.5281/zenodo.7604083",
+  "conceptdoi": "10.5281/zenodo.7604082",
+  "doi_url": "https://doi.org/10.5281/zenodo.7604083",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo Res-UNet models for Aerial/NOAA ERI/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+    "doi": "10.5281/zenodo.7604083",
+    "publication_date": "2023-02-03",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo Res-UNet models for Aerial/NOAA ERI/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images</strong></em></p>\n\n<p>Residual-UNet models are trained on 1,179 pairs of human-generated segmentation labels and images from Emergency Response Imagery (ERI) collected by US National Oceanic and Atmospheric Administration (NOAA) after Hurricane Barry, Delta, Dorian, Florence, Ida, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon.</p>\n\n<p>The dataset is available here**: https://doi.org/10.5281/zenodo.7268082</p>\n\n<p>Models have been created using Segmentation Gym*:</p>\n\n<p>Code - https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>Paper - https://doi.org/10.1029/2022EA002332</p>\n\n<p><br>\nThe model takes input images that are 512 x 512 x 3 pixels, and the output is 512 x 512 x 2, corresponding to 2 classes:</p>\n\n<p>1. water&nbsp;<br>\n2. other<br>\n&nbsp;</p>\n\n<p>Included here are 6 files with the same root name:</p>\n\n<p>&nbsp;&#39;.json&#39; config file: this is the file that was used by Segmentation Gym to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction.<br>\n&#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym function `seg_images_in_folder.py`.<br>\n&nbsp;&#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`<br>\n&nbsp;&#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`<br>\n&#39;.zip&#39; of the model in the Tensorflow &lsquo;saved model&rsquo; format. It is created by the Segmentation Gym function `utils/gen_saved_model.py`<br>\n&#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>References</p>\n\n<p><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p><br>\n** Goldstein, Evan B., Buscombe, Daniel, Budavi, Priyanka, Favela, Jaycee, Fitzpatrick, Sharon, Gabbula, Sai Ram Ajay Krishna, Ku, Venus, Lazarus, Eli D., McCune, Ryan, Shah, Manish, Sigdel, Rajesh, &amp; Tagner, Steven. (2022). Segmentation Labels for Emergency Response Imagery from Hurricane Barry, Delta, Dorian, Florence, Isaias, Laura, Michael, Sally, Zeta, and Tropical Storm Gordon (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7268083</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "semantic segmentation",
+      "aerial / high-res.",
+      "watermasking"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7604082"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo Res-UNet models for Aerial/NOAA ERI/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7604083",
+    "self_html": "https://zenodo.org/records/7604083",
+    "preview_html": "https://zenodo.org/records/7604083?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7604083",
+    "self_doi": "https://doi.org/10.5281/zenodo.7604083",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7604083",
+    "reserve_doi": "https://zenodo.org/api/records/7604083/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7604082",
+    "parent_html": "https://zenodo.org/records/7604082",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7604082",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7604082",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7604083/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7604083/sequence/default",
+    "files": "https://zenodo.org/api/records/7604083/files",
+    "media_files": "https://zenodo.org/api/records/7604083/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7604083:watermask_noaa_1024_768_v1_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7604083/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7604083/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7604083/versions/latest",
+    "latest_html": "https://zenodo.org/records/7604083/latest",
+    "versions": "https://zenodo.org/api/records/7604083/versions",
+    "draft": "https://zenodo.org/api/records/7604083/draft",
+    "access_links": "https://zenodo.org/api/records/7604083/access/links",
+    "access_grants": "https://zenodo.org/api/records/7604083/access/grants",
+    "access_users": "https://zenodo.org/api/records/7604083/access/users",
+    "access_request": "https://zenodo.org/api/records/7604083/access/request",
+    "access": "https://zenodo.org/api/records/7604083/access",
+    "communities": "https://zenodo.org/api/records/7604083/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7604083/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7604083/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7604083/file-modification",
+    "requests": "https://zenodo.org/api/records/7604083/requests"
+  },
+  "updated": "2024-07-12T17:03:23.222939+00:00",
+  "recid": "7604083",
+  "revision": 5,
+  "files": [
+    {
+      "id": "3bcad357-6c9e-46a4-8a22-271907210bf8",
+      "key": "readme.txt",
+      "size": 3341,
+      "checksum": "md5:7c0451a445979bc17905fdb39c357718",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "c71e06ea-ee4e-465b-9a10-c7b61947b3bf",
+      "key": "watermask_noaa_1024_768_v1_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:a8181698b0324ba6c12566141cc2a683",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/watermask_noaa_1024_768_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "28e73987-7b8e-49a9-a5e5-1ff57c9926f0",
+      "key": "watermask_noaa_1024_768_v1.json",
+      "size": 1021,
+      "checksum": "md5:764cfab452aa4d0ed1c2fdf4e92e327d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/watermask_noaa_1024_768_v1.json/content"
+      }
+    },
+    {
+      "id": "46524c78-4a45-42ac-a268-01bd429bbb6f",
+      "key": "watermask_noaa_1024_768_v1_modelcard.json",
+      "size": 2324,
+      "checksum": "md5:70ca9db8d79e962b4013472f19ab40c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/watermask_noaa_1024_768_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "95150ca5-c446-4adb-97d0-8ae9840f0e05",
+      "key": "watermask_noaa_1024_768_v1_model_history.npz",
+      "size": 3399,
+      "checksum": "md5:4c685ca80169b657634d41278183b311",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/watermask_noaa_1024_768_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "1678570a-a238-4a9f-ae3e-cad267837abb",
+      "key": "BEST_MODEL.txt",
+      "size": 39,
+      "checksum": "md5:5d107fddd1bf8779a83ddc38c356ad83",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "321fe010-9246-446b-9edb-7df9602b931c",
+      "key": "classes.txt",
+      "size": 11,
+      "checksum": "md5:3a20f9973b2f24c92069fbe6c6d38afa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "36119e82-fe3d-4619-9c9d-a3616bf94952",
+      "key": "watermask_noaa_1024_768_v1_trainhist_24.png",
+      "size": 220401,
+      "checksum": "md5:aec502581d53ffc8df5337e3b5eb943a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604083/files/watermask_noaa_1024_768_v1_trainhist_24.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 300,
+    "unique_downloads": 299,
+    "views": 185,
+    "unique_views": 184,
+    "version_downloads": 300,
+    "version_unique_downloads": 299,
+    "version_unique_views": 183,
+    "version_views": 184
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 69646496,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "readme.txt",
+        "size": 3341
+      },
+      {
+        "name": "watermask_noaa_1024_768_v1_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "watermask_noaa_1024_768_v1.json",
+        "size": 1021
+      },
+      {
+        "name": "watermask_noaa_1024_768_v1_modelcard.json",
+        "size": 2324
+      },
+      {
+        "name": "watermask_noaa_1024_768_v1_model_history.npz",
+        "size": 3399
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 39
+      },
+      {
+        "name": "classes.txt",
+        "size": 11
+      },
+      {
+        "name": "watermask_noaa_1024_768_v1_trainhist_24.png",
+        "size": 220401
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.7268082",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7268083",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:49.094262"
+}

@@ -1,0 +1,763 @@
+{
+  "created": "2021-06-19T12:49:22.272531+00:00",
+  "modified": "2022-06-01T08:59:51.522714+00:00",
+  "id": 4992944,
+  "conceptrecid": "4992943",
+  "doi": "10.5061/dryad.b41j15h",
+  "doi_url": "https://doi.org/10.5061/dryad.b41j15h",
+  "metadata": {
+    "title": "Data from: Human retinal pigment epithelium: in vivo cell morphometry, multispectral autofluorescence, and relationship to cone mosaic",
+    "doi": "10.5061/dryad.b41j15h",
+    "publication_date": "2019-03-25",
+    "description": "Purpose: To characterize in vivo morphometry and multispectral autofluorescence of the retinal pigment epithelial (RPE) cell mosaic and its relationship to cone cell topography across the macula.\n\nMethods: RPE cell morphometrics were computed in regularly spaced regions of interest (ROIs) from contiguous short-wavelength autofluorescence (SWAF) and photoreceptor reflectance images collected across the macula in one eye of 10 normal participants (23\u201365 years) by using adaptive optics scanning light ophthalmoscopy (AOSLO). Infrared autofluorescence (IRAF) images of the RPE were collected with AOSLO in seven normal participants (22\u201365 years), with participant overlap, and compared to SWAF quantitatively and qualitatively.\n\nResults: RPE cell statistics could be analyzed in 84% of SWAF ROIs. RPE cell density consistently decreased with eccentricity from the fovea (participant mean \u00b1 SD: 6026 \u00b1 1590 cells/mm2 at fovea; 4552 \u00b1 1370 cells/mm2 and 3757 \u00b1 1290 cells/mm2 at 3.5 mm temporally and nasally, respectively). Mean cone-to-RPE cell ratio decreased rapidly from 16.6 at the foveal center to &lt;5 by 1 mm. IRAF revealed cells in six of seven participants, in agreement with SWAF RPE cell size and location. Differences in cell fluorescent structure, contrast, and visibility beneath vasculature were observed between modalities.\n\nConclusions: Improvements in AOSLO autofluorescence imaging permit efficient visualization of RPE cells with safe light exposures, allowing individual characterization of RPE cell morphometry that is variable between participants. The normative dataset and analysis of RPE cell IRAF and SWAF herein are essential for understanding microscopic characteristics of cell fluorescence and may assist in interpreting disease progression in RPE cells.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Granger, Charles E.",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Yang, Qiang",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Song, Hongxin",
+        "affiliation": "Capital Medical University"
+      },
+      {
+        "name": "Saito, Kenichi",
+        "affiliation": "Canon U.S.A., Inc., Melville, New York, United States*"
+      },
+      {
+        "name": "Nozato, Koji",
+        "affiliation": "Canon U.S.A., Inc., Melville, New York, United States*"
+      },
+      {
+        "name": "Latchney, Lisa R.",
+        "affiliation": "University of Rochester Medical Center"
+      },
+      {
+        "name": "Leonard, Bianca T.",
+        "affiliation": "University of Pittsburgh"
+      },
+      {
+        "name": "Chung, Mina M.",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Williams, David R.",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Rossi, Ethan A.",
+        "affiliation": "University of Pittsburgh"
+      }
+    ],
+    "keywords": [
+      "photoreceptors",
+      "Adaptive optics",
+      "autofluorescence",
+      "retinal pigment epithelium",
+      "retinal imaging"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1167/iovs.18-24677",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4992943"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">NOR011<div class=\"o-metadata__file-description\">This folder contains data for participant NOR011, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR025<div class=\"o-metadata__file-description\">This folder contains data for participant NOR011, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR047<div class=\"o-metadata__file-description\">This folder contains data for participant NOR047, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR053<div class=\"o-metadata__file-description\">This folder contains data for participant NOR053, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR057<div class=\"o-metadata__file-description\">This folder contains data for participant NOR057, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR062<div class=\"o-metadata__file-description\">This folder contains data for participant NOR062, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR063<div class=\"o-metadata__file-description\">This folder contains data for participant NOR063, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR064<div class=\"o-metadata__file-description\">This folder contains data for participant NOR064, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR065<div class=\"o-metadata__file-description\">This folder contains data for participant NOR065, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NOR073<div class=\"o-metadata__file-description\">This folder contains data for participant NOR073, including the full-size montage (.tiff) of the retinal pigment epithelium (RPE) cell mosaic, and individual regions of interest (ROIs) used for analysis in the study. High resolution retinal images were acquired in the living human eye using an adaptive optics scanning light ophthalmoscope.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Human retinal pigment epithelium: in vivo cell morphometry, multispectral autofluorescence, and relationship to cone mosaic",
+  "links": {
+    "self": "https://zenodo.org/api/records/4992944",
+    "self_html": "https://zenodo.org/records/4992944",
+    "preview_html": "https://zenodo.org/records/4992944?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.b41j15h",
+    "self_doi": "https://doi.org/10.5061/dryad.b41j15h",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.b41j15h",
+    "reserve_doi": "https://zenodo.org/api/records/4992944/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4992943",
+    "parent_html": "https://zenodo.org/records/4992943",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4992944/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4992944/sequence/default",
+    "files": "https://zenodo.org/api/records/4992944/files",
+    "media_files": "https://zenodo.org/api/records/4992944/media-files",
+    "archive": "https://zenodo.org/api/records/4992944/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4992944/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4992944/versions/latest",
+    "latest_html": "https://zenodo.org/records/4992944/latest",
+    "versions": "https://zenodo.org/api/records/4992944/versions",
+    "draft": "https://zenodo.org/api/records/4992944/draft",
+    "access_links": "https://zenodo.org/api/records/4992944/access/links",
+    "access_grants": "https://zenodo.org/api/records/4992944/access/grants",
+    "access_users": "https://zenodo.org/api/records/4992944/access/users",
+    "access_request": "https://zenodo.org/api/records/4992944/access/request",
+    "access": "https://zenodo.org/api/records/4992944/access",
+    "communities": "https://zenodo.org/api/records/4992944/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4992944/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4992944/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4992944/file-modification",
+    "requests": "https://zenodo.org/api/records/4992944/requests"
+  },
+  "updated": "2022-06-01T08:59:51.522714+00:00",
+  "recid": "4992944",
+  "revision": 3,
+  "files": [
+    {
+      "id": "f605dd45-3388-47cb-8adc-75e46de7c7b5",
+      "key": "README_for_NOR063.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR063.txt/content"
+      }
+    },
+    {
+      "id": "aa803ca8-9347-4ef2-91cf-05d88efa02e3",
+      "key": "README_for_NOR064.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR064.txt/content"
+      }
+    },
+    {
+      "id": "c80c99cf-0e6b-4516-9812-16cf9f88282a",
+      "key": "NOR062.zip",
+      "size": 18551881,
+      "checksum": "md5:b0ebc39d2f1e8d4218b4929add4da803",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR062.zip/content"
+      }
+    },
+    {
+      "id": "92c54353-512c-4ab2-8e6b-17c8fe899055",
+      "key": "README_for_NOR065.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR065.txt/content"
+      }
+    },
+    {
+      "id": "be18e383-51e6-49de-ab7d-589ec96a9ea4",
+      "key": "README_for_NOR062.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR062.txt/content"
+      }
+    },
+    {
+      "id": "3af1b0dd-4e52-4ba2-8c27-86ea5e793afb",
+      "key": "NOR057.zip",
+      "size": 6823924,
+      "checksum": "md5:b76d6d4d7fedd8257f4311aee0617a9d",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR057.zip/content"
+      }
+    },
+    {
+      "id": "f5a012b3-73cf-4e22-ba9c-150b7bfbaa5d",
+      "key": "NOR053.zip",
+      "size": 9057834,
+      "checksum": "md5:f454cf93bb100dd2634219405ca6b2cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR053.zip/content"
+      }
+    },
+    {
+      "id": "9952aa35-e6f7-4b7d-81b2-da96b23eedb3",
+      "key": "NOR047.zip",
+      "size": 8330184,
+      "checksum": "md5:af493d856e1f00d5e5e87e3853548da1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR047.zip/content"
+      }
+    },
+    {
+      "id": "e9af798a-07a2-40b4-9799-891b6038672e",
+      "key": "README_for_NOR057.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR057.txt/content"
+      }
+    },
+    {
+      "id": "523f9f18-729b-4a77-8a24-b5f29bfe3ed5",
+      "key": "README_for_NOR011.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR011.txt/content"
+      }
+    },
+    {
+      "id": "e9434ee2-d285-4644-8d33-a4e5360c4be7",
+      "key": "README_for_NOR025.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR025.txt/content"
+      }
+    },
+    {
+      "id": "3aed6941-b64a-4f5e-943d-acf974e176b9",
+      "key": "README_for_NOR073.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR073.txt/content"
+      }
+    },
+    {
+      "id": "c08930b3-112e-4a63-9074-0642eff3ba04",
+      "key": "README_for_NOR047.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR047.txt/content"
+      }
+    },
+    {
+      "id": "2e975bca-206e-4bac-a078-a3d401e98ca4",
+      "key": "NOR011.zip",
+      "size": 6982393,
+      "checksum": "md5:e22b5ff30151b4a36e9196450649e940",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR011.zip/content"
+      }
+    },
+    {
+      "id": "dc22b12c-63f3-4fee-b960-64bfdb136b1f",
+      "key": "NOR073.zip",
+      "size": 5112760,
+      "checksum": "md5:1be8eb95adb95a0a9cdd834df0803aa0",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR073.zip/content"
+      }
+    },
+    {
+      "id": "76b685e2-ad88-44d5-96a0-4678f84c6d0b",
+      "key": "NOR065.zip",
+      "size": 7709815,
+      "checksum": "md5:0c535dddf246dbcf8bb5a00fac796eaa",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR065.zip/content"
+      }
+    },
+    {
+      "id": "611e1f4b-a699-4245-80a9-138c538e309e",
+      "key": "NOR064.zip",
+      "size": 7250557,
+      "checksum": "md5:265b8ce8952ce342d99f22141021a662",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR064.zip/content"
+      }
+    },
+    {
+      "id": "01c71864-64ca-4157-b91a-4c897e26b58a",
+      "key": "README_for_NOR053.txt",
+      "size": 2383,
+      "checksum": "md5:2e0dff8ddcc5f399d9b83b1d40d900f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/README_for_NOR053.txt/content"
+      }
+    },
+    {
+      "id": "213be098-bc96-432f-9116-c88eedaf5339",
+      "key": "NOR063.zip",
+      "size": 7649502,
+      "checksum": "md5:ff1c5f61ab5dfea159d36fadbde50991",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR063.zip/content"
+      }
+    },
+    {
+      "id": "a92781a4-bcb8-405c-ad5e-e1a163ba803a",
+      "key": "NOR025.zip",
+      "size": 6904757,
+      "checksum": "md5:c938581980282d533b1a27184e99dc30",
+      "links": {
+        "self": "https://zenodo.org/api/records/4992944/files/NOR025.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 395,
+    "unique_downloads": 395,
+    "views": 186,
+    "unique_views": 164,
+    "version_downloads": 395,
+    "version_unique_downloads": 395,
+    "version_unique_views": 164,
+    "version_views": 186
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 10,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 84373607,
+    "top_level_files": [
+      {
+        "name": "README_for_NOR063.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR064.txt",
+        "size": 2383
+      },
+      {
+        "name": "NOR062.zip",
+        "size": 18551881
+      },
+      {
+        "name": "README_for_NOR065.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR062.txt",
+        "size": 2383
+      },
+      {
+        "name": "NOR057.zip",
+        "size": 6823924
+      },
+      {
+        "name": "NOR053.zip",
+        "size": 9057834
+      },
+      {
+        "name": "NOR047.zip",
+        "size": 8330184
+      },
+      {
+        "name": "README_for_NOR057.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR011.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR025.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR073.txt",
+        "size": 2383
+      },
+      {
+        "name": "README_for_NOR047.txt",
+        "size": 2383
+      },
+      {
+        "name": "NOR011.zip",
+        "size": 6982393
+      },
+      {
+        "name": "NOR073.zip",
+        "size": 5112760
+      },
+      {
+        "name": "NOR065.zip",
+        "size": 7709815
+      },
+      {
+        "name": "NOR064.zip",
+        "size": 7250557
+      },
+      {
+        "name": "README_for_NOR053.txt",
+        "size": 2383
+      },
+      {
+        "name": "NOR063.zip",
+        "size": 7649502
+      },
+      {
+        "name": "NOR025.zip",
+        "size": 6904757
+      }
+    ],
+    "zip_contents": {
+      "nor062.zip": {
+        "total_files": 86,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 34265746,
+        "file_types": {
+          ".tif": 86
+        },
+        "imaging_file_count": 86,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor062/nor062_rpe_montage.tif",
+          "nor062/pr rois - marked cones/foveal_center_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_3_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_4_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_5_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_6_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_7_cones_bin.tif",
+          "nor062/pr rois - marked cones/n_8_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor057.zip": {
+        "total_files": 125,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 16177136,
+        "file_types": {
+          ".tif": 125
+        },
+        "imaging_file_count": 125,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor057/nor057_rpe_montage.tif",
+          "nor057/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_10_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_12_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_3_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_4_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_5_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_6_cones_bin.tif",
+          "nor057/pr rois - marked cones/n_7_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor053.zip": {
+        "total_files": 161,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 19278216,
+        "file_types": {
+          ".tif": 161
+        },
+        "imaging_file_count": 161,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor053/nor053_rpe_montage.tif",
+          "nor053/pr rois - marked cones/foveal_center_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_11_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_13_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_4_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_5_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_7_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_8_cones_bin.tif",
+          "nor053/pr rois - marked cones/n_9_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor047.zip": {
+        "total_files": 140,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 23761264,
+        "file_types": {
+          ".tif": 140
+        },
+        "imaging_file_count": 140,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor047/nor047_rpe_montage.tif",
+          "nor047/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor047/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor047/pr rois - marked cones/n_3_cones_bin.tif",
+          "nor047/pr rois - marked cones/n_6_cones_bin.tif",
+          "nor047/pr rois - marked cones/t_1_cones_bin.tif",
+          "nor047/pr rois - marked cones/t_11_cones_bin.tif",
+          "nor047/pr rois - marked cones/t_13_cones_bin.tif",
+          "nor047/pr rois - marked cones/t_15_cones_bin.tif",
+          "nor047/pr rois - marked cones/t_17_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor011.zip": {
+        "total_files": 128,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 18302804,
+        "file_types": {
+          ".tif": 128
+        },
+        "imaging_file_count": 128,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor011/nor011_rpe_montage.tif",
+          "nor011/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor011/pr rois - marked cones/n_10_cones_bin.tif",
+          "nor011/pr rois - marked cones/n_12_cones_bin.tif",
+          "nor011/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor011/pr rois - marked cones/t_1_cones_bin.tif",
+          "nor011/pr rois - marked cones/t_16_cones_bin.tif",
+          "nor011/pr rois - marked cones/t_2_cones_bin.tif",
+          "nor011/pr rois - marked cones/t_9_cones_bin.tif",
+          "nor011/pr rois - marked cones/ul_1_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor073.zip": {
+        "total_files": 91,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 12897776,
+        "file_types": {
+          ".tif": 91
+        },
+        "imaging_file_count": 91,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor073/nor073_rpe_montage.tif",
+          "nor073/pr rois - marked cones/n_10_cones_bin.tif",
+          "nor073/pr rois - marked cones/n_11_cones_bin.tif",
+          "nor073/pr rois - marked cones/n_13_cones_bin.tif",
+          "nor073/pr rois - marked cones/n_8_cones_bin.tif",
+          "nor073/pr rois - marked cones/n_9_cones_bin.tif",
+          "nor073/pr rois - marked cones/t_10_cones_bin.tif",
+          "nor073/pr rois - marked cones/t_11_cones_bin.tif",
+          "nor073/pr rois - marked cones/t_12_cones_bin.tif",
+          "nor073/pr rois - marked cones/t_13_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor065.zip": {
+        "total_files": 139,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 19782072,
+        "file_types": {
+          ".tif": 139
+        },
+        "imaging_file_count": 139,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor065/nor065_rpe_montage.tif",
+          "nor065/pr rois - marked cones/ll_1_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_11_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_3_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_5_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_6_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_7_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_8_cones_bin.tif",
+          "nor065/pr rois - marked cones/n_9_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor064.zip": {
+        "total_files": 132,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 15906332,
+        "file_types": {
+          ".tif": 132
+        },
+        "imaging_file_count": 132,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor064/nor064_rpe_montage.tif",
+          "nor064/pr rois - marked cones/n_10_cones_bin.tif",
+          "nor064/pr rois - marked cones/n_11_cones_bin.tif",
+          "nor064/pr rois - marked cones/n_6_cones_bin.tif",
+          "nor064/pr rois - marked cones/n_7_cones_bin.tif",
+          "nor064/pr rois - marked cones/n_8_cones_bin.tif",
+          "nor064/pr rois - marked cones/t_10_cones_bin.tif",
+          "nor064/pr rois - marked cones/t_12_cones_bin.tif",
+          "nor064/pr rois - marked cones/t_14_cones_bin.tif",
+          "nor064/pr rois - marked cones/t_16_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor063.zip": {
+        "total_files": 133,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 21545422,
+        "file_types": {
+          ".tif": 133
+        },
+        "imaging_file_count": 133,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor063/nor063_rpe_montage.tif",
+          "nor063/pr rois - marked cones/foveal_center_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_11_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_13_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_5_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_7_cones_bin.tif",
+          "nor063/pr rois - marked cones/n_9_cones_bin.tif",
+          "nor063/pr rois - marked cones/t_10_cones_bin.tif",
+          "nor063/pr rois - marked cones/t_12_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "nor025.zip": {
+        "total_files": 119,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 16343908,
+        "file_types": {
+          ".tif": 119
+        },
+        "imaging_file_count": 119,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nor025/nor025_rpe_montage.tif",
+          "nor025/pr rois - marked cones/foveal__center_cones_bin.tif",
+          "nor025/pr rois - marked cones/ll_1_cones_bin.tif",
+          "nor025/pr rois - marked cones/n_1_cones_bin.tif",
+          "nor025/pr rois - marked cones/n_10_cones_bin.tif",
+          "nor025/pr rois - marked cones/n_2_cones_bin.tif",
+          "nor025/pr rois - marked cones/n_3_cones_bin.tif",
+          "nor025/pr rois - marked cones/t_1_cones_bin.tif",
+          "nor025/pr rois - marked cones/t_10_cones_bin.tif",
+          "nor025/pr rois - marked cones/t_12_cones_bin.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "nor062/nor062_rpe_montage.tif",
+      "nor062/pr rois - marked cones/foveal_center_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_3_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_4_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_5_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_6_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor062/pr rois - marked cones/n_8_cones_bin.tif",
+      "nor057/nor057_rpe_montage.tif",
+      "nor057/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_10_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_12_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_3_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_4_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_5_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_6_cones_bin.tif",
+      "nor057/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor053/nor053_rpe_montage.tif",
+      "nor053/pr rois - marked cones/foveal_center_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_11_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_13_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_4_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_5_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_8_cones_bin.tif",
+      "nor053/pr rois - marked cones/n_9_cones_bin.tif",
+      "nor047/nor047_rpe_montage.tif",
+      "nor047/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor047/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor047/pr rois - marked cones/n_3_cones_bin.tif",
+      "nor047/pr rois - marked cones/n_6_cones_bin.tif",
+      "nor047/pr rois - marked cones/t_1_cones_bin.tif",
+      "nor047/pr rois - marked cones/t_11_cones_bin.tif",
+      "nor047/pr rois - marked cones/t_13_cones_bin.tif",
+      "nor047/pr rois - marked cones/t_15_cones_bin.tif",
+      "nor047/pr rois - marked cones/t_17_cones_bin.tif",
+      "nor011/nor011_rpe_montage.tif",
+      "nor011/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor011/pr rois - marked cones/n_10_cones_bin.tif",
+      "nor011/pr rois - marked cones/n_12_cones_bin.tif",
+      "nor011/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor011/pr rois - marked cones/t_1_cones_bin.tif",
+      "nor011/pr rois - marked cones/t_16_cones_bin.tif",
+      "nor011/pr rois - marked cones/t_2_cones_bin.tif",
+      "nor011/pr rois - marked cones/t_9_cones_bin.tif",
+      "nor011/pr rois - marked cones/ul_1_cones_bin.tif",
+      "nor073/nor073_rpe_montage.tif",
+      "nor073/pr rois - marked cones/n_10_cones_bin.tif",
+      "nor073/pr rois - marked cones/n_11_cones_bin.tif",
+      "nor073/pr rois - marked cones/n_13_cones_bin.tif",
+      "nor073/pr rois - marked cones/n_8_cones_bin.tif",
+      "nor073/pr rois - marked cones/n_9_cones_bin.tif",
+      "nor073/pr rois - marked cones/t_10_cones_bin.tif",
+      "nor073/pr rois - marked cones/t_11_cones_bin.tif",
+      "nor073/pr rois - marked cones/t_12_cones_bin.tif",
+      "nor073/pr rois - marked cones/t_13_cones_bin.tif",
+      "nor065/nor065_rpe_montage.tif",
+      "nor065/pr rois - marked cones/ll_1_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_11_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_3_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_5_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_6_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_8_cones_bin.tif",
+      "nor065/pr rois - marked cones/n_9_cones_bin.tif",
+      "nor064/nor064_rpe_montage.tif",
+      "nor064/pr rois - marked cones/n_10_cones_bin.tif",
+      "nor064/pr rois - marked cones/n_11_cones_bin.tif",
+      "nor064/pr rois - marked cones/n_6_cones_bin.tif",
+      "nor064/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor064/pr rois - marked cones/n_8_cones_bin.tif",
+      "nor064/pr rois - marked cones/t_10_cones_bin.tif",
+      "nor064/pr rois - marked cones/t_12_cones_bin.tif",
+      "nor064/pr rois - marked cones/t_14_cones_bin.tif",
+      "nor064/pr rois - marked cones/t_16_cones_bin.tif",
+      "nor063/nor063_rpe_montage.tif",
+      "nor063/pr rois - marked cones/foveal_center_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_11_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_13_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_5_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_7_cones_bin.tif",
+      "nor063/pr rois - marked cones/n_9_cones_bin.tif",
+      "nor063/pr rois - marked cones/t_10_cones_bin.tif",
+      "nor063/pr rois - marked cones/t_12_cones_bin.tif",
+      "nor025/nor025_rpe_montage.tif",
+      "nor025/pr rois - marked cones/foveal__center_cones_bin.tif",
+      "nor025/pr rois - marked cones/ll_1_cones_bin.tif",
+      "nor025/pr rois - marked cones/n_1_cones_bin.tif",
+      "nor025/pr rois - marked cones/n_10_cones_bin.tif",
+      "nor025/pr rois - marked cones/n_2_cones_bin.tif",
+      "nor025/pr rois - marked cones/n_3_cones_bin.tif",
+      "nor025/pr rois - marked cones/t_1_cones_bin.tif",
+      "nor025/pr rois - marked cones/t_10_cones_bin.tif",
+      "nor025/pr rois - marked cones/t_12_cones_bin.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:00.543269"
+}

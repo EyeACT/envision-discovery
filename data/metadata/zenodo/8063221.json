@@ -1,0 +1,167 @@
+{
+  "created": "2023-07-18T06:24:05.946894+00:00",
+  "modified": "2023-07-19T02:27:04.839034+00:00",
+  "id": 8063221,
+  "conceptrecid": "8063220",
+  "doi": "10.5281/zenodo.8063221",
+  "conceptdoi": "10.5281/zenodo.8063220",
+  "doi_url": "https://doi.org/10.5281/zenodo.8063221",
+  "metadata": {
+    "title": "Seg-CQ500",
+    "doi": "10.5281/zenodo.8063221",
+    "publication_date": "2023-06-21",
+    "description": "<p>Intracranial hemorrhages segmentation labels for 51 CT-scans from the CQ500 dataset (http://headctstudy.qure.ai/dataset).</p>\n\n<p>Two trained radiologists from the Karolinska Instituted in Stockholm, labeled 51 scans to provide 3D mask of intracranial hemorrhages.</p>\n\n<p>We hope our new labels will promote the comparability of hemorrhage segmentation algorithm in the future and help push the field forward.</p>\n\n<p>If you use those labels, please cite our paper in Frontiers in Neuroimaging:</p>\n\n<p>```</p>\n\n<p>Spahr A, St&aring;hle J, Wang C and Kaijser M (2023)<br>\nLabel-efficient deep semantic segmentation of<br>\nintracranial hemorrhages in CT-scans.<br>\nFront. Neuroimaging 2:1157565.<br>\ndoi: 10.3389/fnimg.2023.1157565</p>\n\n<p>```</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Spahr Antoine",
+        "affiliation": "CHUV | Lausanne university hospital, Lausanne, Switzerland"
+      },
+      {
+        "name": "St\u00e5hle Jennifer",
+        "affiliation": "Department of Clinical Neuroscience, Karolinska Institutet, Stockholm"
+      },
+      {
+        "name": "Wang Chunliang",
+        "affiliation": "Department of Biomedical Engineering and Health Systems, KTH Royal Institute of Technology, Stockholm, Sweden"
+      },
+      {
+        "name": "Kaijser Magnus",
+        "affiliation": "Department of Neuroradiology, Karolinska University Hospital, Stockholm, Sweden"
+      }
+    ],
+    "keywords": [
+      "CT-scan",
+      "Segmentation",
+      "Intracranial Hemorrhages",
+      "Dataset"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.3389/fnimg.2023.1157565",
+        "relation": "isCitedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "0.1.0",
+    "references": [
+      "Spahr A et al. (2023) Label-efficient deep semantic segmentation of intracranial hemorrhages in CT-scans. Front. Neuroimaging 2:1157565. doi: 10.3389/fnimg.2023.1157565"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8063220"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Seg-CQ500",
+  "links": {
+    "self": "https://zenodo.org/api/records/8063221",
+    "self_html": "https://zenodo.org/records/8063221",
+    "preview_html": "https://zenodo.org/records/8063221?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8063221",
+    "self_doi": "https://doi.org/10.5281/zenodo.8063221",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8063221",
+    "reserve_doi": "https://zenodo.org/api/records/8063221/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8063220",
+    "parent_html": "https://zenodo.org/records/8063220",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8063220",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8063220",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8063221/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8063221/sequence/default",
+    "files": "https://zenodo.org/api/records/8063221/files",
+    "media_files": "https://zenodo.org/api/records/8063221/media-files",
+    "archive": "https://zenodo.org/api/records/8063221/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8063221/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8063221/versions/latest",
+    "latest_html": "https://zenodo.org/records/8063221/latest",
+    "versions": "https://zenodo.org/api/records/8063221/versions",
+    "draft": "https://zenodo.org/api/records/8063221/draft",
+    "access_links": "https://zenodo.org/api/records/8063221/access/links",
+    "access_grants": "https://zenodo.org/api/records/8063221/access/grants",
+    "access_users": "https://zenodo.org/api/records/8063221/access/users",
+    "access_request": "https://zenodo.org/api/records/8063221/access/request",
+    "access": "https://zenodo.org/api/records/8063221/access",
+    "communities": "https://zenodo.org/api/records/8063221/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8063221/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8063221/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8063221/file-modification",
+    "requests": "https://zenodo.org/api/records/8063221/requests"
+  },
+  "updated": "2023-07-19T02:27:04.839034+00:00",
+  "recid": "8063221",
+  "revision": 2,
+  "files": [
+    {
+      "id": "934dfeeb-707a-4126-9e15-181dd6247f9e",
+      "key": "Seg-CQ500.zip",
+      "size": 2459717672,
+      "checksum": "md5:e48ec9d89a42a859dcf0719498631ae6",
+      "links": {
+        "self": "https://zenodo.org/api/records/8063221/files/Seg-CQ500.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "571946"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 992,
+    "unique_downloads": 579,
+    "views": 1647,
+    "unique_views": 1516,
+    "version_downloads": 992,
+    "version_unique_downloads": 579,
+    "version_unique_views": 1510,
+    "version_views": 1639
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2459717672,
+    "top_level_files": [
+      {
+        "name": "Seg-CQ500.zip",
+        "size": 2459717672
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://headctstudy.qure.ai/dataset",
+      "type": "potential_download"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:04.138499"
+}

@@ -1,0 +1,370 @@
+{
+  "created": "2022-07-05T09:09:06.718592+00:00",
+  "modified": "2024-07-16T22:26:28.678314+00:00",
+  "id": 6425084,
+  "conceptrecid": "6425083",
+  "doi": "10.5281/zenodo.6425084",
+  "conceptdoi": "10.5281/zenodo.6425083",
+  "doi_url": "https://doi.org/10.5281/zenodo.6425084",
+  "metadata": {
+    "title": "Scanning dynamic light scattering optical coherence tomography for measurement of high omnidirectional flow velocities",
+    "doi": "10.5281/zenodo.6425084",
+    "publication_date": "2022-06-13",
+    "description": "<p>This repository contains raw data and analysis routines of the publication <strong>&ldquo;<em>Scanning dynamic light scattering optical coherence tomography for measurement of high omnidirectional flow velocities</em>&rdquo;</strong> in Optics Express (<a href=\"https://doi.org/10.1364/OE.456139\">doi.org/10.1364/OE.456139</a><em>).&nbsp;</em>The reader is free to use the scripts and data in this depository if the manuscript is correctly cited in their work. For further questions, feel free to contact the corresponding author. Python 3.7 was used for programming. Keep in mind that running files with larger time series length may take up to 5-10 minutes.</p>\n\n<p>For ideal scanning alignment each dataset includes diffusion, focus (beam waist) calibration, and flow measurements (using both M-scan and B-scan methods) for all used sample lengths. The names &ldquo;M-scan&rdquo; and &ldquo;A-scan&rdquo; are used interchangeably. The analysis process is as follows: firstly, the diffusion coefficient is determined for every sample size (time series length) to be analyzed using the script &lsquo;Diffusion.py&rsquo;. Secondly, the beam waist (focus) calibration is performed using the script &lsquo;Beam Waist.py&rsquo;. Since the beam waist should be constant for each dataset, choose the value obtained from the file with a largest time series length for minimizing the statistical uncertainty and fix it for a given dataset. Beam scanning for our setup is not exactly perpendicular to the optical axis. Therefore, for B-scan Doppler flow measurements the calibration parameter v_d, quantifying the axial scan bias, must be used. This calibration parameter varies with time series length and needs to be obtained for each sample size. This is done with the same script as the beam waist calibration. Thirdly, the Doppler angle is determined using M-scan measurement with the lowest discharge rate using the script &lsquo;Angle.py&rsquo;. Finally, the flow profiles are obtained both for M-scan and B-scan methods with predetermined calibration parameters using the script &lsquo;Flow.py&rsquo;. All file names are sufficiently descriptive, showing sample size, scan mode, measurement type and discharge rate. The number on the file name represents the time series length.</p>\n\n<p>For arbitrary scanning alignment, the dataset includes one diffusion and one focus (beam waist) measurements for calibration purposes. The diffusion measurement is used only for the beam waist calibration and not for flow measurements. It also contains several B-scan flow measurements (with different scan speeds) for every discharge rate. The analysis process is same as before but without the angle calibration step. Use the script &lsquo;Omnidirectional.py&rsquo; for this step.</p>\n\n<p>The table below summarizes all datasets and Python scripts uploaded to this repository.</p>\n\n<table align=\"center\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><strong>Name</strong></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><strong>Applicability</strong></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><strong>Description</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Dataset, 12-04-2021.zip</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Ideal scan alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Dataset for Doppler angle of 0.39 deg and alignment angle of 0 deg.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Dataset, 16-04-2021.zip</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Ideal scan alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Dataset for Doppler angle of 0.94 deg and alignment angle of 0.94 deg.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Dataset, 20-04-2021.zip</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Ideal scan alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Dataset for Doppler angle of 1.58 deg and alignment angle of 2.26 deg.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Dataset, 18-05-2021.zip</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Arbitrary alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Dataset for alignment angle of 2.7 deg.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Chirp.data</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Both methods</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>File containing k-interpolation data</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>ReadOCTFile.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Both methods</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Written by Jos de Wit, this module reads and imports spectra from raw OCT files.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>DataProcessing.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Both methods</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This module contains all analysis and processing routines.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Diffusion.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Both methods</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This script determines diffusion coefficient from raw OCT spectra.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Beam Waist.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Both methods</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This script determines focus beam waist from raw OCT spectra.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Angle.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Ideal scan alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This script determines Doppler angle from raw OCT spectra.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Flow.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Ideal scan alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This script determines M-scan and B-scan flow profiles from raw OCT spectra.</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>Omnidirectional.py</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>Arbitrary alignment</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>This script determines flow profiles for arbitrary scan alignment.</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cheishvili, Konstantine",
+        "affiliation": "TU Delft",
+        "orcid": "0000-0002-6637-5652"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "TU Delft",
+        "orcid": "0000-0003-1698-7842"
+      }
+    ],
+    "keywords": [
+      "optical coherence tomography",
+      "dynamic light scattering",
+      "particle sizing",
+      "Doppler OCT",
+      "DLS-OCT",
+      "omnidirectional flow measurement",
+      "flow imaging"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1364/OE.456139",
+        "relation": "isRequiredBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "13",
+      "pages": "23382-23397",
+      "title": "Optics Express",
+      "volume": "30"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "biomedical-optics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6425083"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Scanning dynamic light scattering optical coherence tomography for measurement of high omnidirectional flow velocities",
+  "links": {
+    "self": "https://zenodo.org/api/records/6425084",
+    "self_html": "https://zenodo.org/records/6425084",
+    "preview_html": "https://zenodo.org/records/6425084?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6425084",
+    "self_doi": "https://doi.org/10.5281/zenodo.6425084",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6425084",
+    "reserve_doi": "https://zenodo.org/api/records/6425084/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6425083",
+    "parent_html": "https://zenodo.org/records/6425083",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6425083",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6425083",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6425084/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6425084/sequence/default",
+    "files": "https://zenodo.org/api/records/6425084/files",
+    "media_files": "https://zenodo.org/api/records/6425084/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6425084:Flow,%20Ideal.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6425084/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6425084/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6425084/versions/latest",
+    "latest_html": "https://zenodo.org/records/6425084/latest",
+    "versions": "https://zenodo.org/api/records/6425084/versions",
+    "draft": "https://zenodo.org/api/records/6425084/draft",
+    "access_links": "https://zenodo.org/api/records/6425084/access/links",
+    "access_grants": "https://zenodo.org/api/records/6425084/access/grants",
+    "access_users": "https://zenodo.org/api/records/6425084/access/users",
+    "access_request": "https://zenodo.org/api/records/6425084/access/request",
+    "access": "https://zenodo.org/api/records/6425084/access",
+    "communities": "https://zenodo.org/api/records/6425084/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6425084/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6425084/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6425084/file-modification",
+    "requests": "https://zenodo.org/api/records/6425084/requests"
+  },
+  "updated": "2024-07-16T22:26:28.678314+00:00",
+  "recid": "6425084",
+  "revision": 6,
+  "files": [
+    {
+      "id": "a0b6da8a-77a5-45fa-a6e8-91fc67e335aa",
+      "key": "ReadOCTfile.py",
+      "size": 5070,
+      "checksum": "md5:f806ad1eee8398be5255e1a80b6d9e8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/ReadOCTfile.py/content"
+      }
+    },
+    {
+      "id": "cac1744a-0100-415d-95b4-dd29f70c7147",
+      "key": "Flow, Ideal.pdf",
+      "size": 20397,
+      "checksum": "md5:a3170cad750901adaeae62d91a85d8be",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Flow, Ideal.pdf/content"
+      }
+    },
+    {
+      "id": "259e1784-94e4-488c-8de8-73349860a17a",
+      "key": "Flow, Omnidirectional.pdf",
+      "size": 14088,
+      "checksum": "md5:8a7069c177e1d982e0ad7728fccd9190",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Flow, Omnidirectional.pdf/content"
+      }
+    },
+    {
+      "id": "53625c84-9c52-4609-8e87-16d91a097e2c",
+      "key": "Omnidirectional.py",
+      "size": 5994,
+      "checksum": "md5:be2093b90ff1ea60c1991e4ee0821b11",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Omnidirectional.py/content"
+      }
+    },
+    {
+      "id": "dfc87ec6-1f93-4191-b15b-76dce8fe065c",
+      "key": "Dataset, 18-05-2021.zip",
+      "size": 6349935893,
+      "checksum": "md5:d85f1000b02ce96c587db3684a667ec1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Dataset, 18-05-2021.zip/content"
+      }
+    },
+    {
+      "id": "6533abe1-26d9-40f1-97d7-1465b30de073",
+      "key": "Flow.py",
+      "size": 4292,
+      "checksum": "md5:aa8ce4684aca1bcb6fa59c8105df07db",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Flow.py/content"
+      }
+    },
+    {
+      "id": "b4ce2c53-fb4d-4ee9-8b75-af6c700779c4",
+      "key": "Dataset, 20-04-2021.zip",
+      "size": 9738816196,
+      "checksum": "md5:fcf3b1b4c68e7d46f0893835abe7650e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Dataset, 20-04-2021.zip/content"
+      }
+    },
+    {
+      "id": "cabdd72d-37c9-4bca-98f5-b32cc97534a0",
+      "key": "Diffusion.pdf",
+      "size": 13562,
+      "checksum": "md5:16b6e4865a912d472e4fae57d231b886",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Diffusion.pdf/content"
+      }
+    },
+    {
+      "id": "dfd4ee42-7501-4e8c-ba52-0f84d666e615",
+      "key": "Diffusion.py",
+      "size": 2609,
+      "checksum": "md5:abcfc152b42b77ff2b0be5f8ab7f75cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Diffusion.py/content"
+      }
+    },
+    {
+      "id": "07ed1d12-9e29-494e-8084-b75dbe2654eb",
+      "key": "Doppler Angle.pdf",
+      "size": 15278,
+      "checksum": "md5:16697ec8ef8c92f2404d04701abe17b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Doppler Angle.pdf/content"
+      }
+    },
+    {
+      "id": "2febcad2-f4eb-42c6-8d69-d16412b943f9",
+      "key": "Beam Waist.pdf",
+      "size": 15194,
+      "checksum": "md5:43da228dfdaf47300c7b1ad8c588cb7f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Beam Waist.pdf/content"
+      }
+    },
+    {
+      "id": "e6cd8e65-8449-4703-bafa-3d27c75d2bb0",
+      "key": "Angle.py",
+      "size": 2790,
+      "checksum": "md5:8c0455cbfc75f8a46a4c80e42a943be0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Angle.py/content"
+      }
+    },
+    {
+      "id": "b9f93a4c-2af6-422b-aff3-584c356622e3",
+      "key": "Beam Waist.py",
+      "size": 3275,
+      "checksum": "md5:77e5edc23164de0aeb444a289ec53c40",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Beam Waist.py/content"
+      }
+    },
+    {
+      "id": "30b411e4-ae84-4baf-9295-3a40a0ad9312",
+      "key": "DataProcessing.py",
+      "size": 14660,
+      "checksum": "md5:bcb3dbae8ff2065d0be7ff1981366454",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/DataProcessing.py/content"
+      }
+    },
+    {
+      "id": "8be3cf5a-9cc6-40bd-bbb7-16d0a788f544",
+      "key": "Dataset, 12-04-2021.zip",
+      "size": 10103510787,
+      "checksum": "md5:3595e987e638aea52608d2c7ed532fb3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Dataset, 12-04-2021.zip/content"
+      }
+    },
+    {
+      "id": "90c77502-a850-4a23-b849-27d360336519",
+      "key": "Dataset, 16-04-2021.zip",
+      "size": 9990252636,
+      "checksum": "md5:adc02ef7119fd84c440d49c7a341e6d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6425084/files/Dataset, 16-04-2021.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "333794"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 802,
+    "unique_downloads": 667,
+    "views": 354,
+    "unique_views": 339,
+    "version_downloads": 802,
+    "version_unique_downloads": 667,
+    "version_unique_views": 339,
+    "version_views": 354
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 36182515512,
+    "top_level_files": [
+      {
+        "name": "ReadOCTfile.py",
+        "size": 5070
+      },
+      {
+        "name": "Flow, Ideal.pdf",
+        "size": 20397
+      },
+      {
+        "name": "Flow, Omnidirectional.pdf",
+        "size": 14088
+      },
+      {
+        "name": "Omnidirectional.py",
+        "size": 5994
+      },
+      {
+        "name": "Dataset, 18-05-2021.zip",
+        "size": 6349935893
+      },
+      {
+        "name": "Flow.py",
+        "size": 4292
+      },
+      {
+        "name": "Dataset, 20-04-2021.zip",
+        "size": 9738816196
+      },
+      {
+        "name": "Diffusion.pdf",
+        "size": 13562
+      },
+      {
+        "name": "Diffusion.py",
+        "size": 2609
+      },
+      {
+        "name": "Doppler Angle.pdf",
+        "size": 15278
+      },
+      {
+        "name": "Beam Waist.pdf",
+        "size": 15194
+      },
+      {
+        "name": "Angle.py",
+        "size": 2790
+      },
+      {
+        "name": "Beam Waist.py",
+        "size": 3275
+      },
+      {
+        "name": "DataProcessing.py",
+        "size": 14660
+      },
+      {
+        "name": "Dataset, 12-04-2021.zip",
+        "size": 10103510787
+      },
+      {
+        "name": "Dataset, 16-04-2021.zip",
+        "size": 9990252636
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:36.915111"
+}

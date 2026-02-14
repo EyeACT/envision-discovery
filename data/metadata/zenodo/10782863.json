@@ -1,0 +1,534 @@
+{
+  "created": "2024-03-14T14:36:16.188850+00:00",
+  "modified": "2025-04-22T12:42:13.508847+00:00",
+  "id": 10782863,
+  "conceptrecid": "10782862",
+  "doi": "10.5281/zenodo.10782863",
+  "conceptdoi": "10.5281/zenodo.10782862",
+  "doi_url": "https://doi.org/10.5281/zenodo.10782863",
+  "metadata": {
+    "title": "Human Colorectal Tissue OCT Dataset: Neoplastic and Non-Neoplastic Samples from Chorioallantoic Membrane (CAM) Assays",
+    "doi": "10.5281/zenodo.10782863",
+    "publication_date": "2024-03-14",
+    "description": "<p>A commercial OCT system (Telesto II-1325 LR spectral domain OCT (SD-OCT)) was used to imaging two colon cell lines implanted in a chick embryo chorioallantoic membrane (CAM) assay. This is a high-performance imaging system designed for in vivo and ex vivo imaging of biological tissues.</p>\n<p>The CAM is a highly vascularized extra-embryonic membrane connected to the developing embryo through an easily accessible circulatory system that allows the successful engraftment of a variety of foreign tissues, such as tumor explants or cancer cell lines. Neoplastic and non-neoplastic tumors were developed from RKO and NCM460 cell lines, respectively.</p>\n<p>&nbsp;</p>\n<p>OCT B-scan images were collected from 30 CAM models, 15 with RKO-cells and 15 with NCM460-cells. The collected images are avalilable in format <strong>OCT </strong>format (<strong>Neoplastic_OCT.zip/Non-neoplastic_OCT.zip</strong>), <strong>TIFF </strong>format (<strong>Neoplastic_tiff.zip/Non-neoplastic_tiff.zip</strong>), and <strong>MAT </strong>format (<strong>Neoplastic_mat.zip/Non-neoplastic_mat.zip</strong>).</p>\n<p>&nbsp;</p>\n<p>Since, the attenuation of near-infrared light in biological samples has proven to be a powerful tool for tissue characterization the <strong>attenuation coefficient of light</strong> was calculated for each image. This data is available in the <strong>Neoplastic_processed.zip</strong> and <strong>Non-neoplastic_processed.zip</strong> folders.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Freitas, Ruben",
+        "affiliation": "University of Minho",
+        "orcid": "0000-0001-9725-2623"
+      },
+      {
+        "name": "Pereira, Hugo",
+        "affiliation": "University of Minho",
+        "orcid": "0000-0003-4093-103X"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Freitas, Ruben",
+        "affiliation": "University of Minho",
+        "type": "DataManager",
+        "orcid": "0000-0001-9725-2623"
+      },
+      {
+        "name": "Pereira, Hugo",
+        "affiliation": "University of Minho",
+        "type": "DataManager",
+        "orcid": "0000-0003-4093-103X"
+      }
+    ],
+    "keywords": [
+      "CAM model",
+      "OCT",
+      "Attenuation coefficient",
+      "Colorectal tissue",
+      "Non-neoplastic and neoplastic tumors"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.eswa.2024.124611",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "collected",
+        "description": "Neoplastic CAM assays"
+      },
+      {
+        "type": "collected",
+        "description": "Non-neoplastic CAM assays"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10782862"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Human Colorectal Tissue OCT Dataset: Neoplastic and Non-Neoplastic Samples from Chorioallantoic Membrane (CAM) Assays",
+  "links": {
+    "self": "https://zenodo.org/api/records/10782863",
+    "self_html": "https://zenodo.org/records/10782863",
+    "preview_html": "https://zenodo.org/records/10782863?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10782863",
+    "self_doi": "https://doi.org/10.5281/zenodo.10782863",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10782863",
+    "reserve_doi": "https://zenodo.org/api/records/10782863/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10782862",
+    "parent_html": "https://zenodo.org/records/10782862",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10782862",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10782862",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10782863/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10782863/sequence/default",
+    "files": "https://zenodo.org/api/records/10782863/files",
+    "media_files": "https://zenodo.org/api/records/10782863/media-files",
+    "archive": "https://zenodo.org/api/records/10782863/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10782863/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10782863/versions/latest",
+    "latest_html": "https://zenodo.org/records/10782863/latest",
+    "versions": "https://zenodo.org/api/records/10782863/versions",
+    "draft": "https://zenodo.org/api/records/10782863/draft",
+    "access_links": "https://zenodo.org/api/records/10782863/access/links",
+    "access_grants": "https://zenodo.org/api/records/10782863/access/grants",
+    "access_users": "https://zenodo.org/api/records/10782863/access/users",
+    "access_request": "https://zenodo.org/api/records/10782863/access/request",
+    "access": "https://zenodo.org/api/records/10782863/access",
+    "communities": "https://zenodo.org/api/records/10782863/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10782863/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10782863/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10782863/file-modification",
+    "requests": "https://zenodo.org/api/records/10782863/requests"
+  },
+  "updated": "2025-04-22T12:42:13.508847+00:00",
+  "recid": "10782863",
+  "revision": 10,
+  "files": [
+    {
+      "id": "2975b435-8227-4856-9d7c-c1357a1a925d",
+      "key": "Neoplastic_mat.zip",
+      "size": 30951478,
+      "checksum": "md5:62cd9e10a785581b3ef85f622e126021",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Neoplastic_mat.zip/content"
+      }
+    },
+    {
+      "id": "0a192c18-b580-4c45-a23f-5fbad527c7ae",
+      "key": "Non-neoplastic_processed.zip",
+      "size": 34650407,
+      "checksum": "md5:e7cf2dd1a4126962a58000a1a1a64722",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Non-neoplastic_processed.zip/content"
+      }
+    },
+    {
+      "id": "ec79a67a-fc72-4f15-a221-7ebd65c8ece6",
+      "key": "Non-neoplastic_tiff.zip",
+      "size": 6377007,
+      "checksum": "md5:a1bb879c67636bc5d2401bf8d51adacc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Non-neoplastic_tiff.zip/content"
+      }
+    },
+    {
+      "id": "1f10b5cf-76fc-42da-a271-7a7f473bcda6",
+      "key": "Neoplastic_tiff.zip",
+      "size": 8168468,
+      "checksum": "md5:926a2b1c6e9397ad68c7273d8f25d07f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Neoplastic_tiff.zip/content"
+      }
+    },
+    {
+      "id": "e5f66640-2c34-4460-a886-cf288976aa8c",
+      "key": "Non-neoplastic_mat.zip",
+      "size": 23617209,
+      "checksum": "md5:e2afb85f33a3702e6ec96a3be972d25f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Non-neoplastic_mat.zip/content"
+      }
+    },
+    {
+      "id": "8f2266fb-b82f-479b-9e80-7fdbbd4c69a7",
+      "key": "Neoplastic_processed.zip",
+      "size": 46517065,
+      "checksum": "md5:5cca681b7b823903470749d9a2e1b385",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Neoplastic_processed.zip/content"
+      }
+    },
+    {
+      "id": "739a7c8e-3284-4948-92ef-dcb9ef2dbc43",
+      "key": "Neoplastic_OCT.zip",
+      "size": 320995654,
+      "checksum": "md5:07e00dfaf4563cb7b58d4401ba438600",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Neoplastic_OCT.zip/content"
+      }
+    },
+    {
+      "id": "354ba6af-dc08-4876-8db9-3bdc048b2fcf",
+      "key": "Non-neoplastic_OCT.zip",
+      "size": 269933266,
+      "checksum": "md5:785f18e23323e9b35707328666365b1c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10782863/files/Non-neoplastic_OCT.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1078962"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 199,
+    "unique_downloads": 197,
+    "views": 157,
+    "unique_views": 138,
+    "version_downloads": 199,
+    "version_unique_downloads": 197,
+    "version_unique_views": 138,
+    "version_views": 157
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 8,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 741210554,
+    "top_level_files": [
+      {
+        "name": "Neoplastic_mat.zip",
+        "size": 30951478
+      },
+      {
+        "name": "Non-neoplastic_processed.zip",
+        "size": 34650407
+      },
+      {
+        "name": "Non-neoplastic_tiff.zip",
+        "size": 6377007
+      },
+      {
+        "name": "Neoplastic_tiff.zip",
+        "size": 8168468
+      },
+      {
+        "name": "Non-neoplastic_mat.zip",
+        "size": 23617209
+      },
+      {
+        "name": "Neoplastic_processed.zip",
+        "size": 46517065
+      },
+      {
+        "name": "Neoplastic_OCT.zip",
+        "size": 320995654
+      },
+      {
+        "name": "Non-neoplastic_OCT.zip",
+        "size": 269933266
+      }
+    ],
+    "zip_contents": {
+      "neoplastic_mat.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 31085987,
+        "file_types": {
+          ".mat": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "neoplastic_mat/neoplastic_1.mat",
+          "neoplastic_mat/neoplastic_10.mat",
+          "neoplastic_mat/neoplastic_11.mat",
+          "neoplastic_mat/neoplastic_12.mat",
+          "neoplastic_mat/neoplastic_13.mat",
+          "neoplastic_mat/neoplastic_14.mat",
+          "neoplastic_mat/neoplastic_15.mat",
+          "neoplastic_mat/neoplastic_2.mat",
+          "neoplastic_mat/neoplastic_3.mat",
+          "neoplastic_mat/neoplastic_4.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "non-neoplastic_processed.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 34639739,
+        "file_types": {
+          ".mat": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "non-neoplastic_processed/non-neoplastic_1.mat",
+          "non-neoplastic_processed/non-neoplastic_10.mat",
+          "non-neoplastic_processed/non-neoplastic_11.mat",
+          "non-neoplastic_processed/non-neoplastic_12.mat",
+          "non-neoplastic_processed/non-neoplastic_13.mat",
+          "non-neoplastic_processed/non-neoplastic_14.mat",
+          "non-neoplastic_processed/non-neoplastic_15.mat",
+          "non-neoplastic_processed/non-neoplastic_2.mat",
+          "non-neoplastic_processed/non-neoplastic_3.mat",
+          "non-neoplastic_processed/non-neoplastic_4.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "non-neoplastic_tiff.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 24690694,
+        "file_types": {
+          ".tiff": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "non-neoplastic_tiff/non-neoplastic_1.tiff",
+          "non-neoplastic_tiff/non-neoplastic_10.tiff",
+          "non-neoplastic_tiff/non-neoplastic_11.tiff",
+          "non-neoplastic_tiff/non-neoplastic_12.tiff",
+          "non-neoplastic_tiff/non-neoplastic_13.tiff",
+          "non-neoplastic_tiff/non-neoplastic_14.tiff",
+          "non-neoplastic_tiff/non-neoplastic_15.tiff",
+          "non-neoplastic_tiff/non-neoplastic_2.tiff",
+          "non-neoplastic_tiff/non-neoplastic_3.tiff",
+          "non-neoplastic_tiff/non-neoplastic_4.tiff"
+        ],
+        "sample_genomics_files": []
+      },
+      "neoplastic_tiff.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 32207726,
+        "file_types": {
+          ".tiff": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "neoplastic_tiff/neoplastic_1.tiff",
+          "neoplastic_tiff/neoplastic_10.tiff",
+          "neoplastic_tiff/neoplastic_11.tiff",
+          "neoplastic_tiff/neoplastic_12.tiff",
+          "neoplastic_tiff/neoplastic_13.tiff",
+          "neoplastic_tiff/neoplastic_14.tiff",
+          "neoplastic_tiff/neoplastic_15.tiff",
+          "neoplastic_tiff/neoplastic_2.tiff",
+          "neoplastic_tiff/neoplastic_3.tiff",
+          "neoplastic_tiff/neoplastic_4.tiff"
+        ],
+        "sample_genomics_files": []
+      },
+      "non-neoplastic_mat.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 23719131,
+        "file_types": {
+          ".mat": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "non-neoplastic_mat/non-neoplastic_1.mat",
+          "non-neoplastic_mat/non-neoplastic_10.mat",
+          "non-neoplastic_mat/non-neoplastic_11.mat",
+          "non-neoplastic_mat/non-neoplastic_12.mat",
+          "non-neoplastic_mat/non-neoplastic_13.mat",
+          "non-neoplastic_mat/non-neoplastic_14.mat",
+          "non-neoplastic_mat/non-neoplastic_15.mat",
+          "non-neoplastic_mat/non-neoplastic_2.mat",
+          "non-neoplastic_mat/non-neoplastic_3.mat",
+          "non-neoplastic_mat/non-neoplastic_4.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "neoplastic_processed.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 46502108,
+        "file_types": {
+          ".mat": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "neoplastic_processed/neoplastic_1.mat",
+          "neoplastic_processed/neoplastic_10.mat",
+          "neoplastic_processed/neoplastic_11.mat",
+          "neoplastic_processed/neoplastic_12.mat",
+          "neoplastic_processed/neoplastic_13.mat",
+          "neoplastic_processed/neoplastic_14.mat",
+          "neoplastic_processed/neoplastic_15.mat",
+          "neoplastic_processed/neoplastic_2.mat",
+          "neoplastic_processed/neoplastic_3.mat",
+          "neoplastic_processed/neoplastic_4.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "neoplastic_oct.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 420651235,
+        "file_types": {
+          ".oct": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "neoplastic_oct/neoplastic_1.oct",
+          "neoplastic_oct/neoplastic_10.oct",
+          "neoplastic_oct/neoplastic_11.oct",
+          "neoplastic_oct/neoplastic_12.oct",
+          "neoplastic_oct/neoplastic_13.oct",
+          "neoplastic_oct/neoplastic_14.oct",
+          "neoplastic_oct/neoplastic_15.oct",
+          "neoplastic_oct/neoplastic_2.oct",
+          "neoplastic_oct/neoplastic_3.oct",
+          "neoplastic_oct/neoplastic_4.oct"
+        ],
+        "sample_genomics_files": []
+      },
+      "non-neoplastic_oct.zip": {
+        "total_files": 15,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 352814886,
+        "file_types": {
+          ".oct": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "non-neoplastic_oct/non-neoplastic_1.oct",
+          "non-neoplastic_oct/non-neoplastic_10.oct",
+          "non-neoplastic_oct/non-neoplastic_11.oct",
+          "non-neoplastic_oct/non-neoplastic_12.oct",
+          "non-neoplastic_oct/non-neoplastic_13.oct",
+          "non-neoplastic_oct/non-neoplastic_14.oct",
+          "non-neoplastic_oct/non-neoplastic_15.oct",
+          "non-neoplastic_oct/non-neoplastic_2.oct",
+          "non-neoplastic_oct/non-neoplastic_3.oct",
+          "non-neoplastic_oct/non-neoplastic_4.oct"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "neoplastic_mat/neoplastic_1.mat",
+      "neoplastic_mat/neoplastic_10.mat",
+      "neoplastic_mat/neoplastic_11.mat",
+      "neoplastic_mat/neoplastic_12.mat",
+      "neoplastic_mat/neoplastic_13.mat",
+      "neoplastic_mat/neoplastic_14.mat",
+      "neoplastic_mat/neoplastic_15.mat",
+      "neoplastic_mat/neoplastic_2.mat",
+      "neoplastic_mat/neoplastic_3.mat",
+      "neoplastic_mat/neoplastic_4.mat",
+      "non-neoplastic_processed/non-neoplastic_1.mat",
+      "non-neoplastic_processed/non-neoplastic_10.mat",
+      "non-neoplastic_processed/non-neoplastic_11.mat",
+      "non-neoplastic_processed/non-neoplastic_12.mat",
+      "non-neoplastic_processed/non-neoplastic_13.mat",
+      "non-neoplastic_processed/non-neoplastic_14.mat",
+      "non-neoplastic_processed/non-neoplastic_15.mat",
+      "non-neoplastic_processed/non-neoplastic_2.mat",
+      "non-neoplastic_processed/non-neoplastic_3.mat",
+      "non-neoplastic_processed/non-neoplastic_4.mat",
+      "non-neoplastic_tiff/non-neoplastic_1.tiff",
+      "non-neoplastic_tiff/non-neoplastic_10.tiff",
+      "non-neoplastic_tiff/non-neoplastic_11.tiff",
+      "non-neoplastic_tiff/non-neoplastic_12.tiff",
+      "non-neoplastic_tiff/non-neoplastic_13.tiff",
+      "non-neoplastic_tiff/non-neoplastic_14.tiff",
+      "non-neoplastic_tiff/non-neoplastic_15.tiff",
+      "non-neoplastic_tiff/non-neoplastic_2.tiff",
+      "non-neoplastic_tiff/non-neoplastic_3.tiff",
+      "non-neoplastic_tiff/non-neoplastic_4.tiff",
+      "neoplastic_tiff/neoplastic_1.tiff",
+      "neoplastic_tiff/neoplastic_10.tiff",
+      "neoplastic_tiff/neoplastic_11.tiff",
+      "neoplastic_tiff/neoplastic_12.tiff",
+      "neoplastic_tiff/neoplastic_13.tiff",
+      "neoplastic_tiff/neoplastic_14.tiff",
+      "neoplastic_tiff/neoplastic_15.tiff",
+      "neoplastic_tiff/neoplastic_2.tiff",
+      "neoplastic_tiff/neoplastic_3.tiff",
+      "neoplastic_tiff/neoplastic_4.tiff",
+      "non-neoplastic_mat/non-neoplastic_1.mat",
+      "non-neoplastic_mat/non-neoplastic_10.mat",
+      "non-neoplastic_mat/non-neoplastic_11.mat",
+      "non-neoplastic_mat/non-neoplastic_12.mat",
+      "non-neoplastic_mat/non-neoplastic_13.mat",
+      "non-neoplastic_mat/non-neoplastic_14.mat",
+      "non-neoplastic_mat/non-neoplastic_15.mat",
+      "non-neoplastic_mat/non-neoplastic_2.mat",
+      "non-neoplastic_mat/non-neoplastic_3.mat",
+      "non-neoplastic_mat/non-neoplastic_4.mat",
+      "neoplastic_processed/neoplastic_1.mat",
+      "neoplastic_processed/neoplastic_10.mat",
+      "neoplastic_processed/neoplastic_11.mat",
+      "neoplastic_processed/neoplastic_12.mat",
+      "neoplastic_processed/neoplastic_13.mat",
+      "neoplastic_processed/neoplastic_14.mat",
+      "neoplastic_processed/neoplastic_15.mat",
+      "neoplastic_processed/neoplastic_2.mat",
+      "neoplastic_processed/neoplastic_3.mat",
+      "neoplastic_processed/neoplastic_4.mat",
+      "neoplastic_oct/neoplastic_1.oct",
+      "neoplastic_oct/neoplastic_10.oct",
+      "neoplastic_oct/neoplastic_11.oct",
+      "neoplastic_oct/neoplastic_12.oct",
+      "neoplastic_oct/neoplastic_13.oct",
+      "neoplastic_oct/neoplastic_14.oct",
+      "neoplastic_oct/neoplastic_15.oct",
+      "neoplastic_oct/neoplastic_2.oct",
+      "neoplastic_oct/neoplastic_3.oct",
+      "neoplastic_oct/neoplastic_4.oct",
+      "non-neoplastic_oct/non-neoplastic_1.oct",
+      "non-neoplastic_oct/non-neoplastic_10.oct",
+      "non-neoplastic_oct/non-neoplastic_11.oct",
+      "non-neoplastic_oct/non-neoplastic_12.oct",
+      "non-neoplastic_oct/non-neoplastic_13.oct",
+      "non-neoplastic_oct/non-neoplastic_14.oct",
+      "non-neoplastic_oct/non-neoplastic_15.oct",
+      "non-neoplastic_oct/non-neoplastic_2.oct",
+      "non-neoplastic_oct/non-neoplastic_3.oct",
+      "non-neoplastic_oct/non-neoplastic_4.oct"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:17.337350"
+}

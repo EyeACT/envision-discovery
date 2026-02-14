@@ -1,0 +1,231 @@
+{
+  "created": "2025-09-18T18:06:18.838339+00:00",
+  "modified": "2025-09-18T18:06:19.112141+00:00",
+  "id": 17154852,
+  "conceptrecid": "15414237",
+  "doi": "10.5281/zenodo.17154852",
+  "conceptdoi": "10.5281/zenodo.15414237",
+  "doi_url": "https://doi.org/10.5281/zenodo.17154852",
+  "metadata": {
+    "title": "Indian Footpath Damage Segmentation Dataset",
+    "doi": "10.5281/zenodo.17154852",
+    "publication_date": "2025-09-18",
+    "description": "<p>The **Indian Footpath Damage Segmentation Dataset** comprises **583 real-world footpath images** collected from diverse urban environments in India, along with their corresponding **pixel-wise segmentation masks** indicating damage regions. This dataset is intended for use in semantic segmentation tasks to detect and assess footpath damage severity, supporting research in pedestrian safety, civil infrastructure monitoring, and smart city applications.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Kedari, Nikita",
+        "affiliation": "MIT World Peace University",
+        "orcid": "0000-0002-0333-778X"
+      },
+      {
+        "name": "Chakurkar, Priti",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0009-0009-7284-6607"
+      },
+      {
+        "name": "Ingale, Pranav",
+        "affiliation": "MIT World Peace University",
+        "orcid": "0009-0009-7965-4392"
+      },
+      {
+        "name": "Mulik, Sanika",
+        "affiliation": "MIT World Peace University"
+      },
+      {
+        "name": "Chinchore, Sahil",
+        "affiliation": "MIT World Peace University"
+      },
+      {
+        "name": "Vora, Deepali R",
+        "affiliation": "Symbiosis International University",
+        "orcid": "0000-0002-0564-6471"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "Foothpath Damage data"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15414237"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Indian Footpath Damage Segmentation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/17154852",
+    "self_html": "https://zenodo.org/records/17154852",
+    "preview_html": "https://zenodo.org/records/17154852?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17154852",
+    "self_doi": "https://doi.org/10.5281/zenodo.17154852",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17154852",
+    "reserve_doi": "https://zenodo.org/api/records/17154852/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15414237",
+    "parent_html": "https://zenodo.org/records/15414237",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15414237",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15414237",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17154852/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17154852/sequence/default",
+    "files": "https://zenodo.org/api/records/17154852/files",
+    "media_files": "https://zenodo.org/api/records/17154852/media-files",
+    "archive": "https://zenodo.org/api/records/17154852/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17154852/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17154852/versions/latest",
+    "latest_html": "https://zenodo.org/records/17154852/latest",
+    "versions": "https://zenodo.org/api/records/17154852/versions",
+    "draft": "https://zenodo.org/api/records/17154852/draft",
+    "access_links": "https://zenodo.org/api/records/17154852/access/links",
+    "access_grants": "https://zenodo.org/api/records/17154852/access/grants",
+    "access_users": "https://zenodo.org/api/records/17154852/access/users",
+    "access_request": "https://zenodo.org/api/records/17154852/access/request",
+    "access": "https://zenodo.org/api/records/17154852/access",
+    "communities": "https://zenodo.org/api/records/17154852/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17154852/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17154852/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17154852/file-modification",
+    "requests": "https://zenodo.org/api/records/17154852/requests"
+  },
+  "updated": "2025-09-18T18:06:19.112141+00:00",
+  "recid": "17154852",
+  "revision": 4,
+  "files": [
+    {
+      "id": "9a0a1f2e-3825-4472-861a-f7383568c5ee",
+      "key": "Footpath Damage severity levels_annotations.csv",
+      "size": 9371,
+      "checksum": "md5:6b58f3ffa45c5d5e71794b2579e2c6d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/17154852/files/Footpath Damage severity levels_annotations.csv/content"
+      }
+    },
+    {
+      "id": "b0d20e8f-c60e-469a-beb7-27684188255b",
+      "key": "Indian Footpath Damage Segmentation Dataset.md",
+      "size": 2459,
+      "checksum": "md5:2dd7d4b3666cca70bab23cbd4be93ec7",
+      "links": {
+        "self": "https://zenodo.org/api/records/17154852/files/Indian Footpath Damage Segmentation Dataset.md/content"
+      }
+    },
+    {
+      "id": "6bd9f844-db89-469f-830a-fff57cb3993a",
+      "key": "LICENSE.txt",
+      "size": 931,
+      "checksum": "md5:f1df8d37c907cf13773275b8d4f29c17",
+      "links": {
+        "self": "https://zenodo.org/api/records/17154852/files/LICENSE.txt/content"
+      }
+    },
+    {
+      "id": "1e774ee2-e04d-4a12-b09f-10065c431b90",
+      "key": "Indian Footpath Damage Segmentation Dataset.zip",
+      "size": 4504525071,
+      "checksum": "md5:edafaba9d33ba8d9c3e989a33e0affb4",
+      "links": {
+        "self": "https://zenodo.org/api/records/17154852/files/Indian Footpath Damage Segmentation Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1273806"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 373,
+    "unique_downloads": 298,
+    "views": 178,
+    "unique_views": 158,
+    "version_downloads": 134,
+    "version_unique_downloads": 100,
+    "version_unique_views": 46,
+    "version_views": 56
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4504525071,
+    "top_level_files": [
+      {
+        "name": "Footpath Damage severity levels_annotations.csv",
+        "size": 9371
+      },
+      {
+        "name": "Indian Footpath Damage Segmentation Dataset.md",
+        "size": 2459
+      },
+      {
+        "name": "LICENSE.txt",
+        "size": 931
+      },
+      {
+        "name": "Indian Footpath Damage Segmentation Dataset.zip",
+        "size": 4504525071
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:29.526665"
+}

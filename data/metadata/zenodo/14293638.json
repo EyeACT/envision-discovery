@@ -1,0 +1,311 @@
+{
+  "created": "2025-07-19T05:12:08.914343+00:00",
+  "modified": "2025-07-19T05:12:09.552467+00:00",
+  "id": 14293638,
+  "conceptrecid": "14293637",
+  "doi": "10.5281/zenodo.14293638",
+  "conceptdoi": "10.5281/zenodo.14293637",
+  "doi_url": "https://doi.org/10.5281/zenodo.14293638",
+  "metadata": {
+    "title": "Multi modal optical coherence tomography flowmetry of organ on chip devices",
+    "doi": "10.5281/zenodo.14293638",
+    "publication_date": "2025-07-17",
+    "description": "<p>This repository contains raw data and analysis routines of the publication <strong>&ldquo;Multi modal optical coherence tomography flowmetry of organ on chip devices&rdquo;</strong> in Scientific Reports (doi.org/10.1038/s41598-025-10089-9)<em>.&nbsp;</em>The reader is free to use the scripts and data in this depository if the manuscript is correctly cited in their work. For further questions, feel free to contact the corresponding author. Python 3.11 was used for programming. Please note that processing OCT intensity data with different apodization windows to match axial and transverse resolutions can be time-consuming. Despite using parallelized processing routines for the measurement data, the full analysis may still take several hours. If the parallelization fails, please restart the kernel and run the code again. Additionally, be aware of the significant RAM usage.</p>\n<p>We have conducted number-fluctuation DLS-OCT 2D flow measurements in dilute particle suspensions using the Thorlabs OCT system. Analyzing the measurements necessitates a chirp interpolation and beam shape calibration files. All filenames, whether for raw data or analysis files, are sufficiently descriptive. To analyze the flow measurements, it is essential to have information regarding the measurement time series length (number of A-scans), the number of repeats (B-scans), and the acquisition rate. The results are plotted at the end of our analysis routines, with the parameters displayed as a function of channel length and depth. Raw measurement files and analysis routines are described below.</p>\n<div>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Name</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Parameters</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>N_a=200, N_b=2000, FOV=3.1, Q=40, along channel.oct</p>\n</td>\n<td>\n<p>The interference intensity from the Thorlabs OCT for the 2D flow measurement along the channel length.</p>\n</td>\n<td>\n<p>Na=200, Nb=2000, 5.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, center</p>\n</td>\n<td>\n<p>The interference intensity from the Thorlabs OCT for the 2D flow measurement along the cross-section at the center width of the channel.</p>\n</td>\n<td>\n<p>Na=200, Nb=2000, 5.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, outlet.oct</p>\n</td>\n<td>\n<p>The interference intensity from the Thorlabs OCT for the 2D flow measurement along the cross-section at the channel outlet.</p>\n</td>\n<td>\n<p>Na=200, Nb=2000, 5.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>N_a=200, N_b=2000, FOV=3.1, Q=41, cross-section, inlet.oct</p>\n</td>\n<td>\n<p>The interference intensity from the Thorlabs OCT for the 2D flow measurement along the cross-section at the channel inlet.</p>\n</td>\n<td>\n<p>Na=200, Nb=2000, 5.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Beam shape.npy</p>\n</td>\n<td>\n<p>A file containing the calibrated Gaussian beam shape (waist) as a function of axial position (optical depth).</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Chirp.data</p>\n</td>\n<td>\n<p>A file containing k-interpolation data for the Thorlabs OCT measurements.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>ReadOCTFile.py</p>\n</td>\n<td>\n<p>Written by Jos de Wit, this module reads and imports spectra from raw Thorlabs OCT files.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Processing.py</p>\n</td>\n<td>\n<p>This module contains all analysis functions.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2D flow analysis.py</p>\n</td>\n<td>\n<p>The script is for analyzing raw concentrated 2D flow measurement files from the Thorlabs OCT setup.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cheishvili, Konstantine",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0002-6637-5652"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0003-1698-7842"
+      },
+      {
+        "name": "Tugberk, Devrim",
+        "affiliation": "Delft University of Technology"
+      },
+      {
+        "name": "Speets, Peter",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0003-3167-2224"
+      },
+      {
+        "name": "Quiros Solano, William Fausto",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0002-8160-1857"
+      },
+      {
+        "name": "Ballal, Anish",
+        "affiliation": "BIOND Solutions BV"
+      },
+      {
+        "name": "Gaio, Nikolas",
+        "affiliation": "BIOND Solutions BV",
+        "orcid": "0000-0003-3332-1540"
+      }
+    ],
+    "keywords": [
+      "optical coherence tomography",
+      "dynamic light scattering",
+      "DLS-OCT",
+      "Doppler OCT",
+      "2D flow measurement",
+      "flow imaging",
+      "number fluctuations",
+      "sub-diffusion",
+      "Organ-on-a-chip",
+      "PIV-OCT",
+      "particle image velocimetry"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41598-025-10089-9",
+        "relation": "isRequiredBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "pages": "26013",
+      "title": "Scientific Reports",
+      "volume": "15"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14293637"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Multi modal optical coherence tomography flowmetry of organ on chip devices",
+  "links": {
+    "self": "https://zenodo.org/api/records/14293638",
+    "self_html": "https://zenodo.org/records/14293638",
+    "preview_html": "https://zenodo.org/records/14293638?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14293638",
+    "self_doi": "https://doi.org/10.5281/zenodo.14293638",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14293638",
+    "reserve_doi": "https://zenodo.org/api/records/14293638/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14293637",
+    "parent_html": "https://zenodo.org/records/14293637",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14293637",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14293637",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14293638/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14293638/sequence/default",
+    "files": "https://zenodo.org/api/records/14293638/files",
+    "media_files": "https://zenodo.org/api/records/14293638/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14293638:2D%20flow%20profile.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14293638/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14293638/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14293638/versions/latest",
+    "latest_html": "https://zenodo.org/records/14293638/latest",
+    "versions": "https://zenodo.org/api/records/14293638/versions",
+    "draft": "https://zenodo.org/api/records/14293638/draft",
+    "access_links": "https://zenodo.org/api/records/14293638/access/links",
+    "access_grants": "https://zenodo.org/api/records/14293638/access/grants",
+    "access_users": "https://zenodo.org/api/records/14293638/access/users",
+    "access_request": "https://zenodo.org/api/records/14293638/access/request",
+    "access": "https://zenodo.org/api/records/14293638/access",
+    "communities": "https://zenodo.org/api/records/14293638/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14293638/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14293638/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14293638/file-modification",
+    "requests": "https://zenodo.org/api/records/14293638/requests"
+  },
+  "updated": "2025-07-19T05:12:09.552467+00:00",
+  "recid": "14293638",
+  "revision": 4,
+  "files": [
+    {
+      "id": "8acbedbf-7e6d-48b4-a9dc-5db5d287d660",
+      "key": "N_a=200, N_b=2000, FOV=3.1, Q=40, along channel.oct",
+      "size": 1639760517,
+      "checksum": "md5:0e90cd7c789a3cac068279419cb1529e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/N_a=200, N_b=2000, FOV=3.1, Q=40, along channel.oct/content"
+      }
+    },
+    {
+      "id": "5eef795b-653d-4db4-b5d2-ba9a66d490ce",
+      "key": "N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, center.oct",
+      "size": 1639791172,
+      "checksum": "md5:5ab21428c2d2f377b3d9585a718c754b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, center.oct/content"
+      }
+    },
+    {
+      "id": "5b75307e-73a3-49e4-a049-89a0a2f156bf",
+      "key": "N_a=200, N_b=2000, FOV=3.1, Q=41, cross-section, inlet.oct",
+      "size": 1639786269,
+      "checksum": "md5:1e87b292b43145bcb7c1d3076eab5374",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/N_a=200, N_b=2000, FOV=3.1, Q=41, cross-section, inlet.oct/content"
+      }
+    },
+    {
+      "id": "d64f77e1-2b98-4c72-9bae-f390274a7476",
+      "key": "Beam shape.npy",
+      "size": 27776,
+      "checksum": "md5:51a0ca7975166b6af300fdf4ad7de0a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/Beam shape.npy/content"
+      }
+    },
+    {
+      "id": "ec95ea4d-5388-44a9-8c73-5a5dab697102",
+      "key": "2D flow profile.png",
+      "size": 242340,
+      "checksum": "md5:9fcee97b434b9bb966c40f8ec8fb5262",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/2D flow profile.png/content"
+      }
+    },
+    {
+      "id": "4e3fa0c7-52b6-4439-bb43-f9ae380ed7a9",
+      "key": "N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, outlet.oct",
+      "size": 1639790573,
+      "checksum": "md5:d795b7ca3a886badd5046f3ba61cefc4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, outlet.oct/content"
+      }
+    },
+    {
+      "id": "9d864c92-a999-4249-b845-0972272f1f3a",
+      "key": "Processing.py",
+      "size": 8981,
+      "checksum": "md5:b38c1d55c1148912a09557213f9db73a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/Processing.py/content"
+      }
+    },
+    {
+      "id": "3703a99d-fc9b-46c1-aada-6652ce6e598d",
+      "key": "ReadOCTfile.py",
+      "size": 5070,
+      "checksum": "md5:f806ad1eee8398be5255e1a80b6d9e8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/ReadOCTfile.py/content"
+      }
+    },
+    {
+      "id": "d22797c2-4abd-41a1-88f5-698df4f248af",
+      "key": "Chirp.data",
+      "size": 8192,
+      "checksum": "md5:b7b8ca7bd17cc9811d4e1698dda10a6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/Chirp.data/content"
+      }
+    },
+    {
+      "id": "65d52037-4a1a-425a-ab95-13a1f80ee632",
+      "key": "2D flow analysis.py",
+      "size": 5218,
+      "checksum": "md5:d19174e1cc5e3e78c0340d0262689448",
+      "links": {
+        "self": "https://zenodo.org/api/records/14293638/files/2D flow analysis.py/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "333794"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 79,
+    "unique_downloads": 68,
+    "views": 29,
+    "unique_views": 20,
+    "version_downloads": 79,
+    "version_unique_downloads": 68,
+    "version_unique_views": 20,
+    "version_views": 29
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 6,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 6559398647,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "N_a=200, N_b=2000, FOV=3.1, Q=40, along channel.oct",
+        "size": 1639760517
+      },
+      {
+        "name": "N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, center.oct",
+        "size": 1639791172
+      },
+      {
+        "name": "N_a=200, N_b=2000, FOV=3.1, Q=41, cross-section, inlet.oct",
+        "size": 1639786269
+      },
+      {
+        "name": "Beam shape.npy",
+        "size": 27776
+      },
+      {
+        "name": "2D flow profile.png",
+        "size": 242340
+      },
+      {
+        "name": "N_a=200, N_b=2000, FOV=3.1, Q=40, cross-section, outlet.oct",
+        "size": 1639790573
+      },
+      {
+        "name": "Processing.py",
+        "size": 8981
+      },
+      {
+        "name": "ReadOCTfile.py",
+        "size": 5070
+      },
+      {
+        "name": "Chirp.data",
+        "size": 8192
+      },
+      {
+        "name": "2D flow analysis.py",
+        "size": 5218
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:38.437580"
+}

@@ -1,0 +1,247 @@
+{
+  "created": "2025-06-27T16:05:30.442629+00:00",
+  "modified": "2025-06-27T16:05:30.910302+00:00",
+  "id": 14580071,
+  "conceptrecid": "14580070",
+  "doi": "10.5281/zenodo.14580071",
+  "conceptdoi": "10.5281/zenodo.14580070",
+  "doi_url": "https://doi.org/10.5281/zenodo.14580071",
+  "metadata": {
+    "title": "OCTAVE Dataset: Optical Coherence Tomography Annotated Volume Experiment",
+    "doi": "10.5281/zenodo.14580071",
+    "publication_date": "2025-06-02",
+    "description": "<div>\n<p>This is a large dataset of OCT 3D image volumes and pixel-level segmentation labels for the development of an deep learning model to autonomously detect and identify anatomic and pathological features of the retina.</p>\n<p>This project was described in the paper:</p>\n<p><strong>&ldquo;Identifying Retinal Features Using a Self\u2011Configuring CNN for Clinical Intervention&rdquo;</strong><br><em>Daniel\u202fS.\u202fKermany, Wesley\u202fPoon, Anaya\u202fBawiskar, Natasha\u202fNehra, Orhun\u202fDavarci, Glori\u202fDas, Matthew\u202fVasquez, Shlomit\u202fSchaal, Raksha\u202fRaghunathan &amp; Stephen\u202fT.\u202fC.\u202fWong Invest. Ophthalmol. Vis. Sci., June\u202f2,\u202f2025; <a href=\"https://iovs.arvojournals.org/article.aspx?articleid=2803144\">PMID\u202f40525921</a></em></p>\nInstructions for using this dataset or replicating the results of the paper can be found on the&nbsp;<a href=\"https://github.com/Translational-Biophotonics-Laboratory/octvision3d\">OCTAVE GitHub page</a></div>\n<div>&nbsp;</div>\n<div>This dataset is made available for use in research only. <strong>Use of this dataset requires appropriate citation of both this dataset (DOI: 10.5281/zenodo.14580071) and the associated paper (DOI: 10.1167/iovs.66.6.55).</strong></div>\n<div>&nbsp;</div>\n<div><strong>Important: Ensure you are using the latest version of this dataset, if multiple versions available<br><br>Acknowledgments</strong></div>\n<div>\n<div>\n<div>Supported by the National Eye Institute F31EY037177 (D.S.K.)</div>\n<div>National Cancer Institute R01CA288613 (S.T.C.W.)</div>\n<div>National Cancer Institute R01NS140292 (S.T.C.W.)</div>\n<div>T.T. and W.F. Chao Foundation (S.T.C.W.)</div>\n<div>John S. Dunn Research Foundation (S.T.C.W.)</div>\n<div>Johnsson Estate (S.T.C.W.).&nbsp;</div>\n</div>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kermany, Daniel",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0002-8615-1795"
+      },
+      {
+        "name": "Poon, Wesley",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0002-9774-3673"
+      },
+      {
+        "name": "Bawiskar, Anaya",
+        "affiliation": "Houston Methodist"
+      },
+      {
+        "name": "Nehra, Natasha",
+        "affiliation": "Houston Methodist"
+      },
+      {
+        "name": "Davarci, Orhun",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0002-4209-3474"
+      },
+      {
+        "name": "Das, Glori",
+        "affiliation": "Texas A&M University",
+        "orcid": "0009-0006-4642-2390"
+      },
+      {
+        "name": "Vasquez, Matthew",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0001-9319-2686"
+      },
+      {
+        "name": "Schaal, Shlomit",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0002-0002-0445"
+      },
+      {
+        "name": "Raghunathan, Raksha",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0002-2434-425X"
+      },
+      {
+        "name": "Wong, Stephen",
+        "affiliation": "Houston Methodist",
+        "orcid": "0000-0001-9188-6502"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1167/iovs.66.6.55",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1",
+    "references": [
+      "Kafieh R, Rabbani H, Abramoff MD, Sonka M. Intra-retinal layer segmentation of 3D optical coherence tomography using coarse grained diffusion map. Med Image Anal. 2013; 17(8): 907\u2013928.",
+      "Rasti R, Rabbani H, Mehridehnavi A, Hajizadeh F. Macular OCT classification using a multi-scale convolutional neural network ensemble. IEEE Trans Med Imaging. 2018; 37(4): 1024\u20131034.",
+      "Stankiewicz A, Marciniak T, Dabrowski A, Stopa M, Marciniak E, Obara B. Segmentation of preretinal space in optical coherence tomography images using deep neural networks. Sensors. 2021; 21(22): 7521.",
+      "Tian J, Varga B, Somfai GM, Lee W-H, Smiddy WE, Cabrera DeBuc D. Real-time automatic segmentation of optical coherence tomography volume data of the macular region. PLoS One. 2015; 10(8): e0133908."
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/Translational-Biophotonics-Laboratory/octvision3d",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "6",
+      "pages": "55",
+      "title": "Investigative Ophthalmology & Visual Science",
+      "volume": "66"
+    },
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "grants": [
+      {
+        "code": "F31EY037177",
+        "internal_id": "03wkg3b53::F31EY037177",
+        "funder": {
+          "name": "National Eye Institute"
+        },
+        "title": "Optical Coherence Tomography (OCT)-Guided Ultrafast, Nonthermal Laser Microablation for Non-invasive Vitreoretinal Surgery",
+        "url": "https://reporter.nih.gov/project-details/11071824#description"
+      },
+      {
+        "code": "R01CA288613",
+        "internal_id": "040gcmg81::R01CA288613",
+        "funder": {
+          "name": "National Cancer Institute"
+        },
+        "title": "Advancing Thyroid Cancer Diagnostics with AI-enhanced Multimodal Optical Histopathology",
+        "url": "https://reporter.nih.gov/search/SpbtHBK--k6bbXYN9xLTWw/project-details/11047378#description"
+      },
+      {
+        "code": "R01NS140292",
+        "internal_id": "040gcmg81::R01NS140292",
+        "funder": {
+          "name": "National Cancer Institute"
+        },
+        "title": "DeepStroke+: An Advanced Mobile AI Diagnostic Tool for Fast and Precise Detection of Acute Strokes in Mobile Stroke Units, Emergency Rooms, and Telestroke Triage",
+        "url": "https://reporter.nih.gov/search/Db9KxBAUJE6xfUdFE-AJTg/project-details/11022333#description"
+      }
+    ],
+    "communities": [
+      {
+        "id": "smab"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14580070"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCTAVE Dataset: Optical Coherence Tomography Annotated Volume Experiment",
+  "links": {
+    "self": "https://zenodo.org/api/records/14580071",
+    "self_html": "https://zenodo.org/records/14580071",
+    "preview_html": "https://zenodo.org/records/14580071?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14580071",
+    "self_doi": "https://doi.org/10.5281/zenodo.14580071",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14580071",
+    "reserve_doi": "https://zenodo.org/api/records/14580071/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14580070",
+    "parent_html": "https://zenodo.org/records/14580070",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14580070",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14580070",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14580071/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14580071/sequence/default",
+    "files": "https://zenodo.org/api/records/14580071/files",
+    "media_files": "https://zenodo.org/api/records/14580071/media-files",
+    "archive": "https://zenodo.org/api/records/14580071/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14580071/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14580071/versions/latest",
+    "latest_html": "https://zenodo.org/records/14580071/latest",
+    "versions": "https://zenodo.org/api/records/14580071/versions",
+    "draft": "https://zenodo.org/api/records/14580071/draft",
+    "access_links": "https://zenodo.org/api/records/14580071/access/links",
+    "access_grants": "https://zenodo.org/api/records/14580071/access/grants",
+    "access_users": "https://zenodo.org/api/records/14580071/access/users",
+    "access_request": "https://zenodo.org/api/records/14580071/access/request",
+    "access": "https://zenodo.org/api/records/14580071/access",
+    "communities": "https://zenodo.org/api/records/14580071/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14580071/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14580071/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14580071/file-modification",
+    "requests": "https://zenodo.org/api/records/14580071/requests"
+  },
+  "updated": "2025-06-27T16:05:30.910302+00:00",
+  "recid": "14580071",
+  "revision": 3,
+  "files": [
+    {
+      "id": "b6fa9594-697d-4bba-b4e4-990d366e9cb5",
+      "key": "OCTAVE.zip",
+      "size": 1206310353,
+      "checksum": "md5:c731a32afba29a5f6e541ba463e5fc3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14580071/files/OCTAVE.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1241855"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 58,
+    "unique_downloads": 45,
+    "views": 248,
+    "unique_views": 207,
+    "version_downloads": 58,
+    "version_unique_downloads": 45,
+    "version_unique_views": 207,
+    "version_views": 248
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1206310353,
+    "top_level_files": [
+      {
+        "name": "OCTAVE.zip",
+        "size": 1206310353
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:50.789372"
+}

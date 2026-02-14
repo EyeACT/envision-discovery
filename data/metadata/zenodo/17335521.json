@@ -1,0 +1,148 @@
+{
+  "created": "2025-10-12T20:57:08.933531+00:00",
+  "modified": "2025-10-12T23:46:10.924144+00:00",
+  "id": 17335521,
+  "conceptrecid": "17335520",
+  "doi": "10.5281/zenodo.17335521",
+  "conceptdoi": "10.5281/zenodo.17335520",
+  "doi_url": "https://doi.org/10.5281/zenodo.17335521",
+  "metadata": {
+    "title": "Dataset for: Transfer learning-based encoder-decoder model with visual explanations for infrastructure crack segmentation: New open database and comprehensive evaluation",
+    "doi": "10.5281/zenodo.17335521",
+    "publication_date": "2025-10-12",
+    "description": "<p>This is the dataset for the following paper:&nbsp;</p>\n<p>Fangyu Liu, Wenqi Ding, Yafei Qiao, and Linbing Wang. \"Transfer learning-based encoder-decoder model with visual explanations for infrastructure crack segmentation: New open database and comprehensive evaluation.\" Underground Space 17 (2024): 60-81. https://doi.org/10.1016/j.undsp.2023.09.012.</p>\n<p>Data component:</p>\n<ul>\n<li>RGB image: The input RGB image</li>\n<li>ground truth: The ground truth binary image</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Liu, Fangyu",
+        "affiliation": "University of Illinois Urbana-Champaign"
+      },
+      {
+        "name": "Ding, Wenqi",
+        "affiliation": "Tongji University"
+      },
+      {
+        "name": "Qiao, Yafei",
+        "affiliation": "Tongji University"
+      },
+      {
+        "name": "Wang, Linbing",
+        "affiliation": "University of Georgia"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17335520"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset for: Transfer learning-based encoder-decoder model with visual explanations for infrastructure crack segmentation: New open database and comprehensive evaluation",
+  "links": {
+    "self": "https://zenodo.org/api/records/17335521",
+    "self_html": "https://zenodo.org/records/17335521",
+    "preview_html": "https://zenodo.org/records/17335521?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17335521",
+    "self_doi": "https://doi.org/10.5281/zenodo.17335521",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17335521",
+    "reserve_doi": "https://zenodo.org/api/records/17335521/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17335520",
+    "parent_html": "https://zenodo.org/records/17335520",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17335520",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17335520",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17335521/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17335521/sequence/default",
+    "files": "https://zenodo.org/api/records/17335521/files",
+    "media_files": "https://zenodo.org/api/records/17335521/media-files",
+    "archive": "https://zenodo.org/api/records/17335521/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17335521/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17335521/versions/latest",
+    "latest_html": "https://zenodo.org/records/17335521/latest",
+    "versions": "https://zenodo.org/api/records/17335521/versions",
+    "draft": "https://zenodo.org/api/records/17335521/draft",
+    "access_links": "https://zenodo.org/api/records/17335521/access/links",
+    "access_grants": "https://zenodo.org/api/records/17335521/access/grants",
+    "access_users": "https://zenodo.org/api/records/17335521/access/users",
+    "access_request": "https://zenodo.org/api/records/17335521/access/request",
+    "access": "https://zenodo.org/api/records/17335521/access",
+    "communities": "https://zenodo.org/api/records/17335521/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17335521/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17335521/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17335521/file-modification",
+    "requests": "https://zenodo.org/api/records/17335521/requests"
+  },
+  "updated": "2025-10-12T23:46:10.924144+00:00",
+  "recid": "17335521",
+  "revision": 6,
+  "files": [
+    {
+      "id": "80cf85cb-446f-4e2d-bad4-9d58a85859ef",
+      "key": "Dataset.zip",
+      "size": 819936865,
+      "checksum": "md5:a66b754675da8cb04928aefec76a72be",
+      "links": {
+        "self": "https://zenodo.org/api/records/17335521/files/Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1124409"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 7,
+    "unique_downloads": 6,
+    "views": 35,
+    "unique_views": 31,
+    "version_downloads": 7,
+    "version_unique_downloads": 6,
+    "version_unique_views": 31,
+    "version_views": 35
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 819936865,
+    "top_level_files": [
+      {
+        "name": "Dataset.zip",
+        "size": 819936865
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1016/j.undsp.2023.09.012",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:58.549703"
+}

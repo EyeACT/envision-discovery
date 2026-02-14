@@ -1,0 +1,399 @@
+{
+  "created": "2017-03-01T14:05:13.905151+00:00",
+  "modified": "2024-08-03T12:39:32.024743+00:00",
+  "id": 344880,
+  "conceptrecid": "780298",
+  "doi": "10.5281/zenodo.344880",
+  "conceptdoi": "",
+  "doi_url": "https://doi.org/10.5281/zenodo.344880",
+  "metadata": {
+    "title": "2D bright field Fission yeast cell images with ground truth annotations",
+    "doi": "10.5281/zenodo.344880",
+    "publication_date": "2017-03-01",
+    "description": "<p>Original images are from http://www-bcf.usc.edu/~forsburg/pombeX.html. This software is associated with the publication \"PombeX: robust cell segmentation for fission yeast transillumination images\", PLoS One 2013. (doi: 10.1371/journal.pone.0081434)</p>\n\n<p>Here, we provide the ground truth labels of: cell centers and\u00a0segmentation, which are used in the publications:</p>\n\n<ul>\n\t<li>\"Learning to Segment: Training Hierarchical Segmentation under a Topological Loss\", MICCAI 2015. (DOI: 10.1007/978-3-319-24574-4_32)</li>\n\t<li>\"Cell Detection and Segmentation Using Correlation Clustering\", MICCAI 2014. (DOI: 10.1007/978-3-319-10404-1_2)</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zhang, Chong",
+        "affiliation": "Universitat Pompeu Fabra"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "communities": [
+      {
+        "id": "mdm-dtic-upf"
+      },
+      {
+        "id": "bioimage_analysis"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "780298"
+          }
+        }
+      ]
+    }
+  },
+  "title": "2D bright field Fission yeast cell images with ground truth annotations",
+  "links": {
+    "self": "https://zenodo.org/api/records/344880",
+    "self_html": "https://zenodo.org/records/344880",
+    "preview_html": "https://zenodo.org/records/344880?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.344880",
+    "self_doi": "https://doi.org/10.5281/zenodo.344880",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.344880",
+    "reserve_doi": "https://zenodo.org/api/records/344880/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/780298",
+    "parent_html": "https://zenodo.org/records/780298",
+    "parent_doi": "https://doi.org/",
+    "parent_doi_html": "https://zenodo.org/doi/",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:344880/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:344880/sequence/default",
+    "files": "https://zenodo.org/api/records/344880/files",
+    "media_files": "https://zenodo.org/api/records/344880/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:344880:DS05_05_gt.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/344880/files-archive",
+    "archive_media": "https://zenodo.org/api/records/344880/media-files-archive",
+    "latest": "https://zenodo.org/api/records/344880/versions/latest",
+    "latest_html": "https://zenodo.org/records/344880/latest",
+    "versions": "https://zenodo.org/api/records/344880/versions",
+    "draft": "https://zenodo.org/api/records/344880/draft",
+    "access_links": "https://zenodo.org/api/records/344880/access/links",
+    "access_grants": "https://zenodo.org/api/records/344880/access/grants",
+    "access_users": "https://zenodo.org/api/records/344880/access/users",
+    "access_request": "https://zenodo.org/api/records/344880/access/request",
+    "access": "https://zenodo.org/api/records/344880/access",
+    "communities": "https://zenodo.org/api/records/344880/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/344880/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/344880/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/344880/file-modification",
+    "requests": "https://zenodo.org/api/records/344880/requests"
+  },
+  "updated": "2024-08-03T12:39:32.024743+00:00",
+  "recid": "344880",
+  "revision": 15,
+  "files": [
+    {
+      "id": "44a08aba-9f3f-4552-bb33-67f646f0e1a4",
+      "key": "lmk_centers_10.txt",
+      "size": 1966,
+      "checksum": "md5:e8ca7c0b31717d2e69a9f89ac6c57d2f",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_10.txt/content"
+      }
+    },
+    {
+      "id": "d022a513-b565-4c66-8852-b921b959eaa6",
+      "key": "lmk_centers_09.txt",
+      "size": 2550,
+      "checksum": "md5:baaf8f60c0bb64d707abb19745e23b50",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_09.txt/content"
+      }
+    },
+    {
+      "id": "42d22d18-b1f0-42ce-ab33-29b4c8a1c699",
+      "key": "lmk_centers_07.txt",
+      "size": 604,
+      "checksum": "md5:efa2afa79dd40c4f6fdba212d93cff6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_07.txt/content"
+      }
+    },
+    {
+      "id": "3c2e169c-7ef9-4361-862b-2714990450fc",
+      "key": "lmk_centers_05.txt",
+      "size": 4364,
+      "checksum": "md5:e677063ec718e150e88b7b6c4a123217",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_05.txt/content"
+      }
+    },
+    {
+      "id": "90481bf0-213c-4396-81e8-88ddcee53b6d",
+      "key": "lmk_centers_06.txt",
+      "size": 3357,
+      "checksum": "md5:04999fe635e132e2657269042c3cd395",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_06.txt/content"
+      }
+    },
+    {
+      "id": "91a5dfa9-2c8a-42b8-bc97-889159d96784",
+      "key": "lmk_centers_02.txt",
+      "size": 1098,
+      "checksum": "md5:9d9b65236ca187ff01fb0732cdf2b960",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_02.txt/content"
+      }
+    },
+    {
+      "id": "a3b80ab2-2249-465d-a86a-77505cf35812",
+      "key": "lmk_centers_08.txt",
+      "size": 3709,
+      "checksum": "md5:be34b8e2f36299565dad9997441258a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_08.txt/content"
+      }
+    },
+    {
+      "id": "210b1c7e-8c0e-470a-b9ce-1b9032afca48",
+      "key": "lmk_centers_04.txt",
+      "size": 2144,
+      "checksum": "md5:5ccfb77039f27b1c2378c25b3b452f23",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_04.txt/content"
+      }
+    },
+    {
+      "id": "6c28392f-6003-4f36-9b53-e47e4d30c98a",
+      "key": "lmk_centers_03.txt",
+      "size": 1329,
+      "checksum": "md5:0a8eea2f88de65770db93d6105e935e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_03.txt/content"
+      }
+    },
+    {
+      "id": "be1ae00b-50ac-41c4-b121-b4865656508e",
+      "key": "original-image-list.txt",
+      "size": 388,
+      "checksum": "md5:65a5bd669ee2cc688e9c9a1e8b9010cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/original-image-list.txt/content"
+      }
+    },
+    {
+      "id": "ee8404fa-0ca7-4087-a026-8740e070f85e",
+      "key": "DS05_05_gt.tif",
+      "size": 42764,
+      "checksum": "md5:9835cb31b280559623f7457a2ef45cdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_05_gt.tif/content"
+      }
+    },
+    {
+      "id": "6dcf632c-256c-4573-a16d-27da2260147d",
+      "key": "lmk_centers_01.txt",
+      "size": 10123,
+      "checksum": "md5:8a4af9abc0c341dc17dfd2d71ea3fda1",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/lmk_centers_01.txt/content"
+      }
+    },
+    {
+      "id": "f1e8f2c1-3388-4fe9-bdf1-5b8abb8bb1a4",
+      "key": "DS05_06_gt.tif",
+      "size": 42764,
+      "checksum": "md5:9835cb31b280559623f7457a2ef45cdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_06_gt.tif/content"
+      }
+    },
+    {
+      "id": "420955a7-6569-4e1e-8db1-957c31dedaab",
+      "key": "DS05_03_gt.tif",
+      "size": 19408,
+      "checksum": "md5:975e7fa19496b97806344833198e66b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_03_gt.tif/content"
+      }
+    },
+    {
+      "id": "83991b51-ef42-4fcc-9b14-55d76c9669dc",
+      "key": "DS05_08_gt.tif",
+      "size": 35852,
+      "checksum": "md5:5933e30e72e9d17643fa014665462441",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_08_gt.tif/content"
+      }
+    },
+    {
+      "id": "21b88458-658b-4251-ad6b-5b4924d6808b",
+      "key": "DS05_07_gt.tif",
+      "size": 10336,
+      "checksum": "md5:5f64693500a81186e2723b68334b656c",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_07_gt.tif/content"
+      }
+    },
+    {
+      "id": "df2460b8-9f82-4eee-be2f-843116ec5ec2",
+      "key": "DS05_02_gt.tif",
+      "size": 15262,
+      "checksum": "md5:8337435c6b7685bb555ea1fb8191637c",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_02_gt.tif/content"
+      }
+    },
+    {
+      "id": "a90cb80c-0921-4018-a274-0a9c67298a32",
+      "key": "DS05_09_gt.tif",
+      "size": 26856,
+      "checksum": "md5:00193bf38c6f8cdf3c8e89bc33161416",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_09_gt.tif/content"
+      }
+    },
+    {
+      "id": "b5a41fd2-4674-4e78-acd5-aedb6d183e86",
+      "key": "DS05_04_gt.tif",
+      "size": 23912,
+      "checksum": "md5:5d434b81464ef14ce18c53d9d5dedaa5",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_04_gt.tif/content"
+      }
+    },
+    {
+      "id": "5abcc0aa-1c19-4495-9ddc-4f8407b6d17e",
+      "key": "DS05_10_gt.tif",
+      "size": 19094,
+      "checksum": "md5:0774f58007f273cfb50822a17aa8242b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344880/files/DS05_10_gt.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "27762"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 668,
+    "unique_downloads": 584,
+    "views": 494,
+    "unique_views": 473,
+    "version_downloads": 668,
+    "version_unique_downloads": 584,
+    "version_unique_views": 471,
+    "version_views": 492
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 9,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 236248,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "lmk_centers_10.txt",
+        "size": 1966
+      },
+      {
+        "name": "lmk_centers_09.txt",
+        "size": 2550
+      },
+      {
+        "name": "lmk_centers_07.txt",
+        "size": 604
+      },
+      {
+        "name": "lmk_centers_05.txt",
+        "size": 4364
+      },
+      {
+        "name": "lmk_centers_06.txt",
+        "size": 3357
+      },
+      {
+        "name": "lmk_centers_02.txt",
+        "size": 1098
+      },
+      {
+        "name": "lmk_centers_08.txt",
+        "size": 3709
+      },
+      {
+        "name": "lmk_centers_04.txt",
+        "size": 2144
+      },
+      {
+        "name": "lmk_centers_03.txt",
+        "size": 1329
+      },
+      {
+        "name": "original-image-list.txt",
+        "size": 388
+      },
+      {
+        "name": "DS05_05_gt.tif",
+        "size": 42764
+      },
+      {
+        "name": "lmk_centers_01.txt",
+        "size": 10123
+      },
+      {
+        "name": "DS05_06_gt.tif",
+        "size": 42764
+      },
+      {
+        "name": "DS05_03_gt.tif",
+        "size": 19408
+      },
+      {
+        "name": "DS05_08_gt.tif",
+        "size": 35852
+      },
+      {
+        "name": "DS05_07_gt.tif",
+        "size": 10336
+      },
+      {
+        "name": "DS05_02_gt.tif",
+        "size": 15262
+      },
+      {
+        "name": "DS05_09_gt.tif",
+        "size": 26856
+      },
+      {
+        "name": "DS05_04_gt.tif",
+        "size": 23912
+      },
+      {
+        "name": "DS05_10_gt.tif",
+        "size": 19094
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://www-bcf.usc.edu/~forsburg/pombeX.html",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:11.848338"
+}

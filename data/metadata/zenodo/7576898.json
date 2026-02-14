@@ -1,0 +1,586 @@
+{
+  "created": "2023-02-02T17:45:47.887104+00:00",
+  "modified": "2024-07-12T18:14:01.088197+00:00",
+  "id": 7576898,
+  "conceptrecid": "7576897",
+  "doi": "10.5281/zenodo.7576898",
+  "conceptdoi": "10.5281/zenodo.7576897",
+  "doi_url": "https://doi.org/10.5281/zenodo.7576898",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for DeepGlobe/7-class segmentation of RGB 512x512 high-res. images",
+    "doi": "10.5281/zenodo.7576898",
+    "publication_date": "2023-01-27",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for DeepGlobe/7-class segmentation of RGB 512x512 high-res. images</strong></em></p>\n\n<p>These Residual-UNet model data are based on the [DeepGlobe dataset](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset)</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**:&nbsp;https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset</p>\n\n<p>Image size used by model:&nbsp; 512 x 512 x 3 pixels</p>\n\n<p><em>classes:</em><br>\n1.&nbsp;urban<br>\n2. agricultural<br>\n3. rangeland<br>\n4. forest<br>\n5. water<br>\n6. bare<br>\n7. unknown</p>\n\n<p><em>File descriptions</em></p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>&nbsp;</p>\n\n<p><em>References</em><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Demir, I., Koperski, K., Lindenbaum, D., Pang, G., Huang, J., Basu, S., Hughes, F., Tuia, D. and Raskar, R., 2018. Deepglobe 2018: A challenge to parse the earth through satellite images. In&nbsp;<em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops</em>&nbsp;(pp. 172-181).</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "semantic segmentation",
+      "land use / land cover",
+      "Seg2Map",
+      "aerial / high-res."
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7576897"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for DeepGlobe/7-class segmentation of RGB 512x512 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7576898",
+    "self_html": "https://zenodo.org/records/7576898",
+    "preview_html": "https://zenodo.org/records/7576898?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7576898",
+    "self_doi": "https://doi.org/10.5281/zenodo.7576898",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576898",
+    "reserve_doi": "https://zenodo.org/api/records/7576898/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7576897",
+    "parent_html": "https://zenodo.org/records/7576897",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7576897",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576897",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7576898/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7576898/sequence/default",
+    "files": "https://zenodo.org/api/records/7576898/files",
+    "media_files": "https://zenodo.org/api/records/7576898/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7576898:deepglobe_naipRGB_512_v2_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7576898/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7576898/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7576898/versions/latest",
+    "latest_html": "https://zenodo.org/records/7576898/latest",
+    "versions": "https://zenodo.org/api/records/7576898/versions",
+    "draft": "https://zenodo.org/api/records/7576898/draft",
+    "access_links": "https://zenodo.org/api/records/7576898/access/links",
+    "access_grants": "https://zenodo.org/api/records/7576898/access/grants",
+    "access_users": "https://zenodo.org/api/records/7576898/access/users",
+    "access_request": "https://zenodo.org/api/records/7576898/access/request",
+    "access": "https://zenodo.org/api/records/7576898/access",
+    "communities": "https://zenodo.org/api/records/7576898/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7576898/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7576898/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7576898/file-modification",
+    "requests": "https://zenodo.org/api/records/7576898/requests"
+  },
+  "updated": "2024-07-12T18:14:01.088197+00:00",
+  "recid": "7576898",
+  "revision": 5,
+  "files": [
+    {
+      "id": "5bacf5ef-af5c-43ca-99e3-e90c1584b02d",
+      "key": "deepglobe_naipRGB_512_v2_trainhist_24.png",
+      "size": 253116,
+      "checksum": "md5:79d2c22eb36c6f41a148b67d376237c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v2_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "fa489181-bbaa-4fc7-a617-467ee3679579",
+      "key": "deepglobe_naipRGB_512_v1_model_history.npz",
+      "size": 4015,
+      "checksum": "md5:8a1b7d14988489f3fadd7ddd442eca0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "890548b8-4deb-42a7-93fc-5da886c80d84",
+      "key": "deepglobe_naipRGB_512_v1_trainhist_24.png",
+      "size": 233322,
+      "checksum": "md5:fd3b783b875b704fe15c17fdd894b86d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v1_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "6e42378b-825e-4192-bf19-2f3b47c40374",
+      "key": "deepglobe_naipRGB_512_v2_fullmodel.h5",
+      "size": 69423392,
+      "checksum": "md5:784740b9d6965a57f2dc90762ffc8a4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "7f519217-3465-4e9e-b3f1-17516d0eb15f",
+      "key": "deepglobe_naipRGB_512_v2.json",
+      "size": 970,
+      "checksum": "md5:0ef3a9889aed8013743831312e1e1217",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v2.json/content"
+      }
+    },
+    {
+      "id": "e10511fd-ed51-4555-9008-864ab2d27b93",
+      "key": "deepglobe_naipRGB_512_v2_modelcard.json",
+      "size": 2351,
+      "checksum": "md5:3c243d01841bde303f65fe54c5dc5ea4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "27c1d1fc-b5d7-4538-8594-12d9f289e48e",
+      "key": "deepglobe_naipRGB_512_v1_modelcard.json",
+      "size": 2351,
+      "checksum": "md5:c98dedbfb46984d96d254561d88a94d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "9c2248b9-a857-4e98-bddb-8cab4b06cde7",
+      "key": "deepglobe_naipRGB_512_v1.json",
+      "size": 970,
+      "checksum": "md5:6ddb4e9adf67e701b09ba3ee5d717211",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v1.json/content"
+      }
+    },
+    {
+      "id": "1626210d-754e-4a89-a5f4-88468c6f6e05",
+      "key": "deepglobe_naipRGB_512_v2_model_history.npz",
+      "size": 2131,
+      "checksum": "md5:2037a6f10a27a9b2b5fbd8252e3fe6b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "4cf3d6b2-f57a-43e2-bba0-dbcfc3cd5b01",
+      "key": "deepglobe_naipRGB_512_v3_fullmodel.h5",
+      "size": 69423360,
+      "checksum": "md5:6e5f03edbfa8493dab7c59c38955bb98",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "099f59e4-1f1c-4895-9f7b-ff972374f57c",
+      "key": "deepglobe_naipRGB_512_v3.json",
+      "size": 970,
+      "checksum": "md5:cf0d57df64c0456790f8b3aa7d1635e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v3.json/content"
+      }
+    },
+    {
+      "id": "9077f4ff-51d7-4aaf-9bdb-e06d563a3688",
+      "key": "deepglobe_naipRGB_512_v3_modelcard.json",
+      "size": 2351,
+      "checksum": "md5:0199e2b820006fe07537b3cc5886d3cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "58f6d9a3-8c82-438e-94f5-c46f53e1f93e",
+      "key": "deepglobe_naipRGB_512_v3_model_history.npz",
+      "size": 3694,
+      "checksum": "md5:1077d8a3509df1d92bb540ccbfbf00d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "db5e8517-39b2-4aed-b3f0-0ffaa11e007a",
+      "key": "deepglobe_naipRGB_512_v1_fullmodel.h5",
+      "size": 69423360,
+      "checksum": "md5:4c8cb9ba2140e189bdf42e0d14da1284",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "746fa12a-a05c-45d1-999c-1efec32b3947",
+      "key": "deepglobe_naipRGB_512_v4_fullmodel.h5",
+      "size": 69407448,
+      "checksum": "md5:0f9e94ff01c44fa8593a51a9fb4052f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "e9f83e8a-5699-473f-b419-fc86b9e22453",
+      "key": "deepglobe_naipRGB_512_v4.json",
+      "size": 969,
+      "checksum": "md5:b611dda91f5088217ccd164b910fcc16",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v4.json/content"
+      }
+    },
+    {
+      "id": "801d528a-bcff-4541-9844-07643ce136f7",
+      "key": "classes.txt",
+      "size": 54,
+      "checksum": "md5:75b5b8512242c3793296dacce7aa562a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "266a735e-42cd-4fd5-a554-ae17ffe9366a",
+      "key": "BEST_MODEL.txt",
+      "size": 37,
+      "checksum": "md5:cdefe2d4148ecd46b3bc97c4350e2355",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "2ed6b46a-bbf1-46ba-8017-52b2c2d9c098",
+      "key": "deepglobe_naipRGB_512_v4_modelcard.json",
+      "size": 2350,
+      "checksum": "md5:2eac797c91009f909aaca861da284af9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "805d1c26-5f28-44b4-9d06-a6d4fb75d5f6",
+      "key": "deepglobe_naipRGB_512_v4_model_history.npz",
+      "size": 4204,
+      "checksum": "md5:383acfa5cb6e78ea773ba737b7a056ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "82e418c9-ea4a-4b87-96e8-ddb3742d4d0f",
+      "key": "deepglobe_naipRGB_512_v5_fullmodel.h5",
+      "size": 69423352,
+      "checksum": "md5:2659c8b238e70d8fee3e3247063dd803",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "25afa013-84bf-4109-8619-2c2e479a547b",
+      "key": "deepglobe_naipRGB_512_v5.json",
+      "size": 969,
+      "checksum": "md5:b2c2e8815b2075e574cfb9dad1ece34c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v5.json/content"
+      }
+    },
+    {
+      "id": "29d87f35-cdc4-43b3-be23-c34be2815977",
+      "key": "deepglobe_naipRGB_512_v5_modelcard.json",
+      "size": 2350,
+      "checksum": "md5:2042262df1e89785fb0d49d7ec539aa5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "f12cae80-9c4e-4c8d-8af2-974fe0d004af",
+      "key": "deepglobe_naipRGB_512_v5_model_history.npz",
+      "size": 3605,
+      "checksum": "md5:97e6e8e66e5e8c87671dffff8cec62eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "8a3102d2-0c3f-43dc-8062-6a06cf511cb8",
+      "key": "deepglobe_naipRGB_512_v6_fullmodel.h5",
+      "size": 69423384,
+      "checksum": "md5:366fc30797a108b4d7058319ec78e0c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "a687a01d-8c12-4a3c-92b6-c983edc2c863",
+      "key": "deepglobe_naipRGB_512_v6.json",
+      "size": 970,
+      "checksum": "md5:bd5126ecf0e793802d3e4a12dfe965a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v6.json/content"
+      }
+    },
+    {
+      "id": "e1ee9489-b636-4d06-b039-3ed85e0da7a3",
+      "key": "readme.txt",
+      "size": 2958,
+      "checksum": "md5:e5436b5dc9f2a6ccf888682f2aad13ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "8f817442-9893-406f-b7f4-0004f967e7bf",
+      "key": "deepglobe_naipRGB_512_v6_model_history.npz",
+      "size": 3710,
+      "checksum": "md5:58fa80fd19a191276d651d3b047958db",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "754ecab3-99b7-4c0e-b4ea-cad438d1084b",
+      "key": "deepglobe_naipRGB_512_v6_modelcard.json",
+      "size": 2349,
+      "checksum": "md5:22c779c9817606fccb599f177776bd34",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "cfa574df-8019-42d2-a465-100c88b7cbac",
+      "key": "deepglobe_naipRGB_512_v3_trainhist_24.png",
+      "size": 237533,
+      "checksum": "md5:a57491492e49eb869ba465f4bd1b868b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v3_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "48195375-25d6-4be4-96d0-27dcc5e53320",
+      "key": "deepglobe_naipRGB_512_v4_trainhist_24.png",
+      "size": 215955,
+      "checksum": "md5:c4435a1e0353927b0b17c69e6a921f76",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v4_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "0e59dc12-b5b3-4151-a33b-cd9731898842",
+      "key": "deepglobe_naipRGB_512_v5_trainhist_24.png",
+      "size": 246906,
+      "checksum": "md5:8af7efcd63c323975e64db6a8ec364ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v5_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "956bd04a-e17d-4027-b512-2f23da1dba7a",
+      "key": "deepglobe_naipRGB_512_v6_trainhist_24.png",
+      "size": 252521,
+      "checksum": "md5:9c24675ce8c7b2e094b1344ec2fab573",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576898/files/deepglobe_naipRGB_512_v6_trainhist_24.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1182,
+    "unique_downloads": 1146,
+    "views": 238,
+    "unique_views": 236,
+    "version_downloads": 1182,
+    "version_unique_downloads": 1146,
+    "version_unique_views": 235,
+    "version_views": 237
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 417985008,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "deepglobe_naipRGB_512_v2_trainhist_24.png",
+        "size": 253116
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v1_model_history.npz",
+        "size": 4015
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v1_trainhist_24.png",
+        "size": 233322
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v2_fullmodel.h5",
+        "size": 69423392
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v2.json",
+        "size": 970
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v2_modelcard.json",
+        "size": 2351
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v1_modelcard.json",
+        "size": 2351
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v1.json",
+        "size": 970
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v2_model_history.npz",
+        "size": 2131
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v3_fullmodel.h5",
+        "size": 69423360
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v3.json",
+        "size": 970
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v3_modelcard.json",
+        "size": 2351
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v3_model_history.npz",
+        "size": 3694
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v1_fullmodel.h5",
+        "size": 69423360
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v4_fullmodel.h5",
+        "size": 69407448
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v4.json",
+        "size": 969
+      },
+      {
+        "name": "classes.txt",
+        "size": 54
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 37
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v4_modelcard.json",
+        "size": 2350
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v4_model_history.npz",
+        "size": 4204
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v5_fullmodel.h5",
+        "size": 69423352
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v5.json",
+        "size": 969
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v5_modelcard.json",
+        "size": 2350
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v5_model_history.npz",
+        "size": 3605
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v6_fullmodel.h5",
+        "size": 69423384
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v6.json",
+        "size": 970
+      },
+      {
+        "name": "readme.txt",
+        "size": 2958
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v6_model_history.npz",
+        "size": 3710
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v6_modelcard.json",
+        "size": 2349
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v3_trainhist_24.png",
+        "size": 237533
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v4_trainhist_24.png",
+        "size": 215955
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v5_trainhist_24.png",
+        "size": 246906
+      },
+      {
+        "name": "deepglobe_naipRGB_512_v6_trainhist_24.png",
+        "size": 252521
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.441849"
+}

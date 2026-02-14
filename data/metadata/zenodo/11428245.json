@@ -1,0 +1,370 @@
+{
+  "created": "2024-08-20T19:29:17.978423+00:00",
+  "modified": "2024-09-27T15:29:15.882245+00:00",
+  "id": 11428245,
+  "conceptrecid": "11428244",
+  "doi": "10.5281/zenodo.11428245",
+  "conceptdoi": "10.5281/zenodo.11428244",
+  "doi_url": "https://doi.org/10.5281/zenodo.11428245",
+  "metadata": {
+    "title": "Revealing real-time 3D in vivo pathogen dynamics in plants by label-free optical coherence tomography",
+    "doi": "10.5281/zenodo.11428245",
+    "publication_date": "2024-08-06",
+    "description": "<p>This repository contains all data and code underlying the publication: J. de Wit et al. \"<em>Revealing real-time 3D in vivo pathogen dynamics in plants by label-free optical coherence tomography</em>\" in Nature Communications (2024) (https://doi.org/10.1038/s41467-024-52594-x)</p>\n<p><strong>--------------Code description------------------</strong></p>\n<p>The set of scripts is largely organized around the figures. For each (sub)figure, also from supplementary materials, that involves data and plotting, there is a script that generates the plot from data that can be found in the different zip files that are present in the Zenodo repository under https://doi.org/10.5281/zenodo.11428245.</p>\n<p>The scripts use the data that is contained in the ZIP folders. The ZIP folders are organized by experiment (Experiment 1, including contrast optimization; Experiment 2), one for the other data (OtherData, the validation for with Trypan blue, and the Arabidopsis, Radish and nematode) and one as a smaller dataset to explain the method on a single B-scan (Example_Bscan_dynamicOCT).</p>\n<p>IMPORTANT: The folder where the ZIP files are unzipped should be put in the file '<em>basepath.txt</em>', such that the data can be automatically loaded.</p>\n<p>Besides the figures that mention 'MakeFig...' there are a few more scripts:</p>\n<ul>\n<li><em>pointcloud_generation_experiment1.py</em>: this file makes the point clouds from the dynamic OCT images as described in Fig 2b. The resulting data is saved as maximum intensity projections and axial sums(forming the basis for Fig S4, S6 and S7) and as voxel counts (forming the basis of Fig.2c and Fig S5)</li>\n<li><em>pointcloud_generation_timelapses.py</em>: this file does the segmentation for experiment 2 and saves the maximum intensity projections and axial sums of the different stages in the segmentation (forming the basis of Fig3a,d,e and FigS9a,b), and saves the point clouds of the data. These point clouds were refined manually in CloudCompare as described in methods. These segmented point clouds are contained in the data zip folder of experiment 2.</li>\n<li><em>StatisticalTests.R</em>: This R file calculates the statistical tests for Fig.2cd and Fig.S5d. Here the path is not automatically updated, and should be manually set. The input file is contained in \"Experiment1/SegmentationData/segmentationdata_samples.csv\" and the output of the file is \"D:/DataZenodo/Experiment1/SegmentationData/data_combined_Rstats_output.csv\"</li>\n<li><em>example_dynamic_Bscan.py</em>: This script gives an example of the dynamic OCT processing as proposed in this paper. First it shows the process from an OCT interference spectrum to a B-scan. Then it loads 100 B-scans and applies dynamic OCT, including normalization with histograms. Finally it gives a dynamic B-scan and plots this against the average normal OCT image. This script can be used with only the zip folder \"Example_Bscan_dynamicOCT\", which reduces the amount of data needed to download/unzip.</li>\n</ul>\n<p>The list of other script files to load the data and generate the figures (guiding to the path of uncropped figures) is:</p>\n<ul>\n<li><em>MakeFig1bce_Fig2e.py</em></li>\n<li><em>MakeFig1d.py</em></li>\n<li><em>MakeFig1agraphs_FigureS1.py</em></li>\n<li><em>MakeFig3acde_S9ab.py</em></li>\n<li><em>MakeFigS2_determine_dynamic_range_experiment1.py</em></li>\n<li><em>MakeFigS8.py</em></li>\n<li><em>MakeFigureS4-S6-S7.py</em></li>\n<li><em>MakeFigureS5.py</em></li>\n<li><em>MakeHistFig2b_makeFigS3b-e.py</em></li>\n<li><em>MakePlotsFig2ab.py</em></li>\n<li><em>MakePlotsFig2cd.py</em></li>\n</ul>\n<p>Code was all run in Python 3 using Anaconda Spyder.</p>\n<p>Moreover, the zip file with the code contains the folder '<em>figures</em>' with all subfigures. Some of them are automatically saved from the scripts, others (like photos, icons, but also the Trypan blue microscopy figure) are added in the respective folder. The are logically organized by figure number.</p>\n<p><strong>--------------Dataset Description-----------------</strong></p>\n<p>As mentioned above, the data is organized in four zip folders for both experiments, the other data (validation with Trypan blue, other plant-pathogens) and one for the dynamic OCT B-scan example. The data contain the following:</p>\n<p><strong>Experiment 1:&nbsp;</strong></p>\n<ul>\n<li>DynamicOCTimages whose subfolders (organized by date) contain a folder per volume dataset in experiment 1 with a z-stack of .tif files that form the imaged volume. The lateral sampling is 3 um and the axial sampling is 1.37 um.&nbsp;</li>\n<li>ContrastOptimization: This folder contains&nbsp;\n<ul>\n<li><em>Bscans_with_segmentation</em>: segmented B-scans for contrast optimization (Fig S3)</li>\n<li><em>Bscan_figS1_fig1</em>: The B-scans and segementation for Figure S1.</li>\n<li><em>histogramdata_dynamicrange</em>: The histograms, bins and deducted reference data for determining the dynamic range per color channel for experiment 1 (Fig S2)</li>\n<li><em>logcompressed_3value_dOCT_example</em>: An example data stack for obtaining histograms (see script MakeFigS2_determine_dynamic_range_experiment1.py)</li>\n<li><em>overlaps_threshold-100-98-95-92-90-85-80-75-70-65-60-55-50-45perc_red-1_2_blue_-3_0_green1_filt.npy</em>: A file with intermediate data for the contrast optimization, which can also be generated with the script \"<em>MakeHistFig2b_makeFigS3b-e.py</em>\"</li>\n</ul>\n</li>\n<li>SegmentationData: This folder contains&nbsp;\n<ul>\n<li><em>MIP_segmentation_stages</em>: maximum intensityp projections and axial sums for all images at different stages in the segmentation (basis for Fig S4,6,7)</li>\n<li><em>processed_masks and StackMasks</em>: the manually obtained masks (segmented in StackMasks, made into masks in the folder 'processed_masks') for filtering out stomata, veins and artefacts.</li>\n<li><em>Unmasked_axialsum_th34_formanualsegmentation</em>: This folder contains the images of Fig.S4 and were used for the segmentation (we addes a small offset, such that the in segmentation we could set it to 0 and have a unique mask).&nbsp;</li>\n<li><em>overview_samples_bremiayn.csv</em>: A dataframe with the data for all the samples in experiment 1 that is used as input for the segmentation. It also contains the result of the manual check whether it has infection (Fig2c, left).</li>\n<li><em>segmentationdata_samples.csv</em>: This supplements the file of overview_samples_bremiayn.csv with the results from the segmentation and is output to script \"<em>pointcloud_generation_experiment1.py</em>\". It forms the basis of Fig.2a-c, and FigS5, as well as for the R-script to do the statistical testing.</li>\n<li><em>qPCR_dOCT.csv</em>: This script contains the qPCR data and is input to Fig2d.&nbsp;</li>\n</ul>\n</li>\n</ul>\n<p><strong>Experiment 2:</strong></p>\n<ul>\n<li><em>DynamicOCTimages</em>: This contains the z-stacks of .tif files of the volumes for experiment 2 (and one extra, where a z-slice is used in Fig.1b, bottom). Sampling step size is here again 3 um in lateral direction and 1.37 um in axial direction.</li>\n<li><em>.npy files </em>with the histograms (with same bins as Experiment 1), maxvalues and reference values for the dynamic range calculation.</li>\n<li><em>segmentation_data</em>: this folder contains:\n<ul>\n<li><em>quantification_volume_disc160_33_10.csv</em> and <em>quantification_volume_disc160_33_10.xlsx</em>: data from the manually segmented point clouds that form the basis of Fig.3c.</li>\n<li><em>timelapse_sampleoverview.csv</em>: overview of the samples that is used as input in the file \"<em>pointcloud_generation_timelapses.py</em>\"</li>\n<li><em>pointclouds</em>: Folder with segmented point clouds for the three leaf discs. These files could &nbsp;be loaded in CloudCompare.</li>\n<li><em>overviewMIPs</em>: folder with overview maximum intensity projections for the different steps in segmentation, which also forms the input of Fig.3a, FigS9ab.</li>\n<li>rawpointclouds: folder with the automatically generated point clouds from file&nbsp;<em>pointcloud_generation_timelapses.py&nbsp;</em>which were imported into CloudCompare as the basis for the segmented point clouds.</li>\n</ul>\n</li>\n</ul>\n<p><strong>OtherData:</strong></p>\n<p>This folder contains the z-stacks of dynamic OCT tif images for Arabidopsis (here both a normal contrast and one that has been increased to only contain the original 0-180 range); nematodes, radish (called radijs_test_PP_py_0002), spores for Fig1c (SporesImaging) and the dynamic OCT image of Fig1d.&nbsp;</p>\n<p><strong>example_Bscan_dynamicOCT:</strong></p>\n<p>This folder contains data to run the script example_dynamic_Bscan.py to show the dynamic OCT imaging process from raw OCT spectra.</p>\n<ul>\n<li><em>raw_spectra_exampleframe:</em> contains interference spectra, a reference spectrum and interpolation grid to show how to get from a raw OCT spectrum to a normal single B-scan.</li>\n<li><em>abs_images:</em> contains 100 subsequent B-scans that can be used to generate a dynamic OCT image as done in example_dynamic_Bscan.py</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "de Wit, Jos",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0003-3325-1079"
+      },
+      {
+        "name": "Tonn, Sebastian",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-2442-2203"
+      },
+      {
+        "name": "Shao, Mon-Ray",
+        "affiliation": "Utrecht University"
+      },
+      {
+        "name": "Van den Ackerveken, Guido",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-0183-8978"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "Delft University of Technology"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "de Wit, Jos",
+        "affiliation": "Delft University of Technology",
+        "type": "Researcher",
+        "orcid": "0000-0003-3325-1079"
+      },
+      {
+        "name": "Shao, Mon-Ray",
+        "affiliation": "Utrecht University",
+        "type": "Researcher",
+        "orcid": "0000-0003-0773-7024"
+      },
+      {
+        "name": "Tonn, Sebastian",
+        "affiliation": "Utrecht University",
+        "type": "Researcher"
+      },
+      {
+        "name": "Van den Ackerveken, Guido",
+        "affiliation": "Utrecht University",
+        "type": "Supervisor",
+        "orcid": "0000-0002-0183-8978"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "Delft University of Technology",
+        "type": "ContactPerson",
+        "orcid": "0000-0003-2752-2434"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41467-024-52594-x",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "accepted"
+      }
+    ],
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        },
+        {
+          "id": "r",
+          "title": {
+            "en": "R"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Revealing real-time 3D in vivo pathogen dynamics in plants by label-free optical coherence tomography"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "16293",
+        "internal_id": "10.13039/501100003246::16293",
+        "funder": {
+          "name": "Dutch Research Council",
+          "doi": "10.13039/501100003246",
+          "acronym": "NWO"
+        },
+        "title": "Pathoview",
+        "url": "https://www.nwo.nl/onderzoeksprogrammas/partnership/partnership-programmas/rijk-zwaan"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "11428244"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Revealing real-time 3D in vivo pathogen dynamics in plants by label-free optical coherence tomography",
+  "links": {
+    "self": "https://zenodo.org/api/records/11428245",
+    "self_html": "https://zenodo.org/records/11428245",
+    "preview_html": "https://zenodo.org/records/11428245?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.11428245",
+    "self_doi": "https://doi.org/10.5281/zenodo.11428245",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11428245",
+    "reserve_doi": "https://zenodo.org/api/records/11428245/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/11428244",
+    "parent_html": "https://zenodo.org/records/11428244",
+    "parent_doi": "https://doi.org/10.5281/zenodo.11428244",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11428244",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:11428245/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:11428245/sequence/default",
+    "files": "https://zenodo.org/api/records/11428245/files",
+    "media_files": "https://zenodo.org/api/records/11428245/media-files",
+    "archive": "https://zenodo.org/api/records/11428245/files-archive",
+    "archive_media": "https://zenodo.org/api/records/11428245/media-files-archive",
+    "latest": "https://zenodo.org/api/records/11428245/versions/latest",
+    "latest_html": "https://zenodo.org/records/11428245/latest",
+    "versions": "https://zenodo.org/api/records/11428245/versions",
+    "draft": "https://zenodo.org/api/records/11428245/draft",
+    "access_links": "https://zenodo.org/api/records/11428245/access/links",
+    "access_grants": "https://zenodo.org/api/records/11428245/access/grants",
+    "access_users": "https://zenodo.org/api/records/11428245/access/users",
+    "access_request": "https://zenodo.org/api/records/11428245/access/request",
+    "access": "https://zenodo.org/api/records/11428245/access",
+    "communities": "https://zenodo.org/api/records/11428245/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/11428245/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/11428245/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/11428245/file-modification",
+    "requests": "https://zenodo.org/api/records/11428245/requests"
+  },
+  "updated": "2024-09-27T15:29:15.882245+00:00",
+  "recid": "11428245",
+  "revision": 6,
+  "files": [
+    {
+      "id": "065856ad-4a13-42a4-b2d1-7530a202b404",
+      "key": "CodeFiguresDynamicOCT.zip",
+      "size": 57218376,
+      "checksum": "md5:b1fb0e28e5e11bcf7f8c41a9e31b2ebd",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/CodeFiguresDynamicOCT.zip/content"
+      }
+    },
+    {
+      "id": "e816c01d-1d09-46d5-9353-01663ad19fa2",
+      "key": "Experiment1.zip",
+      "size": 1503475255,
+      "checksum": "md5:75dfab06873ac3f40d027bb1bd7ba22f",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/Experiment1.zip/content"
+      }
+    },
+    {
+      "id": "0c8f9a80-d6f0-4f9e-8367-eede01576ad8",
+      "key": "README.txt",
+      "size": 8208,
+      "checksum": "md5:b3d0324aed960cccb5f2573e4050e23b",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/README.txt/content"
+      }
+    },
+    {
+      "id": "c6678762-eac3-4481-accf-3679685581be",
+      "key": "Experiment2.zip",
+      "size": 2464416025,
+      "checksum": "md5:d6c8c904907c6c2aa90428f82c8fb6fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/Experiment2.zip/content"
+      }
+    },
+    {
+      "id": "1a49519d-2fa0-4617-bd8b-6e891622806c",
+      "key": "OtherData.zip",
+      "size": 208184948,
+      "checksum": "md5:f25cfdc919cfa937788b953ab77bf0d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/OtherData.zip/content"
+      }
+    },
+    {
+      "id": "d5abb04c-5405-436d-a569-779b837930cd",
+      "key": "example_Bscan_dynamicOCT.zip",
+      "size": 284060057,
+      "checksum": "md5:372e6d28bd03dbbfbcf812e499fa2e10",
+      "links": {
+        "self": "https://zenodo.org/api/records/11428245/files/example_Bscan_dynamicOCT.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "142669"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 329,
+    "unique_downloads": 286,
+    "views": 189,
+    "unique_views": 174,
+    "version_downloads": 329,
+    "version_unique_downloads": 286,
+    "version_unique_views": 174,
+    "version_views": 189
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4517354661,
+    "top_level_files": [
+      {
+        "name": "CodeFiguresDynamicOCT.zip",
+        "size": 57218376
+      },
+      {
+        "name": "Experiment1.zip",
+        "size": 1503475255
+      },
+      {
+        "name": "README.txt",
+        "size": 8208
+      },
+      {
+        "name": "Experiment2.zip",
+        "size": 2464416025
+      },
+      {
+        "name": "OtherData.zip",
+        "size": 208184948
+      },
+      {
+        "name": "example_Bscan_dynamicOCT.zip",
+        "size": 284060057
+      }
+    ],
+    "zip_contents": {
+      "codefiguresdynamicoct.zip": {
+        "total_files": 222,
+        "total_directories": 16,
+        "total_uncompressed_bytes": 239962075,
+        "file_types": {
+          ".png": 72,
+          ".tif": 27,
+          ".jpg": 4
+        },
+        "imaging_file_count": 103,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "codefiguresdynamicoct/figures/figure1/doctim_rgb.tif",
+          "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_blue.tif",
+          "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_green.tif",
+          "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_red.tif",
+          "codefiguresdynamicoct/figures/figure1/dyn_image_fig1a.png",
+          "codefiguresdynamicoct/figures/figure1/fig1a/3drendering.tif",
+          "codefiguresdynamicoct/figures/figure1/fig1a/3drendering_nobox.tif",
+          "codefiguresdynamicoct/figures/figure1/fig1a/doctim_rgb.tif",
+          "codefiguresdynamicoct/figures/figure1/fig1a/doctim_singlecolor_blue.tif",
+          "codefiguresdynamicoct/figures/figure1/fig1a/doctim_singlecolor_green.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "example_bscan_dynamicoct.zip": {
+        "total_files": 103,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 300847872,
+        "file_types": {
+          ".npy": 102
+        },
+        "imaging_file_count": 102,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame000.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame001.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame002.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame003.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame004.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame005.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame006.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame007.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame008.npy",
+          "example_bscan_dynamicoct/abs_images/absoctimage_frame009.npy"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "codefiguresdynamicoct/figures/figure1/doctim_rgb.tif",
+      "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_blue.tif",
+      "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_green.tif",
+      "codefiguresdynamicoct/figures/figure1/doctim_singlecolor_red.tif",
+      "codefiguresdynamicoct/figures/figure1/dyn_image_fig1a.png",
+      "codefiguresdynamicoct/figures/figure1/fig1a/3drendering.tif",
+      "codefiguresdynamicoct/figures/figure1/fig1a/3drendering_nobox.tif",
+      "codefiguresdynamicoct/figures/figure1/fig1a/doctim_rgb.tif",
+      "codefiguresdynamicoct/figures/figure1/fig1a/doctim_singlecolor_blue.tif",
+      "codefiguresdynamicoct/figures/figure1/fig1a/doctim_singlecolor_green.tif",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame000.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame001.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame002.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame003.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame004.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame005.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame006.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame007.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame008.npy",
+      "example_bscan_dynamicoct/abs_images/absoctimage_frame009.npy"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1038/s41467-024-52594-x",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.11428245",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:04.021712"
+}

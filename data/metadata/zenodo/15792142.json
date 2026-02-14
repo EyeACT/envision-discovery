@@ -1,0 +1,175 @@
+{
+  "created": "2025-07-18T06:21:14.985406+00:00",
+  "modified": "2025-07-18T06:21:15.128548+00:00",
+  "id": 15792142,
+  "conceptrecid": "15792141",
+  "doi": "10.5281/zenodo.15792142",
+  "conceptdoi": "10.5281/zenodo.15792141",
+  "doi_url": "https://doi.org/10.5281/zenodo.15792142",
+  "metadata": {
+    "title": "Cooperamos UJI pipes dataset",
+    "doi": "10.5281/zenodo.15792142",
+    "publication_date": "2025-07-02",
+    "description": "<h2><strong>Underwater Pipeline Dataset (YOLO Segmentation Format)</strong></h2>\n<h3><strong>Dataset Overview</strong></h3>\n<p>This dataset contains annotated underwater images of pipeline components, designed for robotics applications such as subsea inspection, maintenance, and navigation. The dataset was obtained from <a href=\"https://universe.roboflow.com/tubos/yellow_pipes/dataset/4\" target=\"_new\" rel=\"noopener\">Roboflow Universe - Yellow Pipes v4</a>.</p>\n<h3><strong>Labels &amp; Classes</strong></h3>\n<p>The dataset includes the following object classes, each represented with pixel-accurate segmentation masks:</p>\n<ul>\n<li>\n<p><strong>tpipe:</strong> T-junctions in pipelines (where three pipes connect in a \"T\" shape).</p>\n</li>\n<li>\n<p><strong>lpipe:</strong> Pipe elbows or bends (usually at 90&deg; or 45&deg; angles).</p>\n</li>\n<li>\n<p><strong>coupler:</strong> Pipe couplers or connectors joining two straight pipe segments.</p>\n</li>\n<li>\n<p><strong>pipe:</strong> Straight pipe sections without visible joints or bends.</p>\n</li>\n</ul>\n<h3><strong>Annotation Format</strong></h3>\n<ul>\n<li>\n<p><strong>YOLO Segmentation:</strong><br>Each image has an associated <code>.txt</code> file with segmentation label data in YOLO format.</p>\n<ul>\n<li>\n<p>Each line represents one object instance.</p>\n</li>\n<li>\n<p>The first value is the class ID (<code>0</code> = tpipe, <code>1</code> = lpipe, <code>2</code> = coupler, <code>3</code> = pipe).</p>\n</li>\n<li>\n<p>The remaining values are normalized segmentation points describing the object&rsquo;s outline as polygons.</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Images:</strong><br>Supplied in standard image formats (e.g., <code>.jpg</code>, <code>.png</code>).</p>\n</li>\n</ul>\n<p><strong>Example segmentation label line (YOLO format):</strong></p>\n<div>&nbsp;</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "L\u00f3pez Barajas, Salvador",
+        "affiliation": "Universitat Jaume I",
+        "orcid": "0009-0004-0410-2888"
+      },
+      {
+        "name": "Marin, Raul",
+        "affiliation": "Jaume I University",
+        "orcid": "0000-0002-2340-4126"
+      },
+      {
+        "name": "Sanz, Pedro J",
+        "affiliation": "Universitat Jaume I",
+        "orcid": "0000-0003-3382-1553"
+      }
+    ],
+    "keywords": [
+      "Pipes",
+      "Dataset",
+      "Cooperamos",
+      "Underwater Robots"
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "version4"
+      }
+    ],
+    "version": "4",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://universe.roboflow.com/tubos/yellow_pipes/dataset/4"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "PID2020-115332RB-C31",
+        "internal_id": "034900433::PID2020-115332RB-C31",
+        "funder": {
+          "name": "Ministry of Economy, Industry and Competitiveness"
+        },
+        "title": "MINECO",
+        "url": "https://cooperamos.udg.edu/"
+      }
+    ],
+    "communities": [
+      {
+        "id": "universitatjaumei"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15792141"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Cooperamos UJI pipes dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15792142",
+    "self_html": "https://zenodo.org/records/15792142",
+    "preview_html": "https://zenodo.org/records/15792142?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15792142",
+    "self_doi": "https://doi.org/10.5281/zenodo.15792142",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15792142",
+    "reserve_doi": "https://zenodo.org/api/records/15792142/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15792141",
+    "parent_html": "https://zenodo.org/records/15792141",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15792141",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15792141",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15792142/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15792142/sequence/default",
+    "files": "https://zenodo.org/api/records/15792142/files",
+    "media_files": "https://zenodo.org/api/records/15792142/media-files",
+    "archive": "https://zenodo.org/api/records/15792142/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15792142/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15792142/versions/latest",
+    "latest_html": "https://zenodo.org/records/15792142/latest",
+    "versions": "https://zenodo.org/api/records/15792142/versions",
+    "draft": "https://zenodo.org/api/records/15792142/draft",
+    "access_links": "https://zenodo.org/api/records/15792142/access/links",
+    "access_grants": "https://zenodo.org/api/records/15792142/access/grants",
+    "access_users": "https://zenodo.org/api/records/15792142/access/users",
+    "access_request": "https://zenodo.org/api/records/15792142/access/request",
+    "access": "https://zenodo.org/api/records/15792142/access",
+    "communities": "https://zenodo.org/api/records/15792142/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15792142/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15792142/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15792142/file-modification",
+    "requests": "https://zenodo.org/api/records/15792142/requests"
+  },
+  "updated": "2025-07-18T06:21:15.128548+00:00",
+  "recid": "15792142",
+  "revision": 4,
+  "files": [
+    {
+      "id": "a4557028-dedf-45f8-997b-33d9a3b0366a",
+      "key": "Yellow_pipes.v4i.yolov8.zip",
+      "size": 14679788,
+      "checksum": "md5:279e758ad2a7ea3321b93ec7b14e7b86",
+      "links": {
+        "self": "https://zenodo.org/api/records/15792142/files/Yellow_pipes.v4i.yolov8.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1356640"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 32,
+    "unique_downloads": 30,
+    "views": 128,
+    "unique_views": 122,
+    "version_downloads": 32,
+    "version_unique_downloads": 30,
+    "version_unique_views": 122,
+    "version_views": 128
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 14679788,
+    "top_level_files": [
+      {
+        "name": "Yellow_pipes.v4i.yolov8.zip",
+        "size": 14679788
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:02.871470"
+}

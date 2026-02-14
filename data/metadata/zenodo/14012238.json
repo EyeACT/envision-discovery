@@ -1,0 +1,142 @@
+{
+  "created": "2024-10-30T10:52:12.996498+00:00",
+  "modified": "2024-10-30T10:52:13.247098+00:00",
+  "id": 14012238,
+  "conceptrecid": "14012237",
+  "doi": "10.5281/zenodo.14012238",
+  "conceptdoi": "10.5281/zenodo.14012237",
+  "doi_url": "https://doi.org/10.5281/zenodo.14012238",
+  "metadata": {
+    "title": "[SUMMER - Co-Simulation Platform Oct-24 - RM2]",
+    "doi": "10.5281/zenodo.14012238",
+    "publication_date": "2024-10-30",
+    "description": "<p><em>A dataset containing an exaple of simulation scenario analysis conducted in the Frassinetto municipality using the co-simulation platform developed in RM2.</em></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Polytechnic University of Turin",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Spoke 4 - Digital Innovation Toward Sustainable Mountain",
+      "SUMMER Project",
+      "Mountain Resources Management",
+      "ECS00000036"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "ecs-nodes"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14012237"
+          }
+        }
+      ]
+    }
+  },
+  "title": "[SUMMER - Co-Simulation Platform Oct-24 - RM2]",
+  "links": {
+    "self": "https://zenodo.org/api/records/14012238",
+    "self_html": "https://zenodo.org/records/14012238",
+    "preview_html": "https://zenodo.org/records/14012238?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14012238",
+    "self_doi": "https://doi.org/10.5281/zenodo.14012238",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14012238",
+    "reserve_doi": "https://zenodo.org/api/records/14012238/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14012237",
+    "parent_html": "https://zenodo.org/records/14012237",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14012237",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14012237",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14012238/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14012238/sequence/default",
+    "files": "https://zenodo.org/api/records/14012238/files",
+    "media_files": "https://zenodo.org/api/records/14012238/media-files",
+    "archive": "https://zenodo.org/api/records/14012238/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14012238/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14012238/versions/latest",
+    "latest_html": "https://zenodo.org/records/14012238/latest",
+    "versions": "https://zenodo.org/api/records/14012238/versions",
+    "draft": "https://zenodo.org/api/records/14012238/draft",
+    "access_links": "https://zenodo.org/api/records/14012238/access/links",
+    "access_grants": "https://zenodo.org/api/records/14012238/access/grants",
+    "access_users": "https://zenodo.org/api/records/14012238/access/users",
+    "access_request": "https://zenodo.org/api/records/14012238/access/request",
+    "access": "https://zenodo.org/api/records/14012238/access",
+    "communities": "https://zenodo.org/api/records/14012238/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14012238/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14012238/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14012238/file-modification",
+    "requests": "https://zenodo.org/api/records/14012238/requests"
+  },
+  "updated": "2024-10-30T10:52:13.247098+00:00",
+  "recid": "14012238",
+  "revision": 4,
+  "files": [
+    {
+      "id": "de8b85c3-ccab-4c63-9d63-f99845cb0264",
+      "key": "October_2024 dataset update.zip",
+      "size": 221070390,
+      "checksum": "md5:d02ba1d1d2385ab0d8ba22cb49b8ae8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14012238/files/October_2024 dataset update.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1100138"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 80,
+    "unique_downloads": 80,
+    "views": 72,
+    "unique_views": 67,
+    "version_downloads": 80,
+    "version_unique_downloads": 80,
+    "version_unique_views": 67,
+    "version_views": 72
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 221070390,
+    "top_level_files": [
+      {
+        "name": "October_2024 dataset update.zip",
+        "size": 221070390
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:24.139653"
+}

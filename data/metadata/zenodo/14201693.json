@@ -1,0 +1,312 @@
+{
+  "created": "2025-12-01T07:27:33.823647+00:00",
+  "modified": "2025-12-01T07:27:34.796279+00:00",
+  "id": 14201693,
+  "conceptrecid": "14201692",
+  "doi": "10.5281/zenodo.14201693",
+  "conceptdoi": "10.5281/zenodo.14201692",
+  "doi_url": "https://doi.org/10.5281/zenodo.14201693",
+  "metadata": {
+    "title": "IMA++: ISIC Archive Multi-Annotator Dermoscopic Skin Lesion Segmentation Dataset",
+    "doi": "10.5281/zenodo.14201693",
+    "publication_date": "2024-08-05",
+    "description": "<h2>Overview</h2>\n<p>The <strong>IMA++</strong>&nbsp;dataset is the largest publicly available multi-annotator skin lesion segmentation (SLS) dataset, collected from <a href=\"https://www.isic-archive.com/\" target=\"_blank\" rel=\"noopener\">the ISIC Archive</a> to facilitate skin lesion image segmentation research. It contains <strong>17,684 segmentation masks</strong> spanning <strong>14,967 dermoscopic images</strong>, where 2,394 dermoscopic images have 2-5 segmentations per image from the ISIC Archive, annotated by&nbsp;<strong>16 distinct annotators</strong>, with at least one annotation per image. The dataset captures a wide range of segmentation styles influenced by annotator expertise, tools used, and manual review processes, making it a valuable resource for developing and evaluating SLS models.</p>\n<h2>Files</h2>\n<ul>\n<li><strong>segs.zip</strong>: A ZIP archive of the 22,472 segmentation masks. This includes 17,684 segmentation masks and the output of two consensus algorithms, bringing the number of segmentations up to 22, 472.</li>\n<li><strong>seg_metadata.csv</strong>: A CSV file containing the metadata&nbsp;for all the 22,472 segmentation masks.</li>\n<li><strong>img_metadata.csv</strong>: A CSV file containing the metadata&nbsp;for all the 14,967 skin lesion images.</li>\n<li><strong>seg_metadata_multiannotator_subset.csv</strong>: A CSV file containing the metadata&nbsp;for only the multi-annotator subset of&nbsp;IMA++ (i.e., 2,394 images with&nbsp;multiple segmentations per image).</li>\n<li><strong>iaa_metrics_pairwise.csv</strong>: A CSV file with the IAA metrics calculated for all mask pairs for all&nbsp;the images in the multi-annotator&nbsp;subset of IMA++.</li>\n<li><strong>iaa_metrics_image.csv</strong>: A CSV file with the pairwise IAA&nbsp;metrics averaged per image.</li>\n<li><strong>splits/{train,val,test}.csv</strong>: Standardized {training, validation,&nbsp;testing} partitions for the multi-annotator subset of IMA++.</li>\n</ul>\n<p>Note that the&nbsp;<strong>14,967</strong><strong>&nbsp;skin lesion images from the ISIC Archive</strong> corresponding to these segmentation masks are <strong>not included in this repository</strong>, and they can be obtained from the ISIC Archive. You can use the ISIC API to download images by their ISIC ID using the code in <a title=\"ISIC API Image Downloader\" href=\"https://github.com/kakumarabhishek/ISIC-API-Image-Downloader\">this repository</a>.</p>\n<h2>Key Features</h2>\n<ul>\n<li>\n<p><strong>Inter-Annotator Variability</strong>: The dataset captures a wide range of segmentation styles, reflecting differences in annotator expertise, tools used (T1, T2, T3), and manual review processes (expert or novice).</p>\n</li>\n<li>\n<p><strong>Realistic multi-annotator scenario</strong>: Unlike most medical image segmentation datasets where every image is segmented by every annotator (i.e., a complete bipartite graph between annotators and images), IMA++ features an incomplete bipartite graph (i.e., every image is segmented by at least one annotator, but not all images are segmented by all annotators). This setup simulates real-world annotation scenarios where multiple annotators contribute to a subset of images.</p>\n</li>\n<li>\n<p><strong>Large-Scale Multi-Annotator Data</strong>: With 17,684 image-mask pairs from 16 annotators, IMA++ is the largest publicly available multi-annotator skin lesion segmentation dataset, enabling robust analysis of annotator preferences and segmentation styles.</p>\n</li>\n<li><strong>Tool-Specific Segmentation Styles</strong>: The dataset allows for the exploration of tool-specific segmentation styles, as demonstrated in <a href=\"https://doi.org/10.1007/978-3-031-77610-6_3\">the segmentation style discovery paper</a>, where differences among the three annotation tools (T1, T2, T3) were learned and captured by the segmentation model.</li>\n</ul>\n<h2>Citation</h2>\n<p>If you use the <strong>IMA++ dataset</strong> in your research, please cite the following papers:</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p>Abhishek, K., Kawahara, J., Hamarneh, G. (2025). Segmentation Style Discovery: Application to Skin Lesion Images. In: Medical Image Computing and Computer-Assisted Intervention (MICCAI) ISIC Skin Image Analysis Workshop (MICCAI ISIC). MICCAI 2024. Lecture Notes in Computer Science, vol 15274, pages 24&ndash;34. Springer, Cham. https://doi.org/10.1007/978-3-031-77610-6_3</p>\n<p>Abhishek, K., Kawahara, J., Hamarneh, G. (2025). What Can We Learn from Inter-Annotator Variability in Skin Lesion Segmentation?. In: Medical Image Computing and Computer-Assisted Intervention (MICCAI) ISIC Skin Image Analysis Workshop (MICCAI ISIC). MICCAI 2025. Lecture Notes in Computer Science, vol 16149, pages 23&ndash;33. Springer, Cham. https://doi.org/10.1007/978-3-032-05825-6_3</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>\n<p>The BibTeX entries for these papers are:</p>\n<pre><code>@InProceedings{abhishek2024segmentation,\n    author = {Abhishek, Kumar and Kawahara, Jeremy and Hamarneh, Ghassan},\n    title = {Segmentation Style Discovery: Application to Skin Lesion Images},\n    booktitle = {Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) ISIC Skin Image Analysis Workshop},\n    pages = {24--34}\n    year = {2025},\n    doi = {https://doi.org/10.1007/978-3-031-77610-6_3},\n    url = {https://link.springer.com/chapter/10.1007/978-3-031-77610-6_3},\n    publisher = {Springer Nature Switzerland},\n    address = {Cham},\n    isbn = {9783031776106}\n}</code><br><br><code>@InProceedings{abhishek2024segmentation,\n    author = {Abhishek, Kumar and Kawahara, Jeremy and Hamarneh, Ghassan},\n    title = {What Can We Learn from Inter-Annotator Variability in Skin Lesion Segmentation?},\n    booktitle = {Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) ISIC Skin Image Analysis Workshop},\n    pages = {23--33}\n    year = {2025},\n    doi = {https://doi.org/10.1007/978-3-032-05825-6_3},\n    url = {https://link.springer.com/chapter/10.1007/978-3-032-05825-6_3},\n    publisher = {Springer Nature Switzerland},\n    address = {Cham},\n    isbn = {9783032058256}\n}</code></pre>\n<h2>License</h2>\n<p>The IMA++ dataset is made available under the <strong>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</strong> license. Additionally, since these annotations are collected from the ISIC Archive, by using these annotations, you acknowledge and confirm your compliance with <a href=\"https://www.isic-archive.com/terms-conditions\" target=\"_blank\" rel=\"noopener\">their Terms of Use</a>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Abhishek, Kumar",
+        "affiliation": "Simon Fraser University",
+        "orcid": "0000-0002-7341-9617"
+      },
+      {
+        "name": "Kawahara, Jeremy",
+        "affiliation": "AIP Labs",
+        "orcid": "0000-0002-6406-5300"
+      },
+      {
+        "name": "Hamarneh, Ghassan",
+        "affiliation": "Simon Fraser University",
+        "orcid": "0000-0001-5040-7448"
+      }
+    ],
+    "keywords": [
+      "medical image analysis",
+      "skin lesion",
+      "image segmentation",
+      "multi-rater",
+      "skin cancer",
+      "dermoscopy",
+      "machine learning",
+      "computer vision"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1007/978-3-031-77610-6_3",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-conferencepaper",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1007/978-3-032-05825-6_3",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-conferencepaper",
+        "scheme": "doi"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/sfu-mial/IMAplusplus",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14201692"
+          }
+        }
+      ]
+    }
+  },
+  "title": "IMA++: ISIC Archive Multi-Annotator Dermoscopic Skin Lesion Segmentation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/14201693",
+    "self_html": "https://zenodo.org/records/14201693",
+    "preview_html": "https://zenodo.org/records/14201693?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14201693",
+    "self_doi": "https://doi.org/10.5281/zenodo.14201693",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14201693",
+    "reserve_doi": "https://zenodo.org/api/records/14201693/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14201692",
+    "parent_html": "https://zenodo.org/records/14201692",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14201692",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14201692",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14201693/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14201693/sequence/default",
+    "files": "https://zenodo.org/api/records/14201693/files",
+    "media_files": "https://zenodo.org/api/records/14201693/media-files",
+    "archive": "https://zenodo.org/api/records/14201693/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14201693/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14201693/versions/latest",
+    "latest_html": "https://zenodo.org/records/14201693/latest",
+    "versions": "https://zenodo.org/api/records/14201693/versions",
+    "draft": "https://zenodo.org/api/records/14201693/draft",
+    "access_links": "https://zenodo.org/api/records/14201693/access/links",
+    "access_grants": "https://zenodo.org/api/records/14201693/access/grants",
+    "access_users": "https://zenodo.org/api/records/14201693/access/users",
+    "access_request": "https://zenodo.org/api/records/14201693/access/request",
+    "access": "https://zenodo.org/api/records/14201693/access",
+    "communities": "https://zenodo.org/api/records/14201693/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14201693/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14201693/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14201693/file-modification",
+    "requests": "https://zenodo.org/api/records/14201693/requests"
+  },
+  "updated": "2025-12-01T07:27:34.796279+00:00",
+  "recid": "14201693",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e2871831-478f-41a6-8da4-aa7d904abce7",
+      "key": "segs.zip",
+      "size": 162307938,
+      "checksum": "md5:c5143aed98283ab57de2c86ce50973c8",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/segs.zip/content"
+      }
+    },
+    {
+      "id": "4b0e3de6-3c96-459d-a4a1-ebbf02c50206",
+      "key": "seg_metadata_multiannotator_subset.csv",
+      "size": 1264684,
+      "checksum": "md5:d8adefffa3ca1d7460aae5b7a5d1e661",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/seg_metadata_multiannotator_subset.csv/content"
+      }
+    },
+    {
+      "id": "41e45f2d-c16c-4e3c-97be-f1bb9be63e36",
+      "key": "iaa_metrics_image.csv",
+      "size": 343617,
+      "checksum": "md5:0bcf3c7d53ddb4f725400990c747381a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/iaa_metrics_image.csv/content"
+      }
+    },
+    {
+      "id": "abb7fb83-44d3-4c84-a7d4-13ff39ee0e4f",
+      "key": "img_metadata.csv",
+      "size": 2925294,
+      "checksum": "md5:c27fdbcaab1e2cae48d6ad7edd3d64c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/img_metadata.csv/content"
+      }
+    },
+    {
+      "id": "fd357544-abd9-4087-8304-2ca8dff04a2c",
+      "key": "iaa_metrics_pairwise.csv",
+      "size": 3926466,
+      "checksum": "md5:45829e731ead30901580abe608238543",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/iaa_metrics_pairwise.csv/content"
+      }
+    },
+    {
+      "id": "7c07834d-c025-47ab-b2ae-2ffcb4496666",
+      "key": "seg_metadata.csv",
+      "size": 3150634,
+      "checksum": "md5:aae21dec31b48e45786da70c4609e45f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/seg_metadata.csv/content"
+      }
+    },
+    {
+      "id": "5ad176e1-7cfc-4beb-a701-2d5cb92e3196",
+      "key": "test.csv",
+      "size": 30001,
+      "checksum": "md5:92b3bf10a73a9bf1974acfad26bacfdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/test.csv/content"
+      }
+    },
+    {
+      "id": "66430b32-75b8-44b5-b1d9-d5e75946154a",
+      "key": "train.csv",
+      "size": 104726,
+      "checksum": "md5:405995ddf4e912ed2bcf890f1c5c6eaf",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/train.csv/content"
+      }
+    },
+    {
+      "id": "03eed966-c505-45a3-b4af-0270e162317b",
+      "key": "val.csv",
+      "size": 15095,
+      "checksum": "md5:73ca2e9fa602e4bc18024adfe37c8b42",
+      "links": {
+        "self": "https://zenodo.org/api/records/14201693/files/val.csv/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1085233"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 407,
+    "unique_downloads": 351,
+    "views": 168,
+    "unique_views": 149,
+    "version_downloads": 407,
+    "version_unique_downloads": 351,
+    "version_unique_views": 149,
+    "version_views": 168
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 162307938,
+    "top_level_files": [
+      {
+        "name": "segs.zip",
+        "size": 162307938
+      },
+      {
+        "name": "seg_metadata_multiannotator_subset.csv",
+        "size": 1264684
+      },
+      {
+        "name": "iaa_metrics_image.csv",
+        "size": 343617
+      },
+      {
+        "name": "img_metadata.csv",
+        "size": 2925294
+      },
+      {
+        "name": "iaa_metrics_pairwise.csv",
+        "size": 3926466
+      },
+      {
+        "name": "seg_metadata.csv",
+        "size": 3150634
+      },
+      {
+        "name": "test.csv",
+        "size": 30001
+      },
+      {
+        "name": "train.csv",
+        "size": 104726
+      },
+      {
+        "name": "val.csv",
+        "size": 15095
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1007/978-3-031-77610-6_3",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-032-05825-6_3",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-031-77610-6_3}",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-77610-6_3}",
+      "type": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-032-05825-6_3}",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-05825-6_3}",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:16.172835"
+}

@@ -1,0 +1,212 @@
+{
+  "created": "2021-06-17T02:21:38.098660+00:00",
+  "modified": "2022-05-28T02:38:26.096156+00:00",
+  "id": 4970545,
+  "conceptrecid": "4970544",
+  "doi": "10.5061/dryad.56f1h",
+  "doi_url": "https://doi.org/10.5061/dryad.56f1h",
+  "metadata": {
+    "title": "Data from: Quantitative analysis of fundus-image sequences reveals phase of spontaneous venous pulsations",
+    "doi": "10.5061/dryad.56f1h",
+    "publication_date": "2016-07-08",
+    "description": "Purpose: Spontaneous venous pulsation correlates negatively with elevated intracranial pressure and papilledema, and it relates to glaucoma. Yet, its etiology remains unclear. A key element to elucidate its underlying mechanism is the time at which collapse occurs with respect to the heart cycle, but previous reports are contradictory. We assessed this question in healthy subjects using quantitative measurements of both vein diameters and artery lateral displacements; the latter being used as the marker of the ocular systole time. Methods: We recorded 5-second fundus sequences with a near-infrared scanning laser ophthalmoscope in 12 young healthy subjects. The image sequences were coregistered, cleaned from microsaccades, and filtered via a principal component analysis to remove nonpulsatile dynamic features. Time courses of arterial lateral displacement and of diameter at sites of spontaneous venous pulsation or proximal to the disk were retrieved from those image sequences and compared. Results: Four subjects displayed both arterial and venous pulsatile waveforms. On those, we observed venous diameter waveforms differing markedly among the subjects, ranging from a waveform matching the typical intraocular pressure waveform to a close replica of the arterial waveform. Conclusions: The heterogeneity in waveforms and arteriovenous phases suggests that the mechanism governing the venous outflow resistance differs among healthy subjects. Translational relevance: Further characterizations are necessary to understand the heterogeneous mechanisms governing the venous outflow resistance as this resistance is altered in glaucoma and is instrumental when monitoring intracranial hypertension based on fundus observations.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Moret, Fabrice",
+        "affiliation": "University Medical Center Freiburg"
+      },
+      {
+        "name": "Reiff, Charlotte M.",
+        "affiliation": "University Medical Center Freiburg"
+      },
+      {
+        "name": "Lagr\u00e8ze, Wolf A.",
+        "affiliation": "University Medical Center Freiburg"
+      },
+      {
+        "name": "Bach, Michael",
+        "affiliation": "University Medical Center Freiburg"
+      }
+    ],
+    "keywords": [
+      "fundus",
+      "intracranial pressure",
+      "scanning laser opthalmoscope",
+      "retina",
+      "retinal blood flow",
+      "Homo Sapiens",
+      "spontaneous venous pulsation",
+      "pulsation",
+      "spontaneous retinal venous pulsation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1167/tvst.4.5.3",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4970544"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Fundus image sequences<div class=\"o-metadata__file-description\">12 Fundus image sequences recorded in 12 young (age 22-31) healthy subjects with a scanning laser ophthalmoscope under near-infrared illumination. Sequences of 5.0 to 5.5 s length, collected at 9 images/s, resulting in 45 to 50 images trimmed to vertical bands (386 x 768 pixels) centered on optic nerve head. Data provided as zipped uncompressed TIFF stacks files</div><div class=\"o-metadata__file-name\">Movies_Raw.zip<br></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Quantitative analysis of fundus-image sequences reveals phase of spontaneous venous pulsations",
+  "links": {
+    "self": "https://zenodo.org/api/records/4970545",
+    "self_html": "https://zenodo.org/records/4970545",
+    "preview_html": "https://zenodo.org/records/4970545?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.56f1h",
+    "self_doi": "https://doi.org/10.5061/dryad.56f1h",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.56f1h",
+    "reserve_doi": "https://zenodo.org/api/records/4970545/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4970544",
+    "parent_html": "https://zenodo.org/records/4970544",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4970545/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4970545/sequence/default",
+    "files": "https://zenodo.org/api/records/4970545/files",
+    "media_files": "https://zenodo.org/api/records/4970545/media-files",
+    "archive": "https://zenodo.org/api/records/4970545/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4970545/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4970545/versions/latest",
+    "latest_html": "https://zenodo.org/records/4970545/latest",
+    "versions": "https://zenodo.org/api/records/4970545/versions",
+    "draft": "https://zenodo.org/api/records/4970545/draft",
+    "access_links": "https://zenodo.org/api/records/4970545/access/links",
+    "access_grants": "https://zenodo.org/api/records/4970545/access/grants",
+    "access_users": "https://zenodo.org/api/records/4970545/access/users",
+    "access_request": "https://zenodo.org/api/records/4970545/access/request",
+    "access": "https://zenodo.org/api/records/4970545/access",
+    "communities": "https://zenodo.org/api/records/4970545/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4970545/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4970545/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4970545/file-modification",
+    "requests": "https://zenodo.org/api/records/4970545/requests"
+  },
+  "updated": "2022-05-28T02:38:26.096156+00:00",
+  "recid": "4970545",
+  "revision": 3,
+  "files": [
+    {
+      "id": "a487405b-0311-47b5-a3fd-6bc791ea3243",
+      "key": "README_for_Movies_Raw.txt",
+      "size": 1620,
+      "checksum": "md5:3b46445fb44c3f0de3c252a52c1ff30d",
+      "links": {
+        "self": "https://zenodo.org/api/records/4970545/files/README_for_Movies_Raw.txt/content"
+      }
+    },
+    {
+      "id": "74258663-e0c1-417e-8b73-e49911dd95de",
+      "key": "Movies_Raw.zip",
+      "size": 118581675,
+      "checksum": "md5:602c2631f9d5bb37629811b0805771c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4970545/files/Movies_Raw.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 42,
+    "unique_downloads": 39,
+    "views": 210,
+    "unique_views": 209,
+    "version_downloads": 42,
+    "version_unique_downloads": 39,
+    "version_unique_views": 209,
+    "version_views": 210
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 118581675,
+    "top_level_files": [
+      {
+        "name": "README_for_Movies_Raw.txt",
+        "size": 1620
+      },
+      {
+        "name": "Movies_Raw.zip",
+        "size": 118581675
+      }
+    ],
+    "zip_contents": {
+      "movies_raw.zip": {
+        "total_files": 24,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 177218952,
+        "file_types": {
+          ".tif": 24
+        },
+        "imaging_file_count": 24,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "moviealla_raw/movie01_raw.tif",
+          "__macosx/moviealla_raw/._movie01_raw.tif",
+          "moviealla_raw/movie02_raw.tif",
+          "__macosx/moviealla_raw/._movie02_raw.tif",
+          "moviealla_raw/movie03_raw.tif",
+          "__macosx/moviealla_raw/._movie03_raw.tif",
+          "moviealla_raw/movie04_raw.tif",
+          "__macosx/moviealla_raw/._movie04_raw.tif",
+          "moviealla_raw/movie05_raw.tif",
+          "__macosx/moviealla_raw/._movie05_raw.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "moviealla_raw/movie01_raw.tif",
+      "__macosx/moviealla_raw/._movie01_raw.tif",
+      "moviealla_raw/movie02_raw.tif",
+      "__macosx/moviealla_raw/._movie02_raw.tif",
+      "moviealla_raw/movie03_raw.tif",
+      "__macosx/moviealla_raw/._movie03_raw.tif",
+      "moviealla_raw/movie04_raw.tif",
+      "__macosx/moviealla_raw/._movie04_raw.tif",
+      "moviealla_raw/movie05_raw.tif",
+      "__macosx/moviealla_raw/._movie05_raw.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:01.885059"
+}

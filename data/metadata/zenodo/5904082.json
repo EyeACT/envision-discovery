@@ -1,0 +1,188 @@
+{
+  "created": "2022-01-25T21:27:00.044847+00:00",
+  "modified": "2022-06-21T19:37:15.645255+00:00",
+  "id": 5904082,
+  "conceptrecid": "5888350",
+  "doi": "10.5281/zenodo.5904082",
+  "conceptdoi": "10.5281/zenodo.5888350",
+  "doi_url": "https://doi.org/10.5281/zenodo.5904082",
+  "metadata": {
+    "title": "Fully annotated Human Breast carcinoma cells for 3D segmentation training",
+    "doi": "10.5281/zenodo.5904082",
+    "publication_date": "2022-01-21",
+    "description": "<p>Fully annotated dataset for training of 3D segmentation models. We provide the Raw image patches in the Raw directory and instance segmentation labels in the RealMask directory, the semantic segmentation masks are provided in the BinaryMask directory. Manually curated from originally published dataset over here: http://celltrackingchallenge.net/3d-datasets/ by team at Kapoorlabs.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Varun Kapoor",
+        "affiliation": "Kapoorlabs"
+      }
+    ],
+    "keywords": [
+      "VollSeg, StarDist, UNET, Segmentation, Membrane Labelled, Deep Learning, CZI, Kapoorlabs"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5888350"
+          }
+        }
+      ]
+    },
+    "notes": "Computational support provided by Jean Zay dynamic access grant: AD011013396 Monetary Support by Grant#: 2021-240715(5022) from Chan Zuckerberg Innitiative and Silicon Valley community foundation."
+  },
+  "title": "Fully annotated Human Breast carcinoma cells for 3D segmentation training",
+  "links": {
+    "self": "https://zenodo.org/api/records/5904082",
+    "self_html": "https://zenodo.org/records/5904082",
+    "preview_html": "https://zenodo.org/records/5904082?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5904082",
+    "self_doi": "https://doi.org/10.5281/zenodo.5904082",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5904082",
+    "reserve_doi": "https://zenodo.org/api/records/5904082/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5888350",
+    "parent_html": "https://zenodo.org/records/5888350",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5888350",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5888350",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5904082/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5904082/sequence/default",
+    "files": "https://zenodo.org/api/records/5904082/files",
+    "media_files": "https://zenodo.org/api/records/5904082/media-files",
+    "archive": "https://zenodo.org/api/records/5904082/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5904082/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5904082/versions/latest",
+    "latest_html": "https://zenodo.org/records/5904082/latest",
+    "versions": "https://zenodo.org/api/records/5904082/versions",
+    "draft": "https://zenodo.org/api/records/5904082/draft",
+    "access_links": "https://zenodo.org/api/records/5904082/access/links",
+    "access_grants": "https://zenodo.org/api/records/5904082/access/grants",
+    "access_users": "https://zenodo.org/api/records/5904082/access/users",
+    "access_request": "https://zenodo.org/api/records/5904082/access/request",
+    "access": "https://zenodo.org/api/records/5904082/access",
+    "communities": "https://zenodo.org/api/records/5904082/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5904082/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5904082/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5904082/file-modification",
+    "requests": "https://zenodo.org/api/records/5904082/requests"
+  },
+  "updated": "2022-06-21T19:37:15.645255+00:00",
+  "recid": "5904082",
+  "revision": 3,
+  "files": [
+    {
+      "id": "6f5a4536-b9e0-4fa0-9af3-3848e42c51b0",
+      "key": "carcinoma_version2.zip",
+      "size": 805126982,
+      "checksum": "md5:c9621b4c062221b1ab44ee26897091b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/5904082/files/carcinoma_version2.zip/content"
+      }
+    },
+    {
+      "id": "dda2ee75-7291-4330-8996-fdd8f72febeb",
+      "key": "Carcinoma_human_breast_cells.zip",
+      "size": 143424649,
+      "checksum": "md5:2aed69cce98ffd969bab457686878e3d",
+      "links": {
+        "self": "https://zenodo.org/api/records/5904082/files/Carcinoma_human_breast_cells.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "487298"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 188,
+    "unique_downloads": 169,
+    "views": 871,
+    "unique_views": 821,
+    "version_downloads": 164,
+    "version_unique_downloads": 145,
+    "version_unique_views": 530,
+    "version_views": 564
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 948551631,
+    "top_level_files": [
+      {
+        "name": "carcinoma_version2.zip",
+        "size": 805126982
+      },
+      {
+        "name": "Carcinoma_human_breast_cells.zip",
+        "size": 143424649
+      }
+    ],
+    "zip_contents": {
+      "carcinoma_human_breast_cells.zip": {
+        "total_files": 249,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 707949095,
+        "file_types": {
+          ".tif": 249
+        },
+        "imaging_file_count": 249,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "binarymask/image17.tif",
+          "binarymask/image18.tif",
+          "binarymask/image19.tif",
+          "binarymask/image20.tif",
+          "binarymask/image21.tif",
+          "binarymask/image22.tif",
+          "binarymask/image23.tif",
+          "binarymask/patch000.tif",
+          "binarymask/patch001.tif",
+          "binarymask/patch002.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "binarymask/image17.tif",
+      "binarymask/image18.tif",
+      "binarymask/image19.tif",
+      "binarymask/image20.tif",
+      "binarymask/image21.tif",
+      "binarymask/image22.tif",
+      "binarymask/image23.tif",
+      "binarymask/patch000.tif",
+      "binarymask/patch001.tif",
+      "binarymask/patch002.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://celltrackingchallenge.net/3d-datasets/",
+      "type": "potential_download"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:15.874490"
+}

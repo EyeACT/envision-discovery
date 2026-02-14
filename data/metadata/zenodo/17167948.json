@@ -1,0 +1,294 @@
+{
+  "created": "2025-09-20T23:56:03.750423+00:00",
+  "modified": "2025-09-20T23:56:04.440978+00:00",
+  "id": 17167948,
+  "conceptrecid": "17167947",
+  "doi": "10.5281/zenodo.17167948",
+  "conceptdoi": "10.5281/zenodo.17167947",
+  "doi_url": "https://doi.org/10.5281/zenodo.17167948",
+  "metadata": {
+    "title": "Prototypes and Datasets for Retinal Regeneration: PSI and CELL-MPC Proof-of-Concept",
+    "doi": "10.5281/zenodo.17167948",
+    "publication_date": "2025-09-21",
+    "description": "<p>Este reposit&oacute;rio cont&eacute;m os materiais suplementares do artigo <em>&ldquo;Integra&ccedil;&atilde;o de Modelagem Computacional, Biologia de Sistemas e Intelig&ecirc;ncia Artificial para Melhorar a Efici&ecirc;ncia de Diferencia&ccedil;&atilde;o das C&eacute;lulas-Tronco Pluripotentes Induzidas em C&eacute;lulas Retinianas&rdquo;</em>. Inclui:<br>(i) o script Python <strong>psi_simulation_prototype.py</strong>, que calcula os componentes do PSI e aplica um controlador simplificado;<br>(ii) a figura <strong>psi_demo_plot.png</strong>;<br>(iii) o modelo g&ecirc;nico <strong>retina_toggle_switch_sbml.xml</strong> (SBML, compat&iacute;vel com CellDesigner);<br>(iv) arquivos CSV de resultados consolidados (<strong>consolidated_summary.csv</strong>, <strong>summary_*.csv</strong>, <strong>lotemedian_*.csv</strong>).<br>Esses materiais permitem reproduzir a prova de conceito in silico, assegurando transpar&ecirc;ncia metodol&oacute;gica e reuso cient&iacute;fico.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mantovani da Silva, Luiz Ricardo",
+        "affiliation": null,
+        "orcid": "0000-0003-3053-8306"
+      }
+    ],
+    "keywords": [
+      "induced pluripotent stem cells, retina regeneration, computational modeling, systems biology, artificial intelligence, PSI, CELL-MPC, regenerative medicine, SBML, in silico"
+    ],
+    "dates": [
+      {
+        "type": "other",
+        "description": "dat"
+      }
+    ],
+    "version": "1.0.0",
+    "language": "por",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17167947"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Prototypes and Datasets for Retinal Regeneration: PSI and CELL-MPC Proof-of-Concept",
+  "links": {
+    "self": "https://zenodo.org/api/records/17167948",
+    "self_html": "https://zenodo.org/records/17167948",
+    "preview_html": "https://zenodo.org/records/17167948?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17167948",
+    "self_doi": "https://doi.org/10.5281/zenodo.17167948",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17167948",
+    "reserve_doi": "https://zenodo.org/api/records/17167948/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17167947",
+    "parent_html": "https://zenodo.org/records/17167947",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17167947",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17167947",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17167948/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17167948/sequence/default",
+    "files": "https://zenodo.org/api/records/17167948/files",
+    "media_files": "https://zenodo.org/api/records/17167948/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17167948:psi_demo_plot.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/17167948/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17167948/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17167948/versions/latest",
+    "latest_html": "https://zenodo.org/records/17167948/latest",
+    "versions": "https://zenodo.org/api/records/17167948/versions",
+    "draft": "https://zenodo.org/api/records/17167948/draft",
+    "access_links": "https://zenodo.org/api/records/17167948/access/links",
+    "access_grants": "https://zenodo.org/api/records/17167948/access/grants",
+    "access_users": "https://zenodo.org/api/records/17167948/access/users",
+    "access_request": "https://zenodo.org/api/records/17167948/access/request",
+    "access": "https://zenodo.org/api/records/17167948/access",
+    "communities": "https://zenodo.org/api/records/17167948/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17167948/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17167948/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17167948/file-modification",
+    "requests": "https://zenodo.org/api/records/17167948/requests"
+  },
+  "updated": "2025-09-20T23:56:04.440978+00:00",
+  "recid": "17167948",
+  "revision": 4,
+  "files": [
+    {
+      "id": "aec90763-657b-4533-8241-7851164eaf6f",
+      "key": "lotemedian_ae_exp_raw_r3b.csv",
+      "size": 306,
+      "checksum": "md5:5d5ee8da7ff5c1ead68faf05bee56173",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/lotemedian_ae_exp_raw_r3b.csv/content"
+      }
+    },
+    {
+      "id": "b83cf168-7173-4f20-a793-f5b6e35d9ae9",
+      "key": "codigo.py",
+      "size": 4879,
+      "checksum": "md5:607583671917398d58bfad91b3ad9eda",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/codigo.py/content"
+      }
+    },
+    {
+      "id": "0971342f-45fc-4c5e-853b-5fb22c9b3a2c",
+      "key": "psi_simulation_prototype.py",
+      "size": 5272,
+      "checksum": "md5:7e041d178252f28224b5ad6e00c6bfca",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/psi_simulation_prototype.py/content"
+      }
+    },
+    {
+      "id": "6d390e2b-12c4-4037-b07f-01c3a005da0f",
+      "key": "summary_ae_exp_raw_r3a.csv",
+      "size": 921670,
+      "checksum": "md5:d2cf6870389fb82467186131ffa9430a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/summary_ae_exp_raw_r3a.csv/content"
+      }
+    },
+    {
+      "id": "4d7a4ade-24b8-45f7-be9b-b747f88f3a1f",
+      "key": "summary_ae_exp_raw_r3b.csv",
+      "size": 917850,
+      "checksum": "md5:e314360f1c629e46800c8e3e5b97f055",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/summary_ae_exp_raw_r3b.csv/content"
+      }
+    },
+    {
+      "id": "8115ed53-c190-4613-8fe4-fa6d210657aa",
+      "key": "consolidated_summary.csv",
+      "size": 2797003,
+      "checksum": "md5:9f38beb79b77c6fa3a23ada5a305d515",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/consolidated_summary.csv/content"
+      }
+    },
+    {
+      "id": "b5dc6f70-3804-431a-80e1-e96adf2627b3",
+      "key": "psi_demo_plot.png",
+      "size": 158077,
+      "checksum": "md5:d120bef6044fa96e4615f9b5e33f85e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/psi_demo_plot.png/content"
+      }
+    },
+    {
+      "id": "b0fdc140-e8a3-4aa1-a9fb-d51c6fb64815",
+      "key": "psi_por_lote.csv",
+      "size": 306,
+      "checksum": "md5:b23de325de100c93dec5b2d53be446c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/psi_por_lote.csv/content"
+      }
+    },
+    {
+      "id": "77b8b775-f98e-4dfa-a7bf-bd702d6c304c",
+      "key": "psi_from_lotemedian.py",
+      "size": 2117,
+      "checksum": "md5:116457deb95f7e8e39c0741c53369fa2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/psi_from_lotemedian.py/content"
+      }
+    },
+    {
+      "id": "c1405b1f-d9c4-4626-8f36-40d6f13ba8d5",
+      "key": "lotemedian_ae_exp_raw_r3a.csv",
+      "size": 305,
+      "checksum": "md5:f06d8355545e2fb9edeac03e4a9fc2e2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/lotemedian_ae_exp_raw_r3a.csv/content"
+      }
+    },
+    {
+      "id": "d7f7c10c-d924-4727-bc53-5febc6a97230",
+      "key": "lotemedian_ae_exp_raw_r2b.csv",
+      "size": 317,
+      "checksum": "md5:a315e494a97b963baba69e23b8332240",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/lotemedian_ae_exp_raw_r2b.csv/content"
+      }
+    },
+    {
+      "id": "7de7f64a-aa84-4128-a9e2-531aee10f781",
+      "key": "summary_ae_exp_raw_r2b.csv",
+      "size": 957777,
+      "checksum": "md5:d082b8004e67fea11e594db82b43c8ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/17167948/files/summary_ae_exp_raw_r2b.csv/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "590186"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 32,
+    "unique_downloads": 29,
+    "views": 19,
+    "unique_views": 16,
+    "version_downloads": 32,
+    "version_unique_downloads": 29,
+    "version_unique_views": 16,
+    "version_views": 19
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 158077,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "lotemedian_ae_exp_raw_r3b.csv",
+        "size": 306
+      },
+      {
+        "name": "codigo.py",
+        "size": 4879
+      },
+      {
+        "name": "psi_simulation_prototype.py",
+        "size": 5272
+      },
+      {
+        "name": "summary_ae_exp_raw_r3a.csv",
+        "size": 921670
+      },
+      {
+        "name": "summary_ae_exp_raw_r3b.csv",
+        "size": 917850
+      },
+      {
+        "name": "consolidated_summary.csv",
+        "size": 2797003
+      },
+      {
+        "name": "psi_demo_plot.png",
+        "size": 158077
+      },
+      {
+        "name": "psi_por_lote.csv",
+        "size": 306
+      },
+      {
+        "name": "psi_from_lotemedian.py",
+        "size": 2117
+      },
+      {
+        "name": "lotemedian_ae_exp_raw_r3a.csv",
+        "size": 305
+      },
+      {
+        "name": "lotemedian_ae_exp_raw_r2b.csv",
+        "size": 317
+      },
+      {
+        "name": "summary_ae_exp_raw_r2b.csv",
+        "size": 957777
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:04.551211"
+}

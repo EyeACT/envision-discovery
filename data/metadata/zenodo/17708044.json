@@ -1,0 +1,218 @@
+{
+  "created": "2025-11-25T08:19:47.272771+00:00",
+  "modified": "2025-11-25T08:19:47.677696+00:00",
+  "id": 17708044,
+  "conceptrecid": "17708043",
+  "doi": "10.5281/zenodo.17708044",
+  "conceptdoi": "10.5281/zenodo.17708043",
+  "doi_url": "https://doi.org/10.5281/zenodo.17708044",
+  "metadata": {
+    "title": "Sonogenetic Vision Restoration Dataset (EMC and MscL-G22S)",
+    "doi": "10.5281/zenodo.17708044",
+    "publication_date": "2025-11-25",
+    "description": "<p>This dataset contains raw electrophysiology recordings, MEA firing-rate matrices, ultrasound calibration files, confocal images, and analysis scripts used in the study \"Sonogenetic Activation of Retinal Neurons for Vision Restoration\". The data support all main findings and figures in the manuscript.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "zhou, qifa",
+        "affiliation": "University of Southern California",
+        "orcid": "0000-0003-1527-3020"
+      }
+    ],
+    "keywords": [
+      "Sonogenetics",
+      "Ultrasound Stimulation",
+      "Vision Restoration"
+    ],
+    "dates": [
+      {
+        "type": "submitted"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17708043"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Sonogenetic Vision Restoration Dataset (EMC and MscL-G22S)",
+  "links": {
+    "self": "https://zenodo.org/api/records/17708044",
+    "self_html": "https://zenodo.org/records/17708044",
+    "preview_html": "https://zenodo.org/records/17708044?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17708044",
+    "self_doi": "https://doi.org/10.5281/zenodo.17708044",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17708044",
+    "reserve_doi": "https://zenodo.org/api/records/17708044/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17708043",
+    "parent_html": "https://zenodo.org/records/17708043",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17708043",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17708043",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17708044/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17708044/sequence/default",
+    "files": "https://zenodo.org/api/records/17708044/files",
+    "media_files": "https://zenodo.org/api/records/17708044/media-files",
+    "archive": "https://zenodo.org/api/records/17708044/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17708044/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17708044/versions/latest",
+    "latest_html": "https://zenodo.org/records/17708044/latest",
+    "versions": "https://zenodo.org/api/records/17708044/versions",
+    "draft": "https://zenodo.org/api/records/17708044/draft",
+    "access_links": "https://zenodo.org/api/records/17708044/access/links",
+    "access_grants": "https://zenodo.org/api/records/17708044/access/grants",
+    "access_users": "https://zenodo.org/api/records/17708044/access/users",
+    "access_request": "https://zenodo.org/api/records/17708044/access/request",
+    "access": "https://zenodo.org/api/records/17708044/access",
+    "communities": "https://zenodo.org/api/records/17708044/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17708044/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17708044/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17708044/file-modification",
+    "requests": "https://zenodo.org/api/records/17708044/requests"
+  },
+  "updated": "2025-11-25T08:19:47.677696+00:00",
+  "recid": "17708044",
+  "revision": 4,
+  "files": [
+    {
+      "id": "35e62153-8632-4224-a53c-5fa0ffc5666b",
+      "key": "Dapi.rar",
+      "size": 69420820,
+      "checksum": "md5:4f9bab6730222e112add5ff405fa7672",
+      "links": {
+        "self": "https://zenodo.org/api/records/17708044/files/Dapi.rar/content"
+      }
+    },
+    {
+      "id": "4c624697-14b8-49df-9d0f-0c014c72880d",
+      "key": "OneDrive_2025-11-25.zip",
+      "size": 61360146,
+      "checksum": "md5:c142026cae92b7fef29ba55a9f8fd2ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/17708044/files/OneDrive_2025-11-25.zip/content"
+      }
+    },
+    {
+      "id": "8b2d0bf3-6333-4ad1-ad8d-763dd52486a3",
+      "key": "MEA_raw_data.xlsx",
+      "size": 14773,
+      "checksum": "md5:cfb6fcde4f05f6135f6163666213af6e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17708044/files/MEA_raw_data.xlsx/content"
+      }
+    },
+    {
+      "id": "009c15bc-ca59-4ab0-b830-c0c682b373ea",
+      "key": "10_28 Rat VEP.prism",
+      "size": 178659,
+      "checksum": "md5:1b0204ebe3e115a9b5e994acdcbb208f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17708044/files/10_28 Rat VEP.prism/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1472915"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 8,
+    "unique_downloads": 8,
+    "views": 10,
+    "unique_views": 9,
+    "version_downloads": 8,
+    "version_unique_downloads": 8,
+    "version_unique_views": 9,
+    "version_views": 10
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 130780966,
+    "top_level_files": [
+      {
+        "name": "Dapi.rar",
+        "size": 69420820
+      },
+      {
+        "name": "OneDrive_2025-11-25.zip",
+        "size": 61360146
+      },
+      {
+        "name": "MEA_raw_data.xlsx",
+        "size": 14773
+      },
+      {
+        "name": "10_28 Rat VEP.prism",
+        "size": 178659
+      }
+    ],
+    "zip_contents": {
+      "onedrive_2025-11-25.zip": {
+        "total_files": 78,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 61340324,
+        "file_types": {
+          ".tif": 18,
+          ".bmp": 6
+        },
+        "imaging_file_count": 24,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c001.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c002.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c003.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_thumb.bmp",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c001.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c002.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c003.tif",
+          "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_thumb.bmp",
+          "usc ultra raw images/emc/cg15_f2os_d_g_mch_20x_sl8_sam1_roi1.oif.files/s_c001.tif",
+          "usc ultra raw images/emc/cg15_f2os_d_g_mch_20x_sl8_sam1_roi1.oif.files/s_c002.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c001.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c002.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_c003.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam1_roi2.oif.files/s_thumb.bmp",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c001.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c002.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_c003.tif",
+      "usc ultra raw images/cni/cg28_m3os_d_g_mch_20x_sl6_sam2_roi1.oif.files/s_thumb.bmp",
+      "usc ultra raw images/emc/cg15_f2os_d_g_mch_20x_sl8_sam1_roi1.oif.files/s_c001.tif",
+      "usc ultra raw images/emc/cg15_f2os_d_g_mch_20x_sl8_sam1_roi1.oif.files/s_c002.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:13.475788"
+}

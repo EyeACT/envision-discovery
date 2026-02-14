@@ -1,0 +1,180 @@
+{
+  "created": "2021-08-18T14:48:13.171921+00:00",
+  "modified": "2024-07-18T19:33:32.942089+00:00",
+  "id": 5217367,
+  "conceptrecid": "5217366",
+  "doi": "10.5281/zenodo.5217367",
+  "conceptdoi": "10.5281/zenodo.5217366",
+  "doi_url": "https://doi.org/10.5281/zenodo.5217367",
+  "metadata": {
+    "title": "Binary segmentation images for 3D segmentation model training",
+    "doi": "10.5281/zenodo.5217367",
+    "publication_date": "2021-08-18",
+    "description": "<p>Binary segmentation images for 3D segmentation model training</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Varun Kapoor",
+        "affiliation": "Kapoorlabs",
+        "orcid": "0000-0001-5331-7966"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5217366"
+          }
+        }
+      ]
+    },
+    "notes": "Computational support provided by Jean Zay dynamic access grant: AD011013396 Monetary Support by Grant#: 2021-240715(5022) from Chan Zuckerberg Innitiative and Silicon Valley community foundation."
+  },
+  "title": "Binary segmentation images for 3D segmentation model training",
+  "links": {
+    "self": "https://zenodo.org/api/records/5217367",
+    "self_html": "https://zenodo.org/records/5217367",
+    "preview_html": "https://zenodo.org/records/5217367?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5217367",
+    "self_doi": "https://doi.org/10.5281/zenodo.5217367",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5217367",
+    "reserve_doi": "https://zenodo.org/api/records/5217367/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5217366",
+    "parent_html": "https://zenodo.org/records/5217366",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5217366",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5217366",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5217367/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5217367/sequence/default",
+    "files": "https://zenodo.org/api/records/5217367/files",
+    "media_files": "https://zenodo.org/api/records/5217367/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:5217367:01.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/5217367/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5217367/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5217367/versions/latest",
+    "latest_html": "https://zenodo.org/records/5217367/latest",
+    "versions": "https://zenodo.org/api/records/5217367/versions",
+    "draft": "https://zenodo.org/api/records/5217367/draft",
+    "access_links": "https://zenodo.org/api/records/5217367/access/links",
+    "access_grants": "https://zenodo.org/api/records/5217367/access/grants",
+    "access_users": "https://zenodo.org/api/records/5217367/access/users",
+    "access_request": "https://zenodo.org/api/records/5217367/access/request",
+    "access": "https://zenodo.org/api/records/5217367/access",
+    "communities": "https://zenodo.org/api/records/5217367/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5217367/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5217367/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5217367/file-modification",
+    "requests": "https://zenodo.org/api/records/5217367/requests"
+  },
+  "updated": "2024-07-18T19:33:32.942089+00:00",
+  "recid": "5217367",
+  "revision": 7,
+  "files": [
+    {
+      "id": "c84736b8-83cf-418b-b3dc-6b212cd41a4c",
+      "key": "01.tif",
+      "size": 59012064,
+      "checksum": "md5:74ca7a3d6ec14ea28346c01bbcae1cff",
+      "links": {
+        "self": "https://zenodo.org/api/records/5217367/files/01.tif/content"
+      }
+    },
+    {
+      "id": "a712e537-39c2-4fc1-a5dc-d5e7892d9a1a",
+      "key": "02.tif",
+      "size": 132385728,
+      "checksum": "md5:86d0a4114c531f3e99675f54f0900041",
+      "links": {
+        "self": "https://zenodo.org/api/records/5217367/files/02.tif/content"
+      }
+    },
+    {
+      "id": "d84b4ad2-a97e-4683-a420-8bc71d2a834a",
+      "key": "03.tif",
+      "size": 133848504,
+      "checksum": "md5:2e1ab307d23624dd91da893c8379b58d",
+      "links": {
+        "self": "https://zenodo.org/api/records/5217367/files/03.tif/content"
+      }
+    },
+    {
+      "id": "e1e567fb-db22-4641-b6e1-54e01ac12186",
+      "key": "04.tif",
+      "size": 157277520,
+      "checksum": "md5:2bd165928430cdd964074eccaad4fe54",
+      "links": {
+        "self": "https://zenodo.org/api/records/5217367/files/04.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "487298"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 186,
+    "unique_downloads": 155,
+    "views": 334,
+    "unique_views": 311,
+    "version_downloads": 186,
+    "version_unique_downloads": 155,
+    "version_unique_views": 311,
+    "version_views": 334
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 4,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 482523816,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "01.tif",
+        "size": 59012064
+      },
+      {
+        "name": "02.tif",
+        "size": 132385728
+      },
+      {
+        "name": "03.tif",
+        "size": 133848504
+      },
+      {
+        "name": "04.tif",
+        "size": 157277520
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:12.109898"
+}

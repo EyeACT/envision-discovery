@@ -1,0 +1,340 @@
+{
+  "created": "2025-01-29T13:53:16.671124+00:00",
+  "modified": "2025-01-29T13:53:18.333735+00:00",
+  "id": 14171587,
+  "conceptrecid": "14171586",
+  "doi": "10.5281/zenodo.14171587",
+  "conceptdoi": "10.5281/zenodo.14171586",
+  "doi_url": "https://doi.org/10.5281/zenodo.14171587",
+  "metadata": {
+    "title": "Annular Solar Eclipse 2023: recordings of the entire medium-wave AM broadcast band from near Sacramento, CA, USA",
+    "doi": "10.5281/zenodo.14171587",
+    "publication_date": "2024-11-15",
+    "description": "<p>files recorded by Richard Cook, KE6EE</p>\n<p>Grid square of location recorded:&nbsp; CM98jp</p>\n<p>Maximum obscuration of the sun was 80% at 1620UT.&nbsp;&nbsp;</p>\n<p>These data files are recordings of the entire medium wave broadcast band (535-1705kHz) made during the annular solar eclipse of 14 October 2024 from 1440UT to 1720UT from near Sacramento, CA, USA.&nbsp; They are part of a set of such recordings made from 13 Oct 0400UT to 15 Oct 1900UT.</p>\n<p>Data Quality:&nbsp;&nbsp;There were data dropouts at Oct 13 16:22-23UT, Oct 14 16:28UT, and Oct 14 16:45-16:48UT, plus a few shorter ones. There were many weak spurious carriers.</p>\n<p>Data files are .wav format, but the archived files are .zip, with about five .wav files packaged together in each .zip file, using the prefix \"KE6EE-wideband_500_1750kHz&ldquo;.&nbsp; The recordings not included here are available to provide reference data for the eclipse recordings. &nbsp;Please contact HamSCI at am-eclipse@hamsci.org if you require this data.&nbsp;</p>\n<p>Antenna: &nbsp;W6LVP loop, orientated East/West and six feet above ground.</p>\n<p>Receiver:&nbsp; Sdrplay duo &nbsp;&nbsp; RF gain = 0.0dB, with center frequency 1125kHz, recording a 1250kHz wide passband, using SDRuno software, V1.42 1128.&nbsp; See included file \"IMG_20231014_094558810.jpg\" for further settings.&nbsp; The receiver was frequency locked to a Bodnar MiniGPS Reference Clock.&nbsp; &nbsp;Computer time accuracy was determined by Windows NTP using time.nist.gov .</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hall-Patch, Nicholas",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "hamsci"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14171586"
+          }
+        }
+      ]
+    },
+    "notes": "<p>In the AM broadcast band (535-1705kHz), there are roughly two modes of broadcast station signal coverage, one of which occurs in the daytime, and the other at night. During the day time, signals are propagated by ground wave and not usually heard well beyond 150km from the transmitter. However, at night, an absorptive region in the ionosphere, the D-layer, disappears, allowing signals to refract off higher regions of the ionosphere, and to be heard hundreds and even thousands, of kilometers away from the transmitter.&nbsp;</p>\n<p>The radio stations in this band use amplitude modulation, which requires a strong stable carrier wave, well suited for observing changes in signal characteristics over a time period. During the annular solar eclipse of 14 October 2023, signals were observed changing from daytime to nighttime mode, and then back again as the moon's shadow moved across North America.&nbsp;</p>\n<p>Included in these files is an installation file for the SDR control and playback software, SDR Console (&ldquo; SDR-Radio V3.3, 64-bit, 2024-02-05_0741.exe&rdquo; ), to allow a first examination of&nbsp; the .wav files; this is courtesy of Simon Brown, G4ELI, its developer. &nbsp;The latest version is available at https://www.sdr-radio.com/Console . &nbsp;Instructions for playing back SDR .wav files in SDR Console for the first-time user are found in &ldquo;OpeningSDRfilesInConsole.pdf&rdquo; on this site.</p>\n<p>There are also reference files to assist in identifying signals heard :</p>\n<p>&ldquo;AM Stations within Umbra 2023 Annular Eclipse.xlsx &ldquo;, courtesy of Richard Cook KE6EE.&nbsp;</p>\n<p>\"US-Canada AMBC List Nov_2023.xlsx\", courtesy of Tim Tromp KE8JFM (https://amdxer.com/ambc/ )</p>\n<p>&ldquo;RDMW-2022-v1.2.2.zip&rdquo;, courtesy of William Scott, WE7W ( https://radio-timetraveller.blogspot.com/ )</p>\n<p>\"2023-24_IRCA_Mexican_Log.pdf&rdquo;, courtesy of International Radio Club of America (https://www.ircaonline.org/ )</p>\n<p>&nbsp;</p>\n<p>Finally, a copy of Carrier Sleuth software (&ldquo;CarrierSleuthWindowsMay2024.zip&rdquo;) is included, courtesy of its developer, Chris Smolinski, W3HFU, along with further instructions for use (&ldquo;CarrierSleuthOverview.pdf&rdquo; ). &nbsp; This can be used to view .fft files zipped in &ldquo;KE6EE-CarrierSleuth-Oct13-15.zip&rdquo;, which will provide waterfall visualizations of all carriers for each AM broadcast band channel during the entire recording period. &nbsp; Carrier Sleuth may also be used to create new .fft files from the data.&nbsp; The latest version is available at&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://www.blackcatsystems.com/software/medium_wave_carrier_display_app.html .</p>\n<p>&nbsp;</p>"
+  },
+  "title": "Annular Solar Eclipse 2023: recordings of the entire medium-wave AM broadcast band from near Sacramento, CA, USA",
+  "links": {
+    "self": "https://zenodo.org/api/records/14171587",
+    "self_html": "https://zenodo.org/records/14171587",
+    "preview_html": "https://zenodo.org/records/14171587?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14171587",
+    "self_doi": "https://doi.org/10.5281/zenodo.14171587",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14171587",
+    "reserve_doi": "https://zenodo.org/api/records/14171587/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14171586",
+    "parent_html": "https://zenodo.org/records/14171586",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14171586",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14171586",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14171587/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14171587/sequence/default",
+    "files": "https://zenodo.org/api/records/14171587/files",
+    "media_files": "https://zenodo.org/api/records/14171587/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14171587:OpeningSDRfilesInConsole.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14171587/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14171587/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14171587/versions/latest",
+    "latest_html": "https://zenodo.org/records/14171587/latest",
+    "versions": "https://zenodo.org/api/records/14171587/versions",
+    "draft": "https://zenodo.org/api/records/14171587/draft",
+    "access_links": "https://zenodo.org/api/records/14171587/access/links",
+    "access_grants": "https://zenodo.org/api/records/14171587/access/grants",
+    "access_users": "https://zenodo.org/api/records/14171587/access/users",
+    "access_request": "https://zenodo.org/api/records/14171587/access/request",
+    "access": "https://zenodo.org/api/records/14171587/access",
+    "communities": "https://zenodo.org/api/records/14171587/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14171587/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14171587/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14171587/file-modification",
+    "requests": "https://zenodo.org/api/records/14171587/requests"
+  },
+  "updated": "2025-01-29T13:53:18.333735+00:00",
+  "recid": "14171587",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f6b3ac24-a6d3-46c0-aca6-413dd1398598",
+      "key": "KE6EE-CarrierSleuth-Oct13-15.zip",
+      "size": 3631931278,
+      "checksum": "md5:7b45635a212a74f2d353e3953e161706",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-CarrierSleuth-Oct13-15.zip/content"
+      }
+    },
+    {
+      "id": "7f0503f6-4ac5-4b5f-8664-48821c8b7029",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_144003UT.zip",
+      "size": 6030973432,
+      "checksum": "md5:81e44d788c40190601d4f4cac0c77ec7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_144003UT.zip/content"
+      }
+    },
+    {
+      "id": "3dc7ae9f-fbd1-4d7e-a172-8e6275e989a6",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_151131UT.zip",
+      "size": 6023146307,
+      "checksum": "md5:b7b4e64f71f4c5934574a3db745f2d87",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_151131UT.zip/content"
+      }
+    },
+    {
+      "id": "40c10def-519f-4dcd-b798-b2feb8b7eb33",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_154329UT.zip",
+      "size": 6036097398,
+      "checksum": "md5:014015da66620d6638d5657612fda4b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_154329UT.zip/content"
+      }
+    },
+    {
+      "id": "880ac10c-5f85-48cc-8543-fe611230bd93",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_161528UT.zip",
+      "size": 6029725719,
+      "checksum": "md5:1533d6b4c1572af3d31258bfa0db3edf",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_161528UT.zip/content"
+      }
+    },
+    {
+      "id": "5ce2abcb-c327-49a9-9b5d-6b8e3ce9da79",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_164921UT.zip",
+      "size": 3622872085,
+      "checksum": "md5:b45646f294dc175214649ece703a6ee3",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_164921UT.zip/content"
+      }
+    },
+    {
+      "id": "88bd118a-fbb7-4034-8736-bdd66e6664ec",
+      "key": "KE6EE-wideband_500_1750kHz_20231014_170813UT.zip",
+      "size": 3616884086,
+      "checksum": "md5:29cd00fc5588b5a950d3223a888f0716",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/KE6EE-wideband_500_1750kHz_20231014_170813UT.zip/content"
+      }
+    },
+    {
+      "id": "f3fb5dde-c6d3-4ae1-b5f4-3612d0cdc086",
+      "key": "OpeningSDRfilesInConsole.pdf",
+      "size": 757013,
+      "checksum": "md5:15e627755dcd5fab20897ca86e750a52",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/OpeningSDRfilesInConsole.pdf/content"
+      }
+    },
+    {
+      "id": "e2357697-dec1-4db9-8252-02d4db8dfa37",
+      "key": "CarrierSleuthOverview.pdf",
+      "size": 1435372,
+      "checksum": "md5:6f40e0207ae3785d811479a2d939d8f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/CarrierSleuthOverview.pdf/content"
+      }
+    },
+    {
+      "id": "af1fa691-1cb9-4fc8-a7bc-9d7a3328a0ba",
+      "key": "2023-24_IRCA_Mexican_Log.pdf",
+      "size": 1142232,
+      "checksum": "md5:bcd70a4415b37a1f0258dcb6abc090ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/2023-24_IRCA_Mexican_Log.pdf/content"
+      }
+    },
+    {
+      "id": "4f7efec8-9629-40f2-8ca1-211d0bdebea4",
+      "key": "RDMW-2022-v1.2.2.zip",
+      "size": 66637279,
+      "checksum": "md5:c48ecca2eb37b4818b9b6a21fcf6256c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/RDMW-2022-v1.2.2.zip/content"
+      }
+    },
+    {
+      "id": "634437a6-2823-4276-9276-f5b80486310a",
+      "key": "AM Stations within Umbra 2023 Annular Eclipse.xlsx",
+      "size": 15408,
+      "checksum": "md5:c032930ff3612d411cddcff20018fa62",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/AM Stations within Umbra 2023 Annular Eclipse.xlsx/content"
+      }
+    },
+    {
+      "id": "09a1f238-990c-4a0b-bcdf-3960782c3c9c",
+      "key": "SDR-Radio V3.3, 64-bit, 2024-02-05_0741.exe",
+      "size": 164804280,
+      "checksum": "md5:db587be00755744e314e49421723af7a",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/SDR-Radio V3.3, 64-bit, 2024-02-05_0741.exe/content"
+      }
+    },
+    {
+      "id": "497ffd62-c71f-418e-9d99-ca3468e52653",
+      "key": "CarrierSleuthWindowsMay2024.zip",
+      "size": 31051332,
+      "checksum": "md5:fa37eeb398e8768b69c6d543001933e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/CarrierSleuthWindowsMay2024.zip/content"
+      }
+    },
+    {
+      "id": "310fdede-d69b-4e1e-adf9-3aa64e184690",
+      "key": "US-Canada AMBC List Nov_2023.xlsx",
+      "size": 411113,
+      "checksum": "md5:19af8b15dfa7cf4e14b1b01968963a1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/US-Canada AMBC List Nov_2023.xlsx/content"
+      }
+    },
+    {
+      "id": "ca38fb73-3969-42b1-b565-3c13dea16a14",
+      "key": "IMG_20231014_083058799.jpg",
+      "size": 4127436,
+      "checksum": "md5:9c5394127d46e943dbe0b7a78477aae1",
+      "links": {
+        "self": "https://zenodo.org/api/records/14171587/files/IMG_20231014_083058799.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "57022"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 322,
+    "unique_downloads": 295,
+    "views": 67,
+    "unique_views": 63,
+    "version_downloads": 322,
+    "version_unique_downloads": 295,
+    "version_unique_views": 63,
+    "version_views": 67
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 9,
+    "genomics_count": 0,
+    "total_imaging_size": 4127436,
+    "total_archive_size": 35089318916,
+    "top_level_files": [
+      {
+        "name": "KE6EE-CarrierSleuth-Oct13-15.zip",
+        "size": 3631931278
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_144003UT.zip",
+        "size": 6030973432
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_151131UT.zip",
+        "size": 6023146307
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_154329UT.zip",
+        "size": 6036097398
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_161528UT.zip",
+        "size": 6029725719
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_164921UT.zip",
+        "size": 3622872085
+      },
+      {
+        "name": "KE6EE-wideband_500_1750kHz_20231014_170813UT.zip",
+        "size": 3616884086
+      },
+      {
+        "name": "OpeningSDRfilesInConsole.pdf",
+        "size": 757013
+      },
+      {
+        "name": "CarrierSleuthOverview.pdf",
+        "size": 1435372
+      },
+      {
+        "name": "2023-24_IRCA_Mexican_Log.pdf",
+        "size": 1142232
+      },
+      {
+        "name": "RDMW-2022-v1.2.2.zip",
+        "size": 66637279
+      },
+      {
+        "name": "AM Stations within Umbra 2023 Annular Eclipse.xlsx",
+        "size": 15408
+      },
+      {
+        "name": "SDR-Radio V3.3, 64-bit, 2024-02-05_0741.exe",
+        "size": 164804280
+      },
+      {
+        "name": "CarrierSleuthWindowsMay2024.zip",
+        "size": 31051332
+      },
+      {
+        "name": "US-Canada AMBC List Nov_2023.xlsx",
+        "size": 411113
+      },
+      {
+        "name": "IMG_20231014_083058799.jpg",
+        "size": 4127436
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:46.970110"
+}

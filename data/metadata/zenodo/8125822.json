@@ -1,0 +1,244 @@
+{
+  "created": "2023-07-09T07:21:36.588145+00:00",
+  "modified": "2023-08-22T06:16:11.787833+00:00",
+  "id": 8125822,
+  "conceptrecid": "8125821",
+  "doi": "10.48550/arXiv.2305.11019",
+  "doi_url": "https://doi.org/10.48550/arXiv.2305.11019",
+  "metadata": {
+    "title": "Annotation-free Audio-Visual Segmentation",
+    "doi": "10.48550/arXiv.2305.11019",
+    "publication_date": "2023-07-08",
+    "description": "<p>## AVS-Synthetic Dataset<br>\n**********<br>\n### Updated 2023-08-22<br>\n1. The paper [`Annotation-free Audio-Visual Segmentation`](https://arxiv.org/abs/2305.11019v3) with the dataset is accepted by WACV2024. The project page is [https://jinxiang-liu.github.io/anno-free-AVS/](https://jinxiang-liu.github.io/anno-free-AVS/).&nbsp;</p>\n\n<p>2. We release the codes at [https://github.com/jinxiang-liu/anno-free-AVS](https://github.com/jinxiang-liu/anno-free-AVS).</p>\n\n<p>3. Due to some technical reasons, there some missing audio clips (for training) in the orginal `audio.zip` file. If you download the dataset before August 22th, please re-download the `audios.zip` to replace the original one; Otherwise, just ignore this message and download the dataset.</p>\n\n<p>4. If you have any problems, feel free to contact `jinxliu#sjtu.edu.cn` (replace `#` with `@`).&nbsp;</p>\n\n<p>**********<br>\n- Note, the dataset corresponds to the arxiv paper https://arxiv.org/abs/2305.11019v3 .</p>\n\n<p><br>\n&nbsp;<br>\n- The `images` and `masks` folders provide the image-mask pairs from LVIS and OpenImages.</p>\n\n<p>- The `audios` folder contains the 3-second long audio clips from the VGGSound, please using the center 1-second sub-clip for training and evaluating. And the pickle file `category_for_vggsound_audios.pkl` describes the labels of the audios. The labels are in according with the `cls_id` column in the `annotations.csv` file for model training.&nbsp;</p>\n\n<p>- The `annotations.csv` file provides the annotations for each training, validation and testing samples. For the training samples, we do not sepcify the audios. In pratice, just randomly sample the vggsound audios with the `cls_id` in each epoch to compose the (image, masl, audio) triplet. For validation and test sets, we designate the audio sample from VGGSound for each image-mask sample.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jinxiang Liu",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Yu Wang",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Chen Ju",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Chaofan Ma",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Ya Zhang",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Weidi Xie",
+        "affiliation": "Shanghai Jiao Tong University"
+      }
+    ],
+    "keywords": [
+      "synthetic",
+      "audio visual segmentation",
+      "dataset"
+    ],
+    "version": "v1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8125821"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Annotation-free Audio-Visual Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/8125822",
+    "self_html": "https://zenodo.org/records/8125822",
+    "preview_html": "https://zenodo.org/records/8125822?preview=1",
+    "doi": "https://doi.org/10.48550/arXiv.2305.11019",
+    "self_doi": "https://doi.org/10.48550/arXiv.2305.11019",
+    "self_doi_html": "https://zenodo.org/doi/10.48550/arXiv.2305.11019",
+    "reserve_doi": "https://zenodo.org/api/records/8125822/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8125821",
+    "parent_html": "https://zenodo.org/records/8125821",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8125822/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8125822/sequence/default",
+    "files": "https://zenodo.org/api/records/8125822/files",
+    "media_files": "https://zenodo.org/api/records/8125822/media-files",
+    "archive": "https://zenodo.org/api/records/8125822/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8125822/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8125822/versions/latest",
+    "latest_html": "https://zenodo.org/records/8125822/latest",
+    "versions": "https://zenodo.org/api/records/8125822/versions",
+    "draft": "https://zenodo.org/api/records/8125822/draft",
+    "access_links": "https://zenodo.org/api/records/8125822/access/links",
+    "access_grants": "https://zenodo.org/api/records/8125822/access/grants",
+    "access_users": "https://zenodo.org/api/records/8125822/access/users",
+    "access_request": "https://zenodo.org/api/records/8125822/access/request",
+    "access": "https://zenodo.org/api/records/8125822/access",
+    "communities": "https://zenodo.org/api/records/8125822/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8125822/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8125822/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8125822/file-modification",
+    "requests": "https://zenodo.org/api/records/8125822/requests"
+  },
+  "updated": "2023-08-22T06:16:11.787833+00:00",
+  "recid": "8125822",
+  "revision": 4,
+  "files": [
+    {
+      "id": "3188163a-a0ce-4b7f-b3cf-7b33bcafc327",
+      "key": "images.zip",
+      "size": 14962855744,
+      "checksum": "md5:46c929be5e949fcbe0e603ea8fb03ca5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/images.zip/content"
+      }
+    },
+    {
+      "id": "ce455843-9630-4d08-8b4b-0db9caa9504f",
+      "key": "annotations.csv",
+      "size": 5239488,
+      "checksum": "md5:99093c7cc909b95bc130b7c2ce9ddc4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/annotations.csv/content"
+      }
+    },
+    {
+      "id": "2b16dbdc-1484-4169-88ef-0b136f7894cd",
+      "key": "category_for_vggsound_audios.pkl",
+      "size": 884660,
+      "checksum": "md5:bcc7e78b3ece4c26352050fefd4d5f12",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/category_for_vggsound_audios.pkl/content"
+      }
+    },
+    {
+      "id": "e5176334-f028-4f22-91b6-36d32c7501bc",
+      "key": "masks.zip",
+      "size": 258040176,
+      "checksum": "md5:fb63ec734c8d7f249d07b46a668eec38",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/masks.zip/content"
+      }
+    },
+    {
+      "id": "5573e756-4b60-4ffa-b921-5b696b4511bd",
+      "key": "audios.zip",
+      "size": 3401030493,
+      "checksum": "md5:7f68890d66f3f5c84cd9e4f35ebed1ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/audios.zip/content"
+      }
+    },
+    {
+      "id": "db6b842a-74fd-4637-b4f0-0d07c8a40491",
+      "key": "README.md",
+      "size": 1760,
+      "checksum": "md5:56afbca0e8e1d5bbf15d77ea1c864326",
+      "links": {
+        "self": "https://zenodo.org/api/records/8125822/files/README.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "580277"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1713,
+    "unique_downloads": 1355,
+    "views": 606,
+    "unique_views": 545,
+    "version_downloads": 1699,
+    "version_unique_downloads": 1352,
+    "version_unique_views": 539,
+    "version_views": 599
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 18621926413,
+    "top_level_files": [
+      {
+        "name": "images.zip",
+        "size": 14962855744
+      },
+      {
+        "name": "annotations.csv",
+        "size": 5239488
+      },
+      {
+        "name": "category_for_vggsound_audios.pkl",
+        "size": 884660
+      },
+      {
+        "name": "masks.zip",
+        "size": 258040176
+      },
+      {
+        "name": "audios.zip",
+        "size": 3401030493
+      },
+      {
+        "name": "README.md",
+        "size": 1760
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://arxiv.org/abs/2305.11019v3",
+      "type": "unknown"
+    },
+    {
+      "url": "https://jinxiang-liu.github.io/anno-free-AVS/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://jinxiang-liu.github.io/anno-free-AVS/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/jinxiang-liu/anno-free-AVS",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/jinxiang-liu/anno-free-AVS",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.11019v3",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:41.307986"
+}

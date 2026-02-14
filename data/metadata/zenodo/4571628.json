@@ -1,0 +1,440 @@
+{
+  "created": "2021-03-02T01:47:20.750823+00:00",
+  "modified": "2024-07-19T07:40:06.180092+00:00",
+  "id": 4571628,
+  "conceptrecid": "3742742",
+  "doi": "10.5281/zenodo.4571628",
+  "conceptdoi": "10.5281/zenodo.3742742",
+  "doi_url": "https://doi.org/10.5281/zenodo.4571628",
+  "metadata": {
+    "title": "Corn-Soy Data Layer",
+    "doi": "10.5281/zenodo.4571628",
+    "publication_date": "2021-03-01",
+    "description": "<p><strong>Dataset Abstract:</strong></p>\n\n<p>Field-level monitoring of crop types in the United States via the Cropland Data Layer (CDL) has played an important role in improving production forecasts and enabling large-scale study of agricultural inputs and outcomes. Although CDL offers crop type maps across the conterminous US from 2008 onward, such maps are missing in many Midwestern states or are uneven in quality before 2008. To fill these data gaps, we used the now-public Landsat archive and cloud computing services to map corn and soybean at 30m resolution across the US Midwest from 1999-2018. Our training data were CDL from 2008-2018, and we validated the predictions on CDL 1999-2007 where available, county-level crop acreage statistics, and state-level crop rotation statistics. The corn-soybean maps, which we call the Corn-Soy Data Layer (CSDL), are publicly hosted on Google Earth Engine and also available for download on Zenodo.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Summary of Methods:</strong></p>\n\n<p>Using Google Earth Engine, we trained a random forest classifier to classify each pixel&nbsp;of the study area into corn, soybean, and an aggregated &quot;other crops&quot; class. CDL 2008-2018 data were used as labels. The features input to the model were harmonic regression coefficients fit to the NIR, SWIR1, SWIR2, and GCVI bands/indices of&nbsp;time series from Landsat 5, 7, and 8 Surface Reflectance observations. Cloudy pixels were masked out using the <em>pixel_qa</em> band provided with Landsat Surface Reflectance products.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Map Legend:</strong></p>\n\n<ul>\n\t<li>0 = outside study area</li>\n\t<li>1 = corn</li>\n\t<li>5 = soy</li>\n\t<li>9 = other crop</li>\n\t<li>255 = non-crop (masked by NLCD)</li>\n</ul>\n\n<p>Values were chosen to be consistent with CDL values when possible.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Usage Notes:</strong></p>\n\n<p>We recommend that users consider metrics such as (1) user&#39;s and producer&#39;s accuracy with CDL and (2) R<sup>2</sup> with NASS statistics across space and time to determine in which states/counties and years CSDL is of high quality. This can be done with the CSV file of user&#39;s and producer&#39;s accuracies included in this Zenodo, and&nbsp;annual county-level statistics and example code we have included in our repo at https://github.com/LobellLab/csdl.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Updates:</strong></p>\n\n<ul>\n\t<li><strong>March 1, 2021:</strong> Fixed an issue where 255 (non-crop) values were represented as NAs instead. CSDL now contains the 255 values representing non-crop.</li>\n\t<li><strong>October 20, 2020:</strong> Fixed projection issues in the previous version. The CSDL projection now matches that of CDL.</li>\n\t<li><strong>July 13, 2020:</strong> We&nbsp;revised how we used NLCD to mask out non-crop pixels from our maps. Instead of using one cropland mask (the union of cropland across all NLCD maps) for all years of CSDL, we used a different cropland mask (the last available NLCD) for each year of CSDL.&nbsp;We also reprojected the CSDL maps to the same projection as CDL to make it easier for users to transition between or combine the two datasets.</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wang, Sherrie",
+        "affiliation": "Stanford University",
+        "orcid": "0000-0002-4618-5675"
+      },
+      {
+        "name": "Di Tommaso, Stefania",
+        "affiliation": "Stanford University"
+      },
+      {
+        "name": "Deines, Jillian",
+        "affiliation": "Stanford University"
+      },
+      {
+        "name": "Lobell, David",
+        "affiliation": "David"
+      }
+    ],
+    "keywords": [
+      "crop",
+      "corn",
+      "soybean",
+      "crop type map",
+      "agriculture",
+      "midwest",
+      "remote sensing",
+      "united states"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 3,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3742742"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Corn-Soy Data Layer",
+  "links": {
+    "self": "https://zenodo.org/api/records/4571628",
+    "self_html": "https://zenodo.org/records/4571628",
+    "preview_html": "https://zenodo.org/records/4571628?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4571628",
+    "self_doi": "https://doi.org/10.5281/zenodo.4571628",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4571628",
+    "reserve_doi": "https://zenodo.org/api/records/4571628/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3742742",
+    "parent_html": "https://zenodo.org/records/3742742",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3742742",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3742742",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4571628/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4571628/sequence/default",
+    "files": "https://zenodo.org/api/records/4571628/files",
+    "media_files": "https://zenodo.org/api/records/4571628/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:4571628:2009_CSDL_v04.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/4571628/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4571628/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4571628/versions/latest",
+    "latest_html": "https://zenodo.org/records/4571628/latest",
+    "versions": "https://zenodo.org/api/records/4571628/versions",
+    "draft": "https://zenodo.org/api/records/4571628/draft",
+    "access_links": "https://zenodo.org/api/records/4571628/access/links",
+    "access_grants": "https://zenodo.org/api/records/4571628/access/grants",
+    "access_users": "https://zenodo.org/api/records/4571628/access/users",
+    "access_request": "https://zenodo.org/api/records/4571628/access/request",
+    "access": "https://zenodo.org/api/records/4571628/access",
+    "communities": "https://zenodo.org/api/records/4571628/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4571628/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4571628/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4571628/file-modification",
+    "requests": "https://zenodo.org/api/records/4571628/requests"
+  },
+  "updated": "2024-07-19T07:40:06.180092+00:00",
+  "recid": "4571628",
+  "revision": 7,
+  "files": [
+    {
+      "id": "95ea706e-572d-42e2-a38c-5a17c849c3f5",
+      "key": "2009_CSDL_v04.tif",
+      "size": 264125195,
+      "checksum": "md5:57f6ad2539f98f5fdf58caebad1b093a",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2009_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "a6fe6c48-7a0b-4365-a385-c8a56bd40834",
+      "key": "README.md",
+      "size": 2117,
+      "checksum": "md5:5d4239ab6ba19c814c6831832713cc9b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/README.md/content"
+      }
+    },
+    {
+      "id": "8c088610-93f6-4223-925d-f73e08059f9a",
+      "key": "CSDLvsCDL_users_producers_accuracies.csv",
+      "size": 21623,
+      "checksum": "md5:b37bf05c41501088a28ba34de7ac38fd",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/CSDLvsCDL_users_producers_accuracies.csv/content"
+      }
+    },
+    {
+      "id": "a70de046-b22e-4ccd-a30d-b1512897ad6d",
+      "key": "2018_CSDL_v04.tif",
+      "size": 268245765,
+      "checksum": "md5:e6a010a64d67d58faf86d70621a91c13",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2018_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "42eb8022-5337-4902-8823-9e3491d4e120",
+      "key": "2017_CSDL_v04.tif",
+      "size": 266495602,
+      "checksum": "md5:78b22a290eea96b58e9d249fd8593173",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2017_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "a601b5cf-a813-48fb-8e7e-6e0a90498674",
+      "key": "2016_CSDL_v04.tif",
+      "size": 264598562,
+      "checksum": "md5:e8b8c47b0feeadf266f851b885e2308e",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2016_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "eb2ba2e9-e7ff-4b1c-b8f2-39122b723f11",
+      "key": "1999_CSDL_v04.tif",
+      "size": 264125195,
+      "checksum": "md5:57f6ad2539f98f5fdf58caebad1b093a",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/1999_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "d8d60487-969b-43a1-b5c9-8dfb5da9f2ad",
+      "key": "2000_CSDL_v04.tif",
+      "size": 262390264,
+      "checksum": "md5:822adb9636c550a78fb4055898509678",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2000_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "b3609d0d-777e-4396-b758-8415eaabfa9b",
+      "key": "2015_CSDL_v04.tif",
+      "size": 264327826,
+      "checksum": "md5:bd517f6ff59b8bb789d57a6ac9555efe",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2015_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "ec2df41b-3fcf-4f24-a93e-d54d45fe63de",
+      "key": "2014_CSDL_v04.tif",
+      "size": 264800453,
+      "checksum": "md5:c5c92346ef3725d4f89306654627aa03",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2014_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "723041c4-e6a3-4b36-9026-56557ebfad48",
+      "key": "2013_CSDL_v04.tif",
+      "size": 270057475,
+      "checksum": "md5:c370df1599d4dc84335ac4f4e21dd336",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2013_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "e5eac868-172f-44f6-8401-e490347fd168",
+      "key": "2012_CSDL_v04.tif",
+      "size": 271073636,
+      "checksum": "md5:7ccd7f6acb7c8c462c41cd6e0cdfae76",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2012_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "68a3491d-f305-4d86-b1ab-e22215ad5681",
+      "key": "2011_CSDL_v04.tif",
+      "size": 263580945,
+      "checksum": "md5:6cec503d5272ac48414e311340500d54",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2011_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "0bfca9ca-8a6b-4495-a156-145ac8c8276b",
+      "key": "2010_CSDL_v04.tif",
+      "size": 260830223,
+      "checksum": "md5:9ef950afdbd761cd6151d2ec065aaff7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2010_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "fe3e1423-42cf-4233-8fd3-689135aafeaa",
+      "key": "2008_CSDL_v04.tif",
+      "size": 261618781,
+      "checksum": "md5:327f2d2c455c29dcce8caf7bf570d4f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2008_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "384ddb8b-7a4b-47f8-9719-88839c158f42",
+      "key": "2002_CSDL_v04.tif",
+      "size": 264550615,
+      "checksum": "md5:1bb050bc0f0d4aa530cb396dfdcd7231",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2002_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "303fe096-4a46-4264-a3c1-1162e83e1cd0",
+      "key": "2007_CSDL_v04.tif",
+      "size": 259737795,
+      "checksum": "md5:4ebdfbb8a3a86b54aa8eb1d0b44d74bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2007_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "52e7e992-18bb-4bf4-bb70-c5e156172d34",
+      "key": "2006_CSDL_v04.tif",
+      "size": 260277786,
+      "checksum": "md5:f7d3f7ebe1e60f1d1f9e8c9f86655e78",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2006_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "9d4c6cf7-2806-4f66-93a9-637ce12a3774",
+      "key": "2005_CSDL_v04.tif",
+      "size": 261255100,
+      "checksum": "md5:7cc0c8eb52879efa7e57722fc2ebdd73",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2005_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "a72bf3d2-22d6-41b3-9448-f929278e268d",
+      "key": "2004_CSDL_v04.tif",
+      "size": 264923575,
+      "checksum": "md5:e3eb552c45c2af929eeecdf46ddfffe7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2004_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "f48df5eb-5f0c-42d5-b2b2-6d365bd1524a",
+      "key": "2003_CSDL_v04.tif",
+      "size": 262668826,
+      "checksum": "md5:df6e485efe757204ec1e0b9fac6db976",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2003_CSDL_v04.tif/content"
+      }
+    },
+    {
+      "id": "9d58ae5e-37fe-4397-848f-676d93ef9e58",
+      "key": "2001_CSDL_v04.tif",
+      "size": 262228255,
+      "checksum": "md5:c58bd9c92106ccf169c9a38aef373ab7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4571628/files/2001_CSDL_v04.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "97047"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 7402,
+    "unique_downloads": 5345,
+    "views": 4836,
+    "unique_views": 4437,
+    "version_downloads": 3490,
+    "version_unique_downloads": 2380,
+    "version_unique_views": 1208,
+    "version_views": 1336
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 20,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 5281911874,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "2009_CSDL_v04.tif",
+        "size": 264125195
+      },
+      {
+        "name": "README.md",
+        "size": 2117
+      },
+      {
+        "name": "CSDLvsCDL_users_producers_accuracies.csv",
+        "size": 21623
+      },
+      {
+        "name": "2018_CSDL_v04.tif",
+        "size": 268245765
+      },
+      {
+        "name": "2017_CSDL_v04.tif",
+        "size": 266495602
+      },
+      {
+        "name": "2016_CSDL_v04.tif",
+        "size": 264598562
+      },
+      {
+        "name": "1999_CSDL_v04.tif",
+        "size": 264125195
+      },
+      {
+        "name": "2000_CSDL_v04.tif",
+        "size": 262390264
+      },
+      {
+        "name": "2015_CSDL_v04.tif",
+        "size": 264327826
+      },
+      {
+        "name": "2014_CSDL_v04.tif",
+        "size": 264800453
+      },
+      {
+        "name": "2013_CSDL_v04.tif",
+        "size": 270057475
+      },
+      {
+        "name": "2012_CSDL_v04.tif",
+        "size": 271073636
+      },
+      {
+        "name": "2011_CSDL_v04.tif",
+        "size": 263580945
+      },
+      {
+        "name": "2010_CSDL_v04.tif",
+        "size": 260830223
+      },
+      {
+        "name": "2008_CSDL_v04.tif",
+        "size": 261618781
+      },
+      {
+        "name": "2002_CSDL_v04.tif",
+        "size": 264550615
+      },
+      {
+        "name": "2007_CSDL_v04.tif",
+        "size": 259737795
+      },
+      {
+        "name": "2006_CSDL_v04.tif",
+        "size": 260277786
+      },
+      {
+        "name": "2005_CSDL_v04.tif",
+        "size": 261255100
+      },
+      {
+        "name": "2004_CSDL_v04.tif",
+        "size": 264923575
+      },
+      {
+        "name": "2003_CSDL_v04.tif",
+        "size": 262668826
+      },
+      {
+        "name": "2001_CSDL_v04.tif",
+        "size": 262228255
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/LobellLab/csdl",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.373327"
+}

@@ -1,0 +1,154 @@
+{
+  "created": "2021-06-14T10:48:41.510930+00:00",
+  "modified": "2022-05-28T15:54:41.124577+00:00",
+  "id": 4944325,
+  "conceptrecid": "4944324",
+  "doi": "10.5061/dryad.5k0s6",
+  "doi_url": "https://doi.org/10.5061/dryad.5k0s6",
+  "metadata": {
+    "title": "Data from: Epistatic interactions influence terrestrial-marine functional shifts in cetacean rhodopsin",
+    "doi": "10.5061/dryad.5k0s6",
+    "publication_date": "2017-02-06",
+    "description": "Like many aquatic vertebrates, whales have blue-shifting spectral tuning substitutions in the dim-light visual pigment, rhodopsin, that are thought to increase photosensitivity in underwater environments. We have discovered that known spectral tuning substitutions also have surprising epistatic effects on another function of rhodopsin, the kinetic rates associated with light-activated intermediates. By using absorbance spectroscopy and fluorescence-based retinal release assays on heterologously expressed rhodopsin, we assessed both spectral and kinetic differences between cetaceans (killer whale) and terrestrial outgroups (hippo, bovine). Mutation experiments revealed that killer whale rhodopsin is unusually resilient to pleiotropic effects on retinal release from key blue-shifting substitutions (D83N and A292S), largely due to a surprisingly specific epistatic interaction between D83N and the background residue, S299. Ancestral sequence reconstruction indicated that S299 is an ancestral residue that predates the evolution of blue-shifting substitutions at the origins of Cetacea. Based on these results, we hypothesize that intramolecular epistasis helped to conserve rhodopsin's kinetic properties while enabling blue-shifting spectral tuning substitutions as cetaceans adapted to aquatic environments. Trade-offs between different aspects of molecular function are rarely considered in protein evolution, but in cetacean and other vertebrate rhodopsins, may underlie multiple evolutionary scenarios for the selection of specific amino acid substitutions.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Dungan, Sarah Z.",
+        "affiliation": "University of Toronto"
+      },
+      {
+        "name": "Chang, Belinda S. W.",
+        "affiliation": "University of Toronto"
+      }
+    ],
+    "keywords": [
+      "protein evolution",
+      "epistasis",
+      "evolution of protein structure-function",
+      "Meta II stability",
+      "Cetacea",
+      "spectral tuning",
+      "Orcinus orca"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1098/rspb.2016.2743",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4944324"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Data for Dungan &amp; Chang 2017, Proceedings B<div class=\"o-metadata__file-description\">The .zip archive contains two files: 1) A fasta alignment of the rhodopsin coding sequences used for ancestral sequence reconstruction and 2) an excel file with fluorescence and absorbance data series</div><div class=\"o-metadata__file-name\">DunganChang2017_ProcB_Data.zip<br></div></div>"
+  },
+  "title": "Data from: Epistatic interactions influence terrestrial-marine functional shifts in cetacean rhodopsin",
+  "links": {
+    "self": "https://zenodo.org/api/records/4944325",
+    "self_html": "https://zenodo.org/records/4944325",
+    "preview_html": "https://zenodo.org/records/4944325?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.5k0s6",
+    "self_doi": "https://doi.org/10.5061/dryad.5k0s6",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.5k0s6",
+    "reserve_doi": "https://zenodo.org/api/records/4944325/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4944324",
+    "parent_html": "https://zenodo.org/records/4944324",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4944325/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4944325/sequence/default",
+    "files": "https://zenodo.org/api/records/4944325/files",
+    "media_files": "https://zenodo.org/api/records/4944325/media-files",
+    "archive": "https://zenodo.org/api/records/4944325/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4944325/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4944325/versions/latest",
+    "latest_html": "https://zenodo.org/records/4944325/latest",
+    "versions": "https://zenodo.org/api/records/4944325/versions",
+    "draft": "https://zenodo.org/api/records/4944325/draft",
+    "access_links": "https://zenodo.org/api/records/4944325/access/links",
+    "access_grants": "https://zenodo.org/api/records/4944325/access/grants",
+    "access_users": "https://zenodo.org/api/records/4944325/access/users",
+    "access_request": "https://zenodo.org/api/records/4944325/access/request",
+    "access": "https://zenodo.org/api/records/4944325/access",
+    "communities": "https://zenodo.org/api/records/4944325/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4944325/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4944325/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4944325/file-modification",
+    "requests": "https://zenodo.org/api/records/4944325/requests"
+  },
+  "updated": "2022-05-28T15:54:41.124577+00:00",
+  "recid": "4944325",
+  "revision": 3,
+  "files": [
+    {
+      "id": "93d58f96-6253-406f-ac66-02513f88d761",
+      "key": "DunganChang2017_ProcB_Data.zip",
+      "size": 436781,
+      "checksum": "md5:0fc81e44da32ea9b3110d0e38f97d1b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/4944325/files/DunganChang2017_ProcB_Data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 9,
+    "unique_downloads": 9,
+    "views": 190,
+    "unique_views": 190,
+    "version_downloads": 9,
+    "version_unique_downloads": 9,
+    "version_unique_views": 190,
+    "version_views": 190
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 436781,
+    "top_level_files": [
+      {
+        "name": "DunganChang2017_ProcB_Data.zip",
+        "size": 436781
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:45.127429"
+}

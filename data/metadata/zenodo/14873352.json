@@ -1,0 +1,199 @@
+{
+  "created": "2025-02-14T22:33:48.620998+00:00",
+  "modified": "2025-02-14T22:33:48.779363+00:00",
+  "id": 14873352,
+  "conceptrecid": "14873258",
+  "doi": "10.5281/zenodo.14873352",
+  "conceptdoi": "10.5281/zenodo.14873258",
+  "doi_url": "https://doi.org/10.5281/zenodo.14873352",
+  "metadata": {
+    "title": "QuPath Segmentation masks of NeuroPAL Images",
+    "doi": "10.5281/zenodo.14873352",
+    "publication_date": "2025-02-14",
+    "description": "<p><a href=\"https://qupath.github.io/\">QuPath</a> segmentation masks of 31 C. Elegans NeuroPAL volumes (20 heads, 11 tails) originally published <a href=\"https://zenodo.org/records/4516655\">here</a>. Please note that the segmentation files do not contain names; you can assign them names by crossreferencing the segmentation centroids with the positions in the neuron ID .mat file.</p>\n<table>\n<tbody>\n<tr>\n<td><strong>Pattern</strong></td>\n<td><strong>Description</strong></td>\n<td><strong>Contents</strong></td>\n</tr>\n<tr>\n<td>&lt;name&gt;<strong>.nd2</strong></td>\n<td>Original colorstack nd2 file.</td>\n<td>Raw acquisition, nikon metadata.</td>\n</tr>\n<tr>\n<td>&lt;name&gt;<strong>.mat</strong></td>\n<td><a href=\"https://zenodo.org/records/13906028\">NeuroPAL_ID</a> colorstack file.</td>\n<td>Processed acquisition, NeuroPAL_ID settings.</td>\n</tr>\n<tr>\n<td>&lt;name&gt;<strong>_ID.mat</strong></td>\n<td><a href=\"https://zenodo.org/records/13906028\">NeuroPAL_ID</a> neuron file.</td>\n<td>Neuron metadata, including positions and names.</td>\n</tr>\n<tr>\n<td>&lt;name&gt;<strong>.qpdata</strong></td>\n<td>QuPath segmentation file.</td>\n<td>Neuron segmentations.</td>\n</tr>\n<tr>\n<td>Zenodo Link (Unsegmented)<strong>.url</strong></td>\n<td>Internet shortcut to original zenodo dataset.</td>\n<td>URL.</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yemini, Eviatar",
+        "affiliation": null,
+        "orcid": "0000-0003-1977-0761"
+      },
+      {
+        "name": "Rusch, Kevin",
+        "affiliation": "University of Pennsylvania",
+        "orcid": "0000-0001-9897-9242"
+      }
+    ],
+    "keywords": [
+      "NeuroPAL",
+      "neuron positions",
+      "neuron segmentations",
+      "NeuroPAL_ID"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.4516655",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.4516655",
+        "relation": "hasPart",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "neuropal"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14873258"
+          }
+        }
+      ]
+    }
+  },
+  "title": "QuPath Segmentation masks of NeuroPAL Images",
+  "links": {
+    "self": "https://zenodo.org/api/records/14873352",
+    "self_html": "https://zenodo.org/records/14873352",
+    "preview_html": "https://zenodo.org/records/14873352?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14873352",
+    "self_doi": "https://doi.org/10.5281/zenodo.14873352",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14873352",
+    "reserve_doi": "https://zenodo.org/api/records/14873352/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14873258",
+    "parent_html": "https://zenodo.org/records/14873258",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14873258",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14873258",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14873352/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14873352/sequence/default",
+    "files": "https://zenodo.org/api/records/14873352/files",
+    "media_files": "https://zenodo.org/api/records/14873352/media-files",
+    "archive": "https://zenodo.org/api/records/14873352/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14873352/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14873352/versions/latest",
+    "latest_html": "https://zenodo.org/records/14873352/latest",
+    "versions": "https://zenodo.org/api/records/14873352/versions",
+    "draft": "https://zenodo.org/api/records/14873352/draft",
+    "access_links": "https://zenodo.org/api/records/14873352/access/links",
+    "access_grants": "https://zenodo.org/api/records/14873352/access/grants",
+    "access_users": "https://zenodo.org/api/records/14873352/access/users",
+    "access_request": "https://zenodo.org/api/records/14873352/access/request",
+    "access": "https://zenodo.org/api/records/14873352/access",
+    "communities": "https://zenodo.org/api/records/14873352/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14873352/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14873352/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14873352/file-modification",
+    "requests": "https://zenodo.org/api/records/14873352/requests"
+  },
+  "updated": "2025-02-14T22:33:48.779363+00:00",
+  "recid": "14873352",
+  "revision": 4,
+  "files": [
+    {
+      "id": "d93f996a-cd1a-4045-92a1-f17461ead44a",
+      "key": "Zenodo-Segmented.zip",
+      "size": 1807215892,
+      "checksum": "md5:efd816b8808bf179aa7bff5e33126b63",
+      "links": {
+        "self": "https://zenodo.org/api/records/14873352/files/Zenodo-Segmented.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1200409"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 105,
+    "unique_downloads": 94,
+    "views": 204,
+    "unique_views": 155,
+    "version_downloads": 69,
+    "version_unique_downloads": 58,
+    "version_unique_views": 115,
+    "version_views": 161
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1807215892,
+    "top_level_files": [
+      {
+        "name": "Zenodo-Segmented.zip",
+        "size": 1807215892
+      }
+    ],
+    "zip_contents": {
+      "zenodo-segmented.zip": {
+        "total_files": 126,
+        "total_directories": 34,
+        "total_uncompressed_bytes": 2293590325,
+        "file_types": {
+          ".mat": 62
+        },
+        "imaging_file_count": 62,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "zenodo-segmented/heads/20190924_01/head.mat",
+          "zenodo-segmented/heads/20190924_01/head_id.mat",
+          "zenodo-segmented/heads/20190924_02/head.mat",
+          "zenodo-segmented/heads/20190924_02/head_id.mat",
+          "zenodo-segmented/heads/20190924_03/head.mat",
+          "zenodo-segmented/heads/20190924_03/head_id.mat",
+          "zenodo-segmented/heads/20190925_01/head.mat",
+          "zenodo-segmented/heads/20190925_01/head_id.mat",
+          "zenodo-segmented/heads/20190925_04/head.mat",
+          "zenodo-segmented/heads/20190925_04/head_id.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "zenodo-segmented/heads/20190924_01/head.mat",
+      "zenodo-segmented/heads/20190924_01/head_id.mat",
+      "zenodo-segmented/heads/20190924_02/head.mat",
+      "zenodo-segmented/heads/20190924_02/head_id.mat",
+      "zenodo-segmented/heads/20190924_03/head.mat",
+      "zenodo-segmented/heads/20190924_03/head_id.mat",
+      "zenodo-segmented/heads/20190925_01/head.mat",
+      "zenodo-segmented/heads/20190925_01/head_id.mat",
+      "zenodo-segmented/heads/20190925_04/head.mat",
+      "zenodo-segmented/heads/20190925_04/head_id.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:49.092938"
+}

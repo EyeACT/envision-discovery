@@ -1,0 +1,1654 @@
+{
+  "created": "2023-02-20T00:16:29.118591+00:00",
+  "modified": "2023-02-20T06:28:22.248736+00:00",
+  "id": 7655236,
+  "conceptrecid": "7655235",
+  "doi": "10.5281/zenodo.7655236",
+  "conceptdoi": "10.5281/zenodo.7655235",
+  "doi_url": "https://doi.org/10.5281/zenodo.7655236",
+  "metadata": {
+    "title": "SuperDARN Grid data in netCDF format (1994-Oct)",
+    "doi": "10.5281/zenodo.7655236",
+    "publication_date": "2023-02-20",
+    "description": "<p>1994-Oct SuperDARN radar data in netCDF format. These files were produced using versions 3.0 of the public FitACF and make_grid algorithms, using the AACGM v2 coordinate system. Cite this dataset if using our data in a publication.</p><p>The RST is available here:&nbsp;https://github.com/SuperDARN/rst</p><p>The research enabled by SuperDARN is due to the efforts of teams of scientists and engineers working in many countries to build and operate radars, process data and provide access, develop and improve data products, and assist users in interpretation. Users of SuperDARN data and data products are asked to acknowledge this support in presentations and publications. A brief statement on how to acknowledge use of SuperDARN data is provided below.</p><p>Users are also asked to consult with a SuperDARN PI prior to submission of work intended for publication. A listing of radars and PIs with contact information can be found here: (<a href=\"http://vt.superdarn.org/tiki-index.php?page=Radar+Overview\">SuperDARN Radar Overview</a>)</p><p><strong>Recommended form of acknowledgement for the use of SuperDARN data:</strong></p><p>'The authors acknowledge the use of SuperDARN data. SuperDARN is a collection of radars funded by national scientific funding agencies of Australia, Canada, China, France, Italy, Japan, Norway, South Africa, United Kingdom and the United States of America.'</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "SuperDARN, ionosphere, magnetosphere, convection, rst, fitacf, cfit, aeronomy, cedar, gem, radar"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.20383/102.0470",
+        "relation": "isSourceOf",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "spacephysics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7655235"
+          }
+        }
+      ]
+    }
+  },
+  "title": "SuperDARN Grid data in netCDF format (1994-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/7655236",
+    "self_html": "https://zenodo.org/records/7655236",
+    "preview_html": "https://zenodo.org/records/7655236?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7655236",
+    "self_doi": "https://doi.org/10.5281/zenodo.7655236",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7655236",
+    "reserve_doi": "https://zenodo.org/api/records/7655236/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7655235",
+    "parent_html": "https://zenodo.org/records/7655235",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7655235",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7655235",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7655236/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7655236/sequence/default",
+    "files": "https://zenodo.org/api/records/7655236/files",
+    "media_files": "https://zenodo.org/api/records/7655236/media-files",
+    "archive": "https://zenodo.org/api/records/7655236/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7655236/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7655236/versions/latest",
+    "latest_html": "https://zenodo.org/records/7655236/latest",
+    "versions": "https://zenodo.org/api/records/7655236/versions",
+    "draft": "https://zenodo.org/api/records/7655236/draft",
+    "access_links": "https://zenodo.org/api/records/7655236/access/links",
+    "access_grants": "https://zenodo.org/api/records/7655236/access/grants",
+    "access_users": "https://zenodo.org/api/records/7655236/access/users",
+    "access_request": "https://zenodo.org/api/records/7655236/access/request",
+    "access": "https://zenodo.org/api/records/7655236/access",
+    "communities": "https://zenodo.org/api/records/7655236/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7655236/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7655236/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7655236/file-modification",
+    "requests": "https://zenodo.org/api/records/7655236/requests"
+  },
+  "updated": "2023-02-20T06:28:22.248736+00:00",
+  "recid": "7655236",
+  "revision": 3,
+  "files": [
+    {
+      "id": "004b803a-190a-494d-b2ac-f4b0e5942be9",
+      "key": "19941009.kap.v3.0.grid.nc",
+      "size": 644821,
+      "checksum": "md5:5aea3d7318a1f99cc2f4da370853362a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941009.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "67f94641-b78d-461f-b3eb-f762091e1767",
+      "key": "19941010.kap.v3.0.grid.nc",
+      "size": 563197,
+      "checksum": "md5:6256587d1fda63029ffa6af120470197",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941010.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "7796ff1f-27ec-4d87-bdce-9e3bf63694bf",
+      "key": "19941011.gbr.v3.0.grid.nc",
+      "size": 427993,
+      "checksum": "md5:641e44828a3966a7c0f93bbedf0ef06c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941011.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ae8a07d6-91b4-4a1d-aa9c-2b789a331dd5",
+      "key": "19941011.kap.v3.0.grid.nc",
+      "size": 300199,
+      "checksum": "md5:dd0e208a9012b383537229e49ddf9f6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941011.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "bdc952c0-b3f1-43ce-9a40-7e2053798ccc",
+      "key": "19941011.sto.v3.0.grid.nc",
+      "size": 514918,
+      "checksum": "md5:53665fd193e656da65df3873684a28f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941011.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "84b248fb-8977-42d9-9140-c1f8d62eb2ee",
+      "key": "19941012.gbr.v3.0.grid.nc",
+      "size": 526945,
+      "checksum": "md5:efee0d3f242fef7fc02a8e250517de28",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941012.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "4f3cfffe-daa3-46d5-b8b0-8395872b1183",
+      "key": "19941012.kap.v3.0.grid.nc",
+      "size": 596884,
+      "checksum": "md5:eaad56cb8b7aa440358f8f0f755c95e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941012.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "9c3c5127-ba08-4a08-9e5e-5d7db78c5f5d",
+      "key": "19941012.sto.v3.0.grid.nc",
+      "size": 1009108,
+      "checksum": "md5:03902956c8c8771e08629d1e281a8632",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941012.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "f363d869-b0d5-46c4-baa6-370432a6b534",
+      "key": "19941013.gbr.v3.0.grid.nc",
+      "size": 813085,
+      "checksum": "md5:c0fdc193223b3fde2c9284698e478adb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941013.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "459e54bd-2f52-4ca1-a397-900c19630314",
+      "key": "19941013.kap.v3.0.grid.nc",
+      "size": 1086571,
+      "checksum": "md5:422fcf0a9fe12b333bee783ca9034f0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941013.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ff6442bb-37aa-47ac-b813-c78ba5239ff1",
+      "key": "19941013.sas.v3.0.grid.nc",
+      "size": 859768,
+      "checksum": "md5:ef7877e45c0a1eaaada69116ed3d7097",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941013.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "f1656e40-b8ca-4f7d-b8af-510b8fb8aafe",
+      "key": "19941013.sto.v3.0.grid.nc",
+      "size": 2680405,
+      "checksum": "md5:c11fce34b6f36e72e1acca1f8666c8d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941013.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "2065c726-2aa1-45ea-b4d4-b08cba8a8803",
+      "key": "19941014.gbr.v3.0.grid.nc",
+      "size": 847912,
+      "checksum": "md5:aadd5ba156e68325e30c37265986ea0b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941014.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "4fe12a62-b7d0-4030-b41a-51cf5aba75fb",
+      "key": "19941014.kap.v3.0.grid.nc",
+      "size": 925261,
+      "checksum": "md5:22be130d33f5c4bf29d3ee143a803cdd",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941014.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8a5fc6b0-44f1-4b33-9062-46e99652e5dc",
+      "key": "19941014.sas.v3.0.grid.nc",
+      "size": 436828,
+      "checksum": "md5:6e48b2928aa3e488b6b5d4ea7d88c7bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941014.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "df96ef8e-cd48-4c75-9344-b8a28000a4f8",
+      "key": "19941014.sto.v3.0.grid.nc",
+      "size": 947035,
+      "checksum": "md5:1d87737f1760e651a051205445d016b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941014.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "4e19a153-40ff-41c5-a82d-6a753e62023c",
+      "key": "19941015.gbr.v3.0.grid.nc",
+      "size": 370993,
+      "checksum": "md5:8e5433315249a1eae6ad5dbe0d32dab0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941015.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "a0cbb5f2-4aac-4b3a-83f0-29b1ba3e20f0",
+      "key": "19941015.kap.v3.0.grid.nc",
+      "size": 641002,
+      "checksum": "md5:d6586c6b9670d14516fe052e0cb2128a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941015.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8d125883-5004-4019-90d8-39cc23e1e1f1",
+      "key": "19941015.sas.v3.0.grid.nc",
+      "size": 949144,
+      "checksum": "md5:9eff0f03205f7af0e7a2dd4d803eb4d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941015.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "642e96c9-a4af-48d1-83d7-1a0644c57f54",
+      "key": "19941015.sto.v3.0.grid.nc",
+      "size": 1433872,
+      "checksum": "md5:ca13475914429b5fa8dcff6c47f50c67",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941015.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "e39e09cc-e4f5-4b1f-8f34-bcaccf56e084",
+      "key": "19941016.gbr.v3.0.grid.nc",
+      "size": 820723,
+      "checksum": "md5:2e1092943a73a338c533cb3d57137a8b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941016.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "02623907-89c1-491c-a3b0-998a4d79eaef",
+      "key": "19941016.kap.v3.0.grid.nc",
+      "size": 648469,
+      "checksum": "md5:1da38c81620f0adbb2379e8593d44fdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941016.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "34e817b8-ec6c-4d17-bbf3-104f6a2a4c09",
+      "key": "19941016.sas.v3.0.grid.nc",
+      "size": 855721,
+      "checksum": "md5:afd23e8ff3df9f62c3a23069c1fbab31",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941016.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "756905a7-8a32-406f-a58c-5cf17914faf2",
+      "key": "19941016.sto.v3.0.grid.nc",
+      "size": 1319416,
+      "checksum": "md5:62342f642f960774ba199e442eb91aea",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941016.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "a5fd8b88-d456-4fd2-874d-fc4a1b938647",
+      "key": "19941017.gbr.v3.0.grid.nc",
+      "size": 1351393,
+      "checksum": "md5:ab80d2746630b090339beaf8a3747888",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941017.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "7c531373-d72e-449a-9990-cf717f90cb13",
+      "key": "19941017.kap.v3.0.grid.nc",
+      "size": 1381147,
+      "checksum": "md5:11b4148736bbbe6aba468031dee7ceb3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941017.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "007c43f0-f7c6-42df-80c2-df1337f9bcf4",
+      "key": "19941017.sas.v3.0.grid.nc",
+      "size": 1665178,
+      "checksum": "md5:fc9f78f3e1deed59da11f8d3e300bda8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941017.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "63e06d47-3de8-4fa5-b336-d703c852309c",
+      "key": "19941017.sto.v3.0.grid.nc",
+      "size": 1751875,
+      "checksum": "md5:b580a67b5cedb702ae459d64cf368674",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941017.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "cad1cfd1-97d7-4502-a50c-3ac78023f187",
+      "key": "19941018.gbr.v3.0.grid.nc",
+      "size": 1279459,
+      "checksum": "md5:002aca7ff3b3df687fcb22252dff1113",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941018.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "2d5871b9-807b-4837-9cec-8fd78f357c1c",
+      "key": "19941018.kap.v3.0.grid.nc",
+      "size": 1108288,
+      "checksum": "md5:8f0ac1815e3317e4bf182d12fb6cbd9c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941018.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8674a72c-2196-4e72-861b-5027ac61d4c9",
+      "key": "19941018.sas.v3.0.grid.nc",
+      "size": 1226905,
+      "checksum": "md5:9b3abd76a60e1683b3327cee6a5b9358",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941018.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "7b37b300-dde8-4c6a-aa3b-706bdc814183",
+      "key": "19941018.sto.v3.0.grid.nc",
+      "size": 1945504,
+      "checksum": "md5:9d4b67fa126dee72d8f4bce97b063057",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941018.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ac4deae9-e2df-4da7-be0a-ae3cba709abc",
+      "key": "19941019.gbr.v3.0.grid.nc",
+      "size": 1657996,
+      "checksum": "md5:6e9b5c926417e6da08e7c5d48812daab",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941019.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "a0a7725b-ba85-419c-a5ed-dfeaa5747acc",
+      "key": "19941019.kap.v3.0.grid.nc",
+      "size": 1111708,
+      "checksum": "md5:33a2150d685545ec914782290e718e65",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941019.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "50d50e42-8dfd-477a-98a1-d0408976ab4e",
+      "key": "19941019.sas.v3.0.grid.nc",
+      "size": 1429711,
+      "checksum": "md5:3802bc1907696b61867e696ccc8651ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941019.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "d60dbb66-fa99-43e4-a07a-3173e960c203",
+      "key": "19941019.sto.v3.0.grid.nc",
+      "size": 2410396,
+      "checksum": "md5:8271a473330fea5228c4583d7b6fde3a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941019.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "c1ca0667-3260-43f6-9678-ac378c4b4713",
+      "key": "19941020.gbr.v3.0.grid.nc",
+      "size": 820666,
+      "checksum": "md5:a4bb533a0d7e3250f8c36103482e133d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941020.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "3b830b8d-be61-451c-b399-f8f0c4400e08",
+      "key": "19941020.kap.v3.0.grid.nc",
+      "size": 1083664,
+      "checksum": "md5:a7646591ff6c53801e3b6257e55c2d50",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941020.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "fa66e9c1-07a9-413a-91c1-b973943b9b71",
+      "key": "19941020.sas.v3.0.grid.nc",
+      "size": 1057729,
+      "checksum": "md5:ad3722d6e3e1b8de7edddf27067b9669",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941020.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "54beefc0-d90b-4bdb-a761-1caba6d2ee9f",
+      "key": "19941020.sto.v3.0.grid.nc",
+      "size": 1353502,
+      "checksum": "md5:701636377f4aaf8ac87fe8264f1dc199",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941020.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "6880cadd-0d58-49d9-bc3a-9bbe46216053",
+      "key": "19941021.gbr.v3.0.grid.nc",
+      "size": 839419,
+      "checksum": "md5:3ef82545ca149e157642075313dc3cb5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941021.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "c2950337-2aae-4421-937e-3370b7b27a0b",
+      "key": "19941021.kap.v3.0.grid.nc",
+      "size": 820837,
+      "checksum": "md5:e48d8674d6474e3339c5b19895f518d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941021.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "7cecb388-5adc-4811-a85a-2b6d61b95d2e",
+      "key": "19941021.sas.v3.0.grid.nc",
+      "size": 1028488,
+      "checksum": "md5:6135d3fe6e0b0e21dacc8eb21b586fa2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941021.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "83bbd018-b967-486b-8d0b-a7601ebfe188",
+      "key": "19941021.sto.v3.0.grid.nc",
+      "size": 1134166,
+      "checksum": "md5:1d0d5bf80d82a12ddb37b1c6859f9930",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941021.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "5e80fe91-ae64-41ee-af4e-26015c4812e3",
+      "key": "19941022.gbr.v3.0.grid.nc",
+      "size": 1538638,
+      "checksum": "md5:5949738811c9a134120d0ec9ab01818f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941022.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "473cdc83-2934-48c7-95c1-0858f3997f72",
+      "key": "19941022.kap.v3.0.grid.nc",
+      "size": 2132578,
+      "checksum": "md5:1f828b5963c62eeb7dee66eac5877c96",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941022.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "f65bc102-f899-43da-b0d5-d1ad7982dd76",
+      "key": "19941022.sas.v3.0.grid.nc",
+      "size": 2923909,
+      "checksum": "md5:de003c01ff969f2e0ffe1cb452581674",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941022.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "62886e34-fe57-4e80-900c-23f6a5554da3",
+      "key": "19941022.sto.v3.0.grid.nc",
+      "size": 2107612,
+      "checksum": "md5:e151a47970a0088fcf98e75f4fa76d78",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941022.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "cae4e496-b2b3-4c08-a2a2-631a37b501c6",
+      "key": "19941023.gbr.v3.0.grid.nc",
+      "size": 557269,
+      "checksum": "md5:07762c2f9ea0e9d3869f72773fd3e9f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941023.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "9871569d-34e7-409a-99f7-fde9f93f77e3",
+      "key": "19941023.kap.v3.0.grid.nc",
+      "size": 693328,
+      "checksum": "md5:e467ae505673ac661de2c9c54dddafe2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941023.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "35ecfda0-c093-4f50-a1dc-7db4255861bf",
+      "key": "19941023.sas.v3.0.grid.nc",
+      "size": 1197892,
+      "checksum": "md5:681a06747344528756b3206eac7f94cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941023.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ccd12a2f-484a-4596-8ddb-ba7309dc544d",
+      "key": "19941023.sto.v3.0.grid.nc",
+      "size": 1982782,
+      "checksum": "md5:e570511b185c962c0965512b9565ef60",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941023.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8302e2ea-6668-46c5-b4e9-4c6850590fee",
+      "key": "19941024.gbr.v3.0.grid.nc",
+      "size": 230431,
+      "checksum": "md5:df4563207efd0d58063b7f3c78996815",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941024.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "d584c85f-8595-4489-8ad5-7d78e25d28c5",
+      "key": "19941024.kap.v3.0.grid.nc",
+      "size": 225586,
+      "checksum": "md5:ba75afd0b90ce40fb0590052560f17e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941024.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "88c3de18-e447-48d8-8067-8863c109e023",
+      "key": "19941024.sas.v3.0.grid.nc",
+      "size": 178333,
+      "checksum": "md5:3c33cac7ab11063f301377e7e4784fe8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941024.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ac848a4a-64a3-4e5e-a839-0d75e74f3f64",
+      "key": "19941024.sto.v3.0.grid.nc",
+      "size": 969265,
+      "checksum": "md5:c62d094900ddb56230301b58af00f495",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941024.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "78c137aa-b7fd-4069-9341-5089da38beb6",
+      "key": "19941025.gbr.v3.0.grid.nc",
+      "size": 145045,
+      "checksum": "md5:b1447ae9af557dfcb4ec972f51d5c955",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941025.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "34d603f6-b8d1-48b3-a996-633b6d349bc6",
+      "key": "19941025.kap.v3.0.grid.nc",
+      "size": 232255,
+      "checksum": "md5:4fb838ff25f95b62e28fe981503598de",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941025.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "14973526-ba12-470e-ab3d-f0284011a95e",
+      "key": "19941025.sas.v3.0.grid.nc",
+      "size": 198568,
+      "checksum": "md5:4b4cb5d1f1d5c7621bbee14c75d31eee",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941025.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "2af89bc4-46f4-4aaa-b705-effc5af3bb4d",
+      "key": "19941025.sto.v3.0.grid.nc",
+      "size": 975307,
+      "checksum": "md5:65d9f908ab91dbeebeac9176f9e7e712",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941025.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "e944a1cc-8d1a-452b-833d-b981dda9665e",
+      "key": "19941026.gbr.v3.0.grid.nc",
+      "size": 326590,
+      "checksum": "md5:8167f953f3a2a968326f1117dd73e160",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941026.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "785538cd-dbe1-495d-a3b6-58f5fc6afe2e",
+      "key": "19941026.kap.v3.0.grid.nc",
+      "size": 402799,
+      "checksum": "md5:4bcfa2424927d0ac22ee97f18e9f5f85",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941026.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "9bbc1f6d-1187-4c98-a4ad-61e62394b1a7",
+      "key": "19941026.sas.v3.0.grid.nc",
+      "size": 612958,
+      "checksum": "md5:4f08f9cfdaffd49178f47f69d832320b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941026.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "49fbe52e-37d8-4d84-95f9-a4589a524be4",
+      "key": "19941026.sto.v3.0.grid.nc",
+      "size": 1090048,
+      "checksum": "md5:8efa8c6e1c449ca98d08092f68f9dcff",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941026.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "28a5549e-781c-4e01-a678-b343ff4d5c8b",
+      "key": "19941027.gbr.v3.0.grid.nc",
+      "size": 471997,
+      "checksum": "md5:0a750d5661db0a3b5e4046fc0c9bf638",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941027.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "bafb8590-bebd-4f8c-b111-08905e624699",
+      "key": "19941027.kap.v3.0.grid.nc",
+      "size": 371962,
+      "checksum": "md5:578b53de3abf9819a14feec20ea1af8b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941027.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "c00cfd07-9ee9-4e62-b427-3b9bf20edca3",
+      "key": "19941027.sas.v3.0.grid.nc",
+      "size": 517198,
+      "checksum": "md5:01591ec799ad774a3a732914795b676c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941027.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "61b8a389-1b31-4a0e-bb11-51526b088a84",
+      "key": "19941027.sto.v3.0.grid.nc",
+      "size": 1627672,
+      "checksum": "md5:ea430865f4d7949b9ecd37e859b9423f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941027.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "22bad86e-b92d-48b8-8b9e-c83a8f2de132",
+      "key": "19941028.gbr.v3.0.grid.nc",
+      "size": 630685,
+      "checksum": "md5:f4c2bec3a7db5a55b26bfb56718e288c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941028.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "70052b55-7e89-429c-85c1-0e694785db14",
+      "key": "19941028.kap.v3.0.grid.nc",
+      "size": 648412,
+      "checksum": "md5:745577d657946235ca44f38dc263d0ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941028.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "bd86cf16-41ab-4650-85c9-90cb71dc4051",
+      "key": "19941028.sas.v3.0.grid.nc",
+      "size": 1036924,
+      "checksum": "md5:3740da05dfe8eb23d90e87d301ab8a03",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941028.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "366747da-df3c-4a2e-af35-5b7f3d0b06f0",
+      "key": "19941028.sto.v3.0.grid.nc",
+      "size": 1086913,
+      "checksum": "md5:70d03cfb3075ea6baa8957da2e1af030",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941028.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "15fd9137-268e-4933-9cb8-86ed143107c0",
+      "key": "19941029.gbr.v3.0.grid.nc",
+      "size": 1551235,
+      "checksum": "md5:e602e8320483473c4196bf7b58f4e9d3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941029.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "bdfb5d9b-216a-4563-8944-fff0c3e8a12f",
+      "key": "19941029.kap.v3.0.grid.nc",
+      "size": 845461,
+      "checksum": "md5:f32151386aecf83a901549065930cb0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941029.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "5f3c4eda-b6f7-43fd-a108-617ab4d20f59",
+      "key": "19941029.sas.v3.0.grid.nc",
+      "size": 1214308,
+      "checksum": "md5:a2b1be698f765029883edb24e3037a25",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941029.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "cc939bdd-81fb-4963-9072-011cbb7eb50e",
+      "key": "19941029.sto.v3.0.grid.nc",
+      "size": 3342403,
+      "checksum": "md5:63d04b2cfb8023e2011f9c25ca662c96",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941029.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "84a78c3e-3021-43aa-8ed3-057d92a94f4f",
+      "key": "19941030.gbr.v3.0.grid.nc",
+      "size": 1075570,
+      "checksum": "md5:6598721817eebbf40fdc561128e16a35",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941030.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8efda513-8c91-42d2-97d5-16cb88f4ef7c",
+      "key": "19941030.kap.v3.0.grid.nc",
+      "size": 1212997,
+      "checksum": "md5:26dd86335af373644fd7e2dc065f28bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941030.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "92bf39fc-8bff-4673-b191-544c696bd396",
+      "key": "19941030.sas.v3.0.grid.nc",
+      "size": 1114729,
+      "checksum": "md5:48d0942a44438123824f3ea1e7d4b232",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941030.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "32346163-632c-4ab5-bbf0-80ca0b1332fa",
+      "key": "19941030.sto.v3.0.grid.nc",
+      "size": 2018806,
+      "checksum": "md5:83d767df859d419afcb4ce7215185b95",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941030.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "213d1281-3b0b-4877-863f-a3a02f55010d",
+      "key": "19941031.gbr.v3.0.grid.nc",
+      "size": 323398,
+      "checksum": "md5:a448404839cd379f704f5199e5dcb81b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941031.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "b045568a-6c25-4085-a667-0955764b5938",
+      "key": "19941031.kap.v3.0.grid.nc",
+      "size": 264460,
+      "checksum": "md5:6f5f5f1a7e25e47b42c56e8adb67f8c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941031.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "6fc2f706-de03-4a28-83c1-af4cd556634f",
+      "key": "19941031.sas.v3.0.grid.nc",
+      "size": 528142,
+      "checksum": "md5:c1348020e77bb6d4baeafb8c54e01a2a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941031.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "067df3fc-7771-4e88-bdf1-37ee4bb73d1d",
+      "key": "19941031.sto.v3.0.grid.nc",
+      "size": 1243663,
+      "checksum": "md5:2b596a9763931fb191be3baf74e169e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941031.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "d8d058ff-897a-48ef-a0e0-70c83aa2937c",
+      "key": "19941001.gbr.v3.0.grid.nc",
+      "size": 1289719,
+      "checksum": "md5:6229ad42d827f1bb4bbd6a306be3d260",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941001.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "8879ba97-8c53-420b-bc67-f56455f32f80",
+      "key": "19941001.kap.v3.0.grid.nc",
+      "size": 527059,
+      "checksum": "md5:fc7b0ec6c65924f8ffa461472d50baba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941001.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "2e2d96cf-c3d7-42bc-8b2f-f0b14cc5e40a",
+      "key": "19941001.sas.v3.0.grid.nc",
+      "size": 880972,
+      "checksum": "md5:56ae4465d6cbc0870b1ab201fd858bb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941001.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "e580eb86-b925-48f2-a670-ad8db468915b",
+      "key": "19941001.sto.v3.0.grid.nc",
+      "size": 1452910,
+      "checksum": "md5:12c9841a218f20f101323779e01eacd5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941001.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "350f151b-b9f3-4edc-86ae-b08545903222",
+      "key": "19941002.gbr.v3.0.grid.nc",
+      "size": 1135876,
+      "checksum": "md5:f9f3d6bc3500972d374c5a1a3bb30833",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941002.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "42ee32fd-f34d-49ab-891e-90d6acea86d6",
+      "key": "19941002.kap.v3.0.grid.nc",
+      "size": 1122937,
+      "checksum": "md5:a8c8e0d43bd02b8a706716ff503bee83",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941002.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "dc4b5dd0-4a9e-4b6a-8c33-ee0d4b141f61",
+      "key": "19941002.sas.v3.0.grid.nc",
+      "size": 1728619,
+      "checksum": "md5:1aa6bcf27429f1ff77ac5b90843d6ce1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941002.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "40e991b5-df61-48ad-ae41-dfdb5cd65f96",
+      "key": "19941002.sto.v3.0.grid.nc",
+      "size": 939283,
+      "checksum": "md5:33cb5d2d675250a60a54070fb4ee5036",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941002.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "6fce0290-96e1-4488-8828-8461872b0ced",
+      "key": "19941003.gbr.v3.0.grid.nc",
+      "size": 492403,
+      "checksum": "md5:dc97d87c5a2d5f0afefc9d0e28d961c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941003.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "9a7a3f16-d352-41cb-b465-a50a6c8497b5",
+      "key": "19941003.kap.v3.0.grid.nc",
+      "size": 257449,
+      "checksum": "md5:8465ad902075ad7878dfd4300df0e049",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941003.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "50281a5a-54bc-4d59-b09c-f9466126d886",
+      "key": "19941003.sas.v3.0.grid.nc",
+      "size": 338047,
+      "checksum": "md5:c561e6fd6a7b91a9424f524ba56609a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941003.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ea59be38-2bff-4836-8810-c3878c832055",
+      "key": "19941003.sto.v3.0.grid.nc",
+      "size": 570892,
+      "checksum": "md5:3bb1e3aac8e09ced331f9229713c5392",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941003.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "b1548954-f723-4f38-be40-57292313a1c4",
+      "key": "19941004.gbr.v3.0.grid.nc",
+      "size": 187282,
+      "checksum": "md5:5db1ccade174a1689d1a4dd3a2412a66",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941004.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "d15c01c7-51c7-4e20-8acf-f0519e4c1125",
+      "key": "19941004.kap.v3.0.grid.nc",
+      "size": 261325,
+      "checksum": "md5:7635bdcc14da619b428d4ab77388b19a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941004.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "858f3c86-682f-470a-a028-2336bacc2d66",
+      "key": "19941004.sas.v3.0.grid.nc",
+      "size": 128971,
+      "checksum": "md5:5985e1cdc28ae0e6f8258fd5f716c032",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941004.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "4742b57d-d66b-4241-a006-951edbb7e167",
+      "key": "19941004.sto.v3.0.grid.nc",
+      "size": 656449,
+      "checksum": "md5:05b12a2a0c82e21a76b3f3444eab72c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941004.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "93a50142-7bd5-46b7-b261-02957c943790",
+      "key": "19941005.gbr.v3.0.grid.nc",
+      "size": 267880,
+      "checksum": "md5:a07bb066bf236b6080d13251168d21a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941005.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ed242e21-bf6a-4e25-a06d-1fb74f597159",
+      "key": "19941005.kap.v3.0.grid.nc",
+      "size": 88330,
+      "checksum": "md5:dfec23f2dbc70901144a73b1bea6cb88",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941005.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "462ed063-7b23-4361-b795-352c1a76eb53",
+      "key": "19941005.sas.v3.0.grid.nc",
+      "size": 132391,
+      "checksum": "md5:422b08914cca0ec7ddd1a75a079f0640",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941005.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ac7271a2-b73e-48d5-8b2c-9a3a56353804",
+      "key": "19941005.sto.v3.0.grid.nc",
+      "size": 704329,
+      "checksum": "md5:3ed68894f1dc44ea8609626755310993",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941005.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "3322c55f-c6a7-4bcd-83d8-0572b65d89cd",
+      "key": "19941006.gbr.v3.0.grid.nc",
+      "size": 154849,
+      "checksum": "md5:ee1219c2b8709ef124452d560d58a898",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941006.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "0a17ef94-2c09-4986-a5e9-48d454708cff",
+      "key": "19941006.kap.v3.0.grid.nc",
+      "size": 104575,
+      "checksum": "md5:dfd16d04d5dee06a71db113bf6997450",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941006.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "b1a83661-b945-4e8a-ab2e-f3b6a044b5d9",
+      "key": "19941006.sas.v3.0.grid.nc",
+      "size": 59944,
+      "checksum": "md5:d75fe99b1aad8e69355d61ce5c705915",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941006.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "ed907674-2110-40f2-a8a0-0eb2769b7002",
+      "key": "19941006.sto.v3.0.grid.nc",
+      "size": 719833,
+      "checksum": "md5:157257a8d52725a824f25a0488af02ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941006.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "fd50421a-acf5-4bc0-a1ab-a16f15cf2060",
+      "key": "19941007.gbr.v3.0.grid.nc",
+      "size": 576877,
+      "checksum": "md5:0f138d3e75bc0d49093ada1674e33fd2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941007.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "853b7974-18bd-48bc-aafe-38547140c7d7",
+      "key": "19941007.kap.v3.0.grid.nc",
+      "size": 238354,
+      "checksum": "md5:8e5703078f4cfe50deff42839e076a6f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941007.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "7bccb8a4-76f9-43b7-bea2-4d7cb7221c90",
+      "key": "19941007.sas.v3.0.grid.nc",
+      "size": 44403,
+      "checksum": "md5:5cbbb29a72de62a5f874c8651b99faa0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941007.sas.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "665d6099-2d74-470a-bb8e-79fa4e105576",
+      "key": "19941007.sto.v3.0.grid.nc",
+      "size": 670585,
+      "checksum": "md5:d9408338def0530db27bb44c0052ccca",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941007.sto.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "70f96e6c-c887-42a0-88e9-4bf89121ec1d",
+      "key": "19941008.gbr.v3.0.grid.nc",
+      "size": 237157,
+      "checksum": "md5:b3dcd872ae219e80aaf32697d31c1707",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941008.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "15ed9fcd-93b7-482b-90aa-c4b4b12fa444",
+      "key": "19941008.kap.v3.0.grid.nc",
+      "size": 237841,
+      "checksum": "md5:7e1f2c78a92a4628d5c07d0f4ad4c35f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941008.kap.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "97413744-db12-4d7f-8012-100429eb0eea",
+      "key": "19941009.gbr.v3.0.grid.nc",
+      "size": 395788,
+      "checksum": "md5:fca68a3ea240a504d3e8cfaa4103484e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941009.gbr.v3.0.grid.nc/content"
+      }
+    },
+    {
+      "id": "5f1e00e2-4dbd-446d-a276-ac7c3849f20f",
+      "key": "19941010.gbr.v3.0.grid.nc",
+      "size": 598708,
+      "checksum": "md5:52fbce29a42fb135a297a3960a29a96e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7655236/files/19941010.gbr.v3.0.grid.nc/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "270414"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1723,
+    "unique_downloads": 1723,
+    "views": 141,
+    "unique_views": 140,
+    "version_downloads": 1723,
+    "version_unique_downloads": 1723,
+    "version_unique_views": 140,
+    "version_views": 141
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "19941009.kap.v3.0.grid.nc",
+        "size": 644821
+      },
+      {
+        "name": "19941010.kap.v3.0.grid.nc",
+        "size": 563197
+      },
+      {
+        "name": "19941011.gbr.v3.0.grid.nc",
+        "size": 427993
+      },
+      {
+        "name": "19941011.kap.v3.0.grid.nc",
+        "size": 300199
+      },
+      {
+        "name": "19941011.sto.v3.0.grid.nc",
+        "size": 514918
+      },
+      {
+        "name": "19941012.gbr.v3.0.grid.nc",
+        "size": 526945
+      },
+      {
+        "name": "19941012.kap.v3.0.grid.nc",
+        "size": 596884
+      },
+      {
+        "name": "19941012.sto.v3.0.grid.nc",
+        "size": 1009108
+      },
+      {
+        "name": "19941013.gbr.v3.0.grid.nc",
+        "size": 813085
+      },
+      {
+        "name": "19941013.kap.v3.0.grid.nc",
+        "size": 1086571
+      },
+      {
+        "name": "19941013.sas.v3.0.grid.nc",
+        "size": 859768
+      },
+      {
+        "name": "19941013.sto.v3.0.grid.nc",
+        "size": 2680405
+      },
+      {
+        "name": "19941014.gbr.v3.0.grid.nc",
+        "size": 847912
+      },
+      {
+        "name": "19941014.kap.v3.0.grid.nc",
+        "size": 925261
+      },
+      {
+        "name": "19941014.sas.v3.0.grid.nc",
+        "size": 436828
+      },
+      {
+        "name": "19941014.sto.v3.0.grid.nc",
+        "size": 947035
+      },
+      {
+        "name": "19941015.gbr.v3.0.grid.nc",
+        "size": 370993
+      },
+      {
+        "name": "19941015.kap.v3.0.grid.nc",
+        "size": 641002
+      },
+      {
+        "name": "19941015.sas.v3.0.grid.nc",
+        "size": 949144
+      },
+      {
+        "name": "19941015.sto.v3.0.grid.nc",
+        "size": 1433872
+      },
+      {
+        "name": "19941016.gbr.v3.0.grid.nc",
+        "size": 820723
+      },
+      {
+        "name": "19941016.kap.v3.0.grid.nc",
+        "size": 648469
+      },
+      {
+        "name": "19941016.sas.v3.0.grid.nc",
+        "size": 855721
+      },
+      {
+        "name": "19941016.sto.v3.0.grid.nc",
+        "size": 1319416
+      },
+      {
+        "name": "19941017.gbr.v3.0.grid.nc",
+        "size": 1351393
+      },
+      {
+        "name": "19941017.kap.v3.0.grid.nc",
+        "size": 1381147
+      },
+      {
+        "name": "19941017.sas.v3.0.grid.nc",
+        "size": 1665178
+      },
+      {
+        "name": "19941017.sto.v3.0.grid.nc",
+        "size": 1751875
+      },
+      {
+        "name": "19941018.gbr.v3.0.grid.nc",
+        "size": 1279459
+      },
+      {
+        "name": "19941018.kap.v3.0.grid.nc",
+        "size": 1108288
+      },
+      {
+        "name": "19941018.sas.v3.0.grid.nc",
+        "size": 1226905
+      },
+      {
+        "name": "19941018.sto.v3.0.grid.nc",
+        "size": 1945504
+      },
+      {
+        "name": "19941019.gbr.v3.0.grid.nc",
+        "size": 1657996
+      },
+      {
+        "name": "19941019.kap.v3.0.grid.nc",
+        "size": 1111708
+      },
+      {
+        "name": "19941019.sas.v3.0.grid.nc",
+        "size": 1429711
+      },
+      {
+        "name": "19941019.sto.v3.0.grid.nc",
+        "size": 2410396
+      },
+      {
+        "name": "19941020.gbr.v3.0.grid.nc",
+        "size": 820666
+      },
+      {
+        "name": "19941020.kap.v3.0.grid.nc",
+        "size": 1083664
+      },
+      {
+        "name": "19941020.sas.v3.0.grid.nc",
+        "size": 1057729
+      },
+      {
+        "name": "19941020.sto.v3.0.grid.nc",
+        "size": 1353502
+      },
+      {
+        "name": "19941021.gbr.v3.0.grid.nc",
+        "size": 839419
+      },
+      {
+        "name": "19941021.kap.v3.0.grid.nc",
+        "size": 820837
+      },
+      {
+        "name": "19941021.sas.v3.0.grid.nc",
+        "size": 1028488
+      },
+      {
+        "name": "19941021.sto.v3.0.grid.nc",
+        "size": 1134166
+      },
+      {
+        "name": "19941022.gbr.v3.0.grid.nc",
+        "size": 1538638
+      },
+      {
+        "name": "19941022.kap.v3.0.grid.nc",
+        "size": 2132578
+      },
+      {
+        "name": "19941022.sas.v3.0.grid.nc",
+        "size": 2923909
+      },
+      {
+        "name": "19941022.sto.v3.0.grid.nc",
+        "size": 2107612
+      },
+      {
+        "name": "19941023.gbr.v3.0.grid.nc",
+        "size": 557269
+      },
+      {
+        "name": "19941023.kap.v3.0.grid.nc",
+        "size": 693328
+      },
+      {
+        "name": "19941023.sas.v3.0.grid.nc",
+        "size": 1197892
+      },
+      {
+        "name": "19941023.sto.v3.0.grid.nc",
+        "size": 1982782
+      },
+      {
+        "name": "19941024.gbr.v3.0.grid.nc",
+        "size": 230431
+      },
+      {
+        "name": "19941024.kap.v3.0.grid.nc",
+        "size": 225586
+      },
+      {
+        "name": "19941024.sas.v3.0.grid.nc",
+        "size": 178333
+      },
+      {
+        "name": "19941024.sto.v3.0.grid.nc",
+        "size": 969265
+      },
+      {
+        "name": "19941025.gbr.v3.0.grid.nc",
+        "size": 145045
+      },
+      {
+        "name": "19941025.kap.v3.0.grid.nc",
+        "size": 232255
+      },
+      {
+        "name": "19941025.sas.v3.0.grid.nc",
+        "size": 198568
+      },
+      {
+        "name": "19941025.sto.v3.0.grid.nc",
+        "size": 975307
+      },
+      {
+        "name": "19941026.gbr.v3.0.grid.nc",
+        "size": 326590
+      },
+      {
+        "name": "19941026.kap.v3.0.grid.nc",
+        "size": 402799
+      },
+      {
+        "name": "19941026.sas.v3.0.grid.nc",
+        "size": 612958
+      },
+      {
+        "name": "19941026.sto.v3.0.grid.nc",
+        "size": 1090048
+      },
+      {
+        "name": "19941027.gbr.v3.0.grid.nc",
+        "size": 471997
+      },
+      {
+        "name": "19941027.kap.v3.0.grid.nc",
+        "size": 371962
+      },
+      {
+        "name": "19941027.sas.v3.0.grid.nc",
+        "size": 517198
+      },
+      {
+        "name": "19941027.sto.v3.0.grid.nc",
+        "size": 1627672
+      },
+      {
+        "name": "19941028.gbr.v3.0.grid.nc",
+        "size": 630685
+      },
+      {
+        "name": "19941028.kap.v3.0.grid.nc",
+        "size": 648412
+      },
+      {
+        "name": "19941028.sas.v3.0.grid.nc",
+        "size": 1036924
+      },
+      {
+        "name": "19941028.sto.v3.0.grid.nc",
+        "size": 1086913
+      },
+      {
+        "name": "19941029.gbr.v3.0.grid.nc",
+        "size": 1551235
+      },
+      {
+        "name": "19941029.kap.v3.0.grid.nc",
+        "size": 845461
+      },
+      {
+        "name": "19941029.sas.v3.0.grid.nc",
+        "size": 1214308
+      },
+      {
+        "name": "19941029.sto.v3.0.grid.nc",
+        "size": 3342403
+      },
+      {
+        "name": "19941030.gbr.v3.0.grid.nc",
+        "size": 1075570
+      },
+      {
+        "name": "19941030.kap.v3.0.grid.nc",
+        "size": 1212997
+      },
+      {
+        "name": "19941030.sas.v3.0.grid.nc",
+        "size": 1114729
+      },
+      {
+        "name": "19941030.sto.v3.0.grid.nc",
+        "size": 2018806
+      },
+      {
+        "name": "19941031.gbr.v3.0.grid.nc",
+        "size": 323398
+      },
+      {
+        "name": "19941031.kap.v3.0.grid.nc",
+        "size": 264460
+      },
+      {
+        "name": "19941031.sas.v3.0.grid.nc",
+        "size": 528142
+      },
+      {
+        "name": "19941031.sto.v3.0.grid.nc",
+        "size": 1243663
+      },
+      {
+        "name": "19941001.gbr.v3.0.grid.nc",
+        "size": 1289719
+      },
+      {
+        "name": "19941001.kap.v3.0.grid.nc",
+        "size": 527059
+      },
+      {
+        "name": "19941001.sas.v3.0.grid.nc",
+        "size": 880972
+      },
+      {
+        "name": "19941001.sto.v3.0.grid.nc",
+        "size": 1452910
+      },
+      {
+        "name": "19941002.gbr.v3.0.grid.nc",
+        "size": 1135876
+      },
+      {
+        "name": "19941002.kap.v3.0.grid.nc",
+        "size": 1122937
+      },
+      {
+        "name": "19941002.sas.v3.0.grid.nc",
+        "size": 1728619
+      },
+      {
+        "name": "19941002.sto.v3.0.grid.nc",
+        "size": 939283
+      },
+      {
+        "name": "19941003.gbr.v3.0.grid.nc",
+        "size": 492403
+      },
+      {
+        "name": "19941003.kap.v3.0.grid.nc",
+        "size": 257449
+      },
+      {
+        "name": "19941003.sas.v3.0.grid.nc",
+        "size": 338047
+      },
+      {
+        "name": "19941003.sto.v3.0.grid.nc",
+        "size": 570892
+      },
+      {
+        "name": "19941004.gbr.v3.0.grid.nc",
+        "size": 187282
+      },
+      {
+        "name": "19941004.kap.v3.0.grid.nc",
+        "size": 261325
+      },
+      {
+        "name": "19941004.sas.v3.0.grid.nc",
+        "size": 128971
+      },
+      {
+        "name": "19941004.sto.v3.0.grid.nc",
+        "size": 656449
+      },
+      {
+        "name": "19941005.gbr.v3.0.grid.nc",
+        "size": 267880
+      },
+      {
+        "name": "19941005.kap.v3.0.grid.nc",
+        "size": 88330
+      },
+      {
+        "name": "19941005.sas.v3.0.grid.nc",
+        "size": 132391
+      },
+      {
+        "name": "19941005.sto.v3.0.grid.nc",
+        "size": 704329
+      },
+      {
+        "name": "19941006.gbr.v3.0.grid.nc",
+        "size": 154849
+      },
+      {
+        "name": "19941006.kap.v3.0.grid.nc",
+        "size": 104575
+      },
+      {
+        "name": "19941006.sas.v3.0.grid.nc",
+        "size": 59944
+      },
+      {
+        "name": "19941006.sto.v3.0.grid.nc",
+        "size": 719833
+      },
+      {
+        "name": "19941007.gbr.v3.0.grid.nc",
+        "size": 576877
+      },
+      {
+        "name": "19941007.kap.v3.0.grid.nc",
+        "size": 238354
+      },
+      {
+        "name": "19941007.sas.v3.0.grid.nc",
+        "size": 44403
+      },
+      {
+        "name": "19941007.sto.v3.0.grid.nc",
+        "size": 670585
+      },
+      {
+        "name": "19941008.gbr.v3.0.grid.nc",
+        "size": 237157
+      },
+      {
+        "name": "19941008.kap.v3.0.grid.nc",
+        "size": 237841
+      },
+      {
+        "name": "19941009.gbr.v3.0.grid.nc",
+        "size": 395788
+      },
+      {
+        "name": "19941010.gbr.v3.0.grid.nc",
+        "size": 598708
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/SuperDARN/rstThe",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:40.385004"
+}

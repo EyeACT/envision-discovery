@@ -1,0 +1,230 @@
+{
+  "created": "2023-12-28T13:35:22.449451+00:00",
+  "modified": "2024-07-09T14:36:33.542708+00:00",
+  "id": 10297002,
+  "conceptrecid": "10297001",
+  "doi": "10.5281/zenodo.10297002",
+  "conceptdoi": "10.5281/zenodo.10297001",
+  "doi_url": "https://doi.org/10.5281/zenodo.10297002",
+  "metadata": {
+    "title": "Layer Cake",
+    "doi": "10.5281/zenodo.10297002",
+    "publication_date": "2016-11-29",
+    "description": "Niter\u00f3i Contemporary Art Museum, Oscar Niemeyer, 1996\nParc de la Villette, Bernard Tsuchmi, 1998\nLa Llotja Theatre, Mecanoo, 2010\nAriston Hotel, Marcel Breuer, 1948\nTorre Velasca, BBPR, 1954\n\nSource: Objaverse 1.0 / Sketchfab",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "samtous",
+        "affiliation": "none"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-sa-2.5"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10297001"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Layer Cake",
+  "links": {
+    "self": "https://zenodo.org/api/records/10297002",
+    "self_html": "https://zenodo.org/records/10297002",
+    "preview_html": "https://zenodo.org/records/10297002?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10297002",
+    "self_doi": "https://doi.org/10.5281/zenodo.10297002",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10297002",
+    "reserve_doi": "https://zenodo.org/api/records/10297002/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10297001",
+    "parent_html": "https://zenodo.org/records/10297001",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10297001",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10297001",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10297002/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10297002/sequence/default",
+    "files": "https://zenodo.org/api/records/10297002/files",
+    "media_files": "https://zenodo.org/api/records/10297002/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10297002:thumb2.jpeg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/10297002/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10297002/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10297002/versions/latest",
+    "latest_html": "https://zenodo.org/records/10297002/latest",
+    "versions": "https://zenodo.org/api/records/10297002/versions",
+    "draft": "https://zenodo.org/api/records/10297002/draft",
+    "access_links": "https://zenodo.org/api/records/10297002/access/links",
+    "access_grants": "https://zenodo.org/api/records/10297002/access/grants",
+    "access_users": "https://zenodo.org/api/records/10297002/access/users",
+    "access_request": "https://zenodo.org/api/records/10297002/access/request",
+    "access": "https://zenodo.org/api/records/10297002/access",
+    "communities": "https://zenodo.org/api/records/10297002/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10297002/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10297002/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10297002/file-modification",
+    "requests": "https://zenodo.org/api/records/10297002/requests"
+  },
+  "updated": "2024-07-09T14:36:33.542708+00:00",
+  "recid": "10297002",
+  "revision": 6,
+  "files": [
+    {
+      "id": "333fb123-82b3-46ab-a4fa-c14375c83552",
+      "key": "thumb2.jpeg",
+      "size": 5122,
+      "checksum": "md5:f4bd5a3a826dc1975f0640b36aa20b1f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb2.jpeg/content"
+      }
+    },
+    {
+      "id": "9e3e37eb-f147-48f8-bf38-b8e413f099de",
+      "key": "thumb3.jpeg",
+      "size": 7674,
+      "checksum": "md5:164fb27a1442fb7cc9df741bdeb4aa3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb3.jpeg/content"
+      }
+    },
+    {
+      "id": "d2b7ea58-f6c5-401b-b0eb-d08eef38b313",
+      "key": "ac567c5398ce4f9ba359154e4fe416d4.glb",
+      "size": 3748960,
+      "checksum": "md5:bc782a72e9a4587dd66d75a2dcfbb037",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/ac567c5398ce4f9ba359154e4fe416d4.glb/content"
+      }
+    },
+    {
+      "id": "fa207457-1dce-46ff-b648-23a715275416",
+      "key": "thumb5.jpeg",
+      "size": 21414,
+      "checksum": "md5:8f5dc80a9d3080aeb6a261a1ba836093",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb5.jpeg/content"
+      }
+    },
+    {
+      "id": "3e105582-34ad-4d8e-af3a-9d15ab6ba02e",
+      "key": "thumb0.jpeg",
+      "size": 893,
+      "checksum": "md5:bd8160f0ff8c3d56bcc1037162b63c66",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb0.jpeg/content"
+      }
+    },
+    {
+      "id": "c19972be-d6ed-46c5-b740-c33fdb926649",
+      "key": "thumb1.jpeg",
+      "size": 1941,
+      "checksum": "md5:8b703f312ef66161f8c3b0b700a8449e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb1.jpeg/content"
+      }
+    },
+    {
+      "id": "9d5d9de9-85d3-4eb3-8605-ffe1003960ce",
+      "key": "thumb6.jpeg",
+      "size": 28103,
+      "checksum": "md5:828aaf9942db5419b1a6653efae5f84b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb6.jpeg/content"
+      }
+    },
+    {
+      "id": "ff7ece7a-5413-4c72-b72d-26b7c7960d75",
+      "key": "thumb4.jpeg",
+      "size": 13349,
+      "checksum": "md5:92b25b4f23d0d2c914f1457c0f32c020",
+      "links": {
+        "self": "https://zenodo.org/api/records/10297002/files/thumb4.jpeg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1197195"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 24,
+    "unique_downloads": 24,
+    "views": 31,
+    "unique_views": 31,
+    "version_downloads": 24,
+    "version_unique_downloads": 24,
+    "version_unique_views": 31,
+    "version_views": 31
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 7,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 78496,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "thumb2.jpeg",
+        "size": 5122
+      },
+      {
+        "name": "thumb3.jpeg",
+        "size": 7674
+      },
+      {
+        "name": "ac567c5398ce4f9ba359154e4fe416d4.glb",
+        "size": 3748960
+      },
+      {
+        "name": "thumb5.jpeg",
+        "size": 21414
+      },
+      {
+        "name": "thumb0.jpeg",
+        "size": 893
+      },
+      {
+        "name": "thumb1.jpeg",
+        "size": 1941
+      },
+      {
+        "name": "thumb6.jpeg",
+        "size": 28103
+      },
+      {
+        "name": "thumb4.jpeg",
+        "size": 13349
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:12.109481"
+}

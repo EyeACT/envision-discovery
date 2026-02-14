@@ -1,0 +1,1490 @@
+{
+  "created": "2023-09-09T19:44:29.831801+00:00",
+  "modified": "2023-09-10T14:26:55.303501+00:00",
+  "id": 8302795,
+  "conceptrecid": "8302794",
+  "doi": "10.5061/dryad.rv15dv4bv",
+  "doi_url": "https://doi.org/10.5061/dryad.rv15dv4bv",
+  "metadata": {
+    "title": "Late gene therapy limits the restoration of retinal function in a mouse model of retinitis pigmentosa",
+    "doi": "10.5061/dryad.rv15dv4bv",
+    "publication_date": "2023-08-30",
+    "description": "<p><span>Retinitis pigmentosa is an inherited photoreceptor degeneration that begins with rod loss followed by cone loss. This cell loss greatly diminishes vision, with most patients becoming legally blind. Gene therapies are being developed, but it is unknown how retinal function depends on the time of intervention. To uncover this dependence, we utilize a mouse model of retinitis pigmentosa capable of artificial genetic rescue. This model enables a benchmark of best-case gene therapy by removing variables that complicate the ability to answer this vital question. Complete genetic rescue was performed at 25%, 50%, and 70% rod loss (early, mid, and late, respectively). Here we show early- and mid-treatment restores retinal function to near wild-type levels, specifically the sensitivity and signal fidelity of retinal ganglion cells, the output neurons of the retina. However, some anatomical defects persist. Late treatment retinas exhibit continued, albeit slowed, loss of sensitivity and signal fidelity among retinal ganglion cells, as well as persistent gliosis. We conclude that gene replacement therapies delivered after 50% rod loss are unlikely to restore visual function to normal. This is critical information for administering gene therapies to rescue vision.</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Scalabrino, Miranda",
+        "affiliation": "University of California Los Angeles",
+        "orcid": "0000-0003-0158-5170"
+      }
+    ],
+    "keywords": [
+      "Retina",
+      "Retinitis pigmentosa",
+      "Confocal microscopy",
+      "Microscopy",
+      "Retinal degeneration"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/mishek-thapa/treatment_paper",
+        "relation": "isSourceOf",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8302794"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Files can be opened using the open source software ImageJ/FIJI.</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: EY027193</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: EY5722</p><p>Funding provided by: Whitehead Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100020186<br>Award Number: </p><p>Funding provided by: Research to Prevent Blindness<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100001818<br>Award Number: </p><p>Funding provided by: Holland-Trice*<br>Crossref Funder Registry ID: <br>Award Number: </p>"
+  },
+  "title": "Late gene therapy limits the restoration of retinal function in a mouse model of retinitis pigmentosa",
+  "links": {
+    "self": "https://zenodo.org/api/records/8302795",
+    "self_html": "https://zenodo.org/records/8302795",
+    "preview_html": "https://zenodo.org/records/8302795?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.rv15dv4bv",
+    "self_doi": "https://doi.org/10.5061/dryad.rv15dv4bv",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.rv15dv4bv",
+    "reserve_doi": "https://zenodo.org/api/records/8302795/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8302794",
+    "parent_html": "https://zenodo.org/records/8302794",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8302795/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8302795/sequence/default",
+    "files": "https://zenodo.org/api/records/8302795/files",
+    "media_files": "https://zenodo.org/api/records/8302795/media-files",
+    "archive": "https://zenodo.org/api/records/8302795/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8302795/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8302795/versions/latest",
+    "latest_html": "https://zenodo.org/records/8302795/latest",
+    "versions": "https://zenodo.org/api/records/8302795/versions",
+    "draft": "https://zenodo.org/api/records/8302795/draft",
+    "access_links": "https://zenodo.org/api/records/8302795/access/links",
+    "access_grants": "https://zenodo.org/api/records/8302795/access/grants",
+    "access_users": "https://zenodo.org/api/records/8302795/access/users",
+    "access_request": "https://zenodo.org/api/records/8302795/access/request",
+    "access": "https://zenodo.org/api/records/8302795/access",
+    "communities": "https://zenodo.org/api/records/8302795/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8302795/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8302795/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8302795/file-modification",
+    "requests": "https://zenodo.org/api/records/8302795/requests"
+  },
+  "updated": "2023-09-10T14:26:55.303501+00:00",
+  "recid": "8302795",
+  "revision": 2,
+  "files": [
+    {
+      "id": "68f716bf-a9cf-46fa-a26e-9a3c70b489bc",
+      "key": "WT_3M5M_mCar_60xz_sec8022.nd2",
+      "size": 88457216,
+      "checksum": "md5:3deacc714e594925d5ff50e3ba89ba16",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_mCar_60xz_sec8022.nd2/content"
+      }
+    },
+    {
+      "id": "ad303825-61b2-4151-a56b-ecdbcac2eda4",
+      "key": "1M7M_2022_02_22_mCar_60xz_sec1_007.nd2",
+      "size": 92655616,
+      "checksum": "md5:c61ae38888ddf8d0bbba26c992cf5e27",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_mCar_60xz_sec1_007.nd2/content"
+      }
+    },
+    {
+      "id": "578d8054-d3f0-4d54-83af-58e9aff2ac0a",
+      "key": "1249192R2RE_WT_60xz_ms2048.nd2",
+      "size": 528834560,
+      "checksum": "md5:ce3b6742be6e0a22c85a4551f47a1dfb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1249192R2RE_WT_60xz_ms2048.nd2/content"
+      }
+    },
+    {
+      "id": "fef4123e-04c9-4517-b556-05b029be65ea",
+      "key": "1274991L2LE_1M_60xz001.nd2",
+      "size": 138809344,
+      "checksum": "md5:1da40f8de136cd6e97287b3cf3e972a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1274991L2LE_1M_60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "87a22dc7-23cb-43d9-b729-594f876576a3",
+      "key": "1274991L2LE_1M_60xz_2042.nd2",
+      "size": 755363840,
+      "checksum": "md5:2f893bb0d99d8a0c2505ce4fe03a144b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1274991L2LE_1M_60xz_2042.nd2/content"
+      }
+    },
+    {
+      "id": "0f835466-1e68-4a2f-a1e6-4023a71dcefd",
+      "key": "1M_12749991L2LE_mCar_60xz004.nd2",
+      "size": 96854016,
+      "checksum": "md5:7ba7ff4f1bac5fb6a51121a0ebe5f4b1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M_12749991L2LE_mCar_60xz004.nd2/content"
+      }
+    },
+    {
+      "id": "efd6ae7f-1869-4a5c-8ab0-dd53eefb4c84",
+      "key": "1M_12749991L2LE_mCar_60xz006.nd2",
+      "size": 59068416,
+      "checksum": "md5:36bb89e5f03655fa96bd2d7d3772d296",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M_12749991L2LE_mCar_60xz006.nd2/content"
+      }
+    },
+    {
+      "id": "67bf22fa-6c31-4492-b462-18c808c7530f",
+      "key": "1M3M_2021-12-08-0_mCarCtBP2_60x.nd2",
+      "size": 8601600,
+      "checksum": "md5:14151578e98a83be6f44b04fa0a4cd40",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M3M_2021-12-08-0_mCarCtBP2_60x.nd2/content"
+      }
+    },
+    {
+      "id": "602d244d-17fd-4b6d-aaa5-2116027153ee",
+      "key": "1M4M_2021-11-17_mCar_60xz007.nd2",
+      "size": 84258816,
+      "checksum": "md5:b90d16927187835cc83ec14a12c3d78b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M4M_2021-11-17_mCar_60xz007.nd2/content"
+      }
+    },
+    {
+      "id": "69c7f174-7f8d-4706-9d83-0e7e2541b0e1",
+      "key": "1M4M_2021_11_17_mCar_Calb_60xz_sec1006.nd2",
+      "size": 159764480,
+      "checksum": "md5:948c3996d09f8d93e477c60cd41f8798",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M4M_2021_11_17_mCar_Calb_60xz_sec1006.nd2/content"
+      }
+    },
+    {
+      "id": "b2d6e804-6d24-47ba-97d6-9c66d01cf2f0",
+      "key": "1M4M_2021_11_17_mCar_Calb_60xz_sec8005.nd2",
+      "size": 126242816,
+      "checksum": "md5:b2164a6d9dd1051e2a964b6532a2a2a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M4M_2021_11_17_mCar_Calb_60xz_sec8005.nd2/content"
+      }
+    },
+    {
+      "id": "9cdf6449-e4dd-4299-a81e-0c706a28ece6",
+      "key": "1M5M_2022-02-01_mCarCtBP2_60xz01001.nd2",
+      "size": 163979264,
+      "checksum": "md5:0c229234256158ad994ed3422c79f909",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M5M_2022-02-01_mCarCtBP2_60xz01001.nd2/content"
+      }
+    },
+    {
+      "id": "331ad47d-ca9b-40b6-b171-a2bcedcbd101",
+      "key": "1M5M_2022-02-01_mCarCtBP2_60xz01002.nd2",
+      "size": 159764480,
+      "checksum": "md5:ff0b47593aa390387fb991080ca0b0bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M5M_2022-02-01_mCarCtBP2_60xz01002.nd2/content"
+      }
+    },
+    {
+      "id": "dd81c71b-c9e4-494e-879d-56db9957b9bb",
+      "key": "1M5M_2022-02-01_mCarCtBP2_60xz01.nd2",
+      "size": 113614848,
+      "checksum": "md5:7129d0c3e6673df3d3f013bee6d4f28f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M5M_2022-02-01_mCarCtBP2_60xz01.nd2/content"
+      }
+    },
+    {
+      "id": "dcbac320-38fc-4fd9-b88e-19170191f085",
+      "key": "1M7M_2022-01-19-0_mglur6CtBP2_60xz015.nd2",
+      "size": 151371776,
+      "checksum": "md5:a01c372b1c316cd084b6e2fbbff458d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022-01-19-0_mglur6CtBP2_60xz015.nd2/content"
+      }
+    },
+    {
+      "id": "524ae3a3-ad3d-4924-be2d-fe9719d2da59",
+      "key": "1M7M_2022_02_22_0GFAPmCAR60xz007.nd2",
+      "size": 168157184,
+      "checksum": "md5:ddc764dc7096e07c87a1ea1ea52734a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_0GFAPmCAR60xz007.nd2/content"
+      }
+    },
+    {
+      "id": "3c872cf2-69ff-4db1-b4e3-8f69decd42dd",
+      "key": "1M7M_2022_02_22_mCar_60xz_sec1_009.nd2",
+      "size": 92655616,
+      "checksum": "md5:4269de1bb2000be0748126f94c8d3b0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_mCar_60xz_sec1_009.nd2/content"
+      }
+    },
+    {
+      "id": "56e7b564-e1a1-44d3-bda0-f095dbcc7782",
+      "key": "1M7M_2022_02_22_mCar_60xz_sec1_011.nd2",
+      "size": 84258816,
+      "checksum": "md5:c85ab87c571c60f3df8b79782f60fe44",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_mCar_60xz_sec1_011.nd2/content"
+      }
+    },
+    {
+      "id": "f549eb82-8a21-412b-b0bf-b8b6f2526b4f",
+      "key": "1M7M_2022_02_22_mCar_60xz_sec8_005.nd2",
+      "size": 88457216,
+      "checksum": "md5:398625558be5bb170f0326c3a3212b63",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_mCar_60xz_sec8_005.nd2/content"
+      }
+    },
+    {
+      "id": "f7b3881f-b602-4ba0-b86c-c2c4452926a6",
+      "key": "1M7M_2022_02_22_mCar_60xz_sec8_006.nd2",
+      "size": 75862016,
+      "checksum": "md5:6a0bff0f710b95358af5cea516b7b1e1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/1M7M_2022_02_22_mCar_60xz_sec8_006.nd2/content"
+      }
+    },
+    {
+      "id": "2cabdea7-81c6-45fe-8552-9e2bab5d72b4",
+      "key": "2020-05-19-0_7M_60xz006.nd2",
+      "size": 126214144,
+      "checksum": "md5:a4a0397f28b121bd86003fc49ed6e70c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2020-05-19-0_7M_60xz006.nd2/content"
+      }
+    },
+    {
+      "id": "f9d558eb-4f2f-4c7f-a92e-68d91c67004b",
+      "key": "2020-05-19-0_7M_60xz_2041.nd2",
+      "size": 671449088,
+      "checksum": "md5:91c4142dbc7153bb16fb20b2ac8944bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2020-05-19-0_7M_60xz_2041.nd2/content"
+      }
+    },
+    {
+      "id": "113de021-37dd-46c9-9a84-9d8c7adfab9f",
+      "key": "2020-12-16-0_WT_RE_60xz004.nd2",
+      "size": 201703424,
+      "checksum": "md5:e36441a9d9e6801c976c5efe3fb704c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2020-12-16-0_WT_RE_60xz004.nd2/content"
+      }
+    },
+    {
+      "id": "f7be12a0-933f-40bd-9adf-8a3e891fb8c5",
+      "key": "2020-12-17-0_7M_RE_60xz007.nd2",
+      "size": 193310720,
+      "checksum": "md5:1e3e05e86a36092d10f4c496654c71ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2020-12-17-0_7M_RE_60xz007.nd2/content"
+      }
+    },
+    {
+      "id": "a9f9ee20-ec7a-435d-8d65-cd16afafe1d1",
+      "key": "2021-01-07-0_3M_RE_60xz002.nd2",
+      "size": 226881536,
+      "checksum": "md5:457dc98a94d93f1112f696cf890d1a89",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2021-01-07-0_3M_RE_60xz002.nd2/content"
+      }
+    },
+    {
+      "id": "067c86fa-c7f2-44d1-8d1b-720661ae3619",
+      "key": "2M_2020_12_09_0_mCarPCP2_60xz001.nd2",
+      "size": 226906112,
+      "checksum": "md5:75370b11e7b1ce9c75b635fd550d4277",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M_2020_12_09_0_mCarPCP2_60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "05bbb894-2b0d-4cfe-8537-503d6f2060ac",
+      "key": "2M_2020_12_09_mCar_Calb_60xz_sec2_006.nd2",
+      "size": 168157184,
+      "checksum": "md5:e5ed8cd3d56dbe602a5c016d7166ee87",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M_2020_12_09_mCar_Calb_60xz_sec2_006.nd2/content"
+      }
+    },
+    {
+      "id": "f5448e6e-d743-47f6-9671-b858c7faeeb1",
+      "key": "2M_2020_12_09_mCar_Calb_60xz_sec2_007.nd2",
+      "size": 168157184,
+      "checksum": "md5:2b6378af144685857a7100de2eed0704",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M_2020_12_09_mCar_Calb_60xz_sec2_007.nd2/content"
+      }
+    },
+    {
+      "id": "2665d505-b482-4715-bbff-d9ac2fc75424",
+      "key": "2M_2020_12_09_mCar_Calb_60xz_sec4_005.nd2",
+      "size": 134586368,
+      "checksum": "md5:2082b3b4aae5aacf3a6af71588d16ae6",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M_2020_12_09_mCar_Calb_60xz_sec4_005.nd2/content"
+      }
+    },
+    {
+      "id": "6d263f29-4950-45c8-a901-21d6a1582aa8",
+      "key": "2M_2020-12-09_mcarCtBP2_60x.nd2",
+      "size": 6500352,
+      "checksum": "md5:a67543b3398f36a19ffefa7eba1896a1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M_2020-12-09_mcarCtBP2_60x.nd2/content"
+      }
+    },
+    {
+      "id": "f7482219-5f94-4d10-a933-dc2b45ef5c55",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec1018.nd2",
+      "size": 132501504,
+      "checksum": "md5:f29fdde6ff6a596debde9b111848fa34",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec1018.nd2/content"
+      }
+    },
+    {
+      "id": "8f349e12-a1b6-470a-96d3-72d20288af0d",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec1019.nd2",
+      "size": 88457216,
+      "checksum": "md5:bef593e13c6baf9ad60aa1769354759b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec1019.nd2/content"
+      }
+    },
+    {
+      "id": "4ca47026-bc39-49b6-95a1-bc6b59ff4909",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec1020.nd2",
+      "size": 4194572,
+      "checksum": "md5:61408c7779c868607a1d969e8c2af43b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec1020.nd2/content"
+      }
+    },
+    {
+      "id": "ce0f8270-a9a3-4c8f-b8c1-763341ad0e8a",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec8015.nd2",
+      "size": 126205952,
+      "checksum": "md5:9573efa1feace79b08125dab038a8427",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec8015.nd2/content"
+      }
+    },
+    {
+      "id": "bd77909e-7a2c-49e9-8799-fa48d249c60f",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec8016.nd2",
+      "size": 84258816,
+      "checksum": "md5:9110d0f47ab5720f33efe63b675f84b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec8016.nd2/content"
+      }
+    },
+    {
+      "id": "1a5c4ae1-65da-42ea-80e9-99ae8c5e4969",
+      "key": "2M3M_2021_09_14_mCar_Calb_60xz_sec8017.nd2",
+      "size": 84258816,
+      "checksum": "md5:4071d5fa376a7ef7bb9a6dca086eeca3",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M3M_2021_09_14_mCar_Calb_60xz_sec8017.nd2/content"
+      }
+    },
+    {
+      "id": "d52c376b-5a39-450d-8faa-e7f851c24503",
+      "key": "2M4M_2021_10_15_mCar_Calb_60xz001.nd2",
+      "size": 138797056,
+      "checksum": "md5:bc4c7faf05ea0afa71b5d565f7e32b76",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_10_15_mCar_Calb_60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "2eef1841-23bc-45bb-b054-4bb97f226d92",
+      "key": "2M4M_2021_10_15_mCar_Calb_60xz002.nd2",
+      "size": 119910400,
+      "checksum": "md5:db4a784a2d425af04d2db60b73b22ab1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_10_15_mCar_Calb_60xz002.nd2/content"
+      }
+    },
+    {
+      "id": "616cd281-5f2f-4382-b14b-9de5754ec98c",
+      "key": "2M4M_2021_10_15_mCar_Calb_60xz.nd2",
+      "size": 119910400,
+      "checksum": "md5:06f8d3c96c4150349ca97917fc6127dd",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_10_15_mCar_Calb_60xz.nd2/content"
+      }
+    },
+    {
+      "id": "6251e45f-3f37-4b9b-aeef-f4c102f87ea3",
+      "key": "2M4M_2021_10_15_mCar_Calb_60xz_sec8004.nd2",
+      "size": 138797056,
+      "checksum": "md5:8b7346dc38fdcb47e15437e3a97e7d9c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_10_15_mCar_Calb_60xz_sec8004.nd2/content"
+      }
+    },
+    {
+      "id": "b224b556-83c1-4e43-9514-6d8260fe7096",
+      "key": "2M4M_2021_11_16_mCar_Calb_60xz_sec4.nd2",
+      "size": 168157184,
+      "checksum": "md5:871547e7dbefc04eee0f18c306414e60",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_11_16_mCar_Calb_60xz_sec4.nd2/content"
+      }
+    },
+    {
+      "id": "4f1bfda6-68f8-40cb-808c-0279e74264b2",
+      "key": "2M4M_2021_11_16_mCar_Calb_60xz_sec5002.nd2",
+      "size": 168157184,
+      "checksum": "md5:5a494fad1741d2af6e65010c5b05f219",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_11_16_mCar_Calb_60xz_sec5002.nd2/content"
+      }
+    },
+    {
+      "id": "df3c6e9d-936a-4392-b053-64d80a02350c",
+      "key": "2M4M_2021_11_16_mCar_Calb_60xz_sec8003.nd2",
+      "size": 184942592,
+      "checksum": "md5:58f52575dcf1e88caeb99664902713d2",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M4M_2021_11_16_mCar_Calb_60xz_sec8003.nd2/content"
+      }
+    },
+    {
+      "id": "f9315f2d-9f51-49f2-8e8e-ae7cc377fb09",
+      "key": "2M5M_2021-09-07_mCarCtBP2_60xz01003.nd2",
+      "size": 184942592,
+      "checksum": "md5:d09c9e7ddae8723d3826fe69cd4013b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M5M_2021-09-07_mCarCtBP2_60xz01003.nd2/content"
+      }
+    },
+    {
+      "id": "abdda3e8-e933-46c9-8255-f12001fa9701",
+      "key": "2M5M_2021-09-07_mCarCtBP2_60xz01004.nd2",
+      "size": 107319296,
+      "checksum": "md5:db11d944191d8aaa66a9443892a17260",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M5M_2021-09-07_mCarCtBP2_60xz01004.nd2/content"
+      }
+    },
+    {
+      "id": "492e7595-17d0-4d94-b02d-22f70de16c58",
+      "key": "2M5M_2021-09-07_mCarCtBP2_60xz01005.nd2",
+      "size": 101023744,
+      "checksum": "md5:ecf177dbff70f09791b093830c52fdfb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M5M_2021-09-07_mCarCtBP2_60xz01005.nd2/content"
+      }
+    },
+    {
+      "id": "84476010-42b4-4c12-a7ac-1ff5e2d48388",
+      "key": "2M7M_2020-12-18-0_CtBP2GPR179_60x002.nd2",
+      "size": 134471680,
+      "checksum": "md5:33eb6f6340b7682d8ff1dbbc5f7f8490",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020-12-18-0_CtBP2GPR179_60x002.nd2/content"
+      }
+    },
+    {
+      "id": "5fff2f51-2ac4-4d81-a854-d6c3e125d946",
+      "key": "2M7M_2020-12-18-0_CtBP2GPR179_60xz001.nd2",
+      "size": 134471680,
+      "checksum": "md5:0352e2b40eb976e37a67ad3c0fddb8e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020-12-18-0_CtBP2GPR179_60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "24896cb6-be6d-4975-acde-37c93c2ed462",
+      "key": "2M7M_2020-12-18-0_CtBP2GPR179_60xz003.nd2",
+      "size": 151359488,
+      "checksum": "md5:2b22f1b4abe17dfd85f98504f8023ee1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020-12-18-0_CtBP2GPR179_60xz003.nd2/content"
+      }
+    },
+    {
+      "id": "86c7a4e3-9140-4c72-a38d-835ac37f77a9",
+      "key": "2M7M_2020-12-18-0_mglur6CtBP2_60xz017.nd2",
+      "size": 126193664,
+      "checksum": "md5:fb74ec8e59cbe2e372bde4f967a51846",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020-12-18-0_mglur6CtBP2_60xz017.nd2/content"
+      }
+    },
+    {
+      "id": "fb0288d6-e588-4a40-b620-5420c3fb4d7c",
+      "key": "2M7M_2020-12-18-0_mglur6CtBP2_60xz023.nd2",
+      "size": 109408256,
+      "checksum": "md5:fc61e7bc9abab91adda66c4014280118",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020-12-18-0_mglur6CtBP2_60xz023.nd2/content"
+      }
+    },
+    {
+      "id": "40908eb7-16a0-4e03-affb-2861103f25ac",
+      "key": "2M7M_2020_12_18_mCar_60xz_sec1_012.nd2",
+      "size": 75862016,
+      "checksum": "md5:b33451497279cb8105fb40cf1947c2ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020_12_18_mCar_60xz_sec1_012.nd2/content"
+      }
+    },
+    {
+      "id": "954e5925-bb40-4d39-ad25-2767f1b13746",
+      "key": "2M7M_2020_12_18_mCar_60xz_sec8_013.nd2",
+      "size": 75862016,
+      "checksum": "md5:413f387e447deec2baa7c0d3a6a2f23f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020_12_18_mCar_60xz_sec8_013.nd2/content"
+      }
+    },
+    {
+      "id": "668dbd86-4d7c-4411-bc57-9584831c85d8",
+      "key": "2M7M_2020_12_18_mCar_60xz_sec8_014.nd2",
+      "size": 84258816,
+      "checksum": "md5:e55ee577287fe55141b531d47c43a168",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2020_12_18_mCar_60xz_sec8_014.nd2/content"
+      }
+    },
+    {
+      "id": "27d93d62-5001-426e-ae24-8279d9382bbc",
+      "key": "2M7M_2021_12_06_0_RE_GFAPmCAR60xz013.nd2",
+      "size": 134586368,
+      "checksum": "md5:1bc5940ba3d93f514218406e8a7ce15c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2021_12_06_0_RE_GFAPmCAR60xz013.nd2/content"
+      }
+    },
+    {
+      "id": "9dfd7e6f-ea12-4d5e-a842-d1a4a9ca1b5b",
+      "key": "2M7M_2021_12_06_mGluR6CtBP2_60xz001.nd2",
+      "size": 142979072,
+      "checksum": "md5:6992c0b29c892b8ec695d98bf1906409",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/2M7M_2021_12_06_mGluR6CtBP2_60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "5dbcb428-37e3-461d-9f81-deabcfae6647",
+      "key": "3M_2021-01-07-0_mCarCtBP2_60x.nd2",
+      "size": 6500352,
+      "checksum": "md5:a19367e8ce7198ad9f9619304ec272fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M_2021-01-07-0_mCarCtBP2_60x.nd2/content"
+      }
+    },
+    {
+      "id": "15a1251d-531d-4ff7-8751-9d3c7996b9d8",
+      "key": "3M_2021_01_07_mCar_60xz.nd2",
+      "size": 117846016,
+      "checksum": "md5:d6c188416927f1d4acaa2069505a15e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M_2021_01_07_mCar_60xz.nd2/content"
+      }
+    },
+    {
+      "id": "45115a3e-5043-4351-8042-7322bd579f2b",
+      "key": "3M4M_2021-12-07-0_mCarGFAP_60xz014.nd2",
+      "size": 134586368,
+      "checksum": "md5:ae0e7425f78cf95250ec9db80b6b0a27",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M4M_2021-12-07-0_mCarGFAP_60xz014.nd2/content"
+      }
+    },
+    {
+      "id": "511d0d18-13e0-41cf-a084-0526312f8598",
+      "key": "3M4M_2021-12-07_mCar_60xz011.nd2",
+      "size": 92655616,
+      "checksum": "md5:36b04091af040924dbaa801ec9629335",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M4M_2021-12-07_mCar_60xz011.nd2/content"
+      }
+    },
+    {
+      "id": "225244bf-764f-4077-a490-d102d481dd74",
+      "key": "3M4M_2021-12-07_mCar_60xz013.nd2",
+      "size": 88457216,
+      "checksum": "md5:2ac670e38628ebafd90158ee268d3902",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M4M_2021-12-07_mCar_60xz013.nd2/content"
+      }
+    },
+    {
+      "id": "15e9a28b-3fcd-4c16-b0d8-f232a2ec1e56",
+      "key": "3M5M_2022-01-13_mCarCtBP2_60x.nd2",
+      "size": 6500352,
+      "checksum": "md5:5101bdd45f906936b7c3f97286d6ba37",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M5M_2022-01-13_mCarCtBP2_60x.nd2/content"
+      }
+    },
+    {
+      "id": "01c44338-2567-46bc-88c6-a2329d0cf9f3",
+      "key": "3M5M_2022-01-13_mCarCtBP2_60xz01006.nd2",
+      "size": 142979072,
+      "checksum": "md5:17462f10b85180ddf387fe6060fdc157",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M5M_2022-01-13_mCarCtBP2_60xz01006.nd2/content"
+      }
+    },
+    {
+      "id": "69183f14-f17e-4beb-aa9c-1e658e307b19",
+      "key": "3M5M_2022-01-13_mCarCtBP2_60xz01007.nd2",
+      "size": 151371776,
+      "checksum": "md5:861807945d123b6862ddadc880f602d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M5M_2022-01-13_mCarCtBP2_60xz01007.nd2/content"
+      }
+    },
+    {
+      "id": "e3c05713-72d6-48f6-8059-ee77aa66565c",
+      "key": "3M7M_2021_11_18_0_RE_GFAPmCAR60xz015.nd2",
+      "size": 101023744,
+      "checksum": "md5:9f8fdfa8eb6eefd5a9bc44c88dd67073",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_11_18_0_RE_GFAPmCAR60xz015.nd2/content"
+      }
+    },
+    {
+      "id": "c00a5f25-b278-4af2-92da-1abbc82529d8",
+      "key": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz018.nd2",
+      "size": 168157184,
+      "checksum": "md5:4f0fe9cc75af785abf84832828af8b0b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_0_RE_GFAPmCAR60xz018.nd2/content"
+      }
+    },
+    {
+      "id": "4a12b4bb-251f-4037-a89f-02b416904d27",
+      "key": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz019.nd2",
+      "size": 193335296,
+      "checksum": "md5:9c76568d9fbf8d2ca6369b54b9208edb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_0_RE_GFAPmCAR60xz019.nd2/content"
+      }
+    },
+    {
+      "id": "5ef86575-a266-4e8f-bb2c-a94ffad39a70",
+      "key": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz020.nd2",
+      "size": 96854016,
+      "checksum": "md5:5631c6c9cc6422857460443565bdf9d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_0_RE_GFAPmCAR60xz020.nd2/content"
+      }
+    },
+    {
+      "id": "b9da5d34-bcf5-4a9c-8392-a04e3d1c4233",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec1009.nd2",
+      "size": 88457216,
+      "checksum": "md5:25bf56665a102503caa4248a1c17fdcc",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec1009.nd2/content"
+      }
+    },
+    {
+      "id": "e38646c3-66c8-49e8-8c23-f5a222372b49",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec1010.nd2",
+      "size": 88457216,
+      "checksum": "md5:bb788d4ffbcccf4be0f9d05f0c8fc830",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec1010.nd2/content"
+      }
+    },
+    {
+      "id": "d6b399c1-08dd-40f2-9c9a-a990e51eac4b",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec1011.nd2",
+      "size": 88457216,
+      "checksum": "md5:ae285785c3246783b40f31d09212610f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec1011.nd2/content"
+      }
+    },
+    {
+      "id": "043f9c7a-017d-42a9-be85-a7190aaef687",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec1012.nd2",
+      "size": 88457216,
+      "checksum": "md5:9228de61a5137d29d66133e246d279a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec1012.nd2/content"
+      }
+    },
+    {
+      "id": "cffca0f4-f9c9-4f3e-bb4e-f9690a472237",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec8013.nd2",
+      "size": 210120704,
+      "checksum": "md5:3b58a24ff6d1701742862bf63b8f40bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec8013.nd2/content"
+      }
+    },
+    {
+      "id": "cc6161b9-ed5e-4160-a06a-30f547ffd494",
+      "key": "3M7M_2021_12_14_mCar_Calb_60xz_sec8014.nd2",
+      "size": 88457216,
+      "checksum": "md5:7c093b3de2bae37dd3139c48e40aafea",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_14_mCar_Calb_60xz_sec8014.nd2/content"
+      }
+    },
+    {
+      "id": "ae6c2d65-41eb-4e41-9307-4bd4622bcd33",
+      "key": "3M7M_2021-12-15-0_CtBP2GPR179_60x003.nd2",
+      "size": 134471680,
+      "checksum": "md5:72a51eff32290b6d1735ff16578f769c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021-12-15-0_CtBP2GPR179_60x003.nd2/content"
+      }
+    },
+    {
+      "id": "860e8418-7d6e-4559-b2a4-0468f388d744",
+      "key": "3M7M_2021-12-15-0_CtBP2GPR179_60xz004.nd2",
+      "size": 335937536,
+      "checksum": "md5:656cb7bd335348c4f99fdd7f4f3b42d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021-12-15-0_CtBP2GPR179_60xz004.nd2/content"
+      }
+    },
+    {
+      "id": "074a847c-ce59-40e9-aa0c-1da7d4f27e31",
+      "key": "3M7M_2021_12_15_0GFAPmCAR60xz012.nd2",
+      "size": 126193664,
+      "checksum": "md5:745b53dde20d57da66e0846aa3d6e8ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_15_0GFAPmCAR60xz012.nd2/content"
+      }
+    },
+    {
+      "id": "2f3f870c-01de-4e2d-b509-fa8e8c77a07e",
+      "key": "3M7M_2021-12-15-0_mglur6CtBP2_60xz018.nd2",
+      "size": 101015552,
+      "checksum": "md5:18c77ae548df87a7cc177f7ceb827073",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021-12-15-0_mglur6CtBP2_60xz018.nd2/content"
+      }
+    },
+    {
+      "id": "f58528ec-a119-4d4d-b35b-46a5346d2949",
+      "key": "3M7M_2021_12_15_mCar_60xz_sec1_017.nd2",
+      "size": 71663616,
+      "checksum": "md5:77ded6aaf7b050b7fa7382bd2d57e4eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_15_mCar_60xz_sec1_017.nd2/content"
+      }
+    },
+    {
+      "id": "5bc44875-185f-43ea-b802-5c8d06583960",
+      "key": "3M7M_2021_12_15_mCar_60xz_sec1_018.nd2",
+      "size": 71663616,
+      "checksum": "md5:af198317c38597a41174ee513a2231c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_15_mCar_60xz_sec1_018.nd2/content"
+      }
+    },
+    {
+      "id": "f6df8a7f-93d8-49c1-8fa9-e523f854ffe5",
+      "key": "3M7M_2021_12_15_mCar_60xz_sec1_019.nd2",
+      "size": 92655616,
+      "checksum": "md5:49c6bb1f0d91d4fe69d3d25188e173d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_15_mCar_60xz_sec1_019.nd2/content"
+      }
+    },
+    {
+      "id": "4233a181-13a8-4d38-8a49-58a45fcdbeb2",
+      "key": "3M7M_2021_12_15_mGluR6CtBP2_60xz002.nd2",
+      "size": 134586368,
+      "checksum": "md5:1b3df7198647dc35b8422a534f5f7bdb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/3M7M_2021_12_15_mGluR6CtBP2_60xz002.nd2/content"
+      }
+    },
+    {
+      "id": "4b696c23-cea3-4013-9cdc-feae2d02f2ad",
+      "key": "4M_1416102_mCarCtBP2_60x.nd2",
+      "size": 6500352,
+      "checksum": "md5:189c4caab53654d940bf429e48fc0891",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/4M_1416102_mCarCtBP2_60x.nd2/content"
+      }
+    },
+    {
+      "id": "cbb734c4-101a-408f-8ab0-bd90dd2bedb8",
+      "key": "7M_2020-05-19-0_CtBP2GPR179_60x001.nd2",
+      "size": 134471680,
+      "checksum": "md5:28083b61c52b8281a9f6a9613ca9993b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020-05-19-0_CtBP2GPR179_60x001.nd2/content"
+      }
+    },
+    {
+      "id": "2d6f5565-8bd7-4509-9eed-92cc180384c7",
+      "key": "7M_2020-05-19-0_mglur6CtBP2_60xz020.nd2",
+      "size": 126193664,
+      "checksum": "md5:72b6eab3fefcc6a1c878d5d1acfe142a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020-05-19-0_mglur6CtBP2_60xz020.nd2/content"
+      }
+    },
+    {
+      "id": "8e068f68-1e83-4325-a5a2-f1c3ba897d3c",
+      "key": "7M_2020-12-17-0_CtBP2GPR179_60x.nd2",
+      "size": 134471680,
+      "checksum": "md5:60def215803507bb7c269e61e102c933",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020-12-17-0_CtBP2GPR179_60x.nd2/content"
+      }
+    },
+    {
+      "id": "adc9a12b-4505-46d5-b54c-08d90b713589",
+      "key": "7M_2020_12_17_0GFAPmCAR60xz005.nd2",
+      "size": 84230144,
+      "checksum": "md5:56386a68143e92b22a6d69400c50e34b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_0GFAPmCAR60xz005.nd2/content"
+      }
+    },
+    {
+      "id": "92386672-df68-47b3-8891-cc783ab69265",
+      "key": "7M_2020_12_17_mCar_60xz_sec1_003.nd2",
+      "size": 84258816,
+      "checksum": "md5:e122b320771db50f4065937c412dcbbb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_mCar_60xz_sec1_003.nd2/content"
+      }
+    },
+    {
+      "id": "38665365-7e93-4af6-b0c9-24bb49b39281",
+      "key": "7M_2020_12_17_mCar_60xz_sec1_004.nd2",
+      "size": 67465216,
+      "checksum": "md5:d4d8b64ceaad9e146757f3862d5be4ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_mCar_60xz_sec1_004.nd2/content"
+      }
+    },
+    {
+      "id": "c61b2088-e065-4753-981b-ee7ba6dc9791",
+      "key": "7M_2020_12_17_mCar_60xz_sec8_001.nd2",
+      "size": 105250816,
+      "checksum": "md5:8047285833d56d12e272359bc5a60d93",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_mCar_60xz_sec8_001.nd2/content"
+      }
+    },
+    {
+      "id": "fc758361-1621-40f5-b747-7f707cf8daf8",
+      "key": "7M_2020_12_17_mCar_60xz_sec8_.nd2",
+      "size": 96854016,
+      "checksum": "md5:7fc05636afcb2fbe2183ecae8b0db5f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_mCar_60xz_sec8_.nd2/content"
+      }
+    },
+    {
+      "id": "5493f647-92cd-4c1b-947d-239be6814ba7",
+      "key": "7M_2020_12_17_mGluR6CtBP2_60xz003.nd2",
+      "size": 134586368,
+      "checksum": "md5:7e10a98bd384d33ab2446b82d7dcc558",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/7M_2020_12_17_mGluR6CtBP2_60xz003.nd2/content"
+      }
+    },
+    {
+      "id": "fbc76875-5ab3-4ef9-9df5-8f67a18d653b",
+      "key": "README.md",
+      "size": 2144,
+      "checksum": "md5:c2d10a7416466b6c27d99ad83267c469",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/README.md/content"
+      }
+    },
+    {
+      "id": "4c640a57-5733-4276-846e-186214c32d64",
+      "key": "WT_1249152R2LE_2019_09_10_0_calb_mCAR60xz001.nd2",
+      "size": 119910400,
+      "checksum": "md5:52014a192c4b5ffc0fdd8d0fb774cb92",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_1249152R2LE_2019_09_10_0_calb_mCAR60xz001.nd2/content"
+      }
+    },
+    {
+      "id": "552dd41e-073f-452a-ba34-fd1eee32ec2a",
+      "key": "WT_2020_12_16_0_RE_GFAPmCAR60xz008.nd2",
+      "size": 159764480,
+      "checksum": "md5:b098bf5fc263112ca1c22a6534647a8d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_2020_12_16_0_RE_GFAPmCAR60xz008.nd2/content"
+      }
+    },
+    {
+      "id": "3fc57d5e-5d82-42ca-a194-1b4e83c4510f",
+      "key": "WT_2020_12_16_mCar_Calb_60xz_sec1008.nd2",
+      "size": 80060416,
+      "checksum": "md5:a16e574c69652949fed4405625a2ac6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_2020_12_16_mCar_Calb_60xz_sec1008.nd2/content"
+      }
+    },
+    {
+      "id": "e29db840-b151-44b3-b250-a22628293d87",
+      "key": "WT_2020_12_16_mCar_Calb_60xz_sec8007.nd2",
+      "size": 151371776,
+      "checksum": "md5:66dc9c069d6a7b33c4ca00cec04e27c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_2020_12_16_mCar_Calb_60xz_sec8007.nd2/content"
+      }
+    },
+    {
+      "id": "164d4044-4d35-4aa3-9eee-6a430647efbb",
+      "key": "WT_3M5M_2022-03-17-0_mglur6CtBP2_60xz025.nd2",
+      "size": 109408256,
+      "checksum": "md5:3d1d9582573ff89ce164c3339e6d7b69",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_2022-03-17-0_mglur6CtBP2_60xz025.nd2/content"
+      }
+    },
+    {
+      "id": "577bf7dc-4b8e-49bc-a570-5c15fa143da3",
+      "key": "WT_3M5M_2022-03-1760xzmglur6ctbp2001.nd2",
+      "size": 84230144,
+      "checksum": "md5:bbefe3113bf937f4f7acd8ab173b1dcb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_2022-03-1760xzmglur6ctbp2001.nd2/content"
+      }
+    },
+    {
+      "id": "46fbd78f-cc0a-43a8-8f87-a3d3b33c1935",
+      "key": "WT3M5M_CtBP2GPR179_60xz004.nd2",
+      "size": 134586368,
+      "checksum": "md5:dd1af0d2f1fd9167921a189f5a74b66d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT3M5M_CtBP2GPR179_60xz004.nd2/content"
+      }
+    },
+    {
+      "id": "1ef412cd-c711-494c-a624-6c39036cac87",
+      "key": "WT_3M5M_mCar_60xz_sec1025.nd2",
+      "size": 84258816,
+      "checksum": "md5:bbf0e10b2cd2a0e099b832e5db50c7bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_mCar_60xz_sec1025.nd2/content"
+      }
+    },
+    {
+      "id": "572dab60-eb35-4be2-9c38-aa0fa92081bc",
+      "key": "WT_3M5M_mCar_60xz_sec8021.nd2",
+      "size": 88457216,
+      "checksum": "md5:8d26bb548ce938c14ba89003bfbcaf21",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_mCar_60xz_sec8021.nd2/content"
+      }
+    },
+    {
+      "id": "c5c167e5-c5f9-4b1c-aacf-80f0c6523075",
+      "key": "WT_3M5M_mCar_60xz_sec8023.nd2",
+      "size": 88457216,
+      "checksum": "md5:73baca20c16ebba392e124dfe10aadec",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_mCar_60xz_sec8023.nd2/content"
+      }
+    },
+    {
+      "id": "f4ccf66a-67ac-49cb-b5c2-505b4649e34f",
+      "key": "WT_3M5M_mGluR6CtBP2_60xz.nd2",
+      "size": 159764480,
+      "checksum": "md5:e98c0aa21558ff03fa2b00d249b5c84d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8302795/files/WT_3M5M_mGluR6CtBP2_60xz.nd2/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2180,
+    "unique_downloads": 2180,
+    "views": 35,
+    "unique_views": 35,
+    "version_downloads": 2179,
+    "version_unique_downloads": 2179,
+    "version_unique_views": 34,
+    "version_views": 34
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "WT_3M5M_mCar_60xz_sec8022.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "1M7M_2022_02_22_mCar_60xz_sec1_007.nd2",
+        "size": 92655616
+      },
+      {
+        "name": "1249192R2RE_WT_60xz_ms2048.nd2",
+        "size": 528834560
+      },
+      {
+        "name": "1274991L2LE_1M_60xz001.nd2",
+        "size": 138809344
+      },
+      {
+        "name": "1274991L2LE_1M_60xz_2042.nd2",
+        "size": 755363840
+      },
+      {
+        "name": "1M_12749991L2LE_mCar_60xz004.nd2",
+        "size": 96854016
+      },
+      {
+        "name": "1M_12749991L2LE_mCar_60xz006.nd2",
+        "size": 59068416
+      },
+      {
+        "name": "1M3M_2021-12-08-0_mCarCtBP2_60x.nd2",
+        "size": 8601600
+      },
+      {
+        "name": "1M4M_2021-11-17_mCar_60xz007.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "1M4M_2021_11_17_mCar_Calb_60xz_sec1006.nd2",
+        "size": 159764480
+      },
+      {
+        "name": "1M4M_2021_11_17_mCar_Calb_60xz_sec8005.nd2",
+        "size": 126242816
+      },
+      {
+        "name": "1M5M_2022-02-01_mCarCtBP2_60xz01001.nd2",
+        "size": 163979264
+      },
+      {
+        "name": "1M5M_2022-02-01_mCarCtBP2_60xz01002.nd2",
+        "size": 159764480
+      },
+      {
+        "name": "1M5M_2022-02-01_mCarCtBP2_60xz01.nd2",
+        "size": 113614848
+      },
+      {
+        "name": "1M7M_2022-01-19-0_mglur6CtBP2_60xz015.nd2",
+        "size": 151371776
+      },
+      {
+        "name": "1M7M_2022_02_22_0GFAPmCAR60xz007.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "1M7M_2022_02_22_mCar_60xz_sec1_009.nd2",
+        "size": 92655616
+      },
+      {
+        "name": "1M7M_2022_02_22_mCar_60xz_sec1_011.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "1M7M_2022_02_22_mCar_60xz_sec8_005.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "1M7M_2022_02_22_mCar_60xz_sec8_006.nd2",
+        "size": 75862016
+      },
+      {
+        "name": "2020-05-19-0_7M_60xz006.nd2",
+        "size": 126214144
+      },
+      {
+        "name": "2020-05-19-0_7M_60xz_2041.nd2",
+        "size": 671449088
+      },
+      {
+        "name": "2020-12-16-0_WT_RE_60xz004.nd2",
+        "size": 201703424
+      },
+      {
+        "name": "2020-12-17-0_7M_RE_60xz007.nd2",
+        "size": 193310720
+      },
+      {
+        "name": "2021-01-07-0_3M_RE_60xz002.nd2",
+        "size": 226881536
+      },
+      {
+        "name": "2M_2020_12_09_0_mCarPCP2_60xz001.nd2",
+        "size": 226906112
+      },
+      {
+        "name": "2M_2020_12_09_mCar_Calb_60xz_sec2_006.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "2M_2020_12_09_mCar_Calb_60xz_sec2_007.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "2M_2020_12_09_mCar_Calb_60xz_sec4_005.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "2M_2020-12-09_mcarCtBP2_60x.nd2",
+        "size": 6500352
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec1018.nd2",
+        "size": 132501504
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec1019.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec1020.nd2",
+        "size": 4194572
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec8015.nd2",
+        "size": 126205952
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec8016.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "2M3M_2021_09_14_mCar_Calb_60xz_sec8017.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "2M4M_2021_10_15_mCar_Calb_60xz001.nd2",
+        "size": 138797056
+      },
+      {
+        "name": "2M4M_2021_10_15_mCar_Calb_60xz002.nd2",
+        "size": 119910400
+      },
+      {
+        "name": "2M4M_2021_10_15_mCar_Calb_60xz.nd2",
+        "size": 119910400
+      },
+      {
+        "name": "2M4M_2021_10_15_mCar_Calb_60xz_sec8004.nd2",
+        "size": 138797056
+      },
+      {
+        "name": "2M4M_2021_11_16_mCar_Calb_60xz_sec4.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "2M4M_2021_11_16_mCar_Calb_60xz_sec5002.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "2M4M_2021_11_16_mCar_Calb_60xz_sec8003.nd2",
+        "size": 184942592
+      },
+      {
+        "name": "2M5M_2021-09-07_mCarCtBP2_60xz01003.nd2",
+        "size": 184942592
+      },
+      {
+        "name": "2M5M_2021-09-07_mCarCtBP2_60xz01004.nd2",
+        "size": 107319296
+      },
+      {
+        "name": "2M5M_2021-09-07_mCarCtBP2_60xz01005.nd2",
+        "size": 101023744
+      },
+      {
+        "name": "2M7M_2020-12-18-0_CtBP2GPR179_60x002.nd2",
+        "size": 134471680
+      },
+      {
+        "name": "2M7M_2020-12-18-0_CtBP2GPR179_60xz001.nd2",
+        "size": 134471680
+      },
+      {
+        "name": "2M7M_2020-12-18-0_CtBP2GPR179_60xz003.nd2",
+        "size": 151359488
+      },
+      {
+        "name": "2M7M_2020-12-18-0_mglur6CtBP2_60xz017.nd2",
+        "size": 126193664
+      },
+      {
+        "name": "2M7M_2020-12-18-0_mglur6CtBP2_60xz023.nd2",
+        "size": 109408256
+      },
+      {
+        "name": "2M7M_2020_12_18_mCar_60xz_sec1_012.nd2",
+        "size": 75862016
+      },
+      {
+        "name": "2M7M_2020_12_18_mCar_60xz_sec8_013.nd2",
+        "size": 75862016
+      },
+      {
+        "name": "2M7M_2020_12_18_mCar_60xz_sec8_014.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "2M7M_2021_12_06_0_RE_GFAPmCAR60xz013.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "2M7M_2021_12_06_mGluR6CtBP2_60xz001.nd2",
+        "size": 142979072
+      },
+      {
+        "name": "3M_2021-01-07-0_mCarCtBP2_60x.nd2",
+        "size": 6500352
+      },
+      {
+        "name": "3M_2021_01_07_mCar_60xz.nd2",
+        "size": 117846016
+      },
+      {
+        "name": "3M4M_2021-12-07-0_mCarGFAP_60xz014.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "3M4M_2021-12-07_mCar_60xz011.nd2",
+        "size": 92655616
+      },
+      {
+        "name": "3M4M_2021-12-07_mCar_60xz013.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M5M_2022-01-13_mCarCtBP2_60x.nd2",
+        "size": 6500352
+      },
+      {
+        "name": "3M5M_2022-01-13_mCarCtBP2_60xz01006.nd2",
+        "size": 142979072
+      },
+      {
+        "name": "3M5M_2022-01-13_mCarCtBP2_60xz01007.nd2",
+        "size": 151371776
+      },
+      {
+        "name": "3M7M_2021_11_18_0_RE_GFAPmCAR60xz015.nd2",
+        "size": 101023744
+      },
+      {
+        "name": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz018.nd2",
+        "size": 168157184
+      },
+      {
+        "name": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz019.nd2",
+        "size": 193335296
+      },
+      {
+        "name": "3M7M_2021_12_14_0_RE_GFAPmCAR60xz020.nd2",
+        "size": 96854016
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec1009.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec1010.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec1011.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec1012.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec8013.nd2",
+        "size": 210120704
+      },
+      {
+        "name": "3M7M_2021_12_14_mCar_Calb_60xz_sec8014.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "3M7M_2021-12-15-0_CtBP2GPR179_60x003.nd2",
+        "size": 134471680
+      },
+      {
+        "name": "3M7M_2021-12-15-0_CtBP2GPR179_60xz004.nd2",
+        "size": 335937536
+      },
+      {
+        "name": "3M7M_2021_12_15_0GFAPmCAR60xz012.nd2",
+        "size": 126193664
+      },
+      {
+        "name": "3M7M_2021-12-15-0_mglur6CtBP2_60xz018.nd2",
+        "size": 101015552
+      },
+      {
+        "name": "3M7M_2021_12_15_mCar_60xz_sec1_017.nd2",
+        "size": 71663616
+      },
+      {
+        "name": "3M7M_2021_12_15_mCar_60xz_sec1_018.nd2",
+        "size": 71663616
+      },
+      {
+        "name": "3M7M_2021_12_15_mCar_60xz_sec1_019.nd2",
+        "size": 92655616
+      },
+      {
+        "name": "3M7M_2021_12_15_mGluR6CtBP2_60xz002.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "4M_1416102_mCarCtBP2_60x.nd2",
+        "size": 6500352
+      },
+      {
+        "name": "7M_2020-05-19-0_CtBP2GPR179_60x001.nd2",
+        "size": 134471680
+      },
+      {
+        "name": "7M_2020-05-19-0_mglur6CtBP2_60xz020.nd2",
+        "size": 126193664
+      },
+      {
+        "name": "7M_2020-12-17-0_CtBP2GPR179_60x.nd2",
+        "size": 134471680
+      },
+      {
+        "name": "7M_2020_12_17_0GFAPmCAR60xz005.nd2",
+        "size": 84230144
+      },
+      {
+        "name": "7M_2020_12_17_mCar_60xz_sec1_003.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "7M_2020_12_17_mCar_60xz_sec1_004.nd2",
+        "size": 67465216
+      },
+      {
+        "name": "7M_2020_12_17_mCar_60xz_sec8_001.nd2",
+        "size": 105250816
+      },
+      {
+        "name": "7M_2020_12_17_mCar_60xz_sec8_.nd2",
+        "size": 96854016
+      },
+      {
+        "name": "7M_2020_12_17_mGluR6CtBP2_60xz003.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "README.md",
+        "size": 2144
+      },
+      {
+        "name": "WT_1249152R2LE_2019_09_10_0_calb_mCAR60xz001.nd2",
+        "size": 119910400
+      },
+      {
+        "name": "WT_2020_12_16_0_RE_GFAPmCAR60xz008.nd2",
+        "size": 159764480
+      },
+      {
+        "name": "WT_2020_12_16_mCar_Calb_60xz_sec1008.nd2",
+        "size": 80060416
+      },
+      {
+        "name": "WT_2020_12_16_mCar_Calb_60xz_sec8007.nd2",
+        "size": 151371776
+      },
+      {
+        "name": "WT_3M5M_2022-03-17-0_mglur6CtBP2_60xz025.nd2",
+        "size": 109408256
+      },
+      {
+        "name": "WT_3M5M_2022-03-1760xzmglur6ctbp2001.nd2",
+        "size": 84230144
+      },
+      {
+        "name": "WT3M5M_CtBP2GPR179_60xz004.nd2",
+        "size": 134586368
+      },
+      {
+        "name": "WT_3M5M_mCar_60xz_sec1025.nd2",
+        "size": 84258816
+      },
+      {
+        "name": "WT_3M5M_mCar_60xz_sec8021.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "WT_3M5M_mCar_60xz_sec8023.nd2",
+        "size": 88457216
+      },
+      {
+        "name": "WT_3M5M_mGluR6CtBP2_60xz.nd2",
+        "size": 159764480
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/mishek-thapa/treatment_paper"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:56.910716"
+}

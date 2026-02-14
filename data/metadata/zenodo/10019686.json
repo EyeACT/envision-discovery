@@ -1,0 +1,149 @@
+{
+  "created": "2023-10-18T19:44:46.536741+00:00",
+  "modified": "2023-10-18T19:44:46.682887+00:00",
+  "id": 10019686,
+  "conceptrecid": "6902889",
+  "doi": "10.5281/zenodo.10019686",
+  "conceptdoi": "10.5281/zenodo.6902889",
+  "doi_url": "https://doi.org/10.5281/zenodo.10019686",
+  "metadata": {
+    "title": "SF Bay Area Coda Calibration Example Dataset for CCT",
+    "doi": "10.5281/zenodo.10019686",
+    "publication_date": "2023-10-18",
+    "description": "<p>The following is an example dataset specific for the Coda Calibration Tool (CCT) that is focused on the San Francisco Bay Area region using a small-to-moderate magnitude earthquake dataset spanning local-to-regional distances using open data from the UC Berkeley Seismological Laboratory (BSL):&nbsp; &nbsp;https://github.com/LLNL/coda-calibration-tool/releases/</p><p>The CCT tool description can be found here:&nbsp; &nbsp;https://software.llnl.gov/coda-calibration-tool/</p><p>(updated Oct. 18, 2023)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mayeda, Kevin",
+        "affiliation": "AFTAC"
+      }
+    ],
+    "keywords": [
+      "Coda",
+      "Earthquake Source",
+      "CCT",
+      "Magnitude",
+      "Apparent Stress",
+      "Source Scaling"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6902889"
+          }
+        }
+      ]
+    }
+  },
+  "title": "SF Bay Area Coda Calibration Example Dataset for CCT",
+  "links": {
+    "self": "https://zenodo.org/api/records/10019686",
+    "self_html": "https://zenodo.org/records/10019686",
+    "preview_html": "https://zenodo.org/records/10019686?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10019686",
+    "self_doi": "https://doi.org/10.5281/zenodo.10019686",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10019686",
+    "reserve_doi": "https://zenodo.org/api/records/10019686/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6902889",
+    "parent_html": "https://zenodo.org/records/6902889",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6902889",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6902889",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10019686/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10019686/sequence/default",
+    "files": "https://zenodo.org/api/records/10019686/files",
+    "media_files": "https://zenodo.org/api/records/10019686/media-files",
+    "archive": "https://zenodo.org/api/records/10019686/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10019686/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10019686/versions/latest",
+    "latest_html": "https://zenodo.org/records/10019686/latest",
+    "versions": "https://zenodo.org/api/records/10019686/versions",
+    "draft": "https://zenodo.org/api/records/10019686/draft",
+    "access_links": "https://zenodo.org/api/records/10019686/access/links",
+    "access_grants": "https://zenodo.org/api/records/10019686/access/grants",
+    "access_users": "https://zenodo.org/api/records/10019686/access/users",
+    "access_request": "https://zenodo.org/api/records/10019686/access/request",
+    "access": "https://zenodo.org/api/records/10019686/access",
+    "communities": "https://zenodo.org/api/records/10019686/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10019686/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10019686/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10019686/file-modification",
+    "requests": "https://zenodo.org/api/records/10019686/requests"
+  },
+  "updated": "2023-10-18T19:44:46.682887+00:00",
+  "recid": "10019686",
+  "revision": 4,
+  "files": [
+    {
+      "id": "bc9e9cd7-445a-4821-a89a-826d05d0fed0",
+      "key": "Bay_Area_CCT_Example_October_2023.tar",
+      "size": 685766656,
+      "checksum": "md5:258a8738e0e5bf2dc2094b75e8683cec",
+      "links": {
+        "self": "https://zenodo.org/api/records/10019686/files/Bay_Area_CCT_Example_October_2023.tar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "381473"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 214,
+    "unique_downloads": 167,
+    "views": 515,
+    "unique_views": 475,
+    "version_downloads": 119,
+    "version_unique_downloads": 86,
+    "version_unique_views": 207,
+    "version_views": 225
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 685766656,
+    "top_level_files": [
+      {
+        "name": "Bay_Area_CCT_Example_October_2023.tar",
+        "size": 685766656
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/LLNL/coda-calibration-tool/releases/The",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://software.llnl.gov/coda-calibration-tool/(updated",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:44.820098"
+}

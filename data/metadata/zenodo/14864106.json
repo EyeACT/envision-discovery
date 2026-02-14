@@ -1,0 +1,306 @@
+{
+  "created": "2025-02-13T08:47:56.440567+00:00",
+  "modified": "2025-05-13T08:18:40.749686+00:00",
+  "id": 14864106,
+  "conceptrecid": "14850928",
+  "doi": "10.5281/zenodo.14864106",
+  "conceptdoi": "10.5281/zenodo.14850928",
+  "doi_url": "https://doi.org/10.5281/zenodo.14864106",
+  "metadata": {
+    "title": "Data from -- Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort",
+    "doi": "10.5281/zenodo.14864106",
+    "publication_date": "2025-02-10",
+    "description": "<p>This Upload contains the segmentations used in the paper titled \"<strong>Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort</strong>\".</p>\n<p>Rib segmentation masks for:</p>\n<ul>\n<li>Public VerSe Dataset</li>\n<li>Public RibFrac Dataset</li>\n</ul>\n<p>It contains the predictions of our segmentation model as well as manually corrected samples that were used for training/testing. The segmentation masks are binary and differentiate between rib (1) and background (0).</p>\n<p>This upload also contains the nnUNet model weights for the rib segmentation model that was used to create them.</p>\n<p>&nbsp;</p>\n<p><strong>If you use any of the contents provided, cite our publication:</strong></p>\n<p>[1] H. M&ouml;ller, H. Sch&ouml;n, B. C. Keinertand J. Kirschke, &ldquo;Data from -- Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort&rdquo;. Deep-Spine \"iback-epic\" Research Group, Feb. 11, 2025. doi: 10.5281/zenodo.14850929.<br><br>@article{moller2025automated,<br>&nbsp; title={Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort},<br>&nbsp; author={M{\\\"o}ller, Hendrik and Sch{\\\"o}n, Hanna and Dima, Alina and Keinert-Weth, Benjamin and Graf, Robert and Atad, Matan and Paetzold, Johannes and Jungmann, Friederike and Braren, Rickmer and Kofler, Florian and others},<br>&nbsp; journal={arXiv preprint arXiv:2505.05004},<br>&nbsp; year={2025}<br>}<br><br></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "M\u00f6ller, Hendrik",
+        "affiliation": "TUM University Hospital",
+        "orcid": "0009-0001-1978-5894"
+      },
+      {
+        "name": "Sch\u00f6n, Hanna",
+        "affiliation": "Universit\u00e4tsmedizin Rostock",
+        "orcid": "0009-0008-6247-0354"
+      },
+      {
+        "name": "Keinert, Benjamin Colin",
+        "affiliation": "Klinikum rechts der Isar",
+        "orcid": "0009-0005-2394-3700"
+      },
+      {
+        "name": "Kirschke, Jan",
+        "affiliation": null,
+        "orcid": "0000-0002-7557-0003"
+      }
+    ],
+    "keywords": [
+      "Segmentation"
+    ],
+    "dates": [
+      {
+        "type": "available"
+      }
+    ],
+    "references": [
+      "@article{moller2025automated,   title={Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort},   author={M{\\\"o}ller, Hendrik and Sch{\\\"o}n, Hanna and Dima, Alina and Keinert-Weth, Benjamin and Graf, Robert and Atad, Matan and Paetzold, Johannes and Jungmann, Friederike and Braren, Rickmer and Kofler, Florian and others},   journal={arXiv preprint arXiv:2505.05004},   year={2025} }"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/Hendrik-code/rib-segmentation",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14850928"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data from -- Automated Thoracolumbar Stump Rib Detection and Analysis in a Large CT Cohort",
+  "links": {
+    "self": "https://zenodo.org/api/records/14864106",
+    "self_html": "https://zenodo.org/records/14864106",
+    "preview_html": "https://zenodo.org/records/14864106?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14864106",
+    "self_doi": "https://doi.org/10.5281/zenodo.14864106",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14864106",
+    "reserve_doi": "https://zenodo.org/api/records/14864106/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14850928",
+    "parent_html": "https://zenodo.org/records/14850928",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14850928",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14850928",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14864106/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14864106/sequence/default",
+    "files": "https://zenodo.org/api/records/14864106/files",
+    "media_files": "https://zenodo.org/api/records/14864106/media-files",
+    "archive": "https://zenodo.org/api/records/14864106/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14864106/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14864106/versions/latest",
+    "latest_html": "https://zenodo.org/records/14864106/latest",
+    "versions": "https://zenodo.org/api/records/14864106/versions",
+    "draft": "https://zenodo.org/api/records/14864106/draft",
+    "access_links": "https://zenodo.org/api/records/14864106/access/links",
+    "access_grants": "https://zenodo.org/api/records/14864106/access/grants",
+    "access_users": "https://zenodo.org/api/records/14864106/access/users",
+    "access_request": "https://zenodo.org/api/records/14864106/access/request",
+    "access": "https://zenodo.org/api/records/14864106/access",
+    "communities": "https://zenodo.org/api/records/14864106/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14864106/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14864106/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14864106/file-modification",
+    "requests": "https://zenodo.org/api/records/14864106/requests"
+  },
+  "updated": "2025-05-13T08:18:40.749686+00:00",
+  "recid": "14864106",
+  "revision": 6,
+  "files": [
+    {
+      "id": "8a78d3a1-4b8e-4d13-a1db-cfc3622d8bf7",
+      "key": "verse_rib_manual.zip",
+      "size": 6433167,
+      "checksum": "md5:46ab8987e476cc5da23920e27a9c6e67",
+      "links": {
+        "self": "https://zenodo.org/api/records/14864106/files/verse_rib_manual.zip/content"
+      }
+    },
+    {
+      "id": "c3c05a47-a9c1-436e-adba-6da9d9183689",
+      "key": "verse_rib_predictions.zip",
+      "size": 82776945,
+      "checksum": "md5:4ad34c16682d3572681757d966ccccb4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14864106/files/verse_rib_predictions.zip/content"
+      }
+    },
+    {
+      "id": "f75949c5-c90f-444e-ac9c-824c2da20c73",
+      "key": "ribfrac_rib_manual.zip",
+      "size": 14195070,
+      "checksum": "md5:61ebb5fa09d67edacb506b1e0230a946",
+      "links": {
+        "self": "https://zenodo.org/api/records/14864106/files/ribfrac_rib_manual.zip/content"
+      }
+    },
+    {
+      "id": "104cc148-6ad4-4ac0-aeab-451373997e99",
+      "key": "ribseg_model_weights.zip",
+      "size": 695671169,
+      "checksum": "md5:a3fa6ac14de2c23c6299f61c36ce0fad",
+      "links": {
+        "self": "https://zenodo.org/api/records/14864106/files/ribseg_model_weights.zip/content"
+      }
+    },
+    {
+      "id": "4e0250de-056e-40c0-b8cf-f57a8b9b9820",
+      "key": "ribfrac_rib_predictions.zip",
+      "size": 199464174,
+      "checksum": "md5:db2dc940c35faeaf71554ab293205ca6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14864106/files/ribfrac_rib_predictions.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1264014"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 154,
+    "unique_downloads": 150,
+    "views": 141,
+    "unique_views": 119,
+    "version_downloads": 149,
+    "version_unique_downloads": 145,
+    "version_unique_views": 95,
+    "version_views": 114
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 998540525,
+    "top_level_files": [
+      {
+        "name": "verse_rib_manual.zip",
+        "size": 6433167
+      },
+      {
+        "name": "verse_rib_predictions.zip",
+        "size": 82776945
+      },
+      {
+        "name": "ribfrac_rib_manual.zip",
+        "size": 14195070
+      },
+      {
+        "name": "ribseg_model_weights.zip",
+        "size": 695671169
+      },
+      {
+        "name": "ribfrac_rib_predictions.zip",
+        "size": 199464174
+      }
+    ],
+    "zip_contents": {
+      "verse_rib_manual.zip": {
+        "total_files": 41,
+        "total_directories": 42,
+        "total_uncompressed_bytes": 16343689,
+        "file_types": {
+          ".nii.gz": 41
+        },
+        "imaging_file_count": 41,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "verse_rib_manual/sub-verse513/sub-verse513_mod-ct_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse551/sub-verse551_mod-ct_dir-iso_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse620/sub-verse620_mod-ct_dir-iso_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse757/sub-verse757_mod-ct_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse765/sub-verse765_mod-ct_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse767/sub-verse767_mod-ct_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse768/sub-verse768_mod-ct_dir-ax_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse769/sub-verse769_mod-ct_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse813/sub-verse813_mod-ct_dir-sag_seg-rib_msk.nii.gz",
+          "verse_rib_manual/sub-verse529/sub-verse529_mod-ct_seg-rib_msk.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "ribfrac_rib_manual.zip": {
+        "total_files": 31,
+        "total_directories": 32,
+        "total_uncompressed_bytes": 23549829,
+        "file_types": {
+          ".nii.gz": 31
+        },
+        "imaging_file_count": 31,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ribfrac_rib_manual/sub-ribfrac186/sub-ribfrac186_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac178/sub-ribfrac178_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac412/sub-ribfrac412_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac95/sub-ribfrac95_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac129/sub-ribfrac129_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac308/sub-ribfrac308_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac119/sub-ribfrac119_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac331/sub-ribfrac331_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac59/sub-ribfrac59_mod-ct_seg-rib_msk.nii.gz",
+          "ribfrac_rib_manual/sub-ribfrac293/sub-ribfrac293_mod-ct_seg-rib_msk.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "ribseg_model_weights.zip": {
+        "total_files": 7,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 749455056,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "verse_rib_manual/sub-verse513/sub-verse513_mod-ct_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse551/sub-verse551_mod-ct_dir-iso_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse620/sub-verse620_mod-ct_dir-iso_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse757/sub-verse757_mod-ct_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse765/sub-verse765_mod-ct_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse767/sub-verse767_mod-ct_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse768/sub-verse768_mod-ct_dir-ax_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse769/sub-verse769_mod-ct_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse813/sub-verse813_mod-ct_dir-sag_seg-rib_msk.nii.gz",
+      "verse_rib_manual/sub-verse529/sub-verse529_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac186/sub-ribfrac186_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac178/sub-ribfrac178_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac412/sub-ribfrac412_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac95/sub-ribfrac95_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac129/sub-ribfrac129_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac308/sub-ribfrac308_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac119/sub-ribfrac119_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac331/sub-ribfrac331_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac59/sub-ribfrac59_mod-ct_seg-rib_msk.nii.gz",
+      "ribfrac_rib_manual/sub-ribfrac293/sub-ribfrac293_mod-ct_seg-rib_msk.nii.gz"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:48.829153"
+}

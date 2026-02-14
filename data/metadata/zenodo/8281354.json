@@ -1,0 +1,151 @@
+{
+  "created": "2023-08-25T08:03:09.977394+00:00",
+  "modified": "2024-07-09T14:27:39.982871+00:00",
+  "id": 8281354,
+  "conceptrecid": "8260807",
+  "doi": "10.5281/zenodo.8281354",
+  "conceptdoi": "10.5281/zenodo.8260807",
+  "doi_url": "https://doi.org/10.5281/zenodo.8281354",
+  "metadata": {
+    "title": "CUG_MISDataset",
+    "doi": "10.5281/zenodo.8281354",
+    "publication_date": "2023-09-04",
+    "description": "<p>The effective and rapid acquisition of wide-area mine occupation information is crucial for ecological geo-environmental protection and sustainable development. We constructed a dataset using Hubei Province as the research area to address the lack of a remote sensing instance segmentation dataset for mining land occupation (CUG_MISDataset). The CUG_MISDataset comprises 1426 image blocks and more than 3000 instances, covering all 150 types of mines found in China&rsquo;s Hubei province. It features multiple mine types, various land occupations, and complex instance scales. This study compares the performance of seven mainstream remote sensing instance segmentation models using the proposed CUG_MISDataset. The results show that different types of land elements can be identified and segmented using the given instance segmentation algorithms, thus providing representative data support for relevant segmentation research.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zhu, Yuqian",
+        "affiliation": "yuqian.zhu@cug.edu.cn"
+      },
+      {
+        "name": "Weitao, Chen",
+        "affiliation": "wtchen@cug.edu.cn"
+      },
+      {
+        "name": "Wenxi, He",
+        "affiliation": "hewenxi.cug@gmail.com"
+      },
+      {
+        "name": "Ruizhen, Wang",
+        "affiliation": "ruizhen.wang@cug.edu.cn"
+      },
+      {
+        "name": "Xianju, Li",
+        "affiliation": "ddwhlxj@cug.edu.cn"
+      },
+      {
+        "name": "Lizhe, Wang",
+        "affiliation": "lizhe.wang@gmail.com"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8260807"
+          }
+        }
+      ]
+    }
+  },
+  "title": "CUG_MISDataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/8281354",
+    "self_html": "https://zenodo.org/records/8281354",
+    "preview_html": "https://zenodo.org/records/8281354?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8281354",
+    "self_doi": "https://doi.org/10.5281/zenodo.8281354",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8281354",
+    "reserve_doi": "https://zenodo.org/api/records/8281354/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8260807",
+    "parent_html": "https://zenodo.org/records/8260807",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8260807",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8260807",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8281354/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8281354/sequence/default",
+    "files": "https://zenodo.org/api/records/8281354/files",
+    "media_files": "https://zenodo.org/api/records/8281354/media-files",
+    "archive": "https://zenodo.org/api/records/8281354/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8281354/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8281354/versions/latest",
+    "latest_html": "https://zenodo.org/records/8281354/latest",
+    "versions": "https://zenodo.org/api/records/8281354/versions",
+    "draft": "https://zenodo.org/api/records/8281354/draft",
+    "access_links": "https://zenodo.org/api/records/8281354/access/links",
+    "access_grants": "https://zenodo.org/api/records/8281354/access/grants",
+    "access_users": "https://zenodo.org/api/records/8281354/access/users",
+    "access_request": "https://zenodo.org/api/records/8281354/access/request",
+    "access": "https://zenodo.org/api/records/8281354/access",
+    "communities": "https://zenodo.org/api/records/8281354/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8281354/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8281354/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8281354/file-modification",
+    "requests": "https://zenodo.org/api/records/8281354/requests"
+  },
+  "updated": "2024-07-09T14:27:39.982871+00:00",
+  "recid": "8281354",
+  "revision": 16,
+  "files": [
+    {
+      "id": "475c2fe7-6432-4d5e-b3ef-ae5e8dd85484",
+      "key": "MISDataset.zip",
+      "size": 137094021,
+      "checksum": "md5:c9d3e652f6b00ad20c0483f0b342cb28",
+      "links": {
+        "self": "https://zenodo.org/api/records/8281354/files/MISDataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "599135"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 82,
+    "unique_downloads": 63,
+    "views": 398,
+    "unique_views": 318,
+    "version_downloads": 82,
+    "version_unique_downloads": 63,
+    "version_unique_views": 241,
+    "version_views": 309
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 137094021,
+    "top_level_files": [
+      {
+        "name": "MISDataset.zip",
+        "size": 137094021
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:49.749156"
+}

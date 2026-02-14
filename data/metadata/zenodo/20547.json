@@ -1,0 +1,153 @@
+{
+  "created": "2015-10-27T10:10:50+00:00",
+  "modified": "2020-01-24T19:21:43.060642+00:00",
+  "id": 20547,
+  "conceptrecid": "611466",
+  "doi": "10.5281/zenodo.20547",
+  "conceptdoi": "",
+  "doi_url": "https://doi.org/10.5281/zenodo.20547",
+  "metadata": {
+    "title": "Microphone Comparison Array Validation Dataset",
+    "doi": "10.5281/zenodo.20547",
+    "publication_date": "2015-10-23",
+    "description": "<p>Data generated as part of research to determine an appropriate method to make audio recordings suitable for use in comparing the perceptual characteristics imparted by microphones. &nbsp;Data comprise audio files, listening test interfaces and MATLAB code.</p>\n\n<p><strong>References</strong></p>\n\n<p>BBC SNN (2015): A.Pearce. T.Brookes, M.Dewhirst, &quot;Timbral differences between microphones&quot;, BBC Sound Now &amp; Next Technology Fair, London, UK, 19-20 May 2015</p>\n\n<p>AES139 (2015): A.Pearce. T.Brookes, M.Dewhirst, &quot;Validation of experimental methods to record stimuli for microphone comparisons&quot;, Audio Eng.Soc. 139th Convention, New York, USA, 29 Oct - 1 Nov 2015</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Pearce, Andy",
+        "affiliation": "IoSR, University of Surrey, UK"
+      },
+      {
+        "name": "Brookes, Tim",
+        "affiliation": "IoSR, University of Surrey, UK",
+        "orcid": "0000-0001-9191-4526"
+      },
+      {
+        "name": "Dewhirst, Martin",
+        "affiliation": "IoSR, University of Surrey, UK"
+      }
+    ],
+    "keywords": [
+      "Perceptual Quality Evaluation",
+      "Microphone Arrays"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "http://iosr.uk/micQuality",
+        "relation": "isCitedBy",
+        "scheme": "url"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "611466"
+          }
+        }
+      ]
+    },
+    "notes": "attribution\u2014if publishing results generated using all or part of this dataset, please cite the most appropriate of the references listed on this page; if incorporating all or part of this dataset into a new dataset, please attribute the incorporated elements to the authors listed on this page and cite the doi. Thanks."
+  },
+  "title": "Microphone Comparison Array Validation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/20547",
+    "self_html": "https://zenodo.org/records/20547",
+    "preview_html": "https://zenodo.org/records/20547?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.20547",
+    "self_doi": "https://doi.org/10.5281/zenodo.20547",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.20547",
+    "reserve_doi": "https://zenodo.org/api/records/20547/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/611466",
+    "parent_html": "https://zenodo.org/records/611466",
+    "parent_doi": "https://doi.org/",
+    "parent_doi_html": "https://zenodo.org/doi/",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:20547/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:20547/sequence/default",
+    "files": "https://zenodo.org/api/records/20547/files",
+    "media_files": "https://zenodo.org/api/records/20547/media-files",
+    "archive": "https://zenodo.org/api/records/20547/files-archive",
+    "archive_media": "https://zenodo.org/api/records/20547/media-files-archive",
+    "latest": "https://zenodo.org/api/records/20547/versions/latest",
+    "latest_html": "https://zenodo.org/records/20547/latest",
+    "versions": "https://zenodo.org/api/records/20547/versions",
+    "draft": "https://zenodo.org/api/records/20547/draft",
+    "access_links": "https://zenodo.org/api/records/20547/access/links",
+    "access_grants": "https://zenodo.org/api/records/20547/access/grants",
+    "access_users": "https://zenodo.org/api/records/20547/access/users",
+    "access_request": "https://zenodo.org/api/records/20547/access/request",
+    "access": "https://zenodo.org/api/records/20547/access",
+    "communities": "https://zenodo.org/api/records/20547/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/20547/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/20547/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/20547/file-modification",
+    "requests": "https://zenodo.org/api/records/20547/requests"
+  },
+  "updated": "2020-01-24T19:21:43.060642+00:00",
+  "recid": "20547",
+  "revision": 10,
+  "files": [
+    {
+      "id": "63055333-4495-40e1-bd60-f6488f23b0cc",
+      "key": "ArrayValidationDataset.zip",
+      "size": 35487275,
+      "checksum": "md5:efdf2c4864b22147ceb858bb22f1c446",
+      "links": {
+        "self": "https://zenodo.org/api/records/20547/files/ArrayValidationDataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "13281"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 43,
+    "unique_downloads": 43,
+    "views": 294,
+    "unique_views": 277,
+    "version_downloads": 43,
+    "version_unique_downloads": 43,
+    "version_unique_views": 277,
+    "version_views": 294
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 35487275,
+    "top_level_files": [
+      {
+        "name": "ArrayValidationDataset.zip",
+        "size": 35487275
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:13.658995"
+}

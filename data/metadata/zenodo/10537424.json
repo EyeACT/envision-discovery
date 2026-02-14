@@ -1,0 +1,130 @@
+{
+  "created": "2024-01-20T05:49:45.331451+00:00",
+  "modified": "2024-01-20T05:49:45.523397+00:00",
+  "id": 10537424,
+  "conceptrecid": "10537423",
+  "doi": "10.5281/zenodo.10537424",
+  "conceptdoi": "10.5281/zenodo.10537423",
+  "doi_url": "https://doi.org/10.5281/zenodo.10537424",
+  "metadata": {
+    "title": "DeepEye: A Deep learning approach for Detection of Automated Retinal Eye Disease Diagnosis",
+    "doi": "10.5281/zenodo.10537424",
+    "publication_date": "2024-01-20",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Samiksha Pachade1, Prasanna Porwal1, Dhanashree Thulkar2, Manesh Kokare1, Girish Deshmukh6, Vivek Sahasrabuddhe7, Luca Giancardo5, Gwenol\u00e9 Quellec4, Fabrice M\u00e9riaudeau3",
+        "affiliation": "Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded, Maharashtra, India"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10537423"
+          }
+        }
+      ]
+    }
+  },
+  "title": "DeepEye: A Deep learning approach for Detection of Automated Retinal Eye Disease Diagnosis",
+  "links": {
+    "self": "https://zenodo.org/api/records/10537424",
+    "self_html": "https://zenodo.org/records/10537424",
+    "preview_html": "https://zenodo.org/records/10537424?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10537424",
+    "self_doi": "https://doi.org/10.5281/zenodo.10537424",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10537424",
+    "reserve_doi": "https://zenodo.org/api/records/10537424/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10537423",
+    "parent_html": "https://zenodo.org/records/10537423",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10537423",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10537423",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10537424/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10537424/sequence/default",
+    "files": "https://zenodo.org/api/records/10537424/files",
+    "media_files": "https://zenodo.org/api/records/10537424/media-files",
+    "archive": "https://zenodo.org/api/records/10537424/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10537424/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10537424/versions/latest",
+    "latest_html": "https://zenodo.org/records/10537424/latest",
+    "versions": "https://zenodo.org/api/records/10537424/versions",
+    "draft": "https://zenodo.org/api/records/10537424/draft",
+    "access_links": "https://zenodo.org/api/records/10537424/access/links",
+    "access_grants": "https://zenodo.org/api/records/10537424/access/grants",
+    "access_users": "https://zenodo.org/api/records/10537424/access/users",
+    "access_request": "https://zenodo.org/api/records/10537424/access/request",
+    "access": "https://zenodo.org/api/records/10537424/access",
+    "communities": "https://zenodo.org/api/records/10537424/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10537424/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10537424/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10537424/file-modification",
+    "requests": "https://zenodo.org/api/records/10537424/requests"
+  },
+  "updated": "2024-01-20T05:49:45.523397+00:00",
+  "recid": "10537424",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b4c6c3ca-b3d8-4a82-aa15-defc13baabaa",
+      "key": "Dataset.7z",
+      "size": 346558641,
+      "checksum": "md5:8cdc7f11455e20f075bcc53e289ab69f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10537424/files/Dataset.7z/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "515052"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 23,
+    "unique_downloads": 22,
+    "views": 68,
+    "unique_views": 55,
+    "version_downloads": 23,
+    "version_unique_downloads": 22,
+    "version_unique_views": 55,
+    "version_views": 68
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 346558641,
+    "top_level_files": [
+      {
+        "name": "Dataset.7z",
+        "size": 346558641
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:55.890382"
+}

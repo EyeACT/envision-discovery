@@ -1,0 +1,441 @@
+{
+  "created": "2024-10-14T10:26:57.809388+00:00",
+  "modified": "2024-10-14T10:26:58.259909+00:00",
+  "id": 7769863,
+  "conceptrecid": "7769862",
+  "doi": "10.5281/zenodo.7769863",
+  "conceptdoi": "10.5281/zenodo.7769862",
+  "doi_url": "https://doi.org/10.5281/zenodo.7769863",
+  "metadata": {
+    "title": "Photodynamic Ocular Drug Delivery System with Optical Coherence Tomography Oriented Microscale Robots",
+    "doi": "10.5281/zenodo.7769863",
+    "publication_date": "2024-10-01",
+    "description": "<p>Retinal diseases are the most common reason for irreversible blindness worldwide. Common retinal diseases, such as diabetic retinopathy, macular degeneration, retinal vein occlusion, and non-infectious uveitis, mostly require intravitreal steroid injections in clinical management. Unfortunately, intravitreal steroid injections lead to other important ocular problems, such as elevation of intraocular pressure, intravitreal infections, and the progression of cataracts. Because of these reasons, targeted drug delivery systems are necessary for the medical treatment of retinal diseases. PHOTodynamic Ocular Drug delivery system with Optical Coherence Tomography Oriented microscale Robots (PHOTODOCTOR) project combines three novel technologies to solve this important clinical problem. The first technological advancement for the project is dexamethasone-saturated hyaluronic acid (HA) hydrogels with organo-ruthenium complexes, which enables controllable degradation under visible light exposure. With the help of visible light-controlled degradation, dexamethasone will be released with the light pulses. Then the hydrogels will be supplemented with superparamagnetic iron oxide nanoparticles (SPIONs), and 3D printed as helical micro-swimmers. Insertion of the SPIONs will help the magnetic actuation of the hydrogel-based microrobots in the intraocular space. Lastly, SPION-supplemented HA hydrogels will be observed with high-resolution optical coherence tomography (OCT) system in the intraocular space to guide them in diseased areas of the retina. While HA-based structure increases penetration in the vitreous and helps the attachment on the retina, SPIONs will increase the visibility of the microrobots in OCT imaging. In this way, a magnetic-driven, visible light-triggered intraocular drug release system with OCT guidance will be produced, and it could be used not only for intravitreal steroid delivery but also for the treatment of retinal tumours and other retinal problems.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yildiz, Erdost",
+        "affiliation": "Max Planck Institute for Intelligent Systems",
+        "orcid": "0000-0001-8086-3524"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "grants": [
+      {
+        "code": "101059593",
+        "internal_id": "10.13039/501100000780::101059593",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Photodynamic Ocular Drug Delivery System with Optical Coherence Tomography Oriented Microscale Robots",
+        "acronym": "PHOTODOCTOR",
+        "program": "HORIZON.1.2",
+        "url": "https://cordis.europa.eu/projects/101059593"
+      }
+    ],
+    "communities": [
+      {
+        "id": "eu"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7769862"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Photodynamic Ocular Drug Delivery System with Optical Coherence Tomography Oriented Microscale Robots",
+  "links": {
+    "self": "https://zenodo.org/api/records/7769863",
+    "self_html": "https://zenodo.org/records/7769863",
+    "preview_html": "https://zenodo.org/records/7769863?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7769863",
+    "self_doi": "https://doi.org/10.5281/zenodo.7769863",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7769863",
+    "reserve_doi": "https://zenodo.org/api/records/7769863/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7769862",
+    "parent_html": "https://zenodo.org/records/7769862",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7769862",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7769862",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7769863/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7769863/sequence/default",
+    "files": "https://zenodo.org/api/records/7769863/files",
+    "media_files": "https://zenodo.org/api/records/7769863/media-files",
+    "archive": "https://zenodo.org/api/records/7769863/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7769863/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7769863/versions/latest",
+    "latest_html": "https://zenodo.org/records/7769863/latest",
+    "versions": "https://zenodo.org/api/records/7769863/versions",
+    "draft": "https://zenodo.org/api/records/7769863/draft",
+    "access_links": "https://zenodo.org/api/records/7769863/access/links",
+    "access_grants": "https://zenodo.org/api/records/7769863/access/grants",
+    "access_users": "https://zenodo.org/api/records/7769863/access/users",
+    "access_request": "https://zenodo.org/api/records/7769863/access/request",
+    "access": "https://zenodo.org/api/records/7769863/access",
+    "communities": "https://zenodo.org/api/records/7769863/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7769863/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7769863/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7769863/file-modification",
+    "requests": "https://zenodo.org/api/records/7769863/requests"
+  },
+  "updated": "2024-10-14T10:26:58.259909+00:00",
+  "recid": "7769863",
+  "revision": 4,
+  "files": [
+    {
+      "id": "c2e7c44c-7966-4ff8-92d3-30219e64e9be",
+      "key": "Zhang 2023.zip",
+      "size": 51159956,
+      "checksum": "md5:2c4654046ad31c6701ca36149faa615d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Zhang 2023.zip/content"
+      }
+    },
+    {
+      "id": "41d2ea53-e7cd-4127-a564-c3ee5dba611c",
+      "key": "Wang 2024.zip",
+      "size": 13180279,
+      "checksum": "md5:e5e0a7f5f365449b65d5cc4ca9fccc61",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Wang 2024.zip/content"
+      }
+    },
+    {
+      "id": "3208ccb5-4f18-4142-8c23-48c95f676149",
+      "key": "Han 2024.zip",
+      "size": 36966440,
+      "checksum": "md5:33627755ce3f1c386f3a4d6f2208db48",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Han 2024.zip/content"
+      }
+    },
+    {
+      "id": "187c067e-38a5-4351-8117-9231cfb5435a",
+      "key": "Bozuyuk 2024.zip",
+      "size": 9009299,
+      "checksum": "md5:b42a6c13663d515b738f7de75c118809",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Bozuyuk 2024.zip/content"
+      }
+    },
+    {
+      "id": "38d721ba-2826-4d39-b177-0e2ad8b8b5e2",
+      "key": "Sridhar 2023.zip",
+      "size": 938491600,
+      "checksum": "md5:89073b04e7546c9b1d985852c50b69d2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Sridhar 2023.zip/content"
+      }
+    },
+    {
+      "id": "f4d72e03-245c-4ea4-907f-ef3acc458d4c",
+      "key": "Ersoy 2024.zip",
+      "size": 56281673,
+      "checksum": "md5:9b48a9b1506394124379ca4655581a1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Ersoy 2024.zip/content"
+      }
+    },
+    {
+      "id": "4f19a213-e990-41c3-8678-40acc132d0c5",
+      "key": "Yildiz 2024.zip",
+      "size": 615759509,
+      "checksum": "md5:b2d147e76ea92a60ab73e257e403359e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Yildiz 2024.zip/content"
+      }
+    },
+    {
+      "id": "f96e1988-4158-46b6-9ec8-e4a3e06b0217",
+      "key": "Werneck 2024.zip",
+      "size": 64312788,
+      "checksum": "md5:e594c39eb3dce05adbbf2f0b4e29c6c8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7769863/files/Werneck 2024.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "522338"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 116,
+    "unique_downloads": 116,
+    "views": 50,
+    "unique_views": 47,
+    "version_downloads": 116,
+    "version_unique_downloads": 116,
+    "version_unique_views": 47,
+    "version_views": 50
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 8,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1785161544,
+    "top_level_files": [
+      {
+        "name": "Zhang 2023.zip",
+        "size": 51159956
+      },
+      {
+        "name": "Wang 2024.zip",
+        "size": 13180279
+      },
+      {
+        "name": "Han 2024.zip",
+        "size": 36966440
+      },
+      {
+        "name": "Bozuyuk 2024.zip",
+        "size": 9009299
+      },
+      {
+        "name": "Sridhar 2023.zip",
+        "size": 938491600
+      },
+      {
+        "name": "Ersoy 2024.zip",
+        "size": 56281673
+      },
+      {
+        "name": "Yildiz 2024.zip",
+        "size": 615759509
+      },
+      {
+        "name": "Werneck 2024.zip",
+        "size": 64312788
+      }
+    ],
+    "zip_contents": {
+      "zhang 2023.zip": {
+        "total_files": 18,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 54022648,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "wang 2024.zip": {
+        "total_files": 9,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 14550552,
+        "file_types": {
+          ".png": 3
+        },
+        "imaging_file_count": 3,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "wang 2024/figures/new fig 1b.png",
+          "wang 2024/figures/new-fig-1a.png",
+          "wang 2024/figures/new-fig2_v4.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "han 2024.zip": {
+        "total_files": 84,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 39328186,
+        "file_types": {
+          ".tif": 16
+        },
+        "imaging_file_count": 16,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "han 2024/images/control-astro-gfap647-s100b488-2-6.tif",
+          "han 2024/images/control-astro-gfap647-s100b488-2-6_ch00.tif",
+          "han 2024/images/control-astro-gfap647-s100b488-2-6_ch01.tif",
+          "han 2024/images/control-astro-gfap647-s100b488-2-6_ch02.tif",
+          "han 2024/images/control-microglia-gfap647-iba1-488-1-2.tif",
+          "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch00.tif",
+          "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch01.tif",
+          "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch02.tif",
+          "han 2024/images/janus-astro-gfap647-s100b488-2-6.tif",
+          "han 2024/images/janus-astro-gfap647-s100b488-2-6_ch00.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "bozuyuk 2024.zip": {
+        "total_files": 6,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 10123005,
+        "file_types": {
+          ".png": 5
+        },
+        "imaging_file_count": 5,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "bozuyuk 2024/figures/adv-mat-fig3-updated.png",
+          "bozuyuk 2024/figures/biocomp-last.png",
+          "bozuyuk 2024/figures/overview imaging modalities.png",
+          "bozuyuk 2024/figures/timeline-last.png",
+          "bozuyuk 2024/figures/toc-updated.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "sridhar 2023.zip": {
+        "total_files": 43,
+        "total_directories": 6,
+        "total_uncompressed_bytes": 957341481,
+        "file_types": {
+          ".mat": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "sridhar 2023/codes/cof-track.mat",
+          "sridhar 2023/codes/t=0min-1.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "ersoy 2024.zip": {
+        "total_files": 38,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 76874705,
+        "file_types": {
+          ".tif": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ersoy 2024/raw data/au 1/au 1.tif",
+          "ersoy 2024/raw data/au 1/au 1_1.tif",
+          "ersoy 2024/raw data/au 1/au 1_2.tif",
+          "ersoy 2024/raw data/au 1/au 1_3.tif",
+          "ersoy 2024/raw data/au 1/au 1_4.tif",
+          "ersoy 2024/raw data/au 1/au 1_5.tif",
+          "ersoy 2024/raw data/au 1/au 1_6.tif",
+          "ersoy 2024/raw data/zinc b/b 2.tif",
+          "ersoy 2024/raw data/zinc b/b3.tif",
+          "ersoy 2024/raw data/zinc b/b4.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "yildiz 2024.zip": {
+        "total_files": 193,
+        "total_directories": 10,
+        "total_uncompressed_bytes": 979127862,
+        "file_types": {
+          ".tif": 112,
+          ".mat": 13,
+          ".png": 1
+        },
+        "imaging_file_count": 126,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.172.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.173.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.174.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.175.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.176.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.177.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.178.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.179.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.180.mat",
+          "yildiz 2024/raw data/21-04-24-pd ftir/sample description.181.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "werneck 2024.zip": {
+        "total_files": 18,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 65531675,
+        "file_types": {
+          ".mat": 7,
+          ".zip": 1
+        },
+        "imaging_file_count": 7,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "werneck 2024/raw data/control_data.mat",
+          "werneck 2024/raw data/hyper_ca_data.mat",
+          "werneck 2024/raw data/hyper_k_data.mat",
+          "werneck 2024/raw data/hyper_na_data.mat",
+          "werneck 2024/raw data/hypo_ca_data.mat",
+          "werneck 2024/raw data/hypo_k_data.mat",
+          "werneck 2024/raw data/hypo_na_data.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "wang 2024/figures/new fig 1b.png",
+      "wang 2024/figures/new-fig-1a.png",
+      "wang 2024/figures/new-fig2_v4.png",
+      "han 2024/images/control-astro-gfap647-s100b488-2-6.tif",
+      "han 2024/images/control-astro-gfap647-s100b488-2-6_ch00.tif",
+      "han 2024/images/control-astro-gfap647-s100b488-2-6_ch01.tif",
+      "han 2024/images/control-astro-gfap647-s100b488-2-6_ch02.tif",
+      "han 2024/images/control-microglia-gfap647-iba1-488-1-2.tif",
+      "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch00.tif",
+      "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch01.tif",
+      "han 2024/images/control-microglia-gfap647-iba1-488-1-2_ch02.tif",
+      "han 2024/images/janus-astro-gfap647-s100b488-2-6.tif",
+      "han 2024/images/janus-astro-gfap647-s100b488-2-6_ch00.tif",
+      "bozuyuk 2024/figures/adv-mat-fig3-updated.png",
+      "bozuyuk 2024/figures/biocomp-last.png",
+      "bozuyuk 2024/figures/overview imaging modalities.png",
+      "bozuyuk 2024/figures/timeline-last.png",
+      "bozuyuk 2024/figures/toc-updated.png",
+      "sridhar 2023/codes/cof-track.mat",
+      "sridhar 2023/codes/t=0min-1.mat",
+      "ersoy 2024/raw data/au 1/au 1.tif",
+      "ersoy 2024/raw data/au 1/au 1_1.tif",
+      "ersoy 2024/raw data/au 1/au 1_2.tif",
+      "ersoy 2024/raw data/au 1/au 1_3.tif",
+      "ersoy 2024/raw data/au 1/au 1_4.tif",
+      "ersoy 2024/raw data/au 1/au 1_5.tif",
+      "ersoy 2024/raw data/au 1/au 1_6.tif",
+      "ersoy 2024/raw data/zinc b/b 2.tif",
+      "ersoy 2024/raw data/zinc b/b3.tif",
+      "ersoy 2024/raw data/zinc b/b4.tif",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.172.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.173.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.174.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.175.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.176.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.177.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.178.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.179.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.180.mat",
+      "yildiz 2024/raw data/21-04-24-pd ftir/sample description.181.mat",
+      "werneck 2024/raw data/control_data.mat",
+      "werneck 2024/raw data/hyper_ca_data.mat",
+      "werneck 2024/raw data/hyper_k_data.mat",
+      "werneck 2024/raw data/hyper_na_data.mat",
+      "werneck 2024/raw data/hypo_ca_data.mat",
+      "werneck 2024/raw data/hypo_k_data.mat",
+      "werneck 2024/raw data/hypo_na_data.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:49.838603"
+}

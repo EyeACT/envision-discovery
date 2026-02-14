@@ -1,0 +1,188 @@
+{
+  "created": "2017-05-09T15:21:54.918219+00:00",
+  "modified": "2020-01-24T19:24:29.282046+00:00",
+  "id": 573298,
+  "conceptrecid": "767817",
+  "doi": "10.17632/pvn3xc3wy5.1",
+  "doi_url": "https://doi.org/10.17632/pvn3xc3wy5.1",
+  "metadata": {
+    "title": "Electromagnetic Calorimeter Shower Images",
+    "doi": "10.17632/pvn3xc3wy5.1",
+    "publication_date": "2017-05-09",
+    "description": "<p>Each HDF5 file has the following structure:</p>\n\n<p>energy \u00a0 \u00a0Dataset {100000, 1}<br>\nlayer_0 \u00a0 Dataset {100000, 3, 96}<br>\nlayer_1 \u00a0 Dataset {100000, 12, 12}<br>\nlayer_2 \u00a0 Dataset {100000, 12, 6}<br>\noverflow \u00a0Dataset {100000, 3}</p>\n\n<p>In practice, each file is a collection of 100,000 calorimeter showers corresponding to the particle specified in the file name (eplus = positrons, gamma = photons, piplus = charged pions).</p>\n\n<p>The calorimeter we built is segmented longitudinally into three layer with different depths and granularities. In units of mm, the three layers have the following (eta, phi, z) dimensions:<br>\nLayer 0: (5, 160, 90) | Layer 1: (40, 40, 347) | Layer 2: (80, 40, 43)</p>\n\n<p>In the HDF5 files, the `energy` entry specifies the true energy of the incoming particle in units of GeV. `layer_0`, `layer_1`,\u00a0and `layer_2` represents the energy deposited in each layer of the calorimeter in an image data format. Given the segmentation of each calorimeter layer, these images have dimensions 3x96 (in layer 0), 12x12 (in layer 1), and 12x6 (in layer 3). The `overflow` contains the amount of energy that was deposited outside of the calorimeter section we are considering.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Nachman, Benjamin",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "de Oliveira, Luke",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "Paganini, Michela",
+        "affiliation": "Yale University"
+      }
+    ],
+    "keywords": [
+      "CaloGAN",
+      "Deep Learning",
+      "Machine Learning",
+      "Generative Adversarial Networks",
+      "High Energy Physics",
+      "CERN",
+      "Calorimetry"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "arXiv:1705.02355",
+        "relation": "isReferencedBy",
+        "scheme": "arxiv"
+      },
+      {
+        "identifier": "https://github.com/hep-lbdl/CaloGAN",
+        "relation": "isCompiledBy",
+        "scheme": "url"
+      }
+    ],
+    "references": [
+      "Paganini, Michela et al. (2017). Training dataset associated to arXiv:1705.02355."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "767817"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electromagnetic Calorimeter Shower Images",
+  "links": {
+    "self": "https://zenodo.org/api/records/573298",
+    "self_html": "https://zenodo.org/records/573298",
+    "preview_html": "https://zenodo.org/records/573298?preview=1",
+    "doi": "https://doi.org/10.17632/pvn3xc3wy5.1",
+    "self_doi": "https://doi.org/10.17632/pvn3xc3wy5.1",
+    "self_doi_html": "https://zenodo.org/doi/10.17632/pvn3xc3wy5.1",
+    "reserve_doi": "https://zenodo.org/api/records/573298/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/767817",
+    "parent_html": "https://zenodo.org/records/767817",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:573298/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:573298/sequence/default",
+    "files": "https://zenodo.org/api/records/573298/files",
+    "media_files": "https://zenodo.org/api/records/573298/media-files",
+    "archive": "https://zenodo.org/api/records/573298/files-archive",
+    "archive_media": "https://zenodo.org/api/records/573298/media-files-archive",
+    "latest": "https://zenodo.org/api/records/573298/versions/latest",
+    "latest_html": "https://zenodo.org/records/573298/latest",
+    "versions": "https://zenodo.org/api/records/573298/versions",
+    "draft": "https://zenodo.org/api/records/573298/draft",
+    "access_links": "https://zenodo.org/api/records/573298/access/links",
+    "access_grants": "https://zenodo.org/api/records/573298/access/grants",
+    "access_users": "https://zenodo.org/api/records/573298/access/users",
+    "access_request": "https://zenodo.org/api/records/573298/access/request",
+    "access": "https://zenodo.org/api/records/573298/access",
+    "communities": "https://zenodo.org/api/records/573298/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/573298/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/573298/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/573298/file-modification",
+    "requests": "https://zenodo.org/api/records/573298/requests"
+  },
+  "updated": "2020-01-24T19:24:29.282046+00:00",
+  "recid": "573298",
+  "revision": 5,
+  "files": [
+    {
+      "id": "ac4f1ed8-ad42-4443-96d0-923797ba233f",
+      "key": "gamma.hdf5",
+      "size": 406404192,
+      "checksum": "md5:d82509c42acdf3eccd50e947d666588c",
+      "links": {
+        "self": "https://zenodo.org/api/records/573298/files/gamma.hdf5/content"
+      }
+    },
+    {
+      "id": "e85e6805-c345-42df-be6a-2d92a89571e4",
+      "key": "piplus.hdf5",
+      "size": 406404192,
+      "checksum": "md5:e7076eeda3c92450074f6a9dd119fde0",
+      "links": {
+        "self": "https://zenodo.org/api/records/573298/files/piplus.hdf5/content"
+      }
+    },
+    {
+      "id": "21ad6544-2f65-4838-82f6-aa234343f5e5",
+      "key": "eplus.hdf5",
+      "size": 406404192,
+      "checksum": "md5:9045a17be0173dac191a84d76f7aa555",
+      "links": {
+        "self": "https://zenodo.org/api/records/573298/files/eplus.hdf5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "28246"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 228,
+    "unique_downloads": 148,
+    "views": 351,
+    "unique_views": 330,
+    "version_downloads": 228,
+    "version_unique_downloads": 148,
+    "version_unique_views": 328,
+    "version_views": 349
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 1219212576,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "gamma.hdf5",
+        "size": 406404192
+      },
+      {
+        "name": "piplus.hdf5",
+        "size": 406404192
+      },
+      {
+        "name": "eplus.hdf5",
+        "size": 406404192
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/hep-lbdl/CaloGAN"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:45.362798"
+}

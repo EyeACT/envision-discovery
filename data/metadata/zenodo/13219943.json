@@ -1,0 +1,176 @@
+{
+  "created": "2024-08-05T07:54:29.058722+00:00",
+  "modified": "2024-08-05T07:54:29.508302+00:00",
+  "id": 13219943,
+  "conceptrecid": "13219942",
+  "doi": "10.5281/zenodo.13219943",
+  "conceptdoi": "10.5281/zenodo.13219942",
+  "doi_url": "https://doi.org/10.5281/zenodo.13219943",
+  "metadata": {
+    "title": "bioimage.io upload: ilastik/stardist_dsb_training_data",
+    "doi": "10.5281/zenodo.13219943",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=ilastik/stardist_dsb_training_data\">View on bioimage.io</a> # DSB Nucleus Segmentation Training Data </p>\n<h1>Nucleus Segmentation Training Data</h1>\n<p>Traning data for instance segmentation of nuclei. This data is a subset of the data from the <a href=\"https://bioimage.io/#/?type=application&amp;id=notebook_stardist_2d_zerocostdl4mic\">2018 Kaggle Data Science Bowl dataset\nfor nucleus segmentation</a>.\nThis subset has been used for training the <a href=\"https://github.com/stardist/stardist\">StarDist</a> nucleus segmentation model and other nucleus segmentation models on bioimagei.io.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Constantin Pape",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "nuclei",
+      "instance-segmentation",
+      "fluorescence-light-microscopy",
+      "dsb-challenge",
+      "2D"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13219942"
+          }
+        }
+      ]
+    },
+    "notes": "Subset of the nucleus segmentation training data from the 2018 Kaggle Data Science Bowl.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: ilastik/stardist_dsb_training_data",
+  "links": {
+    "self": "https://zenodo.org/api/records/13219943",
+    "self_html": "https://zenodo.org/records/13219943",
+    "preview_html": "https://zenodo.org/records/13219943?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13219943",
+    "self_doi": "https://doi.org/10.5281/zenodo.13219943",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219943",
+    "reserve_doi": "https://zenodo.org/api/records/13219943/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13219942",
+    "parent_html": "https://zenodo.org/records/13219942",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13219942",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219942",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13219943/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13219943/sequence/default",
+    "files": "https://zenodo.org/api/records/13219943/files",
+    "media_files": "https://zenodo.org/api/records/13219943/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13219943:dsb-cover0.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13219943/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13219943/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13219943/versions/latest",
+    "latest_html": "https://zenodo.org/records/13219943/latest",
+    "versions": "https://zenodo.org/api/records/13219943/versions",
+    "draft": "https://zenodo.org/api/records/13219943/draft",
+    "access_links": "https://zenodo.org/api/records/13219943/access/links",
+    "access_grants": "https://zenodo.org/api/records/13219943/access/grants",
+    "access_users": "https://zenodo.org/api/records/13219943/access/users",
+    "access_request": "https://zenodo.org/api/records/13219943/access/request",
+    "access": "https://zenodo.org/api/records/13219943/access",
+    "communities": "https://zenodo.org/api/records/13219943/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13219943/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13219943/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13219943/file-modification",
+    "requests": "https://zenodo.org/api/records/13219943/requests"
+  },
+  "updated": "2024-08-05T07:54:29.508302+00:00",
+  "recid": "13219943",
+  "revision": 4,
+  "files": [
+    {
+      "id": "c7ab5942-2c69-482f-a4cd-993f605351a2",
+      "key": "rdf.yaml",
+      "size": 1544,
+      "checksum": "md5:951b3acc74309f25c246d4bd0d868574",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219943/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "000df312-d0b4-4694-853a-166738314c9d",
+      "key": "dsb.md",
+      "size": 450,
+      "checksum": "md5:0dda674752f674f07625cd46466d9c1b",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219943/files/dsb.md/content"
+      }
+    },
+    {
+      "id": "8b1c4c1c-f21f-48de-9d1a-419a7cbf8b40",
+      "key": "dsb-cover0.jpg",
+      "size": 10742,
+      "checksum": "md5:5bad088ec905ef74ea88cca169eb1fbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219943/files/dsb-cover0.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 42,
+    "unique_downloads": 35,
+    "views": 45,
+    "unique_views": 37,
+    "version_downloads": 42,
+    "version_unique_downloads": 35,
+    "version_unique_views": 37,
+    "version_views": 45
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 10742,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "rdf.yaml",
+        "size": 1544
+      },
+      {
+        "name": "dsb.md",
+        "size": 450
+      },
+      {
+        "name": "dsb-cover0.jpg",
+        "size": 10742
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:06.760497"
+}

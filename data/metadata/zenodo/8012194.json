@@ -1,0 +1,152 @@
+{
+  "created": "2023-06-09T08:58:41.724259+00:00",
+  "modified": "2023-06-09T14:26:50.329669+00:00",
+  "id": 8012194,
+  "conceptrecid": "7427360",
+  "doi": "10.5281/zenodo.8012194",
+  "conceptdoi": "10.5281/zenodo.7427360",
+  "doi_url": "https://doi.org/10.5281/zenodo.8012194",
+  "metadata": {
+    "title": "Datasets for simulating heat and CO2 fluxes in Beijing using SUEWS V2020b",
+    "doi": "10.5281/zenodo.8012194",
+    "publication_date": "2022-12-13",
+    "description": "<p>Data, model runs and codes used in the manuscript &quot;<em>Simulating heat and CO<sub>2</sub> fluxes in Beijing using SUEWS V2020b: sensitivity to vegetation phenology and maximum conductance</em>&quot;. The source code for Surface Urban Energy and Water balance Scheme (SUEWS) V2020b is also included.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>[Latest Version]</strong></p>\n\n<p>June 9, 2023: Version 2 was created. (1) Modifications in <strong>LAI</strong>: the input data of LAI (<em>LAI/source_data/Beijing_LAI.csv</em>) was previously derived from a MODIS product MOD15A2H; it was replaced with the LAI time series at a higher spatial resolution derived from data provided by Landsat 7 ETM+; the code for data retrieval (<em>LAI/LAI_from_GEE.txt</em>) was added. (2) Modifications in <strong>ModelRuns</strong>: some of the external parameters given to SUEWS were adjusted, including the optimized LAI parameters (for case LAI and case gs_LAI), and Fr<sub>nonheat</sub> (from 0.2 to 0.5); a <em>read_me.txt</em> was added. (3) Modifications in <strong>Fig&amp;Statistics</strong>: the shaded area for the line charts were changed from standard deviation to the interquartile range.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>[Data&amp;Code Description]</strong></p>\n\n<p>The folders are:</p>\n\n<p><strong>1. Observations</strong><br>\n&nbsp; The units for CO2 flux (Fc), latent heat flux (QE), and sensible heat flux (QH) are &mu;mol m<sup>-2</sup> s<sup>-1</sup>, W m<sup>-2</sup>, and W m<sup>-2</sup>, respectively, unless otherwise stated.<br>\n&nbsp; <strong>1.1. Observation datasets</strong><br>\n&nbsp;&nbsp;&nbsp; 1.1.1. <em>radiation_flux_2010-2011.csv</em> is radiation flux observations from May 2010 to July 2011 at 140 m on the IAP tower, Beijing.<br>\n&nbsp;&nbsp;&nbsp; 1.1.2. <em>turbulent_flux_before_QC_2016.csv</em> is turbulent flux observations before quality control (QC) obtained with the eddy covariance (EC) technique for the year 2016 at 47 m on the IAP tower.<br>\n&nbsp;&nbsp;&nbsp; 1.1.3. <em>turbulent_flux_after_QC_2016.csv</em> is turbulent flux observations after quality control (QC).<br>\n&nbsp;&nbsp;&nbsp; 1.1.4. <em>Fc_mean_diurnal_by_season.csv</em> is the mean diurnal seasonal cycle of Fc observations.<br>\n&nbsp;&nbsp;&nbsp; 1.1.5. <em>Fc_gapfilled_with_MDC.csv</em> is the Fc time series for the year 2016 gap-filled with Mean Diurnal Cycle (MDC) method.<br>\n&nbsp;&nbsp;&nbsp; 1.1.6. <em>meteorological_observations </em>is a folder including meteorological observations at different heights measured at the IAP tower for the years 2010-2012.<br>\n&nbsp; <strong>1.2 Codes for observations processing</strong><br>\n&nbsp;&nbsp;&nbsp; 1.2.1. <em>turbulent_flux_QC.py</em> is for turbulent flux QC covering wind direction filtering, stationarity test, friction velocity filtering, and nighttime filtering.<br>\n&nbsp;&nbsp;&nbsp; 1.2.2. <em>mean_diurnal_cycle_of_flux_observations.py</em> is for obtaining the mean diurnal cycle of flux observations.<br>\n&nbsp;&nbsp;&nbsp; 1.2.3. <em>Fc_gap_filling.py</em> is for filling the gaps in the Fc time series with the MDC method.</p>\n\n<p><strong>2. LAI</strong><br>\n&nbsp; This folder includes a project aiming to obtain the parameters for the leaf area index (LAI) model adopted by SUEWS. In this LAI model, the LAI is related to air temperature only. Incorporating hourly air temperature observations and the &#39;real&#39; LAI (e.g. observed LAI, remotely sensed LAI), the optimization method Covariance Matrix Adaptation Evolutionary Strategies (CMA-ES) will derive the optimized parameters for the LAI model. For more details, please read the description text file (<em>read_me.txt</em>) under this folder.<br>\n&nbsp;&nbsp;&nbsp; 2.1. <em>read_me.txt.</em><br>\n&nbsp;&nbsp;&nbsp; 2.2. <em>source_data</em> is a folder including the input for CMA-ES optimization. The input files of Beijing are included, allowing a quick run to reproduce the results demonstrated in the manuscript.<br>\n&nbsp;&nbsp;&nbsp; 2.3. <em>result_data</em> is a folder including the output for CMA-ES optimization.<br>\n&nbsp;&nbsp;&nbsp; 2.4. The code for data retrieval from the Google Earth Engine platform (<em>LAI/LAI_from_GEE.txt</em>) was added. The others are Python scripts regarding CMA-ES, including the LAI model, data de-spiking, interpolation, CMA-ES training, and result visualization.</p>\n\n<p><strong>3. ModelRuns</strong><br>\n&nbsp; This folder includes SUEWS source code, four model runs conducted to test the sensitivity to vegetation-related parameters (i.e., maximum conductance, LAI model parameters), and four model runs to test sensitivity to the radius of the model domain.<br>\n&nbsp;&nbsp;&nbsp; 3.1. <em>SUEWS_SourceCode</em> is a folder including SUEWS V2020b source Fortran codes. For detailed descriptions, readers are referred to SUEWS webpage (https://suews.readthedocs.io/en/latest/).<br>\n&nbsp;&nbsp;&nbsp; 3.2. <em>Input</em> is a folder including the necessary input files shared by each of the model runs. Please copy all the files to a model run folder (e.g. <em>VegetationSensitivity\\case-base\\Input\\</em>) before starting a SUEWS run.<br>\n&nbsp;&nbsp;&nbsp; 3.3. <em>VegetationSensitivity</em> is a folder including four SUEWS runs to test the model sensitivity to vegetation-related parameters: <em>case-base</em> is the control run, <em>case-gs</em> is a model run where maximum conductance of vegetation has been modified to more site-specific values, <em>case-LAI</em> is a model run where LAI parameters have been optimized with CMA-ES, and <em>case-gs_LAI</em> is a model run where both maximum conductance and LAI parameters have been modified. Note that all the model runs have selected 1000 m as the radius of the model domain. To conduct a quick model run to reproduce the output, enter the command &quot;./SUEWS_V2020b&quot; in the model run folder (e.g. <em>VegetationSensitivity\\case-base\\</em>) under a Linux environment (e.g., Ubuntu).<br>\n&nbsp;&nbsp;&nbsp; 3.4. <em>RadiusSensitivity</em> is a folder including four SUEWS runs to test the model sensitivity to the size of the model domain, covering circles with a 500 m, 750 m, 1000 m, 1500 m radius, respectively. Note that the vegetation-related parameters are the same as the model run <em>VegetationSensitivity\\case-gs_LAI</em>.</p>\n\n<p>&nbsp;&nbsp;&nbsp; 3.5. read_me.txt is a note on how to reproduce the SUEWS cases shown in the manuscript.</p>\n\n<p><strong>4. Fig&amp;Statistics</strong><br>\n&nbsp; This folder includes Python scripts and data to reproduce a portion of the figures and statistics in the manuscript quickly. They are sorted into the following sub-folders:<br>\n&nbsp;&nbsp;&nbsp; 4.1 <em>validation_WFDE5</em>,<br>\n&nbsp;&nbsp;&nbsp; 4.2 <em>evaluation_radiation</em>,<br>\n&nbsp;&nbsp;&nbsp; 4.3 <em>evaluation_turbulent</em>,<br>\n&nbsp;&nbsp;&nbsp; 4.4 <em>accumulated_Fc</em>,<br>\n&nbsp;&nbsp;&nbsp; 4.5 <em>Fc_component_MDC</em>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zheng, Yingqi",
+        "affiliation": "State Key Laboratory of Atmospheric Boundary Layer Physics and Atmospheric Chemistry, Institute of Atmospheric Physics, Chinese Academy of Sciences",
+        "orcid": "0000-0001-5591-8204"
+      },
+      {
+        "name": "Liu, Huizhi",
+        "affiliation": "State Key Laboratory of Atmospheric Boundary Layer Physics and Atmospheric Chemistry, Institute of Atmospheric Physics, Chinese Academy of Sciences",
+        "orcid": "0000-0003-2875-419X"
+      },
+      {
+        "name": "Cheng, Xueling",
+        "affiliation": "State Key Laboratory of Atmospheric Boundary Layer Physics and Atmospheric Chemistry, Institute of Atmospheric Physics, Chinese Academy of Sciences",
+        "orcid": "0000-0001-6522-9162"
+      }
+    ],
+    "keywords": [
+      "SUEWS, eddy covariance, urban land surface model, surface energy balance, CO2 emissions"
+    ],
+    "version": "2",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7427360"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Datasets for simulating heat and CO2 fluxes in Beijing using SUEWS V2020b",
+  "links": {
+    "self": "https://zenodo.org/api/records/8012194",
+    "self_html": "https://zenodo.org/records/8012194",
+    "preview_html": "https://zenodo.org/records/8012194?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8012194",
+    "self_doi": "https://doi.org/10.5281/zenodo.8012194",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8012194",
+    "reserve_doi": "https://zenodo.org/api/records/8012194/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7427360",
+    "parent_html": "https://zenodo.org/records/7427360",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7427360",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7427360",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8012194/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8012194/sequence/default",
+    "files": "https://zenodo.org/api/records/8012194/files",
+    "media_files": "https://zenodo.org/api/records/8012194/media-files",
+    "archive": "https://zenodo.org/api/records/8012194/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8012194/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8012194/versions/latest",
+    "latest_html": "https://zenodo.org/records/8012194/latest",
+    "versions": "https://zenodo.org/api/records/8012194/versions",
+    "draft": "https://zenodo.org/api/records/8012194/draft",
+    "access_links": "https://zenodo.org/api/records/8012194/access/links",
+    "access_grants": "https://zenodo.org/api/records/8012194/access/grants",
+    "access_users": "https://zenodo.org/api/records/8012194/access/users",
+    "access_request": "https://zenodo.org/api/records/8012194/access/request",
+    "access": "https://zenodo.org/api/records/8012194/access",
+    "communities": "https://zenodo.org/api/records/8012194/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8012194/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8012194/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8012194/file-modification",
+    "requests": "https://zenodo.org/api/records/8012194/requests"
+  },
+  "updated": "2023-06-09T14:26:50.329669+00:00",
+  "recid": "8012194",
+  "revision": 2,
+  "files": [
+    {
+      "id": "7018c310-380c-43e0-8ad5-62cd8dc01871",
+      "key": "Zheng2022_version2.zip",
+      "size": 109495816,
+      "checksum": "md5:61f2c10577a89d5db64740aefb6cd81b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8012194/files/Zheng2022_version2.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "458906"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 100,
+    "unique_downloads": 98,
+    "views": 317,
+    "unique_views": 295,
+    "version_downloads": 63,
+    "version_unique_downloads": 61,
+    "version_unique_views": 215,
+    "version_views": 224
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 109495816,
+    "top_level_files": [
+      {
+        "name": "Zheng2022_version2.zip",
+        "size": 109495816
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://suews.readthedocs.io/en/latest/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:02.211054"
+}

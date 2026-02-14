@@ -1,0 +1,1219 @@
+{
+  "created": "2024-05-20T01:21:46.333259+00:00",
+  "modified": "2024-05-20T01:21:47.840967+00:00",
+  "id": 11217687,
+  "conceptrecid": "11217686",
+  "doi": "10.5281/zenodo.11217687",
+  "conceptdoi": "10.5281/zenodo.11217686",
+  "doi_url": "https://doi.org/10.5281/zenodo.11217687",
+  "metadata": {
+    "title": "GWAS Summary Statistics For Eye Imaging Traits",
+    "doi": "10.5281/zenodo.11217687",
+    "publication_date": "2024-05-20",
+    "description": "<p>This repository hosts GWAS summary statistics for eye imaging traits (OCT and fundus image traits) on the UK Biobank cohort.</p>\n<p>We have a website (<a href=\"https://www.eyekp.org/\">eyekp.org</a>) showing more details with respect to this repository.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zhao, Bingxin",
+        "affiliation": "University of Pennsylvania"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "https://doi.org/10.1101/2023.02.16.23286035"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "11217686"
+          }
+        }
+      ]
+    }
+  },
+  "title": "GWAS Summary Statistics For Eye Imaging Traits",
+  "links": {
+    "self": "https://zenodo.org/api/records/11217687",
+    "self_html": "https://zenodo.org/records/11217687",
+    "preview_html": "https://zenodo.org/records/11217687?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.11217687",
+    "self_doi": "https://doi.org/10.5281/zenodo.11217687",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11217687",
+    "reserve_doi": "https://zenodo.org/api/records/11217687/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/11217686",
+    "parent_html": "https://zenodo.org/records/11217686",
+    "parent_doi": "https://doi.org/10.5281/zenodo.11217686",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.11217686",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:11217687/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:11217687/sequence/default",
+    "files": "https://zenodo.org/api/records/11217687/files",
+    "media_files": "https://zenodo.org/api/records/11217687/media-files",
+    "archive": "https://zenodo.org/api/records/11217687/files-archive",
+    "archive_media": "https://zenodo.org/api/records/11217687/media-files-archive",
+    "latest": "https://zenodo.org/api/records/11217687/versions/latest",
+    "latest_html": "https://zenodo.org/records/11217687/latest",
+    "versions": "https://zenodo.org/api/records/11217687/versions",
+    "draft": "https://zenodo.org/api/records/11217687/draft",
+    "access_links": "https://zenodo.org/api/records/11217687/access/links",
+    "access_grants": "https://zenodo.org/api/records/11217687/access/grants",
+    "access_users": "https://zenodo.org/api/records/11217687/access/users",
+    "access_request": "https://zenodo.org/api/records/11217687/access/request",
+    "access": "https://zenodo.org/api/records/11217687/access",
+    "communities": "https://zenodo.org/api/records/11217687/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/11217687/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/11217687/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/11217687/file-modification",
+    "requests": "https://zenodo.org/api/records/11217687/requests"
+  },
+  "updated": "2024-05-20T01:21:47.840967+00:00",
+  "recid": "11217687",
+  "revision": 4,
+  "files": [
+    {
+      "id": "af06bc8b-8584-4031-8062-066773682e1d",
+      "key": "ID_OCT.xlsx",
+      "size": 11692,
+      "checksum": "md5:d7df3209b181fbd1f9fcdfea7af2fef5",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ID_OCT.xlsx/content"
+      }
+    },
+    {
+      "id": "eef913b8-a37e-4cad-8722-33469d6ee059",
+      "key": "ukbiobank_eye_oct_80k_3_march2022.zip",
+      "size": 207792103,
+      "checksum": "md5:1fc551abb3fa1cca99711d25cccc2ec8",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_3_march2022.zip/content"
+      }
+    },
+    {
+      "id": "deae561a-a3c9-455e-97a3-a3000d6f26fa",
+      "key": "ukbiobank_eye_oct_80k_23_march2022.zip",
+      "size": 207872763,
+      "checksum": "md5:c18787295dc0a8a83ef852503012f208",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_23_march2022.zip/content"
+      }
+    },
+    {
+      "id": "a382ec03-3a6b-48a6-9271-d2f20ae90410",
+      "key": "ukbiobank_eye_oct_80k_1_march2022.zip",
+      "size": 207962110,
+      "checksum": "md5:fc2a1c82c5d6a289ff862f6e92804056",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_1_march2022.zip/content"
+      }
+    },
+    {
+      "id": "d38fbdb8-ed02-4ec7-89c2-b2e7ee7f7f0c",
+      "key": "ukbiobank_eye_oct_80k_11_march2022.zip",
+      "size": 207791903,
+      "checksum": "md5:7ece03ab0a40f0e32f54734d40242f44",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_11_march2022.zip/content"
+      }
+    },
+    {
+      "id": "58600f31-1719-4eef-8d68-5edee0e35d1d",
+      "key": "ukbiobank_eye_oct_80k_15_march2022.zip",
+      "size": 206800315,
+      "checksum": "md5:ba0a0a0830542bdfbb7309f2f81da637",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_15_march2022.zip/content"
+      }
+    },
+    {
+      "id": "c889c856-e906-4022-a6ed-f0d69718432d",
+      "key": "ukbiobank_eye_oct_80k_18_march2022.zip",
+      "size": 207857181,
+      "checksum": "md5:2350f1ecb64a2cef14390af37f017861",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_18_march2022.zip/content"
+      }
+    },
+    {
+      "id": "b624954b-7c93-4ac9-a54e-3639fb260b31",
+      "key": "ukbiobank_eye_oct_80k_6_march2022.zip",
+      "size": 208025459,
+      "checksum": "md5:2f5943fefebf2b84b56a93d1443a4b3d",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_6_march2022.zip/content"
+      }
+    },
+    {
+      "id": "331b5dfc-7a56-45b9-8cc0-40159a1804be",
+      "key": "ukbiobank_eye_tf_80k_march2022.zip",
+      "size": 22964147621,
+      "checksum": "md5:9ba7d3ed74158425b977abc1778849e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_tf_80k_march2022.zip/content"
+      }
+    },
+    {
+      "id": "448d4224-6d62-4210-b667-fff9305c938e",
+      "key": "ukbiobank_eye_oct_80k_22_march2022.zip",
+      "size": 207871711,
+      "checksum": "md5:661a1aa7436b8fab71de78719a099356",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_22_march2022.zip/content"
+      }
+    },
+    {
+      "id": "0b802e07-08a0-4124-b3c3-e5dde184243b",
+      "key": "ukbiobank_eye_oct_80k_28_march2022.zip",
+      "size": 207847286,
+      "checksum": "md5:e2937264fbf09185aa926a502ac784e1",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_28_march2022.zip/content"
+      }
+    },
+    {
+      "id": "b9002d42-dc6b-4d33-90ac-509a1ae8b123",
+      "key": "ukbiobank_eye_oct_80k_4_march2022.zip",
+      "size": 208038852,
+      "checksum": "md5:1aa09e10b22e181c2aa23d0fa1239f27",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_4_march2022.zip/content"
+      }
+    },
+    {
+      "id": "940fd347-d3c7-41c4-aa1f-a178067aefb8",
+      "key": "ukbiobank_eye_oct_80k_8_march2022.zip",
+      "size": 207897916,
+      "checksum": "md5:303840be49ac1d4185ea5920fd7d0faa",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_8_march2022.zip/content"
+      }
+    },
+    {
+      "id": "91a3713d-7de7-4fa8-b3e6-c3a4dc2f779a",
+      "key": "ukbiobank_eye_oct_80k_2_march2022.zip",
+      "size": 207926639,
+      "checksum": "md5:b4fde98e2cfa9fada918fb35e153b274",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_2_march2022.zip/content"
+      }
+    },
+    {
+      "id": "dd81af2e-1acd-4965-818b-0a96150da239",
+      "key": "ukbiobank_eye_oct_80k_24_march2022.zip",
+      "size": 208054989,
+      "checksum": "md5:4a847f1f001961871fc9b03c1a534b60",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_24_march2022.zip/content"
+      }
+    },
+    {
+      "id": "4f65658a-e177-429b-99a3-28ea34cc929d",
+      "key": "ukbiobank_eye_oct_80k_25_march2022.zip",
+      "size": 207899236,
+      "checksum": "md5:2977b2fadd6025a774a3ac063cf758ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_25_march2022.zip/content"
+      }
+    },
+    {
+      "id": "db4a9d1b-f11a-44fe-b06d-b9a6e56f58a0",
+      "key": "ukbiobank_eye_oct_80k_42_march2022.zip",
+      "size": 207820605,
+      "checksum": "md5:915abfe04eec52430ab69b42d8c02c0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_42_march2022.zip/content"
+      }
+    },
+    {
+      "id": "12d8b539-932f-41ee-b4d7-52ebbb396802",
+      "key": "ukbiobank_eye_oct_80k_27_march2022.zip",
+      "size": 208014923,
+      "checksum": "md5:eaee9c6a175bf42fb43263269f90aac6",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_27_march2022.zip/content"
+      }
+    },
+    {
+      "id": "e5339c13-92d5-41a6-af3b-f0ac0a3d279d",
+      "key": "ukbiobank_eye_oct_80k_19_march2022.zip",
+      "size": 207993052,
+      "checksum": "md5:0d4887b3dea40bf97f1e618043a51490",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_19_march2022.zip/content"
+      }
+    },
+    {
+      "id": "4eef5593-1bca-405a-b6c1-0aab456785f2",
+      "key": "ukbiobank_eye_oct_80k_12_march2022.zip",
+      "size": 207977942,
+      "checksum": "md5:bb813491bff81feb9195ecf2fb45b0a0",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_12_march2022.zip/content"
+      }
+    },
+    {
+      "id": "5fba778c-82e1-43dd-a3ca-a5bca5329994",
+      "key": "ukbiobank_eye_oct_80k_35_march2022.zip",
+      "size": 208075940,
+      "checksum": "md5:a9717b5be6401f7896c172027c8e7f9d",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_35_march2022.zip/content"
+      }
+    },
+    {
+      "id": "2c3f8a8c-05b2-4d35-9603-1dec3bc2b824",
+      "key": "ukbiobank_eye_oct_80k_9_march2022.zip",
+      "size": 207908490,
+      "checksum": "md5:671168f31f92bcab50e90695137d0a92",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_9_march2022.zip/content"
+      }
+    },
+    {
+      "id": "1acd2dc2-c803-4d8b-bfce-192b42081f0d",
+      "key": "ukbiobank_eye_oct_80k_10_march2022.zip",
+      "size": 208013190,
+      "checksum": "md5:2d1b274a35242cd6bfd6f11f2ab15283",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_10_march2022.zip/content"
+      }
+    },
+    {
+      "id": "f7c9d9c9-7d03-4934-8892-63fb7262e9e2",
+      "key": "ukbiobank_eye_oct_80k_16_march2022.zip",
+      "size": 207979020,
+      "checksum": "md5:ba1f569706d7e6ac8bf67455627a122c",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_16_march2022.zip/content"
+      }
+    },
+    {
+      "id": "3e7abb00-bd18-4bfc-a936-773a61e5e0d5",
+      "key": "ukbiobank_eye_oct_80k_17_march2022.zip",
+      "size": 208032018,
+      "checksum": "md5:e55a00641e88766d0b330b2fc5f02944",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_17_march2022.zip/content"
+      }
+    },
+    {
+      "id": "3b40cf0b-d556-443e-9951-69f3ad6076d6",
+      "key": "ukbiobank_eye_oct_80k_5_march2022.zip",
+      "size": 207802329,
+      "checksum": "md5:782086ecab27a8ad0854528ebc16b5ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_5_march2022.zip/content"
+      }
+    },
+    {
+      "id": "20130d37-da99-4f8a-bda9-e1b100c30af9",
+      "key": "ukbiobank_eye_oct_80k_14_march2022.zip",
+      "size": 208031181,
+      "checksum": "md5:679882152f867dd846b0b4fc62aa9a46",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_14_march2022.zip/content"
+      }
+    },
+    {
+      "id": "ad6aaa21-6c60-4b92-8ab2-3abdac6e0f2b",
+      "key": "ukbiobank_eye_oct_80k_20_march2022.zip",
+      "size": 207941458,
+      "checksum": "md5:92a4961fdb3605b6e2496228059e8dfe",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_20_march2022.zip/content"
+      }
+    },
+    {
+      "id": "747f1912-004f-40b4-8bdc-b66dd0cb02c0",
+      "key": "ukbiobank_eye_oct_80k_30_march2022.zip",
+      "size": 208024501,
+      "checksum": "md5:88df929938d729bfdac1752f7cab5749",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_30_march2022.zip/content"
+      }
+    },
+    {
+      "id": "68eda5c4-95e5-4260-8796-bc1e4c8e2394",
+      "key": "ukbiobank_eye_oct_80k_39_march2022.zip",
+      "size": 207873205,
+      "checksum": "md5:fe02cc648fe0aa0145bbc4b46903280f",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_39_march2022.zip/content"
+      }
+    },
+    {
+      "id": "56781862-0a6a-4ec6-821e-07d8abd533d0",
+      "key": "ukbiobank_eye_oct_80k_36_march2022.zip",
+      "size": 208049326,
+      "checksum": "md5:82fbd2d8f639ad33dda51f2f758914cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_36_march2022.zip/content"
+      }
+    },
+    {
+      "id": "65707320-245e-415c-9327-2668050cc4f5",
+      "key": "ukbiobank_eye_oct_80k_7_march2022.zip",
+      "size": 207892517,
+      "checksum": "md5:9b8ca456e913413108d9be209a239707",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_7_march2022.zip/content"
+      }
+    },
+    {
+      "id": "9afdb3f3-f515-4015-8743-d88cad3b48ea",
+      "key": "ukbiobank_eye_oct_80k_13_march2022.zip",
+      "size": 207830643,
+      "checksum": "md5:a281e769a3b5f4728db861d3a2dce558",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_13_march2022.zip/content"
+      }
+    },
+    {
+      "id": "0941f617-bcb9-4a78-a8b7-1bf6c30da09c",
+      "key": "ukbiobank_eye_oct_80k_29_march2022.zip",
+      "size": 207834826,
+      "checksum": "md5:be243988d03d8da927847e885c557f22",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_29_march2022.zip/content"
+      }
+    },
+    {
+      "id": "defc4fab-7e04-4508-8162-78708b22df76",
+      "key": "ukbiobank_eye_oct_80k_21_march2022.zip",
+      "size": 207853100,
+      "checksum": "md5:367c68c0822cfb39249c4cb630a834f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_21_march2022.zip/content"
+      }
+    },
+    {
+      "id": "ef99d1a6-48c4-41b3-af49-24dba2838c8f",
+      "key": "ukbiobank_eye_oct_80k_31_march2022.zip",
+      "size": 207894347,
+      "checksum": "md5:bbd5730bd45a63ff7c0b5d4c1bc612cd",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_31_march2022.zip/content"
+      }
+    },
+    {
+      "id": "701beefa-5e0f-4034-b25c-be7a87886a83",
+      "key": "ukbiobank_eye_oct_80k_26_march2022.zip",
+      "size": 207780645,
+      "checksum": "md5:c611013e3e61a0c6efbe2d564fc6c6c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_26_march2022.zip/content"
+      }
+    },
+    {
+      "id": "ea8e45c0-3be0-4f56-8f0b-bbdeec28ccf4",
+      "key": "ukbiobank_eye_oct_80k_32_march2022.zip",
+      "size": 207822243,
+      "checksum": "md5:cf868ea29a638ad92845c1c5a094eae3",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_32_march2022.zip/content"
+      }
+    },
+    {
+      "id": "5377fba2-16d3-4f49-86fc-8ef2f7961e80",
+      "key": "ukbiobank_eye_oct_80k_41_march2022.zip",
+      "size": 207950558,
+      "checksum": "md5:436f2473eb9e34cae8eea0daea299e42",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_41_march2022.zip/content"
+      }
+    },
+    {
+      "id": "41738abc-c6c0-40d6-866f-8ebc6fc522dd",
+      "key": "ukbiobank_eye_oct_80k_40_march2022.zip",
+      "size": 206799892,
+      "checksum": "md5:9d86c1ca3d451f043a29978eed057fc1",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_40_march2022.zip/content"
+      }
+    },
+    {
+      "id": "2b64c722-7f44-4b38-a52e-b903aeb74965",
+      "key": "ukbiobank_eye_oct_80k_45_march2022.zip",
+      "size": 206725262,
+      "checksum": "md5:e0cf917aa67bfa5a05afd9bd6b06c8d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_45_march2022.zip/content"
+      }
+    },
+    {
+      "id": "462b40e1-274e-490a-85fb-8ac460c69f9b",
+      "key": "ukbiobank_eye_oct_80k_33_march2022.zip",
+      "size": 208041917,
+      "checksum": "md5:d0aba3726d7820698fb2998dc5d15add",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_33_march2022.zip/content"
+      }
+    },
+    {
+      "id": "6cab9a9d-183d-4dc6-b83d-007427c731ee",
+      "key": "ukbiobank_eye_oct_80k_34_march2022.zip",
+      "size": 207973573,
+      "checksum": "md5:0f61884a59a4f31c2989154b91c31b45",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_34_march2022.zip/content"
+      }
+    },
+    {
+      "id": "7d629f65-b507-4ee8-890b-a2f32ae32f78",
+      "key": "ukbiobank_eye_oct_80k_37_march2022.zip",
+      "size": 208006475,
+      "checksum": "md5:b52b8d82ab4af0658746f966b2cdd02a",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_37_march2022.zip/content"
+      }
+    },
+    {
+      "id": "82759c27-7153-4017-b828-7a25263bec82",
+      "key": "ukbiobank_eye_oct_80k_38_march2022.zip",
+      "size": 207921182,
+      "checksum": "md5:a8a02e7b60d22b4c37c4d793eea8c160",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_38_march2022.zip/content"
+      }
+    },
+    {
+      "id": "8a77698c-f78c-4b86-aced-637bbabed29f",
+      "key": "ukbiobank_eye_oct_80k_43_march2022.zip",
+      "size": 207829348,
+      "checksum": "md5:e31574dda6b0c5d3f0d37ab7d6561e2c",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_43_march2022.zip/content"
+      }
+    },
+    {
+      "id": "75ad2b78-2af4-4747-be7a-c0cdcadbf3a5",
+      "key": "ukbiobank_eye_oct_80k_44_march2022.zip",
+      "size": 208022681,
+      "checksum": "md5:5222562487b90349ec26cd01decc2968",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_44_march2022.zip/content"
+      }
+    },
+    {
+      "id": "91da5b06-de6d-491a-a481-ead26a22966e",
+      "key": "ukbiobank_eye_oct_80k_46_march2022.zip",
+      "size": 206726729,
+      "checksum": "md5:d1acca75830afce9c3b857510b55185c",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ukbiobank_eye_oct_80k_46_march2022.zip/content"
+      }
+    },
+    {
+      "id": "37990fca-b684-4d92-9c6d-a343fd84926f",
+      "key": "ID_Fundus_image(TF).xlsx",
+      "size": 12072,
+      "checksum": "md5:9f646e932bcaecac79148f4784624727",
+      "links": {
+        "self": "https://zenodo.org/api/records/11217687/files/ID_Fundus_image(TF).xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "527774"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 12508,
+    "unique_downloads": 6778,
+    "views": 590,
+    "unique_views": 524,
+    "version_downloads": 12508,
+    "version_unique_downloads": 6778,
+    "version_unique_views": 524,
+    "version_views": 590
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 47,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 32524229202,
+    "top_level_files": [
+      {
+        "name": "ID_OCT.xlsx",
+        "size": 11692
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_3_march2022.zip",
+        "size": 207792103
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_23_march2022.zip",
+        "size": 207872763
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_1_march2022.zip",
+        "size": 207962110
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_11_march2022.zip",
+        "size": 207791903
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_15_march2022.zip",
+        "size": 206800315
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_18_march2022.zip",
+        "size": 207857181
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_6_march2022.zip",
+        "size": 208025459
+      },
+      {
+        "name": "ukbiobank_eye_tf_80k_march2022.zip",
+        "size": 22964147621
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_22_march2022.zip",
+        "size": 207871711
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_28_march2022.zip",
+        "size": 207847286
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_4_march2022.zip",
+        "size": 208038852
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_8_march2022.zip",
+        "size": 207897916
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_2_march2022.zip",
+        "size": 207926639
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_24_march2022.zip",
+        "size": 208054989
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_25_march2022.zip",
+        "size": 207899236
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_42_march2022.zip",
+        "size": 207820605
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_27_march2022.zip",
+        "size": 208014923
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_19_march2022.zip",
+        "size": 207993052
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_12_march2022.zip",
+        "size": 207977942
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_35_march2022.zip",
+        "size": 208075940
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_9_march2022.zip",
+        "size": 207908490
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_10_march2022.zip",
+        "size": 208013190
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_16_march2022.zip",
+        "size": 207979020
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_17_march2022.zip",
+        "size": 208032018
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_5_march2022.zip",
+        "size": 207802329
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_14_march2022.zip",
+        "size": 208031181
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_20_march2022.zip",
+        "size": 207941458
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_30_march2022.zip",
+        "size": 208024501
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_39_march2022.zip",
+        "size": 207873205
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_36_march2022.zip",
+        "size": 208049326
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_7_march2022.zip",
+        "size": 207892517
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_13_march2022.zip",
+        "size": 207830643
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_29_march2022.zip",
+        "size": 207834826
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_21_march2022.zip",
+        "size": 207853100
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_31_march2022.zip",
+        "size": 207894347
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_26_march2022.zip",
+        "size": 207780645
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_32_march2022.zip",
+        "size": 207822243
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_41_march2022.zip",
+        "size": 207950558
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_40_march2022.zip",
+        "size": 206799892
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_45_march2022.zip",
+        "size": 206725262
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_33_march2022.zip",
+        "size": 208041917
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_34_march2022.zip",
+        "size": 207973573
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_37_march2022.zip",
+        "size": 208006475
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_38_march2022.zip",
+        "size": 207921182
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_43_march2022.zip",
+        "size": 207829348
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_44_march2022.zip",
+        "size": 208022681
+      },
+      {
+        "name": "ukbiobank_eye_oct_80k_46_march2022.zip",
+        "size": 206726729
+      },
+      {
+        "name": "ID_Fundus_image(TF).xlsx",
+        "size": 12072
+      }
+    ],
+    "zip_contents": {
+      "ukbiobank_eye_oct_80k_3_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563132773,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_23_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563251847,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_1_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563109330,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_11_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563148400,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_15_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 562641540,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_18_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563188507,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_6_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563191233,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_22_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563215622,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_28_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563202354,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_4_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563192844,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_8_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563050555,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_2_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563143654,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_24_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563172718,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_25_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563226451,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_42_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563136243,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_27_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563172403,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_19_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563188345,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_12_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563174414,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_35_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563150303,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_9_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563206316,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_10_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563210515,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_16_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563181220,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_17_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563202932,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_5_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563130974,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_14_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563140836,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_20_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563078810,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_30_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563159986,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_39_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563042036,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_36_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563077289,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_7_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563038693,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_13_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563114194,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_29_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563238466,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_21_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563122916,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_31_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563207793,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_26_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563124676,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_32_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563130399,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_41_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563121947,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_40_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 562681298,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_45_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 562511430,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_33_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563178429,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_34_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563138962,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_37_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563099777,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_38_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563027452,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_43_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563183718,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_44_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 563178301,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ukbiobank_eye_oct_80k_46_march2022.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 562516888,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:57.568301"
+}

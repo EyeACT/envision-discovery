@@ -1,0 +1,191 @@
+{
+  "created": "2022-10-17T19:54:14.040826+00:00",
+  "modified": "2022-10-18T02:26:30.797551+00:00",
+  "id": 5798072,
+  "conceptrecid": "5798071",
+  "doi": "10.5281/zenodo.5798072",
+  "conceptdoi": "10.5281/zenodo.5798071",
+  "doi_url": "https://doi.org/10.5281/zenodo.5798072",
+  "metadata": {
+    "title": "Multiscale Entropy Analysis of Retinal Signals Reveals Reduced Complexity in a Mouse Model of Alzheimer's Disease",
+    "doi": "10.5281/zenodo.5798072",
+    "publication_date": "2021-12-22",
+    "description": "<p>MEA recordings from&nbsp;wild-type and 5xFAD mice&nbsp;retinas used for the analyses in the manuscript &quot;Multiscale Entropy Analysis of Retinal Signals Reveals Reduced Complexity in a Mouse Model of Alzheimer&#39;s Disease&quot;.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Araya-Arriagada, Joaqu\u00edn",
+        "affiliation": null
+      },
+      {
+        "name": "Garay, Sebasti\u00e1n",
+        "affiliation": null
+      },
+      {
+        "name": "Rojas, Crist\u00f3bal",
+        "affiliation": null
+      },
+      {
+        "name": "Duran-Aniotz, Claudia",
+        "affiliation": null
+      },
+      {
+        "name": "Palacios, Adrian G.",
+        "affiliation": null
+      },
+      {
+        "name": "Chac\u00f3n, Max",
+        "affiliation": null
+      },
+      {
+        "name": "Medina, Leonel E.",
+        "affiliation": "Universidad de Santiago de Chile",
+        "orcid": "0000-0002-4170-9281"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5798071"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Multiscale Entropy Analysis of Retinal Signals Reveals Reduced Complexity in a Mouse Model of Alzheimer's Disease",
+  "links": {
+    "self": "https://zenodo.org/api/records/5798072",
+    "self_html": "https://zenodo.org/records/5798072",
+    "preview_html": "https://zenodo.org/records/5798072?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5798072",
+    "self_doi": "https://doi.org/10.5281/zenodo.5798072",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5798072",
+    "reserve_doi": "https://zenodo.org/api/records/5798072/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5798071",
+    "parent_html": "https://zenodo.org/records/5798071",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5798071",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5798071",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5798072/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5798072/sequence/default",
+    "files": "https://zenodo.org/api/records/5798072/files",
+    "media_files": "https://zenodo.org/api/records/5798072/media-files",
+    "archive": "https://zenodo.org/api/records/5798072/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5798072/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5798072/versions/latest",
+    "latest_html": "https://zenodo.org/records/5798072/latest",
+    "versions": "https://zenodo.org/api/records/5798072/versions",
+    "draft": "https://zenodo.org/api/records/5798072/draft",
+    "access_links": "https://zenodo.org/api/records/5798072/access/links",
+    "access_grants": "https://zenodo.org/api/records/5798072/access/grants",
+    "access_users": "https://zenodo.org/api/records/5798072/access/users",
+    "access_request": "https://zenodo.org/api/records/5798072/access/request",
+    "access": "https://zenodo.org/api/records/5798072/access",
+    "communities": "https://zenodo.org/api/records/5798072/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5798072/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5798072/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5798072/file-modification",
+    "requests": "https://zenodo.org/api/records/5798072/requests"
+  },
+  "updated": "2022-10-18T02:26:30.797551+00:00",
+  "recid": "5798072",
+  "revision": 2,
+  "files": [
+    {
+      "id": "d3dc2978-68b1-4cda-8b51-76132efc630e",
+      "key": "datasets.zip",
+      "size": 1316246716,
+      "checksum": "md5:a95cdf291459091a9f01f5c45fffe7ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/5798072/files/datasets.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "276652"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 30,
+    "unique_downloads": 28,
+    "views": 289,
+    "unique_views": 276,
+    "version_downloads": 30,
+    "version_unique_downloads": 28,
+    "version_unique_views": 276,
+    "version_views": 289
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1316246716,
+    "top_level_files": [
+      {
+        "name": "datasets.zip",
+        "size": 1316246716
+      }
+    ],
+    "zip_contents": {
+      "datasets.zip": {
+        "total_files": 310,
+        "total_directories": 59,
+        "total_uncompressed_bytes": 1686233424,
+        "file_types": {
+          ".mat": 102
+        },
+        "imaging_file_count": 102,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "5xfad_adult/mr-0293/mr-0293.mat",
+          "__macosx/5xfad_adult/mr-0293/._mr-0293.mat",
+          "5xfad_adult/mr-0285-trozo2/mr-0285-trozo2.mat",
+          "__macosx/5xfad_adult/mr-0285-trozo2/._mr-0285-trozo2.mat",
+          "5xfad_adult/mr-0275/mr-0275.mat",
+          "__macosx/5xfad_adult/mr-0275/._mr-0275.mat",
+          "5xfad_adult/mr-0280-trozo1/mr-0280-trozo1.mat",
+          "__macosx/5xfad_adult/mr-0280-trozo1/._mr-0280-trozo1.mat",
+          "5xfad_adult/mr-0287/mr-0287.mat",
+          "__macosx/5xfad_adult/mr-0287/._mr-0287.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "5xfad_adult/mr-0293/mr-0293.mat",
+      "__macosx/5xfad_adult/mr-0293/._mr-0293.mat",
+      "5xfad_adult/mr-0285-trozo2/mr-0285-trozo2.mat",
+      "__macosx/5xfad_adult/mr-0285-trozo2/._mr-0285-trozo2.mat",
+      "5xfad_adult/mr-0275/mr-0275.mat",
+      "__macosx/5xfad_adult/mr-0275/._mr-0275.mat",
+      "5xfad_adult/mr-0280-trozo1/mr-0280-trozo1.mat",
+      "__macosx/5xfad_adult/mr-0280-trozo1/._mr-0280-trozo1.mat",
+      "5xfad_adult/mr-0287/mr-0287.mat",
+      "__macosx/5xfad_adult/mr-0287/._mr-0287.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:10.861541"
+}

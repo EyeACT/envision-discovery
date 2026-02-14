@@ -1,0 +1,642 @@
+{
+  "created": "2024-07-10T08:06:06.798058+00:00",
+  "modified": "2024-07-10T08:12:34.015129+00:00",
+  "id": 12703870,
+  "conceptrecid": "12703869",
+  "doi": "10.5281/zenodo.12703870",
+  "conceptdoi": "10.5281/zenodo.12703869",
+  "doi_url": "https://doi.org/10.5281/zenodo.12703870",
+  "metadata": {
+    "title": "Datasets relating to characterisation of Jumping Spider Rhodopsin-1 after reconstitution with retinal and retinal analogues",
+    "doi": "10.5281/zenodo.12703870",
+    "publication_date": "2024-07-10",
+    "description": "<p>001 - UV-Vis spectra JSR1 reconstituted with all-trans retinal, 9-cis retinal, ATR6.11 and 9CR6.11</p>\n<p>002 - UV-Vis spectra of JSR1 reconstituted with ATR6.11 and 9CR6.11, before and after acid denaturation</p>\n<p>003 - UV-Vis spectra of JSR1 reconstituted with ATR6.11, after addition of hydroxylamine</p>\n<p>004 - UV-Vis spectra of JSR1 reconstituted with 9CR6.11, after addition of hydroxylamine</p>\n<p>005 - UV-Vis spectra of illuminated JSR/ATR6.11 and JSR/9CR6.11</p>\n<p>006 - GTPase Glo Assay data measuring catalysis of nucleotide exchange in human G protein heterotrimers by JSR1/ATR6.11, JSR/9CR6.11 and JSR/9-cis retinal, with and without illumination</p>\n<p>007 - Size exclusion chromatograms JSR1/ATR6.11 after incubations with human Gi or human Gq heterotrimers</p>\n<p>008 - SDS-PAGE analysis of size exclusion chromatography peaks with JSR/ATR6.11 and human Gi or human Gq heterotrimers</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Rodrigues, Matthew",
+        "affiliation": "Paul Scherrer Institute",
+        "orcid": "0000-0003-1243-903X"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.biorxiv.org/content/10.1101/2024.04.08.588240v1",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-preprint",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12703869"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Datasets relating to characterisation of Jumping Spider Rhodopsin-1 after reconstitution with retinal and retinal analogues",
+  "links": {
+    "self": "https://zenodo.org/api/records/12703870",
+    "self_html": "https://zenodo.org/records/12703870",
+    "preview_html": "https://zenodo.org/records/12703870?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12703870",
+    "self_doi": "https://doi.org/10.5281/zenodo.12703870",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12703870",
+    "reserve_doi": "https://zenodo.org/api/records/12703870/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12703869",
+    "parent_html": "https://zenodo.org/records/12703869",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12703869",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12703869",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12703870/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12703870/sequence/default",
+    "files": "https://zenodo.org/api/records/12703870/files",
+    "media_files": "https://zenodo.org/api/records/12703870/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:12703870:SEC%20Gi%20&%20Gq.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/12703870/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12703870/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12703870/versions/latest",
+    "latest_html": "https://zenodo.org/records/12703870/latest",
+    "versions": "https://zenodo.org/api/records/12703870/versions",
+    "draft": "https://zenodo.org/api/records/12703870/draft",
+    "access_links": "https://zenodo.org/api/records/12703870/access/links",
+    "access_grants": "https://zenodo.org/api/records/12703870/access/grants",
+    "access_users": "https://zenodo.org/api/records/12703870/access/users",
+    "access_request": "https://zenodo.org/api/records/12703870/access/request",
+    "access": "https://zenodo.org/api/records/12703870/access",
+    "communities": "https://zenodo.org/api/records/12703870/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12703870/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12703870/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12703870/file-modification",
+    "requests": "https://zenodo.org/api/records/12703870/requests"
+  },
+  "updated": "2024-07-10T08:12:34.015129+00:00",
+  "recid": "12703870",
+  "revision": 6,
+  "files": [
+    {
+      "id": "4eb1129c-e95a-4fff-b8a5-513d143178f6",
+      "key": "JSR_611_007_650ul_elu_3xdil_100pc_30sec.txt",
+      "size": 9080,
+      "checksum": "md5:97d270046256a531dec918a0fdefa9a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_007_650ul_elu_3xdil_100pc_30sec.txt/content"
+      }
+    },
+    {
+      "id": "7258507e-6870-40c9-86e2-e4b7d3b75220",
+      "key": "plot_JSR_SEC_240402.py",
+      "size": 3782,
+      "checksum": "md5:89a59164cac7c502ad910e4919370ce5",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/plot_JSR_SEC_240402.py/content"
+      }
+    },
+    {
+      "id": "4a1bc3d5-274d-4dff-b4e8-097c9314fe23",
+      "key": "JSR_611_005_650ul_elu_3xdil_100pc_20sec.txt",
+      "size": 9083,
+      "checksum": "md5:d764800d04572a89b513dcd333aa5ef6",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_005_650ul_elu_3xdil_100pc_20sec.txt/content"
+      }
+    },
+    {
+      "id": "8d098372-9a2f-459c-a6cc-df81c64a2398",
+      "key": "JSR_611_004_650ul_elu_3xdil_100pc_10sec.txt",
+      "size": 9063,
+      "checksum": "md5:8defa1997f48b3f585f792e1363bf17c",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_004_650ul_elu_3xdil_100pc_10sec.txt/content"
+      }
+    },
+    {
+      "id": "e85715dc-b3ea-45f0-912e-9dde949d5cda",
+      "key": "004_JSR231120_AT611_dil2x_acid_clean.txt",
+      "size": 15554,
+      "checksum": "md5:5e129f9faaddc05bd326cf264ea2114f",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/004_JSR231120_AT611_dil2x_acid_clean.txt/content"
+      }
+    },
+    {
+      "id": "de6f587b-59e3-4d27-a29f-995d40e26d7a",
+      "key": "220722_acid_denaturation_009_cis_acid_001.txt",
+      "size": 15814,
+      "checksum": "md5:cb266ffbeaba9933af407e90fa583d35",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/220722_acid_denaturation_009_cis_acid_001.txt/content"
+      }
+    },
+    {
+      "id": "26340ac7-6f07-474e-8ef4-7abf49ed6b1f",
+      "key": "230202_JSR_Gi_Gq_references.csv",
+      "size": 71662,
+      "checksum": "md5:c40cf5278f7a82d5ea89212e943813b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/230202_JSR_Gi_Gq_references.csv/content"
+      }
+    },
+    {
+      "id": "efa26de7-b9c2-4580-87d2-014b56313936",
+      "key": "JSR_9cis_611_207_s1_150ul_100pc_60sec.txt",
+      "size": 9061,
+      "checksum": "md5:b2c632ae50e080211f079b6486f3851b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_207_s1_150ul_100pc_60sec.txt/content"
+      }
+    },
+    {
+      "id": "bd313697-138a-41bd-a7d2-2ae69ec8622f",
+      "key": "230516 Gloassay JSR Gi Gq_combined.xlsx",
+      "size": 32445,
+      "checksum": "md5:53e0c76f88603547f3f3a4483bbb4f78",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/230516 Gloassay JSR Gi Gq_combined.xlsx/content"
+      }
+    },
+    {
+      "id": "0c50887b-18cd-4737-9df6-a9edaa7581a3",
+      "key": "JSR_611_009_650ul_elu_3xdil_100pc_50sec.txt",
+      "size": 9067,
+      "checksum": "md5:6d0e8ef16a02d8e9e910d8a2785984c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_009_650ul_elu_3xdil_100pc_50sec.txt/content"
+      }
+    },
+    {
+      "id": "2f20903b-59b8-4298-abe1-a910a80fe446",
+      "key": "JSR_9cis_611_hydrox_sample2.txt",
+      "size": 186314,
+      "checksum": "md5:5a40f7922ef47a6722ae580718df7b88",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_hydrox_sample2.txt/content"
+      }
+    },
+    {
+      "id": "d1bc5030-8127-4eaf-a041-ac9daf3a15c1",
+      "key": "JSR_611_006_650ul_elu_3xdil_100pc_20sec_repeat.txt",
+      "size": 9078,
+      "checksum": "md5:5dd77f7dd214c2db1160ed7bc02f82ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_006_650ul_elu_3xdil_100pc_20sec_repeat.txt/content"
+      }
+    },
+    {
+      "id": "b956b1e1-0a38-4f4b-bab4-cc4bb4a47972",
+      "key": "plot_acid_denaturation.py",
+      "size": 2664,
+      "checksum": "md5:65e8db87915913e842cb3be853d1b14e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/plot_acid_denaturation.py/content"
+      }
+    },
+    {
+      "id": "37619eec-c03b-4c43-9a5d-d9da7dbcec9a",
+      "key": "240213_spectrum_fig.py",
+      "size": 4197,
+      "checksum": "md5:5a0e7c37eb7a5714daf43a756099aa8c",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/240213_spectrum_fig.py/content"
+      }
+    },
+    {
+      "id": "ae4a58a7-23e0-4e29-9a28-f737c4b053b2",
+      "key": "JSR_9cis_611_201_s1_150ul_dark.txt",
+      "size": 9054,
+      "checksum": "md5:cabaf36c8a3f68685c5a6f2139255f1d",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_201_s1_150ul_dark.txt/content"
+      }
+    },
+    {
+      "id": "38ec4134-3255-46a9-8e46-b272c8b8b21f",
+      "key": "JSR_611_011_650ul_elu_3xdil_100pc_60sec.txt",
+      "size": 9109,
+      "checksum": "md5:50c035fc91dbdeab7aa1d7b5eda31f04",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_011_650ul_elu_3xdil_100pc_60sec.txt/content"
+      }
+    },
+    {
+      "id": "b9955c36-3fc7-4bdb-9c70-29b0a785e910",
+      "key": "JSR_9cis_611_202_s1_150ul_100pc_10sec.txt",
+      "size": 9061,
+      "checksum": "md5:df513e7451231b2fed952bd117edaf0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_202_s1_150ul_100pc_10sec.txt/content"
+      }
+    },
+    {
+      "id": "0694f21e-e6d1-4c03-8e3e-ceb4a326b906",
+      "key": "JSR611_220124_007_611_cis_6mL.txt",
+      "size": 14093,
+      "checksum": "md5:0945417bd360101f9d77c93b80ae2eb6",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR611_220124_007_611_cis_6mL.txt/content"
+      }
+    },
+    {
+      "id": "21da1f3b-7005-4e65-a623-4312c812e795",
+      "key": "ret611_211018_002_elute1.txt",
+      "size": 14088,
+      "checksum": "md5:9aa8e6b996d819c990c8e33fd4aa9aa8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/ret611_211018_002_elute1.txt/content"
+      }
+    },
+    {
+      "id": "2c3859da-5d73-4623-9c82-955f7288300e",
+      "key": "230202_JSR_Gi_Gq_samples.csv",
+      "size": 48609,
+      "checksum": "md5:231155c4ff4eeee4f67801a81a2cbfb2",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/230202_JSR_Gi_Gq_samples.csv/content"
+      }
+    },
+    {
+      "id": "f4e6adc8-c368-4d3b-8cef-b7c8368e3ecd",
+      "key": "220722_acid_denaturation_008_cis_noacid_001.txt",
+      "size": 15978,
+      "checksum": "md5:5eefa6594b04fe1bfc99ac9a1903578c",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/220722_acid_denaturation_008_cis_noacid_001.txt/content"
+      }
+    },
+    {
+      "id": "f644da44-75bb-4f7e-b955-473778b49e3d",
+      "key": "JSR_9cis_611_205_s1_150ul_100pc_40sec.txt",
+      "size": 9061,
+      "checksum": "md5:bd693362dc6688ea4e4fe35cfb229481",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_205_s1_150ul_100pc_40sec.txt/content"
+      }
+    },
+    {
+      "id": "909bc3e6-0d95-42de-95e2-ceae8e1960e1",
+      "key": "JSR_201016_9cis_003_1D4elute_12ml_sample2.txt",
+      "size": 12878,
+      "checksum": "md5:e7b3c82fba799ea3173c09debf02a519",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_201016_9cis_003_1D4elute_12ml_sample2.txt/content"
+      }
+    },
+    {
+      "id": "6593805b-e298-4f59-934a-75b82bd46358",
+      "key": "JSR_611_008_650ul_elu_3xdil_100pc_40sec.txt",
+      "size": 9063,
+      "checksum": "md5:9fbd9779700a3c7fb17433ea7cc7f418",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_008_650ul_elu_3xdil_100pc_40sec.txt/content"
+      }
+    },
+    {
+      "id": "9d50f148-f840-467f-abfd-f2c3cd89137f",
+      "key": "SEC Gi & Gq.jpg",
+      "size": 273010,
+      "checksum": "md5:79de7cf23108b8a4b23013edd7464ee8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/SEC Gi & Gq.jpg/content"
+      }
+    },
+    {
+      "id": "34387ab2-febe-435c-975d-ef33be022342",
+      "key": "hydroxylamine_009-cis_002_240215.py",
+      "size": 3702,
+      "checksum": "md5:f3cc74d275970a27db6dcc9740a10fac",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/hydroxylamine_009-cis_002_240215.py/content"
+      }
+    },
+    {
+      "id": "f01621e7-5921-4a2c-91c6-e679f462d334",
+      "key": "JSR_201016_trans_002_1D4elute_13ml_sample2.txt",
+      "size": 13361,
+      "checksum": "md5:d486fc1411b9344532f5419e85b9f1fd",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_201016_trans_002_1D4elute_13ml_sample2.txt/content"
+      }
+    },
+    {
+      "id": "f280b7c0-33c4-4218-a149-86ae602c0446",
+      "key": "JSR_9cis_611_206_s1_150ul_100pc_50sec.txt",
+      "size": 9061,
+      "checksum": "md5:f0e72ddab4563bc21dd5c70db1f205df",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_206_s1_150ul_100pc_50sec.txt/content"
+      }
+    },
+    {
+      "id": "6bfc616b-dcc5-4a7f-ada1-bbe80fc64718",
+      "key": "JSR_201016_trans_001_1D4elute_13ml.txt",
+      "size": 13520,
+      "checksum": "md5:c4dde4726479499c3ab1374feb286e6e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_201016_trans_001_1D4elute_13ml.txt/content"
+      }
+    },
+    {
+      "id": "082b7d5d-a205-4956-bf3f-2d55e1af541a",
+      "key": "003_JSR231120_AT611_dil2x.txt",
+      "size": 18895,
+      "checksum": "md5:d43ee5b633e2e2805f3238251bf8c44b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/003_JSR231120_AT611_dil2x.txt/content"
+      }
+    },
+    {
+      "id": "d602a81f-a3fd-452f-9f2a-094fa8e7ebbb",
+      "key": "003_JSR231120_AT611_dil2x_clean.txt",
+      "size": 15693,
+      "checksum": "md5:05a0061e72f650af9fafbbdc809d0216",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/003_JSR231120_AT611_dil2x_clean.txt/content"
+      }
+    },
+    {
+      "id": "7e692521-d9dd-47b9-b7fc-e554ed528fd7",
+      "key": "004_JSR231120_AT611_dil2x_acid.txt",
+      "size": 18756,
+      "checksum": "md5:5951cf6c86a28886bfe43709a8675f06",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/004_JSR231120_AT611_dil2x_acid.txt/content"
+      }
+    },
+    {
+      "id": "2f81cf7d-20be-4fad-90ba-940e9b97aee7",
+      "key": "JSR_611_hydrox_sample2_150932.csv",
+      "size": 224339,
+      "checksum": "md5:43e08a2a9829ee34905c7f45df9b139b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_hydrox_sample2_150932.csv/content"
+      }
+    },
+    {
+      "id": "57979b19-66ab-47e6-8c51-7d16365b0630",
+      "key": "JSR_611_010_650ul_elu_3xdil_100pc_50sec_repeat.txt",
+      "size": 9175,
+      "checksum": "md5:729bebbd42155289734e26d24d4047c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_010_650ul_elu_3xdil_100pc_50sec_repeat.txt/content"
+      }
+    },
+    {
+      "id": "8aa5ffba-aa51-4815-ae88-96a0ee2b9677",
+      "key": "hydroxylamine_210212_v3.py",
+      "size": 2028,
+      "checksum": "md5:8dc2ade55a973b0d9df3122e79011af5",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/hydroxylamine_210212_v3.py/content"
+      }
+    },
+    {
+      "id": "e3de0256-8e34-4fdc-90eb-9b91036e397f",
+      "key": "JSR_9cis_611_203_s1_150ul_100pc_20sec.txt",
+      "size": 9061,
+      "checksum": "md5:791568c0dde1fbdcc7a3ea9fa44b12f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_203_s1_150ul_100pc_20sec.txt/content"
+      }
+    },
+    {
+      "id": "4fd9e42d-be83-4e6b-9751-4111c66eac4d",
+      "key": "JSR_611_illumination_plot.py",
+      "size": 9126,
+      "checksum": "md5:1b7204cedeab83c733acc98a9b06c8b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_illumination_plot.py/content"
+      }
+    },
+    {
+      "id": "d06bc5db-a615-4be6-8699-40d18ce75f64",
+      "key": "JSR_9cis_611_204_s1_150ul_100pc_30sec.txt",
+      "size": 9062,
+      "checksum": "md5:0af6c614d149537be09d5aa97a768629",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_9cis_611_204_s1_150ul_100pc_30sec.txt/content"
+      }
+    },
+    {
+      "id": "74fddf05-7e77-4edf-a75e-9894d3cb2a6c",
+      "key": "JSR_611_003_650ul_elu_3xdil_dark.txt",
+      "size": 9056,
+      "checksum": "md5:8eac8d8906c02e628446d1291ae71165",
+      "links": {
+        "self": "https://zenodo.org/api/records/12703870/files/JSR_611_003_650ul_elu_3xdil_dark.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "55299"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2193,
+    "unique_downloads": 2191,
+    "views": 147,
+    "unique_views": 128,
+    "version_downloads": 2193,
+    "version_unique_downloads": 2191,
+    "version_unique_views": 128,
+    "version_views": 147
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 273010,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "JSR_611_007_650ul_elu_3xdil_100pc_30sec.txt",
+        "size": 9080
+      },
+      {
+        "name": "plot_JSR_SEC_240402.py",
+        "size": 3782
+      },
+      {
+        "name": "JSR_611_005_650ul_elu_3xdil_100pc_20sec.txt",
+        "size": 9083
+      },
+      {
+        "name": "JSR_611_004_650ul_elu_3xdil_100pc_10sec.txt",
+        "size": 9063
+      },
+      {
+        "name": "004_JSR231120_AT611_dil2x_acid_clean.txt",
+        "size": 15554
+      },
+      {
+        "name": "220722_acid_denaturation_009_cis_acid_001.txt",
+        "size": 15814
+      },
+      {
+        "name": "230202_JSR_Gi_Gq_references.csv",
+        "size": 71662
+      },
+      {
+        "name": "JSR_9cis_611_207_s1_150ul_100pc_60sec.txt",
+        "size": 9061
+      },
+      {
+        "name": "230516 Gloassay JSR Gi Gq_combined.xlsx",
+        "size": 32445
+      },
+      {
+        "name": "JSR_611_009_650ul_elu_3xdil_100pc_50sec.txt",
+        "size": 9067
+      },
+      {
+        "name": "JSR_9cis_611_hydrox_sample2.txt",
+        "size": 186314
+      },
+      {
+        "name": "JSR_611_006_650ul_elu_3xdil_100pc_20sec_repeat.txt",
+        "size": 9078
+      },
+      {
+        "name": "plot_acid_denaturation.py",
+        "size": 2664
+      },
+      {
+        "name": "240213_spectrum_fig.py",
+        "size": 4197
+      },
+      {
+        "name": "JSR_9cis_611_201_s1_150ul_dark.txt",
+        "size": 9054
+      },
+      {
+        "name": "JSR_611_011_650ul_elu_3xdil_100pc_60sec.txt",
+        "size": 9109
+      },
+      {
+        "name": "JSR_9cis_611_202_s1_150ul_100pc_10sec.txt",
+        "size": 9061
+      },
+      {
+        "name": "JSR611_220124_007_611_cis_6mL.txt",
+        "size": 14093
+      },
+      {
+        "name": "ret611_211018_002_elute1.txt",
+        "size": 14088
+      },
+      {
+        "name": "230202_JSR_Gi_Gq_samples.csv",
+        "size": 48609
+      },
+      {
+        "name": "220722_acid_denaturation_008_cis_noacid_001.txt",
+        "size": 15978
+      },
+      {
+        "name": "JSR_9cis_611_205_s1_150ul_100pc_40sec.txt",
+        "size": 9061
+      },
+      {
+        "name": "JSR_201016_9cis_003_1D4elute_12ml_sample2.txt",
+        "size": 12878
+      },
+      {
+        "name": "JSR_611_008_650ul_elu_3xdil_100pc_40sec.txt",
+        "size": 9063
+      },
+      {
+        "name": "SEC Gi & Gq.jpg",
+        "size": 273010
+      },
+      {
+        "name": "hydroxylamine_009-cis_002_240215.py",
+        "size": 3702
+      },
+      {
+        "name": "JSR_201016_trans_002_1D4elute_13ml_sample2.txt",
+        "size": 13361
+      },
+      {
+        "name": "JSR_9cis_611_206_s1_150ul_100pc_50sec.txt",
+        "size": 9061
+      },
+      {
+        "name": "JSR_201016_trans_001_1D4elute_13ml.txt",
+        "size": 13520
+      },
+      {
+        "name": "003_JSR231120_AT611_dil2x.txt",
+        "size": 18895
+      },
+      {
+        "name": "003_JSR231120_AT611_dil2x_clean.txt",
+        "size": 15693
+      },
+      {
+        "name": "004_JSR231120_AT611_dil2x_acid.txt",
+        "size": 18756
+      },
+      {
+        "name": "JSR_611_hydrox_sample2_150932.csv",
+        "size": 224339
+      },
+      {
+        "name": "JSR_611_010_650ul_elu_3xdil_100pc_50sec_repeat.txt",
+        "size": 9175
+      },
+      {
+        "name": "hydroxylamine_210212_v3.py",
+        "size": 2028
+      },
+      {
+        "name": "JSR_9cis_611_203_s1_150ul_100pc_20sec.txt",
+        "size": 9061
+      },
+      {
+        "name": "JSR_611_illumination_plot.py",
+        "size": 9126
+      },
+      {
+        "name": "JSR_9cis_611_204_s1_150ul_100pc_30sec.txt",
+        "size": 9062
+      },
+      {
+        "name": "JSR_611_003_650ul_elu_3xdil_dark.txt",
+        "size": 9056
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:56.907897"
+}

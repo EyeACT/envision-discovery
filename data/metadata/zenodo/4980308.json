@@ -1,0 +1,209 @@
+{
+  "created": "2021-06-18T07:36:29.885188+00:00",
+  "modified": "2022-05-28T00:30:21.497845+00:00",
+  "id": 4980308,
+  "conceptrecid": "4980307",
+  "doi": "10.5061/dryad.7q37g6b",
+  "doi_url": "https://doi.org/10.5061/dryad.7q37g6b",
+  "metadata": {
+    "title": "Data from: All-optical recording and stimulation of retinal neurons in vivo in retinal degeneration mice",
+    "doi": "10.5061/dryad.7q37g6b",
+    "publication_date": "2019-03-16",
+    "description": "Here we demonstrate the application of a method that could accelerate the development of novel therapies by allowing direct and repeatable visualization of cellular function in the living eye, to study loss of vision in animal models of retinal disease, as well as evaluate the time course of retinal function following therapeutic intervention. We use high-resolution adaptive optics scanning light ophthalmoscopy to image fluorescence from the calcium sensor GCaMP6s. In mice with photoreceptor degeneration (rd10), we measured restored visual responses in ganglion cell layer neurons expressing the red-shifted channelrhodopsin ChrimsonR over a six-week period following significant loss of visual responses. Combining a fluorescent calcium sensor, a channelrhodopsin, and adaptive optics enables all-optical stimulation and recording of retinal neurons in the living eye. Because the retina is an accessible portal to the central nervous system, our method also provides a novel non-invasive method of dissecting neuronal processing in the brain.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cheong, Soon Keen",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Strazzeri, Jennifer M.",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Williams, David R.",
+        "affiliation": "University of Rochester"
+      },
+      {
+        "name": "Merigan, William H.",
+        "affiliation": "University of Rochester"
+      }
+    ],
+    "keywords": [
+      "AOSLO",
+      "channelrhodopsin",
+      "optogenetics",
+      "Adaptive optics",
+      "vision restoration",
+      "ChrimsonR"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pone.0194947",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4980307"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">DataArchive<div class=\"o-metadata__file-description\">See Readme</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: All-optical recording and stimulation of retinal neurons in vivo in retinal degeneration mice",
+  "links": {
+    "self": "https://zenodo.org/api/records/4980308",
+    "self_html": "https://zenodo.org/records/4980308",
+    "preview_html": "https://zenodo.org/records/4980308?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.7q37g6b",
+    "self_doi": "https://doi.org/10.5061/dryad.7q37g6b",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.7q37g6b",
+    "reserve_doi": "https://zenodo.org/api/records/4980308/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4980307",
+    "parent_html": "https://zenodo.org/records/4980307",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4980308/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4980308/sequence/default",
+    "files": "https://zenodo.org/api/records/4980308/files",
+    "media_files": "https://zenodo.org/api/records/4980308/media-files",
+    "archive": "https://zenodo.org/api/records/4980308/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4980308/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4980308/versions/latest",
+    "latest_html": "https://zenodo.org/records/4980308/latest",
+    "versions": "https://zenodo.org/api/records/4980308/versions",
+    "draft": "https://zenodo.org/api/records/4980308/draft",
+    "access_links": "https://zenodo.org/api/records/4980308/access/links",
+    "access_grants": "https://zenodo.org/api/records/4980308/access/grants",
+    "access_users": "https://zenodo.org/api/records/4980308/access/users",
+    "access_request": "https://zenodo.org/api/records/4980308/access/request",
+    "access": "https://zenodo.org/api/records/4980308/access",
+    "communities": "https://zenodo.org/api/records/4980308/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4980308/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4980308/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4980308/file-modification",
+    "requests": "https://zenodo.org/api/records/4980308/requests"
+  },
+  "updated": "2022-05-28T00:30:21.497845+00:00",
+  "recid": "4980308",
+  "revision": 3,
+  "files": [
+    {
+      "id": "2e3fb73d-f195-4ba4-923e-10258d6fbfab",
+      "key": "DataArchive.zip",
+      "size": 221514534,
+      "checksum": "md5:f2825439f04475272ca872f06d3fc1ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/4980308/files/DataArchive.zip/content"
+      }
+    },
+    {
+      "id": "d70d5623-55b5-4285-8c57-4bd7d059f648",
+      "key": "README_for_DataArchive.docx",
+      "size": 107240,
+      "checksum": "md5:c22a204804f72167cc496f1b376d6ef8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4980308/files/README_for_DataArchive.docx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 35,
+    "unique_downloads": 35,
+    "views": 52,
+    "unique_views": 44,
+    "version_downloads": 35,
+    "version_unique_downloads": 35,
+    "version_unique_views": 44,
+    "version_views": 52
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 221514534,
+    "top_level_files": [
+      {
+        "name": "DataArchive.zip",
+        "size": 221514534
+      },
+      {
+        "name": "README_for_DataArchive.docx",
+        "size": 107240
+      }
+    ],
+    "zip_contents": {
+      "dataarchive.zip": {
+        "total_files": 128,
+        "total_directories": 19,
+        "total_uncompressed_bytes": 237835304,
+        "file_types": {
+          ".mat": 118
+        },
+        "imaging_file_count": 118,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "dataarchive/b6_365/ms02110_20160607_s001_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02110_20160607_s002_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02110_20160607_s003_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02110_20160607_s004_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02111_20160607_s001_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02111_20160607_s002_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02111_20160607_s003_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02112_20160608_s001_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02112_20160608_s002_[squarewave_365]_custom_siteunitresp.mat",
+          "dataarchive/b6_365/ms02112_20160608_s003_[squarewave_365]_custom_siteunitresp.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "dataarchive/b6_365/ms02110_20160607_s001_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02110_20160607_s002_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02110_20160607_s003_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02110_20160607_s004_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02111_20160607_s001_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02111_20160607_s002_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02111_20160607_s003_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02112_20160608_s001_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02112_20160608_s002_[squarewave_365]_custom_siteunitresp.mat",
+      "dataarchive/b6_365/ms02112_20160608_s003_[squarewave_365]_custom_siteunitresp.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:01.715712"
+}

@@ -1,0 +1,170 @@
+{
+  "created": "2022-10-03T01:52:40.965536+00:00",
+  "modified": "2022-10-03T02:26:29.633561+00:00",
+  "id": 7135930,
+  "conceptrecid": "7135929",
+  "doi": "10.5281/zenodo.7135930",
+  "conceptdoi": "10.5281/zenodo.7135929",
+  "doi_url": "https://doi.org/10.5281/zenodo.7135930",
+  "metadata": {
+    "title": "In Situ Volumetric Imaging and Analysis of FRESH 3D Bioprinted Constructs Using Optical Coherence Tomography (Data and 3D models)",
+    "doi": "10.5281/zenodo.7135930",
+    "publication_date": "2022-10-03",
+    "description": "<p>These files contain 3D models and reconstructions of the 3D printed models after OCT imaging&nbsp;of the brain stem, circle of willis, kidney, vestibular apparatus, mixing network, and resolution text. These are from the journal article &quot;In Situ Volumetric Imaging and Analysis of FRESH 3D Bioprinted Constructs Using Optical Coherence Tomography&quot; published in&nbsp;<em>Biofabrication&nbsp;</em>(2022).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tashman, Joshua W.",
+        "affiliation": "Carnegie Mellon University",
+        "orcid": "0000-0001-8193-0039"
+      },
+      {
+        "name": "Shiwarski, Daniel J.",
+        "affiliation": "Carnegie Mellon University",
+        "orcid": "0000-0001-6978-303X"
+      },
+      {
+        "name": "Coffin, Brian",
+        "affiliation": "Carnegie Mellon University"
+      },
+      {
+        "name": "Ruesch, Alexander",
+        "affiliation": "Carnegie Mellon University",
+        "orcid": "0000-0002-1890-4134"
+      },
+      {
+        "name": "Lanni, Frederick",
+        "affiliation": "Carnegie Mellon University"
+      },
+      {
+        "name": "Kainerstorfer, Jana M.",
+        "affiliation": "Carnegie Mellon University"
+      },
+      {
+        "name": "Feinberg, Adam W.",
+        "affiliation": "Carnegie Mellon University",
+        "orcid": "0000-0003-3338-5456"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7135929"
+          }
+        }
+      ]
+    }
+  },
+  "title": "In Situ Volumetric Imaging and Analysis of FRESH 3D Bioprinted Constructs Using Optical Coherence Tomography (Data and 3D models)",
+  "links": {
+    "self": "https://zenodo.org/api/records/7135930",
+    "self_html": "https://zenodo.org/records/7135930",
+    "preview_html": "https://zenodo.org/records/7135930?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7135930",
+    "self_doi": "https://doi.org/10.5281/zenodo.7135930",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7135930",
+    "reserve_doi": "https://zenodo.org/api/records/7135930/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7135929",
+    "parent_html": "https://zenodo.org/records/7135929",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7135929",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7135929",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7135930/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7135930/sequence/default",
+    "files": "https://zenodo.org/api/records/7135930/files",
+    "media_files": "https://zenodo.org/api/records/7135930/media-files",
+    "archive": "https://zenodo.org/api/records/7135930/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7135930/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7135930/versions/latest",
+    "latest_html": "https://zenodo.org/records/7135930/latest",
+    "versions": "https://zenodo.org/api/records/7135930/versions",
+    "draft": "https://zenodo.org/api/records/7135930/draft",
+    "access_links": "https://zenodo.org/api/records/7135930/access/links",
+    "access_grants": "https://zenodo.org/api/records/7135930/access/grants",
+    "access_users": "https://zenodo.org/api/records/7135930/access/users",
+    "access_request": "https://zenodo.org/api/records/7135930/access/request",
+    "access": "https://zenodo.org/api/records/7135930/access",
+    "communities": "https://zenodo.org/api/records/7135930/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7135930/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7135930/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7135930/file-modification",
+    "requests": "https://zenodo.org/api/records/7135930/requests"
+  },
+  "updated": "2022-10-03T02:26:29.633561+00:00",
+  "recid": "7135930",
+  "revision": 2,
+  "files": [
+    {
+      "id": "cc1f98ed-e081-4534-af5e-5e808836e549",
+      "key": "3Dprints_Models.zip",
+      "size": 263054578,
+      "checksum": "md5:3b399802785d8df06af79c776ff73642",
+      "links": {
+        "self": "https://zenodo.org/api/records/7135930/files/3Dprints_Models.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "79394"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 27,
+    "unique_downloads": 26,
+    "views": 128,
+    "unique_views": 116,
+    "version_downloads": 27,
+    "version_unique_downloads": 26,
+    "version_unique_views": 116,
+    "version_views": 128
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 263054578,
+    "top_level_files": [
+      {
+        "name": "3Dprints_Models.zip",
+        "size": 263054578
+      }
+    ],
+    "zip_contents": {
+      "3dprints_models.zip": {
+        "total_files": 68,
+        "total_directories": 28,
+        "total_uncompressed_bytes": 639750761,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:43.218308"
+}

@@ -1,0 +1,187 @@
+{
+  "created": "2025-12-17T04:54:39.132581+00:00",
+  "modified": "2025-12-17T04:54:39.298875+00:00",
+  "id": 17958965,
+  "conceptrecid": "17958964",
+  "doi": "10.5281/zenodo.17958965",
+  "conceptdoi": "10.5281/zenodo.17958964",
+  "doi_url": "https://doi.org/10.5281/zenodo.17958965",
+  "metadata": {
+    "title": "Motion enhances camouflage: Retinal evidence for flicker fusion camouflage in jumping spiders",
+    "doi": "10.5281/zenodo.17958965",
+    "publication_date": "2025-12-17",
+    "description": "<p>This is the dataset for</p>\n<p>Min Tan, Alex M. Winsor, Long Yu, Eunice J. Tan, Elizabeth M. Jakob, Daiqin Li. (2025). Motion enhances camouflage: Retinal evidence for flicker fusion camouflage in jumping spiders.</p>\n<p><strong>Funding sources</strong></p>\n<p><span lang=\"EN-US\">This study was supported by the grants from the National Natural Science Foundation of China (32270531 to DLi and 32301291 to LYu), the Singapore Ministry of Education Academic Research Fund (AcRF) to DLi (A-8001085-00-00), the National Science Foundation award (1656714 to EMJakob), and the Oscar and Jan Francke Student Research Fund of the International Society of Arachnology to MTan.</span></p>\n<p><strong><span lang=\"EN-US\">Overview for Tan_et_al_data_and_codes</span></strong></p>\n<p><span lang=\"EN-US\">Folder List:</span></p>\n<p><span lang=\"EN-US\">Codes_Tan_et_al: This folder contains the R code (in software) for data analyses and figures.</span></p>\n<p><span lang=\"EN-US\">Data_Tan_et_al: This folder contains the dataset (file type \"csv\").</span></p>\n<p><strong><span lang=\"EN-US\">Methodological information</span></strong></p>\n<p><span lang=\"EN-US\">The data was collected following the protocol described in Tan et al. (2025).</span></p>\n<p><span lang=\"EN-US\">The data was analysed with R 4.4.2.</span></p>\n<p><strong><span lang=\"EN-US\">Specific information</span></strong></p>\n<p><span lang=\"EN-US\">More details for each folder can be found within the folders.</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tan, Min",
+        "affiliation": "National University of Singapore",
+        "orcid": "0000-0001-7006-5297"
+      },
+      {
+        "name": "Winsor, Alex",
+        "affiliation": "University of Massachusetts, Amherst",
+        "orcid": "0000-0002-4890-0935"
+      },
+      {
+        "name": "Yu, Long",
+        "affiliation": "Hubei University",
+        "orcid": "0000-0001-5675-1864"
+      },
+      {
+        "name": "Tan, Eunice Jingmei",
+        "affiliation": "National University of Singapore",
+        "orcid": "0000-0003-1667-3958"
+      },
+      {
+        "name": "Jakob, Elizabeth",
+        "affiliation": "University of Massachusetts Amherst",
+        "orcid": "0000-0002-7796-8736"
+      },
+      {
+        "name": "Li, Daiqin",
+        "affiliation": "National University of Singapore",
+        "orcid": "0000-0001-8269-7734"
+      }
+    ],
+    "keywords": [
+      "anti-predation",
+      "crypsis",
+      "eye-tracker",
+      "salticid",
+      "stripe contrast",
+      "biological sciences"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "r",
+          "title": {
+            "en": "R"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17958964"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Motion enhances camouflage: Retinal evidence for flicker fusion camouflage in jumping spiders",
+  "links": {
+    "self": "https://zenodo.org/api/records/17958965",
+    "self_html": "https://zenodo.org/records/17958965",
+    "preview_html": "https://zenodo.org/records/17958965?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17958965",
+    "self_doi": "https://doi.org/10.5281/zenodo.17958965",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17958965",
+    "reserve_doi": "https://zenodo.org/api/records/17958965/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17958964",
+    "parent_html": "https://zenodo.org/records/17958964",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17958964",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17958964",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17958965/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17958965/sequence/default",
+    "files": "https://zenodo.org/api/records/17958965/files",
+    "media_files": "https://zenodo.org/api/records/17958965/media-files",
+    "archive": "https://zenodo.org/api/records/17958965/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17958965/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17958965/versions/latest",
+    "latest_html": "https://zenodo.org/records/17958965/latest",
+    "versions": "https://zenodo.org/api/records/17958965/versions",
+    "draft": "https://zenodo.org/api/records/17958965/draft",
+    "access_links": "https://zenodo.org/api/records/17958965/access/links",
+    "access_grants": "https://zenodo.org/api/records/17958965/access/grants",
+    "access_users": "https://zenodo.org/api/records/17958965/access/users",
+    "access_request": "https://zenodo.org/api/records/17958965/access/request",
+    "access": "https://zenodo.org/api/records/17958965/access",
+    "communities": "https://zenodo.org/api/records/17958965/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17958965/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17958965/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17958965/file-modification",
+    "requests": "https://zenodo.org/api/records/17958965/requests"
+  },
+  "updated": "2025-12-17T04:54:39.298875+00:00",
+  "recid": "17958965",
+  "revision": 4,
+  "files": [
+    {
+      "id": "59143894-b2e9-4d9b-9b9d-16b76f359de6",
+      "key": "Tan_et_al_data and codes.zip",
+      "size": 1566789,
+      "checksum": "md5:d28ccd3227ce8ad821b6a4f00f50cc0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17958965/files/Tan_et_al_data and codes.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1433839"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 17,
+    "unique_views": 12,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 12,
+    "version_views": 17
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1566789,
+    "top_level_files": [
+      {
+        "name": "Tan_et_al_data and codes.zip",
+        "size": 1566789
+      }
+    ],
+    "zip_contents": {
+      "tan_et_al_data and codes.zip": {
+        "total_files": 20,
+        "total_directories": 11,
+        "total_uncompressed_bytes": 6195091,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:56.723007"
+}

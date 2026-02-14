@@ -1,0 +1,159 @@
+{
+  "created": "2025-04-10T16:33:08.733804+00:00",
+  "modified": "2025-04-10T16:33:08.872553+00:00",
+  "id": 15190982,
+  "conceptrecid": "15190981",
+  "doi": "10.5281/zenodo.15190982",
+  "conceptdoi": "10.5281/zenodo.15190981",
+  "doi_url": "https://doi.org/10.5281/zenodo.15190982",
+  "metadata": {
+    "title": "Test DICOM image data for use with mHUB model CT_Lung_SMIT GTV Segmentation (MSKCC)",
+    "doi": "10.5281/zenodo.15190982",
+    "publication_date": "2025-04-10",
+    "description": "<p>DICOM image data for testing and output validation of the mHUB model CT_Lung_SMIT GTV Segmentation (shared by MSKCC Medical Physics Dept, authored by Veeraraghavan and Jiang)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "LoCastro, Eve",
+        "affiliation": "Memorial Sloan-Kettering Cancer Center",
+        "orcid": "0000-0003-3975-8153"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/cerr/CT_Lung_SMIT",
+        "relation": "isPartOf",
+        "resource_type": "software",
+        "scheme": "other"
+      }
+    ],
+    "dates": [
+      {
+        "type": "submitted",
+        "description": "Anonymized test CT DICOM image dataset for segmentation model validation"
+      }
+    ],
+    "references": [
+      "Jiang, J., Tyagi, N., Tringale, K., Crane, C., Veeraraghavan, H. (2022). Self-supervised 3D Anatomy Segmentation Using Self-distilled Masked Image Transformer (SMIT). In: Wang, L., Dou, Q., Fletcher, P.T., Speidel, S., Li, S. (eds) Medical Image Computing and Computer Assisted Intervention \u2013 MICCAI 2022. MICCAI 2022. Lecture Notes in Computer Science, vol 13434. Springer, Cham. https://doi.org/10.1007/978-3-031-16440-8_53"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/mhubai/models"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "https://github.com/mhubai/models"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15190981"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Test DICOM image data for use with mHUB model CT_Lung_SMIT GTV Segmentation (MSKCC)",
+  "links": {
+    "self": "https://zenodo.org/api/records/15190982",
+    "self_html": "https://zenodo.org/records/15190982",
+    "preview_html": "https://zenodo.org/records/15190982?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15190982",
+    "self_doi": "https://doi.org/10.5281/zenodo.15190982",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15190982",
+    "reserve_doi": "https://zenodo.org/api/records/15190982/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15190981",
+    "parent_html": "https://zenodo.org/records/15190981",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15190981",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15190981",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15190982/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15190982/sequence/default",
+    "files": "https://zenodo.org/api/records/15190982/files",
+    "media_files": "https://zenodo.org/api/records/15190982/media-files",
+    "archive": "https://zenodo.org/api/records/15190982/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15190982/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15190982/versions/latest",
+    "latest_html": "https://zenodo.org/records/15190982/latest",
+    "versions": "https://zenodo.org/api/records/15190982/versions",
+    "draft": "https://zenodo.org/api/records/15190982/draft",
+    "access_links": "https://zenodo.org/api/records/15190982/access/links",
+    "access_grants": "https://zenodo.org/api/records/15190982/access/grants",
+    "access_users": "https://zenodo.org/api/records/15190982/access/users",
+    "access_request": "https://zenodo.org/api/records/15190982/access/request",
+    "access": "https://zenodo.org/api/records/15190982/access",
+    "communities": "https://zenodo.org/api/records/15190982/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15190982/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15190982/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15190982/file-modification",
+    "requests": "https://zenodo.org/api/records/15190982/requests"
+  },
+  "updated": "2025-04-10T16:33:08.872553+00:00",
+  "recid": "15190982",
+  "revision": 4,
+  "files": [
+    {
+      "id": "bc318f8d-5560-4928-80d6-280fd8ea93aa",
+      "key": "CT_Lung_SMIT_test_DCM.zip",
+      "size": 19237078,
+      "checksum": "md5:9aa874aa496c354dafe0a5f1950d2299",
+      "links": {
+        "self": "https://zenodo.org/api/records/15190982/files/CT_Lung_SMIT_test_DCM.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1183877"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 36,
+    "unique_downloads": 33,
+    "views": 30,
+    "unique_views": 23,
+    "version_downloads": 36,
+    "version_unique_downloads": 33,
+    "version_unique_views": 23,
+    "version_views": 30
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 19237078,
+    "top_level_files": [
+      {
+        "name": "CT_Lung_SMIT_test_DCM.zip",
+        "size": 19237078
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/cerr/CT_Lung_SMIT"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:06.136256"
+}

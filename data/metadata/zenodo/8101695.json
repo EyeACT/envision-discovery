@@ -1,0 +1,176 @@
+{
+  "created": "2023-06-30T15:15:12.362129+00:00",
+  "modified": "2024-03-13T13:52:34.549366+00:00",
+  "id": 8101695,
+  "conceptrecid": "8101694",
+  "doi": "10.5281/zenodo.8101695",
+  "conceptdoi": "10.5281/zenodo.8101694",
+  "doi_url": "https://doi.org/10.5281/zenodo.8101695",
+  "metadata": {
+    "title": "Image Segmentation",
+    "doi": "10.5281/zenodo.8101695",
+    "publication_date": "2023-06-30",
+    "description": "<p>This is a proof of concept dataset collected using the method introduced in the following publication. See details here : https://arxiv.org/abs/2301.07807</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vacher, Jonathan",
+        "affiliation": "Universit\u00e9 Paris Cit\u00e9",
+        "orcid": "0000-0002-4321-6309"
+      },
+      {
+        "name": "Launay, Claire",
+        "affiliation": "Albert Einstein College of Medicine"
+      },
+      {
+        "name": "Mamassian, Pascal",
+        "affiliation": "Ecole Normale Sup\u00e9rieure"
+      },
+      {
+        "name": "Coen Cagli, Ruben",
+        "affiliation": "Albert Einstein College of Medicine"
+      }
+    ],
+    "keywords": [
+      "visual segmentation, uncertainty, natural images"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8101694"
+          }
+        }
+      ]
+    },
+    "notes": "NIH grants : EY031166 and EY030578\nANR grants : (ANR-19-NEUC-0003-01 and ANR-17-EURE-0017)."
+  },
+  "title": "Image Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/8101695",
+    "self_html": "https://zenodo.org/records/8101695",
+    "preview_html": "https://zenodo.org/records/8101695?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8101695",
+    "self_doi": "https://doi.org/10.5281/zenodo.8101695",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8101695",
+    "reserve_doi": "https://zenodo.org/api/records/8101695/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8101694",
+    "parent_html": "https://zenodo.org/records/8101694",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8101694",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8101694",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8101695/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8101695/sequence/default",
+    "files": "https://zenodo.org/api/records/8101695/files",
+    "media_files": "https://zenodo.org/api/records/8101695/media-files",
+    "archive": "https://zenodo.org/api/records/8101695/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8101695/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8101695/versions/latest",
+    "latest_html": "https://zenodo.org/records/8101695/latest",
+    "versions": "https://zenodo.org/api/records/8101695/versions",
+    "draft": "https://zenodo.org/api/records/8101695/draft",
+    "access_links": "https://zenodo.org/api/records/8101695/access/links",
+    "access_grants": "https://zenodo.org/api/records/8101695/access/grants",
+    "access_users": "https://zenodo.org/api/records/8101695/access/users",
+    "access_request": "https://zenodo.org/api/records/8101695/access/request",
+    "access": "https://zenodo.org/api/records/8101695/access",
+    "communities": "https://zenodo.org/api/records/8101695/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8101695/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8101695/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8101695/file-modification",
+    "requests": "https://zenodo.org/api/records/8101695/requests"
+  },
+  "updated": "2024-03-13T13:52:34.549366+00:00",
+  "recid": "8101695",
+  "revision": 9,
+  "files": [
+    {
+      "id": "669df8c9-7090-44e1-a518-004170ef342c",
+      "key": "data_artif.zip",
+      "size": 4812895,
+      "checksum": "md5:9fd48d63444ca9278ea0ef17725cc573",
+      "links": {
+        "self": "https://zenodo.org/api/records/8101695/files/data_artif.zip/content"
+      }
+    },
+    {
+      "id": "817b5200-a9ef-4318-8d51-127e029e542a",
+      "key": "data_nat_im_20230115.zip",
+      "size": 84459066,
+      "checksum": "md5:19c96a4c8c1d19582b77c5dc5af862e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/8101695/files/data_nat_im_20230115.zip/content"
+      }
+    },
+    {
+      "id": "e30c090f-f7ac-46b1-bbab-6394f1c619c8",
+      "key": "reading_data.py",
+      "size": 3412,
+      "checksum": "md5:c6291d8ac569e3aa0ff37ca05b3f8190",
+      "links": {
+        "self": "https://zenodo.org/api/records/8101695/files/reading_data.py/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "576761"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 105,
+    "unique_downloads": 101,
+    "views": 473,
+    "unique_views": 453,
+    "version_downloads": 104,
+    "version_unique_downloads": 100,
+    "version_unique_views": 450,
+    "version_views": 470
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 89271961,
+    "top_level_files": [
+      {
+        "name": "data_artif.zip",
+        "size": 4812895
+      },
+      {
+        "name": "data_nat_im_20230115.zip",
+        "size": 84459066
+      },
+      {
+        "name": "reading_data.py",
+        "size": 3412
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://arxiv.org/abs/2301.07807",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.430761"
+}

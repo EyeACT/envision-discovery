@@ -1,0 +1,174 @@
+{
+  "created": "2024-10-26T11:09:20.477369+00:00",
+  "modified": "2024-10-26T11:12:06.319876+00:00",
+  "id": 13995425,
+  "conceptrecid": "13995424",
+  "doi": "10.5281/zenodo.13995425",
+  "conceptdoi": "10.5281/zenodo.13995424",
+  "doi_url": "https://doi.org/10.5281/zenodo.13995425",
+  "metadata": {
+    "title": "Bugzz lightyears: To Semantic Segmentation and Bug-yond!",
+    "doi": "10.5281/zenodo.13995425",
+    "publication_date": "2024-10-26",
+    "description": "<p>Dataset Title:&nbsp; <em><strong>Bugzz lightyears: To Semantic Segmentation and Bug-yond!</strong></em></p>\n<h3>Description:</h3>\n<p>This dataset comprises a collection of real and robotic toy bugs designed for a small-scale semantic segmentation project. Each bug has been captured six times from various angles, ensuring comprehensive coverage of their features and details. The dataset serves as a valuable resource for exploring semantic segmentation techniques and evaluating machine learning models.</p>\n<h3>Dataset Details:</h3>\n<ul>\n<li>Images: Each bug is represented by six images taken from different perspectives, facilitating robust segmentation and analysis.</li>\n<li>Segmentation: The dataset has been meticulously segmented using Label Studio in conjunction with the SAM (Segment Anything Model), enabling precise delineation of each bug from the background.</li>\n<li>Diversity: The collection includes a variety of bugs, both real and robotic, providing a unique blend for training and testing segmentation models.</li>\n</ul>\n<h3>Usage: This toy dataset is ideal for researchers and developers interested in:</h3>\n<ul>\n<li>Experimenting with semantic segmentation algorithms.</li>\n<li>Developing and refining computer vision models for object detection and segmentation.</li>\n<li>Educational purposes in machine learning and computer vision courses.</li>\n</ul>\n<h3>License: This dataset is made available under [specify license type, e.g., CC BY 4.0], allowing for both academic and commercial use, with proper attribution to the creator.</h3>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Alikarrar, Maeen",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      },
+      {
+        "name": "Kazi, Faizan",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      }
+    ],
+    "keywords": [
+      "Semantic Segmentation",
+      "Deep learning"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13995424"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Bugzz lightyears: To Semantic Segmentation and Bug-yond!",
+  "links": {
+    "self": "https://zenodo.org/api/records/13995425",
+    "self_html": "https://zenodo.org/records/13995425",
+    "preview_html": "https://zenodo.org/records/13995425?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13995425",
+    "self_doi": "https://doi.org/10.5281/zenodo.13995425",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13995425",
+    "reserve_doi": "https://zenodo.org/api/records/13995425/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13995424",
+    "parent_html": "https://zenodo.org/records/13995424",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13995424",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13995424",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13995425/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13995425/sequence/default",
+    "files": "https://zenodo.org/api/records/13995425/files",
+    "media_files": "https://zenodo.org/api/records/13995425/media-files",
+    "archive": "https://zenodo.org/api/records/13995425/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13995425/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13995425/versions/latest",
+    "latest_html": "https://zenodo.org/records/13995425/latest",
+    "versions": "https://zenodo.org/api/records/13995425/versions",
+    "draft": "https://zenodo.org/api/records/13995425/draft",
+    "access_links": "https://zenodo.org/api/records/13995425/access/links",
+    "access_grants": "https://zenodo.org/api/records/13995425/access/grants",
+    "access_users": "https://zenodo.org/api/records/13995425/access/users",
+    "access_request": "https://zenodo.org/api/records/13995425/access/request",
+    "access": "https://zenodo.org/api/records/13995425/access",
+    "communities": "https://zenodo.org/api/records/13995425/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13995425/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13995425/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13995425/file-modification",
+    "requests": "https://zenodo.org/api/records/13995425/requests"
+  },
+  "updated": "2024-10-26T11:12:06.319876+00:00",
+  "recid": "13995425",
+  "revision": 8,
+  "files": [
+    {
+      "id": "75a0f8d0-45a2-4125-851c-08a68fcf5ae9",
+      "key": "Bugzz lightyear.zip",
+      "size": 110941054,
+      "checksum": "md5:db4d08cceebcaa8654398bcf0baacccd",
+      "links": {
+        "self": "https://zenodo.org/api/records/13995425/files/Bugzz lightyear.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1209241"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 12,
+    "unique_downloads": 12,
+    "views": 56,
+    "unique_views": 41,
+    "version_downloads": 12,
+    "version_unique_downloads": 12,
+    "version_unique_views": 41,
+    "version_views": 56
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 110941054,
+    "top_level_files": [
+      {
+        "name": "Bugzz lightyear.zip",
+        "size": 110941054
+      }
+    ],
+    "zip_contents": {
+      "bugzz lightyear.zip": {
+        "total_files": 122,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 122674715,
+        "file_types": {
+          ".jpg": 120
+        },
+        "imaging_file_count": 120,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "bugzz lightyear/raw_images/03c895ab-20241021_165048.jpg",
+          "bugzz lightyear/raw_images/10a7dc00-20241021_165705.jpg",
+          "bugzz lightyear/raw_images/15e1d901-20241021_165917.jpg",
+          "bugzz lightyear/raw_images/1a8127db-20241021_165803.jpg",
+          "bugzz lightyear/raw_images/2bbd4cc4-20241021_165721.jpg",
+          "bugzz lightyear/raw_images/2cb82e2b-20241021_164952.jpg",
+          "bugzz lightyear/raw_images/2d19aa77-20241021_164701.jpg",
+          "bugzz lightyear/raw_images/2f854bab-20241021_170101.jpg",
+          "bugzz lightyear/raw_images/30447849-20241021_164819.jpg",
+          "bugzz lightyear/raw_images/30cabc1d-20241021_165041.jpg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "bugzz lightyear/raw_images/03c895ab-20241021_165048.jpg",
+      "bugzz lightyear/raw_images/10a7dc00-20241021_165705.jpg",
+      "bugzz lightyear/raw_images/15e1d901-20241021_165917.jpg",
+      "bugzz lightyear/raw_images/1a8127db-20241021_165803.jpg",
+      "bugzz lightyear/raw_images/2bbd4cc4-20241021_165721.jpg",
+      "bugzz lightyear/raw_images/2cb82e2b-20241021_164952.jpg",
+      "bugzz lightyear/raw_images/2d19aa77-20241021_164701.jpg",
+      "bugzz lightyear/raw_images/2f854bab-20241021_170101.jpg",
+      "bugzz lightyear/raw_images/30447849-20241021_164819.jpg",
+      "bugzz lightyear/raw_images/30cabc1d-20241021_165041.jpg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:32.555260"
+}

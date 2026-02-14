@@ -1,0 +1,184 @@
+{
+  "created": "2025-09-29T15:22:38.340485+00:00",
+  "modified": "2025-09-29T15:22:38.632424+00:00",
+  "id": 17219542,
+  "conceptrecid": "17219541",
+  "doi": "10.5281/zenodo.17219542",
+  "conceptdoi": "10.5281/zenodo.17219541",
+  "doi_url": "https://doi.org/10.5281/zenodo.17219542",
+  "metadata": {
+    "title": "Indian Diabetic Retinopathy Image Dataset (IDRiD) \u2014 Segmentation, Grading & Localization ZIP Files",
+    "doi": "10.5281/zenodo.17219542",
+    "publication_date": "2025-09-28",
+    "description": "<p>This record contains the original ZIP files of the Indian Diabetic Retinopathy Image Dataset (IDRiD):</p>\n<ul>\n<li>\n<p><code>A. Segmentation.zip</code> &ndash; Original images and groundtruth segmentation masks</p>\n</li>\n<li>\n<p><code>B. Disease Grading.zip</code> &ndash; Fundus images with diabetic retinopathy and macular edema grading labels</p>\n</li>\n<li>\n<p><code>C. Localization.zip</code> &ndash; Fundus images with optic disc and fovea center locations</p>\n</li>\n</ul>\n<p>The original dataset was created and published by Porwal P. et al., IEEE Dataport.&nbsp;<br>The uploader (Tayebeh Kazeminezhad) is not the creator of the dataset and only uploads the files to Zenodo.</p>\n<p>License: CC BY 4.0 (as permitted for redistribution; original license retained)</p>\n<p>Citation for original dataset:<br>Porwal P. et al., Indian Diabetic Retinopathy Image Dataset (IDRiD), IEEE Dataport, 2018.<br>URL: https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kazeminezhad",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "other"
+      }
+    ],
+    "references": [
+      "Porwal, P., Pachade, S., Kamble, R., Kokare, M., Deshmukh, G., Sahasrabuddhe, V., & Sinha, S. Indian Diabetic Retinopathy Image Dataset (IDRiD): A Publicly Available Retinal Fundus Image Database for Diabetic Retinopathy Screening Research. IEEE Dataport. https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17219541"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Indian Diabetic Retinopathy Image Dataset (IDRiD) \u2014 Segmentation, Grading & Localization ZIP Files",
+  "links": {
+    "self": "https://zenodo.org/api/records/17219542",
+    "self_html": "https://zenodo.org/records/17219542",
+    "preview_html": "https://zenodo.org/records/17219542?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17219542",
+    "self_doi": "https://doi.org/10.5281/zenodo.17219542",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17219542",
+    "reserve_doi": "https://zenodo.org/api/records/17219542/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17219541",
+    "parent_html": "https://zenodo.org/records/17219541",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17219541",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17219541",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17219542/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17219542/sequence/default",
+    "files": "https://zenodo.org/api/records/17219542/files",
+    "media_files": "https://zenodo.org/api/records/17219542/media-files",
+    "archive": "https://zenodo.org/api/records/17219542/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17219542/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17219542/versions/latest",
+    "latest_html": "https://zenodo.org/records/17219542/latest",
+    "versions": "https://zenodo.org/api/records/17219542/versions",
+    "draft": "https://zenodo.org/api/records/17219542/draft",
+    "access_links": "https://zenodo.org/api/records/17219542/access/links",
+    "access_grants": "https://zenodo.org/api/records/17219542/access/grants",
+    "access_users": "https://zenodo.org/api/records/17219542/access/users",
+    "access_request": "https://zenodo.org/api/records/17219542/access/request",
+    "access": "https://zenodo.org/api/records/17219542/access",
+    "communities": "https://zenodo.org/api/records/17219542/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17219542/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17219542/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17219542/file-modification",
+    "requests": "https://zenodo.org/api/records/17219542/requests"
+  },
+  "updated": "2025-09-29T15:22:38.632424+00:00",
+  "recid": "17219542",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e8f08590-9773-4bdf-bf87-a6708aa2b8c9",
+      "key": "C. Localization.zip",
+      "size": 212510246,
+      "checksum": "md5:f47bd60acea315ea3fed54e93a01f5b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/17219542/files/C. Localization.zip/content"
+      }
+    },
+    {
+      "id": "cc90856e-f71c-4668-8567-8a8d9a27b377",
+      "key": "A. Segmentation.zip",
+      "size": 584315841,
+      "checksum": "md5:bdf5cd10b8b14d62e1178dda245cff60",
+      "links": {
+        "self": "https://zenodo.org/api/records/17219542/files/A. Segmentation.zip/content"
+      }
+    },
+    {
+      "id": "e939425e-4a64-4b32-97a1-8688e98bb303",
+      "key": "B. Disease Grading.zip",
+      "size": 212405123,
+      "checksum": "md5:b9239a4b956021a1cf0225522f11f58f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17219542/files/B. Disease Grading.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1420844"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 450,
+    "unique_downloads": 340,
+    "views": 494,
+    "unique_views": 469,
+    "version_downloads": 450,
+    "version_unique_downloads": 340,
+    "version_unique_views": 469,
+    "version_views": 494
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1009231210,
+    "top_level_files": [
+      {
+        "name": "C. Localization.zip",
+        "size": 212510246
+      },
+      {
+        "name": "A. Segmentation.zip",
+        "size": 584315841
+      },
+      {
+        "name": "B. Disease Grading.zip",
+        "size": 212405123
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid"
+  ],
+  "_weblinks": [
+    {
+      "url": "https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:38.174316"
+}

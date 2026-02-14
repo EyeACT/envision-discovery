@@ -1,0 +1,191 @@
+{
+  "created": "2023-04-09T08:43:36.027649+00:00",
+  "modified": "2023-12-01T21:20:55.492176+00:00",
+  "id": 7805426,
+  "conceptrecid": "7805425",
+  "doi": "10.5281/zenodo.7805426",
+  "conceptdoi": "10.5281/zenodo.7805425",
+  "doi_url": "https://doi.org/10.5281/zenodo.7805426",
+  "metadata": {
+    "title": "High-field MRI of cerebral organoids",
+    "doi": "10.5281/zenodo.7805426",
+    "publication_date": "2023-04-06",
+    "description": "<p>This dataset allows the reproduction of the results presented in &ldquo;An AI-based segmentation and analysis pipeline for high-field MR monitoring of cerebral organoids&rdquo; [1].</p>\n\n<p>To the best or our knowledge, these are the first MRI images of cerebral organoids. This MRI dataset comprises nine growing wildtype cerebral organoids imaged over the time period of 64 days, resulting in 45 individual samples.&nbsp;The MRI sequences encompass T2*-w and DTI. For details we kindly refer to [1].</p>\n\n<p>Dataset structure:</p>\n\n<ol>\n\t<li>The file data_overview.csv contains one row per image with organoid number and day of differentiation</li>\n\t<li>The raw MRI and DTI data is in MRI_raw_data/</li>\n\t<li>The annotations for organoid segmentation, global cysticity classification and local cyst segmentation are in annotations/</li>\n</ol>\n\n<p>Use the code on GitHub (<a href=\"https://github.com/deiluca/cerebral_organoid_quant_mri\">https://github.com/deiluca/cerebral_organoid_quant_mri</a>) to 1) cut the raw MRI images into one image per organoid 2) to assign the correct organoid numbers (1-9) across all images and 3) to reproduce the results for organoid segmentation, global cysticity classification and local cyst segmentation.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Deininger, Luca",
+        "affiliation": "Karlsruhe Institute of Technoology",
+        "orcid": "0009-0005-5125-6422"
+      },
+      {
+        "name": "Jung-Klawitter, Sabine",
+        "affiliation": "University Children's Hospital Heidelberg",
+        "orcid": "0000-0001-8851-672X"
+      },
+      {
+        "name": "Richter, Petra",
+        "affiliation": "University Children's Hospital Heidelberg"
+      },
+      {
+        "name": "Fischer, Manuel",
+        "affiliation": "University Hospital Heidelberg"
+      },
+      {
+        "name": "Karimian-Jazi, Kianush",
+        "affiliation": "University Hospital Heidelberg",
+        "orcid": "0000-0002-5550-0489"
+      },
+      {
+        "name": "Breckwoldt, Michael",
+        "affiliation": "University Hospital Heidelberg",
+        "orcid": "0000-0002-9980-2390"
+      },
+      {
+        "name": "Bendszus, Martin",
+        "affiliation": "University Hospital Heidelberg"
+      },
+      {
+        "name": "Heiland, Sabine",
+        "affiliation": "University Hospital Heidelberg"
+      },
+      {
+        "name": "Kleesiek, Jens",
+        "affiliation": "University Hospital Essen"
+      },
+      {
+        "name": "Mikut, Ralf",
+        "affiliation": "Karlsruhe Institute of Technoology",
+        "orcid": "0000-0001-9100-5496"
+      },
+      {
+        "name": "Schwarz, Daniel",
+        "affiliation": "University Hospital Heidelberg",
+        "orcid": "0000-0002-9017-8245"
+      }
+    ],
+    "keywords": [
+      "Cerebral organoids",
+      "MRI",
+      "DTI"
+    ],
+    "references": [
+      "[1] Deininger, L., Jung-Klawitter, S., Mikut, R. et al. An AI-based segmentation and analysis pipeline for high-field MR monitoring of cerebral organoids. Sci Rep 13, 21231 (2023). https://doi.org/10.1038/s41598-023-48343-7"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7805425"
+          }
+        }
+      ]
+    }
+  },
+  "title": "High-field MRI of cerebral organoids",
+  "links": {
+    "self": "https://zenodo.org/api/records/7805426",
+    "self_html": "https://zenodo.org/records/7805426",
+    "preview_html": "https://zenodo.org/records/7805426?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7805426",
+    "self_doi": "https://doi.org/10.5281/zenodo.7805426",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7805426",
+    "reserve_doi": "https://zenodo.org/api/records/7805426/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7805425",
+    "parent_html": "https://zenodo.org/records/7805425",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7805425",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7805425",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7805426/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7805426/sequence/default",
+    "files": "https://zenodo.org/api/records/7805426/files",
+    "media_files": "https://zenodo.org/api/records/7805426/media-files",
+    "archive": "https://zenodo.org/api/records/7805426/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7805426/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7805426/versions/latest",
+    "latest_html": "https://zenodo.org/records/7805426/latest",
+    "versions": "https://zenodo.org/api/records/7805426/versions",
+    "draft": "https://zenodo.org/api/records/7805426/draft",
+    "access_links": "https://zenodo.org/api/records/7805426/access/links",
+    "access_grants": "https://zenodo.org/api/records/7805426/access/grants",
+    "access_users": "https://zenodo.org/api/records/7805426/access/users",
+    "access_request": "https://zenodo.org/api/records/7805426/access/request",
+    "access": "https://zenodo.org/api/records/7805426/access",
+    "communities": "https://zenodo.org/api/records/7805426/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7805426/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7805426/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7805426/file-modification",
+    "requests": "https://zenodo.org/api/records/7805426/requests"
+  },
+  "updated": "2023-12-01T21:20:55.492176+00:00",
+  "recid": "7805426",
+  "revision": 5,
+  "files": [
+    {
+      "id": "e39a1ce7-4cda-42cb-a55d-07c19a115443",
+      "key": "data_zenodo.zip",
+      "size": 1077000872,
+      "checksum": "md5:4e67ef3296410f0ea5d3a46fb6e7cc85",
+      "links": {
+        "self": "https://zenodo.org/api/records/7805426/files/data_zenodo.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "524250"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 636,
+    "unique_downloads": 189,
+    "views": 851,
+    "unique_views": 770,
+    "version_downloads": 636,
+    "version_unique_downloads": 189,
+    "version_unique_views": 768,
+    "version_views": 849
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1077000872,
+    "top_level_files": [
+      {
+        "name": "data_zenodo.zip",
+        "size": 1077000872
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/deiluca/cerebral_organoid_quant_mri",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:14.245885"
+}

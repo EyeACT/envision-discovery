@@ -1,0 +1,819 @@
+{
+  "created": "2025-02-20T14:58:49.768482+00:00",
+  "modified": "2025-02-20T14:58:50.747172+00:00",
+  "id": 14900998,
+  "conceptrecid": "14900997",
+  "doi": "10.5281/zenodo.14900998",
+  "conceptdoi": "10.5281/zenodo.14900997",
+  "doi_url": "https://doi.org/10.5281/zenodo.14900998",
+  "metadata": {
+    "title": "AMPERE Summary Plot Movies (2009-Oct)",
+    "doi": "10.5281/zenodo.14900998",
+    "publication_date": "2025-02-20",
+    "description": "<p>2009-Oct AMPERE summary plot movies. See included zenodo_summary_plot_movie_description document for details.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Anderson, Brian J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-2543-0149"
+      },
+      {
+        "name": "Vines, Sarah",
+        "affiliation": "Southwest Research Institute",
+        "orcid": "0000-0002-7515-3285"
+      },
+      {
+        "name": "Waters, Colin",
+        "affiliation": "University of Newcastle Australia",
+        "orcid": "0000-0003-2121-6962"
+      },
+      {
+        "name": "Barnes, Robin J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory"
+      },
+      {
+        "name": "Romeo, Giuseppe",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-0190-3194"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "AMPERE",
+      "ionosphere",
+      "magnetosphere",
+      "convection",
+      "rst",
+      "electrodynamics"
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "ampere"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14900997"
+          }
+        }
+      ]
+    }
+  },
+  "title": "AMPERE Summary Plot Movies (2009-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14900998",
+    "self_html": "https://zenodo.org/records/14900998",
+    "preview_html": "https://zenodo.org/records/14900998?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14900998",
+    "self_doi": "https://doi.org/10.5281/zenodo.14900998",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14900998",
+    "reserve_doi": "https://zenodo.org/api/records/14900998/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14900997",
+    "parent_html": "https://zenodo.org/records/14900997",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14900997",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14900997",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14900998/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14900998/sequence/default",
+    "files": "https://zenodo.org/api/records/14900998/files",
+    "media_files": "https://zenodo.org/api/records/14900998/media-files",
+    "archive": "https://zenodo.org/api/records/14900998/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14900998/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14900998/versions/latest",
+    "latest_html": "https://zenodo.org/records/14900998/latest",
+    "versions": "https://zenodo.org/api/records/14900998/versions",
+    "draft": "https://zenodo.org/api/records/14900998/draft",
+    "access_links": "https://zenodo.org/api/records/14900998/access/links",
+    "access_grants": "https://zenodo.org/api/records/14900998/access/grants",
+    "access_users": "https://zenodo.org/api/records/14900998/access/users",
+    "access_request": "https://zenodo.org/api/records/14900998/access/request",
+    "access": "https://zenodo.org/api/records/14900998/access",
+    "communities": "https://zenodo.org/api/records/14900998/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14900998/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14900998/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14900998/file-modification",
+    "requests": "https://zenodo.org/api/records/14900998/requests"
+  },
+  "updated": "2025-02-20T14:58:50.747172+00:00",
+  "recid": "14900998",
+  "revision": 5,
+  "files": [
+    {
+      "id": "987eed76-ee75-4956-bd1c-ea792038824c",
+      "key": "20091012.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091012.zip/content"
+      }
+    },
+    {
+      "id": "fa08c522-0157-479a-b16c-0f32f93f9cdb",
+      "key": "20091028.zip",
+      "size": 89590995,
+      "checksum": "md5:52111228e62830fd95a12b8c02b8e5fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091028.zip/content"
+      }
+    },
+    {
+      "id": "8ff349fb-4bd1-4918-a108-9e3a674b34ae",
+      "key": "20091010.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091010.zip/content"
+      }
+    },
+    {
+      "id": "ef2aefcd-1ce7-4e98-86a5-3321d1390929",
+      "key": "20091004.zip",
+      "size": 91858182,
+      "checksum": "md5:488d3c7d6e449a53bb09230935d3f154",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091004.zip/content"
+      }
+    },
+    {
+      "id": "8560d74c-944e-42c8-8668-82c28ec4d403",
+      "key": "20091007.zip",
+      "size": 94019180,
+      "checksum": "md5:e715a775092293d36f360d66c14bafe5",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091007.zip/content"
+      }
+    },
+    {
+      "id": "ebb8e13b-59b1-4127-9dc9-bfc5a92d788a",
+      "key": "20091018.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091018.zip/content"
+      }
+    },
+    {
+      "id": "14a75f88-414a-408a-b795-82c4e2d0aefa",
+      "key": "20091003.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091003.zip/content"
+      }
+    },
+    {
+      "id": "b0a2b09f-7c63-402f-8a6c-9cc8217a6da3",
+      "key": "20091026.zip",
+      "size": 87743009,
+      "checksum": "md5:7f6f17bd121f3613c13f5150dbb1dba0",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091026.zip/content"
+      }
+    },
+    {
+      "id": "39cdcee9-6698-4b2c-83b1-47c7f20a6b97",
+      "key": "20091022.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091022.zip/content"
+      }
+    },
+    {
+      "id": "c397e2bb-88cf-4fe4-a578-0497714e310d",
+      "key": "20091017.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091017.zip/content"
+      }
+    },
+    {
+      "id": "92567e4d-53ef-48e5-9197-d11d00754780",
+      "key": "20091027.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091027.zip/content"
+      }
+    },
+    {
+      "id": "049144f0-0890-4944-b832-b9fb562a7066",
+      "key": "20091006.zip",
+      "size": 92454138,
+      "checksum": "md5:327581e5e67727cbf036c44df8a2664f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091006.zip/content"
+      }
+    },
+    {
+      "id": "8ea89648-2814-4f06-9b87-42b3ba255230",
+      "key": "20091021.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091021.zip/content"
+      }
+    },
+    {
+      "id": "1142269b-43e2-4483-ab7a-e2d1ad3da687",
+      "key": "20091013.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091013.zip/content"
+      }
+    },
+    {
+      "id": "2984cb22-f3a7-4f0d-8a0e-ee03e08095d1",
+      "key": "20091016.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091016.zip/content"
+      }
+    },
+    {
+      "id": "021cf626-5ff1-4c4d-87ff-1b0ce678e493",
+      "key": "20091020.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091020.zip/content"
+      }
+    },
+    {
+      "id": "77fe67a4-b913-4e9d-9b73-19bdea85cbc2",
+      "key": "20091025.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091025.zip/content"
+      }
+    },
+    {
+      "id": "0318027c-270a-42c2-93a0-ee6587531fec",
+      "key": "20091002.zip",
+      "size": 54225345,
+      "checksum": "md5:4c28c9c944b808b774c84155d19465d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091002.zip/content"
+      }
+    },
+    {
+      "id": "dc872cd4-1629-41ac-b617-2315606b7a67",
+      "key": "20091009.zip",
+      "size": 91277899,
+      "checksum": "md5:82e89e32bfbf8c312f2dd4f0024027a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091009.zip/content"
+      }
+    },
+    {
+      "id": "3016c8c6-f0f3-4cb2-bd0e-81a158702d88",
+      "key": "20091005.zip",
+      "size": 92525311,
+      "checksum": "md5:6bc9df4a5d62ff60a19202be598eca9b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091005.zip/content"
+      }
+    },
+    {
+      "id": "7a8244bf-c311-46fa-ba69-2238ca8ae025",
+      "key": "20091008.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091008.zip/content"
+      }
+    },
+    {
+      "id": "23bb31ef-0927-4da7-a50e-8575debe0bb6",
+      "key": "20091024.zip",
+      "size": 97634782,
+      "checksum": "md5:e8ba47da2e4790f600e8eaa98103ae77",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091024.zip/content"
+      }
+    },
+    {
+      "id": "f349085f-da5c-4b24-8c9e-a06b851fd9cb",
+      "key": "20091011.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091011.zip/content"
+      }
+    },
+    {
+      "id": "a3ec62d6-c50d-4562-880a-0c9b4d1403d4",
+      "key": "20091014.zip",
+      "size": 91183054,
+      "checksum": "md5:e6dd8766e4f7f9bf37d738a278a42074",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091014.zip/content"
+      }
+    },
+    {
+      "id": "20587c54-3708-4774-8212-807b661d713b",
+      "key": "20091019.zip",
+      "size": 92611018,
+      "checksum": "md5:b1936b618964db029ed8e61a4c80a243",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091019.zip/content"
+      }
+    },
+    {
+      "id": "ecd5124e-f216-43e5-8bee-385788688a2d",
+      "key": "20091015.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091015.zip/content"
+      }
+    },
+    {
+      "id": "5f678f51-0396-4fe8-98b9-c1db6b98d70d",
+      "key": "20091023.zip",
+      "size": 22,
+      "checksum": "md5:76cdb2bad9582d23c1f6f4d868218d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091023.zip/content"
+      }
+    },
+    {
+      "id": "8f4a1e24-dff6-4e0d-8d9c-e90965ac4a68",
+      "key": "zenodo_summary_plot_movie_description_2025_0212.docx",
+      "size": 834170,
+      "checksum": "md5:6cff3f5e749885e6bb32956dfce4a055",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/zenodo_summary_plot_movie_description_2025_0212.docx/content"
+      }
+    },
+    {
+      "id": "b743083c-a82b-462e-8822-62dfcdcfe245",
+      "key": "20091029.zip",
+      "size": 98476199,
+      "checksum": "md5:475301e02361abf54f37d378177ebc09",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091029.zip/content"
+      }
+    },
+    {
+      "id": "d0fb8b3e-4f11-41d9-8763-a5e8230bdda6",
+      "key": "20091030.zip",
+      "size": 86539884,
+      "checksum": "md5:bcffae5177a753a4e175e85d763e5169",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091030.zip/content"
+      }
+    },
+    {
+      "id": "b8254856-0562-4076-9643-b07692fd64da",
+      "key": "20091031.zip",
+      "size": 93436839,
+      "checksum": "md5:47e952547538dd353f60f4a6ff9630d2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14900998/files/20091031.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1224282"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 767,
+    "unique_downloads": 765,
+    "views": 30,
+    "unique_views": 26,
+    "version_downloads": 767,
+    "version_unique_downloads": 765,
+    "version_unique_views": 26,
+    "version_views": 30
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 30,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1253576187,
+    "top_level_files": [
+      {
+        "name": "20091012.zip",
+        "size": 22
+      },
+      {
+        "name": "20091028.zip",
+        "size": 89590995
+      },
+      {
+        "name": "20091010.zip",
+        "size": 22
+      },
+      {
+        "name": "20091004.zip",
+        "size": 91858182
+      },
+      {
+        "name": "20091007.zip",
+        "size": 94019180
+      },
+      {
+        "name": "20091018.zip",
+        "size": 22
+      },
+      {
+        "name": "20091003.zip",
+        "size": 22
+      },
+      {
+        "name": "20091026.zip",
+        "size": 87743009
+      },
+      {
+        "name": "20091022.zip",
+        "size": 22
+      },
+      {
+        "name": "20091017.zip",
+        "size": 22
+      },
+      {
+        "name": "20091027.zip",
+        "size": 22
+      },
+      {
+        "name": "20091006.zip",
+        "size": 92454138
+      },
+      {
+        "name": "20091021.zip",
+        "size": 22
+      },
+      {
+        "name": "20091013.zip",
+        "size": 22
+      },
+      {
+        "name": "20091016.zip",
+        "size": 22
+      },
+      {
+        "name": "20091020.zip",
+        "size": 22
+      },
+      {
+        "name": "20091025.zip",
+        "size": 22
+      },
+      {
+        "name": "20091002.zip",
+        "size": 54225345
+      },
+      {
+        "name": "20091009.zip",
+        "size": 91277899
+      },
+      {
+        "name": "20091005.zip",
+        "size": 92525311
+      },
+      {
+        "name": "20091008.zip",
+        "size": 22
+      },
+      {
+        "name": "20091024.zip",
+        "size": 97634782
+      },
+      {
+        "name": "20091011.zip",
+        "size": 22
+      },
+      {
+        "name": "20091014.zip",
+        "size": 91183054
+      },
+      {
+        "name": "20091019.zip",
+        "size": 92611018
+      },
+      {
+        "name": "20091015.zip",
+        "size": 22
+      },
+      {
+        "name": "20091023.zip",
+        "size": 22
+      },
+      {
+        "name": "zenodo_summary_plot_movie_description_2025_0212.docx",
+        "size": 834170
+      },
+      {
+        "name": "20091029.zip",
+        "size": 98476199
+      },
+      {
+        "name": "20091030.zip",
+        "size": 86539884
+      },
+      {
+        "name": "20091031.zip",
+        "size": 93436839
+      }
+    ],
+    "zip_contents": {
+      "20091004.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 91880045,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091004.k060_m08.north.60.smr.png",
+          "ampere.20091004.k060_m08.south.60.smr.png",
+          "ampere.20091004.k060_m08.south.40.smr.png",
+          "ampere.20091004.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091026.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 87767296,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091026.k060_m08.south.40.smr.png",
+          "ampere.20091026.k060_m08.north.60.smr.png",
+          "ampere.20091026.k060_m08.south.60.smr.png",
+          "ampere.20091026.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091006.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 92474852,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091006.k060_m08.south.60.smr.png",
+          "ampere.20091006.k060_m08.south.40.smr.png",
+          "ampere.20091006.k060_m08.north.60.smr.png",
+          "ampere.20091006.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091002.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 54247363,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091002.k060_m08.south.40.smr.png",
+          "ampere.20091002.k060_m08.north.60.smr.png",
+          "ampere.20091002.k060_m08.south.60.smr.png",
+          "ampere.20091002.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091009.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 91294730,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091009.k060_m08.north.60.smr.png",
+          "ampere.20091009.k060_m08.north.40.smr.png",
+          "ampere.20091009.k060_m08.south.40.smr.png",
+          "ampere.20091009.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091005.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 92547541,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091005.k060_m08.north.60.smr.png",
+          "ampere.20091005.k060_m08.south.40.smr.png",
+          "ampere.20091005.k060_m08.south.60.smr.png",
+          "ampere.20091005.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091024.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 97654758,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091024.k060_m08.south.60.smr.png",
+          "ampere.20091024.k060_m08.south.40.smr.png",
+          "ampere.20091024.k060_m08.north.60.smr.png",
+          "ampere.20091024.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091014.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 91206058,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091014.k060_m08.south.40.smr.png",
+          "ampere.20091014.k060_m08.south.60.smr.png",
+          "ampere.20091014.k060_m08.north.40.smr.png",
+          "ampere.20091014.k060_m08.north.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091019.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 92634311,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091019.k060_m08.north.40.smr.png",
+          "ampere.20091019.k060_m08.south.60.smr.png",
+          "ampere.20091019.k060_m08.south.40.smr.png",
+          "ampere.20091019.k060_m08.north.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091029.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 98497615,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091029.k060_m08.north.60.smr.png",
+          "ampere.20091029.k060_m08.south.60.smr.png",
+          "ampere.20091029.k060_m08.north.40.smr.png",
+          "ampere.20091029.k060_m08.south.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091030.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 86564123,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091030.k060_m08.north.60.smr.png",
+          "ampere.20091030.k060_m08.south.40.smr.png",
+          "ampere.20091030.k060_m08.south.60.smr.png",
+          "ampere.20091030.k060_m08.north.40.smr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "20091031.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 93457590,
+        "file_types": {
+          ".png": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ampere.20091031.k060_m08.north.40.smr.png",
+          "ampere.20091031.k060_m08.south.40.smr.png",
+          "ampere.20091031.k060_m08.north.60.smr.png",
+          "ampere.20091031.k060_m08.south.60.smr.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "ampere.20091004.k060_m08.north.60.smr.png",
+      "ampere.20091004.k060_m08.south.60.smr.png",
+      "ampere.20091004.k060_m08.south.40.smr.png",
+      "ampere.20091004.k060_m08.north.40.smr.png",
+      "ampere.20091026.k060_m08.south.40.smr.png",
+      "ampere.20091026.k060_m08.north.60.smr.png",
+      "ampere.20091026.k060_m08.south.60.smr.png",
+      "ampere.20091026.k060_m08.north.40.smr.png",
+      "ampere.20091006.k060_m08.south.60.smr.png",
+      "ampere.20091006.k060_m08.south.40.smr.png",
+      "ampere.20091006.k060_m08.north.60.smr.png",
+      "ampere.20091006.k060_m08.north.40.smr.png",
+      "ampere.20091002.k060_m08.south.40.smr.png",
+      "ampere.20091002.k060_m08.north.60.smr.png",
+      "ampere.20091002.k060_m08.south.60.smr.png",
+      "ampere.20091002.k060_m08.north.40.smr.png",
+      "ampere.20091009.k060_m08.north.60.smr.png",
+      "ampere.20091009.k060_m08.north.40.smr.png",
+      "ampere.20091009.k060_m08.south.40.smr.png",
+      "ampere.20091009.k060_m08.south.60.smr.png",
+      "ampere.20091005.k060_m08.north.60.smr.png",
+      "ampere.20091005.k060_m08.south.40.smr.png",
+      "ampere.20091005.k060_m08.south.60.smr.png",
+      "ampere.20091005.k060_m08.north.40.smr.png",
+      "ampere.20091024.k060_m08.south.60.smr.png",
+      "ampere.20091024.k060_m08.south.40.smr.png",
+      "ampere.20091024.k060_m08.north.60.smr.png",
+      "ampere.20091024.k060_m08.north.40.smr.png",
+      "ampere.20091014.k060_m08.south.40.smr.png",
+      "ampere.20091014.k060_m08.south.60.smr.png",
+      "ampere.20091014.k060_m08.north.40.smr.png",
+      "ampere.20091014.k060_m08.north.60.smr.png",
+      "ampere.20091019.k060_m08.north.40.smr.png",
+      "ampere.20091019.k060_m08.south.60.smr.png",
+      "ampere.20091019.k060_m08.south.40.smr.png",
+      "ampere.20091019.k060_m08.north.60.smr.png",
+      "ampere.20091029.k060_m08.north.60.smr.png",
+      "ampere.20091029.k060_m08.south.60.smr.png",
+      "ampere.20091029.k060_m08.north.40.smr.png",
+      "ampere.20091029.k060_m08.south.40.smr.png",
+      "ampere.20091030.k060_m08.north.60.smr.png",
+      "ampere.20091030.k060_m08.south.40.smr.png",
+      "ampere.20091030.k060_m08.south.60.smr.png",
+      "ampere.20091030.k060_m08.north.40.smr.png",
+      "ampere.20091031.k060_m08.north.40.smr.png",
+      "ampere.20091031.k060_m08.south.40.smr.png",
+      "ampere.20091031.k060_m08.north.60.smr.png",
+      "ampere.20091031.k060_m08.south.60.smr.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:33.112437"
+}

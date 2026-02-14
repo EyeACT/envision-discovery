@@ -1,0 +1,154 @@
+{
+  "created": "2022-05-29T15:29:04.717245+00:00",
+  "modified": "2022-06-08T13:53:29.247001+00:00",
+  "id": 6590774,
+  "conceptrecid": "6590773",
+  "doi": "10.5281/zenodo.6590774",
+  "conceptdoi": "10.5281/zenodo.6590773",
+  "doi_url": "https://doi.org/10.5281/zenodo.6590774",
+  "metadata": {
+    "title": "Dataset TrainBatch2 for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM'22)",
+    "doi": "10.5281/zenodo.6590774",
+    "publication_date": "2022-05-29",
+    "description": "<p>[Attention]: ATM_164_0000.nii.gz has misaligned label to CT image, please discard this case!</p>\n\n<p>Dataset for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM&#39;22)</p>\n\n<p>This is the&nbsp;TrainBatch2.&nbsp;</p>\n\n<p>If you use&nbsp;this dataset in your research, you must cite the papers in the References below !!!</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Minghui Zhang",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China",
+        "orcid": "0000-0001-9057-6959"
+      },
+      {
+        "name": "Yangqian Wu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Hanxiao Zhang",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Weihao Yu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Yun Gu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      }
+    ],
+    "references": [
+      "Zhang M, Yu X, Zhang H, et al. FDA: Feature Decomposition and Aggregation for Robust Airway Segmentation[M]//Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health. Springer, Cham, 2021: 25-34.",
+      "Zheng H, Qin Y, Gu Y, et al. Alleviating class-wise gradient imbalance for pulmonary airway segmentation[J]. IEEE Transactions on Medical Imaging, 2021, 40(9): 2452-2462.",
+      "Yu W, Zheng H, Zhang M, et al. BREAK: Bronchi Reconstruction by gEodesic transformation And sKeleton embedding[C]//2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI). IEEE, 2022: 1-5.",
+      "Qin Y, Chen M, Zheng H, et al. Airwaynet: a voxel-connectivity aware approach for accurate airway segmentation using convolutional neural networks[C]//International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2019: 212-220."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6590773"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset TrainBatch2 for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM'22)",
+  "links": {
+    "self": "https://zenodo.org/api/records/6590774",
+    "self_html": "https://zenodo.org/records/6590774",
+    "preview_html": "https://zenodo.org/records/6590774?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6590774",
+    "self_doi": "https://doi.org/10.5281/zenodo.6590774",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6590774",
+    "reserve_doi": "https://zenodo.org/api/records/6590774/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6590773",
+    "parent_html": "https://zenodo.org/records/6590773",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6590773",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6590773",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6590774/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6590774/sequence/default",
+    "files": "https://zenodo.org/api/records/6590774/files",
+    "media_files": "https://zenodo.org/api/records/6590774/media-files",
+    "archive": "https://zenodo.org/api/records/6590774/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6590774/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6590774/versions/latest",
+    "latest_html": "https://zenodo.org/records/6590774/latest",
+    "versions": "https://zenodo.org/api/records/6590774/versions",
+    "draft": "https://zenodo.org/api/records/6590774/draft",
+    "access_links": "https://zenodo.org/api/records/6590774/access/links",
+    "access_grants": "https://zenodo.org/api/records/6590774/access/grants",
+    "access_users": "https://zenodo.org/api/records/6590774/access/users",
+    "access_request": "https://zenodo.org/api/records/6590774/access/request",
+    "access": "https://zenodo.org/api/records/6590774/access",
+    "communities": "https://zenodo.org/api/records/6590774/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6590774/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6590774/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6590774/file-modification",
+    "requests": "https://zenodo.org/api/records/6590774/requests"
+  },
+  "updated": "2022-06-08T13:53:29.247001+00:00",
+  "recid": "6590774",
+  "revision": 3,
+  "files": [
+    {
+      "id": "adf2adb8-4690-4eaa-85aa-28297a133ef7",
+      "key": "TrainBatch2.rar",
+      "size": 27477793216,
+      "checksum": "md5:8873849bbdeb9b50c62be98c005b8972",
+      "links": {
+        "self": "https://zenodo.org/api/records/6590774/files/TrainBatch2.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "340456"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2576,
+    "unique_downloads": 652,
+    "views": 1642,
+    "unique_views": 1499,
+    "version_downloads": 2574,
+    "version_unique_downloads": 650,
+    "version_unique_views": 1496,
+    "version_views": 1639
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 27477793216,
+    "top_level_files": [
+      {
+        "name": "TrainBatch2.rar",
+        "size": 27477793216
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:51.258682"
+}

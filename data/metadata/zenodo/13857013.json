@@ -1,0 +1,160 @@
+{
+  "created": "2024-09-29T15:47:53.186834+00:00",
+  "modified": "2024-10-03T12:13:24.869303+00:00",
+  "id": 13857013,
+  "conceptrecid": "13857012",
+  "doi": "10.5281/zenodo.13857013",
+  "conceptdoi": "10.5281/zenodo.13857012",
+  "doi_url": "https://doi.org/10.5281/zenodo.13857013",
+  "metadata": {
+    "title": "High-Capacity Mesoporous Silica Nanocarriers of siRNA for Applications in Retinal Delivery",
+    "doi": "10.5281/zenodo.13857013",
+    "publication_date": "2023-02-01",
+    "description": "<p>The main cause of subretinal neovascularisation in wet age-related macular degeneration (AMD) is an abnormal expression in the retinal pigment epithelium (RPE) of the vascular endothelial growth factor (VEGF). Current approaches for the treatment of AMD present considerable issues that could be overcome by encapsulating anti-VEGF drugs in suitable nanocarriers, thus providing better penetration, higher retention times, and sustained release. In this work, the ability of large pore mesoporous silica nanoparticles (LP-MSNs) to transport and protect nucleic acid molecules is exploited to develop an innovative LP-MSN-based nanosystem for the topical administration of anti-VEGF siRNA molecules to RPE cells. siRNA is loaded into LP-MSN mesopores, while the external surface of the nanodevices is functionalised with polyethylenimine (PEI) chains that allow the controlled release of siRNA and promote endosomal escape to facilitate cytosolic delivery of the cargo. The successful results obtained for VEGF silencing in ARPE-19 RPE cells demonstrate that the designed nanodevice is suitable as an siRNA transporter.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ultimo, Amelia",
+        "affiliation": null
+      },
+      {
+        "name": "Orzaez, Mar",
+        "affiliation": null
+      },
+      {
+        "name": "Santos-Martinez, Maria",
+        "affiliation": null
+      },
+      {
+        "name": "Martinez-Manez, Ramon",
+        "affiliation": null
+      },
+      {
+        "name": "Marcos, Maria",
+        "affiliation": null
+      },
+      {
+        "name": "Sancen\u00f3n, Felix",
+        "affiliation": null
+      },
+      {
+        "name": "Ruiz-Hern\u00e1ndez, Eduardo",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "nanofacts"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13857012"
+          }
+        }
+      ]
+    }
+  },
+  "title": "High-Capacity Mesoporous Silica Nanocarriers of siRNA for Applications in Retinal Delivery",
+  "links": {
+    "self": "https://zenodo.org/api/records/13857013",
+    "self_html": "https://zenodo.org/records/13857013",
+    "preview_html": "https://zenodo.org/records/13857013?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13857013",
+    "self_doi": "https://doi.org/10.5281/zenodo.13857013",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13857013",
+    "reserve_doi": "https://zenodo.org/api/records/13857013/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13857012",
+    "parent_html": "https://zenodo.org/records/13857012",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13857012",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13857012",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13857013/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13857013/sequence/default",
+    "files": "https://zenodo.org/api/records/13857013/files",
+    "media_files": "https://zenodo.org/api/records/13857013/media-files",
+    "archive": "https://zenodo.org/api/records/13857013/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13857013/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13857013/versions/latest",
+    "latest_html": "https://zenodo.org/records/13857013/latest",
+    "versions": "https://zenodo.org/api/records/13857013/versions",
+    "draft": "https://zenodo.org/api/records/13857013/draft",
+    "access_links": "https://zenodo.org/api/records/13857013/access/links",
+    "access_grants": "https://zenodo.org/api/records/13857013/access/grants",
+    "access_users": "https://zenodo.org/api/records/13857013/access/users",
+    "access_request": "https://zenodo.org/api/records/13857013/access/request",
+    "access": "https://zenodo.org/api/records/13857013/access",
+    "communities": "https://zenodo.org/api/records/13857013/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13857013/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13857013/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13857013/file-modification",
+    "requests": "https://zenodo.org/api/records/13857013/requests"
+  },
+  "updated": "2024-10-03T12:13:24.869303+00:00",
+  "recid": "13857013",
+  "revision": 6,
+  "files": [
+    {
+      "id": "0fb38e4d-63ae-4bd9-9e8b-daacaebe241c",
+      "key": "Ultimo, Int J Mol Sci 2023.zip",
+      "size": 1065616229,
+      "checksum": "md5:5f052412a9ada0e37c259d62ef2c994b",
+      "links": {
+        "self": "https://zenodo.org/api/records/13857013/files/Ultimo, Int J Mol Sci 2023.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "79009"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 134,
+    "unique_downloads": 134,
+    "views": 87,
+    "unique_views": 84,
+    "version_downloads": 134,
+    "version_unique_downloads": 134,
+    "version_unique_views": 84,
+    "version_views": 87
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1065616229,
+    "top_level_files": [
+      {
+        "name": "Ultimo, Int J Mol Sci 2023.zip",
+        "size": 1065616229
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:44.819511"
+}

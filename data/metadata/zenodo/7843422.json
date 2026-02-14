@@ -1,0 +1,166 @@
+{
+  "created": "2023-04-18T18:41:50.332699+00:00",
+  "modified": "2023-04-19T02:26:59.644605+00:00",
+  "id": 7843422,
+  "conceptrecid": "7843421",
+  "doi": "10.5061/dryad.zcrjdfngp",
+  "doi_url": "https://doi.org/10.5061/dryad.zcrjdfngp",
+  "metadata": {
+    "title": "Data from: Behavior shapes retinal motion statistics during natural locomotion",
+    "doi": "10.5061/dryad.zcrjdfngp",
+    "publication_date": "2023-04-18",
+    "description": "<p>Walking through an environment generates retinal motion, which humans rely on to perform a variety of visual tasks. Retinal motion patterns are determined by an interconnected set of factors, including gaze location, gaze stabilization, the structure of the environment, and the walker's goals. The characteristics of these motion signals have important consequences for neural organization and behavior. However, to date, there are no empirical <em>in situ</em> measurements of how combined eye and body movements interact with real 3D environments to shape the statistics of retinal motion signals. Here, we collect measurements of the eyes, the body, and the 3D environment during locomotion. We describe properties of the resulting retinal motion patterns. We explain how these patterns are shaped by gaze location in the world, as well as by behavior, and how they may provide a template for the way motion sensitivity and receptive field properties vary across the visual field.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hayhoe, Mary",
+        "affiliation": "The University of Texas at Austin",
+        "orcid": "0000-0002-6671-5207"
+      }
+    ],
+    "keywords": [
+      "retinal motion statistics",
+      "natural environments",
+      "Eye movements",
+      "locomotion"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pcbi.1009575",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.7055548",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7843421"
+          }
+        }
+      ]
+    },
+    "notes": "<p>.mat files: MATLAB, alternatives: Python + scipy.io.loadmat, or GNU Octvate can be used to access data</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: R01 EY05729</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: T32 LM012414</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: U01 NS116377</p>"
+  },
+  "title": "Data from: Behavior shapes retinal motion statistics during natural locomotion",
+  "links": {
+    "self": "https://zenodo.org/api/records/7843422",
+    "self_html": "https://zenodo.org/records/7843422",
+    "preview_html": "https://zenodo.org/records/7843422?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.zcrjdfngp",
+    "self_doi": "https://doi.org/10.5061/dryad.zcrjdfngp",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.zcrjdfngp",
+    "reserve_doi": "https://zenodo.org/api/records/7843422/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7843421",
+    "parent_html": "https://zenodo.org/records/7843421",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7843422/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7843422/sequence/default",
+    "files": "https://zenodo.org/api/records/7843422/files",
+    "media_files": "https://zenodo.org/api/records/7843422/media-files",
+    "archive": "https://zenodo.org/api/records/7843422/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7843422/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7843422/versions/latest",
+    "latest_html": "https://zenodo.org/records/7843422/latest",
+    "versions": "https://zenodo.org/api/records/7843422/versions",
+    "draft": "https://zenodo.org/api/records/7843422/draft",
+    "access_links": "https://zenodo.org/api/records/7843422/access/links",
+    "access_grants": "https://zenodo.org/api/records/7843422/access/grants",
+    "access_users": "https://zenodo.org/api/records/7843422/access/users",
+    "access_request": "https://zenodo.org/api/records/7843422/access/request",
+    "access": "https://zenodo.org/api/records/7843422/access",
+    "communities": "https://zenodo.org/api/records/7843422/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7843422/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7843422/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7843422/file-modification",
+    "requests": "https://zenodo.org/api/records/7843422/requests"
+  },
+  "updated": "2023-04-19T02:26:59.644605+00:00",
+  "recid": "7843422",
+  "revision": 2,
+  "files": [
+    {
+      "id": "36e2c7c5-01f3-40d6-9209-b8c26d05249d",
+      "key": "README",
+      "size": 4527,
+      "checksum": "md5:912485a4af68aa9cffa634eb57249966",
+      "links": {
+        "self": "https://zenodo.org/api/records/7843422/files/README/content"
+      }
+    },
+    {
+      "id": "c978285a-3c5e-45c3-994a-49553c3fd414",
+      "key": "upload_package_dryad.zip",
+      "size": 13534409168,
+      "checksum": "md5:7e8afad2f131cc87df5eff56c3cb6f45",
+      "links": {
+        "self": "https://zenodo.org/api/records/7843422/files/upload_package_dryad.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 61,
+    "unique_downloads": 60,
+    "views": 86,
+    "unique_views": 85,
+    "version_downloads": 61,
+    "version_unique_downloads": 60,
+    "version_unique_views": 85,
+    "version_views": 86
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 13534409168,
+    "top_level_files": [
+      {
+        "name": "README",
+        "size": 4527
+      },
+      {
+        "name": "upload_package_dryad.zip",
+        "size": 13534409168
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:55.174565"
+}

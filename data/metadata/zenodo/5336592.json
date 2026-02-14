@@ -1,0 +1,156 @@
+{
+  "created": "2021-08-30T11:55:21.274374+00:00",
+  "modified": "2021-08-31T01:48:30.920067+00:00",
+  "id": 5336592,
+  "conceptrecid": "5336591",
+  "doi": "10.5281/zenodo.5336592",
+  "conceptdoi": "10.5281/zenodo.5336591",
+  "doi_url": "https://doi.org/10.5281/zenodo.5336592",
+  "metadata": {
+    "title": "RibSeg Dataset and Strong Point Cloud Baselines for Rib Segmentation from CT Scans",
+    "doi": "10.5281/zenodo.5336592",
+    "publication_date": "2021-08-30",
+    "description": "<p>Manual rib inspections in computed tomography (CT) scans are clinically critical but labor-intensive, as 24 ribs are typically elongated and oblique in 3D volumes. Automatic rib segmentation methods can speed up the process through rib measurement and visualization. However, prior arts mostly use in-house labeled datasets that are publicly unavailable and work on dense 3D volumes that are computationally inefficient. To address these issues, we develop a labeled rib segmentation benchmark, named RibSeg, including 490 CT scans (11,719 individual ribs) from a public dataset. For ground truth generation, we used existing morphology-based algorithms and manually refined its results. Then, considering the sparsity of ribs in 3D volumes, we thresholded and sampled sparse voxels from the input and designed a point cloud-based baseline method for rib segmentation. The proposed method achieves state-of-the-art segmentation performance (Dice<span class=\"math-tex\">\\(\\approx95\\%\\)</span>) with significant efficiency (<span class=\"math-tex\">\\(10\\sim40\\times\\)</span>&nbsp;faster than prior arts). The RibSeg dataset, code, and model in PyTorch are available at <a href=\"https://github.com/M3DV/RibSeg\">https://github.com/M3DV/RibSeg</a>.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Note:</strong>&nbsp;This repository provides rib segmentation (&quot;RibFrac31-rib-seg.nii.gz&quot;)&nbsp;and centerline&nbsp;(&quot;RibFrac31-rib-cl.nii.gz&quot;) <em>annotations</em> for 490 cases in RibFrac dataset. Please&nbsp;download the corresponding&nbsp;CT <em>images&nbsp;</em>(&quot;RibFrac31-image.nii.gz&quot;) at <a href=\"https://ribfrac.grand-challenge.org/\">https://ribfrac.grand-challenge.org/</a> (1-click registration is needed via <em>&quot;Join&quot;</em>).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jiancheng Yang",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Shixuan Gu",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Donglai Wei",
+        "affiliation": "Harvard University"
+      },
+      {
+        "name": "Hanspeter Pfister",
+        "affiliation": "Harvard University"
+      },
+      {
+        "name": "Bingbing Ni",
+        "affiliation": "Shanghai Jiao Tong University"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5336591"
+          }
+        }
+      ]
+    }
+  },
+  "title": "RibSeg Dataset and Strong Point Cloud Baselines for Rib Segmentation from CT Scans",
+  "links": {
+    "self": "https://zenodo.org/api/records/5336592",
+    "self_html": "https://zenodo.org/records/5336592",
+    "preview_html": "https://zenodo.org/records/5336592?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5336592",
+    "self_doi": "https://doi.org/10.5281/zenodo.5336592",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5336592",
+    "reserve_doi": "https://zenodo.org/api/records/5336592/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5336591",
+    "parent_html": "https://zenodo.org/records/5336591",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5336591",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5336591",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5336592/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5336592/sequence/default",
+    "files": "https://zenodo.org/api/records/5336592/files",
+    "media_files": "https://zenodo.org/api/records/5336592/media-files",
+    "archive": "https://zenodo.org/api/records/5336592/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5336592/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5336592/versions/latest",
+    "latest_html": "https://zenodo.org/records/5336592/latest",
+    "versions": "https://zenodo.org/api/records/5336592/versions",
+    "draft": "https://zenodo.org/api/records/5336592/draft",
+    "access_links": "https://zenodo.org/api/records/5336592/access/links",
+    "access_grants": "https://zenodo.org/api/records/5336592/access/grants",
+    "access_users": "https://zenodo.org/api/records/5336592/access/users",
+    "access_request": "https://zenodo.org/api/records/5336592/access/request",
+    "access": "https://zenodo.org/api/records/5336592/access",
+    "communities": "https://zenodo.org/api/records/5336592/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5336592/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5336592/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5336592/file-modification",
+    "requests": "https://zenodo.org/api/records/5336592/requests"
+  },
+  "updated": "2021-08-31T01:48:30.920067+00:00",
+  "recid": "5336592",
+  "revision": 4,
+  "files": [
+    {
+      "id": "fe4ebb69-09b0-4067-8228-4d3a3bfa9528",
+      "key": "RibSeg_490_nii.zip",
+      "size": 123107239,
+      "checksum": "md5:e1f503d407d474fda54e1e95f686dd3b",
+      "links": {
+        "self": "https://zenodo.org/api/records/5336592/files/RibSeg_490_nii.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "103648"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 883,
+    "unique_downloads": 705,
+    "views": 2519,
+    "unique_views": 2203,
+    "version_downloads": 878,
+    "version_unique_downloads": 701,
+    "version_unique_views": 2186,
+    "version_views": 2498
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 123107239,
+    "top_level_files": [
+      {
+        "name": "RibSeg_490_nii.zip",
+        "size": 123107239
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/M3DV/RibSeg",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://ribfrac.grand-challenge.org/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:03.392658"
+}

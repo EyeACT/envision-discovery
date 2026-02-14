@@ -1,0 +1,155 @@
+{
+  "created": "2022-05-29T15:30:21.392858+00:00",
+  "modified": "2023-03-17T02:42:57.931003+00:00",
+  "id": 6590026,
+  "conceptrecid": "6590025",
+  "doi": "10.5281/zenodo.6590026",
+  "conceptdoi": "10.5281/zenodo.6590025",
+  "doi_url": "https://doi.org/10.5281/zenodo.6590026",
+  "metadata": {
+    "title": "Dataset Validation Images for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM'22)",
+    "doi": "10.5281/zenodo.6590026",
+    "publication_date": "2022-05-28",
+    "description": "<p>Dataset for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM&#39;22)</p>\n\n<p>This is the&nbsp;Validation Image part.&nbsp;</p>\n\n<p>If you use&nbsp;this dataset in your research, you must cite the papers in the References below !!!</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Minghui Zhang",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China",
+        "orcid": "0000-0001-9057-6959"
+      },
+      {
+        "name": "Yangqian Wu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Hanxiao Zhang",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Weihao Yu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      },
+      {
+        "name": "Yun Gu",
+        "affiliation": "Institute of Medical Robotics, Shanghai Jiao Tong University, Shanghai, China"
+      }
+    ],
+    "references": [
+      "Zhang M, Wu Y, Zhang H, et al. Multi-site, Multi-domain Airway Tree Modeling (ATM'22): A Public Benchmark for Pulmonary Airway Segmentation[J]. arXiv preprint arXiv:2303.05745, 2023.",
+      "Zhang M, Zhang H, Yang G Z, et al. CFDA: Collaborative Feature Disentanglement and Augmentation for Pulmonary Airway Tree Modeling of COVID-19 CTs[C]//Medical Image Computing and Computer Assisted Intervention\u2013MICCAI 2022: 25th International Conference, Singapore, September 18\u201322, 2022, Proceedings, Part I. Cham: Springer Nature Switzerland, 2022: 506-516.",
+      "Zheng H, Qin Y, Gu Y, et al. Alleviating class-wise gradient imbalance for pulmonary airway segmentation[J]. IEEE Transactions on Medical Imaging, 2021, 40(9): 2452-2462.",
+      "Yu W, Zheng H, Zhang M, et al. BREAK: Bronchi Reconstruction by gEodesic transformation And sKeleton embedding[C]//2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI). IEEE, 2022: 1-5.",
+      "Qin Y, Chen M, Zheng H, et al. Airwaynet: a voxel-connectivity aware approach for accurate airway segmentation using convolutional neural networks[C]//International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2019: 212-220."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6590025"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset Validation Images for the MICCAI-2022-Challenge: Airway Tree Modeling (ATM'22)",
+  "links": {
+    "self": "https://zenodo.org/api/records/6590026",
+    "self_html": "https://zenodo.org/records/6590026",
+    "preview_html": "https://zenodo.org/records/6590026?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6590026",
+    "self_doi": "https://doi.org/10.5281/zenodo.6590026",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6590026",
+    "reserve_doi": "https://zenodo.org/api/records/6590026/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6590025",
+    "parent_html": "https://zenodo.org/records/6590025",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6590025",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6590025",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6590026/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6590026/sequence/default",
+    "files": "https://zenodo.org/api/records/6590026/files",
+    "media_files": "https://zenodo.org/api/records/6590026/media-files",
+    "archive": "https://zenodo.org/api/records/6590026/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6590026/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6590026/versions/latest",
+    "latest_html": "https://zenodo.org/records/6590026/latest",
+    "versions": "https://zenodo.org/api/records/6590026/versions",
+    "draft": "https://zenodo.org/api/records/6590026/draft",
+    "access_links": "https://zenodo.org/api/records/6590026/access/links",
+    "access_grants": "https://zenodo.org/api/records/6590026/access/grants",
+    "access_users": "https://zenodo.org/api/records/6590026/access/users",
+    "access_request": "https://zenodo.org/api/records/6590026/access/request",
+    "access": "https://zenodo.org/api/records/6590026/access",
+    "communities": "https://zenodo.org/api/records/6590026/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6590026/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6590026/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6590026/file-modification",
+    "requests": "https://zenodo.org/api/records/6590026/requests"
+  },
+  "updated": "2023-03-17T02:42:57.931003+00:00",
+  "recid": "6590026",
+  "revision": 3,
+  "files": [
+    {
+      "id": "127100da-2d7c-4cdb-929f-8fb0ea70b929",
+      "key": "imagesVal.rar",
+      "size": 8757257864,
+      "checksum": "md5:b9df4b732e2db0f0035001b3a505b750",
+      "links": {
+        "self": "https://zenodo.org/api/records/6590026/files/imagesVal.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "340456"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2492,
+    "unique_downloads": 1127,
+    "views": 1726,
+    "unique_views": 1613,
+    "version_downloads": 2491,
+    "version_unique_downloads": 1126,
+    "version_unique_views": 1608,
+    "version_views": 1721
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8757257864,
+    "top_level_files": [
+      {
+        "name": "imagesVal.rar",
+        "size": 8757257864
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:27.747252"
+}

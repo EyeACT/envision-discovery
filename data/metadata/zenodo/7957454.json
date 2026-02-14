@@ -1,0 +1,152 @@
+{
+  "created": "2023-05-26T14:46:29.440227+00:00",
+  "modified": "2023-06-15T14:26:53.193945+00:00",
+  "id": 7957454,
+  "conceptrecid": "7957453",
+  "doi": "10.5281/zenodo.7957454",
+  "conceptdoi": "10.5281/zenodo.7957453",
+  "doi_url": "https://doi.org/10.5281/zenodo.7957454",
+  "metadata": {
+    "title": "Retina OCT glaucoma",
+    "doi": "10.5281/zenodo.7957454",
+    "publication_date": "2023-05-22",
+    "description": "<p>This data set is part of the public development data for&nbsp;the&nbsp;<a href=\"http://auc23.grand-challenge.org/\">2023 Automated Universal Classification Challenge</a> (AUC23).&nbsp;The data set&nbsp;was previously introduced and described by&nbsp;<a href=\"https://zenodo.org/record/1481223#.ZGtYY3ZBzdl\">Ishikawa, H. (2018)</a>&nbsp;and concerns&nbsp;the classification of&nbsp;eyes as healthy or glaucomatous from optical coherence tomography&nbsp;(OCT) volumes of the optic nerve head. Data was&nbsp;restructured in compliance with the&nbsp;<a href=\"https://auc23.grand-challenge.org/\">AUC23</a>&nbsp;challenge format, and no images or patient information were added. The data set consists of 884 OCT scans.</p>\n\n<p>Images are 3D tensors:</p>\n\n<ul>\n\t<li>0: 3D OCT volume&nbsp;centered on the&nbsp;optic nerve head</li>\n</ul>\n\n<p>Classification labels:</p>\n\n<ul>\n\t<li>0: Normal</li>\n\t<li>1: Primary open angle glaucoma</li>\n</ul>\n\n<p>Folder structure:</p>\n\n<p>imagesTr (root folder with all patients and studies)<br>\n&nbsp; &nbsp; \u251c\u2500\u2500 POAG_0000_0000.mha &nbsp;(OCT volume for&nbsp;study 0000)<br>\n&nbsp;&nbsp; &nbsp;\u251c\u2500\u2500 POAG_0000_0001.mha &nbsp;(OCT volume for&nbsp;study 0001)<br>\n&nbsp; &nbsp; \u251c\u2500\u2500&nbsp;...</p>\n\n<p>Please cite the following article if you are using the <a href=\"https://zenodo.org/record/1481223#.ZGtYY3ZBzdl\">OCT volumes for glaucoma detection dataset</a>:</p>\n\n<pre><code>Ishikawa, Hiroshi. (2018). OCT volumes for glaucoma detection (1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1481223</code></pre>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Alves, Natalia",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0002-7034-0137"
+      },
+      {
+        "name": "Boulogne, Luuk",
+        "affiliation": "Radboud University Medical Center"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1481223",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Ishikawa, Hiroshi. (2018). OCT volumes for glaucoma detection (1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1481223"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7957453"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Retina OCT glaucoma",
+  "links": {
+    "self": "https://zenodo.org/api/records/7957454",
+    "self_html": "https://zenodo.org/records/7957454",
+    "preview_html": "https://zenodo.org/records/7957454?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7957454",
+    "self_doi": "https://doi.org/10.5281/zenodo.7957454",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7957454",
+    "reserve_doi": "https://zenodo.org/api/records/7957454/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7957453",
+    "parent_html": "https://zenodo.org/records/7957453",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7957453",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7957453",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7957454/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7957454/sequence/default",
+    "files": "https://zenodo.org/api/records/7957454/files",
+    "media_files": "https://zenodo.org/api/records/7957454/media-files",
+    "archive": "https://zenodo.org/api/records/7957454/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7957454/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7957454/versions/latest",
+    "latest_html": "https://zenodo.org/records/7957454/latest",
+    "versions": "https://zenodo.org/api/records/7957454/versions",
+    "draft": "https://zenodo.org/api/records/7957454/draft",
+    "access_links": "https://zenodo.org/api/records/7957454/access/links",
+    "access_grants": "https://zenodo.org/api/records/7957454/access/grants",
+    "access_users": "https://zenodo.org/api/records/7957454/access/users",
+    "access_request": "https://zenodo.org/api/records/7957454/access/request",
+    "access": "https://zenodo.org/api/records/7957454/access",
+    "communities": "https://zenodo.org/api/records/7957454/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7957454/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7957454/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7957454/file-modification",
+    "requests": "https://zenodo.org/api/records/7957454/requests"
+  },
+  "updated": "2023-06-15T14:26:53.193945+00:00",
+  "recid": "7957454",
+  "revision": 6,
+  "files": [
+    {
+      "id": "07cd2d61-0dbd-47e7-ba9c-9516483d77bf",
+      "key": "retina-oct-glaucoma.zip",
+      "size": 376357613,
+      "checksum": "md5:8a6a70c15955336719d63cd9f3460ec6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7957454/files/retina-oct-glaucoma.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "548238"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 219,
+    "unique_downloads": 184,
+    "views": 739,
+    "unique_views": 643,
+    "version_downloads": 219,
+    "version_unique_downloads": 184,
+    "version_unique_views": 637,
+    "version_views": 732
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 376357613,
+    "top_level_files": [
+      {
+        "name": "retina-oct-glaucoma.zip",
+        "size": 376357613
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.1481223",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:34.746062"
+}

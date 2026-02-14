@@ -1,0 +1,145 @@
+{
+  "created": "2021-12-27T15:07:20.604972+00:00",
+  "modified": "2021-12-28T15:01:38.184489+00:00",
+  "id": 5802402,
+  "conceptrecid": "5802401",
+  "doi": "10.5281/zenodo.5802402",
+  "conceptdoi": "10.5281/zenodo.5802401",
+  "doi_url": "https://doi.org/10.5281/zenodo.5802402",
+  "metadata": {
+    "title": "Genoa Flooding | 9 Oct 2014 | Meso-NH, MOLOCH Ensemble Reforecasts",
+    "doi": "10.5281/zenodo.5802402",
+    "publication_date": "2021-12-27",
+    "description": "<p>Genoa Flooding | 9 October 2014</p>\n\n<p>Ensemble-based reforecasts using the Meso-NH and MOLOCH models</p>\n\n<p>Variable: accumulated precipitation (mm/1-hour)</p>\n\n<p>Starting dates: 2014/10/07 00 UTC, 2014/10/07 12 UTC, 2014/10/08 00 UTC, 2014/10/08 12 UTC</p>\n\n<p>Ending date: 2014/10/10 00 UTC</p>\n\n<p>Acknowledgment is made for the use of ECMWF&rsquo;s computing and archive facilities within the framework of the SPITCAPE Special Projects during the years 2016-2018 and 2019-2021.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Capecchi, Valerio",
+        "affiliation": "LaMMA",
+        "orcid": "0000-0003-3168-3310"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5802401"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Genoa Flooding | 9 Oct 2014 | Meso-NH, MOLOCH Ensemble Reforecasts",
+  "links": {
+    "self": "https://zenodo.org/api/records/5802402",
+    "self_html": "https://zenodo.org/records/5802402",
+    "preview_html": "https://zenodo.org/records/5802402?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5802402",
+    "self_doi": "https://doi.org/10.5281/zenodo.5802402",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5802402",
+    "reserve_doi": "https://zenodo.org/api/records/5802402/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5802401",
+    "parent_html": "https://zenodo.org/records/5802401",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5802401",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5802401",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5802402/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5802402/sequence/default",
+    "files": "https://zenodo.org/api/records/5802402/files",
+    "media_files": "https://zenodo.org/api/records/5802402/media-files",
+    "archive": "https://zenodo.org/api/records/5802402/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5802402/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5802402/versions/latest",
+    "latest_html": "https://zenodo.org/records/5802402/latest",
+    "versions": "https://zenodo.org/api/records/5802402/versions",
+    "draft": "https://zenodo.org/api/records/5802402/draft",
+    "access_links": "https://zenodo.org/api/records/5802402/access/links",
+    "access_grants": "https://zenodo.org/api/records/5802402/access/grants",
+    "access_users": "https://zenodo.org/api/records/5802402/access/users",
+    "access_request": "https://zenodo.org/api/records/5802402/access/request",
+    "access": "https://zenodo.org/api/records/5802402/access",
+    "communities": "https://zenodo.org/api/records/5802402/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5802402/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5802402/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5802402/file-modification",
+    "requests": "https://zenodo.org/api/records/5802402/requests"
+  },
+  "updated": "2021-12-28T15:01:38.184489+00:00",
+  "recid": "5802402",
+  "revision": 3,
+  "files": [
+    {
+      "id": "e5ef4bc0-b6f2-42c6-bc1e-168bae54e934",
+      "key": "GE_09OCT2014_MNH-ENS_data.tar.gz",
+      "size": 887077876,
+      "checksum": "md5:cf8fbd1ac218da551e56abefb0d51845",
+      "links": {
+        "self": "https://zenodo.org/api/records/5802402/files/GE_09OCT2014_MNH-ENS_data.tar.gz/content"
+      }
+    },
+    {
+      "id": "da3da7b0-e6e3-4789-8ba0-5fe4f7240d6d",
+      "key": "GE_09OCT2014_MOL-ENS_data.tar.gz",
+      "size": 914204111,
+      "checksum": "md5:ba6bb0a75c133d44c33aa166b24b5d63",
+      "links": {
+        "self": "https://zenodo.org/api/records/5802402/files/GE_09OCT2014_MOL-ENS_data.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "37801"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 28,
+    "unique_downloads": 25,
+    "views": 271,
+    "unique_views": 261,
+    "version_downloads": 28,
+    "version_unique_downloads": 25,
+    "version_unique_views": 260,
+    "version_views": 270
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1801281987,
+    "top_level_files": [
+      {
+        "name": "GE_09OCT2014_MNH-ENS_data.tar.gz",
+        "size": 887077876
+      },
+      {
+        "name": "GE_09OCT2014_MOL-ENS_data.tar.gz",
+        "size": 914204111
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:44.823755"
+}

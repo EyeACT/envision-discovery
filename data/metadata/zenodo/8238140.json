@@ -1,0 +1,195 @@
+{
+  "created": "2023-08-11T14:26:07.808238+00:00",
+  "modified": "2024-12-18T10:24:36.771408+00:00",
+  "id": 8238140,
+  "conceptrecid": "8238139",
+  "doi": "10.5281/zenodo.8238140",
+  "conceptdoi": "10.5281/zenodo.8238139",
+  "doi_url": "https://doi.org/10.5281/zenodo.8238140",
+  "metadata": {
+    "title": "OPTICAL COHERENCE TOMOGRAPHY (OCT) IMAGE DATASET OF RADIATION DERMATITIS",
+    "doi": "10.5281/zenodo.8238140",
+    "publication_date": "2023-08-11",
+    "description": "<p><strong>Optical&nbsp;Coherence&nbsp;Tomography&nbsp;(OCT) Image&nbsp;dataset&nbsp;of radiation dermatitis&nbsp;</strong></p>\n<p><strong>Citing the Dataset</strong></p>\n<p>The dataset is released under a Creative Commons Attribution license, so please cite the dataset if it is used in your work in any form. Published academic papers should use the academic paper citation for our paper. &nbsp;Personal works, such as projects or blog posts, should provide a URL to this Zenodo page, though a reference to our paper would also be appreciated.</p>\n<p><em>Academic paper citation</em></p>\n<p>Photiou C., Cloconi C. &amp; Strouthos I. Feature-Based vs. Deep-Learning Fusion Methods for the In Vivo Detection of Radiation Dermatitis Using Optical Coherence Tomography, a Feasibility Study.&nbsp;<em>J Digit Imaging. Inform. med.</em> (2024). https://doi.org/10.1007/s10278-024-01241-4</p>\n<p><em>Personal use citation</em></p>\n<p>Include a link to this Zenodo page -&nbsp;10.5281/zenodo.8238140</p>\n<p><strong>ACKNOWLEDGMENT</strong></p>\n<p>This research is funded by the European Union&rsquo;s Horizon 2020 research and innovation program under grant agreement No. 739551 (KIOS CoE) and from the Republic of Cyprus through the Directorate General for European Programs, Coordination and Development.</p>\n<p><strong>Contact Information</strong></p>\n<p>If you would like further information about the dataset, or if you experience any issues downloading files, please contact us at photiou.christos@ucy.ac.cy.</p>\n<p><strong>Dataset Description</strong></p>\n<p>This dataset consists of Optical Coherence Tomography (OCT) images from 22 head and neck cancer patients undergoing radiotherapy. Specifically, this dataset includes OCT images of five stages of Acute Radiation Dermatitis (ARD), labelled by an expert oncologist as Grade 0 (0), Grade 1 (1), Grade 2a (2), Grade 2b (3) and Grade 3 (4). Twenty-two head and neck cancer patients who were scheduled to receive radiation therapy at the German Oncology Center (GOC) in Limassol, Cyprus, participated in this proof-of-concept trial. The trial has received bioethics approval from the Cyprus National Bioethics Committee (Cyprus National Bioethics Committee 2020/61) and informed consent was collected. Patients under the age of 18 or with disabilities, expectant women, those who had recently undergone radiation therapy in the same area, and patients with autoimmune diseases were excluded from the study. After informed consent, the irradiated side of the neck of the subjects, was imaged with OCT. The imaging was performed with a swept-source OCT system (Santec IVS300), with a center wavelength of 1300 nm, an axial resolution of 12 micrometers in tissue, and an A-scan rate of 40 kHz. Six images were acquired at 1 cm intervals, covering the region from the mandibular angle to the clavicle. Imaging was repeated prior to every radiation therapy session, twice per week, until the conclusion of the therapy, resulting in a dataset of 1487 images. During each visit, the patient's ARD grade, at each of the imaging sites, was determined and recorded by a senior oncologist.</p>\n<p>Dataset<br>The data consists of two items: (1) the excel file 'Description.xlsx' with the patient information and (2) the zip file 'Dataset.zip' containing the images, as described below.</p>\n<p>1) Description.xlsx<br>This excel file contains patient information such as age, habits, etc, in the sheet 'Patient_Info'. The sheet 'Image_Info' contains the information for each image, such as the patient number (1-22), week number, visit number (usually one or two visits per week), image number (six images per visit with some exceptions), and classification (0-4). &nbsp; &nbsp;</p>\n<p>2) Dataset.zip&nbsp;<br>This zip file contains the OCT images. Each patient's folder has sub-folders corresponding to each week, within which there are sub-folders corresponding to each visit, which contain the image folders. Each image folder contains two excel files: OCT Data (demodulated and logarithmic intensity image) &nbsp;and Raw Data (resampled interferometric data).&nbsp;</p>\n<p>&nbsp; &nbsp; &nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Christos Photiou",
+        "affiliation": "KIOS CoE, University of Cyprus",
+        "orcid": "0000-0002-5843-4288"
+      },
+      {
+        "name": "Constantina Cloconi",
+        "affiliation": "German Oncology Center, Limassol, Cyprus"
+      },
+      {
+        "name": "Iosif Strouthos",
+        "affiliation": "German Oncology Center, Limassol, Cyprus"
+      }
+    ],
+    "keywords": [
+      "Optical coherence tomography, radiotherapy, radiation dermatitis, cancer, head and neck, classification, image processing"
+    ],
+    "version": "v1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "739551",
+        "internal_id": "10.13039/501100000780::739551",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "KIOS Research and Innovation Centre of Excellence",
+        "acronym": "KIOS CoE",
+        "program": "H2020-EU.4.a.",
+        "url": "https://cordis.europa.eu/projects/739551"
+      }
+    ],
+    "communities": [
+      {
+        "id": "eu"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8238139"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OPTICAL COHERENCE TOMOGRAPHY (OCT) IMAGE DATASET OF RADIATION DERMATITIS",
+  "links": {
+    "self": "https://zenodo.org/api/records/8238140",
+    "self_html": "https://zenodo.org/records/8238140",
+    "preview_html": "https://zenodo.org/records/8238140?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8238140",
+    "self_doi": "https://doi.org/10.5281/zenodo.8238140",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8238140",
+    "reserve_doi": "https://zenodo.org/api/records/8238140/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8238139",
+    "parent_html": "https://zenodo.org/records/8238139",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8238139",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8238139",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8238140/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8238140/sequence/default",
+    "files": "https://zenodo.org/api/records/8238140/files",
+    "media_files": "https://zenodo.org/api/records/8238140/media-files",
+    "archive": "https://zenodo.org/api/records/8238140/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8238140/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8238140/versions/latest",
+    "latest_html": "https://zenodo.org/records/8238140/latest",
+    "versions": "https://zenodo.org/api/records/8238140/versions",
+    "draft": "https://zenodo.org/api/records/8238140/draft",
+    "access_links": "https://zenodo.org/api/records/8238140/access/links",
+    "access_grants": "https://zenodo.org/api/records/8238140/access/grants",
+    "access_users": "https://zenodo.org/api/records/8238140/access/users",
+    "access_request": "https://zenodo.org/api/records/8238140/access/request",
+    "access": "https://zenodo.org/api/records/8238140/access",
+    "communities": "https://zenodo.org/api/records/8238140/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8238140/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8238140/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8238140/file-modification",
+    "requests": "https://zenodo.org/api/records/8238140/requests"
+  },
+  "updated": "2024-12-18T10:24:36.771408+00:00",
+  "recid": "8238140",
+  "revision": 5,
+  "files": [
+    {
+      "id": "614faf2d-4e86-47c0-9d08-e2c68c8b8d2e",
+      "key": "Dataset.zip",
+      "size": 7019181424,
+      "checksum": "md5:67fc600fe7b287d22c7d53513fea9b5f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8238140/files/Dataset.zip/content"
+      }
+    },
+    {
+      "id": "8f6d71a8-5b65-407f-ae8c-1bc53e9c438e",
+      "key": "Readme.txt",
+      "size": 2910,
+      "checksum": "md5:a0cc32d57e344480145acc788e3e8fff",
+      "links": {
+        "self": "https://zenodo.org/api/records/8238140/files/Readme.txt/content"
+      }
+    },
+    {
+      "id": "9f524b8d-decc-491f-b7ac-c9e21bef5b2d",
+      "key": "Description.xlsx",
+      "size": 43461,
+      "checksum": "md5:058c7c59dc321314c5061243a7d19370",
+      "links": {
+        "self": "https://zenodo.org/api/records/8238140/files/Description.xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "38709"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 207,
+    "unique_downloads": 201,
+    "views": 286,
+    "unique_views": 270,
+    "version_downloads": 207,
+    "version_unique_downloads": 201,
+    "version_unique_views": 268,
+    "version_views": 284
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 7019181424,
+    "top_level_files": [
+      {
+        "name": "Dataset.zip",
+        "size": 7019181424
+      },
+      {
+        "name": "Readme.txt",
+        "size": 2910
+      },
+      {
+        "name": "Description.xlsx",
+        "size": 43461
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1007/s10278-024-01241-4",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:17.646395"
+}

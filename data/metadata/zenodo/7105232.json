@@ -1,0 +1,190 @@
+{
+  "created": "2022-09-22T14:55:17.345716+00:00",
+  "modified": "2022-09-23T02:26:33.950321+00:00",
+  "id": 7105232,
+  "conceptrecid": "6622144",
+  "doi": "10.5281/zenodo.7105232",
+  "conceptdoi": "10.5281/zenodo.6622144",
+  "doi_url": "https://doi.org/10.5281/zenodo.7105232",
+  "metadata": {
+    "title": "OLIVES Dataset: Ophthalmic Labels for Investigating Visual Eye Semantics",
+    "doi": "10.5281/zenodo.7105232",
+    "publication_date": "2022-06-09",
+    "description": "<p>Clinical diagnosis of the eye is performed over multifarious data modalities including scalar clinical labels, vectorized biomarkers, two-dimensional fundus images, and three-dimensional Optical Coherence Tomography (OCT) scans. While the clinical labels, fundus images and OCT scans are instrumental measurements, the vectorized biomarkers are interpreted attributes from the other measurements. Clinical practitioners use all these data modalities for diagnosing and treating eye diseases like Diabetic Retinopathy (DR) or Diabetic Macular Edema (DME). Enabling usage of machine learning algorithms within the ophthalmic medical domain requires research into the relationships and interactions between these relevant data modalities. Existing datasets are limited in that: (i) they view the problem as disease prediction without assessing biomarkers, and (ii) they do not consider the explicit relationship among all four data modalities over the treatment period. In this paper, we introduce the Ophthalmic Labels for Investigating Visual Eye Semantics (OLIVES) dataset that addresses the above limitations. This is the first OCT and fundus dataset that includes clinical labels, biomarker labels, and time-series patient treatment information from associated clinical trials. The dataset consists of $1268$ fundus eye images each with 49&nbsp;OCT scans, and 16&nbsp;biomarkers, along with 3&nbsp;clinical labels and a disease diagnosis of DR or DME. In total, there are 96&nbsp;eyes&#39; data averaged over a period of at least two years with each eye treated for an average of 66&nbsp;weeks and 7&nbsp;injections. OLIVES dataset has advantages in other fields of machine learning research including self-supervised learning as it provides alternate augmentation schemes that are medically grounded.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mohit Prabhushankar",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Kiran Kokilepersaud",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Yash-yee Logan",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Stephanie Trejo Corona",
+        "affiliation": "Retina Consultants of Texas"
+      },
+      {
+        "name": "Ghassan AlRegib",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Charles Wykoff",
+        "affiliation": "Retina Consolutants of Texas"
+      }
+    ],
+    "keywords": [
+      "Biomarkers, Clinical Data, Machine Learning, Multi-Modal Learning,"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "Advances in Neural Information Processing Systems 35",
+      "acronym": "NeurIPS 2022",
+      "dates": "November 29th 2022 - December 1st 2022",
+      "place": "New Orleans"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "olives_gatech"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6622144"
+          }
+        }
+      ]
+    },
+    "notes": "Code: https://github.com/olivesgatech/OLIVES_Dataset"
+  },
+  "title": "OLIVES Dataset: Ophthalmic Labels for Investigating Visual Eye Semantics",
+  "links": {
+    "self": "https://zenodo.org/api/records/7105232",
+    "self_html": "https://zenodo.org/records/7105232",
+    "preview_html": "https://zenodo.org/records/7105232?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7105232",
+    "self_doi": "https://doi.org/10.5281/zenodo.7105232",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7105232",
+    "reserve_doi": "https://zenodo.org/api/records/7105232/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6622144",
+    "parent_html": "https://zenodo.org/records/6622144",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6622144",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6622144",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7105232/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7105232/sequence/default",
+    "files": "https://zenodo.org/api/records/7105232/files",
+    "media_files": "https://zenodo.org/api/records/7105232/media-files",
+    "archive": "https://zenodo.org/api/records/7105232/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7105232/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7105232/versions/latest",
+    "latest_html": "https://zenodo.org/records/7105232/latest",
+    "versions": "https://zenodo.org/api/records/7105232/versions",
+    "draft": "https://zenodo.org/api/records/7105232/draft",
+    "access_links": "https://zenodo.org/api/records/7105232/access/links",
+    "access_grants": "https://zenodo.org/api/records/7105232/access/grants",
+    "access_users": "https://zenodo.org/api/records/7105232/access/users",
+    "access_request": "https://zenodo.org/api/records/7105232/access/request",
+    "access": "https://zenodo.org/api/records/7105232/access",
+    "communities": "https://zenodo.org/api/records/7105232/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7105232/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7105232/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7105232/file-modification",
+    "requests": "https://zenodo.org/api/records/7105232/requests"
+  },
+  "updated": "2022-09-23T02:26:33.950321+00:00",
+  "recid": "7105232",
+  "revision": 2,
+  "files": [
+    {
+      "id": "ba51e4a5-12b2-46e9-aa78-697d6888567c",
+      "key": "OLIVES_Dataset_Labels.zip",
+      "size": 6324881,
+      "checksum": "md5:e0b14b14f457e4abcafafdd60b8d3952",
+      "links": {
+        "self": "https://zenodo.org/api/records/7105232/files/OLIVES_Dataset_Labels.zip/content"
+      }
+    },
+    {
+      "id": "642c2b1b-9f6a-4999-aaf0-7b4706d21dea",
+      "key": "OLIVES.zip",
+      "size": 33913178281,
+      "checksum": "md5:e08f4198aa919d6900bd30525c137933",
+      "links": {
+        "self": "https://zenodo.org/api/records/7105232/files/OLIVES.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "106687"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 10349,
+    "unique_downloads": 5148,
+    "views": 9199,
+    "unique_views": 7982,
+    "version_downloads": 9950,
+    "version_unique_downloads": 4972,
+    "version_unique_views": 7333,
+    "version_views": 8486
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 33919503162,
+    "top_level_files": [
+      {
+        "name": "OLIVES_Dataset_Labels.zip",
+        "size": 6324881
+      },
+      {
+        "name": "OLIVES.zip",
+        "size": 33913178281
+      }
+    ],
+    "zip_contents": {
+      "olives_dataset_labels.zip": {
+        "total_files": 7,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 6322773,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:28.854032"
+}

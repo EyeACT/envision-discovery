@@ -1,0 +1,565 @@
+{
+  "created": "2023-01-28T06:58:23.933190+00:00",
+  "modified": "2024-07-12T18:23:18.417308+00:00",
+  "id": 7574784,
+  "conceptrecid": "7574783",
+  "doi": "10.5281/zenodo.7574784",
+  "conceptdoi": "10.5281/zenodo.7574783",
+  "doi_url": "https://doi.org/10.5281/zenodo.7574784",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain water/other segmentation of RGB 768x768 orthomosaic images",
+    "doi": "10.5281/zenodo.7574784",
+    "publication_date": "2023-01-27",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain water/other segmentation of RGB 768x768 orthomosaic images</strong></em></p>\n\n<p>These Residual-UNet model data are based on Coast Train images and associated labels. https://coasttrain.github.io/CoastTrain/docs/Version%201:%20March%202022/data</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**: https://doi.org/10.1038/s41597-023-01929-2</p>\n\n<p>Image size used by model: 768 x 768 x 3 pixels</p>\n\n<p><em>classes:</em><br>\n1. Water<br>\n2. Other</p>\n\n<p><em>File descriptions</em></p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p><em>References</em><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Buscombe, D., Wernette, P., Fitzpatrick, S. <em>et al.</em> A 1.2 Billion Pixel Human-Labeled Dataset for Data-Driven Classification of Coastal Environments. <em>Sci Data</em> <strong>10</strong>, 46 (2023). https://doi.org/10.1038/s41597-023-01929-2</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "orthomosaic",
+      "aerial",
+      "semantic segmentation",
+      "Seg2Map",
+      "water"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7574783"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain water/other segmentation of RGB 768x768 orthomosaic images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7574784",
+    "self_html": "https://zenodo.org/records/7574784",
+    "preview_html": "https://zenodo.org/records/7574784?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7574784",
+    "self_doi": "https://doi.org/10.5281/zenodo.7574784",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7574784",
+    "reserve_doi": "https://zenodo.org/api/records/7574784/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7574783",
+    "parent_html": "https://zenodo.org/records/7574783",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7574783",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7574783",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7574784/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7574784/sequence/default",
+    "files": "https://zenodo.org/api/records/7574784/files",
+    "media_files": "https://zenodo.org/api/records/7574784/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7574784:ct_ortho_all_water_768_v5_trainhist_18.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7574784/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7574784/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7574784/versions/latest",
+    "latest_html": "https://zenodo.org/records/7574784/latest",
+    "versions": "https://zenodo.org/api/records/7574784/versions",
+    "draft": "https://zenodo.org/api/records/7574784/draft",
+    "access_links": "https://zenodo.org/api/records/7574784/access/links",
+    "access_grants": "https://zenodo.org/api/records/7574784/access/grants",
+    "access_users": "https://zenodo.org/api/records/7574784/access/users",
+    "access_request": "https://zenodo.org/api/records/7574784/access/request",
+    "access": "https://zenodo.org/api/records/7574784/access",
+    "communities": "https://zenodo.org/api/records/7574784/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7574784/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7574784/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7574784/file-modification",
+    "requests": "https://zenodo.org/api/records/7574784/requests"
+  },
+  "updated": "2024-07-12T18:23:18.417308+00:00",
+  "recid": "7574784",
+  "revision": 5,
+  "files": [
+    {
+      "id": "ffd75574-1fb6-4524-948d-e6098d524df8",
+      "key": "ct_ortho_all_water_768_v6_model_history.npz",
+      "size": 2630,
+      "checksum": "md5:e7cdc2fa80971e2df7750506a28b9398",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "ac248759-d9fc-41c4-b81f-ef80251eaf99",
+      "key": "ct_ortho_all_water_768_v2_model_history.npz",
+      "size": 1881,
+      "checksum": "md5:314c0c976f77fab26b47989f30105f6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "3cf6053f-4589-40a2-a0dd-bca9f7bbdd6d",
+      "key": "ct_ortho_all_water_768_v4_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:c142de40f0ebe78c59660554d4d2c815",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "0c835dc8-0f6a-4c05-a48f-05fa815e1871",
+      "key": "ct_ortho_all_water_768_v1_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:cd7333fa205bfddeca82876608fda020",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "ae17398b-0142-4de9-a622-37d287a71c81",
+      "key": "ct_ortho_all_water_768_v4_modelcard.json",
+      "size": 2261,
+      "checksum": "md5:8352556f8992970387981521b3ae54fd",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "77698a52-e5c0-46ed-8e8b-8f68afe76bab",
+      "key": "ct_ortho_all_water_768_v6_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:90f4773a49a8f9ca35dded79fb9d9c83",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "d13ca55a-f306-4d26-9fe4-0753307fb2e2",
+      "key": "ct_ortho_all_water_768_v2_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:59ea6c1a1d37396526c14a43acd94fe9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "7338bee9-80b8-43fb-b31f-491c08bf242c",
+      "key": "ct_ortho_all_water_768_v1.json",
+      "size": 1102,
+      "checksum": "md5:733a4c63792fc959abfa963f730aeda0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v1.json/content"
+      }
+    },
+    {
+      "id": "f44ff3e4-1327-45fe-aad6-4fd4637f705e",
+      "key": "ct_ortho_all_water_768_v4_model_history.npz",
+      "size": 3071,
+      "checksum": "md5:7b4a407efacde2e93812dddff56e237f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "a1eb8d9c-b8f1-47d8-856a-499d1e40d0ca",
+      "key": "ct_ortho_all_water_768_v2.json",
+      "size": 1102,
+      "checksum": "md5:4127bba458986c5d7e3025c942cadf43",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v2.json/content"
+      }
+    },
+    {
+      "id": "4990d795-8b55-4856-8408-280c89084200",
+      "key": "ct_ortho_all_water_768_v3_model_history.npz",
+      "size": 3227,
+      "checksum": "md5:0bc19171c8227cb105afdfa7adb7ab0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "f409c63f-2f59-457b-b982-5ca5db12a136",
+      "key": "ct_ortho_all_water_768_v6.json",
+      "size": 1103,
+      "checksum": "md5:9d091701ee8824852c9167deff84a5a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v6.json/content"
+      }
+    },
+    {
+      "id": "f05126fe-37b5-44d3-8736-6faad72b112d",
+      "key": "ct_ortho_all_water_768_v3_modelcard.json",
+      "size": 2261,
+      "checksum": "md5:13d6f7502a274027a977278ed224fcf9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "623c66fa-8fcf-4e0f-81c4-929a91b1b9ba",
+      "key": "ct_ortho_all_water_768_v6_modelcard.json",
+      "size": 2262,
+      "checksum": "md5:88809a15113fe0422543b4b65f1e592d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "7d7cc0c2-cf2b-42b8-a8dc-2594e45a8fc0",
+      "key": "ct_ortho_all_water_768_v3_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:a56c0f2de16e2d5f8d8307512957a668",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "ae297bef-4c85-4bad-9788-709645721b85",
+      "key": "readme.txt",
+      "size": 2785,
+      "checksum": "md5:8df7ab7588b930678eac64add7c5ad23",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "06bafbac-9a5e-442e-8db7-9bd10d557d16",
+      "key": "ct_ortho_all_water_768_v2_modelcard.json",
+      "size": 2261,
+      "checksum": "md5:f142efb31adfd650f25cbf06816d5bd2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "da4be646-66a9-4176-a643-e4e754bd1be4",
+      "key": "ct_ortho_all_water_768_v5_model_history.npz",
+      "size": 2877,
+      "checksum": "md5:7c54d643f5c0a8be77ad23f9cba587f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "64d83e99-879d-4c83-8f20-42cea003a43a",
+      "key": "classes.txt",
+      "size": 11,
+      "checksum": "md5:3a20f9973b2f24c92069fbe6c6d38afa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "ca1a5635-86be-4677-9c7f-c64e1e3ae2a0",
+      "key": "ct_ortho_all_water_768_v3.json",
+      "size": 1102,
+      "checksum": "md5:b768e9fae90aae4fe812087a1e487bac",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v3.json/content"
+      }
+    },
+    {
+      "id": "7c66fc6d-c9f4-4dc7-9427-ca24781559e7",
+      "key": "ct_ortho_all_water_768_v1_modelcard.json",
+      "size": 2261,
+      "checksum": "md5:73ec61f25ed423ed159fdcebad9a7f92",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "eb1f9861-442a-4f5b-8575-7b53bcda15a3",
+      "key": "ct_ortho_all_water_768_v5_fullmodel.h5",
+      "size": 69422688,
+      "checksum": "md5:aa2672a9078c57c618e37d6b0a666a55",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "b41c7a5d-90cf-429e-9b0a-83107118ea3d",
+      "key": "ct_ortho_all_water_768_v5_modelcard.json",
+      "size": 2261,
+      "checksum": "md5:97a6f713ddc085f9270c9609493d152f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "44fe86c4-b034-497f-a5fa-01a02f771775",
+      "key": "BEST_MODEL.txt",
+      "size": 38,
+      "checksum": "md5:6e80cf8bcda7836867ffc0a9e51541d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "550a9e13-6709-4565-b6d9-813ce4b4bde6",
+      "key": "ct_ortho_all_water_768_v1_model_history.npz",
+      "size": 2182,
+      "checksum": "md5:c8c5644385e90b8b134afce5eeb15933",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "4a01b86d-7ecd-40a9-ba75-8628fad58239",
+      "key": "ct_ortho_all_water_768_v5_trainhist_18.png",
+      "size": 226350,
+      "checksum": "md5:cb7bf1e7476e7c3442ae67c1f34a6396",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v5_trainhist_18.png/content"
+      }
+    },
+    {
+      "id": "04cb2e68-d493-4fc2-b233-91f430368ea0",
+      "key": "ct_ortho_all_water_768_v6_trainhist_18.png",
+      "size": 215829,
+      "checksum": "md5:f58a8954550d2acaf0fd92e0be004219",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v6_trainhist_18.png/content"
+      }
+    },
+    {
+      "id": "161f8659-08d5-426c-ae2d-671c98fbc944",
+      "key": "ct_ortho_all_water_768_v2_trainhist_16.png",
+      "size": 197238,
+      "checksum": "md5:16c6f28edae7b787bdb22addbd17eed3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v2_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "7e0ece6b-f36d-430e-9fd8-94d56added12",
+      "key": "ct_ortho_all_water_768_v1_trainhist_16.png",
+      "size": 202620,
+      "checksum": "md5:5b16e7abf4e532b6aee0f85add507a97",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v1_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "30a46bb6-695f-47e6-af32-05f04fc97c77",
+      "key": "ct_ortho_all_water_768_v4_trainhist_18.png",
+      "size": 194313,
+      "checksum": "md5:d3b493bd8171517702ed6effbda55ddf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v4_trainhist_18.png/content"
+      }
+    },
+    {
+      "id": "292ab2ad-5df4-4ae7-930d-9f6558f26663",
+      "key": "ct_ortho_all_water_768_v3_trainhist_16.png",
+      "size": 213968,
+      "checksum": "md5:b7d3c8bf49138062bfb47a2ed9322ce1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7574784/files/ct_ortho_all_water_768_v3_trainhist_16.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1109,
+    "unique_downloads": 1018,
+    "views": 103,
+    "unique_views": 100,
+    "version_downloads": 1109,
+    "version_unique_downloads": 1018,
+    "version_unique_views": 99,
+    "version_views": 102
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 417802322,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "ct_ortho_all_water_768_v6_model_history.npz",
+        "size": 2630
+      },
+      {
+        "name": "ct_ortho_all_water_768_v2_model_history.npz",
+        "size": 1881
+      },
+      {
+        "name": "ct_ortho_all_water_768_v4_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "ct_ortho_all_water_768_v1_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "ct_ortho_all_water_768_v4_modelcard.json",
+        "size": 2261
+      },
+      {
+        "name": "ct_ortho_all_water_768_v6_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "ct_ortho_all_water_768_v2_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "ct_ortho_all_water_768_v1.json",
+        "size": 1102
+      },
+      {
+        "name": "ct_ortho_all_water_768_v4_model_history.npz",
+        "size": 3071
+      },
+      {
+        "name": "ct_ortho_all_water_768_v2.json",
+        "size": 1102
+      },
+      {
+        "name": "ct_ortho_all_water_768_v3_model_history.npz",
+        "size": 3227
+      },
+      {
+        "name": "ct_ortho_all_water_768_v6.json",
+        "size": 1103
+      },
+      {
+        "name": "ct_ortho_all_water_768_v3_modelcard.json",
+        "size": 2261
+      },
+      {
+        "name": "ct_ortho_all_water_768_v6_modelcard.json",
+        "size": 2262
+      },
+      {
+        "name": "ct_ortho_all_water_768_v3_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "readme.txt",
+        "size": 2785
+      },
+      {
+        "name": "ct_ortho_all_water_768_v2_modelcard.json",
+        "size": 2261
+      },
+      {
+        "name": "ct_ortho_all_water_768_v5_model_history.npz",
+        "size": 2877
+      },
+      {
+        "name": "classes.txt",
+        "size": 11
+      },
+      {
+        "name": "ct_ortho_all_water_768_v3.json",
+        "size": 1102
+      },
+      {
+        "name": "ct_ortho_all_water_768_v1_modelcard.json",
+        "size": 2261
+      },
+      {
+        "name": "ct_ortho_all_water_768_v5_fullmodel.h5",
+        "size": 69422688
+      },
+      {
+        "name": "ct_ortho_all_water_768_v5_modelcard.json",
+        "size": 2261
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 38
+      },
+      {
+        "name": "ct_ortho_all_water_768_v1_model_history.npz",
+        "size": 2182
+      },
+      {
+        "name": "ct_ortho_all_water_768_v5_trainhist_18.png",
+        "size": 226350
+      },
+      {
+        "name": "ct_ortho_all_water_768_v6_trainhist_18.png",
+        "size": 215829
+      },
+      {
+        "name": "ct_ortho_all_water_768_v2_trainhist_16.png",
+        "size": 197238
+      },
+      {
+        "name": "ct_ortho_all_water_768_v1_trainhist_16.png",
+        "size": 202620
+      },
+      {
+        "name": "ct_ortho_all_water_768_v4_trainhist_18.png",
+        "size": 194313
+      },
+      {
+        "name": "ct_ortho_all_water_768_v3_trainhist_16.png",
+        "size": 213968
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://coasttrain.github.io/CoastTrain/docs/Version%201:%20March%202022/data",
+      "type": "potential_download"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41597-023-01929-2",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41597-023-01929-2",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.624114"
+}

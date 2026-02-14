@@ -1,0 +1,184 @@
+{
+  "created": "2024-02-27T11:30:50.955170+00:00",
+  "modified": "2024-02-27T11:30:51.517090+00:00",
+  "id": 10716020,
+  "conceptrecid": "10716019",
+  "doi": "10.5061/dryad.6djh9w17h",
+  "doi_url": "https://doi.org/10.5061/dryad.6djh9w17h",
+  "metadata": {
+    "title": "Data from: ASHS-OAP atlas for automatic entorhinal cortex segmentation",
+    "doi": "10.5061/dryad.6djh9w17h",
+    "publication_date": "2024-02-27",
+    "description": "<p>Early stages of Alzheimer's disease (AD) are associated with volume reductions in specific subregions of the medial temporal lobe (MTL). Using a manual segmentation method\u2014the Olsen-Amaral-Palombo (OAP) protocol\u2014 previous work in healthy older adults showed that reductions in grey matter volumes in MTL subregions were associated with lower scores on the Montreal Cognitive Assessment (MoCA), suggesting atrophy may occur prior to diagnosis of mild cognitive impairment, a condition that often progresses to AD. However, current manual segmentation methods are labour intensive and time consuming. Here, we examined the utility of Automatic Segmentation of Hippocampal Subfields (ASHS) to detect volumetric differences in MTL subregions of healthy older adults who varied in cognitive status as determined by the MoCA. We trained ASHS on the OAP protocol to create the ASHS-OAP atlas, and then examined how well automated segmentation replicated the ground truth of manual segmentation. Volumetric measures obtained from the ASHS-OAP atlas were also contrasted against those from the ASHS-PMC atlas, a widely used atlas provided by the ASHS team. Volumetrics from the ASHS-OAP atlas aligned well with those from manual segmentation, suggesting ASHS-OAP is a viable alternative to current manual segmentation methods. In addition, while some subtle differences were observed, results from the ASHS-PMC and ASHS-OAP atlases aligned well with each other overall. Our findings highlight the utility of automated segmentation methods but still underscore the need for a unified and harmonized MTL segmentation atlas.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mazloum-Farzaghi, Negar",
+        "affiliation": "University of Toronto"
+      },
+      {
+        "name": "Barense, Morgan",
+        "affiliation": "University of Toronto"
+      },
+      {
+        "name": "Ryan, Jennifer",
+        "affiliation": "University of Toronto"
+      },
+      {
+        "name": "Stark, Craig",
+        "affiliation": "University of California Irvine",
+        "orcid": "0000-0002-9334-8502"
+      },
+      {
+        "name": "Olsen, Rosanna",
+        "affiliation": "University of Toronto"
+      }
+    ],
+    "keywords": [
+      "automatic segmentation",
+      "medial temporal lobe",
+      "Alzheimer's disease",
+      "mild cognitive impairment",
+      "neurodegeneration"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.neurobiolaging.2017.04.025",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1523/JNEUROSCI.1406-13.2013",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10716019"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Funding provided by: James S. McDonnell Foundation<br>Crossref Funder Registry ID: https://ror.org/03dy4aq19<br>Award Number: </p><p>Funding provided by: Canadian Institutes of Health Research<br>Crossref Funder Registry ID: https://ror.org/01gavpb45<br>Award Number: PJT-162292</p><p>Funding provided by: National Institute on Aging<br>Crossref Funder Registry ID: https://ror.org/049v75w11<br>Award Number: P30 AG066519</p><p>Funding provided by: Canadian Institutes of Health Research<br>Crossref Funder Registry ID: https://ror.org/01gavpb45<br>Award Number: PJT-162274</p>",
+    "method": "<p>Forty community-dwelling healthy older adults (as described in Olsen, Yeung et al., 2017; age range = 59-81 years; mean age = 71.4; mean education = 16.3 years; range = 12-23; 30 female) were recruited from participant databases at the Rotman Research Institute and the University of Toronto.</p>\n<p>Neuroimaging was completed on a 3-Tesla Siemens Trio scanner using a 12-channel head coil. All participants received a T1-weighted, magnetization-prepared, rapid acquisition with gradient echo image (MP-RAGE) whole-brain anatomical scan (TE/TR=2.63ms/2000ms, 160 axial slices perpendicular to the AC-PC line, voxel size=1x1x1mm, FOV=256mm). The T1-weighted MP-RAGE was used for slice placement during the acquisition of a subsequent high in-plane resolution T2-weighted scan in an oblique-coronal plane, perpendicular to the hippocampal long axis (TE/TR=68/3000ms, 20-28 slices depending on head size, 512x512 acquisition matrix, voxel size=0.43x0.43x3mm, no skip, FOV=220mm). For the T2-weighted scan, the first slice was placed anterior to the collateral sulcus (including the temporal pole where possible) and the last slice was placed posterior to the hippocampal tail to ensure full coverage of the entire hippocampus and MTL cortices for all participants.\u00a0</p>\n<p>A custom atlas was built using the Automatic Segmentation of Hippocampal Subfields (ASHS) software (Yushkevich et al., 2015) following the published procedures (https://sites.google.com/view/ashs-dox/local-ashs/building-an-atlas-for-t2-mri), without the slice heuristics procedure. We generated a custom atlas package (ASHS-OAP) based on the forty healthy older adults' manual segmentations from Olsen, Yeung et al. (2017). Atlas building in ASHS was performed on a Linux cluster with a Sun Grid Engine. For more details on the OAP segmentation protocol see Olsen et al. (2013), Palombo et al. (2013), and https://github.com/NataliaLadyka/OAPSegmentation/blob/main/Comprehensive%20MTL%20Segmentation%20Protocol%20-%20Updated%20.pdf.</p>\n<p>The automated segmentation will result in nine regions of interest per hemisphere. These regions are the anterior head and tail of the hippocampus, three subfields of the hippocampus (CA1, CA2/CA3/DG, subiculum) and four medial temporal lobe cortex subregions (anterolateral entorhinal cortex, posteromedial entorhinal cortex, perirhinal cortex, parahippocampal cortex).</p>"
+  },
+  "title": "Data from: ASHS-OAP atlas for automatic entorhinal cortex segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/10716020",
+    "self_html": "https://zenodo.org/records/10716020",
+    "preview_html": "https://zenodo.org/records/10716020?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.6djh9w17h",
+    "self_doi": "https://doi.org/10.5061/dryad.6djh9w17h",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.6djh9w17h",
+    "reserve_doi": "https://zenodo.org/api/records/10716020/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10716019",
+    "parent_html": "https://zenodo.org/records/10716019",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10716020/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10716020/sequence/default",
+    "files": "https://zenodo.org/api/records/10716020/files",
+    "media_files": "https://zenodo.org/api/records/10716020/media-files",
+    "archive": "https://zenodo.org/api/records/10716020/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10716020/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10716020/versions/latest",
+    "latest_html": "https://zenodo.org/records/10716020/latest",
+    "versions": "https://zenodo.org/api/records/10716020/versions",
+    "draft": "https://zenodo.org/api/records/10716020/draft",
+    "access_links": "https://zenodo.org/api/records/10716020/access/links",
+    "access_grants": "https://zenodo.org/api/records/10716020/access/grants",
+    "access_users": "https://zenodo.org/api/records/10716020/access/users",
+    "access_request": "https://zenodo.org/api/records/10716020/access/request",
+    "access": "https://zenodo.org/api/records/10716020/access",
+    "communities": "https://zenodo.org/api/records/10716020/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10716020/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10716020/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10716020/file-modification",
+    "requests": "https://zenodo.org/api/records/10716020/requests"
+  },
+  "updated": "2024-02-27T11:30:51.517090+00:00",
+  "recid": "10716020",
+  "revision": 5,
+  "files": [
+    {
+      "id": "d66f21c7-788c-480c-a4d2-9fad3d42cde6",
+      "key": "README.md",
+      "size": 4864,
+      "checksum": "md5:417fc098b4fdf630fae272d79f2ae534",
+      "links": {
+        "self": "https://zenodo.org/api/records/10716020/files/README.md/content"
+      }
+    },
+    {
+      "id": "b80c0ebb-1f31-4ff9-a178-02e717feafc5",
+      "key": "ashs_oap_atlas.zip",
+      "size": 4006192327,
+      "checksum": "md5:dce49190f11b5469f6c6eab3a7c5d846",
+      "links": {
+        "self": "https://zenodo.org/api/records/10716020/files/ashs_oap_atlas.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 37,
+    "unique_downloads": 37,
+    "views": 136,
+    "unique_views": 131,
+    "version_downloads": 37,
+    "version_unique_downloads": 37,
+    "version_unique_views": 131,
+    "version_views": 136
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4006192327,
+    "top_level_files": [
+      {
+        "name": "README.md",
+        "size": 4864
+      },
+      {
+        "name": "ashs_oap_atlas.zip",
+        "size": 4006192327
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:12.108883"
+}

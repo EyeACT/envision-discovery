@@ -1,0 +1,389 @@
+{
+  "created": "2021-10-14T19:51:09.933909+00:00",
+  "modified": "2024-07-17T17:21:13.452380+00:00",
+  "id": 5570800,
+  "conceptrecid": "5570799",
+  "doi": "10.5061/dryad.dfn2z351g",
+  "doi_url": "https://doi.org/10.5061/dryad.dfn2z351g",
+  "metadata": {
+    "title": "A 3D Adult Zebrafish Brain Atlas (AZBA) for the Digital Age",
+    "doi": "10.5061/dryad.dfn2z351g",
+    "publication_date": "2021-11-22",
+    "description": "<p>Zebrafish have made significant contributions to our understanding of the vertebrate brain and the neural basis of behavior, earning a place as one of the most widely used model organisms in neuroscience. Their appeal arises from the marriage of low cost, early life transparency, and ease of genetic manipulation with a behavioral repertoire that becomes more sophisticated as animals transition from larvae to adults. To further enhance the use of adult zebrafish, we created the first fully segmented three-dimensional digital <u>a</u>dult <u>z</u>ebrafish <u>b</u>rain <u>a</u>tlas (AZBA). AZBA was built by combining tissue clearing, light-sheet fluorescence microscopy, and three-dimensional image registration of nuclear and antibody stains. These images were used to guide segmentation of the atlas into over 200 neuroanatomical regions comprising the entirety of the adult zebrafish brain. As an open source, online (azba.wayne.edu), updatable digital resource, AZBA will significantly enhance the use of adult zebrafish in furthering our understanding of vertebrate brain function in both health and disease.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kenney, Justin W.",
+        "affiliation": "Wayne State University",
+        "orcid": "0000-0001-8790-5184"
+      },
+      {
+        "name": "Steadman, Patrick E.",
+        "affiliation": "The Hospital for Sick Children*"
+      },
+      {
+        "name": "Young, Olivia",
+        "affiliation": "Wayne State University"
+      },
+      {
+        "name": "Shi, Meng Ting",
+        "affiliation": "Wayne State University"
+      },
+      {
+        "name": "Polanco, Maris",
+        "affiliation": "Wayne State University",
+        "orcid": "0000-0001-7782-2123"
+      },
+      {
+        "name": "Dubaishi, Saba",
+        "affiliation": "Wayne State University"
+      },
+      {
+        "name": "Covert, Kristopher",
+        "affiliation": "Wayne State University"
+      },
+      {
+        "name": "Mueller, Thomas",
+        "affiliation": "Kansas State University"
+      },
+      {
+        "name": "Frankland, Paul W.",
+        "affiliation": "The Hospital for Sick Children*"
+      }
+    ],
+    "keywords": [
+      "Adult Zebrafish",
+      "3D segmented Atlas",
+      "Light-sheet Imaging",
+      "Tissue clearing",
+      "Brain atlas",
+      "Image registration",
+      "AZBA",
+      "Adult Zebrafish Brain Atlas",
+      "Danio rerio"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.7554/eLife.69988",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5570799"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Images are best viewed using ITK-SNAP:</p>\n\n<p>http://www.itksnap.org/pmwiki/pmwiki.php</p>\n\n<p>Video tutorial:\u00a0<a href=\"https://youtu.be/uVLqFJd4LDk\" rel=\"noopener noreferrer\">https://youtu.be/uVLqFJd4LDk</a></p>\n\n<p>Basic usage and viewing after installing and opening ITK-SNAP:</p>\n\n<ul>\n\t<li>\n<strong>File</strong> --&gt; <em>Open main image</em>\n\n\t<ul>\n\t\t<li>Select\u00a020180219_topro_average_2020.nii.gz</li>\n\t</ul>\n\t</li>\n\t<li>To add the segmentation:\u00a0\n\t<ul>\n\t\t<li>\n<strong>Segmentation</strong> --&gt; <em>Open segmentation</em>\n</li>\n\t\t<li>Select 2021-08-21_zfish_segmentation.nii.gz (or latest segmentation file)</li>\n\t</ul>\n\t</li>\n\t<li>To add correct labels and colors to the segmentation:\n\t<ul>\n\t\t<li>\n<strong>Segmentation</strong> --&gt; <em>Import label description</em>\n</li>\n\t\t<li>Select\u00a02021-08-21_Label_descriptions.txt (or segmentation file with date that matches the segmentation loaded in the previous step)</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>You can now explore the atlas in the coronal, horizontal, and sagittal planes.\u00a0</p>\n\n<p>To add an additional image alongside the main image loaded above (e.g., the tyrosine hydroxylase stains):</p>\n\n<ul>\n\t<li>\n<strong>File\u00a0</strong>--&gt;\u00a0\u00a0<em>add another image</em>\n\n\t<ul>\n\t\t<li>Select\u00a020180505_TH_average.nii.gz (or image set of your choice)</li>\n\t</ul>\n\t</li>\n\t<li>To view images side-by-side you may need to select the \"tiled layout\":\n\t<ul>\n\t\t<li>\n<strong>Edit\u00a0</strong>--&gt;\u00a0<strong>Layers\u00a0</strong>--&gt; \"Entered tiled layout\"\n\t\t<ul>\n\t\t\t<li>Alternatively, you can press the \"<strong>\\</strong>\" key to toggle between layouts</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p>Navigating the atlas and segmentation is most easily done using \"crosshair mode\" (press \"1\") and/or \"zoom/pan mode\" (press \"2\"). These are the first two selections in the top \"main\u00a0toolbar\" in the top left corner:</p>\n\n<ul>\n\t<li>Mouse wheel allows you to scroll through the image slices</li>\n\t<li>Right mouse click zooms in/out</li>\n\t<li>In 'crosshair mode' left mouse click changes location of the crosshair. You can see the abbreviation for the label under the cursor on the left side under \"Label under cursor:\"</li>\n\t<li>In 'zoom/pan mode' holding and clicking the left mouse button willl allow to move the images around</li>\n</ul>\n\n<p>Other useful commands:</p>\n\n<ul>\n\t<li>\"x\" will toggle the segmentation</li>\n\t<li>\"c\" will center the images to the location of the crosshair in all three planes simultaneously\u00a0</li>\n</ul>\n<p>Funding provided by: Human Frontiers Science Program<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000854<br>Award Number: LT000759/2014</p><p>Funding provided by: Canadian Institute for Health Research*<br>Crossref Funder Registry ID: <br>Award Number: FDN143227</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: P20GM113109</p><p>Funding provided by: Human Frontiers Science Program<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000854<br>Award Number: RGP0016/2019</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: R35GM142566</p>"
+  },
+  "title": "A 3D Adult Zebrafish Brain Atlas (AZBA) for the Digital Age",
+  "links": {
+    "self": "https://zenodo.org/api/records/5570800",
+    "self_html": "https://zenodo.org/records/5570800",
+    "preview_html": "https://zenodo.org/records/5570800?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.dfn2z351g",
+    "self_doi": "https://doi.org/10.5061/dryad.dfn2z351g",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.dfn2z351g",
+    "reserve_doi": "https://zenodo.org/api/records/5570800/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5570799",
+    "parent_html": "https://zenodo.org/records/5570799",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5570800/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5570800/sequence/default",
+    "files": "https://zenodo.org/api/records/5570800/files",
+    "media_files": "https://zenodo.org/api/records/5570800/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:5570800:ReadMe.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/5570800/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5570800/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5570800/versions/latest",
+    "latest_html": "https://zenodo.org/records/5570800/latest",
+    "versions": "https://zenodo.org/api/records/5570800/versions",
+    "draft": "https://zenodo.org/api/records/5570800/draft",
+    "access_links": "https://zenodo.org/api/records/5570800/access/links",
+    "access_grants": "https://zenodo.org/api/records/5570800/access/grants",
+    "access_users": "https://zenodo.org/api/records/5570800/access/users",
+    "access_request": "https://zenodo.org/api/records/5570800/access/request",
+    "access": "https://zenodo.org/api/records/5570800/access",
+    "communities": "https://zenodo.org/api/records/5570800/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5570800/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5570800/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5570800/file-modification",
+    "requests": "https://zenodo.org/api/records/5570800/requests"
+  },
+  "updated": "2024-07-17T17:21:13.452380+00:00",
+  "recid": "5570800",
+  "revision": 8,
+  "files": [
+    {
+      "id": "29f95e15-81d0-402e-9979-0d981b555f5b",
+      "key": "20180815_PCNA_average.nii.gz",
+      "size": 164893889,
+      "checksum": "md5:f5b061be9a5550bb19e84dcb2c674d84",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180815_PCNA_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "61e0c03d-17dc-4046-b9cb-b3e17dfe0f7e",
+      "key": "2021-08-22_AZBA_segmentation.nii.gz",
+      "size": 3415115,
+      "checksum": "md5:13c816a416ff1e3db98211f4882a0983",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/2021-08-22_AZBA_segmentation.nii.gz/content"
+      }
+    },
+    {
+      "id": "1e430eae-98db-45c5-ac4f-2c02eb3ff525",
+      "key": "20180219_topro_average_2020.nii.gz",
+      "size": 383976295,
+      "checksum": "md5:9a5d5ec9e856a04a3f089f55f08efeac",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180219_topro_average_2020.nii.gz/content"
+      }
+    },
+    {
+      "id": "75360860-cad0-4b7e-91ad-4e9f84b057c1",
+      "key": "20180505_calbindin_average.nii.gz",
+      "size": 164003654,
+      "checksum": "md5:cae91546e856abc6a525b1bc9bd0e740",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180505_calbindin_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "c8f40f5e-2f1f-4b07-91e5-bb9b8fbba3c5",
+      "key": "20180505_TH_average.nii.gz",
+      "size": 189837556,
+      "checksum": "md5:638f161b268ed58471d12d1280c54b28",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180505_TH_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "4ddf6660-7f4d-447e-b36d-1817636f1484",
+      "key": "20180628_AF_average.nii.gz",
+      "size": 293640393,
+      "checksum": "md5:a8d28bbb5bce35cd1776842e0e6850ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180628_AF_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "412b50d6-7f68-44bf-9da5-0e9c991d8210",
+      "key": "20180815_5-HT_average.nii.gz",
+      "size": 225985129,
+      "checksum": "md5:bc4312ed95ea100bd3bedb7bc231918e",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180815_5-HT_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "8a4154c5-69f5-49d3-b2d5-327f47c85eae",
+      "key": "20180815_GFAP_average.nii.gz",
+      "size": 138010728,
+      "checksum": "md5:bdbdd72efa40e60979cd7b28ae13f226",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180815_GFAP_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "ebf2f75c-f09b-4cbc-93f2-4f188ba8a83d",
+      "key": "20180815_HuCD_average.nii.gz",
+      "size": 211633775,
+      "checksum": "md5:680db6ab399801973916f4d0b0e65684",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180815_HuCD_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "71236fc8-68f3-4b98-bb59-ee1b0c5ec3c0",
+      "key": "20180815_Prox1_average.nii.gz",
+      "size": 189178211,
+      "checksum": "md5:ee4929fb7be2a21b62d69e90fdb27e22",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20180815_Prox1_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "b67ca752-957a-4405-8ab2-9f86aa2c51c1",
+      "key": "20181120_Calretinin_average.nii.gz",
+      "size": 185036429,
+      "checksum": "md5:345bfbce0aa8fc5c1251756c946d0ca1",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20181120_Calretinin_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "d9e06835-7af2-4a62-aabe-711b8732846f",
+      "key": "20181120_ChAT_average.nii.gz",
+      "size": 241741002,
+      "checksum": "md5:f38fdeebadf6bfd490c5627bc10e10b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20181120_ChAT_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "6bc22b5b-bd85-4f2a-9e9d-ce5a2086182f",
+      "key": "20181120_PV_SWANT_average.nii.gz",
+      "size": 240630405,
+      "checksum": "md5:1fe127be9c431e0c74476f78ed937f2c",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/20181120_PV_SWANT_average.nii.gz/content"
+      }
+    },
+    {
+      "id": "5dc99bba-898d-47b6-a2a9-eda369441723",
+      "key": "2021-08-22_AZBA_Label_descriptions.txt",
+      "size": 16649,
+      "checksum": "md5:04b574458701df148574aed62d5cbf43",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/2021-08-22_AZBA_Label_descriptions.txt/content"
+      }
+    },
+    {
+      "id": "5a93c46a-3ba8-4570-a597-4afb8d80429d",
+      "key": "2021-08-22_AZBA_structure_tree.txt",
+      "size": 11478,
+      "checksum": "md5:3239ef61da1c9a8efc3d033a8d2ae45f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/2021-08-22_AZBA_structure_tree.txt/content"
+      }
+    },
+    {
+      "id": "dddcd9ea-3ea4-4d57-92eb-8c5056f591b9",
+      "key": "ReadMe.pdf",
+      "size": 146861,
+      "checksum": "md5:547f9c208fa9fb61602a8d6c1fd8fc15",
+      "links": {
+        "self": "https://zenodo.org/api/records/5570800/files/ReadMe.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 617,
+    "unique_downloads": 474,
+    "views": 446,
+    "unique_views": 437,
+    "version_downloads": 617,
+    "version_unique_downloads": 474,
+    "version_unique_views": 437,
+    "version_views": 446
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 13,
+    "archive_count": 13,
+    "genomics_count": 0,
+    "total_imaging_size": 2631982581,
+    "total_archive_size": 2631982581,
+    "top_level_files": [
+      {
+        "name": "20180815_PCNA_average.nii.gz",
+        "size": 164893889
+      },
+      {
+        "name": "2021-08-22_AZBA_segmentation.nii.gz",
+        "size": 3415115
+      },
+      {
+        "name": "20180219_topro_average_2020.nii.gz",
+        "size": 383976295
+      },
+      {
+        "name": "20180505_calbindin_average.nii.gz",
+        "size": 164003654
+      },
+      {
+        "name": "20180505_TH_average.nii.gz",
+        "size": 189837556
+      },
+      {
+        "name": "20180628_AF_average.nii.gz",
+        "size": 293640393
+      },
+      {
+        "name": "20180815_5-HT_average.nii.gz",
+        "size": 225985129
+      },
+      {
+        "name": "20180815_GFAP_average.nii.gz",
+        "size": 138010728
+      },
+      {
+        "name": "20180815_HuCD_average.nii.gz",
+        "size": 211633775
+      },
+      {
+        "name": "20180815_Prox1_average.nii.gz",
+        "size": 189178211
+      },
+      {
+        "name": "20181120_Calretinin_average.nii.gz",
+        "size": 185036429
+      },
+      {
+        "name": "20181120_ChAT_average.nii.gz",
+        "size": 241741002
+      },
+      {
+        "name": "20181120_PV_SWANT_average.nii.gz",
+        "size": 240630405
+      },
+      {
+        "name": "2021-08-22_AZBA_Label_descriptions.txt",
+        "size": 16649
+      },
+      {
+        "name": "2021-08-22_AZBA_structure_tree.txt",
+        "size": 11478
+      },
+      {
+        "name": "ReadMe.pdf",
+        "size": 146861
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:15.876312"
+}

@@ -1,0 +1,229 @@
+{
+  "created": "2021-07-26T19:41:34.294373+00:00",
+  "modified": "2023-04-02T08:07:49.449719+00:00",
+  "id": 5138190,
+  "conceptrecid": "5138189",
+  "doi": "10.5281/zenodo.5138190",
+  "conceptdoi": "10.5281/zenodo.5138189",
+  "doi_url": "https://doi.org/10.5281/zenodo.5138190",
+  "metadata": {
+    "title": "Characterization of Irreversible Land Subsidence in the Yazd-Ardakan Plain, Iran from 2003 to 2020 InSAR Time Series",
+    "doi": "10.5281/zenodo.5138190",
+    "publication_date": "2021-07-30",
+    "description": "<p>This repository contains the data used in <a href=\"https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JB022258\">Mirzadeh et al., 2021</a>. It includes two InSAR time-series datasets from Envisat and Sentinel-1 satellite in both ascending and descending orbits, acquired over Yazd-Ardakan Plain, Iran, as well as,&nbsp;the population density information and weather data for this study area.</p>\n\n<p>Dataset 1: Envisat ascending track 99 and descending track 20</p>\n\n<ul>\n\t<li>Date: 06 Sep 2004 -&nbsp;12 Jul 2010 (17 ascending acquisitions) +&nbsp;26 Mar 2003 -&nbsp;23 Oct 2010 (23 descending acquisitions)</li>\n\t<li>Processor: ISCE/stripmapStack + MintPy</li>\n\t<li>Displacement time-series (in HDF-EOS5 format):&nbsp;timeseries_LODcor_ERA5_ramp_demErr.h5</li>\n\t<li>Mean LOS Velocity (in HDF-EOS5 format): velocity.h5</li>\n\t<li>Mask Temporal Coherence (in HDF-EOS5 format): maskTempCoh.h5</li>\n\t<li>Geometry (in HDF-EOS5 format): geometryRadar.h5</li>\n</ul>\n\n<p>Dataset 2: Sentinel-1 ascending track 130 and descending track 64</p>\n\n<ul>\n\t<li>Date: 14 Oct 2014 -&nbsp;28 Mar 2020 (129 ascending acquisitions) +&nbsp;10 Oct 2014 -&nbsp;24 Mar 2020 (119 descending acquisitions)</li>\n\t<li>Processor: ISCE/topsStack + MintPy</li>\n\t<li>Displacement time-series (in HDF-EOS5 format):&nbsp;timeseries_ERA5_ramp_demErr.h5</li>\n\t<li>Mean LOS Velocity (in HDF-EOS5 format): velocity.h5</li>\n\t<li>Mask Temporal Coherence (in HDF-EOS5 format): maskTempCoh.h5</li>\n\t<li>Geometry (in HDF-EOS5 format): geometryRadar.h5</li>\n</ul>\n\n<p>The time series and Mean LOS Velocity (MVL) products&nbsp;can be georeferenced and resampled using the makTempCoh and geometryRadar products, and the MintPy commands/functions.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Sayyed Mohammad Javad Mirzadeh",
+        "affiliation": "Shanghai Astronomical Observatory, Chinese Academy of Sciences",
+        "orcid": "0000-0002-3809-882X"
+      },
+      {
+        "name": "Shuanggen Jin",
+        "affiliation": "Shanghai Astronomical Observatory, Chinese Academy of Sciences",
+        "orcid": "0000-0002-5108-4828"
+      },
+      {
+        "name": "Esmaeel Parizi",
+        "affiliation": "Physical Geography Department, University of Tehran",
+        "orcid": "0000-0001-6458-1519"
+      },
+      {
+        "name": "Estelle Chaussard",
+        "affiliation": null,
+        "orcid": "0000-0002-2291-7085"
+      },
+      {
+        "name": "Roland B\u00fcrgmann",
+        "affiliation": "Department of Earth and Planetary Science, University of California Berkeley",
+        "orcid": "0000-0002-3560-044X"
+      },
+      {
+        "name": "Jose Manuel Delgado Blasco",
+        "affiliation": "Grupo de Investigaci\u00f3n Microgeodesia Ja\u00e9n (PAIDI RNM-282), Universidad de Ja\u00e9n",
+        "orcid": "0000-0003-0098-3046"
+      },
+      {
+        "name": "Meisam Amani",
+        "affiliation": "Wood Environment & Infrastructure Solutions",
+        "orcid": "0000-0002-9495-4010"
+      },
+      {
+        "name": "Han Bao",
+        "affiliation": "Earth, Planetary, and Space Sciences, University of California",
+        "orcid": "0000-0002-0330-3096"
+      },
+      {
+        "name": "Seyyed Hossein Mirzadeh",
+        "affiliation": "Faculty of Architecture and Urban Planning, University of Art",
+        "orcid": "0000-0001-8201-1149"
+      }
+    ],
+    "keywords": [
+      "InSAR",
+      "Elastic vs. Inelastic deformation",
+      "Time-series",
+      "Independent Component Analysis (ICA)"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1029/2021JB022258",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "11",
+      "pages": "e2021JB022258",
+      "title": "Journal of Geophysical Research: Solid Earth",
+      "volume": "126"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5138189"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Characterization of Irreversible Land Subsidence in the Yazd-Ardakan Plain, Iran from 2003 to 2020 InSAR Time Series",
+  "links": {
+    "self": "https://zenodo.org/api/records/5138190",
+    "self_html": "https://zenodo.org/records/5138190",
+    "preview_html": "https://zenodo.org/records/5138190?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5138190",
+    "self_doi": "https://doi.org/10.5281/zenodo.5138190",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5138190",
+    "reserve_doi": "https://zenodo.org/api/records/5138190/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5138189",
+    "parent_html": "https://zenodo.org/records/5138189",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5138189",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5138189",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5138190/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5138190/sequence/default",
+    "files": "https://zenodo.org/api/records/5138190/files",
+    "media_files": "https://zenodo.org/api/records/5138190/media-files",
+    "archive": "https://zenodo.org/api/records/5138190/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5138190/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5138190/versions/latest",
+    "latest_html": "https://zenodo.org/records/5138190/latest",
+    "versions": "https://zenodo.org/api/records/5138190/versions",
+    "draft": "https://zenodo.org/api/records/5138190/draft",
+    "access_links": "https://zenodo.org/api/records/5138190/access/links",
+    "access_grants": "https://zenodo.org/api/records/5138190/access/grants",
+    "access_users": "https://zenodo.org/api/records/5138190/access/users",
+    "access_request": "https://zenodo.org/api/records/5138190/access/request",
+    "access": "https://zenodo.org/api/records/5138190/access",
+    "communities": "https://zenodo.org/api/records/5138190/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5138190/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5138190/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5138190/file-modification",
+    "requests": "https://zenodo.org/api/records/5138190/requests"
+  },
+  "updated": "2023-04-02T08:07:49.449719+00:00",
+  "recid": "5138190",
+  "revision": 12,
+  "files": [
+    {
+      "id": "bbbed508-70bb-468d-bcd1-f0c3da7634f2",
+      "key": "Population.zip",
+      "size": 7743,
+      "checksum": "md5:16d0ea75ec5345d4e2440656316427c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/5138190/files/Population.zip/content"
+      }
+    },
+    {
+      "id": "37ab220c-87c5-469f-8744-c7da60d13fcc",
+      "key": "Weather.zip",
+      "size": 329911,
+      "checksum": "md5:88862f09e3a6bb84096d7994b456d054",
+      "links": {
+        "self": "https://zenodo.org/api/records/5138190/files/Weather.zip/content"
+      }
+    },
+    {
+      "id": "9b72533a-ba8b-4c14-890e-18e06761f740",
+      "key": "InSAR_Results.zip",
+      "size": 8388248589,
+      "checksum": "md5:f2fc5caa5ad61dcc89b1fd3152bb9fa7",
+      "links": {
+        "self": "https://zenodo.org/api/records/5138190/files/InSAR_Results.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "243763"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 122,
+    "unique_downloads": 95,
+    "views": 556,
+    "unique_views": 521,
+    "version_downloads": 122,
+    "version_unique_downloads": 95,
+    "version_unique_views": 521,
+    "version_views": 556
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8388586243,
+    "top_level_files": [
+      {
+        "name": "Population.zip",
+        "size": 7743
+      },
+      {
+        "name": "Weather.zip",
+        "size": 329911
+      },
+      {
+        "name": "InSAR_Results.zip",
+        "size": 8388248589
+      }
+    ],
+    "zip_contents": {
+      "weather.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 344805,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:14.494407"
+}

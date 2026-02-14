@@ -1,0 +1,566 @@
+{
+  "created": "2024-03-08T13:09:59.156735+00:00",
+  "modified": "2024-07-07T02:48:03.858077+00:00",
+  "id": 10727125,
+  "conceptrecid": "6560964",
+  "doi": "10.5281/zenodo.10727125",
+  "conceptdoi": "10.5281/zenodo.6560964",
+  "doi_url": "https://doi.org/10.5281/zenodo.10727125",
+  "metadata": {
+    "title": "Layer thicknesses, layer attitudes, CRISM, and DTMs of Becquerel Crater",
+    "doi": "10.5281/zenodo.10727125",
+    "publication_date": "2022",
+    "description": "<p>*VERSION UPDATE FEB 29 2024: The long-wavelength \"L\" CRISM cube of FRT000243D0_07 was unfortunately left out in the first version of this dataset (only the \"S\" cube had been included). This update also includes the \"L\" cube. My sincere apologies for the confusion.<br><br>This is the dataset associated with the paper \"Protracted Hydrogeological Activity in Arabia Terra, Mars: Evidence from the Structure and Mineralogy of the Layered Deposits of Becquerel Crater\" in the Journal of Geophysical Research: Planets.<br><br>Schmidt, G.,&nbsp;Luzzi, E., Rossi, A.,&nbsp;Pondrelli, M.,&nbsp;Apuzzo, A.,&nbsp;&amp;&nbsp;Salvini, F. (2022).&nbsp;Protracted Hydrogeological Activity in Arabia Terra, Mars: Evidence from the Structure and Mineralogy of the Layered Deposits of Becquerel Crater. Journal of Geophysical Research: Planets.<br><br>This dataset includes layer thickness and layer attitude measurements of sedimentary structures within Becquerel crater, Mars. The accompanying digital terrain models used to acquire these measurements are also included. A free version of the Orion layer attitude measuring software is also included with instructions of use. The CRISM cubes and accompanying&nbsp;.roi files from ENVI (regions of interest used to produce the spectrum presented in the published paper) are included.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Gene Schmidt",
+        "affiliation": "Roma Tre University"
+      }
+    ],
+    "keywords": [
+      "Mars",
+      "Hydrogeology",
+      "Equatorial Layered Deposits",
+      "Lakes on Mars",
+      "Layered Mounds",
+      "Hydrated Minerals",
+      "Structural Analysis"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1029/2021JE006974",
+        "relation": "references",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1029/2018JE005802",
+        "relation": "references",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "9",
+      "title": "Journal of Geophysical Research: Planets",
+      "volume": "127"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "remote-sensing"
+      },
+      {
+        "id": "photogrammetry"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6560964"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Layer thicknesses, layer attitudes, CRISM, and DTMs of Becquerel Crater",
+  "links": {
+    "self": "https://zenodo.org/api/records/10727125",
+    "self_html": "https://zenodo.org/records/10727125",
+    "preview_html": "https://zenodo.org/records/10727125?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10727125",
+    "self_doi": "https://doi.org/10.5281/zenodo.10727125",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10727125",
+    "reserve_doi": "https://zenodo.org/api/records/10727125/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6560964",
+    "parent_html": "https://zenodo.org/records/6560964",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6560964",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6560964",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10727125/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10727125/sequence/default",
+    "files": "https://zenodo.org/api/records/10727125/files",
+    "media_files": "https://zenodo.org/api/records/10727125/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10727125:G19_025637_2021_XN_22N008W_DTM.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/10727125/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10727125/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10727125/versions/latest",
+    "latest_html": "https://zenodo.org/records/10727125/latest",
+    "versions": "https://zenodo.org/api/records/10727125/versions",
+    "draft": "https://zenodo.org/api/records/10727125/draft",
+    "access_links": "https://zenodo.org/api/records/10727125/access/links",
+    "access_grants": "https://zenodo.org/api/records/10727125/access/grants",
+    "access_users": "https://zenodo.org/api/records/10727125/access/users",
+    "access_request": "https://zenodo.org/api/records/10727125/access/request",
+    "access": "https://zenodo.org/api/records/10727125/access",
+    "communities": "https://zenodo.org/api/records/10727125/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10727125/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10727125/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10727125/file-modification",
+    "requests": "https://zenodo.org/api/records/10727125/requests"
+  },
+  "updated": "2024-07-07T02:48:03.858077+00:00",
+  "recid": "10727125",
+  "revision": 6,
+  "files": [
+    {
+      "id": "9d34f288-f858-4a29-bd3d-d3278299be03",
+      "key": "hrl00006290_07_if183l_trr3.lbl",
+      "size": 9484,
+      "checksum": "md5:d06473481ae7be54a6cac07f45775ab9",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00006290_07_if183l_trr3.lbl/content"
+      }
+    },
+    {
+      "id": "635b6446-a520-48b0-a48a-26429aa0fe3e",
+      "key": "hrl00006290_07_if183l_trr3.img",
+      "size": 269108480,
+      "checksum": "md5:8e9b2aa9858ce649594ec45be4b972f8",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00006290_07_if183l_trr3.img/content"
+      }
+    },
+    {
+      "id": "e0c39d67-b910-4f1b-aaca-d86df81b4f89",
+      "key": "hrl00006290_07_de183l_ddr1.lbl",
+      "size": 4610,
+      "checksum": "md5:923f59e0dbc0baca3e67732f5d1afb4c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00006290_07_de183l_ddr1.lbl/content"
+      }
+    },
+    {
+      "id": "46ba8006-bd95-4168-8229-91f2f7965b04",
+      "key": "hrl00006290_07_de183l_ddr1.img",
+      "size": 8601600,
+      "checksum": "md5:0b76e3e848c3df7d8a2224cc4feec5eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00006290_07_de183l_ddr1.img/content"
+      }
+    },
+    {
+      "id": "5e3a12ad-6ca0-4854-8464-68cf1a7952af",
+      "key": "G19_025637_2021_XN_22N008W_DTM.tif",
+      "size": 310066685,
+      "checksum": "md5:650c1c1f8ae43319cdb702c5408ef287",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/G19_025637_2021_XN_22N008W_DTM.tif/content"
+      }
+    },
+    {
+      "id": "d2853060-92eb-4ba9-a36a-aaeb3c1d1b5a",
+      "key": "frt000243d0_07_de166s_ddr1.img",
+      "size": 17203200,
+      "checksum": "md5:a038157fcfd94ec9637f408d3e48c1cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000243d0_07_de166s_ddr1.img/content"
+      }
+    },
+    {
+      "id": "427553a6-bef7-4d45-8c0b-066dca4a7fe0",
+      "key": "frt000178e4_rois.roi",
+      "size": 6920,
+      "checksum": "md5:496242fd0a38a8ad80897750cfca4564",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000178e4_rois.roi/content"
+      }
+    },
+    {
+      "id": "24631a03-ac25-46bf-a19f-8b316cca8326",
+      "key": "Volume_Measurements_Global_Mapper_export.xlsx",
+      "size": 10481,
+      "checksum": "md5:d810b7474a6adc11e01cd60b4d69b586",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/Volume_Measurements_Global_Mapper_export.xlsx/content"
+      }
+    },
+    {
+      "id": "beb90898-f50b-47bf-80f4-f4ed7e3773eb",
+      "key": "frt000178e4_07_if166l_trr3.lbl",
+      "size": 9447,
+      "checksum": "md5:af1f8142f39e408304d8ad6d734ca787",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000178e4_07_if166l_trr3.lbl/content"
+      }
+    },
+    {
+      "id": "8e635186-f8c9-4cfb-83b1-124d688ac299",
+      "key": "hrl00006290_rois.roi",
+      "size": 8368,
+      "checksum": "md5:d45c15ea61b5898a8a173d86ddf724e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00006290_rois.roi/content"
+      }
+    },
+    {
+      "id": "c6b773c5-349b-4ae9-ab33-c30dc329bc12",
+      "key": "hrl00013fde_07_de183l_ddr1.img",
+      "size": 8601600,
+      "checksum": "md5:94a3ef8380d29ccb49cd2b5878f95025",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00013fde_07_de183l_ddr1.img/content"
+      }
+    },
+    {
+      "id": "29dc1c53-8855-4d7e-a52e-8c89ae1bebab",
+      "key": "hrl00013fde_07_de183l_ddr1.lbl",
+      "size": 4417,
+      "checksum": "md5:10cd450db985f8257d94a47893b5eafd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00013fde_07_de183l_ddr1.lbl/content"
+      }
+    },
+    {
+      "id": "88da29d3-7950-4c8a-95a4-d55bf6ba996a",
+      "key": "hrl00013fde_07_if183l_trr3.img",
+      "size": 269108480,
+      "checksum": "md5:1289295e00bb53275cf145debe919301",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00013fde_07_if183l_trr3.img/content"
+      }
+    },
+    {
+      "id": "29fae425-787c-46e4-b65c-13b9dd841b26",
+      "key": "frt000243d0_rois.roi",
+      "size": 21056,
+      "checksum": "md5:8453b81bb96c0d050e9fce8b48f004f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000243d0_rois.roi/content"
+      }
+    },
+    {
+      "id": "53abaafe-a257-4058-bdd7-4f26a097a22f",
+      "key": "frt000243d0_07_if166s_trr3.lbl",
+      "size": 8727,
+      "checksum": "md5:d5533eed63544e460731f91a7074706d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000243d0_07_if166s_trr3.lbl/content"
+      }
+    },
+    {
+      "id": "a01ff47b-0345-44b3-8db1-de7d5744f943",
+      "key": "FRT000243D0_07_DE166L_DDR1.IMG",
+      "size": 17203200,
+      "checksum": "md5:1100790372ce9aa2d1b2e5f554c06b4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/FRT000243D0_07_DE166L_DDR1.IMG/content"
+      }
+    },
+    {
+      "id": "0c1b5c04-8f50-4eb4-97e2-c733f00c8652",
+      "key": "FRT000243D0_07_IF166L_TRR3.IMG",
+      "size": 538216960,
+      "checksum": "md5:e927d7571c67817949fa8d42969f5753",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/FRT000243D0_07_IF166L_TRR3.IMG/content"
+      }
+    },
+    {
+      "id": "e925ff92-d129-4d5c-bb86-7951ce790336",
+      "key": "frt000243d0_07_if166s_trr3.img",
+      "size": 131484160,
+      "checksum": "md5:e27bf8e2db1843d907bc24ef325d3b39",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000243d0_07_if166s_trr3.img/content"
+      }
+    },
+    {
+      "id": "eebecefa-1ec5-4fc0-8859-8f31e0c22f3e",
+      "key": "hrl00013fde_07_if183l_trr3.lbl",
+      "size": 9484,
+      "checksum": "md5:ef78cdf44d89e18adf5dfa03bda341fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00013fde_07_if183l_trr3.lbl/content"
+      }
+    },
+    {
+      "id": "3028f1a7-ef84-48a4-8b1a-d00062f150a5",
+      "key": "PSP_003656_2015_PSP_005845_2015_DTM.tif",
+      "size": 1345614677,
+      "checksum": "md5:bc9131b6c742324ef2922dfe99323fc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/PSP_003656_2015_PSP_005845_2015_DTM.tif/content"
+      }
+    },
+    {
+      "id": "7ff2bf12-367c-451a-a817-5b1997a455a6",
+      "key": "hrl00013fde_rois.roi",
+      "size": 4912,
+      "checksum": "md5:fea502ba13d3b086f5e466ca964a8cc0",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/hrl00013fde_rois.roi/content"
+      }
+    },
+    {
+      "id": "2548cdda-f728-4313-8beb-cc44a22dab36",
+      "key": "Orion (free version).rar",
+      "size": 11596220,
+      "checksum": "md5:b5437b519febca9954cd1a7c60ee01ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/Orion (free version).rar/content"
+      }
+    },
+    {
+      "id": "3e866404-e33a-4dcf-ab8c-d1eef72d3569",
+      "key": "Orion_Layer_Attitudes.rar",
+      "size": 61135,
+      "checksum": "md5:576749638f6cda424390b6f6a3f60619",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/Orion_Layer_Attitudes.rar/content"
+      }
+    },
+    {
+      "id": "6af9ea3e-4e03-44f6-85e3-5cc24b1e43d6",
+      "key": "frt000243d0_07_de166s_ddr1.lbl",
+      "size": 4744,
+      "checksum": "md5:e9837067a5a904eb1b334161f6b90213",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000243d0_07_de166s_ddr1.lbl/content"
+      }
+    },
+    {
+      "id": "138259b9-9132-42c5-b96b-d2cc18bf9290",
+      "key": "PSP_001546_2015_PSP_001955_2015_DTM.tif",
+      "size": 578113362,
+      "checksum": "md5:afb2938dc5163fedbcf5977da06c891e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/PSP_001546_2015_PSP_001955_2015_DTM.tif/content"
+      }
+    },
+    {
+      "id": "782f85ea-7860-4b66-af80-ecaa9d66d9ec",
+      "key": "Becquerel_Layer_Thicknesses.xlsx",
+      "size": 98482,
+      "checksum": "md5:4d6d07f58fe1bfb3a3b71c9bc6f3cd8e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/Becquerel_Layer_Thicknesses.xlsx/content"
+      }
+    },
+    {
+      "id": "84a21f57-1cfd-420f-9502-05baca3bdcf2",
+      "key": "frt000178e4_07_if166l_trr3.img",
+      "size": 538216960,
+      "checksum": "md5:7ca32e5a4f9ff728b96e1500c7e3763c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/frt000178e4_07_if166l_trr3.img/content"
+      }
+    },
+    {
+      "id": "68c06548-7857-4b5b-a527-f4fb383eeccd",
+      "key": "DEMs.rar",
+      "size": 1917052400,
+      "checksum": "md5:d302c57f029a52846760dc63c01a7fc8",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/DEMs.rar/content"
+      }
+    },
+    {
+      "id": "20f49b0c-0680-4297-b59f-849ec828c3fc",
+      "key": "CRISM.rar",
+      "size": 1048134082,
+      "checksum": "md5:c53ef97465be68b5489d9388c9bd23a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/CRISM.rar/content"
+      }
+    },
+    {
+      "id": "661f13b7-3b63-405c-9a76-d8a9f1e6e8f2",
+      "key": "FRT000243D0_07_DE166L_DDR1.LBL",
+      "size": 4744,
+      "checksum": "md5:54c7037e49a06b28b6d66af84faeef49",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/FRT000243D0_07_DE166L_DDR1.LBL/content"
+      }
+    },
+    {
+      "id": "a98b6b39-c36e-40db-b02d-3001a445e927",
+      "key": "FRT000243D0_07_IF166L_TRR3.LBL",
+      "size": 9449,
+      "checksum": "md5:4b081891af8b3a725da4bf73c1416301",
+      "links": {
+        "self": "https://zenodo.org/api/records/10727125/files/FRT000243D0_07_IF166L_TRR3.LBL/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "45346"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1956,
+    "unique_downloads": 1929,
+    "views": 296,
+    "unique_views": 290,
+    "version_downloads": 1227,
+    "version_unique_downloads": 1227,
+    "version_unique_views": 123,
+    "version_views": 127
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 12,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 4031539364,
+    "total_archive_size": 2976843837,
+    "top_level_files": [
+      {
+        "name": "hrl00006290_07_if183l_trr3.lbl",
+        "size": 9484
+      },
+      {
+        "name": "hrl00006290_07_if183l_trr3.img",
+        "size": 269108480
+      },
+      {
+        "name": "hrl00006290_07_de183l_ddr1.lbl",
+        "size": 4610
+      },
+      {
+        "name": "hrl00006290_07_de183l_ddr1.img",
+        "size": 8601600
+      },
+      {
+        "name": "G19_025637_2021_XN_22N008W_DTM.tif",
+        "size": 310066685
+      },
+      {
+        "name": "frt000243d0_07_de166s_ddr1.img",
+        "size": 17203200
+      },
+      {
+        "name": "frt000178e4_rois.roi",
+        "size": 6920
+      },
+      {
+        "name": "Volume_Measurements_Global_Mapper_export.xlsx",
+        "size": 10481
+      },
+      {
+        "name": "frt000178e4_07_if166l_trr3.lbl",
+        "size": 9447
+      },
+      {
+        "name": "hrl00006290_rois.roi",
+        "size": 8368
+      },
+      {
+        "name": "hrl00013fde_07_de183l_ddr1.img",
+        "size": 8601600
+      },
+      {
+        "name": "hrl00013fde_07_de183l_ddr1.lbl",
+        "size": 4417
+      },
+      {
+        "name": "hrl00013fde_07_if183l_trr3.img",
+        "size": 269108480
+      },
+      {
+        "name": "frt000243d0_rois.roi",
+        "size": 21056
+      },
+      {
+        "name": "frt000243d0_07_if166s_trr3.lbl",
+        "size": 8727
+      },
+      {
+        "name": "FRT000243D0_07_DE166L_DDR1.IMG",
+        "size": 17203200
+      },
+      {
+        "name": "FRT000243D0_07_IF166L_TRR3.IMG",
+        "size": 538216960
+      },
+      {
+        "name": "frt000243d0_07_if166s_trr3.img",
+        "size": 131484160
+      },
+      {
+        "name": "hrl00013fde_07_if183l_trr3.lbl",
+        "size": 9484
+      },
+      {
+        "name": "PSP_003656_2015_PSP_005845_2015_DTM.tif",
+        "size": 1345614677
+      },
+      {
+        "name": "hrl00013fde_rois.roi",
+        "size": 4912
+      },
+      {
+        "name": "Orion (free version).rar",
+        "size": 11596220
+      },
+      {
+        "name": "Orion_Layer_Attitudes.rar",
+        "size": 61135
+      },
+      {
+        "name": "frt000243d0_07_de166s_ddr1.lbl",
+        "size": 4744
+      },
+      {
+        "name": "PSP_001546_2015_PSP_001955_2015_DTM.tif",
+        "size": 578113362
+      },
+      {
+        "name": "Becquerel_Layer_Thicknesses.xlsx",
+        "size": 98482
+      },
+      {
+        "name": "frt000178e4_07_if166l_trr3.img",
+        "size": 538216960
+      },
+      {
+        "name": "DEMs.rar",
+        "size": 1917052400
+      },
+      {
+        "name": "CRISM.rar",
+        "size": 1048134082
+      },
+      {
+        "name": "FRT000243D0_07_DE166L_DDR1.LBL",
+        "size": 4744
+      },
+      {
+        "name": "FRT000243D0_07_IF166L_TRR3.LBL",
+        "size": 9449
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:09.628919"
+}

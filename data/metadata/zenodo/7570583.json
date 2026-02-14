@@ -1,0 +1,591 @@
+{
+  "created": "2023-02-01T15:05:51.370855+00:00",
+  "modified": "2024-07-12T18:35:07.651899+00:00",
+  "id": 7570583,
+  "conceptrecid": "7570582",
+  "doi": "10.5281/zenodo.7570583",
+  "conceptdoi": "10.5281/zenodo.7570582",
+  "doi_url": "https://doi.org/10.5281/zenodo.7570583",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain/8-class segmentation of RGB 768x768 NAIP images",
+    "doi": "10.5281/zenodo.7570583",
+    "publication_date": "2023-01-25",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain 8-class segmentation of RGB 768x768 NAIP images</strong></em></p>\n\n<p>These Residual-UNet model data are based on Coast Train images and associated labels. https://coasttrain.github.io/CoastTrain/docs/Version%201:%20March%202022/data</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**: https://doi.org/10.1038/s41597-023-01929-2</p>\n\n<p>Image size used by model: 768 x 768 x 3 pixels</p>\n\n<p>classes:</p>\n\n<p>water<br>\nwhitewater<br>\nsediment<br>\nother_bare_natural_terrain<br>\nmarsh_vegetation<br>\nterrestrial_vegetation<br>\nagricultural<br>\ndevelopment</p>\n\n<p>File descriptions</p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>References<br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Buscombe, D., Wernette, P., Fitzpatrick, S. et al. A 1.2 Billion Pixel Human-Labeled Dataset for Data-Driven Classification of Coastal Environments. Sci Data 10, 46 (2023). https://doi.org/10.1038/s41597-023-01929-2</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "NAIP",
+      "aerial",
+      "semantic segmentation",
+      "land use / land cover",
+      "Seg2Map"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7570582"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for CoastTrain/8-class segmentation of RGB 768x768 NAIP images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7570583",
+    "self_html": "https://zenodo.org/records/7570583",
+    "preview_html": "https://zenodo.org/records/7570583?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7570583",
+    "self_doi": "https://doi.org/10.5281/zenodo.7570583",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7570583",
+    "reserve_doi": "https://zenodo.org/api/records/7570583/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7570582",
+    "parent_html": "https://zenodo.org/records/7570582",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7570582",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7570582",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7570583/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7570583/sequence/default",
+    "files": "https://zenodo.org/api/records/7570583/files",
+    "media_files": "https://zenodo.org/api/records/7570583/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7570583:ct_NAIP_8class_768_v4_trainhist_16.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7570583/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7570583/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7570583/versions/latest",
+    "latest_html": "https://zenodo.org/records/7570583/latest",
+    "versions": "https://zenodo.org/api/records/7570583/versions",
+    "draft": "https://zenodo.org/api/records/7570583/draft",
+    "access_links": "https://zenodo.org/api/records/7570583/access/links",
+    "access_grants": "https://zenodo.org/api/records/7570583/access/grants",
+    "access_users": "https://zenodo.org/api/records/7570583/access/users",
+    "access_request": "https://zenodo.org/api/records/7570583/access/request",
+    "access": "https://zenodo.org/api/records/7570583/access",
+    "communities": "https://zenodo.org/api/records/7570583/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7570583/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7570583/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7570583/file-modification",
+    "requests": "https://zenodo.org/api/records/7570583/requests"
+  },
+  "updated": "2024-07-12T18:35:07.651899+00:00",
+  "recid": "7570583",
+  "revision": 5,
+  "files": [
+    {
+      "id": "c5e2be1c-e167-40d6-9529-0e383ca28d3b",
+      "key": "ct_NAIP_8class_768_v2_modelcard.json",
+      "size": 2425,
+      "checksum": "md5:46421b851d13dafdb4a0668873698a1c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "9b88c0e4-50a8-4187-8819-494900a2b9e7",
+      "key": "ct_NAIP_8class_768_v3_fullmodel.h5",
+      "size": 69423496,
+      "checksum": "md5:26cf0970183cbce53a262300117fb7c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "bbb5e151-27d0-415b-b658-ab1113bf54e2",
+      "key": "ct_NAIP_8class_768_v3.json",
+      "size": 1093,
+      "checksum": "md5:0506aaddf8f16d39590eaf33abc8a759",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v3.json/content"
+      }
+    },
+    {
+      "id": "8746ca68-6d8d-4ca8-a7a1-c22146589ce7",
+      "key": "ct_NAIP_8class_768_v3_modelcard.json",
+      "size": 2425,
+      "checksum": "md5:5ef5b2656efae12eca4b2516cd71d05e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "23fa866f-0bae-4bff-b187-48fc7f1ff889",
+      "key": "readme.txt",
+      "size": 2875,
+      "checksum": "md5:3e4021a3c06b6ba0067d5b381a6a8a6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "82c51925-52fe-425f-8cc2-80651e2a6505",
+      "key": "ct_NAIP_8class_768_v6_model_history.npz",
+      "size": 4377,
+      "checksum": "md5:f41c28d75b88cff42cd2232c24fc0bbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "2434f681-fe4d-4424-96e7-623e90383ccc",
+      "key": "BEST_MODEL.txt",
+      "size": 34,
+      "checksum": "md5:e25b00c81f934a8cb80c903608d1c9fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "83a05560-cc6c-4b2c-8d0a-d23b83af9dac",
+      "key": "ct_NAIP_8class_768_v5_modelcard.json",
+      "size": 2424,
+      "checksum": "md5:bd54a3fbaf31d50403350c19b97c6e63",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "d1132d0b-87a7-48d4-8f35-4720d896b575",
+      "key": "ct_NAIP_8class_768_v6_fullmodel.h5",
+      "size": 69407592,
+      "checksum": "md5:0a2a56aca437b1083f8b3d194b4953df",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "48ffca46-06e0-41d4-9053-e80ff8bfe3e5",
+      "key": "ct_NAIP_8class_768_v6.json",
+      "size": 1091,
+      "checksum": "md5:b45ccab8a6ec9e289660c8704dc631e0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v6.json/content"
+      }
+    },
+    {
+      "id": "ceaf3538-ff87-4600-8ec6-611423adaf44",
+      "key": "ct_NAIP_8class_768_v6_modelcard.json",
+      "size": 2423,
+      "checksum": "md5:03c4ee897e10d73cd048ae8f80ec8350",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "fee22b88-eee9-496a-944f-42644689db50",
+      "key": "ct_NAIP_8class_768_v2.json",
+      "size": 1093,
+      "checksum": "md5:76ec2fb442af7b39a21d71757a875e73",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v2.json/content"
+      }
+    },
+    {
+      "id": "02d5118c-ea49-466d-bc00-45e3fde2eeb4",
+      "key": "ct_NAIP_8class_768_v2_fullmodel.h5",
+      "size": 69423496,
+      "checksum": "md5:fa8b20464010d8750f22ae088b606c5e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "044d2eda-c757-4c30-bdfd-fb1199c09e81",
+      "key": "ct_NAIP_8class_768_v4.json",
+      "size": 1091,
+      "checksum": "md5:5abfb405f3f6e66b2fc0f7e42baa97d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v4.json/content"
+      }
+    },
+    {
+      "id": "1dabd82b-bf90-490a-929a-01b7d8cce4b8",
+      "key": "ct_NAIP_8class_768_v4_modelcard.json",
+      "size": 2423,
+      "checksum": "md5:d93513941b2bdae87c8379e37228a5ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "f7f5592a-523e-4a88-8722-4f54dd85a544",
+      "key": "ct_NAIP_8class_768_v2_model_history.npz",
+      "size": 3428,
+      "checksum": "md5:a298b21696e68d788ffae2068231cd79",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "1dcbfa5a-c2cf-482e-9710-7eb96be07a75",
+      "key": "ct_NAIP_8class_768_v4_fullmodel.h5",
+      "size": 69423496,
+      "checksum": "md5:7583342e945300bf86205340cd8623ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "d3523e9b-6fdb-4f8d-a7ea-aac61c9aba04",
+      "key": "ct_NAIP_8class_768_v1_modelcard.json",
+      "size": 2425,
+      "checksum": "md5:ad1c5f3522d9b1dd777739db9487ff03",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "b9970137-492d-4dd4-b49a-c99579f43db4",
+      "key": "ct_NAIP_8class_768_v4_model_history.npz",
+      "size": 3643,
+      "checksum": "md5:9c54b6e71799ad28830e5080704f6f02",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "53089e41-f9e7-4e08-a828-1449559c5917",
+      "key": "ct_NAIP_8class_768_v5.json",
+      "size": 1092,
+      "checksum": "md5:64346c3a8697896f12efe15258155ec4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v5.json/content"
+      }
+    },
+    {
+      "id": "8aa18e51-b80c-454c-97f6-3c596eeb1a80",
+      "key": "ct_NAIP_8class_768_v1.json",
+      "size": 1093,
+      "checksum": "md5:23c2b159d8ea2195255b9727570ca96e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v1.json/content"
+      }
+    },
+    {
+      "id": "3c960766-3ff2-4d68-adfc-86fc34711645",
+      "key": "ct_NAIP_8class_768_v5_model_history.npz",
+      "size": 4390,
+      "checksum": "md5:3e3f854f8c6df126a137f932b00ef817",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "e3edea01-7456-45c7-88c0-e138e87ba437",
+      "key": "ct_NAIP_8class_768_v3_model_history.npz",
+      "size": 3304,
+      "checksum": "md5:ca8f14541a39f06357964344e5d5f174",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "23072cee-a782-4636-bb49-efc34788cf86",
+      "key": "ct_NAIP_8class_768_v1_fullmodel.h5",
+      "size": 69423496,
+      "checksum": "md5:3df332c40ac8f181a0ca4d3911486105",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "0aa97fb6-7bf9-4b20-8990-59e12785a8f7",
+      "key": "classes.txt",
+      "size": 117,
+      "checksum": "md5:5931c05ec517b52b006295250b8ec168",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "5e4236a4-1f58-4c25-a5dc-ad3f8a989e2c",
+      "key": "ct_NAIP_8class_768_v5_fullmodel.h5",
+      "size": 69423504,
+      "checksum": "md5:63418a9060dacceddf570e066d754fd0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "2920d064-e512-4130-9b81-97be8be9e25d",
+      "key": "ct_NAIP_8class_768_v1_model_history.npz",
+      "size": 3749,
+      "checksum": "md5:77b831f6a3f89d8bf43eeae5522460c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "8582de03-cde7-4604-984d-ff27aa63b64b",
+      "key": "ct_NAIP_8class_768_v4_trainhist_16.png",
+      "size": 223325,
+      "checksum": "md5:2395aa2cb96991ff322dbb76a531322e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v4_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "434b85a2-afcc-4c94-931d-06e108fdc15b",
+      "key": "ct_NAIP_8class_768_v5_trainhist_16.png",
+      "size": 213796,
+      "checksum": "md5:7419fe84af0ef92175cf1cdec978d8a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v5_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "56280c66-1ea4-4ae5-b1f3-6694b650fd60",
+      "key": "ct_NAIP_8class_768_v2_trainhist_16.png",
+      "size": 222315,
+      "checksum": "md5:8451f2c00901083df9375dde2f6228ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v2_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "63920ff3-321e-4e6e-91ac-60dca7ed0245",
+      "key": "ct_NAIP_8class_768_v1_trainhist_16.png",
+      "size": 201241,
+      "checksum": "md5:0d965d9cef11b56418636dfc4948e28a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v1_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "a86f373a-296b-437f-bf3c-19d704d363a3",
+      "key": "ct_NAIP_8class_768_v3_trainhist_16.png",
+      "size": 222769,
+      "checksum": "md5:962a08f41f79c7bf93eaea014e51283a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v3_trainhist_16.png/content"
+      }
+    },
+    {
+      "id": "255c0a15-df29-4d32-88b8-6aee6e88bdca",
+      "key": "ct_NAIP_8class_768_v6_trainhist_16.png",
+      "size": 212448,
+      "checksum": "md5:7f6cdcd61398d6c7b4d14cff06b45d53",
+      "links": {
+        "self": "https://zenodo.org/api/records/7570583/files/ct_NAIP_8class_768_v6_trainhist_16.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 992,
+    "unique_downloads": 937,
+    "views": 135,
+    "unique_views": 130,
+    "version_downloads": 992,
+    "version_unique_downloads": 937,
+    "version_unique_views": 130,
+    "version_views": 135
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 417843865,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "ct_NAIP_8class_768_v2_modelcard.json",
+        "size": 2425
+      },
+      {
+        "name": "ct_NAIP_8class_768_v3_fullmodel.h5",
+        "size": 69423496
+      },
+      {
+        "name": "ct_NAIP_8class_768_v3.json",
+        "size": 1093
+      },
+      {
+        "name": "ct_NAIP_8class_768_v3_modelcard.json",
+        "size": 2425
+      },
+      {
+        "name": "readme.txt",
+        "size": 2875
+      },
+      {
+        "name": "ct_NAIP_8class_768_v6_model_history.npz",
+        "size": 4377
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 34
+      },
+      {
+        "name": "ct_NAIP_8class_768_v5_modelcard.json",
+        "size": 2424
+      },
+      {
+        "name": "ct_NAIP_8class_768_v6_fullmodel.h5",
+        "size": 69407592
+      },
+      {
+        "name": "ct_NAIP_8class_768_v6.json",
+        "size": 1091
+      },
+      {
+        "name": "ct_NAIP_8class_768_v6_modelcard.json",
+        "size": 2423
+      },
+      {
+        "name": "ct_NAIP_8class_768_v2.json",
+        "size": 1093
+      },
+      {
+        "name": "ct_NAIP_8class_768_v2_fullmodel.h5",
+        "size": 69423496
+      },
+      {
+        "name": "ct_NAIP_8class_768_v4.json",
+        "size": 1091
+      },
+      {
+        "name": "ct_NAIP_8class_768_v4_modelcard.json",
+        "size": 2423
+      },
+      {
+        "name": "ct_NAIP_8class_768_v2_model_history.npz",
+        "size": 3428
+      },
+      {
+        "name": "ct_NAIP_8class_768_v4_fullmodel.h5",
+        "size": 69423496
+      },
+      {
+        "name": "ct_NAIP_8class_768_v1_modelcard.json",
+        "size": 2425
+      },
+      {
+        "name": "ct_NAIP_8class_768_v4_model_history.npz",
+        "size": 3643
+      },
+      {
+        "name": "ct_NAIP_8class_768_v5.json",
+        "size": 1092
+      },
+      {
+        "name": "ct_NAIP_8class_768_v1.json",
+        "size": 1093
+      },
+      {
+        "name": "ct_NAIP_8class_768_v5_model_history.npz",
+        "size": 4390
+      },
+      {
+        "name": "ct_NAIP_8class_768_v3_model_history.npz",
+        "size": 3304
+      },
+      {
+        "name": "ct_NAIP_8class_768_v1_fullmodel.h5",
+        "size": 69423496
+      },
+      {
+        "name": "classes.txt",
+        "size": 117
+      },
+      {
+        "name": "ct_NAIP_8class_768_v5_fullmodel.h5",
+        "size": 69423504
+      },
+      {
+        "name": "ct_NAIP_8class_768_v1_model_history.npz",
+        "size": 3749
+      },
+      {
+        "name": "ct_NAIP_8class_768_v4_trainhist_16.png",
+        "size": 223325
+      },
+      {
+        "name": "ct_NAIP_8class_768_v5_trainhist_16.png",
+        "size": 213796
+      },
+      {
+        "name": "ct_NAIP_8class_768_v2_trainhist_16.png",
+        "size": 222315
+      },
+      {
+        "name": "ct_NAIP_8class_768_v1_trainhist_16.png",
+        "size": 201241
+      },
+      {
+        "name": "ct_NAIP_8class_768_v3_trainhist_16.png",
+        "size": 222769
+      },
+      {
+        "name": "ct_NAIP_8class_768_v6_trainhist_16.png",
+        "size": 212448
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://coasttrain.github.io/CoastTrain/docs/Version%201:%20March%202022/data",
+      "type": "potential_download"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41597-023-01929-2",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41597-023-01929-2",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.616117"
+}

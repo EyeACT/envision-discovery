@@ -1,0 +1,147 @@
+{
+  "created": "2023-06-06T06:28:50.476910+00:00",
+  "modified": "2023-06-07T02:27:01.745665+00:00",
+  "id": 8009107,
+  "conceptrecid": "8009106",
+  "doi": "10.5281/zenodo.8009107",
+  "conceptdoi": "10.5281/zenodo.8009106",
+  "doi_url": "https://doi.org/10.5281/zenodo.8009107",
+  "metadata": {
+    "title": "A Fundus Image Dataset for Domain Generalization in Joint Segmentation of Optic Disc and Optic Cup",
+    "doi": "10.5281/zenodo.8009107",
+    "publication_date": "2023-06-06",
+    "description": "<p>We provide a fundus image dataset for domain generalization, which includes 5&nbsp;different medical centres.<br>\nThis dataset is based on the REFUGE[1] dataset, Drishti-GS[2] dataset, ORIGA[3] dataset, and RIGA[4] dataset. We&nbsp;appreciate their&nbsp;efforts&nbsp;devoted by the authors of [1-4].</p>\n\n<table>\n\t<caption>Details of this dataset</caption>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>Domain</td>\n\t\t\t<td>Cases in Each Domain<br>\n\t\t\t(Training/Test)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>REFUGE</td>\n\t\t\t<td>320/80</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Drishti-GS</td>\n\t\t\t<td>50/51</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>ORIGA</td>\n\t\t\t<td>500/150</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>BinRushed (RIGA)</td>\n\t\t\t<td>156/39</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>Magrabia (RIGA)</td>\n\t\t\t<td>76/19</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>[1] Orlando J I, Fu H, Breda J B, et al. Refuge challenge: A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs[J]. Medical image analysis, 2020, 59: 101570.</p>\n\n<p>[2]&nbsp;Sivaswamy J, Krishnadas S R, Joshi G D, et al. Drishti-GS: Retinal image dataset for optic nerve head (onh) segmentation[C]//2014 IEEE 11th international symposium on biomedical imaging (ISBI). IEEE, 2014: 53-56.</p>\n\n<p>[3]&nbsp;Zhang Z, Yin F S, Liu J, et al. Origa-light: An online retinal fundus image database for glaucoma analysis and research[C]//2010 Annual international conference of the IEEE engineering in medicine and biology. IEEE, 2010: 3065-3068.</p>\n\n<p>[4]&nbsp;Almazroa A, Alodhayb S, Osman E, et al. Retinal fundus images for glaucoma analysis: the RIGA dataset[C]//Medical Imaging 2018: Imaging Informatics for Healthcare, Research, and Applications. SPIE, 2018, 10579: 55-62.</p>\n\n<p>If you find this dataset useful for your research, please consider citing the paper as follows:</p>\n\n<pre><code class=\"language-markdown\">@article{chen2023treasure,\n  title={Treasure in Distribution: A Domain Randomization based Multi-Source Domain Generalization for 2D Medical Image Segmentation},\n  author={Chen, Ziyang and Pan, Yongsheng and Ye, Yiwen and Cui, Hengfei and Xia, Yong},\n  booktitle={Medical Image Computing and Computer Assisted Intervention -- MICCAI 2023},\n  year={2023}\n}</code></pre>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ziyang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Yongsheng Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Yiwen Ye",
+        "affiliation": null
+      },
+      {
+        "name": "Hengfei Cui",
+        "affiliation": null
+      },
+      {
+        "name": "Yong Xia",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8009106"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Fundus Image Dataset for Domain Generalization in Joint Segmentation of Optic Disc and Optic Cup",
+  "links": {
+    "self": "https://zenodo.org/api/records/8009107",
+    "self_html": "https://zenodo.org/records/8009107",
+    "preview_html": "https://zenodo.org/records/8009107?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8009107",
+    "self_doi": "https://doi.org/10.5281/zenodo.8009107",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8009107",
+    "reserve_doi": "https://zenodo.org/api/records/8009107/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8009106",
+    "parent_html": "https://zenodo.org/records/8009106",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8009106",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8009106",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8009107/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8009107/sequence/default",
+    "files": "https://zenodo.org/api/records/8009107/files",
+    "media_files": "https://zenodo.org/api/records/8009107/media-files",
+    "archive": "https://zenodo.org/api/records/8009107/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8009107/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8009107/versions/latest",
+    "latest_html": "https://zenodo.org/records/8009107/latest",
+    "versions": "https://zenodo.org/api/records/8009107/versions",
+    "draft": "https://zenodo.org/api/records/8009107/draft",
+    "access_links": "https://zenodo.org/api/records/8009107/access/links",
+    "access_grants": "https://zenodo.org/api/records/8009107/access/grants",
+    "access_users": "https://zenodo.org/api/records/8009107/access/users",
+    "access_request": "https://zenodo.org/api/records/8009107/access/request",
+    "access": "https://zenodo.org/api/records/8009107/access",
+    "communities": "https://zenodo.org/api/records/8009107/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8009107/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8009107/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8009107/file-modification",
+    "requests": "https://zenodo.org/api/records/8009107/requests"
+  },
+  "updated": "2023-06-07T02:27:01.745665+00:00",
+  "recid": "8009107",
+  "revision": 7,
+  "files": [
+    {
+      "id": "e869b2f7-a0f7-4089-8f4b-567ff6bcef72",
+      "key": "Processed_Fundus_Images.zip",
+      "size": 615541022,
+      "checksum": "md5:a28baa241c45c95d14f9279e4c664d9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8009107/files/Processed_Fundus_Images.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "564064"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 628,
+    "unique_downloads": 396,
+    "views": 1166,
+    "unique_views": 1096,
+    "version_downloads": 620,
+    "version_unique_downloads": 389,
+    "version_unique_views": 1087,
+    "version_views": 1157
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 615541022,
+    "top_level_files": [
+      {
+        "name": "Processed_Fundus_Images.zip",
+        "size": 615541022
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:28.980027"
+}

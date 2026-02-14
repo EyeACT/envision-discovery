@@ -1,0 +1,278 @@
+{
+  "created": "2025-01-24T01:48:48.451435+00:00",
+  "modified": "2025-01-24T01:48:48.787857+00:00",
+  "id": 14728790,
+  "conceptrecid": "14728789",
+  "doi": "10.5281/zenodo.14728790",
+  "conceptdoi": "10.5281/zenodo.14728789",
+  "doi_url": "https://doi.org/10.5281/zenodo.14728790",
+  "metadata": {
+    "title": "MT-InSAR time-series from 2007 to 2021 in Gimhae, South Korea",
+    "doi": "10.5281/zenodo.14728790",
+    "publication_date": "2025-01-24",
+    "description": "<p>MT-InSAR time-series analysis results of ALOS PALSAR, COMSO-SkyMed, Sentinel-1 ascending and descending in Gimhae, South Korea.</p>\n<p>Processor: GAMMA software</p>\n<p>Study area: Gimhae, South Korea</p>\n<p>There are four datasets including ALOS PALSAR(15 Sep 2007 ~ 24 Dec 2010), COSMO-SkyMed(9 Jan 2013 ~ 20 Apr 2019), Sentinel-1 ascending(20 Jan 2016 ~ 8 Oct 2021), and descending(8 Jan 2016 ~ 14 Oct 2021)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Park, Seongcheon",
+        "affiliation": "Pusan National University",
+        "orcid": "0009-0006-1330-9455"
+      },
+      {
+        "name": "Hong, Sang-Hoon",
+        "affiliation": "Pusan National University",
+        "orcid": "0000-0002-0737-1440"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14728789"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MT-InSAR time-series from 2007 to 2021 in Gimhae, South Korea",
+  "links": {
+    "self": "https://zenodo.org/api/records/14728790",
+    "self_html": "https://zenodo.org/records/14728790",
+    "preview_html": "https://zenodo.org/records/14728790?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14728790",
+    "self_doi": "https://doi.org/10.5281/zenodo.14728790",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14728790",
+    "reserve_doi": "https://zenodo.org/api/records/14728790/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14728789",
+    "parent_html": "https://zenodo.org/records/14728789",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14728789",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14728789",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14728790/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14728790/sequence/default",
+    "files": "https://zenodo.org/api/records/14728790/files",
+    "media_files": "https://zenodo.org/api/records/14728790/media-files",
+    "archive": "https://zenodo.org/api/records/14728790/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14728790/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14728790/versions/latest",
+    "latest_html": "https://zenodo.org/records/14728790/latest",
+    "versions": "https://zenodo.org/api/records/14728790/versions",
+    "draft": "https://zenodo.org/api/records/14728790/draft",
+    "access_links": "https://zenodo.org/api/records/14728790/access/links",
+    "access_grants": "https://zenodo.org/api/records/14728790/access/grants",
+    "access_users": "https://zenodo.org/api/records/14728790/access/users",
+    "access_request": "https://zenodo.org/api/records/14728790/access/request",
+    "access": "https://zenodo.org/api/records/14728790/access",
+    "communities": "https://zenodo.org/api/records/14728790/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14728790/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14728790/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14728790/file-modification",
+    "requests": "https://zenodo.org/api/records/14728790/requests"
+  },
+  "updated": "2025-01-24T01:48:48.787857+00:00",
+  "recid": "14728790",
+  "revision": 4,
+  "files": [
+    {
+      "id": "21f7ff95-a470-4b33-aabb-8a7359eef0f1",
+      "key": "COSMO_desc_timeseries.zip",
+      "size": 12459359007,
+      "checksum": "md5:4d3758613f1807a0d40f82c26bc596ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/14728790/files/COSMO_desc_timeseries.zip/content"
+      }
+    },
+    {
+      "id": "31c787ed-589e-4d7a-96de-09c66c53aa57",
+      "key": "Sentinel_desc_timeseries.zip",
+      "size": 1048006166,
+      "checksum": "md5:ffb471dd22e5340c8048f3daa78a0cd4",
+      "links": {
+        "self": "https://zenodo.org/api/records/14728790/files/Sentinel_desc_timeseries.zip/content"
+      }
+    },
+    {
+      "id": "a2e97f3f-4e32-48f8-84db-3fff061dedb5",
+      "key": "Sentinel_asc_timeseries.zip",
+      "size": 894274435,
+      "checksum": "md5:92d52c48e60d931dd276e3b9a3b3980f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14728790/files/Sentinel_asc_timeseries.zip/content"
+      }
+    },
+    {
+      "id": "a62e77d2-87a4-47b9-a1f3-d2b040c573d3",
+      "key": "ALOS_asc_timeseries.zip",
+      "size": 122672779,
+      "checksum": "md5:4dda317f5359b7a4528320b126d8862e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14728790/files/ALOS_asc_timeseries.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1253483"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 42,
+    "unique_downloads": 42,
+    "views": 39,
+    "unique_views": 34,
+    "version_downloads": 42,
+    "version_unique_downloads": 42,
+    "version_unique_views": 34,
+    "version_views": 39
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 14524312387,
+    "top_level_files": [
+      {
+        "name": "COSMO_desc_timeseries.zip",
+        "size": 12459359007
+      },
+      {
+        "name": "Sentinel_desc_timeseries.zip",
+        "size": 1048006166
+      },
+      {
+        "name": "Sentinel_asc_timeseries.zip",
+        "size": 894274435
+      },
+      {
+        "name": "ALOS_asc_timeseries.zip",
+        "size": 122672779
+      }
+    ],
+    "zip_contents": {
+      "sentinel_desc_timeseries.zip": {
+        "total_files": 163,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 1103601297,
+        "file_types": {
+          ".tiff": 163
+        },
+        "imaging_file_count": 163,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "160201.tiff",
+          "160213.tiff",
+          "160225.tiff",
+          "160308.tiff",
+          "160320.tiff",
+          "160401.tiff",
+          "160413.tiff",
+          "160507.tiff",
+          "160519.tiff",
+          "160531.tiff"
+        ],
+        "sample_genomics_files": []
+      },
+      "sentinel_asc_timeseries.zip": {
+        "total_files": 141,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 942444261,
+        "file_types": {
+          ".tiff": 141
+        },
+        "imaging_file_count": 141,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "160120.tiff",
+          "160308.tiff",
+          "160401.tiff",
+          "160425.tiff",
+          "160519.tiff",
+          "160612.tiff",
+          "160706.tiff",
+          "160730.tiff",
+          "160823.tiff",
+          "160916.tiff"
+        ],
+        "sample_genomics_files": []
+      },
+      "alos_asc_timeseries.zip": {
+        "total_files": 19,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 129719954,
+        "file_types": {
+          ".tiff": 19
+        },
+        "imaging_file_count": 19,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "071216.tiff",
+          "080131.tiff",
+          "080317.tiff",
+          "080502.tiff",
+          "080617.tiff",
+          "080917.tiff",
+          "081102.tiff",
+          "090202.tiff",
+          "090620.tiff",
+          "090805.tiff"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "160201.tiff",
+      "160213.tiff",
+      "160225.tiff",
+      "160308.tiff",
+      "160320.tiff",
+      "160401.tiff",
+      "160413.tiff",
+      "160507.tiff",
+      "160519.tiff",
+      "160531.tiff",
+      "160120.tiff",
+      "160308.tiff",
+      "160401.tiff",
+      "160425.tiff",
+      "160519.tiff",
+      "160612.tiff",
+      "160706.tiff",
+      "160730.tiff",
+      "160823.tiff",
+      "160916.tiff",
+      "071216.tiff",
+      "080131.tiff",
+      "080317.tiff",
+      "080502.tiff",
+      "080617.tiff",
+      "080917.tiff",
+      "081102.tiff",
+      "090202.tiff",
+      "090620.tiff",
+      "090805.tiff"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:52.452423"
+}

@@ -1,0 +1,586 @@
+{
+  "created": "2023-02-04T16:19:37.143460+00:00",
+  "modified": "2024-07-12T18:13:54.952662+00:00",
+  "id": 7576909,
+  "conceptrecid": "7576908",
+  "doi": "10.5281/zenodo.7576909",
+  "conceptdoi": "10.5281/zenodo.7576908",
+  "doi_url": "https://doi.org/10.5281/zenodo.7576909",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for EnviroAtlas/6-class segmentation of RGB 512x512 high-res. images",
+    "doi": "10.5281/zenodo.7576909",
+    "publication_date": "2023-02-05",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for EnviroAtlas/6-class segmentation of RGB 512x512 high-res. images</strong></em></p>\n\n<p>These Residual-UNet model data are based on [EnviroAtlas](https://www.mdpi.com/2072-4292/12/12/1909) images and associated labels.</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**: https://zenodo.org/record/6268150#.Y91Q-BzMLRa</p>\n\n<p>Image size used by model: 512 x 512 x 3 pixels</p>\n\n<p>classes:<br>\nnodata<br>\nwater<br>\nimpervious<br>\nbarren<br>\ntrees<br>\nherbaceous<br>\nshrubland</p>\n\n<p><br>\nFile descriptions</p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>References<br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Pilant, A., Endres, K., Rosenbaum, D. and Gundersen, G., 2020. US EPA EnviroAtlas meter-scale urban land cover (MULC): 1-m pixel land cover class definitions and guidance. Remote sensing, 12(12), p.1909.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "semantic segmentation",
+      "land use / land cover",
+      "Seg2Map",
+      "aerial / high-res."
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7576908"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for EnviroAtlas/6-class segmentation of RGB 512x512 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7576909",
+    "self_html": "https://zenodo.org/records/7576909",
+    "preview_html": "https://zenodo.org/records/7576909?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7576909",
+    "self_doi": "https://doi.org/10.5281/zenodo.7576909",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576909",
+    "reserve_doi": "https://zenodo.org/api/records/7576909/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7576908",
+    "parent_html": "https://zenodo.org/records/7576908",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7576908",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576908",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7576909/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7576909/sequence/default",
+    "files": "https://zenodo.org/api/records/7576909/files",
+    "media_files": "https://zenodo.org/api/records/7576909/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7576909:enviroatlas_1m_RGB_512_v2_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7576909/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7576909/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7576909/versions/latest",
+    "latest_html": "https://zenodo.org/records/7576909/latest",
+    "versions": "https://zenodo.org/api/records/7576909/versions",
+    "draft": "https://zenodo.org/api/records/7576909/draft",
+    "access_links": "https://zenodo.org/api/records/7576909/access/links",
+    "access_grants": "https://zenodo.org/api/records/7576909/access/grants",
+    "access_users": "https://zenodo.org/api/records/7576909/access/users",
+    "access_request": "https://zenodo.org/api/records/7576909/access/request",
+    "access": "https://zenodo.org/api/records/7576909/access",
+    "communities": "https://zenodo.org/api/records/7576909/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7576909/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7576909/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7576909/file-modification",
+    "requests": "https://zenodo.org/api/records/7576909/requests"
+  },
+  "updated": "2024-07-12T18:13:54.952662+00:00",
+  "recid": "7576909",
+  "revision": 5,
+  "files": [
+    {
+      "id": "c7e49c8c-e739-4f3c-8de6-0f2f3c7a7950",
+      "key": "enviroatlas_1m_RGB_512_v1_modelcard.json",
+      "size": 2214,
+      "checksum": "md5:4e18d060ce63d5fa129aa37bc6d21c02",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "c65d03d9-b1d0-4d46-bda6-c1f8d32526c9",
+      "key": "enviroatlas_1m_RGB_512_v2_fullmodel.h5",
+      "size": 69423392,
+      "checksum": "md5:edc9c70af8ef62aead88aa65916836ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "1eef06cf-b30f-4203-b72f-08665a3bdc20",
+      "key": "enviroatlas_1m_RGB_512_v2.json",
+      "size": 968,
+      "checksum": "md5:4e6a27f085999f35f94a0e157178be18",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v2.json/content"
+      }
+    },
+    {
+      "id": "c7d1e080-a423-43f6-8d5a-e065819ae54f",
+      "key": "enviroatlas_1m_RGB_512_v2_modelcard.json",
+      "size": 2214,
+      "checksum": "md5:c6cf6b3a9e77cdd7b3544bd4b183c66d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "81e0d396-6c48-42f0-a089-419b815cd2f3",
+      "key": "enviroatlas_1m_RGB_512_v2_model_history.npz",
+      "size": 3344,
+      "checksum": "md5:ffaac675473aa973d6322420f1db3097",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "48fff7ba-9f34-487c-8349-0912a8f750ea",
+      "key": "enviroatlas_1m_RGB_512_v3_fullmodel.h5",
+      "size": 69423352,
+      "checksum": "md5:d67854b085405dbb1edd1a00152fadcb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "8cf0cff9-2152-42c2-885a-e5d702060b7b",
+      "key": "enviroatlas_1m_RGB_512_v3.json",
+      "size": 967,
+      "checksum": "md5:f667957f656ea23abda7794019425316",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v3.json/content"
+      }
+    },
+    {
+      "id": "ac628801-d9cb-4890-bab6-92a09be0bb0f",
+      "key": "enviroatlas_1m_RGB_512_v1_fullmodel.h5",
+      "size": 69423360,
+      "checksum": "md5:7639f52f855f66091e68ac5f4ac3e5d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "ad387c82-ac00-4a41-9655-4684cd70b179",
+      "key": "classes.txt",
+      "size": 57,
+      "checksum": "md5:3394b0bea7f529825441f56b45abc801",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "85aaae76-3dee-4aea-9cdd-a5d2e69e28ef",
+      "key": "BEST_MODEL.txt",
+      "size": 38,
+      "checksum": "md5:7664c21338fb4f06e17b6c1129389938",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "984bb542-f737-44e4-bf8c-9650523b47f2",
+      "key": "readme.txt",
+      "size": 2780,
+      "checksum": "md5:4c003abe348b4bab6bf71088761c0648",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "ca884e26-3ad7-4fba-a034-afddfdffeb05",
+      "key": "enviroatlas_1m_RGB_512_v3_modelcard.json",
+      "size": 2213,
+      "checksum": "md5:85515ce5118a8271f52b419850932c27",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "ee688139-f2e5-42e2-b6bf-9088899ffaa2",
+      "key": "enviroatlas_1m_RGB_512_v1_model_history.npz",
+      "size": 4339,
+      "checksum": "md5:6f21b82807869fd63028a322507ace97",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "65d6a0f0-5476-4086-a8e0-76ba00baa32c",
+      "key": "enviroatlas_1m_RGB_512_v6_model_history.npz",
+      "size": 4076,
+      "checksum": "md5:06fd04e58ef801198fbfe563df7d9009",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "12b990d0-c3d4-4eec-8ea1-6c3dacc578b9",
+      "key": "enviroatlas_1m_RGB_512_v6_modelcard.json",
+      "size": 2214,
+      "checksum": "md5:d73622b1de4619e4e2d4c87d5bf71097",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "0f52d33f-2406-4389-bd53-9ecf5c5c8d64",
+      "key": "enviroatlas_1m_RGB_512_v6.json",
+      "size": 968,
+      "checksum": "md5:8b987024e5da5b1cf436f43dd9e9a613",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v6.json/content"
+      }
+    },
+    {
+      "id": "0596ecc2-35db-41f7-88e1-904a6e3e782f",
+      "key": "enviroatlas_1m_RGB_512_v6_fullmodel.h5",
+      "size": 69423360,
+      "checksum": "md5:7c56b8f16e0e3886656569ac3f1184cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "c7e63f13-3898-4010-bbd1-2f0e73be6536",
+      "key": "enviroatlas_1m_RGB_512_v5_model_history.npz",
+      "size": 3237,
+      "checksum": "md5:f819d6b76f744f8ec9fb8a0b71125e65",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "32862fff-91c8-4181-a9c1-f27ce3710eff",
+      "key": "enviroatlas_1m_RGB_512_v5_modelcard.json",
+      "size": 2213,
+      "checksum": "md5:e449ef2b6dcb3ddfc0515ed544a57a3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "0f94a40c-0097-4487-8b67-1599eb96b1e7",
+      "key": "enviroatlas_1m_RGB_512_v5.json",
+      "size": 967,
+      "checksum": "md5:5eb82d5c63863ecb651792f29f2a3a15",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v5.json/content"
+      }
+    },
+    {
+      "id": "0426dcc7-f680-49dc-8f46-5d46f4a62d57",
+      "key": "enviroatlas_1m_RGB_512_v5_fullmodel.h5",
+      "size": 69423352,
+      "checksum": "md5:c344c6701d49835d505d2ffd2f01ac12",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "b2d8bd5c-e0e7-403e-94d1-7207cb3bf759",
+      "key": "enviroatlas_1m_RGB_512_v4_model_history.npz",
+      "size": 3162,
+      "checksum": "md5:1e5012e4a0f7c12b166bb62befabe855",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "0a1a61af-d93f-4f06-ac4d-39c270add8fd",
+      "key": "enviroatlas_1m_RGB_512_v4_modelcard.json",
+      "size": 2213,
+      "checksum": "md5:e449ef2b6dcb3ddfc0515ed544a57a3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "dccced34-6b6f-4ebf-a84a-e915cf3d77cb",
+      "key": "enviroatlas_1m_RGB_512_v4.json",
+      "size": 968,
+      "checksum": "md5:7da8ddcacefee2e19731cbabd2a49baf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v4.json/content"
+      }
+    },
+    {
+      "id": "649cf6ba-7b35-4622-bae5-e60daa0092e5",
+      "key": "enviroatlas_1m_RGB_512_v4_fullmodel.h5",
+      "size": 69423360,
+      "checksum": "md5:be7bfdac5b9ffcdbc45a6b33a90802cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "07d8103a-34f1-4bfb-a80f-208b7e3210dc",
+      "key": "enviroatlas_1m_RGB_512_v1.json",
+      "size": 968,
+      "checksum": "md5:7876ef957cf9a6e48cdffff70821133a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v1.json/content"
+      }
+    },
+    {
+      "id": "b59a82be-e1f3-479f-b116-d5405f9b836c",
+      "key": "enviroatlas_1m_RGB_512_v3_model_history.npz",
+      "size": 3151,
+      "checksum": "md5:3f1680b9f01788f42be0d7cc062eb534",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "549add17-293a-4274-99a7-577bd12dacc9",
+      "key": "enviroatlas_1m_RGB_512_v2_trainhist_24.png",
+      "size": 251176,
+      "checksum": "md5:93ef42fff780d3e549924258ba3a2453",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v2_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "a4560029-7426-4b93-94ba-2f4e335415ad",
+      "key": "enviroatlas_1m_RGB_512_v1_trainhist_24.png",
+      "size": 251230,
+      "checksum": "md5:b00241fd3dcb6402eb7cba956c432519",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v1_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "1006ea01-fe37-4faf-aa99-255cc7670bf0",
+      "key": "enviroatlas_1m_RGB_512_v6_trainhist_24.png",
+      "size": 244303,
+      "checksum": "md5:fe03df2939445eb99dee39d46ce19dac",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v6_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "a67e3c34-2af8-4bb8-ac85-ef899ce6bddf",
+      "key": "enviroatlas_1m_RGB_512_v5_trainhist_24.png",
+      "size": 259018,
+      "checksum": "md5:b91d66efe8565a3d5466605fd883aff3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v5_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "c89f521e-fc45-4291-a72a-780fc4a06a0c",
+      "key": "enviroatlas_1m_RGB_512_v4_trainhist_24.png",
+      "size": 244981,
+      "checksum": "md5:0ab252adebf0a1372bfc0fa88e42d1a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v4_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "a7464daa-624b-4f48-bb2f-5434e63af74e",
+      "key": "enviroatlas_1m_RGB_512_v3_trainhist_24.png",
+      "size": 237585,
+      "checksum": "md5:6cb36d9fee301edd87303ddb0367e03c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576909/files/enviroatlas_1m_RGB_512_v3_trainhist_24.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 998,
+    "unique_downloads": 954,
+    "views": 92,
+    "unique_views": 86,
+    "version_downloads": 998,
+    "version_unique_downloads": 954,
+    "version_unique_views": 86,
+    "version_views": 92
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 418049778,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "enviroatlas_1m_RGB_512_v1_modelcard.json",
+        "size": 2214
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v2_fullmodel.h5",
+        "size": 69423392
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v2.json",
+        "size": 968
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v2_modelcard.json",
+        "size": 2214
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v2_model_history.npz",
+        "size": 3344
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v3_fullmodel.h5",
+        "size": 69423352
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v3.json",
+        "size": 967
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v1_fullmodel.h5",
+        "size": 69423360
+      },
+      {
+        "name": "classes.txt",
+        "size": 57
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 38
+      },
+      {
+        "name": "readme.txt",
+        "size": 2780
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v3_modelcard.json",
+        "size": 2213
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v1_model_history.npz",
+        "size": 4339
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v6_model_history.npz",
+        "size": 4076
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v6_modelcard.json",
+        "size": 2214
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v6.json",
+        "size": 968
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v6_fullmodel.h5",
+        "size": 69423360
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v5_model_history.npz",
+        "size": 3237
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v5_modelcard.json",
+        "size": 2213
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v5.json",
+        "size": 967
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v5_fullmodel.h5",
+        "size": 69423352
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v4_model_history.npz",
+        "size": 3162
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v4_modelcard.json",
+        "size": 2213
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v4.json",
+        "size": 968
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v4_fullmodel.h5",
+        "size": 69423360
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v1.json",
+        "size": 968
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v3_model_history.npz",
+        "size": 3151
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v2_trainhist_24.png",
+        "size": 251176
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v1_trainhist_24.png",
+        "size": 251230
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v6_trainhist_24.png",
+        "size": 244303
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v5_trainhist_24.png",
+        "size": 259018
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v4_trainhist_24.png",
+        "size": 244981
+      },
+      {
+        "name": "enviroatlas_1m_RGB_512_v3_trainhist_24.png",
+        "size": 237585
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.mdpi.com/2072-4292/12/12/1909",
+      "type": "unknown"
+    },
+    {
+      "url": "https://zenodo.org/record/6268150#.Y91Q-BzMLRa",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.620444"
+}

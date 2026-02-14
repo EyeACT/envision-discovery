@@ -1,0 +1,203 @@
+{
+  "created": "2022-01-25T20:01:00.740520+00:00",
+  "modified": "2022-01-26T01:49:00.508737+00:00",
+  "id": 5903672,
+  "conceptrecid": "5903671",
+  "doi": "10.1109/TPAMI.2021.3100536",
+  "doi_url": "https://doi.org/10.1109/TPAMI.2021.3100536",
+  "metadata": {
+    "title": "MICCAI 2021 FLARE Challenge Dataset",
+    "doi": "10.1109/TPAMI.2021.3100536",
+    "publication_date": "2021-05-01",
+    "description": "<p>Abdominal organ segmentation plays an important role in clinical practice, and to some extent, it seems to be a solved problem because the state-of-the-art methods have achieved inter-observer performance in several benchmark datasets. However, most of the existing abdominal datasets only contain single-center, single-phase, single-vendor, or single-disease cases, and it is unclear whether the excellent performance can be generalized on more diverse datasets. Moreover, many SOTA methods use model ensembles to boost performance, but these solutions usually have a large model size and cost extensive computational resources, which are impractical to be deployed in clinical practice.</p>\n\n<p>To address these limitations, we organize the Fast and Low GPU Memory Abdominal Organ Segmentation challenge that has two main features:&nbsp;&nbsp;(1) the dataset is large and diverse,&nbsp;includes 511 cases from 11 medical centers.&nbsp; (2) we not only focus on segmentation accuracy but also segmentation efficiency, which are in concordance with real clinical practice and requirements.</p>\n\n<p>Challenge Homepage: https://flare.grand-challenge.org/</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ma, Jun",
+        "affiliation": "Nanjing University of Science and Technology"
+      }
+    ],
+    "keywords": [
+      "Segmentation",
+      "Abdominal Organ",
+      "Fully Supervised",
+      "Efficiency"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5903671"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MICCAI 2021 FLARE Challenge Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/5903672",
+    "self_html": "https://zenodo.org/records/5903672",
+    "preview_html": "https://zenodo.org/records/5903672?preview=1",
+    "doi": "https://doi.org/10.1109/TPAMI.2021.3100536",
+    "self_doi": "https://doi.org/10.1109/TPAMI.2021.3100536",
+    "self_doi_html": "https://zenodo.org/doi/10.1109/TPAMI.2021.3100536",
+    "reserve_doi": "https://zenodo.org/api/records/5903672/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5903671",
+    "parent_html": "https://zenodo.org/records/5903671",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5903672/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5903672/sequence/default",
+    "files": "https://zenodo.org/api/records/5903672/files",
+    "media_files": "https://zenodo.org/api/records/5903672/media-files",
+    "archive": "https://zenodo.org/api/records/5903672/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5903672/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5903672/versions/latest",
+    "latest_html": "https://zenodo.org/records/5903672/latest",
+    "versions": "https://zenodo.org/api/records/5903672/versions",
+    "draft": "https://zenodo.org/api/records/5903672/draft",
+    "access_links": "https://zenodo.org/api/records/5903672/access/links",
+    "access_grants": "https://zenodo.org/api/records/5903672/access/grants",
+    "access_users": "https://zenodo.org/api/records/5903672/access/users",
+    "access_request": "https://zenodo.org/api/records/5903672/access/request",
+    "access": "https://zenodo.org/api/records/5903672/access",
+    "communities": "https://zenodo.org/api/records/5903672/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5903672/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5903672/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5903672/file-modification",
+    "requests": "https://zenodo.org/api/records/5903672/requests"
+  },
+  "updated": "2022-01-26T01:49:00.508737+00:00",
+  "recid": "5903672",
+  "revision": 2,
+  "files": [
+    {
+      "id": "ad1e247f-e9cd-43d4-a975-d71d144a9dc0",
+      "key": "ValidationImg.zip",
+      "size": 5502846694,
+      "checksum": "md5:a72cd1756bab0216731e53752d7af610",
+      "links": {
+        "self": "https://zenodo.org/api/records/5903672/files/ValidationImg.zip/content"
+      }
+    },
+    {
+      "id": "5ba7fa10-62f0-4a18-bcd2-882936681cc8",
+      "key": "TrainingMask.zip",
+      "size": 90707298,
+      "checksum": "md5:7373974f6e628b1631569bd2010cd233",
+      "links": {
+        "self": "https://zenodo.org/api/records/5903672/files/TrainingMask.zip/content"
+      }
+    },
+    {
+      "id": "97e00b23-2c21-41a9-a79f-c64a46233aa6",
+      "key": "TrainingImg.zip",
+      "size": 12877007552,
+      "checksum": "md5:3b231111a0cb5501396116f81a989511",
+      "links": {
+        "self": "https://zenodo.org/api/records/5903672/files/TrainingImg.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "98477"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 8855,
+    "unique_downloads": 2514,
+    "views": 3119,
+    "unique_views": 2840,
+    "version_downloads": 8848,
+    "version_unique_downloads": 2512,
+    "version_unique_views": 2832,
+    "version_views": 3111
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 18470561544,
+    "top_level_files": [
+      {
+        "name": "ValidationImg.zip",
+        "size": 5502846694
+      },
+      {
+        "name": "TrainingMask.zip",
+        "size": 90707298
+      },
+      {
+        "name": "TrainingImg.zip",
+        "size": 12877007552
+      }
+    ],
+    "zip_contents": {
+      "trainingmask.zip": {
+        "total_files": 361,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 172854930,
+        "file_types": {
+          ".nii.gz": 361
+        },
+        "imaging_file_count": 361,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "trainingmask/train_000.nii.gz",
+          "trainingmask/train_001.nii.gz",
+          "trainingmask/train_002.nii.gz",
+          "trainingmask/train_003.nii.gz",
+          "trainingmask/train_004.nii.gz",
+          "trainingmask/train_005.nii.gz",
+          "trainingmask/train_006.nii.gz",
+          "trainingmask/train_007.nii.gz",
+          "trainingmask/train_008.nii.gz",
+          "trainingmask/train_009.nii.gz"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "trainingmask/train_000.nii.gz",
+      "trainingmask/train_001.nii.gz",
+      "trainingmask/train_002.nii.gz",
+      "trainingmask/train_003.nii.gz",
+      "trainingmask/train_004.nii.gz",
+      "trainingmask/train_005.nii.gz",
+      "trainingmask/train_006.nii.gz",
+      "trainingmask/train_007.nii.gz",
+      "trainingmask/train_008.nii.gz",
+      "trainingmask/train_009.nii.gz"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://flare.grand-challenge.org/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:14.958553"
+}

@@ -1,0 +1,168 @@
+{
+  "created": "2025-02-10T22:49:06.592560+00:00",
+  "modified": "2025-02-10T22:53:08.880271+00:00",
+  "id": 14847200,
+  "conceptrecid": "14847199",
+  "doi": "10.5281/zenodo.14847200",
+  "conceptdoi": "10.5281/zenodo.14847199",
+  "doi_url": "https://doi.org/10.5281/zenodo.14847200",
+  "metadata": {
+    "title": "NACHOS dataset: OCT and Xray",
+    "doi": "10.5281/zenodo.14847200",
+    "publication_date": "2025-02-10",
+    "description": "<p>The following datasets are part of a future paper.</p>\n<h1>Kidney OCT dataset</h1>\n<p>Three type of tissues were sampled: cortex, medulla, and pelvis. Image size: 185*210 pixels. The OCT dataset comes from 10 porcine kidneys. For each kidney and tissue, there are 30 volumes. Each volume contain 20 images. Total number of images: 10*3*30*20 = 18,000. The same dataset was partitioned in three different levels: image (folder: split_random), volumen (folder: split_volume), and subject (folder: split_subject).</p>\n<h1>Chest X-ray repository</h1>\n<p>A chest X-ray repository was built using the ChestX-ray8 dataset, the CheXpert dataset, the MIMIC-CXR dataset, and the PadChest dataset from the TorchXRayVision library. A chest X-ray repository was built using the ChestX-ray8 dataset, the CheXpert dataset, the MIMIC-CXR dataset, and the PadChest dataset from the TorchXRayVision library. The chest X-ray repository was partitioned into four folds using three different partitioning levels. In image-level partitioning(folder: split1_random), images were randomly distributed across four folds. In patient-level partitioning (folder: split2_patient), all images from the same patient were assigned to the same fold. Finally, in dataset-level partitioning (folder: split3_dataset), each dataset was exclusively allocated to a separate fold.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Calle, Paul",
+        "affiliation": null,
+        "orcid": "0009-0000-1849-4481"
+      },
+      {
+        "name": "Wang, Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Tang, Qinggong",
+        "affiliation": null
+      },
+      {
+        "name": "Pan, Chongle",
+        "affiliation": null
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/thepanlab/NACHOS",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14847199"
+          }
+        }
+      ]
+    }
+  },
+  "title": "NACHOS dataset: OCT and Xray",
+  "links": {
+    "self": "https://zenodo.org/api/records/14847200",
+    "self_html": "https://zenodo.org/records/14847200",
+    "preview_html": "https://zenodo.org/records/14847200?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14847200",
+    "self_doi": "https://doi.org/10.5281/zenodo.14847200",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14847200",
+    "reserve_doi": "https://zenodo.org/api/records/14847200/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14847199",
+    "parent_html": "https://zenodo.org/records/14847199",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14847199",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14847199",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14847200/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14847200/sequence/default",
+    "files": "https://zenodo.org/api/records/14847200/files",
+    "media_files": "https://zenodo.org/api/records/14847200/media-files",
+    "archive": "https://zenodo.org/api/records/14847200/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14847200/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14847200/versions/latest",
+    "latest_html": "https://zenodo.org/records/14847200/latest",
+    "versions": "https://zenodo.org/api/records/14847200/versions",
+    "draft": "https://zenodo.org/api/records/14847200/draft",
+    "access_links": "https://zenodo.org/api/records/14847200/access/links",
+    "access_grants": "https://zenodo.org/api/records/14847200/access/grants",
+    "access_users": "https://zenodo.org/api/records/14847200/access/users",
+    "access_request": "https://zenodo.org/api/records/14847200/access/request",
+    "access": "https://zenodo.org/api/records/14847200/access",
+    "communities": "https://zenodo.org/api/records/14847200/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14847200/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14847200/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14847200/file-modification",
+    "requests": "https://zenodo.org/api/records/14847200/requests"
+  },
+  "updated": "2025-02-10T22:53:08.880271+00:00",
+  "recid": "14847200",
+  "revision": 6,
+  "files": [
+    {
+      "id": "7b787349-5b6b-40d2-a772-3bc6f4bba6db",
+      "key": "Xray_data.zip",
+      "size": 373640507,
+      "checksum": "md5:f4b544d8b5b0d82af9dd5d7b4b3d5c1b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14847200/files/Xray_data.zip/content"
+      }
+    },
+    {
+      "id": "0269d00e-c783-45fd-b6be-3ce870db2e50",
+      "key": "OCT_data.zip",
+      "size": 1785925816,
+      "checksum": "md5:ff62c5d875c888f507c409c534144f89",
+      "links": {
+        "self": "https://zenodo.org/api/records/14847200/files/OCT_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "232166"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 44,
+    "unique_downloads": 42,
+    "views": 75,
+    "unique_views": 68,
+    "version_downloads": 44,
+    "version_unique_downloads": 42,
+    "version_unique_views": 68,
+    "version_views": 75
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2159566323,
+    "top_level_files": [
+      {
+        "name": "Xray_data.zip",
+        "size": 373640507
+      },
+      {
+        "name": "OCT_data.zip",
+        "size": 1785925816
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:55.918225"
+}

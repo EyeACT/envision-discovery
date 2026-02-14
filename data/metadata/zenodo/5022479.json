@@ -1,0 +1,174 @@
+{
+  "created": "2021-06-24T03:58:31.835391+00:00",
+  "modified": "2022-06-01T16:11:28.169863+00:00",
+  "id": 5022479,
+  "conceptrecid": "5022478",
+  "doi": "10.5061/dryad.1j29991",
+  "doi_url": "https://doi.org/10.5061/dryad.1j29991",
+  "metadata": {
+    "title": "Data from: Segmentation of laterally symmetric overlapping objects: application to images of collective animal behavior",
+    "doi": "10.5061/dryad.1j29991",
+    "publication_date": "2019-08-13",
+    "description": "Video analysis is currently the main non-intrusive method for the study of collective behavior. However, 3D-to-2D projection leads to overlapping of observed objects. The situation is further complicated by the absence of stall shapes for the majority of living objects. Fortunately, living objects often possess a certain symmetry which was used as a basis for morphological fingerprinting. This technique allowed us to record forms of symmetrical objects in a pose-invariant way. When combined with image skeletonization, this gives a robust, nonlinear, optimization-free, and fast method for detection of overlapping objects, even without any rigid pattern. This novel method was verified on fish (European bass, Dicentrarchus labrax, and tiger barbs, Puntius tetrazona) swimming in a reasonably small tank, which forced them to exhibit a large variety of shapes. Compared with manual detection, the correct number of objects was determined for up to almost 90% of overlaps, and the mean Dice-S\u00f8rensen coefficient was around 0.83. This implies that this method is feasible in real-life applications such as toxicity testing.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Lonhus, Kirill",
+        "affiliation": null
+      },
+      {
+        "name": "\u0160tys, Dalibor",
+        "affiliation": null
+      },
+      {
+        "name": "Saberioon, Mohammadmehdi",
+        "affiliation": null
+      },
+      {
+        "name": "Rycht\u00e1rikov\u00e1, Renata",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "image processing",
+      "Biometrics",
+      "Computer Science",
+      "Puntius tetrazona",
+      "Dicentrarchus labrax",
+      "biophysics"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.3390/sym11070866",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5022478"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Segmentation of Laterally Symmetric Overlapping Objects: Application to Images of Collective Animal Behaviour<div class=\"o-metadata__file-description\">Binary image data and source Matlab codes for segmentation/reconstruction of fish in overlaps - revised extended version</div><div class=\"o-metadata__file-name\">morphpaper.zip<br></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Segmentation of laterally symmetric overlapping objects: application to images of collective animal behavior",
+  "links": {
+    "self": "https://zenodo.org/api/records/5022479",
+    "self_html": "https://zenodo.org/records/5022479",
+    "preview_html": "https://zenodo.org/records/5022479?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.1j29991",
+    "self_doi": "https://doi.org/10.5061/dryad.1j29991",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.1j29991",
+    "reserve_doi": "https://zenodo.org/api/records/5022479/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5022478",
+    "parent_html": "https://zenodo.org/records/5022478",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5022479/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5022479/sequence/default",
+    "files": "https://zenodo.org/api/records/5022479/files",
+    "media_files": "https://zenodo.org/api/records/5022479/media-files",
+    "archive": "https://zenodo.org/api/records/5022479/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5022479/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5022479/versions/latest",
+    "latest_html": "https://zenodo.org/records/5022479/latest",
+    "versions": "https://zenodo.org/api/records/5022479/versions",
+    "draft": "https://zenodo.org/api/records/5022479/draft",
+    "access_links": "https://zenodo.org/api/records/5022479/access/links",
+    "access_grants": "https://zenodo.org/api/records/5022479/access/grants",
+    "access_users": "https://zenodo.org/api/records/5022479/access/users",
+    "access_request": "https://zenodo.org/api/records/5022479/access/request",
+    "access": "https://zenodo.org/api/records/5022479/access",
+    "communities": "https://zenodo.org/api/records/5022479/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5022479/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5022479/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5022479/file-modification",
+    "requests": "https://zenodo.org/api/records/5022479/requests"
+  },
+  "updated": "2022-06-01T16:11:28.169863+00:00",
+  "recid": "5022479",
+  "revision": 3,
+  "files": [
+    {
+      "id": "0a64031c-e094-49ba-b2bb-7e05bf16368a",
+      "key": "morphpaper.zip",
+      "size": 9275566,
+      "checksum": "md5:ffa23a1ded1b45b342e22d8271c296f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/5022479/files/morphpaper.zip/content"
+      }
+    },
+    {
+      "id": "763c9966-76b7-4be3-a29f-ab8b3657a3b6",
+      "key": "README_for_morphpaper.txt",
+      "size": 867,
+      "checksum": "md5:a05dbd2f60d2f4dc66fad86c02f47ee4",
+      "links": {
+        "self": "https://zenodo.org/api/records/5022479/files/README_for_morphpaper.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 29,
+    "unique_downloads": 28,
+    "views": 192,
+    "unique_views": 191,
+    "version_downloads": 29,
+    "version_unique_downloads": 28,
+    "version_unique_views": 191,
+    "version_views": 192
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 9275566,
+    "top_level_files": [
+      {
+        "name": "morphpaper.zip",
+        "size": 9275566
+      },
+      {
+        "name": "README_for_morphpaper.txt",
+        "size": 867
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:06.479166"
+}

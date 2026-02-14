@@ -1,0 +1,893 @@
+{
+  "created": "2023-11-17T11:04:35.757827+00:00",
+  "modified": "2023-11-17T11:04:38.686749+00:00",
+  "id": 10148752,
+  "conceptrecid": "7779519",
+  "doi": "10.5281/zenodo.10148752",
+  "conceptdoi": "10.5281/zenodo.7779519",
+  "doi_url": "https://doi.org/10.5281/zenodo.10148752",
+  "metadata": {
+    "title": "ANNs pre-trained on Retinal Waves",
+    "doi": "10.5281/zenodo.10148752",
+    "publication_date": "2023-11-17",
+    "description": "<p>Different Artificial Neural Networks (saved weights), some only pre-trained either on rwave-1024 or rwave-4096 or FractalDB1000 datasets; some fine-tuned or trained from scratch (pt_none_ft... or pt__ft... or ...scratch...) on CIFAR10/100 or ImageNet1k.</p><p>Retinal Waves for Pre-Training Artificial Neural Networks&nbsp;Mimicking Real Prenatal Development - see&nbsp;https://github.com/BennyCa/ReWaRD for filter visualization and further fine-tuning possibilities</p><p>Pre-training and fine-tuning was conducted using the codebase https://github.com/hirokatsukataoka16/FractalDB-Pretrained-ResNet-PyTorch</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cappell, Benjamin",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      },
+      {
+        "name": "Stoll, Andreas",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      }
+    ],
+    "keywords": [
+      "retinal waves",
+      "pre-training",
+      "Neural Network",
+      "Artificial Neural Network",
+      "fine-tuning"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7779519"
+          }
+        }
+      ]
+    }
+  },
+  "title": "ANNs pre-trained on Retinal Waves",
+  "links": {
+    "self": "https://zenodo.org/api/records/10148752",
+    "self_html": "https://zenodo.org/records/10148752",
+    "preview_html": "https://zenodo.org/records/10148752?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10148752",
+    "self_doi": "https://doi.org/10.5281/zenodo.10148752",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10148752",
+    "reserve_doi": "https://zenodo.org/api/records/10148752/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7779519",
+    "parent_html": "https://zenodo.org/records/7779519",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7779519",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7779519",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10148752/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10148752/sequence/default",
+    "files": "https://zenodo.org/api/records/10148752/files",
+    "media_files": "https://zenodo.org/api/records/10148752/media-files",
+    "archive": "https://zenodo.org/api/records/10148752/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10148752/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10148752/versions/latest",
+    "latest_html": "https://zenodo.org/records/10148752/latest",
+    "versions": "https://zenodo.org/api/records/10148752/versions",
+    "draft": "https://zenodo.org/api/records/10148752/draft",
+    "access_links": "https://zenodo.org/api/records/10148752/access/links",
+    "access_grants": "https://zenodo.org/api/records/10148752/access/grants",
+    "access_users": "https://zenodo.org/api/records/10148752/access/users",
+    "access_request": "https://zenodo.org/api/records/10148752/access/request",
+    "access": "https://zenodo.org/api/records/10148752/access",
+    "communities": "https://zenodo.org/api/records/10148752/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10148752/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10148752/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10148752/file-modification",
+    "requests": "https://zenodo.org/api/records/10148752/requests"
+  },
+  "updated": "2023-11-17T11:04:38.686749+00:00",
+  "recid": "10148752",
+  "revision": 4,
+  "files": [
+    {
+      "id": "2c6a313f-0d1d-43b2-87f6-851f4d5e10b0",
+      "key": "rwave-1024_resnet34_epoch45.pth",
+      "size": 87381053,
+      "checksum": "md5:ac0d18a9c06da194baff1dc4213f8cf0",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_resnet34_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "b82c405e-70a5-4b08-9cce-7168a19013a0",
+      "key": "rwave-1024_bn_alexnet_epoch45.pth",
+      "size": 249942492,
+      "checksum": "md5:4ff0d4909eac3d5a5ccee5bdf4f18d6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_bn_alexnet_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "bc9b3685-c98f-4f0b-9330-7d005012c68b",
+      "key": "rwave-1024_resnet34_epoch90.pth",
+      "size": 87381053,
+      "checksum": "md5:1245b7c791633685af96d0cd0287eb71",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_resnet34_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "f93246b0-e640-4f3e-8a02-cb1aa1d830a7",
+      "key": "pt_rwave-1024_ft_CIFAR100_resnet50_epoch90.pth",
+      "size": 95117318,
+      "checksum": "md5:f2837dead009a062f021cadb4e1a8019",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "260f15cb-758a-473a-a395-9c71063f4bbd",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch45.pth",
+      "size": 95177039,
+      "checksum": "md5:d7ff01d981fd0f48269bc5506f52aa07",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "2f6c8fc2-bfcc-48ec-93e9-18e1b16fb9cb",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch90.pth",
+      "size": 95178327,
+      "checksum": "md5:2ce505dabe2a0310d143e76e87145554",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "94f34428-7707-4caf-82a4-e8a992f769dc",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch60.pth",
+      "size": 95173819,
+      "checksum": "md5:86c9abf02ea01e3f61826f937b936bcf",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch60.pth/content"
+      }
+    },
+    {
+      "id": "418e880e-26a8-41d7-9c87-cdf07225883e",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch90.pth",
+      "size": 95177039,
+      "checksum": "md5:e1aa62817ce39169cbf97c7ba123a3ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "e7072981-b61b-4e5a-b23b-0791075a2cd8",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch15.pth",
+      "size": 95178327,
+      "checksum": "md5:f97ed0e3642f466896577b68d03c45db",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch15.pth/content"
+      }
+    },
+    {
+      "id": "b26e3cd6-bd6f-402a-947f-d7f153b1fa60",
+      "key": "pt_none_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+      "size": 102551233,
+      "checksum": "md5:f2c4e329874280552d2b9de13d5e464f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_none_ft_ImageNet-lr0-1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "7fdcae4f-88d5-4787-a258-c1ee4971fb1f",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch15.pth",
+      "size": 95173819,
+      "checksum": "md5:3dcc87b62b3402727d869bd3dc69d609",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch15.pth/content"
+      }
+    },
+    {
+      "id": "1d77b571-9d62-4feb-bd29-826f742e4856",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch75.pth",
+      "size": 95177039,
+      "checksum": "md5:96cbf7349e1e1d31503ac63b7d171d0b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch75.pth/content"
+      }
+    },
+    {
+      "id": "f305d027-3dbd-46c6-b8e0-978f00fdc457",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch45.pth",
+      "size": 95177039,
+      "checksum": "md5:a3ad09133a4b4c48240daecf696481ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "1a40cf06-4e39-4a94-8367-2cc56e37d065",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch60.pth",
+      "size": 95177039,
+      "checksum": "md5:26cf3ce8c3f67b1eaa31805c0cb772c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch60.pth/content"
+      }
+    },
+    {
+      "id": "cb0a7842-2a6f-4a03-b437-014d6b8fc76f",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch15.pth",
+      "size": 95177039,
+      "checksum": "md5:3a73484be89832ddb361fba747b52765",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch15.pth/content"
+      }
+    },
+    {
+      "id": "4bea2c30-68ab-402b-82be-ca9b06bb9724",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch90.pth",
+      "size": 234800802,
+      "checksum": "md5:c479dbf867d541ede15985652b2ab70b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "e409df5f-fb5f-449b-84ed-dd0bc0a30a41",
+      "key": "ImageNet-scratch-v1_resnet50_epoch90.pth",
+      "size": 102557029,
+      "checksum": "md5:fb788aa0eedda9605e4947ec737aeda5",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/ImageNet-scratch-v1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "ca1bc473-e959-4f66-9773-19b996b5c40d",
+      "key": "rwave-1024_resnet50_epoch90.pth",
+      "size": 102690441,
+      "checksum": "md5:9cd9065b03ef03ee7271df2550e398cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "bea9579a-d301-43b1-8548-a67b0bd5ce93",
+      "key": "pt_rwave-4096_ft_CIFAR100-v3_resnet50_epoch90.pth",
+      "size": 95176717,
+      "checksum": "md5:90e5e1414e6e7e905b7f76f71b6ed5ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-v3_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "81a28e80-72bf-406c-84d1-9db122ac5b6b",
+      "key": "rwave-4096_resnet50_checkpoint.pth.tar",
+      "size": 255580528,
+      "checksum": "md5:9d9dbf427893863c61694df3e42dce33",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-4096_resnet50_checkpoint.pth.tar/content"
+      }
+    },
+    {
+      "id": "c80f6bd5-f30e-45e5-ae76-cfb6d55f2c5d",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch30.pth",
+      "size": 234800802,
+      "checksum": "md5:9d5091e36bd68f672a313575d923a452",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "7f54b2b9-b311-4fde-85e8-cf65efa5d968",
+      "key": "rwave-4096_resnet50_epoch45.pth",
+      "size": 127922153,
+      "checksum": "md5:f31f5d8a0968d699c589fa5f09b3b82d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-4096_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "5d23c49c-78ef-4954-84cb-913712e5e9f2",
+      "key": "rwave-1024_bn_alexnet_epoch90.pth",
+      "size": 249942492,
+      "checksum": "md5:dc3395006c12fd2b5e1e467b26c3dd0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_bn_alexnet_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "89cdd2fc-81fa-4e68-993f-a9b3a3055953",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch30.pth",
+      "size": 234800802,
+      "checksum": "md5:c861969a74075b778048105b46f46b5e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "51044eba-27a8-4a42-9b9d-7a08f0e12147",
+      "key": "pt_rwave-4096_ft_ImageNet-v1_resnet50_epoch90.pth",
+      "size": 102553165,
+      "checksum": "md5:09c6843c1c7ef00fc8158c1dc5667bba",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_ImageNet-v1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "7b42d56b-8595-4672-9ab2-44f50f4d02f1",
+      "key": "rwave-4096_resnet50_epoch90.pth",
+      "size": 127922153,
+      "checksum": "md5:18286bc93fbaad5109da3ea8808f729f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-4096_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "65e08d42-b450-49d2-b0e0-2f6c56071c27",
+      "key": "pt_rwave-1024_ft_CIFAR10_resnet50_epoch90.pth",
+      "size": 94379676,
+      "checksum": "md5:67c50b43c30432fdbdfcbc39cb224e91",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR10_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "1fb4edd1-058d-4d9c-aead-8be94fd105f5",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch45.pth",
+      "size": 234800802,
+      "checksum": "md5:957a1a3cee9ceb18b95dfc170ed6b886",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "4560f67d-1b0c-4683-a1b3-e9f2d8f0d50e",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v5_epoch90.pth",
+      "size": 234800802,
+      "checksum": "md5:7286301ba1538de363d2cd1ba568a0d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v5_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "93f66fb6-dc6a-4baf-b96c-6bb51b51b7da",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch90.pth",
+      "size": 234800802,
+      "checksum": "md5:14f703175ddf8420a4e8071eb8791fc2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "e4dae923-3ab5-451b-bcdc-00798e05bca5",
+      "key": "rwave-1024_resnet34_checkpoint.pth.tar",
+      "size": 174659007,
+      "checksum": "md5:3d0cf01c322064377036c2c521011025",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_resnet34_checkpoint.pth.tar/content"
+      }
+    },
+    {
+      "id": "2bc7bd99-9fd2-4817-9494-bd3079ef8a75",
+      "key": "rwave-1024_bn_alexnet_checkpoint.pth.tar",
+      "size": 499869613,
+      "checksum": "md5:0fd075c9c03d78c2f9bdb1113d44e61e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/rwave-1024_bn_alexnet_checkpoint.pth.tar/content"
+      }
+    },
+    {
+      "id": "c09767ef-5bcf-4854-b6ac-6cc713c53fd2",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch90.pth",
+      "size": 234800673,
+      "checksum": "md5:3374050bfd75ff8d882f12749a12096d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "47389438-f436-4e2a-87ce-3ffe847cfdd7",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch45.pth",
+      "size": 234800673,
+      "checksum": "md5:b1feb7ad9ef012d3925eb298ed84b2dd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "9dab02f3-9d4a-487c-9f0f-18afd8853661",
+      "key": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch30.pth",
+      "size": 234800673,
+      "checksum": "md5:6a633283927109893a4315ab0255106e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "c82a285f-e1da-42ca-a20c-fa9ffa05f8e1",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch60.pth",
+      "size": 95177039,
+      "checksum": "md5:cb2d75175c6b8d03a57cb228c70a4305",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch60.pth/content"
+      }
+    },
+    {
+      "id": "156eefb1-b850-4969-a7fa-6526c08fbffc",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch90.pth",
+      "size": 95177039,
+      "checksum": "md5:36a0da1a506d9e1dca17a1445f4af45a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "20b15f3e-04a4-4f5c-8bba-5fd97ee8d5d7",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch15.pth",
+      "size": 95177039,
+      "checksum": "md5:a1c96beb732322b8d71082ef503005a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch15.pth/content"
+      }
+    },
+    {
+      "id": "89460d2e-567b-45dc-901b-0c0cd63bd2f7",
+      "key": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch30.pth",
+      "size": 95177039,
+      "checksum": "md5:e126ba9bdc69b3bfd7a85ab6b5b9597d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "38f515d0-83b5-424c-baf6-9e677c0ffce3",
+      "key": "pt_rwave-1024_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+      "size": 102555097,
+      "checksum": "md5:44a54b814a2696252d487a50c58ecac6",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-1024_ft_ImageNet-lr0-1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "7e2abddf-c985-4998-b361-48af9916eaef",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch30.pth",
+      "size": 95177039,
+      "checksum": "md5:f4796c6258fcf7f8a562f02ba0cb7816",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "b45fc2f4-deda-40ff-949b-6731eff66274",
+      "key": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch75.pth",
+      "size": 95177039,
+      "checksum": "md5:8d7c335a0f2e501578500d9f951271db",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch75.pth/content"
+      }
+    },
+    {
+      "id": "a9c4cb25-42d5-4178-b0a6-55184c4a8e24",
+      "key": "pt_rwave-4096_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+      "size": 102553165,
+      "checksum": "md5:b4418c099f57d8f2c319d94613ab3096",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_rwave-4096_ft_ImageNet-lr0-1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "8420dd9e-e060-4fdd-af41-96f1a3e4b666",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch30.pth",
+      "size": 95173819,
+      "checksum": "md5:bad6a1cddd5feeb2774dd70b62b3d629",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "1fae5181-e2b5-4fef-9d11-c220f0861470",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch45.pth",
+      "size": 95180001,
+      "checksum": "md5:5bfcbc0825bed9dcbf70e84965ea6a09",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "a1561d59-8612-4355-b3ff-22ec12bd6d22",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch75.pth",
+      "size": 95180001,
+      "checksum": "md5:796fbea5d2449672e9bd497968ecf36c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch75.pth/content"
+      }
+    },
+    {
+      "id": "6f3df3fc-406b-4166-9df7-ee0b0bb41bce",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch45.pth",
+      "size": 95173819,
+      "checksum": "md5:2ce349b2ac2171356493d4c06299cbd3",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "02df35e2-9452-4113-b737-c63a8ada453b",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch45.pth",
+      "size": 95178327,
+      "checksum": "md5:76e9c4bbea4642bfd40a4a3d4ea6c810",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch45.pth/content"
+      }
+    },
+    {
+      "id": "9c65085b-da48-4423-ae15-20c05bde5130",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch90.pth",
+      "size": 95173819,
+      "checksum": "md5:19cb845d48279708a44b00c7ad1f189e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "402d4357-1f77-4d29-82a1-ac3fa04dab72",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch60.pth",
+      "size": 95178327,
+      "checksum": "md5:ebdb16cdadaa2cb0c729af9eb0c46dd0",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch60.pth/content"
+      }
+    },
+    {
+      "id": "3ed4ec1d-0957-4392-9f16-6e4ba3b1cb3a",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch30.pth",
+      "size": 95178327,
+      "checksum": "md5:d550f2c0d84eb05cb58e48fe9fdbe0ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "16ff7cd5-d35f-4aa8-8f64-999cae0f6101",
+      "key": "pt__ft_CIFAR100-new_resnet50_epoch75.pth",
+      "size": 95173819,
+      "checksum": "md5:a42253129039ec6b03709087f9bcbbdd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt__ft_CIFAR100-new_resnet50_epoch75.pth/content"
+      }
+    },
+    {
+      "id": "b029e59d-bc0e-46ab-bf79-5181d943123b",
+      "key": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch75.pth",
+      "size": 95178327,
+      "checksum": "md5:a0f7029123539d49a71439ef12de4b36",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch75.pth/content"
+      }
+    },
+    {
+      "id": "a7bb2207-520b-4765-8c58-8296d1b2aba5",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch30.pth",
+      "size": 95180001,
+      "checksum": "md5:05c580eeb95f067800d827cc7d21aa16",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch30.pth/content"
+      }
+    },
+    {
+      "id": "f662933d-7518-411b-aed1-2a6c7329291d",
+      "key": "pt_FractalDB-1000_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+      "size": 102556385,
+      "checksum": "md5:88a97fb4af9bb3242d559a2cae3a8fca",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_FractalDB-1000_ft_ImageNet-lr0-1_resnet50_epoch90.pth/content"
+      }
+    },
+    {
+      "id": "0b43842d-c191-4161-9397-026e87ee0caa",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch15.pth",
+      "size": 95180001,
+      "checksum": "md5:6ecb5bf922cbda7a6cc1a3e94b65c01f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch15.pth/content"
+      }
+    },
+    {
+      "id": "edef051e-d39a-45f7-bb5b-069c0162679c",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch60.pth",
+      "size": 95180001,
+      "checksum": "md5:1167e14236dadc2072c12518c2246440",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch60.pth/content"
+      }
+    },
+    {
+      "id": "39bc1cf7-68b9-4cc4-a267-e342100ae544",
+      "key": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch90.pth",
+      "size": 95180001,
+      "checksum": "md5:0599139cc2bbd5f3db8a123afdc75abe",
+      "links": {
+        "self": "https://zenodo.org/api/records/10148752/files/pt_ImageNet_ft_CIFAR100-new_resnet50_epoch90.pth/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "524320"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 4377,
+    "unique_downloads": 4375,
+    "views": 494,
+    "unique_views": 463,
+    "version_downloads": 3761,
+    "version_unique_downloads": 3760,
+    "version_unique_views": 192,
+    "version_views": 213
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 930109148,
+    "top_level_files": [
+      {
+        "name": "rwave-1024_resnet34_epoch45.pth",
+        "size": 87381053
+      },
+      {
+        "name": "rwave-1024_bn_alexnet_epoch45.pth",
+        "size": 249942492
+      },
+      {
+        "name": "rwave-1024_resnet34_epoch90.pth",
+        "size": 87381053
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_resnet50_epoch90.pth",
+        "size": 95117318
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch45.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch90.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch60.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch90.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch15.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt_none_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+        "size": 102551233
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch15.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch75.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch45.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch60.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch15.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch90.pth",
+        "size": 234800802
+      },
+      {
+        "name": "ImageNet-scratch-v1_resnet50_epoch90.pth",
+        "size": 102557029
+      },
+      {
+        "name": "rwave-1024_resnet50_epoch90.pth",
+        "size": 102690441
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-v3_resnet50_epoch90.pth",
+        "size": 95176717
+      },
+      {
+        "name": "rwave-4096_resnet50_checkpoint.pth.tar",
+        "size": 255580528
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v3_epoch30.pth",
+        "size": 234800802
+      },
+      {
+        "name": "rwave-4096_resnet50_epoch45.pth",
+        "size": 127922153
+      },
+      {
+        "name": "rwave-1024_bn_alexnet_epoch90.pth",
+        "size": 249942492
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch30.pth",
+        "size": 234800802
+      },
+      {
+        "name": "pt_rwave-4096_ft_ImageNet-v1_resnet50_epoch90.pth",
+        "size": 102553165
+      },
+      {
+        "name": "rwave-4096_resnet50_epoch90.pth",
+        "size": 127922153
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR10_resnet50_epoch90.pth",
+        "size": 94379676
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch45.pth",
+        "size": 234800802
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v5_epoch90.pth",
+        "size": 234800802
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_v2_epoch90.pth",
+        "size": 234800802
+      },
+      {
+        "name": "rwave-1024_resnet34_checkpoint.pth.tar",
+        "size": 174659007
+      },
+      {
+        "name": "rwave-1024_bn_alexnet_checkpoint.pth.tar",
+        "size": 499869613
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch90.pth",
+        "size": 234800673
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch45.pth",
+        "size": 234800673
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100_bn_alexnet_epoch30.pth",
+        "size": 234800673
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch60.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch90.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch15.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-1024_ft_CIFAR100-new_resnet50_epoch30.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-1024_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+        "size": 102555097
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch30.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_CIFAR100-new_resnet50_epoch75.pth",
+        "size": 95177039
+      },
+      {
+        "name": "pt_rwave-4096_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+        "size": 102553165
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch30.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch45.pth",
+        "size": 95180001
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch75.pth",
+        "size": 95180001
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch45.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch45.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch90.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch60.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch30.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt__ft_CIFAR100-new_resnet50_epoch75.pth",
+        "size": 95173819
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_CIFAR100-new_resnet50_epoch75.pth",
+        "size": 95178327
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch30.pth",
+        "size": 95180001
+      },
+      {
+        "name": "pt_FractalDB-1000_ft_ImageNet-lr0-1_resnet50_epoch90.pth",
+        "size": 102556385
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch15.pth",
+        "size": 95180001
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch60.pth",
+        "size": 95180001
+      },
+      {
+        "name": "pt_ImageNet_ft_CIFAR100-new_resnet50_epoch90.pth",
+        "size": 95180001
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/BennyCa/ReWaRD",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/hirokatsukataoka16/FractalDB-Pretrained-ResNet-PyTorch",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:31.516377"
+}

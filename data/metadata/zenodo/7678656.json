@@ -1,0 +1,384 @@
+{
+  "created": "2023-05-11T08:40:50.155198+00:00",
+  "modified": "2023-05-11T14:26:53.807482+00:00",
+  "id": 7678656,
+  "conceptrecid": "7678655",
+  "doi": "10.5281/zenodo.7678656",
+  "conceptdoi": "10.5281/zenodo.7678655",
+  "doi_url": "https://doi.org/10.5281/zenodo.7678656",
+  "metadata": {
+    "title": "Topological characterization of the retinal microvascular network visualized by portable fundus camera- effects of chronic disease (TREND2)  database",
+    "doi": "10.5281/zenodo.7678656",
+    "publication_date": "2023-02-26",
+    "description": "<p><strong>Introduction</strong></p>\n\n<p><strong>T</strong>opological characterization of the&nbsp;<strong>R</strong>etinal microvascular n<strong>E</strong>twork visualized by portable fu<strong>ND</strong>us camera (<strong>TREND 2</strong>) is a database of digital color eye fundus images created as an addition to TREND&nbsp; database (https://zenodo.org/badge/DOI/10.5281/zenodo.4521044.svg).</p>\n\n<p>TREND 2 databse was created by medical professionals of the Faculty of Medicine of the University of Montenegro in 2023.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Purpose</strong></p>\n\n<p>1) to provide a standard that defines normal and abnormal retinal anatomy and microvascular geometry as it appears when visualized by the portable fundus camera</p>\n\n<p>2) to help the development of new methods for stratification of the risk for the development of various eye diseases, as well as systemic diseases that affect microvasculature</p>\n\n<p>3) to aid the development of biomarkers of accelerated aging</p>\n\n<p>4) to provide a standard that can be used to develop software for segmentation of retinal microvasculature, grading the quality of retinal digital images, and computer-aided diagnosis of systemic and chronic diseases.</p>\n\n<p>All color digital images were acquired with a hand-held portable, non-mydriatic MiiS HORUS Scope DEC 200 with 45&ordm; FOV and 2560 X 1920 pixel resolution.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Data</strong></p>\n\n<p>The TREND public database contains 28&nbsp;color fundus images of old&nbsp;subjects (20 images from subjects with one or more chronic diseases such as type 2 diabetes mellitus, hypertension or Alzheimer&#39;s dementia- O_CD group, and 8 images from subjects with no chronic diseases- O_NCD group). Each image is associated with a corresponding binarized image of the manually segmented microvascular network.</p>\n\n<table>\n\t<caption>Inclusion and Exclusion Criteria</caption>\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">O_NCD group</th>\n\t\t\t<th scope=\"col\">O_CD group</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>Inclusion Criteria</strong></td>\n\t\t\t<td><strong>Inclusion Criteria</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- at least 56 years old</td>\n\t\t\t<td>- at least 56 years old</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>- no current acute disease</p>\n\n\t\t\t<p>- no history of alcohol, or drug abuse, or psychiatric disease</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>- no current acute disease</p>\n\n\t\t\t<p>- no history of alcohol, or drug abuse, or psychiatric disease</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>- no history of alcohol, or drug abuse, or psychiatric disease</p>\n\t\t\t</td>\n\t\t\t<td>- no history of alcohol, or drug abuse, or psychiatric disease</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- negative history of any chronic disease</td>\n\t\t\t<td>\n\t\t\t<p>- controlled hypertension (blood pressure&lt;140/90 mmHg), and/or</p>\n\n\t\t\t<p>- controlled type 2 diabetes mellitus, and/or</p>\n\n\t\t\t<p>- Alzheimer&#39;s dementia</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>Exclusion Criteria</strong></td>\n\t\t\t<td><strong>Exclusion Criteria</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>- presence of opacities of the transparent media in both eyes affecting</p>\n\n\t\t\t<p>- myopia &ge;5 diopters</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>- presence of opacities of the transparent media in both eyes affecting</p>\n\n\t\t\t<p>- myopia &ge;5 diopters</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><strong>Files:</strong></p>\n\n<p>1_OLD WITH CHRONIC DISEASE_RAW (20 images in tif&nbsp;format)</p>\n\n<p>2_OLD WITH CHRONIC DISEASE_SEGMENTED (20 images in png format)</p>\n\n<p>3_OLD WITH NO CHRONIC DISEASE_RAW (8 images in tif&nbsp;format)</p>\n\n<p>4_OLD WITH NO CHRONIC DISEASE SEGMENTED (8 images in png format)</p>\n\n<p>5_ASSOCIATED DATA (xslx format)</p>\n\n<p>6_RETINAL PATHOLOGY (docx format)</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Popovic, Natasa",
+        "affiliation": "Faculty of Medicine, University of Montenegro",
+        "orcid": "0000-0002-9769-1543"
+      },
+      {
+        "name": "Vujosevic, Stela",
+        "affiliation": "University of Milan, Department of Biomedical, Surgical and Dental Sciences",
+        "orcid": "0000-0001-6773-9967"
+      },
+      {
+        "name": "Radunovic, Miroslav",
+        "affiliation": "Faculty of Medicine, University of Montenegro"
+      },
+      {
+        "name": "Ad\u017ei\u0107 Ze\u010devi\u0107, Antoaneta",
+        "affiliation": "Faculty of Medicine, University of Montenegro"
+      },
+      {
+        "name": "\u017ddralevi\u0107, Ma\u0161a",
+        "affiliation": "Faculty of Medicine, University of Montenegro",
+        "orcid": "0000-0003-2236-7957"
+      },
+      {
+        "name": "Rov\u010danin Dragovi\u0107, Isidora",
+        "affiliation": "Faculty of Medicine, University of Montenegro",
+        "orcid": "0000-0002-8782-4912"
+      },
+      {
+        "name": "Vuk\u010devi\u0107, Barti\u0107",
+        "affiliation": "Faculty of Medicine, University of Montenegro",
+        "orcid": "0000-0002-9905-8020"
+      },
+      {
+        "name": "Popovic, Tomo",
+        "affiliation": "Faculty for Information Systems and Technologies, University of Donja Gorica",
+        "orcid": "0000-0001-5245-3691"
+      },
+      {
+        "name": "Radulovi\u0107, Ljiljana",
+        "affiliation": "Faculty of Medicine, University of Montenegro"
+      },
+      {
+        "name": "Vukovi\u0107, Tijana",
+        "affiliation": "Clinical Center of Montenegro"
+      },
+      {
+        "name": "Erakovi\u0107, Jevto",
+        "affiliation": "Clinical Center of Montenegro"
+      },
+      {
+        "name": "Lazovi\u0107, Ranko",
+        "affiliation": "Faculty of Medicine, University of Montenegro"
+      },
+      {
+        "name": "Radunovi\u0107, Miodrag",
+        "affiliation": "Faculty of Medicine, University of Montenegro"
+      }
+    ],
+    "version": "1.1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7678655"
+          }
+        }
+      ]
+    },
+    "notes": "Detailed description of this database is provided in the following article:"
+  },
+  "title": "Topological characterization of the retinal microvascular network visualized by portable fundus camera- effects of chronic disease (TREND2)  database",
+  "links": {
+    "self": "https://zenodo.org/api/records/7678656",
+    "self_html": "https://zenodo.org/records/7678656",
+    "preview_html": "https://zenodo.org/records/7678656?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7678656",
+    "self_doi": "https://doi.org/10.5281/zenodo.7678656",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7678656",
+    "reserve_doi": "https://zenodo.org/api/records/7678656/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7678655",
+    "parent_html": "https://zenodo.org/records/7678655",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7678655",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7678655",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7678656/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7678656/sequence/default",
+    "files": "https://zenodo.org/api/records/7678656/files",
+    "media_files": "https://zenodo.org/api/records/7678656/media-files",
+    "archive": "https://zenodo.org/api/records/7678656/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7678656/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7678656/versions/latest",
+    "latest_html": "https://zenodo.org/records/7678656/latest",
+    "versions": "https://zenodo.org/api/records/7678656/versions",
+    "draft": "https://zenodo.org/api/records/7678656/draft",
+    "access_links": "https://zenodo.org/api/records/7678656/access/links",
+    "access_grants": "https://zenodo.org/api/records/7678656/access/grants",
+    "access_users": "https://zenodo.org/api/records/7678656/access/users",
+    "access_request": "https://zenodo.org/api/records/7678656/access/request",
+    "access": "https://zenodo.org/api/records/7678656/access",
+    "communities": "https://zenodo.org/api/records/7678656/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7678656/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7678656/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7678656/file-modification",
+    "requests": "https://zenodo.org/api/records/7678656/requests"
+  },
+  "updated": "2023-05-11T14:26:53.807482+00:00",
+  "recid": "7678656",
+  "revision": 2,
+  "files": [
+    {
+      "id": "5e278c09-1ee2-4b70-9778-24fc76d99692",
+      "key": "2_OLD WITH CHRONIC DISEASE_SEGMENTED.zip",
+      "size": 751830,
+      "checksum": "md5:4089115d5bdc2b9d6a3fb4a67470e7a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/2_OLD WITH CHRONIC DISEASE_SEGMENTED.zip/content"
+      }
+    },
+    {
+      "id": "c88d9e79-8172-447c-9f49-786656ce4329",
+      "key": "5_ASSOCIATED DATA.xlsx",
+      "size": 7311,
+      "checksum": "md5:5ac6cdf910eb1421e7fc26b5682d9450",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/5_ASSOCIATED DATA.xlsx/content"
+      }
+    },
+    {
+      "id": "8241aecf-43e5-45c9-a99a-6e3ce6dfff4d",
+      "key": "3_OLD WITH NO CHRONIC DISEASE_RAW.zip",
+      "size": 24941358,
+      "checksum": "md5:19553bdc303423ce0313a6353596714f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/3_OLD WITH NO CHRONIC DISEASE_RAW.zip/content"
+      }
+    },
+    {
+      "id": "7b48c228-a02d-4a73-b6f0-9378ed0725b1",
+      "key": "6_RETINAL PATHOLOGY.docx",
+      "size": 6449,
+      "checksum": "md5:ea6b6f5c7a83f69808287eed7291cf29",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/6_RETINAL PATHOLOGY.docx/content"
+      }
+    },
+    {
+      "id": "c9af5982-f151-4b1c-aa01-b4903d1a2ce4",
+      "key": "4_OLD WITH NO CHRONIC DISEASE SEGMENTED.zip",
+      "size": 349520,
+      "checksum": "md5:bf81e973eb23618d9f5cf83466eb2ced",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/4_OLD WITH NO CHRONIC DISEASE SEGMENTED.zip/content"
+      }
+    },
+    {
+      "id": "9617b6a1-fe2d-42ca-9213-e9fd539d7367",
+      "key": "1_OLD WITH CHRONIC DISEASE_RAW.zip",
+      "size": 64013619,
+      "checksum": "md5:de6e237f676b110f5791bcc479623a3c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7678656/files/1_OLD WITH CHRONIC DISEASE_RAW.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "195341"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 524,
+    "unique_downloads": 507,
+    "views": 354,
+    "unique_views": 323,
+    "version_downloads": 524,
+    "version_unique_downloads": 507,
+    "version_unique_views": 322,
+    "version_views": 353
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 90056327,
+    "top_level_files": [
+      {
+        "name": "2_OLD WITH CHRONIC DISEASE_SEGMENTED.zip",
+        "size": 751830
+      },
+      {
+        "name": "5_ASSOCIATED DATA.xlsx",
+        "size": 7311
+      },
+      {
+        "name": "3_OLD WITH NO CHRONIC DISEASE_RAW.zip",
+        "size": 24941358
+      },
+      {
+        "name": "6_RETINAL PATHOLOGY.docx",
+        "size": 6449
+      },
+      {
+        "name": "4_OLD WITH NO CHRONIC DISEASE SEGMENTED.zip",
+        "size": 349520
+      },
+      {
+        "name": "1_OLD WITH CHRONIC DISEASE_RAW.zip",
+        "size": 64013619
+      }
+    ],
+    "zip_contents": {
+      "2_old with chronic disease_segmented.zip": {
+        "total_files": 20,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 757822,
+        "file_types": {
+          ".png": 20
+        },
+        "imaging_file_count": 20,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "2_old with chronic disease_segmented/a10tl.png",
+          "2_old with chronic disease_segmented/a11tr.png",
+          "2_old with chronic disease_segmented/a12tr.png",
+          "2_old with chronic disease_segmented/a6tl.png",
+          "2_old with chronic disease_segmented/n10al.png",
+          "2_old with chronic disease_segmented/n11al.png",
+          "2_old with chronic disease_segmented/n13ar.png",
+          "2_old with chronic disease_segmented/n14al.png",
+          "2_old with chronic disease_segmented/n6al.png",
+          "2_old with chronic disease_segmented/n7al.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "3_old with no chronic disease_raw.zip": {
+        "total_files": 8,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 24941553,
+        "file_types": {
+          ".tif": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "3_old with no chrocnic disease_raw/n11c_r.tif",
+          "3_old with no chrocnic disease_raw/n13c_r.tif",
+          "3_old with no chrocnic disease_raw/n14c_r.tif",
+          "3_old with no chrocnic disease_raw/n16c_r.tif",
+          "3_old with no chrocnic disease_raw/n1c_r.tif",
+          "3_old with no chrocnic disease_raw/n22c_r.tif",
+          "3_old with no chrocnic disease_raw/n6c_r.tif",
+          "3_old with no chrocnic disease_raw/n9c_r.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "4_old with no chronic disease segmented.zip": {
+        "total_files": 8,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 352809,
+        "file_types": {
+          ".png": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "4_old with no chronic disease segmented/on11cr.png",
+          "4_old with no chronic disease segmented/on13cr.png",
+          "4_old with no chronic disease segmented/on14cr.png",
+          "4_old with no chronic disease segmented/on16cr.png",
+          "4_old with no chronic disease segmented/on1cr.png",
+          "4_old with no chronic disease segmented/on22cr.png",
+          "4_old with no chronic disease segmented/on6cr.png",
+          "4_old with no chronic disease segmented/on9cr.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "1_old with chronic disease_raw.zip": {
+        "total_files": 20,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 64014455,
+        "file_types": {
+          ".tif": 20
+        },
+        "imaging_file_count": 20,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_old with chronic disease_raw/a10t_l.tif",
+          "1_old with chronic disease_raw/a11t_r.tif",
+          "1_old with chronic disease_raw/a12t_r.tif",
+          "1_old with chronic disease_raw/a6t_l.tif",
+          "1_old with chronic disease_raw/n10a_l.tif",
+          "1_old with chronic disease_raw/n11a_l.tif",
+          "1_old with chronic disease_raw/n13a_r.tif",
+          "1_old with chronic disease_raw/n14a_l.tif",
+          "1_old with chronic disease_raw/n15c_l.tif",
+          "1_old with chronic disease_raw/n17c_l.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "2_old with chronic disease_segmented/a10tl.png",
+      "2_old with chronic disease_segmented/a11tr.png",
+      "2_old with chronic disease_segmented/a12tr.png",
+      "2_old with chronic disease_segmented/a6tl.png",
+      "2_old with chronic disease_segmented/n10al.png",
+      "2_old with chronic disease_segmented/n11al.png",
+      "2_old with chronic disease_segmented/n13ar.png",
+      "2_old with chronic disease_segmented/n14al.png",
+      "2_old with chronic disease_segmented/n6al.png",
+      "2_old with chronic disease_segmented/n7al.png",
+      "3_old with no chrocnic disease_raw/n11c_r.tif",
+      "3_old with no chrocnic disease_raw/n13c_r.tif",
+      "3_old with no chrocnic disease_raw/n14c_r.tif",
+      "3_old with no chrocnic disease_raw/n16c_r.tif",
+      "3_old with no chrocnic disease_raw/n1c_r.tif",
+      "3_old with no chrocnic disease_raw/n22c_r.tif",
+      "3_old with no chrocnic disease_raw/n6c_r.tif",
+      "3_old with no chrocnic disease_raw/n9c_r.tif",
+      "4_old with no chronic disease segmented/on11cr.png",
+      "4_old with no chronic disease segmented/on13cr.png",
+      "4_old with no chronic disease segmented/on14cr.png",
+      "4_old with no chronic disease segmented/on16cr.png",
+      "4_old with no chronic disease segmented/on1cr.png",
+      "4_old with no chronic disease segmented/on22cr.png",
+      "4_old with no chronic disease segmented/on6cr.png",
+      "4_old with no chronic disease segmented/on9cr.png",
+      "1_old with chronic disease_raw/a10t_l.tif",
+      "1_old with chronic disease_raw/a11t_r.tif",
+      "1_old with chronic disease_raw/a12t_r.tif",
+      "1_old with chronic disease_raw/a6t_l.tif",
+      "1_old with chronic disease_raw/n10a_l.tif",
+      "1_old with chronic disease_raw/n11a_l.tif",
+      "1_old with chronic disease_raw/n13a_r.tif",
+      "1_old with chronic disease_raw/n14a_l.tif",
+      "1_old with chronic disease_raw/n15c_l.tif",
+      "1_old with chronic disease_raw/n17c_l.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://zenodo.org/badge/DOI/10.5281/zenodo.4521044.svg",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:15.666504"
+}

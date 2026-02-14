@@ -1,0 +1,255 @@
+{
+  "created": "2020-11-19T17:34:37.944965+00:00",
+  "modified": "2021-09-07T12:57:13.710673+00:00",
+  "id": 4059559,
+  "conceptrecid": "4059558",
+  "doi": "10.5281/zenodo.4059559",
+  "conceptdoi": "10.5281/zenodo.4059558",
+  "doi_url": "https://doi.org/10.5281/zenodo.4059559",
+  "metadata": {
+    "title": "Quantification of plant morphology and leaf thickness with optical coherence tomography",
+    "doi": "10.5281/zenodo.4059559",
+    "publication_date": "2020-11-16",
+    "description": "<p>The uploaded scripts and data are&nbsp;used to obtain the figures 2, 4, 5,&nbsp;6 and 7 in the publication.&nbsp;</p>\n\n<p>The code has been run with Python 3.7 in Spyder (Anaconda).</p>\n\n<p>There are three scripts, each needing specific&nbsp;datasets to run the code.</p>\n\n<p>1. The core is the segmentation of the leaf surface and this is subsequently used to calculate leaf thickness and obtain en-face images.</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/3D_segmentation_thickness_enface.py\">3D_segmentation_thickness_enface.py</a>: This file loads the 3D processed OCT data, does the leaf surface segmentation and calculates the en face images. It needs the files processed_3Ddata.npy and videoim.npy</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/processed_3Ddata.npy\">processed_3Ddata.npy</a>: This file contains the processed 3D OCT dataset (linear amplitude data), with respectively dimensions z,x,y. The data is saved as uint16 to save memory, and should be converted to double before further processing, as done in the script.</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/videoim.npy\">videoim.npy</a>: This file contains the RGB image of Fig. 6(a) as image matrix.</p>\n\n<p>2. The non-infiltrated and infiltrated image (Figure 4)</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/2D_fig4.py\">2D_fig4.py</a>: This script produces Figure 4 of the paper and also shows the two RGB images that indicate the scan location on the leaf. It needs the files OCTdata_figure4.npy (containing OCT data) and videoimages_figure4.npy</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/OCTdata_figure4.npy\">OCTdata_figure4.npy</a>: This file contains the processed 2D OCT dataset (linear amplitude data), with respectively dimensions (a/b),z,x. The data is saved as uint16 to save memory, and should be converted to double before further processing, as done in the script.</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/videoimages_figure4.npy\">videoimages_figure4.npy</a>&nbsp;This file contains the two RGB images that show the scan area of the data in Figure 4.</p>\n\n<p>3. The calculation of the refractive index and making Figure 5</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/refractiveindex_fig5.py\">refractiveindex_fig5.py</a>: this script segments the cuvette wall and leaf surface on 2D images and calculates the refractive index by evaluating equation 1 of the publication. It needs the file images_refractiveindex.npy</p>\n\n<p><a href=\"https://zenodo.org/api/files/89412f06-4c84-4516-9e7d-113796b42834/images_refractiveindex.npy\">images_refractiveindex.npy</a>:&nbsp;This file contains the processed 2D OCT dataset (linear amplitude data), with respectively dimensions (leaf/empty),z,x. The data is saved as uint16 to save memory, and should be converted to double before further processing, as done in the script.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "de Wit, Jos",
+        "affiliation": "TU Delft",
+        "orcid": "0000-0003-3325-1079"
+      },
+      {
+        "name": "Tonn, Sebastian",
+        "affiliation": "Utrecht University"
+      },
+      {
+        "name": "van den Ackerveken, Guido",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-0183-8978"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "TU Delft",
+        "orcid": "0000-0003-1698-7842"
+      }
+    ],
+    "keywords": [
+      "optical coherence tomography, Arabidopsis, leaf thickness, segmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1364/AO.408384",
+        "relation": "isCitedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "33",
+      "pages": "10304-10311",
+      "title": "Applied Optics",
+      "volume": "59"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4059558"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Quantification of plant morphology and leaf thickness with optical coherence tomography",
+  "links": {
+    "self": "https://zenodo.org/api/records/4059559",
+    "self_html": "https://zenodo.org/records/4059559",
+    "preview_html": "https://zenodo.org/records/4059559?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4059559",
+    "self_doi": "https://doi.org/10.5281/zenodo.4059559",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4059559",
+    "reserve_doi": "https://zenodo.org/api/records/4059559/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4059558",
+    "parent_html": "https://zenodo.org/records/4059558",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4059558",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4059558",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4059559/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4059559/sequence/default",
+    "files": "https://zenodo.org/api/records/4059559/files",
+    "media_files": "https://zenodo.org/api/records/4059559/media-files",
+    "archive": "https://zenodo.org/api/records/4059559/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4059559/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4059559/versions/latest",
+    "latest_html": "https://zenodo.org/records/4059559/latest",
+    "versions": "https://zenodo.org/api/records/4059559/versions",
+    "draft": "https://zenodo.org/api/records/4059559/draft",
+    "access_links": "https://zenodo.org/api/records/4059559/access/links",
+    "access_grants": "https://zenodo.org/api/records/4059559/access/grants",
+    "access_users": "https://zenodo.org/api/records/4059559/access/users",
+    "access_request": "https://zenodo.org/api/records/4059559/access/request",
+    "access": "https://zenodo.org/api/records/4059559/access",
+    "communities": "https://zenodo.org/api/records/4059559/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4059559/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4059559/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4059559/file-modification",
+    "requests": "https://zenodo.org/api/records/4059559/requests"
+  },
+  "updated": "2021-09-07T12:57:13.710673+00:00",
+  "recid": "4059559",
+  "revision": 3,
+  "files": [
+    {
+      "id": "51448d38-379e-4cee-83a3-873dc001eb88",
+      "key": "videoimages_figure4.npy",
+      "size": 1843328,
+      "checksum": "md5:d6771e6eb23b082b046504614963541b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/videoimages_figure4.npy/content"
+      }
+    },
+    {
+      "id": "90ee8469-b51a-4851-85cd-87c7b96490c8",
+      "key": "2D_fig4.py",
+      "size": 4768,
+      "checksum": "md5:cfc0e53ba9a5570a885899edd5fb5236",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/2D_fig4.py/content"
+      }
+    },
+    {
+      "id": "852b77a6-136b-4ce6-9426-43b5558e2fb1",
+      "key": "3D_segmentation_thickness_enface.py",
+      "size": 18777,
+      "checksum": "md5:97521ece2b7fc82aa0e0074cdcd9da7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/3D_segmentation_thickness_enface.py/content"
+      }
+    },
+    {
+      "id": "6f6f09be-ff47-4b73-b2f8-6f2e7f54e2bf",
+      "key": "images_refractiveindex.npy",
+      "size": 8388736,
+      "checksum": "md5:3423e166a8e4b90e94a65aa48ab8bf1b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/images_refractiveindex.npy/content"
+      }
+    },
+    {
+      "id": "8ffe6eaa-6b1d-4b73-9fe6-f529210fd6bd",
+      "key": "OCTdata_figure4.npy",
+      "size": 4194432,
+      "checksum": "md5:960a17703b21c14d0e7df488dd01fd35",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/OCTdata_figure4.npy/content"
+      }
+    },
+    {
+      "id": "e6ade5be-ac9e-4502-a9f1-64d4457746b3",
+      "key": "processed_3Ddata.npy",
+      "size": 536871040,
+      "checksum": "md5:389a1d14f7ce93caf7a404410a7a3924",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/processed_3Ddata.npy/content"
+      }
+    },
+    {
+      "id": "f1c7525c-f0af-472d-8398-c76934108310",
+      "key": "refractiveindex_fig5.py",
+      "size": 8963,
+      "checksum": "md5:188dad5a59284f74adcd700bf1066357",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/refractiveindex_fig5.py/content"
+      }
+    },
+    {
+      "id": "d60512b7-de9f-43a0-92fc-eb09d1e379ae",
+      "key": "videoim.npy",
+      "size": 921728,
+      "checksum": "md5:8426841176bc77c0e5b8ab4ce0aaf3ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/4059559/files/videoim.npy/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "142669"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 279,
+    "unique_downloads": 225,
+    "views": 451,
+    "unique_views": 419,
+    "version_downloads": 279,
+    "version_unique_downloads": 225,
+    "version_unique_views": 418,
+    "version_views": 450
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 5,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 552219264,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "videoimages_figure4.npy",
+        "size": 1843328
+      },
+      {
+        "name": "2D_fig4.py",
+        "size": 4768
+      },
+      {
+        "name": "3D_segmentation_thickness_enface.py",
+        "size": 18777
+      },
+      {
+        "name": "images_refractiveindex.npy",
+        "size": 8388736
+      },
+      {
+        "name": "OCTdata_figure4.npy",
+        "size": 4194432
+      },
+      {
+        "name": "processed_3Ddata.npy",
+        "size": 536871040
+      },
+      {
+        "name": "refractiveindex_fig5.py",
+        "size": 8963
+      },
+      {
+        "name": "videoim.npy",
+        "size": 921728
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:04.739599"
+}

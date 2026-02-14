@@ -1,0 +1,236 @@
+{
+  "created": "2020-03-12T16:19:43.592822+00:00",
+  "modified": "2020-03-12T20:20:21.263169+00:00",
+  "id": 3708064,
+  "conceptrecid": "3708063",
+  "doi": "10.5281/zenodo.3708064",
+  "conceptdoi": "10.5281/zenodo.3708063",
+  "doi_url": "https://doi.org/10.5281/zenodo.3708064",
+  "metadata": {
+    "title": "Type-specific dendritic integration in mouse retinal ganglion cells",
+    "doi": "10.5281/zenodo.3708064",
+    "publication_date": "2020-03-12",
+    "description": "<p>Dataset for <a href=\"https://www.biorxiv.org/content/10.1101/753335v1.abstract\">Ran et al (2020)</a>. These data can be read by Python (&gt;3.6) and Pandas (&gt;1.0.0):</p>\n\n<pre><code class=\"language-python\">import pickle\ndata = pickle.load(open('./data_raw.pickle', 'rb'))\n</code></pre>\n\n<p>Or use our custom scripts. For more details, see <a href=\"https://github.com/berenslab/rgc_dendrites\">https://github.com/berenslab/rgc_dendrites</a>.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ran, Yanli",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen"
+      },
+      {
+        "name": "Huang, Ziwei",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen"
+      },
+      {
+        "name": "Baden, Tom",
+        "affiliation": "Sussex Neuroscience, University of Sussex",
+        "orcid": "0000-0003-2808-4210"
+      },
+      {
+        "name": "Schubert, Timm",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen",
+        "orcid": "0000-0001-6630-1808"
+      },
+      {
+        "name": "Baayen, Harald",
+        "affiliation": "Department of Linguistics, University of T\u00fcbingen"
+      },
+      {
+        "name": "Berens, Philipp",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen",
+        "orcid": "0000-0002-0199-4727"
+      },
+      {
+        "name": "Franke, Katrin",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen",
+        "orcid": "0000-0002-8649-4835"
+      },
+      {
+        "name": "Euler, Thomas",
+        "affiliation": "Institute for Ophthalmic Research, University of T\u00fcbingen",
+        "orcid": "0000-0002-4567-6966"
+      }
+    ],
+    "version": "v1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3708063"
+          }
+        }
+      ]
+    },
+    "notes": "This research was supported by Deutsche Forschungsgemeinschaft (DFG, EXC307 to TE and EXC 2064, project number 390727645 to PB; BE5601/4-1, BE5601/6-1 to PB; EU 42/10-1 to TE); NINDS of the National Institutes of Health (U01NS090562 to TE); BMBF (01GQ1601 and 01IS18052C to PB; 01GQ1002 to KF); BWSF (AZ 1.16101.09 to TB); MPG (M.FE.A.KYBE0004 to KF)."
+  },
+  "title": "Type-specific dendritic integration in mouse retinal ganglion cells",
+  "links": {
+    "self": "https://zenodo.org/api/records/3708064",
+    "self_html": "https://zenodo.org/records/3708064",
+    "preview_html": "https://zenodo.org/records/3708064?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3708064",
+    "self_doi": "https://doi.org/10.5281/zenodo.3708064",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3708064",
+    "reserve_doi": "https://zenodo.org/api/records/3708064/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3708063",
+    "parent_html": "https://zenodo.org/records/3708063",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3708063",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3708063",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3708064/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3708064/sequence/default",
+    "files": "https://zenodo.org/api/records/3708064/files",
+    "media_files": "https://zenodo.org/api/records/3708064/media-files",
+    "archive": "https://zenodo.org/api/records/3708064/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3708064/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3708064/versions/latest",
+    "latest_html": "https://zenodo.org/records/3708064/latest",
+    "versions": "https://zenodo.org/api/records/3708064/versions",
+    "draft": "https://zenodo.org/api/records/3708064/draft",
+    "access_links": "https://zenodo.org/api/records/3708064/access/links",
+    "access_grants": "https://zenodo.org/api/records/3708064/access/grants",
+    "access_users": "https://zenodo.org/api/records/3708064/access/users",
+    "access_request": "https://zenodo.org/api/records/3708064/access/request",
+    "access": "https://zenodo.org/api/records/3708064/access",
+    "communities": "https://zenodo.org/api/records/3708064/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3708064/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3708064/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3708064/file-modification",
+    "requests": "https://zenodo.org/api/records/3708064/requests"
+  },
+  "updated": "2020-03-12T20:20:21.263169+00:00",
+  "recid": "3708064",
+  "revision": 3,
+  "files": [
+    {
+      "id": "065c1846-61b1-4515-918e-566b207aae98",
+      "key": "data_roi.pickle",
+      "size": 814528,
+      "checksum": "md5:a9140b1044935c5e9068af9627a49c4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_roi.pickle/content"
+      }
+    },
+    {
+      "id": "7625a19b-cd8d-4f4a-b288-25561cdae421",
+      "key": "data_cntr.pickle",
+      "size": 24033520,
+      "checksum": "md5:73833100d71f45c84d023a9eddcf19ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_cntr.pickle/content"
+      }
+    },
+    {
+      "id": "a055cb38-dd7d-4982-97c5-2233b5be2433",
+      "key": "data_stacks_info.pickle",
+      "size": 6161,
+      "checksum": "md5:a87190decf96ec916c24d312f6572c9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_stacks_info.pickle/content"
+      }
+    },
+    {
+      "id": "c0718684-61b4-4e13-b282-520e75985634",
+      "key": "data_morph.pickle",
+      "size": 13095603,
+      "checksum": "md5:bb68695537993a705e29304e33838e20",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_morph.pickle/content"
+      }
+    },
+    {
+      "id": "cb2908e0-6f74-4e01-9989-0769a3e01ff9",
+      "key": "data_raw.pickle",
+      "size": 282995231,
+      "checksum": "md5:0eb4940aeb834367e439d923e57b4e81",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_raw.pickle/content"
+      }
+    },
+    {
+      "id": "b9fa41ec-4fb0-4a61-a50a-73113757d66e",
+      "key": "data_scans.pickle",
+      "size": 2279475,
+      "checksum": "md5:1e5d67b6b59a6e369c6047f4d14e50b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/3708064/files/data_scans.pickle/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "94123"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 274,
+    "unique_downloads": 223,
+    "views": 567,
+    "unique_views": 533,
+    "version_downloads": 274,
+    "version_unique_downloads": 223,
+    "version_unique_views": 533,
+    "version_views": 567
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "data_roi.pickle",
+        "size": 814528
+      },
+      {
+        "name": "data_cntr.pickle",
+        "size": 24033520
+      },
+      {
+        "name": "data_stacks_info.pickle",
+        "size": 6161
+      },
+      {
+        "name": "data_morph.pickle",
+        "size": 13095603
+      },
+      {
+        "name": "data_raw.pickle",
+        "size": 282995231
+      },
+      {
+        "name": "data_scans.pickle",
+        "size": 2279475
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/berenslab/rgc_dendrites",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:04.978465"
+}

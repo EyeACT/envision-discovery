@@ -1,0 +1,153 @@
+{
+  "created": "2023-10-18T23:52:10.280754+00:00",
+  "modified": "2023-10-18T23:52:10.880787+00:00",
+  "id": 10020074,
+  "conceptrecid": "10020073",
+  "doi": "10.1186/s12859-020-03940-5",
+  "doi_url": "https://doi.org/10.1186/s12859-020-03940-5",
+  "metadata": {
+    "title": "MicrobeAnnotator KEGG Database (UNOFFICIAL MIRROR)",
+    "doi": "10.1186/s12859-020-03940-5",
+    "publication_date": "2023-10-19",
+    "description": "<p>Contains the following files:&nbsp;</p><p>total 128K</p><p>-rw-r--r-- 1 jespinoz staff 5.8K Oct 18 16:39 KEGG_Bifurcating_Module_Information.pkl</p><p>-rw-r--r-- 1 jespinoz staff &nbsp; 96 Oct 18 16:41 KEGG_Bifurcating_Module_Information.pkl.md5</p><p>-rw-r--r-- 1 jespinoz staff &nbsp;37K Oct 18 16:39 KEGG_Module_Information.txt</p><p>-rw-r--r-- 1 jespinoz staff &nbsp; 84 Oct 18 16:41 KEGG_Module_Information.txt.md5</p><p>-rw-r--r-- 1 jespinoz staff &nbsp;59K Oct 18 16:39 KEGG_Regular_Module_Information.pkl</p><p>-rw-r--r-- 1 jespinoz staff &nbsp; 92 Oct 18 16:41 KEGG_Regular_Module_Information.pkl.md5</p><p>-rw-r--r-- 1 jespinoz staff 1.2K Oct 18 16:39 KEGG_Structural_Module_Information.pkl</p><p>-rw-r--r-- 1 jespinoz staff &nbsp; 95 Oct 18 16:41 KEGG_Structural_Module_Information.pkl.md5</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Espinoza, Josh",
+        "affiliation": null
+      }
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "Original publication date"
+      }
+    ],
+    "version": "v2023.10.18",
+    "references": [
+      "https://github.com/cruizperez/MicrobeAnnotator/blob/master/microbeannotator/pipeline/ko_mapper.py"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10020073"
+          }
+        }
+      ]
+    },
+    "notes": "<p>For more information, please see original sources:&nbsp;</p><p>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03940-5</p><p>https://github.com/cruizperez/MicrobeAnnotator/blob/master/microbeannotator/pipeline/ko_mapper.py</p><p>&nbsp;</p><p>If these are used, please cite original source:&nbsp;</p><p>Ruiz-Perez, C.A., Conrad, R.E. &amp; Konstantinidis, K.T. MicrobeAnnotator: a user-friendly, comprehensive functional annotation pipeline for microbial genomes. <i>BMC Bioinformatics</i> <strong>22</strong>, 11 (2021). https://doi.org/10.1186/s12859-020-03940-5</p>"
+  },
+  "title": "MicrobeAnnotator KEGG Database (UNOFFICIAL MIRROR)",
+  "links": {
+    "self": "https://zenodo.org/api/records/10020074",
+    "self_html": "https://zenodo.org/records/10020074",
+    "preview_html": "https://zenodo.org/records/10020074?preview=1",
+    "doi": "https://doi.org/10.1186/s12859-020-03940-5",
+    "self_doi": "https://doi.org/10.1186/s12859-020-03940-5",
+    "self_doi_html": "https://zenodo.org/doi/10.1186/s12859-020-03940-5",
+    "reserve_doi": "https://zenodo.org/api/records/10020074/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10020073",
+    "parent_html": "https://zenodo.org/records/10020073",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10020074/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10020074/sequence/default",
+    "files": "https://zenodo.org/api/records/10020074/files",
+    "media_files": "https://zenodo.org/api/records/10020074/media-files",
+    "archive": "https://zenodo.org/api/records/10020074/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10020074/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10020074/versions/latest",
+    "latest_html": "https://zenodo.org/records/10020074/latest",
+    "versions": "https://zenodo.org/api/records/10020074/versions",
+    "draft": "https://zenodo.org/api/records/10020074/draft",
+    "access_links": "https://zenodo.org/api/records/10020074/access/links",
+    "access_grants": "https://zenodo.org/api/records/10020074/access/grants",
+    "access_users": "https://zenodo.org/api/records/10020074/access/users",
+    "access_request": "https://zenodo.org/api/records/10020074/access/request",
+    "access": "https://zenodo.org/api/records/10020074/access",
+    "communities": "https://zenodo.org/api/records/10020074/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10020074/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10020074/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10020074/file-modification",
+    "requests": "https://zenodo.org/api/records/10020074/requests"
+  },
+  "updated": "2023-10-18T23:52:10.880787+00:00",
+  "recid": "10020074",
+  "revision": 4,
+  "files": [
+    {
+      "id": "a75954ad-230b-4ed2-8ee3-f3b64fb5967c",
+      "key": "MicrobeAnnotator-KEGG.tar.gz.md5",
+      "size": 63,
+      "checksum": "md5:7a9b8a4f77eee5049e0866de13d2aec4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10020074/files/MicrobeAnnotator-KEGG.tar.gz.md5/content"
+      }
+    },
+    {
+      "id": "3461d9cb-c1e6-43c8-88bb-8e14f5d46fed",
+      "key": "MicrobeAnnotator-KEGG.tar.gz",
+      "size": 34659,
+      "checksum": "md5:d5c849b77b9225375718a48428ad62cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10020074/files/MicrobeAnnotator-KEGG.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "64239"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 95,
+    "unique_downloads": 94,
+    "views": 83,
+    "unique_views": 81,
+    "version_downloads": 95,
+    "version_unique_downloads": 94,
+    "version_unique_views": 81,
+    "version_views": 83
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 34659,
+    "top_level_files": [
+      {
+        "name": "MicrobeAnnotator-KEGG.tar.gz.md5",
+        "size": 63
+      },
+      {
+        "name": "MicrobeAnnotator-KEGG.tar.gz",
+        "size": 34659
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:08.304015"
+}

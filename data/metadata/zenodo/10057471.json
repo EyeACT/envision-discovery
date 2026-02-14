@@ -1,0 +1,302 @@
+{
+  "created": "2023-10-31T11:38:28.689021+00:00",
+  "modified": "2023-10-31T11:38:29.171129+00:00",
+  "id": 10057471,
+  "conceptrecid": "10055807",
+  "doi": "10.5281/zenodo.10057471",
+  "conceptdoi": "10.5281/zenodo.10055807",
+  "doi_url": "https://doi.org/10.5281/zenodo.10057471",
+  "metadata": {
+    "title": "The ULS23 Challenge Public Training Dataset Part 5",
+    "doi": "10.5281/zenodo.10057471",
+    "publication_date": "2023-10-30",
+    "description": "<p>This dataset contains part of the imaging data for the <a href=\"https://uls23.grand-challenge.org/\">Universal Lesion Segmentation Challenge (ULS23).</a> It contains lesion volumes-of-interest (VOI's) for part of the weakly annotated DeepLesion data. The annotations are made available through the <a href=\"https://github.com/MJJdG/ULS23\">Challenge repository on GitHub</a>.<br><br>The Universal Lesion Segmentation 2023 (ULS23) data is licensed under CC BY-NC-SA 4.0&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "de Grauw, Max",
+        "affiliation": "Department of Medical Imaging, Radboud University Medical Center, The Netherlands",
+        "orcid": "0009-0002-6671-2142"
+      },
+      {
+        "name": "Van Ginneken, Bram",
+        "affiliation": "Department of Medical Imaging, Radboud University Medical Center, The Netherlands",
+        "orcid": "0000-0003-2028-8972"
+      },
+      {
+        "name": "Hering, Alessa",
+        "affiliation": "Department of Medical Imaging, Radboud University Medical Center, The Netherlands",
+        "orcid": "0000-0002-7602-803X"
+      }
+    ],
+    "keywords": [
+      "Medical Imaging",
+      "CT",
+      "Lesion Segmentation",
+      "Artificial Intelligence"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-sa-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10055807"
+          }
+        }
+      ]
+    }
+  },
+  "title": "The ULS23 Challenge Public Training Dataset Part 5",
+  "links": {
+    "self": "https://zenodo.org/api/records/10057471",
+    "self_html": "https://zenodo.org/records/10057471",
+    "preview_html": "https://zenodo.org/records/10057471?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10057471",
+    "self_doi": "https://doi.org/10.5281/zenodo.10057471",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10057471",
+    "reserve_doi": "https://zenodo.org/api/records/10057471/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10055807",
+    "parent_html": "https://zenodo.org/records/10055807",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10055807",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10055807",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10057471/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10057471/sequence/default",
+    "files": "https://zenodo.org/api/records/10057471/files",
+    "media_files": "https://zenodo.org/api/records/10057471/media-files",
+    "archive": "https://zenodo.org/api/records/10057471/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10057471/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10057471/versions/latest",
+    "latest_html": "https://zenodo.org/records/10057471/latest",
+    "versions": "https://zenodo.org/api/records/10057471/versions",
+    "draft": "https://zenodo.org/api/records/10057471/draft",
+    "access_links": "https://zenodo.org/api/records/10057471/access/links",
+    "access_grants": "https://zenodo.org/api/records/10057471/access/grants",
+    "access_users": "https://zenodo.org/api/records/10057471/access/users",
+    "access_request": "https://zenodo.org/api/records/10057471/access/request",
+    "access": "https://zenodo.org/api/records/10057471/access",
+    "communities": "https://zenodo.org/api/records/10057471/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10057471/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10057471/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10057471/file-modification",
+    "requests": "https://zenodo.org/api/records/10057471/requests"
+  },
+  "updated": "2023-10-31T11:38:29.171129+00:00",
+  "recid": "10057471",
+  "revision": 4,
+  "files": [
+    {
+      "id": "dfd02642-c359-4c4e-9872-0a980683bd9b",
+      "key": "ULS23_Part5.z04",
+      "size": 4294967296,
+      "checksum": "md5:a941e362f9c464d33d9fd76de65c0185",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z04/content"
+      }
+    },
+    {
+      "id": "ceb13dc7-8877-49a0-bfe4-9fe967e500a9",
+      "key": "ULS23_Part5.z03",
+      "size": 4294967296,
+      "checksum": "md5:7c3ab859c7d84fa8d233306ede2dc145",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z03/content"
+      }
+    },
+    {
+      "id": "78d86fee-93d7-4bf3-84d3-7247e7cdd0f0",
+      "key": "ULS23_Part5.z06",
+      "size": 4294967296,
+      "checksum": "md5:1bff0228fb8fa58ee68fea13548707c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z06/content"
+      }
+    },
+    {
+      "id": "1fb774b5-53b3-4631-9b41-de186d57c1ec",
+      "key": "ULS23_Part5.z05",
+      "size": 4294967296,
+      "checksum": "md5:fc1ab454582c34ae65eda647d8c623ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z05/content"
+      }
+    },
+    {
+      "id": "b73d7ac1-e5be-48fd-ada0-fbf4e1605666",
+      "key": "ULS23_Part5.z08",
+      "size": 4294967296,
+      "checksum": "md5:f6a14c10fa14f2bda45c345392482920",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z08/content"
+      }
+    },
+    {
+      "id": "19bb5fa8-49b5-43a6-a1f9-03dbc18bcce4",
+      "key": "ULS23_Part5.z10",
+      "size": 4294967296,
+      "checksum": "md5:6cc75789c18c34ecfa7bc28da08d2936",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z10/content"
+      }
+    },
+    {
+      "id": "d01b7955-0074-4062-811a-acb02ca69c7b",
+      "key": "ULS23_Part5.z11",
+      "size": 4294967296,
+      "checksum": "md5:499943bf863d3025c2ef88a6e6864334",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z11/content"
+      }
+    },
+    {
+      "id": "3ef69bcd-56e1-445d-b88c-2542f627bd66",
+      "key": "ULS23_Part5.zip",
+      "size": 1078398674,
+      "checksum": "md5:0fe29be259d9e68644b2dc3a6a3ca228",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.zip/content"
+      }
+    },
+    {
+      "id": "dfaca998-f69b-4da8-9cc7-dcfdc1c8488a",
+      "key": "ULS23_Part5.z01",
+      "size": 4294967296,
+      "checksum": "md5:2dbaedad4f980d27bd07d03b9e8ba24b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z01/content"
+      }
+    },
+    {
+      "id": "fc7e84d1-dc9f-4632-b715-5d176b63d18b",
+      "key": "ULS23_Part5.z02",
+      "size": 4294967296,
+      "checksum": "md5:1a43724e08a727ed3b5661e0435a2d8c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z02/content"
+      }
+    },
+    {
+      "id": "5595335a-7b55-48b7-9c0b-1701a9872412",
+      "key": "ULS23_Part5.z07",
+      "size": 4294967296,
+      "checksum": "md5:3b4fb05a3bfe140c1ee8111f5ce27a1a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z07/content"
+      }
+    },
+    {
+      "id": "58d9d8f7-ee1a-4809-9c08-eb49a5216212",
+      "key": "ULS23_Part5.z09",
+      "size": 4294967296,
+      "checksum": "md5:6de9b847b7371bb973d5b75d483f5d13",
+      "links": {
+        "self": "https://zenodo.org/api/records/10057471/files/ULS23_Part5.z09/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1006992"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 13885,
+    "unique_downloads": 6453,
+    "views": 962,
+    "unique_views": 881,
+    "version_downloads": 11076,
+    "version_unique_downloads": 5234,
+    "version_unique_views": 670,
+    "version_views": 721
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1078398674,
+    "top_level_files": [
+      {
+        "name": "ULS23_Part5.z04",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z03",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z06",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z05",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z08",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z10",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z11",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.zip",
+        "size": 1078398674
+      },
+      {
+        "name": "ULS23_Part5.z01",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z02",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z07",
+        "size": 4294967296
+      },
+      {
+        "name": "ULS23_Part5.z09",
+        "size": 4294967296
+      }
+    ],
+    "zip_contents": {
+      "uls23_part5.zip": {
+        "total_files": 9,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 38654705655,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:27.746559"
+}

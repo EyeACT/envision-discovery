@@ -1,0 +1,351 @@
+{
+  "created": "2022-01-14T19:45:26.994716+00:00",
+  "modified": "2022-06-05T03:28:20.236567+00:00",
+  "id": 5851573,
+  "conceptrecid": "5851572",
+  "doi": "10.6078/D12D9F",
+  "doi_url": "https://doi.org/10.6078/D12D9F",
+  "metadata": {
+    "title": "Excitatory neurotransmission activates compartmentalized calcium transients in M\u00fcller glia without affecting lateral process motility",
+    "doi": "10.6078/D12D9F",
+    "publication_date": "2022-01-14",
+    "description": "<p>Neural activity has been implicated in the motility and outgrowth of glial cell processes throughout the central nervous system. Here we explore this phenomenon in M\u00fcller glia, which are specialized radial astroglia that are the predominant glial type of the vertebrate retina. M\u00fcller glia extend fine filopodia-like processes into retinal synaptic layers, in similar fashion to brain astrocytes and radial glia which exhibit perisynaptic processes. Using two-photon volumetric imaging, we found that during the second postnatal week, M\u00fcller glial processes were highly dynamic, with rapid extensions and retractions that were mediated by cytoskeletal rearrangements. During this same stage of development, retinal waves led to increases in cytosolic calcium within M\u00fcller glial lateral processes and stalks. These comprised distinct calcium compartments, distinguished by variable participation in waves, timing, and sensitivity to an M1 muscarinic acetylcholine receptor antagonist. However, we found that motility of lateral processes was unaffected by the presence of pharmacological agents that enhanced or blocked wave-associated calcium transients. Finally, we found that mice lacking normal cholinergic waves in the first postnatal week also exhibited normal M\u00fcller glial process morphology. Hence, outgrowth of M\u00fcller glial lateral processes into synaptic layers is determined by factors that are independent of neuronal activity.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tworig, Joshua",
+        "affiliation": "University of California, Berkeley",
+        "orcid": "0000-0001-7798-4480"
+      },
+      {
+        "name": "Coate, Chandler",
+        "affiliation": "University of California, Berkeley"
+      },
+      {
+        "name": "Feller, Marla",
+        "affiliation": "University of California, Berkeley",
+        "orcid": "0000-0002-9137-5849"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2021.09.02.458760",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.5848076",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5851572"
+          }
+        }
+      ]
+    },
+    "notes": "<p>See README.txt for more information about datasets provided. These should be loaded into MATLAB, and then to extract relevant data, run the MATLAB script(s) associated with each figure.</p>\n\n<p>Statistical analyses may be run using the enclosed R scripts. These R scripts reference the source data which was extracted from the main .mat morphology or calcium imaging datasets. This source data is also included.</p>\n<p>Funding provided by: National Science Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000001<br>Award Number: DGE 1752814</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: R01EY019498</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: R01EY013528</p><p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: P30EY003176</p>"
+  },
+  "title": "Excitatory neurotransmission activates compartmentalized calcium transients in M\u00fcller glia without affecting lateral process motility",
+  "links": {
+    "self": "https://zenodo.org/api/records/5851573",
+    "self_html": "https://zenodo.org/records/5851573",
+    "preview_html": "https://zenodo.org/records/5851573?preview=1",
+    "doi": "https://doi.org/10.6078/D12D9F",
+    "self_doi": "https://doi.org/10.6078/D12D9F",
+    "self_doi_html": "https://zenodo.org/doi/10.6078/D12D9F",
+    "reserve_doi": "https://zenodo.org/api/records/5851573/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5851572",
+    "parent_html": "https://zenodo.org/records/5851572",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5851573/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5851573/sequence/default",
+    "files": "https://zenodo.org/api/records/5851573/files",
+    "media_files": "https://zenodo.org/api/records/5851573/media-files",
+    "archive": "https://zenodo.org/api/records/5851573/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5851573/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5851573/versions/latest",
+    "latest_html": "https://zenodo.org/records/5851573/latest",
+    "versions": "https://zenodo.org/api/records/5851573/versions",
+    "draft": "https://zenodo.org/api/records/5851573/draft",
+    "access_links": "https://zenodo.org/api/records/5851573/access/links",
+    "access_grants": "https://zenodo.org/api/records/5851573/access/grants",
+    "access_users": "https://zenodo.org/api/records/5851573/access/users",
+    "access_request": "https://zenodo.org/api/records/5851573/access/request",
+    "access": "https://zenodo.org/api/records/5851573/access",
+    "communities": "https://zenodo.org/api/records/5851573/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5851573/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5851573/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5851573/file-modification",
+    "requests": "https://zenodo.org/api/records/5851573/requests"
+  },
+  "updated": "2022-06-05T03:28:20.236567+00:00",
+  "recid": "5851573",
+  "revision": 3,
+  "files": [
+    {
+      "id": "9b3d14de-e13a-40ef-98dd-924f9604eede",
+      "key": "Figure_3-source_data_1.csv",
+      "size": 2466080,
+      "checksum": "md5:baaf92c08c0fb7f6417604e9124a91dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_3-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "15eca108-a7c2-45d7-9698-2fefa265d5fe",
+      "key": "Figure_5-source_data_1.csv",
+      "size": 4006,
+      "checksum": "md5:95808a56cb14a6d356d504f3902ecaef",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_5-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "c500d62e-fe3c-465c-9f41-4b8b3584f0a6",
+      "key": "fillData.mat",
+      "size": 5366,
+      "checksum": "md5:43f52d8f7c33452c46743fe41da0c227",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/fillData.mat/content"
+      }
+    },
+    {
+      "id": "f7f1047e-2aa0-426f-b417-4790419cc3e7",
+      "key": "motilityDataWithZ.mat",
+      "size": 97665,
+      "checksum": "md5:05f9a45e0ff19feaffe63e93d92854a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/motilityDataWithZ.mat/content"
+      }
+    },
+    {
+      "id": "8e84b406-02f2-4dba-bf24-5c9084d53eaf",
+      "key": "Figure_4-source_data_1.csv",
+      "size": 3804526,
+      "checksum": "md5:335d193f22cc2cac963aeeed1aad9818",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_4-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "2f325d71-13ad-4f3c-8232-9cfc97e69f8f",
+      "key": "Figure_1-source_data_1.csv",
+      "size": 16670,
+      "checksum": "md5:d913e405556c5bc7eb1c91f904a7eb62",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_1-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "c2f49875-960f-421f-a4bf-d8199896f3fe",
+      "key": "README.txt",
+      "size": 33812,
+      "checksum": "md5:e88cf1c2ab70181d2f42b91c0d89a3dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/README.txt/content"
+      }
+    },
+    {
+      "id": "22770082-e625-4519-96be-a9b19292b877",
+      "key": "sholl_xy.mat",
+      "size": 6709,
+      "checksum": "md5:8d28932f3f63d34602f545362f9cdda2",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/sholl_xy.mat/content"
+      }
+    },
+    {
+      "id": "b83aabef-564f-49e1-a6ba-3105b7ab1117",
+      "key": "sholl_xz.mat",
+      "size": 8258,
+      "checksum": "md5:ab02590debdfad06322b56c7c249f9c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/sholl_xz.mat/content"
+      }
+    },
+    {
+      "id": "8eedb79c-80e2-4f30-9296-499a418f847d",
+      "key": "sholl_yz.mat",
+      "size": 8274,
+      "checksum": "md5:d09f85087b70c997b5c2e28266798336",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/sholl_yz.mat/content"
+      }
+    },
+    {
+      "id": "07bb83e2-6fff-4b1b-a80a-895164968719",
+      "key": "Figure_1-source_data_2.csv",
+      "size": 2171,
+      "checksum": "md5:dd659a877f542879fbf22a8d8357871f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_1-source_data_2.csv/content"
+      }
+    },
+    {
+      "id": "5bb88aa5-3b19-47de-9df4-5cb0f4fe991a",
+      "key": "Figure_6-source_data_1.csv",
+      "size": 315064,
+      "checksum": "md5:8d5a06f6564625ed2f3ce91c07e94329",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_6-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "ebf14f1a-74a3-4730-ae41-908deb694a06",
+      "key": "Figure_3-source_data_2.csv",
+      "size": 46853,
+      "checksum": "md5:98be893574e9a11e048fe732ca6fc312",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_3-source_data_2.csv/content"
+      }
+    },
+    {
+      "id": "8b3dfbdb-3dc5-4d97-8d51-df04a53f84a3",
+      "key": "caImagingData.mat",
+      "size": 698111258,
+      "checksum": "md5:5b68b4167ab283db73eee1ea39cf20e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/caImagingData.mat/content"
+      }
+    },
+    {
+      "id": "ff7fd54b-a635-4959-a4df-df15b156c895",
+      "key": "Figure_2-source_data_1.csv",
+      "size": 55619,
+      "checksum": "md5:5d5346a6217f42721c5fd49b48e02e06",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/Figure_2-source_data_1.csv/content"
+      }
+    },
+    {
+      "id": "a4b2d146-6e4b-4681-890d-0adba9756b46",
+      "key": "motilityData_colormap.mat",
+      "size": 273,
+      "checksum": "md5:28d227a70035ac5b820865646a3bb0dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/5851573/files/motilityData_colormap.mat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 148,
+    "unique_downloads": 133,
+    "views": 139,
+    "unique_views": 137,
+    "version_downloads": 148,
+    "version_unique_downloads": 133,
+    "version_unique_views": 137,
+    "version_views": 139
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 7,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 698237803,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Figure_3-source_data_1.csv",
+        "size": 2466080
+      },
+      {
+        "name": "Figure_5-source_data_1.csv",
+        "size": 4006
+      },
+      {
+        "name": "fillData.mat",
+        "size": 5366
+      },
+      {
+        "name": "motilityDataWithZ.mat",
+        "size": 97665
+      },
+      {
+        "name": "Figure_4-source_data_1.csv",
+        "size": 3804526
+      },
+      {
+        "name": "Figure_1-source_data_1.csv",
+        "size": 16670
+      },
+      {
+        "name": "README.txt",
+        "size": 33812
+      },
+      {
+        "name": "sholl_xy.mat",
+        "size": 6709
+      },
+      {
+        "name": "sholl_xz.mat",
+        "size": 8258
+      },
+      {
+        "name": "sholl_yz.mat",
+        "size": 8274
+      },
+      {
+        "name": "Figure_1-source_data_2.csv",
+        "size": 2171
+      },
+      {
+        "name": "Figure_6-source_data_1.csv",
+        "size": 315064
+      },
+      {
+        "name": "Figure_3-source_data_2.csv",
+        "size": 46853
+      },
+      {
+        "name": "caImagingData.mat",
+        "size": 698111258
+      },
+      {
+        "name": "Figure_2-source_data_1.csv",
+        "size": 55619
+      },
+      {
+        "name": "motilityData_colormap.mat",
+        "size": 273
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:46.977640"
+}

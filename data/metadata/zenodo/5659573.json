@@ -1,0 +1,296 @@
+{
+  "created": "2021-11-11T15:54:13.216149+00:00",
+  "modified": "2021-11-12T01:48:41.081676+00:00",
+  "id": 5659573,
+  "conceptrecid": "5659572",
+  "doi": "10.5281/zenodo.5659573",
+  "conceptdoi": "10.5281/zenodo.5659572",
+  "doi_url": "https://doi.org/10.5281/zenodo.5659573",
+  "metadata": {
+    "title": "Computer-aided Veress needle guidance using endoscopic optical coherence tomography and convolutional neural networks",
+    "doi": "10.5281/zenodo.5659573",
+    "publication_date": "2021-11-09",
+    "description": "<p>During laparoscopic surgery, the Veress needle is commonly used in pneumoperitoneum establishment. Precise placement of the Veress needle is still a challenge for the surgeon. In this study, a computer-aided endoscopic optical coherence tomography (OCT) system was developed to effectively and safely guide Veress needle insertion. This endoscopic system was tested by imaging subcutaneous fat, muscle, abdominal space, and the small intestine from swine samples to simulate the surgical process, including the situation with small intestine injury. Each tissue layer was visualized in OCT images with unique features and subsequently used to develop a system for automatic localization of the Veress needle tip by identifying tissue layers (or spaces) and estimating the needle-to-tissue distance. We used convolutional neural networks (CNNs) in automatic tissue classification and distance estimation. The average testing accuracy in tissue classification was 98.53&plusmn;0.39%, and the average testing relative error in distance estimation reached 4.42&plusmn;0.56% (36.09&plusmn;4.92 &mu;m).</p>\n\n<p>The dataset is split into two parts:<br>\n(1) <strong>Classification</strong>. The zip file <em>veress_classification_raw_images.zip</em>&nbsp;contains&nbsp;40K images from 8 swine samples where there are 1K images per layer (skin, fat, muscle, abdominal space, and small intestine)<br>\n(2) <strong>Regression</strong>. The zip file <em>veress_regression_raw_images.zip</em><strong>&nbsp;</strong>contains 8K images of the abdominal space from the same 8 swine samples, and the ground truth distance labels for each sample are found in the Excel files <em>S[1-8]_distance_measurement_20210803.xlsx.</em></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chen Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Justin C. Reynolds",
+        "affiliation": null
+      },
+      {
+        "name": "Paul Calle",
+        "affiliation": null
+      },
+      {
+        "name": "Avery D. Ladymon",
+        "affiliation": null
+      },
+      {
+        "name": "Feng Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Yuyang Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Sam Ton",
+        "affiliation": null
+      },
+      {
+        "name": "Kar-ming Fung",
+        "affiliation": null
+      },
+      {
+        "name": "Sanjay G. Patel",
+        "affiliation": null
+      },
+      {
+        "name": "Zhongxin Yu",
+        "affiliation": null
+      },
+      {
+        "name": "Chongle Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Qinggong Tang",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Biomedical imaging, OCT Endoscopy, Veress needle, deep learning, convolutional neural networks"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5659572"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Computer-aided Veress needle guidance using endoscopic optical coherence tomography and convolutional neural networks",
+  "links": {
+    "self": "https://zenodo.org/api/records/5659573",
+    "self_html": "https://zenodo.org/records/5659573",
+    "preview_html": "https://zenodo.org/records/5659573?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5659573",
+    "self_doi": "https://doi.org/10.5281/zenodo.5659573",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5659573",
+    "reserve_doi": "https://zenodo.org/api/records/5659573/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5659572",
+    "parent_html": "https://zenodo.org/records/5659572",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5659572",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5659572",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5659573/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5659573/sequence/default",
+    "files": "https://zenodo.org/api/records/5659573/files",
+    "media_files": "https://zenodo.org/api/records/5659573/media-files",
+    "archive": "https://zenodo.org/api/records/5659573/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5659573/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5659573/versions/latest",
+    "latest_html": "https://zenodo.org/records/5659573/latest",
+    "versions": "https://zenodo.org/api/records/5659573/versions",
+    "draft": "https://zenodo.org/api/records/5659573/draft",
+    "access_links": "https://zenodo.org/api/records/5659573/access/links",
+    "access_grants": "https://zenodo.org/api/records/5659573/access/grants",
+    "access_users": "https://zenodo.org/api/records/5659573/access/users",
+    "access_request": "https://zenodo.org/api/records/5659573/access/request",
+    "access": "https://zenodo.org/api/records/5659573/access",
+    "communities": "https://zenodo.org/api/records/5659573/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5659573/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5659573/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5659573/file-modification",
+    "requests": "https://zenodo.org/api/records/5659573/requests"
+  },
+  "updated": "2021-11-12T01:48:41.081676+00:00",
+  "recid": "5659573",
+  "revision": 3,
+  "files": [
+    {
+      "id": "36d0ba97-ff3c-443c-a57a-95189302338c",
+      "key": "V2_distance_measurement_20210803.xlsx",
+      "size": 29825,
+      "checksum": "md5:4ab8b6be728dbd026b112e102eb46e01",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V2_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "9420c563-fa83-4098-93eb-2623337967a6",
+      "key": "V1_distance_measurement_20210803.xlsx",
+      "size": 31806,
+      "checksum": "md5:144d29ca0fe97e238842df2f1658cf9d",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V1_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "8a5c24a5-2b3a-4c1e-a923-3665bf96ce8d",
+      "key": "V8_distance_measurement_20210803.xlsx",
+      "size": 30218,
+      "checksum": "md5:7a3ca9c41f25271f554e60f37e1cc8d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V8_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "c6953d92-092e-4156-8452-acde06176b07",
+      "key": "V7_distance_measurement_20210803.xlsx",
+      "size": 30170,
+      "checksum": "md5:e3399293ad3fc6188ad3190001ace9af",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V7_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "b25d8aef-cd80-4b5f-89fd-0e501c073230",
+      "key": "V5_distance_measurement_20210803.xlsx",
+      "size": 30298,
+      "checksum": "md5:552dd99d24815f0fceadd96748e972da",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V5_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "92467044-9197-4429-a433-d02873a5d810",
+      "key": "V4_distance_measurement_20210803.xlsx",
+      "size": 29839,
+      "checksum": "md5:79d74a9c506de801560275e243d59a17",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V4_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "dda3b517-93fd-4c70-8909-cad42efad5bf",
+      "key": "V3_distance_measurement_20210803.xlsx",
+      "size": 30039,
+      "checksum": "md5:b681e5da4eb4562f73d0e236a0ec8d96",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V3_distance_measurement_20210803.xlsx/content"
+      }
+    },
+    {
+      "id": "b973703d-372f-4d0b-b684-ddbae8ea1c6d",
+      "key": "veress_classification_raw_images.zip",
+      "size": 4461438102,
+      "checksum": "md5:012d5a75bb796fb4816235693359e198",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/veress_classification_raw_images.zip/content"
+      }
+    },
+    {
+      "id": "4d113960-c077-432b-97b4-040e3d3a188e",
+      "key": "veress_regression_raw_images.zip",
+      "size": 901174339,
+      "checksum": "md5:84df3b95a3d7bd140c6ff4c72c1d18cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/veress_regression_raw_images.zip/content"
+      }
+    },
+    {
+      "id": "1e6155df-25ff-4d47-bb6f-dd7cc5f9051a",
+      "key": "V6_distance_measurement_20210803.xlsx",
+      "size": 30313,
+      "checksum": "md5:1be19264ff34c83f21d02633f898d9cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/5659573/files/V6_distance_measurement_20210803.xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "264188"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 183,
+    "unique_downloads": 170,
+    "views": 319,
+    "unique_views": 302,
+    "version_downloads": 183,
+    "version_unique_downloads": 170,
+    "version_unique_views": 301,
+    "version_views": 318
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 5362612441,
+    "top_level_files": [
+      {
+        "name": "V2_distance_measurement_20210803.xlsx",
+        "size": 29825
+      },
+      {
+        "name": "V1_distance_measurement_20210803.xlsx",
+        "size": 31806
+      },
+      {
+        "name": "V8_distance_measurement_20210803.xlsx",
+        "size": 30218
+      },
+      {
+        "name": "V7_distance_measurement_20210803.xlsx",
+        "size": 30170
+      },
+      {
+        "name": "V5_distance_measurement_20210803.xlsx",
+        "size": 30298
+      },
+      {
+        "name": "V4_distance_measurement_20210803.xlsx",
+        "size": 29839
+      },
+      {
+        "name": "V3_distance_measurement_20210803.xlsx",
+        "size": 30039
+      },
+      {
+        "name": "veress_classification_raw_images.zip",
+        "size": 4461438102
+      },
+      {
+        "name": "veress_regression_raw_images.zip",
+        "size": 901174339
+      },
+      {
+        "name": "V6_distance_measurement_20210803.xlsx",
+        "size": 30313
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:44.216162"
+}

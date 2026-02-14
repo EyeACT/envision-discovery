@@ -1,0 +1,142 @@
+{
+  "created": "2021-11-04T15:50:18.138028+00:00",
+  "modified": "2021-11-05T01:48:34.599024+00:00",
+  "id": 5645411,
+  "conceptrecid": "5645410",
+  "doi": "10.5281/zenodo.5645411",
+  "conceptdoi": "10.5281/zenodo.5645410",
+  "doi_url": "https://doi.org/10.5281/zenodo.5645411",
+  "metadata": {
+    "title": "MD simulations from Jephthah et al., 2021",
+    "doi": "10.5281/zenodo.5645411",
+    "publication_date": "2021-11-04",
+    "description": "<p>Simulations analyzed in:</p>\n\n<p>Jephthah, St&eacute;phanie, et al. &lsquo;Force Field Effects in Simulations of Flexible Peptides with Varying Polyproline II Propensity&rsquo;. Journal of Chemical Theory and Computation, vol. 17, no. 10, Oct. 2021, pp. 6634&ndash;46. ACS Publications, https://doi.org/10.1021/acs.jctc.1c00408.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jephthah Stephanie",
+        "affiliation": "Lund Univeristy",
+        "orcid": "0000-0003-4287-506X"
+      },
+      {
+        "name": "Pesce Francesco",
+        "affiliation": "University of Copenhagen",
+        "orcid": "0000-0002-3403-2524"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5645410"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MD simulations from Jephthah et al., 2021",
+  "links": {
+    "self": "https://zenodo.org/api/records/5645411",
+    "self_html": "https://zenodo.org/records/5645411",
+    "preview_html": "https://zenodo.org/records/5645411?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5645411",
+    "self_doi": "https://doi.org/10.5281/zenodo.5645411",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5645411",
+    "reserve_doi": "https://zenodo.org/api/records/5645411/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5645410",
+    "parent_html": "https://zenodo.org/records/5645410",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5645410",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5645410",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5645411/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5645411/sequence/default",
+    "files": "https://zenodo.org/api/records/5645411/files",
+    "media_files": "https://zenodo.org/api/records/5645411/media-files",
+    "archive": "https://zenodo.org/api/records/5645411/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5645411/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5645411/versions/latest",
+    "latest_html": "https://zenodo.org/records/5645411/latest",
+    "versions": "https://zenodo.org/api/records/5645411/versions",
+    "draft": "https://zenodo.org/api/records/5645411/draft",
+    "access_links": "https://zenodo.org/api/records/5645411/access/links",
+    "access_grants": "https://zenodo.org/api/records/5645411/access/grants",
+    "access_users": "https://zenodo.org/api/records/5645411/access/users",
+    "access_request": "https://zenodo.org/api/records/5645411/access/request",
+    "access": "https://zenodo.org/api/records/5645411/access",
+    "communities": "https://zenodo.org/api/records/5645411/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5645411/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5645411/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5645411/file-modification",
+    "requests": "https://zenodo.org/api/records/5645411/requests"
+  },
+  "updated": "2021-11-05T01:48:34.599024+00:00",
+  "recid": "5645411",
+  "revision": 2,
+  "files": [
+    {
+      "id": "4cd5b6e5-74e8-48ec-b311-1b90ed38a785",
+      "key": "simulations.tar.gz",
+      "size": 16627069944,
+      "checksum": "md5:1fe551eb4d734d3f1d442ba78c409420",
+      "links": {
+        "self": "https://zenodo.org/api/records/5645411/files/simulations.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "220585"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 33,
+    "unique_downloads": 28,
+    "views": 97,
+    "unique_views": 95,
+    "version_downloads": 33,
+    "version_unique_downloads": 28,
+    "version_unique_views": 95,
+    "version_views": 97
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 16627069944,
+    "top_level_files": [
+      {
+        "name": "simulations.tar.gz",
+        "size": 16627069944
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1021/acs.jctc.1c00408",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:04.550469"
+}

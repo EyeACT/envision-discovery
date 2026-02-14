@@ -1,0 +1,179 @@
+{
+  "created": "2025-05-27T07:21:13.818828+00:00",
+  "modified": "2025-05-27T07:21:14.005135+00:00",
+  "id": 15524472,
+  "conceptrecid": "8415542",
+  "doi": "10.5281/zenodo.15524472",
+  "conceptdoi": "10.5281/zenodo.8415542",
+  "doi_url": "https://doi.org/10.5281/zenodo.15524472",
+  "metadata": {
+    "title": "RAS Dataset",
+    "doi": "10.5281/zenodo.15524472",
+    "publication_date": "2025-05-27",
+    "description": "<p>The current challenge in effectively treating atrial fibrillation (AF) stems from a limited understanding of the intricate structure of the human atria. The objective and quantitative interpretation of the right atrium (RA) in late gadolinium-enhanced magnetic resonance imaging (LGE-MRI) scans relies heavily on its precise segmentation. Leveraging the potential of artificial intelligence (AI) - based approaches for RA segmentation presents a promising solution. However, the successful implementation of AI in this context necessitates access to a substantial volume of annotated LGE-MRI images for model training. In this paper, we present a comprehensive 3D cardiac dataset comprising 154 high-resolution LGE-MRI scans, each meticulously annotated at the pixel level. The annotation process underwent rigorous standardization through crowdsourcing among a panel of medical experts, ensuring the accuracy and consistency of the annotations. Our dataset represents a significant contribution to the field, providing a valuable resource for advancing AI-based RA segmentation methods.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Bai Jieyun",
+        "affiliation": "bai_jieyun@126.com"
+      }
+    ],
+    "keywords": [
+      "Right atrium",
+      "Late gadolinium-enhanced magnetic resonance imaging",
+      "Challenge",
+      "segment anything Model",
+      "Cardiac segmentation"
+    ],
+    "dates": [
+      {
+        "type": "available"
+      }
+    ],
+    "version": "VF",
+    "references": [
+      "A Benchmark Framework for the Right Atrium Cavity Segmentation From LGE-MRIs. IEEE TMI",
+      "RAS Dataset: A 3D Cardiac LGE-MRI Dataset for Segmentation of Right Atrial Cavity.Scientific Data"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/zjinw/RAS",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "IEEE TRANSACTIONS ON MEDICAL IMAGING"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 6,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8415542"
+          }
+        }
+      ]
+    }
+  },
+  "title": "RAS Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15524472",
+    "self_html": "https://zenodo.org/records/15524472",
+    "preview_html": "https://zenodo.org/records/15524472?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15524472",
+    "self_doi": "https://doi.org/10.5281/zenodo.15524472",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15524472",
+    "reserve_doi": "https://zenodo.org/api/records/15524472/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8415542",
+    "parent_html": "https://zenodo.org/records/8415542",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8415542",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8415542",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15524472/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15524472/sequence/default",
+    "files": "https://zenodo.org/api/records/15524472/files",
+    "media_files": "https://zenodo.org/api/records/15524472/media-files",
+    "archive": "https://zenodo.org/api/records/15524472/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15524472/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15524472/versions/latest",
+    "latest_html": "https://zenodo.org/records/15524472/latest",
+    "versions": "https://zenodo.org/api/records/15524472/versions",
+    "draft": "https://zenodo.org/api/records/15524472/draft",
+    "access_links": "https://zenodo.org/api/records/15524472/access/links",
+    "access_grants": "https://zenodo.org/api/records/15524472/access/grants",
+    "access_users": "https://zenodo.org/api/records/15524472/access/users",
+    "access_request": "https://zenodo.org/api/records/15524472/access/request",
+    "access": "https://zenodo.org/api/records/15524472/access",
+    "communities": "https://zenodo.org/api/records/15524472/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15524472/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15524472/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15524472/file-modification",
+    "requests": "https://zenodo.org/api/records/15524472/requests"
+  },
+  "updated": "2025-05-27T07:21:14.005135+00:00",
+  "recid": "15524472",
+  "revision": 4,
+  "files": [
+    {
+      "id": "7160b698-fc92-4949-9eac-c21967d90979",
+      "key": "RAS_154.zip",
+      "size": 1637804,
+      "checksum": "md5:eae71ee9283b8f924bc4dab50cce67b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/15524472/files/RAS_154.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "399976"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 420,
+    "unique_downloads": 380,
+    "views": 1764,
+    "unique_views": 1504,
+    "version_downloads": 111,
+    "version_unique_downloads": 99,
+    "version_unique_views": 464,
+    "version_views": 548
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1637804,
+    "top_level_files": [
+      {
+        "name": "RAS_154.zip",
+        "size": 1637804
+      }
+    ],
+    "zip_contents": {
+      "ras_154.zip": {
+        "total_files": 156,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 12451319,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:29.222119"
+}

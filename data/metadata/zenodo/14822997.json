@@ -1,0 +1,167 @@
+{
+  "created": "2025-02-11T04:05:43.132853+00:00",
+  "modified": "2025-07-31T03:59:54.222351+00:00",
+  "id": 14822997,
+  "conceptrecid": "14822996",
+  "doi": "10.5281/zenodo.14822997",
+  "conceptdoi": "10.5281/zenodo.14822996",
+  "doi_url": "https://doi.org/10.5281/zenodo.14822997",
+  "metadata": {
+    "title": "Exploring high PT experimental charges through the lens of phase maps: Dataset",
+    "doi": "10.5281/zenodo.14822997",
+    "publication_date": "2025-02-11",
+    "description": "<h1>Main dataset</h1>\n<p>This dataset contains the files required to reproduce the figures and findings delivered in <a href=\"https://www.mdpi.com/2075-163X/15/4/355\">Kamber et al. (2025)</a> \"Exploring high PT experimental charges through the lens of phase maps\"</p>\n<h2>The folders contains:</h2>\n<ul>\n<li>scripts_update = scripts to generate the phase maps after QuPath segmentation ('qupathPhaseMap_v10_simplified.m') and re-stitch an AMICS software montage.</li>\n<li>UHP32_21_40_whole sample_QuPath segmentation = QuPath segmentation phase maps presented in the figures.</li>\n<li>UHP32_AMICS Data_auto-stitched = direct AMICS software montage output with different acquisition settings.</li>\n<li>UHP32_AMICS Data_re-stitched = image tiles manually exported from AMICS software that need to be processed with the 'imageJ_stack_matthew_v3.py' script.</li>\n<li>UHP32_detailed AMICS map_QuPath segmentation benchmark = QuPath segmentation phase map using the output montages from 'UHP32_AMICS Data_re-stitched' folder.</li>\n<li>UHP32_TIMA_whole sample_custom library = folder containing the whole sample TIMA phase map after using the custom library.</li>\n<li>UHP32_TIMA-AMICS comparison_Figure 9 crop = folder containing the comparison image stacks between the AMICS and TIMA experiments in SEM backscattered electrong (BSE) imaging mode.</li>\n</ul>\n<h2>The sub-folder structure is (depth 2):</h2>\n<p>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_auto-stitched<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark<br>F:\\Zenodo_Kamber et al. 2025\\scripts_update<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA-AMICS comparison_Figure 9 crop<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 32<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 8<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 16<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 32\\BSE<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 32\\Mineral<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 32\\output<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 32\\output2<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\BSE<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\Mineral<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733695048663.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733695088287.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733720140791.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733722222498.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733723879137.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\trakem2.1733726613532.26926198.2073909859<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Matrix Mapping exported frames\\output<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 8\\BSE<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 8\\Mineral<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 16\\BSE<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_AMICS Data_re-stitched\\Particle Mapping_scan speed 16\\Mineral<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\UHP32_TIMA_QuPath segmentation_bulk<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\TIMA metadata log<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\UHP32_TIMA_QuPath segmentation_bulk\\QUPath_segmentation_project<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\UHP32_TIMA_QuPath segmentation_bulk\\UHP32_tima default export<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco\\custom_library_dotMapping_trial1<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco\\custom_library_trial1<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco\\custom_library_trial2<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco\\default_TIMA library<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_TIMA_whole sample_custom library\\newLibrary_18apr24_Marco\\standards<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#21<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#40<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#32<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#21\\EDX_21<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#21\\HR_BSE_21<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#40\\EDX_40<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#40\\HR_BSE_40<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#32\\High_Resol_panorama_32_2<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_21_40_whole sample_QuPath segmentation\\#32\\QUPath_segmentation_project<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_TIMA<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\EDX_item 1<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\registration_11-Apr-24<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712280071953.546507025.450761598<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712295256565.546507025.450761598<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\coarse_montage<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\fine_montage<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s10<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s3<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s4<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s5<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s6<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s7<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s8<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\#32_MIRA-Image Snaper SNR\\s9<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\EDX_item 1\\32#2-Dot<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\EDX_item 1\\32#2-HR<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\registration_11-Apr-24\\registered<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\registration_11-Apr-24\\stacks_tiles<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\registration_11-Apr-24\\unregistered<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712280071953.546507025.450761598\\features.ser<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712280071953.546507025.450761598\\pointmatches.ser<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712280071953.546507025.450761598\\trakem2.masks<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712280071953.546507025.450761598\\trakem2.mipmaps<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712295256565.546507025.450761598\\trakem2.mipmaps<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598\\features.ser<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598\\pointmatches.ser<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598\\trakem2.its<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598\\trakem2.masks<br>F:\\Zenodo_Kamber et al. 2025\\UHP32_detailed AMICS map_QuPath segmentation benchmark\\trakem2.1712297199695.546507025.450761598\\trakem2.mipmaps</p>\n<p>Further information might be requested to the main authors.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Acevedo Zamora, Marco Andres",
+        "affiliation": "Queensland University of Technology",
+        "orcid": "0000-0003-3330-3828"
+      },
+      {
+        "name": "Kamber, Balz Samuel",
+        "affiliation": "Queensland University of Technology",
+        "orcid": "0000-0002-8720-0608"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Freitas Rodrigues, Rodrigo",
+        "affiliation": "Australian National University, Research School Of Earth Sciences",
+        "type": "DataCollector",
+        "orcid": "0000-0002-5637-5237"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/marcoaaz/Acevedo-Kamber/tree/main/QuPath_generatingMaps",
+      "code:programmingLanguage": [
+        {
+          "id": "matlab",
+          "title": {
+            "en": "MATLAB"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Minerals"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14822996"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Exploring high PT experimental charges through the lens of phase maps: Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/14822997",
+    "self_html": "https://zenodo.org/records/14822997",
+    "preview_html": "https://zenodo.org/records/14822997?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14822997",
+    "self_doi": "https://doi.org/10.5281/zenodo.14822997",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14822997",
+    "reserve_doi": "https://zenodo.org/api/records/14822997/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14822996",
+    "parent_html": "https://zenodo.org/records/14822996",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14822996",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14822996",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14822997/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14822997/sequence/default",
+    "files": "https://zenodo.org/api/records/14822997/files",
+    "media_files": "https://zenodo.org/api/records/14822997/media-files",
+    "archive": "https://zenodo.org/api/records/14822997/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14822997/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14822997/versions/latest",
+    "latest_html": "https://zenodo.org/records/14822997/latest",
+    "versions": "https://zenodo.org/api/records/14822997/versions",
+    "draft": "https://zenodo.org/api/records/14822997/draft",
+    "access_links": "https://zenodo.org/api/records/14822997/access/links",
+    "access_grants": "https://zenodo.org/api/records/14822997/access/grants",
+    "access_users": "https://zenodo.org/api/records/14822997/access/users",
+    "access_request": "https://zenodo.org/api/records/14822997/access/request",
+    "access": "https://zenodo.org/api/records/14822997/access",
+    "communities": "https://zenodo.org/api/records/14822997/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14822997/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14822997/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14822997/file-modification",
+    "requests": "https://zenodo.org/api/records/14822997/requests"
+  },
+  "updated": "2025-07-31T03:59:54.222351+00:00",
+  "recid": "14822997",
+  "revision": 6,
+  "files": [
+    {
+      "id": "0efd9115-2627-4edc-93dc-0a3562f60045",
+      "key": "Zenodo_Kamber et al. 2025.zip",
+      "size": 3306067161,
+      "checksum": "md5:d13215f91763f6b870f4c078622e42ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/14822997/files/Zenodo_Kamber et al. 2025.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1069922"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 34,
+    "unique_downloads": 33,
+    "views": 113,
+    "unique_views": 96,
+    "version_downloads": 34,
+    "version_unique_downloads": 33,
+    "version_unique_views": 96,
+    "version_views": 113
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3306067161,
+    "top_level_files": [
+      {
+        "name": "Zenodo_Kamber et al. 2025.zip",
+        "size": 3306067161
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:03.487728"
+}

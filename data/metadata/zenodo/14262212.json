@@ -1,0 +1,225 @@
+{
+  "created": "2024-12-02T19:37:17.476926+00:00",
+  "modified": "2025-01-28T16:10:05.465533+00:00",
+  "id": 14262212,
+  "conceptrecid": "14262211",
+  "doi": "10.5281/zenodo.14262212",
+  "conceptdoi": "10.5281/zenodo.14262211",
+  "doi_url": "https://doi.org/10.5281/zenodo.14262212",
+  "metadata": {
+    "title": "AMPERE GRD & IRD Data (2010-Oct)",
+    "doi": "10.5281/zenodo.14262212",
+    "publication_date": "2024-12-02",
+    "description": "<p>2010-Oct AMPERE GRD and IRD data.</p><p>AMPERE IRD files contain hemispheric delta-B observations in global coordinates (geographic and AACGM). Data are blocked into 10-minute 'chunks' at 2-minute resolution for use in the fitting algorithm. Measurements flagged 'bad' in the earlier processing are removed prior to entry in IRD.</p><p>AMPERE GRD files contain  hemispheric delta-B and Birkeland current fits at 2-minute resolution.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Anderson, Brian J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-2543-0149"
+      },
+      {
+        "name": "Vines, Sarah",
+        "affiliation": "Southwest Research Institute",
+        "orcid": "0000-0002-7515-3285"
+      },
+      {
+        "name": "Waters, Colin",
+        "affiliation": "University of Newcastle Australia",
+        "orcid": "0000-0003-2121-6962"
+      },
+      {
+        "name": "Barnes, Robin J.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory"
+      },
+      {
+        "name": "Romeo, Giuseppe",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0002-0190-3194"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "Johns Hopkins University Applied Physics Laboratory",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "AMPERE",
+      "ionosphere",
+      "magnetosphere",
+      "convection",
+      "rst",
+      "electrodynamics"
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "ampere"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14262211"
+          }
+        }
+      ]
+    }
+  },
+  "title": "AMPERE GRD & IRD Data (2010-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14262212",
+    "self_html": "https://zenodo.org/records/14262212",
+    "preview_html": "https://zenodo.org/records/14262212?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14262212",
+    "self_doi": "https://doi.org/10.5281/zenodo.14262212",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14262212",
+    "reserve_doi": "https://zenodo.org/api/records/14262212/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14262211",
+    "parent_html": "https://zenodo.org/records/14262211",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14262211",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14262211",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14262212/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14262212/sequence/default",
+    "files": "https://zenodo.org/api/records/14262212/files",
+    "media_files": "https://zenodo.org/api/records/14262212/media-files",
+    "archive": "https://zenodo.org/api/records/14262212/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14262212/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14262212/versions/latest",
+    "latest_html": "https://zenodo.org/records/14262212/latest",
+    "versions": "https://zenodo.org/api/records/14262212/versions",
+    "draft": "https://zenodo.org/api/records/14262212/draft",
+    "access_links": "https://zenodo.org/api/records/14262212/access/links",
+    "access_grants": "https://zenodo.org/api/records/14262212/access/grants",
+    "access_users": "https://zenodo.org/api/records/14262212/access/users",
+    "access_request": "https://zenodo.org/api/records/14262212/access/request",
+    "access": "https://zenodo.org/api/records/14262212/access",
+    "communities": "https://zenodo.org/api/records/14262212/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14262212/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14262212/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14262212/file-modification",
+    "requests": "https://zenodo.org/api/records/14262212/requests"
+  },
+  "updated": "2025-01-28T16:10:05.465533+00:00",
+  "recid": "14262212",
+  "revision": 7,
+  "files": [
+    {
+      "id": "779896d6-69a8-4e2b-9282-3ca5f4e2aa0b",
+      "key": "ampere.201010.k060_m08.north.ird.zip",
+      "size": 4583800553,
+      "checksum": "md5:9c7e0f045ad9d008cb448f4d6470abf9",
+      "links": {
+        "self": "https://zenodo.org/api/records/14262212/files/ampere.201010.k060_m08.north.ird.zip/content"
+      }
+    },
+    {
+      "id": "00c47392-6342-43cc-83b5-98f0689365fd",
+      "key": "ampere.201010.k060_m08.north.grd.zip",
+      "size": 2503022125,
+      "checksum": "md5:dbd4370659bfcf11e320bcf61d2827c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14262212/files/ampere.201010.k060_m08.north.grd.zip/content"
+      }
+    },
+    {
+      "id": "20938561-ccb4-4e56-a5f7-7e28e8e30a04",
+      "key": "ampere.201010.k060_m08.south.ird.zip",
+      "size": 4555208096,
+      "checksum": "md5:afbe13e903e9984061a55cdad2143dd2",
+      "links": {
+        "self": "https://zenodo.org/api/records/14262212/files/ampere.201010.k060_m08.south.ird.zip/content"
+      }
+    },
+    {
+      "id": "87a5a2df-2c41-48bc-8c82-4824915a7cf7",
+      "key": "ampere.201010.k060_m08.south.grd.zip",
+      "size": 2498159041,
+      "checksum": "md5:9b473f37669f07fb975a3e570502ba75",
+      "links": {
+        "self": "https://zenodo.org/api/records/14262212/files/ampere.201010.k060_m08.south.grd.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1224282"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 96,
+    "unique_downloads": 96,
+    "views": 32,
+    "unique_views": 28,
+    "version_downloads": 96,
+    "version_unique_downloads": 96,
+    "version_unique_views": 28,
+    "version_views": 32
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 14140189815,
+    "top_level_files": [
+      {
+        "name": "ampere.201010.k060_m08.north.ird.zip",
+        "size": 4583800553
+      },
+      {
+        "name": "ampere.201010.k060_m08.north.grd.zip",
+        "size": 2503022125
+      },
+      {
+        "name": "ampere.201010.k060_m08.south.ird.zip",
+        "size": 4555208096
+      },
+      {
+        "name": "ampere.201010.k060_m08.south.grd.zip",
+        "size": 2498159041
+      }
+    ],
+    "zip_contents": {
+      "ampere.201010.k060_m08.north.grd.zip": {
+        "total_files": 31,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 5571743336,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:18.566334"
+}

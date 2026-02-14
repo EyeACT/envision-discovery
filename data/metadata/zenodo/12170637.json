@@ -1,0 +1,145 @@
+{
+  "created": "2024-06-19T21:01:50.319224+00:00",
+  "modified": "2024-06-19T21:01:50.663322+00:00",
+  "id": 12170637,
+  "conceptrecid": "12170636",
+  "doi": "10.5281/zenodo.12170637",
+  "conceptdoi": "10.5281/zenodo.12170636",
+  "doi_url": "https://doi.org/10.5281/zenodo.12170637",
+  "metadata": {
+    "title": "OCT Human Kidney Dataset for PRB Guidance",
+    "doi": "10.5281/zenodo.12170637",
+    "publication_date": "2024-06-19",
+    "description": "<p>The dataset for the paper \"Automatic renal carcinoma biopsy guidance using forward-viewing endoscopic optical coherence tomography and deep learning\". The study was approved by the University of Oklahoma Institutional Review Board (Study number: 12462). Written informed consent was obtained by Lifeshare of Oklahoma. Patient demographics were collected upon obtaining consent. For our dataset, we utilized nine human kidney samples with renal carcinoma. OCT images of carcinoma tissue and different normal tissues were imaged by our OCT probe. Furthermore, to compare benign renal tumor against malignant renal carcinoma in this study, we conducted OCT imaging on one kidney sample with oncocytoma, which is a well-defined benign solid tumor arising from proximal renal tubule. To keep the organ as fresh as possible, all the kidney samples were preserved by hypothermic machine perfusion (HMP), and we started the experiment as soon as the sample was acquired.&nbsp;</p>\n<p>Currently we uploaded one of the ten kidneys due to the size of the data, more kidneys will be updated in the future.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cui, Haoyang",
+        "affiliation": "University of Oklahoma"
+      },
+      {
+        "name": "Pan, Chongle",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0000-0003-2860-0334"
+      },
+      {
+        "name": "Tang, Qinggong",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0000-0001-9499-5384"
+      },
+      {
+        "name": "Wang, Chen",
+        "affiliation": "University of Oklahoma"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12170636"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCT Human Kidney Dataset for PRB Guidance",
+  "links": {
+    "self": "https://zenodo.org/api/records/12170637",
+    "self_html": "https://zenodo.org/records/12170637",
+    "preview_html": "https://zenodo.org/records/12170637?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12170637",
+    "self_doi": "https://doi.org/10.5281/zenodo.12170637",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12170637",
+    "reserve_doi": "https://zenodo.org/api/records/12170637/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12170636",
+    "parent_html": "https://zenodo.org/records/12170636",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12170636",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12170636",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12170637/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12170637/sequence/default",
+    "files": "https://zenodo.org/api/records/12170637/files",
+    "media_files": "https://zenodo.org/api/records/12170637/media-files",
+    "archive": "https://zenodo.org/api/records/12170637/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12170637/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12170637/versions/latest",
+    "latest_html": "https://zenodo.org/records/12170637/latest",
+    "versions": "https://zenodo.org/api/records/12170637/versions",
+    "draft": "https://zenodo.org/api/records/12170637/draft",
+    "access_links": "https://zenodo.org/api/records/12170637/access/links",
+    "access_grants": "https://zenodo.org/api/records/12170637/access/grants",
+    "access_users": "https://zenodo.org/api/records/12170637/access/users",
+    "access_request": "https://zenodo.org/api/records/12170637/access/request",
+    "access": "https://zenodo.org/api/records/12170637/access",
+    "communities": "https://zenodo.org/api/records/12170637/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12170637/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12170637/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12170637/file-modification",
+    "requests": "https://zenodo.org/api/records/12170637/requests"
+  },
+  "updated": "2024-06-19T21:01:50.663322+00:00",
+  "recid": "12170637",
+  "revision": 4,
+  "files": [
+    {
+      "id": "a614d157-908e-49e1-bdbf-870c43c84399",
+      "key": "1.zip",
+      "size": 2143331882,
+      "checksum": "md5:3b2fcb19b7bdd2061f784ab654f53a1a",
+      "links": {
+        "self": "https://zenodo.org/api/records/12170637/files/1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "232166"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 62,
+    "unique_downloads": 61,
+    "views": 147,
+    "unique_views": 137,
+    "version_downloads": 62,
+    "version_unique_downloads": 61,
+    "version_unique_views": 137,
+    "version_views": 147
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2143331882,
+    "top_level_files": [
+      {
+        "name": "1.zip",
+        "size": 2143331882
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:02.413513"
+}

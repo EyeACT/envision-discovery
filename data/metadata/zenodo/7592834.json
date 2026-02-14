@@ -1,0 +1,621 @@
+{
+  "created": "2023-02-01T03:39:34.874422+00:00",
+  "modified": "2024-07-12T17:27:43.415636+00:00",
+  "id": 7592834,
+  "conceptrecid": "7592833",
+  "doi": "10.5061/dryad.h18931zr2",
+  "doi_url": "https://doi.org/10.5061/dryad.h18931zr2",
+  "metadata": {
+    "title": "Circuit mechanisms underlying embryonic retinal waves",
+    "doi": "10.5061/dryad.h18931zr2",
+    "publication_date": "2023-01-31",
+    "description": "<p>Spontaneous activity is a hallmark of developing neural systems. In the retina, spontaneous activity comes in the form of retinal waves, comprised of three stages persisting from embryonic day 16 (E16) to eye opening at postnatal day 14 (P14). Though postnatal retinal waves have been well characterized, little is known about the spatiotemporal properties or the mechanisms mediating embryonic retinal waves, designated Stage 1 waves. Using a custom-built macroscope to record spontaneous calcium transients from whole embryonic retinas, we show that Stage 1 waves are initiated at several locations across the retina and propagate across a broad range of areas. A gap junction antagonist, meclofenamic acid, reduced the frequency and size of Stage 1 waves, nearly abolishing them. The general nAChR antagonist, hexamethonium similarly nearly abolished Stage 1 waves. Application of the \u03b14\u03b22 nAChR antagonist dihydro-\u00df-erythroidine only slightly reduced the frequency of waves but significantly reduced the number of cells that participated in waves. Thus, Stage 1 waves are mediated by a complex circuitry involving subtypes of nAChRs and gap junctions. Stage 1 waves in mice lacking the \u03b22 subunit of the nAChRs (\u03b22-nAChR-KO) were reduced, but in contrast to WT mice, they persisted in the hexamethonium and were completely blocked by meclofenamic acid. To assay the impact of Stage 1 waves on retinal development, we compared the spatial distribution of a subtype of retinal ganglion cells, intrinsically photosensitive retinal ganglion cells (ipRGCs), which undergo a significant amount of cell death, in WT and \u03b22-nAChR-KO mice. We found that the developmental decrease of ipRGC density is preserved between WT and \u03b22-nAChR-KO mice, indicating that processes regulating ipRGC distribution are not influenced by spontaneous activity.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Voufo, Christiane",
+        "affiliation": "University of California, Berkeley"
+      },
+      {
+        "name": "Chen, Andy",
+        "affiliation": "University of California, Berkeley",
+        "orcid": "0000-0002-4970-045X"
+      },
+      {
+        "name": "Smith, Benjamin",
+        "affiliation": "University of California, Berkeley"
+      },
+      {
+        "name": "Yan, Rongshan",
+        "affiliation": "University of California, Berkeley"
+      },
+      {
+        "name": "Feller, Marla",
+        "affiliation": "University of California, Berkeley",
+        "orcid": "0000-0002-9137-5849"
+      },
+      {
+        "name": "Tiriac, Alexandre",
+        "affiliation": "Vanderbilt University"
+      }
+    ],
+    "keywords": [
+      "spontaneous activity",
+      "embryonic",
+      "retina",
+      "calcium imaging"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Llamero/DIY_Epifluorescence_Macroscope",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7592833"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Tif images can be opened using FIJI (Fiji is just imageJ).</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: K99EY030909</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: RO1EY013528</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: RO1EY019498</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: P30EY003176</p>"
+  },
+  "title": "Circuit mechanisms underlying embryonic retinal waves",
+  "links": {
+    "self": "https://zenodo.org/api/records/7592834",
+    "self_html": "https://zenodo.org/records/7592834",
+    "preview_html": "https://zenodo.org/records/7592834?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.h18931zr2",
+    "self_doi": "https://doi.org/10.5061/dryad.h18931zr2",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.h18931zr2",
+    "reserve_doi": "https://zenodo.org/api/records/7592834/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7592833",
+    "parent_html": "https://zenodo.org/records/7592833",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7592834/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7592834/sequence/default",
+    "files": "https://zenodo.org/api/records/7592834/files",
+    "media_files": "https://zenodo.org/api/records/7592834/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7592834:B2P1_BTOTP1220124M1L.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7592834/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7592834/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7592834/versions/latest",
+    "latest_html": "https://zenodo.org/records/7592834/latest",
+    "versions": "https://zenodo.org/api/records/7592834/versions",
+    "draft": "https://zenodo.org/api/records/7592834/draft",
+    "access_links": "https://zenodo.org/api/records/7592834/access/links",
+    "access_grants": "https://zenodo.org/api/records/7592834/access/grants",
+    "access_users": "https://zenodo.org/api/records/7592834/access/users",
+    "access_request": "https://zenodo.org/api/records/7592834/access/request",
+    "access": "https://zenodo.org/api/records/7592834/access",
+    "communities": "https://zenodo.org/api/records/7592834/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7592834/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7592834/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7592834/file-modification",
+    "requests": "https://zenodo.org/api/records/7592834/requests"
+  },
+  "updated": "2024-07-12T17:27:43.415636+00:00",
+  "recid": "7592834",
+  "revision": 5,
+  "files": [
+    {
+      "id": "44b7fefe-9e90-4401-8902-ee68f5132821",
+      "key": "B2P1_BTOTP1220124M1L.tif",
+      "size": 248150138,
+      "checksum": "md5:529409ec9c131020fb83afb445ba43d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220124M1L.tif/content"
+      }
+    },
+    {
+      "id": "cd8373eb-134d-4a46-815d-739967c394e1",
+      "key": "README.md",
+      "size": 701,
+      "checksum": "md5:8013d5179deb9820bc1487e055ffdb24",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/README.md/content"
+      }
+    },
+    {
+      "id": "f6536a67-9d56-4a6b-b30d-2e11ec203e9e",
+      "key": "B2P1_BTOTP1220108M3L.tif",
+      "size": 20499293,
+      "checksum": "md5:8ff5d044292e94f7ee709a989e452215",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220108M3L.tif/content"
+      }
+    },
+    {
+      "id": "06a47305-b4df-482d-9cae-7931f4ec4ff4",
+      "key": "WTP7_OCTP1220222M8R.tif",
+      "size": 20499290,
+      "checksum": "md5:584fc21518abf6e5d5dbe9a14c2f4a63",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M8R.tif/content"
+      }
+    },
+    {
+      "id": "ebe63bfd-6a5b-4ec6-9bb3-ca298dcaa24d",
+      "key": "WTP1_OCTP1220125M4L.tif",
+      "size": 636078842,
+      "checksum": "md5:871f495f70e79d4b790dfa4fae13b3c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1220125M4L.tif/content"
+      }
+    },
+    {
+      "id": "a76d77de-2284-471d-91f0-c840fa324aea",
+      "key": "WTP7_OCTP1220222M7L.tif",
+      "size": 20499290,
+      "checksum": "md5:3f02beb3d9435c526d98926be06ef430",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M7L.tif/content"
+      }
+    },
+    {
+      "id": "18d7ee98-c389-4c5f-a059-c564427111c6",
+      "key": "WTP1_OCTP1220125M4R.tif",
+      "size": 615560293,
+      "checksum": "md5:b3b58efc6fa2c222739e0aa1ca1223fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1220125M4R.tif/content"
+      }
+    },
+    {
+      "id": "12a823e3-e5fe-41a9-be81-92364dd4425c",
+      "key": "WTP7_OCTP1220222M6L.tif",
+      "size": 20499290,
+      "checksum": "md5:ba180189cf06d85df31308fe1d7287b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M6L.tif/content"
+      }
+    },
+    {
+      "id": "5c3341d7-b32d-44b8-a986-70ec019f9e72",
+      "key": "B2P1_BTOTP1220209M2R.tif",
+      "size": 332099559,
+      "checksum": "md5:232086919c5e8fe9d87073119e500d0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220209M2R.tif/content"
+      }
+    },
+    {
+      "id": "33cd6099-808a-43cd-bf47-c2a67a8495f4",
+      "key": "B2P1_BTOTP1220209M3R.tif",
+      "size": 313959730,
+      "checksum": "md5:762d186d8ba283c81b78ced0cdad64df",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220209M3R.tif/content"
+      }
+    },
+    {
+      "id": "6603ddbb-5864-474c-aed6-6be576d1ee57",
+      "key": "B2P7_BTOTP1211004M2L.tiff",
+      "size": 20481032,
+      "checksum": "md5:fe3e51bbad1cf1f7c8af2356c6f47bdc",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1211004M2L.tiff/content"
+      }
+    },
+    {
+      "id": "611f2178-f6e9-4aac-9cf7-6067a523682f",
+      "key": "WTP7_OCTP1220222M1R.tif",
+      "size": 20499290,
+      "checksum": "md5:1427303622bb2095defe6f2a357307d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M1R.tif/content"
+      }
+    },
+    {
+      "id": "976430cb-0c45-488d-bb88-693bdeab6ef3",
+      "key": "WTP7_OCTP1220222M2L.tif",
+      "size": 20499290,
+      "checksum": "md5:9b5ef24a3f83338f76b8f1908c5672da",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M2L.tif/content"
+      }
+    },
+    {
+      "id": "61be78cc-4f58-4eb9-ac22-5535263328ef",
+      "key": "WTP1_OCTP1211021M3R.tif",
+      "size": 20498953,
+      "checksum": "md5:307c9377375cc64a0acca800f5ac37f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1211021M3R.tif/content"
+      }
+    },
+    {
+      "id": "7094ac2c-b77f-412b-a1e3-4a72671f889a",
+      "key": "WTP7_OCTP1220222M3L.tif",
+      "size": 20499290,
+      "checksum": "md5:a071e855b56fc40ba0333d80588a60b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M3L.tif/content"
+      }
+    },
+    {
+      "id": "aead4bad-af95-4379-bd72-b418ba549ec9",
+      "key": "B2P7_BTOTP1211004M1R.tiff",
+      "size": 20481032,
+      "checksum": "md5:01f132def3278399a2af529764e3dbca",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1211004M1R.tiff/content"
+      }
+    },
+    {
+      "id": "7e8dad3f-b488-4858-bbd4-9d04560dc2ab",
+      "key": "WTP1_OCTP1211021M1L.tif",
+      "size": 20499556,
+      "checksum": "md5:329dd9232efe45576900ac7ba2f61b6e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1211021M1L.tif/content"
+      }
+    },
+    {
+      "id": "26705752-c1e1-4abe-aeea-be20a6b6ba02",
+      "key": "WTP1_OCTP1211021M3L.tif",
+      "size": 20499009,
+      "checksum": "md5:e8eca054f02821704e902dddd779c77d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1211021M3L.tif/content"
+      }
+    },
+    {
+      "id": "cbfd65ed-0382-4408-8df5-917c7fb21d6c",
+      "key": "B2P1_BTOTP1220124M3L.tif",
+      "size": 737287818,
+      "checksum": "md5:dd36b1f903d07172c0595b843190f6b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220124M3L.tif/content"
+      }
+    },
+    {
+      "id": "f69387a7-d7aa-4c0b-9c62-e332f4c62ca5",
+      "key": "B2P7_BTOTP1220222M2R.tif",
+      "size": 20499841,
+      "checksum": "md5:f43c3538ff953541a4ee1cf1db6b0f7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1220222M2R.tif/content"
+      }
+    },
+    {
+      "id": "71b8b409-cdf1-4d9c-a556-72a993f3bbe8",
+      "key": "B2P7_BTOTP1220222M3L.tif",
+      "size": 20499293,
+      "checksum": "md5:5602a9453d51ac69ce75c7c93aa13374",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1220222M3L.tif/content"
+      }
+    },
+    {
+      "id": "c43dbea9-9691-478f-b4e9-542e14227979",
+      "key": "WTP7_OCTP1220222M4R.tif",
+      "size": 20499290,
+      "checksum": "md5:cd37d955b2c2d60d20550e583ccb238b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M4R.tif/content"
+      }
+    },
+    {
+      "id": "35bb545e-bc13-4ad1-83ca-0a7490a4236f",
+      "key": "B2P7_BTOTP1220222M3R.tif",
+      "size": 20499293,
+      "checksum": "md5:1364b6ea59ff352b37aea00d3b32f44c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1220222M3R.tif/content"
+      }
+    },
+    {
+      "id": "1d653332-234e-4746-8bab-fde3a9d83852",
+      "key": "WTP1_OCTP1220125M2R.tif",
+      "size": 943563378,
+      "checksum": "md5:2524b61ee8cd0d9b2f5830fc88338c0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1220125M2R.tif/content"
+      }
+    },
+    {
+      "id": "f4e2a50d-a0ed-473b-a39c-ffb556f9fb0b",
+      "key": "WTP7_OCTP1220222M5R.tif",
+      "size": 20499290,
+      "checksum": "md5:7cb47ec5f08d4a95d9bf51f3563c5d86",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP7_OCTP1220222M5R.tif/content"
+      }
+    },
+    {
+      "id": "356c374a-bf6d-43d1-860a-1134b2b9765e",
+      "key": "WTP1_OCTP1211021M1R.tif",
+      "size": 20480236,
+      "checksum": "md5:f19dbde852f4b71d75c532b9d384cde1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1211021M1R.tif/content"
+      }
+    },
+    {
+      "id": "18dc30c4-5ade-4da4-8159-62581a3b9a66",
+      "key": "B2P1_BTOTP1220209M4L.tif",
+      "size": 228320257,
+      "checksum": "md5:670513d28f0a6b2a25cd2c0db643535e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220209M4L.tif/content"
+      }
+    },
+    {
+      "id": "36fc59dc-13d4-4711-be6f-496143b606dd",
+      "key": "B2P1_BTOTP1220124M2L.tif",
+      "size": 615752474,
+      "checksum": "md5:e2bb63aac6b70ebdd091fc776e417753",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220124M2L.tif/content"
+      }
+    },
+    {
+      "id": "dd2a59ee-b504-4551-ab0b-638f8cb9833d",
+      "key": "B2P1_BTOTP1220124M1R.tif",
+      "size": 473847350,
+      "checksum": "md5:4119d6e25ab65054eb8b52c706e5d4b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220124M1R.tif/content"
+      }
+    },
+    {
+      "id": "5d88eb70-2364-4c1c-8d59-094ddd09c7c0",
+      "key": "B2P7_BTOTP1220222M2L.tif",
+      "size": 20499895,
+      "checksum": "md5:e9b794369be2943d9eaf1d78b2d7aea4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1220222M2L.tif/content"
+      }
+    },
+    {
+      "id": "acd70869-ff22-4d44-908a-73605d03e731",
+      "key": "B2P7_BTOTP1220222M1R.tif",
+      "size": 20499293,
+      "checksum": "md5:e9c8e9d7939e79e571d92c2d3e2eb7a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1220222M1R.tif/content"
+      }
+    },
+    {
+      "id": "c0efdbb0-6a19-4bb1-89b1-b11bbcefee24",
+      "key": "B2P7_BTOTP1211004M2R.tiff",
+      "size": 20481032,
+      "checksum": "md5:1c7bccbd4f6d806be3b7ef452a6eb878",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P7_BTOTP1211004M2R.tiff/content"
+      }
+    },
+    {
+      "id": "41cb570b-4697-49f2-bc94-dc23cbfde3bd",
+      "key": "WTP1_OCTP1220125M1R.tif",
+      "size": 370490376,
+      "checksum": "md5:ef6d3d79649d9cf3913f9df67f3ba2a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1220125M1R.tif/content"
+      }
+    },
+    {
+      "id": "b3c0b853-a9a6-4449-b5a8-0a6356bc484f",
+      "key": "WTP1_OCTP1220125M3L.tif",
+      "size": 1354653050,
+      "checksum": "md5:468a7b9aff43bdd8e5c677bd162b6efe",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/WTP1_OCTP1220125M3L.tif/content"
+      }
+    },
+    {
+      "id": "819f2835-c014-4de3-a846-55eb67a0bc3f",
+      "key": "B2P1_BTOTP1220209M4R.tif",
+      "size": 623657411,
+      "checksum": "md5:b9325a357e6b4fbc7e701bb0d8f716e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7592834/files/B2P1_BTOTP1220209M4R.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 486,
+    "unique_downloads": 483,
+    "views": 162,
+    "unique_views": 161,
+    "version_downloads": 486,
+    "version_unique_downloads": 483,
+    "version_unique_views": 161,
+    "version_views": 162
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 34,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 7923832754,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "B2P1_BTOTP1220124M1L.tif",
+        "size": 248150138
+      },
+      {
+        "name": "README.md",
+        "size": 701
+      },
+      {
+        "name": "B2P1_BTOTP1220108M3L.tif",
+        "size": 20499293
+      },
+      {
+        "name": "WTP7_OCTP1220222M8R.tif",
+        "size": 20499290
+      },
+      {
+        "name": "WTP1_OCTP1220125M4L.tif",
+        "size": 636078842
+      },
+      {
+        "name": "WTP7_OCTP1220222M7L.tif",
+        "size": 20499290
+      },
+      {
+        "name": "WTP1_OCTP1220125M4R.tif",
+        "size": 615560293
+      },
+      {
+        "name": "WTP7_OCTP1220222M6L.tif",
+        "size": 20499290
+      },
+      {
+        "name": "B2P1_BTOTP1220209M2R.tif",
+        "size": 332099559
+      },
+      {
+        "name": "B2P1_BTOTP1220209M3R.tif",
+        "size": 313959730
+      },
+      {
+        "name": "B2P7_BTOTP1211004M2L.tiff",
+        "size": 20481032
+      },
+      {
+        "name": "WTP7_OCTP1220222M1R.tif",
+        "size": 20499290
+      },
+      {
+        "name": "WTP7_OCTP1220222M2L.tif",
+        "size": 20499290
+      },
+      {
+        "name": "WTP1_OCTP1211021M3R.tif",
+        "size": 20498953
+      },
+      {
+        "name": "WTP7_OCTP1220222M3L.tif",
+        "size": 20499290
+      },
+      {
+        "name": "B2P7_BTOTP1211004M1R.tiff",
+        "size": 20481032
+      },
+      {
+        "name": "WTP1_OCTP1211021M1L.tif",
+        "size": 20499556
+      },
+      {
+        "name": "WTP1_OCTP1211021M3L.tif",
+        "size": 20499009
+      },
+      {
+        "name": "B2P1_BTOTP1220124M3L.tif",
+        "size": 737287818
+      },
+      {
+        "name": "B2P7_BTOTP1220222M2R.tif",
+        "size": 20499841
+      },
+      {
+        "name": "B2P7_BTOTP1220222M3L.tif",
+        "size": 20499293
+      },
+      {
+        "name": "WTP7_OCTP1220222M4R.tif",
+        "size": 20499290
+      },
+      {
+        "name": "B2P7_BTOTP1220222M3R.tif",
+        "size": 20499293
+      },
+      {
+        "name": "WTP1_OCTP1220125M2R.tif",
+        "size": 943563378
+      },
+      {
+        "name": "WTP7_OCTP1220222M5R.tif",
+        "size": 20499290
+      },
+      {
+        "name": "WTP1_OCTP1211021M1R.tif",
+        "size": 20480236
+      },
+      {
+        "name": "B2P1_BTOTP1220209M4L.tif",
+        "size": 228320257
+      },
+      {
+        "name": "B2P1_BTOTP1220124M2L.tif",
+        "size": 615752474
+      },
+      {
+        "name": "B2P1_BTOTP1220124M1R.tif",
+        "size": 473847350
+      },
+      {
+        "name": "B2P7_BTOTP1220222M2L.tif",
+        "size": 20499895
+      },
+      {
+        "name": "B2P7_BTOTP1220222M1R.tif",
+        "size": 20499293
+      },
+      {
+        "name": "B2P7_BTOTP1211004M2R.tiff",
+        "size": 20481032
+      },
+      {
+        "name": "WTP1_OCTP1220125M1R.tif",
+        "size": 370490376
+      },
+      {
+        "name": "WTP1_OCTP1220125M3L.tif",
+        "size": 1354653050
+      },
+      {
+        "name": "B2P1_BTOTP1220209M4R.tif",
+        "size": 623657411
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/Llamero/DIY_Epifluorescence_Macroscope"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:56.159718"
+}

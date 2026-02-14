@@ -1,0 +1,169 @@
+{
+  "created": "2017-08-21T18:21:28.358215+00:00",
+  "modified": "2020-01-24T19:22:35.209611+00:00",
+  "id": 846388,
+  "conceptrecid": "846387",
+  "doi": "10.17632/5fnxs6b557",
+  "doi_url": "https://doi.org/10.17632/5fnxs6b557",
+  "metadata": {
+    "title": "Electromagnetic Calorimeter Shower Images with Variable Incidence Angle and Position",
+    "doi": "10.17632/5fnxs6b557",
+    "publication_date": "2017-08-21",
+    "description": "<p>Each file is a collection of 500,000 (or 400,000 in the case of positrons) calorimeter showers corresponding to the particle specified in the file name (eplus = positrons, gamma = photons, piplus = charged pions).\u00a0</p>\n\n<p>The calorimeter we built is segmented longitudinally into three layer with different depths and granularities. In units of mm, the three layers have the following (eta, phi, z) dimensions:<br>\nLayer 0: (5, 160, 90) | Layer 1: (40, 40, 347) | Layer 2: (80, 40, 43)</p>\n\n<p>In the HDF5 files, the `energy` entry specifies the true energy of the incoming particle in units of GeV. `layer_0`, `layer_1`, and `layer_2` represents the energy deposited in each layer of the calorimeter in an image data format. Given the segmentation of each calorimeter layer, these images have dimensions 3x96 (in layer 0), 12x12 (in layer 1), and 12x6 (in layer 3). The `overflow` contains the amount of energy that was deposited outside of the calorimeter section we are considering. The fields `x0`, `y0`, `z0`, `t0`, `px`, `py`, `pz` provide position and kinematic information of incident particles upon impact.\u00a0</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Paganini, Michela",
+        "affiliation": "Yale University"
+      },
+      {
+        "name": "de Oliveira, Luke",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "Nachman, Benjamin",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      }
+    ],
+    "keywords": [
+      "Machine Learning",
+      "Deep Learning",
+      "High Energy Physics",
+      "Calorimeter",
+      "Images"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "846387"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electromagnetic Calorimeter Shower Images with Variable Incidence Angle and Position",
+  "links": {
+    "self": "https://zenodo.org/api/records/846388",
+    "self_html": "https://zenodo.org/records/846388",
+    "preview_html": "https://zenodo.org/records/846388?preview=1",
+    "doi": "https://doi.org/10.17632/5fnxs6b557",
+    "self_doi": "https://doi.org/10.17632/5fnxs6b557",
+    "self_doi_html": "https://zenodo.org/doi/10.17632/5fnxs6b557",
+    "reserve_doi": "https://zenodo.org/api/records/846388/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/846387",
+    "parent_html": "https://zenodo.org/records/846387",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:846388/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:846388/sequence/default",
+    "files": "https://zenodo.org/api/records/846388/files",
+    "media_files": "https://zenodo.org/api/records/846388/media-files",
+    "archive": "https://zenodo.org/api/records/846388/files-archive",
+    "archive_media": "https://zenodo.org/api/records/846388/media-files-archive",
+    "latest": "https://zenodo.org/api/records/846388/versions/latest",
+    "latest_html": "https://zenodo.org/records/846388/latest",
+    "versions": "https://zenodo.org/api/records/846388/versions",
+    "draft": "https://zenodo.org/api/records/846388/draft",
+    "access_links": "https://zenodo.org/api/records/846388/access/links",
+    "access_grants": "https://zenodo.org/api/records/846388/access/grants",
+    "access_users": "https://zenodo.org/api/records/846388/access/users",
+    "access_request": "https://zenodo.org/api/records/846388/access/request",
+    "access": "https://zenodo.org/api/records/846388/access",
+    "communities": "https://zenodo.org/api/records/846388/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/846388/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/846388/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/846388/file-modification",
+    "requests": "https://zenodo.org/api/records/846388/requests"
+  },
+  "updated": "2020-01-24T19:22:35.209611+00:00",
+  "recid": "846388",
+  "revision": 5,
+  "files": [
+    {
+      "id": "082f084d-b143-49af-ab8b-3c86199efe27",
+      "key": "gamma_angle_position_5deg_xy.h5",
+      "size": 2060006240,
+      "checksum": "md5:b9d71282c1e1e45498c575798d7dd6f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/846388/files/gamma_angle_position_5deg_xy.h5/content"
+      }
+    },
+    {
+      "id": "657f47b1-8851-4f66-8ede-bf09cf1c177e",
+      "key": "piplus_angle_position_5deg_xy.h5",
+      "size": 2060006240,
+      "checksum": "md5:7c56aaaac7184ef492565828e37985d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/846388/files/piplus_angle_position_5deg_xy.h5/content"
+      }
+    },
+    {
+      "id": "df7968c9-1c59-4ca4-aacc-b8b0e343027b",
+      "key": "eplus_angle_position_5deg_xy.h5",
+      "size": 1648006240,
+      "checksum": "md5:5827dacaa4dc6163734bfa1e381e0b4e",
+      "links": {
+        "self": "https://zenodo.org/api/records/846388/files/eplus_angle_position_5deg_xy.h5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "28246"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 472,
+    "unique_downloads": 401,
+    "views": 940,
+    "unique_views": 889,
+    "version_downloads": 469,
+    "version_unique_downloads": 398,
+    "version_unique_views": 883,
+    "version_views": 933
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 5768018720,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "gamma_angle_position_5deg_xy.h5",
+        "size": 2060006240
+      },
+      {
+        "name": "piplus_angle_position_5deg_xy.h5",
+        "size": 2060006240
+      },
+      {
+        "name": "eplus_angle_position_5deg_xy.h5",
+        "size": 1648006240
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:48.340842"
+}

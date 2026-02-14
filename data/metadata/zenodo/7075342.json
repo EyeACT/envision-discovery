@@ -1,0 +1,351 @@
+{
+  "created": "2023-01-31T19:29:46.800286+00:00",
+  "modified": "2023-02-02T02:27:07.464986+00:00",
+  "id": 7075342,
+  "conceptrecid": "7075341",
+  "doi": "10.5281/zenodo.7075342",
+  "conceptdoi": "10.5281/zenodo.7075341",
+  "doi_url": "https://doi.org/10.5281/zenodo.7075342",
+  "metadata": {
+    "title": "Detecting coarse beach sediment using remotely sensed imagery at the FRF, Duck, NC, USA: Labeled images, deep learning model, testing data, and predictions.",
+    "doi": "10.5281/zenodo.7075342",
+    "publication_date": "2023-01-31",
+    "description": "<p>This data record contains 5 zip files all used to build and use a semantic segmentation model to operate on beach imagery taken at the Field Research Facility (FRF) in Duck, North Carolina, USA. &nbsp;All data is from 2015-2021</p>\n\n<p>The `training_data.zip` contains all data used to train the ML model. All images come from the north facing (c1) camera. This zip file includes: a list of classes used to label the imagery, and folders of 107 images, 107 sparse annotations (doodles), 107 labels, and 107 overlays. All labeling was done with the open-source labeling tool &lsquo;Doodler (Buscombe et al., 2021).</p>\n\n<p>The `model.zip` file contains the ML model, and associated metadata. This includes: a JSON model configuration file, a figure showing model training statistics, an `.npz` file of model training output, a list of training and validation files, the model as an h5 file and in the Tensorflow &lsquo;saved model&rsquo; format. &nbsp;All modeling was done with Segmentation Gym (Buscombe &amp; Goldstein 2022).</p>\n\n<p>The `test_data_c6.zip` file contains all data from the south facing (c6) camera to test the ML model. This includes: a list of classes used to label the imagery, and folders of 10 images, 10 sparse annotations (doodles), 10 labels, and 10 overlays. &nbsp;All labeling was done with the open-source labeling tool &lsquo;Doodler (Buscombe et al., 2021). Testing the model with this data was done with codes in: https://github.com/ebgoldstein/FRF_GrainSize</p>\n\n<p>The `test_data_c1.zip` file contains all data from the north facing (c1) camera to test the ML model. This includes: a list of classes used to label the imagery, and folders of 10 images, 10 sparse annotations (doodles), 10 labels, and 10 overlays. &nbsp;All labeling was done with an open-source labeling tool &lsquo;Doodler (Buscombe et al., 2021). Testing the model with this data was done with codes in: https://github.com/ebgoldstein/FRF_GrainSize</p>\n\n<p>The `predictions.zip` file contains 4418 images from the north facing (c1) camera that were run through the trained segmentation model as well as the resulting output (presented as side-by-side image and overlays). These images were created using codes in Segmentation Gym (Buscombe &amp; Goldstein 2022).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Goldstein, Evan",
+        "affiliation": "UNC Greensboro",
+        "orcid": "0000-0001-9358-1016"
+      }
+    ],
+    "keywords": [
+      "The Doodleverse",
+      "image segmentation",
+      "UNet",
+      "Residual UNet",
+      "semantic segmentation",
+      "Dune",
+      "Beach",
+      "ARGUS"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1029/2022EA002332",
+        "relation": "references",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.1029/2021EA002085",
+        "relation": "references",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "0.1",
+    "references": [
+      "Buscombe, D., & Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, e2022EA002332. https://doi.org/10.1029/2022EA002332",
+      "Segmentation Gym: https://github.com/Doodleverse/segmentation_gym",
+      "Buscombe, D., Goldstein, E.B., Sherwood, C.R., Bodine, C., Brown, J.A., Favela, J., Fitzpatrick, S., Kranenburg, C.J., Over, J.R., Ritchie, A.C. and Warrick, J.A., 2021. Human\u2010in\u2010the\u2010Loop Segmentation of Earth Surface Imagery. Earth and Space Science, e2021EA002085 https://doi.org/10.1029/2021EA002085",
+      "Doodler: https://github.com/Doodleverse/dash_doodler"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7075341"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Detecting coarse beach sediment using remotely sensed imagery at the FRF, Duck, NC, USA: Labeled images, deep learning model, testing data, and predictions.",
+  "links": {
+    "self": "https://zenodo.org/api/records/7075342",
+    "self_html": "https://zenodo.org/records/7075342",
+    "preview_html": "https://zenodo.org/records/7075342?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7075342",
+    "self_doi": "https://doi.org/10.5281/zenodo.7075342",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7075342",
+    "reserve_doi": "https://zenodo.org/api/records/7075342/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7075341",
+    "parent_html": "https://zenodo.org/records/7075341",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7075341",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7075341",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7075342/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7075342/sequence/default",
+    "files": "https://zenodo.org/api/records/7075342/files",
+    "media_files": "https://zenodo.org/api/records/7075342/media-files",
+    "archive": "https://zenodo.org/api/records/7075342/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7075342/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7075342/versions/latest",
+    "latest_html": "https://zenodo.org/records/7075342/latest",
+    "versions": "https://zenodo.org/api/records/7075342/versions",
+    "draft": "https://zenodo.org/api/records/7075342/draft",
+    "access_links": "https://zenodo.org/api/records/7075342/access/links",
+    "access_grants": "https://zenodo.org/api/records/7075342/access/grants",
+    "access_users": "https://zenodo.org/api/records/7075342/access/users",
+    "access_request": "https://zenodo.org/api/records/7075342/access/request",
+    "access": "https://zenodo.org/api/records/7075342/access",
+    "communities": "https://zenodo.org/api/records/7075342/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7075342/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7075342/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7075342/file-modification",
+    "requests": "https://zenodo.org/api/records/7075342/requests"
+  },
+  "updated": "2023-02-02T02:27:07.464986+00:00",
+  "recid": "7075342",
+  "revision": 2,
+  "files": [
+    {
+      "id": "3941be4c-bffb-4dbd-a48b-3d0f75d2044f",
+      "key": "test_data_c6.zip",
+      "size": 30329882,
+      "checksum": "md5:2cb9b737caedfe236ce12b79250b4595",
+      "links": {
+        "self": "https://zenodo.org/api/records/7075342/files/test_data_c6.zip/content"
+      }
+    },
+    {
+      "id": "5dce84a8-c849-4288-b57b-8694026e821d",
+      "key": "model.zip",
+      "size": 143655140,
+      "checksum": "md5:ae7d512db27ace6af77ff1a4fe2f611c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7075342/files/model.zip/content"
+      }
+    },
+    {
+      "id": "d2403c33-6271-4fcf-b751-d86124afbe92",
+      "key": "training_data.zip",
+      "size": 268790830,
+      "checksum": "md5:d6cb3b96fde934c87de586e05560e7c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7075342/files/training_data.zip/content"
+      }
+    },
+    {
+      "id": "1aac6ecb-b187-4f79-8daf-40f485950a49",
+      "key": "predictions.zip",
+      "size": 2640276956,
+      "checksum": "md5:4405b1e6e1a770c1cd2537b295755859",
+      "links": {
+        "self": "https://zenodo.org/api/records/7075342/files/predictions.zip/content"
+      }
+    },
+    {
+      "id": "1f01dfc7-7c9a-44f4-b57f-ded930784404",
+      "key": "test_data_c1.zip",
+      "size": 32453617,
+      "checksum": "md5:dd97951af49a82bedb2f78cb25a8b4c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7075342/files/test_data_c1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "44489"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 159,
+    "unique_downloads": 147,
+    "views": 241,
+    "unique_views": 234,
+    "version_downloads": 159,
+    "version_unique_downloads": 147,
+    "version_unique_views": 234,
+    "version_views": 241
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3115506425,
+    "top_level_files": [
+      {
+        "name": "test_data_c6.zip",
+        "size": 30329882
+      },
+      {
+        "name": "model.zip",
+        "size": 143655140
+      },
+      {
+        "name": "training_data.zip",
+        "size": 268790830
+      },
+      {
+        "name": "predictions.zip",
+        "size": 2640276956
+      },
+      {
+        "name": "test_data_c1.zip",
+        "size": 32453617
+      }
+    ],
+    "zip_contents": {
+      "test_data_c6.zip": {
+        "total_files": 42,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 31234774,
+        "file_types": {
+          ".png": 20,
+          ".jpg": 20
+        },
+        "imaging_file_count": 40,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "test_data_c6/doodles/frf_c6_snap_20160601_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20160801_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20170101_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20170301_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20170501_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20170601_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20181101_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20181201_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20200101_ebg_doodles.png",
+          "test_data_c6/doodles/frf_c6_snap_20210101_ebg_doodles.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "model.zip": {
+        "total_files": 11,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 159313060,
+        "file_types": {
+          ".h5": 2,
+          ".png": 1,
+          ".npz": 1
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "model/frf_mar15_remap_trainhist_14.png",
+          "model/frf_mar15_remap.h5",
+          "model/frf_mar15_remap_fullmodel.h5",
+          "model/frf_mar15_remap_model_history.npz"
+        ],
+        "sample_genomics_files": []
+      },
+      "training_data.zip": {
+        "total_files": 430,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 274599496,
+        "file_types": {
+          ".jpg": 214,
+          ".png": 214
+        },
+        "imaging_file_count": 428,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "training_data/images/frf_c1_snap_20150221160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150226160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150228160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150322160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150503160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150505160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150507160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150508160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150509160000_ebg.jpg",
+          "training_data/images/frf_c1_snap_20150510160000_ebg.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "test_data_c1.zip": {
+        "total_files": 42,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 33370513,
+        "file_types": {
+          ".png": 20,
+          ".jpg": 20
+        },
+        "imaging_file_count": 40,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "test_data_c1/doodles/frf_c1_snap_20161107160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20170804160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20170923160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20180918160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20190309160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20191107160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20191208160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20200816160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20210309160000_ebg_doodles.png",
+          "test_data_c1/doodles/frf_c1_snap_20210520160000_ebg_doodles.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "test_data_c6/doodles/frf_c6_snap_20160601_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20160801_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20170101_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20170301_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20170501_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20170601_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20181101_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20181201_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20200101_ebg_doodles.png",
+      "test_data_c6/doodles/frf_c6_snap_20210101_ebg_doodles.png",
+      "model/frf_mar15_remap_trainhist_14.png",
+      "model/frf_mar15_remap.h5",
+      "model/frf_mar15_remap_fullmodel.h5",
+      "model/frf_mar15_remap_model_history.npz",
+      "training_data/images/frf_c1_snap_20150221160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150226160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150228160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150322160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150503160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150505160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150507160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150508160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150509160000_ebg.jpg",
+      "training_data/images/frf_c1_snap_20150510160000_ebg.jpg",
+      "test_data_c1/doodles/frf_c1_snap_20161107160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20170804160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20170923160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20180918160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20190309160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20191107160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20191208160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20200816160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20210309160000_ebg_doodles.png",
+      "test_data_c1/doodles/frf_c1_snap_20210520160000_ebg_doodles.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/ebgoldstein/FRF_GrainSize",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/ebgoldstein/FRF_GrainSize",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:17.376766"
+}

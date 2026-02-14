@@ -1,0 +1,176 @@
+{
+  "created": "2025-09-12T04:24:11.566939+00:00",
+  "modified": "2025-09-12T04:24:11.731840+00:00",
+  "id": 17103009,
+  "conceptrecid": "17103008",
+  "doi": "10.5281/zenodo.17103009",
+  "conceptdoi": "10.5281/zenodo.17103008",
+  "doi_url": "https://doi.org/10.5281/zenodo.17103009",
+  "metadata": {
+    "title": "Minimal dataset for \"Cellular-resolution OCT reveals layer-specific retinal mosaics and ganglion cell degeneration in mouse retina in vivo\"",
+    "doi": "10.5281/zenodo.17103009",
+    "publication_date": "2025-09-12",
+    "description": "<p>This dataset provides the minimal data underlying the findings of the manuscript submitted to Neurophotonics:<br>Cellular-resolution OCT reveals layer-specific retinal mosaics and ganglion cell degeneration in mouse retina in vivo.</p>\n<p>Contents include:</p>\n<p>- Data_Summary.xlsx: raw numerical values supporting Figures (image quality metrics, speckle contrast, SSIM, cross-correlation, RGC soma counts, GCC thickness).</p>\n<p>- Figures folder: original figure panels in TIFF format and a supplementary movie (MPEG).</p>\n<p>- Images folder: representative OCT images, raw and averaged OCT volumes, layer-optimized mosaics, longitudinal ONC datasets, and corresponding immunohistochemistry images.</p>\n<p>Code availability: multi-volume registration and averaging pipeline available at https://github.com/unblindness/oct_alignment</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kim, Tae-Hoon",
+        "affiliation": "Genentech",
+        "orcid": "0000-0002-4391-4860"
+      },
+      {
+        "name": "Weimer, Robby",
+        "affiliation": "Genentech",
+        "orcid": "0000-0001-8308-2651"
+      },
+      {
+        "name": "Elstrott, Justin",
+        "affiliation": "Genentech",
+        "orcid": "0000-0001-6694-5929"
+      }
+    ],
+    "keywords": [
+      "OCT, retina, adaptive optics, retinal ganglion cells, optic nerve crush, Neurophotonics"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2025.08.01.668001",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      }
+    ],
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/unblindness/oct_alignment",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17103008"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Minimal dataset for \"Cellular-resolution OCT reveals layer-specific retinal mosaics and ganglion cell degeneration in mouse retina in vivo\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/17103009",
+    "self_html": "https://zenodo.org/records/17103009",
+    "preview_html": "https://zenodo.org/records/17103009?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17103009",
+    "self_doi": "https://doi.org/10.5281/zenodo.17103009",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17103009",
+    "reserve_doi": "https://zenodo.org/api/records/17103009/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17103008",
+    "parent_html": "https://zenodo.org/records/17103008",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17103008",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17103008",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17103009/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17103009/sequence/default",
+    "files": "https://zenodo.org/api/records/17103009/files",
+    "media_files": "https://zenodo.org/api/records/17103009/media-files",
+    "archive": "https://zenodo.org/api/records/17103009/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17103009/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17103009/versions/latest",
+    "latest_html": "https://zenodo.org/records/17103009/latest",
+    "versions": "https://zenodo.org/api/records/17103009/versions",
+    "draft": "https://zenodo.org/api/records/17103009/draft",
+    "access_links": "https://zenodo.org/api/records/17103009/access/links",
+    "access_grants": "https://zenodo.org/api/records/17103009/access/grants",
+    "access_users": "https://zenodo.org/api/records/17103009/access/users",
+    "access_request": "https://zenodo.org/api/records/17103009/access/request",
+    "access": "https://zenodo.org/api/records/17103009/access",
+    "communities": "https://zenodo.org/api/records/17103009/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17103009/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17103009/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17103009/file-modification",
+    "requests": "https://zenodo.org/api/records/17103009/requests"
+  },
+  "updated": "2025-09-12T04:24:11.731840+00:00",
+  "recid": "17103009",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f8178323-0e95-46b3-bbf9-cbb0f9034516",
+      "key": "OCT_minimal_dataset.zip",
+      "size": 7378315965,
+      "checksum": "md5:194eddcdc9aa8dfaadf552889ffedd70",
+      "links": {
+        "self": "https://zenodo.org/api/records/17103009/files/OCT_minimal_dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1406794"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 7,
+    "unique_downloads": 6,
+    "views": 36,
+    "unique_views": 27,
+    "version_downloads": 7,
+    "version_unique_downloads": 6,
+    "version_unique_views": 27,
+    "version_views": 36
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 7378315965,
+    "top_level_files": [
+      {
+        "name": "OCT_minimal_dataset.zip",
+        "size": 7378315965
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/unblindness/oct_alignment",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:50.323096"
+}

@@ -1,0 +1,209 @@
+{
+  "created": "2018-01-08T15:10:36.708774+00:00",
+  "modified": "2020-01-24T19:23:27.023703+00:00",
+  "id": 1137746,
+  "conceptrecid": "1137745",
+  "doi": "10.5281/zenodo.1137746",
+  "conceptdoi": "10.5281/zenodo.1137745",
+  "doi_url": "https://doi.org/10.5281/zenodo.1137746",
+  "metadata": {
+    "title": "Supplementary Material for Nested Segmentation of Web Search Queries",
+    "doi": "10.5281/zenodo.1137746",
+    "publication_date": "2018-01-08",
+    "description": "<p>1. Query test of SGCL12&nbsp;[SGCL12QueryTestSet.txt]</p>\n\n<p>2. Outputs of 16 nesting algorithms on the query&nbsp;test set of SGCL12 [Input flat segmention: Saha Roy et al., SIGIR&nbsp;2012] [Nested Segmentation Outputs SGCL12.zip]</p>\n\n<p>3. Query set of TREC-WT [TREC-WTQueryTestSet.txt]</p>\n\n<p>4. Outputs of 16 nesting algorithms on the query test set of TREC-WT&nbsp;&nbsp;[Input flat segmention: Saha Roy et al.,&nbsp;SIGIR&nbsp;2012] [Nested Segmentation Outputs TREC-WT.zip]</p>\n\n<p>5.&nbsp;Code and executables&nbsp;for generating the nested segmentations for a set of queries [Code and execs for generating nested segmentations.zip]</p>\n\n<p>6.&nbsp;Code and executables&nbsp;for&nbsp;IR-based&nbsp;evaluation of a nested segmentation [Code and execs for IR evaluation of a nested segmentation.zip]</p>\n\n<p>7.&nbsp;Readme.txt</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Rishiraj",
+        "affiliation": "IIT Kharagpur"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "1137745"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Supplementary Material for Nested Segmentation of Web Search Queries",
+  "links": {
+    "self": "https://zenodo.org/api/records/1137746",
+    "self_html": "https://zenodo.org/records/1137746",
+    "preview_html": "https://zenodo.org/records/1137746?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.1137746",
+    "self_doi": "https://doi.org/10.5281/zenodo.1137746",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1137746",
+    "reserve_doi": "https://zenodo.org/api/records/1137746/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/1137745",
+    "parent_html": "https://zenodo.org/records/1137745",
+    "parent_doi": "https://doi.org/10.5281/zenodo.1137745",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1137745",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:1137746/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:1137746/sequence/default",
+    "files": "https://zenodo.org/api/records/1137746/files",
+    "media_files": "https://zenodo.org/api/records/1137746/media-files",
+    "archive": "https://zenodo.org/api/records/1137746/files-archive",
+    "archive_media": "https://zenodo.org/api/records/1137746/media-files-archive",
+    "latest": "https://zenodo.org/api/records/1137746/versions/latest",
+    "latest_html": "https://zenodo.org/records/1137746/latest",
+    "versions": "https://zenodo.org/api/records/1137746/versions",
+    "draft": "https://zenodo.org/api/records/1137746/draft",
+    "access_links": "https://zenodo.org/api/records/1137746/access/links",
+    "access_grants": "https://zenodo.org/api/records/1137746/access/grants",
+    "access_users": "https://zenodo.org/api/records/1137746/access/users",
+    "access_request": "https://zenodo.org/api/records/1137746/access/request",
+    "access": "https://zenodo.org/api/records/1137746/access",
+    "communities": "https://zenodo.org/api/records/1137746/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/1137746/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/1137746/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/1137746/file-modification",
+    "requests": "https://zenodo.org/api/records/1137746/requests"
+  },
+  "updated": "2020-01-24T19:23:27.023703+00:00",
+  "recid": "1137746",
+  "revision": 5,
+  "files": [
+    {
+      "id": "516af716-f898-4a3d-8da4-991429ce62a5",
+      "key": "TREC-WTQueryTestSet.txt",
+      "size": 1681,
+      "checksum": "md5:66ab324cd413670e9ea3bc5947bc8cfe",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/TREC-WTQueryTestSet.txt/content"
+      }
+    },
+    {
+      "id": "73e804e9-ee40-4cd6-8041-5e47b3523818",
+      "key": "Code and execs for IR evaluation of a nested segmentation.zip",
+      "size": 736194,
+      "checksum": "md5:ea0b4ff7ad94eb46a27f77e6c0899d6c",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/Code and execs for IR evaluation of a nested segmentation.zip/content"
+      }
+    },
+    {
+      "id": "d69e164f-e06b-4a54-9cd0-00e6d2f16a53",
+      "key": "Nested Segmentation Outputs SGCL12.zip",
+      "size": 139898,
+      "checksum": "md5:19b29da4fccaf9ea624f799ac328fd7b",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/Nested Segmentation Outputs SGCL12.zip/content"
+      }
+    },
+    {
+      "id": "a34436bc-c643-49eb-81d4-93ab5441b3de",
+      "key": "Code and execs for generating nested segmentations.zip",
+      "size": 99251,
+      "checksum": "md5:2a2c0254e18cf69836cbcf1d93d70533",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/Code and execs for generating nested segmentations.zip/content"
+      }
+    },
+    {
+      "id": "6778a9e9-c42a-4725-9152-e1fa33a2c38d",
+      "key": "Nested Segmentation Outputs TREC-WT.zip",
+      "size": 21370,
+      "checksum": "md5:43ea317a60af8ada265e729cc3d53275",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/Nested Segmentation Outputs TREC-WT.zip/content"
+      }
+    },
+    {
+      "id": "e39c2f97-b710-4d36-9650-88f75561cb8d",
+      "key": "Readme.txt",
+      "size": 692,
+      "checksum": "md5:cb1e8c156b7c8e56011014ed65d9f3aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/Readme.txt/content"
+      }
+    },
+    {
+      "id": "449811ba-b8f3-45e7-9077-325f28e3d599",
+      "key": "SGCL12QueryTestSet.txt",
+      "size": 15763,
+      "checksum": "md5:7efc66671c23c3ace2566a46bcf945dd",
+      "links": {
+        "self": "https://zenodo.org/api/records/1137746/files/SGCL12QueryTestSet.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "40510"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 277,
+    "unique_downloads": 227,
+    "views": 245,
+    "unique_views": 234,
+    "version_downloads": 277,
+    "version_unique_downloads": 227,
+    "version_unique_views": 234,
+    "version_views": 245
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 996713,
+    "top_level_files": [
+      {
+        "name": "TREC-WTQueryTestSet.txt",
+        "size": 1681
+      },
+      {
+        "name": "Code and execs for IR evaluation of a nested segmentation.zip",
+        "size": 736194
+      },
+      {
+        "name": "Nested Segmentation Outputs SGCL12.zip",
+        "size": 139898
+      },
+      {
+        "name": "Code and execs for generating nested segmentations.zip",
+        "size": 99251
+      },
+      {
+        "name": "Nested Segmentation Outputs TREC-WT.zip",
+        "size": 21370
+      },
+      {
+        "name": "Readme.txt",
+        "size": 692
+      },
+      {
+        "name": "SGCL12QueryTestSet.txt",
+        "size": 15763
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:05.812275"
+}

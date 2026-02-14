@@ -1,0 +1,217 @@
+{
+  "created": "2021-09-16T11:42:57.920369+00:00",
+  "modified": "2021-09-16T13:48:25.190875+00:00",
+  "id": 5163817,
+  "conceptrecid": "5163816",
+  "doi": "10.5281/zenodo.5163817",
+  "conceptdoi": "10.5281/zenodo.5163816",
+  "doi_url": "https://doi.org/10.5281/zenodo.5163817",
+  "metadata": {
+    "title": "Preprocessed Dataset for ``Calorimetric Measurement of Multi-TeV Muons via Deep Regression\"",
+    "doi": "10.5281/zenodo.5163817",
+    "publication_date": "2021-08-05",
+    "description": "<p>This&nbsp;record contains the fully-preprocessed training/validation and testing datasets used to train and evaluate the final models for&nbsp;&quot;Calorimetric Measurement of Multi-TeV Muons via Deep Regression&quot; by Jan Kieseler, Giles C. Strong, Filippo Chiandotto, Tommaso Dorigo, &amp; Lukas Layer, (2021), arXiv:2107.02119 [physics.ins-det] (https://arxiv.org/abs/2107.02119).</p>\n\n<p>The files are LZF-compressed HDF5 format and designed to be used directly with the code-base available at&nbsp;https://github.com/GilesStrong/calo_muon_regression. Please use the &#39;issues&#39; tab on the GitHub repo for any questions or problems with these datasets.</p>\n\n<p>The training dataset consists of&nbsp;886,716 muons with energies in the continuous range [50,8000] GeV split into 36 subsamples (folds). The zeroth fold of this dataset is used as our validation data. The testing dataset contains&nbsp;429,750 muons,&nbsp;generated at fixed values of muon energy (E=100, 500, 900, 1300, 1700, 2100, 2500, 2900, 3300, 3700, 4100 GeV), and split into 18 folds. The input features are the raw hits in the calorimeter (stored in a sparse COO representation), and the high-level features discussed in the paper.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kieseler, Jan",
+        "affiliation": "CERN",
+        "orcid": "0000-0003-1644-7678"
+      },
+      {
+        "name": "Strong, Giles Chatham",
+        "affiliation": "Padua U. and INFN, Padua",
+        "orcid": "0000-0002-4640-6108"
+      },
+      {
+        "name": "Chiandotto, Filippo",
+        "affiliation": "Padua and INFN, Padua",
+        "orcid": "0000-0002-3220-5524"
+      },
+      {
+        "name": "Dorigo, Tommaso",
+        "affiliation": "INFN, Padua",
+        "orcid": "0000-0002-1659-8727"
+      },
+      {
+        "name": "Layer, Lukas",
+        "affiliation": "INFN, Padua and Naples U. and INFN, Naples",
+        "orcid": "0000-0001-9416-9605"
+      }
+    ],
+    "keywords": [
+      "deep-learning",
+      "high-energy physics",
+      "calorimeter",
+      "regression",
+      "3D data",
+      "CNN"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/GilesStrong/calo_muon_regression/tree/v0.0",
+        "relation": "requires",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.5167015",
+        "relation": "requires",
+        "resource_type": "software",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://arxiv.org/abs/2107.02119",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-preprint",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5163816"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Preprocessed Dataset for ``Calorimetric Measurement of Multi-TeV Muons via Deep Regression\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/5163817",
+    "self_html": "https://zenodo.org/records/5163817",
+    "preview_html": "https://zenodo.org/records/5163817?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5163817",
+    "self_doi": "https://doi.org/10.5281/zenodo.5163817",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5163817",
+    "reserve_doi": "https://zenodo.org/api/records/5163817/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5163816",
+    "parent_html": "https://zenodo.org/records/5163816",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5163816",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5163816",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5163817/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5163817/sequence/default",
+    "files": "https://zenodo.org/api/records/5163817/files",
+    "media_files": "https://zenodo.org/api/records/5163817/media-files",
+    "archive": "https://zenodo.org/api/records/5163817/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5163817/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5163817/versions/latest",
+    "latest_html": "https://zenodo.org/records/5163817/latest",
+    "versions": "https://zenodo.org/api/records/5163817/versions",
+    "draft": "https://zenodo.org/api/records/5163817/draft",
+    "access_links": "https://zenodo.org/api/records/5163817/access/links",
+    "access_grants": "https://zenodo.org/api/records/5163817/access/grants",
+    "access_users": "https://zenodo.org/api/records/5163817/access/users",
+    "access_request": "https://zenodo.org/api/records/5163817/access/request",
+    "access": "https://zenodo.org/api/records/5163817/access",
+    "communities": "https://zenodo.org/api/records/5163817/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5163817/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5163817/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5163817/file-modification",
+    "requests": "https://zenodo.org/api/records/5163817/requests"
+  },
+  "updated": "2021-09-16T13:48:25.190875+00:00",
+  "recid": "5163817",
+  "revision": 2,
+  "files": [
+    {
+      "id": "f2352a7e-6b4a-4fdf-ab63-09467c53fdaa",
+      "key": "training_hl-only.hdf5",
+      "size": 84110766,
+      "checksum": "md5:32d1bb3cdc01bf7034e3fc803fea49e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/5163817/files/training_hl-only.hdf5/content"
+      }
+    },
+    {
+      "id": "b3546f5e-5382-4d24-894e-a6527f128615",
+      "key": "training.hdf5",
+      "size": 34321542455,
+      "checksum": "md5:3dcb3cc63e19da381b65749921bbee0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5163817/files/training.hdf5/content"
+      }
+    },
+    {
+      "id": "36ccce02-c599-44ba-9115-797f4a1f62f4",
+      "key": "testing.hdf5",
+      "size": 12790499548,
+      "checksum": "md5:621cc50ba6fd69ac15beb77bb8a473d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/5163817/files/testing.hdf5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "63323"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 171,
+    "unique_downloads": 154,
+    "views": 473,
+    "unique_views": 455,
+    "version_downloads": 171,
+    "version_unique_downloads": 154,
+    "version_unique_views": 455,
+    "version_views": 473
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 47196152769,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "training_hl-only.hdf5",
+        "size": 84110766
+      },
+      {
+        "name": "training.hdf5",
+        "size": 34321542455
+      },
+      {
+        "name": "testing.hdf5",
+        "size": 12790499548
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/GilesStrong/calo_muon_regression/tree/v0.0"
+  ],
+  "_weblinks": [
+    {
+      "url": "https://arxiv.org/abs/2107.02119",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/GilesStrong/calo_muon_regression",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:15.875172"
+}

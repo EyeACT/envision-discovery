@@ -1,0 +1,136 @@
+{
+  "created": "2025-07-17T14:44:22.376314+00:00",
+  "modified": "2025-07-17T14:44:22.640999+00:00",
+  "id": 15924508,
+  "conceptrecid": "15924507",
+  "doi": "10.5281/zenodo.15924508",
+  "conceptdoi": "10.5281/zenodo.15924507",
+  "doi_url": "https://doi.org/10.5281/zenodo.15924508",
+  "metadata": {
+    "title": "MSD Spleen Dataset",
+    "doi": "10.5281/zenodo.15924508",
+    "publication_date": "2025-07-15",
+    "description": "<h3><strong>Description</strong></h3>\n<p>This dataset is a <strong>replicated copy</strong> of the <em>Medical Segmentation Decathlon (MSD) Spleen Dataset</em>, created solely to comply with <strong>PLOS ONE&rsquo;s data availability requirements</strong>.<br>The original dataset was developed and is maintained by the Medical Segmentation Decathlon organizers. Full details and the official source can be accessed here:<br><strong>Official Website:</strong> <a href=\"http://medicaldecathlon.com/\" target=\"_new\" rel=\"noopener\">http://medicaldecathlon.com/</a><br><strong>Original License and Terms:</strong> Please refer to the official MSD repository for licensing and usage conditions.</p>\n<p>No modifications have been made to the original data other than repackaging for hosting on a stable repository (Zenodo).</p>\n<h3><strong>Citation</strong></h3>\n<p>If you use this dataset, please cite the original source:<br>Antonelli, M., et al. (2022). Medical Segmentation Decathlon. <em>Nature Communications</em>. <a target=\"_new\" rel=\"noopener\">DOI: 10.1038/s41467-022-30695-9<br></a></p>\n<h3><strong>Notes</strong></h3>\n<ul>\n<li>\n<p>This replication has been uploaded exclusively to fulfill journal requirements.</p>\n</li>\n<li>\n<p>All intellectual property rights belong to the original authors/organization.</p>\n</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Medical Segmentation Decathlon",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15924507"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MSD Spleen Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15924508",
+    "self_html": "https://zenodo.org/records/15924508",
+    "preview_html": "https://zenodo.org/records/15924508?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15924508",
+    "self_doi": "https://doi.org/10.5281/zenodo.15924508",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15924508",
+    "reserve_doi": "https://zenodo.org/api/records/15924508/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15924507",
+    "parent_html": "https://zenodo.org/records/15924507",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15924507",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15924507",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15924508/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15924508/sequence/default",
+    "files": "https://zenodo.org/api/records/15924508/files",
+    "media_files": "https://zenodo.org/api/records/15924508/media-files",
+    "archive": "https://zenodo.org/api/records/15924508/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15924508/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15924508/versions/latest",
+    "latest_html": "https://zenodo.org/records/15924508/latest",
+    "versions": "https://zenodo.org/api/records/15924508/versions",
+    "draft": "https://zenodo.org/api/records/15924508/draft",
+    "access_links": "https://zenodo.org/api/records/15924508/access/links",
+    "access_grants": "https://zenodo.org/api/records/15924508/access/grants",
+    "access_users": "https://zenodo.org/api/records/15924508/access/users",
+    "access_request": "https://zenodo.org/api/records/15924508/access/request",
+    "access": "https://zenodo.org/api/records/15924508/access",
+    "communities": "https://zenodo.org/api/records/15924508/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15924508/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15924508/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15924508/file-modification",
+    "requests": "https://zenodo.org/api/records/15924508/requests"
+  },
+  "updated": "2025-07-17T14:44:22.640999+00:00",
+  "recid": "15924508",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f52e75d0-54ea-4971-902d-cb031e08904f",
+      "key": "Task09_Spleen.tar",
+      "size": 1610352640,
+      "checksum": "md5:410d4a301da4e5b2f6f86ec3ddba524e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15924508/files/Task09_Spleen.tar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "104732"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 118,
+    "unique_downloads": 63,
+    "views": 269,
+    "unique_views": 255,
+    "version_downloads": 118,
+    "version_unique_downloads": 63,
+    "version_unique_views": 255,
+    "version_views": 269
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1610352640,
+    "top_level_files": [
+      {
+        "name": "Task09_Spleen.tar",
+        "size": 1610352640
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://medicaldecathlon.com/Original",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:44.944730"
+}

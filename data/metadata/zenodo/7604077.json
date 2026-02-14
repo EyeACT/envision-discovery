@@ -1,0 +1,343 @@
+{
+  "created": "2023-03-01T00:41:19.326140+00:00",
+  "modified": "2024-07-12T17:03:25.798726+00:00",
+  "id": 7604077,
+  "conceptrecid": "7604076",
+  "doi": "10.5281/zenodo.7604077",
+  "conceptdoi": "10.5281/zenodo.7604076",
+  "doi_url": "https://doi.org/10.5281/zenodo.7604077",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo Res-UNet models for Aerial/nadir/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+    "doi": "10.5281/zenodo.7604077",
+    "publication_date": "2023-02-03",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo Res-UNet models for Aerial/nadir/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images</strong></em></p>\n\n<p>These Residual-UNet models have been created using Segmentation Gym* using the following dataset**:</p>\n\n<p>Image size used by model: 1024 x 768 x 3 pixels</p>\n\n<p>classes:</p>\n\n<ol>\n\t<li>water</li>\n\t<li>other</li>\n</ol>\n\n<p><br>\n<strong>File descriptions</strong></p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p><strong>References</strong></p>\n\n<p><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "semantic segmentation",
+      "aerial / high-res.",
+      "watermasking"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7604076"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo Res-UNet models for Aerial/nadir/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7604077",
+    "self_html": "https://zenodo.org/records/7604077",
+    "preview_html": "https://zenodo.org/records/7604077?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7604077",
+    "self_doi": "https://doi.org/10.5281/zenodo.7604077",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7604077",
+    "reserve_doi": "https://zenodo.org/api/records/7604077/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7604076",
+    "parent_html": "https://zenodo.org/records/7604076",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7604076",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7604076",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7604077/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7604077/sequence/default",
+    "files": "https://zenodo.org/api/records/7604077/files",
+    "media_files": "https://zenodo.org/api/records/7604077/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7604077:watermask_waynecam_1024_768_v3_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7604077/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7604077/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7604077/versions/latest",
+    "latest_html": "https://zenodo.org/records/7604077/latest",
+    "versions": "https://zenodo.org/api/records/7604077/versions",
+    "draft": "https://zenodo.org/api/records/7604077/draft",
+    "access_links": "https://zenodo.org/api/records/7604077/access/links",
+    "access_grants": "https://zenodo.org/api/records/7604077/access/grants",
+    "access_users": "https://zenodo.org/api/records/7604077/access/users",
+    "access_request": "https://zenodo.org/api/records/7604077/access/request",
+    "access": "https://zenodo.org/api/records/7604077/access",
+    "communities": "https://zenodo.org/api/records/7604077/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7604077/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7604077/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7604077/file-modification",
+    "requests": "https://zenodo.org/api/records/7604077/requests"
+  },
+  "updated": "2024-07-12T17:03:25.798726+00:00",
+  "recid": "7604077",
+  "revision": 5,
+  "files": [
+    {
+      "id": "b15fc0d5-46e0-42c6-bb37-b63131485f6c",
+      "key": "watermask_waynecam_1024_768_v2_model_history.npz",
+      "size": 861,
+      "checksum": "md5:bdc442c3e32b166521619ebce30ace5c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "04af4535-6c8c-4b43-8916-c1c82bae3d71",
+      "key": "watermask_waynecam_1024_768_v3_model_history.npz",
+      "size": 2258,
+      "checksum": "md5:ca36172ba24ca6c55a6ae71179b115f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "63c67ce5-775e-46a9-a35b-3f4d7aef58b8",
+      "key": "BEST_MODEL.txt",
+      "size": 43,
+      "checksum": "md5:9f6e4bd82e7600904f0099b2642831a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "9fef87d4-cb12-405b-be49-a4fd6a8c7e67",
+      "key": "watermask_waynecam_1024_768_v1.json",
+      "size": 1053,
+      "checksum": "md5:82db11d6068d5e7d5406cbb0d4ab5eab",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v1.json/content"
+      }
+    },
+    {
+      "id": "fa87658d-350a-4e7e-b687-cb7437b09c06",
+      "key": "watermask_waynecam_1024_768_v1_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:9bb8e524ac5b006ef7a04b13ad3c3861",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "f47db268-f626-4f1c-ad46-2dff3cc96d5d",
+      "key": "watermask_waynecam_1024_768_v3_trainhist_24.png",
+      "size": 199317,
+      "checksum": "md5:0c44b90fc4e4589291b43836edec32d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v3_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "9171e980-2e89-43f0-b244-3ae5e6dc9a03",
+      "key": "readme.txt",
+      "size": 2353,
+      "checksum": "md5:9fa2450dac034ff8757b3684e60f74ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "2936496a-adb3-4888-b9cf-0b84744e01fa",
+      "key": "watermask_waynecam_1024_768_v2_fullmodel.h5",
+      "size": 15133552,
+      "checksum": "md5:68ce93b87acdf9a5f2279ba70fd79114",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "0dfd971a-4695-4e2c-b68c-9c1336824222",
+      "key": "watermask_waynecam_1024_768_v1_model_history.npz",
+      "size": 2655,
+      "checksum": "md5:0f50da69f4bb80ebfc722ae07f2ab2f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "1af7de96-80cd-42a2-bf38-1154e676aae9",
+      "key": "watermask_waynecam_1024_768_v3_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:93c1b9782c5670688de58dc5504b0d88",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "2691ab53-b484-4777-bc5f-c581a359dccb",
+      "key": "classes.txt",
+      "size": 11,
+      "checksum": "md5:3a20f9973b2f24c92069fbe6c6d38afa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "8a030d32-e8ee-4ccc-a42a-186261185513",
+      "key": "watermask_waynecam_1024_768_v2.json",
+      "size": 1055,
+      "checksum": "md5:69d2bdfd4f5ee8cb1cf4fd278185d1d2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v2.json/content"
+      }
+    },
+    {
+      "id": "cb4e65bf-d1b6-49a0-ab26-cb3347bdcee4",
+      "key": "watermask_waynecam_1024_768_v3.json",
+      "size": 1054,
+      "checksum": "md5:35b2478be6cf78d8c6840c95c8a65ac4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v3.json/content"
+      }
+    },
+    {
+      "id": "73257e35-31a4-49e2-8ea2-32df951432a6",
+      "key": "watermask_waynecam_1024_768_v2_trainhist_4.png",
+      "size": 138610,
+      "checksum": "md5:b08fd9f06a6b131cd1f73d92893f7e74",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v2_trainhist_4.png/content"
+      }
+    },
+    {
+      "id": "370e7ade-3e0f-4f41-ba12-e9741af522f0",
+      "key": "watermask_waynecam_1024_768_v1_trainhist_7.png",
+      "size": 189091,
+      "checksum": "md5:a03fcd7f1d69be3410e7c972056ee36b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7604077/files/watermask_waynecam_1024_768_v1_trainhist_7.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 328,
+    "unique_downloads": 312,
+    "views": 61,
+    "unique_views": 57,
+    "version_downloads": 328,
+    "version_unique_downloads": 312,
+    "version_unique_views": 57,
+    "version_views": 61
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 9,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 154511736,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "watermask_waynecam_1024_768_v2_model_history.npz",
+        "size": 861
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v3_model_history.npz",
+        "size": 2258
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 43
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v1.json",
+        "size": 1053
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v1_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v3_trainhist_24.png",
+        "size": 199317
+      },
+      {
+        "name": "readme.txt",
+        "size": 2353
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v2_fullmodel.h5",
+        "size": 15133552
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v1_model_history.npz",
+        "size": 2655
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v3_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "classes.txt",
+        "size": 11
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v2.json",
+        "size": 1055
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v3.json",
+        "size": 1054
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v2_trainhist_4.png",
+        "size": 138610
+      },
+      {
+        "name": "watermask_waynecam_1024_768_v1_trainhist_7.png",
+        "size": 189091
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.072531"
+}

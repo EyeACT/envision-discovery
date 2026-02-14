@@ -1,0 +1,507 @@
+{
+  "created": "2023-08-03T15:30:42.090062+00:00",
+  "modified": "2024-07-11T14:30:00.941056+00:00",
+  "id": 8212083,
+  "conceptrecid": "8212082",
+  "doi": "10.5061/dryad.r2280gbj2",
+  "doi_url": "https://doi.org/10.5061/dryad.r2280gbj2",
+  "metadata": {
+    "title": "Visual opsin gene expression evolution in the adaptive radiation of cichlid fishes of Lake Tanganyika",
+    "doi": "10.5061/dryad.r2280gbj2",
+    "publication_date": "2023-08-03",
+    "description": "<p>Tuning the visual sensory system to the ambient light is essential for survival in many animal species. This is often achieved through duplication, functional diversification, and/or differential expression of visual opsin genes. Here, we examined 753 new retinal transcriptomes from 112 species of cichlid fishes from Lake Tanganyika to unravel adaptive changes in gene expression at the macro-evolutionary and ecosystem level of one of the largest vertebrate adaptive radiations. We found that, across the radiation, all seven cone opsins \u2013 but not the rhodopsin \u2013 rank among the most differentially expressed genes in the retina, together with other vision-, circadian-rhythm-, and haemoglobin-related genes. We propose two new visual palettes characteristic of very shallow- and deep-water living species, respectively, and show that visual system adaptations along two major ecological axes, macro-habitat and diet, occur primarily via gene expression variation in a subset of cone opsin genes.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ricci, Virginie",
+        "affiliation": "University of Basel",
+        "orcid": "0000-0001-6466-1930"
+      },
+      {
+        "name": "Ronco, Fabrizia",
+        "affiliation": "University of Oslo"
+      },
+      {
+        "name": "Boileau, Nicolas",
+        "affiliation": "University of Basel"
+      },
+      {
+        "name": "Salzburger, Walter",
+        "affiliation": "University of Basel"
+      }
+    ],
+    "keywords": [
+      "visual opsins",
+      "retinal transcriptome",
+      "Cichlid fishes"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Ninet93/RNASeq_Ricci_et_al",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8212082"
+          }
+        }
+      ]
+    },
+    "notes": "<p>A GitHub reposit is available for further information: <a href=\"https://github.com/Ninet93/RNASeq_Ricci_et_al\">https://github.com/Ninet93/RNASeq_Ricci_et_al</a></p><p>Funding provided by: European Research Council<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000781<br>Award Number: 617585</p><p>Funding provided by: Schweizerischer Nationalfonds zur F\u00f6rderung der Wissenschaftlichen Forschung<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100001711<br>Award Number: 176039</p><p>Funding provided by: Schweizerischer Nationalfonds zur F\u00f6rderung der Wissenschaftlichen Forschung<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100001711<br>Award Number: 208002</p>"
+  },
+  "title": "Visual opsin gene expression evolution in the adaptive radiation of cichlid fishes of Lake Tanganyika",
+  "links": {
+    "self": "https://zenodo.org/api/records/8212083",
+    "self_html": "https://zenodo.org/records/8212083",
+    "preview_html": "https://zenodo.org/records/8212083?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.r2280gbj2",
+    "self_doi": "https://doi.org/10.5061/dryad.r2280gbj2",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.r2280gbj2",
+    "reserve_doi": "https://zenodo.org/api/records/8212083/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8212082",
+    "parent_html": "https://zenodo.org/records/8212082",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8212083/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8212083/sequence/default",
+    "files": "https://zenodo.org/api/records/8212083/files",
+    "media_files": "https://zenodo.org/api/records/8212083/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:8212083:HTSeqCount_exons_PCA_Individual_opsins.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/8212083/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8212083/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8212083/versions/latest",
+    "latest_html": "https://zenodo.org/records/8212083/latest",
+    "versions": "https://zenodo.org/api/records/8212083/versions",
+    "draft": "https://zenodo.org/api/records/8212083/draft",
+    "access_links": "https://zenodo.org/api/records/8212083/access/links",
+    "access_grants": "https://zenodo.org/api/records/8212083/access/grants",
+    "access_users": "https://zenodo.org/api/records/8212083/access/users",
+    "access_request": "https://zenodo.org/api/records/8212083/access/request",
+    "access": "https://zenodo.org/api/records/8212083/access",
+    "communities": "https://zenodo.org/api/records/8212083/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8212083/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8212083/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8212083/file-modification",
+    "requests": "https://zenodo.org/api/records/8212083/requests"
+  },
+  "updated": "2024-07-11T14:30:00.941056+00:00",
+  "recid": "8212083",
+  "revision": 5,
+  "files": [
+    {
+      "id": "5f19eea2-8f96-4b42-8249-2495551014d5",
+      "key": "RNAseq_SpeciesTree.tre",
+      "size": 5881,
+      "checksum": "md5:a1d4e22b528a16932b71475aa136abeb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/RNAseq_SpeciesTree.tre/content"
+      }
+    },
+    {
+      "id": "4b6c7470-22ff-40cc-881a-5de881266736",
+      "key": "011_Correlations.R",
+      "size": 4051,
+      "checksum": "md5:d1036e2499293ccf3d8e078b398f6456",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/011_Correlations.R/content"
+      }
+    },
+    {
+      "id": "126f319b-5493-4867-8f9c-5265c7209fdc",
+      "key": "01_Trimmomatic.sh",
+      "size": 2654,
+      "checksum": "md5:1cbf2dca3ac40d20b21d17d906b94373",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/01_Trimmomatic.sh/content"
+      }
+    },
+    {
+      "id": "0d38f747-84ad-4833-980a-44850a2d7f4c",
+      "key": "012_Cocorrelations.R",
+      "size": 3891,
+      "checksum": "md5:a906332999d545021faa073da87d3481",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/012_Cocorrelations.R/content"
+      }
+    },
+    {
+      "id": "8f4eee50-cfd3-4b9c-b0f5-4734969669fe",
+      "key": "010_VisualPalettes.R",
+      "size": 6311,
+      "checksum": "md5:9d82df21c54ca2a0dbb54bde494e8c45",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/010_VisualPalettes.R/content"
+      }
+    },
+    {
+      "id": "1e215df1-2143-471a-9def-4ed2de455711",
+      "key": "00_Parse_GTF_biotypes.sh",
+      "size": 888,
+      "checksum": "md5:11ca5f1817cc3edb5ac99f9eb133c78c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/00_Parse_GTF_biotypes.sh/content"
+      }
+    },
+    {
+      "id": "78965b7b-edf6-4a72-a59a-276de6ef7b69",
+      "key": "06_1_HTSeqCount.sh",
+      "size": 1891,
+      "checksum": "md5:869c18aeb1c9f9fa493595e506b40478",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/06_1_HTSeqCount.sh/content"
+      }
+    },
+    {
+      "id": "f14d0f1f-caa8-4750-a702-e75336bcd5ee",
+      "key": "04_STAR_mapping.sh",
+      "size": 1848,
+      "checksum": "md5:3a9b0e0c6f92bea8e98fe6094872ab6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/04_STAR_mapping.sh/content"
+      }
+    },
+    {
+      "id": "68b671ce-59d4-4816-aff2-cc448dd78cf2",
+      "key": "03_STAR_genome_index.sh",
+      "size": 1054,
+      "checksum": "md5:1ac4419a6d7abf70b2b114fba135171e",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/03_STAR_genome_index.sh/content"
+      }
+    },
+    {
+      "id": "cd778f0e-a083-4092-8aa2-8a451b5d8179",
+      "key": "HTSeqCount_exons_PCA_Individual_opsins.pdf",
+      "size": 771765,
+      "checksum": "md5:610464f66949f27fae62d2fe0dc88a86",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/HTSeqCount_exons_PCA_Individual_opsins.pdf/content"
+      }
+    },
+    {
+      "id": "4ad9cd6d-9df6-408e-8d91-05eed3a62e8f",
+      "key": "02_FastQC_MultiQC.sh",
+      "size": 1312,
+      "checksum": "md5:84e4843437a225660d751639101248d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/02_FastQC_MultiQC.sh/content"
+      }
+    },
+    {
+      "id": "e2015290-03fa-4a5a-a031-19f51201776d",
+      "key": "HTSeqCount_ALL_exons_Individuals_withRH2As.txt",
+      "size": 78568470,
+      "checksum": "md5:cc4fb6031cfdd3c5e5d7337cc78ffcd5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/HTSeqCount_ALL_exons_Individuals_withRH2As.txt/content"
+      }
+    },
+    {
+      "id": "94aa7807-2fa1-4921-97fe-66af1d0149d8",
+      "key": "06_2_HTSeqCount_RH2As.sh",
+      "size": 2434,
+      "checksum": "md5:8573892a77cc415164aecd790ace0420",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/06_2_HTSeqCount_RH2As.sh/content"
+      }
+    },
+    {
+      "id": "553c0508-4a9d-4659-bef5-750c2b7924d5",
+      "key": "Orenil_opsins.txt",
+      "size": 202,
+      "checksum": "md5:9a7a79594357a5b11667da71b1332418",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/Orenil_opsins.txt/content"
+      }
+    },
+    {
+      "id": "bf2cfaa8-a6c9-4571-a171-8d5cb64961f9",
+      "key": "04_STAR_mapping_RH2As.sh",
+      "size": 1999,
+      "checksum": "md5:4ed9fe81b3eb7186fe0d3dc85b076bfb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/04_STAR_mapping_RH2As.sh/content"
+      }
+    },
+    {
+      "id": "b16dc60b-039a-4aad-956b-667debb470c6",
+      "key": "07_HTSeqCount_results.R",
+      "size": 20450,
+      "checksum": "md5:0e1930d7bf70daadb4d2c96421204fca",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/07_HTSeqCount_results.R/content"
+      }
+    },
+    {
+      "id": "daf0a788-31f5-4e61-b118-2e9148271ab7",
+      "key": "HTSeqCount_exons_PCA_Individual_proteins_lncRNAs.pdf",
+      "size": 783966,
+      "checksum": "md5:96c54ad8c5b02140eff02387d2d74542",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/HTSeqCount_exons_PCA_Individual_proteins_lncRNAs.pdf/content"
+      }
+    },
+    {
+      "id": "a506f99c-e23d-4fdf-b7b2-733e181eda65",
+      "key": "08_HTSeqCount_results_WeightedSpeciesMean_opsins.R",
+      "size": 7265,
+      "checksum": "md5:5f92cac44ba4558ddb145690d5afe0a0",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/08_HTSeqCount_results_WeightedSpeciesMean_opsins.R/content"
+      }
+    },
+    {
+      "id": "6ccd8dd6-3678-4746-9dad-a1a1975d30d8",
+      "key": "09_DESeq2_results.R",
+      "size": 9265,
+      "checksum": "md5:c641aa59941b7977f336d5e9811a5a57",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/09_DESeq2_results.R/content"
+      }
+    },
+    {
+      "id": "d8890a7a-d379-4226-8a71-b5cb65a6eab9",
+      "key": "HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_Count.pdf",
+      "size": 459949,
+      "checksum": "md5:3bfcd7a3e342c45489158afc3dc411a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_Count.pdf/content"
+      }
+    },
+    {
+      "id": "a8cab9e0-907b-4366-af0a-1987b51a39c7",
+      "key": "GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_biotypes.txt",
+      "size": 1538487,
+      "checksum": "md5:4f8d643494c143cc953d9841ea4e7db9",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_biotypes.txt/content"
+      }
+    },
+    {
+      "id": "c413afde-e977-4823-963b-760040468dad",
+      "key": "HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_TPM.pdf",
+      "size": 462398,
+      "checksum": "md5:7f7e2c973d5dae45f68ee003d3c2baf7",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_TPM.pdf/content"
+      }
+    },
+    {
+      "id": "03967f08-5a5c-4689-bafe-1720bd3e3a01",
+      "key": "README_Dryad.md",
+      "size": 4924,
+      "checksum": "md5:b374af10d8e8e22e5702a4e58266d554",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/README_Dryad.md/content"
+      }
+    },
+    {
+      "id": "9de19919-a9da-41c5-91fd-088e1d17d2ed",
+      "key": "Parse_GTF_biotypes.py",
+      "size": 1110,
+      "checksum": "md5:592d4f9453dee615348e30f109acf39a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/Parse_GTF_biotypes.py/content"
+      }
+    },
+    {
+      "id": "0303023c-05b0-41ef-86d1-69e28f0963c6",
+      "key": "05_MappedReadPairsToRH2As.sh",
+      "size": 7263,
+      "checksum": "md5:75b4205247fec3a71d71d3b60cfbefb1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/05_MappedReadPairsToRH2As.sh/content"
+      }
+    },
+    {
+      "id": "48216e5a-c0f7-4cc3-8a45-312a126d7e7f",
+      "key": "GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_geneID.gtf_FeatureCount_annotation_exons.txt",
+      "size": 28282251,
+      "checksum": "md5:66d4840204b860a67fe8575c027f744b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_geneID.gtf_FeatureCount_annotation_exons.txt/content"
+      }
+    },
+    {
+      "id": "2f51065a-8a2f-4c9f-bf43-82fec7f33846",
+      "key": "Opsins_median_readcoverage_CDS_GW_PerTribe.pdf",
+      "size": 139576,
+      "checksum": "md5:2985e23a8413e68fb0aa2e868bcae510",
+      "links": {
+        "self": "https://zenodo.org/api/records/8212083/files/Opsins_median_readcoverage_CDS_GW_PerTribe.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 576,
+    "unique_downloads": 575,
+    "views": 126,
+    "unique_views": 126,
+    "version_downloads": 576,
+    "version_unique_downloads": 575,
+    "version_unique_views": 126,
+    "version_views": 126
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "RNAseq_SpeciesTree.tre",
+        "size": 5881
+      },
+      {
+        "name": "011_Correlations.R",
+        "size": 4051
+      },
+      {
+        "name": "01_Trimmomatic.sh",
+        "size": 2654
+      },
+      {
+        "name": "012_Cocorrelations.R",
+        "size": 3891
+      },
+      {
+        "name": "010_VisualPalettes.R",
+        "size": 6311
+      },
+      {
+        "name": "00_Parse_GTF_biotypes.sh",
+        "size": 888
+      },
+      {
+        "name": "06_1_HTSeqCount.sh",
+        "size": 1891
+      },
+      {
+        "name": "04_STAR_mapping.sh",
+        "size": 1848
+      },
+      {
+        "name": "03_STAR_genome_index.sh",
+        "size": 1054
+      },
+      {
+        "name": "HTSeqCount_exons_PCA_Individual_opsins.pdf",
+        "size": 771765
+      },
+      {
+        "name": "02_FastQC_MultiQC.sh",
+        "size": 1312
+      },
+      {
+        "name": "HTSeqCount_ALL_exons_Individuals_withRH2As.txt",
+        "size": 78568470
+      },
+      {
+        "name": "06_2_HTSeqCount_RH2As.sh",
+        "size": 2434
+      },
+      {
+        "name": "Orenil_opsins.txt",
+        "size": 202
+      },
+      {
+        "name": "04_STAR_mapping_RH2As.sh",
+        "size": 1999
+      },
+      {
+        "name": "07_HTSeqCount_results.R",
+        "size": 20450
+      },
+      {
+        "name": "HTSeqCount_exons_PCA_Individual_proteins_lncRNAs.pdf",
+        "size": 783966
+      },
+      {
+        "name": "08_HTSeqCount_results_WeightedSpeciesMean_opsins.R",
+        "size": 7265
+      },
+      {
+        "name": "09_DESeq2_results.R",
+        "size": 9265
+      },
+      {
+        "name": "HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_Count.pdf",
+        "size": 459949
+      },
+      {
+        "name": "GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_biotypes.txt",
+        "size": 1538487
+      },
+      {
+        "name": "HTSeqCount_exons_Barplot_PerTribe_RodCones_PE_TPM.pdf",
+        "size": 462398
+      },
+      {
+        "name": "README_Dryad.md",
+        "size": 4924
+      },
+      {
+        "name": "Parse_GTF_biotypes.py",
+        "size": 1110
+      },
+      {
+        "name": "05_MappedReadPairsToRH2As.sh",
+        "size": 7263
+      },
+      {
+        "name": "GCF_001858045.2_O_niloticus_UMD_NMBU_genomic_geneID.gtf_FeatureCount_annotation_exons.txt",
+        "size": 28282251
+      },
+      {
+        "name": "Opsins_median_readcoverage_CDS_GW_PerTribe.pdf",
+        "size": 139576
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/Ninet93/RNASeq_Ricci_et_al"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:45.128126"
+}

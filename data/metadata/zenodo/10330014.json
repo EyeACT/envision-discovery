@@ -1,0 +1,230 @@
+{
+  "created": "2023-12-28T19:00:37.046895+00:00",
+  "modified": "2024-07-08T19:49:52.376328+00:00",
+  "id": 10330014,
+  "conceptrecid": "10330013",
+  "doi": "10.5281/zenodo.10330014",
+  "conceptdoi": "10.5281/zenodo.10330013",
+  "doi_url": "https://doi.org/10.5281/zenodo.10330014",
+  "metadata": {
+    "title": "Dendrolagus (Tree Kangaroo)",
+    "doi": "10.5281/zenodo.10330014",
+    "publication_date": "2015-10-29",
+    "description": "Scanned at the University of Queensland  by Nathan Siddle and Adelia Tan 27 Oct 2015.\n\nSource: Objaverse 1.0 / Sketchfab",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "adddy",
+        "affiliation": "none"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10330013"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dendrolagus (Tree Kangaroo)",
+  "links": {
+    "self": "https://zenodo.org/api/records/10330014",
+    "self_html": "https://zenodo.org/records/10330014",
+    "preview_html": "https://zenodo.org/records/10330014?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10330014",
+    "self_doi": "https://doi.org/10.5281/zenodo.10330014",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10330014",
+    "reserve_doi": "https://zenodo.org/api/records/10330014/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10330013",
+    "parent_html": "https://zenodo.org/records/10330013",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10330013",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10330013",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10330014/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10330014/sequence/default",
+    "files": "https://zenodo.org/api/records/10330014/files",
+    "media_files": "https://zenodo.org/api/records/10330014/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10330014:thumb4.jpeg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/10330014/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10330014/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10330014/versions/latest",
+    "latest_html": "https://zenodo.org/records/10330014/latest",
+    "versions": "https://zenodo.org/api/records/10330014/versions",
+    "draft": "https://zenodo.org/api/records/10330014/draft",
+    "access_links": "https://zenodo.org/api/records/10330014/access/links",
+    "access_grants": "https://zenodo.org/api/records/10330014/access/grants",
+    "access_users": "https://zenodo.org/api/records/10330014/access/users",
+    "access_request": "https://zenodo.org/api/records/10330014/access/request",
+    "access": "https://zenodo.org/api/records/10330014/access",
+    "communities": "https://zenodo.org/api/records/10330014/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10330014/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10330014/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10330014/file-modification",
+    "requests": "https://zenodo.org/api/records/10330014/requests"
+  },
+  "updated": "2024-07-08T19:49:52.376328+00:00",
+  "recid": "10330014",
+  "revision": 6,
+  "files": [
+    {
+      "id": "9e5f70db-48b1-4dde-b32b-0f3743d6a1f0",
+      "key": "thumb4.jpeg",
+      "size": 2280,
+      "checksum": "md5:294003b14292d519817db85d3f01754f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb4.jpeg/content"
+      }
+    },
+    {
+      "id": "d9331cd2-41ab-495f-be6c-cda4b868c83d",
+      "key": "031308c59ebb4588b95d1f9f8e706c06.glb",
+      "size": 9260624,
+      "checksum": "md5:5aeaf1a2176fbad340db2632daaafb67",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/031308c59ebb4588b95d1f9f8e706c06.glb/content"
+      }
+    },
+    {
+      "id": "6376c811-26cb-4dcc-9c23-9cec72931bfa",
+      "key": "thumb6.jpeg",
+      "size": 28271,
+      "checksum": "md5:f2da17092909177069bd5157ee1dbaba",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb6.jpeg/content"
+      }
+    },
+    {
+      "id": "5c5872a9-a021-434e-8622-0c588e576363",
+      "key": "thumb1.jpeg",
+      "size": 17084,
+      "checksum": "md5:86e75ee7352cef6579512725cf5caab3",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb1.jpeg/content"
+      }
+    },
+    {
+      "id": "4053a4bc-f87b-4027-8973-291179869dfd",
+      "key": "thumb0.jpeg",
+      "size": 1028,
+      "checksum": "md5:a6214b7aa5ca0fa976004b0ea40991c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb0.jpeg/content"
+      }
+    },
+    {
+      "id": "aa65242e-c37d-4419-8891-07b3b0ac7dcb",
+      "key": "thumb2.jpeg",
+      "size": 9527,
+      "checksum": "md5:7b58636d82e6fd4698187c22712dcd2d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb2.jpeg/content"
+      }
+    },
+    {
+      "id": "1b9588ab-800f-48bb-bf14-767213e102c1",
+      "key": "thumb3.jpeg",
+      "size": 6050,
+      "checksum": "md5:a52b84945ea421e90edd893cd660c465",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb3.jpeg/content"
+      }
+    },
+    {
+      "id": "1fcf50a8-ad2d-4efa-80ef-aec4c2525967",
+      "key": "thumb5.jpeg",
+      "size": 39785,
+      "checksum": "md5:87babbe7d2fa5175bf38a55b52f9f16b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10330014/files/thumb5.jpeg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1197195"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 51,
+    "unique_downloads": 51,
+    "views": 86,
+    "unique_views": 86,
+    "version_downloads": 51,
+    "version_unique_downloads": 51,
+    "version_unique_views": 86,
+    "version_views": 86
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 7,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 104025,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "thumb4.jpeg",
+        "size": 2280
+      },
+      {
+        "name": "031308c59ebb4588b95d1f9f8e706c06.glb",
+        "size": 9260624
+      },
+      {
+        "name": "thumb6.jpeg",
+        "size": 28271
+      },
+      {
+        "name": "thumb1.jpeg",
+        "size": 17084
+      },
+      {
+        "name": "thumb0.jpeg",
+        "size": 1028
+      },
+      {
+        "name": "thumb2.jpeg",
+        "size": 9527
+      },
+      {
+        "name": "thumb3.jpeg",
+        "size": 6050
+      },
+      {
+        "name": "thumb5.jpeg",
+        "size": 39785
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:04.740293"
+}

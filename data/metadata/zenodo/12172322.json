@@ -1,0 +1,157 @@
+{
+  "created": "2024-08-03T01:08:36.470210+00:00",
+  "modified": "2024-08-03T01:11:57.627445+00:00",
+  "id": 12172322,
+  "conceptrecid": "12172321",
+  "doi": "10.5281/zenodo.12172322",
+  "conceptdoi": "10.5281/zenodo.12172321",
+  "doi_url": "https://doi.org/10.5281/zenodo.12172322",
+  "metadata": {
+    "title": "Sample tilting for speckle suppression through angular compounding: Dataset",
+    "doi": "10.5281/zenodo.12172322",
+    "publication_date": "2024-06-19",
+    "description": "<p>This data file contains an angular series of 61 OCT intensity tomograms covering a range of 60 degrees (from -30&deg; to +30&deg;) with a step angle of 1&deg; of chicken muscle tissue to generate angulary compounded speckled suppressed tomogram using the physics-informed affine mapping described in \"Sample tilting for speckle suppression through angular compounding\" by Chintada et al. (2024). The source code for the affine mapping is available on GitHub at https://github.com/bhaskarachintada/OCT_Angular_Compounding.&nbsp;</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Bhaskara Rao, Chintada",
+        "affiliation": "Harvard University",
+        "orcid": "0000-0002-5900-647X"
+      },
+      {
+        "name": "Keahey, Pelham",
+        "affiliation": null,
+        "orcid": "0000-0002-9504-9696"
+      },
+      {
+        "name": "Uribe-Patarroyo, N\u00e9stor",
+        "affiliation": null,
+        "orcid": "0000-0001-9201-2196"
+      },
+      {
+        "name": "Bouma, Brett E.",
+        "affiliation": null,
+        "orcid": "0000-0002-4531-2206"
+      },
+      {
+        "name": "Villiger, Martin",
+        "affiliation": "Massachusetts General Hospital",
+        "orcid": "0000-0003-3819-1271"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12172321"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Sample tilting for speckle suppression through angular compounding: Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/12172322",
+    "self_html": "https://zenodo.org/records/12172322",
+    "preview_html": "https://zenodo.org/records/12172322?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12172322",
+    "self_doi": "https://doi.org/10.5281/zenodo.12172322",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12172322",
+    "reserve_doi": "https://zenodo.org/api/records/12172322/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12172321",
+    "parent_html": "https://zenodo.org/records/12172321",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12172321",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12172321",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12172322/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12172322/sequence/default",
+    "files": "https://zenodo.org/api/records/12172322/files",
+    "media_files": "https://zenodo.org/api/records/12172322/media-files",
+    "archive": "https://zenodo.org/api/records/12172322/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12172322/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12172322/versions/latest",
+    "latest_html": "https://zenodo.org/records/12172322/latest",
+    "versions": "https://zenodo.org/api/records/12172322/versions",
+    "draft": "https://zenodo.org/api/records/12172322/draft",
+    "access_links": "https://zenodo.org/api/records/12172322/access/links",
+    "access_grants": "https://zenodo.org/api/records/12172322/access/grants",
+    "access_users": "https://zenodo.org/api/records/12172322/access/users",
+    "access_request": "https://zenodo.org/api/records/12172322/access/request",
+    "access": "https://zenodo.org/api/records/12172322/access",
+    "communities": "https://zenodo.org/api/records/12172322/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12172322/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12172322/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12172322/file-modification",
+    "requests": "https://zenodo.org/api/records/12172322/requests"
+  },
+  "updated": "2024-08-03T01:11:57.627445+00:00",
+  "recid": "12172322",
+  "revision": 6,
+  "files": [
+    {
+      "id": "dde5ea7e-a859-4a54-897d-fc7f53ebbdf1",
+      "key": "Chicken_Tom_z=(400..1800)_x=(32..2048)_NumAngles_61.bin",
+      "size": 689499348,
+      "checksum": "md5:68f5107fcf2dfc7f09b2fb2437fc6d21",
+      "links": {
+        "self": "https://zenodo.org/api/records/12172322/files/Chicken_Tom_z=(400..1800)_x=(32..2048)_NumAngles_61.bin/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1037652"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 60,
+    "unique_downloads": 44,
+    "views": 116,
+    "unique_views": 97,
+    "version_downloads": 60,
+    "version_unique_downloads": 44,
+    "version_unique_views": 97,
+    "version_views": 116
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Chicken_Tom_z=(400..1800)_x=(32..2048)_NumAngles_61.bin",
+        "size": 689499348
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/bhaskarachintada/OCT_Angular_Compounding",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:56.717268"
+}

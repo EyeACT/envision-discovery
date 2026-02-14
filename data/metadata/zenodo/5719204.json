@@ -1,0 +1,185 @@
+{
+  "created": "2021-11-22T19:23:37.781019+00:00",
+  "modified": "2022-06-05T10:03:35.335974+00:00",
+  "id": 5719204,
+  "conceptrecid": "5719203",
+  "doi": "10.5061/dryad.12jm63z04",
+  "doi_url": "https://doi.org/10.5061/dryad.12jm63z04",
+  "metadata": {
+    "title": "Multivesicular Release LIF Spike Data",
+    "doi": "10.5061/dryad.12jm63z04",
+    "publication_date": "2021-11-22",
+    "description": "<p>The statistics of vesicle release determine how information is transferred in neural 12 circuits. The classical model is of Poisson synapses releasing vesicles 13 independently but ribbon synapses transmit early sensory signals by 14 multivesicular release (MVR) when two or more vesicles are coordinated as a single 15 synaptic event. To investigate the impact of MVR on the spike code we used leaky 16 integrate-and-fire models with inputs simulating the statistics of vesicle release 17 measured experimentally from retinal bipolar cells. Comparing these with models 18 of independent release we find that MVR increases spike generation and the 19 efficiency of information transfer (bits per spike) over a range of conditions that 20 mimic retinal ganglion cells of different time-constant receiving different number of 21 synaptic inputs of different strengths. When a single input drives a neuron with 22 short time-constant, as occurs when hair cells transmit auditory signals, MVR 23 increases information transfer whenever spike generation requires depolarization 24 greater than that caused by a single vesicle. This study demonstrates how 25 presynaptic integration of vesicles by MVR can compensate for less effective 26 summation post-synaptically to increase the efficiency with which sensory 27 information is transmitted at the synapse.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "James, Benjamin",
+        "affiliation": "University of Sussex",
+        "orcid": "0000-0001-8624-664X"
+      },
+      {
+        "name": "Lagnado, Leon",
+        "affiliation": "University of Sussex"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.5646273",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5719203"
+          }
+        }
+      ]
+    },
+    "notes": "<p>The spike data for each parameter set are in the form:</p>\n\n<p><b>inputType</b>Sf<b>Freq</b>_con<strong>Contrast</strong>_n<strong>Inputs</strong>_tau<strong>tauVal_</strong>vT<strong>threshVal</strong>_vR<strong>vRestVal</strong>_k<strong>KVal</strong></p>\n\n<p>where each bold stands for a parameter of the model where 'r' or 'h' indicates rate or hybrid code, respectively. An example is then:</p>\n\n<p>rSf5_con20_n500_1_tau0.05_vT-0.035_vR-0.055_k100</p>\n\n<p>Thus the file contains the spike output for the rate coded cell using a 5 Hz stimulus at 20% contrast, with tau = .05, vThresh = -.0035, vRest = -.055, and k = 100. Each file has two rows. The first row lists a spike time and the second row lists which neuron spiked at that time (so the total number of spikes across the entire battery of simulations is equal to the number of rows). Note that the spike time is based upon the mean input time of 100 ms, and thus adding .1 to the spike time yields the spike time as the latency from the start of the stimulus.</p>\n\n<p>\u00a0</p>"
+  },
+  "title": "Multivesicular Release LIF Spike Data",
+  "links": {
+    "self": "https://zenodo.org/api/records/5719204",
+    "self_html": "https://zenodo.org/records/5719204",
+    "preview_html": "https://zenodo.org/records/5719204?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.12jm63z04",
+    "self_doi": "https://doi.org/10.5061/dryad.12jm63z04",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.12jm63z04",
+    "reserve_doi": "https://zenodo.org/api/records/5719204/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5719203",
+    "parent_html": "https://zenodo.org/records/5719203",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5719204/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5719204/sequence/default",
+    "files": "https://zenodo.org/api/records/5719204/files",
+    "media_files": "https://zenodo.org/api/records/5719204/media-files",
+    "archive": "https://zenodo.org/api/records/5719204/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5719204/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5719204/versions/latest",
+    "latest_html": "https://zenodo.org/records/5719204/latest",
+    "versions": "https://zenodo.org/api/records/5719204/versions",
+    "draft": "https://zenodo.org/api/records/5719204/draft",
+    "access_links": "https://zenodo.org/api/records/5719204/access/links",
+    "access_grants": "https://zenodo.org/api/records/5719204/access/grants",
+    "access_users": "https://zenodo.org/api/records/5719204/access/users",
+    "access_request": "https://zenodo.org/api/records/5719204/access/request",
+    "access": "https://zenodo.org/api/records/5719204/access",
+    "communities": "https://zenodo.org/api/records/5719204/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5719204/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5719204/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5719204/file-modification",
+    "requests": "https://zenodo.org/api/records/5719204/requests"
+  },
+  "updated": "2022-06-05T10:03:35.335974+00:00",
+  "recid": "5719204",
+  "revision": 3,
+  "files": [
+    {
+      "id": "adf84255-5f19-48a9-ab33-e3a76dcd6873",
+      "key": "fifteenHzSpikeData.h5",
+      "size": 2052883096,
+      "checksum": "md5:60a735ab3a118d6a4f450b7b7efc9ace",
+      "links": {
+        "self": "https://zenodo.org/api/records/5719204/files/fifteenHzSpikeData.h5/content"
+      }
+    },
+    {
+      "id": "79fa1544-c7c4-4022-ab11-101a232aabbf",
+      "key": "tenHzSpikeData.h5",
+      "size": 2016211056,
+      "checksum": "md5:d2c4b8f0a0eabab75a2adee8d8f6edef",
+      "links": {
+        "self": "https://zenodo.org/api/records/5719204/files/tenHzSpikeData.h5/content"
+      }
+    },
+    {
+      "id": "4a7d6b3f-c382-43db-b7f3-1590cdd13293",
+      "key": "tjDistsAndP.h5",
+      "size": 8056,
+      "checksum": "md5:499c7193eb377366a241469d1cbbee33",
+      "links": {
+        "self": "https://zenodo.org/api/records/5719204/files/tjDistsAndP.h5/content"
+      }
+    },
+    {
+      "id": "595e6e8e-e658-4d3c-9351-641e4ed8e525",
+      "key": "fiveHzSpikeData.h5",
+      "size": 4639148992,
+      "checksum": "md5:0510af227bdd03ca77f4d01f129bde61",
+      "links": {
+        "self": "https://zenodo.org/api/records/5719204/files/fiveHzSpikeData.h5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 37,
+    "unique_downloads": 37,
+    "views": 145,
+    "unique_views": 144,
+    "version_downloads": 37,
+    "version_unique_downloads": 37,
+    "version_unique_views": 142,
+    "version_views": 143
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 4,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 8708251200,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "fifteenHzSpikeData.h5",
+        "size": 2052883096
+      },
+      {
+        "name": "tenHzSpikeData.h5",
+        "size": 2016211056
+      },
+      {
+        "name": "tjDistsAndP.h5",
+        "size": 8056
+      },
+      {
+        "name": "fiveHzSpikeData.h5",
+        "size": 4639148992
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:47.612022"
+}

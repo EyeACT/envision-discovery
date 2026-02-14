@@ -1,0 +1,158 @@
+{
+  "created": "2024-07-04T22:50:58.880770+00:00",
+  "modified": "2024-07-04T22:50:59.254406+00:00",
+  "id": 12659652,
+  "conceptrecid": "12659651",
+  "doi": "10.5281/zenodo.12659652",
+  "conceptdoi": "10.5281/zenodo.12659651",
+  "doi_url": "https://doi.org/10.5281/zenodo.12659652",
+  "metadata": {
+    "title": "Evaluation benchmark for natural robustness evaluation of retinal vessel segmentation models",
+    "doi": "10.5281/zenodo.12659652",
+    "publication_date": "2024-07-04",
+    "description": "<p>A dataset contains benchmark images for natural robustness evaluation of deep learning models for retinal vessel segmentation. The dataset consists of three mainstream retinal vessel segmentation datasets: DRIVE, STARE, and CHASE_DB1.</p>\n<p>For each dataset are provided:</p>\n<ul>\n<li><em>images </em>- directory containing fundus images augmented using <a href=\"https://github.com/goranagojic/AugOOD\">AugOOD</a> tool for fast image augmentation for OOD robustness evaluation.</li>\n<li><em>labels</em> - directory with labels that correspond to the images.</li>\n<li><em>masks</em> - directory with FoV masks that correspond to the images.</li>\n</ul>\n<p>The benchmark is used in the paper <a href=\"https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.6809\">Robustness of deep learning methods for ocular fundus segmentation: Evaluation of blur sensitivity</a> to evaluate natural robustness of a portfolio of deep learning models for retinal vessel segmentation from fundus images.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Goji\u0107, Gorana",
+        "affiliation": null,
+        "orcid": "0000-0002-6100-5871"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "mit-license"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12659651"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Evaluation benchmark for natural robustness evaluation of retinal vessel segmentation models",
+  "links": {
+    "self": "https://zenodo.org/api/records/12659652",
+    "self_html": "https://zenodo.org/records/12659652",
+    "preview_html": "https://zenodo.org/records/12659652?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12659652",
+    "self_doi": "https://doi.org/10.5281/zenodo.12659652",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12659652",
+    "reserve_doi": "https://zenodo.org/api/records/12659652/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12659651",
+    "parent_html": "https://zenodo.org/records/12659651",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12659651",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12659651",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12659652/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12659652/sequence/default",
+    "files": "https://zenodo.org/api/records/12659652/files",
+    "media_files": "https://zenodo.org/api/records/12659652/media-files",
+    "archive": "https://zenodo.org/api/records/12659652/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12659652/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12659652/versions/latest",
+    "latest_html": "https://zenodo.org/records/12659652/latest",
+    "versions": "https://zenodo.org/api/records/12659652/versions",
+    "draft": "https://zenodo.org/api/records/12659652/draft",
+    "access_links": "https://zenodo.org/api/records/12659652/access/links",
+    "access_grants": "https://zenodo.org/api/records/12659652/access/grants",
+    "access_users": "https://zenodo.org/api/records/12659652/access/users",
+    "access_request": "https://zenodo.org/api/records/12659652/access/request",
+    "access": "https://zenodo.org/api/records/12659652/access",
+    "communities": "https://zenodo.org/api/records/12659652/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12659652/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12659652/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12659652/file-modification",
+    "requests": "https://zenodo.org/api/records/12659652/requests"
+  },
+  "updated": "2024-07-04T22:50:59.254406+00:00",
+  "recid": "12659652",
+  "revision": 4,
+  "files": [
+    {
+      "id": "4256b55f-8f21-471d-a37d-54ca32fbe030",
+      "key": "DRIVE-augmented.zip",
+      "size": 2488123966,
+      "checksum": "md5:985364cfa0b8bce7974e2df95130f38c",
+      "links": {
+        "self": "https://zenodo.org/api/records/12659652/files/DRIVE-augmented.zip/content"
+      }
+    },
+    {
+      "id": "ea001bf0-0e02-4fcd-8b33-a7853ee8e887",
+      "key": "CHASE-augmented.zip",
+      "size": 4094569400,
+      "checksum": "md5:bb90080470ee3dd5d13797b6608d00cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/12659652/files/CHASE-augmented.zip/content"
+      }
+    },
+    {
+      "id": "f5889892-e8cd-4029-b6cf-bbdb67eb42bc",
+      "key": "STARE-augmented.zip",
+      "size": 1569775613,
+      "checksum": "md5:2ab6bb7f2f01d286ea4e1f3e0696f1b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12659652/files/STARE-augmented.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1154886"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 50,
+    "unique_downloads": 42,
+    "views": 104,
+    "unique_views": 93,
+    "version_downloads": 50,
+    "version_unique_downloads": 42,
+    "version_unique_views": 93,
+    "version_views": 104
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8152468979,
+    "top_level_files": [
+      {
+        "name": "DRIVE-augmented.zip",
+        "size": 2488123966
+      },
+      {
+        "name": "CHASE-augmented.zip",
+        "size": 4094569400
+      },
+      {
+        "name": "STARE-augmented.zip",
+        "size": 1569775613
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:56.907007"
+}

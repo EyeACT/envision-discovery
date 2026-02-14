@@ -1,0 +1,177 @@
+{
+  "created": "2022-11-28T09:16:22.064368+00:00",
+  "modified": "2024-07-15T16:20:31.407847+00:00",
+  "id": 7371124,
+  "conceptrecid": "5928347",
+  "doi": "10.5281/zenodo.7371124",
+  "conceptdoi": "10.5281/zenodo.5928347",
+  "doi_url": "https://doi.org/10.5281/zenodo.7371124",
+  "metadata": {
+    "title": "Electrical tomography resistivity (ERT) monitoring time series",
+    "doi": "10.5281/zenodo.7371124",
+    "publication_date": "2022-01-31",
+    "description": "<p>Multi-temporal electrical tomography resistivity (ERT) measurements for monitoring the performance of the bio-degradable bentonite mat in OAL-Austria. The first measurement was conducted on 30 July 2020 before the implementation of the mat, afterwards seasonal measurement (except for winter due to snow cover) were obtained: 19 Oct 2020, 27 Arpil 2021, 10 August 2021, 4 October 2021, 13 April 2022. A time-lapse inversion algorithm was used to prepare the final results. See OPERANDUM deliverable 4.6 for more details.</p>\n\n<p>Device: Lippmann 4point light 10 W</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Lechner, Veronika",
+        "affiliation": "Austrian Research Centre for Forests"
+      },
+      {
+        "name": "Zieher, Thomas",
+        "affiliation": "Institute for Interdisciplinary Mountain Research, Austrian Academy of Sciences",
+        "orcid": "0000-0003-2985-5689"
+      },
+      {
+        "name": "Pfeiffer, Jan",
+        "affiliation": "Institute for Interdisciplinary Mountain Research, Austrian Academy of Sciences",
+        "orcid": "0000-0001-5352-6047"
+      }
+    ],
+    "keywords": [
+      "subsurface monitoring",
+      "electrical resistivity tomography",
+      "bio-degradable bentonite mat"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "776848",
+        "internal_id": "10.13039/501100000780::776848",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "OPEn-air laboRAtories for Nature baseD solUtions to Manage hydro-meteo risks",
+        "acronym": "OPERANDUM",
+        "program": "H2020-EU.3.5.",
+        "url": "https://cordis.europa.eu/projects/776848"
+      }
+    ],
+    "communities": [
+      {
+        "id": "operandum_open_air_laboratory_austria"
+      },
+      {
+        "id": "eu"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5928347"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electrical tomography resistivity (ERT) monitoring time series",
+  "links": {
+    "self": "https://zenodo.org/api/records/7371124",
+    "self_html": "https://zenodo.org/records/7371124",
+    "preview_html": "https://zenodo.org/records/7371124?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7371124",
+    "self_doi": "https://doi.org/10.5281/zenodo.7371124",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7371124",
+    "reserve_doi": "https://zenodo.org/api/records/7371124/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5928347",
+    "parent_html": "https://zenodo.org/records/5928347",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5928347",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5928347",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7371124/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7371124/sequence/default",
+    "files": "https://zenodo.org/api/records/7371124/files",
+    "media_files": "https://zenodo.org/api/records/7371124/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7371124:OEAW_OAL-AT_ERT_monitoring_stack.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7371124/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7371124/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7371124/versions/latest",
+    "latest_html": "https://zenodo.org/records/7371124/latest",
+    "versions": "https://zenodo.org/api/records/7371124/versions",
+    "draft": "https://zenodo.org/api/records/7371124/draft",
+    "access_links": "https://zenodo.org/api/records/7371124/access/links",
+    "access_grants": "https://zenodo.org/api/records/7371124/access/grants",
+    "access_users": "https://zenodo.org/api/records/7371124/access/users",
+    "access_request": "https://zenodo.org/api/records/7371124/access/request",
+    "access": "https://zenodo.org/api/records/7371124/access",
+    "communities": "https://zenodo.org/api/records/7371124/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7371124/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7371124/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7371124/file-modification",
+    "requests": "https://zenodo.org/api/records/7371124/requests"
+  },
+  "updated": "2024-07-15T16:20:31.407847+00:00",
+  "recid": "7371124",
+  "revision": 5,
+  "files": [
+    {
+      "id": "8e1df0c5-d29c-4654-9f7e-aa0830e019e9",
+      "key": "OEAW_OAL-AT_ERT_monitoring_stack.tif",
+      "size": 61601,
+      "checksum": "md5:bf4f6ee2b6be65175b20f81cd8efeb88",
+      "links": {
+        "self": "https://zenodo.org/api/records/7371124/files/OEAW_OAL-AT_ERT_monitoring_stack.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "255593"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 36,
+    "unique_downloads": 31,
+    "views": 267,
+    "unique_views": 259,
+    "version_downloads": 35,
+    "version_unique_downloads": 30,
+    "version_unique_views": 121,
+    "version_views": 126
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 61601,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "OEAW_OAL-AT_ERT_monitoring_stack.tif",
+        "size": 61601
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:09.410509"
+}

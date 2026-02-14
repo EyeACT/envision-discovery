@@ -1,0 +1,216 @@
+{
+  "created": "2025-11-27T14:57:13.526956+00:00",
+  "modified": "2025-12-18T13:21:49.613308+00:00",
+  "id": 17726414,
+  "conceptrecid": "17726413",
+  "doi": "10.5281/zenodo.17726414",
+  "conceptdoi": "10.5281/zenodo.17726413",
+  "doi_url": "https://doi.org/10.5281/zenodo.17726414",
+  "metadata": {
+    "title": "Dataset for Root Segmentation Beyond Species Boundaries: A Generalizable Framework for Anatomical Analysis",
+    "doi": "10.5281/zenodo.17726414",
+    "publication_date": "2025-11-26",
+    "description": "<p><strong>Code available at <a href=\"https://github.com/janetkok/Root-Segmentation-Beyond-Species-Boundaries\" target=\"_blank\" rel=\"noopener\">https://github.com/janetkok/Root-Segmentation-Beyond-Species-Boundaries</a><br>Dataset Overview</strong> This dataset provides annotated imagery for the semantic segmentation of Pearl Millet and Sorghum crops. It is designed to support both binary and multiclass segmentation machine learning tasks.</p>\n<p><strong>Repository Structure</strong> The dataset is organized into two main distinct directories:</p>\n<p>&nbsp; &nbsp; <strong>binary/</strong>: Designed for binary segmentation models.</p>\n<ul>\n<li>&nbsp; &nbsp; &nbsp; &nbsp; Content: Pearl Millet images.</li>\n<li>&nbsp; &nbsp; &nbsp; &nbsp; Annotations: Ground truth binary segmentation masks (Foreground/Background).</li>\n</ul>\n<p>&nbsp; &nbsp; <strong>multiclass/</strong>: Designed for multiclass segmentation models.</p>\n<ul>\n<li>&nbsp; &nbsp; &nbsp; &nbsp; Content: Images of both Pearl Millet and Sorghum.</li>\n<li>&nbsp; &nbsp; &nbsp; &nbsp; Annotations: Ground truth multiclass segmentation masks.</li>\n</ul>\n<p><strong>Experimental Splits</strong> To ensure consistent evaluation, standard Training and Validation splits are provided for:</p>\n<ul>\n<li>&nbsp; &nbsp; Pearl Millet only.</li>\n<li>&nbsp; &nbsp; Sorghum only.</li>\n<li>&nbsp; &nbsp; Combined Dataset (Pearl Millet + Sorghum).</li>\n</ul>\n<p><strong>Funding</strong><br>This work was supported by the Biotechnology and Biological Sciences Research Council (grant number BB/Y513908/1) and Agence National de la Recherche (SorDrought grant ANR-23-CE20-0052).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Qian, Yifei",
+        "affiliation": null,
+        "orcid": "0000-0003-2881-1422"
+      },
+      {
+        "name": "Kok, Yong En",
+        "affiliation": null,
+        "orcid": "0000-0002-5620-9263"
+      },
+      {
+        "name": "Janes, George",
+        "affiliation": null,
+        "orcid": "0000-0003-0318-3386"
+      },
+      {
+        "name": "Nakombo-Gbassault, Princia",
+        "affiliation": null
+      },
+      {
+        "name": "Atkinson, Brian",
+        "affiliation": "University of Nottingham",
+        "orcid": "0000-0001-8791-1613"
+      },
+      {
+        "name": "Atkinson, Jonathan",
+        "affiliation": null,
+        "orcid": "0000-0003-2815-0812"
+      },
+      {
+        "name": "Hanlon, Molly",
+        "affiliation": "Donald Danforth Plant Science Center",
+        "orcid": "0000-0002-5616-8203"
+      },
+      {
+        "name": "Wells, Darren",
+        "affiliation": null,
+        "orcid": "0000-0002-4246-4909"
+      },
+      {
+        "name": "Pound, Michael",
+        "affiliation": "University of Nottingham",
+        "orcid": "0000-0002-5016-1078"
+      }
+    ],
+    "keywords": [
+      "Plant roots",
+      "Segmentation"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17726413"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset for Root Segmentation Beyond Species Boundaries: A Generalizable Framework for Anatomical Analysis",
+  "links": {
+    "self": "https://zenodo.org/api/records/17726414",
+    "self_html": "https://zenodo.org/records/17726414",
+    "preview_html": "https://zenodo.org/records/17726414?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17726414",
+    "self_doi": "https://doi.org/10.5281/zenodo.17726414",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17726414",
+    "reserve_doi": "https://zenodo.org/api/records/17726414/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17726413",
+    "parent_html": "https://zenodo.org/records/17726413",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17726413",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17726413",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17726414/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17726414/sequence/default",
+    "files": "https://zenodo.org/api/records/17726414/files",
+    "media_files": "https://zenodo.org/api/records/17726414/media-files",
+    "archive": "https://zenodo.org/api/records/17726414/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17726414/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17726414/versions/latest",
+    "latest_html": "https://zenodo.org/records/17726414/latest",
+    "versions": "https://zenodo.org/api/records/17726414/versions",
+    "draft": "https://zenodo.org/api/records/17726414/draft",
+    "access_links": "https://zenodo.org/api/records/17726414/access/links",
+    "access_grants": "https://zenodo.org/api/records/17726414/access/grants",
+    "access_users": "https://zenodo.org/api/records/17726414/access/users",
+    "access_request": "https://zenodo.org/api/records/17726414/access/request",
+    "access": "https://zenodo.org/api/records/17726414/access",
+    "communities": "https://zenodo.org/api/records/17726414/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17726414/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17726414/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17726414/file-modification",
+    "requests": "https://zenodo.org/api/records/17726414/requests"
+  },
+  "updated": "2025-12-18T13:21:49.613308+00:00",
+  "recid": "17726414",
+  "revision": 8,
+  "files": [
+    {
+      "id": "13862527-a397-4776-8fea-7c05ca9b1a76",
+      "key": "plant_data.zip",
+      "size": 2131186514,
+      "checksum": "md5:20c160b9184697d30f0fb1c22ccc55e2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17726414/files/plant_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "252449"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 13,
+    "unique_downloads": 11,
+    "views": 43,
+    "unique_views": 37,
+    "version_downloads": 13,
+    "version_unique_downloads": 11,
+    "version_unique_views": 37,
+    "version_views": 43
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2131186514,
+    "top_level_files": [
+      {
+        "name": "plant_data.zip",
+        "size": 2131186514
+      }
+    ],
+    "zip_contents": {
+      "plant_data.zip": {
+        "total_files": 629,
+        "total_directories": 6,
+        "total_uncompressed_bytes": 6143149678,
+        "file_types": {
+          ".png": 497,
+          ".npy": 125
+        },
+        "imaging_file_count": 622,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "plant_data/binary/images/0.png",
+          "plant_data/binary/images/1.png",
+          "plant_data/binary/images/10.png",
+          "plant_data/binary/images/100.png",
+          "plant_data/binary/images/101.png",
+          "plant_data/binary/images/102.png",
+          "plant_data/binary/images/103.png",
+          "plant_data/binary/images/104.png",
+          "plant_data/binary/images/105.png",
+          "plant_data/binary/images/106.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "plant_data/binary/images/0.png",
+      "plant_data/binary/images/1.png",
+      "plant_data/binary/images/10.png",
+      "plant_data/binary/images/100.png",
+      "plant_data/binary/images/101.png",
+      "plant_data/binary/images/102.png",
+      "plant_data/binary/images/103.png",
+      "plant_data/binary/images/104.png",
+      "plant_data/binary/images/105.png",
+      "plant_data/binary/images/106.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/janetkok/Root-Segmentation-Beyond-Species-BoundariesDataset",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:15.236780"
+}

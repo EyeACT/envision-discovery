@@ -1,0 +1,381 @@
+{
+  "created": "2025-08-16T00:20:46.230701+00:00",
+  "modified": "2025-08-16T00:20:47.139414+00:00",
+  "id": 16884175,
+  "conceptrecid": "16884174",
+  "doi": "10.5281/zenodo.16884175",
+  "conceptdoi": "10.5281/zenodo.16884174",
+  "doi_url": "https://doi.org/10.5281/zenodo.16884175",
+  "metadata": {
+    "title": "Benchmark Set: Counting Minimum OCTs",
+    "doi": "10.5281/zenodo.16884175",
+    "publication_date": "2025-08-15",
+    "description": "<p>This benchmark contains instances of the <em>model counting problem</em> built from a graph family of (initially) constant treewidth to which <em>cardinality constraints</em> were added. The added constraints can increase the treewidth of the resulting CNFs.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Bannach, Max",
+        "affiliation": "European Space Agency",
+        "orcid": "0000-0002-6475-5512"
+      },
+      {
+        "name": "Hecher, Markus",
+        "affiliation": "TU Wien",
+        "orcid": "0000-0003-0131-6771"
+      }
+    ],
+    "keywords": [
+      "Model Counting",
+      "CNF",
+      "Automated Reasoning",
+      "#SAT",
+      "OCT",
+      "Odd Cycle Transversal",
+      "Cardinality Constraints"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "International Conference on Principles of Knowledge Representation and Reasoning",
+      "acronym": "KR",
+      "dates": "11-17 November 2025",
+      "place": "Melbourne, Australia"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16884174"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Benchmark Set: Counting Minimum OCTs",
+  "links": {
+    "self": "https://zenodo.org/api/records/16884175",
+    "self_html": "https://zenodo.org/records/16884175",
+    "preview_html": "https://zenodo.org/records/16884175?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16884175",
+    "self_doi": "https://doi.org/10.5281/zenodo.16884175",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16884175",
+    "reserve_doi": "https://zenodo.org/api/records/16884175/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16884174",
+    "parent_html": "https://zenodo.org/records/16884174",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16884174",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16884174",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16884175/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16884175/sequence/default",
+    "files": "https://zenodo.org/api/records/16884175/files",
+    "media_files": "https://zenodo.org/api/records/16884175/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:16884175:README.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/16884175/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16884175/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16884175/versions/latest",
+    "latest_html": "https://zenodo.org/records/16884175/latest",
+    "versions": "https://zenodo.org/api/records/16884175/versions",
+    "draft": "https://zenodo.org/api/records/16884175/draft",
+    "access_links": "https://zenodo.org/api/records/16884175/access/links",
+    "access_grants": "https://zenodo.org/api/records/16884175/access/grants",
+    "access_users": "https://zenodo.org/api/records/16884175/access/users",
+    "access_request": "https://zenodo.org/api/records/16884175/access/request",
+    "access": "https://zenodo.org/api/records/16884175/access",
+    "communities": "https://zenodo.org/api/records/16884175/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16884175/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16884175/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16884175/file-modification",
+    "requests": "https://zenodo.org/api/records/16884175/requests"
+  },
+  "updated": "2025-08-16T00:20:47.139414+00:00",
+  "recid": "16884175",
+  "revision": 4,
+  "files": [
+    {
+      "id": "a44ee7ce-ea93-4277-a04e-a6de269fffe5",
+      "key": "graphs.zip",
+      "size": 355887,
+      "checksum": "md5:e17e97a7462c2a78bb55c0baa8e1f182",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/graphs.zip/content"
+      }
+    },
+    {
+      "id": "8782f9f3-caaf-4c79-8dae-ae20e31d96eb",
+      "key": "kmtotalizer.zip",
+      "size": 4875210,
+      "checksum": "md5:b48d5847c07b67dd6c6b0f82cc921dd6",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/kmtotalizer.zip/content"
+      }
+    },
+    {
+      "id": "0344acb9-3956-4f03-86e9-4cd2d492cc0c",
+      "key": "mtotalizer.zip",
+      "size": 6365994,
+      "checksum": "md5:ad13d945f726def74127ad24a34064a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/mtotalizer.zip/content"
+      }
+    },
+    {
+      "id": "799de256-25ca-40df-a235-94d8cce7a1f8",
+      "key": "cardnetwrk.zip",
+      "size": 9787057,
+      "checksum": "md5:ba715daf52e5d9767fd81d81366ed035",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/cardnetwrk.zip/content"
+      }
+    },
+    {
+      "id": "ba1f9656-214c-497f-b7f3-5a286be10ae3",
+      "key": "saw_seq.zip",
+      "size": 16844084084,
+      "checksum": "md5:fe8e2e2ba7d4bf1d33ed8dd0dd877644",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/saw_seq.zip/content"
+      }
+    },
+    {
+      "id": "837377c4-a954-41cd-997b-02bd808e5976",
+      "key": "saw_bin.zip",
+      "size": 2336403187,
+      "checksum": "md5:570ad6a0685db053324ff8f901dca2e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/saw_bin.zip/content"
+      }
+    },
+    {
+      "id": "1353f747-fce0-4b01-913b-48208c692a47",
+      "key": "saw_totalizer_bin.zip",
+      "size": 210290220,
+      "checksum": "md5:66657e79e70917471dedd0f3047a849c",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/saw_totalizer_bin.zip/content"
+      }
+    },
+    {
+      "id": "6771a079-fc36-4270-954b-2dca3388a8dc",
+      "key": "sortnetwrk.zip",
+      "size": 14021983,
+      "checksum": "md5:943b6287af8823efa5def039f4455863",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/sortnetwrk.zip/content"
+      }
+    },
+    {
+      "id": "f6677ad4-074f-48d0-a20b-e6f0e83836af",
+      "key": "README.pdf",
+      "size": 147263,
+      "checksum": "md5:99de646d5e297b8c001f49bbf85100e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/README.pdf/content"
+      }
+    },
+    {
+      "id": "1ce0a829-4d8c-4cf3-8ecc-353db68ffb37",
+      "key": "seqcounter.zip",
+      "size": 24677487,
+      "checksum": "md5:dbdfbaf96d4c1f37bab9b521e0b0c41c",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/seqcounter.zip/content"
+      }
+    },
+    {
+      "id": "da8f0214-c961-4e3d-bd0a-b13e57f517d4",
+      "key": "totalizer.zip",
+      "size": 20480170,
+      "checksum": "md5:91cb3238f8ef24ac36090c6b6ed30e03",
+      "links": {
+        "self": "https://zenodo.org/api/records/16884175/files/totalizer.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "104304"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 79,
+    "unique_downloads": 76,
+    "views": 63,
+    "unique_views": 58,
+    "version_downloads": 79,
+    "version_unique_downloads": 76,
+    "version_unique_views": 58,
+    "version_views": 63
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 10,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 19471341279,
+    "top_level_files": [
+      {
+        "name": "graphs.zip",
+        "size": 355887
+      },
+      {
+        "name": "kmtotalizer.zip",
+        "size": 4875210
+      },
+      {
+        "name": "mtotalizer.zip",
+        "size": 6365994
+      },
+      {
+        "name": "cardnetwrk.zip",
+        "size": 9787057
+      },
+      {
+        "name": "saw_seq.zip",
+        "size": 16844084084
+      },
+      {
+        "name": "saw_bin.zip",
+        "size": 2336403187
+      },
+      {
+        "name": "saw_totalizer_bin.zip",
+        "size": 210290220
+      },
+      {
+        "name": "sortnetwrk.zip",
+        "size": 14021983
+      },
+      {
+        "name": "README.pdf",
+        "size": 147263
+      },
+      {
+        "name": "seqcounter.zip",
+        "size": 24677487
+      },
+      {
+        "name": "totalizer.zip",
+        "size": 20480170
+      }
+    ],
+    "zip_contents": {
+      "graphs.zip": {
+        "total_files": 190,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 882098,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "kmtotalizer.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 4835396,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "mtotalizer.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 6326100,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "cardnetwrk.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 9746136,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "saw_bin.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2335654744,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "saw_totalizer_bin.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 210185480,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "sortnetwrk.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 13979804,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "seqcounter.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 24632048,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "totalizer.zip": {
+        "total_files": 190,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 20562048,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:15.090481"
+}

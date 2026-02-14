@@ -1,0 +1,329 @@
+{
+  "created": "2020-12-10T07:37:50.273642+00:00",
+  "modified": "2020-12-10T12:27:07.631188+00:00",
+  "id": 4138957,
+  "conceptrecid": "4138956",
+  "doi": "10.5281/zenodo.4138957",
+  "conceptdoi": "10.5281/zenodo.4138956",
+  "doi_url": "https://doi.org/10.5281/zenodo.4138957",
+  "metadata": {
+    "title": "Deep-tissue label-free quantitative optical tomography",
+    "doi": "10.5281/zenodo.4138957",
+    "publication_date": "2020-10-27",
+    "description": "<p>Deep-tissue label-free quantitative optical tomography</p>\n\n<p>Jelle van der Horst, Anna K. Trull, and Jeroen Kalkman</p>\n\n<p>The data sets, software, and figures accompany the publication:</p>\n\n<p>&quot;Deep-tissue label-free quantitative optical tomography&quot;, Optica 7, 1682 (2020)&nbsp; <a href=\"https://doi.org/10.1364/OPTICA.397549\">https://doi.org/10.1364/OPTICA.397549</a></p>\n\n<ul>\n\t<li>calc_hilbert_cor.m, corrects OCT data for dispersion</li>\n\t<li>cascade_measurement.m, analysis of OCT reference data&lt;\\li&gt;</li>\n\t<li>data_A2_polyfit_v1_slice_0198.zip, Peak fitted data for all 200 slices (200 files)&lt;\\li&gt;</li>\n\t<li>Ex18-11-01B, spectral-domain OCT reference data&lt;\\li&gt;</li>\n\t<li>Ex18-11-01D, spectral-domain OCT reference data for background&lt;\\li&gt;</li>\n\t<li>Ex18-11-01E_sweep_0001.dat, Reference power distribution of a sweep&lt;\\li&gt;</li>\n\t<li>loadframes_refdata.m, load spectral-domain OCT data&lt;\\li&gt;</li>\n\t<li>manual_COR_correction.m, perform manual center of rotation correction&lt;\\li&gt;</li>\n\t<li>run_frame_analysis_polyfit.m, fit spatial-domain OCT data&lt;\\li&gt;</li>\n\t<li>run_tomo_ocpt.m, main MATLAB file for the reconstruction &lt;\\li&gt;</li>\n\t<li>shift_correction_galvo.m, correction for galvo offset&lt;\\li&gt;</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jeroen Kalkman",
+        "affiliation": "TU Delft",
+        "orcid": "0000-0003-1698-7842"
+      },
+      {
+        "name": "Jelle van der Horst",
+        "affiliation": "TU Delft"
+      },
+      {
+        "name": "Anna Trull",
+        "affiliation": "TU Delft"
+      }
+    ],
+    "keywords": [
+      "Optical tomography",
+      "Microscopy"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1364/OPTICA.397549",
+        "relation": "isCitedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "pages": "1682",
+      "title": "Optica",
+      "volume": "7"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4138956"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Deep-tissue label-free quantitative optical tomography",
+  "links": {
+    "self": "https://zenodo.org/api/records/4138957",
+    "self_html": "https://zenodo.org/records/4138957",
+    "preview_html": "https://zenodo.org/records/4138957?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4138957",
+    "self_doi": "https://doi.org/10.5281/zenodo.4138957",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4138957",
+    "reserve_doi": "https://zenodo.org/api/records/4138957/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4138956",
+    "parent_html": "https://zenodo.org/records/4138956",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4138956",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4138956",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4138957/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4138957/sequence/default",
+    "files": "https://zenodo.org/api/records/4138957/files",
+    "media_files": "https://zenodo.org/api/records/4138957/media-files",
+    "archive": "https://zenodo.org/api/records/4138957/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4138957/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4138957/versions/latest",
+    "latest_html": "https://zenodo.org/records/4138957/latest",
+    "versions": "https://zenodo.org/api/records/4138957/versions",
+    "draft": "https://zenodo.org/api/records/4138957/draft",
+    "access_links": "https://zenodo.org/api/records/4138957/access/links",
+    "access_grants": "https://zenodo.org/api/records/4138957/access/grants",
+    "access_users": "https://zenodo.org/api/records/4138957/access/users",
+    "access_request": "https://zenodo.org/api/records/4138957/access/request",
+    "access": "https://zenodo.org/api/records/4138957/access",
+    "communities": "https://zenodo.org/api/records/4138957/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4138957/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4138957/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4138957/file-modification",
+    "requests": "https://zenodo.org/api/records/4138957/requests"
+  },
+  "updated": "2020-12-10T12:27:07.631188+00:00",
+  "recid": "4138957",
+  "revision": 2,
+  "files": [
+    {
+      "id": "e5a02453-0a3c-46bc-a09d-628ca6a1ee6a",
+      "key": "cascade_measurement.m",
+      "size": 607,
+      "checksum": "md5:597fa9b9f58c1786edfdd755954892a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/cascade_measurement.m/content"
+      }
+    },
+    {
+      "id": "92d4a7ea-0a46-455e-a45c-356cdb7dab90",
+      "key": "data_A2_polyfit_v1_slice_0198.zip",
+      "size": 451987063,
+      "checksum": "md5:6a81d6f7be78d9a5323f1a319cd74261",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/data_A2_polyfit_v1_slice_0198.zip/content"
+      }
+    },
+    {
+      "id": "3b55d06c-6511-4309-bbe3-e99059110535",
+      "key": "calc_hilbert_cor.m",
+      "size": 729,
+      "checksum": "md5:8ab42a44b51f1ad01f2d57b34d3fc5b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/calc_hilbert_cor.m/content"
+      }
+    },
+    {
+      "id": "62fe6c5b-3581-4930-9b34-7aa3169cdef3",
+      "key": "Ex18-11-01B",
+      "size": 32997376,
+      "checksum": "md5:7819208f825dfc907c0028dce77f7593",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/Ex18-11-01B/content"
+      }
+    },
+    {
+      "id": "1bd0f53d-14c7-471c-b286-895e0b706573",
+      "key": "Ex18-11-01D",
+      "size": 98992128,
+      "checksum": "md5:b853450dce69b29a4ba515c6f5077456",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/Ex18-11-01D/content"
+      }
+    },
+    {
+      "id": "45ef2963-a499-4ff4-a4ba-0fe5e905552e",
+      "key": "Ex18-11-01E_sweep_0001.dat",
+      "size": 4096000,
+      "checksum": "md5:11f6a56f17681c73033ba5f5829ba6a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/Ex18-11-01E_sweep_0001.dat/content"
+      }
+    },
+    {
+      "id": "c62bf899-842f-439e-9d07-b44ee58f8409",
+      "key": "loadframes_refdata.m",
+      "size": 613,
+      "checksum": "md5:5092b56819dc62f904cf7c45f9f56c02",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/loadframes_refdata.m/content"
+      }
+    },
+    {
+      "id": "0efdb675-8253-4fe1-b5d6-3879c4f76d52",
+      "key": "manual_COR_correction.m",
+      "size": 374,
+      "checksum": "md5:b75b4951a3779762490d4a9f0539bb4b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/manual_COR_correction.m/content"
+      }
+    },
+    {
+      "id": "fae09384-c8aa-4c71-9e68-1e390fbdc276",
+      "key": "run_frame_analysis_polyfit.m",
+      "size": 2077,
+      "checksum": "md5:2fdd51b678fb781befc3a65e7d80d132",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/run_frame_analysis_polyfit.m/content"
+      }
+    },
+    {
+      "id": "1c39fe3e-5222-4079-8080-315d93d0cea9",
+      "key": "run_tomo_ocpt.m",
+      "size": 5503,
+      "checksum": "md5:45c18767eb1383d75e3581b8bfd9a5c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/run_tomo_ocpt.m/content"
+      }
+    },
+    {
+      "id": "6af0d322-fdbd-4d54-8789-59751f068d81",
+      "key": "shift_correction_galvo.m",
+      "size": 320,
+      "checksum": "md5:42038405e894fd1ad107941d38831b7f",
+      "links": {
+        "self": "https://zenodo.org/api/records/4138957/files/shift_correction_galvo.m/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "63167"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 297,
+    "unique_downloads": 250,
+    "views": 392,
+    "unique_views": 375,
+    "version_downloads": 297,
+    "version_unique_downloads": 250,
+    "version_unique_views": 375,
+    "version_views": 392
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 451987063,
+    "top_level_files": [
+      {
+        "name": "cascade_measurement.m",
+        "size": 607
+      },
+      {
+        "name": "data_A2_polyfit_v1_slice_0198.zip",
+        "size": 451987063
+      },
+      {
+        "name": "calc_hilbert_cor.m",
+        "size": 729
+      },
+      {
+        "name": "Ex18-11-01B",
+        "size": 32997376
+      },
+      {
+        "name": "Ex18-11-01D",
+        "size": 98992128
+      },
+      {
+        "name": "Ex18-11-01E_sweep_0001.dat",
+        "size": 4096000
+      },
+      {
+        "name": "loadframes_refdata.m",
+        "size": 613
+      },
+      {
+        "name": "manual_COR_correction.m",
+        "size": 374
+      },
+      {
+        "name": "run_frame_analysis_polyfit.m",
+        "size": 2077
+      },
+      {
+        "name": "run_tomo_ocpt.m",
+        "size": 5503
+      },
+      {
+        "name": "shift_correction_galvo.m",
+        "size": 320
+      }
+    ],
+    "zip_contents": {
+      "data_a2_polyfit_v1_slice_0198.zip": {
+        "total_files": 200,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 454411192,
+        "file_types": {
+          ".mat": 200
+        },
+        "imaging_file_count": 200,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "data_a2_polyfit_v1_slice_0001.mat",
+          "data_a2_polyfit_v1_slice_0002.mat",
+          "data_a2_polyfit_v1_slice_0003.mat",
+          "data_a2_polyfit_v1_slice_0004.mat",
+          "data_a2_polyfit_v1_slice_0005.mat",
+          "data_a2_polyfit_v1_slice_0006.mat",
+          "data_a2_polyfit_v1_slice_0007.mat",
+          "data_a2_polyfit_v1_slice_0008.mat",
+          "data_a2_polyfit_v1_slice_0009.mat",
+          "data_a2_polyfit_v1_slice_0010.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "data_a2_polyfit_v1_slice_0001.mat",
+      "data_a2_polyfit_v1_slice_0002.mat",
+      "data_a2_polyfit_v1_slice_0003.mat",
+      "data_a2_polyfit_v1_slice_0004.mat",
+      "data_a2_polyfit_v1_slice_0005.mat",
+      "data_a2_polyfit_v1_slice_0006.mat",
+      "data_a2_polyfit_v1_slice_0007.mat",
+      "data_a2_polyfit_v1_slice_0008.mat",
+      "data_a2_polyfit_v1_slice_0009.mat",
+      "data_a2_polyfit_v1_slice_0010.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1364/OPTICA.397549",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:12.993261"
+}

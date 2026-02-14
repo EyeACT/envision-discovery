@@ -1,0 +1,156 @@
+{
+  "created": "2025-04-23T17:04:02.600922+00:00",
+  "modified": "2025-04-23T17:04:03.586100+00:00",
+  "id": 15270887,
+  "conceptrecid": "15256643",
+  "doi": "10.5281/zenodo.15270887",
+  "conceptdoi": "10.5281/zenodo.15256643",
+  "doi_url": "https://doi.org/10.5281/zenodo.15270887",
+  "metadata": {
+    "title": "Sample IDC DICOM image data for validation of mHUB model msk_smit_lung_gtv (MSKCC CT_Lung_SMIT GTV Segmentation)",
+    "doi": "10.5281/zenodo.15270887",
+    "publication_date": "2025-04-23",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Memorial Sloan Kettering Cancer Center Service for Predictive Informatics (Medical Physics)",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/cerr/CT_Lung_SMIT",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/locastre/models",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "Anonymized test CT DICOM image dataset for segmentation model validation"
+      }
+    ],
+    "references": [
+      "Jiang, J., Tyagi, N., Tringale, K., Crane, C., Veeraraghavan, H. (2022). Self-supervised 3D Anatomy Segmentation Using Self-distilled Masked Image Transformer (SMIT). In: Wang, L., Dou, Q., Fletcher, P.T., Speidel, S., Li, S. (eds) Medical Image Computing and Computer Assisted Intervention \u2013 MICCAI 2022. MICCAI 2022. Lecture Notes in Computer Science, vol 13434. Springer, Cham. https://doi.org/10.1007/978-3-031-16440-8_53"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15256643"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Sample IDC DICOM image data for validation of mHUB model msk_smit_lung_gtv (MSKCC CT_Lung_SMIT GTV Segmentation)",
+  "links": {
+    "self": "https://zenodo.org/api/records/15270887",
+    "self_html": "https://zenodo.org/records/15270887",
+    "preview_html": "https://zenodo.org/records/15270887?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15270887",
+    "self_doi": "https://doi.org/10.5281/zenodo.15270887",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15270887",
+    "reserve_doi": "https://zenodo.org/api/records/15270887/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15256643",
+    "parent_html": "https://zenodo.org/records/15256643",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15256643",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15256643",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15270887/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15270887/sequence/default",
+    "files": "https://zenodo.org/api/records/15270887/files",
+    "media_files": "https://zenodo.org/api/records/15270887/media-files",
+    "archive": "https://zenodo.org/api/records/15270887/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15270887/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15270887/versions/latest",
+    "latest_html": "https://zenodo.org/records/15270887/latest",
+    "versions": "https://zenodo.org/api/records/15270887/versions",
+    "draft": "https://zenodo.org/api/records/15270887/draft",
+    "access_links": "https://zenodo.org/api/records/15270887/access/links",
+    "access_grants": "https://zenodo.org/api/records/15270887/access/grants",
+    "access_users": "https://zenodo.org/api/records/15270887/access/users",
+    "access_request": "https://zenodo.org/api/records/15270887/access/request",
+    "access": "https://zenodo.org/api/records/15270887/access",
+    "communities": "https://zenodo.org/api/records/15270887/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15270887/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15270887/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15270887/file-modification",
+    "requests": "https://zenodo.org/api/records/15270887/requests"
+  },
+  "updated": "2025-04-23T17:04:03.586100+00:00",
+  "recid": "15270887",
+  "revision": 4,
+  "files": [
+    {
+      "id": "c43e8aa3-214e-4191-8f58-2bcaffa5fadd",
+      "key": "msk_smit_lung_gtv.test.zip",
+      "size": 16839014,
+      "checksum": "md5:7aa24b37813cdd84091c926679dcb0c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/15270887/files/msk_smit_lung_gtv.test.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1183877"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 62,
+    "unique_downloads": 62,
+    "views": 83,
+    "unique_views": 70,
+    "version_downloads": 35,
+    "version_unique_downloads": 35,
+    "version_unique_views": 40,
+    "version_views": 47
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 16839014,
+    "top_level_files": [
+      {
+        "name": "msk_smit_lung_gtv.test.zip",
+        "size": 16839014
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/locastre/models",
+    "https://github.com/cerr/CT_Lung_SMIT"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:05.972690"
+}

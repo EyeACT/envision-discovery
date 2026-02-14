@@ -1,0 +1,484 @@
+{
+  "created": "2024-05-23T09:02:35.321416+00:00",
+  "modified": "2024-07-11T02:49:56.906441+00:00",
+  "id": 8425185,
+  "conceptrecid": "8425184",
+  "doi": "10.5281/zenodo.8425185",
+  "conceptdoi": "10.5281/zenodo.8425184",
+  "doi_url": "https://doi.org/10.5281/zenodo.8425185",
+  "metadata": {
+    "title": "Wavenumber-dependent dynamic light scattering optical coherence tomography measurements of collective and self-diffusion",
+    "doi": "10.5281/zenodo.8425185",
+    "publication_date": "2024-05-15",
+    "description": "<p>This repository contains raw data and analysis routines of the publication <strong>&ldquo;<em>Wavenumber-dependent dynamic light scattering optical coherence tomography measurements of collective and self-diffusion</em>&rdquo;</strong> in Optics Express (doi.org/10.1364/OE.521702)<em>.&nbsp;</em>The reader is free to use the scripts and data in this depository if the manuscript is correctly cited in their work. For further questions, feel free to contact the corresponding author. Python 3.11 was used for programming. Kindly note that simulating autocorrelation functions from extensive time series data, especially with a high repetition rate, can be time-consuming, often requiring more than 20-30 minutes. Despite parallelized processing routines for the measurement data, the full analysis may still take up to an hour. Please restart the kernel and run the code again if the parallelization fails. Also, keep in mind the significant RAM usage.</p>\n<p>We've conducted measurements using both a custom-built OCT system and the Thorlabs OCT system. The custom setup specifically focused on measuring diffusion in concentrated suspensions, while the Thorlabs OCT system was used to analyze both concentrated and dilute suspensions. To analyze the data from the custom setup, we require an additional dark measurement file. Conversely, analyzing the Thorlabs measurements necessitates a chirp interpolation file. All filenames, whether for raw data or analysis files, are sufficiently descriptive. Files obtained with the Thorlabs OCT system are easily identifiable as they contain &ldquo;Thorlabs&rdquo; in their names. To conduct the analysis of Thorlabs measurements, it's essential to have information regarding the time series length (number of A-scans), the number of repeats (B-scans), and the acquisition rate. The results are plotted at the end of our analysis routines, with the parameters displayed as a function of depth or wavenumber. Raw measurement files and analysis routines are described below.</p>\n<div>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Name</strong></p>\n</td>\n<td>\n<p><strong>Description</strong></p>\n</td>\n<td>\n<p><strong>Parameters</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>10050, 10 us.mat</p>\n</td>\n<td>\n<p>Interference intensity from the custom setup for the concentrated Kostros&ouml;l 10050 sample.</p>\n</td>\n<td>\n<p>Na=8192, Nb=20, 4.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>CS50-28, 10 us.mat</p>\n</td>\n<td>\n<p>Interference intensity from the custom setup for the concentrated Levasil CS50-28 sample.</p>\n</td>\n<td>\n<p>Na=8192, Nb=20, 4.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Mix, 10 us.mat</p>\n</td>\n<td>\n<p>Interference intensity from the custom setup for the concentrated mixed sample.</p>\n</td>\n<td>\n<p>Na=8192, Nb=20, 4.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dark, 10 us.mat</p>\n</td>\n<td>\n<p>Background interference intensity from a custom setup.</p>\n</td>\n<td>\n<p>Na=2048,&nbsp;Nb=5, 4.5 kHz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Concentrated 8050, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the concentrated Kostros&ouml;l 8050 sample.</p>\n</td>\n<td>\n<p>Na=65536, Nb=10, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Concentrated 9550, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the concentrated Kostros&ouml;l 9550 sample.</p>\n</td>\n<td>\n<p>Na=65536, Nb=10, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Concentrated mix, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the concentrated mixed sample.</p>\n</td>\n<td>\n<p>Na=65536, Nb=10, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dilute 8050, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the dilute Kostros&ouml;l 8050 sample.</p>\n</td>\n<td>\n<p>Na=32768, Nb=20, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dilute 9550, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the dilute Kostros&ouml;l 9550 sample.</p>\n</td>\n<td>\n<p>Na=32768, Nb=20, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dilute mix, Thorlabs.oct</p>\n</td>\n<td>\n<p>Interference intensity from the Thorlabs OCT for the dilute mixed sample.</p>\n</td>\n<td>\n<p>Na=32768, Nb=20, 36 Khz</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Chirp.data</p>\n</td>\n<td>\n<p>File containing k-interpolation data for the Thorlabs OCT measurements.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>ReadOCTFile.py</p>\n</td>\n<td>\n<p>Written by Jos de Wit, this module reads and imports spectra from raw Thorlabs OCT files.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Data_processing.py</p>\n</td>\n<td>\n<p>This module contains all analysis functions.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Custom_concentrated.py</p>\n</td>\n<td>\n<p>The script is for analyzing raw concentrated measurement files from the custom setup.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Thorlabs_concentrated.py</p>\n</td>\n<td>\n<p>The script is for analyzing raw concentrated measurement files from the Thorlabs setup.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Thorlabs_dilute.py</p>\n</td>\n<td>\n<p>The script is for running analysis of raw dilute measurement files from the Thorlabs setup.</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cheishvili, Konstantine",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0002-6637-5652"
+      },
+      {
+        "name": "Kalkman, Jeroen",
+        "affiliation": "Delft University of Technology",
+        "orcid": "0000-0003-1698-7842"
+      },
+      {
+        "name": "Besseling, Rut",
+        "affiliation": "InProcess-LSP"
+      },
+      {
+        "name": "Hermes, Michiel",
+        "affiliation": "InProcess-LSP"
+      }
+    ],
+    "keywords": [
+      "optical coherence tomography",
+      "dynamic light scattering",
+      "DLS-OCT",
+      "particle sizing",
+      "size polydispersity",
+      "optical polydispersity",
+      "concentrated dispersions",
+      "self-diffusion",
+      "collective diffusion",
+      "wavenumber-dependency",
+      "hard-sphere system",
+      "colloidal dispersion",
+      "concentrated dispersion",
+      "long-time diffusion",
+      "short-time diffusion"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1364/OE.521702",
+        "relation": "isRequiredBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "11",
+      "pages": "19963-19983",
+      "title": "Optics Express",
+      "volume": "32"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8425184"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Wavenumber-dependent dynamic light scattering optical coherence tomography measurements of collective and self-diffusion",
+  "links": {
+    "self": "https://zenodo.org/api/records/8425185",
+    "self_html": "https://zenodo.org/records/8425185",
+    "preview_html": "https://zenodo.org/records/8425185?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8425185",
+    "self_doi": "https://doi.org/10.5281/zenodo.8425185",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8425185",
+    "reserve_doi": "https://zenodo.org/api/records/8425185/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8425184",
+    "parent_html": "https://zenodo.org/records/8425184",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8425184",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8425184",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8425185/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8425185/sequence/default",
+    "files": "https://zenodo.org/api/records/8425185/files",
+    "media_files": "https://zenodo.org/api/records/8425185/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:8425185:Concentrated,%20diffusion%20coefficient%20in%20q-domain,%20Thorlabs.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/8425185/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8425185/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8425185/versions/latest",
+    "latest_html": "https://zenodo.org/records/8425185/latest",
+    "versions": "https://zenodo.org/api/records/8425185/versions",
+    "draft": "https://zenodo.org/api/records/8425185/draft",
+    "access_links": "https://zenodo.org/api/records/8425185/access/links",
+    "access_grants": "https://zenodo.org/api/records/8425185/access/grants",
+    "access_users": "https://zenodo.org/api/records/8425185/access/users",
+    "access_request": "https://zenodo.org/api/records/8425185/access/request",
+    "access": "https://zenodo.org/api/records/8425185/access",
+    "communities": "https://zenodo.org/api/records/8425185/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8425185/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8425185/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8425185/file-modification",
+    "requests": "https://zenodo.org/api/records/8425185/requests"
+  },
+  "updated": "2024-07-11T02:49:56.906441+00:00",
+  "recid": "8425185",
+  "revision": 8,
+  "files": [
+    {
+      "id": "92e0d70e-db5b-4a06-8881-401740e2dac7",
+      "key": "Dark, 10 us.mat",
+      "size": 20522592,
+      "checksum": "md5:69e13b3a89a9c8903c5ecf42432b29ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dark, 10 us.mat/content"
+      }
+    },
+    {
+      "id": "133d0273-a3f1-4050-90d0-a44ebcb77041",
+      "key": "10050, 10 us.mat",
+      "size": 748908384,
+      "checksum": "md5:2e2be32a09e4a1dc9052825684d55a0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/10050, 10 us.mat/content"
+      }
+    },
+    {
+      "id": "c5530afe-f86b-42e4-a858-39d830c26dc2",
+      "key": "Mix, 10 us.mat",
+      "size": 745987388,
+      "checksum": "md5:a160967d37d1e660887759cbbfe945f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Mix, 10 us.mat/content"
+      }
+    },
+    {
+      "id": "58128652-80ab-4048-900a-6aeffcdae2b3",
+      "key": "CS50-28, 10 us.mat",
+      "size": 746758564,
+      "checksum": "md5:a6c0efeaefe7829f607a434a2119f917",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/CS50-28, 10 us.mat/content"
+      }
+    },
+    {
+      "id": "89266a4c-cb40-4c61-bf01-f25be5ae4704",
+      "key": "Concentrated 8050, Thorlabs.oct",
+      "size": 2685174561,
+      "checksum": "md5:2c475efb86acd7b0155bc17150342f94",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated 8050, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "33f42db6-11e5-462a-bcec-9710c1367123",
+      "key": "Dilute mix, Thorlabs.oct",
+      "size": 2685057752,
+      "checksum": "md5:9e6a1ffe691965853ba04444214a6fb6",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dilute mix, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "ded20fb1-fae7-4a5f-99aa-23dc8b47d7cc",
+      "key": "Dilute 9550, Thorlabs.oct",
+      "size": 2685064025,
+      "checksum": "md5:da1d889867490501bbd0d0bfbb574587",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dilute 9550, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "6b800524-2b56-4b50-98f8-3134a7106a00",
+      "key": "Concentrated 9550, Thorlabs.oct",
+      "size": 2685179692,
+      "checksum": "md5:62bfc57ce109e2499f2323bf04c38031",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated 9550, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "552591ac-91ed-4dca-a195-5be4bc60152c",
+      "key": "Dilute 8050, Thorlabs.oct",
+      "size": 2685069991,
+      "checksum": "md5:0a05ed2cb6b89c03e255501acd788e2d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dilute 8050, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "f4d856f2-2dd4-4aec-8a51-747d409d02f8",
+      "key": "Concentrated mix, Thorlabs.oct",
+      "size": 2685174861,
+      "checksum": "md5:33c9b0a86c1a4b311808c3f67849a0b1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated mix, Thorlabs.oct/content"
+      }
+    },
+    {
+      "id": "adef19ac-1c81-481c-b900-b1dea7343c02",
+      "key": "Chirp.data",
+      "size": 8192,
+      "checksum": "md5:b7b8ca7bd17cc9811d4e1698dda10a6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Chirp.data/content"
+      }
+    },
+    {
+      "id": "fd8fbf95-006b-4672-a266-727b9ec5005a",
+      "key": "Concentrated, diffusion coefficient in q-domain, Thorlabs.pdf",
+      "size": 95371,
+      "checksum": "md5:c2bd3f9ae797b2e05e7e8dbdaa305d10",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, diffusion coefficient in q-domain, Thorlabs.pdf/content"
+      }
+    },
+    {
+      "id": "9628cd49-48e4-4cad-96f0-36532e58f78e",
+      "key": "Thorlabs_concentrated.py",
+      "size": 9185,
+      "checksum": "md5:cc2578bac8ffbb8075959aae140846eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Thorlabs_concentrated.py/content"
+      }
+    },
+    {
+      "id": "198c7633-b5ad-4eb3-b0ba-07d4a09b6260",
+      "key": "Dilute, example autocorrelations, Thorlabs.pdf",
+      "size": 17099,
+      "checksum": "md5:265b53f1b427406c450760411084a40c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dilute, example autocorrelations, Thorlabs.pdf/content"
+      }
+    },
+    {
+      "id": "334405ba-8f66-4436-9921-c0cf313de8c3",
+      "key": "ReadOCTfile.py",
+      "size": 5070,
+      "checksum": "md5:f806ad1eee8398be5255e1a80b6d9e8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/ReadOCTfile.py/content"
+      }
+    },
+    {
+      "id": "b7973f65-e9ae-4b45-8164-bc1d1901f42b",
+      "key": "Dilute, particle size and PDI in z-domain, Thorlabs.pdf",
+      "size": 34001,
+      "checksum": "md5:835142af0acebfbc2fc2f6e6fa1ff071",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Dilute, particle size and PDI in z-domain, Thorlabs.pdf/content"
+      }
+    },
+    {
+      "id": "9a6c555f-ff67-46f0-a51b-20412b3afe6b",
+      "key": "Custom_concentrated.py",
+      "size": 7741,
+      "checksum": "md5:5a789e784325767435f594142166454d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Custom_concentrated.py/content"
+      }
+    },
+    {
+      "id": "481b44a2-c237-4886-beab-e4c08f05044a",
+      "key": "Concentrated, decay rate in z-domain, custom.pdf",
+      "size": 23670,
+      "checksum": "md5:548883ab0a59faed1b1746a87b1fbfeb",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, decay rate in z-domain, custom.pdf/content"
+      }
+    },
+    {
+      "id": "e992811b-28d8-4213-af67-2de3717af29b",
+      "key": "Concentrated, diffusion coefficient in q-domain, custom.pdf",
+      "size": 33548,
+      "checksum": "md5:ab7adceb401e6fea9a3d35682b518f1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, diffusion coefficient in q-domain, custom.pdf/content"
+      }
+    },
+    {
+      "id": "9b5e30a4-b4b7-4455-83ab-39db69ddf321",
+      "key": "Thorlabs_dilute.py",
+      "size": 4511,
+      "checksum": "md5:a863ebdcfe54978502877e3485340177",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Thorlabs_dilute.py/content"
+      }
+    },
+    {
+      "id": "c93e74db-2fea-4808-9f93-11beaf0530a2",
+      "key": "Concentrated, decay rate in z-domain, Thorlabs.pdf",
+      "size": 53533,
+      "checksum": "md5:cb21217f73ef5cd1441ff8e81ba2a923",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, decay rate in z-domain, Thorlabs.pdf/content"
+      }
+    },
+    {
+      "id": "ec5594bc-5824-43d5-8731-6f52b81c6706",
+      "key": "Concentrated, example autocorrelations, custom.pdf",
+      "size": 19362,
+      "checksum": "md5:9b081deb448f098302514f6226e3d256",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, example autocorrelations, custom.pdf/content"
+      }
+    },
+    {
+      "id": "e240f802-fad2-4240-9e19-190a9d8128cb",
+      "key": "Concentrated, example autocorrelations, Thorlabs.pdf",
+      "size": 22086,
+      "checksum": "md5:b873e326905c1408c95a296c8e6f6d23",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Concentrated, example autocorrelations, Thorlabs.pdf/content"
+      }
+    },
+    {
+      "id": "0a1d5a21-a0ed-4e6a-ba69-efab923d6cac",
+      "key": "Data_processing.py",
+      "size": 27803,
+      "checksum": "md5:5dc721ad84acad3e9e6fc253569b8305",
+      "links": {
+        "self": "https://zenodo.org/api/records/8425185/files/Data_processing.py/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "333794"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 917,
+    "unique_downloads": 497,
+    "views": 98,
+    "unique_views": 74,
+    "version_downloads": 917,
+    "version_unique_downloads": 497,
+    "version_unique_views": 74,
+    "version_views": 98
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 10,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 18372897810,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Dark, 10 us.mat",
+        "size": 20522592
+      },
+      {
+        "name": "10050, 10 us.mat",
+        "size": 748908384
+      },
+      {
+        "name": "Mix, 10 us.mat",
+        "size": 745987388
+      },
+      {
+        "name": "CS50-28, 10 us.mat",
+        "size": 746758564
+      },
+      {
+        "name": "Concentrated 8050, Thorlabs.oct",
+        "size": 2685174561
+      },
+      {
+        "name": "Dilute mix, Thorlabs.oct",
+        "size": 2685057752
+      },
+      {
+        "name": "Dilute 9550, Thorlabs.oct",
+        "size": 2685064025
+      },
+      {
+        "name": "Concentrated 9550, Thorlabs.oct",
+        "size": 2685179692
+      },
+      {
+        "name": "Dilute 8050, Thorlabs.oct",
+        "size": 2685069991
+      },
+      {
+        "name": "Concentrated mix, Thorlabs.oct",
+        "size": 2685174861
+      },
+      {
+        "name": "Chirp.data",
+        "size": 8192
+      },
+      {
+        "name": "Concentrated, diffusion coefficient in q-domain, Thorlabs.pdf",
+        "size": 95371
+      },
+      {
+        "name": "Thorlabs_concentrated.py",
+        "size": 9185
+      },
+      {
+        "name": "Dilute, example autocorrelations, Thorlabs.pdf",
+        "size": 17099
+      },
+      {
+        "name": "ReadOCTfile.py",
+        "size": 5070
+      },
+      {
+        "name": "Dilute, particle size and PDI in z-domain, Thorlabs.pdf",
+        "size": 34001
+      },
+      {
+        "name": "Custom_concentrated.py",
+        "size": 7741
+      },
+      {
+        "name": "Concentrated, decay rate in z-domain, custom.pdf",
+        "size": 23670
+      },
+      {
+        "name": "Concentrated, diffusion coefficient in q-domain, custom.pdf",
+        "size": 33548
+      },
+      {
+        "name": "Thorlabs_dilute.py",
+        "size": 4511
+      },
+      {
+        "name": "Concentrated, decay rate in z-domain, Thorlabs.pdf",
+        "size": 53533
+      },
+      {
+        "name": "Concentrated, example autocorrelations, custom.pdf",
+        "size": 19362
+      },
+      {
+        "name": "Concentrated, example autocorrelations, Thorlabs.pdf",
+        "size": 22086
+      },
+      {
+        "name": "Data_processing.py",
+        "size": 27803
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:53.506444"
+}

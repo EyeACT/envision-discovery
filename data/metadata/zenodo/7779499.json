@@ -1,0 +1,165 @@
+{
+  "created": "2023-04-09T16:50:06.504095+00:00",
+  "modified": "2023-04-10T02:26:37.726650+00:00",
+  "id": 7779499,
+  "conceptrecid": "7779498",
+  "doi": "10.5281/zenodo.7779499",
+  "conceptdoi": "10.5281/zenodo.7779498",
+  "doi_url": "https://doi.org/10.5281/zenodo.7779499",
+  "metadata": {
+    "title": "rwave-4096 - Retinal Wave Dataset",
+    "doi": "10.5281/zenodo.7779499",
+    "publication_date": "2023-04-09",
+    "description": "<p>4096 classes of retinal waves, 2000 images per class.</p>\n\n<ul>\n\t<li>4096_split.tar.gz: Images split into train/test/val sets (80%/10%/10%).</li>\n\t<li>4096_info.zip: Retinal Wave Simulator Parameters per Class.</li>\n</ul>\n\n<p>Generated using Retinal Wave Simulator&nbsp;https://github.com/BennyCa/Retinal-Wave-Simulator adapted from&nbsp;https://swindale.ecc.ubc.ca/home-page/software/retinal-wave-models/</p>\n\n<p>Used in project&nbsp;Retinal Waves for Pre-Training Artificial Neural Networks Mimicking Real Prenatal Development: https://github.com/BennyCa/ReWaRD</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cappell, Benjamin",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      }
+    ],
+    "keywords": [
+      "retinal wave",
+      "pre-training",
+      "non-natural images",
+      "image dataset"
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7779498"
+          }
+        }
+      ]
+    }
+  },
+  "title": "rwave-4096 - Retinal Wave Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/7779499",
+    "self_html": "https://zenodo.org/records/7779499",
+    "preview_html": "https://zenodo.org/records/7779499?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7779499",
+    "self_doi": "https://doi.org/10.5281/zenodo.7779499",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7779499",
+    "reserve_doi": "https://zenodo.org/api/records/7779499/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7779498",
+    "parent_html": "https://zenodo.org/records/7779498",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7779498",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7779498",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7779499/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7779499/sequence/default",
+    "files": "https://zenodo.org/api/records/7779499/files",
+    "media_files": "https://zenodo.org/api/records/7779499/media-files",
+    "archive": "https://zenodo.org/api/records/7779499/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7779499/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7779499/versions/latest",
+    "latest_html": "https://zenodo.org/records/7779499/latest",
+    "versions": "https://zenodo.org/api/records/7779499/versions",
+    "draft": "https://zenodo.org/api/records/7779499/draft",
+    "access_links": "https://zenodo.org/api/records/7779499/access/links",
+    "access_grants": "https://zenodo.org/api/records/7779499/access/grants",
+    "access_users": "https://zenodo.org/api/records/7779499/access/users",
+    "access_request": "https://zenodo.org/api/records/7779499/access/request",
+    "access": "https://zenodo.org/api/records/7779499/access",
+    "communities": "https://zenodo.org/api/records/7779499/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7779499/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7779499/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7779499/file-modification",
+    "requests": "https://zenodo.org/api/records/7779499/requests"
+  },
+  "updated": "2023-04-10T02:26:37.726650+00:00",
+  "recid": "7779499",
+  "revision": 2,
+  "files": [
+    {
+      "id": "1bd8b782-7900-4aef-86f4-f01e000d9448",
+      "key": "4096_split.tar.gz",
+      "size": 12073996697,
+      "checksum": "md5:87ced2dd24f914c94530eb61378defc4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7779499/files/4096_split.tar.gz/content"
+      }
+    },
+    {
+      "id": "dffd5d88-572b-4f91-a3dd-0d535c0baeb9",
+      "key": "4096_info.zip",
+      "size": 1049970,
+      "checksum": "md5:ddd52787e4ab893ed73dc61daca1f10b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7779499/files/4096_info.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "524320"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 114,
+    "unique_downloads": 102,
+    "views": 181,
+    "unique_views": 169,
+    "version_downloads": 114,
+    "version_unique_downloads": 102,
+    "version_unique_views": 169,
+    "version_views": 181
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 12075046667,
+    "top_level_files": [
+      {
+        "name": "4096_split.tar.gz",
+        "size": 12073996697
+      },
+      {
+        "name": "4096_info.zip",
+        "size": 1049970
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/BennyCa/Retinal-Wave-Simulator",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://swindale.ecc.ubc.ca/home-page/software/retinal-wave-models/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/BennyCa/ReWaRD",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:51.015441"
+}

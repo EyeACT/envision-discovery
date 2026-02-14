@@ -1,0 +1,213 @@
+{
+  "created": "2025-10-16T07:08:55.029926+00:00",
+  "modified": "2025-10-16T07:08:55.323082+00:00",
+  "id": 17359557,
+  "conceptrecid": "15165754",
+  "doi": "10.5281/zenodo.17359557",
+  "conceptdoi": "10.5281/zenodo.15165754",
+  "doi_url": "https://doi.org/10.5281/zenodo.17359557",
+  "metadata": {
+    "title": "CeraMIRScan: Mid-infrared OCT Scan Dataset for Ceramic Quality Assessment",
+    "doi": "10.5281/zenodo.17359557",
+    "publication_date": "2025-04-07",
+    "description": "<div>\n<p><span lang=\"EN-GB\">Mid-infrared Optical Coherence Tomography (MIR-OCT) is a promising Non-Destructive Testing (NDT) technique due to its&nbsp;high-resolution imaging capabilities and extensive applicability across various industrial domains.</span></p>\n<p>The CeraMIRScan dataset comprises 29 volumes corresponding to MIR-OCT scans of 3D printed ceramic pieces and has been carefully curated to support the development of Deep Learning models for defect segmentation. Of these, 22 volumes include bounding-box annotations to enable defect localisation and classification, while all volumes are accompanied by manually generated binary segmentation masks. In total, the dataset contains 21,882 individual scans, of which 41.38% exhibit detectable defects.</p>\n<p>The dataset is organised into three primary components. The first <em>images/</em> contains the 29 MIR-OCT volumes. The second <em>annotations/raw_labels/</em>&nbsp; provides bounding-box coordinates and defect-level labels for 22 volumes. The third <em>annotations/masks/</em> includes pixel-wise segmentation masks for all volumes. Image and mask files follow the naming convention <em>'VolumeName_SlideNumber.png'</em>, and bounding-box annotations are stored as<em> 'VolumeName.csv'</em>.</p>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "P\u00e9rez Garc\u00eda de la Puente, Natalia Lourdes",
+        "affiliation": "Universitat Polit\u00e8cnica de Val\u00e8ncia",
+        "orcid": "0009-0009-9704-9102"
+      },
+      {
+        "name": "Garc\u00eda Torres, Fernando",
+        "affiliation": "Universitat Polit\u00e8cnica de Val\u00e8ncia",
+        "orcid": "0000-0002-5337-8774"
+      },
+      {
+        "name": "Andr\u00e9s, Laveda Mart\u00ednez",
+        "affiliation": "Universitat Polit\u00e8cnica de Val\u00e8ncia"
+      },
+      {
+        "name": "Coraline, Lapre",
+        "affiliation": "Danmarks Tekniske Universitetet",
+        "orcid": "0009-0003-5280-9792"
+      },
+      {
+        "name": "M\u00f8ller Israelsen, Niels",
+        "affiliation": "Danmarks Tekniske Universitetet",
+        "orcid": "0000-0001-9632-7902"
+      },
+      {
+        "name": "Bang, Ole",
+        "affiliation": "Danmarks Tekniske Universitetet",
+        "orcid": "0000-0002-8041-9156"
+      },
+      {
+        "name": "Brouczek, Dominik",
+        "affiliation": "Lithoz GmbH, Vienna, Austria"
+      },
+      {
+        "name": "Benson, Niels",
+        "affiliation": "airCode UG, Duisburg, Germany",
+        "orcid": "0000-0002-2632-4826"
+      },
+      {
+        "name": "Colomer, Adri\u00e1n",
+        "affiliation": "Universitat Polit\u00e8cnica de Val\u00e8ncia",
+        "orcid": "0000-0002-7616-6029"
+      },
+      {
+        "name": "Naranjo, Valery",
+        "affiliation": "Universitat Polit\u00e8cnica de Val\u00e8ncia",
+        "orcid": "0000-0002-0181-3412"
+      }
+    ],
+    "keywords": [
+      "Mid-infrared (MIR) OCT",
+      "vision inspection",
+      "NDI inspection",
+      "product quality",
+      "defect detection",
+      "AI-enhanced",
+      "ceramics"
+    ],
+    "dates": [
+      {
+        "type": "available"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "101057404",
+        "internal_id": "10.13039/501100000780::101057404",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Non-Destructive Inspection Services for Digitally Enhanced Zero Waste Manufacturing",
+        "acronym": "ZDZW",
+        "program": "HORIZON.2.4",
+        "url": "https://cordis.europa.eu/projects/101057404"
+      }
+    ],
+    "communities": [
+      {
+        "id": "zdzw"
+      },
+      {
+        "id": "eu"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15165754"
+          }
+        }
+      ]
+    }
+  },
+  "title": "CeraMIRScan: Mid-infrared OCT Scan Dataset for Ceramic Quality Assessment",
+  "links": {
+    "self": "https://zenodo.org/api/records/17359557",
+    "self_html": "https://zenodo.org/records/17359557",
+    "preview_html": "https://zenodo.org/records/17359557?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17359557",
+    "self_doi": "https://doi.org/10.5281/zenodo.17359557",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17359557",
+    "reserve_doi": "https://zenodo.org/api/records/17359557/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15165754",
+    "parent_html": "https://zenodo.org/records/15165754",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15165754",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15165754",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17359557/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17359557/sequence/default",
+    "files": "https://zenodo.org/api/records/17359557/files",
+    "media_files": "https://zenodo.org/api/records/17359557/media-files",
+    "archive": "https://zenodo.org/api/records/17359557/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17359557/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17359557/versions/latest",
+    "latest_html": "https://zenodo.org/records/17359557/latest",
+    "versions": "https://zenodo.org/api/records/17359557/versions",
+    "draft": "https://zenodo.org/api/records/17359557/draft",
+    "access_links": "https://zenodo.org/api/records/17359557/access/links",
+    "access_grants": "https://zenodo.org/api/records/17359557/access/grants",
+    "access_users": "https://zenodo.org/api/records/17359557/access/users",
+    "access_request": "https://zenodo.org/api/records/17359557/access/request",
+    "access": "https://zenodo.org/api/records/17359557/access",
+    "communities": "https://zenodo.org/api/records/17359557/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17359557/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17359557/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17359557/file-modification",
+    "requests": "https://zenodo.org/api/records/17359557/requests"
+  },
+  "updated": "2025-10-16T07:08:55.323082+00:00",
+  "recid": "17359557",
+  "revision": 4,
+  "files": [
+    {
+      "id": "07b888e4-57fc-49bf-abc8-c8700ea7fbe8",
+      "key": "CeraMIRScan.zip",
+      "size": 10463619033,
+      "checksum": "md5:85a4528b42d4d05ea9fc7d9e3b64ce82",
+      "links": {
+        "self": "https://zenodo.org/api/records/17359557/files/CeraMIRScan.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1291506"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 159,
+    "unique_downloads": 119,
+    "views": 320,
+    "unique_views": 302,
+    "version_downloads": 22,
+    "version_unique_downloads": 22,
+    "version_unique_views": 48,
+    "version_views": 52
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 10463619033,
+    "top_level_files": [
+      {
+        "name": "CeraMIRScan.zip",
+        "size": 10463619033
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:51.687774"
+}

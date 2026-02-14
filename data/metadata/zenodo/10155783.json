@@ -1,0 +1,396 @@
+{
+  "created": "2023-11-20T03:13:04.880744+00:00",
+  "modified": "2023-11-20T03:13:05.542415+00:00",
+  "id": 10155783,
+  "conceptrecid": "10155782",
+  "doi": "10.5281/zenodo.10155783",
+  "conceptdoi": "10.5281/zenodo.10155782",
+  "doi_url": "https://doi.org/10.5281/zenodo.10155783",
+  "metadata": {
+    "title": "Labeled high-resolution orthoimagery time-series of an alluvial river corridor; Elwha River, Washington, USA.",
+    "doi": "10.5281/zenodo.10155783",
+    "publication_date": "2023-11-19",
+    "description": "<h2>Labeled high-resolution orthoimagery time-series of an alluvial river corridor; Elwha River, Washington, USA.</h2><h4>Daniel Buscombe, Marda Science LLC</h4><p>There are two datasets in this data release:</p><p>1. <strong>Model training dataset</strong>. A manually (or semi-manually) labeled image dataset that was used to train and evaluate a machine (deep) learning model designed to identify subaerial accumulations of large wood, alluvial sediment, water, and vegetation in orthoimagery of alluvial river corridors in forested catchments.&nbsp;</p><p>2. <strong>Model output dataset</strong>. A labeled image dataset that uses the aforementioned model to estimate subaerial accumulations of large wood, alluvial sediment, water, and vegetation in a larger orthoimagery dataset of alluvial river corridors in forested catchments.&nbsp;</p><p>All of these label data are derived from raw gridded data that originate from the U.S. Geological Survey (<i>Ritchie et al., 2018</i>).&nbsp;That dataset consists of 14 orthoimages of the Middle Reach (MR, in between the former Aldwell and Mills reservoirs) and 14 corresponding Lower Reach (LR, downstream of the former Mills reservoir) of the Elwha River, Washington, collected between the period 2012-04-07 and 2017-09-22. That orthoimagery was generated using SfM photogrammetry (following <i>Over et al., 2021</i>) using a photographic camera mounted to an aircraft wing. The imagery capture channel change as it evolved under a ~20 Mt sediment pulse initiated by the removal of the two dams. The two reaches are the ~8 km long Middle Reach (MR) and the lower-gradient ~7 km long Lower Reach (LR).&nbsp;</p><p>The orthoimagery have been labeled (pixelwise, either manually or by an automated process) according to the following classes (inter class in the label data in parentheses):</p><p>1. vegetation / other (0)</p><p>2. water (1)</p><p>3. sediment (2)</p><p>4. large wood (3)</p><h3>1. Model training dataset.</h3><p>Imagery was labeled&nbsp;using a combination of the open-source software Doodler (<i>Buscombe et al., 2021</i>; <a href=\"https://github.com/Doodleverse/dash_doodler\">https://github.com/Doodleverse/dash_doodler</a>) and hand-digitization using QGIS at 1:300 scale, rasterizeing the polygons, and gridded and clipped in the same way as all other gridded data.&nbsp;Doodler facilitates relatively labor-free dense multiclass labeling of natural imagery, enabling relatively rapid training dataset creation. The final training dataset consists of 4382 images and corresponding labels, each 1024 x 1024 pixels and representing just over 5% of the total data set. The training data are sampled approximately equally in time and in space among both reaches. All training and validation samples purposefully included all four label classes, to avoid model training and evaluation problems associated with class imbalance (<i>Buscombe and Goldstein, 2022</i>).&nbsp;</p><p>Data are provided in geoTIFF format. The imagery and label grids (imagery) are reprojected to be co-located in the NAD83(2011) / UTM zone 10N projection, and to consist of 0.125 x 0.125m pixels.</p><p>Pixel-wise labels measurements such as these facilitate development and evaluation of image segmentation, image classification, object-based image-analysis (OBIA), and object-in-image detection models, and numerous potential other machine learning models for the general purposes of river corridor classification, description, enumeration, inventory, and process or state quantification. For example this dataset may serve in transfer learning contexts for application in different river or coastal environments or for different tasks or class ontologies.</p><h4>Files:</h4><p>1. Labels_used_for_model_training_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip, 63 MB, label tiffs</p><p>2. Model_<i>training_</i> images1of4.zip, 1.5 GB, imagery tiffs</p><p>3. Model_<i>training_</i> images2of4.zip, 1.5 GB, imagery tiffs</p><p>4. Model_<i>training_</i> images3of4.zip, 1.7 GB, imagery tiffs</p><p>5. Model_<i>training_</i> images4of4.zip, 1.6 GB, imagery tiffs</p><h3>2. Model output dataset.</h3><p>Imagery was labeled using a deep-learning based semantic segmentation model (<i>Buscombe, 2023</i>) trained specifically for the task&nbsp;using the Segmentation Gym (<i>Buscombe and Goldstein, 2022</i>) modeling suite. We use the software package Segmentation Gym (<i>Buscombe and Goldstein, 2022</i>) to fine-tune a Segformer (<i>Xie et al., 2021</i>) deep learning model for semantic image segmentation. We take the instance (i.e. model architecture and trained weights) of the model of <i>Xie et al. (2021)</i>, itself fine-tuned on ADE20k dataset (<i>Zhou et al., 2019</i>) at resolution 512x512 pixels, and fine-tune it on our 1024x1024 pixel training data consisting of 4-class label images.</p><p>The spatial extent of the imagery in the MR is [455157.2494695878122002,5316532.9804129302501678 : 457076.1244695878122002,5323771.7304129302501678] (NAD83(2011) / UTM zone 10N). Imagery width is 15351 pixels and imagery height is 57910 pixels.&nbsp;The spatial extent of the imagery in the LR is [457704.9227139975992031,5326631.3750646486878395 : 459241.6727139975992031,5333311.0000646486878395] (NAD83(2011) / UTM zone 10N). Imagery width is 12294 pixels and imagery height is 53437 pixels.&nbsp;Data are provided in Cloud-Optimzed geoTIFF (COG) format. The imagery and label grids (imagery) are reprojected to be co-located in the NAD83(2011) / UTM zone 10N projection, and to consist of 0.125 x 0.125m pixels. All grids have been clipped to the union of extents of active channel margins during the period of interest.</p><p>Reach-wide pixel-wise measurements such as these facilitate comparison of wood and sediment storage at any scale or location. These data may be useful for studying the morphodynamics of wood-sediment interactions in other geomorphically complex channels, wood storage in channels, the role of wood in ecosystems and conservation or restoration efforts.&nbsp;</p><h4>Files:</h4><p>1. Elwha_MR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip, 9.67 MB, label COGs from Elwha River Middle Reach (MR)</p><p>2. Elwha<i>MR_ imagery_ part1_ of</i>_<i> </i>2.zip, 566 MB, imagery COGs from Elwha River Middle Reach (MR)</p><p>3. Elwha<i>MR_ imagery_ part2_ of</i>_<i> </i>2.zip, 618 MB, imagery COGs from Elwha River Middle Reach (MR)</p><p>3. Elwha_LR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip, 10.96 MB, label COGs from Elwha River Lower Reach (LR)</p><p>4. ElwhaL<i>R_ imagery_ part1_ of</i>_<i> </i>2.zip, 622 MB, imagery COGs from Elwha River Middle Reach (MR)</p><p>5. ElwhaL<i>R_ imagery_ part2_ of</i>_<i> </i>2.zip, 617 MB, imagery COGs from Elwha River Middle Reach (MR)<br>&nbsp;</p><p>This dataset was created using open-source tools of the Doodleverse, a software ecosystem for geoscientific image segmentation, by Daniel Buscombe (<a href=\"https://github.com/dbuscombe-usgs\">https://github.com/dbuscombe-usgs</a>) and Evan Goldstein (<a href=\"https://github.com/ebgoldstein\">https://github.com/ebgoldstein</a>). Thanks to the contributors of the Doodleverse!. Thanks especially Sharon Fitzpatrick (<a href=\"https://github.com/2320sharon\">https://github.com/2320sharon</a>) and Jaycee Favela for contributing labels.&nbsp;</p><h3>References</h3><p>\u2022 Buscombe, D. (2023). <strong>Doodleverse/Segmentation Gym SegFormer models for 4-class (other, water, sediment, wood) segmentation of RGB aerial orthomosaic imagery (v1.0)</strong> [Data set]. Zenodo. <a href=\"https://doi.org/10.5281/zenodo.8172858\">https://doi.org/10.5281/zenodo.8172858</a></p><p>\u2022 Buscombe, D., Goldstein, E. B., Sherwood, C. R., Bodine, C., Brown, J. A., Favela, J., et al. (2021).<strong> Human-in-the-loop segmentation of Earth surface imagery</strong>. Earth and Space Science, 9, e2021EA002085. <a href=\"https://doi.org/10.1029/2021EA002085\">https://doi.org/10.1029/2021EA002085</a></p><p>\u2022 Buscombe, D., &amp; Goldstein, E. B. (2022). <strong>A reproducible and reusable pipeline for segmentation of geoscientific imagery.</strong> Earth and Space Science, 9, e2022EA002332. <a href=\"https://doi.org/10.1029/2022EA002332\">https://doi.org/10.1029/2022EA002332</a> See: <a href=\"https://github.com/Doodleverse/segmentation_gym\">https://github.com/Doodleverse/segmentation_gym</a></p><p>\u2022 Over, J.R., Ritchie, A.C., Kranenburg, C.J., Brown, J.A., Buscombe, D., Noble, T., Sherwood, C.R., Warrick, J.A., and Wernette, P.A., 2021, <strong>Processing coastal imagery with Agisoft Metashape Professional Edition, version 1.6\u2014Structure from motion workflow documentation</strong>: U.S. Geological Survey Open-File Report 2021\u20131039, 46 p., <a href=\"https://doi.org/10.3133/ofr20211039\">https://doi.org/10.3133/ofr20211039</a>.</p><p>\u2022 Ritchie, A.C., Curran, C.A., Magirl, C.S., Bountry, J.A., Hilldale, R.C., Randle, T.J., and Duda, J.J., 2018, <strong>Data in support of 5-year sediment budget and morphodynamic analysis of Elwha River following dam removals</strong>: U.S. Geological Survey data release, <a href=\"https://doi.org/10.5066/F7PG1QWC\">https://doi.org/10.5066/F7PG1QWC</a>.</p><p>\u2022 Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J.M. and Luo, P., 2021. <strong>SegFormer: Simple and efficient design for semantic segmentation with transformers</strong>. Advances in Neural Information Processing Systems, 34, pp.12077-12090.</p><p>\u2022 Zhou, B., Zhao, H., Puig, X., Xiao, T., Fidler, S., Barriuso, A. and Torralba, A., 2019. <strong>Semantic understanding of scenes through the ade20k dataset</strong>. International Journal of Computer Vision, 127, pp.302-321.</p><p><br>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "Doodleverse",
+      "The Doodleverse",
+      "deep learning",
+      "machine learning",
+      "analysis ready dataset",
+      "model ready dataset",
+      "image segmentation",
+      "semantic segmentation",
+      "image classification",
+      "fluvial geomorphology",
+      "geomorphology",
+      "alluvial river",
+      "large wood",
+      "large woody debris",
+      "driftwood",
+      "Elwha River",
+      "Olympic peninsula",
+      "allluvial sediment",
+      "gravelbars",
+      "river science",
+      "river restoration",
+      "logjams",
+      "engineered logjams",
+      "dam",
+      "dam removal"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://zenodo.org/records/8172858",
+        "relation": "requires",
+        "resource_type": "dataset",
+        "scheme": "other"
+      },
+      {
+        "identifier": "https://zenodo.org/records/8172858",
+        "relation": "isRequiredBy",
+        "resource_type": "dataset",
+        "scheme": "other"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "v1.0"
+      }
+    ],
+    "version": "1.0",
+    "references": [
+      "Buscombe, D. (2023). Doodleverse/Segmentation Gym SegFormer models for 4-class (other, water, sediment, wood) segmentation of RGB aerial orthomosaic imagery (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8172858",
+      "Buscombe, D., Goldstein, E. B., Sherwood, C. R., Bodine, C., Brown, J. A., Favela, J., et al. (2021). Human-in-the-loop segmentation of Earth surface imagery. Earth and Space Science, 9, e2021EA002085. https://doi.org/10.1029/2021EA002085",
+      "Buscombe, D., & Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym",
+      "Over, J.R., Ritchie, A.C., Kranenburg, C.J., Brown, J.A., Buscombe, D., Noble, T., Sherwood, C.R., Warrick, J.A., and Wernette, P.A., 2021, Processing coastal imagery with Agisoft Metashape Professional Edition, version 1.6\u2014Structure from motion workflow documentation: U.S. Geological Survey Open-File Report 2021\u20131039, 46 p., https://doi.org/10.3133/ofr20211039.",
+      "Ritchie, A.C., Curran, C.A., Magirl, C.S., Bountry, J.A., Hilldale, R.C., Randle, T.J., and Duda, J.J., 2018, Data in support of 5-year sediment budget and morphodynamic analysis of Elwha River following dam removals: U.S. Geological Survey data release, https://doi.org/10.5066/F7PG1QWC.",
+      "Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J.M. and Luo, P., 2021. SegFormer: Simple and efficient design for semantic segmentation with transformers. Advances in Neural Information Processing Systems, 34, pp.12077-12090.",
+      "Zhou, B., Zhao, H., Puig, X., Xiao, T., Fidler, S., Barriuso, A. and Torralba, A., 2019. Semantic understanding of scenes through the ade20k dataset. International Journal of Computer Vision, 127, pp.302-321."
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10155782"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Labeled high-resolution orthoimagery time-series of an alluvial river corridor; Elwha River, Washington, USA.",
+  "links": {
+    "self": "https://zenodo.org/api/records/10155783",
+    "self_html": "https://zenodo.org/records/10155783",
+    "preview_html": "https://zenodo.org/records/10155783?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10155783",
+    "self_doi": "https://doi.org/10.5281/zenodo.10155783",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10155783",
+    "reserve_doi": "https://zenodo.org/api/records/10155783/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10155782",
+    "parent_html": "https://zenodo.org/records/10155782",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10155782",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10155782",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10155783/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10155783/sequence/default",
+    "files": "https://zenodo.org/api/records/10155783/files",
+    "media_files": "https://zenodo.org/api/records/10155783/media-files",
+    "archive": "https://zenodo.org/api/records/10155783/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10155783/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10155783/versions/latest",
+    "latest_html": "https://zenodo.org/records/10155783/latest",
+    "versions": "https://zenodo.org/api/records/10155783/versions",
+    "draft": "https://zenodo.org/api/records/10155783/draft",
+    "access_links": "https://zenodo.org/api/records/10155783/access/links",
+    "access_grants": "https://zenodo.org/api/records/10155783/access/grants",
+    "access_users": "https://zenodo.org/api/records/10155783/access/users",
+    "access_request": "https://zenodo.org/api/records/10155783/access/request",
+    "access": "https://zenodo.org/api/records/10155783/access",
+    "communities": "https://zenodo.org/api/records/10155783/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10155783/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10155783/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10155783/file-modification",
+    "requests": "https://zenodo.org/api/records/10155783/requests"
+  },
+  "updated": "2023-11-20T03:13:05.542415+00:00",
+  "recid": "10155783",
+  "revision": 4,
+  "files": [
+    {
+      "id": "6a676871-d019-4d64-994a-9ff2e0aaae5f",
+      "key": "Elwha_LR_imagery_part2_of_2.zip",
+      "size": 616576345,
+      "checksum": "md5:19c8182d73e62666ab5f75dee6998f77",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_LR_imagery_part2_of_2.zip/content"
+      }
+    },
+    {
+      "id": "322d010d-5684-4671-87c0-4124121ed8d7",
+      "key": "Elwha_MR_imagery_part2_of_2.zip",
+      "size": 617599012,
+      "checksum": "md5:f16801c5012e5a5a9e8df3720c47c77a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_MR_imagery_part2_of_2.zip/content"
+      }
+    },
+    {
+      "id": "939e1f89-3865-4efa-ba9c-0148d370c346",
+      "key": "Model_training_images1of4.zip",
+      "size": 1494892343,
+      "checksum": "md5:bc06e31bd6aadcf3e1598d94fcd8ae92",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Model_training_images1of4.zip/content"
+      }
+    },
+    {
+      "id": "762c8f3a-d2ff-4c05-bb93-0552fd4972b7",
+      "key": "Model_training_images2of4.zip",
+      "size": 1470706609,
+      "checksum": "md5:4024b873ba3966f0591a0bc87a366d34",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Model_training_images2of4.zip/content"
+      }
+    },
+    {
+      "id": "024b3bb9-ea15-45f2-a56f-a96a256e328e",
+      "key": "Model_training_images3of4.zip",
+      "size": 1726501665,
+      "checksum": "md5:03b94917faa5a57840934d519b6bf06d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Model_training_images3of4.zip/content"
+      }
+    },
+    {
+      "id": "725e9163-9b42-44ad-8458-44969a197b3f",
+      "key": "Model_training_images4of4.zip",
+      "size": 1621905351,
+      "checksum": "md5:69e3e3bdb2c3104f11b1d49a4fc87aea",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Model_training_images4of4.zip/content"
+      }
+    },
+    {
+      "id": "438ea159-0cf5-4732-acd8-90ef61e63cab",
+      "key": "Elwha_LR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+      "size": 10955227,
+      "checksum": "md5:afb2a18f5f45f6ee2d6e768c39979202",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_LR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip/content"
+      }
+    },
+    {
+      "id": "eadbb99a-2ccc-4632-aaf3-acaaa28a1474",
+      "key": "Elwha_MR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+      "size": 9668923,
+      "checksum": "md5:d714bc189e83847dcfcbf4216df3cfcc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_MR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip/content"
+      }
+    },
+    {
+      "id": "78d621f0-d326-4531-a747-8e7c5fb697a5",
+      "key": "Labels_used_for_model_training_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+      "size": 63000021,
+      "checksum": "md5:e3fb69cc0da04c876fefff7584263490",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Labels_used_for_model_training_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip/content"
+      }
+    },
+    {
+      "id": "900cc937-2b41-4841-8eca-678130956d54",
+      "key": "Elwha_LR_imagery_part1_of_2.zip",
+      "size": 621807869,
+      "checksum": "md5:0e95098907c4d52f8d9c4f679ba2db1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_LR_imagery_part1_of_2.zip/content"
+      }
+    },
+    {
+      "id": "09799ba1-4d24-4011-8e4a-81dd996a23d8",
+      "key": "Elwha_MR_imagery_part1_of_2.zip",
+      "size": 565367811,
+      "checksum": "md5:97775604389757683eff8683c4ac1c89",
+      "links": {
+        "self": "https://zenodo.org/api/records/10155783/files/Elwha_MR_imagery_part1_of_2.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 671,
+    "unique_downloads": 653,
+    "views": 355,
+    "unique_views": 327,
+    "version_downloads": 671,
+    "version_unique_downloads": 653,
+    "version_unique_views": 327,
+    "version_views": 355
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 11,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8818981176,
+    "top_level_files": [
+      {
+        "name": "Elwha_LR_imagery_part2_of_2.zip",
+        "size": 616576345
+      },
+      {
+        "name": "Elwha_MR_imagery_part2_of_2.zip",
+        "size": 617599012
+      },
+      {
+        "name": "Model_training_images1of4.zip",
+        "size": 1494892343
+      },
+      {
+        "name": "Model_training_images2of4.zip",
+        "size": 1470706609
+      },
+      {
+        "name": "Model_training_images3of4.zip",
+        "size": 1726501665
+      },
+      {
+        "name": "Model_training_images4of4.zip",
+        "size": 1621905351
+      },
+      {
+        "name": "Elwha_LR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+        "size": 10955227
+      },
+      {
+        "name": "Elwha_MR_labels_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+        "size": 9668923
+      },
+      {
+        "name": "Labels_used_for_model_training_Buscombe_Labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_Elwha_River_Washington_USA.zip",
+        "size": 63000021
+      },
+      {
+        "name": "Elwha_LR_imagery_part1_of_2.zip",
+        "size": 621807869
+      },
+      {
+        "name": "Elwha_MR_imagery_part1_of_2.zip",
+        "size": 565367811
+      }
+    ],
+    "zip_contents": {
+      "elwha_mr_labels_buscombe_labeled_high_resolution_orthoimagery_time_series_of_an_alluvial_river_corridor_elwha_river_washington_usa.zip": {
+        "total_files": 14,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 16017342,
+        "file_types": {
+          ".tif": 14
+        },
+        "imaging_file_count": 14,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "elwha_mr_20170922.tif",
+          "elwha_mr_20160930.tif",
+          "elwha_mr_20160714.tif",
+          "elwha_mr_20160111.tif",
+          "elwha_mr_20150923.tif",
+          "elwha_mr_20150303.tif",
+          "elwha_mr_20140930.tif",
+          "elwha_mr_20140201.tif",
+          "elwha_mr_20130919.tif",
+          "elwha_mr_20130430.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "elwha_mr_20170922.tif",
+      "elwha_mr_20160930.tif",
+      "elwha_mr_20160714.tif",
+      "elwha_mr_20160111.tif",
+      "elwha_mr_20150923.tif",
+      "elwha_mr_20150303.tif",
+      "elwha_mr_20140930.tif",
+      "elwha_mr_20140201.tif",
+      "elwha_mr_20130919.tif",
+      "elwha_mr_20130430.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/Doodleverse/dash_doodler",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/dbuscombe-usgs",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/ebgoldstein",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/2320sharon",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.8172858\u2022",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2021EA002085\u2022",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym\u2022",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.3133/ofr20211039.\u2022",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.5066/F7PG1QWC.\u2022",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:57.129483"
+}

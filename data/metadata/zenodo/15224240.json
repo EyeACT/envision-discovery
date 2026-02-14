@@ -1,0 +1,396 @@
+{
+  "created": "2025-10-23T09:57:15.415555+00:00",
+  "modified": "2025-12-12T01:39:33.990689+00:00",
+  "id": 15224240,
+  "conceptrecid": "15224239",
+  "doi": "10.5281/zenodo.15224240",
+  "conceptdoi": "10.5281/zenodo.15224239",
+  "doi_url": "https://doi.org/10.5281/zenodo.15224240",
+  "metadata": {
+    "title": "A Mycelium Dataset with Edge-Precise Annotation for Semantic Segmentation",
+    "doi": "10.5281/zenodo.15224240",
+    "publication_date": "2025-10",
+    "description": "<p><span lang=\"EN-GB\">This dataset not only offers precise edge segmentation annotations but also establishes a foundational resource for models aimed at enhancing the accuracy of segmentation capabilities related to mycelium edge morphology, thereby serving as a valuable asset in the realms of computer vision and mycology.MyceliumSeg</span><span lang=\"EN-GB\"><span lang=\"EN-US\">&nbsp;is the first publicly available mycelium segmentation dataset with precise edge annotations, filling a critical gap in this research area.</span></span></p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yuan, Qianguang",
+        "affiliation": "Wuhan University of Technology",
+        "orcid": "0009-0006-2691-7564"
+      },
+      {
+        "name": "Liu, Weizhen",
+        "affiliation": "Wuhan University of Technology",
+        "orcid": "0009-0009-0535-328X"
+      },
+      {
+        "name": "Liu, Yunfei",
+        "affiliation": "Jilin Agricultural University",
+        "orcid": "0009-0007-4437-0686"
+      },
+      {
+        "name": "Li, Pin",
+        "affiliation": "Jilin Agricultural University"
+      },
+      {
+        "name": "Liu, Yuxuan",
+        "affiliation": "Jilin Agricultural University"
+      },
+      {
+        "name": "Yuan, Xiaohui",
+        "affiliation": "Yazhouwan National Laboratory"
+      },
+      {
+        "name": "Dong, Nanqing",
+        "affiliation": "Shanghai Artificial Intelligence Laboratory"
+      },
+      {
+        "name": "Xiong, Shengwu",
+        "affiliation": "Interdisciplinary Artificial Intelligence Research Institute, Wuhan College"
+      },
+      {
+        "name": "Fu, Yongping",
+        "affiliation": "Jilin Agricultural University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41597-025-06265-1",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "issued",
+        "description": "Scientific Data"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/yuanqianguang/MyceliumSeg-benchmark",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Scientific Data"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15224239"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Mycelium Dataset with Edge-Precise Annotation for Semantic Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/15224240",
+    "self_html": "https://zenodo.org/records/15224240",
+    "preview_html": "https://zenodo.org/records/15224240?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15224240",
+    "self_doi": "https://doi.org/10.5281/zenodo.15224240",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15224240",
+    "reserve_doi": "https://zenodo.org/api/records/15224240/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15224239",
+    "parent_html": "https://zenodo.org/records/15224239",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15224239",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15224239",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15224240/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15224240/sequence/default",
+    "files": "https://zenodo.org/api/records/15224240/files",
+    "media_files": "https://zenodo.org/api/records/15224240/media-files",
+    "archive": "https://zenodo.org/api/records/15224240/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15224240/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15224240/versions/latest",
+    "latest_html": "https://zenodo.org/records/15224240/latest",
+    "versions": "https://zenodo.org/api/records/15224240/versions",
+    "draft": "https://zenodo.org/api/records/15224240/draft",
+    "access_links": "https://zenodo.org/api/records/15224240/access/links",
+    "access_grants": "https://zenodo.org/api/records/15224240/access/grants",
+    "access_users": "https://zenodo.org/api/records/15224240/access/users",
+    "access_request": "https://zenodo.org/api/records/15224240/access/request",
+    "access": "https://zenodo.org/api/records/15224240/access",
+    "communities": "https://zenodo.org/api/records/15224240/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15224240/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15224240/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15224240/file-modification",
+    "requests": "https://zenodo.org/api/records/15224240/requests"
+  },
+  "updated": "2025-12-12T01:39:33.990689+00:00",
+  "recid": "15224240",
+  "revision": 12,
+  "files": [
+    {
+      "id": "1ea5c5bc-1b44-45a1-a7e0-c5d774dbf62b",
+      "key": "labeled-GL.zip",
+      "size": 1547682076,
+      "checksum": "md5:1bf2703f74f03bcfdbc81fb93be5fd38",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/labeled-GL.zip/content"
+      }
+    },
+    {
+      "id": "56c5ab34-ef4b-4d64-bdba-5cce2bcd11bc",
+      "key": "unlabeled-GL7.zip",
+      "size": 6076012925,
+      "checksum": "md5:3b1a8d8d56185402afe3f0f754d5c702",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL7.zip/content"
+      }
+    },
+    {
+      "id": "c9775865-6363-40a5-b1ab-8743a30416a9",
+      "key": "labeled-GS_PO_TS.zip",
+      "size": 127132914,
+      "checksum": "md5:dc7b89e8853911bc8a7dda12c0ac230f",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/labeled-GS_PO_TS.zip/content"
+      }
+    },
+    {
+      "id": "a9643549-55ba-45de-b0c1-c4e7c724e727",
+      "key": "unlabeled-GL2.zip",
+      "size": 6169536689,
+      "checksum": "md5:2b282f20c64aae982574228ff1c9fb4b",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL2.zip/content"
+      }
+    },
+    {
+      "id": "30bb64fe-b346-4423-a2e7-f4af216297c4",
+      "key": "unlabeled-GL3.zip",
+      "size": 6056037918,
+      "checksum": "md5:57d475d734b551fd33ce8b498caada70",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL3.zip/content"
+      }
+    },
+    {
+      "id": "9e2cf523-cac4-42ca-8099-e17cd2817a7f",
+      "key": "unlabeled-GL4.zip",
+      "size": 6102287542,
+      "checksum": "md5:9b6f8e5739b5384b2d510ef2954ab3c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL4.zip/content"
+      }
+    },
+    {
+      "id": "a8788976-cf6f-4fde-b08d-59cd541d370a",
+      "key": "unlabeled-GL6.zip",
+      "size": 6099754615,
+      "checksum": "md5:183c537a21475d1c6f24748ea8067ce4",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL6.zip/content"
+      }
+    },
+    {
+      "id": "a3621527-70fa-4b8f-9133-47c27f37f8bb",
+      "key": "unlabeled-GL5.zip",
+      "size": 6065034019,
+      "checksum": "md5:6c8d3a7a77220675c7b770d5f955b5d3",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL5.zip/content"
+      }
+    },
+    {
+      "id": "e0900fc9-626c-4fb9-85f8-99419318163a",
+      "key": "labeled-MYG_PDA_TEMP.zip",
+      "size": 107963748,
+      "checksum": "md5:57a2de079dcb6b45ab825d68ce5d67bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/labeled-MYG_PDA_TEMP.zip/content"
+      }
+    },
+    {
+      "id": "3b02fe0f-a28e-4315-afbe-c9da7e65aa45",
+      "key": "unlabeled-GS_PO_TS.zip",
+      "size": 5918734925,
+      "checksum": "md5:ae2f67d63b472a0ca25bfce53820bdb2",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GS_PO_TS.zip/content"
+      }
+    },
+    {
+      "id": "f486ab10-43f3-49ac-a639-ebc390cff968",
+      "key": "unlabeled-GL1.zip",
+      "size": 12219920832,
+      "checksum": "md5:48122702dc50321c418ecd6bbaa0cc6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/15224240/files/unlabeled-GL1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1302052"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 170,
+    "unique_downloads": 141,
+    "views": 155,
+    "unique_views": 132,
+    "version_downloads": 170,
+    "version_unique_downloads": 141,
+    "version_unique_views": 132,
+    "version_views": 155
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 11,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 56490098203,
+    "top_level_files": [
+      {
+        "name": "labeled-GL.zip",
+        "size": 1547682076
+      },
+      {
+        "name": "unlabeled-GL7.zip",
+        "size": 6076012925
+      },
+      {
+        "name": "labeled-GS_PO_TS.zip",
+        "size": 127132914
+      },
+      {
+        "name": "unlabeled-GL2.zip",
+        "size": 6169536689
+      },
+      {
+        "name": "unlabeled-GL3.zip",
+        "size": 6056037918
+      },
+      {
+        "name": "unlabeled-GL4.zip",
+        "size": 6102287542
+      },
+      {
+        "name": "unlabeled-GL6.zip",
+        "size": 6099754615
+      },
+      {
+        "name": "unlabeled-GL5.zip",
+        "size": 6065034019
+      },
+      {
+        "name": "labeled-MYG_PDA_TEMP.zip",
+        "size": 107963748
+      },
+      {
+        "name": "unlabeled-GS_PO_TS.zip",
+        "size": 5918734925
+      },
+      {
+        "name": "unlabeled-GL1.zip",
+        "size": 12219920832
+      }
+    ],
+    "zip_contents": {
+      "labeled-gs_po_ts.zip": {
+        "total_files": 134,
+        "total_directories": 10,
+        "total_uncompressed_bytes": 127793237,
+        "file_types": {
+          ".jpg": 60,
+          ".png": 60
+        },
+        "imaging_file_count": 120,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "labeled-gs_po_ts/gs/image/00018429.jpg",
+          "__macosx/labeled-gs_po_ts/gs/image/._00018429.jpg",
+          "labeled-gs_po_ts/gs/image/00018428.jpg",
+          "__macosx/labeled-gs_po_ts/gs/image/._00018428.jpg",
+          "labeled-gs_po_ts/gs/image/00018437.jpg",
+          "__macosx/labeled-gs_po_ts/gs/image/._00018437.jpg",
+          "labeled-gs_po_ts/gs/image/00018436.jpg",
+          "__macosx/labeled-gs_po_ts/gs/image/._00018436.jpg",
+          "labeled-gs_po_ts/gs/image/00018434.jpg",
+          "__macosx/labeled-gs_po_ts/gs/image/._00018434.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "labeled-myg_pda_temp.zip": {
+        "total_files": 110,
+        "total_directories": 9,
+        "total_uncompressed_bytes": 108536973,
+        "file_types": {
+          ".jpg": 50,
+          ".png": 50
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "myg/image/00018461.jpg",
+          "__macosx/myg/image/._00018461.jpg",
+          "myg/image/00018460.jpg",
+          "__macosx/myg/image/._00018460.jpg",
+          "myg/image/00018462.jpg",
+          "__macosx/myg/image/._00018462.jpg",
+          "myg/image/00018463.jpg",
+          "__macosx/myg/image/._00018463.jpg",
+          "myg/image/00018467.jpg",
+          "__macosx/myg/image/._00018467.jpg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "labeled-gs_po_ts/gs/image/00018429.jpg",
+      "__macosx/labeled-gs_po_ts/gs/image/._00018429.jpg",
+      "labeled-gs_po_ts/gs/image/00018428.jpg",
+      "__macosx/labeled-gs_po_ts/gs/image/._00018428.jpg",
+      "labeled-gs_po_ts/gs/image/00018437.jpg",
+      "__macosx/labeled-gs_po_ts/gs/image/._00018437.jpg",
+      "labeled-gs_po_ts/gs/image/00018436.jpg",
+      "__macosx/labeled-gs_po_ts/gs/image/._00018436.jpg",
+      "labeled-gs_po_ts/gs/image/00018434.jpg",
+      "__macosx/labeled-gs_po_ts/gs/image/._00018434.jpg",
+      "myg/image/00018461.jpg",
+      "__macosx/myg/image/._00018461.jpg",
+      "myg/image/00018460.jpg",
+      "__macosx/myg/image/._00018460.jpg",
+      "myg/image/00018462.jpg",
+      "__macosx/myg/image/._00018462.jpg",
+      "myg/image/00018463.jpg",
+      "__macosx/myg/image/._00018463.jpg",
+      "myg/image/00018467.jpg",
+      "__macosx/myg/image/._00018467.jpg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:37.982950"
+}

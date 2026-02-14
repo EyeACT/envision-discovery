@@ -1,0 +1,163 @@
+{
+  "created": "2020-12-17T06:21:00.553507+00:00",
+  "modified": "2020-12-17T12:27:28.814419+00:00",
+  "id": 4326452,
+  "conceptrecid": "4326451",
+  "doi": "10.5281/zenodo.4326452",
+  "conceptdoi": "10.5281/zenodo.4326451",
+  "doi_url": "https://doi.org/10.5281/zenodo.4326452",
+  "metadata": {
+    "title": "BRCA1- and BRCA2- mutation associated transcriptome landscapes in breast and ovarian cancers: ml-SOM results",
+    "doi": "10.5281/zenodo.4326452",
+    "publication_date": "2020-12-16",
+    "description": "<p>This is the submission accompanying raw result files for multiple-layer SOM (ml-SOM) analysis for the&nbsp;paper&nbsp; &quot;Transcriptome patterns of BRCA1- and BRCA2- mutated breast and ovarian cancers&quot;.</p>\n\n<p>The dataset&nbsp;contains&nbsp;the results of the ml-SOM analysis of RNA-sequencing data from TCGA-OV (ovarian cancer) and TCGA-BRCA (breast cancer) projects.&nbsp;</p>\n\n<p>The dataset is organized as follows:</p>\n\n<ul>\n\t<li>Folder <strong>&quot;12.BC.40 - Results&quot; </strong>- ml-SOM analysis of TCGA-BRCA (breast cancer)&nbsp;dataset</li>\n\t<li>Folder <strong>&quot;12.OV.40 - Results&quot;</strong> - ml-SOM analysis of TCGA-OV (ovarian cancer) dataset</li>\n\t<li>File <strong>&quot;12.BC.40.RData&quot;</strong> - R data file that contains ml-SOM environment for breast cancer</li>\n\t<li>File <strong>&quot;12.OV.40.RData&quot;</strong> - R data file that contains ml-SOM environment for breast cancer</li>\n</ul>\n\n<p>For detailed instructions on browsing the results and their interpretation please refer to the oposSOM package manual [1], as well as original publications [2-4].&nbsp;</p>\n\n<p><strong>References</strong></p>\n\n<ol>\n\t<li>Henry Loeffler-Wirth, Hoang Thanh Le and Martin Kalcheropos. SOM.Comprehensive analysis of transcriptome data.&nbsp;DOI:&nbsp;<a href=\"https://doi.org/doi:10.18129/B9.bioc.oposSOM\">10.18129/B9.bioc.oposSOM</a>&nbsp;</li>\n\t<li>L&ouml;ffler-Wirth H, Kalcher M, Binder H.&nbsp;oposSOM: R-package for high-dimensional portraying of genome-wide expression landscapes on Bioconductor. Bioinformatics. 2015 Oct 1;31(19):3225-7. DOI: 10.1093/bioinformatics/btv342. Epub 2015 Jun 10.</li>\n\t<li>Wirth H, von Bergen M, Binder H.&nbsp;Mining SOM expression portraits: feature selection and integrating concepts of molecular function.&nbsp;BioData Min. 2012 Oct 8;5(1):18. DOI: 10.1186/1756-0381-5-18.</li>\n\t<li>Wirth H, L&ouml;ffler M, von Bergen M, Binder H.&nbsp;Expression cartography of human tissues using self-organizing maps.&nbsp;BMC Bioinformatics. 2011 Jul 27;12:306. DOI: 10.1186/1471-2105-12-306.</li>\n</ol>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Arsen Arakelyan",
+        "affiliation": "Institute of Molecular Biology NAS RA",
+        "orcid": "0000-0002-6851-1056"
+      },
+      {
+        "name": "Maria Nikoghosyan",
+        "affiliation": "Institute of Molecular Biology NAS RA"
+      },
+      {
+        "name": "Siras Hakobyan",
+        "affiliation": "Institute of Molecular Biology NAS RA"
+      },
+      {
+        "name": "Arman Simonyan",
+        "affiliation": "Institute of Molecular Biology NAS RA"
+      },
+      {
+        "name": "LIlit Nersisyan",
+        "affiliation": "Institute of Molecular Biology NAS RA",
+        "orcid": "0000-0001-8525-420X"
+      },
+      {
+        "name": "Hans Binder",
+        "affiliation": "IZBI, University of Leipzig",
+        "orcid": "0000-0002-2242-4678"
+      }
+    ],
+    "keywords": [
+      "BRCA1",
+      "BRCA2",
+      "somatic and germline mutations",
+      "breast cancer",
+      "ovarian cancer",
+      "transcriptome portrayal",
+      "multi-layer self-organizing maps"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4326451"
+          }
+        }
+      ]
+    }
+  },
+  "title": "BRCA1- and BRCA2- mutation associated transcriptome landscapes in breast and ovarian cancers: ml-SOM results",
+  "links": {
+    "self": "https://zenodo.org/api/records/4326452",
+    "self_html": "https://zenodo.org/records/4326452",
+    "preview_html": "https://zenodo.org/records/4326452?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4326452",
+    "self_doi": "https://doi.org/10.5281/zenodo.4326452",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4326452",
+    "reserve_doi": "https://zenodo.org/api/records/4326452/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4326451",
+    "parent_html": "https://zenodo.org/records/4326451",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4326451",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4326451",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4326452/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4326452/sequence/default",
+    "files": "https://zenodo.org/api/records/4326452/files",
+    "media_files": "https://zenodo.org/api/records/4326452/media-files",
+    "archive": "https://zenodo.org/api/records/4326452/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4326452/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4326452/versions/latest",
+    "latest_html": "https://zenodo.org/records/4326452/latest",
+    "versions": "https://zenodo.org/api/records/4326452/versions",
+    "draft": "https://zenodo.org/api/records/4326452/draft",
+    "access_links": "https://zenodo.org/api/records/4326452/access/links",
+    "access_grants": "https://zenodo.org/api/records/4326452/access/grants",
+    "access_users": "https://zenodo.org/api/records/4326452/access/users",
+    "access_request": "https://zenodo.org/api/records/4326452/access/request",
+    "access": "https://zenodo.org/api/records/4326452/access",
+    "communities": "https://zenodo.org/api/records/4326452/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4326452/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4326452/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4326452/file-modification",
+    "requests": "https://zenodo.org/api/records/4326452/requests"
+  },
+  "updated": "2020-12-17T12:27:28.814419+00:00",
+  "recid": "4326452",
+  "revision": 2,
+  "files": [
+    {
+      "id": "bbdf0f6e-c1e2-4e43-a029-7e6f2450e543",
+      "key": "BC_OV_SOM.zip",
+      "size": 10856135106,
+      "checksum": "md5:31b356dbf2a1ec67b0b3c731bf137af8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4326452/files/BC_OV_SOM.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "26695"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 125,
+    "unique_downloads": 110,
+    "views": 965,
+    "unique_views": 920,
+    "version_downloads": 125,
+    "version_unique_downloads": 110,
+    "version_unique_views": 920,
+    "version_views": 965
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 10856135106,
+    "top_level_files": [
+      {
+        "name": "BC_OV_SOM.zip",
+        "size": 10856135106
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:56.715974"
+}

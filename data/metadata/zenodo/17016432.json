@@ -1,0 +1,184 @@
+{
+  "created": "2025-09-02T12:21:23.743214+00:00",
+  "modified": "2025-09-02T12:21:25.558890+00:00",
+  "id": 17016432,
+  "conceptrecid": "17016431",
+  "doi": "10.5281/zenodo.17016432",
+  "conceptdoi": "10.5281/zenodo.17016431",
+  "doi_url": "https://doi.org/10.5281/zenodo.17016432",
+  "metadata": {
+    "title": "the central histaminergic system slows visual processing in the retina and lateral geniculate nucleus of awake mice",
+    "doi": "10.5281/zenodo.17016432",
+    "publication_date": "2025-09-01",
+    "description": "<p>This directory contains data sets and codes used in the following paper:</p>\n<p>&nbsp; Tripodi M. and Asari H. (2025)<br>&nbsp; Central histaminergic system reduces response gain and slows visual processing&nbsp;<br>&nbsp; in the retina and lateral geniculate nucleus of awake mice<br>&nbsp; bioRxiv 2024.09.02.610848 (preprint)<br>&nbsp; doi: https://doi.org/10.1101/2024.09.02.610848</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Tripodi, Matteo",
+        "affiliation": "European Molecular Biology Laboratory"
+      },
+      {
+        "name": "Asari, Hiroki",
+        "affiliation": "European Molecular Biology Laboratory",
+        "orcid": "0000-0003-3396-1935"
+      }
+    ],
+    "keywords": [
+      "histaminergic modulation",
+      "Tuberomammillary nucleus",
+      "Lateral geniculate nucleus",
+      "Retinal ganglion cells"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17016431"
+          }
+        }
+      ]
+    }
+  },
+  "title": "the central histaminergic system slows visual processing in the retina and lateral geniculate nucleus of awake mice",
+  "links": {
+    "self": "https://zenodo.org/api/records/17016432",
+    "self_html": "https://zenodo.org/records/17016432",
+    "preview_html": "https://zenodo.org/records/17016432?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17016432",
+    "self_doi": "https://doi.org/10.5281/zenodo.17016432",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17016432",
+    "reserve_doi": "https://zenodo.org/api/records/17016432/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17016431",
+    "parent_html": "https://zenodo.org/records/17016431",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17016431",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17016431",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17016432/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17016432/sequence/default",
+    "files": "https://zenodo.org/api/records/17016432/files",
+    "media_files": "https://zenodo.org/api/records/17016432/media-files",
+    "archive": "https://zenodo.org/api/records/17016432/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17016432/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17016432/versions/latest",
+    "latest_html": "https://zenodo.org/records/17016432/latest",
+    "versions": "https://zenodo.org/api/records/17016432/versions",
+    "draft": "https://zenodo.org/api/records/17016432/draft",
+    "access_links": "https://zenodo.org/api/records/17016432/access/links",
+    "access_grants": "https://zenodo.org/api/records/17016432/access/grants",
+    "access_users": "https://zenodo.org/api/records/17016432/access/users",
+    "access_request": "https://zenodo.org/api/records/17016432/access/request",
+    "access": "https://zenodo.org/api/records/17016432/access",
+    "communities": "https://zenodo.org/api/records/17016432/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17016432/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17016432/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17016432/file-modification",
+    "requests": "https://zenodo.org/api/records/17016432/requests"
+  },
+  "updated": "2025-09-02T12:21:25.558890+00:00",
+  "recid": "17016432",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f1be5af8-da2f-42bc-8cd2-7ccd23c9794a",
+      "key": "TripodiAsari2025-datasets.zip",
+      "size": 322341246,
+      "checksum": "md5:d99525e1481e209e20c8c89082dcb40d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17016432/files/TripodiAsari2025-datasets.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "239672"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 9,
+    "unique_downloads": 9,
+    "views": 47,
+    "unique_views": 43,
+    "version_downloads": 9,
+    "version_unique_downloads": 9,
+    "version_unique_views": 43,
+    "version_views": 47
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 322341246,
+    "top_level_files": [
+      {
+        "name": "TripodiAsari2025-datasets.zip",
+        "size": 322341246
+      }
+    ],
+    "zip_contents": {
+      "tripodiasari2025-datasets.zip": {
+        "total_files": 47,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 397949836,
+        "file_types": {
+          ".mat": 11,
+          ".png": 6,
+          ".tif": 5
+        },
+        "imaging_file_count": 22,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "data/fig1_data.mat",
+          "data/fig4abc_data.mat",
+          "data/fig4k_data.mat",
+          "data/lgn_data.mat",
+          "data/rgc_data.mat",
+          "data/sfig1_data.mat",
+          "data/sfig3abc_data.mat",
+          "data/sfig5ab_data.mat",
+          "data/sfig5_data.mat",
+          "data/sfig6_data.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "data/fig1_data.mat",
+      "data/fig4abc_data.mat",
+      "data/fig4k_data.mat",
+      "data/lgn_data.mat",
+      "data/rgc_data.mat",
+      "data/sfig1_data.mat",
+      "data/sfig3abc_data.mat",
+      "data/sfig5ab_data.mat",
+      "data/sfig5_data.mat",
+      "data/sfig6_data.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1101/2024.09.02.610848",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:04.863952"
+}

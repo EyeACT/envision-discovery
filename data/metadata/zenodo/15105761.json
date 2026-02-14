@@ -1,0 +1,297 @@
+{
+  "created": "2025-03-29T13:37:34.697687+00:00",
+  "modified": "2025-11-10T18:59:16.642048+00:00",
+  "id": 15105761,
+  "conceptrecid": "14333857",
+  "doi": "10.5281/zenodo.15105761",
+  "conceptdoi": "10.5281/zenodo.14333857",
+  "doi_url": "https://doi.org/10.5281/zenodo.15105761",
+  "metadata": {
+    "title": "OCTA-Mosaicking Dataset",
+    "doi": "10.5281/zenodo.15105761",
+    "publication_date": "2025",
+    "description": "<p>This repository includes the following archives:</p>\n<ul>\n<li>OCTA-MosaickingDataset.zip</li>\n<li>Mosaicking_Results.zip</li>\n</ul>\n<p>The file \"<strong>OCTA-MosaickingDataset.zip</strong>\" includes a dataset with 19 sets of superficial capillary plexus OCTA images captured from 10 patients (right and left eyes, except for patient #6, which only includes left eye images). Each set consists of three to five overlapping images covering the area from the optic disc to the retinal temporal region, including the macular area. From these sets, wide-field OCTA mosaics can be constructed.</p>\n<p>Each image covers an area of 6 &times; 6 mm with a resolution of 320 &times; 320 pixels (18.7 &mu;m/pixel). The dataset contains a total of 71 images, all acquired using the Topcon DRI OCT Triton Optical Coherence Tomography capture device. These images were obtained directly from the capture device in a real-world clinical setting. As a result, some OCTA images contain noise or typical motion artifacts inherent to this imaging modality. These artifacts often appear as horizontal lines disrupting the continuity of vertically oriented blood vessels.</p>\n<p>The dataset was approved by the Comit&eacute; de &Eacute;tica da Investigaci&oacute;n de Santiago-Lugo, a committee within the Rede Galega de Comit&eacute;s de &Eacute;tica da Investigaci&oacute;n, under the jurisdiction of the regional government Secretar&iacute;a Xeral T&eacute;cnica da Conseller&iacute;a de Sanidade da Xunta de Galicia. The dataset was constructed in compliance with the tenets of the Helsinki Declaration, and all personal data were fully anonymized prior to inclusion.</p>\n<p>The file \"<strong>Mosaicking_Results.zip</strong>\" contains the mosaic results generated at different stages of an evolutionary method for high-resolution wide-field OCTA image mosaicking. These results were obtained using the aforementioned dataset, which contains the original OCTA images used as input in the method.</p>\n<p>The <strong>code </strong>used to implement the method is publicly available at the following repository: https://github.com/javimdr/OCTA-mosaic&nbsp;</p>\n<p>The dataset, the results, and the mosaicking method are associated with the following <strong>manuscript</strong>:</p>\n<p>J. Mart&iacute;nez-R&iacute;o, E. J. Carmona, D. Cancelas, J. Novo, M. Ortega. <strong>Evolutionary mosaicking for high-resolution wide-field optical coherence tomography angiograph</strong><em><strong>y</strong></em>, <em>Applied Soft Computing</em>, 176, 113145, 2025. doi:&nbsp;<a href=\"https://doi.org/10.1016/j.asoc.2025.113145\">https://doi.org/10.1016/j.asoc.2025.113145</a></p>\n<p><strong>Abstract</strong>: Optical coherence tomography angiography (OCTA) is a noninvasive imaging modality that produces retinal blood flow images. However, the limited field of view (FOV) of typical high-resolution scan poses challenges for comprehensive analysis. This work presents a fully automatic method for generating high-resolution wide-field OCTA mosaics from overlapping scans, addressing the need for wider FOVs without requiring advanced OCTA equipment or manual mosaicking. The proposed approach consists of a three-stage pipeline: an initial mosaic is constructed using correlation-based template matching, refined with an evolutionary algorithm to optimize vascular continuity at seams, and finalized with a blending stage to improve overall quality. Unlike existing methods, our approach avoids keypoint extraction or input image preprocessing, making it robust against noise and artifacts typically present in clinical OCTA images. Using a correlation-based metric that measures the degree of vascular continuity at the seams in each mosaic, we obtained a mean and standard deviation equal to 0.562&plusmn;0.078 (before blending) for all the mosaics analyzed. The proposed method presented robust results, producing high-resolution wide-field OCTA mosaics.</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "de Moura Ramos, Jos\u00e9 Joaquim",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-2050-3786"
+      },
+      {
+        "name": "Novo Buj\u00e1n, Jorge",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-0125-3064"
+      },
+      {
+        "name": "Carmona Su\u00e1rez, Enrique J.",
+        "affiliation": "National University of Distance Education",
+        "orcid": "0000-0002-7487-745X"
+      },
+      {
+        "name": "Ortega Hortas, Marcos",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-2798-0788"
+      }
+    ],
+    "keywords": [
+      "wide-field OCTA",
+      "retinal mosaicking",
+      "multi-image registration",
+      "OCTA"
+    ],
+    "dates": [
+      {
+        "type": "issued"
+      }
+    ],
+    "references": [
+      "J. Mart\u00ednez-R\u00edo, E. J. Carmona, D. Cancelas, J. Novo, M. Ortega. Evolutionary mosaicking for high-resolution wide-field optical coherence tomography angiography, Applied Soft Computing, 176, 113145, 2025. doi: https://doi.org/10.1016/j.asoc.2025.113145"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/javimdr/OCTA-mosaic"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "grants": [
+      {
+        "code": "RTI2018-095894-B-I00",
+        "internal_id": "05r0vyz12::RTI2018-095894-B-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Research project"
+      },
+      {
+        "code": "PID2019-108435RB-I00",
+        "internal_id": "05r0vyz12::PID2019-108435RB-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Research project"
+      },
+      {
+        "code": "TED2021-131201B-I00",
+        "internal_id": "05r0vyz12::TED2021-131201B-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Research project"
+      },
+      {
+        "code": "PDC2022-133132-I00",
+        "internal_id": "05r0vyz12::PDC2022-133132-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Research project"
+      },
+      {
+        "code": "ED431C 2020/24",
+        "internal_id": "0181xnw06::ED431C 2020/24",
+        "funder": {
+          "name": "Xunta de Galicia"
+        },
+        "title": "Research project"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14333857"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCTA-Mosaicking Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15105761",
+    "self_html": "https://zenodo.org/records/15105761",
+    "preview_html": "https://zenodo.org/records/15105761?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15105761",
+    "self_doi": "https://doi.org/10.5281/zenodo.15105761",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15105761",
+    "reserve_doi": "https://zenodo.org/api/records/15105761/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14333857",
+    "parent_html": "https://zenodo.org/records/14333857",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14333857",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14333857",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15105761/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15105761/sequence/default",
+    "files": "https://zenodo.org/api/records/15105761/files",
+    "media_files": "https://zenodo.org/api/records/15105761/media-files",
+    "archive": "https://zenodo.org/api/records/15105761/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15105761/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15105761/versions/latest",
+    "latest_html": "https://zenodo.org/records/15105761/latest",
+    "versions": "https://zenodo.org/api/records/15105761/versions",
+    "draft": "https://zenodo.org/api/records/15105761/draft",
+    "access_links": "https://zenodo.org/api/records/15105761/access/links",
+    "access_grants": "https://zenodo.org/api/records/15105761/access/grants",
+    "access_users": "https://zenodo.org/api/records/15105761/access/users",
+    "access_request": "https://zenodo.org/api/records/15105761/access/request",
+    "access": "https://zenodo.org/api/records/15105761/access",
+    "communities": "https://zenodo.org/api/records/15105761/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15105761/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15105761/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15105761/file-modification",
+    "requests": "https://zenodo.org/api/records/15105761/requests"
+  },
+  "updated": "2025-11-10T18:59:16.642048+00:00",
+  "recid": "15105761",
+  "revision": 8,
+  "files": [
+    {
+      "id": "ada71c77-011c-4904-8e2d-ca557acd4185",
+      "key": "Mosaicking_Results.zip",
+      "size": 92765476,
+      "checksum": "md5:e85abd6f4e2a02651273e0dde2ea2ee9",
+      "links": {
+        "self": "https://zenodo.org/api/records/15105761/files/Mosaicking_Results.zip/content"
+      }
+    },
+    {
+      "id": "b0fd9022-a837-478f-9ce8-ed1e71aa889e",
+      "key": "OCTA-MosaickingDataset.zip",
+      "size": 2832648,
+      "checksum": "md5:0271b3467f65e7cd0d66db89535a398c",
+      "links": {
+        "self": "https://zenodo.org/api/records/15105761/files/OCTA-MosaickingDataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1232138"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 144,
+    "unique_downloads": 139,
+    "views": 258,
+    "unique_views": 229,
+    "version_downloads": 111,
+    "version_unique_downloads": 111,
+    "version_unique_views": 135,
+    "version_views": 153
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 95598124,
+    "top_level_files": [
+      {
+        "name": "Mosaicking_Results.zip",
+        "size": 92765476
+      },
+      {
+        "name": "OCTA-MosaickingDataset.zip",
+        "size": 2832648
+      }
+    ],
+    "zip_contents": {
+      "mosaicking_results.zip": {
+        "total_files": 323,
+        "total_directories": 102,
+        "total_uncompressed_bytes": 100148515,
+        "file_types": {
+          ".png": 322
+        },
+        "imaging_file_count": 322,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "stage1_initial mosaics/without_bounding boxes/1 (left eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/1 (right eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/10 (left eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/10 (right eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/2 (left eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/2 (right eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/3 (left eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/3 (right eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/4 (left eye)/mosaic_1.png",
+          "stage1_initial mosaics/without_bounding boxes/4 (right eye)/mosaic_1.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "octa-mosaickingdataset.zip": {
+        "total_files": 71,
+        "total_directories": 29,
+        "total_uncompressed_bytes": 2821474,
+        "file_types": {
+          ".jpeg": 71
+        },
+        "imaging_file_count": 71,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "patient 10/left eye/angio6centersup.jpeg",
+          "patient 10/left eye/angio6discsup.jpeg",
+          "patient 10/left eye/angio6macsup.jpeg",
+          "patient 10/left eye/angio6tempsup.jpeg",
+          "patient 10/right eye/angio6centersup.jpeg",
+          "patient 10/right eye/angio6discsup.jpeg",
+          "patient 10/right eye/angio6macsup.jpeg",
+          "patient 10/right eye/angio6tempsup.jpeg",
+          "patient 1/left eye/angio6centersup.jpeg",
+          "patient 1/left eye/angio6discsup.jpeg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "stage1_initial mosaics/without_bounding boxes/1 (left eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/1 (right eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/10 (left eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/10 (right eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/2 (left eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/2 (right eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/3 (left eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/3 (right eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/4 (left eye)/mosaic_1.png",
+      "stage1_initial mosaics/without_bounding boxes/4 (right eye)/mosaic_1.png",
+      "patient 10/left eye/angio6centersup.jpeg",
+      "patient 10/left eye/angio6discsup.jpeg",
+      "patient 10/left eye/angio6macsup.jpeg",
+      "patient 10/left eye/angio6tempsup.jpeg",
+      "patient 10/right eye/angio6centersup.jpeg",
+      "patient 10/right eye/angio6discsup.jpeg",
+      "patient 10/right eye/angio6macsup.jpeg",
+      "patient 10/right eye/angio6tempsup.jpeg",
+      "patient 1/left eye/angio6centersup.jpeg",
+      "patient 1/left eye/angio6discsup.jpeg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/javimdr/OCTA-mosaic",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.asoc.2025.113145",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:37.451757"
+}

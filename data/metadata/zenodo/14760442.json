@@ -1,0 +1,250 @@
+{
+  "created": "2025-01-29T08:08:07.272045+00:00",
+  "modified": "2026-01-28T09:14:54.758115+00:00",
+  "id": 14760442,
+  "conceptrecid": "14760441",
+  "doi": "10.5281/zenodo.14760442",
+  "conceptdoi": "10.5281/zenodo.14760441",
+  "doi_url": "https://doi.org/10.5281/zenodo.14760442",
+  "metadata": {
+    "title": "Outer Port of Punta Langosteira (Spain) wave data: 2024-10 - 2025-01",
+    "doi": "10.5281/zenodo.14760442",
+    "publication_date": "2025-01-29",
+    "description": "<p>Wave agitation data from the <a href=\"https://www.google.com/maps/place/43.341927,-8.507792\">Outer Port of Punta Langosteira</a> (A Coru&ntilde;a, Spain), recorded using an <a href=\"https://site.obscape.com/products/wave-monitoring/obs-buoy-400/\">OBS-Buoy400 Wave Buoy</a>.</p>\n<p>Includes significant wave height (Hs), maximum wave height (Hmax), and peak wave period (Tp) from Oct 2024 to Jan 2025.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Alvarellos Gonz\u00e1lez, Alberto",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-3404-3354"
+      },
+      {
+        "name": "Figuero, Andres",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0001-6862-8492"
+      },
+      {
+        "name": "Sande, Jos\u00e9",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-7535-1396"
+      },
+      {
+        "name": "Pe\u00f1a Gonz\u00e1lez, Enrique",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0001-8460-5565"
+      },
+      {
+        "name": "Rabu\u00f1al, Juan R.",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-1253-4419"
+      },
+      {
+        "name": "Carro Fidalgo, Humberto",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-7871-1326"
+      },
+      {
+        "name": "Varela Garc\u00eda, Francisco Alberto",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0001-9705-2154"
+      },
+      {
+        "name": "Cedron, Francisco",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-6962-4749"
+      },
+      {
+        "name": "Mato-Abad, Virginia",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0001-7161-4382"
+      },
+      {
+        "name": "Rodriguez-Ya\u00f1ez, Santiago",
+        "affiliation": "Universidade da Coru\u00f1a",
+        "orcid": "0000-0002-6781-7838"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01/tree/v1.0.0",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "collected",
+        "description": "Data range",
+        "start": "2024-10-22",
+        "end": "2025-01-09"
+      }
+    ],
+    "version": "v1.0.0",
+    "custom": {
+      "code:codeRepository": "https://github.com/aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01",
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "grants": [
+      {
+        "code": "PID2020-112794RB-I00",
+        "internal_id": "05r0vyz12::PID2020-112794RB-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Herramientas predictivas para la toma de decisiones en la gesti\u00f3n portuaria basadas en Machine Learning. Inclusi\u00f3n de criterios de permanencia en atraque, onda larga y rebase"
+      },
+      {
+        "code": "PRE2021- 100141",
+        "internal_id": "05r0vyz12::PRE2021- 100141",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "FPI predoctoral grant from the Spanish Ministry of Science and Innovation [grant number PRE2021- 100141, funded by MCIN/AEI/ 10.13039/501100011033 and FSE+\u201cFondo Social Europeo Plus\u201d]."
+      },
+      {
+        "code": "PID2023-149956OB-I00",
+        "internal_id": "05r0vyz12::PID2023-149956OB-I00",
+        "funder": {
+          "name": "Ministerio de Ciencia, Innovaci\u00f3n y Universidades"
+        },
+        "title": "Puertos seguros y eficientes: gestion integral del riesgo operacional mediante monitorizacion, tecnicas avanzadas y machine learning. Aplicacion en A Coru\u00f1a, Ferrol y Malpica"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14760441"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Outer Port of Punta Langosteira (Spain) wave data: 2024-10 - 2025-01",
+  "links": {
+    "self": "https://zenodo.org/api/records/14760442",
+    "self_html": "https://zenodo.org/records/14760442",
+    "preview_html": "https://zenodo.org/records/14760442?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14760442",
+    "self_doi": "https://doi.org/10.5281/zenodo.14760442",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14760442",
+    "reserve_doi": "https://zenodo.org/api/records/14760442/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14760441",
+    "parent_html": "https://zenodo.org/records/14760441",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14760441",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14760441",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14760442/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14760442/sequence/default",
+    "files": "https://zenodo.org/api/records/14760442/files",
+    "media_files": "https://zenodo.org/api/records/14760442/media-files",
+    "archive": "https://zenodo.org/api/records/14760442/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14760442/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14760442/versions/latest",
+    "latest_html": "https://zenodo.org/records/14760442/latest",
+    "versions": "https://zenodo.org/api/records/14760442/versions",
+    "draft": "https://zenodo.org/api/records/14760442/draft",
+    "access_links": "https://zenodo.org/api/records/14760442/access/links",
+    "access_grants": "https://zenodo.org/api/records/14760442/access/grants",
+    "access_users": "https://zenodo.org/api/records/14760442/access/users",
+    "access_request": "https://zenodo.org/api/records/14760442/access/request",
+    "access": "https://zenodo.org/api/records/14760442/access",
+    "communities": "https://zenodo.org/api/records/14760442/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14760442/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14760442/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14760442/file-modification",
+    "requests": "https://zenodo.org/api/records/14760442/requests"
+  },
+  "updated": "2026-01-28T09:14:54.758115+00:00",
+  "recid": "14760442",
+  "revision": 28,
+  "files": [
+    {
+      "id": "834b8b70-5746-447d-b607-c5757acef27e",
+      "key": "aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01-v1.0.0.zip",
+      "size": 2383381,
+      "checksum": "md5:61c5b558627fc9e3fc389fd5c72fff4b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14760442/files/aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01-v1.0.0.zip/content"
+      }
+    }
+  ],
+  "swh": {
+    "swhid": "swh:1:dir:cc6701c920647fd833f9b61619bf47120e4b7e31;origin=https://doi.org/10.5281/zenodo.14760441;visit=swh:1:snp:ac2cbae9dabef654da91b8d72da14c80a6016731;anchor=swh:1:rel:8a7cb278a870110720298b683a744e5576dfbc28;path=aalvarell-langosteira-outer-port-wave-data-2024-10-to-2025-01-d5d8bd7"
+  },
+  "owners": [
+    {
+      "id": "243279"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 18,
+    "unique_downloads": 18,
+    "views": 163,
+    "unique_views": 129,
+    "version_downloads": 18,
+    "version_unique_downloads": 18,
+    "version_unique_views": 129,
+    "version_views": 163
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2383381,
+    "top_level_files": [
+      {
+        "name": "aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01-v1.0.0.zip",
+        "size": 2383381
+      }
+    ],
+    "zip_contents": {
+      "aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01-v1.0.0.zip": {
+        "total_files": 5,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 3101643,
+        "file_types": {
+          ".jpg": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "aalvarell-langosteira-outer-port-wave-data-2024-10-to-2025-01-d5d8bd7/img/miciu_aei.jpg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "aalvarell-langosteira-outer-port-wave-data-2024-10-to-2025-01-d5d8bd7/img/miciu_aei.jpg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/aalvarell/langosteira-outer-port-wave-data-2024-10-to-2025-01/tree/v1.0.0"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:11.948008"
+}

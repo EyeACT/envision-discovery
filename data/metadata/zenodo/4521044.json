@@ -1,0 +1,450 @@
+{
+  "created": "2021-06-16T08:39:34.858226+00:00",
+  "modified": "2023-04-02T07:30:16.899910+00:00",
+  "id": 4521044,
+  "conceptrecid": "4521043",
+  "doi": "10.5281/zenodo.4521044",
+  "conceptdoi": "10.5281/zenodo.4521043",
+  "doi_url": "https://doi.org/10.5281/zenodo.4521044",
+  "metadata": {
+    "title": "Topological characterization of the Retinal microvascular nEtwork visualized by portable fuNDus camera (TREND) database",
+    "doi": "10.5281/zenodo.4521044",
+    "publication_date": "2021-06-16",
+    "description": "<p><strong>Introduction</strong></p>\n\n<p><strong>T</strong>opological characterization of the <strong>R</strong>etinal microvascular n<strong>E</strong>twork visualized by portable fu<strong>ND</strong>us camera (<strong>TREND</strong>) is a database of digital color eye fundus images created by medical professionals of the Faculty of Medicine of the University of Montenegro in 2020.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Purpose</strong></p>\n\n<p>1) to provide a standard that defines normal retinal anatomy and microvascular geometry as it appears when visualized by the portable fundus camera</p>\n\n<p>2) to help the development of new methods for stratification of the risk for the development of various eye diseases, as well as systemic diseases that affect microvasculature</p>\n\n<p>3) to aid the development of biomarkers of accelerated aging</p>\n\n<p>4) to provide a standard that can be used to develop software for segmentation of retinal microvasculature, grading the quality of retinal digital images, and computer-aided diagnosis of systemic and chronic diseases.</p>\n\n<p>All color digital images were acquired with a hand-held portable, non-mydriatic MiiS HORUS Scope DEC 200 with 45&ordm; FOV and 2560 X 1920 pixel resolution.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Data</strong></p>\n\n<p>The TREND public database contains 72 color fundus images of healthy young subjects. Each image is associated with a corresponding binarized image of the manually segmented microvascular network. A set of poor quality images is also included. For comparison of the microvascular geometry, an additional set of 10 digital color fundus images of older healthy subjects is included. Each of these images has its corresponding segmented image. In addition, and a set of low quality images captured on healthy older subjects is also included.</p>\n\n<table>\n\t<caption>Inclusion and Exclusion criteria</caption>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><strong>HEALTHY YOUNG</strong></td>\n\t\t\t<td><strong>HEALTHY OLD</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>Inclusion Criteria</strong></td>\n\t\t\t<td><strong>Inclusion Criteria</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- age between 18 and 25 years</td>\n\t\t\t<td>- age 55 or older</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- no history of <em>any</em> chronic systemic disease requiring medical management</td>\n\t\t\t<td>- negative history of <em>poorly controlled</em> systemic illness (such as diabetes mellitus, coronary artery disease, cerebrovascular disease, or hypertension),</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>-&nbsp;negative history of cancer, stroke, dementia or other neurologic disease</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><strong>Exclusion criteria</strong></td>\n\t\t\t<td><strong>Exclusion criteria</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- presence of high myopia greater than -5 diopters (D)</td>\n\t\t\t<td>- presence of high myopia greater than -5 diopters (D)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- opacity of clear eye media preventing good quality imaging of the fundus</td>\n\t\t\t<td>\n\t\t\t<p>- opacity of clear eye media preventing good quality imaging of the fundus</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- pathologic changes of retina interfering with the segmentation of retinal microvasculature in the affected area</td>\n\t\t\t<td>- pathologic changes of retina interfering with the segmentation of retinal microvasculature in the affected area</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- current acute illness</td>\n\t\t\t<td>- current acute illness</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- current alcohol or drug abuse</td>\n\t\t\t<td>- current alcohol or drug abuse</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>- uncompensated psychiatric disease</td>\n\t\t\t<td>- uncompensated psychiatric disease</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Files:</p>\n\n<p>1_HEALTHY YOUNG RAW_GOOD QUALITY (72 images in tif format)</p>\n\n<p>2_HEALTHY YOUNG SEGMENTED (72 images in png format)</p>\n\n<p>3_HEALTHY YOUNG RAW _BAD QUALITY (14 images in tif format)</p>\n\n<p>4_HEALTHY OLD RAW_GOOD QUALITY (10 images in tif format)</p>\n\n<p>5_HEALTHY OLD SEGMENTED (10 images in png format)</p>\n\n<p>6_HEALTHY OLD RAW_BAD QUALITY (8 images in tif format)</p>\n\n<p>7_Image quality criteria (xlsx&nbsp;fromat)</p>\n\n<p>8_Associated data&nbsp;(xlsx&nbsp;fromat)</p>\n\n<p>&nbsp;</p>\n\n<p><strong>References</strong></p>\n\n<p>The database can be used freely for research purposes and it is released under Creative Commons 4.0 Attribution License (<a href=\"https://creativecommons.org/licenses/by/4.0/\">https://creativecommons.org/licenses/by/4.0/</a>).</p>\n\n<p>Detailed description of this database is provided in the following article:</p>\n\n<p>Popovic N, Vujosevic S, Radunovi\u0107 M, Radunovi\u0107 M, Popovic T (2021) TREND database: Retinal images of healthy young subjects visualized by a portable digital non-mydriatic fundus camera. PLoS ONE 16(7): e0254918. https://doi.org/ 10.1371/journal.pone.0254918</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Popovic, Natasa",
+        "affiliation": "Faculty of Medicine, University of Montenegro, Podgorica, Montenegro",
+        "orcid": "0000-0002-9769-1543"
+      },
+      {
+        "name": "Vujosevic, Stela",
+        "affiliation": "Eye Clinic, IRCCS MultiMedica, Milan, Italy",
+        "orcid": "0000-0001-6773-9967"
+      },
+      {
+        "name": "Radunovic, Miroslav",
+        "affiliation": "Faculty of Medicine, University of Montenegro, Podgorica, Montenegro"
+      },
+      {
+        "name": "Radunovic, Miodrag",
+        "affiliation": "Faculty of Medicine, University of Montenegro, Podgorica, Montenegro"
+      },
+      {
+        "name": "Popovic, Tomo",
+        "affiliation": "Faculty for Information Systems and Technologies, University of Donja Gorica, Podgorica, Montenegro",
+        "orcid": "0000-0001-5245-3691"
+      }
+    ],
+    "keywords": [
+      "healthy retina",
+      "microvascular network",
+      "portable fundus camera",
+      "age"
+    ],
+    "version": "1.1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4521043"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Topological characterization of the Retinal microvascular nEtwork visualized by portable fuNDus camera (TREND) database",
+  "links": {
+    "self": "https://zenodo.org/api/records/4521044",
+    "self_html": "https://zenodo.org/records/4521044",
+    "preview_html": "https://zenodo.org/records/4521044?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4521044",
+    "self_doi": "https://doi.org/10.5281/zenodo.4521044",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4521044",
+    "reserve_doi": "https://zenodo.org/api/records/4521044/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4521043",
+    "parent_html": "https://zenodo.org/records/4521043",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4521043",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4521043",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4521044/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4521044/sequence/default",
+    "files": "https://zenodo.org/api/records/4521044/files",
+    "media_files": "https://zenodo.org/api/records/4521044/media-files",
+    "archive": "https://zenodo.org/api/records/4521044/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4521044/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4521044/versions/latest",
+    "latest_html": "https://zenodo.org/records/4521044/latest",
+    "versions": "https://zenodo.org/api/records/4521044/versions",
+    "draft": "https://zenodo.org/api/records/4521044/draft",
+    "access_links": "https://zenodo.org/api/records/4521044/access/links",
+    "access_grants": "https://zenodo.org/api/records/4521044/access/grants",
+    "access_users": "https://zenodo.org/api/records/4521044/access/users",
+    "access_request": "https://zenodo.org/api/records/4521044/access/request",
+    "access": "https://zenodo.org/api/records/4521044/access",
+    "communities": "https://zenodo.org/api/records/4521044/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4521044/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4521044/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4521044/file-modification",
+    "requests": "https://zenodo.org/api/records/4521044/requests"
+  },
+  "updated": "2023-04-02T07:30:16.899910+00:00",
+  "recid": "4521044",
+  "revision": 6,
+  "files": [
+    {
+      "id": "25bf600d-3166-4bfd-ada5-7135bc4eb30c",
+      "key": "4_HEALTHY OLD RAW_GOOD QUALITY.zip",
+      "size": 32187166,
+      "checksum": "md5:c8ecf6bf819de44804adf72f6f683480",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/4_HEALTHY OLD RAW_GOOD QUALITY.zip/content"
+      }
+    },
+    {
+      "id": "80c0e57b-41a8-4c55-a52c-81a474e7a661",
+      "key": "8_Associated data.xlsx",
+      "size": 14643,
+      "checksum": "md5:8a5519356c54f390ba446a78c781ee00",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/8_Associated data.xlsx/content"
+      }
+    },
+    {
+      "id": "e3621b9d-8a9f-40b2-8b9f-91609a019f2a",
+      "key": "3_HEALTHY YOUNG RAW _BAD QUALITY.zip",
+      "size": 49891942,
+      "checksum": "md5:88175aa771d2b8022b31f576b728e705",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/3_HEALTHY YOUNG RAW _BAD QUALITY.zip/content"
+      }
+    },
+    {
+      "id": "974a5351-f102-4822-9c79-a733e600e704",
+      "key": "6_HEALTHY OLD RAW_BAD QUALITY.zip",
+      "size": 23692661,
+      "checksum": "md5:2759607637cc2e3a462aba9645700945",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/6_HEALTHY OLD RAW_BAD QUALITY.zip/content"
+      }
+    },
+    {
+      "id": "13cb0b95-3a6c-43fa-a7de-54836892759d",
+      "key": "5_HEALTHY OLD SEGMENTED.zip",
+      "size": 456574,
+      "checksum": "md5:94e3b8a7dbe293f1bf3da6e60bc350b5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/5_HEALTHY OLD SEGMENTED.zip/content"
+      }
+    },
+    {
+      "id": "10c4e04a-cc82-4b26-8177-7233a52f7c34",
+      "key": "2_HEALTHY YOUNG SEGMENTED.zip",
+      "size": 3680474,
+      "checksum": "md5:4224beb79e70b098d6cb0fd824ce4354",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/2_HEALTHY YOUNG SEGMENTED.zip/content"
+      }
+    },
+    {
+      "id": "65eb4868-cc59-47fb-92e7-464e182ca84f",
+      "key": "1_HEALTHY YOUNG_RAW_GOOD_QUALITY.zip",
+      "size": 269585692,
+      "checksum": "md5:d2628398838638ad2f023868e4dd6d4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/1_HEALTHY YOUNG_RAW_GOOD_QUALITY.zip/content"
+      }
+    },
+    {
+      "id": "423e0873-355e-4e79-9c4c-dede34fe650b",
+      "key": "7_Image quality criteria.xlsx",
+      "size": 9911,
+      "checksum": "md5:487f5815983ee064315326d4460a89ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/4521044/files/7_Image quality criteria.xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "195341"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2475,
+    "unique_downloads": 1667,
+    "views": 1687,
+    "unique_views": 1525,
+    "version_downloads": 2470,
+    "version_unique_downloads": 1665,
+    "version_unique_views": 1518,
+    "version_views": 1678
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 6,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 379494509,
+    "top_level_files": [
+      {
+        "name": "4_HEALTHY OLD RAW_GOOD QUALITY.zip",
+        "size": 32187166
+      },
+      {
+        "name": "8_Associated data.xlsx",
+        "size": 14643
+      },
+      {
+        "name": "3_HEALTHY YOUNG RAW _BAD QUALITY.zip",
+        "size": 49891942
+      },
+      {
+        "name": "6_HEALTHY OLD RAW_BAD QUALITY.zip",
+        "size": 23692661
+      },
+      {
+        "name": "5_HEALTHY OLD SEGMENTED.zip",
+        "size": 456574
+      },
+      {
+        "name": "2_HEALTHY YOUNG SEGMENTED.zip",
+        "size": 3680474
+      },
+      {
+        "name": "1_HEALTHY YOUNG_RAW_GOOD_QUALITY.zip",
+        "size": 269585692
+      },
+      {
+        "name": "7_Image quality criteria.xlsx",
+        "size": 9911
+      }
+    ],
+    "zip_contents": {
+      "4_healthy old raw_good quality.zip": {
+        "total_files": 10,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 32185884,
+        "file_types": {
+          ".tif": 10
+        },
+        "imaging_file_count": 10,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "4_healthy old raw_good quality/n10c_l.tif",
+          "4_healthy old raw_good quality/n10c_r.tif",
+          "4_healthy old raw_good quality/n11c_l.tif",
+          "4_healthy old raw_good quality/n11c_r.tif",
+          "4_healthy old raw_good quality/n13c_l.tif",
+          "4_healthy old raw_good quality/n13c_r.tif",
+          "4_healthy old raw_good quality/n3c_r.tif",
+          "4_healthy old raw_good quality/n4c_l.tif",
+          "4_healthy old raw_good quality/n5c_r.tif",
+          "4_healthy old raw_good quality/n9c_r.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "3_healthy young raw _bad quality.zip": {
+        "total_files": 14,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 49892545,
+        "file_types": {
+          ".tif": 14
+        },
+        "imaging_file_count": 14,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "3_healthy young raw _bad quality/12_l.tif",
+          "3_healthy young raw _bad quality/12_r.tif",
+          "3_healthy young raw _bad quality/19_l.tif",
+          "3_healthy young raw _bad quality/23_l.tif",
+          "3_healthy young raw _bad quality/29_l.tif",
+          "3_healthy young raw _bad quality/29_r.tif",
+          "3_healthy young raw _bad quality/30_l.tif",
+          "3_healthy young raw _bad quality/31_l.tif",
+          "3_healthy young raw _bad quality/43_l.tif",
+          "3_healthy young raw _bad quality/43_r.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "6_healthy old raw_bad quality.zip": {
+        "total_files": 8,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 23692811,
+        "file_types": {
+          ".tif": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "6_healthy old raw_bad quality/n12c_l.tif",
+          "6_healthy old raw_bad quality/n1c_r.tif",
+          "6_healthy old raw_bad quality/n3c_l.tif",
+          "6_healthy old raw_bad quality/n4c_r.tif",
+          "6_healthy old raw_bad quality/n5c_l.tif",
+          "6_healthy old raw_bad quality/n7c_l.tif",
+          "6_healthy old raw_bad quality/n7c_r.tif",
+          "6_healthy old raw_bad quality/n9c_l.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "5_healthy old segmented.zip": {
+        "total_files": 10,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 460036,
+        "file_types": {
+          ".png": 10
+        },
+        "imaging_file_count": 10,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "5_healthy old segmented/n10c_l_seg.png",
+          "5_healthy old segmented/n10c_r_seg.png",
+          "5_healthy old segmented/n11c_l_seg.png",
+          "5_healthy old segmented/n11c_r_seg.png",
+          "5_healthy old segmented/n13c_l_seg.png",
+          "5_healthy old segmented/n13c_r_seg.png",
+          "5_healthy old segmented/n3c_r_seg.png",
+          "5_healthy old segmented/n4c_l_seg.png",
+          "5_healthy old segmented/n5c_r_seg.png",
+          "5_healthy old segmented/n9c_r_seg.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "2_healthy young segmented.zip": {
+        "total_files": 72,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3698111,
+        "file_types": {
+          ".png": 72
+        },
+        "imaging_file_count": 72,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "2_healthy young segmented/10_l_seg.png",
+          "2_healthy young segmented/10_r_seg.png",
+          "2_healthy young segmented/11_l_seg.png",
+          "2_healthy young segmented/11_r_seg.png",
+          "2_healthy young segmented/13_l_seg.png",
+          "2_healthy young segmented/13_r_seg.png",
+          "2_healthy young segmented/14_l_seg.png",
+          "2_healthy young segmented/14_r_seg.png",
+          "2_healthy young segmented/15_l_seg.png",
+          "2_healthy young segmented/15_r_seg.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "1_healthy young_raw_good_quality.zip": {
+        "total_files": 72,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 269587123,
+        "file_types": {
+          ".tif": 72
+        },
+        "imaging_file_count": 72,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_healthy young_raw_good_quality/10_l.tif",
+          "1_healthy young_raw_good_quality/10_r.tif",
+          "1_healthy young_raw_good_quality/11_l.tif",
+          "1_healthy young_raw_good_quality/11_r.tif",
+          "1_healthy young_raw_good_quality/13_l.tif",
+          "1_healthy young_raw_good_quality/13_r.tif",
+          "1_healthy young_raw_good_quality/14_l.tif",
+          "1_healthy young_raw_good_quality/14_r.tif",
+          "1_healthy young_raw_good_quality/15_l.tif",
+          "1_healthy young_raw_good_quality/15_r.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "4_healthy old raw_good quality/n10c_l.tif",
+      "4_healthy old raw_good quality/n10c_r.tif",
+      "4_healthy old raw_good quality/n11c_l.tif",
+      "4_healthy old raw_good quality/n11c_r.tif",
+      "4_healthy old raw_good quality/n13c_l.tif",
+      "4_healthy old raw_good quality/n13c_r.tif",
+      "4_healthy old raw_good quality/n3c_r.tif",
+      "4_healthy old raw_good quality/n4c_l.tif",
+      "4_healthy old raw_good quality/n5c_r.tif",
+      "4_healthy old raw_good quality/n9c_r.tif",
+      "3_healthy young raw _bad quality/12_l.tif",
+      "3_healthy young raw _bad quality/12_r.tif",
+      "3_healthy young raw _bad quality/19_l.tif",
+      "3_healthy young raw _bad quality/23_l.tif",
+      "3_healthy young raw _bad quality/29_l.tif",
+      "3_healthy young raw _bad quality/29_r.tif",
+      "3_healthy young raw _bad quality/30_l.tif",
+      "3_healthy young raw _bad quality/31_l.tif",
+      "3_healthy young raw _bad quality/43_l.tif",
+      "3_healthy young raw _bad quality/43_r.tif",
+      "6_healthy old raw_bad quality/n12c_l.tif",
+      "6_healthy old raw_bad quality/n1c_r.tif",
+      "6_healthy old raw_bad quality/n3c_l.tif",
+      "6_healthy old raw_bad quality/n4c_r.tif",
+      "6_healthy old raw_bad quality/n5c_l.tif",
+      "6_healthy old raw_bad quality/n7c_l.tif",
+      "6_healthy old raw_bad quality/n7c_r.tif",
+      "6_healthy old raw_bad quality/n9c_l.tif",
+      "5_healthy old segmented/n10c_l_seg.png",
+      "5_healthy old segmented/n10c_r_seg.png",
+      "5_healthy old segmented/n11c_l_seg.png",
+      "5_healthy old segmented/n11c_r_seg.png",
+      "5_healthy old segmented/n13c_l_seg.png",
+      "5_healthy old segmented/n13c_r_seg.png",
+      "5_healthy old segmented/n3c_r_seg.png",
+      "5_healthy old segmented/n4c_l_seg.png",
+      "5_healthy old segmented/n5c_r_seg.png",
+      "5_healthy old segmented/n9c_r_seg.png",
+      "2_healthy young segmented/10_l_seg.png",
+      "2_healthy young segmented/10_r_seg.png",
+      "2_healthy young segmented/11_l_seg.png",
+      "2_healthy young segmented/11_r_seg.png",
+      "2_healthy young segmented/13_l_seg.png",
+      "2_healthy young segmented/13_r_seg.png",
+      "2_healthy young segmented/14_l_seg.png",
+      "2_healthy young segmented/14_r_seg.png",
+      "2_healthy young segmented/15_l_seg.png",
+      "2_healthy young segmented/15_r_seg.png",
+      "1_healthy young_raw_good_quality/10_l.tif",
+      "1_healthy young_raw_good_quality/10_r.tif",
+      "1_healthy young_raw_good_quality/11_l.tif",
+      "1_healthy young_raw_good_quality/11_r.tif",
+      "1_healthy young_raw_good_quality/13_l.tif",
+      "1_healthy young_raw_good_quality/13_r.tif",
+      "1_healthy young_raw_good_quality/14_l.tif",
+      "1_healthy young_raw_good_quality/14_r.tif",
+      "1_healthy young_raw_good_quality/15_l.tif",
+      "1_healthy young_raw_good_quality/15_r.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:24.387824"
+}

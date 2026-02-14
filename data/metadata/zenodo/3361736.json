@@ -1,0 +1,166 @@
+{
+  "created": "2019-08-06T17:52:00.791747+00:00",
+  "modified": "2020-01-29T12:33:57.954512+00:00",
+  "id": 3361736,
+  "conceptrecid": "3361735",
+  "doi": "10.5281/zenodo.3361736",
+  "conceptdoi": "10.5281/zenodo.3361735",
+  "doi_url": "https://doi.org/10.5281/zenodo.3361736",
+  "metadata": {
+    "title": "Embrapa Wine Grape Instance Segmentation Dataset \u2013 Embrapa WGISD",
+    "doi": "10.5281/zenodo.3361736",
+    "publication_date": "2019-07-26",
+    "description": "<p><strong>Embrapa Wine Grape Instance Segmentation Dataset &ndash; Embrapa WGISD</strong></p>\n\n<p>For a detailed description of this dataset, following the <em>datasheet for the datasets</em> recommendation proposed by <a href=\"https://arxiv.org/abs/1803.09010\">Gebru et al.</a>, check the <strong>README.md</strong> file.</p>\n\n<p><strong>Motivation for Dataset Creation</strong></p>\n\n<p><em>Why was the dataset created?</em></p>\n\n<p>Embrapa WGISD (<em>Wine Grape Instance Segmentation Dataset</em>) was created to provide images and annotation to study <em>object detection and instance segmentation</em> for image-based monitoring and field robotics in viticulture. It provides instances from five different grape varieties taken on field. These instances shows variance in grape pose,<br>\nillumination and focus, including genetic and phenological variations such as shape, color and compactness.</p>\n\n<p><em>What (other) tasks could the dataset be used for?</em></p>\n\n<p>Possible uses include relaxations of the instance segmentation problem: classification (Is a grape in the image?), semantic segmentation (What are the &quot;grape pixels&quot; in the image?), and object detection (Where are the grapes in the image?). The WGISD can also be used in grape variety identification.</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Thiago Santos",
+        "affiliation": "Embrapa Agricultural Informatics",
+        "orcid": "0000-0002-9272-3403"
+      },
+      {
+        "name": "de Souza, Leonardo",
+        "affiliation": "University of Campinas"
+      },
+      {
+        "name": "dos Santos Andreza",
+        "affiliation": null
+      },
+      {
+        "name": "Avila, Sandra",
+        "affiliation": "University of Campinas",
+        "orcid": "0000-0001-9068-938X"
+      }
+    ],
+    "keywords": [
+      "instance segmentation",
+      "object detection",
+      "viticulture",
+      "agriculture"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/thsant/wgisd/tree/1.0.0",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.0.0",
+    "references": [
+      "Santos, T.T., Souza, L.L., Santos, A.M., & Avila, S.E. (2019). Grape detection, segmentation and tracking using deep neural networks and three-dimensional association. ArXiv, abs/1907.11819."
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-sa-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3361735"
+          }
+        }
+      ]
+    },
+    "notes": "The building of the WGISD dataset was supported by the Embrapa SEG Project 01.14.09.001.05.04, Image-based metrology for Precision Agriculture and Phenotyping, and the CNPq PIBIC Program (grants 161165/2017-6 and 125044/2018-6)."
+  },
+  "title": "Embrapa Wine Grape Instance Segmentation Dataset \u2013 Embrapa WGISD",
+  "links": {
+    "self": "https://zenodo.org/api/records/3361736",
+    "self_html": "https://zenodo.org/records/3361736",
+    "preview_html": "https://zenodo.org/records/3361736?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3361736",
+    "self_doi": "https://doi.org/10.5281/zenodo.3361736",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3361736",
+    "reserve_doi": "https://zenodo.org/api/records/3361736/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3361735",
+    "parent_html": "https://zenodo.org/records/3361735",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3361735",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3361735",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3361736/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3361736/sequence/default",
+    "files": "https://zenodo.org/api/records/3361736/files",
+    "media_files": "https://zenodo.org/api/records/3361736/media-files",
+    "archive": "https://zenodo.org/api/records/3361736/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3361736/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3361736/versions/latest",
+    "latest_html": "https://zenodo.org/records/3361736/latest",
+    "versions": "https://zenodo.org/api/records/3361736/versions",
+    "draft": "https://zenodo.org/api/records/3361736/draft",
+    "access_links": "https://zenodo.org/api/records/3361736/access/links",
+    "access_grants": "https://zenodo.org/api/records/3361736/access/grants",
+    "access_users": "https://zenodo.org/api/records/3361736/access/users",
+    "access_request": "https://zenodo.org/api/records/3361736/access/request",
+    "access": "https://zenodo.org/api/records/3361736/access",
+    "communities": "https://zenodo.org/api/records/3361736/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3361736/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3361736/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3361736/file-modification",
+    "requests": "https://zenodo.org/api/records/3361736/requests"
+  },
+  "updated": "2020-01-29T12:33:57.954512+00:00",
+  "recid": "3361736",
+  "revision": 7,
+  "files": [
+    {
+      "id": "ec0785f9-8087-4ad1-86c9-9d2be1363b82",
+      "key": "thsant/wgisd-1.0.0.zip",
+      "size": 1312351989,
+      "checksum": "md5:0385e9c392c1704b81593d4c791f8227",
+      "links": {
+        "self": "https://zenodo.org/api/records/3361736/files/thsant/wgisd-1.0.0.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "73425"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2239,
+    "unique_downloads": 1272,
+    "views": 5571,
+    "unique_views": 4951,
+    "version_downloads": 2229,
+    "version_unique_downloads": 1264,
+    "version_unique_views": 4928,
+    "version_views": 5546
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1312351989,
+    "top_level_files": [
+      {
+        "name": "thsant/wgisd-1.0.0.zip",
+        "size": 1312351989
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/thsant/wgisd/tree/1.0.0"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.969529"
+}

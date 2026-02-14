@@ -1,0 +1,501 @@
+{
+  "created": "2025-10-07T09:04:20.491070+00:00",
+  "modified": "2025-10-07T09:10:58.008535+00:00",
+  "id": 17284863,
+  "conceptrecid": "14671905",
+  "doi": "10.5281/zenodo.17284863",
+  "conceptdoi": "10.5281/zenodo.14671905",
+  "doi_url": "https://doi.org/10.5281/zenodo.17284863",
+  "metadata": {
+    "title": "Surgical-Synthetic-Data-Generation-and-Segmentation",
+    "doi": "10.5281/zenodo.17284863",
+    "publication_date": "2025-10-07",
+    "description": "<p>This dataset contains synthetic, Generative AI enhanced and real images, with their labels, for Computer Vision in robotic surgery. It is part of ongoing research on sim-to-real applications in surgical robotics.</p>\n<ul>\n<li>The paper including synthetic and real images has been published:&nbsp; \"A reproducible framework for synthetic data generation and instance segmentation in robotic suturing\", Journal: International Journal of Computer Assisted Radiology and Surgery, DOI: 10.1007/s11548-025-03460-8<br><br></li>\n<li>The paper including synthetic, TURBO-Enhanced, and real images is under review for publication</li>\n</ul>\n<p>For further information see the repository on GitHub: https://github.com/PietroLeoncini/Surgical-Synthetic-Data-Generation-and-Segmentation</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Leoncini, Pietro",
+        "affiliation": null,
+        "orcid": "0009-0008-8785-1241"
+      }
+    ],
+    "keywords": [
+      "sim to real",
+      "segmentation",
+      "simulation",
+      "data driven",
+      "computer vision",
+      "surgical robotics"
+    ],
+    "references": [
+      "https://github.com/PietroLeoncini/Surgical-Synthetic-Data-Generation-and-Segmentation",
+      "A reproducible framework for synthetic data generation and instance segmentation in robotic suturing, Journal: International Journal of Computer Assisted Radiology and Surgery, DOI: 10.1007/s11548-025-03460-8"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14671905"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Surgical-Synthetic-Data-Generation-and-Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/17284863",
+    "self_html": "https://zenodo.org/records/17284863",
+    "preview_html": "https://zenodo.org/records/17284863?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17284863",
+    "self_doi": "https://doi.org/10.5281/zenodo.17284863",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17284863",
+    "reserve_doi": "https://zenodo.org/api/records/17284863/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14671905",
+    "parent_html": "https://zenodo.org/records/14671905",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14671905",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14671905",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17284863/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17284863/sequence/default",
+    "files": "https://zenodo.org/api/records/17284863/files",
+    "media_files": "https://zenodo.org/api/records/17284863/media-files",
+    "archive": "https://zenodo.org/api/records/17284863/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17284863/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17284863/versions/latest",
+    "latest_html": "https://zenodo.org/records/17284863/latest",
+    "versions": "https://zenodo.org/api/records/17284863/versions",
+    "draft": "https://zenodo.org/api/records/17284863/draft",
+    "access_links": "https://zenodo.org/api/records/17284863/access/links",
+    "access_grants": "https://zenodo.org/api/records/17284863/access/grants",
+    "access_users": "https://zenodo.org/api/records/17284863/access/users",
+    "access_request": "https://zenodo.org/api/records/17284863/access/request",
+    "access": "https://zenodo.org/api/records/17284863/access",
+    "communities": "https://zenodo.org/api/records/17284863/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17284863/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17284863/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17284863/file-modification",
+    "requests": "https://zenodo.org/api/records/17284863/requests"
+  },
+  "updated": "2025-10-07T09:10:58.008535+00:00",
+  "recid": "17284863",
+  "revision": 8,
+  "files": [
+    {
+      "id": "293b01f9-f140-467b-8a2f-5e2fb30040b8",
+      "key": "Endoscope1-Seg-Labels.zip",
+      "size": 13725182,
+      "checksum": "md5:9bcbaf1b27aba71e9cf154a21b32296b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope1-Seg-Labels.zip/content"
+      }
+    },
+    {
+      "id": "053f9188-3fdd-4128-bfc2-b0e8091202b3",
+      "key": "Endoscope1-Det-Images.zip",
+      "size": 388528596,
+      "checksum": "md5:5f90c7849d7f1cf5dfd8df102377d8f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope1-Det-Images.zip/content"
+      }
+    },
+    {
+      "id": "511443a3-bab2-4b81-9e03-df8e5094f4aa",
+      "key": "Endoscope2-Seg-Images.zip",
+      "size": 129481776,
+      "checksum": "md5:36ee2a61dfaff91f7645bc44bdade10e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope2-Seg-Images.zip/content"
+      }
+    },
+    {
+      "id": "bdca5ecf-4e22-4ff7-a5f6-efac73c58d65",
+      "key": "Random-Det-Labels.zip",
+      "size": 317666,
+      "checksum": "md5:d36c6306394e651edd9e39eaec260c39",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Random-Det-Labels.zip/content"
+      }
+    },
+    {
+      "id": "41c1291b-4f3c-479e-9fd3-b07c8757b58d",
+      "key": "Real-Det-Images.zip",
+      "size": 357772458,
+      "checksum": "md5:bdc41259734cd29077043095f8da7850",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Real-Det-Images.zip/content"
+      }
+    },
+    {
+      "id": "2b16dbc1-fb33-482f-baaa-5935c3c2817c",
+      "key": "Real-Seg-Labels.zip",
+      "size": 439789,
+      "checksum": "md5:b9c90551b308a7206eaef2f050b0c24e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Real-Seg-Labels.zip/content"
+      }
+    },
+    {
+      "id": "5ea06fcb-f6b2-4caa-8a04-c899d89bc6b9",
+      "key": "Part-Based-TURBOEnhanced-Labels.zip",
+      "size": 275467107,
+      "checksum": "md5:41a593d898ac00c2109d386283f6dee2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Part-Based-TURBOEnhanced-Labels.zip/content"
+      }
+    },
+    {
+      "id": "f937d593-728a-4b4d-93c0-0df312c72269",
+      "key": "Endoscope1-Det-Labels.zip",
+      "size": 269625,
+      "checksum": "md5:ee74bb04f07007ab6d94c72afb55bb83",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope1-Det-Labels.zip/content"
+      }
+    },
+    {
+      "id": "c0f7ec44-f30d-49b0-912d-ea1acaf0b8f0",
+      "key": "Real-Seg-Images.zip",
+      "size": 357772458,
+      "checksum": "md5:ea62415f195379f1e3ea7245c6d4dd0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Real-Seg-Images.zip/content"
+      }
+    },
+    {
+      "id": "c7e91fe6-b62e-4180-8c8b-7069022b92e4",
+      "key": "Real-Det-Labels.zip",
+      "size": 51893,
+      "checksum": "md5:fbd767e1b7f613ff59a52f2558210cca",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Real-Det-Labels.zip/content"
+      }
+    },
+    {
+      "id": "e260b66a-785a-40e3-bd63-97732332a3e8",
+      "key": "Random-Seg-Labels.zip",
+      "size": 6458984,
+      "checksum": "md5:b081c8b94eed6d802a9bbe0d13dfb2cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Random-Seg-Labels.zip/content"
+      }
+    },
+    {
+      "id": "3e434773-7d43-4c42-adbf-02505a75efc4",
+      "key": "Random-Seg-Images.zip",
+      "size": 656113224,
+      "checksum": "md5:5767abaa38d4db311b625841ae1592b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Random-Seg-Images.zip/content"
+      }
+    },
+    {
+      "id": "768ff30f-3fe9-4ea2-b5dc-051fa2a10b36",
+      "key": "Endoscope2-Det-Images.zip",
+      "size": 139861679,
+      "checksum": "md5:2dc0df90735d84fedd64dd2dc3e3abd5",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope2-Det-Images.zip/content"
+      }
+    },
+    {
+      "id": "16e89285-441b-47cc-86fd-d6c6a00926ce",
+      "key": "Endoscope1-Seg-Images.zip",
+      "size": 108110679,
+      "checksum": "md5:4a1f45d6dff8bff3c69f3de6d9dddf95",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope1-Seg-Images.zip/content"
+      }
+    },
+    {
+      "id": "0f8cb0cd-6d52-4114-a9a3-f3f7416206f3",
+      "key": "Random-Det-Images.zip",
+      "size": 656292125,
+      "checksum": "md5:2e548d09f0cc4ad4a1f5ad7f5dbbaf7b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Random-Det-Images.zip/content"
+      }
+    },
+    {
+      "id": "657b56fd-be5f-41ed-8785-ccfa3d320795",
+      "key": "Endoscope2-Seg-Labels.zip",
+      "size": 14142750,
+      "checksum": "md5:e12158e94c7b9cbce23951b1e794f437",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope2-Seg-Labels.zip/content"
+      }
+    },
+    {
+      "id": "4ebd9ca2-645b-40ac-b03c-3f43dd681bcf",
+      "key": "Endoscope2-Det-Labels.zip",
+      "size": 269414,
+      "checksum": "md5:6f5cff3373509868b51795d4e5acb4f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Endoscope2-Det-Labels.zip/content"
+      }
+    },
+    {
+      "id": "8f8c9e92-3da1-4968-9519-adaeb7d4fd3c",
+      "key": "Type-Based-TURBOEnhanced-Labels.zip",
+      "size": 254580693,
+      "checksum": "md5:f5cc4d7a85dbe88331336b0ba1725383",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Type-Based-TURBOEnhanced-Labels.zip/content"
+      }
+    },
+    {
+      "id": "fea5c705-4287-4eeb-a3b1-86cba8f6f476",
+      "key": "Type-Based-TURBOEnhanced-Images.zip",
+      "size": 8746181890,
+      "checksum": "md5:a034af8177d374154606c36cf1e9bfdb",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Type-Based-TURBOEnhanced-Images.zip/content"
+      }
+    },
+    {
+      "id": "eaad56aa-341c-48a9-8314-9260a5f7dc07",
+      "key": "Part-Based-Real-Labels.zip",
+      "size": 150705,
+      "checksum": "md5:0fbf8e3b77fd8aac78686d64c8587571",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Part-Based-Real-Labels.zip/content"
+      }
+    },
+    {
+      "id": "3e238231-58e3-4cd1-88ea-45a3ec646b82",
+      "key": "Part-Based-Real-Images.zip",
+      "size": 7396120,
+      "checksum": "md5:94fc14d74f963b3e0ce926876d99cfd0",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Part-Based-Real-Images.zip/content"
+      }
+    },
+    {
+      "id": "24d737d1-b153-4052-9712-e646988ca47e",
+      "key": "Part-Based-TURBOEnhanced-Images.zip",
+      "size": 9627816045,
+      "checksum": "md5:fb184763f4dbea8dc517325cab9e5730",
+      "links": {
+        "self": "https://zenodo.org/api/records/17284863/files/Part-Based-TURBOEnhanced-Images.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1249063"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 191,
+    "unique_downloads": 168,
+    "views": 107,
+    "unique_views": 79,
+    "version_downloads": 106,
+    "version_unique_downloads": 83,
+    "version_unique_views": 16,
+    "version_views": 25
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 22,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 21741200858,
+    "top_level_files": [
+      {
+        "name": "Endoscope1-Seg-Labels.zip",
+        "size": 13725182
+      },
+      {
+        "name": "Endoscope1-Det-Images.zip",
+        "size": 388528596
+      },
+      {
+        "name": "Endoscope2-Seg-Images.zip",
+        "size": 129481776
+      },
+      {
+        "name": "Random-Det-Labels.zip",
+        "size": 317666
+      },
+      {
+        "name": "Real-Det-Images.zip",
+        "size": 357772458
+      },
+      {
+        "name": "Real-Seg-Labels.zip",
+        "size": 439789
+      },
+      {
+        "name": "Part-Based-TURBOEnhanced-Labels.zip",
+        "size": 275467107
+      },
+      {
+        "name": "Endoscope1-Det-Labels.zip",
+        "size": 269625
+      },
+      {
+        "name": "Real-Seg-Images.zip",
+        "size": 357772458
+      },
+      {
+        "name": "Real-Det-Labels.zip",
+        "size": 51893
+      },
+      {
+        "name": "Random-Seg-Labels.zip",
+        "size": 6458984
+      },
+      {
+        "name": "Random-Seg-Images.zip",
+        "size": 656113224
+      },
+      {
+        "name": "Endoscope2-Det-Images.zip",
+        "size": 139861679
+      },
+      {
+        "name": "Endoscope1-Seg-Images.zip",
+        "size": 108110679
+      },
+      {
+        "name": "Random-Det-Images.zip",
+        "size": 656292125
+      },
+      {
+        "name": "Endoscope2-Seg-Labels.zip",
+        "size": 14142750
+      },
+      {
+        "name": "Endoscope2-Det-Labels.zip",
+        "size": 269414
+      },
+      {
+        "name": "Type-Based-TURBOEnhanced-Labels.zip",
+        "size": 254580693
+      },
+      {
+        "name": "Type-Based-TURBOEnhanced-Images.zip",
+        "size": 8746181890
+      },
+      {
+        "name": "Part-Based-Real-Labels.zip",
+        "size": 150705
+      },
+      {
+        "name": "Part-Based-Real-Images.zip",
+        "size": 7396120
+      },
+      {
+        "name": "Part-Based-TURBOEnhanced-Images.zip",
+        "size": 9627816045
+      }
+    ],
+    "zip_contents": {
+      "real-det-images.zip": {
+        "total_files": 170,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 404208789,
+        "file_types": {
+          ".png": 170
+        },
+        "imaging_file_count": 170,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "10195.png",
+          "10001.png",
+          "10002.png",
+          "10003.png",
+          "10004.png",
+          "10005.png",
+          "10006.png",
+          "10007.png",
+          "10008.png",
+          "10009.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "real-seg-labels.zip": {
+        "total_files": 170,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 1510333,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "real-seg-images.zip": {
+        "total_files": 170,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 404208789,
+        "file_types": {
+          ".png": 170
+        },
+        "imaging_file_count": 170,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "10186.png",
+          "10187.png",
+          "10188.png",
+          "10189.png",
+          "10190.png",
+          "10191.png",
+          "10192.png",
+          "10193.png",
+          "10194.png",
+          "10195.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "10195.png",
+      "10001.png",
+      "10002.png",
+      "10003.png",
+      "10004.png",
+      "10005.png",
+      "10006.png",
+      "10007.png",
+      "10008.png",
+      "10009.png",
+      "10186.png",
+      "10187.png",
+      "10188.png",
+      "10189.png",
+      "10190.png",
+      "10191.png",
+      "10192.png",
+      "10193.png",
+      "10194.png",
+      "10195.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/PietroLeoncini/Surgical-Synthetic-Data-Generation-and-Segmentation",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:43.947695"
+}

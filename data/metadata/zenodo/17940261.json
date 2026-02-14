@@ -1,0 +1,245 @@
+{
+  "created": "2025-12-22T13:38:51.017229+00:00",
+  "modified": "2025-12-22T13:38:51.456851+00:00",
+  "id": 17940261,
+  "conceptrecid": "17940260",
+  "doi": "10.5281/zenodo.17940261",
+  "conceptdoi": "10.5281/zenodo.17940260",
+  "doi_url": "https://doi.org/10.5281/zenodo.17940261",
+  "metadata": {
+    "title": "Rocaille Segmentation Dataset",
+    "doi": "10.5281/zenodo.17940261",
+    "publication_date": "2025-12-15",
+    "description": "<p>This is the dataset introduced and described in the paper&nbsp;<strong>\"A Multimodal Dataset of 18th-Century Prints for Segmentation and Analysis of Rocaille Ornaments\" (Hudcovic et al.):</strong></p>\n<blockquote>\n<p>We present a multimodal dataset for the computational study of 18th-century Rococo ornamental prints. The Rocaille, the era's defining ornament, exhibits a continuously transforming morphology that has historically resisted formal description. The dataset comprises 1,611 high-resolution digitizations from major German collections, accompanied by expert-curated bilingual metadata and commentary describing iconography and ornament morphology. A subset of 229 images includes pixel-accurate segmentation masks distinguishing the structural volutes and comb-like extensions of the Rocaille. This combination of imagery and detailed annotations presents several challenges for machine learning research: morphologically complex segmentation targets, substantial class imbalance, and multimodal data enabling cross-modal integration. To demonstrate the viability and utility of the dataset, we pre-train encoder&ndash;decoder architectures using diffusion-based self-supervised learning and fine-tune them for the demanding Rocaille segmentation task, providing model weights for full reproducibility. This dataset establishes a foundation for cross-disciplinary research linking art history, digital humanities, and computer vision.</p>\n</blockquote>\n<p>Due to file limit reasons, the top-level folders were zipped. Each ZIP-file in the dataset corresponds to a top level folder, as detailed in the image <em>folder_structure.jpg.<br></em><br>Our paper describing and showing the viability of our dataset can be found here: [TODO]</p>\n<p>The associated code and neural networks can be found at our codebase: [TODO]<br>The associated experiment artifacts (model weights, logs, visualizations) can be found at Hugging Face: [TODO]<br><br><strong>Citation</strong>:<br>[TODO]</p>\n<p>&nbsp;</p>\n<p>Additionally, if you use this dataset, please also credit the following institutions from whose collections the data has been digitized:</p>\n<p>Image courtesy of the following collections: Staatsgalerie Stuttgart, Graphische Sammlung; Staats- und Stadtbibliothek Augsburg, Graphische Sammlung; Staatliche Graphische Sammlung M&uuml;nchen.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hudcovic, Thomas",
+        "affiliation": "University of Bremen",
+        "orcid": "0009-0005-9970-3228"
+      },
+      {
+        "name": "R\u00f6ckl, Ines",
+        "affiliation": "University of Regensburg",
+        "orcid": "0009-0004-7807-6782"
+      },
+      {
+        "name": "Jachmann, Julian",
+        "affiliation": "University of Regensburg",
+        "orcid": "0009-0000-0192-5652"
+      },
+      {
+        "name": "Zachmann, Gabriel",
+        "affiliation": "University of Bremen",
+        "orcid": "0000-0001-8155-1127"
+      }
+    ],
+    "language": "deu",
+    "custom": {
+      "code:codeRepository": "https://github.com/hudo259/Rocaille-Segmentation-Experiments-Framework",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "461631274",
+        "internal_id": "018mejw64::461631274",
+        "funder": {
+          "name": "Deutsche Forschungsgemeinschaft"
+        }
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17940260"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Rocaille Segmentation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/17940261",
+    "self_html": "https://zenodo.org/records/17940261",
+    "preview_html": "https://zenodo.org/records/17940261?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17940261",
+    "self_doi": "https://doi.org/10.5281/zenodo.17940261",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17940261",
+    "reserve_doi": "https://zenodo.org/api/records/17940261/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17940260",
+    "parent_html": "https://zenodo.org/records/17940260",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17940260",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17940260",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17940261/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17940261/sequence/default",
+    "files": "https://zenodo.org/api/records/17940261/files",
+    "media_files": "https://zenodo.org/api/records/17940261/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17940261:folder_structure.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/17940261/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17940261/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17940261/versions/latest",
+    "latest_html": "https://zenodo.org/records/17940261/latest",
+    "versions": "https://zenodo.org/api/records/17940261/versions",
+    "draft": "https://zenodo.org/api/records/17940261/draft",
+    "access_links": "https://zenodo.org/api/records/17940261/access/links",
+    "access_grants": "https://zenodo.org/api/records/17940261/access/grants",
+    "access_users": "https://zenodo.org/api/records/17940261/access/users",
+    "access_request": "https://zenodo.org/api/records/17940261/access/request",
+    "access": "https://zenodo.org/api/records/17940261/access",
+    "communities": "https://zenodo.org/api/records/17940261/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17940261/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17940261/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17940261/file-modification",
+    "requests": "https://zenodo.org/api/records/17940261/requests"
+  },
+  "updated": "2025-12-22T13:38:51.456851+00:00",
+  "recid": "17940261",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b8dcb310-ff86-4555-8064-575b5452f256",
+      "key": "ddpm_set.zip",
+      "size": 6272403572,
+      "checksum": "md5:4f12454b224e94b0604193aae92c4f30",
+      "links": {
+        "self": "https://zenodo.org/api/records/17940261/files/ddpm_set.zip/content"
+      }
+    },
+    {
+      "id": "232cbbb2-bd78-4854-a120-440d1ac2faff",
+      "key": "segmentation.zip",
+      "size": 1564559012,
+      "checksum": "md5:8b694a2fd884663832080afc8d64d7d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/17940261/files/segmentation.zip/content"
+      }
+    },
+    {
+      "id": "7e2b2735-ec11-4aa5-85eb-4737b69a90b5",
+      "key": "text_data.zip",
+      "size": 381177,
+      "checksum": "md5:466782dca104c06ec3bcf125bc4b1257",
+      "links": {
+        "self": "https://zenodo.org/api/records/17940261/files/text_data.zip/content"
+      }
+    },
+    {
+      "id": "fbc8c0ad-4e85-47fb-82ce-f1f4652527b6",
+      "key": "images.zip",
+      "size": 6271651203,
+      "checksum": "md5:df888d4b928dd8e0daa7487ffbc33211",
+      "links": {
+        "self": "https://zenodo.org/api/records/17940261/files/images.zip/content"
+      }
+    },
+    {
+      "id": "390302f7-e3b4-4165-931b-ae4f3765cb01",
+      "key": "folder_structure.jpg",
+      "size": 80955,
+      "checksum": "md5:07b2be1fc92443dbe8009273dce04aa2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17940261/files/folder_structure.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1490331"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 30,
+    "unique_views": 27,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 27,
+    "version_views": 30
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 80955,
+    "total_archive_size": 14108994964,
+    "top_level_files": [
+      {
+        "name": "ddpm_set.zip",
+        "size": 6272403572
+      },
+      {
+        "name": "segmentation.zip",
+        "size": 1564559012
+      },
+      {
+        "name": "text_data.zip",
+        "size": 381177
+      },
+      {
+        "name": "images.zip",
+        "size": 6271651203
+      },
+      {
+        "name": "folder_structure.jpg",
+        "size": 80955
+      }
+    ],
+    "zip_contents": {
+      "text_data.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3816724,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:28.901348"
+}

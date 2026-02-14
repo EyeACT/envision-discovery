@@ -1,0 +1,281 @@
+{
+  "created": "2025-02-06T10:49:53.503848+00:00",
+  "modified": "2025-09-12T09:18:56.745620+00:00",
+  "id": 14793518,
+  "conceptrecid": "14793517",
+  "doi": "10.5281/zenodo.14793518",
+  "conceptdoi": "10.5281/zenodo.14793517",
+  "doi_url": "https://doi.org/10.5281/zenodo.14793518",
+  "metadata": {
+    "title": "WS2: Weakly Supervised Segmentation for Smarter Waste Sorting",
+    "doi": "10.5281/zenodo.14793518",
+    "publication_date": "2025-07-01",
+    "description": "<div>\n<div>\n<p>The <strong>WS2 dataset</strong> is a benchmark dataset specifically designed for weakly supervised waste sorting segmentation. Collected from a plastic waste sorting facility, it comprises high-resolution video sequences captured <strong>before </strong>and <strong>after </strong>a human operator manually removes unwanted items from a stream of mixed plastic waste on a conveyor belt, leaving only semi-transparent colored PET items.</p>\n<p>The dataset is designed to facilitate the segmentation of removed waste items by<strong> leveraging the implicit supervision provided by the operator.</strong> Specifically, <em>before </em>images contain both items to keep and items to remove, while <em>after </em>images include only the items to keep. This dataset enables the<strong> evaluation of weakly supervised methods (such as CAM-based approaches)</strong> in complex industrial environments, eliminating the need for extensive pixel-level annotations required for training fully supervised segmentation networks.</p>\n<p>The dataset consists of a training set with 9,563 unannotated before-and-after images, already organized into training and validation folders, and a test set containing 1,497 before-and-after images with corresponding pixel-level ground truth masks. The test set masks are binary annotated, distinguishing items to be removed from the rest. <strong>Images are grouped into folders containing video sequences</strong>, allowing models to leverage temporal information and enabling the evaluation of both frame-based and video-based segmentation methods.</p>\n<p>It includes both original images and background-removed versions, enabling direct comparisons between models trained with or without background information. The dataset follows a structured folder organization to support various training and evaluation setups.</p>\n<ul>\n<li>Full paper PDF: &nbsp; <a href=\"https://arxiv.org/abs/2509.06485\">WS2: Weakly Supervised Segmentation using Before-After Supervision in Waste Sorting</a>.</li>\n<li>Experiments repo: &nbsp; <a href=\"https://github.com/andreamarelli99/WS2-Dataset\">WS2: Weakly Supervised Waste Sorting Segmentation Benchmark</a>.</li>\n</ul>\n<p>If you use any ideas or materials from the paper, code or dataset from this repo, please consider citing:</p>\n<pre><code>@inproceedings{marelli2025ws2,\n  author    = {Marelli, Andrea and Foresti, Alberto and Pesce, Leonardo and Boracchi, Giacomo and Grosso, Mario},\n  title     = {WS2: Weakly Supervised Segmentation using Before-After Supervision in Waste Sorting},\n  booktitle = {Computer Vision--ICCV 2025 Workshops},\n  year      = {2025},\n  url       = {https://arxiv.org/abs/2509.06485}\n}</code></pre>\n</div>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Marelli, Andrea",
+        "affiliation": "Politecnico di Milano",
+        "orcid": "0009-0009-4418-110X"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Marelli, Andrea",
+        "affiliation": "Politecnico di Milano",
+        "type": "ContactPerson",
+        "orcid": "0009-0009-4418-110X"
+      },
+      {
+        "name": "Foresti, Alberto",
+        "affiliation": "EURECOM",
+        "type": "ProjectMember",
+        "orcid": "0009-0004-0406-747X"
+      },
+      {
+        "name": "Pesce, Leonardo",
+        "affiliation": null,
+        "type": "ProjectMember",
+        "orcid": "0000-0003-4721-5773"
+      },
+      {
+        "name": "Grosso, Mario",
+        "affiliation": "Politecnico di Milano",
+        "type": "Supervisor",
+        "orcid": "0000-0001-8953-636X"
+      },
+      {
+        "name": "Boracchi, Giacomo",
+        "affiliation": "Politecnico di Milano",
+        "type": "Supervisor",
+        "orcid": "0000-0002-1650-3054"
+      }
+    ],
+    "keywords": [
+      "video segmentation",
+      "weakly supervised segmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "arXiv:2509.06485",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-conferencepaper",
+        "scheme": "arxiv"
+      }
+    ],
+    "references": [
+      "Marelli, A., Foresti, A., Pesce, L., Boracchi, G., & Grosso, M. (2025). WS2: Weakly Supervised Segmentation using Before-After Supervision in Waste Sorting. In Computer Vision\u2013ICCV 2025 Workshops."
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/andreamarelli99/WS2-Dataset",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14793517"
+          }
+        }
+      ]
+    }
+  },
+  "title": "WS2: Weakly Supervised Segmentation for Smarter Waste Sorting",
+  "links": {
+    "self": "https://zenodo.org/api/records/14793518",
+    "self_html": "https://zenodo.org/records/14793518",
+    "preview_html": "https://zenodo.org/records/14793518?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14793518",
+    "self_doi": "https://doi.org/10.5281/zenodo.14793518",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14793518",
+    "reserve_doi": "https://zenodo.org/api/records/14793518/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14793517",
+    "parent_html": "https://zenodo.org/records/14793517",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14793517",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14793517",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14793518/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14793518/sequence/default",
+    "files": "https://zenodo.org/api/records/14793518/files",
+    "media_files": "https://zenodo.org/api/records/14793518/media-files",
+    "archive": "https://zenodo.org/api/records/14793518/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14793518/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14793518/versions/latest",
+    "latest_html": "https://zenodo.org/records/14793518/latest",
+    "versions": "https://zenodo.org/api/records/14793518/versions",
+    "draft": "https://zenodo.org/api/records/14793518/draft",
+    "access_links": "https://zenodo.org/api/records/14793518/access/links",
+    "access_grants": "https://zenodo.org/api/records/14793518/access/grants",
+    "access_users": "https://zenodo.org/api/records/14793518/access/users",
+    "access_request": "https://zenodo.org/api/records/14793518/access/request",
+    "access": "https://zenodo.org/api/records/14793518/access",
+    "communities": "https://zenodo.org/api/records/14793518/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14793518/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14793518/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14793518/file-modification",
+    "requests": "https://zenodo.org/api/records/14793518/requests"
+  },
+  "updated": "2025-09-12T09:18:56.745620+00:00",
+  "recid": "14793518",
+  "revision": 20,
+  "files": [
+    {
+      "id": "0dfad420-c759-4c22-8aca-d6d621adca74",
+      "key": "test_set.zip",
+      "size": 482966314,
+      "checksum": "md5:f86cc375888513aaeb37cfe7a046cec8",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/test_set.zip/content"
+      }
+    },
+    {
+      "id": "f8b41c34-2466-46b3-a377-5cbb4c0da0fa",
+      "key": "train_val_with_backgrounds.zip",
+      "size": 2727518520,
+      "checksum": "md5:d91888750ac84bd0be0eb4624e61b515",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/train_val_with_backgrounds.zip/content"
+      }
+    },
+    {
+      "id": "a78c7904-aadb-49de-9880-3657966ff3ab",
+      "key": "train_val_no_backgrounds.zip",
+      "size": 2233636587,
+      "checksum": "md5:acf8882aa10adc76c1ca9ce925064ccd",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/train_val_no_backgrounds.zip/content"
+      }
+    },
+    {
+      "id": "cc97d6f0-203f-4d60-a250-cae63ca4e65f",
+      "key": "preprocessing_code.zip",
+      "size": 9153,
+      "checksum": "md5:8a8f00387bfbf7c7a7e25b73549ada87",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/preprocessing_code.zip/content"
+      }
+    },
+    {
+      "id": "deb38481-d1dd-4ae3-816f-fb3d920a7685",
+      "key": "README.md",
+      "size": 8066,
+      "checksum": "md5:e9868537a111d49d8ca300e60d365ec7",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/README.md/content"
+      }
+    },
+    {
+      "id": "7af31215-3ab7-4dad-b4f4-deed49a058c4",
+      "key": "WS-WS-Dataset-main.zip",
+      "size": 894091,
+      "checksum": "md5:33e1f6c1a8d40366fd85452d202483cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793518/files/WS-WS-Dataset-main.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1257684"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 178,
+    "unique_downloads": 174,
+    "views": 209,
+    "unique_views": 175,
+    "version_downloads": 178,
+    "version_unique_downloads": 174,
+    "version_unique_views": 175,
+    "version_views": 209
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 5445024665,
+    "top_level_files": [
+      {
+        "name": "test_set.zip",
+        "size": 482966314
+      },
+      {
+        "name": "train_val_with_backgrounds.zip",
+        "size": 2727518520
+      },
+      {
+        "name": "train_val_no_backgrounds.zip",
+        "size": 2233636587
+      },
+      {
+        "name": "preprocessing_code.zip",
+        "size": 9153
+      },
+      {
+        "name": "README.md",
+        "size": 8066
+      },
+      {
+        "name": "WS-WS-Dataset-main.zip",
+        "size": 894091
+      }
+    ],
+    "zip_contents": {
+      "ws-ws-dataset-main.zip": {
+        "total_files": 176,
+        "total_directories": 47,
+        "total_uncompressed_bytes": 1432579,
+        "file_types": {
+          ".png": 3
+        },
+        "imaging_file_count": 3,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "ws-ws-dataset-main/weaktr/ipse/img/clip_grad_decoder.png",
+          "ws-ws-dataset-main/weaktr/ipse/img/miou_compare.png",
+          "ws-ws-dataset-main/weaktr/ipse/img/weaktr.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "ws-ws-dataset-main/weaktr/ipse/img/clip_grad_decoder.png",
+      "ws-ws-dataset-main/weaktr/ipse/img/miou_compare.png",
+      "ws-ws-dataset-main/weaktr/ipse/img/weaktr.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://arxiv.org/abs/2509.06485}",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:22.450740"
+}

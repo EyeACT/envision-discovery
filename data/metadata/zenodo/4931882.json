@@ -1,0 +1,564 @@
+{
+  "created": "2021-06-12T00:48:45.878063+00:00",
+  "modified": "2022-05-28T05:07:10.660318+00:00",
+  "id": 4931882,
+  "conceptrecid": "4931881",
+  "doi": "10.5061/dryad.mj76c",
+  "doi_url": "https://doi.org/10.5061/dryad.mj76c",
+  "metadata": {
+    "title": "Data from: Airway segmentation and centerline extraction from thoracic CT \u2013 comparison of a new method to state of the art commercialized methods",
+    "doi": "10.5061/dryad.mj76c",
+    "publication_date": "2016-01-26",
+    "description": "Introduction: Our motivation is increased bronchoscopic diagnostic yield and optimized preparation, for navigated bronchoscopy. In navigated bronchoscopy, virtual 3D airway visualization is often used to guide a bronchoscopic tool to peripheral lesions, synchronized with the real time video bronchoscopy. Visualization during navigated bronchoscopy, the segmentation time and methods, differs. Time consumption and logistics are two essential aspects that need to be optimized when integrating such technologies in the interventional room. We compared three different approaches to obtain airway centerlines and surface. Method: CT lung dataset of 17 patients were processed in Mimics (Materialize, Leuven, Belgium), which provides a Basic module and a Pulmonology module (beta version) (MPM), OsiriX (Pixmeo, Geneva, Switzerland) and our Tube Segmentation Framework (TSF) method. Both MPM and TSF were evaluated with reference segmentation. Automatic and manual settings allowed us to segment the airways and obtain 3D models as well as the centrelines in all datasets. We compared the different procedures by user interactions such as number of clicks needed to process the data and quantitative measures concerning the quality of the segmentation and centrelines such as total length of the branches, number of branches, number of generations, and volume of the 3D model. Results: The TSF method was the most automatic, while the Mimics Pulmonology Module (MPM) and the Mimics Basic Module (MBM) resulted in the highest number of branches. MPM is the software which demands the least number of clicks to process the data. We found that the freely available OsiriX was less accurate compared to the other methods regarding segmentation results. However, the TSF method provided results fastest regarding number of clicks. The MPM was able to find the highest number of branches and generations. On the other hand, the TSF is fully automatic and it provides the user with both segmentation of the airways and the centerlines. Reference segmentation comparison averages and standard deviations for MPM and TSF correspond to literature. Conclusion: The TSF is able to segment the airways and extract the centerlines in one single step. The number of branches found is lower for the TSF method than in Mimics. OsiriX demands the highest number of clicks to process the data, the segmentation is often sparse and extracting the centerline requires the use of another software system. Two of the software systems performed satisfactory with respect to be used in preprocessing CT images for navigated bronchoscopy, i.e. the TSF method and the MPM. According to reference segmentation both TSF and MPM are comparable with other segmentation methods. The level of automaticity and the resulting high number of branches plus the fact that both centerline and the surface of the airways were extracted, are requirements we considered particularly important. The in house method has the advantage of being an integrated part of a navigation platform for bronchoscopy, whilst the other methods can be considered preprocessing tools to a navigation system.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Reynisson, Pall Jens",
+        "affiliation": "Norwegian University of Science and Technology"
+      },
+      {
+        "name": "Scali, Marta",
+        "affiliation": "Delft University of Technology"
+      },
+      {
+        "name": "Smistad, Erik",
+        "affiliation": null
+      },
+      {
+        "name": "Hofstad, Erlend Fagertun",
+        "affiliation": null
+      },
+      {
+        "name": "Leira, H\u00e5kon Olav",
+        "affiliation": "Norwegian University of Science and Technology"
+      },
+      {
+        "name": "Lindseth, Frank",
+        "affiliation": null
+      },
+      {
+        "name": "Hernes, Toril Anita Nagelhus",
+        "affiliation": "Norwegian University of Science and Technology"
+      },
+      {
+        "name": "Amundsen, Tore",
+        "affiliation": "Norwegian University of Science and Technology"
+      },
+      {
+        "name": "Sorger, Hanne",
+        "affiliation": "Norwegian University of Science and Technology"
+      },
+      {
+        "name": "Lang\u00f8, Thomas",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "lung",
+      "centerline",
+      "airways",
+      "segmentation",
+      "branches",
+      "navigated bronchoscopy"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pone.0144282",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4931881"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Thorax CT patient 001<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_001.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 002<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_002.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 003<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_003.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 004<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_004.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 005<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_005.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 006<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_006.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 007<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_007.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 008<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_008.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 009<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_009.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 009<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_009.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 010<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_010.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 011<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_011.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 012<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_012.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 013<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_013.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 014<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_014.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 015<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_015.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 016<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_016.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Thorax CT patient 017<div class=\"o-metadata__file-description\">Thorax CT from 17 different patients. Metaheader file format.</div><div class=\"o-metadata__file-name\">Patient_017.zip<br></div></div>"
+  },
+  "title": "Data from: Airway segmentation and centerline extraction from thoracic CT \u2013 comparison of a new method to state of the art commercialized methods",
+  "links": {
+    "self": "https://zenodo.org/api/records/4931882",
+    "self_html": "https://zenodo.org/records/4931882",
+    "preview_html": "https://zenodo.org/records/4931882?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.mj76c",
+    "self_doi": "https://doi.org/10.5061/dryad.mj76c",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.mj76c",
+    "reserve_doi": "https://zenodo.org/api/records/4931882/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4931881",
+    "parent_html": "https://zenodo.org/records/4931881",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4931882/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4931882/sequence/default",
+    "files": "https://zenodo.org/api/records/4931882/files",
+    "media_files": "https://zenodo.org/api/records/4931882/media-files",
+    "archive": "https://zenodo.org/api/records/4931882/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4931882/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4931882/versions/latest",
+    "latest_html": "https://zenodo.org/records/4931882/latest",
+    "versions": "https://zenodo.org/api/records/4931882/versions",
+    "draft": "https://zenodo.org/api/records/4931882/draft",
+    "access_links": "https://zenodo.org/api/records/4931882/access/links",
+    "access_grants": "https://zenodo.org/api/records/4931882/access/grants",
+    "access_users": "https://zenodo.org/api/records/4931882/access/users",
+    "access_request": "https://zenodo.org/api/records/4931882/access/request",
+    "access": "https://zenodo.org/api/records/4931882/access",
+    "communities": "https://zenodo.org/api/records/4931882/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4931882/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4931882/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4931882/file-modification",
+    "requests": "https://zenodo.org/api/records/4931882/requests"
+  },
+  "updated": "2022-05-28T05:07:10.660318+00:00",
+  "recid": "4931882",
+  "revision": 3,
+  "files": [
+    {
+      "id": "985e68dd-6f10-4f0b-abc2-28ae57e0d5b1",
+      "key": "Patient_017.zip",
+      "size": 167795150,
+      "checksum": "md5:c2290a5dbc88507e5d8a2176a067e15c",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_017.zip/content"
+      }
+    },
+    {
+      "id": "79326aca-415d-46a4-9a55-128a5a8eb7e8",
+      "key": "Patient_016.zip",
+      "size": 186127157,
+      "checksum": "md5:ef669a39e39a5036008b01f44a628bda",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_016.zip/content"
+      }
+    },
+    {
+      "id": "53e51caf-86ec-4d0b-a922-19d97257818f",
+      "key": "Patient_015.zip",
+      "size": 193587198,
+      "checksum": "md5:b9f3b54ad011f0947c92537e4d21dc53",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_015.zip/content"
+      }
+    },
+    {
+      "id": "f843d346-fdf5-4010-8dd7-a847f2d178bb",
+      "key": "Patient_014.zip",
+      "size": 200344549,
+      "checksum": "md5:229146ea877db17540eb2a6d273de6d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_014.zip/content"
+      }
+    },
+    {
+      "id": "2397384c-3278-46eb-a436-237f829829f0",
+      "key": "Patient_013.zip",
+      "size": 181141327,
+      "checksum": "md5:d0ba5941355494b1ba3aed04ca49818a",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_013.zip/content"
+      }
+    },
+    {
+      "id": "f4ed170c-fd97-478b-aa54-39fdbc939717",
+      "key": "Patient_012.zip",
+      "size": 254016475,
+      "checksum": "md5:b11223eba46e27822ebf16aaf894d4fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_012.zip/content"
+      }
+    },
+    {
+      "id": "eca9dc9f-ed17-481e-87b0-e0f97b0b6dcd",
+      "key": "Patient_008.zip",
+      "size": 218392091,
+      "checksum": "md5:dfa9e266b86dc7cb6fa89fb6dc2f3221",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_008.zip/content"
+      }
+    },
+    {
+      "id": "a52d7c8e-f855-44cb-bd6b-d6036c38f4af",
+      "key": "Patient_010.zip",
+      "size": 237687374,
+      "checksum": "md5:13351aed291894f0a84fc5a7c38ff454",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_010.zip/content"
+      }
+    },
+    {
+      "id": "fdb68ef2-c056-4036-b4af-fb6dbc554309",
+      "key": "Patient_002.zip",
+      "size": 236103553,
+      "checksum": "md5:e8704903243b04dec0bb4b1be8686f10",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_002.zip/content"
+      }
+    },
+    {
+      "id": "184fc3a3-b937-4b83-8f38-7f6171daa205",
+      "key": "Patient_001.zip",
+      "size": 262981457,
+      "checksum": "md5:9d027ef74bcbc842a7b3ec024b395293",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_001.zip/content"
+      }
+    },
+    {
+      "id": "88210b14-69d8-4c80-aafa-3280726be5db",
+      "key": "Patient_003.zip",
+      "size": 168638216,
+      "checksum": "md5:98c45fb23e85d79094b7a84f0b336ce4",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_003.zip/content"
+      }
+    },
+    {
+      "id": "60ef251c-5d0a-4c72-a8f6-d19badc4f16f",
+      "key": "Patient_004.zip",
+      "size": 188741508,
+      "checksum": "md5:c7e146ea17304b6bc96d31e4568cd1dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_004.zip/content"
+      }
+    },
+    {
+      "id": "bf768d43-66c3-43cd-af0a-eb7876d42110",
+      "key": "Patient_005.zip",
+      "size": 155063629,
+      "checksum": "md5:8547f37d984fef97518c21f632e21918",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_005.zip/content"
+      }
+    },
+    {
+      "id": "42b95b91-ed85-4016-9bfc-cbbbd8c89854",
+      "key": "Patient_006.zip",
+      "size": 271956798,
+      "checksum": "md5:d26a4d66fc526e42b07f1f02556fe6e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_006.zip/content"
+      }
+    },
+    {
+      "id": "77b0ecad-46e7-4bad-9129-55a45848f851",
+      "key": "Patient_007.zip",
+      "size": 155387466,
+      "checksum": "md5:1c2ccf2b5d1c7259e6fe1a8c4fe3d9f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_007.zip/content"
+      }
+    },
+    {
+      "id": "af32996e-81f0-4d6f-ac68-7ed67584e168",
+      "key": "Patient_011.zip",
+      "size": 68176900,
+      "checksum": "md5:6b6a1de42173c7bc6fcbd75347021886",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_011.zip/content"
+      }
+    },
+    {
+      "id": "0adc6c91-dfc1-4bbe-89eb-282d75d10b2b",
+      "key": "Patient_009.zip",
+      "size": 175284366,
+      "checksum": "md5:a3ab282d875fae02f9be0f7386f5b635",
+      "links": {
+        "self": "https://zenodo.org/api/records/4931882/files/Patient_009.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1143,
+    "unique_downloads": 588,
+    "views": 285,
+    "unique_views": 269,
+    "version_downloads": 1142,
+    "version_unique_downloads": 587,
+    "version_unique_views": 268,
+    "version_views": 284
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 17,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3321425214,
+    "top_level_files": [
+      {
+        "name": "Patient_017.zip",
+        "size": 167795150
+      },
+      {
+        "name": "Patient_016.zip",
+        "size": 186127157
+      },
+      {
+        "name": "Patient_015.zip",
+        "size": 193587198
+      },
+      {
+        "name": "Patient_014.zip",
+        "size": 200344549
+      },
+      {
+        "name": "Patient_013.zip",
+        "size": 181141327
+      },
+      {
+        "name": "Patient_012.zip",
+        "size": 254016475
+      },
+      {
+        "name": "Patient_008.zip",
+        "size": 218392091
+      },
+      {
+        "name": "Patient_010.zip",
+        "size": 237687374
+      },
+      {
+        "name": "Patient_002.zip",
+        "size": 236103553
+      },
+      {
+        "name": "Patient_001.zip",
+        "size": 262981457
+      },
+      {
+        "name": "Patient_003.zip",
+        "size": 168638216
+      },
+      {
+        "name": "Patient_004.zip",
+        "size": 188741508
+      },
+      {
+        "name": "Patient_005.zip",
+        "size": 155063629
+      },
+      {
+        "name": "Patient_006.zip",
+        "size": 271956798
+      },
+      {
+        "name": "Patient_007.zip",
+        "size": 155387466
+      },
+      {
+        "name": "Patient_011.zip",
+        "size": 68176900
+      },
+      {
+        "name": "Patient_009.zip",
+        "size": 175284366
+      }
+    ],
+    "zip_contents": {
+      "patient_017.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 291504618,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_016.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 306184682,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_015.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 325059049,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_014.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 315628135,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_013.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 289938023,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_012.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 402135655,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_008.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 379066983,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_010.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 381164135,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_002.zip": {
+        "total_files": 6,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 374348549,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_001.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 434641509,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_003.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 283660886,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_004.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 324541032,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_005.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 246988809,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_006.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 441981543,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_007.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 238650396,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_011.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 126360165,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "patient_009.zip": {
+        "total_files": 4,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 279452262,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:38.624569"
+}

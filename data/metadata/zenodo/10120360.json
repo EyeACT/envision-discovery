@@ -1,0 +1,374 @@
+{
+  "created": "2023-11-22T22:54:43.990530+00:00",
+  "modified": "2023-11-22T22:54:44.991979+00:00",
+  "id": 10120360,
+  "conceptrecid": "7754314",
+  "doi": "10.5281/zenodo.10120360",
+  "conceptdoi": "10.5281/zenodo.7754314",
+  "doi_url": "https://doi.org/10.5281/zenodo.10120360",
+  "metadata": {
+    "title": "Phospho-seq: Integrated, multi-modal profiling of intracellular protein dynamics in single cells",
+    "doi": "10.5281/zenodo.10120360",
+    "publication_date": "2023-11-16",
+    "description": "<p>&nbsp;</p><p>Datasets to go along with the publication listed:</p><p>full_object.rds: Brain Organoid Phospho-Seq dataset with ATAC, Protein and imputed RNA data</p><p>rna_object.rds: Reference whole cell scRNA-Seq object on Brain organoids</p><p>multiome_object.rds: Bridge dataset containing RNA and ATAC modalities for Brain organoids</p><p>metacell_allnorm.rds: Metacell object for finding gene-peak-protein linkages in Brain organoid dataset</p><p>fullobject_fragments.tsv.gz: fragment file to go with the full object</p><p>fullobject_fragments.tsv.gz.tbi:index file for the full object fragment file</p><p>multiome_fragments.tsv.gz: fragment file to go with the multiome&nbsp;object</p><p>multiome_fragments.tsv.gz.tbi:index file for the multiome object fragment file</p><p>K562_Stem.rds : object corresponding to the pilot experiment including K562 cells and iPS cells</p><p>K562_stem_fragments.tsv.gz:&nbsp; fragment file to go with the K562_stem object</p><p>K562_stem_fragments.tsv.gz.tbi: index file for the K562_stem object fragment file</p><p>retina.rds : object corresponding to the retinal organoid phospho-seq experiment</p><p>retina_fragments.tsv.gz:&nbsp; fragment file to go with the retina object</p><p>retina_fragments.tsv.gz.tbi: index file for the retina object fragment file</p><p>retina_multi.rds : object corresponding to the retinal organoid phospho-seq-multiome experiment</p><p>retina_multi_fragments.tsv.gz:&nbsp; fragment file to go with the retina_multi object</p><p>retina_multi_fragments.tsv.gz.tbi: index file for the retina_multi object fragment file</p><p>To use the K562, multiome,&nbsp;retina and retina_multiome datasets provided, please use these lines of code to import the object into Signac/Seurat&nbsp;and change the fragment&nbsp;file path to the corresponding downloaded fragment file:</p><p>obj &lt;- readRDS(\"obj.rds\")\n# remove fragment file information\nFragments(obj) &lt;- NULL\n# Update the path of the fragment file \nFragments(obj) &lt;- CreateFragmentObject(path = \"download/obj_fragments.tsv.gz\", cells = Cells(obj))</p><p>To use the K562 and multiome&nbsp;datasets provided, please use these lines of code to import the object into Signac/Seurat&nbsp;and change the fragment&nbsp;file path to the corresponding downloaded fragment file:</p><p>obj &lt;- readRDS(\"obj.rds\") # remove fragment file information Fragments(obj) &lt;- NULL # Update the path of the fragment file Fragments(obj) &lt;- CreateFragmentObject(path = \"download/obj_fragments.tsv.gz\", cells = Cells(obj))</p><p>To use the \"fullobject\" dataset&nbsp;provided, please use these lines of code to import the object into Signac/Seurat&nbsp;and change the fragment&nbsp;file path to the corresponding downloaded fragment file:&nbsp;</p><p>#load the stringr package\nlibrary(stringr)\n#load the object\nobj &lt;- readRDS(\"obj.rds\")\n# remove fragment file information\nFragments(obj) &lt;- NULL\n#Remove unwanted residual information and rename cells\nobj@reductions$norm.adt.pca &lt;- NULL\nobj@reductions$norm.pca &lt;- NULL\nobj &lt;- RenameCells(obj, new.names = str_remove(Cells(obj), \"atac_\"))\n# Update the path of the fragment file \nFragments(obj) &lt;- CreateFragmentObject(path = \"download/obj_fragments.tsv.gz\", cells = Cells(obj))</p><p>&nbsp;</p><p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Blair, John D",
+        "affiliation": "New York Genome Center",
+        "orcid": "0000-0001-7517-6148"
+      },
+      {
+        "name": "Hartman, Austin",
+        "affiliation": "New York Genome Center",
+        "orcid": "0000-0001-7278-1852"
+      },
+      {
+        "name": "Zenk, Fides",
+        "affiliation": "ETH Zurich",
+        "orcid": "0000-0002-0324-0902"
+      },
+      {
+        "name": "Dalgarno, Carol",
+        "affiliation": "New York Genome Center",
+        "orcid": "0000-0002-1479-664X"
+      },
+      {
+        "name": "Treutlein, Barbara",
+        "affiliation": "ETH Zurich",
+        "orcid": "0000-0002-3299-5597"
+      },
+      {
+        "name": "Satija, Rahul",
+        "affiliation": "New York Genome Center",
+        "orcid": "0000-0001-9448-8833"
+      },
+      {
+        "name": "Wahle, Philipp",
+        "affiliation": null,
+        "orcid": "0000-0002-4728-806X"
+      },
+      {
+        "name": "Brancati, Giovanna",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7754314"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Phospho-seq: Integrated, multi-modal profiling of intracellular protein dynamics in single cells",
+  "links": {
+    "self": "https://zenodo.org/api/records/10120360",
+    "self_html": "https://zenodo.org/records/10120360",
+    "preview_html": "https://zenodo.org/records/10120360?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10120360",
+    "self_doi": "https://doi.org/10.5281/zenodo.10120360",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10120360",
+    "reserve_doi": "https://zenodo.org/api/records/10120360/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7754314",
+    "parent_html": "https://zenodo.org/records/7754314",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7754314",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7754314",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10120360/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10120360/sequence/default",
+    "files": "https://zenodo.org/api/records/10120360/files",
+    "media_files": "https://zenodo.org/api/records/10120360/media-files",
+    "archive": "https://zenodo.org/api/records/10120360/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10120360/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10120360/versions/latest",
+    "latest_html": "https://zenodo.org/records/10120360/latest",
+    "versions": "https://zenodo.org/api/records/10120360/versions",
+    "draft": "https://zenodo.org/api/records/10120360/draft",
+    "access_links": "https://zenodo.org/api/records/10120360/access/links",
+    "access_grants": "https://zenodo.org/api/records/10120360/access/grants",
+    "access_users": "https://zenodo.org/api/records/10120360/access/users",
+    "access_request": "https://zenodo.org/api/records/10120360/access/request",
+    "access": "https://zenodo.org/api/records/10120360/access",
+    "communities": "https://zenodo.org/api/records/10120360/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10120360/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10120360/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10120360/file-modification",
+    "requests": "https://zenodo.org/api/records/10120360/requests"
+  },
+  "updated": "2023-11-22T22:54:44.991979+00:00",
+  "recid": "10120360",
+  "revision": 4,
+  "files": [
+    {
+      "id": "3edcc0da-578a-4038-9c6d-9191c84231e0",
+      "key": "fullobject_fragments.tsv.gz",
+      "size": 1371645326,
+      "checksum": "md5:cee54fb101c38e005a110ceb7dbbe959",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/fullobject_fragments.tsv.gz/content"
+      }
+    },
+    {
+      "id": "2a302d77-ac2c-4007-83fd-e13aa1570625",
+      "key": "multiome_object.RDS",
+      "size": 1367123377,
+      "checksum": "md5:ecba9bde69928c869ec69147be89a9e2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/multiome_object.RDS/content"
+      }
+    },
+    {
+      "id": "49bc3094-1495-4766-8408-86a04e3d5a13",
+      "key": "metacell_allnorm.rds",
+      "size": 393315340,
+      "checksum": "md5:e4c297d46c6d74e554626dac82917acd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/metacell_allnorm.rds/content"
+      }
+    },
+    {
+      "id": "324637aa-a42a-4759-8f5e-4696ce6b253c",
+      "key": "rna_object.rds",
+      "size": 930679827,
+      "checksum": "md5:0ce2f65a9548e177ffb3dda18f02b039",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/rna_object.rds/content"
+      }
+    },
+    {
+      "id": "2ca21b48-12f0-4558-beaa-9595be89c6a1",
+      "key": "mutliome_fragments.tsv.gz",
+      "size": 1231774156,
+      "checksum": "md5:aff343ceca8213d48be073d68a7872e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/mutliome_fragments.tsv.gz/content"
+      }
+    },
+    {
+      "id": "d479d224-2fa7-426a-b98a-425c4ff83398",
+      "key": "K562_stem_fragments.tsv.gz.tbi",
+      "size": 919853,
+      "checksum": "md5:cb565a297c29111231c99149ae6b4565",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/K562_stem_fragments.tsv.gz.tbi/content"
+      }
+    },
+    {
+      "id": "4079de15-172c-46df-b77e-c3e06b243fa9",
+      "key": "K562_stem_fragments.tsv.gz",
+      "size": 1502175231,
+      "checksum": "md5:35aa02a42d0c803fb07131e461768df3",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/K562_stem_fragments.tsv.gz/content"
+      }
+    },
+    {
+      "id": "7f560f46-020e-4dbc-8b3a-f8b4a52c71ff",
+      "key": "fullobject_fragments.tsv.gz.tbi",
+      "size": 872714,
+      "checksum": "md5:5ea276e66d49583f4dba6705875250eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/fullobject_fragments.tsv.gz.tbi/content"
+      }
+    },
+    {
+      "id": "d61d894d-9ead-4ccf-889d-4d66e4017413",
+      "key": "multiome_fragments.tsv.gz.tbi",
+      "size": 825600,
+      "checksum": "md5:39306a909f06b68ffd9c4b3c9f9b884c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/multiome_fragments.tsv.gz.tbi/content"
+      }
+    },
+    {
+      "id": "6ea471f6-f7e8-4531-bae4-f4559704cd86",
+      "key": "full_object.rds",
+      "size": 4254352346,
+      "checksum": "md5:7b78b9e4f7bb4c3cf5c4befd08f801dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/full_object.rds/content"
+      }
+    },
+    {
+      "id": "2d3395a6-5c72-40ce-b5ea-9443018bed61",
+      "key": "K562_stem.rds",
+      "size": 969106986,
+      "checksum": "md5:586eff217c85cb58238065161880b7a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/K562_stem.rds/content"
+      }
+    },
+    {
+      "id": "45ad4df1-3a76-4144-83d4-33ce113dd5b1",
+      "key": "retina_multi_fragments.tsv.gz.tbi",
+      "size": 662345,
+      "checksum": "md5:bdd53641efd0de77ef31a373989dd6ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina_multi_fragments.tsv.gz.tbi/content"
+      }
+    },
+    {
+      "id": "16ec51af-fa7c-4b09-b34d-c0008adfed20",
+      "key": "retina_fragments.tsv.gz.tbi",
+      "size": 825056,
+      "checksum": "md5:b0d2bf0c00a21c61ae5664314d9841b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina_fragments.tsv.gz.tbi/content"
+      }
+    },
+    {
+      "id": "bd70a565-ed25-4ad0-9bfa-6e50fff97e86",
+      "key": "retina_multi.rds",
+      "size": 564243810,
+      "checksum": "md5:af05306f8aa1e298e7ebf6f4a1804da1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina_multi.rds/content"
+      }
+    },
+    {
+      "id": "65b61f86-a572-4c54-b186-117ae1bf2c6e",
+      "key": "retina_fragments.tsv.gz",
+      "size": 1218207485,
+      "checksum": "md5:70905516b359856e5b355534173014c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina_fragments.tsv.gz/content"
+      }
+    },
+    {
+      "id": "43de86da-f079-4f97-b27b-96219494aab1",
+      "key": "retina.rds",
+      "size": 3278903461,
+      "checksum": "md5:4ec41006003210492f61646afd76d719",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina.rds/content"
+      }
+    },
+    {
+      "id": "6075d9e2-1db6-4dfa-93a7-0ed4bfe826a0",
+      "key": "retina_multi_fragments.tsv.gz",
+      "size": 243272974,
+      "checksum": "md5:62bbb46a928697680924e0f783c3ea2b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10120360/files/retina_multi_fragments.tsv.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "519303"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2307,
+    "unique_downloads": 2254,
+    "views": 808,
+    "unique_views": 748,
+    "version_downloads": 1400,
+    "version_unique_downloads": 1394,
+    "version_unique_views": 241,
+    "version_views": 272
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 5,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 5567075172,
+    "top_level_files": [
+      {
+        "name": "fullobject_fragments.tsv.gz",
+        "size": 1371645326
+      },
+      {
+        "name": "multiome_object.RDS",
+        "size": 1367123377
+      },
+      {
+        "name": "metacell_allnorm.rds",
+        "size": 393315340
+      },
+      {
+        "name": "rna_object.rds",
+        "size": 930679827
+      },
+      {
+        "name": "mutliome_fragments.tsv.gz",
+        "size": 1231774156
+      },
+      {
+        "name": "K562_stem_fragments.tsv.gz.tbi",
+        "size": 919853
+      },
+      {
+        "name": "K562_stem_fragments.tsv.gz",
+        "size": 1502175231
+      },
+      {
+        "name": "fullobject_fragments.tsv.gz.tbi",
+        "size": 872714
+      },
+      {
+        "name": "multiome_fragments.tsv.gz.tbi",
+        "size": 825600
+      },
+      {
+        "name": "full_object.rds",
+        "size": 4254352346
+      },
+      {
+        "name": "K562_stem.rds",
+        "size": 969106986
+      },
+      {
+        "name": "retina_multi_fragments.tsv.gz.tbi",
+        "size": 662345
+      },
+      {
+        "name": "retina_fragments.tsv.gz.tbi",
+        "size": 825056
+      },
+      {
+        "name": "retina_multi.rds",
+        "size": 564243810
+      },
+      {
+        "name": "retina_fragments.tsv.gz",
+        "size": 1218207485
+      },
+      {
+        "name": "retina.rds",
+        "size": 3278903461
+      },
+      {
+        "name": "retina_multi_fragments.tsv.gz",
+        "size": 243272974
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:10.892584"
+}

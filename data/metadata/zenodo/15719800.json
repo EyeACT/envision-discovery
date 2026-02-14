@@ -1,0 +1,250 @@
+{
+  "created": "2025-07-30T09:32:16.685591+00:00",
+  "modified": "2025-07-30T09:32:17.337614+00:00",
+  "id": 15719800,
+  "conceptrecid": "14881792",
+  "doi": "10.5281/zenodo.15719800",
+  "conceptdoi": "10.5281/zenodo.14881792",
+  "doi_url": "https://doi.org/10.5281/zenodo.15719800",
+  "metadata": {
+    "title": "WebClasSeg25",
+    "doi": "10.5281/zenodo.15719800",
+    "publication_date": "2025-07-13",
+    "description": "<h2>A Dual-Classified Webpage Segmentation Dataset for Functional and Maturity-Based Webpage Analysis</h2>\n<p>This dataset includes current websites for public services (university, hospital, municipality, courts, tourism and other, insurances). The dataset features polygon and HTML segmentation for both visual and text-based methods. Additionally, it provides a functional and maturity classification of the segments.&nbsp;</p>\n<p>The publication of this dataset was presented at SIGIR 2025. Please cite the associated <a title=\"WebClasSeg-25: A Dual-Classified Webpage Segmentation Dataset - Integrating Functional and Maturity-Based Analysis\" href=\"https://doi.org/10.1145/3726302.3730309\" target=\"_blank\" rel=\"noopener\">publication</a> if you use the dataset in your research.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jonathan, Gerber",
+        "affiliation": "ZHAW Zurich University of Applied Sciences",
+        "orcid": "0009-0003-6751-7944"
+      },
+      {
+        "name": "Saxer, Jasmin",
+        "affiliation": "ZHAW Zurich University of Applied Sciences",
+        "orcid": "0009-0000-1263-5757"
+      },
+      {
+        "name": "Baptista Kreiner, Bruno",
+        "affiliation": "ZHAW Zurich University of Applied Sciences",
+        "orcid": "0009-0007-5948-8345"
+      },
+      {
+        "name": "Kimia, Rabishokr",
+        "affiliation": "ZHAW Zurich University of Applied Sciences",
+        "orcid": "0009-0006-6594-002X"
+      },
+      {
+        "name": "Weiler, Andreas",
+        "affiliation": "ZHAW Zurich University of Applied Sciences",
+        "orcid": "0000-0002-8385-2537"
+      }
+    ],
+    "keywords": [
+      "Website Segmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1145/3726302.3730309",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-conferencepaper",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "The 48th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "acronym": "SIGIR",
+      "dates": "13-17 July 2025",
+      "place": "Padua, Italy",
+      "url": "https://sigir2025.dei.unipd.it",
+      "session": "Resource & Reproducibility Paper"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "200839",
+        "internal_id": "10.13039/501100001711::200839",
+        "funder": {
+          "name": "Swiss National Science Foundation",
+          "doi": "10.13039/501100001711",
+          "acronym": "SNSF"
+        },
+        "title": "Digital Transformation at the Local Tier of Government in Europe: Dynamics and Effects from a Cross-Countries and Over-Time Comparative Perspective (DIGILOG)",
+        "program": "Projects"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14881792"
+          }
+        }
+      ]
+    }
+  },
+  "title": "WebClasSeg25",
+  "links": {
+    "self": "https://zenodo.org/api/records/15719800",
+    "self_html": "https://zenodo.org/records/15719800",
+    "preview_html": "https://zenodo.org/records/15719800?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15719800",
+    "self_doi": "https://doi.org/10.5281/zenodo.15719800",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15719800",
+    "reserve_doi": "https://zenodo.org/api/records/15719800/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14881792",
+    "parent_html": "https://zenodo.org/records/14881792",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14881792",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14881792",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15719800/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15719800/sequence/default",
+    "files": "https://zenodo.org/api/records/15719800/files",
+    "media_files": "https://zenodo.org/api/records/15719800/media-files",
+    "archive": "https://zenodo.org/api/records/15719800/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15719800/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15719800/versions/latest",
+    "latest_html": "https://zenodo.org/records/15719800/latest",
+    "versions": "https://zenodo.org/api/records/15719800/versions",
+    "draft": "https://zenodo.org/api/records/15719800/draft",
+    "access_links": "https://zenodo.org/api/records/15719800/access/links",
+    "access_grants": "https://zenodo.org/api/records/15719800/access/grants",
+    "access_users": "https://zenodo.org/api/records/15719800/access/users",
+    "access_request": "https://zenodo.org/api/records/15719800/access/request",
+    "access": "https://zenodo.org/api/records/15719800/access",
+    "communities": "https://zenodo.org/api/records/15719800/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15719800/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15719800/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15719800/file-modification",
+    "requests": "https://zenodo.org/api/records/15719800/requests"
+  },
+  "updated": "2025-07-30T09:32:17.337614+00:00",
+  "recid": "15719800",
+  "revision": 4,
+  "files": [
+    {
+      "id": "14fc0514-bbca-47dc-a3ef-13e08fb39b6c",
+      "key": "README.md",
+      "size": 3976,
+      "checksum": "md5:cc2fd1891c0e8276eb55879671298904",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/README.md/content"
+      }
+    },
+    {
+      "id": "bc4747fb-b4e8-4a64-8bc8-f5b617a792b5",
+      "key": "annotations.json",
+      "size": 4132571,
+      "checksum": "md5:1935e8fad720db89ae06ba6e9d06d2d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/annotations.json/content"
+      }
+    },
+    {
+      "id": "4626fbef-947b-454c-93a7-fe702f63b2e9",
+      "key": "train_test_split.csv",
+      "size": 26253,
+      "checksum": "md5:66d34350adaa14500eb532ef88a363a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/train_test_split.csv/content"
+      }
+    },
+    {
+      "id": "5a8ea8ae-eaaf-4259-9c3c-43b97c1fc0d5",
+      "key": "screenshots.zip",
+      "size": 1687393526,
+      "checksum": "md5:83392439e055333692c36fa1db71741f",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/screenshots.zip/content"
+      }
+    },
+    {
+      "id": "5fb8fd2b-cc85-4400-8d33-1d9b4581eba1",
+      "key": "one_webpage_data.zip",
+      "size": 4653041,
+      "checksum": "md5:0ee11b9004141a867fd4e5b3b23203da",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/one_webpage_data.zip/content"
+      }
+    },
+    {
+      "id": "44aa624b-1770-4031-b0d0-b86dc7abd5f9",
+      "key": "mhtml.zip",
+      "size": 1286471340,
+      "checksum": "md5:597c594fb550c7f91699338a5793de2f",
+      "links": {
+        "self": "https://zenodo.org/api/records/15719800/files/mhtml.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1267663"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 295,
+    "unique_downloads": 288,
+    "views": 180,
+    "unique_views": 150,
+    "version_downloads": 93,
+    "version_unique_downloads": 92,
+    "version_unique_views": 59,
+    "version_views": 69
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2978517907,
+    "top_level_files": [
+      {
+        "name": "README.md",
+        "size": 3976
+      },
+      {
+        "name": "annotations.json",
+        "size": 4132571
+      },
+      {
+        "name": "train_test_split.csv",
+        "size": 26253
+      },
+      {
+        "name": "screenshots.zip",
+        "size": 1687393526
+      },
+      {
+        "name": "one_webpage_data.zip",
+        "size": 4653041
+      },
+      {
+        "name": "mhtml.zip",
+        "size": 1286471340
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:03.880130"
+}

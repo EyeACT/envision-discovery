@@ -1,0 +1,425 @@
+{
+  "created": "2023-08-29T00:38:40.473643+00:00",
+  "modified": "2023-08-29T14:26:58.586652+00:00",
+  "id": 8287928,
+  "conceptrecid": "8287927",
+  "doi": "10.5281/zenodo.8287928",
+  "conceptdoi": "10.5281/zenodo.8287927",
+  "doi_url": "https://doi.org/10.5281/zenodo.8287928",
+  "metadata": {
+    "title": "RVD: A Handheld Device-Based Fundus Video Dataset for Retinal Vessel Segmentation",
+    "doi": "10.5281/zenodo.8287928",
+    "publication_date": "2023-08-28",
+    "description": "<p>We introduce the first video-based <strong>retinal vessel dataset (RVD)</strong>, a collection of 635 smartphone-based videos with detailed vessel annotation. All captured videos have a frame rate of 25 frames per second, with the duration varying between 2 to 30 seconds. The total number of frames in our dataset is over 130,000. These videos are recorded from four clinics, including patients from 50 to 75 years old. More specifically, 264 males and 151 females are included in the collection process.</p>\n\n<p>The annotations provided in our dataset span two dimensions: spatial and temporal. In the spatial dimension, we offer three distinct levels of annotations: binary vessel masks, general vein-artery masks, and fine-grained vein-artery masks. Each kind of annotation is tailored to specific clinical purposes. In the temporal dimension, we focus on the optic disk regions of videos where the retinal vessel fluctuation normally occurs. We select and annotate frames with the maximal and minimal pulse widths as well as label the existence of spontaneous retinal venous pulsations (SVP).</p>\n\n<p>More detailed information can also be found on our website: https://uq-cvlab.github.io/Retinal-Video-Dataset/</p>\n\n<p>&nbsp;</p>\n\n<p>If you find our RVD dataset is useful in your research, please consider cite:</p>\n\n<pre><code>@article{MD2023RVD,\n  title={RVD: A Handheld Device-Based Fundus Video Dataset for Retinal Vessel Segmentation},\n  author={MD WAHIDUZZAMAN KHAN, Hongwei Sheng, Hu Zhang, Heming Du, Sen Wang, Minas Theodore Coroneo, \n  Farshid Hajati, Sahar Shariflou, Michael Kalloniatis, Jack Phu, Ashish Agar, Zi Huang, Mojtaba Golzan, Xin Yu},\n  journal={arXiv preprint arXiv:2307.06577},\n  year={2023}\n}\n</code></pre>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Md Wahiduzzaman Khan",
+        "affiliation": "University of technology Sydney"
+      },
+      {
+        "name": "Hongwei Sheng",
+        "affiliation": "University of Technology Sydney, Australia"
+      },
+      {
+        "name": "Hu Zhang",
+        "affiliation": "The University of Queensland, Australia"
+      },
+      {
+        "name": "Heming Du",
+        "affiliation": "Australian National University, Australia"
+      },
+      {
+        "name": "Sen Wang",
+        "affiliation": "The University of Queensland, Australia"
+      },
+      {
+        "name": "Minas Theodore Coroneo",
+        "affiliation": "University of New South Wales, Australia"
+      },
+      {
+        "name": "Farshid Hajati",
+        "affiliation": "Victoria University, Australia"
+      },
+      {
+        "name": "Sahar Shariflou",
+        "affiliation": "University of Technology Sydney, Australia"
+      },
+      {
+        "name": "Michael Kalloniatis",
+        "affiliation": "Deakin University, Australia"
+      },
+      {
+        "name": "Jack Phu",
+        "affiliation": "University of New South Wales, Australia"
+      },
+      {
+        "name": "Ashish Agar",
+        "affiliation": "University of New South Wales, Australia"
+      },
+      {
+        "name": "Zi Huang",
+        "affiliation": "The University of Queensland, Australia"
+      },
+      {
+        "name": "Mojtaba Golzan",
+        "affiliation": "University of Technology Sydney, Australi"
+      },
+      {
+        "name": "Xin Yu",
+        "affiliation": "The University of Queensland, Australia"
+      }
+    ],
+    "keywords": [
+      "Retinal Imaging",
+      "Video dataset",
+      "Handheld Deivce Fundus Imaging"
+    ],
+    "version": "v1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8287927"
+          }
+        }
+      ]
+    }
+  },
+  "title": "RVD: A Handheld Device-Based Fundus Video Dataset for Retinal Vessel Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/8287928",
+    "self_html": "https://zenodo.org/records/8287928",
+    "preview_html": "https://zenodo.org/records/8287928?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8287928",
+    "self_doi": "https://doi.org/10.5281/zenodo.8287928",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8287928",
+    "reserve_doi": "https://zenodo.org/api/records/8287928/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8287927",
+    "parent_html": "https://zenodo.org/records/8287927",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8287927",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8287927",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8287928/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8287928/sequence/default",
+    "files": "https://zenodo.org/api/records/8287928/files",
+    "media_files": "https://zenodo.org/api/records/8287928/media-files",
+    "archive": "https://zenodo.org/api/records/8287928/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8287928/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8287928/versions/latest",
+    "latest_html": "https://zenodo.org/records/8287928/latest",
+    "versions": "https://zenodo.org/api/records/8287928/versions",
+    "draft": "https://zenodo.org/api/records/8287928/draft",
+    "access_links": "https://zenodo.org/api/records/8287928/access/links",
+    "access_grants": "https://zenodo.org/api/records/8287928/access/grants",
+    "access_users": "https://zenodo.org/api/records/8287928/access/users",
+    "access_request": "https://zenodo.org/api/records/8287928/access/request",
+    "access": "https://zenodo.org/api/records/8287928/access",
+    "communities": "https://zenodo.org/api/records/8287928/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8287928/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8287928/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8287928/file-modification",
+    "requests": "https://zenodo.org/api/records/8287928/requests"
+  },
+  "updated": "2023-08-29T14:26:58.586652+00:00",
+  "recid": "8287928",
+  "revision": 2,
+  "files": [
+    {
+      "id": "3037ea55-1b93-4028-b85b-b6ee70382530",
+      "key": "videos_part5.zip",
+      "size": 2845738010,
+      "checksum": "md5:b6009c6b547ad9665d03b658e7a342ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part5.zip/content"
+      }
+    },
+    {
+      "id": "e28c50a6-7ff6-45fc-bbd7-6ae5be4486a6",
+      "key": "videos_part7.zip",
+      "size": 756452936,
+      "checksum": "md5:b60150c1ff290229c806d1e77ea7a6a0",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part7.zip/content"
+      }
+    },
+    {
+      "id": "2b3e7b49-2f2c-4a53-ac32-5dbe64271f6d",
+      "key": "videos_part8.zip",
+      "size": 767383018,
+      "checksum": "md5:a64a9ffcd859604d5d678f2a15c500b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part8.zip/content"
+      }
+    },
+    {
+      "id": "f5117f37-48c6-4531-b66f-3e7b28ca3216",
+      "key": "videos_part3.zip",
+      "size": 2930020011,
+      "checksum": "md5:ca1c8343c25eb9cb9fdae448679752c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part3.zip/content"
+      }
+    },
+    {
+      "id": "f8da4470-7b40-4175-9658-b722c2dde7a1",
+      "key": "videos_part9.zip",
+      "size": 871812178,
+      "checksum": "md5:ae3250f1912162850a7ceeec5cc62920",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part9.zip/content"
+      }
+    },
+    {
+      "id": "bdba897a-1fbf-4426-a1cc-e3fa51c4caa5",
+      "key": "videos_part2.zip",
+      "size": 2825311880,
+      "checksum": "md5:6ae8251b5c41e8eb0fb0e140baeb430d",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part2.zip/content"
+      }
+    },
+    {
+      "id": "b811606a-a833-4916-825a-032fb70ca576",
+      "key": "videos_part4.zip",
+      "size": 3723172541,
+      "checksum": "md5:eb05fcdfd9929f7847d87f2137893882",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part4.zip/content"
+      }
+    },
+    {
+      "id": "4fc2d2bd-c002-464a-8886-095040af297f",
+      "key": "videos_part6.zip",
+      "size": 863434052,
+      "checksum": "md5:c895842fa2663c27597e93601e665c96",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part6.zip/content"
+      }
+    },
+    {
+      "id": "1476703e-5e25-4f55-bfa5-ab44fffc606d",
+      "key": "Labels.zip",
+      "size": 3621894816,
+      "checksum": "md5:c0dd35f92bb715a58472617a3f6a1a5f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/Labels.zip/content"
+      }
+    },
+    {
+      "id": "c1b0f44f-e91d-4b39-8ceb-5c104ca0ac5a",
+      "key": "videos_part0.zip",
+      "size": 3770154480,
+      "checksum": "md5:de37e9a1bc5c71940f95bcee4cc802fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part0.zip/content"
+      }
+    },
+    {
+      "id": "5680939b-fb3b-4319-852d-912335ead4a2",
+      "key": "videos_part1.zip",
+      "size": 3078733096,
+      "checksum": "md5:5e18c47632b1011817350b68c0d5926c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8287928/files/videos_part1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "602344"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5793,
+    "unique_downloads": 3615,
+    "views": 1004,
+    "unique_views": 912,
+    "version_downloads": 5793,
+    "version_unique_downloads": 3615,
+    "version_unique_views": 912,
+    "version_views": 1004
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 11,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 26054107018,
+    "top_level_files": [
+      {
+        "name": "videos_part5.zip",
+        "size": 2845738010
+      },
+      {
+        "name": "videos_part7.zip",
+        "size": 756452936
+      },
+      {
+        "name": "videos_part8.zip",
+        "size": 767383018
+      },
+      {
+        "name": "videos_part3.zip",
+        "size": 2930020011
+      },
+      {
+        "name": "videos_part9.zip",
+        "size": 871812178
+      },
+      {
+        "name": "videos_part2.zip",
+        "size": 2825311880
+      },
+      {
+        "name": "videos_part4.zip",
+        "size": 3723172541
+      },
+      {
+        "name": "videos_part6.zip",
+        "size": 863434052
+      },
+      {
+        "name": "Labels.zip",
+        "size": 3621894816
+      },
+      {
+        "name": "videos_part0.zip",
+        "size": 3770154480
+      },
+      {
+        "name": "videos_part1.zip",
+        "size": 3078733096
+      }
+    ],
+    "zip_contents": {
+      "videos_part5.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2862237484,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part7.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 771294048,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part8.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 776272782,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part3.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2939420270,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part9.zip": {
+        "total_files": 68,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 881872650,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part2.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2838030402,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part4.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3738589742,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part6.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 878346208,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part0.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3783832670,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "videos_part1.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3092736024,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://uq-cvlab.github.io/Retinal-Video-Dataset/",
+      "type": "potential_download"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:16.254355"
+}

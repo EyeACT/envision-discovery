@@ -1,0 +1,145 @@
+{
+  "created": "2023-08-24T14:14:23.028465+00:00",
+  "modified": "2024-01-31T20:40:42.458906+00:00",
+  "id": 8224956,
+  "conceptrecid": "8224955",
+  "doi": "10.5281/zenodo.8224956",
+  "conceptdoi": "10.5281/zenodo.8224955",
+  "doi_url": "https://doi.org/10.5281/zenodo.8224956",
+  "metadata": {
+    "title": "Maize Root Domain Shift Image Datasets, Segmentation Models, and RhizoVision Explorer Settings",
+    "doi": "10.5281/zenodo.8224956",
+    "publication_date": "2023-08-24",
+    "description": "<p>This .zip file contains the following: 1) a .csv file used for RhizoVision Explorer settings, 2) root segmentation .pkl models developed using RootPainter, and 3) folders of maize root images collected in the field and greenhouse experiment that were used to train models and that were manually annotated to generate ground-truth datasets.</p>\n\n<p>For clarification, the segmentation model file named &quot;000053_1679678936_V7_2021_tiled.pkl&quot; is the growth stage-specific V7 field model. The segmentation model file named &quot;000040_1679498247_R2_2021_tiled.pkl&quot; is the&nbsp;growth stage-specific R2 field model. The segmentation model file named &quot;000022_1679880442_V7plusR2_2021_tiled.pkl&quot; is the fine-tuned V7+R2 field model. The segmentation model file named &quot;000059_1687007135_V7R2_Tiled_Combined_2021.pkl&quot; is the combined V7+R2 field model. The segmentation model file named &quot;000068_1687361521_V7extendedR2_tiled_2021.pkl&quot; is the extended V7+R2 field model. The segmentation model file named &quot;000027_1681159536_GH_R2_tiled.pkl&quot;&nbsp;the&nbsp;R2 greenhouse model.&nbsp;The segmentation model file named &quot;000059_1680366870_GH_V9_tiled.pkl&quot; is the V9 greenhouse model.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Banet, Travis",
+        "affiliation": "Department of Plant and Soil Sciences, University of Kentucky",
+        "orcid": "0000-0002-4667-2799"
+      },
+      {
+        "name": "Smith, Abraham",
+        "affiliation": "Department of Computer Science, University of Copenhagen"
+      },
+      {
+        "name": "McGrail, Rebecca",
+        "affiliation": "Department of Plant and Soil Sciences, University of Kentucky"
+      },
+      {
+        "name": "McNear, David H.",
+        "affiliation": "Department of Plant and Soil Sciences, University of Kentucky"
+      },
+      {
+        "name": "Poffenbarger, Hanna",
+        "affiliation": "Department of Plant and Soil Sciences, University of Kentucky"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8224955"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Maize Root Domain Shift Image Datasets, Segmentation Models, and RhizoVision Explorer Settings",
+  "links": {
+    "self": "https://zenodo.org/api/records/8224956",
+    "self_html": "https://zenodo.org/records/8224956",
+    "preview_html": "https://zenodo.org/records/8224956?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8224956",
+    "self_doi": "https://doi.org/10.5281/zenodo.8224956",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8224956",
+    "reserve_doi": "https://zenodo.org/api/records/8224956/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8224955",
+    "parent_html": "https://zenodo.org/records/8224955",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8224955",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8224955",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8224956/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8224956/sequence/default",
+    "files": "https://zenodo.org/api/records/8224956/files",
+    "media_files": "https://zenodo.org/api/records/8224956/media-files",
+    "archive": "https://zenodo.org/api/records/8224956/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8224956/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8224956/versions/latest",
+    "latest_html": "https://zenodo.org/records/8224956/latest",
+    "versions": "https://zenodo.org/api/records/8224956/versions",
+    "draft": "https://zenodo.org/api/records/8224956/draft",
+    "access_links": "https://zenodo.org/api/records/8224956/access/links",
+    "access_grants": "https://zenodo.org/api/records/8224956/access/grants",
+    "access_users": "https://zenodo.org/api/records/8224956/access/users",
+    "access_request": "https://zenodo.org/api/records/8224956/access/request",
+    "access": "https://zenodo.org/api/records/8224956/access",
+    "communities": "https://zenodo.org/api/records/8224956/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8224956/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8224956/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8224956/file-modification",
+    "requests": "https://zenodo.org/api/records/8224956/requests"
+  },
+  "updated": "2024-01-31T20:40:42.458906+00:00",
+  "recid": "8224956",
+  "revision": 6,
+  "files": [
+    {
+      "id": "90bb8545-d2ae-4b8e-b810-8f1efcfa8eb1",
+      "key": "Banet et al_Crop Root Image Domain Shifts.zip",
+      "size": 1432455596,
+      "checksum": "md5:007fcfb5ffaf52b5ab51743810222152",
+      "links": {
+        "self": "https://zenodo.org/api/records/8224956/files/Banet et al_Crop Root Image Domain Shifts.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "345445"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 80,
+    "unique_downloads": 61,
+    "views": 356,
+    "unique_views": 326,
+    "version_downloads": 80,
+    "version_unique_downloads": 61,
+    "version_unique_views": 326,
+    "version_views": 356
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1432455596,
+    "top_level_files": [
+      {
+        "name": "Banet et al_Crop Root Image Domain Shifts.zip",
+        "size": 1432455596
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:06.759787"
+}

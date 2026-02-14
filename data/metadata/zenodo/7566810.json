@@ -1,0 +1,1119 @@
+{
+  "created": "2023-01-27T03:14:06.518983+00:00",
+  "modified": "2024-07-12T18:48:55.234382+00:00",
+  "id": 7566810,
+  "conceptrecid": "7566809",
+  "doi": "10.5281/zenodo.7566810",
+  "conceptdoi": "10.5281/zenodo.7566809",
+  "doi_url": "https://doi.org/10.5281/zenodo.7566810",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for FloodNet/10-class segmentation of RGB 768x512 UAV images",
+    "doi": "10.5281/zenodo.7566810",
+    "publication_date": "2023-01-24",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for FloodNet/10-class segmentation of RGB 768x512 UAV images</strong></em></p>\n\n<p>These Residual-UNet model data are based on [FloodNet](https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021) images and associated labels.</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**: https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021</p>\n\n<p>Image size used by model: 768 x 512 x 3 pixels</p>\n\n<p><em>classes:</em><br>\n1. Background<br>\n2. Building-flooded<br>\n3. Building-non-flooded<br>\n4. Road-flooded<br>\n5. Road-non-flooded<br>\n6. Water<br>\n7. Tree<br>\n8. Vehicle<br>\n9. Pool<br>\n10. Grass</p>\n\n<p><em>File descriptions</em></p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>images.zip and labels.zip contain the images and labels, respectively, used to train the model</p>\n\n<p><em>References</em><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>** Rahnemoonfar, M., Chowdhury, T., Sarkar, A., Varshney, D., Yari, M. and Murphy, R.R., 2021. Floodnet: A high resolution aerial imagery dataset for post flood scene understanding. IEEE Access, 9, pp.89644-89654.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "UAV",
+      "semantic segmentation",
+      "land use / land cover",
+      "Seg2Map"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7566809"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for FloodNet/10-class segmentation of RGB 768x512 UAV images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7566810",
+    "self_html": "https://zenodo.org/records/7566810",
+    "preview_html": "https://zenodo.org/records/7566810?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7566810",
+    "self_doi": "https://doi.org/10.5281/zenodo.7566810",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7566810",
+    "reserve_doi": "https://zenodo.org/api/records/7566810/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7566809",
+    "parent_html": "https://zenodo.org/records/7566809",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7566809",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7566809",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7566810/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7566810/sequence/default",
+    "files": "https://zenodo.org/api/records/7566810/files",
+    "media_files": "https://zenodo.org/api/records/7566810/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7566810:floodnet_resunet_v9_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7566810/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7566810/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7566810/versions/latest",
+    "latest_html": "https://zenodo.org/records/7566810/latest",
+    "versions": "https://zenodo.org/api/records/7566810/versions",
+    "draft": "https://zenodo.org/api/records/7566810/draft",
+    "access_links": "https://zenodo.org/api/records/7566810/access/links",
+    "access_grants": "https://zenodo.org/api/records/7566810/access/grants",
+    "access_users": "https://zenodo.org/api/records/7566810/access/users",
+    "access_request": "https://zenodo.org/api/records/7566810/access/request",
+    "access": "https://zenodo.org/api/records/7566810/access",
+    "communities": "https://zenodo.org/api/records/7566810/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7566810/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7566810/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7566810/file-modification",
+    "requests": "https://zenodo.org/api/records/7566810/requests"
+  },
+  "updated": "2024-07-12T18:48:55.234382+00:00",
+  "recid": "7566810",
+  "revision": 5,
+  "files": [
+    {
+      "id": "652a6540-1a6b-404c-9027-0bd035724075",
+      "key": "floodnet_resunet_v9_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:f64e00102dc4fb35fc7aa63c1070476c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v9_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "cf48aab8-43dd-435c-a3dd-bbd97d7fd064",
+      "key": "floodnet_resunet_v1.json",
+      "size": 990,
+      "checksum": "md5:d57a3244912d5e36ae49e0641d24ba08",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v1.json/content"
+      }
+    },
+    {
+      "id": "f65f35d2-095b-4dc3-941b-70538ba0c9a4",
+      "key": "floodnet_resunet_v9_model_history.npz",
+      "size": 3490,
+      "checksum": "md5:8f3d7565219aae3dcf337b5c42ea8163",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v9_model_history.npz/content"
+      }
+    },
+    {
+      "id": "b734f7fc-1909-4868-9bfb-f0124d3bee9b",
+      "key": "floodnet_resunet_v3.json",
+      "size": 991,
+      "checksum": "md5:f4b188bdf97f16672de83fb6d087d318",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v3.json/content"
+      }
+    },
+    {
+      "id": "48e70c94-390d-4726-b7ed-5964ceed3575",
+      "key": "floodnet_resunet_v3_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:beeacbe97446cf4a33ced3daa1c364f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "f9befa38-57f2-4dac-adbd-e5c42c94e6f5",
+      "key": "labels.zip",
+      "size": 24225179,
+      "checksum": "md5:18b1e8aa188ccd2f7cd773e6e031caad",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/labels.zip/content"
+      }
+    },
+    {
+      "id": "dad2ef0a-c1dc-48a3-9c1a-905bccbc3048",
+      "key": "readme.txt",
+      "size": 2899,
+      "checksum": "md5:0e01ef75a65fe1b45f002d576fa88f86",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "6561a69e-cf54-430d-a9aa-296c44232c05",
+      "key": "floodnet_resunet_v6_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:5cc6b7dfb3c139be87547fd3298931c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "1f006a95-9aa0-4f20-b24f-2ae190ca5c00",
+      "key": "floodnet_resunet_v5_model_history.npz",
+      "size": 2923,
+      "checksum": "md5:59cc16eab5ec72a3404ccd4cff5c020c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "2809204c-2748-4153-a026-f4141642b484",
+      "key": "floodnet_resunet_v5_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:81b6134bb6f67ea50a9d2d62f353d7cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "acc88c8d-f7a7-4d47-bff0-7749d8bf57ed",
+      "key": "floodnet_resunet_v4_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:a0e9db97e3889332a8a7702e127cd19f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "12e9c7f8-9b75-4c13-85aa-94ed7cc98c8b",
+      "key": "floodnet_resunet_v6_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:f202bc15cf863fbaa526ab468ec1f3b1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "7b2addc4-b71e-4322-815e-ccde2e2a676d",
+      "key": "floodnet_resunet_v6_model_history.npz",
+      "size": 2784,
+      "checksum": "md5:3129c44f7569c40f22977e1391d9572b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "118da910-fbe9-4051-9953-52da6d3ffc71",
+      "key": "floodnet_resunet_v2_model_history.npz",
+      "size": 3011,
+      "checksum": "md5:8f9dd555595a6a1729132e9a1731888e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "7303eaa7-8a51-45f8-b970-4c62eb627c62",
+      "key": "floodnet_resunet_v3_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:e674ec8278e7df17adf92b4855c5d526",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "0c40b6a9-b7f1-4370-804a-915a298db8db",
+      "key": "floodnet_resunet_v7_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:6d9c9598d3719d4ac852d23ba264fc40",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v7_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "1f005407-b838-4dc8-9c72-b17d22c31863",
+      "key": "floodnet_resunet_v7.json",
+      "size": 991,
+      "checksum": "md5:df985dad54459eec7341b98225d45417",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v7.json/content"
+      }
+    },
+    {
+      "id": "097ca1c4-0a76-40af-bb1f-825ae2c3a200",
+      "key": "floodnet_resunet_v4.json",
+      "size": 991,
+      "checksum": "md5:2796929851600d73958d45fd0fb67f5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v4.json/content"
+      }
+    },
+    {
+      "id": "16d0e397-b61e-4b66-940a-85376a8187d8",
+      "key": "floodnet_resunet_v10_model_history.npz",
+      "size": 3376,
+      "checksum": "md5:d62219dfaca077505cc7ecbad2d51b17",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v10_model_history.npz/content"
+      }
+    },
+    {
+      "id": "32cd283a-2e1e-4be8-9e2f-a48ef6bdecef",
+      "key": "floodnet_resunet_v10_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:4eca63b1d7584ea409a71befcdd6d8eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v10_modelcard.json/content"
+      }
+    },
+    {
+      "id": "aafb2ac1-103f-4348-a892-6ee5d9e38456",
+      "key": "floodnet_resunet_v10.json",
+      "size": 991,
+      "checksum": "md5:e31aaa427d666b31a5aae060bc876554",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v10.json/content"
+      }
+    },
+    {
+      "id": "22d81525-5b4d-437a-94e7-85bb01a5cba8",
+      "key": "floodnet_resunet_v10_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:5ea0c998789660093d3dd96819a4482e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v10_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "573e79e3-cd1c-4e6f-8d0a-95acfddbf611",
+      "key": "classes.txt",
+      "size": 108,
+      "checksum": "md5:1a2b33e047ffe83f189eb0e438a42f74",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "8bc93bce-0a5a-41b8-820a-103f00ff71dd",
+      "key": "floodnet_resunet_v4_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:b8cb534d314c17ef85dbfe5dba42d3ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "98de8bcb-d37c-40b4-9191-bfb126de2807",
+      "key": "BEST_MODEL.txt",
+      "size": 33,
+      "checksum": "md5:64995fd5d61c98a41517c576475e3351",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "9519eb81-14e8-4b66-81d0-80810b6434d4",
+      "key": "floodnet_resunet_v2_modelcard.json",
+      "size": 2337,
+      "checksum": "md5:fd5e00fdd5738e51f370aaed40b9b960",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "b7853cf1-4927-4ab3-a628-1e4cccf463c7",
+      "key": "floodnet_resunet_v7_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:6591b1ba0097ac1ae0da18b149caac5a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v7_modelcard.json/content"
+      }
+    },
+    {
+      "id": "5bf88f82-dc21-4851-b004-5c3f1382e1a0",
+      "key": "floodnet_resunet_v11_fullmodel.h5",
+      "size": 69407976,
+      "checksum": "md5:3d73e53c3210d52b17c55542aed8f675",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v11_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "d9cbb179-6ac5-46b1-b2fa-798028e92dd5",
+      "key": "floodnet_resunet_v11.json",
+      "size": 991,
+      "checksum": "md5:8108dcb6d3a13bbb3af999d7d60f01d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v11.json/content"
+      }
+    },
+    {
+      "id": "cc9d4918-ca10-4761-8f8f-3820d9a041ff",
+      "key": "floodnet_resunet_v11_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:8632f7a2ba3c2152163aedf181d8ffe1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v11_modelcard.json/content"
+      }
+    },
+    {
+      "id": "2b417cfe-ac79-4532-b847-5b2cf689f8e0",
+      "key": "floodnet_resunet_v7_model_history.npz",
+      "size": 3625,
+      "checksum": "md5:10d7a73828672ce251b177f933745663",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v7_model_history.npz/content"
+      }
+    },
+    {
+      "id": "a7f0965b-a310-4f81-b64f-ffa9cf72f59c",
+      "key": "floodnet_resunet_v11_model_history.npz",
+      "size": 3341,
+      "checksum": "md5:a56ea19af59a6b3e06f72a4eab79d71f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v11_model_history.npz/content"
+      }
+    },
+    {
+      "id": "7ad372f8-9b80-43a9-8cc9-39e4ac5663c9",
+      "key": "floodnet_resunet_v8_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:3e442c29b9a48221fd02a7ebda0faa7c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v8_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "c4786e3b-7459-42a9-9177-dd275cd2d5c1",
+      "key": "floodnet_resunet_v8.json",
+      "size": 991,
+      "checksum": "md5:72a4e499045502ffae5854b9753fc1b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v8.json/content"
+      }
+    },
+    {
+      "id": "9940d3cf-3bab-49bc-8a2e-dbc69588a2ae",
+      "key": "floodnet_resunet_v8_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:5a4bc95a5fe8b50d617e3d233645c959",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v8_modelcard.json/content"
+      }
+    },
+    {
+      "id": "155d0dd5-43d9-467c-8565-b86c3002ac0f",
+      "key": "floodnet_resunet_v8_model_history.npz",
+      "size": 3420,
+      "checksum": "md5:710e1a63aa37c126cdfc44d3daa9ecfe",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v8_model_history.npz/content"
+      }
+    },
+    {
+      "id": "ae04a79a-9115-427c-a4d8-1fb953624d75",
+      "key": "floodnet_resunet_v2.json",
+      "size": 990,
+      "checksum": "md5:41798731ef2e1534abdcd957b874803e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v2.json/content"
+      }
+    },
+    {
+      "id": "ac979d73-68bf-4b3d-a2a6-008a50456a18",
+      "key": "floodnet_resunet_v6.json",
+      "size": 991,
+      "checksum": "md5:b37196bd70f9a8a8627d49318fa9a602",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v6.json/content"
+      }
+    },
+    {
+      "id": "aab3c491-3aaf-434b-82ed-82fdab5291ea",
+      "key": "floodnet_resunet_v2_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:98a586bd1c021107c2a4b847894ed0c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "74e32958-46e9-4506-85bd-a4b360098512",
+      "key": "floodnet_resunet_v5.json",
+      "size": 991,
+      "checksum": "md5:fbd5cf675e3f9af6b0c273f6f7bb6ae3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v5.json/content"
+      }
+    },
+    {
+      "id": "b3eacc75-025e-4fe1-9ab1-6561579ea17f",
+      "key": "floodnet_resunet_v12_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:3191f09d3bddc7684f101eef60d32229",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v12_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "fc2c344a-2eb9-4bce-a158-a6458c386cba",
+      "key": "floodnet_resunet_v12.json",
+      "size": 991,
+      "checksum": "md5:95afe227e871c11decaf4627db5afc93",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v12.json/content"
+      }
+    },
+    {
+      "id": "e9c3927a-c2e2-4519-865c-376d4ae5f69e",
+      "key": "floodnet_resunet_v5_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:7c116db8d7b039e742b2803ae8cf0abf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "24a4dd98-69ee-44b3-a0df-da90fb42e653",
+      "key": "floodnet_resunet_v12_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:9a75442fc98731c4ab36669fb4c6eae5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v12_modelcard.json/content"
+      }
+    },
+    {
+      "id": "4f15fe2a-6841-49a8-8ed9-d5422e788a9f",
+      "key": "floodnet_resunet_v12_model_history.npz",
+      "size": 2929,
+      "checksum": "md5:75d0339b84bb039769874ccbefbcd0af",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v12_model_history.npz/content"
+      }
+    },
+    {
+      "id": "8084b1f2-354d-48ec-a4dc-7130d05ad1e2",
+      "key": "floodnet_resunet_v13_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:ce2ee9ced81e0ba2003ab441e36dd009",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v13_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "2d4986be-0ebb-4cd0-bf22-f5a7f58ce1b9",
+      "key": "floodnet_resunet_v13.json",
+      "size": 989,
+      "checksum": "md5:eab6b3f3b972ff4a5f2b402a6d318e59",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v13.json/content"
+      }
+    },
+    {
+      "id": "7fa826e8-1e9d-453f-83f5-2498e2e03de7",
+      "key": "floodnet_resunet_v13_modelcard.json",
+      "size": 2336,
+      "checksum": "md5:d29df9d2fc88a78ab1a58c9c48552e5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v13_modelcard.json/content"
+      }
+    },
+    {
+      "id": "ffcb1255-214f-4fe8-ab99-cb83aa825012",
+      "key": "floodnet_resunet_v1_model_history.npz",
+      "size": 3060,
+      "checksum": "md5:23842ca01cab79533ce15b83d1f8d013",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "7afc7343-96e3-4cde-a830-820300559702",
+      "key": "floodnet_resunet_v13_model_history.npz",
+      "size": 3878,
+      "checksum": "md5:eaab8cb4bc0a27d3069068a2b07d9d33",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v13_model_history.npz/content"
+      }
+    },
+    {
+      "id": "0b7a3904-5de3-4afa-ba49-1f31d521bc74",
+      "key": "floodnet_resunet_v14_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:aba8bc156333a58da38dea316598044b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v14_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "e925804b-88c6-4576-80a6-7d8852afe803",
+      "key": "floodnet_resunet_v4_model_history.npz",
+      "size": 2198,
+      "checksum": "md5:22bdad0f998aeb2570c6fb76b70b9e63",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "4ce09306-7ef0-4261-87d5-c191f0746078",
+      "key": "floodnet_resunet_v14.json",
+      "size": 989,
+      "checksum": "md5:d7dc25318d6f3eef264f14d5fa4ebd99",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v14.json/content"
+      }
+    },
+    {
+      "id": "ac5edde7-bbec-4bf2-8d97-afbe6650c78e",
+      "key": "floodnet_resunet_v14_modelcard.json",
+      "size": 2336,
+      "checksum": "md5:28b1b5730e7aeca473911cd4019dd6e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v14_modelcard.json/content"
+      }
+    },
+    {
+      "id": "ceb1f5f4-eb4f-446d-b509-43da9a418c85",
+      "key": "floodnet_resunet_v1_modelcard.json",
+      "size": 2337,
+      "checksum": "md5:c896056f1a5ce44f2de30ec77dd2fb89",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "bd9c9b72-4cfa-416d-96f1-f866056670a0",
+      "key": "floodnet_resunet_v14_model_history.npz",
+      "size": 3061,
+      "checksum": "md5:3b40b695f4aae914eb5e694e1af358e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v14_model_history.npz/content"
+      }
+    },
+    {
+      "id": "67d91171-6716-4ac9-a45e-0969cc1c84db",
+      "key": "floodnet_resunet_v3_model_history.npz",
+      "size": 2125,
+      "checksum": "md5:ad036c220e6e7c96261b48739a906924",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "7cacc3e5-e42a-4a52-a9ad-0ac8a40e93df",
+      "key": "floodnet_resunet_v9.json",
+      "size": 991,
+      "checksum": "md5:730db5a6074f8bb767f8acedc3fa43a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v9.json/content"
+      }
+    },
+    {
+      "id": "7e220769-723c-4e4a-b9e3-0840fdcd63ac",
+      "key": "floodnet_resunet_v1_fullmodel.h5",
+      "size": 69423880,
+      "checksum": "md5:841ca5def21e14f7d763cb86c348ee67",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "62acd08a-5659-47b3-9d83-1c06d0bf771e",
+      "key": "floodnet_resunet_v9_modelcard.json",
+      "size": 2338,
+      "checksum": "md5:59161d2323a13da673aa5b72627f4a97",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v9_modelcard.json/content"
+      }
+    },
+    {
+      "id": "4ac35935-dec7-4f80-8d64-b832a84542ae",
+      "key": "floodnet_resunet_v9_trainhist_24.png",
+      "size": 255505,
+      "checksum": "md5:ec48b466439834eb12676c6310084236",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v9_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "f89056ff-e8ea-4c0a-b56e-6d66578105fc",
+      "key": "floodnet_resunet_v5_trainhist_18.png",
+      "size": 196663,
+      "checksum": "md5:a73e1fb77f30e1326291eecf11d11614",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v5_trainhist_18.png/content"
+      }
+    },
+    {
+      "id": "d509c4ef-f873-47ef-8920-51b15d3cb007",
+      "key": "floodnet_resunet_v2_trainhist_7.png",
+      "size": 190497,
+      "checksum": "md5:827b9a00c25e4ba2dca66e978d5d78f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v2_trainhist_7.png/content"
+      }
+    },
+    {
+      "id": "8cf1fc0f-b3e1-4da8-9846-5af205128183",
+      "key": "floodnet_resunet_v6_trainhist_24.png",
+      "size": 197239,
+      "checksum": "md5:76d2b2a44eadba36a9180c1ed93e37fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v6_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "bf6140bf-abcd-40f9-a70f-38ce4b64dea2",
+      "key": "floodnet_resunet_v10_trainhist_24.png",
+      "size": 207816,
+      "checksum": "md5:533cace98783c1873273f1d08e8f50a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v10_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "fe5d03f8-6a0d-4810-a30f-436bd3174fd8",
+      "key": "floodnet_resunet_v7_trainhist_24.png",
+      "size": 192766,
+      "checksum": "md5:4d21e5623b89acabcf3e3d9f85aae014",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v7_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "b31641ef-68d8-4f90-b1a4-0ba3a5f52d61",
+      "key": "floodnet_resunet_v8_trainhist_24.png",
+      "size": 187525,
+      "checksum": "md5:61192291574516e280f73c820df2daa0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v8_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "a266a474-9a35-4649-b5d5-d6aa1837d423",
+      "key": "floodnet_resunet_v11_trainhist_24.png",
+      "size": 216953,
+      "checksum": "md5:7f5de54486bf0b475ab04e3bbf4cd56f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v11_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "89cae8b7-513a-40c4-9a7f-9a9e9f6d66cd",
+      "key": "floodnet_resunet_v1_trainhist_7.png",
+      "size": 199952,
+      "checksum": "md5:18e2433bb848554c43e246c1a0d1f935",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v1_trainhist_7.png/content"
+      }
+    },
+    {
+      "id": "e9912557-98bb-4fc2-acfa-e0ce70bb5e64",
+      "key": "floodnet_resunet_v12_trainhist_24.png",
+      "size": 226478,
+      "checksum": "md5:1a97529758f190e9e9ceb37d25e8d5f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v12_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "e95eb41e-d22f-42bb-9174-cda0f1d307d1",
+      "key": "floodnet_resunet_v13_trainhist_24.png",
+      "size": 179719,
+      "checksum": "md5:1bb3f3c617dff9d9a89ab091f29d1a99",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v13_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "87c55321-6f8d-4c67-ac1c-c59148f711d0",
+      "key": "floodnet_resunet_v4_trainhist_15.png",
+      "size": 211149,
+      "checksum": "md5:65a82e8c2f0515e425750251a48c9023",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v4_trainhist_15.png/content"
+      }
+    },
+    {
+      "id": "0e13dc1c-68a4-4e65-899a-352e73c3b061",
+      "key": "floodnet_resunet_v14_trainhist_24.png",
+      "size": 177808,
+      "checksum": "md5:584939ee8a7a4653a5dc11ba56f356b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v14_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "c1335ebe-e4b0-460d-be37-773a7d17b904",
+      "key": "floodnet_resunet_v3_trainhist_13.png",
+      "size": 216276,
+      "checksum": "md5:49569d315928d38f1a3b6585a48ac45e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7566810/files/floodnet_resunet_v3_trainhist_13.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2817,
+    "unique_downloads": 2790,
+    "views": 536,
+    "unique_views": 514,
+    "version_downloads": 2815,
+    "version_unique_downloads": 2788,
+    "version_unique_views": 503,
+    "version_views": 525
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 42,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 974817983,
+    "total_archive_size": 24225179,
+    "top_level_files": [
+      {
+        "name": "floodnet_resunet_v9_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v1.json",
+        "size": 990
+      },
+      {
+        "name": "floodnet_resunet_v9_model_history.npz",
+        "size": 3490
+      },
+      {
+        "name": "floodnet_resunet_v3.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v3_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "labels.zip",
+        "size": 24225179
+      },
+      {
+        "name": "readme.txt",
+        "size": 2899
+      },
+      {
+        "name": "floodnet_resunet_v6_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v5_model_history.npz",
+        "size": 2923
+      },
+      {
+        "name": "floodnet_resunet_v5_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v4_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v6_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v6_model_history.npz",
+        "size": 2784
+      },
+      {
+        "name": "floodnet_resunet_v2_model_history.npz",
+        "size": 3011
+      },
+      {
+        "name": "floodnet_resunet_v3_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v7_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v7.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v4.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v10_model_history.npz",
+        "size": 3376
+      },
+      {
+        "name": "floodnet_resunet_v10_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v10.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v10_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "classes.txt",
+        "size": 108
+      },
+      {
+        "name": "floodnet_resunet_v4_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 33
+      },
+      {
+        "name": "floodnet_resunet_v2_modelcard.json",
+        "size": 2337
+      },
+      {
+        "name": "floodnet_resunet_v7_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v11_fullmodel.h5",
+        "size": 69407976
+      },
+      {
+        "name": "floodnet_resunet_v11.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v11_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v7_model_history.npz",
+        "size": 3625
+      },
+      {
+        "name": "floodnet_resunet_v11_model_history.npz",
+        "size": 3341
+      },
+      {
+        "name": "floodnet_resunet_v8_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v8.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v8_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v8_model_history.npz",
+        "size": 3420
+      },
+      {
+        "name": "floodnet_resunet_v2.json",
+        "size": 990
+      },
+      {
+        "name": "floodnet_resunet_v6.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v2_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v5.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v12_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v12.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v5_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v12_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v12_model_history.npz",
+        "size": 2929
+      },
+      {
+        "name": "floodnet_resunet_v13_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v13.json",
+        "size": 989
+      },
+      {
+        "name": "floodnet_resunet_v13_modelcard.json",
+        "size": 2336
+      },
+      {
+        "name": "floodnet_resunet_v1_model_history.npz",
+        "size": 3060
+      },
+      {
+        "name": "floodnet_resunet_v13_model_history.npz",
+        "size": 3878
+      },
+      {
+        "name": "floodnet_resunet_v14_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v4_model_history.npz",
+        "size": 2198
+      },
+      {
+        "name": "floodnet_resunet_v14.json",
+        "size": 989
+      },
+      {
+        "name": "floodnet_resunet_v14_modelcard.json",
+        "size": 2336
+      },
+      {
+        "name": "floodnet_resunet_v1_modelcard.json",
+        "size": 2337
+      },
+      {
+        "name": "floodnet_resunet_v14_model_history.npz",
+        "size": 3061
+      },
+      {
+        "name": "floodnet_resunet_v3_model_history.npz",
+        "size": 2125
+      },
+      {
+        "name": "floodnet_resunet_v9.json",
+        "size": 991
+      },
+      {
+        "name": "floodnet_resunet_v1_fullmodel.h5",
+        "size": 69423880
+      },
+      {
+        "name": "floodnet_resunet_v9_modelcard.json",
+        "size": 2338
+      },
+      {
+        "name": "floodnet_resunet_v9_trainhist_24.png",
+        "size": 255505
+      },
+      {
+        "name": "floodnet_resunet_v5_trainhist_18.png",
+        "size": 196663
+      },
+      {
+        "name": "floodnet_resunet_v2_trainhist_7.png",
+        "size": 190497
+      },
+      {
+        "name": "floodnet_resunet_v6_trainhist_24.png",
+        "size": 197239
+      },
+      {
+        "name": "floodnet_resunet_v10_trainhist_24.png",
+        "size": 207816
+      },
+      {
+        "name": "floodnet_resunet_v7_trainhist_24.png",
+        "size": 192766
+      },
+      {
+        "name": "floodnet_resunet_v8_trainhist_24.png",
+        "size": 187525
+      },
+      {
+        "name": "floodnet_resunet_v11_trainhist_24.png",
+        "size": 216953
+      },
+      {
+        "name": "floodnet_resunet_v1_trainhist_7.png",
+        "size": 199952
+      },
+      {
+        "name": "floodnet_resunet_v12_trainhist_24.png",
+        "size": 226478
+      },
+      {
+        "name": "floodnet_resunet_v13_trainhist_24.png",
+        "size": 179719
+      },
+      {
+        "name": "floodnet_resunet_v4_trainhist_15.png",
+        "size": 211149
+      },
+      {
+        "name": "floodnet_resunet_v14_trainhist_24.png",
+        "size": 177808
+      },
+      {
+        "name": "floodnet_resunet_v3_trainhist_13.png",
+        "size": 216276
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:25.872138"
+}

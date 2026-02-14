@@ -1,0 +1,229 @@
+{
+  "created": "2018-07-19T14:08:43.984660+00:00",
+  "modified": "2020-01-24T19:23:06.883778+00:00",
+  "id": 1316912,
+  "conceptrecid": "1311660",
+  "doi": "10.5281/zenodo.1316912",
+  "conceptdoi": "10.5281/zenodo.1311660",
+  "doi_url": "https://doi.org/10.5281/zenodo.1316912",
+  "metadata": {
+    "title": "Matejcic et al. 2018 data release",
+    "doi": "10.5281/zenodo.1316912",
+    "publication_date": "2018-07-19",
+    "description": "<p>Dataset and scripts from study Matej\u010di\u0107&nbsp;et al. 2018. PLoS Biology, on isotropic growth of the embryonic zebrafish retinal tissue.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Marija Matejcic",
+        "affiliation": "Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)",
+        "orcid": "0000-0002-8140-3690"
+      },
+      {
+        "name": "Guillaume Salbrex",
+        "affiliation": "The Francis Crick Institute",
+        "orcid": "0000-0001-7041-1292"
+      },
+      {
+        "name": "Caren Norden",
+        "affiliation": "Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)",
+        "orcid": "0000-0001-8835-1451"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Marija Matejcic",
+        "affiliation": "Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)",
+        "type": "DataCollector"
+      },
+      {
+        "name": "Caren Norden",
+        "affiliation": "Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)",
+        "type": "ContactPerson"
+      }
+    ],
+    "keywords": [
+      "isotropic",
+      "retina",
+      "pseudostratified epithelium",
+      "zebrafish",
+      "tissue growth",
+      "tissue shape",
+      "cell shape"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/MarijaMatejcic/Matejcic-et-al_2018/tree/v1",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "version": "v1",
+    "references": [
+      "Matejcic et al. (2018)"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "PLoS Biology"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "1311660"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Matejcic et al. 2018 data release",
+  "links": {
+    "self": "https://zenodo.org/api/records/1316912",
+    "self_html": "https://zenodo.org/records/1316912",
+    "preview_html": "https://zenodo.org/records/1316912?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.1316912",
+    "self_doi": "https://doi.org/10.5281/zenodo.1316912",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1316912",
+    "reserve_doi": "https://zenodo.org/api/records/1316912/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/1311660",
+    "parent_html": "https://zenodo.org/records/1311660",
+    "parent_doi": "https://doi.org/10.5281/zenodo.1311660",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1311660",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:1316912/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:1316912/sequence/default",
+    "files": "https://zenodo.org/api/records/1316912/files",
+    "media_files": "https://zenodo.org/api/records/1316912/media-files",
+    "archive": "https://zenodo.org/api/records/1316912/files-archive",
+    "archive_media": "https://zenodo.org/api/records/1316912/media-files-archive",
+    "latest": "https://zenodo.org/api/records/1316912/versions/latest",
+    "latest_html": "https://zenodo.org/records/1316912/latest",
+    "versions": "https://zenodo.org/api/records/1316912/versions",
+    "draft": "https://zenodo.org/api/records/1316912/draft",
+    "access_links": "https://zenodo.org/api/records/1316912/access/links",
+    "access_grants": "https://zenodo.org/api/records/1316912/access/grants",
+    "access_users": "https://zenodo.org/api/records/1316912/access/users",
+    "access_request": "https://zenodo.org/api/records/1316912/access/request",
+    "access": "https://zenodo.org/api/records/1316912/access",
+    "communities": "https://zenodo.org/api/records/1316912/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/1316912/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/1316912/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/1316912/file-modification",
+    "requests": "https://zenodo.org/api/records/1316912/requests"
+  },
+  "updated": "2020-01-24T19:23:06.883778+00:00",
+  "recid": "1316912",
+  "revision": 5,
+  "files": [
+    {
+      "id": "5aa8ff12-25ab-454f-b329-be75ecce0b5f",
+      "key": "Matejcic-et-al_2018_Data_F3C.csv",
+      "size": 3350,
+      "checksum": "md5:de17843fd5f2797cb8b09d839fa74e56",
+      "links": {
+        "self": "https://zenodo.org/api/records/1316912/files/Matejcic-et-al_2018_Data_F3C.csv/content"
+      }
+    },
+    {
+      "id": "ce89a458-7857-4b44-9e68-29068420e7d6",
+      "key": "Matejcic-et-al_2018.zip",
+      "size": 1206528,
+      "checksum": "md5:bd3aa944503e596b8c260ecae588441a",
+      "links": {
+        "self": "https://zenodo.org/api/records/1316912/files/Matejcic-et-al_2018.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "49415"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 139,
+    "unique_downloads": 120,
+    "views": 613,
+    "unique_views": 588,
+    "version_downloads": 126,
+    "version_unique_downloads": 108,
+    "version_unique_views": 425,
+    "version_views": 445
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1206528,
+    "top_level_files": [
+      {
+        "name": "Matejcic-et-al_2018_Data_F3C.csv",
+        "size": 3350
+      },
+      {
+        "name": "Matejcic-et-al_2018.zip",
+        "size": 1206528
+      }
+    ],
+    "zip_contents": {
+      "matejcic-et-al_2018.zip": {
+        "total_files": 394,
+        "total_directories": 33,
+        "total_uncompressed_bytes": 2233279,
+        "file_types": {
+          ".gif": 76,
+          ".mat": 2
+        },
+        "imaging_file_count": 78,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_modis.gif",
+          "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_modis.gif",
+          "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_ssmi.gif",
+          "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_ssmi.gif",
+          "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_sst.gif",
+          "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_sst.gif",
+          "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_terra.gif",
+          "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_terra.gif",
+          "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/exgshhs.gif",
+          "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._exgshhs.gif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_modis.gif",
+      "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_modis.gif",
+      "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_ssmi.gif",
+      "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_ssmi.gif",
+      "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_sst.gif",
+      "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_sst.gif",
+      "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/ex_terra.gif",
+      "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._ex_terra.gif",
+      "matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/exgshhs.gif",
+      "__macosx/matejcic-et-al_2018/tools/mitoticdistribution/pse_mitonuc/m_map/private/._exgshhs.gif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/MarijaMatejcic/Matejcic-et-al_2018/tree/v1"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:08.032831"
+}

@@ -1,0 +1,277 @@
+{
+  "created": "2020-07-30T21:56:18.693728+00:00",
+  "modified": "2024-07-19T19:05:57.288807+00:00",
+  "id": 3902832,
+  "conceptrecid": "3902831",
+  "doi": "10.5061/dryad.245j1p8",
+  "doi_url": "https://doi.org/10.5061/dryad.245j1p8",
+  "metadata": {
+    "title": "Data from: Predicted tracking error triggers catch-up saccades during smooth pursuit",
+    "doi": "10.5061/dryad.245j1p8",
+    "publication_date": "2020-06-21",
+    "description": "For foveated animals, visual tracking of moving stimuli requires the synergy between saccades and smooth pursuit eye movements. Deciding to trigger a catch-up saccade during pursuit influences the quality of visual input. This decision is a trade-off between tolerating sustained position error when no saccade is triggered or a transient loss of vision during the saccade due to saccadic suppression. Although catch-up saccades have been extensively investigated, it remains unclear how the trigger decision is made by the brain. de Brouwer et al (2002) demonstrated that catch-up saccades were less likely to occur when the expected time to foveate a target using pursuit alone is between 40 and 180ms into the future, referred to as the smooth zone. However, this descriptive result lacks a mechanistic explanation for how the trigger decision is made. More recently, we proposed a decision model (Coutinho et al., 2018) that relies on a probabilistic estimation of predicted position error (PEpred) during visual tracking. To test the model predictions, we investigated how human participants combined predicted position error, retinal slip, and the uncertainty in those estimates to make trigger decisions. We found a significant effect of the pre-saccadic magnitude of PEpred on trigger time and occurrence of catch-up saccades. To test the role of uncertainty, we blurred the moving target which led to longer and more variable saccade trigger times and more smooth pursuit trials, consistent with model predictions. As predicted by our model, large PEpred (&gt;10deg) produced early saccades regardless of the level of uncertainty while saccades preceded by small PEpred (&lt;10deg) were significantly modulated by high uncertainty. Our model also predicted increased signal dependent noise as retinal slip increases, which resulted in longer saccade trigger times and more smooth trials. In conclusion, the data supports our hypothesized role of PEpred in deciding when to trigger a catch-up saccade during smooth pursuit while taking into account uncertainty in sensory estimates.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Nachmani, Omri",
+        "affiliation": null
+      },
+      {
+        "name": "Coutinho, Jonathan",
+        "affiliation": null
+      },
+      {
+        "name": "Khan, Aarlenne Z.",
+        "affiliation": null
+      },
+      {
+        "name": "Lef\u00e8vre, Philippe",
+        "affiliation": null
+      },
+      {
+        "name": "Blohm, Gunnar",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "Catch up",
+      "saccades",
+      "Step ramp",
+      "Smooth Pursuit",
+      "eye movement"
+    ],
+    "locations": [
+      {
+        "place": "Kingston"
+      },
+      {
+        "place": "Ontario"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3902831"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Raw<div class=\"o-metadata__file-description\">Raw double-step ramp eye-tracking data of 15 subjects from EyeLink 1000 and Matlab.</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">LabeledS1-S5<div class=\"o-metadata__file-description\">Labeled data file for subjects 1-5</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">LabeledS7-S11<div class=\"o-metadata__file-description\">Labeled data for subjects 7-11</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">LabeledS12-S16<div class=\"o-metadata__file-description\">Labeled data for subjects 12-16</div><div class=\"o-metadata__file-name\"></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Data Collection Log<div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Predicted tracking error triggers catch-up saccades during smooth pursuit",
+  "links": {
+    "self": "https://zenodo.org/api/records/3902832",
+    "self_html": "https://zenodo.org/records/3902832",
+    "preview_html": "https://zenodo.org/records/3902832?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.245j1p8",
+    "self_doi": "https://doi.org/10.5061/dryad.245j1p8",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.245j1p8",
+    "reserve_doi": "https://zenodo.org/api/records/3902832/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3902831",
+    "parent_html": "https://zenodo.org/records/3902831",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3902832/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3902832/sequence/default",
+    "files": "https://zenodo.org/api/records/3902832/files",
+    "media_files": "https://zenodo.org/api/records/3902832/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:3902832:Data%20Collection%20Log.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/3902832/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3902832/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3902832/versions/latest",
+    "latest_html": "https://zenodo.org/records/3902832/latest",
+    "versions": "https://zenodo.org/api/records/3902832/versions",
+    "draft": "https://zenodo.org/api/records/3902832/draft",
+    "access_links": "https://zenodo.org/api/records/3902832/access/links",
+    "access_grants": "https://zenodo.org/api/records/3902832/access/grants",
+    "access_users": "https://zenodo.org/api/records/3902832/access/users",
+    "access_request": "https://zenodo.org/api/records/3902832/access/request",
+    "access": "https://zenodo.org/api/records/3902832/access",
+    "communities": "https://zenodo.org/api/records/3902832/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3902832/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3902832/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3902832/file-modification",
+    "requests": "https://zenodo.org/api/records/3902832/requests"
+  },
+  "updated": "2024-07-19T19:05:57.288807+00:00",
+  "recid": "3902832",
+  "revision": 6,
+  "files": [
+    {
+      "id": "7ff52265-6a3f-4354-9a43-55b4494c127b",
+      "key": "README_for_LabeledS7-S11.txt",
+      "size": 3781,
+      "checksum": "md5:570cc586ae0edc5c05f33072277dcea7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/README_for_LabeledS7-S11.txt/content"
+      }
+    },
+    {
+      "id": "d4e1901f-e3ff-4de9-ab5a-4daf9abf79c1",
+      "key": "README_for_LabeledS1-S5.txt",
+      "size": 3781,
+      "checksum": "md5:570cc586ae0edc5c05f33072277dcea7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/README_for_LabeledS1-S5.txt/content"
+      }
+    },
+    {
+      "id": "3d056f95-9999-42f2-bf72-726d6fff3fed",
+      "key": "README_for_LabeledS12-S16.txt",
+      "size": 3781,
+      "checksum": "md5:570cc586ae0edc5c05f33072277dcea7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/README_for_LabeledS12-S16.txt/content"
+      }
+    },
+    {
+      "id": "54f49956-4fc3-474f-ac29-5a650a25bd40",
+      "key": "LabeledS12-S16.tar",
+      "size": 7662623744,
+      "checksum": "md5:de0a8853505897dae39a4833192e48b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/LabeledS12-S16.tar/content"
+      }
+    },
+    {
+      "id": "6ab895df-d250-4b0e-9275-7c49fd7d5221",
+      "key": "Data Collection Log.pdf",
+      "size": 379641,
+      "checksum": "md5:8273bfa63a24d56798582d4c841c7a7d",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/Data Collection Log.pdf/content"
+      }
+    },
+    {
+      "id": "d1779ed0-630c-4f36-9d01-eb3182a1a8f6",
+      "key": "Raw.zip",
+      "size": 1708017498,
+      "checksum": "md5:c29e3172a451a259db15dbfc4caa8c06",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/Raw.zip/content"
+      }
+    },
+    {
+      "id": "7166080c-281f-4969-bb34-fb64772d01ff",
+      "key": "README_for_Raw.txt",
+      "size": 3781,
+      "checksum": "md5:570cc586ae0edc5c05f33072277dcea7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/README_for_Raw.txt/content"
+      }
+    },
+    {
+      "id": "f9253c4b-848c-4186-a8d3-cbf3b68484e5",
+      "key": "LabeledS7-S11.tar",
+      "size": 7660209152,
+      "checksum": "md5:693b2e73ea06bfbc4b3a20857ffaf911",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/LabeledS7-S11.tar/content"
+      }
+    },
+    {
+      "id": "17e61b2a-20a7-461f-b123-36c3435b0aa6",
+      "key": "LabeledS1-S5.tar",
+      "size": 7661564416,
+      "checksum": "md5:3656b534238d8f7f709b99b67453b576",
+      "links": {
+        "self": "https://zenodo.org/api/records/3902832/files/LabeledS1-S5.tar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 288,
+    "unique_downloads": 278,
+    "views": 117,
+    "unique_views": 116,
+    "version_downloads": 288,
+    "version_unique_downloads": 278,
+    "version_unique_views": 116,
+    "version_views": 117
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 24692414810,
+    "top_level_files": [
+      {
+        "name": "README_for_LabeledS7-S11.txt",
+        "size": 3781
+      },
+      {
+        "name": "README_for_LabeledS1-S5.txt",
+        "size": 3781
+      },
+      {
+        "name": "README_for_LabeledS12-S16.txt",
+        "size": 3781
+      },
+      {
+        "name": "LabeledS12-S16.tar",
+        "size": 7662623744
+      },
+      {
+        "name": "Data Collection Log.pdf",
+        "size": 379641
+      },
+      {
+        "name": "Raw.zip",
+        "size": 1708017498
+      },
+      {
+        "name": "README_for_Raw.txt",
+        "size": 3781
+      },
+      {
+        "name": "LabeledS7-S11.tar",
+        "size": 7660209152
+      },
+      {
+        "name": "LabeledS1-S5.tar",
+        "size": 7661564416
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:10.890851"
+}

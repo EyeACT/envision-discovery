@@ -1,0 +1,187 @@
+{
+  "created": "2023-08-28T12:26:21.679832+00:00",
+  "modified": "2023-08-28T14:26:55.202450+00:00",
+  "id": 8289533,
+  "conceptrecid": "8289532",
+  "doi": "10.5281/zenodo.8289533",
+  "conceptdoi": "10.5281/zenodo.8289532",
+  "doi_url": "https://doi.org/10.5281/zenodo.8289533",
+  "metadata": {
+    "title": "2023 IEEE SPS Video and Image Processing (VIP) Cup: Ophthalmic Biomarker Detection Phase 2",
+    "doi": "10.5281/zenodo.8289533",
+    "publication_date": "2023-08-28",
+    "description": "<p>Ophthalmic clinical trials that study treatment efficacy of eye diseases are performed with a specific purpose and a set of procedures that are predetermined before trial initiation. Hence, they result in a controlled data collection process with gradual changes in the state of a diseased eye. In general, these data include 1D clinical measurements and 3D optical coherence tomography (OCT) imagery. Physicians interpret structural biomarkers for every patient using the 3D OCT images and clinical measurements to make personalized decisions for every patient.</p>\n\n<p>Two main challenges in medical image processing has been&nbsp;<em>generalization</em>&nbsp;and&nbsp;<em>personalization</em>.</p>\n\n<p>Generalization aims to develop algorithms that work well across diverse patients and scenarios, providing standardized and widely applicable solutions. Personalization, in contrast, tailors algorithms to individual patients based on their unique characteristics, optimizing diagnosis and treatment planning. Generalization offers broad applicability but may overlook individual variations. Personalization provides tailored solutions but requires patient-specific data. While deep learning has shown an affinity towards generalization, it is lacking in personalization.</p>\n\n<p>The presence and absence of biomarkers is a personalization challenge rather than a generalization challenge. The variation within OCT scans of patients between visits can be minimal while the difference in manifestation of the same disease across patients may be substantial. The domain difference between OCT scans can arise due to pathology manifestation across patients, clinical labels, and the visit along the treatment process when the scan is taken. Morphological, texture, statistical and fuzzy image processing techniques through adaptive thresholds and preprocessing may prove substantial to overcome these fine-grained challenges. This challenge provides the data and application to address personalization.</p>\n\n<p>&nbsp;</p>\n\n<p>These files constitute the second phase of the VIP CUP 2023 Challenge at ICIP 2023. This test set has a more general patient base than the first one and as such is a better indicator of the performance of models. This test set was created by taking a subset of the data from a publicly available OCT dataset and then asking our medical partners to provide fine-grained biomarker labels for the competition. We provide the citation for the source of these images below:&nbsp;</p>\n\n<p>Kermany D, Goldbaum M, Cai W et al. Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning. Cell. 2018; 172(5):1122-1131. doi:10.1016/j.cell.2018.02.010.</p>\n\n<p>&nbsp;</p>\n\n<p>This zenodo repository contains the images and submission template file needed for the second phase of the competition.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ghassan AlRegib",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Mohit Prabhushankar",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Prithwijit  Chowdhury",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Zoe Fowler",
+        "affiliation": "Georgia Institute of Technology"
+      },
+      {
+        "name": "Kiran Kokilepersaud",
+        "affiliation": "Georgia Institute of Technology"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "olives_gatech"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8289532"
+          }
+        }
+      ]
+    }
+  },
+  "title": "2023 IEEE SPS Video and Image Processing (VIP) Cup: Ophthalmic Biomarker Detection Phase 2",
+  "links": {
+    "self": "https://zenodo.org/api/records/8289533",
+    "self_html": "https://zenodo.org/records/8289533",
+    "preview_html": "https://zenodo.org/records/8289533?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8289533",
+    "self_doi": "https://doi.org/10.5281/zenodo.8289533",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8289533",
+    "reserve_doi": "https://zenodo.org/api/records/8289533/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8289532",
+    "parent_html": "https://zenodo.org/records/8289532",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8289532",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8289532",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8289533/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8289533/sequence/default",
+    "files": "https://zenodo.org/api/records/8289533/files",
+    "media_files": "https://zenodo.org/api/records/8289533/media-files",
+    "archive": "https://zenodo.org/api/records/8289533/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8289533/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8289533/versions/latest",
+    "latest_html": "https://zenodo.org/records/8289533/latest",
+    "versions": "https://zenodo.org/api/records/8289533/versions",
+    "draft": "https://zenodo.org/api/records/8289533/draft",
+    "access_links": "https://zenodo.org/api/records/8289533/access/links",
+    "access_grants": "https://zenodo.org/api/records/8289533/access/grants",
+    "access_users": "https://zenodo.org/api/records/8289533/access/users",
+    "access_request": "https://zenodo.org/api/records/8289533/access/request",
+    "access": "https://zenodo.org/api/records/8289533/access",
+    "communities": "https://zenodo.org/api/records/8289533/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8289533/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8289533/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8289533/file-modification",
+    "requests": "https://zenodo.org/api/records/8289533/requests"
+  },
+  "updated": "2023-08-28T14:26:55.202450+00:00",
+  "recid": "8289533",
+  "revision": 2,
+  "files": [
+    {
+      "id": "e1bd23ea-c6cf-44a3-860d-ed30b57adbd6",
+      "key": "TEST_PHASE2.zip",
+      "size": 20929258,
+      "checksum": "md5:b400b16020d41b3f919a692af7e0b0d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/8289533/files/TEST_PHASE2.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "106687"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 136,
+    "unique_downloads": 129,
+    "views": 722,
+    "unique_views": 685,
+    "version_downloads": 136,
+    "version_unique_downloads": 129,
+    "version_unique_views": 678,
+    "version_views": 712
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 20929258,
+    "top_level_files": [
+      {
+        "name": "TEST_PHASE2.zip",
+        "size": 20929258
+      }
+    ],
+    "zip_contents": {
+      "test_phase2.zip": {
+        "total_files": 251,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 21000504,
+        "file_types": {
+          ".jpeg": 250
+        },
+        "imaging_file_count": 250,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "test_phase2/vipcupdata_phase2/dme/dme-3207323-2.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-32711-2.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-3013082-1.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-1136125-1.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-6486712-2.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-1074708-2.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-3748177-1.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-7060258-1.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-486550-1.jpeg",
+          "test_phase2/vipcupdata_phase2/dme/dme-6202565-1.jpeg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "test_phase2/vipcupdata_phase2/dme/dme-3207323-2.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-32711-2.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-3013082-1.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-1136125-1.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-6486712-2.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-1074708-2.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-3748177-1.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-7060258-1.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-486550-1.jpeg",
+      "test_phase2/vipcupdata_phase2/dme/dme-6202565-1.jpeg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:23.902240"
+}

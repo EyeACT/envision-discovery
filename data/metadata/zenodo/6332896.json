@@ -1,0 +1,923 @@
+{
+  "created": "2022-03-06T22:08:27.935800+00:00",
+  "modified": "2024-07-17T09:18:15.583312+00:00",
+  "id": 6332896,
+  "conceptrecid": "5884427",
+  "doi": "10.5281/zenodo.6332896",
+  "conceptdoi": "10.5281/zenodo.5884427",
+  "doi_url": "https://doi.org/10.5281/zenodo.6332896",
+  "metadata": {
+    "title": "Efficient embryoid-based method to improve generation of optic vesicles from human induced pluripotent stem cells data",
+    "doi": "10.5281/zenodo.6332896",
+    "publication_date": "2022-03-01",
+    "description": "<p>Animal models have provided many insights into ocular development and disease, but they remain suboptimal for understanding human oculogenesis. Eye development requires spatiotemporal gene expression patterns and disease phenotypes can differ significantly between humans and animal models, with patient-associated mutations causing embryonic lethality reported in some animal models. The emergence of human induced pluripotent stem cell (hiPSC) technology has provided a new resource for dissecting the complex nature of early eye morphogenesis through the generation of three-dimensional (3D) cellular models. By using patient-specific hiPSCs to generate <em>in vitro </em>optic vesicle-like models, we can enhance the understanding of early developmental eye disorders and provide a pre-clinical platform for disease modelling and therapeutics testing. A major challenge of <em>in vitro </em>optic vesicle generation is the low efficiency of differentiation in 3D cultures. To address this, we adapted a previously published protocol of retinal organoid differentiation to improve embryoid body formation using a microwell plate. Established morphology, upregulated transcript levels of known early eye-field transcription factors and protein expression of standard retinal progenitor markers confirmed the optic vesicle/presumptive optic cup identity of <em>in vitro </em>models between day 20 and 50 of culture. This adapted protocol is relevant to researchers seeking a physiologically relevant model of early human ocular development and disease with a view to replacing animal models.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Eintracht, Jonathan",
+        "affiliation": "UCL Institute of Ophthalmology"
+      },
+      {
+        "name": "Harding, Pippa",
+        "affiliation": "UCL Institute of Ophthalmology"
+      },
+      {
+        "name": "Lima Cunha, Dulce",
+        "affiliation": "UCL Institute of Ophthalmology"
+      },
+      {
+        "name": "Moosajee, Mariya",
+        "affiliation": "UCL Institute of Ophthalmology"
+      }
+    ],
+    "keywords": [
+      "Embryoid bodies, optic vesicles, iPSCs, retinal differentiation, VSX2, PAX6"
+    ],
+    "version": "2",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5884427"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Efficient embryoid-based method to improve generation of optic vesicles from human induced pluripotent stem cells data",
+  "links": {
+    "self": "https://zenodo.org/api/records/6332896",
+    "self_html": "https://zenodo.org/records/6332896",
+    "preview_html": "https://zenodo.org/records/6332896?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6332896",
+    "self_doi": "https://doi.org/10.5281/zenodo.6332896",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6332896",
+    "reserve_doi": "https://zenodo.org/api/records/6332896/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5884427",
+    "parent_html": "https://zenodo.org/records/5884427",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5884427",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5884427",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6332896/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6332896/sequence/default",
+    "files": "https://zenodo.org/api/records/6332896/files",
+    "media_files": "https://zenodo.org/api/records/6332896/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6332896:Figure%204%20RAX%20panel%20C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6332896/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6332896/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6332896/versions/latest",
+    "latest_html": "https://zenodo.org/records/6332896/latest",
+    "versions": "https://zenodo.org/api/records/6332896/versions",
+    "draft": "https://zenodo.org/api/records/6332896/draft",
+    "access_links": "https://zenodo.org/api/records/6332896/access/links",
+    "access_grants": "https://zenodo.org/api/records/6332896/access/grants",
+    "access_users": "https://zenodo.org/api/records/6332896/access/users",
+    "access_request": "https://zenodo.org/api/records/6332896/access/request",
+    "access": "https://zenodo.org/api/records/6332896/access",
+    "communities": "https://zenodo.org/api/records/6332896/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6332896/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6332896/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6332896/file-modification",
+    "requests": "https://zenodo.org/api/records/6332896/requests"
+  },
+  "updated": "2024-07-17T09:18:15.583312+00:00",
+  "recid": "6332896",
+  "revision": 7,
+  "files": [
+    {
+      "id": "69d1ecb5-2f34-4179-b863-8e44fdde9d8a",
+      "key": "Stepwise protocols.docx",
+      "size": 28147,
+      "checksum": "md5:4023cc7ec3128c6688273df2bc15bbcc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Stepwise protocols.docx/content"
+      }
+    },
+    {
+      "id": "32f00b68-c6bf-422d-a611-c9a144b1742c",
+      "key": "Guide to data repository.docx",
+      "size": 13283,
+      "checksum": "md5:106152f00371938648a2d7f9b1565bf2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Guide to data repository.docx/content"
+      }
+    },
+    {
+      "id": "15aaa7ea-0556-4bcb-bab6-69c5c5862278",
+      "key": "Figure 2 embryoid body size.xlsx",
+      "size": 18183,
+      "checksum": "md5:fe497750f8a2692c6dc5490ad56f445d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 embryoid body size.xlsx/content"
+      }
+    },
+    {
+      "id": "0139ed4b-b458-4849-9c9b-8c32004466c1",
+      "key": "Figure 2 wt optic vesicle sizes d35.xlsx",
+      "size": 12953,
+      "checksum": "md5:0dc82eb2ad76eccdde88387c6d724d5c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 wt optic vesicle sizes d35.xlsx/content"
+      }
+    },
+    {
+      "id": "718a0504-5a88-46c3-8c65-03a473de48c3",
+      "key": "Figure 3 qPCR Raw Data_12.01.22.xlsx",
+      "size": 59349,
+      "checksum": "md5:f8855268b48caf5054db6c0af819c941",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 3 qPCR Raw Data_12.01.22.xlsx/content"
+      }
+    },
+    {
+      "id": "5854f4d3-c01a-4056-875e-147938d179d5",
+      "key": "Figure 4 RAX panel C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg",
+      "size": 81338,
+      "checksum": "md5:86058af497f19b202f47b7c5dd7deb71",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 RAX panel C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "d81ab6b1-64f8-4540-84aa-b077efb3a994",
+      "key": "Figure 4 PAX6 OTX2 panel C2-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+      "size": 71868,
+      "checksum": "md5:7630bfb54ccd1fbf97c731a4d0ff076a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 PAX6 OTX2 panel C2-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "8e22c942-1935-4c73-8331-43194e9dbdda",
+      "key": "Figure 4 RAX panel Merge -MAX_04.05.21_WT1_D20.4_031220_Merge_630x_crop.jpg.jpg",
+      "size": 88313,
+      "checksum": "md5:f63ce3f83116914550214c6fc8fa4e98",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 RAX panel Merge -MAX_04.05.21_WT1_D20.4_031220_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "fce73876-1c46-492a-a1cc-e770a4b0fec2",
+      "key": "Figure 5a PAX6 VSX2 panel - C1-MAX_11.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg",
+      "size": 60535,
+      "checksum": "md5:2fe0566b788c7687789bbe030df24198",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5a PAX6 VSX2 panel - C1-MAX_11.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "0dd576d2-309e-46c2-8564-21b00f9f0251",
+      "key": "Figure 6a PAX6 CRX panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg",
+      "size": 63267,
+      "checksum": "md5:a914b45163a8b43a2b174637513d07d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6a PAX6 CRX panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "184c48f9-7689-4d4b-8abb-57d1ab945620",
+      "key": "Figure 6a PAX6 CRX panel - C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_630x_crop.jpg",
+      "size": 77674,
+      "checksum": "md5:7df919a17e676b7ff87e4fee119a6068",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6a PAX6 CRX panel - C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "4b4fc7b1-703c-4175-8f4c-bba02096784c",
+      "key": "Figure 2c Brightfield_100x_Day 25.jpg",
+      "size": 257590,
+      "checksum": "md5:d23be8000d40ce8f52a4f74f147e3848",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 25.jpg/content"
+      }
+    },
+    {
+      "id": "646048f4-c4f7-4caa-a13e-479b2358e314",
+      "key": "Figure 6a PAX6 CRX panel - C3-MAX_04.05.21_WT1_D50.1_190421_CRX_630x_crop.jpg",
+      "size": 53589,
+      "checksum": "md5:ca4944a267e413012a7eb5d9702b672a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6a PAX6 CRX panel - C3-MAX_04.05.21_WT1_D50.1_190421_CRX_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "07548c73-ff68-4e2f-84e1-14eb2d8fb79c",
+      "key": "Figure 2c Brightfield_100x_Day 30.jpg",
+      "size": 169098,
+      "checksum": "md5:f4a2dceb03d8d3b740a9f288c7faf242",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 30.jpg/content"
+      }
+    },
+    {
+      "id": "63f39f02-1677-4e05-a3c4-8f480a896bb6",
+      "key": "Figure 6b BRN3b VSX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg",
+      "size": 64728,
+      "checksum": "md5:188edde2bbdadf2a113fe31977a1593c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6b BRN3b VSX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "e90f6838-2767-4477-9ee3-2fcae5551a32",
+      "key": "Figure 5a PAX6 VSX2 panel - C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_630x_crop.jpg",
+      "size": 91982,
+      "checksum": "md5:bdc939fbf768449f804b0f8d74164148",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5a PAX6 VSX2 panel - C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "2272fee5-7ee3-4633-9417-63fc0c14322e",
+      "key": "Figure 2c Brightfield_100x_Day 20.jpg",
+      "size": 313706,
+      "checksum": "md5:77b318e5813514af6c7bd53ee322dff2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 20.jpg/content"
+      }
+    },
+    {
+      "id": "d1c6333b-fccc-46c8-9dfd-b9cfc697ce7a",
+      "key": "Figure 6b BRN3b VSX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_VSX2_630x_crop.jpg",
+      "size": 35068,
+      "checksum": "md5:08c67de2b832dbb7a2d4f0a21478b2ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6b BRN3b VSX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_VSX2_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "735505f1-719c-4198-a028-9ded16b42fe4",
+      "key": "Figure 2c Brightfield_100x_Day 35.jpg",
+      "size": 225640,
+      "checksum": "md5:28d82a12c8a55587020f173da63aef1a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 35.jpg/content"
+      }
+    },
+    {
+      "id": "bbc15ab2-b720-4122-9a5f-b03d65a78f21",
+      "key": "Figure 6 Recoverin OTX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+      "size": 32859,
+      "checksum": "md5:87f5a1f7cde9c4b0c6fb4c93fa636196",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 Recoverin OTX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "90148d59-bb40-4cb2-9726-3c4e24972cf7",
+      "key": "Figure 6c Recoverin OTX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_OTX2_630x_2_crop.jpg",
+      "size": 32859,
+      "checksum": "md5:87f5a1f7cde9c4b0c6fb4c93fa636196",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6c Recoverin OTX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_OTX2_630x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "110695c9-4591-4af5-a860-af1489c7af9b",
+      "key": "Figure 6 PAX6 C RX panel C1-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+      "size": 63267,
+      "checksum": "md5:a914b45163a8b43a2b174637513d07d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 PAX6 C RX panel C1-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "e1b5159b-482d-46f3-b79d-036812e092e7",
+      "key": "Figure 6 PAX6 C RX panel C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+      "size": 77674,
+      "checksum": "md5:7df919a17e676b7ff87e4fee119a6068",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 PAX6 C RX panel C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "1cfb1d59-c006-4b72-b9d4-987612968037",
+      "key": "Figure 2 Embryoid bodies n3.jpg",
+      "size": 902582,
+      "checksum": "md5:1cb67f1e0ec8e26c6e68a79f1d8c59d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 Embryoid bodies n3.jpg/content"
+      }
+    },
+    {
+      "id": "6b078114-51a0-42e6-957f-8ca65c59ce2f",
+      "key": "Figure 2 Embryoid bodies zoom.jpg",
+      "size": 405637,
+      "checksum": "md5:7165e9ad70027f05b77fee819649f851",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 Embryoid bodies zoom.jpg/content"
+      }
+    },
+    {
+      "id": "3a7d82dc-744a-44c5-be52-a3893615ba7c",
+      "key": "Figure 6 Recoverin OTX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_2_crop.jpg.jpg",
+      "size": 75971,
+      "checksum": "md5:a8242a077e7d9138b542599091721368",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 Recoverin OTX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_2_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "b54828d0-e06f-4920-9043-62d60b98bd61",
+      "key": "Figure 6 PAX6 C RX panel C3-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+      "size": 53589,
+      "checksum": "md5:ca4944a267e413012a7eb5d9702b672a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 PAX6 C RX panel C3-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "d9918e2b-65f9-4ca1-9688-6cceb9bc87d4",
+      "key": "Figure 4b RAX panel - C1-MAX_04.05.21_WT1_D20.4_031220_DAPI_630x_crop.jpg",
+      "size": 47928,
+      "checksum": "md5:a91c983160a60d98dafe356c3acf467f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4b RAX panel - C1-MAX_04.05.21_WT1_D20.4_031220_DAPI_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "d98ce7ee-3b69-4df9-8455-0e49d0899d0c",
+      "key": "Figure 6 PAX6 C RX panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg",
+      "size": 100613,
+      "checksum": "md5:aae066eb8579448ba1eec6ede9655a6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 PAX6 C RX panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "d6af9d8c-5da6-4088-a34d-56d84d13c6d1",
+      "key": "Figure 6 Recoverin OTX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+      "size": 68824,
+      "checksum": "md5:e9c6cb9359703db33a9728e3e84dd8db",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 Recoverin OTX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "54b8b820-75f6-4540-bba3-511fffd60450",
+      "key": "Figure 2c Brightfield_100x_Day 10.jpg",
+      "size": 299899,
+      "checksum": "md5:cf6c93367a49696131648bd85857c93c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 10.jpg/content"
+      }
+    },
+    {
+      "id": "28f1e6a9-b053-4b63-aff7-82b7d1d0a5a8",
+      "key": "Figure 5 SOX2 panel C2-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg",
+      "size": 79065,
+      "checksum": "md5:2d9d8b2259169246ac8d765b1cf060f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 SOX2 panel C2-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "1a3719a4-a056-4966-962e-d644f96dcf56",
+      "key": "Figure 5 SOX2 panel MERGE-MAX_17.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg",
+      "size": 86000,
+      "checksum": "md5:a2606b82593703d7dabb618ff45f6efa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 SOX2 panel MERGE-MAX_17.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "0486c9e6-400c-4ff2-ad69-72e540fa1b46",
+      "key": "Figure 6b BRN3b VSX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_630x_crop.jpg",
+      "size": 66870,
+      "checksum": "md5:5d2e840ae425b8c0ca336549486a137b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6b BRN3b VSX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "ced4fe35-48e7-4361-8093-b92b5a728af2",
+      "key": "Figure 5a PAX6 VSX2 panel - C3-MAX_11.05.21_WT1_D35.1_141120_VSX2_630x_crop.jpg",
+      "size": 84344,
+      "checksum": "md5:d8b52b77bcfdc933384471d5dbbf9a39",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5a PAX6 VSX2 panel - C3-MAX_11.05.21_WT1_D35.1_141120_VSX2_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "bcfd8fc7-7361-48d1-ac2a-0ef7ec4a63a9",
+      "key": "Figure 5 PAX6 VSX2 panel C3-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+      "size": 84344,
+      "checksum": "md5:d8b52b77bcfdc933384471d5dbbf9a39",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 PAX6 VSX2 panel C3-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "d00f27f6-0c9c-4898-8c80-5f8a953200cc",
+      "key": "Figure 6 BRN3b VSX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+      "size": 64728,
+      "checksum": "md5:188edde2bbdadf2a113fe31977a1593c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 BRN3b VSX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "1ed1a61e-9343-4883-a7ee-cd871ec9746b",
+      "key": "Figure 4 PAX6 OTX2 panel C1-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+      "size": 54861,
+      "checksum": "md5:cbed545c266719ad60c1d9f6eee6a6cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 PAX6 OTX2 panel C1-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "53964cd5-5a0d-412d-bfc4-f46074990d2b",
+      "key": "Figure 2c Brightfield_100x_Day 50.jpg",
+      "size": 219211,
+      "checksum": "md5:a3be7d5756d2f80368bb0c35c1d502c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 50.jpg/content"
+      }
+    },
+    {
+      "id": "11d0fb15-cbfe-4d56-b7ad-e6fdf4632fa0",
+      "key": "Figure 2c Brightfield_100x_Day 5.jpg",
+      "size": 178172,
+      "checksum": "md5:7d0d82480122fc4c03f5328dc93b3c27",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 5.jpg/content"
+      }
+    },
+    {
+      "id": "37d1d83a-989b-48d8-b16e-6a35e20e17d6",
+      "key": "Figure 5b SOX2 panel - C1-MAX_17.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg",
+      "size": 48606,
+      "checksum": "md5:4fdb1b92ea4a6d21c2919035fc91a085",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5b SOX2 panel - C1-MAX_17.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "d6bee4b1-18f4-4c0b-a813-5a3dee199cf8",
+      "key": "Figure 2c Brightfield_100x_Day 15.jpg",
+      "size": 274770,
+      "checksum": "md5:073603360ca1de90d6b473f69e7d6be0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 15.jpg/content"
+      }
+    },
+    {
+      "id": "ddcc0871-661a-4876-aa2a-8e70d8a40b39",
+      "key": "Figure 6 BRN3b VSX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+      "size": 35068,
+      "checksum": "md5:08c67de2b832dbb7a2d4f0a21478b2ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 BRN3b VSX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "5b5a866b-94b4-448a-b8b6-7ef6e4517283",
+      "key": "Figure 4b RAX panel - C2-MAX_04.05.21_WT1_D20.4_031220_RAX_63x_crop.jpg",
+      "size": 81338,
+      "checksum": "md5:86058af497f19b202f47b7c5dd7deb71",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4b RAX panel - C2-MAX_04.05.21_WT1_D20.4_031220_RAX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "ede2afb4-23d1-49d5-968b-3ff4e17c7e40",
+      "key": "Figure 5b SOX2 panel - C2-MAX_17.05.21_WT1_D35.1_141120_SOX2_630x_crop.jpg",
+      "size": 79065,
+      "checksum": "md5:2d9d8b2259169246ac8d765b1cf060f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5b SOX2 panel - C2-MAX_17.05.21_WT1_D35.1_141120_SOX2_630x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "15ff744e-c4ed-4668-bf9d-d515fcb45107",
+      "key": "Figure 6 BRN3b VSX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+      "size": 66870,
+      "checksum": "md5:5d2e840ae425b8c0ca336549486a137b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 BRN3b VSX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "093d3ad0-ca3a-4733-88c4-cb27448d3f01",
+      "key": "Figure 5 PAX6 VSX2 panel C1-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+      "size": 60535,
+      "checksum": "md5:2fe0566b788c7687789bbe030df24198",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 PAX6 VSX2 panel C1-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "affe870c-8f82-4854-97fe-0cc587d238f2",
+      "key": "Figure 2 Embryoid bodies n1.jpg",
+      "size": 541409,
+      "checksum": "md5:1ca2fe63d520a2a6d2af0e762596be86",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 Embryoid bodies n1.jpg/content"
+      }
+    },
+    {
+      "id": "8d5a685b-de7f-4436-b9d7-f0fbce8be023",
+      "key": "Figure 5 PAX6 VSX2 panel C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+      "size": 91982,
+      "checksum": "md5:bdc939fbf768449f804b0f8d74164148",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 PAX6 VSX2 panel C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "df736b59-96f0-4c53-ba94-dff03a53e981",
+      "key": "Figure 6 BRN3b VSX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg",
+      "size": 97051,
+      "checksum": "md5:8f4be1265cd9a5049ecfef3618a2be5c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 BRN3b VSX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "b7c038dd-1444-42ce-81db-8a2b0431953d",
+      "key": "Figure 6c Recoverin OTX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_2_crop.jpg",
+      "size": 68824,
+      "checksum": "md5:e9c6cb9359703db33a9728e3e84dd8db",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6c Recoverin OTX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "ac195c3c-b208-4f59-83ee-c272707ba84b",
+      "key": "Figure 2 Embryoid bodies n2.jpg",
+      "size": 496639,
+      "checksum": "md5:3303cbc29027fbf59b377ea9719ba8aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2 Embryoid bodies n2.jpg/content"
+      }
+    },
+    {
+      "id": "b0671ee4-8e5e-4c20-bc22-5ae76dcee1e1",
+      "key": "Figure 6c Recoverin OTX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_630x_2_crop.jpg",
+      "size": 17889,
+      "checksum": "md5:83f1a75bf5afafafa3d9f5e8f5b3d1c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6c Recoverin OTX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_630x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "23a58068-8606-47e1-b4f9-19bc4868d797",
+      "key": "Figure 6 Recoverin OTX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+      "size": 17889,
+      "checksum": "md5:83f1a75bf5afafafa3d9f5e8f5b3d1c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 6 Recoverin OTX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg/content"
+      }
+    },
+    {
+      "id": "82f8104b-7c78-455f-b6c1-fde1581a0802",
+      "key": "Figure 4 PAX6 OTX2 panel MERGE-MAX_28.04.21_WT1_D20.4_031221_Merge_630x_crop.jpg.jpg",
+      "size": 102849,
+      "checksum": "md5:36d75d59817c2554228a5606e1631a2d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 PAX6 OTX2 panel MERGE-MAX_28.04.21_WT1_D20.4_031221_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "1085b967-dda1-47f3-b8c8-ddacb6f31cb9",
+      "key": "Figure 4 PAX6 OTX2 panel C3-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+      "size": 77720,
+      "checksum": "md5:9848e131a8734e692385ce289328a3ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 PAX6 OTX2 panel C3-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "76d1dfd5-b58c-46b3-8a29-ad79326b69ee",
+      "key": "Figure 4 RAX panel C1-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg",
+      "size": 47928,
+      "checksum": "md5:a91c983160a60d98dafe356c3acf467f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 4 RAX panel C1-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "25476a20-d871-40a6-b82f-83a0608caba3",
+      "key": "Figure 5 PAX6 VSX2 panel MERGE-MAX_11.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg",
+      "size": 117007,
+      "checksum": "md5:87044e9557e28ce19c65b8d387617153",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 PAX6 VSX2 panel MERGE-MAX_11.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg/content"
+      }
+    },
+    {
+      "id": "beb81faf-28fb-495c-bcf1-9fa833394d9f",
+      "key": "Figure 5 SOX2 panel C1-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg",
+      "size": 48606,
+      "checksum": "md5:4fdb1b92ea4a6d21c2919035fc91a085",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 5 SOX2 panel C1-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg/content"
+      }
+    },
+    {
+      "id": "2a315adb-7927-4530-9c75-08e7986730c3",
+      "key": "Figure 2c Brightfield_100x_Day 0.jpg",
+      "size": 180522,
+      "checksum": "md5:6e6fd3774f1db79401f4a9858f8915d3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6332896/files/Figure 2c Brightfield_100x_Day 0.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "286277"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1791,
+    "unique_downloads": 1752,
+    "views": 550,
+    "unique_views": 533,
+    "version_downloads": 1586,
+    "version_unique_downloads": 1572,
+    "version_unique_views": 454,
+    "version_views": 460
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 55,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 7286260,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Stepwise protocols.docx",
+        "size": 28147
+      },
+      {
+        "name": "Guide to data repository.docx",
+        "size": 13283
+      },
+      {
+        "name": "Figure 2 embryoid body size.xlsx",
+        "size": 18183
+      },
+      {
+        "name": "Figure 2 wt optic vesicle sizes d35.xlsx",
+        "size": 12953
+      },
+      {
+        "name": "Figure 3 qPCR Raw Data_12.01.22.xlsx",
+        "size": 59349
+      },
+      {
+        "name": "Figure 4 RAX panel C2-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg",
+        "size": 81338
+      },
+      {
+        "name": "Figure 4 PAX6 OTX2 panel C2-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+        "size": 71868
+      },
+      {
+        "name": "Figure 4 RAX panel Merge -MAX_04.05.21_WT1_D20.4_031220_Merge_630x_crop.jpg.jpg",
+        "size": 88313
+      },
+      {
+        "name": "Figure 5a PAX6 VSX2 panel - C1-MAX_11.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg",
+        "size": 60535
+      },
+      {
+        "name": "Figure 6a PAX6 CRX panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg",
+        "size": 63267
+      },
+      {
+        "name": "Figure 6a PAX6 CRX panel - C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_630x_crop.jpg",
+        "size": 77674
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 25.jpg",
+        "size": 257590
+      },
+      {
+        "name": "Figure 6a PAX6 CRX panel - C3-MAX_04.05.21_WT1_D50.1_190421_CRX_630x_crop.jpg",
+        "size": 53589
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 30.jpg",
+        "size": 169098
+      },
+      {
+        "name": "Figure 6b BRN3b VSX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_crop.jpg",
+        "size": 64728
+      },
+      {
+        "name": "Figure 5a PAX6 VSX2 panel - C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_630x_crop.jpg",
+        "size": 91982
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 20.jpg",
+        "size": 313706
+      },
+      {
+        "name": "Figure 6b BRN3b VSX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_VSX2_630x_crop.jpg",
+        "size": 35068
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 35.jpg",
+        "size": 225640
+      },
+      {
+        "name": "Figure 6 Recoverin OTX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+        "size": 32859
+      },
+      {
+        "name": "Figure 6c Recoverin OTX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_OTX2_630x_2_crop.jpg",
+        "size": 32859
+      },
+      {
+        "name": "Figure 6 PAX6 C RX panel C1-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+        "size": 63267
+      },
+      {
+        "name": "Figure 6 PAX6 C RX panel C2-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+        "size": 77674
+      },
+      {
+        "name": "Figure 2 Embryoid bodies n3.jpg",
+        "size": 902582
+      },
+      {
+        "name": "Figure 2 Embryoid bodies zoom.jpg",
+        "size": 405637
+      },
+      {
+        "name": "Figure 6 Recoverin OTX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_2_crop.jpg.jpg",
+        "size": 75971
+      },
+      {
+        "name": "Figure 6 PAX6 C RX panel C3-MAX_04.05.21_WT1_D50.1_190421_PAX6_CRX_63x_crop.jpg",
+        "size": 53589
+      },
+      {
+        "name": "Figure 4b RAX panel - C1-MAX_04.05.21_WT1_D20.4_031220_DAPI_630x_crop.jpg",
+        "size": 47928
+      },
+      {
+        "name": "Figure 6 PAX6 C RX panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg",
+        "size": 100613
+      },
+      {
+        "name": "Figure 6 Recoverin OTX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+        "size": 68824
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 10.jpg",
+        "size": 299899
+      },
+      {
+        "name": "Figure 5 SOX2 panel C2-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg",
+        "size": 79065
+      },
+      {
+        "name": "Figure 5 SOX2 panel MERGE-MAX_17.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg",
+        "size": 86000
+      },
+      {
+        "name": "Figure 6b BRN3b VSX2 panel - C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_630x_crop.jpg",
+        "size": 66870
+      },
+      {
+        "name": "Figure 5a PAX6 VSX2 panel - C3-MAX_11.05.21_WT1_D35.1_141120_VSX2_630x_crop.jpg",
+        "size": 84344
+      },
+      {
+        "name": "Figure 5 PAX6 VSX2 panel C3-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+        "size": 84344
+      },
+      {
+        "name": "Figure 6 BRN3b VSX2 panel C1-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+        "size": 64728
+      },
+      {
+        "name": "Figure 4 PAX6 OTX2 panel C1-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+        "size": 54861
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 50.jpg",
+        "size": 219211
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 5.jpg",
+        "size": 178172
+      },
+      {
+        "name": "Figure 5b SOX2 panel - C1-MAX_17.05.21_WT1_D35.1_141120_DAPI_630x_crop.jpg",
+        "size": 48606
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 15.jpg",
+        "size": 274770
+      },
+      {
+        "name": "Figure 6 BRN3b VSX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+        "size": 35068
+      },
+      {
+        "name": "Figure 4b RAX panel - C2-MAX_04.05.21_WT1_D20.4_031220_RAX_63x_crop.jpg",
+        "size": 81338
+      },
+      {
+        "name": "Figure 5b SOX2 panel - C2-MAX_17.05.21_WT1_D35.1_141120_SOX2_630x_crop.jpg",
+        "size": 79065
+      },
+      {
+        "name": "Figure 6 BRN3b VSX2 panel C3-MAX_04.05.21_WT1_D50.1_190421_BRN3_VSX2_63x_crop.jpg",
+        "size": 66870
+      },
+      {
+        "name": "Figure 5 PAX6 VSX2 panel C1-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+        "size": 60535
+      },
+      {
+        "name": "Figure 2 Embryoid bodies n1.jpg",
+        "size": 541409
+      },
+      {
+        "name": "Figure 5 PAX6 VSX2 panel C2-MAX_11.05.21_WT1_D35.1_141120_PAX6_VSX2_63x_crop.jpg",
+        "size": 91982
+      },
+      {
+        "name": "Figure 6 BRN3b VSX2 panel MERGE-MAX_04.05.21_WT1_D50.1_190421_Merge_630x_crop.jpg.jpg",
+        "size": 97051
+      },
+      {
+        "name": "Figure 6c Recoverin OTX2 panel - C1-MAX_04.05.21_WT1_D50.1_190421_DAPI_630x_2_crop.jpg",
+        "size": 68824
+      },
+      {
+        "name": "Figure 2 Embryoid bodies n2.jpg",
+        "size": 496639
+      },
+      {
+        "name": "Figure 6c Recoverin OTX2 panel - C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_630x_2_crop.jpg",
+        "size": 17889
+      },
+      {
+        "name": "Figure 6 Recoverin OTX2 panel C2-MAX_04.05.21_WT1_D50.1_190421_RCVN_OTX2_63x_2_crop.jpg",
+        "size": 17889
+      },
+      {
+        "name": "Figure 4 PAX6 OTX2 panel MERGE-MAX_28.04.21_WT1_D20.4_031221_Merge_630x_crop.jpg.jpg",
+        "size": 102849
+      },
+      {
+        "name": "Figure 4 PAX6 OTX2 panel C3-MAX_28.04.21_WT1_D20.4_031221_PAX6_OTX2_63x_crop.jpg",
+        "size": 77720
+      },
+      {
+        "name": "Figure 4 RAX panel C1-MAX_04.05.21_WT1_D20.4_031220_PAX6_RAX_63x_crop.jpg",
+        "size": 47928
+      },
+      {
+        "name": "Figure 5 PAX6 VSX2 panel MERGE-MAX_11.05.21_WT1_D35.1_141120_Merge_630x_crop.jpg.jpg",
+        "size": 117007
+      },
+      {
+        "name": "Figure 5 SOX2 panel C1-MAX_17.05.21_WT1_D35.1_141120_PAX6_SOX2_63x_crop.jpg",
+        "size": 48606
+      },
+      {
+        "name": "Figure 2c Brightfield_100x_Day 0.jpg",
+        "size": 180522
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:47.612811"
+}

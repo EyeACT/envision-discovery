@@ -1,0 +1,132 @@
+{
+  "created": "2024-03-22T00:07:42.080955+00:00",
+  "modified": "2024-03-22T00:07:42.318225+00:00",
+  "id": 10851015,
+  "conceptrecid": "10851014",
+  "doi": "10.5281/zenodo.10851015",
+  "conceptdoi": "10.5281/zenodo.10851014",
+  "doi_url": "https://doi.org/10.5281/zenodo.10851015",
+  "metadata": {
+    "title": "Observation Database for Exploring the footprint representation of microwave radiance observations in an Arctic limited-area data assimilation system",
+    "doi": "10.5281/zenodo.10851015",
+    "publication_date": "2024-03-22",
+    "description": "<p>Basic matplotlib visualization for observational databases.<br>Archive files, readme, and visualisation script are attached.</p>\n<p>The python script visualizes the statistics related to observation&nbsp;<br>minus background departures for AMSU-A and MHS sensors using<br>the default and footprint observation operators in the AROME-Arctic data assimilation system.</p>\n<p>The corresponding preprint:<br>gmd-2023-195 | Submitted 02 Oct 2023 | Development and technical paper<br>Exploring the footprint representation of microwave radiance observations in an Arctic limited-area data assimilation system<br>M&aacute;t&eacute; Mile, Stephanie Guedj, and Roger Randriamampianina&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mile, M\u00e1t\u00e9",
+        "affiliation": "Norwegian Meteorological Institute",
+        "orcid": "0000-0001-9955-1395"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10851014"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Observation Database for Exploring the footprint representation of microwave radiance observations in an Arctic limited-area data assimilation system",
+  "links": {
+    "self": "https://zenodo.org/api/records/10851015",
+    "self_html": "https://zenodo.org/records/10851015",
+    "preview_html": "https://zenodo.org/records/10851015?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10851015",
+    "self_doi": "https://doi.org/10.5281/zenodo.10851015",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10851015",
+    "reserve_doi": "https://zenodo.org/api/records/10851015/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10851014",
+    "parent_html": "https://zenodo.org/records/10851014",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10851014",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10851014",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10851015/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10851015/sequence/default",
+    "files": "https://zenodo.org/api/records/10851015/files",
+    "media_files": "https://zenodo.org/api/records/10851015/media-files",
+    "archive": "https://zenodo.org/api/records/10851015/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10851015/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10851015/versions/latest",
+    "latest_html": "https://zenodo.org/records/10851015/latest",
+    "versions": "https://zenodo.org/api/records/10851015/versions",
+    "draft": "https://zenodo.org/api/records/10851015/draft",
+    "access_links": "https://zenodo.org/api/records/10851015/access/links",
+    "access_grants": "https://zenodo.org/api/records/10851015/access/grants",
+    "access_users": "https://zenodo.org/api/records/10851015/access/users",
+    "access_request": "https://zenodo.org/api/records/10851015/access/request",
+    "access": "https://zenodo.org/api/records/10851015/access",
+    "communities": "https://zenodo.org/api/records/10851015/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10851015/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10851015/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10851015/file-modification",
+    "requests": "https://zenodo.org/api/records/10851015/requests"
+  },
+  "updated": "2024-03-22T00:07:42.318225+00:00",
+  "recid": "10851015",
+  "revision": 4,
+  "files": [
+    {
+      "id": "4a523626-85db-40f1-8d3d-99bb4a2326f4",
+      "key": "zenodo_radiance_foop_mile_et_al_2024.tgz",
+      "size": 54317136,
+      "checksum": "md5:b299de67862399ed97e1738156d06864",
+      "links": {
+        "self": "https://zenodo.org/api/records/10851015/files/zenodo_radiance_foop_mile_et_al_2024.tgz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1081509"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 19,
+    "unique_downloads": 19,
+    "views": 125,
+    "unique_views": 121,
+    "version_downloads": 19,
+    "version_unique_downloads": 19,
+    "version_unique_views": 121,
+    "version_views": 125
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 54317136,
+    "top_level_files": [
+      {
+        "name": "zenodo_radiance_foop_mile_et_al_2024.tgz",
+        "size": 54317136
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:56.716652"
+}

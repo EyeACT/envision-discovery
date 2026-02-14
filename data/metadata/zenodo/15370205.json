@@ -1,0 +1,416 @@
+{
+  "created": "2025-05-09T07:54:02.499477+00:00",
+  "modified": "2025-09-12T06:31:37.674602+00:00",
+  "id": 15370205,
+  "conceptrecid": "14312043",
+  "doi": "10.5281/zenodo.15370205",
+  "conceptdoi": "10.5281/zenodo.14312043",
+  "doi_url": "https://doi.org/10.5281/zenodo.15370205",
+  "metadata": {
+    "title": "CellBinDB: A Large-Scale Multimodal Annotated Dataset",
+    "doi": "10.5281/zenodo.15370205",
+    "publication_date": "2024-11-20",
+    "description": "<p>CellBinDB is a large-scale, multimodal annotated dataset for cell segmentation. It contains 1,044 annotated microscope images and 109,083 cell annotations, covering four staining types: DAPI, ssDNA, H&amp;E, and mIF. CellBinDB contains samples from two species, human and mouse, covering more than 30 histologically different tissue types, including disease-related tissues. The images in CellBinDB come from two sources: 844 mouse images from internal experiments and 200 human images from the open access platform 10x Genomics. We annotated all images in CellBinDB and provide two types of image annotations: semantic and instance masks. A xlsx file is attached to record the detailed information of each image.</p>\n<p>In addition, we provide the images and annotations of nine other widely used publicly available cell segmentation datasets downloaded from their original sources, retaining their original formats for ease of use.&nbsp;</p>\n<p>The file 'mixed_licenses.txt' contains the original accessions of the public datasets used in our project and their associated licenses. Please refer to these links for more information about each dataset and its licensing terms, and use it according to the specifications.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Shi, Can",
+        "affiliation": "BGI Research",
+        "orcid": "0009-0007-0003-2378"
+      },
+      {
+        "name": "Fan, Jinghong",
+        "affiliation": "BGI Research",
+        "orcid": "0009-0001-9556-4831"
+      },
+      {
+        "name": "Deng, Zhonghan",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Liu, Huanlin",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Kang, Qiang",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Li, Yumei",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Guo, Jing",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Wang, Jingwen",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Gong, Jinjiang",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Liao, Sha",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Chen, Ao",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Zhang, Ying",
+        "affiliation": "BGI Research"
+      },
+      {
+        "name": "Li, Mei",
+        "affiliation": "BGI Research"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1093/gigascience/giaf069",
+        "relation": "isPublishedIn",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.26036/CNP0006370",
+        "relation": "isPublishedIn",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.6019/S-BIAD1538",
+        "relation": "isPublishedIn",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Caicedo, J.C., Goodman, A., Karhohs, K.W. et al. Nucleus segmentation across imaging experiments: the 2018 Data Science Bowl. Nat Methods 16, 1247\u20131253 (2019). https://doi.org/10.1038/s41592-019-0612-7",
+      "Ljosa, V., Sokolnicki, K. & Carpenter, A. Annotated high-throughput microscopy image sets for validation. Nat Methods 9, 637 (2012). https://doi.org/10.1038/nmeth.2083",
+      "Stringer, C., Pachitariu, M. Cellpose3: one-click image restoration for improved cellular segmentation. Nat Methods 22, 592\u2013599 (2025). https://doi.org/10.1038/s41592-025-02595-5",
+      "Naylor Peter Jack, Walter Thomas, La\u00e9 Marick, & Reyal Fabien. (2018). Segmentation of Nuclei in Histopathology Images by deep regression of the distance map (1.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.2579118",
+      "Kromp, F., Bozsaky, E., Rifatbegovic, F. et al. An annotated fluorescence image dataset for training nuclear segmentation methods. Sci Data 7, 262 (2020). https://doi.org/10.1038/s41597-020-00608-w",
+      "S. Graham et al., \"Lizard: A Large-Scale Dataset for Colonic Nuclear Instance Segmentation and Classification,\" 2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), Montreal, BC, Canada, 2021, pp. 684-693, doi: 10.1109/ICCVW54120.2021.00082.",
+      "N. Kumar et al., \"A Multi-Organ Nucleus Segmentation Challenge,\" in IEEE Transactions on Medical Imaging, vol. 39, no. 5, pp. 1380-1391, May 2020, doi: 10.1109/TMI.2019.2947628.",
+      "Mahbod, A., Polak, C., Feldmann, K., Khan, R., Gelles, K., Dorffner, G., Woitek, R., Hatamikia, S., & Ellinger, I. (2024). NuInsSeg: A fully annotated dataset for nuclei instance segmentation in H&E-stained histological images (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10518968",
+      "Greenwald, N.F., Miller, G., Moen, E. et al. Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning. Nat Biotechnol 40, 555\u2013565 (2022). https://doi.org/10.1038/s41587-021-01094-0"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14312043"
+          }
+        }
+      ]
+    }
+  },
+  "title": "CellBinDB: A Large-Scale Multimodal Annotated Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/15370205",
+    "self_html": "https://zenodo.org/records/15370205",
+    "preview_html": "https://zenodo.org/records/15370205?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15370205",
+    "self_doi": "https://doi.org/10.5281/zenodo.15370205",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15370205",
+    "reserve_doi": "https://zenodo.org/api/records/15370205/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14312043",
+    "parent_html": "https://zenodo.org/records/14312043",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14312043",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14312043",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15370205/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15370205/sequence/default",
+    "files": "https://zenodo.org/api/records/15370205/files",
+    "media_files": "https://zenodo.org/api/records/15370205/media-files",
+    "archive": "https://zenodo.org/api/records/15370205/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15370205/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15370205/versions/latest",
+    "latest_html": "https://zenodo.org/records/15370205/latest",
+    "versions": "https://zenodo.org/api/records/15370205/versions",
+    "draft": "https://zenodo.org/api/records/15370205/draft",
+    "access_links": "https://zenodo.org/api/records/15370205/access/links",
+    "access_grants": "https://zenodo.org/api/records/15370205/access/grants",
+    "access_users": "https://zenodo.org/api/records/15370205/access/users",
+    "access_request": "https://zenodo.org/api/records/15370205/access/request",
+    "access": "https://zenodo.org/api/records/15370205/access",
+    "communities": "https://zenodo.org/api/records/15370205/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15370205/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15370205/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15370205/file-modification",
+    "requests": "https://zenodo.org/api/records/15370205/requests"
+  },
+  "updated": "2025-09-12T06:31:37.674602+00:00",
+  "recid": "15370205",
+  "revision": 8,
+  "files": [
+    {
+      "id": "06fab963-558d-4ebf-9b87-9319c29fa9db",
+      "key": "mixed_licenses.txt",
+      "size": 1123,
+      "checksum": "md5:80ef751e5829b781b2036efa8463a75b",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/mixed_licenses.txt/content"
+      }
+    },
+    {
+      "id": "0f5f8e2c-ae92-4f5b-8dca-2e39ef57bf54",
+      "key": "CellBinDB.zip",
+      "size": 285956212,
+      "checksum": "md5:e770f1287619eb45e74d131430e20fe5",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/CellBinDB.zip/content"
+      }
+    },
+    {
+      "id": "bcf4ba6c-c7b5-4fb6-baf6-3af11a93186a",
+      "key": "Lizard.zip",
+      "size": 786544364,
+      "checksum": "md5:4a157c786cb80097f15afc5950e88807",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/Lizard.zip/content"
+      }
+    },
+    {
+      "id": "599bd6bc-94b4-4397-94f5-1790483259e4",
+      "key": "bbbc038.zip",
+      "size": 372697465,
+      "checksum": "md5:8806dc3719cfde3b8c0c93408c5f82d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/bbbc038.zip/content"
+      }
+    },
+    {
+      "id": "733dd08e-d567-46a0-8fec-c993011388e0",
+      "key": "Kromp.zip",
+      "size": 76152080,
+      "checksum": "md5:62453f9471d84dbd62424660acec8ab8",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/Kromp.zip/content"
+      }
+    },
+    {
+      "id": "8310c98d-38f0-4f5b-9c92-a963a11b9c36",
+      "key": "cellpose.zip",
+      "size": 360630318,
+      "checksum": "md5:2d3323e98c5b1f05dcb5283114391e15",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/cellpose.zip/content"
+      }
+    },
+    {
+      "id": "84f71a23-3d0a-4da5-913e-6d482e4c2c94",
+      "key": "bbbc039.zip",
+      "size": 80604445,
+      "checksum": "md5:5af00c79c54b7ece852f030e26bed536",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/bbbc039.zip/content"
+      }
+    },
+    {
+      "id": "bb9b8bd9-f227-4b1c-b040-b069bc8f82f7",
+      "key": "NuInsSeg.zip",
+      "size": 1627427342,
+      "checksum": "md5:08f9a33e23e983d82ee93aa58e69d095",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/NuInsSeg.zip/content"
+      }
+    },
+    {
+      "id": "ca8a8186-1f0b-4b7e-82e5-2b8e062d7553",
+      "key": "tissuenet_v1.1.zip",
+      "size": 4376707382,
+      "checksum": "md5:42fd53473eb043e968815c03753d0ed1",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/tissuenet_v1.1.zip/content"
+      }
+    },
+    {
+      "id": "a9510f28-c822-4159-858c-4062093532a4",
+      "key": "CellBinDB_Image_Archive.xlsx",
+      "size": 73883,
+      "checksum": "md5:83e48f9827f475cb65425a3142046ff2",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/CellBinDB_Image_Archive.xlsx/content"
+      }
+    },
+    {
+      "id": "c28d4d28-37f2-44ee-aacd-4fdb4593e30f",
+      "key": "IEEE_TMI_2019.zip",
+      "size": 25246682,
+      "checksum": "md5:af17e56a611818cd6d9a734e5bc46b61",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/IEEE_TMI_2019.zip/content"
+      }
+    },
+    {
+      "id": "39c1c219-ff7e-4eac-ab08-ae4b9ddb4554",
+      "key": "MoNuSeg 2018 Training Data.zip",
+      "size": 207472596,
+      "checksum": "md5:d2e67d14d86f9452396ab14c5752f35d",
+      "links": {
+        "self": "https://zenodo.org/api/records/15370205/files/MoNuSeg 2018 Training Data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1227045"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1695,
+    "unique_downloads": 1398,
+    "views": 904,
+    "unique_views": 803,
+    "version_downloads": 1093,
+    "version_unique_downloads": 891,
+    "version_unique_views": 337,
+    "version_views": 371
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 10,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8199438886,
+    "top_level_files": [
+      {
+        "name": "mixed_licenses.txt",
+        "size": 1123
+      },
+      {
+        "name": "CellBinDB.zip",
+        "size": 285956212
+      },
+      {
+        "name": "Lizard.zip",
+        "size": 786544364
+      },
+      {
+        "name": "bbbc038.zip",
+        "size": 372697465
+      },
+      {
+        "name": "Kromp.zip",
+        "size": 76152080
+      },
+      {
+        "name": "cellpose.zip",
+        "size": 360630318
+      },
+      {
+        "name": "bbbc039.zip",
+        "size": 80604445
+      },
+      {
+        "name": "NuInsSeg.zip",
+        "size": 1627427342
+      },
+      {
+        "name": "tissuenet_v1.1.zip",
+        "size": 4376707382
+      },
+      {
+        "name": "CellBinDB_Image_Archive.xlsx",
+        "size": 73883
+      },
+      {
+        "name": "IEEE_TMI_2019.zip",
+        "size": 25246682
+      },
+      {
+        "name": "MoNuSeg 2018 Training Data.zip",
+        "size": 207472596
+      }
+    ],
+    "zip_contents": {
+      "bbbc038.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 382160986,
+        "file_types": {
+          ".zip": 3
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "kromp.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 76325595,
+        "file_types": {
+          ".zip": 1
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "cellpose.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 360340765,
+        "file_types": {
+          ".zip": 3
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "bbbc039.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 80669559,
+        "file_types": {
+          ".zip": 2
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "ieee_tmi_2019.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 25232361,
+        "file_types": {
+          ".zip": 1
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:14.961140"
+}

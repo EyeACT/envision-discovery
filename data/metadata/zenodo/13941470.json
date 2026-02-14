@@ -1,0 +1,836 @@
+{
+  "created": "2024-10-16T16:40:59.041575+00:00",
+  "modified": "2024-10-16T16:41:01.226157+00:00",
+  "id": 13941470,
+  "conceptrecid": "8260224",
+  "doi": "10.5281/zenodo.13941470",
+  "conceptdoi": "10.5281/zenodo.8260224",
+  "doi_url": "https://doi.org/10.5281/zenodo.13941470",
+  "metadata": {
+    "title": "FAOSTAT AgLU data Archive for gcamfaostat v1.0.1 (Download Oct 16 2024)",
+    "doi": "10.5281/zenodo.13941470",
+    "publication_date": "2024-10-16",
+    "description": "<p>This repository contains data files needed to run the <em>gcamfaostat (v1.0.1)</em> package. All the data are publicly available from FAOSTAT and they are downloaded from&nbsp;<a href=\"https://www.fao.org/faostat/en/#data\">FAOSTAT</a> in October 2024. This repo serves as an archive of the source data as FAOSTAT continues updating the data. Note that the zip files provide a snapshot of FAOSTAT data since the historical data may also be revised by FAO.&nbsp;</p>\n<p>These data&nbsp;should be placed in<em> inst/extdata/FAOSTAT</em> in the R package <em>gcamfaostat v1.0.1</em>. They are used in the package to generate data used in the <em>aglu/FAO</em>&nbsp;folder in <em>gcamdata</em> for GCAM. The package structure ensures the processing is transparent, traceable, and reproducible. <em>gcamfaostat v1.0.1 generates data for GCAM v7.3+.</em></p>\n<p>&nbsp;</p>\n<p><strong><em>We have now included more data from FAOSTAT (beyond gcamfaostat needs) and changed the archive version by date. E.g., version 2024.10.16 is downloaded around that date.</em></strong></p>\n<p><em>Note that gcamfaostat v1.0.0 used a version of FAOSTAT data downloaded in Fall 2022, which produced data in GCAM v7.0.&nbsp;</em></p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Xin Zhao",
+        "affiliation": "Pacific Northwest National Laboratory"
+      }
+    ],
+    "keywords": [
+      "GCAM",
+      "gcamdata",
+      "FAOSTAT",
+      "MSD",
+      "agroeconomic model"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.21105/joss.06388",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://www.fao.org/faostat/en/#data",
+        "relation": "isOriginalFormOf",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "updated"
+      }
+    ],
+    "version": "v2024.10.16",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "communities": [
+      {
+        "id": "jgcri"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8260224"
+          }
+        }
+      ]
+    }
+  },
+  "title": "FAOSTAT AgLU data Archive for gcamfaostat v1.0.1 (Download Oct 16 2024)",
+  "links": {
+    "self": "https://zenodo.org/api/records/13941470",
+    "self_html": "https://zenodo.org/records/13941470",
+    "preview_html": "https://zenodo.org/records/13941470?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13941470",
+    "self_doi": "https://doi.org/10.5281/zenodo.13941470",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13941470",
+    "reserve_doi": "https://zenodo.org/api/records/13941470/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8260224",
+    "parent_html": "https://zenodo.org/records/8260224",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8260224",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8260224",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13941470/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13941470/sequence/default",
+    "files": "https://zenodo.org/api/records/13941470/files",
+    "media_files": "https://zenodo.org/api/records/13941470/media-files",
+    "archive": "https://zenodo.org/api/records/13941470/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13941470/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13941470/versions/latest",
+    "latest_html": "https://zenodo.org/records/13941470/latest",
+    "versions": "https://zenodo.org/api/records/13941470/versions",
+    "draft": "https://zenodo.org/api/records/13941470/draft",
+    "access_links": "https://zenodo.org/api/records/13941470/access/links",
+    "access_grants": "https://zenodo.org/api/records/13941470/access/grants",
+    "access_users": "https://zenodo.org/api/records/13941470/access/users",
+    "access_request": "https://zenodo.org/api/records/13941470/access/request",
+    "access": "https://zenodo.org/api/records/13941470/access",
+    "communities": "https://zenodo.org/api/records/13941470/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13941470/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13941470/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13941470/file-modification",
+    "requests": "https://zenodo.org/api/records/13941470/requests"
+  },
+  "updated": "2024-10-16T16:41:01.226157+00:00",
+  "recid": "13941470",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b5b58447-a4cd-41e4-ba60-8e3cb64c89da",
+      "key": "Trade_CropsLivestock_E_All_Data_(Normalized).zip",
+      "size": 256273086,
+      "checksum": "md5:81025b83ce4eb7e40c03b7eb0f96e391",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Trade_CropsLivestock_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "86e6a8a2-5466-4d8f-9268-fd62ed7639ca",
+      "key": "Emissions_crops_E_All_Data_(Normalized).zip",
+      "size": 7631221,
+      "checksum": "md5:216552ac9f6b3ca9bf757252d2549aba",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_crops_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "449bab8b-b937-4fd2-aa12-4f9f42036720",
+      "key": "Development_Assistance_to_Agriculture_E_All_Data_(Normalized).zip",
+      "size": 129444835,
+      "checksum": "md5:e20f52a85540c6f1ce92455e8e9a251d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Development_Assistance_to_Agriculture_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "6eab268d-822d-4547-a012-099aaebc5232",
+      "key": "Inputs_Pesticides_Use_E_All_Data_(Normalized).zip",
+      "size": 837607,
+      "checksum": "md5:979147afa3766ec2665399bb43982e08",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Inputs_Pesticides_Use_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "52126454-661f-4139-9ead-c0a478ebc325",
+      "key": "Employment_Indicators_Agriculture_E_All_Data_(Normalized).zip",
+      "size": 1454056,
+      "checksum": "md5:6fb9894a22979981a2f2e374d5143c05",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Employment_Indicators_Agriculture_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "9dd4d994-011a-4b39-8d02-f7617c42fc31",
+      "key": "Emissions_Pre_Post_Production_E_All_Data_(Normalized).zip",
+      "size": 4974995,
+      "checksum": "md5:307a91764838f7dd6892e4fca06677df",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Pre_Post_Production_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "91caddc4-34d1-479c-acc3-75724b64b60d",
+      "key": "Employment_Indicators_Rural_E_All_Data_(Normalized).zip",
+      "size": 928225,
+      "checksum": "md5:11cedac0c1b8f06057a33f630e58ab53",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Employment_Indicators_Rural_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "2fb11697-670f-4b95-8965-8d9a2182c000",
+      "key": "Environment_LandCover_E_All_Data_(Normalized).zip",
+      "size": 1543439,
+      "checksum": "md5:ec00f27f07baea104b98a0944e7ebad9",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_LandCover_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "71a39e45-7cb0-4068-a9fd-f50e6181d707",
+      "key": "Inputs_FertilizersProduct_E_All_Data_(Normalized).zip",
+      "size": 2038670,
+      "checksum": "md5:0cf426b5ce63b09495381d91ea2a329e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Inputs_FertilizersProduct_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "77849299-ba5b-49e2-8b82-b2968395d4da",
+      "key": "Emissions_Agriculture_Energy_E_All_Data_(Normalized).zip",
+      "size": 1597810,
+      "checksum": "md5:6637a49f9c5d4f28a7644d96d7e7469b",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Agriculture_Energy_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "1be2ded1-cd17-4009-9825-6fced86e6338",
+      "key": "Environment_LivestockPatterns_E_All_Data_(Normalized).zip",
+      "size": 3067161,
+      "checksum": "md5:29bc9a0c4ae76ca22dda476799eac1e4",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_LivestockPatterns_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "b88a2779-0bcc-4d17-9dc4-5ec91d6678e0",
+      "key": "Environment_Emissions_intensities_E_All_Data_(Normalized).zip",
+      "size": 3557924,
+      "checksum": "md5:89e25bcf5ae42cc08038942cf2a9bb7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_Emissions_intensities_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "14b9234c-df5b-4bce-b1f1-8feb299eda7e",
+      "key": "Emissions_Totals_E_All_Data_(Normalized).zip",
+      "size": 20921066,
+      "checksum": "md5:cefaf4c00d626a13a03d8def75a36449",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Totals_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "cce6004b-ba69-442b-b02f-781e3dd5d284",
+      "key": "Individual_Quantitative_Dietary_Data_Food_and_Diet_E_All_Data_(Normalized).zip",
+      "size": 11334056,
+      "checksum": "md5:4155ef885bd4a533e9121d4016d36224",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Individual_Quantitative_Dietary_Data_Food_and_Diet_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "56046d1e-be69-42dd-b164-ca49a276f447",
+      "key": "FoodBalanceSheetsHistoric_E_All_Data_(Normalized).zip",
+      "size": 72467143,
+      "checksum": "md5:1d201817fe05ef2a5dcb425919336962",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/FoodBalanceSheetsHistoric_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "3c9a05a0-b9da-414a-81f1-a3adb404a4d2",
+      "key": "FoodBalanceSheets_E_All_Data_(Normalized).zip",
+      "size": 52076466,
+      "checksum": "md5:db9fde928d781734fc104e1d78ddc90f",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/FoodBalanceSheets_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "896f901b-b35f-40e4-b187-b3ca2ee57644",
+      "key": "Emissions_Land_Use_Fires_E_All_Data_(Normalized).zip",
+      "size": 2902915,
+      "checksum": "md5:2591b3ba5f7f649f772cd08b9d6227c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Land_Use_Fires_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "2efada4c-8469-459b-87f4-01676bb9c91e",
+      "key": "Prices_E_All_Data_(Normalized).zip",
+      "size": 10593184,
+      "checksum": "md5:b04d2ad9989124585a5e03c8ff84592c",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Prices_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "3ae82e92-175d-4726-96f8-a11d57038180",
+      "key": "Investment_GovernmentExpenditure_E_All_Data_(Normalized).zip",
+      "size": 931020,
+      "checksum": "md5:d69820d9caf1e4fce2214aa77a86890d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Investment_GovernmentExpenditure_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "8c2543c7-f552-45bf-812e-672792b8c0f3",
+      "key": "Emissions_livestock_E_All_Data_(Normalized).zip",
+      "size": 52900204,
+      "checksum": "md5:af78c0f6f1af247d3fcf9b91e4ea9a1b",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_livestock_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "12718221-4984-419b-9c1d-11be296ec405",
+      "key": "Environment_Cropland_nutrient_budget_E_All_Data_(Normalized).zip",
+      "size": 7754443,
+      "checksum": "md5:7b6ac94d7ea0db34fb171e632fcdfc71",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_Cropland_nutrient_budget_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "1dd925e7-bdb4-48b2-b1b3-b932d9c56eb6",
+      "key": "Value_shares_industry_primary_factors_E_All_Data_(Normalized).zip",
+      "size": 1707843,
+      "checksum": "md5:ab87b6573e0ed39a74d4d456e3a56844",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Value_shares_industry_primary_factors_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "e2a26f49-64df-4ae8-993d-1720848bd19a",
+      "key": "Emissions_Land_Use_Forests_E_All_Data_(Normalized).zip",
+      "size": 309904,
+      "checksum": "md5:b7be0fe8171baec27c04a1285826525e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Land_Use_Forests_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "e37a251b-ad55-4efa-9363-7595a243de68",
+      "key": "SDG_BulkDownloads_E_All_Data_(Normalized).zip",
+      "size": 3369029,
+      "checksum": "md5:e990942016c7ea13a9c529c99fecd48d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/SDG_BulkDownloads_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "3a1f5710-ba8f-4154-97b5-5d6d0df4055f",
+      "key": "CommodityBalances_(non-food)_(-2013_old_methodology)_E_All_Data_(Normalized).zip",
+      "size": 7884227,
+      "checksum": "md5:1a7f510ceab33c31f445bd59ac2c6f81",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/CommodityBalances_(non-food)_(-2013_old_methodology)_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "9ee20ccd-47aa-4e9f-acda-74e99c084ed2",
+      "key": "Investment_CreditAgriculture_E_All_Data_(Normalized).zip",
+      "size": 502238,
+      "checksum": "md5:43e039625d72e02516951a5a3ee0b8f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Investment_CreditAgriculture_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "3262a524-7868-473e-b105-bcca1c418707",
+      "key": "Food_Security_Data_E_All_Data_(Normalized).zip",
+      "size": 2183029,
+      "checksum": "md5:fcc129a0de46e6c0d80528a09c7f7cc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Food_Security_Data_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "18661911-9343-4675-8729-3bafd58821cd",
+      "key": "Investment_ForeignDirectInvestment_E_All_Data_(Normalized).zip",
+      "size": 440518,
+      "checksum": "md5:9d5fdfe737a5a1364646489560b111a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Investment_ForeignDirectInvestment_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "b7ddbfc7-a5eb-4734-a45a-90d0797d07d6",
+      "key": "Environment_LivestockManure_E_All_Data_(Normalized).zip",
+      "size": 20791545,
+      "checksum": "md5:f827a6c395e65d856df32b77340758f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_LivestockManure_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "25d74d6d-c0b3-401b-a4f1-06e6f54efd38",
+      "key": "Household_Consumption_and_Expenditure_Surveys_Food_and_Diet_E_All_Data_(Normalized).zip",
+      "size": 6391986,
+      "checksum": "md5:b177dbf20243fc42d99d0f12b5114de1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Household_Consumption_and_Expenditure_Surveys_Food_and_Diet_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "2fcf1094-0e9f-489e-ba50-efd659e6da3d",
+      "key": "Emissions_Drained_Organic_Soils_E_All_Data_(Normalized).zip",
+      "size": 696678,
+      "checksum": "md5:c4aa94f2bc3ebe75aac129fe7c9adebe",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Emissions_Drained_Organic_Soils_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "f2706e57-b8b0-4dcf-a9a3-8e505b3537e8",
+      "key": "Exchange_rate_E_All_Data_(Normalized).zip",
+      "size": 1211732,
+      "checksum": "md5:2784a11c4a4b1316328a01f440142208",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Exchange_rate_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "b2b28ff8-283c-4b5f-b1f0-04a2150d8b47",
+      "key": "Environment_Temperature_change_E_All_Data_(Normalized).zip",
+      "size": 3361219,
+      "checksum": "md5:19b1cdd00d8824f29acf214de189a320",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Environment_Temperature_change_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "ef652bed-75b9-46fa-a9c5-248be5aecd08",
+      "key": "Climate_change_Emissions_indicators_E_All_Data_(Normalized).zip",
+      "size": 4351332,
+      "checksum": "md5:1d117b92a4cca84ed029acefa01a24f5",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Climate_change_Emissions_indicators_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "2168938a-5967-4708-abdf-b9940010c88c",
+      "key": "Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip",
+      "size": 7227540,
+      "checksum": "md5:94e3e7c7332b9e9201dd2cd66c4c76b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "ba1ee794-baa5-4f9f-9b0c-d24eab3b01c5",
+      "key": "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip",
+      "size": 467210828,
+      "checksum": "md5:a046513af8dbd899f3893baf250b9c69",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "754318c6-9130-43b9-979c-b995537afe9c",
+      "key": "Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+      "size": 33139919,
+      "checksum": "md5:c3f54e383c825d93be727aba391ca5d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Production_Crops_Livestock_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "857617e7-eb2f-4a8c-9b47-d6497ac9c46d",
+      "key": "Population_E_All_Data_(Normalized).zip",
+      "size": 1582070,
+      "checksum": "md5:35ea4ec47f03c096685fe2b8cbd35dc4",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Population_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "f16c3025-46ba-4d5b-9260-b108238b5f96",
+      "key": "Deflators_E_All_Data_(Normalized).zip",
+      "size": 1026293,
+      "checksum": "md5:9f9cbcfc6f609c4ef22d654c1ca0772c",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Deflators_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "b2be6fde-0ab3-44bf-80f8-0d247db37fda",
+      "key": "Forestry_E_All_Data_(Normalized).zip",
+      "size": 16176675,
+      "checksum": "md5:25c7d0da13a6d09599c0c832c225ee3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Forestry_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "4adc8c45-a725-4ecd-b803-6161ab8aaf1b",
+      "key": "Inputs_LandUse_E_All_Data_(Normalized).zip",
+      "size": 2827544,
+      "checksum": "md5:2f94c60e55658e2629824de1222c494c",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Inputs_LandUse_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "09a5de7e-9692-4077-ba16-305d227479f5",
+      "key": "Cost_Affordability_Healthy_Diet_(CoAHD)_E_All_Data_(Normalized).zip",
+      "size": 46391,
+      "checksum": "md5:4f3f5467009e865c8c03997c4ee60ea6",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Cost_Affordability_Healthy_Diet_(CoAHD)_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "d804366d-7b0c-4fa5-a075-a91885bc2a5b",
+      "key": "Investment_CapitalStock_E_All_Data_(Normalized).zip",
+      "size": 1360290,
+      "checksum": "md5:b2797bd5d3f826b322fcdca1dac7e3f8",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Investment_CapitalStock_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "64914fd4-a994-44fe-8d5b-24436a2a9267",
+      "key": "Inputs_FertilizersNutrient_E_All_Data_(Normalized).zip",
+      "size": 1886119,
+      "checksum": "md5:8f02631646a92cecca19fd03ffecc659",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/Inputs_FertilizersNutrient_E_All_Data_(Normalized).zip/content"
+      }
+    },
+    {
+      "id": "8b62e25f-7da0-4305-81a0-bda6896fd67d",
+      "key": "SUA_Crops_Livestock_E_All_Data_(Normalized).zip",
+      "size": 83962604,
+      "checksum": "md5:1614a612c0c54d6379457cb6c5ebc929",
+      "links": {
+        "self": "https://zenodo.org/api/records/13941470/files/SUA_Crops_Livestock_E_All_Data_(Normalized).zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "264504"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 21334,
+    "unique_downloads": 21241,
+    "views": 2029,
+    "unique_views": 1858,
+    "version_downloads": 16092,
+    "version_unique_downloads": 16024,
+    "version_unique_views": 1198,
+    "version_views": 1345
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 45,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1314877079,
+    "top_level_files": [
+      {
+        "name": "Trade_CropsLivestock_E_All_Data_(Normalized).zip",
+        "size": 256273086
+      },
+      {
+        "name": "Emissions_crops_E_All_Data_(Normalized).zip",
+        "size": 7631221
+      },
+      {
+        "name": "Development_Assistance_to_Agriculture_E_All_Data_(Normalized).zip",
+        "size": 129444835
+      },
+      {
+        "name": "Inputs_Pesticides_Use_E_All_Data_(Normalized).zip",
+        "size": 837607
+      },
+      {
+        "name": "Employment_Indicators_Agriculture_E_All_Data_(Normalized).zip",
+        "size": 1454056
+      },
+      {
+        "name": "Emissions_Pre_Post_Production_E_All_Data_(Normalized).zip",
+        "size": 4974995
+      },
+      {
+        "name": "Employment_Indicators_Rural_E_All_Data_(Normalized).zip",
+        "size": 928225
+      },
+      {
+        "name": "Environment_LandCover_E_All_Data_(Normalized).zip",
+        "size": 1543439
+      },
+      {
+        "name": "Inputs_FertilizersProduct_E_All_Data_(Normalized).zip",
+        "size": 2038670
+      },
+      {
+        "name": "Emissions_Agriculture_Energy_E_All_Data_(Normalized).zip",
+        "size": 1597810
+      },
+      {
+        "name": "Environment_LivestockPatterns_E_All_Data_(Normalized).zip",
+        "size": 3067161
+      },
+      {
+        "name": "Environment_Emissions_intensities_E_All_Data_(Normalized).zip",
+        "size": 3557924
+      },
+      {
+        "name": "Emissions_Totals_E_All_Data_(Normalized).zip",
+        "size": 20921066
+      },
+      {
+        "name": "Individual_Quantitative_Dietary_Data_Food_and_Diet_E_All_Data_(Normalized).zip",
+        "size": 11334056
+      },
+      {
+        "name": "FoodBalanceSheetsHistoric_E_All_Data_(Normalized).zip",
+        "size": 72467143
+      },
+      {
+        "name": "FoodBalanceSheets_E_All_Data_(Normalized).zip",
+        "size": 52076466
+      },
+      {
+        "name": "Emissions_Land_Use_Fires_E_All_Data_(Normalized).zip",
+        "size": 2902915
+      },
+      {
+        "name": "Prices_E_All_Data_(Normalized).zip",
+        "size": 10593184
+      },
+      {
+        "name": "Investment_GovernmentExpenditure_E_All_Data_(Normalized).zip",
+        "size": 931020
+      },
+      {
+        "name": "Emissions_livestock_E_All_Data_(Normalized).zip",
+        "size": 52900204
+      },
+      {
+        "name": "Environment_Cropland_nutrient_budget_E_All_Data_(Normalized).zip",
+        "size": 7754443
+      },
+      {
+        "name": "Value_shares_industry_primary_factors_E_All_Data_(Normalized).zip",
+        "size": 1707843
+      },
+      {
+        "name": "Emissions_Land_Use_Forests_E_All_Data_(Normalized).zip",
+        "size": 309904
+      },
+      {
+        "name": "SDG_BulkDownloads_E_All_Data_(Normalized).zip",
+        "size": 3369029
+      },
+      {
+        "name": "CommodityBalances_(non-food)_(-2013_old_methodology)_E_All_Data_(Normalized).zip",
+        "size": 7884227
+      },
+      {
+        "name": "Investment_CreditAgriculture_E_All_Data_(Normalized).zip",
+        "size": 502238
+      },
+      {
+        "name": "Food_Security_Data_E_All_Data_(Normalized).zip",
+        "size": 2183029
+      },
+      {
+        "name": "Investment_ForeignDirectInvestment_E_All_Data_(Normalized).zip",
+        "size": 440518
+      },
+      {
+        "name": "Environment_LivestockManure_E_All_Data_(Normalized).zip",
+        "size": 20791545
+      },
+      {
+        "name": "Household_Consumption_and_Expenditure_Surveys_Food_and_Diet_E_All_Data_(Normalized).zip",
+        "size": 6391986
+      },
+      {
+        "name": "Emissions_Drained_Organic_Soils_E_All_Data_(Normalized).zip",
+        "size": 696678
+      },
+      {
+        "name": "Exchange_rate_E_All_Data_(Normalized).zip",
+        "size": 1211732
+      },
+      {
+        "name": "Environment_Temperature_change_E_All_Data_(Normalized).zip",
+        "size": 3361219
+      },
+      {
+        "name": "Climate_change_Emissions_indicators_E_All_Data_(Normalized).zip",
+        "size": 4351332
+      },
+      {
+        "name": "Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).zip",
+        "size": 7227540
+      },
+      {
+        "name": "Trade_DetailedTradeMatrix_E_All_Data_(Normalized).zip",
+        "size": 467210828
+      },
+      {
+        "name": "Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+        "size": 33139919
+      },
+      {
+        "name": "Population_E_All_Data_(Normalized).zip",
+        "size": 1582070
+      },
+      {
+        "name": "Deflators_E_All_Data_(Normalized).zip",
+        "size": 1026293
+      },
+      {
+        "name": "Forestry_E_All_Data_(Normalized).zip",
+        "size": 16176675
+      },
+      {
+        "name": "Inputs_LandUse_E_All_Data_(Normalized).zip",
+        "size": 2827544
+      },
+      {
+        "name": "Cost_Affordability_Healthy_Diet_(CoAHD)_E_All_Data_(Normalized).zip",
+        "size": 46391
+      },
+      {
+        "name": "Investment_CapitalStock_E_All_Data_(Normalized).zip",
+        "size": 1360290
+      },
+      {
+        "name": "Inputs_FertilizersNutrient_E_All_Data_(Normalized).zip",
+        "size": 1886119
+      },
+      {
+        "name": "SUA_Crops_Livestock_E_All_Data_(Normalized).zip",
+        "size": 83962604
+      }
+    ],
+    "zip_contents": {
+      "trade_cropslivestock_e_all_data_(normalized).zip": {
+        "total_files": 4,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 2256544619,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "emissions_crops_e_all_data_(normalized).zip": {
+        "total_files": 4,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 140133495,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "development_assistance_to_agriculture_e_all_data_(normalized).zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 2603899760,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "inputs_pesticides_use_e_all_data_(normalized).zip": {
+        "total_files": 5,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 14638470,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "employment_indicators_agriculture_e_all_data_(normalized).zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 39361428,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "emissions_pre_post_production_e_all_data_(normalized).zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 63326578,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "employment_indicators_rural_e_all_data_(normalized).zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 26174927,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "environment_landcover_e_all_data_(normalized).zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 27047797,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "inputs_fertilizersproduct_e_all_data_(normalized).zip": {
+        "total_files": 4,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 28558638,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "foodbalancesheetshistoric_e_all_data_(normalized).zip": {
+        "total_files": 4,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 1504467441,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:36.664636"
+}

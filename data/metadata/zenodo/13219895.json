@@ -1,0 +1,180 @@
+{
+  "created": "2024-08-05T07:51:49.892843+00:00",
+  "modified": "2024-08-05T07:51:50.092306+00:00",
+  "id": 13219895,
+  "conceptrecid": "13219894",
+  "doi": "10.5281/zenodo.13219895",
+  "conceptdoi": "10.5281/zenodo.13219894",
+  "doi_url": "https://doi.org/10.5281/zenodo.13219895",
+  "metadata": {
+    "title": "bioimage.io upload: ilastik/tnbc",
+    "doi": "10.5281/zenodo.13219895",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=ilastik/tnbc\">View on bioimage.io</a> # Segmentation of Nuclei in Histopathology Images </p>\n<h1>Nucleus Segmentation Training Data</h1>\n<p>Traning data for instance segmentation of nuclei in H&amp;E brightfield images. This dataset was published in https://doi.org/10.1109/TMI.2018.2865709.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Constantin Pape",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "nuclei",
+      "instance-segmentation",
+      "brightfield-microscopy",
+      "2D"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13219894"
+          }
+        }
+      ]
+    },
+    "notes": "Dataset of H&amp;E Brightfield images with nucleus instance annotations. Contains 50 annotated images, divided into 11 patients.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: ilastik/tnbc",
+  "links": {
+    "self": "https://zenodo.org/api/records/13219895",
+    "self_html": "https://zenodo.org/records/13219895",
+    "preview_html": "https://zenodo.org/records/13219895?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13219895",
+    "self_doi": "https://doi.org/10.5281/zenodo.13219895",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219895",
+    "reserve_doi": "https://zenodo.org/api/records/13219895/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13219894",
+    "parent_html": "https://zenodo.org/records/13219894",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13219894",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219894",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13219895/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13219895/sequence/default",
+    "files": "https://zenodo.org/api/records/13219895/files",
+    "media_files": "https://zenodo.org/api/records/13219895/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13219895:tnbc_cover.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13219895/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13219895/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13219895/versions/latest",
+    "latest_html": "https://zenodo.org/records/13219895/latest",
+    "versions": "https://zenodo.org/api/records/13219895/versions",
+    "draft": "https://zenodo.org/api/records/13219895/draft",
+    "access_links": "https://zenodo.org/api/records/13219895/access/links",
+    "access_grants": "https://zenodo.org/api/records/13219895/access/grants",
+    "access_users": "https://zenodo.org/api/records/13219895/access/users",
+    "access_request": "https://zenodo.org/api/records/13219895/access/request",
+    "access": "https://zenodo.org/api/records/13219895/access",
+    "communities": "https://zenodo.org/api/records/13219895/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13219895/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13219895/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13219895/file-modification",
+    "requests": "https://zenodo.org/api/records/13219895/requests"
+  },
+  "updated": "2024-08-05T07:51:50.092306+00:00",
+  "recid": "13219895",
+  "revision": 4,
+  "files": [
+    {
+      "id": "4fff5dfb-78d2-4406-a9cc-356860524170",
+      "key": "tnbc_cover.jpg",
+      "size": 60106,
+      "checksum": "md5:55521770d40a9078b1c866caf6c81245",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219895/files/tnbc_cover.jpg/content"
+      }
+    },
+    {
+      "id": "748dcfd9-198e-43ba-ad41-137acaae7ee1",
+      "key": "rdf.yaml",
+      "size": 1520,
+      "checksum": "md5:7e84e7aadd8ccbd4e907681caac4142a",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219895/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "d7a3af04-394c-4bb3-8da6-961f83c31cc0",
+      "key": "tnbc.md",
+      "size": 186,
+      "checksum": "md5:2be9b7bfdafe4b71ef86c11c0fb00416",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219895/files/tnbc.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 31,
+    "unique_downloads": 28,
+    "views": 38,
+    "unique_views": 31,
+    "version_downloads": 31,
+    "version_unique_downloads": 28,
+    "version_unique_views": 31,
+    "version_views": 38
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 60106,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "tnbc_cover.jpg",
+        "size": 60106
+      },
+      {
+        "name": "rdf.yaml",
+        "size": 1520
+      },
+      {
+        "name": "tnbc.md",
+        "size": 186
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1109/TMI.2018.2865709",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:11.848958"
+}

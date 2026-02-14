@@ -1,0 +1,197 @@
+{
+  "created": "2024-08-12T13:25:30.568026+00:00",
+  "modified": "2025-02-13T07:06:43.951491+00:00",
+  "id": 13305560,
+  "conceptrecid": "13235548",
+  "doi": "10.5281/zenodo.13305560",
+  "conceptdoi": "10.5281/zenodo.13235548",
+  "doi_url": "https://doi.org/10.5281/zenodo.13305560",
+  "metadata": {
+    "title": "User Generated Content (EOL v2): user image cropping",
+    "doi": "10.5281/zenodo.13305560",
+    "publication_date": "2024-08-12",
+    "description": "From DATA-1740\nData as of Oct 25, 2018\nInitial report: <p></p>https://editors.eol.org/other_files/EOL_v2_files/image_crops.txt.zip\n\nFrom DATA-1805. Same report, now with EOL_pk:\n<p></p>https://editors.eol.org/other_files/EOL_v2_files/image_crops_withEOL_pk.txt.zip\n\nFor questions or use cases calling for large, multi-use aggregate data files, please visit the EOL Services forum at <p></p>http://discuss.eol.org/c/eol-services",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Encyclopedia of Life",
+        "affiliation": null
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Jen Hammock",
+        "affiliation": "Encyclopedia of Life",
+        "type": "ContactPerson"
+      }
+    ],
+    "keywords": [
+      "compilation",
+      "active"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://editors.eol.org/other_files/EOL_v2_files/image_crops_withEOL_pk.txt.zip",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "notspecified"
+    },
+    "communities": [
+      {
+        "id": "eol"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13235548"
+          }
+        }
+      ]
+    }
+  },
+  "title": "User Generated Content (EOL v2): user image cropping",
+  "links": {
+    "self": "https://zenodo.org/api/records/13305560",
+    "self_html": "https://zenodo.org/records/13305560",
+    "preview_html": "https://zenodo.org/records/13305560?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13305560",
+    "self_doi": "https://doi.org/10.5281/zenodo.13305560",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13305560",
+    "reserve_doi": "https://zenodo.org/api/records/13305560/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13235548",
+    "parent_html": "https://zenodo.org/records/13235548",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13235548",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13235548",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13305560/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13305560/sequence/default",
+    "files": "https://zenodo.org/api/records/13305560/files",
+    "media_files": "https://zenodo.org/api/records/13305560/media-files",
+    "archive": "https://zenodo.org/api/records/13305560/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13305560/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13305560/versions/latest",
+    "latest_html": "https://zenodo.org/records/13305560/latest",
+    "versions": "https://zenodo.org/api/records/13305560/versions",
+    "draft": "https://zenodo.org/api/records/13305560/draft",
+    "access_links": "https://zenodo.org/api/records/13305560/access/links",
+    "access_grants": "https://zenodo.org/api/records/13305560/access/grants",
+    "access_users": "https://zenodo.org/api/records/13305560/access/users",
+    "access_request": "https://zenodo.org/api/records/13305560/access/request",
+    "access": "https://zenodo.org/api/records/13305560/access",
+    "communities": "https://zenodo.org/api/records/13305560/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13305560/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13305560/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13305560/file-modification",
+    "requests": "https://zenodo.org/api/records/13305560/requests"
+  },
+  "updated": "2025-02-13T07:06:43.951491+00:00",
+  "recid": "13305560",
+  "revision": 14,
+  "files": [
+    {
+      "id": "66287cbf-7613-40a4-9bb3-20928afedf44",
+      "key": "13235549.dat",
+      "size": 2434,
+      "checksum": "md5:5b58ffe7ac98c0066c3bf2f1ce995c7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13305560/files/13235549.dat/content"
+      }
+    },
+    {
+      "id": "258f52ab-4218-4227-90ac-24e533b4021a",
+      "key": "image_crops_withEOL_pk.txt.zip",
+      "size": 3059502,
+      "checksum": "md5:4d78fc92919f43e012a145c86822698d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13305560/files/image_crops_withEOL_pk.txt.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1158728"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 26,
+    "unique_downloads": 26,
+    "views": 59,
+    "unique_views": 51,
+    "version_downloads": 23,
+    "version_unique_downloads": 23,
+    "version_unique_views": 40,
+    "version_views": 45
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3059502,
+    "top_level_files": [
+      {
+        "name": "13235549.dat",
+        "size": 2434
+      },
+      {
+        "name": "image_crops_withEOL_pk.txt.zip",
+        "size": 3059502
+      }
+    ],
+    "zip_contents": {
+      "image_crops_witheol_pk.txt.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 14922888,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://editors.eol.org/other_files/EOL_v2_files/image_crops.txt.zip",
+      "type": "archive_download"
+    },
+    {
+      "url": "https://editors.eol.org/other_files/EOL_v2_files/image_crops_withEOL_pk.txt.zip",
+      "type": "archive_download"
+    },
+    {
+      "url": "http://discuss.eol.org/c/eol-services",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:11.644798"
+}

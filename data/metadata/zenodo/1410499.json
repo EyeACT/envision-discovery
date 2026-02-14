@@ -1,0 +1,197 @@
+{
+  "created": "2018-09-06T16:27:30.549287+00:00",
+  "modified": "2020-01-24T19:25:22.341075+00:00",
+  "id": 1410499,
+  "conceptrecid": "1410498",
+  "doi": "10.5281/zenodo.1410499",
+  "conceptdoi": "10.5281/zenodo.1410498",
+  "doi_url": "https://doi.org/10.5281/zenodo.1410499",
+  "metadata": {
+    "title": "Data to \"Retinal Blur from Natural Scenes and Eye Shape\"",
+    "doi": "10.5281/zenodo.1410499",
+    "publication_date": "2018-09-06",
+    "description": "<p>This record contains experimental and analysis scripts (written in Matlab)&nbsp;as well as raw and processed data to reproduce the results shown in:</p>\n\n<p><strong>Maiello, G</strong>., Harrison, W. J., Vera-Diaz, F. A., &amp; Bex, P. J. (in preparation). Retinal Blur from Natural Scenes and Eye Shape.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Maiello Guido",
+        "affiliation": "Justus-Liebig University Gie\u00dfen",
+        "orcid": "0000-0001-6625-2583"
+      }
+    ],
+    "keywords": [
+      "Myopia; Refractive error; Blur; Natural-scene statistics; Eye shape"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "5R01EY021553-02",
+        "internal_id": "10.13039/100000002::5R01EY021553-02",
+        "funder": {
+          "name": "National Institutes of Health",
+          "doi": "10.13039/100000002",
+          "acronym": "NIH"
+        },
+        "title": "Efficient Assessment of Visual Deficits and Rehabilitation Methods in Amblyopia",
+        "program": "NATIONAL_EYE_INSTITUTE"
+      },
+      {
+        "code": "793660",
+        "internal_id": "10.13039/501100000780::793660",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Visually guided grasping and its effects on visual representations",
+        "acronym": "VisualGrasping",
+        "program": "H2020-EU.1.3.",
+        "url": "https://cordis.europa.eu/projects/793660"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "1410498"
+          }
+        }
+      ]
+    },
+    "notes": "The authors do not own the range image dataset employed in this study, but these data are available upon request from Dr. Dale Purves."
+  },
+  "title": "Data to \"Retinal Blur from Natural Scenes and Eye Shape\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/1410499",
+    "self_html": "https://zenodo.org/records/1410499",
+    "preview_html": "https://zenodo.org/records/1410499?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.1410499",
+    "self_doi": "https://doi.org/10.5281/zenodo.1410499",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1410499",
+    "reserve_doi": "https://zenodo.org/api/records/1410499/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/1410498",
+    "parent_html": "https://zenodo.org/records/1410498",
+    "parent_doi": "https://doi.org/10.5281/zenodo.1410498",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1410498",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:1410499/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:1410499/sequence/default",
+    "files": "https://zenodo.org/api/records/1410499/files",
+    "media_files": "https://zenodo.org/api/records/1410499/media-files",
+    "archive": "https://zenodo.org/api/records/1410499/files-archive",
+    "archive_media": "https://zenodo.org/api/records/1410499/media-files-archive",
+    "latest": "https://zenodo.org/api/records/1410499/versions/latest",
+    "latest_html": "https://zenodo.org/records/1410499/latest",
+    "versions": "https://zenodo.org/api/records/1410499/versions",
+    "draft": "https://zenodo.org/api/records/1410499/draft",
+    "access_links": "https://zenodo.org/api/records/1410499/access/links",
+    "access_grants": "https://zenodo.org/api/records/1410499/access/grants",
+    "access_users": "https://zenodo.org/api/records/1410499/access/users",
+    "access_request": "https://zenodo.org/api/records/1410499/access/request",
+    "access": "https://zenodo.org/api/records/1410499/access",
+    "communities": "https://zenodo.org/api/records/1410499/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/1410499/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/1410499/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/1410499/file-modification",
+    "requests": "https://zenodo.org/api/records/1410499/requests"
+  },
+  "updated": "2020-01-24T19:25:22.341075+00:00",
+  "recid": "1410499",
+  "revision": 4,
+  "files": [
+    {
+      "id": "e2b0e327-4fa9-4502-9e4e-547c9b93ec7b",
+      "key": "Data_and_Analyses.zip",
+      "size": 1887100496,
+      "checksum": "md5:46b0b7991b13ba662c079e8f8a51ee84",
+      "links": {
+        "self": "https://zenodo.org/api/records/1410499/files/Data_and_Analyses.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "39092"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 36,
+    "unique_downloads": 31,
+    "views": 353,
+    "unique_views": 344,
+    "version_downloads": 36,
+    "version_unique_downloads": 31,
+    "version_unique_views": 344,
+    "version_views": 353
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1887100496,
+    "top_level_files": [
+      {
+        "name": "Data_and_Analyses.zip",
+        "size": 1887100496
+      }
+    ],
+    "zip_contents": {
+      "data_and_analyses.zip": {
+        "total_files": 196,
+        "total_directories": 14,
+        "total_uncompressed_bytes": 1998878478,
+        "file_types": {
+          ".mat": 9
+        },
+        "imaging_file_count": 9,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "data_and_analyses/blurdataanalyses/parsed/indoorsblurdistr.mat",
+          "data_and_analyses/blurdataanalyses/parsed/indoorsblurdistrexample.mat",
+          "data_and_analyses/blurdataanalyses/parsed/indoorsvisualfieldblur.mat",
+          "data_and_analyses/blurdataanalyses/parsed/indoorsvisualfieldblurexample.mat",
+          "data_and_analyses/blurdataanalyses/parsed/outdoorsblurdistr.mat",
+          "data_and_analyses/blurdataanalyses/parsed/outdoorsblurdistrexample.mat",
+          "data_and_analyses/blurdataanalyses/parsed/outdoorsvisualfieldblur.mat",
+          "data_and_analyses/blurdataanalyses/parsed/outdoorsvisualfieldblurexample.mat",
+          "data_and_analyses/csfdataanalysis/parsed/qcsf_parsed.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "data_and_analyses/blurdataanalyses/parsed/indoorsblurdistr.mat",
+      "data_and_analyses/blurdataanalyses/parsed/indoorsblurdistrexample.mat",
+      "data_and_analyses/blurdataanalyses/parsed/indoorsvisualfieldblur.mat",
+      "data_and_analyses/blurdataanalyses/parsed/indoorsvisualfieldblurexample.mat",
+      "data_and_analyses/blurdataanalyses/parsed/outdoorsblurdistr.mat",
+      "data_and_analyses/blurdataanalyses/parsed/outdoorsblurdistrexample.mat",
+      "data_and_analyses/blurdataanalyses/parsed/outdoorsvisualfieldblur.mat",
+      "data_and_analyses/blurdataanalyses/parsed/outdoorsvisualfieldblurexample.mat",
+      "data_and_analyses/csfdataanalysis/parsed/qcsf_parsed.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:28.708525"
+}

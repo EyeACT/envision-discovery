@@ -1,0 +1,154 @@
+{
+  "created": "2025-02-03T11:57:29.900577+00:00",
+  "modified": "2025-02-03T11:57:30.052176+00:00",
+  "id": 14793629,
+  "conceptrecid": "14778415",
+  "doi": "10.5281/zenodo.14793629",
+  "conceptdoi": "10.5281/zenodo.14778415",
+  "doi_url": "https://doi.org/10.5281/zenodo.14793629",
+  "metadata": {
+    "title": "FourCastNet V2: 10-day hindcasts of 100-m u and v winds (2022-10 to 2023-03)",
+    "doi": "10.5281/zenodo.14793629",
+    "publication_date": "2025-02-03",
+    "description": "<p>These hindcasts are initialised daily using ERA5. They have global coverage at 0.25&deg; horizontal resolution and six-hourly output frequency.<br><br>Files are in grib format. Filenames are of the form YYYYMMDD-hhh-vvvvvv.grib, where YYYY-MM-DD is the initialisation date, hhh is the lead time in hours, and vvvvvv is the variable grib code (228246 for u100, 228247 for v100).</p>\n<p>&nbsp;</p>\n<ul>\n<li>v1.1 includes some files that were missing in v1.0 (forecasts initialised Oct 1 to Oct 5).</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hunt, Kieran",
+        "affiliation": "University of Reading",
+        "orcid": "0000-0003-1480-3755"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Yoshinori, Tashiro",
+        "affiliation": "University of Reading",
+        "type": "Researcher"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.13140/RG.2.2.32528.93446",
+        "relation": "isReferencedBy",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "issued"
+      }
+    ],
+    "version": "1.1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14778415"
+          }
+        }
+      ]
+    }
+  },
+  "title": "FourCastNet V2: 10-day hindcasts of 100-m u and v winds (2022-10 to 2023-03)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14793629",
+    "self_html": "https://zenodo.org/records/14793629",
+    "preview_html": "https://zenodo.org/records/14793629?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14793629",
+    "self_doi": "https://doi.org/10.5281/zenodo.14793629",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14793629",
+    "reserve_doi": "https://zenodo.org/api/records/14793629/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14778415",
+    "parent_html": "https://zenodo.org/records/14778415",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14778415",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14778415",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14793629/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14793629/sequence/default",
+    "files": "https://zenodo.org/api/records/14793629/files",
+    "media_files": "https://zenodo.org/api/records/14793629/media-files",
+    "archive": "https://zenodo.org/api/records/14793629/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14793629/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14793629/versions/latest",
+    "latest_html": "https://zenodo.org/records/14793629/latest",
+    "versions": "https://zenodo.org/api/records/14793629/versions",
+    "draft": "https://zenodo.org/api/records/14793629/draft",
+    "access_links": "https://zenodo.org/api/records/14793629/access/links",
+    "access_grants": "https://zenodo.org/api/records/14793629/access/grants",
+    "access_users": "https://zenodo.org/api/records/14793629/access/users",
+    "access_request": "https://zenodo.org/api/records/14793629/access/request",
+    "access": "https://zenodo.org/api/records/14793629/access",
+    "communities": "https://zenodo.org/api/records/14793629/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14793629/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14793629/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14793629/file-modification",
+    "requests": "https://zenodo.org/api/records/14793629/requests"
+  },
+  "updated": "2025-02-03T11:57:30.052176+00:00",
+  "recid": "14793629",
+  "revision": 4,
+  "files": [
+    {
+      "id": "5ca17346-0a08-46ca-9728-232857c57a2e",
+      "key": "fcnv2-100m_winds-2022-3.zip",
+      "size": 27935409619,
+      "checksum": "md5:4669d82072b0c07e73add12b77d5f19e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14793629/files/fcnv2-100m_winds-2022-3.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "260013"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 56,
+    "unique_downloads": 55,
+    "views": 81,
+    "unique_views": 68,
+    "version_downloads": 35,
+    "version_unique_downloads": 34,
+    "version_unique_views": 43,
+    "version_views": 51
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 27935409619,
+    "top_level_files": [
+      {
+        "name": "fcnv2-100m_winds-2022-3.zip",
+        "size": 27935409619
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:56.227479"
+}

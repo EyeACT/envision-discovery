@@ -1,0 +1,175 @@
+{
+  "created": "2021-08-20T15:10:08.300344+00:00",
+  "modified": "2022-06-21T20:04:45.922859+00:00",
+  "id": 5227301,
+  "conceptrecid": "5227300",
+  "doi": "10.5281/zenodo.5227301",
+  "conceptdoi": "10.5281/zenodo.5227300",
+  "doi_url": "https://doi.org/10.5281/zenodo.5227301",
+  "metadata": {
+    "title": "U-Net model for Arabidopsis segmentation in 3D",
+    "doi": "10.5281/zenodo.5227301",
+    "publication_date": "2021-08-20",
+    "description": "<p>U-Net segmentation model to be used in Vollseg notebooks and scripts for 3D segmentation of Arabidopsis membrane datasets in 3D.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Varun Kapoor",
+        "affiliation": "Kapoorlabs",
+        "orcid": "0000-0001-5331-7966"
+      }
+    ],
+    "keywords": [
+      "Segmentation, Unet, Deep Learning"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5227300"
+          }
+        }
+      ]
+    },
+    "notes": "Computational support provided by Jean Zay dynamic access grant: AD011013396 Monetary Support by Grant#: 2021-240715(5022) from Chan Zuckerberg Innitiative and Silicon Valley community foundation."
+  },
+  "title": "U-Net model for Arabidopsis segmentation in 3D",
+  "links": {
+    "self": "https://zenodo.org/api/records/5227301",
+    "self_html": "https://zenodo.org/records/5227301",
+    "preview_html": "https://zenodo.org/records/5227301?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5227301",
+    "self_doi": "https://doi.org/10.5281/zenodo.5227301",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5227301",
+    "reserve_doi": "https://zenodo.org/api/records/5227301/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5227300",
+    "parent_html": "https://zenodo.org/records/5227300",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5227300",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5227300",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5227301/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5227301/sequence/default",
+    "files": "https://zenodo.org/api/records/5227301/files",
+    "media_files": "https://zenodo.org/api/records/5227301/media-files",
+    "archive": "https://zenodo.org/api/records/5227301/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5227301/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5227301/versions/latest",
+    "latest_html": "https://zenodo.org/records/5227301/latest",
+    "versions": "https://zenodo.org/api/records/5227301/versions",
+    "draft": "https://zenodo.org/api/records/5227301/draft",
+    "access_links": "https://zenodo.org/api/records/5227301/access/links",
+    "access_grants": "https://zenodo.org/api/records/5227301/access/grants",
+    "access_users": "https://zenodo.org/api/records/5227301/access/users",
+    "access_request": "https://zenodo.org/api/records/5227301/access/request",
+    "access": "https://zenodo.org/api/records/5227301/access",
+    "communities": "https://zenodo.org/api/records/5227301/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5227301/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5227301/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5227301/file-modification",
+    "requests": "https://zenodo.org/api/records/5227301/requests"
+  },
+  "updated": "2022-06-21T20:04:45.922859+00:00",
+  "recid": "5227301",
+  "revision": 4,
+  "files": [
+    {
+      "id": "ddc99e67-c67b-4e9c-99ff-2c9f522db76e",
+      "key": "weights_now.h5",
+      "size": 16436816,
+      "checksum": "md5:f400f40b06235aa375fe8a253a3e15d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/5227301/files/weights_now.h5/content"
+      }
+    },
+    {
+      "id": "ea402c55-5eff-4670-9067-b747707750a9",
+      "key": "weights_best.h5",
+      "size": 16436816,
+      "checksum": "md5:7b95dc5890a4d9a9a8978a3ffa1d3991",
+      "links": {
+        "self": "https://zenodo.org/api/records/5227301/files/weights_best.h5/content"
+      }
+    },
+    {
+      "id": "625c5663-ba1d-459c-8a5c-538f0a993319",
+      "key": "events.out.tfevents.1629296351.sulaco",
+      "size": 21332356,
+      "checksum": "md5:ff7dc8338a2b40464db8e9104eba6c63",
+      "links": {
+        "self": "https://zenodo.org/api/records/5227301/files/events.out.tfevents.1629296351.sulaco/content"
+      }
+    },
+    {
+      "id": "add0faa6-5335-4ded-ad3f-8050d0ae7a89",
+      "key": "config.json",
+      "size": 582,
+      "checksum": "md5:da7a794627f8531e858f244e0d00106a",
+      "links": {
+        "self": "https://zenodo.org/api/records/5227301/files/config.json/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "487298"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 139,
+    "unique_downloads": 113,
+    "views": 309,
+    "unique_views": 290,
+    "version_downloads": 139,
+    "version_unique_downloads": 113,
+    "version_unique_views": 290,
+    "version_views": 309
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 32873632,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "weights_now.h5",
+        "size": 16436816
+      },
+      {
+        "name": "weights_best.h5",
+        "size": 16436816
+      },
+      {
+        "name": "events.out.tfevents.1629296351.sulaco",
+        "size": 21332356
+      },
+      {
+        "name": "config.json",
+        "size": 582
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:35.034070"
+}

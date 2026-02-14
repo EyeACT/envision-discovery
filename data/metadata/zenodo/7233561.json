@@ -1,0 +1,145 @@
+{
+  "created": "2022-10-21T08:11:50.554251+00:00",
+  "modified": "2022-10-21T14:26:49.440853+00:00",
+  "id": 7233561,
+  "conceptrecid": "7233560",
+  "doi": "10.5281/zenodo.7233561",
+  "conceptdoi": "10.5281/zenodo.7233560",
+  "doi_url": "https://doi.org/10.5281/zenodo.7233561",
+  "metadata": {
+    "title": "Monthly changes in glacier surface elevation on HMA",
+    "doi": "10.5281/zenodo.7233561",
+    "publication_date": "2022-10-21",
+    "description": "<p><a href=\"https://zenodo.org/api/files/5c8e256d-a2db-43aa-9f1f-d421b1881b58/Time_Series_Glacier_Surface_Elevation.rar\">Time_Series_Glacier_Surface_Elevation.rar</a>&nbsp;is Monthly changes in glacier surface elevation on HMA&nbsp;by ICESat-2 from Oct. 2018 to Nov. 2020.</p>\n\n<p><a href=\"https://zenodo.org/api/files/5c8e256d-a2db-43aa-9f1f-d421b1881b58/F477_c.rar\">F477_c.rar</a>&nbsp;is&nbsp;the software used to calculate the undulation between the WGS84 ellipsoid (GPS height) and the EGM96 geoid (mean sea level) in&nbsp; C code (namely, f477.f).</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wang,Qiuyu",
+        "affiliation": null
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7233560"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Monthly changes in glacier surface elevation on HMA",
+  "links": {
+    "self": "https://zenodo.org/api/records/7233561",
+    "self_html": "https://zenodo.org/records/7233561",
+    "preview_html": "https://zenodo.org/records/7233561?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7233561",
+    "self_doi": "https://doi.org/10.5281/zenodo.7233561",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7233561",
+    "reserve_doi": "https://zenodo.org/api/records/7233561/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7233560",
+    "parent_html": "https://zenodo.org/records/7233560",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7233560",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7233560",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7233561/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7233561/sequence/default",
+    "files": "https://zenodo.org/api/records/7233561/files",
+    "media_files": "https://zenodo.org/api/records/7233561/media-files",
+    "archive": "https://zenodo.org/api/records/7233561/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7233561/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7233561/versions/latest",
+    "latest_html": "https://zenodo.org/records/7233561/latest",
+    "versions": "https://zenodo.org/api/records/7233561/versions",
+    "draft": "https://zenodo.org/api/records/7233561/draft",
+    "access_links": "https://zenodo.org/api/records/7233561/access/links",
+    "access_grants": "https://zenodo.org/api/records/7233561/access/grants",
+    "access_users": "https://zenodo.org/api/records/7233561/access/users",
+    "access_request": "https://zenodo.org/api/records/7233561/access/request",
+    "access": "https://zenodo.org/api/records/7233561/access",
+    "communities": "https://zenodo.org/api/records/7233561/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7233561/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7233561/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7233561/file-modification",
+    "requests": "https://zenodo.org/api/records/7233561/requests"
+  },
+  "updated": "2022-10-21T14:26:49.440853+00:00",
+  "recid": "7233561",
+  "revision": 2,
+  "files": [
+    {
+      "id": "c799a977-85cd-4744-be4a-60b0499a1c44",
+      "key": "F477_c.rar",
+      "size": 3405302,
+      "checksum": "md5:60e088aff8afc1af26252cfbe29894cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7233561/files/F477_c.rar/content"
+      }
+    },
+    {
+      "id": "28ec1349-0dd9-463b-8d6b-7287d15cf013",
+      "key": "Time_Series_Glacier_Surface_Elevation.rar",
+      "size": 53454,
+      "checksum": "md5:4f3b4c5d9a9752c53c1b041670777749",
+      "links": {
+        "self": "https://zenodo.org/api/records/7233561/files/Time_Series_Glacier_Surface_Elevation.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "428280"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 64,
+    "unique_downloads": 56,
+    "views": 326,
+    "unique_views": 320,
+    "version_downloads": 64,
+    "version_unique_downloads": 56,
+    "version_unique_views": 320,
+    "version_views": 326
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3458756,
+    "top_level_files": [
+      {
+        "name": "F477_c.rar",
+        "size": 3405302
+      },
+      {
+        "name": "Time_Series_Glacier_Surface_Elevation.rar",
+        "size": 53454
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:12.257259"
+}

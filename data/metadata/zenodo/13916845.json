@@ -1,0 +1,176 @@
+{
+  "created": "2024-10-10T21:20:02.869647+00:00",
+  "modified": "2024-10-10T21:20:03.029399+00:00",
+  "id": 13916845,
+  "conceptrecid": "13916844",
+  "doi": "10.5281/zenodo.13916845",
+  "conceptdoi": "10.5281/zenodo.13916844",
+  "doi_url": "https://doi.org/10.5281/zenodo.13916845",
+  "metadata": {
+    "title": "Segmentation Dataset for Periorbital Segmentation and Distance Prediction",
+    "doi": "10.5281/zenodo.13916845",
+    "publication_date": "2024-10-10",
+    "description": "<p>High quality segmentation of the eyes and lids is an essential step in developing clinically relevant deep learning models for oculoplastic and craniofacial surgery. However, there are currently no publicly available datasets suitable for this purpose. As such, we have developed and validated a novel dataset for oculoplastic segmentation and periorbital distance prediction. Using images from two open-source datasets, we segmented the iris, sclera, lid, caruncle, and brow from cropped eye images. Five trained annotators performed the segmentations, and intergrader reliability was assessed on 100 randomly selected images aftera two-week forgetting period, yielding an average Dice score of 0.82 &plusmn; 0.01. Intragrader reliability on 20 images averaged a Dice score of 0.81 &plusmn; 0.08. To demonstrate the dataset's utility, we trained three DeepLabV3 models following standard procedures. This first-of-its-kind dataset, along with a toolkit for periorbital distance prediction, is publicly available to support the development of clinically useful segmentation models for oculoplastic and craniofacial applications.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Nahass, George",
+        "affiliation": "University of Illinois Chicago"
+      },
+      {
+        "name": "Yi, Darvin",
+        "affiliation": "University of Illinois Chicago"
+      }
+    ],
+    "keywords": [
+      "Segmentation",
+      "Computer Vision"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "arXiv:2409.20407",
+        "relation": "isDescribedBy",
+        "resource_type": "publication",
+        "scheme": "arxiv"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/aiolab/periorbital-dataset"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13916844"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Segmentation Dataset for Periorbital Segmentation and Distance Prediction",
+  "links": {
+    "self": "https://zenodo.org/api/records/13916845",
+    "self_html": "https://zenodo.org/records/13916845",
+    "preview_html": "https://zenodo.org/records/13916845?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13916845",
+    "self_doi": "https://doi.org/10.5281/zenodo.13916845",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13916845",
+    "reserve_doi": "https://zenodo.org/api/records/13916845/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13916844",
+    "parent_html": "https://zenodo.org/records/13916844",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13916844",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13916844",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13916845/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13916845/sequence/default",
+    "files": "https://zenodo.org/api/records/13916845/files",
+    "media_files": "https://zenodo.org/api/records/13916845/media-files",
+    "archive": "https://zenodo.org/api/records/13916845/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13916845/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13916845/versions/latest",
+    "latest_html": "https://zenodo.org/records/13916845/latest",
+    "versions": "https://zenodo.org/api/records/13916845/versions",
+    "draft": "https://zenodo.org/api/records/13916845/draft",
+    "access_links": "https://zenodo.org/api/records/13916845/access/links",
+    "access_grants": "https://zenodo.org/api/records/13916845/access/grants",
+    "access_users": "https://zenodo.org/api/records/13916845/access/users",
+    "access_request": "https://zenodo.org/api/records/13916845/access/request",
+    "access": "https://zenodo.org/api/records/13916845/access",
+    "communities": "https://zenodo.org/api/records/13916845/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13916845/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13916845/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13916845/file-modification",
+    "requests": "https://zenodo.org/api/records/13916845/requests"
+  },
+  "updated": "2024-10-10T21:20:03.029399+00:00",
+  "recid": "13916845",
+  "revision": 4,
+  "files": [
+    {
+      "id": "fcfade98-00dd-475f-89bb-f98cda93a085",
+      "key": "parse_json.py",
+      "size": 3110,
+      "checksum": "md5:2d7ae3d7d1b58b04ae4c907328952cb2",
+      "links": {
+        "self": "https://zenodo.org/api/records/13916845/files/parse_json.py/content"
+      }
+    },
+    {
+      "id": "f9ed819e-79ff-4a9d-b736-bb3f0b99dadc",
+      "key": "periorbital_dataset.zip",
+      "size": 190109344,
+      "checksum": "md5:6d4dedd89604696258f36048b809c0b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/13916845/files/periorbital_dataset.zip/content"
+      }
+    },
+    {
+      "id": "103ff101-1ca4-4d05-8493-64f35998aa8a",
+      "key": "coco2voc_aux.py",
+      "size": 3796,
+      "checksum": "md5:dddac29419735b05835048deeb68be1d",
+      "links": {
+        "self": "https://zenodo.org/api/records/13916845/files/coco2voc_aux.py/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1201406"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 260,
+    "unique_downloads": 240,
+    "views": 364,
+    "unique_views": 315,
+    "version_downloads": 260,
+    "version_unique_downloads": 240,
+    "version_unique_views": 315,
+    "version_views": 364
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 190109344,
+    "top_level_files": [
+      {
+        "name": "parse_json.py",
+        "size": 3110
+      },
+      {
+        "name": "periorbital_dataset.zip",
+        "size": 190109344
+      },
+      {
+        "name": "coco2voc_aux.py",
+        "size": 3796
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:57.931420"
+}

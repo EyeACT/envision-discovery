@@ -1,0 +1,191 @@
+{
+  "created": "2021-06-20T17:03:04.179587+00:00",
+  "modified": "2024-07-19T00:17:07.776099+00:00",
+  "id": 5000442,
+  "conceptrecid": "5000441",
+  "doi": "10.5061/dryad.d9v38",
+  "doi_url": "https://doi.org/10.5061/dryad.d9v38",
+  "metadata": {
+    "title": "Data from: The functional diversity of retinal ganglion cells in the mouse",
+    "doi": "10.5061/dryad.d9v38",
+    "publication_date": "2016-12-29",
+    "description": "In the vertebrate visual system, all output of the retina is carried by retinal ganglion cells. Each type encodes distinct visual features in parallel for transmission to the brain. How many such 'output channels' exist and what each encodes are areas of intense debate. In the mouse, anatomical estimates range from 15 to 20 channels, and only a handful are functionally understood. By combining two-photon calcium imaging to obtain dense retinal recordings and unsupervised clustering of the resulting sample of more than 11,000 cells, here we show that the mouse retina harbours substantially more than 30 functional output channels. These include all known and several new ganglion cell types, as verified by genetic and anatomical criteria. Therefore, information channels from the mouse eye to the mouse brain are considerably more diverse than shown thus far by anatomical studies, suggesting an encoding strategy resembling that used in state-of-the-art artificial vision systems.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Baden, Tom",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      },
+      {
+        "name": "Berens, Philipp",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      },
+      {
+        "name": "Franke, Katrin",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      },
+      {
+        "name": "Rom\u00e1n Ros\u00f3n, Miroslav",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      },
+      {
+        "name": "Bethge, Matthias",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      },
+      {
+        "name": "Euler, Thomas",
+        "affiliation": "Bernstein Center for Computational Neuroscience T\u00fcbingen"
+      }
+    ],
+    "keywords": [
+      "mouse",
+      "two-photon",
+      "retina",
+      "early vision",
+      "mammal",
+      "cell types",
+      "ganglion cell"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/nature16468",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5000441"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Optical recordings of &gt;11,000 RGCs<div class=\"o-metadata__file-description\">The dataset contains recordings of 11,210 retinal ganglion cells from the mouse retina obtained by two-photon calcium imaging with the synthetic calcium indicator OGB-1 to a standardized set of stimuli (see Baden et al. 2016 for details). In addition, the dataset contains morphological, genetic and immunohistochemical metadata, where available.</div><div class=\"o-metadata__file-name\">BadenEtAl_RGCs_2016_v1.mat<br></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: The functional diversity of retinal ganglion cells in the mouse",
+  "links": {
+    "self": "https://zenodo.org/api/records/5000442",
+    "self_html": "https://zenodo.org/records/5000442",
+    "preview_html": "https://zenodo.org/records/5000442?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.d9v38",
+    "self_doi": "https://doi.org/10.5061/dryad.d9v38",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.d9v38",
+    "reserve_doi": "https://zenodo.org/api/records/5000442/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5000441",
+    "parent_html": "https://zenodo.org/records/5000441",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5000442/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5000442/sequence/default",
+    "files": "https://zenodo.org/api/records/5000442/files",
+    "media_files": "https://zenodo.org/api/records/5000442/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:5000442:README_for_BadenEtAl_RGCs_2016_v1.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/5000442/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5000442/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5000442/versions/latest",
+    "latest_html": "https://zenodo.org/records/5000442/latest",
+    "versions": "https://zenodo.org/api/records/5000442/versions",
+    "draft": "https://zenodo.org/api/records/5000442/draft",
+    "access_links": "https://zenodo.org/api/records/5000442/access/links",
+    "access_grants": "https://zenodo.org/api/records/5000442/access/grants",
+    "access_users": "https://zenodo.org/api/records/5000442/access/users",
+    "access_request": "https://zenodo.org/api/records/5000442/access/request",
+    "access": "https://zenodo.org/api/records/5000442/access",
+    "communities": "https://zenodo.org/api/records/5000442/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5000442/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5000442/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5000442/file-modification",
+    "requests": "https://zenodo.org/api/records/5000442/requests"
+  },
+  "updated": "2024-07-19T00:17:07.776099+00:00",
+  "recid": "5000442",
+  "revision": 6,
+  "files": [
+    {
+      "id": "6fb6f227-8cbb-46dc-aeaa-5c7dc63f267a",
+      "key": "BadenEtAl_RGCs_2016_v1.mat",
+      "size": 426025871,
+      "checksum": "md5:2d7cc7e901149e04812a4b049cd6a9f3",
+      "links": {
+        "self": "https://zenodo.org/api/records/5000442/files/BadenEtAl_RGCs_2016_v1.mat/content"
+      }
+    },
+    {
+      "id": "cfe0de5e-1eb7-4484-ac2a-1e8e33782f32",
+      "key": "README_for_BadenEtAl_RGCs_2016_v1.pdf",
+      "size": 69619,
+      "checksum": "md5:47402f04a1bd9b8f3fff6459327ef35a",
+      "links": {
+        "self": "https://zenodo.org/api/records/5000442/files/README_for_BadenEtAl_RGCs_2016_v1.pdf/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 66,
+    "unique_downloads": 63,
+    "views": 194,
+    "unique_views": 193,
+    "version_downloads": 66,
+    "version_unique_downloads": 63,
+    "version_unique_views": 193,
+    "version_views": 194
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 426025871,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "BadenEtAl_RGCs_2016_v1.mat",
+        "size": 426025871
+      },
+      {
+        "name": "README_for_BadenEtAl_RGCs_2016_v1.pdf",
+        "size": 69619
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:24.388798"
+}

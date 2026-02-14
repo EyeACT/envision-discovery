@@ -1,0 +1,264 @@
+{
+  "created": "2021-06-12T09:09:26.325478+00:00",
+  "modified": "2024-07-19T01:34:42.438281+00:00",
+  "id": 4934690,
+  "conceptrecid": "4934689",
+  "doi": "10.5061/dryad.gc72v",
+  "doi_url": "https://doi.org/10.5061/dryad.gc72v",
+  "metadata": {
+    "title": "Data from: Multi-contrast submillimetric 3-Tesla hippocampal subfield segmentation protocol and dataset",
+    "doi": "10.5061/dryad.gc72v",
+    "publication_date": "2016-10-22",
+    "description": "The hippocampus is composed of distinct anatomical subregions that participate in multiple cognitive processes and are differentially affected in prevalent neurological and psychiatric conditions. Advances in high-field MRI allow for the non-invasive identification of hippocampal substructure. These approaches, however, demand time-consuming manual segmentation that relies heavily on anatomical expertise. Here, we share manual labels and associated high-resolution MRI data (MNI-HISUB25; submillimetric T1- and T2-weighted images, detailed sequence information, and stereotaxic probabilistic anatomical maps) based on 25 healthy subjects. Data were acquired on a widely available 3\u2009Tesla MRI system using a 32 phased-array head coil. The protocol divided the hippocampal formation into three subregions: subicular complex, merged Cornu Ammonis 1, 2 and 3 (CA1-3) subfields, and CA4-dentate gyrus (CA4-DG). Segmentation was guided by consistent intensity and morphology characteristics of the densely myelinated molecular layer together with few geometry-based boundaries flexible to overall mesiotemporal anatomy, and achieved excellent intra-/inter-rater reliability (Dice index \u226590/87%). The dataset can inform neuroimaging assessments of the mesiotemporal lobe and help to develop segmentation algorithms relevant for basic and clinical neurosciences.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kulaga-Yoskovitz, Jessie",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Bernhardt, Boris C.",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Hong, Seok-Jun",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Mansi, Tommaso",
+        "affiliation": "Medical Imaging Technologies, Healthcare Technology Center, Siemens Medical Solution USA, Inc., Princeton, USA*"
+      },
+      {
+        "name": "Liang, Kevin E.",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "van der Kouwe, Andre J. W.",
+        "affiliation": "Massachusetts General Hospital"
+      },
+      {
+        "name": "Smallwood, Jonathan",
+        "affiliation": "University of York"
+      },
+      {
+        "name": "Bernasconi, Andrea",
+        "affiliation": "McGill University"
+      },
+      {
+        "name": "Bernasconi, Neda",
+        "affiliation": "McGill University"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/sdata.2015.59",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4934689"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">README.txt<div class=\"o-metadata__file-description\">Readme file. Naming conventions and data info.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">exam_card_T1w_standard.pdf<div class=\"o-metadata__file-description\">Parameters for the standard T1w sequence (1x1x1 mm^3); zipped</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">exam_card_T1wHiRes.pdf<div class=\"o-metadata__file-description\">Parameters for the high-resolution T1w sequence (.6x.6x.6 mm^3). Two identical acquisitions of this sequence need to be made to increase SNR; zipped</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">exam_card_T2wHiRes.pdf<div class=\"o-metadata__file-description\">Parameters for the high-resolution T2w sequence (.4x.4x2 mm^3); zipped</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Table1_demographics_participants<div class=\"o-metadata__file-description\">Table 1. Participant demographics</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Table2_CNR<div class=\"o-metadata__file-description\">Table 2. Contrast to noise estimates for all subjects.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Table3_reliability<div class=\"o-metadata__file-description\">Table 3. Intra- and inter-rater reliability estimates.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">mri_dataset<div class=\"o-metadata__file-description\">High-resolution 3-Tesla MRI dataset including submillimetric T1-weighted images, T2-weighted images, and subregional hippocampal labels of 25 healthy subjects. Data are provided in nifti format and both native and stereotaxic space. The dataset also includes stereotaxic probabilistic anatomical maps of all subregions.  Please see README.txt for further details.</div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Multi-contrast submillimetric 3-Tesla hippocampal subfield segmentation protocol and dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/4934690",
+    "self_html": "https://zenodo.org/records/4934690",
+    "preview_html": "https://zenodo.org/records/4934690?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.gc72v",
+    "self_doi": "https://doi.org/10.5061/dryad.gc72v",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.gc72v",
+    "reserve_doi": "https://zenodo.org/api/records/4934690/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4934689",
+    "parent_html": "https://zenodo.org/records/4934689",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4934690/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4934690/sequence/default",
+    "files": "https://zenodo.org/api/records/4934690/files",
+    "media_files": "https://zenodo.org/api/records/4934690/media-files",
+    "archive": "https://zenodo.org/api/records/4934690/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4934690/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4934690/versions/latest",
+    "latest_html": "https://zenodo.org/records/4934690/latest",
+    "versions": "https://zenodo.org/api/records/4934690/versions",
+    "draft": "https://zenodo.org/api/records/4934690/draft",
+    "access_links": "https://zenodo.org/api/records/4934690/access/links",
+    "access_grants": "https://zenodo.org/api/records/4934690/access/grants",
+    "access_users": "https://zenodo.org/api/records/4934690/access/users",
+    "access_request": "https://zenodo.org/api/records/4934690/access/request",
+    "access": "https://zenodo.org/api/records/4934690/access",
+    "communities": "https://zenodo.org/api/records/4934690/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4934690/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4934690/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4934690/file-modification",
+    "requests": "https://zenodo.org/api/records/4934690/requests"
+  },
+  "updated": "2024-07-19T01:34:42.438281+00:00",
+  "recid": "4934690",
+  "revision": 5,
+  "files": [
+    {
+      "id": "377a5d2f-94e9-4a78-9410-03108b8a7bdf",
+      "key": "exam_card_T1wHiRes.pdf.zip",
+      "size": 38833,
+      "checksum": "md5:8e8b6df65418e4b0f087bb024efbba47",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/exam_card_T1wHiRes.pdf.zip/content"
+      }
+    },
+    {
+      "id": "d126eb37-92b1-4b1f-84e3-803b84caf7af",
+      "key": "Table1_demographics_participants.xlsx",
+      "size": 32472,
+      "checksum": "md5:84ca47c8164470a9e3dcc4eb00141f90",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/Table1_demographics_participants.xlsx/content"
+      }
+    },
+    {
+      "id": "c6f3e6e6-4462-4f3f-9252-eb510b9ed507",
+      "key": "Table2_CNR.xlsx",
+      "size": 39396,
+      "checksum": "md5:aea79f2e0ac1323b2df908f240a9d7d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/Table2_CNR.xlsx/content"
+      }
+    },
+    {
+      "id": "3a1cba95-068e-4c28-9ff8-cb5cf939c463",
+      "key": "exam_card_T2wHiRes.pdf.zip",
+      "size": 40041,
+      "checksum": "md5:90be970d1dc4102e654b83f0e82fd6bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/exam_card_T2wHiRes.pdf.zip/content"
+      }
+    },
+    {
+      "id": "922581ea-8d84-47d3-bba8-45d715bfec5a",
+      "key": "exam_card_T1w_standard.pdf.zip",
+      "size": 39715,
+      "checksum": "md5:0ab4f01f5ca9bfeb1607ebbf6dc510c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/exam_card_T1w_standard.pdf.zip/content"
+      }
+    },
+    {
+      "id": "02c8399a-411f-4de7-a9f0-d4754a60eddc",
+      "key": "Table3_reliability.xlsx",
+      "size": 35667,
+      "checksum": "md5:37369dcce7dc3c0fc596ab8ac0efd070",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/Table3_reliability.xlsx/content"
+      }
+    },
+    {
+      "id": "b104905e-1814-4970-a7ef-70294580d4ec",
+      "key": "README.txt",
+      "size": 2963,
+      "checksum": "md5:5916050231d7d20054cf739d6d2abb73",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/README.txt/content"
+      }
+    },
+    {
+      "id": "3e97c5e2-3083-4364-a164-af0e402a3b53",
+      "key": "mri_dataset.tar.gz",
+      "size": 9923850757,
+      "checksum": "md5:baab63e515e6bd997f3c3b03780038bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/4934690/files/mri_dataset.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 174,
+    "unique_downloads": 143,
+    "views": 183,
+    "unique_views": 180,
+    "version_downloads": 173,
+    "version_unique_downloads": 142,
+    "version_unique_views": 172,
+    "version_views": 175
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 9923969346,
+    "top_level_files": [
+      {
+        "name": "exam_card_T1wHiRes.pdf.zip",
+        "size": 38833
+      },
+      {
+        "name": "Table1_demographics_participants.xlsx",
+        "size": 32472
+      },
+      {
+        "name": "Table2_CNR.xlsx",
+        "size": 39396
+      },
+      {
+        "name": "exam_card_T2wHiRes.pdf.zip",
+        "size": 40041
+      },
+      {
+        "name": "exam_card_T1w_standard.pdf.zip",
+        "size": 39715
+      },
+      {
+        "name": "Table3_reliability.xlsx",
+        "size": 35667
+      },
+      {
+        "name": "README.txt",
+        "size": 2963
+      },
+      {
+        "name": "mri_dataset.tar.gz",
+        "size": 9923850757
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:50.761027"
+}

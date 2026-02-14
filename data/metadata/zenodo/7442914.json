@@ -1,0 +1,176 @@
+{
+  "created": "2023-01-05T15:56:00.778593+00:00",
+  "modified": "2025-04-23T20:29:21.327536+00:00",
+  "id": 7442914,
+  "conceptrecid": "7442913",
+  "doi": "10.5281/zenodo.7442914",
+  "conceptdoi": "10.5281/zenodo.7442913",
+  "doi_url": "https://doi.org/10.5281/zenodo.7442914",
+  "metadata": {
+    "title": "HaN-Seg: The head and neck organ-at-risk CT & MR segmentation dataset",
+    "doi": "10.5281/zenodo.7442914",
+    "publication_date": "2023-01-05",
+    "description": "<p><strong>The HaN-Seg: Head and Neck Organ-at-Risk CT &amp; MR Segmentation Dataset</strong> is a publicly available dataset of anonymized head and neck (HaN) images of 42 patients that underwent both CT and T1-weighted MR imaging for the purpose of image-guided radiotherapy planning. In addition, the dataset also contains reference segmentations of 30 organs-at-risk (OARs) for CT images in the form of binary segmentation masks, which were obtained by curating manual pixel-wise expert image annotations. A full description of the HaN-Seg dataset can be found in:</p>\n<p>G. Podobnik, P. Strojan, P. Peterlin, B. Ibragimov, T. Vrtovec, \"HaN-Seg: The head and neck organ-at-risk CT &amp; MR segmentation dataset\", Medical Physics, 2023. <a href=\"https://doi.org/10.1002/mp.16197\" target=\"_blank\" rel=\"noopener\">10.1002/mp.16197</a>,</p>\n<p>and any research originating from its usage is required to cite this paper.</p>\n<p>In parallel with the release of the dataset, the <strong><a href=\"https://han-seg2023.grand-challenge.org\">HaN-Seg: The Head and Neck Organ-at-Risk CT &amp; MR Segmentation Challenge</a></strong>&nbsp;is launched to promote the development of new and application of existing state-of-the-art fully automated techniques for OAR segmentation in the HaN region from CT images that exploit the information of multiple imaging modalities, in this case from CT and MR images. The task of the HaN-Seg challenge is to automatically segment up to 30 OARs in the HaN region from CT images in the devised test set, consisting of 14 CT and MR images of the same patients, given the availability of the training set (i.e. the herein publicly available HaN-Seg dataset), consisting of 42 CT and MR images of the same patients with reference 3D OAR binary segmentation masks for CT images.<br><br>Please find below a list of relevant publications that address: (1) the assessment of inter-observer and inter-modality variability in OAR contouring, (2) results of the HaN-Seg challenge, (3) development of our multimodal segmentation model, and (4) development of MR-to-CT image-to-image translation using diffusion models:</p>\n<ol>\n<li>G. Podobnik, B. Ibragimov, P. Strojan, P. Peterlin, T. Vrtovec, \"vOARiability: Interobserver and intermodality variability analysis in OAR contouring from head and neck CT and MR images\", Medical Physics, 2024. <a href=\"https://doi.org/10.1002/mp.16924\" target=\"_blank\" rel=\"noopener\">10.1002/mp.16924</a>,</li>\n<li>G. Podobnik, B. Ibragimov, E. Tappeiner, et al., \"HaN-Seg: The head and neck organ-at-risk CT and MR segmentation challenge\", Radiotherapy and Oncology, 2024. <a href=\"https://doi.org/10.1016/j.radonc.2024.110410\" target=\"_blank\" rel=\"noopener\">10.1016/j.radonc.2024.110410</a>,</li>\n<li>G. Podobnik, P. Strojan, P. Peterlin, B. Ibragimov, T. Vrtovec, \"Multimodal CT and MR Segmentation of Head and Neck Organs-at-Risk\", MICCAI 2023, 2023.&nbsp;<a href=\"https://doi.org/10.1007/978-3-031-43901-8_71\" target=\"_blank\" rel=\"noopener\">10.1007/978-3-031-43901-8_71</a>,</li>\n<li>R. M. &Scaron;ter, G. Podobnik, T. Vrtovec, \"Diffusion-based MR-to-CT translation of head and neck images\", SPIE Medical Imaging 2025, 2025. <a href=\"https://doi.org/10.1117/12.3047458\" target=\"_blank\" rel=\"noopener\">10.1117/12.3047458</a>.</li>\n</ol>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ga\u0161per Podobnik",
+        "affiliation": "University of Ljubljana, Faculty of Electrical Engineering",
+        "orcid": "0000-0002-4142-3304"
+      },
+      {
+        "name": "Primo\u017e Strojan",
+        "affiliation": "Institute of Oncology Ljubljana",
+        "orcid": "0000-0002-0445-112X"
+      },
+      {
+        "name": "Primo\u017e Peterlin",
+        "affiliation": "Institute of Oncology Ljubljana",
+        "orcid": "0000-0002-0057-5635"
+      },
+      {
+        "name": "Bulat Ibragimov",
+        "affiliation": "University of Copenhagen, Department of Computer Science",
+        "orcid": "0000-0001-7739-7788"
+      },
+      {
+        "name": "Toma\u017e Vrtovec",
+        "affiliation": "University of Ljubljana, Faculty of Electrical Engineering",
+        "orcid": "0000-0002-6625-0307"
+      }
+    ],
+    "keywords": [
+      "auto-segmentation",
+      "image dataset",
+      "computed tomography",
+      "magnetic resonance",
+      "radiation therapy",
+      "head and neck cancer"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1002/mp.16197",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "communities": [
+      {
+        "id": "grand-challenge"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7442913"
+          }
+        }
+      ]
+    },
+    "notes": "If you are using the HaN-Seg public training dataset, you are required to cite the following article:<br>\n<br>\nG. Podobnik, P. Strojan, P. Peterlin, B. Ibragimov, T. Vrtovec, \"HaN-Seg: The head and neck organ-at-risk CT &amp; MR segmentation dataset\", Medical Physics, 2023. https://doi.org/10.1002/mp.16197\n<br>\n<br>\n@ARTICLE{HaNSeg_dataset,<br>\n&emsp;    author = {Ga\\v{s}per Podobnik, Primo\\v{z} Strojan, Primo\\v{z} Peterlin, Bulat Ibragimov, Toma\\{z} Vrtovec},<br>\n&emsp;    title = {{HaN-Seg}: {T}he head and neck organ-at-risk {CT} \\&amp; {MR} segmentation dataset},<br>\n&emsp;    journal = {Medical Physics},<br>\n&emsp;    year = {2023},<br>\n&emsp;    doi = {10.1002/mp.16197}<br>\n}"
+  },
+  "title": "HaN-Seg: The head and neck organ-at-risk CT & MR segmentation dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/7442914",
+    "self_html": "https://zenodo.org/records/7442914",
+    "preview_html": "https://zenodo.org/records/7442914?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7442914",
+    "self_doi": "https://doi.org/10.5281/zenodo.7442914",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7442914",
+    "reserve_doi": "https://zenodo.org/api/records/7442914/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7442913",
+    "parent_html": "https://zenodo.org/records/7442913",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7442913",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7442913",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7442914/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7442914/sequence/default",
+    "files": "https://zenodo.org/api/records/7442914/files",
+    "media_files": "https://zenodo.org/api/records/7442914/media-files",
+    "archive": "https://zenodo.org/api/records/7442914/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7442914/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7442914/versions/latest",
+    "latest_html": "https://zenodo.org/records/7442914/latest",
+    "versions": "https://zenodo.org/api/records/7442914/versions",
+    "draft": "https://zenodo.org/api/records/7442914/draft",
+    "access_links": "https://zenodo.org/api/records/7442914/access/links",
+    "access_grants": "https://zenodo.org/api/records/7442914/access/grants",
+    "access_users": "https://zenodo.org/api/records/7442914/access/users",
+    "access_request": "https://zenodo.org/api/records/7442914/access/request",
+    "access": "https://zenodo.org/api/records/7442914/access",
+    "communities": "https://zenodo.org/api/records/7442914/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7442914/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7442914/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7442914/file-modification",
+    "requests": "https://zenodo.org/api/records/7442914/requests"
+  },
+  "updated": "2025-04-23T20:29:21.327536+00:00",
+  "recid": "7442914",
+  "revision": 15,
+  "files": [
+    {
+      "id": "57efea81-2f5e-4fe6-9990-f69318755362",
+      "key": "HaN-Seg.zip",
+      "size": 4938848306,
+      "checksum": "md5:c3d3070de3034933a63031b73b9cf0fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/7442914/files/HaN-Seg.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "344912"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 11732,
+    "unique_downloads": 4701,
+    "views": 11167,
+    "unique_views": 9971,
+    "version_downloads": 11648,
+    "version_unique_downloads": 4658,
+    "version_unique_views": 9858,
+    "version_views": 11046
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4938848306,
+    "top_level_files": [
+      {
+        "name": "HaN-Seg.zip",
+        "size": 4938848306
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.714366"
+}

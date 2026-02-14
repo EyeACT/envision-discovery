@@ -1,0 +1,181 @@
+{
+  "created": "2022-08-08T08:19:09.399124+00:00",
+  "modified": "2022-08-08T13:49:19.065004+00:00",
+  "id": 6973396,
+  "conceptrecid": "6973395",
+  "doi": "10.5281/zenodo.6973396",
+  "conceptdoi": "10.5281/zenodo.6973395",
+  "doi_url": "https://doi.org/10.5281/zenodo.6973396",
+  "metadata": {
+    "title": "visuAAL Skin Segmentation Dataset",
+    "doi": "10.5281/zenodo.6973396",
+    "publication_date": "2022-08-08",
+    "description": "<p>The visuAAL Skin Segmentation Dataset&nbsp;contains 46,775 high quality images divided into a training set with 45,623 images, and a validation set with 1,152 images. Skin areas have been obtained automatically&nbsp;from the <a href=\"https://fashionpedia.github.io/home/index.html\">FashionPedia garment dataset</a>. The process to extract the skin areas is explained in detail in the paper <a href=\"https://doi.org/10.1007/978-3-031-13321-3_6\">&#39;From Garment to Skin: The visuAAL Skin Segmentation Dataset&#39;</a>.</p>\n\n<p>If you use the visuAAL Skin Segmentation Dataset, please, cite:</p>\n\n<ul>\n\t<li><a href=\"https://doi.org/10.5281/zenodo.6973396\">https://doi.org/10.5281/zenodo.6973396</a></li>\n\t<li><a href=\"https://doi.org/10.1007/978-3-031-13321-3_6\">https://doi.org/10.1007/978-3-031-13321-3_6</a></li>\n</ul>\n\n<p>How to use:</p>\n\n<ol>\n\t<li>Download the FashionPedia dataset from&nbsp;<a href=\"https://fashionpedia.github.io/home/Fashionpedia_download.html\">https://fashionpedia.github.io/home/Fashionpedia_download.html</a></li>\n\t<li>Download the visuAAL Skin Segmentation Dataset. The dataset consists of two folders, namely train_masks and val_masks. Each folder corresponds to the training and validation sets in the original FashionPedia dataset.</li>\n\t<li>After extracting the images from FashionPedia, for each image existing in the visuAAL skin segmentation dataset, the original image can be found with the same name (file_name in the annotations file).</li>\n</ol>\n\n<p>A sample of image data in the FashionPedia dataset is:</p>\n\n<p>{&#39;id&#39;: 12305,</p>\n\n<p>&nbsp; &#39;width&#39;: 680,</p>\n\n<p>&nbsp; &#39;height&#39;: 1024,</p>\n\n<p>&nbsp; &#39;file_name&#39;: &#39;064c8022b32931e787260d81ed5aafe8.jpg&#39;,</p>\n\n<p>&nbsp; &#39;license&#39;: 4,</p>\n\n<p>&nbsp; &#39;time_captured&#39;: &#39;March-August, 2018&#39;,</p>\n\n<p>&nbsp; &#39;original_url&#39;: &#39;https://farm2.staticflickr.com/1936/8607950470_9d9d76ced7_o.jpg&#39;,</p>\n\n<p>&nbsp; &#39;isstatic&#39;: 1,</p>\n\n<p>&nbsp; &#39;kaggle_id&#39;: &#39;064c8022b32931e787260d81ed5aafe8&#39;}</p>\n\n<p>NOTE:&nbsp;Not all the images&nbsp;in the FashionPedia dataset have the correponding skin mask in the visuAAL Skin Segmentation Dataset, as there are images in which only garment parts and not people are present in them. These images were removed when creating the visuAAL Skin Segmentation Dataset. However, all the instances in the visuAAL skin segmentation dataset have&nbsp;their corresponding match in the FashionPedia dataset.</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hashemifard, Kooshan",
+        "affiliation": "Universidad de Alicante",
+        "orcid": "0000-0001-5086-3064"
+      },
+      {
+        "name": "Florez-Revuelta, Francisco",
+        "affiliation": "Universidad de Alicante",
+        "orcid": "0000-0002-3391-711X"
+      }
+    ],
+    "keywords": [
+      "Skin segmentation",
+      "Skin"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "861091",
+        "internal_id": "10.13039/501100000780::861091",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Privacy-Aware and Acceptable Video-Based Technologies and Services for Active and Assisted Living",
+        "acronym": "visuAAL",
+        "program": "H2020-EU.1.3.",
+        "url": "https://cordis.europa.eu/projects/861091"
+      }
+    ],
+    "communities": [
+      {
+        "id": "eu"
+      },
+      {
+        "id": "visuaal"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6973395"
+          }
+        }
+      ]
+    }
+  },
+  "title": "visuAAL Skin Segmentation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/6973396",
+    "self_html": "https://zenodo.org/records/6973396",
+    "preview_html": "https://zenodo.org/records/6973396?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6973396",
+    "self_doi": "https://doi.org/10.5281/zenodo.6973396",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6973396",
+    "reserve_doi": "https://zenodo.org/api/records/6973396/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6973395",
+    "parent_html": "https://zenodo.org/records/6973395",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6973395",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6973395",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6973396/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6973396/sequence/default",
+    "files": "https://zenodo.org/api/records/6973396/files",
+    "media_files": "https://zenodo.org/api/records/6973396/media-files",
+    "archive": "https://zenodo.org/api/records/6973396/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6973396/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6973396/versions/latest",
+    "latest_html": "https://zenodo.org/records/6973396/latest",
+    "versions": "https://zenodo.org/api/records/6973396/versions",
+    "draft": "https://zenodo.org/api/records/6973396/draft",
+    "access_links": "https://zenodo.org/api/records/6973396/access/links",
+    "access_grants": "https://zenodo.org/api/records/6973396/access/grants",
+    "access_users": "https://zenodo.org/api/records/6973396/access/users",
+    "access_request": "https://zenodo.org/api/records/6973396/access/request",
+    "access": "https://zenodo.org/api/records/6973396/access",
+    "communities": "https://zenodo.org/api/records/6973396/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6973396/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6973396/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6973396/file-modification",
+    "requests": "https://zenodo.org/api/records/6973396/requests"
+  },
+  "updated": "2022-08-08T13:49:19.065004+00:00",
+  "recid": "6973396",
+  "revision": 3,
+  "files": [
+    {
+      "id": "8532597b-d653-46cd-82fd-f21f501d3d50",
+      "key": "visuAAL Skin Segmentation Dataset.zip",
+      "size": 643295671,
+      "checksum": "md5:d6b43e7be8f79839aef4c6e8b5ecada0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6973396/files/visuAAL Skin Segmentation Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "220440"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 973,
+    "unique_downloads": 649,
+    "views": 3160,
+    "unique_views": 2813,
+    "version_downloads": 969,
+    "version_unique_downloads": 646,
+    "version_unique_views": 2784,
+    "version_views": 3129
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 643295671,
+    "top_level_files": [
+      {
+        "name": "visuAAL Skin Segmentation Dataset.zip",
+        "size": 643295671
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.6973396",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-031-13321-3_6",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://fashionpedia.github.io/home/Fashionpedia_download.html",
+      "type": "potential_download"
+    },
+    {
+      "url": "https://farm2.staticflickr.com/1936/8607950470_9d9d76ced7_o.jpg",
+      "type": "direct_file"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:21.635696"
+}

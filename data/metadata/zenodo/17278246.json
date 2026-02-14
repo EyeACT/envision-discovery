@@ -1,0 +1,153 @@
+{
+  "created": "2025-10-06T11:59:07.632758+00:00",
+  "modified": "2025-10-06T12:01:31.064570+00:00",
+  "id": 17278246,
+  "conceptrecid": "17278245",
+  "doi": "10.5281/zenodo.17278246",
+  "conceptdoi": "10.5281/zenodo.17278245",
+  "doi_url": "https://doi.org/10.5281/zenodo.17278246",
+  "metadata": {
+    "title": "Cell Segmentation Beyond 2D - Benchmark 3D Cell Segmentation Dataset",
+    "doi": "10.5281/zenodo.17278246",
+    "publication_date": "2025-10-06",
+    "description": "<p>Compiled benchmark dataset as published in Schmeisser, F., et al (2025) Cell Segmentation Beyond 2D - A Review of the State of the Art.</p>\n<p>This dataset is compiled of 11 open-source datasets. Original downloads and credits to the original authors can be found here: https://gitlab.com/cellsbeyond2d/CellsBeyond2D/-/blob/main/README.md</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Schmeisser, Fabian",
+        "affiliation": "German Research Centre for Artificial Intelligence",
+        "orcid": "0000-0001-8222-7900"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Schmeisser, Fabian",
+        "affiliation": "German Research Centre for Artificial Intelligence",
+        "type": "DataCollector",
+        "orcid": "0000-0001-8222-7900"
+      }
+    ],
+    "keywords": [
+      "Cell Segmentation",
+      "3D",
+      "2.5D",
+      "Deep Learning",
+      "Artificial Intelligence",
+      "Computer VIsion"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17278245"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Cell Segmentation Beyond 2D - Benchmark 3D Cell Segmentation Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/17278246",
+    "self_html": "https://zenodo.org/records/17278246",
+    "preview_html": "https://zenodo.org/records/17278246?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17278246",
+    "self_doi": "https://doi.org/10.5281/zenodo.17278246",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17278246",
+    "reserve_doi": "https://zenodo.org/api/records/17278246/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17278245",
+    "parent_html": "https://zenodo.org/records/17278245",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17278245",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17278245",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17278246/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17278246/sequence/default",
+    "files": "https://zenodo.org/api/records/17278246/files",
+    "media_files": "https://zenodo.org/api/records/17278246/media-files",
+    "archive": "https://zenodo.org/api/records/17278246/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17278246/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17278246/versions/latest",
+    "latest_html": "https://zenodo.org/records/17278246/latest",
+    "versions": "https://zenodo.org/api/records/17278246/versions",
+    "draft": "https://zenodo.org/api/records/17278246/draft",
+    "access_links": "https://zenodo.org/api/records/17278246/access/links",
+    "access_grants": "https://zenodo.org/api/records/17278246/access/grants",
+    "access_users": "https://zenodo.org/api/records/17278246/access/users",
+    "access_request": "https://zenodo.org/api/records/17278246/access/request",
+    "access": "https://zenodo.org/api/records/17278246/access",
+    "communities": "https://zenodo.org/api/records/17278246/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17278246/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17278246/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17278246/file-modification",
+    "requests": "https://zenodo.org/api/records/17278246/requests"
+  },
+  "updated": "2025-10-06T12:01:31.064570+00:00",
+  "recid": "17278246",
+  "revision": 8,
+  "files": [
+    {
+      "id": "fd57298f-b556-419d-90fc-3478ebcbef5d",
+      "key": "Cell_Segmentation_Beyond_2D_Benchmark_Dataset.zip",
+      "size": 7658876986,
+      "checksum": "md5:f2b00ea4a384e75dd212f1614e62a02a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17278246/files/Cell_Segmentation_Beyond_2D_Benchmark_Dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1424232"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 10,
+    "unique_downloads": 8,
+    "views": 18,
+    "unique_views": 17,
+    "version_downloads": 10,
+    "version_unique_downloads": 8,
+    "version_unique_views": 17,
+    "version_views": 18
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 7658876986,
+    "top_level_files": [
+      {
+        "name": "Cell_Segmentation_Beyond_2D_Benchmark_Dataset.zip",
+        "size": 7658876986
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://gitlab.com/cellsbeyond2d/CellsBeyond2D/-/blob/main/README.md",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.438476"
+}

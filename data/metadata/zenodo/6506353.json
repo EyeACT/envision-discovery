@@ -1,0 +1,164 @@
+{
+  "created": "2022-04-29T19:01:28.294426+00:00",
+  "modified": "2024-07-16T20:16:17.795259+00:00",
+  "id": 6506353,
+  "conceptrecid": "6506352",
+  "doi": "10.5061/dryad.66t1g1k1x",
+  "doi_url": "https://doi.org/10.5061/dryad.66t1g1k1x",
+  "metadata": {
+    "title": "Examples of misclassified images of papilledema severity by the Deep Learning System",
+    "doi": "10.5061/dryad.66t1g1k1x",
+    "publication_date": "2022-04-29",
+    "description": "<p>The study's objective is to evaluate the performance of a deep learning system (DLS) in classifying the severity of papilledema associated with increased intracranial pressure, on standard retinal fundus photographs.</p>\n\n<p>A DLS was trained to automatically classify papilledema severity in 965 patients (2103 mydriatic fundus photographs), representing a multiethnic cohort of patients with confirmed elevated intracranial pressure. Training was performed on 1052 photographs with mild/moderate papilledema (MP) and 1051 photographs with severe papilledema (SP) classified by a panel of experts, and the performance of the DLS was tested\u00a0in 111 patients (214 photographs, 92 with MP and 122 with SP).</p>\n\n<p>In this dataset, we provide illustrative examples of misclassified images by the DLS, two examples of images wrongly classified as moderate papilledema instead of severe (figure 1A and 1B), and two examples of images wrongly classified as severe papilledema instead of moderate (figure 2A and 2B).</p>\n\n<p>Unsurprisingly, DLS errors occurred more often in patients with moderate papilledema (Fris\u00e9n 3 severity), a situation already encountered in clinical studies.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Vasseneix, Caroline",
+        "affiliation": "Singapore Eye Research Institute",
+        "orcid": "0000-0003-1933-7247"
+      },
+      {
+        "name": "Najjar, Raymond P",
+        "affiliation": "Singapore Eye Research Institute"
+      },
+      {
+        "name": "Milea, Dan",
+        "affiliation": "Singapore Eye Research Institute"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6506352"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Funding provided by: Singapore National Medical Research Council*<br>Crossref Funder Registry ID: <br>Award Number: CIRG18Nov-0013</p><p>Funding provided by: Duke-NUS Medical School<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100016017<br>Award Number: 05/FY2019/P2/06-A60</p><p>Funding provided by: Singapore National Medical Research Council<br>Crossref Funder Registry ID: <br>Award Number: CIRG18Nov-0013</p>"
+  },
+  "title": "Examples of misclassified images of papilledema severity by the Deep Learning System",
+  "links": {
+    "self": "https://zenodo.org/api/records/6506353",
+    "self_html": "https://zenodo.org/records/6506353",
+    "preview_html": "https://zenodo.org/records/6506353?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.66t1g1k1x",
+    "self_doi": "https://doi.org/10.5061/dryad.66t1g1k1x",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.66t1g1k1x",
+    "reserve_doi": "https://zenodo.org/api/records/6506353/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6506352",
+    "parent_html": "https://zenodo.org/records/6506352",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6506353/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6506353/sequence/default",
+    "files": "https://zenodo.org/api/records/6506353/files",
+    "media_files": "https://zenodo.org/api/records/6506353/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6506353:Examples_of_misclassified_images_of_papilledema_severity.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6506353/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6506353/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6506353/versions/latest",
+    "latest_html": "https://zenodo.org/records/6506353/latest",
+    "versions": "https://zenodo.org/api/records/6506353/versions",
+    "draft": "https://zenodo.org/api/records/6506353/draft",
+    "access_links": "https://zenodo.org/api/records/6506353/access/links",
+    "access_grants": "https://zenodo.org/api/records/6506353/access/grants",
+    "access_users": "https://zenodo.org/api/records/6506353/access/users",
+    "access_request": "https://zenodo.org/api/records/6506353/access/request",
+    "access": "https://zenodo.org/api/records/6506353/access",
+    "communities": "https://zenodo.org/api/records/6506353/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6506353/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6506353/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6506353/file-modification",
+    "requests": "https://zenodo.org/api/records/6506353/requests"
+  },
+  "updated": "2024-07-16T20:16:17.795259+00:00",
+  "recid": "6506353",
+  "revision": 6,
+  "files": [
+    {
+      "id": "620581f1-ecfa-400e-90aa-2f118faa760f",
+      "key": "Examples_of_misclassified_images_of_papilledema_severity_Readme.txt",
+      "size": 3414,
+      "checksum": "md5:6ac19035ba3382dfbb8919a4c0955565",
+      "links": {
+        "self": "https://zenodo.org/api/records/6506353/files/Examples_of_misclassified_images_of_papilledema_severity_Readme.txt/content"
+      }
+    },
+    {
+      "id": "8064a7cb-8094-4635-a52b-9e5c7cfadc6d",
+      "key": "Examples_of_misclassified_images_of_papilledema_severity.png",
+      "size": 1742646,
+      "checksum": "md5:fd329742e251dc6eac8aaa9573332d01",
+      "links": {
+        "self": "https://zenodo.org/api/records/6506353/files/Examples_of_misclassified_images_of_papilledema_severity.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 62,
+    "unique_downloads": 57,
+    "views": 325,
+    "unique_views": 323,
+    "version_downloads": 62,
+    "version_unique_downloads": 57,
+    "version_unique_views": 321,
+    "version_views": 323
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 1742646,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Examples_of_misclassified_images_of_papilledema_severity_Readme.txt",
+        "size": 3414
+      },
+      {
+        "name": "Examples_of_misclassified_images_of_papilledema_severity.png",
+        "size": 1742646
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:46.369302"
+}

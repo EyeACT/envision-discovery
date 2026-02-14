@@ -1,0 +1,185 @@
+{
+  "created": "2025-09-08T15:46:39.362283+00:00",
+  "modified": "2025-09-08T15:46:39.586076+00:00",
+  "id": 17079830,
+  "conceptrecid": "17079829",
+  "doi": "10.5281/zenodo.17079830",
+  "conceptdoi": "10.5281/zenodo.17079829",
+  "doi_url": "https://doi.org/10.5281/zenodo.17079830",
+  "metadata": {
+    "title": "Custom ACDC test set",
+    "doi": "10.5281/zenodo.17079830",
+    "publication_date": "2025-09-08",
+    "description": "<p>This is a full, pre-processed dataset containing the specific image crops and segmentation masks generated and used for training and testing in the study titled \"Explainable Deep Learning for Cardiac MRI: Multi-Stage Segmentation, Cascade Classification, and Visual Interpretation.\"</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Slobodzian, Vitalii",
+        "affiliation": "Khmelnytskyi National University",
+        "orcid": "0000-0001-8897-0869"
+      },
+      {
+        "name": "Barmak, Oleksander",
+        "affiliation": "Khmelnytskyi National University",
+        "orcid": "0000-0003-0739-9678"
+      },
+      {
+        "name": "Radiuk, Pavlo",
+        "affiliation": "Khmelnytskyi National University",
+        "orcid": "0000-0003-3609-112X"
+      },
+      {
+        "name": "Klymenko, Liliana",
+        "affiliation": "Shupyk National Healthcare University of Ukraine",
+        "orcid": "0000-0001-6749-113X"
+      },
+      {
+        "name": "Krak, Iurii",
+        "affiliation": "Taras Shevchenko National University",
+        "orcid": "0000-0002-8043-0785"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.20944/preprints202501.1280.v1",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "updated",
+        "description": "1"
+      }
+    ],
+    "version": "1",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/vitalii-slobodzian/cardiac-mri-analysis/tree/main",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "concept",
+        "title": {
+          "en": "Concept"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17079829"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Custom ACDC test set",
+  "links": {
+    "self": "https://zenodo.org/api/records/17079830",
+    "self_html": "https://zenodo.org/records/17079830",
+    "preview_html": "https://zenodo.org/records/17079830?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17079830",
+    "self_doi": "https://doi.org/10.5281/zenodo.17079830",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17079830",
+    "reserve_doi": "https://zenodo.org/api/records/17079830/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17079829",
+    "parent_html": "https://zenodo.org/records/17079829",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17079829",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17079829",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17079830/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17079830/sequence/default",
+    "files": "https://zenodo.org/api/records/17079830/files",
+    "media_files": "https://zenodo.org/api/records/17079830/media-files",
+    "archive": "https://zenodo.org/api/records/17079830/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17079830/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17079830/versions/latest",
+    "latest_html": "https://zenodo.org/records/17079830/latest",
+    "versions": "https://zenodo.org/api/records/17079830/versions",
+    "draft": "https://zenodo.org/api/records/17079830/draft",
+    "access_links": "https://zenodo.org/api/records/17079830/access/links",
+    "access_grants": "https://zenodo.org/api/records/17079830/access/grants",
+    "access_users": "https://zenodo.org/api/records/17079830/access/users",
+    "access_request": "https://zenodo.org/api/records/17079830/access/request",
+    "access": "https://zenodo.org/api/records/17079830/access",
+    "communities": "https://zenodo.org/api/records/17079830/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17079830/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17079830/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17079830/file-modification",
+    "requests": "https://zenodo.org/api/records/17079830/requests"
+  },
+  "updated": "2025-09-08T15:46:39.586076+00:00",
+  "recid": "17079830",
+  "revision": 4,
+  "files": [
+    {
+      "id": "989229cc-df51-4abb-b23d-33d17f51c03f",
+      "key": "ACDC_custom_dataset.zip",
+      "size": 227561887,
+      "checksum": "md5:0e1285ad8ce66dc15996c45be85755bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/17079830/files/ACDC_custom_dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "201010"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1,
+    "unique_downloads": 1,
+    "views": 27,
+    "unique_views": 25,
+    "version_downloads": 1,
+    "version_unique_downloads": 1,
+    "version_unique_views": 25,
+    "version_views": 27
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 227561887,
+    "top_level_files": [
+      {
+        "name": "ACDC_custom_dataset.zip",
+        "size": 227561887
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:58.966698"
+}

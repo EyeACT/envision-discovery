@@ -1,0 +1,455 @@
+{
+  "created": "2023-11-24T10:50:12.829278+00:00",
+  "modified": "2024-07-11T01:00:44.136820+00:00",
+  "id": 10043461,
+  "conceptrecid": "10043460",
+  "doi": "10.5281/zenodo.10043461",
+  "conceptdoi": "10.5281/zenodo.10043460",
+  "doi_url": "https://doi.org/10.5281/zenodo.10043461",
+  "metadata": {
+    "title": "Deep learning segmentation projects of FIB-SEM dataset of U2-OS cell",
+    "doi": "10.5281/zenodo.10043461",
+    "publication_date": "2023-10-26",
+    "description": "<p>This submission includes ground truth datasets that were used to segment the nuclear envelope (NE), mitochondria, endoplasmic reticulum (ER) and Golgi from a human bone osteosarcoma epithelial cell (U2-OS) imaged using focused-ion beam scanning electron microscopy (FIB-SEM).</p><p>The full FIB-SEM dataset is deposited to EMPIAR (<a href=\"https://www.ebi.ac.uk/empiar\">https://www.ebi.ac.uk/empiar</a>, EMPIAR-11746).&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ilya, Belevich",
+        "affiliation": "University of Helsinki",
+        "orcid": "0000-0003-2190-4909"
+      },
+      {
+        "name": "Jokitalo, Eija",
+        "affiliation": "University of Helsinki",
+        "orcid": "0000-0002-4159-6934"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Natalia, Szyrynska",
+        "affiliation": "University of Warmia and Mazury in Olsztyn",
+        "type": "Other",
+        "orcid": "0000-0003-4735-1724"
+      },
+      {
+        "name": "Zaversek, Tim",
+        "affiliation": "University of Ljubljana",
+        "type": "Other"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.10024015",
+        "relation": "isSupplementTo",
+        "resource_type": "video",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Microscopy Image Browser: A platform for segmentation and analysis of multidimensional datasets I. Belevich, M. Joensuu, D. Kumar, H. Vihinen and E. Jokitalo PLoS Biology 2016 Jan 4;14(1):e1002340. doi: 10.1371/journal.pbio.1002340",
+      "DeepMIB: User-friendly and open-source software for training of deep learning network for biological image segmentation I. Belevich, and E. Jokitalo PLoS Comput Biol. 2021 Mar 2;17(3):e1008374. doi: 10.1371/journal.pcbi.1008374"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10043460"
+          }
+        }
+      ]
+    },
+    "notes": "<p>For the full description see:</p><ul><li>\"<i>Datasets and DeepMIB projects for segmentation of organelles of U2OS cell.pdf</i>\" document attached to this deposition</li><li>Explanation video on youtube.com (<a href=\"https://youtu.be/-IXB4Da9VMw\">https://youtu.be/-IXB4Da9VMw</a>)</li></ul>",
+    "method": "<p>Training of convolutional neural network models and prediction of datasets were done in DeepMIB tool of Microscopy Image Browser (<a href=\"https://mib.helsinki.fi/\">https://mib.helsinki.fi/</a>)</p>"
+  },
+  "title": "Deep learning segmentation projects of FIB-SEM dataset of U2-OS cell",
+  "links": {
+    "self": "https://zenodo.org/api/records/10043461",
+    "self_html": "https://zenodo.org/records/10043461",
+    "preview_html": "https://zenodo.org/records/10043461?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10043461",
+    "self_doi": "https://doi.org/10.5281/zenodo.10043461",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10043461",
+    "reserve_doi": "https://zenodo.org/api/records/10043461/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10043460",
+    "parent_html": "https://zenodo.org/records/10043460",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10043460",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10043460",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10043461/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10043461/sequence/default",
+    "files": "https://zenodo.org/api/records/10043461/files",
+    "media_files": "https://zenodo.org/api/records/10043461/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10043461:Datasets%20and%20DeepMIB%20projects%20for%20segmentation%20of%20organelles%20of%20U2OS%20cell.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/10043461/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10043461/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10043461/versions/latest",
+    "latest_html": "https://zenodo.org/records/10043461/latest",
+    "versions": "https://zenodo.org/api/records/10043461/versions",
+    "draft": "https://zenodo.org/api/records/10043461/draft",
+    "access_links": "https://zenodo.org/api/records/10043461/access/links",
+    "access_grants": "https://zenodo.org/api/records/10043461/access/grants",
+    "access_users": "https://zenodo.org/api/records/10043461/access/users",
+    "access_request": "https://zenodo.org/api/records/10043461/access/request",
+    "access": "https://zenodo.org/api/records/10043461/access",
+    "communities": "https://zenodo.org/api/records/10043461/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10043461/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10043461/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10043461/file-modification",
+    "requests": "https://zenodo.org/api/records/10043461/requests"
+  },
+  "updated": "2024-07-11T01:00:44.136820+00:00",
+  "recid": "10043461",
+  "revision": 8,
+  "files": [
+    {
+      "id": "e5357772-aaff-461b-ac0c-baa4440c836f",
+      "key": "1_Golgi.zip",
+      "size": 943294831,
+      "checksum": "md5:e5ddafaf2252d32f3db0ddb9519237b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/1_Golgi.zip/content"
+      }
+    },
+    {
+      "id": "cadc7d46-c57c-4c90-a4be-9925ec9e97cb",
+      "key": "1_NE.zip",
+      "size": 135662003,
+      "checksum": "md5:003880e9b2e8782c0224e5aab6af097c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/1_NE.zip/content"
+      }
+    },
+    {
+      "id": "58d93dfa-55c7-4a45-91b0-06caaaafb528",
+      "key": "2_Predict_crop.zip",
+      "size": 185867516,
+      "checksum": "md5:5962e246b513bbf92163bbe261a4594f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/2_Predict_crop.zip/content"
+      }
+    },
+    {
+      "id": "de095685-e861-41d7-9b0b-bbac98644dff",
+      "key": "Datasets and DeepMIB projects for segmentation of organelles of U2OS cell.pdf",
+      "size": 863570,
+      "checksum": "md5:aff0e47cb8ac832c444b6133e5c6e995",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/Datasets and DeepMIB projects for segmentation of organelles of U2OS cell.pdf/content"
+      }
+    },
+    {
+      "id": "ae79e91f-8985-4383-b421-7de3461d6e84",
+      "key": "1_ER.zip",
+      "size": 1604345905,
+      "checksum": "md5:c6120681afd47483c7e143a7437aed72",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/1_ER.zip/content"
+      }
+    },
+    {
+      "id": "fae11f77-8605-45f3-a373-e204b60a09c4",
+      "key": "2_Predict_crop_bin2.zip",
+      "size": 43025436,
+      "checksum": "md5:1ac2e4036656dd7ea6e52418303bf105",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/2_Predict_crop_bin2.zip/content"
+      }
+    },
+    {
+      "id": "4457b6d5-16c8-4e43-b3b9-5c14382ed760",
+      "key": "1_Mitochondria.zip",
+      "size": 461692643,
+      "checksum": "md5:2652b008c58556f4e269497e0bb57e3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/1_Mitochondria.zip/content"
+      }
+    },
+    {
+      "id": "f43aa254-d3c0-42d4-afbd-185f031c8f2f",
+      "key": "0_Segmentation.zip",
+      "size": 1489995412,
+      "checksum": "md5:f8c69dcde972f550fb5e55cb323ff9fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10043461/files/0_Segmentation.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1004901"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 326,
+    "unique_downloads": 287,
+    "views": 621,
+    "unique_views": 574,
+    "version_downloads": 326,
+    "version_unique_downloads": 287,
+    "version_unique_views": 574,
+    "version_views": 621
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 7,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4863883746,
+    "top_level_files": [
+      {
+        "name": "1_Golgi.zip",
+        "size": 943294831
+      },
+      {
+        "name": "1_NE.zip",
+        "size": 135662003
+      },
+      {
+        "name": "2_Predict_crop.zip",
+        "size": 185867516
+      },
+      {
+        "name": "Datasets and DeepMIB projects for segmentation of organelles of U2OS cell.pdf",
+        "size": 863570
+      },
+      {
+        "name": "1_ER.zip",
+        "size": 1604345905
+      },
+      {
+        "name": "2_Predict_crop_bin2.zip",
+        "size": 43025436
+      },
+      {
+        "name": "1_Mitochondria.zip",
+        "size": 461692643
+      },
+      {
+        "name": "0_Segmentation.zip",
+        "size": 1489995412
+      }
+    ],
+    "zip_contents": {
+      "1_golgi.zip": {
+        "total_files": 94,
+        "total_directories": 8,
+        "total_uncompressed_bytes": 1187804178,
+        "file_types": {
+          ".tif": 45
+        },
+        "imaging_file_count": 45,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0015.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0022.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0046.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0062.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0082.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0114.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0152.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0178.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0185.tif",
+          "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0192.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "1_ne.zip": {
+        "total_files": 91,
+        "total_directories": 8,
+        "total_uncompressed_bytes": 147667088,
+        "file_types": {
+          ".tif": 44
+        },
+        "imaging_file_count": 44,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_01_01.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_01_z0989_02.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_02_01.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_02_z0946_02.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_03_01.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_03_z0933_02.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_04_01.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_04_z0929_02.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_05_01.tif",
+          "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_05_z0872_02.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "2_predict_crop.zip": {
+        "total_files": 1,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 235037360,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "1_er.zip": {
+        "total_files": 93,
+        "total_directories": 8,
+        "total_uncompressed_bytes": 2037292294,
+        "file_types": {
+          ".tif": 46
+        },
+        "imaging_file_count": 46,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_er/1_train_er/labels/labels_u2os_cells_z0015_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0022_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0046_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0062_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0082_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0114_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0152_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0178_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0185_er.tif",
+          "1_er/1_train_er/labels/labels_u2os_cells_z0192_er.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "2_predict_crop_bin2.zip": {
+        "total_files": 1,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 58719140,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "1_mitochondria.zip": {
+        "total_files": 93,
+        "total_directories": 8,
+        "total_uncompressed_bytes": 603349862,
+        "file_types": {
+          ".tif": 45
+        },
+        "imaging_file_count": 45,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0015_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0022_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0046_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0062_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0082_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0114_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0152_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0178_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0185_mito.tif",
+          "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0192_mito.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "0_segmentation.zip": {
+        "total_files": 93,
+        "total_directories": 4,
+        "total_uncompressed_bytes": 1918663396,
+        "file_types": {
+          ".tif": 45
+        },
+        "imaging_file_count": 45,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "0_segmentation/labels/labels_u2os_cells_z0015.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0022.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0046.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0062.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0082.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0114.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0152.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0178.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0185.tif",
+          "0_segmentation/labels/labels_u2os_cells_z0192.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0015.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0022.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0046.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0062.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0082.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0114.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0152.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0178.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0185.tif",
+      "1_golgi/1_train_golgi/labels_for_patches/labels_u2os_cells_z0192.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_01_01.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_01_z0989_02.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_02_01.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_02_z0946_02.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_03_01.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_03_z0933_02.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_04_01.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_04_z0929_02.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_05_01.tif",
+      "1_ne/1_train_ne/labels/labels_u2os_cells_nucleus_crop_05_z0872_02.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0015_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0022_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0046_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0062_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0082_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0114_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0152_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0178_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0185_er.tif",
+      "1_er/1_train_er/labels/labels_u2os_cells_z0192_er.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0015_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0022_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0046_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0062_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0082_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0114_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0152_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0178_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0185_mito.tif",
+      "1_mitochondria/1_train_mito/labels/labels_u2os_cells_z0192_mito.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0015.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0022.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0046.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0062.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0082.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0114.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0152.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0178.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0185.tif",
+      "0_segmentation/labels/labels_u2os_cells_z0192.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.ebi.ac.uk/empiar",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:11.550360"
+}

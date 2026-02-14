@@ -1,0 +1,263 @@
+{
+  "created": "2024-08-12T17:19:56.715565+00:00",
+  "modified": "2025-05-30T15:56:57.030408+00:00",
+  "id": 13306714,
+  "conceptrecid": "12775616",
+  "doi": "10.5281/zenodo.13306714",
+  "conceptdoi": "10.5281/zenodo.12775616",
+  "doi_url": "https://doi.org/10.5281/zenodo.13306714",
+  "metadata": {
+    "title": "Standardized Framework and Quantitative Benchmarking: Nuclear Segmentation platforms for Multiplexed Immunofluorescence data in Translational Studies",
+    "doi": "10.5281/zenodo.13306714",
+    "publication_date": "2024",
+    "description": "<p>Paired nuclear ground truth annotated binary masks and segmentation binary masks predicted from different segmentation platforms can be found in <strong>external.zip</strong> and <strong>inhouse.zip</strong>. <strong>internal.zip</strong> was used for development of the nuclear segmentation evaluation pipeline while <strong>external.zip</strong> hosts data that was/can be used for benchmarking of nuclear segmentation performance for multiplexed immunofluorescence workflows in translational studies. <strong>external.zip</strong> contains ground-truth annotated binary masks from another dataset in synapse (<a href=\"https://doi.org/10.7303/SYN27624812\">https://doi.org/10.7303/SYN27624812</a>). <strong>README_DAPI.md</strong> contains information about where to locate the raw DAPI nuclear intensities used by the different segmentation platforms to predict nuclei.</p>\n<p>The naming convention of the ROIs used is as follows: \"Sample ID_ULHC\" where ULHC refers to the coordinates of the upper-left hand corner pixel of the ROI within the whole sample field, delimited by an underscore (\"_\"). E.g. For ROI \"Bph2_45174_14597_160_246\": \"Bph2_45174_14597\" is the sample ID and (246,160) is the ULHC pixel.</p>\n<h2>&nbsp;</h2>\n<h2><strong>Citing</strong></h2>\n<p>Please cite these sources if you use this data</p>\n<ol>\n<li>Sankaranarayanan, A., Khachaturov, G., Smythe, K.S. &amp; Mittal, S<em>.</em>&nbsp;Quantitative benchmarking of nuclear segmentation algorithms in multiplexed immunofluorescence imaging for translational studies.&nbsp;<em>Commun Biol</em>&nbsp;<strong>8</strong>, 836 (2025). <a href=\"https://doi.org/10.1038/s42003-025-08184-8\">https://doi.org/10.1038/s42003-025-08184-8</a></li>\n<li>Sankaranarayanan, A., Khachaturov, G., Smythe, K. S. &amp; Mittal, S. Standardized framework and quantitative benchmarking: nuclear segmentation platforms for multiplexed immunofluorescence data in translational studies.&nbsp;<em>Zenodo</em> (2024). <a href=\"https://doi.org/10.5281/zenodo.12775616\">https://doi.org/10.5281/zenodo.12775616</a></li>\n</ol>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Sankaranarayanan, Abishek",
+        "affiliation": null,
+        "orcid": "0000-0001-9456-1180"
+      },
+      {
+        "name": "Khachaturov, Georgii",
+        "affiliation": null
+      },
+      {
+        "name": "Smythe, Kimberly S.",
+        "affiliation": null
+      },
+      {
+        "name": "Mittal, Shachi",
+        "affiliation": null,
+        "orcid": "0000-0002-5837-3411"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Shachi-Mittal-Lab/nuclear_segmentation/tree/v1.2",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 3,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12775616"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Standardized Framework and Quantitative Benchmarking: Nuclear Segmentation platforms for Multiplexed Immunofluorescence data in Translational Studies",
+  "links": {
+    "self": "https://zenodo.org/api/records/13306714",
+    "self_html": "https://zenodo.org/records/13306714",
+    "preview_html": "https://zenodo.org/records/13306714?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13306714",
+    "self_doi": "https://doi.org/10.5281/zenodo.13306714",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13306714",
+    "reserve_doi": "https://zenodo.org/api/records/13306714/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12775616",
+    "parent_html": "https://zenodo.org/records/12775616",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12775616",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12775616",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13306714/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13306714/sequence/default",
+    "files": "https://zenodo.org/api/records/13306714/files",
+    "media_files": "https://zenodo.org/api/records/13306714/media-files",
+    "archive": "https://zenodo.org/api/records/13306714/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13306714/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13306714/versions/latest",
+    "latest_html": "https://zenodo.org/records/13306714/latest",
+    "versions": "https://zenodo.org/api/records/13306714/versions",
+    "draft": "https://zenodo.org/api/records/13306714/draft",
+    "access_links": "https://zenodo.org/api/records/13306714/access/links",
+    "access_grants": "https://zenodo.org/api/records/13306714/access/grants",
+    "access_users": "https://zenodo.org/api/records/13306714/access/users",
+    "access_request": "https://zenodo.org/api/records/13306714/access/request",
+    "access": "https://zenodo.org/api/records/13306714/access",
+    "communities": "https://zenodo.org/api/records/13306714/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13306714/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13306714/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13306714/file-modification",
+    "requests": "https://zenodo.org/api/records/13306714/requests"
+  },
+  "updated": "2025-05-30T15:56:57.030408+00:00",
+  "recid": "13306714",
+  "revision": 6,
+  "files": [
+    {
+      "id": "41db2b07-a244-4201-9e71-c60fc3eddd75",
+      "key": "inhouse.zip",
+      "size": 164459343,
+      "checksum": "md5:69aade72ffd9e234a70222ba85b0456a",
+      "links": {
+        "self": "https://zenodo.org/api/records/13306714/files/inhouse.zip/content"
+      }
+    },
+    {
+      "id": "838204c2-9709-4dcc-a3ec-2f403ffe96d0",
+      "key": "README_DAPI.md",
+      "size": 600,
+      "checksum": "md5:02c364bdc6fcf3ea71f984fbb5aa7ba1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13306714/files/README_DAPI.md/content"
+      }
+    },
+    {
+      "id": "ddf45433-2c7d-4589-b90e-38035120ca0c",
+      "key": "external.zip",
+      "size": 30028429,
+      "checksum": "md5:1eead1b43ca341f6607c2ef2b0029c99",
+      "links": {
+        "self": "https://zenodo.org/api/records/13306714/files/external.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1161831"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 156,
+    "unique_downloads": 118,
+    "views": 256,
+    "unique_views": 220,
+    "version_downloads": 138,
+    "version_unique_downloads": 100,
+    "version_unique_views": 168,
+    "version_views": 202
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 194487772,
+    "top_level_files": [
+      {
+        "name": "inhouse.zip",
+        "size": 164459343
+      },
+      {
+        "name": "README_DAPI.md",
+        "size": 600
+      },
+      {
+        "name": "external.zip",
+        "size": 30028429
+      }
+    ],
+    "zip_contents": {
+      "inhouse.zip": {
+        "total_files": 169,
+        "total_directories": 60,
+        "total_uncompressed_bytes": 1044380472,
+        "file_types": {
+          ".tiff": 132,
+          ".tif": 33
+        },
+        "imaging_file_count": 165,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "dapi_inhouse/bph2_45174_14597.tif",
+          "dapi_inhouse/sixplextonsil_10122021.tif",
+          "dapi_inhouse/tme11_12154_44141.tif",
+          "dapi_inhouse/tonsil_7color_scan2_17096_47011.tif",
+          "dapi_inhouse/vista4_47265_15281.tif",
+          "fields/bph2_45174_14597_160_246/ground_truth/gr_tr.tiff",
+          "fields/bph2_45174_14597_160_246/platforms/cellpose.tiff",
+          "fields/bph2_45174_14597_160_246/platforms/cellprofiler.tiff",
+          "fields/bph2_45174_14597_160_246/platforms/fiji.tiff",
+          "fields/bph2_45174_14597_160_246/platforms/inform.tiff"
+        ],
+        "sample_genomics_files": []
+      },
+      "external.zip": {
+        "total_files": 161,
+        "total_directories": 120,
+        "total_uncompressed_bytes": 544329149,
+        "file_types": {
+          ".tiff": 160
+        },
+        "imaging_file_count": 160,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "fields/p01_10001_54032_15278_550_400/ground_truth/gr_tr.tiff",
+          "fields/p01_10001_54032_15278_550_400/platforms/cellpose.tiff",
+          "fields/p01_10001_54032_15278_550_400/platforms/mesmer.tiff",
+          "fields/p01_10001_54032_15278_550_400/platforms/stardist.tiff",
+          "fields/p01_10002_41478_16613_300_50/ground_truth/gr_tr.tiff",
+          "fields/p01_10002_41478_16613_300_50/platforms/cellpose.tiff",
+          "fields/p01_10002_41478_16613_300_50/platforms/mesmer.tiff",
+          "fields/p01_10002_41478_16613_300_50/platforms/stardist.tiff",
+          "fields/p01_10003_59622_10626_650_100/ground_truth/gr_tr.tiff",
+          "fields/p01_10003_59622_10626_650_100/platforms/cellpose.tiff"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "dapi_inhouse/bph2_45174_14597.tif",
+      "dapi_inhouse/sixplextonsil_10122021.tif",
+      "dapi_inhouse/tme11_12154_44141.tif",
+      "dapi_inhouse/tonsil_7color_scan2_17096_47011.tif",
+      "dapi_inhouse/vista4_47265_15281.tif",
+      "fields/bph2_45174_14597_160_246/ground_truth/gr_tr.tiff",
+      "fields/bph2_45174_14597_160_246/platforms/cellpose.tiff",
+      "fields/bph2_45174_14597_160_246/platforms/cellprofiler.tiff",
+      "fields/bph2_45174_14597_160_246/platforms/fiji.tiff",
+      "fields/bph2_45174_14597_160_246/platforms/inform.tiff",
+      "fields/p01_10001_54032_15278_550_400/ground_truth/gr_tr.tiff",
+      "fields/p01_10001_54032_15278_550_400/platforms/cellpose.tiff",
+      "fields/p01_10001_54032_15278_550_400/platforms/mesmer.tiff",
+      "fields/p01_10001_54032_15278_550_400/platforms/stardist.tiff",
+      "fields/p01_10002_41478_16613_300_50/ground_truth/gr_tr.tiff",
+      "fields/p01_10002_41478_16613_300_50/platforms/cellpose.tiff",
+      "fields/p01_10002_41478_16613_300_50/platforms/mesmer.tiff",
+      "fields/p01_10002_41478_16613_300_50/platforms/stardist.tiff",
+      "fields/p01_10003_59622_10626_650_100/ground_truth/gr_tr.tiff",
+      "fields/p01_10003_59622_10626_650_100/platforms/cellpose.tiff"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/Shachi-Mittal-Lab/nuclear_segmentation/tree/v1.2"
+  ],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.7303/SYN27624812",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1038/s42003-025-08184-8",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.12775616",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:22.916881"
+}

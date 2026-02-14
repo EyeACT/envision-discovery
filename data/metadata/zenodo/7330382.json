@@ -1,0 +1,177 @@
+{
+  "created": "2022-12-08T16:46:10.984740+00:00",
+  "modified": "2022-12-09T02:26:37.580167+00:00",
+  "id": 7330382,
+  "conceptrecid": "7330381",
+  "doi": "10.5281/zenodo.7330382",
+  "conceptdoi": "10.5281/zenodo.7330381",
+  "doi_url": "https://doi.org/10.5281/zenodo.7330382",
+  "metadata": {
+    "title": "Vaximap's home vaccination dataset (October 2022)",
+    "doi": "10.5281/zenodo.7330382",
+    "publication_date": "2022-11-17",
+    "description": "<p>Dataset used in preparation for the publication &quot;Vaximap: route optimisation for housebound vaccination&quot;, Nature Digital Health, 2022. DOI:&nbsp;10.1038/s41746-022-00726-2. <strong>Please reference this publication when using this dataset.&nbsp;</strong></p>\n\n<p>This dataset comprises requests made to the Vaximap service between Jan 2021 and Oct 2022 for planning vaccinations of housebound patients. Patient locations have been anonymised at the cost of some geographic precision.&nbsp;</p>\n\n<p>Data is stored in HDF5 format generated via python and&nbsp;pandas.to_hdf().&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kirk, Thomas",
+        "affiliation": "Institute of Biomedical Engineering, Department of Engineering Science, University of Oxford, Oxford",
+        "orcid": "0000-0002-3458-2104"
+      },
+      {
+        "name": "Barker, Adam",
+        "affiliation": null,
+        "orcid": "0000-0003-2574-3081"
+      },
+      {
+        "name": "Bodossian, Armen",
+        "affiliation": null
+      },
+      {
+        "name": "Staruch, Robert",
+        "affiliation": "Institute of Biomedical Engineering, Department of Engineering Science, University of Oxford, Oxford",
+        "orcid": "0000-0003-1718-2341"
+      }
+    ],
+    "keywords": [
+      "vaccination, housebound, covid-19, logistics, optimisation"
+    ],
+    "version": "1.0.0",
+    "references": [
+      "Kirk T. F, Barker A. J, Bodossian A, Staruch R, (2022), Vaximap: route optimisation for housebound vaccination (dataset)"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Nature Digital Health"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7330381"
+          }
+        }
+      ]
+    },
+    "notes": "Work partly funded by EPSRC ICASE studentship (18000064) to RS."
+  },
+  "title": "Vaximap's home vaccination dataset (October 2022)",
+  "links": {
+    "self": "https://zenodo.org/api/records/7330382",
+    "self_html": "https://zenodo.org/records/7330382",
+    "preview_html": "https://zenodo.org/records/7330382?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7330382",
+    "self_doi": "https://doi.org/10.5281/zenodo.7330382",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7330382",
+    "reserve_doi": "https://zenodo.org/api/records/7330382/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7330381",
+    "parent_html": "https://zenodo.org/records/7330381",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7330381",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7330381",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7330382/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7330382/sequence/default",
+    "files": "https://zenodo.org/api/records/7330382/files",
+    "media_files": "https://zenodo.org/api/records/7330382/media-files",
+    "archive": "https://zenodo.org/api/records/7330382/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7330382/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7330382/versions/latest",
+    "latest_html": "https://zenodo.org/records/7330382/latest",
+    "versions": "https://zenodo.org/api/records/7330382/versions",
+    "draft": "https://zenodo.org/api/records/7330382/draft",
+    "access_links": "https://zenodo.org/api/records/7330382/access/links",
+    "access_grants": "https://zenodo.org/api/records/7330382/access/grants",
+    "access_users": "https://zenodo.org/api/records/7330382/access/users",
+    "access_request": "https://zenodo.org/api/records/7330382/access/request",
+    "access": "https://zenodo.org/api/records/7330382/access",
+    "communities": "https://zenodo.org/api/records/7330382/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7330382/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7330382/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7330382/file-modification",
+    "requests": "https://zenodo.org/api/records/7330382/requests"
+  },
+  "updated": "2022-12-09T02:26:37.580167+00:00",
+  "recid": "7330382",
+  "revision": 2,
+  "files": [
+    {
+      "id": "da3487a0-14c2-43c8-98e7-ed0c6e600bf1",
+      "key": "vaximap_dataset.zip",
+      "size": 3970052,
+      "checksum": "md5:0ed0d6d25bc6ca3913b2918631c9ea01",
+      "links": {
+        "self": "https://zenodo.org/api/records/7330382/files/vaximap_dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "439761"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 23,
+    "unique_downloads": 22,
+    "views": 97,
+    "unique_views": 93,
+    "version_downloads": 23,
+    "version_unique_downloads": 22,
+    "version_unique_views": 91,
+    "version_views": 95
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3970052,
+    "top_level_files": [
+      {
+        "name": "vaximap_dataset.zip",
+        "size": 3970052
+      }
+    ],
+    "zip_contents": {
+      "vaximap_dataset.zip": {
+        "total_files": 4,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 10918977,
+        "file_types": {
+          ".h5": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "vaximap_dataset/oct_2022.h5",
+          "__macosx/vaximap_dataset/._oct_2022.h5"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "vaximap_dataset/oct_2022.h5",
+      "__macosx/vaximap_dataset/._oct_2022.h5"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:56.353115"
+}

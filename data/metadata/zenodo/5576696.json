@@ -1,0 +1,227 @@
+{
+  "created": "2021-10-18T21:14:24.705124+00:00",
+  "modified": "2022-06-05T03:23:28.896551+00:00",
+  "id": 5576696,
+  "conceptrecid": "5576695",
+  "doi": "10.5061/dryad.2z34tmpnc",
+  "doi_url": "https://doi.org/10.5061/dryad.2z34tmpnc",
+  "metadata": {
+    "title": "Visual pursuit behavior in mice maintains the pursued prey on the retinal region with least optic flow",
+    "doi": "10.5061/dryad.2z34tmpnc",
+    "publication_date": "2021-10-18",
+    "description": "<p>Mice have a large visual field that is constantly stabilized by vestibular ocular reflex (VOR) driven eye rotations that counter head-rotations. While maintaining their extensive visual coverage is advantageous for predator detection, mice also track and capture prey using vision. However, in the freely moving animal quantifying object location in the field of view is challenging. Here, we developed a method to digitally reconstruct and quantify the visual scene of freely moving mice performing a visually based prey capture task. By isolating the visual sense and combining a mouse eye optic model with the head and eye rotations, the detailed reconstruction of the digital environment and retinal features were projected onto the corneal surface for comparison, and updated throughout the behavior. By quantifying the spatial location of objects in the visual scene and their motion throughout the behavior, we show that the prey image consistently falls within a small area of the VOR-stabilized visual field. This functional focus coincides with the region of minimal optic flow in the visual field and consequently minimal motion-induced image blur during pursuit. The functional focus lies in the upper-temporal part of the retina and coincides with the reported high density-region of Alpha-ON<sub>\u00a0</sub>sustained retinal ganglion cells.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Holmgren, Carl D.",
+        "affiliation": "Center of Advanced European Studies and Research",
+        "orcid": "0000-0001-8140-4186"
+      },
+      {
+        "name": "Stahr, Paul",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Wallace, Damian J.",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Voit, Kay-Michael",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Matheson, Emily J.",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Sawinski, Juergen",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Bassetto, Giacomo",
+        "affiliation": "Center of Advanced European Studies and Research"
+      },
+      {
+        "name": "Kerr, Jason N.",
+        "affiliation": "Center of Advanced European Studies and Research"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2021.06.15.448520",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.5493626",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5576695"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Data structure</p>\n\n<p>CSV files contain tracking data of position and pointing angle of eyes of the mouse, and position of the cricket. MV files contain control code for our custom written Multiview software OBJ files are in Wavefront format, which can be opened e.g. in Blender Usage of data To generate the eye views used in our publication, CSV files need to be processed with our custom written software Multiview, using the provided control script. This will generate folders containing PNG/OpenEXRfiles for rendered view, optic flowetc., with one file per frame, eye and output type.</p>\n\n<p>The data can be visualised by:</p>\n\n<p>Multiview load_scene_scan.mv Path of Wavefront obj-file path of trajectory csv-file</p>\n\n<p>The data can be rendered and exported by:</p>\n\n<p>Multiview load_scene_scan.mv Path of Wavefront obj-file path of trajectory csv-file starting frame end frame output-folder</p>"
+  },
+  "title": "Visual pursuit behavior in mice maintains the pursued prey on the retinal region with least optic flow",
+  "links": {
+    "self": "https://zenodo.org/api/records/5576696",
+    "self_html": "https://zenodo.org/records/5576696",
+    "preview_html": "https://zenodo.org/records/5576696?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.2z34tmpnc",
+    "self_doi": "https://doi.org/10.5061/dryad.2z34tmpnc",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.2z34tmpnc",
+    "reserve_doi": "https://zenodo.org/api/records/5576696/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5576695",
+    "parent_html": "https://zenodo.org/records/5576695",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5576696/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5576696/sequence/default",
+    "files": "https://zenodo.org/api/records/5576696/files",
+    "media_files": "https://zenodo.org/api/records/5576696/media-files",
+    "archive": "https://zenodo.org/api/records/5576696/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5576696/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5576696/versions/latest",
+    "latest_html": "https://zenodo.org/records/5576696/latest",
+    "versions": "https://zenodo.org/api/records/5576696/versions",
+    "draft": "https://zenodo.org/api/records/5576696/draft",
+    "access_links": "https://zenodo.org/api/records/5576696/access/links",
+    "access_grants": "https://zenodo.org/api/records/5576696/access/grants",
+    "access_users": "https://zenodo.org/api/records/5576696/access/users",
+    "access_request": "https://zenodo.org/api/records/5576696/access/request",
+    "access": "https://zenodo.org/api/records/5576696/access",
+    "communities": "https://zenodo.org/api/records/5576696/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5576696/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5576696/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5576696/file-modification",
+    "requests": "https://zenodo.org/api/records/5576696/requests"
+  },
+  "updated": "2022-06-05T03:23:28.896551+00:00",
+  "recid": "5576696",
+  "revision": 3,
+  "files": [
+    {
+      "id": "60e7d105-17af-4b2f-846d-f5828ed4dfb8",
+      "key": "scan.zip",
+      "size": 938136881,
+      "checksum": "md5:b8974697f2c746638c3711644154a87e",
+      "links": {
+        "self": "https://zenodo.org/api/records/5576696/files/scan.zip/content"
+      }
+    },
+    {
+      "id": "59e03a34-27da-481e-89d7-80c8f1e25bb9",
+      "key": "behavioral_classifications.zip",
+      "size": 173627,
+      "checksum": "md5:02251285cbeb95516e8854cd6184f10b",
+      "links": {
+        "self": "https://zenodo.org/api/records/5576696/files/behavioral_classifications.zip/content"
+      }
+    },
+    {
+      "id": "2d9789cd-b70b-4c0b-ba93-56be77e96207",
+      "key": "trajectories.zip",
+      "size": 56860490,
+      "checksum": "md5:10a2926544b29270d2872da4cb843fca",
+      "links": {
+        "self": "https://zenodo.org/api/records/5576696/files/trajectories.zip/content"
+      }
+    },
+    {
+      "id": "9b99ceeb-1e10-4ef4-a7ff-719c3a35b8f3",
+      "key": "meshes.zip",
+      "size": 316386,
+      "checksum": "md5:547bdf6375043eb117e418d5494448a3",
+      "links": {
+        "self": "https://zenodo.org/api/records/5576696/files/meshes.zip/content"
+      }
+    },
+    {
+      "id": "df56dd6b-380d-4e4c-bdd8-b7a12f6d71f6",
+      "key": "README.txt",
+      "size": 2091,
+      "checksum": "md5:8b035a647eaa0b9a7305077ac6783730",
+      "links": {
+        "self": "https://zenodo.org/api/records/5576696/files/README.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 97,
+    "unique_downloads": 89,
+    "views": 170,
+    "unique_views": 169,
+    "version_downloads": 97,
+    "version_unique_downloads": 89,
+    "version_unique_views": 169,
+    "version_views": 170
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 995487384,
+    "top_level_files": [
+      {
+        "name": "scan.zip",
+        "size": 938136881
+      },
+      {
+        "name": "behavioral_classifications.zip",
+        "size": 173627
+      },
+      {
+        "name": "trajectories.zip",
+        "size": 56860490
+      },
+      {
+        "name": "meshes.zip",
+        "size": 316386
+      },
+      {
+        "name": "README.txt",
+        "size": 2091
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:47.611457"
+}

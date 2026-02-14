@@ -1,0 +1,150 @@
+{
+  "created": "2023-02-18T12:17:17.729289+00:00",
+  "modified": "2023-02-19T02:26:49.804716+00:00",
+  "id": 7652728,
+  "conceptrecid": "5771718",
+  "doi": "10.5281/zenodo.7652728",
+  "conceptdoi": "10.5281/zenodo.5771718",
+  "doi_url": "https://doi.org/10.5281/zenodo.7652728",
+  "metadata": {
+    "title": "Manual segmentation and classification dataset",
+    "doi": "10.5281/zenodo.7652728",
+    "publication_date": "2021-12-09",
+    "description": "<p>The archive contains 2 datasets for the Special issue&nbsp;&quot;Neuroinformatics and Signal&nbsp;Processing&quot;&nbsp;&nbsp;</p>\n\n<p>https://www.mdpi.com/journal/brainsci/special_issues/Neuroinformatics_Signal</p>\n\n<p>A segmentation dataset demonstrating Active Segmentation. The image is taken from the ISIBI 2012 dataset.</p>\n\n<p>A classification dataset - HeLa cells</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Prodanov Dimiter",
+        "affiliation": "IMEC"
+      }
+    ],
+    "version": "v2",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5771718"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Manual segmentation and classification dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/7652728",
+    "self_html": "https://zenodo.org/records/7652728",
+    "preview_html": "https://zenodo.org/records/7652728?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7652728",
+    "self_doi": "https://doi.org/10.5281/zenodo.7652728",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7652728",
+    "reserve_doi": "https://zenodo.org/api/records/7652728/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5771718",
+    "parent_html": "https://zenodo.org/records/5771718",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5771718",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5771718",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7652728/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7652728/sequence/default",
+    "files": "https://zenodo.org/api/records/7652728/files",
+    "media_files": "https://zenodo.org/api/records/7652728/media-files",
+    "archive": "https://zenodo.org/api/records/7652728/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7652728/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7652728/versions/latest",
+    "latest_html": "https://zenodo.org/records/7652728/latest",
+    "versions": "https://zenodo.org/api/records/7652728/versions",
+    "draft": "https://zenodo.org/api/records/7652728/draft",
+    "access_links": "https://zenodo.org/api/records/7652728/access/links",
+    "access_grants": "https://zenodo.org/api/records/7652728/access/grants",
+    "access_users": "https://zenodo.org/api/records/7652728/access/users",
+    "access_request": "https://zenodo.org/api/records/7652728/access/request",
+    "access": "https://zenodo.org/api/records/7652728/access",
+    "communities": "https://zenodo.org/api/records/7652728/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7652728/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7652728/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7652728/file-modification",
+    "requests": "https://zenodo.org/api/records/7652728/requests"
+  },
+  "updated": "2023-02-19T02:26:49.804716+00:00",
+  "recid": "7652728",
+  "revision": 2,
+  "files": [
+    {
+      "id": "d4c0d2e4-bf55-4bca-b395-59fafebceaa7",
+      "key": "hela.zip",
+      "size": 61713932,
+      "checksum": "md5:b19217b348c097c0ed42fb029f8d48fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/7652728/files/hela.zip/content"
+      }
+    },
+    {
+      "id": "5c56b2ff-4d35-4746-8057-1ba4339526ab",
+      "key": "isbi4.zip",
+      "size": 78424814,
+      "checksum": "md5:13b6bd745b4d7a21a8592c538df8906a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7652728/files/isbi4.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "24171"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 187,
+    "unique_downloads": 177,
+    "views": 1144,
+    "unique_views": 1113,
+    "version_downloads": 114,
+    "version_unique_downloads": 108,
+    "version_unique_views": 490,
+    "version_views": 503
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 140138746,
+    "top_level_files": [
+      {
+        "name": "hela.zip",
+        "size": 61713932
+      },
+      {
+        "name": "isbi4.zip",
+        "size": 78424814
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.mdpi.com/journal/brainsci/special_issues/Neuroinformatics_Signal",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.069907"
+}

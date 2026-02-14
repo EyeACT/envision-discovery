@@ -1,0 +1,170 @@
+{
+  "created": "2022-07-29T10:44:45.033825+00:00",
+  "modified": "2022-07-29T13:51:41.678908+00:00",
+  "id": 6938457,
+  "conceptrecid": "6938456",
+  "doi": "10.5281/zenodo.6938457",
+  "conceptdoi": "10.5281/zenodo.6938456",
+  "doi_url": "https://doi.org/10.5281/zenodo.6938457",
+  "metadata": {
+    "title": "GlottisNetV2 - Time variant training and testing data",
+    "doi": "10.5281/zenodo.6938457",
+    "publication_date": "2022-07-29",
+    "description": "<p>Here we provide time variant training and testing data for the GlottisNetV2 study. In particular, this dataset relies on the benchmark for automatic glottis segmentation (BAGLS dataset). This three-dimensional data (time, y, x) is used for experiments involving deep neural networks capable of processing time-variant data.&nbsp;</p>\n\n<p>Each folder contains videos each with the following data:</p>\n\n<ul>\n\t<li>Endoscopic video as mp4 (*.mp4)</li>\n\t<li>Glottis segmentation as mask-file (hdf5 container, *.mask)</li>\n\t<li>Glottis segmentation as mp4 file (*_mask.mp4)</li>\n\t<li>Metadata as JSON file (*.meta)</li>\n\t<li>Glottal midline annotation as JSON file (*.points)</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kruse, Elina",
+        "affiliation": "Department Artificial Intelligence in Biomedical Engineering, Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg (FAU)"
+      },
+      {
+        "name": "D\u00f6llinger, Michael",
+        "affiliation": "Division of Phoniatrics and Pediatric Audiology, Department Otolaryngology, Head and Neck Surgery,University Hospital Erlangen"
+      },
+      {
+        "name": "Sch\u00fctzenberger, Anne",
+        "affiliation": "Division of Phoniatrics and Pediatric Audiology, Department Otolaryngology, Head and Neck Surgery,University Hospital Erlangen"
+      },
+      {
+        "name": "Kist, Andreas M",
+        "affiliation": "Department Artificial Intelligence in Biomedical Engineering, Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg (FAU)",
+        "orcid": "0000-0003-3643-7776"
+      }
+    ],
+    "keywords": [
+      "Deep Learning",
+      "Glottis segmentation",
+      "Laryngeal endoscopy",
+      "Endoscopy",
+      "Biomedical Imaging"
+    ],
+    "version": "1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-sa-4.0"
+    },
+    "communities": [
+      {
+        "id": "fau"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6938456"
+          }
+        }
+      ]
+    }
+  },
+  "title": "GlottisNetV2 - Time variant training and testing data",
+  "links": {
+    "self": "https://zenodo.org/api/records/6938457",
+    "self_html": "https://zenodo.org/records/6938457",
+    "preview_html": "https://zenodo.org/records/6938457?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6938457",
+    "self_doi": "https://doi.org/10.5281/zenodo.6938457",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6938457",
+    "reserve_doi": "https://zenodo.org/api/records/6938457/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6938456",
+    "parent_html": "https://zenodo.org/records/6938456",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6938456",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6938456",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6938457/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6938457/sequence/default",
+    "files": "https://zenodo.org/api/records/6938457/files",
+    "media_files": "https://zenodo.org/api/records/6938457/media-files",
+    "archive": "https://zenodo.org/api/records/6938457/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6938457/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6938457/versions/latest",
+    "latest_html": "https://zenodo.org/records/6938457/latest",
+    "versions": "https://zenodo.org/api/records/6938457/versions",
+    "draft": "https://zenodo.org/api/records/6938457/draft",
+    "access_links": "https://zenodo.org/api/records/6938457/access/links",
+    "access_grants": "https://zenodo.org/api/records/6938457/access/grants",
+    "access_users": "https://zenodo.org/api/records/6938457/access/users",
+    "access_request": "https://zenodo.org/api/records/6938457/access/request",
+    "access": "https://zenodo.org/api/records/6938457/access",
+    "communities": "https://zenodo.org/api/records/6938457/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6938457/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6938457/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6938457/file-modification",
+    "requests": "https://zenodo.org/api/records/6938457/requests"
+  },
+  "updated": "2022-07-29T13:51:41.678908+00:00",
+  "recid": "6938457",
+  "revision": 3,
+  "files": [
+    {
+      "id": "f7953096-20d8-4503-a28c-0c6abbf67df1",
+      "key": "training.zip",
+      "size": 555028589,
+      "checksum": "md5:f79b2862986b06cab3e24ef6e1f7c754",
+      "links": {
+        "self": "https://zenodo.org/api/records/6938457/files/training.zip/content"
+      }
+    },
+    {
+      "id": "83ce10f9-923a-43bd-9465-d5eca7796c14",
+      "key": "test.zip",
+      "size": 34507654,
+      "checksum": "md5:fc7101f78bbb92e659f948714a58fddf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6938457/files/test.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "75530"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 164,
+    "unique_downloads": 151,
+    "views": 388,
+    "unique_views": 356,
+    "version_downloads": 162,
+    "version_unique_downloads": 150,
+    "version_unique_views": 353,
+    "version_views": 385
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 589536243,
+    "top_level_files": [
+      {
+        "name": "training.zip",
+        "size": 555028589
+      },
+      {
+        "name": "test.zip",
+        "size": 34507654
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:04.621900"
+}

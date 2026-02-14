@@ -1,0 +1,197 @@
+{
+  "created": "2022-04-26T16:20:11.265871+00:00",
+  "modified": "2023-12-11T18:25:36.149287+00:00",
+  "id": 6476639,
+  "conceptrecid": "6476638",
+  "doi": "10.5281/zenodo.6476639",
+  "conceptdoi": "10.5281/zenodo.6476638",
+  "doi_url": "https://doi.org/10.5281/zenodo.6476639",
+  "metadata": {
+    "title": "UTHealth - Fundus and Synthetic OCT-A Dataset (UT-FSOCTA)",
+    "doi": "10.5281/zenodo.6476639",
+    "publication_date": "2022-04-21",
+    "description": "<p><strong>Introduction</strong></p>\n\n<p>Vessel segmentation in fundus images is essential in the diagnosis and prognosis of retinal diseases and the identification of image-based biomarkers. However, creating a vessel segmentation map can be a tedious and time consuming process, requiring careful delineation of the vasculature, which is especially hard for microcapillary plexi in fundus images. Optical coherence tomography angiography (OCT-A) is a relatively novel modality visualizing blood flow and microcapillary plexi not clearly observed in fundus photography. Unfortunately, current commercial OCT-A cameras have various limitations due to their complex optics making them more expensive, less portable, and with a reduced field of view (FOV) compared to fundus cameras. Moreover, the vast majority of population health data collection efforts do not include OCT-A data.</p>\n\n<p>We believe that strategies able to map fundus images to en-face OCT-A can create precise vascular vessel segmentation with less effort.</p>\n\n<p>In this dataset, called UTHealth - Fundus and Synthetic OCT-A Dataset (UT-FSOCTA), we include fundus images and en-face OCT-A images for 112 subjects. The two modalities have been manually aligned to allow for training of medical imaging machine learning pipelines. This dataset is accompanied by a manuscript that describes an approach to generate fundus vessel segmentations using OCT-A for training (Coronado et al., 2022). We refer to this approach as &quot;Synthetic OCT-A&quot;.</p>\n\n<p><strong>Fundus Imaging</strong></p>\n\n<p>We include 45 degree macula centered fundus images that cover both macula and optic disc. All images were acquired using a OptoVue iVue fundus camera without pupil dilation.</p>\n\n<p>The full images are available at the <code>fov45/fundus</code> directory. In addition, we extracted the FOVs corresponding to the en-face OCT-A images collected in <code>cropped/fundus/disc</code> and <code>cropped/fundus/macula</code>.</p>\n\n<p><strong>Enface OCT-A</strong></p>\n\n<p>We include the en-face OCT-A images of the superficial capillary plexus. All images were acquired using an OptoVue Avanti OCT camera with OCT-A reconstruction software (AngioVue). Low quality images with errors in the retina layer segmentations were not included.</p>\n\n<p>En-face OCTA images are located in <code>cropped/octa/disc</code> and <code>cropped/octa/macula</code>. In addition, we include a denoised version of these images where only vessels are included. This has been performed automatically using the ROSE algorithm (Ma et al. 2021). These can be found in <code>cropped/GT_OCT_net/noThresh</code> and <code>cropped/GT_OCT_net/Thresh</code>, the former contains the probabilities of the ROSE algorithm the latter a binary map.</p>\n\n<p><strong>Synthetic OCT-A</strong></p>\n\n<p>We train a custom conditional generative adversarial network (cGAN) to map a fundus image to an en face OCT-A image. Our model consists of a generator synthesizing en face OCT-A images from corresponding areas in fundus photographs and a discriminator judging the resemblance of the synthesized images to the real en face OCT-A samples. This allows us to avoid the use of manual vessel segmentation maps altogether.</p>\n\n<p>The full images are available at the <code>fov45/synthetic_octa</code> directory. Then, we extracted the FOVs corresponding to the en-face OCT-A images collected in <code>cropped/synthetic_octa/disc</code> and <code>cropped/synthetic_octa/macula</code>. In addition, we performed the same denoising ROSE algorithm (Ma et al. 2021) used for the original enface OCT-A images, the results are available in <code>cropped/denoised_synthetic_octa/noThresh</code> and <code>cropped/denoised_synthetic_octa/Thresh</code>, the former contains the probabilities of the ROSE algorithm the latter a binary map.</p>\n\n<p><strong>Other Fundus Vessel Segmentations Included</strong></p>\n\n<p>In this dataset, we have also included the output of two recent vessel segmentation algorithms trained on external datasets with manual vessel segmentations. SA-Unet (Li et. al, 2020) and IterNet (Guo et. al, 2021).</p>\n\n<ul>\n\t<li>\n\t<p>SA-Unet. The full images are available at the <code>fov45/SA_Unet</code> directory. Then, we extracted the FOVs corresponding to the en-face OCT-A images collected in <code>cropped/SA_Unet/disc</code> and <code>cropped/SA_Unet/macula</code>.</p>\n\t</li>\n\t<li>\n\t<p>IterNet. The full images are available at the <code>fov45/Iternet</code> directory. Then, we extracted the FOVs corresponding to the en-face OCT-A images collected in <code>cropped/Iternet/disc</code> and <code>cropped/Iternet/macula</code>.</p>\n\t</li>\n</ul>\n\n<p><strong>Train/Validation/Test Replication</strong></p>\n\n<p>In order to replicate or compare your model to the results of our paper, we report below the data split used.</p>\n\n<ul>\n\t<li>\n\t<p>Training subjects IDs: 1 - 25</p>\n\t</li>\n\t<li>\n\t<p>Validation subjects IDs: 26 - 30</p>\n\t</li>\n\t<li>\n\t<p>Testing subjects IDs: 31 - 112</p>\n\t</li>\n</ul>\n\n<p><strong>Data Acquisition</strong></p>\n\n<p>This dataset was acquired at the Texas Medical Center - Memorial Hermann Hospital in accordance with the guidelines from the Helsinki Declaration and it was approved by the UTHealth IRB with protocol HSC-MS-19-0352.</p>\n\n<p><strong>User Agreement</strong></p>\n\n<p>The UT-FSOCTA dataset is free to use for non-commercial scientific research only. In case of any publication the following paper needs to be cited</p>\n\n<pre><code>\nCoronado I, Pachade S, Trucco E, Abdelkhaleq R, Yan J, Salazar-Marioni S, Jagolino-Cole A, Bahrainian M, Channa R, Sheth SA, Giancardo L. Synthetic OCT-A blood vessel maps using fundus images and generative adversarial networks. Sci Rep 2023;13:15325. https://doi.org/10.1038/s41598-023-42062-9.\n</code></pre>\n\n<p><strong>Funding</strong></p>\n\n<p>This work is supported by the Translational Research Institute for Space Health through NASA Cooperative Agreement NNX16AO69A.</p>\n\n<p><strong>Research Team and Acknowledgements</strong></p>\n\n<p>Here are the people behind this data acquisition effort:</p>\n\n<p>Ivan Coronado, Samiksha Pachade, Rania Abdelkhaleq, Juntao Yan, Sergio Salazar-Marioni, Amanda Jagolino, Mozhdeh Bahrainian, Roomasa Channa, Sunil Sheth, Luca Giancardo</p>\n\n<p>We would also like to acknowledge for their support: the Institute for Stroke and Cerebrovascular Diseases at UTHealth, the VAMPIRE team at University of Dundee, UK and Memorial Hermann Hospital System.</p>\n\n<p><strong>References</strong></p>\n\n<pre><code>Coronado I, Pachade S, Trucco E, Abdelkhaleq R, Yan J, Salazar-Marioni S, Jagolino-Cole A, Bahrainian M, Channa R, Sheth SA, Giancardo L. Synthetic OCT-A blood vessel maps using fundus images and generative adversarial networks. Sci Rep 2023;13:15325. https://doi.org/10.1038/s41598-023-42062-9.\n\n\nC. Guo, M. Szemenyei, Y. Yi, W. Wang, B. Chen, and C. Fan, \"SA-UNet: Spatial Attention U-Net for Retinal Vessel Segmentation,\" in 2020 25th International Conference on Pattern Recognition (ICPR), Jan. 2021, pp. 1236\u20131242. doi: 10.1109/ICPR48806.2021.9413346.\n\nL. Li, M. Verma, Y. Nakashima, H. Nagahara, and R. Kawasaki, \"IterNet: Retinal Image Segmentation Utilizing Structural Redundancy in Vessel Networks,\" 2020 IEEE Winter Conf. Appl. Comput. Vis. WACV, 2020, doi: 10.1109/WACV45572.2020.9093621.\n\nY. Ma et al., \"ROSE: A Retinal OCT-Angiography Vessel Segmentation Dataset and New Model,\" IEEE Trans. Med. Imaging, vol. 40, no. 3, pp. 928\u2013939, Mar. 2021, doi: 10.1109/TMI.2020.3042802.\n</code></pre>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Coronado, Ivan",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Pachade, Samiksha",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Abdelkhaleq, Rania",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Yan, Juntao",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Salazar-Marioni, Sergio",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Jagolino, Amanda",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Bahrainian, Mozhdeh",
+        "affiliation": "University of Wisconsis-Madison"
+      },
+      {
+        "name": "Channa, Roomasa",
+        "affiliation": "University of Wisconsis-Madison"
+      },
+      {
+        "name": "Sheth, Sunil",
+        "affiliation": "University of Texas Health Science Center at Houston"
+      },
+      {
+        "name": "Giancardo, Luca",
+        "affiliation": "University of Texas Health Science Center at Houston",
+        "orcid": "0000-0002-4862-2277"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41598-023-42062-9",
+        "relation": "isCitedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6476638"
+          }
+        }
+      ]
+    }
+  },
+  "title": "UTHealth - Fundus and Synthetic OCT-A Dataset (UT-FSOCTA)",
+  "links": {
+    "self": "https://zenodo.org/api/records/6476639",
+    "self_html": "https://zenodo.org/records/6476639",
+    "preview_html": "https://zenodo.org/records/6476639?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6476639",
+    "self_doi": "https://doi.org/10.5281/zenodo.6476639",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6476639",
+    "reserve_doi": "https://zenodo.org/api/records/6476639/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6476638",
+    "parent_html": "https://zenodo.org/records/6476638",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6476638",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6476638",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6476639/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6476639/sequence/default",
+    "files": "https://zenodo.org/api/records/6476639/files",
+    "media_files": "https://zenodo.org/api/records/6476639/media-files",
+    "archive": "https://zenodo.org/api/records/6476639/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6476639/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6476639/versions/latest",
+    "latest_html": "https://zenodo.org/records/6476639/latest",
+    "versions": "https://zenodo.org/api/records/6476639/versions",
+    "draft": "https://zenodo.org/api/records/6476639/draft",
+    "access_links": "https://zenodo.org/api/records/6476639/access/links",
+    "access_grants": "https://zenodo.org/api/records/6476639/access/grants",
+    "access_users": "https://zenodo.org/api/records/6476639/access/users",
+    "access_request": "https://zenodo.org/api/records/6476639/access/request",
+    "access": "https://zenodo.org/api/records/6476639/access",
+    "communities": "https://zenodo.org/api/records/6476639/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6476639/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6476639/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6476639/file-modification",
+    "requests": "https://zenodo.org/api/records/6476639/requests"
+  },
+  "updated": "2023-12-11T18:25:36.149287+00:00",
+  "recid": "6476639",
+  "revision": 9,
+  "files": [
+    {
+      "id": "5d0c8e3d-db7e-4922-9f8e-1465e8d2265e",
+      "key": "UT-FSOCTA-v1.zip",
+      "size": 1151391295,
+      "checksum": "md5:c0f4987a8c5676d01e14a6a012fae01e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6476639/files/UT-FSOCTA-v1.zip/content"
+      }
+    },
+    {
+      "id": "b1b70c73-25df-476b-88be-8ec4d71f0648",
+      "key": "README.md",
+      "size": 6881,
+      "checksum": "md5:f8976bc39f8ce5d926ad74f373356ba2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6476639/files/README.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "340174"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 732,
+    "unique_downloads": 485,
+    "views": 2227,
+    "unique_views": 1994,
+    "version_downloads": 730,
+    "version_unique_downloads": 484,
+    "version_unique_views": 1973,
+    "version_views": 2200
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1151391295,
+    "top_level_files": [
+      {
+        "name": "UT-FSOCTA-v1.zip",
+        "size": 1151391295
+      },
+      {
+        "name": "README.md",
+        "size": 6881
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1038/s41598-023-42062-9",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41598-023-42062-9",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:33:02.137676"
+}

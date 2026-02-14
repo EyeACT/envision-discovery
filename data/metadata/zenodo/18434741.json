@@ -1,0 +1,186 @@
+{
+  "created": "2026-02-02T02:15:23.281177+00:00",
+  "modified": "2026-02-02T02:15:23.721877+00:00",
+  "id": 18434741,
+  "conceptrecid": "10592730",
+  "doi": "10.5281/zenodo.18434741",
+  "conceptdoi": "10.5281/zenodo.10592730",
+  "doi_url": "https://doi.org/10.5281/zenodo.18434741",
+  "metadata": {
+    "title": "Data for Epstein-Barr Virus Orchestrates Spatial Reorganization and Immunomodulation within the classical Hodgkin Lymphoma Tumor Microenvironment",
+    "doi": "10.5281/zenodo.18434741",
+    "publication_date": "2026-02-01",
+    "description": "<p>Here is a brief description of each data:</p>\n<ul>\n<li>MIBI_data contains the MIBI proteomics image, segmentation masks, and the annotated proteomics dataframe.&nbsp;</li>\n<li>GeoMx_data contains the GeoMx proteomics image, segmentation masks, annotated proteomics dataframe, and transcriptomics count table.</li>\n<li>CosMx_data contains the Seurat object used for all CosMx related analysis.</li>\n<li>CODEX_data contains the CODEX proteomics image, segmentation masks, and the annotated proteomics dataframe. It also contains geojson files that can be opened together with the proteomics image in QuPath to simultaneously visualize both the multiplex image and the annotation of each cell.&nbsp;</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yeo, Yao Yu",
+        "affiliation": null
+      },
+      {
+        "name": "Qiu, Huaying",
+        "affiliation": null
+      },
+      {
+        "name": "Bai, Yunhao",
+        "affiliation": null
+      },
+      {
+        "name": "Zhu, Bokai",
+        "affiliation": null
+      },
+      {
+        "name": "Jiang, Sizun",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10592730"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data for Epstein-Barr Virus Orchestrates Spatial Reorganization and Immunomodulation within the classical Hodgkin Lymphoma Tumor Microenvironment",
+  "links": {
+    "self": "https://zenodo.org/api/records/18434741",
+    "self_html": "https://zenodo.org/records/18434741",
+    "preview_html": "https://zenodo.org/records/18434741?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18434741",
+    "self_doi": "https://doi.org/10.5281/zenodo.18434741",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18434741",
+    "reserve_doi": "https://zenodo.org/api/records/18434741/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10592730",
+    "parent_html": "https://zenodo.org/records/10592730",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10592730",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10592730",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18434741/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18434741/sequence/default",
+    "files": "https://zenodo.org/api/records/18434741/files",
+    "media_files": "https://zenodo.org/api/records/18434741/media-files",
+    "archive": "https://zenodo.org/api/records/18434741/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18434741/media-files-archive",
+    "latest": "https://zenodo.org/api/records/18434741/versions/latest",
+    "latest_html": "https://zenodo.org/records/18434741/latest",
+    "versions": "https://zenodo.org/api/records/18434741/versions",
+    "draft": "https://zenodo.org/api/records/18434741/draft",
+    "access_links": "https://zenodo.org/api/records/18434741/access/links",
+    "access_grants": "https://zenodo.org/api/records/18434741/access/grants",
+    "access_users": "https://zenodo.org/api/records/18434741/access/users",
+    "access_request": "https://zenodo.org/api/records/18434741/access/request",
+    "access": "https://zenodo.org/api/records/18434741/access",
+    "communities": "https://zenodo.org/api/records/18434741/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18434741/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18434741/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18434741/file-modification",
+    "requests": "https://zenodo.org/api/records/18434741/requests"
+  },
+  "updated": "2026-02-02T02:15:23.721877+00:00",
+  "recid": "18434741",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f8adfb44-af1d-4913-a6c3-f8af74154c29",
+      "key": "CODEX_data.7z",
+      "size": 5347689115,
+      "checksum": "md5:a36cd4c63221973f815d2dd40cb62d8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/18434741/files/CODEX_data.7z/content"
+      }
+    },
+    {
+      "id": "8c44464a-9e1f-4575-94a6-d43089fd3759",
+      "key": "GeoMx_data.7z",
+      "size": 6000772053,
+      "checksum": "md5:e4a89534240216f129be47386790fa00",
+      "links": {
+        "self": "https://zenodo.org/api/records/18434741/files/GeoMx_data.7z/content"
+      }
+    },
+    {
+      "id": "ac70aabf-d006-46b0-a851-8e8cedce80b4",
+      "key": "CosMx_data.7z",
+      "size": 2091658430,
+      "checksum": "md5:bf1c2ae42707550991b1e5b974090600",
+      "links": {
+        "self": "https://zenodo.org/api/records/18434741/files/CosMx_data.7z/content"
+      }
+    },
+    {
+      "id": "8069b6ff-25d4-418e-bc1b-d0480c7d04c0",
+      "key": "MIBI_data.7z",
+      "size": 8571952256,
+      "checksum": "md5:9c18b88e6623f1304bbfade2f4cdba72",
+      "links": {
+        "self": "https://zenodo.org/api/records/18434741/files/MIBI_data.7z/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1015684"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 37,
+    "unique_downloads": 23,
+    "views": 175,
+    "unique_views": 130,
+    "version_downloads": 1,
+    "version_unique_downloads": 1,
+    "version_unique_views": 8,
+    "version_views": 10
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 22012071854,
+    "top_level_files": [
+      {
+        "name": "CODEX_data.7z",
+        "size": 5347689115
+      },
+      {
+        "name": "GeoMx_data.7z",
+        "size": 6000772053
+      },
+      {
+        "name": "CosMx_data.7z",
+        "size": 2091658430
+      },
+      {
+        "name": "MIBI_data.7z",
+        "size": 8571952256
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:05.813349"
+}

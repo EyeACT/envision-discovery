@@ -1,0 +1,731 @@
+{
+  "created": "2017-03-01T13:20:09.046016+00:00",
+  "modified": "2024-08-03T12:39:42.143659+00:00",
+  "id": 344879,
+  "conceptrecid": "780635",
+  "doi": "10.5281/zenodo.344879",
+  "conceptdoi": "",
+  "doi_url": "https://doi.org/10.5281/zenodo.344879",
+  "metadata": {
+    "title": "2D bright field yeast cell images with ground truth annotations",
+    "doi": "10.5281/zenodo.344879",
+    "publication_date": "2017-03-01",
+    "description": "<p>Dataset used to evaluate\u00a0the method described in\u00a0\"Yeast cell detection and segmentation in bright field microscopy\", ISBI 2014 (<strong>DOI:\u00a0</strong>10.1109/ISBI.2014.6868107).</p>\n\n<p>Here, we provide the ground truth labels of: cell centers and\u00a0segmentation, which are used in the publications:</p>\n\n<ul>\n\t<li>\"Learning to Segment: Training Hierarchical Segmentation under a Topological Loss\", MICCAI 2015. (DOI: 10.1007/978-3-319-24574-4_32)</li>\n\t<li>\"Hierarchical Planar Correlation Clustering for Cell Segmentation\", EMMCVPR 2015. (DOI: 10.1007/978-3-319-14612-6_36)</li>\n\t<li>\"Cell Detection and Segmentation Using Correlation Clustering\", MICCAI 2014. (DOI: 10.1007/978-3-319-10404-1_2)</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zhang, Chong",
+        "affiliation": "Universitat Pompeu Fabra"
+      },
+      {
+        "name": "Huber, Florian",
+        "affiliation": "ZMBH, Germany"
+      },
+      {
+        "name": "Michael Knop",
+        "affiliation": "ZMBH, Germany"
+      },
+      {
+        "name": "Fred Hamprecht",
+        "affiliation": "HCI, University of Heidelberg"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "communities": [
+      {
+        "id": "bioimage_analysis"
+      },
+      {
+        "id": "mdm-dtic-upf"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "780635"
+          }
+        }
+      ]
+    }
+  },
+  "title": "2D bright field yeast cell images with ground truth annotations",
+  "links": {
+    "self": "https://zenodo.org/api/records/344879",
+    "self_html": "https://zenodo.org/records/344879",
+    "preview_html": "https://zenodo.org/records/344879?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.344879",
+    "self_doi": "https://doi.org/10.5281/zenodo.344879",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.344879",
+    "reserve_doi": "https://zenodo.org/api/records/344879/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/780635",
+    "parent_html": "https://zenodo.org/records/780635",
+    "parent_doi": "https://doi.org/",
+    "parent_doi_html": "https://zenodo.org/doi/",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:344879/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:344879/sequence/default",
+    "files": "https://zenodo.org/api/records/344879/files",
+    "media_files": "https://zenodo.org/api/records/344879/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:344879:DS01_08_gt.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/344879/files-archive",
+    "archive_media": "https://zenodo.org/api/records/344879/media-files-archive",
+    "latest": "https://zenodo.org/api/records/344879/versions/latest",
+    "latest_html": "https://zenodo.org/records/344879/latest",
+    "versions": "https://zenodo.org/api/records/344879/versions",
+    "draft": "https://zenodo.org/api/records/344879/draft",
+    "access_links": "https://zenodo.org/api/records/344879/access/links",
+    "access_grants": "https://zenodo.org/api/records/344879/access/grants",
+    "access_users": "https://zenodo.org/api/records/344879/access/users",
+    "access_request": "https://zenodo.org/api/records/344879/access/request",
+    "access": "https://zenodo.org/api/records/344879/access",
+    "communities": "https://zenodo.org/api/records/344879/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/344879/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/344879/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/344879/file-modification",
+    "requests": "https://zenodo.org/api/records/344879/requests"
+  },
+  "updated": "2024-08-03T12:39:42.143659+00:00",
+  "recid": "344879",
+  "revision": 24,
+  "files": [
+    {
+      "id": "46b06538-f137-4adf-bd8a-f8237bb20ef6",
+      "key": "DS01_08_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:6086a2c061866cc96f52e03a643aeed2",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_08_gt.tif/content"
+      }
+    },
+    {
+      "id": "af224f5d-ebe7-48bf-9d32-f6ba8516b763",
+      "key": "DS01_03_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:3443ebbb7f71097e5f619f87003ae2dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_03_gt.tif/content"
+      }
+    },
+    {
+      "id": "8fba029e-2520-40bd-99ac-746bb9755b09",
+      "key": "DS01_11_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:19c2e0564b8cdd88497599e80f90cbcd",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_11_gt.tif/content"
+      }
+    },
+    {
+      "id": "a14b422e-051e-40d4-8d1b-d1278f275df4",
+      "key": "lmk_centers_01.txt",
+      "size": 1062,
+      "checksum": "md5:9e8bce75eb7636dcb1f3e918cce0dc5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_01.txt/content"
+      }
+    },
+    {
+      "id": "2709b343-f8bf-461c-9d86-15651ba46899",
+      "key": "lmk_centers_02.txt",
+      "size": 1235,
+      "checksum": "md5:9364c6c78cfd716706f87b16feaae76f",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_02.txt/content"
+      }
+    },
+    {
+      "id": "eb232f44-db59-480c-a1c4-48f1bae13e3a",
+      "key": "lmk_centers_03.txt",
+      "size": 1809,
+      "checksum": "md5:9fa0afb99dfb5cd90b867e7b09fcf08c",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_03.txt/content"
+      }
+    },
+    {
+      "id": "f0fd70c7-82e2-4861-ab80-1990586064c7",
+      "key": "lmk_centers_04.txt",
+      "size": 1614,
+      "checksum": "md5:7b8ea403e60d70ce7985d2996f334f93",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_04.txt/content"
+      }
+    },
+    {
+      "id": "70cefbca-74fa-4613-8993-6f0a3ba7d9e1",
+      "key": "lmk_centers_05.txt",
+      "size": 1626,
+      "checksum": "md5:d3062c112b4b2fe2b5ecc9b0ecb39879",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_05.txt/content"
+      }
+    },
+    {
+      "id": "4752afc5-b773-4717-b213-53bf77b80f33",
+      "key": "lmk_centers_06.txt",
+      "size": 1583,
+      "checksum": "md5:ca73fd37435072f3ca875433079626a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_06.txt/content"
+      }
+    },
+    {
+      "id": "7383c906-32f3-4129-98af-2e81db7ecf90",
+      "key": "lmk_centers_07.txt",
+      "size": 1840,
+      "checksum": "md5:6630cfcc54d64f6029cfe2302e0a4257",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_07.txt/content"
+      }
+    },
+    {
+      "id": "1ed40525-57b0-4a74-85d8-3df0ecbbe0bb",
+      "key": "lmk_centers_08.txt",
+      "size": 1873,
+      "checksum": "md5:c99992a165037695e92c1b0bc204cff1",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_08.txt/content"
+      }
+    },
+    {
+      "id": "63e06c5d-0754-4b74-8770-612536185139",
+      "key": "lmk_centers_09.txt",
+      "size": 2012,
+      "checksum": "md5:c072a7b33ba49c8e784d06187ae779ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_09.txt/content"
+      }
+    },
+    {
+      "id": "5806527f-fb5a-4fab-80dc-e67ac36b6d24",
+      "key": "lmk_centers_10.txt",
+      "size": 1877,
+      "checksum": "md5:452132dc81c0ca76deca5d8cdf6d3db0",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_10.txt/content"
+      }
+    },
+    {
+      "id": "4f874894-0814-4480-a663-bfb1ce8feb68",
+      "key": "lmk_centers_11.txt",
+      "size": 1725,
+      "checksum": "md5:208b57481af2382a0f63aa5c2ca77432",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_11.txt/content"
+      }
+    },
+    {
+      "id": "b05d408c-591c-4288-a424-62c6266b1d04",
+      "key": "lmk_centers_12.txt",
+      "size": 1957,
+      "checksum": "md5:92e1c4ccf127208f4da66713b7028416",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_12.txt/content"
+      }
+    },
+    {
+      "id": "d3242111-43b8-4d7e-b9e5-f12794207647",
+      "key": "lmk_centers_13.txt",
+      "size": 2331,
+      "checksum": "md5:994dc2201f9c76a5296d62ceafdd2cc5",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_13.txt/content"
+      }
+    },
+    {
+      "id": "9bf518ff-92aa-437f-adef-0283a86560ac",
+      "key": "lmk_centers_14.txt",
+      "size": 2017,
+      "checksum": "md5:9a4909c129621a1b0887f43d815e53c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_14.txt/content"
+      }
+    },
+    {
+      "id": "6f835cc6-977f-4c0e-91c6-1c21fd45df69",
+      "key": "lmk_centers_15.txt",
+      "size": 1494,
+      "checksum": "md5:476f44f91c2caab52be7addd69314337",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/lmk_centers_15.txt/content"
+      }
+    },
+    {
+      "id": "95fc1e70-4096-41ab-acce-5f2098c52947",
+      "key": "DS01_04_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:9a6dc7960dfc28bfe72cbeab41a6d484",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_04_gt.tif/content"
+      }
+    },
+    {
+      "id": "169eb890-08ea-4d81-b449-d2bd8d237f92",
+      "key": "DS01_05_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:e22fcd493b3d46316550a02dd2f57944",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_05_gt.tif/content"
+      }
+    },
+    {
+      "id": "66bb4573-6b94-42b6-8509-d5263fe4454f",
+      "key": "DS01_06_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:4a0deba791dd66277c3d743db65bdb92",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_06_gt.tif/content"
+      }
+    },
+    {
+      "id": "ded52e7c-b8ee-4d79-be51-24c7ff894944",
+      "key": "DS01_07_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:ea96f8ebbe7fcb82d7c63bb820058813",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_07_gt.tif/content"
+      }
+    },
+    {
+      "id": "0498dd9e-8d1d-452a-9135-1be696e9a8a0",
+      "key": "DS01_09_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:22e2df9d88886acfd0dd01cbfdf3ac0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_09_gt.tif/content"
+      }
+    },
+    {
+      "id": "cd41f23e-6e9c-4c6c-84dc-cb39a870df41",
+      "key": "DS01_10_gt.tif",
+      "size": 1048724,
+      "checksum": "md5:9001f54873de097c9a2c4a59e323e7b1",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_10_gt.tif/content"
+      }
+    },
+    {
+      "id": "e70969c5-79ec-4b74-a411-3ec7a0a5795f",
+      "key": "DS01_03.tif",
+      "size": 1048816,
+      "checksum": "md5:88199209ce0c6a64e12f78d4f1699081",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_03.tif/content"
+      }
+    },
+    {
+      "id": "3ec24d95-8bc2-4c27-b742-c24c27e7dc34",
+      "key": "DS01_01.tif",
+      "size": 1048816,
+      "checksum": "md5:3090eadc2db9ada1374723e2ca3c757b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_01.tif/content"
+      }
+    },
+    {
+      "id": "f8ae18c0-3329-47dd-b659-d988cd00b20d",
+      "key": "DS01_02.tif",
+      "size": 1048816,
+      "checksum": "md5:436b97e6024a7d2ecf9162e007870a03",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_02.tif/content"
+      }
+    },
+    {
+      "id": "0341c2bf-7195-4e21-9074-5fbc4f48134c",
+      "key": "DS01_02_gt.tif",
+      "size": 13331,
+      "checksum": "md5:a9d451d72e32a51493a8a96c3e74d509",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_02_gt.tif/content"
+      }
+    },
+    {
+      "id": "45cc782b-b468-430a-ba86-7658d53771af",
+      "key": "DS01_01_gt.tif",
+      "size": 12562,
+      "checksum": "md5:c69f784786a0b9c537d70e813cc08ec9",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_01_gt.tif/content"
+      }
+    },
+    {
+      "id": "78733ace-3658-4abd-9181-7f06f36e5b24",
+      "key": "DS01_09.tif",
+      "size": 1048816,
+      "checksum": "md5:4f226ff3dde09f7eaf91071f2e0ac087",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_09.tif/content"
+      }
+    },
+    {
+      "id": "c58cc5e2-fcfb-4980-84c1-0cbbca930ab5",
+      "key": "DS01_04.tif",
+      "size": 1048816,
+      "checksum": "md5:61d2bf3cdb6a03d2ee7d8b9dcd99d0a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_04.tif/content"
+      }
+    },
+    {
+      "id": "1f318225-e528-46aa-a325-81c35b354c61",
+      "key": "DS01_05.tif",
+      "size": 1048816,
+      "checksum": "md5:a832ec65ddac9b71f60003322b100f92",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_05.tif/content"
+      }
+    },
+    {
+      "id": "27a01958-3235-4075-81f1-8525fcd16d23",
+      "key": "DS01_06.tif",
+      "size": 1048816,
+      "checksum": "md5:a9024b39c1f185e839c0e0df722ccb9b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_06.tif/content"
+      }
+    },
+    {
+      "id": "7d5121a0-9f0b-4a52-96c3-bd3e7101741e",
+      "key": "DS01_07.tif",
+      "size": 1048816,
+      "checksum": "md5:5cbd8828f4cc0bbb13ad4879bae34664",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_07.tif/content"
+      }
+    },
+    {
+      "id": "166e010b-4bfc-478d-9cbf-a6480c760127",
+      "key": "DS01_08.tif",
+      "size": 1048816,
+      "checksum": "md5:e5203e518aba601938b5b71136bd4f3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_08.tif/content"
+      }
+    },
+    {
+      "id": "15bccca6-58e5-489a-b329-8e28b6bec736",
+      "key": "DS01_10.tif",
+      "size": 1048816,
+      "checksum": "md5:0812531846325db3b09503166861330d",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_10.tif/content"
+      }
+    },
+    {
+      "id": "1ac17062-3cfc-4ba3-9b51-88a4768bbf4e",
+      "key": "DS01_11.tif",
+      "size": 1048816,
+      "checksum": "md5:af5fe8f6c5ca47f9589535e20649db6e",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_11.tif/content"
+      }
+    },
+    {
+      "id": "bd9c1dad-10b3-41f4-ab1d-a56fc9628451",
+      "key": "DS01_12_gt.tif",
+      "size": 22373,
+      "checksum": "md5:e798806d86840195790dfac59f92855c",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_12_gt.tif/content"
+      }
+    },
+    {
+      "id": "d564312d-747c-4fc4-928e-8c126334ed56",
+      "key": "DS01_12.tif",
+      "size": 1048816,
+      "checksum": "md5:80ec9824a75bc6e9d811460ab9a84075",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_12.tif/content"
+      }
+    },
+    {
+      "id": "92416ad1-09f4-4abf-900b-425766f42d9c",
+      "key": "DS01_13_gt.tif",
+      "size": 20256,
+      "checksum": "md5:6d1b20e4c21e5a8329c37b4fb38c5867",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_13_gt.tif/content"
+      }
+    },
+    {
+      "id": "618eeb17-122c-4a8e-b160-dd71ff0a5c13",
+      "key": "DS01_13.tif",
+      "size": 1048816,
+      "checksum": "md5:eac114b96a386430034adc533898d56b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_13.tif/content"
+      }
+    },
+    {
+      "id": "69c8ea74-f9eb-4cd2-93ca-04ea2b084eda",
+      "key": "DS01_14_gt.tif",
+      "size": 19476,
+      "checksum": "md5:9cacd92396072fe1f640eaf1b47793c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_14_gt.tif/content"
+      }
+    },
+    {
+      "id": "65152806-5d15-442d-ad4a-9de29cdb5fb9",
+      "key": "DS01_14.tif",
+      "size": 1048816,
+      "checksum": "md5:e7c1a852e76553da6183b5ff2ee2458b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_14.tif/content"
+      }
+    },
+    {
+      "id": "40b0f332-ff65-4b46-a5c0-692578aca609",
+      "key": "DS01_15_gt.tif",
+      "size": 15562,
+      "checksum": "md5:1dacd5f78e59ff68c3970b86d0b60b1b",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_15_gt.tif/content"
+      }
+    },
+    {
+      "id": "e714e550-c0ff-412a-b0ad-bd984c67c4a8",
+      "key": "DS01_15.tif",
+      "size": 1048816,
+      "checksum": "md5:71da0f8bb0bf5179c4dee74f1bbd582a",
+      "links": {
+        "self": "https://zenodo.org/api/records/344879/files/DS01_15.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "27762"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5108,
+    "unique_downloads": 3618,
+    "views": 1416,
+    "unique_views": 1318,
+    "version_downloads": 5106,
+    "version_unique_downloads": 3617,
+    "version_unique_views": 1313,
+    "version_views": 1411
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 30,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 25274316,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "DS01_08_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_03_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_11_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "lmk_centers_01.txt",
+        "size": 1062
+      },
+      {
+        "name": "lmk_centers_02.txt",
+        "size": 1235
+      },
+      {
+        "name": "lmk_centers_03.txt",
+        "size": 1809
+      },
+      {
+        "name": "lmk_centers_04.txt",
+        "size": 1614
+      },
+      {
+        "name": "lmk_centers_05.txt",
+        "size": 1626
+      },
+      {
+        "name": "lmk_centers_06.txt",
+        "size": 1583
+      },
+      {
+        "name": "lmk_centers_07.txt",
+        "size": 1840
+      },
+      {
+        "name": "lmk_centers_08.txt",
+        "size": 1873
+      },
+      {
+        "name": "lmk_centers_09.txt",
+        "size": 2012
+      },
+      {
+        "name": "lmk_centers_10.txt",
+        "size": 1877
+      },
+      {
+        "name": "lmk_centers_11.txt",
+        "size": 1725
+      },
+      {
+        "name": "lmk_centers_12.txt",
+        "size": 1957
+      },
+      {
+        "name": "lmk_centers_13.txt",
+        "size": 2331
+      },
+      {
+        "name": "lmk_centers_14.txt",
+        "size": 2017
+      },
+      {
+        "name": "lmk_centers_15.txt",
+        "size": 1494
+      },
+      {
+        "name": "DS01_04_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_05_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_06_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_07_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_09_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_10_gt.tif",
+        "size": 1048724
+      },
+      {
+        "name": "DS01_03.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_01.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_02.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_02_gt.tif",
+        "size": 13331
+      },
+      {
+        "name": "DS01_01_gt.tif",
+        "size": 12562
+      },
+      {
+        "name": "DS01_09.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_04.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_05.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_06.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_07.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_08.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_10.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_11.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_12_gt.tif",
+        "size": 22373
+      },
+      {
+        "name": "DS01_12.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_13_gt.tif",
+        "size": 20256
+      },
+      {
+        "name": "DS01_13.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_14_gt.tif",
+        "size": 19476
+      },
+      {
+        "name": "DS01_14.tif",
+        "size": 1048816
+      },
+      {
+        "name": "DS01_15_gt.tif",
+        "size": 15562
+      },
+      {
+        "name": "DS01_15.tif",
+        "size": 1048816
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:07.408576"
+}

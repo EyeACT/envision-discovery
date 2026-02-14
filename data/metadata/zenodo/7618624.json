@@ -1,0 +1,160 @@
+{
+  "created": "2023-02-07T21:04:55.005839+00:00",
+  "modified": "2023-02-08T02:26:57.815492+00:00",
+  "id": 7618624,
+  "conceptrecid": "7618623",
+  "doi": "10.5281/zenodo.7618624",
+  "conceptdoi": "10.5281/zenodo.7618623",
+  "doi_url": "https://doi.org/10.5281/zenodo.7618624",
+  "metadata": {
+    "title": "Automatic Choroid Vascularity Index Calculation in Optical Coherence Tomography Images with Low Contrast Sclerocho-roidal Junction Using Deep Learning",
+    "doi": "10.5281/zenodo.7618624",
+    "publication_date": "2023-02-07",
+    "description": "<p>This project aims to calculate Choroid Vascularity Index (CVI) in optical coherenece tomography (OCT) images, using loss modified U-Net. The method is detailed in &quot;Automatic Choroid Vascularity Index Calculation in Optical Coherence Tomography Images low contrast sclerochoroidal junction Using Deep Learning&quot;. The dataset consists of&nbsp;Enhanced-depth imaging optical coherence tomography images from two patient groups.</p>\n\n<p>&bull; First dataset is including Raster OCT B-scans from patients with diabetic retinopathy.</p>\n\n<p>&bull; Second dataset is including EDI-HD OCT B-scans from patients with pachychoroid spectrum.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Raheleh Kafieh",
+        "affiliation": "Durham University",
+        "orcid": "0000-0003-0087-9476"
+      },
+      {
+        "name": "Elias Khalili Pour",
+        "affiliation": "Retina Ward, Farabi Eye Hospital, Tehran University of Medical Sciences, Tehran, Iran"
+      },
+      {
+        "name": "Hamid Riazi-Esfahani",
+        "affiliation": "Retina Ward, Farabi Eye Hospital, Tehran University of Medical Sciences, Tehran, Iran"
+      }
+    ],
+    "keywords": [
+      "OCT B-scans",
+      "diabetic retinopathy",
+      "pachychoroid spectrum"
+    ],
+    "version": "1.1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7618623"
+          }
+        }
+      ]
+    },
+    "notes": "Please site the following paper if you used this dataset:\nAutomatic Choroid Vascularity Index Calculation in Optical Coherence Tomography Images low contrast sclerochoroidal junction Using Deep Learning"
+  },
+  "title": "Automatic Choroid Vascularity Index Calculation in Optical Coherence Tomography Images with Low Contrast Sclerocho-roidal Junction Using Deep Learning",
+  "links": {
+    "self": "https://zenodo.org/api/records/7618624",
+    "self_html": "https://zenodo.org/records/7618624",
+    "preview_html": "https://zenodo.org/records/7618624?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7618624",
+    "self_doi": "https://doi.org/10.5281/zenodo.7618624",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7618624",
+    "reserve_doi": "https://zenodo.org/api/records/7618624/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7618623",
+    "parent_html": "https://zenodo.org/records/7618623",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7618623",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7618623",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7618624/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7618624/sequence/default",
+    "files": "https://zenodo.org/api/records/7618624/files",
+    "media_files": "https://zenodo.org/api/records/7618624/media-files",
+    "archive": "https://zenodo.org/api/records/7618624/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7618624/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7618624/versions/latest",
+    "latest_html": "https://zenodo.org/records/7618624/latest",
+    "versions": "https://zenodo.org/api/records/7618624/versions",
+    "draft": "https://zenodo.org/api/records/7618624/draft",
+    "access_links": "https://zenodo.org/api/records/7618624/access/links",
+    "access_grants": "https://zenodo.org/api/records/7618624/access/grants",
+    "access_users": "https://zenodo.org/api/records/7618624/access/users",
+    "access_request": "https://zenodo.org/api/records/7618624/access/request",
+    "access": "https://zenodo.org/api/records/7618624/access",
+    "communities": "https://zenodo.org/api/records/7618624/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7618624/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7618624/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7618624/file-modification",
+    "requests": "https://zenodo.org/api/records/7618624/requests"
+  },
+  "updated": "2023-02-08T02:26:57.815492+00:00",
+  "recid": "7618624",
+  "revision": 2,
+  "files": [
+    {
+      "id": "35c1ca89-ee86-44d0-8f91-be13175eac5d",
+      "key": "diabetic.rar",
+      "size": 49623786,
+      "checksum": "md5:6c74267a447cf6dab34a9190feff6b36",
+      "links": {
+        "self": "https://zenodo.org/api/records/7618624/files/diabetic.rar/content"
+      }
+    },
+    {
+      "id": "a771208e-9491-44a4-997c-50a038592ce0",
+      "key": "pachychoroid.rar",
+      "size": 64555637,
+      "checksum": "md5:1afbc238f11199e6273d2d6f84d215aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7618624/files/pachychoroid.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "496492"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 191,
+    "unique_downloads": 156,
+    "views": 477,
+    "unique_views": 452,
+    "version_downloads": 191,
+    "version_unique_downloads": 156,
+    "version_unique_views": 452,
+    "version_views": 477
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 114179423,
+    "top_level_files": [
+      {
+        "name": "diabetic.rar",
+        "size": 49623786
+      },
+      {
+        "name": "pachychoroid.rar",
+        "size": 64555637
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:37.452409"
+}

@@ -1,0 +1,210 @@
+{
+  "created": "2023-01-09T17:39:58.265976+00:00",
+  "modified": "2023-01-10T14:26:58.776111+00:00",
+  "id": 7516807,
+  "conceptrecid": "7516806",
+  "doi": "10.5061/dryad.vx0k6djwf",
+  "doi_url": "https://doi.org/10.5061/dryad.vx0k6djwf",
+  "metadata": {
+    "title": "Amacrine cells differentially balance zebrafish colour circuits in the central and peripheral retina",
+    "doi": "10.5061/dryad.vx0k6djwf",
+    "publication_date": "2023-01-09",
+    "description": "<p>In vertebrate vision, the feature-extracting circuits of the inner retina are driven by photoreceptors whose outputs are already pre-processed. In zebrafish, for example, outer retinal circuits split \"colour\" from \"greyscale\" information across all four cone-photoreceptor types. How does the inner retina process this incoming spectral information while also combining cone signals to shape new greyscale functions?</p>\n<p>We address this question by imaging the light-driven responses of amacrine cells (ACs) and bipolar cells (BCs) in larval zebrafish, in the presence and pharmacological absence of inner retinal inhibition. We find that amacrine cells exert distinct effects on greyscale processing depending on retinal region, as well as contributing to the generation of colour opponency in the central retina. However, in the peripheral retina amacrine cells enhanced opponency in some bipolar cells while at the same time suppressing pre-existing opponency in others, such that the net change in the number of colour-opponent units was essentially zero. To achieve this 'dynamic balance' ACs counteracted intrinsic colour opponency of BCs via the On-channel. Consistent with these observations, Off-stratifying ACs were exclusively achromatic, while all colour opponent ACs stratified in the On-sublamina.</p>\n<p>This study reveals that the central and peripheral retina of larval zebrafish employ fundamentally distinct inhibitory circuits to control the interaction between greyscale- and colour-processing. Differential actions on the On- and Off-channels control the transmission of colour-opponent signals in the periphery.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wang, Xinwei",
+        "affiliation": "University of Sussex",
+        "orcid": "0000-0003-2357-5643"
+      },
+      {
+        "name": "Roberts, Paul",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Yoshimatsu, Takeshi",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Lagnado, Leon",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Baden, Tom",
+        "affiliation": "University of Sussex"
+      }
+    ],
+    "keywords": [
+      "retina",
+      "two-photon imaging",
+      "zebrafish",
+      "amacrine cells",
+      "Colour Vision"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7516806"
+          }
+        }
+      ]
+    },
+    "notes": "<p>the *.h5 files can be opened by any software support HDF5 format.</p><p>Funding provided by: Wellcome Trust<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100010269<br>Award Number: 220277/Z20/Z</p><p>Funding provided by: Wellcome Trust<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100010269<br>Award Number: 102905/Z/13/Z</p><p>Funding provided by: European Research Council<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000781<br>Award Number: 677687</p><p>Funding provided by: UK Research and Innovation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100014013<br>Award Number: BB/R014817/1</p><p>Funding provided by: Leverhulme Trust<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000275<br>Award Number: PLP-2017-005</p><p>Funding provided by: Leverhulme Trust<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000275<br>Award Number: RPG-2021-026</p><p>Funding provided by: Lister Institute of Preventive Medicine<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100001255<br>Award Number: </p>"
+  },
+  "title": "Amacrine cells differentially balance zebrafish colour circuits in the central and peripheral retina",
+  "links": {
+    "self": "https://zenodo.org/api/records/7516807",
+    "self_html": "https://zenodo.org/records/7516807",
+    "preview_html": "https://zenodo.org/records/7516807?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.vx0k6djwf",
+    "self_doi": "https://doi.org/10.5061/dryad.vx0k6djwf",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.vx0k6djwf",
+    "reserve_doi": "https://zenodo.org/api/records/7516807/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7516806",
+    "parent_html": "https://zenodo.org/records/7516806",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7516807/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7516807/sequence/default",
+    "files": "https://zenodo.org/api/records/7516807/files",
+    "media_files": "https://zenodo.org/api/records/7516807/media-files",
+    "archive": "https://zenodo.org/api/records/7516807/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7516807/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7516807/versions/latest",
+    "latest_html": "https://zenodo.org/records/7516807/latest",
+    "versions": "https://zenodo.org/api/records/7516807/versions",
+    "draft": "https://zenodo.org/api/records/7516807/draft",
+    "access_links": "https://zenodo.org/api/records/7516807/access/links",
+    "access_grants": "https://zenodo.org/api/records/7516807/access/grants",
+    "access_users": "https://zenodo.org/api/records/7516807/access/users",
+    "access_request": "https://zenodo.org/api/records/7516807/access/request",
+    "access": "https://zenodo.org/api/records/7516807/access",
+    "communities": "https://zenodo.org/api/records/7516807/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7516807/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7516807/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7516807/file-modification",
+    "requests": "https://zenodo.org/api/records/7516807/requests"
+  },
+  "updated": "2023-01-10T14:26:58.776111+00:00",
+  "recid": "7516807",
+  "revision": 2,
+  "files": [
+    {
+      "id": "75be8a33-69b1-49a3-8503-aecb6a9a038e",
+      "key": "BCs_GCaMP3_5_paired.h5",
+      "size": 121860976,
+      "checksum": "md5:3794f7fdf9d4a92fd4e6cd2cb772bd7b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7516807/files/BCs_GCaMP3_5_paired.h5/content"
+      }
+    },
+    {
+      "id": "4e0888eb-aefb-4ced-bf11-a8997989b1ef",
+      "key": "README.md",
+      "size": 2342,
+      "checksum": "md5:38b9e8254e7dbd70505cfdcd317f09d3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7516807/files/README.md/content"
+      }
+    },
+    {
+      "id": "3d746cf2-e711-4a3b-81ad-b4b60ebe3f83",
+      "key": "BCs_GCaMP8_Central.h5",
+      "size": 565085800,
+      "checksum": "md5:7487c39d54891d103375d3cdba2f3113",
+      "links": {
+        "self": "https://zenodo.org/api/records/7516807/files/BCs_GCaMP8_Central.h5/content"
+      }
+    },
+    {
+      "id": "edd7c777-afe8-4c06-add4-4657aabae9b3",
+      "key": "AC_data.h5",
+      "size": 327283620,
+      "checksum": "md5:7199bb475e68744faf7551363862ad03",
+      "links": {
+        "self": "https://zenodo.org/api/records/7516807/files/AC_data.h5/content"
+      }
+    },
+    {
+      "id": "729fcd37-f27e-487d-bd58-86f2de866640",
+      "key": "BCs_GCaMP8_Peripheral.h5",
+      "size": 584858116,
+      "checksum": "md5:044938bd467c0919dca48a6521de91ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/7516807/files/BCs_GCaMP8_Peripheral.h5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 83,
+    "unique_downloads": 83,
+    "views": 30,
+    "unique_views": 30,
+    "version_downloads": 83,
+    "version_unique_downloads": 83,
+    "version_unique_views": 30,
+    "version_views": 30
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 4,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 1599088512,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "BCs_GCaMP3_5_paired.h5",
+        "size": 121860976
+      },
+      {
+        "name": "README.md",
+        "size": 2342
+      },
+      {
+        "name": "BCs_GCaMP8_Central.h5",
+        "size": 565085800
+      },
+      {
+        "name": "AC_data.h5",
+        "size": 327283620
+      },
+      {
+        "name": "BCs_GCaMP8_Peripheral.h5",
+        "size": 584858116
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:12.457785"
+}

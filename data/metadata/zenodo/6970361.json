@@ -1,0 +1,211 @@
+{
+  "created": "2022-08-06T23:15:46.928766+00:00",
+  "modified": "2022-08-07T01:48:39.059544+00:00",
+  "id": 6970361,
+  "conceptrecid": "6970360",
+  "doi": "10.5061/dryad.x0k6djhnj",
+  "doi_url": "https://doi.org/10.5061/dryad.x0k6djhnj",
+  "metadata": {
+    "title": "Data from: imageseg: An R package for deep learning-based image segmentation",
+    "doi": "10.5061/dryad.x0k6djhnj",
+    "publication_date": "2022-08-06",
+    "description": "<p>1. Convolutional neural networks (CNNs) and deep learning are powerful and robust tools for ecological applications, and are particularly suited for image data. Image segmentation (the classification of all pixels in images) is one such application and can for example be used to assess forest structural metrics. While CNN-based image segmentation methods for such applications have been suggested, widespread adoption in ecological research has been slow, likely due to technical difficulties in implementation of CNNs and lack of toolboxes for ecologists.</p>\n<p>2. Here, we present R package imageseg which implements a CNN-based workflow for general-purpose image segmentation using the U-Net and U-Net++ architectures in R. The workflow covers data (pre)processing, model training, and predictions. We illustrate the utility of the package with image recognition models for two forest structural metrics: tree canopy density and understory vegetation density. We trained the models using large and diverse training data sets from a variety of forest types and biomes, consisting of 2877 canopy images (both canopy cover and hemispherical canopy closure photographs) and 1285 understory vegetation images.</p>\n<p>3. Overall segmentation accuracy of the models was high with a Dice score of 0.91 for the canopy model and 0.89 for the understory vegetation model (assessed with 821 and 367 images, respectively). The image segmentation models performed significantly better than commonly used thresholding methods, and generalized well to data from study areas not included in training. This indicates robustness to variation in input images and good generalization strength across forest types and biomes.</p>\n<p>4. The package and its workflow allow simple yet powerful assessments of forest structural metrics using pre-trained models. Furthermore, the package facilitates custom image segmentation with single or multiple classes and based on color or grayscale images, e.g. for applications in cell biology or for medical images. Our package is free, open source, and available from CRAN. It will enable easier and faster implementation of deep learning-based image segmentation within R for ecological applications and beyond.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Niedballa, J\u00fcrgen",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research",
+        "orcid": "0000-0002-9187-2116"
+      },
+      {
+        "name": "Axtner, Jan",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research"
+      },
+      {
+        "name": "D\u00f6bert, Timm",
+        "affiliation": "University of Alberta"
+      },
+      {
+        "name": "Tilker, Andrew",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research"
+      },
+      {
+        "name": "Nguyen, An",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research"
+      },
+      {
+        "name": "Wong, Seth",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research"
+      },
+      {
+        "name": "Fiderer, Christian",
+        "affiliation": "Bavarian Forest National Park"
+      },
+      {
+        "name": "Heurich, Marco",
+        "affiliation": "Bavarian Forest National Park"
+      },
+      {
+        "name": "Wilting, Andreas",
+        "affiliation": "Leibniz Institute for Zoo and Wildlife Research"
+      }
+    ],
+    "keywords": [
+      "canopy cover photography",
+      "U-Net",
+      "Convolutional neural network",
+      "Canopy hemispherical photography"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2021.12.16.469125",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6861157",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6970360"
+          }
+        }
+      ]
+    },
+    "notes": "<p>This data set contains training data, R scripts and pre-trained models for two image segmentation models for forest structural metrics: canopy density and understory vegetation density. Models were implemented in R via Keras using a TensorFlow backend.</p>\n<p><em>imageseg_canopy_model.zip</em></p>\n<p>Contains model file (.hdf5) and \"examples\" folder for canopy density image segmentation model. In the examples, left column is model input, central column is raw model output, right column is binarized output.</p>\n<p><em>imageseg_canopy_training_data.zip </em></p>\n<p>Training data used for canopy density model (masks and images, 256x256 pixels), split into three folders. See the info.txt file for details.</p>\n<p><em>imageseg_canopy_training_run.R </em></p>\n<p>R script used for canopy model training.</p>\n<p><em>imageseg_understory_model.zip</em></p>\n<p>Contains model file (.hdf5) and \"examples\" folder for understory vegetation density image segmentation model. In the examples, left column is model input, central column is raw model output, right column is binarized output.</p>\n<p><em>imageseg_understory_training_data.zip </em></p>\n<p>Training data used for understory vegetation density model (masks and images, 160x256 pixels).</p>\n<p><em>imageseg_understory_training_run.R</em></p>\n<p>R script used for understory vegetation model training.</p><p>Funding provided by: Bundesministerium f\u00fcr Bildung und Forschung<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100002347<br>Award Number: FKZ 01LN1301A</p><p>Funding provided by: United States Agency for International Development<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000200<br>Award Number: 72044020CA00001</p><p>Funding provided by: German Federal Agency for Nature Conservation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100010415<br>Award Number: FKZ 3518830200</p><p>Funding provided by: University of Western Australia<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100001801<br>Award Number: </p><p>Funding provided by: Commonwealth Scientific and Industrial Research Organisation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100000943<br>Award Number: </p>"
+  },
+  "title": "Data from: imageseg: An R package for deep learning-based image segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/6970361",
+    "self_html": "https://zenodo.org/records/6970361",
+    "preview_html": "https://zenodo.org/records/6970361?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.x0k6djhnj",
+    "self_doi": "https://doi.org/10.5061/dryad.x0k6djhnj",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.x0k6djhnj",
+    "reserve_doi": "https://zenodo.org/api/records/6970361/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6970360",
+    "parent_html": "https://zenodo.org/records/6970360",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6970361/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6970361/sequence/default",
+    "files": "https://zenodo.org/api/records/6970361/files",
+    "media_files": "https://zenodo.org/api/records/6970361/media-files",
+    "archive": "https://zenodo.org/api/records/6970361/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6970361/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6970361/versions/latest",
+    "latest_html": "https://zenodo.org/records/6970361/latest",
+    "versions": "https://zenodo.org/api/records/6970361/versions",
+    "draft": "https://zenodo.org/api/records/6970361/draft",
+    "access_links": "https://zenodo.org/api/records/6970361/access/links",
+    "access_grants": "https://zenodo.org/api/records/6970361/access/grants",
+    "access_users": "https://zenodo.org/api/records/6970361/access/users",
+    "access_request": "https://zenodo.org/api/records/6970361/access/request",
+    "access": "https://zenodo.org/api/records/6970361/access",
+    "communities": "https://zenodo.org/api/records/6970361/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6970361/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6970361/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6970361/file-modification",
+    "requests": "https://zenodo.org/api/records/6970361/requests"
+  },
+  "updated": "2022-08-07T01:48:39.059544+00:00",
+  "recid": "6970361",
+  "revision": 2,
+  "files": [
+    {
+      "id": "8e8eb2a7-6c78-4d61-9f9c-c3b44e470997",
+      "key": "README.txt",
+      "size": 1248,
+      "checksum": "md5:5e6584dff37c8a3de3a281b827312a0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6970361/files/README.txt/content"
+      }
+    },
+    {
+      "id": "79f724cb-4d5e-49bf-9a86-2cb087ed30b4",
+      "key": "imageseg_understory_training_data.zip",
+      "size": 163996513,
+      "checksum": "md5:fd067dea789ee1e20202916ea7fc2503",
+      "links": {
+        "self": "https://zenodo.org/api/records/6970361/files/imageseg_understory_training_data.zip/content"
+      }
+    },
+    {
+      "id": "e8092931-f47a-40d5-ae47-d0ed8c05afad",
+      "key": "imageseg_canopy_training_data.zip",
+      "size": 373320071,
+      "checksum": "md5:e26bed8af46ac62da9f85ca91b599db7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6970361/files/imageseg_canopy_training_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 71,
+    "unique_downloads": 58,
+    "views": 433,
+    "unique_views": 428,
+    "version_downloads": 71,
+    "version_unique_downloads": 58,
+    "version_unique_views": 424,
+    "version_views": 429
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 537316584,
+    "top_level_files": [
+      {
+        "name": "README.txt",
+        "size": 1248
+      },
+      {
+        "name": "imageseg_understory_training_data.zip",
+        "size": 163996513
+      },
+      {
+        "name": "imageseg_canopy_training_data.zip",
+        "size": 373320071
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:20.621143"
+}

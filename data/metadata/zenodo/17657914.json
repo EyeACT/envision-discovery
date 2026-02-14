@@ -1,0 +1,205 @@
+{
+  "created": "2025-11-20T08:47:36.053712+00:00",
+  "modified": "2025-11-20T08:47:36.228857+00:00",
+  "id": 17657914,
+  "conceptrecid": "17632802",
+  "doi": "10.5281/zenodo.17657914",
+  "conceptdoi": "10.5281/zenodo.17632802",
+  "doi_url": "https://doi.org/10.5281/zenodo.17657914",
+  "metadata": {
+    "title": "Flexible corneal neurotechnology reveals in-vivo pathological retinal oscillations in retinitis pigmentosa mouse models and patients as a biomarker of functional remodeling during retinal degeneration",
+    "doi": "10.5281/zenodo.17657914",
+    "publication_date": "2025-11-20",
+    "description": "<p>This record contains the dataset used in the article:\"Litvin, D. et al. Flexible corneal neurotechnology reveals in-vivo pathological retinal oscillations in retinitis pigmentosa mouse models and patients as a biomarker of functional remodeling during retinal degeneration\".</p>\n<p>The Data.zip folder contains input data for PSD analysis, cycle-by-cycle (CBC) analyis and multi-metric (MM) anaylsis. for each analysis, it contains also expected results.</p>\n<p>The Analysis code is currently available here: https://github.com/lne-lab/rsERG</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Litvin, David",
+        "affiliation": "Fondation Asile des Aveugles",
+        "orcid": "0000-0001-7688-5894"
+      },
+      {
+        "name": "Ghezzi, Diego",
+        "affiliation": "Fondation Asile des Aveugles",
+        "orcid": "0000-0002-0554-7510"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-nd-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17632802"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Flexible corneal neurotechnology reveals in-vivo pathological retinal oscillations in retinitis pigmentosa mouse models and patients as a biomarker of functional remodeling during retinal degeneration",
+  "links": {
+    "self": "https://zenodo.org/api/records/17657914",
+    "self_html": "https://zenodo.org/records/17657914",
+    "preview_html": "https://zenodo.org/records/17657914?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17657914",
+    "self_doi": "https://doi.org/10.5281/zenodo.17657914",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17657914",
+    "reserve_doi": "https://zenodo.org/api/records/17657914/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17632802",
+    "parent_html": "https://zenodo.org/records/17632802",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17632802",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17632802",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17657914/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17657914/sequence/default",
+    "files": "https://zenodo.org/api/records/17657914/files",
+    "media_files": "https://zenodo.org/api/records/17657914/media-files",
+    "archive": "https://zenodo.org/api/records/17657914/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17657914/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17657914/versions/latest",
+    "latest_html": "https://zenodo.org/records/17657914/latest",
+    "versions": "https://zenodo.org/api/records/17657914/versions",
+    "draft": "https://zenodo.org/api/records/17657914/draft",
+    "access_links": "https://zenodo.org/api/records/17657914/access/links",
+    "access_grants": "https://zenodo.org/api/records/17657914/access/grants",
+    "access_users": "https://zenodo.org/api/records/17657914/access/users",
+    "access_request": "https://zenodo.org/api/records/17657914/access/request",
+    "access": "https://zenodo.org/api/records/17657914/access",
+    "communities": "https://zenodo.org/api/records/17657914/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17657914/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17657914/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17657914/file-modification",
+    "requests": "https://zenodo.org/api/records/17657914/requests"
+  },
+  "updated": "2025-11-20T08:47:36.228857+00:00",
+  "recid": "17657914",
+  "revision": 4,
+  "files": [
+    {
+      "id": "40ef89ea-1e96-4ed0-ab10-7c464ab12601",
+      "key": "CBC Analysis.zip",
+      "size": 1715337781,
+      "checksum": "md5:a5b31b8026760a05d8f98cdd26a9c5eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/17657914/files/CBC Analysis.zip/content"
+      }
+    },
+    {
+      "id": "9193225b-eb3c-4fb9-aa93-e8b6a5017d33",
+      "key": "MM Analysis.zip",
+      "size": 110289717,
+      "checksum": "md5:b9a9199955e1cf7030140c825aef849f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17657914/files/MM Analysis.zip/content"
+      }
+    },
+    {
+      "id": "d9ce4068-ddd8-4f9d-be0b-2966ef54ee68",
+      "key": "PSD Analysis.zip",
+      "size": 4060864028,
+      "checksum": "md5:bfbe51c4b0f261e4ed395edf43477fa3",
+      "links": {
+        "self": "https://zenodo.org/api/records/17657914/files/PSD Analysis.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1051047"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 21,
+    "unique_downloads": 18,
+    "views": 41,
+    "unique_views": 30,
+    "version_downloads": 13,
+    "version_unique_downloads": 10,
+    "version_unique_views": 14,
+    "version_views": 19
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 5886491526,
+    "top_level_files": [
+      {
+        "name": "CBC Analysis.zip",
+        "size": 1715337781
+      },
+      {
+        "name": "MM Analysis.zip",
+        "size": 110289717
+      },
+      {
+        "name": "PSD Analysis.zip",
+        "size": 4060864028
+      }
+    ],
+    "zip_contents": {
+      "cbc analysis.zip": {
+        "total_files": 8,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 1850756807,
+        "file_types": {
+          ".jpg": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "cbc analysis/cbc burst analysis parameters.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "mm analysis.zip": {
+        "total_files": 30,
+        "total_directories": 15,
+        "total_uncompressed_bytes": 118993005,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "psd analysis.zip": {
+        "total_files": 87,
+        "total_directories": 12,
+        "total_uncompressed_bytes": 4377858560,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "cbc analysis/cbc burst analysis parameters.jpg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/lne-lab/rsERG",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:58.123604"
+}

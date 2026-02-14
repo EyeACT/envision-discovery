@@ -1,0 +1,173 @@
+{
+  "created": "2023-07-26T12:26:53.371346+00:00",
+  "modified": "2023-07-26T14:26:46.795385+00:00",
+  "id": 8186508,
+  "conceptrecid": "8186507",
+  "doi": "10.5281/zenodo.8186508",
+  "conceptdoi": "10.5281/zenodo.8186507",
+  "doi_url": "https://doi.org/10.5281/zenodo.8186508",
+  "metadata": {
+    "title": "MIC-MAQ plugin training images",
+    "doi": "10.5281/zenodo.8186508",
+    "publication_date": "2023-07-26",
+    "description": "<p>*MIC-MAQ plugin training images*</p>\n\n<p>We provide images to train segmentation on fluorescence and brightfield images.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>For fluorescence:</p>\n\n<p>- QIBC dataset for nuclei segmentation and quantification (https://zenodo.org/record/8014997). The 3 channels of each field of view are saved in independant files: C1 (protein of interest, spots detection), C2 (EdU for quantification), C3 (nuclei segmentation).</p>\n\n<p>- Cyto dataset for nuclei and cell segmentation. The two fields of view are saved in a single LIF file that contains Z stack.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>For Brightfield:</p>\n\n<p>- Yeast dataset for cell segmentation</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Messaoudi C\u00e9dric",
+        "affiliation": "Institut Curie, Universit\u00e9 PSL, CNRS UAR2016, Inserm US43, Universit\u00e9 Paris-Saclay, Multimodal Imaging Center, 91400 Orsay, France",
+        "orcid": "0000-0003-3535-7723"
+      }
+    ],
+    "keywords": [
+      "MIC-MAQ, segmentation, nuclei, cell, dataset, fluorescence, brighfield"
+    ],
+    "version": "1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8186507"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MIC-MAQ plugin training images",
+  "links": {
+    "self": "https://zenodo.org/api/records/8186508",
+    "self_html": "https://zenodo.org/records/8186508",
+    "preview_html": "https://zenodo.org/records/8186508?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8186508",
+    "self_doi": "https://doi.org/10.5281/zenodo.8186508",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8186508",
+    "reserve_doi": "https://zenodo.org/api/records/8186508/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8186507",
+    "parent_html": "https://zenodo.org/records/8186507",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8186507",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8186507",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8186508/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8186508/sequence/default",
+    "files": "https://zenodo.org/api/records/8186508/files",
+    "media_files": "https://zenodo.org/api/records/8186508/media-files",
+    "archive": "https://zenodo.org/api/records/8186508/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8186508/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8186508/versions/latest",
+    "latest_html": "https://zenodo.org/records/8186508/latest",
+    "versions": "https://zenodo.org/api/records/8186508/versions",
+    "draft": "https://zenodo.org/api/records/8186508/draft",
+    "access_links": "https://zenodo.org/api/records/8186508/access/links",
+    "access_grants": "https://zenodo.org/api/records/8186508/access/grants",
+    "access_users": "https://zenodo.org/api/records/8186508/access/users",
+    "access_request": "https://zenodo.org/api/records/8186508/access/request",
+    "access": "https://zenodo.org/api/records/8186508/access",
+    "communities": "https://zenodo.org/api/records/8186508/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8186508/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8186508/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8186508/file-modification",
+    "requests": "https://zenodo.org/api/records/8186508/requests"
+  },
+  "updated": "2023-07-26T14:26:46.795385+00:00",
+  "recid": "8186508",
+  "revision": 2,
+  "files": [
+    {
+      "id": "a2dffdf3-e700-4b19-bcf2-1b2c0f82d13e",
+      "key": "MIC-MAQ training datasets.zip",
+      "size": 200583424,
+      "checksum": "md5:47ba807bece78ed7c2b06a9fecfd392e",
+      "links": {
+        "self": "https://zenodo.org/api/records/8186508/files/MIC-MAQ training datasets.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "262739"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 27,
+    "unique_downloads": 23,
+    "views": 74,
+    "unique_views": 72,
+    "version_downloads": 27,
+    "version_unique_downloads": 23,
+    "version_unique_views": 72,
+    "version_views": 74
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 200583424,
+    "top_level_files": [
+      {
+        "name": "MIC-MAQ training datasets.zip",
+        "size": 200583424
+      }
+    ],
+    "zip_contents": {
+      "mic-maq training datasets.zip": {
+        "total_files": 9,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 402496778,
+        "file_types": {
+          ".tif": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c1_z001_t001.tif",
+          "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c2_z001_t001.tif",
+          "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c3_z001_t001.tif",
+          "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c1_z001_t001.tif",
+          "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c2_z001_t001.tif",
+          "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c3_z001_t001.tif",
+          "mic-maq training datasets/yeast_brightfield/image1.tif",
+          "mic-maq training datasets/yeast_brightfield/image2.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c1_z001_t001.tif",
+      "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c2_z001_t001.tif",
+      "mic-maq training datasets/qibc_fluorescence/scan1_x002_y008_c3_z001_t001.tif",
+      "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c1_z001_t001.tif",
+      "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c2_z001_t001.tif",
+      "mic-maq training datasets/qibc_fluorescence/scan1_x003_y004_c3_z001_t001.tif",
+      "mic-maq training datasets/yeast_brightfield/image1.tif",
+      "mic-maq training datasets/yeast_brightfield/image2.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://zenodo.org/record/8014997",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:04.989470"
+}

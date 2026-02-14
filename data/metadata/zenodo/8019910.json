@@ -1,0 +1,143 @@
+{
+  "created": "2023-06-09T08:55:47.391668+00:00",
+  "modified": "2023-06-09T14:26:50.221654+00:00",
+  "id": 8019910,
+  "conceptrecid": "8019909",
+  "doi": "10.5281/zenodo.8019910",
+  "conceptdoi": "10.5281/zenodo.8019909",
+  "doi_url": "https://doi.org/10.5281/zenodo.8019910",
+  "metadata": {
+    "title": "The bird radar data",
+    "doi": "10.5281/zenodo.8019910",
+    "publication_date": "2023-06-09",
+    "description": "<p>This is the&nbsp;original data of the bird radar measuring on Oct. 08-14, 2021, in Jinan, China. This data was used in the&nbsp;manuscripts &lt;Classification of Birds and Insects Using Polarimetric Weather Radar Data with a Support Vector Machine Method&gt;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zhuoran Sun",
+        "affiliation": null,
+        "orcid": "0000-0001-6354-1267"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8019909"
+          }
+        }
+      ]
+    }
+  },
+  "title": "The bird radar data",
+  "links": {
+    "self": "https://zenodo.org/api/records/8019910",
+    "self_html": "https://zenodo.org/records/8019910",
+    "preview_html": "https://zenodo.org/records/8019910?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8019910",
+    "self_doi": "https://doi.org/10.5281/zenodo.8019910",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8019910",
+    "reserve_doi": "https://zenodo.org/api/records/8019910/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8019909",
+    "parent_html": "https://zenodo.org/records/8019909",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8019909",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8019909",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8019910/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8019910/sequence/default",
+    "files": "https://zenodo.org/api/records/8019910/files",
+    "media_files": "https://zenodo.org/api/records/8019910/media-files",
+    "archive": "https://zenodo.org/api/records/8019910/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8019910/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8019910/versions/latest",
+    "latest_html": "https://zenodo.org/records/8019910/latest",
+    "versions": "https://zenodo.org/api/records/8019910/versions",
+    "draft": "https://zenodo.org/api/records/8019910/draft",
+    "access_links": "https://zenodo.org/api/records/8019910/access/links",
+    "access_grants": "https://zenodo.org/api/records/8019910/access/grants",
+    "access_users": "https://zenodo.org/api/records/8019910/access/users",
+    "access_request": "https://zenodo.org/api/records/8019910/access/request",
+    "access": "https://zenodo.org/api/records/8019910/access",
+    "communities": "https://zenodo.org/api/records/8019910/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8019910/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8019910/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8019910/file-modification",
+    "requests": "https://zenodo.org/api/records/8019910/requests"
+  },
+  "updated": "2023-06-09T14:26:50.221654+00:00",
+  "recid": "8019910",
+  "revision": 3,
+  "files": [
+    {
+      "id": "98e8921f-25c5-417c-b821-3c9426fd443d",
+      "key": "bird_radar_data_20211008_20211014.zip",
+      "size": 408472073,
+      "checksum": "md5:60ab7b3721a64728ec5689465a7100b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/8019910/files/bird_radar_data_20211008_20211014.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "566021"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 25,
+    "unique_downloads": 25,
+    "views": 160,
+    "unique_views": 152,
+    "version_downloads": 25,
+    "version_unique_downloads": 25,
+    "version_unique_views": 152,
+    "version_views": 160
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 408472073,
+    "top_level_files": [
+      {
+        "name": "bird_radar_data_20211008_20211014.zip",
+        "size": 408472073
+      }
+    ],
+    "zip_contents": {
+      "bird_radar_data_20211008_20211014.zip": {
+        "total_files": 17,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 2023393763,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:12.256473"
+}

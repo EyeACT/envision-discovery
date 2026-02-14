@@ -1,0 +1,139 @@
+{
+  "created": "2022-03-03T14:16:54.006361+00:00",
+  "modified": "2022-08-31T09:02:04.729308+00:00",
+  "id": 6325549,
+  "conceptrecid": "6325548",
+  "doi": "10.5281/zenodo.6325549",
+  "conceptdoi": "10.5281/zenodo.6325548",
+  "doi_url": "https://doi.org/10.5281/zenodo.6325549",
+  "metadata": {
+    "title": "RIGA+ Dataset for Unsupervised Domain Adaptation in Medical Image Segmentation",
+    "doi": "10.5281/zenodo.6325549",
+    "publication_date": "2022-03-03",
+    "description": "<p>Different from the previous combined multi-domain dataset for unsupervised domain adaptation (UDA) in medical image segmentation, this multi-domain fundus image dataset contains annotations made by&nbsp;the same group of ophthalmologists. Hence the&nbsp;annotator bias&nbsp;among different datasets can be&nbsp;mitigated. Therefore, this dataset can provide a&nbsp;relatively fair benchmark for evaluating UDA methods in fundus image segmentation.</p>\n\n<p>This dataset is based on the RIGA[1] dataset and MESSIDOR[2] dataset. We&nbsp;appreciate their&nbsp;efforts&nbsp;devoted by the authors of [1] and [2].</p>\n\n<p>The six&nbsp;duplicated cases in the&nbsp;RIGA dataset are&nbsp;filtered out according to the&nbsp;<a href=\"https://www.adcis.net/en/third-party/messidor/\">Errata</a>. We also remove the duplicated cases that exist in both the&nbsp;RIGA dataset and the&nbsp;MESSIDOR dataset by hash value matching.</p>\n\n<table align=\"center\">\n\t<caption>Details of the RIGA+ dataset</caption>\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Domain</th>\n\t\t\t<th scope=\"col\">Dataset</th>\n\t\t\t<th scope=\"col\">\n\t\t\t<p>Labeled Samples</p>\n\n\t\t\t<p>(Train+Test)</p>\n\t\t\t</th>\n\t\t\t<th scope=\"col\">\n\t\t\t<p>Unlabeled</p>\n\n\t\t\t<p>Samples</p>\n\t\t\t</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Source</th>\n\t\t\t<td>BinRushed</td>\n\t\t\t<td>195 (195+0)</td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Source</th>\n\t\t\t<td>Magrabia</td>\n\t\t\t<td>95 (95+0)</td>\n\t\t\t<td>0</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Target</th>\n\t\t\t<td>MESSIDOR-BASE1</td>\n\t\t\t<td>173 (138+35)</td>\n\t\t\t<td>227</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Target</th>\n\t\t\t<td>MESSIDOR-BASE2</td>\n\t\t\t<td>148 (118+30)</td>\n\t\t\t<td>238</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th scope=\"row\">Target</th>\n\t\t\t<td>MESSIDOR-BASE3</td>\n\t\t\t<td>133 (106+27)</td>\n\t\t\t<td>252</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>[1]&nbsp;Almazroa A, Alodhayb S, Osman E, et al. Retinal fundus images for glaucoma analysis: the RIGA dataset[C]//Medical Imaging 2018: Imaging Informatics for Healthcare, Research, and Applications. International Society for Optics and Photonics, 2018, 10579: 105790B.</p>\n\n<p>[2]&nbsp;Decenci&egrave;re E, Zhang X, Cazuguel G, et al. Feedback on a publicly distributed image database: the Messidor database[J]. Image Analysis &amp; Stereology, 2014, 33(3): 231-234.</p>\n\n<p>If you find this dataset useful for your research, please consider citing the paper as follows:</p>\n\n<pre><code>@inproceedings{hu2022domain,\n  title={Domain Specific Convolution and High Frequency Reconstruction based Unsupervised Domain Adaptation for Medical Image Segmentation},\n  author={Shishuai Hu and Zehui Liao and Yong Xia},\n  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},\n  year={2022},\n  organization={Springer}\n}</code></pre>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Hu, Shishuai",
+        "affiliation": "Northwestern Polytechnical University"
+      },
+      {
+        "name": "Liao, Zehui",
+        "affiliation": "Northwestern Polytechnical University"
+      },
+      {
+        "name": "Xia, Yong",
+        "affiliation": "Northwestern Polytechnical University"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6325548"
+          }
+        }
+      ]
+    }
+  },
+  "title": "RIGA+ Dataset for Unsupervised Domain Adaptation in Medical Image Segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/6325549",
+    "self_html": "https://zenodo.org/records/6325549",
+    "preview_html": "https://zenodo.org/records/6325549?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6325549",
+    "self_doi": "https://doi.org/10.5281/zenodo.6325549",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6325549",
+    "reserve_doi": "https://zenodo.org/api/records/6325549/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6325548",
+    "parent_html": "https://zenodo.org/records/6325548",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6325548",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6325548",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6325549/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6325549/sequence/default",
+    "files": "https://zenodo.org/api/records/6325549/files",
+    "media_files": "https://zenodo.org/api/records/6325549/media-files",
+    "archive": "https://zenodo.org/api/records/6325549/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6325549/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6325549/versions/latest",
+    "latest_html": "https://zenodo.org/records/6325549/latest",
+    "versions": "https://zenodo.org/api/records/6325549/versions",
+    "draft": "https://zenodo.org/api/records/6325549/draft",
+    "access_links": "https://zenodo.org/api/records/6325549/access/links",
+    "access_grants": "https://zenodo.org/api/records/6325549/access/grants",
+    "access_users": "https://zenodo.org/api/records/6325549/access/users",
+    "access_request": "https://zenodo.org/api/records/6325549/access/request",
+    "access": "https://zenodo.org/api/records/6325549/access",
+    "communities": "https://zenodo.org/api/records/6325549/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6325549/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6325549/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6325549/file-modification",
+    "requests": "https://zenodo.org/api/records/6325549/requests"
+  },
+  "updated": "2022-08-31T09:02:04.729308+00:00",
+  "recid": "6325549",
+  "revision": 5,
+  "files": [
+    {
+      "id": "3a19d854-dc19-41cd-b265-8f99cb7f4145",
+      "key": "RIGAPlus.zip",
+      "size": 1078033476,
+      "checksum": "md5:4df43d5e8152776d32219dbb6b77d1e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6325549/files/RIGAPlus.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "312930"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2239,
+    "unique_downloads": 980,
+    "views": 3260,
+    "unique_views": 2946,
+    "version_downloads": 2229,
+    "version_unique_downloads": 973,
+    "version_unique_views": 2928,
+    "version_views": 3238
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1078033476,
+    "top_level_files": [
+      {
+        "name": "RIGAPlus.zip",
+        "size": 1078033476
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:54.749953"
+}

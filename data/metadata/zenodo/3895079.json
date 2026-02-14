@@ -1,0 +1,132 @@
+{
+  "created": "2020-06-15T18:10:11.696677+00:00",
+  "modified": "2020-06-15T22:18:21.376347+00:00",
+  "id": 3895079,
+  "conceptrecid": "3895078",
+  "doi": "10.5281/zenodo.3895079",
+  "conceptdoi": "10.5281/zenodo.3895078",
+  "doi_url": "https://doi.org/10.5281/zenodo.3895079",
+  "metadata": {
+    "title": "Cinque Terre Flooding - 25 Oct 2011 - MOLOCH Ensemble Reforecasts",
+    "doi": "10.5281/zenodo.3895079",
+    "publication_date": "2020-06-15",
+    "description": "<p>Ensemble-based reforecasts using the MOLOCH model</p>\n\n<p>Variable: Total precipitation [kg/m^2]</p>\n\n<p>Starting dates: 2011/10/23 00 UTC, 2011/10/23 12 UTC, 2011/10/24 00 UTC, 2011/10/24 12 UTC</p>\n\n<p>Ending date: 2011/10/26 00 UTC</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Capecchi, Valerio",
+        "affiliation": "Consorzio LaMMA",
+        "orcid": "0000-0003-3168-3310"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3895078"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Cinque Terre Flooding - 25 Oct 2011 - MOLOCH Ensemble Reforecasts",
+  "links": {
+    "self": "https://zenodo.org/api/records/3895079",
+    "self_html": "https://zenodo.org/records/3895079",
+    "preview_html": "https://zenodo.org/records/3895079?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3895079",
+    "self_doi": "https://doi.org/10.5281/zenodo.3895079",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3895079",
+    "reserve_doi": "https://zenodo.org/api/records/3895079/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3895078",
+    "parent_html": "https://zenodo.org/records/3895078",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3895078",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3895078",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3895079/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3895079/sequence/default",
+    "files": "https://zenodo.org/api/records/3895079/files",
+    "media_files": "https://zenodo.org/api/records/3895079/media-files",
+    "archive": "https://zenodo.org/api/records/3895079/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3895079/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3895079/versions/latest",
+    "latest_html": "https://zenodo.org/records/3895079/latest",
+    "versions": "https://zenodo.org/api/records/3895079/versions",
+    "draft": "https://zenodo.org/api/records/3895079/draft",
+    "access_links": "https://zenodo.org/api/records/3895079/access/links",
+    "access_grants": "https://zenodo.org/api/records/3895079/access/grants",
+    "access_users": "https://zenodo.org/api/records/3895079/access/users",
+    "access_request": "https://zenodo.org/api/records/3895079/access/request",
+    "access": "https://zenodo.org/api/records/3895079/access",
+    "communities": "https://zenodo.org/api/records/3895079/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3895079/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3895079/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3895079/file-modification",
+    "requests": "https://zenodo.org/api/records/3895079/requests"
+  },
+  "updated": "2020-06-15T22:18:21.376347+00:00",
+  "recid": "3895079",
+  "revision": 2,
+  "files": [
+    {
+      "id": "e5ba59e7-53fb-4cee-82fe-4dcb39276372",
+      "key": "CT_MOL-ENS_data.tar.gz",
+      "size": 1536980399,
+      "checksum": "md5:ce3c7b0e64c64c49e73d4ee4a11ee068",
+      "links": {
+        "self": "https://zenodo.org/api/records/3895079/files/CT_MOL-ENS_data.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "37801"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 16,
+    "unique_downloads": 13,
+    "views": 135,
+    "unique_views": 125,
+    "version_downloads": 16,
+    "version_unique_downloads": 13,
+    "version_unique_views": 125,
+    "version_views": 135
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1536980399,
+    "top_level_files": [
+      {
+        "name": "CT_MOL-ENS_data.tar.gz",
+        "size": 1536980399
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:44.821526"
+}

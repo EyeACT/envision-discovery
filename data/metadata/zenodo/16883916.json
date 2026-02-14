@@ -1,0 +1,166 @@
+{
+  "created": "2025-08-15T20:51:35.545408+00:00",
+  "modified": "2025-12-21T15:53:14.099585+00:00",
+  "id": 16883916,
+  "conceptrecid": "16883915",
+  "doi": "10.5281/zenodo.16883916",
+  "conceptdoi": "10.5281/zenodo.16883915",
+  "doi_url": "https://doi.org/10.5281/zenodo.16883916",
+  "metadata": {
+    "title": "LEAF_SEGMENTATION",
+    "doi": "10.5281/zenodo.16883916",
+    "publication_date": "2025-08-15",
+    "description": "<p>Code to reproduce the segmentation of grapevine leaves. All models and scripts are included but intermediary outputs have been excluded due to size limitations.</p>\n<h3>Project Overview</h3>\n<p>This collection represents the complete, fully reproducible pipeline for a single project focused on the instance and pixel segmentation of grapevine leaves. It includes a total of&nbsp;<strong>8,993 original images</strong> and the corresponding <strong>24,940 segmented leaf masks</strong>. The collection also contains the instance and pixel segmentation CNN models used to produce these masks. The individual Zenodo uploads correspond to the major project directories and their first-level contents.</p>\n<h3>Project File Structure</h3>\n<p>&nbsp;</p>\n<div>\n<div>\n<div>\n<pre><code>.\n\u251c\u2500\u2500 LEAF_DATA/\n\u2502   \u251c\u2500\u2500 ALGERIA/\n\u2502   \u251c\u2500\u2500 CALIFORNIA/\n\u2502   \u251c\u2500\u2500 GENEVA/\n\u2502   \u251c\u2500\u2500 UCDAVIS/\n\u2502   \u251c\u2500\u2500 VITIS_CROSSES/\n\u2502   \u2514\u2500\u2500 WOLFSKILL/\n|\n\u251c\u2500\u2500 FINAL_MASKS/\n\u2502   \u251c\u2500\u2500 png_masks/\n\u2502   \u251c\u2500\u2500 master_masks.h5\n\u2502   \u2514\u2500\u2500 master_mask_datasheet.csv\n|\n\u2514\u2500\u2500 LEAF_SEGMENTATION/\n    \u251c\u2500\u2500 models/\n    \u2514\u2500\u2500 scripts/</code><br>___________________________________</pre>\n<p>The following is a summary showing the relationship of this model to others:</p>\n<p><strong>Segmentation of RGB leaf masks</strong></p>\n<ul>\n<li><code>LEAF_SEGMENTATION</code>: <a href=\"https://zenodo.org/records/16883916\">https://zenodo.org/records/16883916</a></li>\n<li><code>FINAL_MASKS</code>: <a href=\"https://zenodo.org/records/16883403\">https://zenodo.org/records/16883403</a></li>\n</ul>\n<p><strong>Segmentation of full vein mask</strong></p>\n<ul>\n<li><code>Vein segmentation of pre-segmented grapevine leaves using the radial Euler Characteristic Transform</code>: <a href=\"https://zenodo.org/records/17741713\">https://zenodo.org/records/17741713</a></li>\n</ul>\n<p><strong>Segmentation of primary veins</strong></p>\n<ul>\n<li><code>Primary vein segmentation in grapevine leaves</code>: <a href=\"https://zenodo.org/records/17881166\">https://zenodo.org/records/17881166</a></li>\n</ul>\n<p><strong>Segmentation of midvein</strong></p>\n<ul>\n<li><code>Midvein segmentation of grapevine leaves</code>: <a href=\"https://zenodo.org/records/18005383\">https://zenodo.org/records/18005383</a></li>\n</ul>\n<p><strong>Gaussian heatmap estimation of petiolar junction coordinate</strong></p>\n<ul>\n<li><code>Grapevine leaf petiolar junction detection</code>: <a href=\"https://zenodo.org/records/17922822\">https://zenodo.org/records/17922822</a></li>\n</ul>\n<p><strong>Segmentation of midvein, distal, and proximal lobes</strong></p>\n<ul>\n<li><code>Grapevine leaf lobe detection model</code>: <a href=\"https://zenodo.org/records/18004938\">https://zenodo.org/records/18004938</a></li>\n</ul>\n</div>\n</div>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chitwood, Daniel",
+        "affiliation": "Michigan State University",
+        "orcid": "0000-0003-4875-1447"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "grapevine_leaves"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16883915"
+          }
+        }
+      ]
+    }
+  },
+  "title": "LEAF_SEGMENTATION",
+  "links": {
+    "self": "https://zenodo.org/api/records/16883916",
+    "self_html": "https://zenodo.org/records/16883916",
+    "preview_html": "https://zenodo.org/records/16883916?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16883916",
+    "self_doi": "https://doi.org/10.5281/zenodo.16883916",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16883916",
+    "reserve_doi": "https://zenodo.org/api/records/16883916/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16883915",
+    "parent_html": "https://zenodo.org/records/16883915",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16883915",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16883915",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16883916/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16883916/sequence/default",
+    "files": "https://zenodo.org/api/records/16883916/files",
+    "media_files": "https://zenodo.org/api/records/16883916/media-files",
+    "archive": "https://zenodo.org/api/records/16883916/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16883916/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16883916/versions/latest",
+    "latest_html": "https://zenodo.org/records/16883916/latest",
+    "versions": "https://zenodo.org/api/records/16883916/versions",
+    "draft": "https://zenodo.org/api/records/16883916/draft",
+    "access_links": "https://zenodo.org/api/records/16883916/access/links",
+    "access_grants": "https://zenodo.org/api/records/16883916/access/grants",
+    "access_users": "https://zenodo.org/api/records/16883916/access/users",
+    "access_request": "https://zenodo.org/api/records/16883916/access/request",
+    "access": "https://zenodo.org/api/records/16883916/access",
+    "communities": "https://zenodo.org/api/records/16883916/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16883916/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16883916/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16883916/file-modification",
+    "requests": "https://zenodo.org/api/records/16883916/requests"
+  },
+  "updated": "2025-12-21T15:53:14.099585+00:00",
+  "recid": "16883916",
+  "revision": 10,
+  "files": [
+    {
+      "id": "38cce13a-53a5-4b3d-81a3-72445ad4fb04",
+      "key": "LEAF_SEGMENTATION.zip",
+      "size": 324456249,
+      "checksum": "md5:83b1d59aec18a06e19cbc0c270edaf33",
+      "links": {
+        "self": "https://zenodo.org/api/records/16883916/files/LEAF_SEGMENTATION.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "121621"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 58,
+    "unique_downloads": 49,
+    "views": 215,
+    "unique_views": 184,
+    "version_downloads": 58,
+    "version_unique_downloads": 49,
+    "version_unique_views": 184,
+    "version_views": 215
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 324456249,
+    "top_level_files": [
+      {
+        "name": "LEAF_SEGMENTATION.zip",
+        "size": 324456249
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://zenodo.org/records/16883916",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/16883403",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17741713",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17881166",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/18005383",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/17922822",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://zenodo.org/records/18004938",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.129141"
+}

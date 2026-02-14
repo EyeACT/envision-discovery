@@ -1,0 +1,173 @@
+{
+  "created": "2025-05-20T19:25:46.464258+00:00",
+  "modified": "2025-05-21T14:56:35.350718+00:00",
+  "id": 15467847,
+  "conceptrecid": "15467846",
+  "doi": "10.5281/zenodo.15467847",
+  "conceptdoi": "10.5281/zenodo.15467846",
+  "doi_url": "https://doi.org/10.5281/zenodo.15467847",
+  "metadata": {
+    "title": "Curated Multi-Institutional Benchmark Dataset for Validating AI Models for Volumetric Pancreas Segmentation on Contrast-Enhanced CTs",
+    "doi": "10.5281/zenodo.15467847",
+    "publication_date": "2025-05-19",
+    "description": "<p>To rigorously evaluate the robustness and generalizability of an indigenously developed AI model [1] for morphologically normal volumetric pancreas segmentation on portal venous phase CT images, we curated a high-quality external dataset derived from the international multi-institutional AbdomenCT-1K collection [2]. This public dataset comprises 1,062 abdominal CT scans sourced from 12 medical centers and includes five diverse benchmarking subsets: Liver Tumor Segmentation (LiTS), Kidney Tumor Segmentation (KiTS), Medical Segmentation Decathlon (MSD), National Institutes of Health-Pancreas CT (NIH-PCT), and a dataset from Nanjing University in China highlighting its broad diversity and international composition. Its heterogeneity&mdash;spanning multi-phase, multi-vendor, and multi-disease scenarios&mdash;reflects real-world clinical variability, making it ideal for robust model validation. Fellowship-trained radiologists reviewed the scans to ensure inclusion of portal venous phase CTs with adequate contrast enhancement for clear delineation of the pancreatic parenchyma and confirmed that each met optimal image quality standards. Scans with pancreatic pathology (e.g., pancreatic ductal adenocarcinoma or other masses), streak artifacts from metallic implants or spinal hardware, or suboptimal contrast enhancement were excluded. This rigorous selection process yielded 585 high-quality CT scans for evaluation. Volumetric pancreas segmentations were independently performed by expert radiologists to establish a reliable ground truth (GT). We intend to make all these meticulously curated GT segmentations publicly available to support further research and foster advancements in generalizable medical AI systems. This repository contains 317/585 scans. The remining 268 scans are available at <a href=\"https://doi.org/10.5281/zenodo.15476771\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.5281/zenodo.15476771</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mukherjee, Sovanlal",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Antony, Ajith",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Patnam, Nandakumar",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Trivedi, Kamaxi",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Karbhari, Aashna",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Nagaraj, Madhu",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Murlidhar, Murlidhar",
+        "affiliation": "Mayo Clinic"
+      },
+      {
+        "name": "Goenka, Ajit",
+        "affiliation": "Mayo Clinic"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available"
+      }
+    ],
+    "references": [
+      "[1] Mukherjee, S., Antony, A., Patnam, N.G. et al. Pancreas segmentation using AI developed on the largest CT dataset with multi-institutional validation and implications for early cancer detection. Sci Rep 15, 17096 (2025). https://doi.org/10.1038/s41598-025-01802-9",
+      "[2] Ma, J. et al. AbdomenCT-1K: Is abdominal organ segmentation a solved problem?. IEEE Trans. Pattern Anal. Mach. Intell. 44, 6695\u20136714. https://doi.org/10.1109/TPAMI.2021.3100536 (2022)."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15467846"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Curated Multi-Institutional Benchmark Dataset for Validating AI Models for Volumetric Pancreas Segmentation on Contrast-Enhanced CTs",
+  "links": {
+    "self": "https://zenodo.org/api/records/15467847",
+    "self_html": "https://zenodo.org/records/15467847",
+    "preview_html": "https://zenodo.org/records/15467847?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15467847",
+    "self_doi": "https://doi.org/10.5281/zenodo.15467847",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15467847",
+    "reserve_doi": "https://zenodo.org/api/records/15467847/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15467846",
+    "parent_html": "https://zenodo.org/records/15467846",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15467846",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15467846",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15467847/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15467847/sequence/default",
+    "files": "https://zenodo.org/api/records/15467847/files",
+    "media_files": "https://zenodo.org/api/records/15467847/media-files",
+    "archive": "https://zenodo.org/api/records/15467847/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15467847/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15467847/versions/latest",
+    "latest_html": "https://zenodo.org/records/15467847/latest",
+    "versions": "https://zenodo.org/api/records/15467847/versions",
+    "draft": "https://zenodo.org/api/records/15467847/draft",
+    "access_links": "https://zenodo.org/api/records/15467847/access/links",
+    "access_grants": "https://zenodo.org/api/records/15467847/access/grants",
+    "access_users": "https://zenodo.org/api/records/15467847/access/users",
+    "access_request": "https://zenodo.org/api/records/15467847/access/request",
+    "access": "https://zenodo.org/api/records/15467847/access",
+    "communities": "https://zenodo.org/api/records/15467847/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15467847/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15467847/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15467847/file-modification",
+    "requests": "https://zenodo.org/api/records/15467847/requests"
+  },
+  "updated": "2025-05-21T14:56:35.350718+00:00",
+  "recid": "15467847",
+  "revision": 6,
+  "files": [
+    {
+      "id": "1c2b7bf5-4ded-4f19-a21f-69a52df3d35a",
+      "key": "Images_Segs_Set1.zip",
+      "size": 39471690732,
+      "checksum": "md5:14e45e8d50a9dc3ff841ab0539dcc68e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15467847/files/Images_Segs_Set1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1178595"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 64,
+    "unique_downloads": 34,
+    "views": 134,
+    "unique_views": 117,
+    "version_downloads": 64,
+    "version_unique_downloads": 34,
+    "version_unique_views": 117,
+    "version_views": 134
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 39471690732,
+    "top_level_files": [
+      {
+        "name": "Images_Segs_Set1.zip",
+        "size": 39471690732
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.15476771",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:33.576218"
+}

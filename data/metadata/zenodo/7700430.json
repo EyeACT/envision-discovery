@@ -1,0 +1,512 @@
+{
+  "created": "2023-03-06T00:19:11.540001+00:00",
+  "modified": "2024-07-12T13:10:07.022951+00:00",
+  "id": 7700430,
+  "conceptrecid": "7700429",
+  "doi": "10.5281/zenodo.7700430",
+  "conceptdoi": "10.5281/zenodo.7700429",
+  "doi_url": "https://doi.org/10.5281/zenodo.7700430",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo Res-UNet models for v2 PCMSC/planecam/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+    "doi": "10.5281/zenodo.7700430",
+    "publication_date": "2023-03-06",
+    "description": "<p>Doodleverse/Segmentation Zoo Res-UNet models for v2 PCMSC/planecam/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images</p>\n\n<p>These Residual-UNet models have been created using Segmentation Gym*</p>\n\n<p>Image size used by model: 1024 x 768 x 3 pixels</p>\n\n<p>classes:</p>\n\n<ol>\n\t<li>water</li>\n\t<li>other</li>\n</ol>\n\n<p><br>\n<strong>File descriptions</strong></p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp; `seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p><strong>References</strong><br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science, LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "The Doodleverse",
+      "watermasking",
+      "deep learning",
+      "aerial/high-res.",
+      "image segmentation",
+      "semantic segmentation",
+      "Residual UNet",
+      "UNet"
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7700429"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo Res-UNet models for v2 PCMSC/planecam/2-class (water, nowater) segmentation of RGB 1024x768 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7700430",
+    "self_html": "https://zenodo.org/records/7700430",
+    "preview_html": "https://zenodo.org/records/7700430?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7700430",
+    "self_doi": "https://doi.org/10.5281/zenodo.7700430",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7700430",
+    "reserve_doi": "https://zenodo.org/api/records/7700430/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7700429",
+    "parent_html": "https://zenodo.org/records/7700429",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7700429",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7700429",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7700430/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7700430/sequence/default",
+    "files": "https://zenodo.org/api/records/7700430/files",
+    "media_files": "https://zenodo.org/api/records/7700430/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7700430:watermask_merged_oblique_1024_768_v4_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7700430/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7700430/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7700430/versions/latest",
+    "latest_html": "https://zenodo.org/records/7700430/latest",
+    "versions": "https://zenodo.org/api/records/7700430/versions",
+    "draft": "https://zenodo.org/api/records/7700430/draft",
+    "access_links": "https://zenodo.org/api/records/7700430/access/links",
+    "access_grants": "https://zenodo.org/api/records/7700430/access/grants",
+    "access_users": "https://zenodo.org/api/records/7700430/access/users",
+    "access_request": "https://zenodo.org/api/records/7700430/access/request",
+    "access": "https://zenodo.org/api/records/7700430/access",
+    "communities": "https://zenodo.org/api/records/7700430/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7700430/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7700430/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7700430/file-modification",
+    "requests": "https://zenodo.org/api/records/7700430/requests"
+  },
+  "updated": "2024-07-12T13:10:07.022951+00:00",
+  "recid": "7700430",
+  "revision": 5,
+  "files": [
+    {
+      "id": "08c0806a-63a0-48cb-aa8c-26ae5a25ab32",
+      "key": "watermask_merged_oblique_1024_768_v3.json",
+      "size": 1018,
+      "checksum": "md5:0347e99dfc9de7e6269ab023e22296a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v3.json/content"
+      }
+    },
+    {
+      "id": "2605e5dd-5947-408f-9e75-9b121f76feb3",
+      "key": "watermask_merged_oblique_1024_768_v4.json",
+      "size": 1018,
+      "checksum": "md5:c8c6d446f115602cbbab94618a9304e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v4.json/content"
+      }
+    },
+    {
+      "id": "6f7f17ce-adb4-4178-a2fc-e47e54804ace",
+      "key": "watermask_merged_oblique_1024_768_v4_model_history.npz",
+      "size": 2846,
+      "checksum": "md5:f10c7497627a27e417db4684746f2903",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "6c61a9f3-7afe-4dab-84f2-b1837c111c6e",
+      "key": "watermask_merged_oblique_1024_768_v4_trainhist_24.png",
+      "size": 192296,
+      "checksum": "md5:d5a8db338168474864d3e1fccc65227e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v4_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "93c8b0ef-858b-431a-9300-c893cc8b991e",
+      "key": "watermask_merged_oblique_1024_768_v5_fullmodel.h5",
+      "size": 69422720,
+      "checksum": "md5:01cc7e3c0c2f66635431697acae8b0e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "473f008e-7e0f-4ba4-a764-f6cd8561579a",
+      "key": "watermask_merged_oblique_1024_768_v4_fullmodel.h5",
+      "size": 69422720,
+      "checksum": "md5:93e02c8e67326ccdbd92219b50a865d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "33fea380-df67-4909-b8af-67391d1e13ef",
+      "key": "watermask_merged_oblique_1024_768_v6_model_history.npz",
+      "size": 2365,
+      "checksum": "md5:8b4183756849da97d577bd4d1d2153a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "a0b300de-b91d-49f6-8801-9ffd8fe6d1dd",
+      "key": "watermask_merged_oblique_1024_768_v6.json",
+      "size": 1016,
+      "checksum": "md5:9152013ae3bfd080445d69e0b5df41ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v6.json/content"
+      }
+    },
+    {
+      "id": "ed5e1ef4-d2a3-40ee-b34a-7ca2e0f33e65",
+      "key": "watermask_merged_oblique_1024_768_v6_fullmodel.h5",
+      "size": 69423088,
+      "checksum": "md5:cd6f548c3b5b87f599ff0d4d44b8adba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "6d47070c-3feb-484c-a7aa-e90153cbfb59",
+      "key": "watermask_merged_oblique_1024_768_v5_model_history.npz",
+      "size": 1808,
+      "checksum": "md5:2c845904e0a5a213c8b0f2c87e10fa80",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "04485deb-2210-4d8e-9855-05514114c76a",
+      "key": "watermask_merged_oblique_1024_768_v5.json",
+      "size": 1018,
+      "checksum": "md5:bcaf31c05104229f69ce9e93c25c5361",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v5.json/content"
+      }
+    },
+    {
+      "id": "60529567-88a4-4e5d-97fd-080d2aecf020",
+      "key": "watermask_merged_oblique_1024_768_v1_model_history.npz",
+      "size": 1619,
+      "checksum": "md5:661a5d8cfe22faec4bd154782c5e50b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "94042a44-223b-45c8-ab2a-655b53b49771",
+      "key": "watermask_merged_oblique_1024_768_v2_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:9d5cf5784dcbc76282469eb63757fbd3",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "84fa2503-e2a1-4121-be59-51c86b2b55b6",
+      "key": "watermask_merged_oblique_1024_768_v2.json",
+      "size": 1018,
+      "checksum": "md5:3bf2ce77ee5b012388b58280e93721e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v2.json/content"
+      }
+    },
+    {
+      "id": "39a88254-fa52-4700-8a65-d6cf8b6d395d",
+      "key": "watermask_merged_oblique_1024_768_v3_model_history.npz",
+      "size": 1677,
+      "checksum": "md5:28c707511cb21e6be7451f6c2363a8fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "8a7ee80d-f323-4d3e-bb0c-8b1d4bcf2bd3",
+      "key": "watermask_merged_oblique_1024_768_v2_model_history.npz",
+      "size": 2121,
+      "checksum": "md5:f1406f56db6c73625d0a21d1eb3c944a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "02cd46dc-ce9c-4efd-8146-673f6320aabd",
+      "key": "watermask_merged_oblique_1024_768_v3_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:3b7e14e6afd2717491e5d53404c843ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "21855fa4-bd0c-4aa6-880d-0d3b0e65eea2",
+      "key": "classes.txt",
+      "size": 11,
+      "checksum": "md5:3a20f9973b2f24c92069fbe6c6d38afa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "b868b864-046f-40a7-bc15-6036e35d02a3",
+      "key": "watermask_benchmark_deploy_v2.json",
+      "size": 644,
+      "checksum": "md5:94db4ff9b1408a3042c6c991799e5019",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_benchmark_deploy_v2.json/content"
+      }
+    },
+    {
+      "id": "f28ce522-c842-40ef-aba5-b36d935f9139",
+      "key": "watermask_merged_oblique_1024_768_v1_fullmodel.h5",
+      "size": 69422696,
+      "checksum": "md5:ef68192e8a079ccf3ce2a7a4284f889b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "971f115b-aeef-44ca-8ec5-10913b178bcf",
+      "key": "BEST_MODEL.txt",
+      "size": 49,
+      "checksum": "md5:d62bb42a1bc4dfa923a147ea13da4045",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "4136d940-61d5-436c-bbbc-540387f0ac4a",
+      "key": "watermask_merged_oblique_1024_768_v1.json",
+      "size": 1017,
+      "checksum": "md5:2962379c1365fbdcc5ff3174b808c047",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v1.json/content"
+      }
+    },
+    {
+      "id": "afc56a9c-5696-478e-9fa5-25e2d3605d8f",
+      "key": "readme.txt",
+      "size": 2360,
+      "checksum": "md5:cfca4e5eaea56abf7933479f56415b0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "6f2c34ca-a96f-4c6c-9263-bf66b332f155",
+      "key": "watermask_merged_oblique_1024_768_v6_trainhist_24.png",
+      "size": 178844,
+      "checksum": "md5:58376d22510f633f301c1c323303f131",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v6_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "a7f891b3-761d-4ad5-aa0e-7bca97ab8e8e",
+      "key": "watermask_merged_oblique_1024_768_v3_trainhist_24.png",
+      "size": 176037,
+      "checksum": "md5:26ddfd02e2f61bae5c3469fc452da0f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v3_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "c0633fb4-1a47-46d2-86d8-30964dfe3172",
+      "key": "watermask_merged_oblique_1024_768_v5_trainhist_8.png",
+      "size": 183841,
+      "checksum": "md5:79ebcc7389584980321942dcb0ad9ab8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v5_trainhist_8.png/content"
+      }
+    },
+    {
+      "id": "9c00d6a4-c2a4-4b09-a541-9e961ee57a68",
+      "key": "watermask_merged_oblique_1024_768_v1_trainhist_8.png",
+      "size": 185812,
+      "checksum": "md5:3e4c1569e3d74006a60729037e14498a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v1_trainhist_8.png/content"
+      }
+    },
+    {
+      "id": "a5534a77-1ec3-4254-b7c9-c38dbe221b70",
+      "key": "watermask_merged_oblique_1024_768_v2_trainhist_24.png",
+      "size": 170230,
+      "checksum": "md5:59c35a358a6f38a87bccc6590a009936",
+      "links": {
+        "self": "https://zenodo.org/api/records/7700430/files/watermask_merged_oblique_1024_768_v2_trainhist_24.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 968,
+    "unique_downloads": 917,
+    "views": 224,
+    "unique_views": 217,
+    "version_downloads": 968,
+    "version_unique_downloads": 917,
+    "version_unique_views": 217,
+    "version_views": 224
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 417636112,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "watermask_merged_oblique_1024_768_v3.json",
+        "size": 1018
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v4.json",
+        "size": 1018
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v4_model_history.npz",
+        "size": 2846
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v4_trainhist_24.png",
+        "size": 192296
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v5_fullmodel.h5",
+        "size": 69422720
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v4_fullmodel.h5",
+        "size": 69422720
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v6_model_history.npz",
+        "size": 2365
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v6.json",
+        "size": 1016
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v6_fullmodel.h5",
+        "size": 69423088
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v5_model_history.npz",
+        "size": 1808
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v5.json",
+        "size": 1018
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v1_model_history.npz",
+        "size": 1619
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v2_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v2.json",
+        "size": 1018
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v3_model_history.npz",
+        "size": 1677
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v2_model_history.npz",
+        "size": 2121
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v3_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "classes.txt",
+        "size": 11
+      },
+      {
+        "name": "watermask_benchmark_deploy_v2.json",
+        "size": 644
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v1_fullmodel.h5",
+        "size": 69422696
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 49
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v1.json",
+        "size": 1017
+      },
+      {
+        "name": "readme.txt",
+        "size": 2360
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v6_trainhist_24.png",
+        "size": 178844
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v3_trainhist_24.png",
+        "size": 176037
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v5_trainhist_8.png",
+        "size": 183841
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v1_trainhist_8.png",
+        "size": 185812
+      },
+      {
+        "name": "watermask_merged_oblique_1024_768_v2_trainhist_24.png",
+        "size": 170230
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:50.071082"
+}

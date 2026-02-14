@@ -1,0 +1,1306 @@
+{
+  "created": "2024-10-27T20:56:28.568944+00:00",
+  "modified": "2024-10-27T21:00:00.309735+00:00",
+  "id": 10778462,
+  "conceptrecid": "10778461",
+  "doi": "10.5281/zenodo.10778462",
+  "conceptdoi": "10.5281/zenodo.10778461",
+  "doi_url": "https://doi.org/10.5281/zenodo.10778462",
+  "metadata": {
+    "title": "Photoreceptor-like Signal Transduction Between Polymer-Based Protocells",
+    "doi": "10.5281/zenodo.10778462",
+    "publication_date": "2024",
+    "description": "<p>Deciphering inter- and intracellular signaling pathways is pivotal for understanding the intricate communication networks that orchestrate life's dynamics. Communication models involving bottom-up construction of protocells are emerging but often lack specialized compartments sufficiently robust and hierarchically organized to perform spatiotemporally defined signaling. Here, we present the modular construction of communicating polymer-based protocells designed to mimic the transduction of information in retinal photoreceptors. Microfluidics is used to generate polymeric protocells subcompartmentalized by specialized artificial organelles. In one protocell population, light triggers artificial organelles with membrane-embedded photoresponsive rotary molecular motors to set off a sequence of reactions starting with the release of encapsulated signaling molecules into the lumen. Intercellular communication is mediated by signal transfer across membranes to protocells containing catalytic artificial organelles as subcompartments, whose signal conversion can be modulated by environmental calcium. Signal propagation also requires selective permeability of the diverse compartments. By segregating artificial organelles in distinct protocells, we create a sequential chain of reactions mediating intercellular communication that is further modulated by adding extracellular messengers. This connective behavior offers the potential for a deeper understanding of signaling pathways and faster integration of proto- and living cells, with the unique advantage of controlling each step by bio-relevant signals.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Heuberger, Lukas",
+        "affiliation": "Universit\u00e4t Basel Departement Chemie",
+        "orcid": "0000-0003-4110-9742"
+      },
+      {
+        "name": "Korpidou, Maria",
+        "affiliation": null,
+        "orcid": "0000-0002-1543-6005"
+      },
+      {
+        "name": "Guinart Planellas, Ainoa",
+        "affiliation": "H2020 Marie Sk\u0142odowska-Curie Actions",
+        "orcid": "0000-0003-0355-7296"
+      },
+      {
+        "name": "Doellerer, Daniel",
+        "affiliation": null,
+        "orcid": "0000-0001-8973-9968"
+      },
+      {
+        "name": "Monserrat Lopez, Diego",
+        "affiliation": "IBM Research - Zurich"
+      },
+      {
+        "name": "Schoenenberger, Cora-Ann",
+        "affiliation": null,
+        "orcid": "0000-0003-2933-7435"
+      },
+      {
+        "name": "Milinkovic, Daela",
+        "affiliation": "University of Basel"
+      },
+      {
+        "name": "Loertscher, Emanuel",
+        "affiliation": "IBM Zurich Research Laboratory",
+        "orcid": "0000-0002-5671-5051"
+      },
+      {
+        "name": "Feringa, Ben",
+        "affiliation": null,
+        "orcid": "0000-0003-0588-8435"
+      },
+      {
+        "name": "Palivan, Cornelia G.",
+        "affiliation": "Universit\u00e4t Basel",
+        "orcid": "0000-0001-7777-5355"
+      }
+    ],
+    "keywords": [
+      "cell mimics",
+      "artificial organelles",
+      "molecular motors",
+      "protocell communication and signaling"
+    ],
+    "dates": [
+      {
+        "type": "accepted"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "Advanced Materials"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "859416",
+        "internal_id": "10.13039/501100000780::859416",
+        "funder": {
+          "name": "European Commission",
+          "doi": "10.13039/501100000780",
+          "acronym": "EC"
+        },
+        "title": "Molecular Machines Functioning in Cells",
+        "acronym": "BIOMOLMACS",
+        "program": "H2020-EU.1.3.",
+        "url": "https://cordis.europa.eu/projects/859416"
+      },
+      {
+        "code": "205608",
+        "internal_id": "10.13039/501100001711::205608",
+        "funder": {
+          "name": "Swiss National Science Foundation",
+          "doi": "10.13039/501100001711",
+          "acronym": "SNSF"
+        },
+        "title": "NCCR MSE: Molecular Systems Engineering (phase III)",
+        "program": "Programmes"
+      }
+    ],
+    "communities": [
+      {
+        "id": "eu"
+      },
+      {
+        "id": "nccr-mse-ord"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10778461"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Photoreceptor-like Signal Transduction Between Polymer-Based Protocells",
+  "links": {
+    "self": "https://zenodo.org/api/records/10778462",
+    "self_html": "https://zenodo.org/records/10778462",
+    "preview_html": "https://zenodo.org/records/10778462?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10778462",
+    "self_doi": "https://doi.org/10.5281/zenodo.10778462",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10778462",
+    "reserve_doi": "https://zenodo.org/api/records/10778462/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10778461",
+    "parent_html": "https://zenodo.org/records/10778461",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10778461",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10778461",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10778462/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10778462/sequence/default",
+    "files": "https://zenodo.org/api/records/10778462/files",
+    "media_files": "https://zenodo.org/api/records/10778462/media-files",
+    "archive": "https://zenodo.org/api/records/10778462/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10778462/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10778462/versions/latest",
+    "latest_html": "https://zenodo.org/records/10778462/latest",
+    "versions": "https://zenodo.org/api/records/10778462/versions",
+    "draft": "https://zenodo.org/api/records/10778462/draft",
+    "access_links": "https://zenodo.org/api/records/10778462/access/links",
+    "access_grants": "https://zenodo.org/api/records/10778462/access/grants",
+    "access_users": "https://zenodo.org/api/records/10778462/access/users",
+    "access_request": "https://zenodo.org/api/records/10778462/access/request",
+    "access": "https://zenodo.org/api/records/10778462/access",
+    "communities": "https://zenodo.org/api/records/10778462/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10778462/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10778462/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10778462/file-modification",
+    "requests": "https://zenodo.org/api/records/10778462/requests"
+  },
+  "updated": "2024-10-27T21:00:00.309735+00:00",
+  "recid": "10778462",
+  "revision": 8,
+  "files": [
+    {
+      "id": "7a5687a3-c0a1-415c-8546-f6d32fc76e27",
+      "key": "SI_fig16.zip",
+      "size": 52352726,
+      "checksum": "md5:033fc6b069fb691ea01ad8eff07c4534",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig16.zip/content"
+      }
+    },
+    {
+      "id": "cc4af1e9-f76d-4f57-a8ff-3df44fd5248c",
+      "key": "SI_fig14.zip",
+      "size": 3202561,
+      "checksum": "md5:e9680fb48fbff7b1c7fb4bf9e04ede63",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig14.zip/content"
+      }
+    },
+    {
+      "id": "eb9234a9-ee5b-4c8d-9bb5-669738b5ee42",
+      "key": "SI_fig35.zip",
+      "size": 231610,
+      "checksum": "md5:633f4fcaef183f68e990b9d97fc7dcf1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig35.zip/content"
+      }
+    },
+    {
+      "id": "dfd0eddf-01fc-4d0d-8f8c-d580672f27ec",
+      "key": "SI_fig22.zip",
+      "size": 12157844,
+      "checksum": "md5:5dd79da63d44d3e9bef03e1d27cf1fad",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig22.zip/content"
+      }
+    },
+    {
+      "id": "cfe7af93-7016-4b01-a0f5-36bd20897372",
+      "key": "SI_fig4.zip",
+      "size": 6269613,
+      "checksum": "md5:d94950a9c34f57a783a3f3f57f9b1c29",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig4.zip/content"
+      }
+    },
+    {
+      "id": "9ff15981-36d1-432d-9b13-2d84486119ea",
+      "key": "SI_fig6.zip",
+      "size": 72126,
+      "checksum": "md5:c5d977b30e55b5780d1e1d42e3020f09",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig6.zip/content"
+      }
+    },
+    {
+      "id": "910fec60-a1ff-4036-b0a2-2c62d02d4c4d",
+      "key": "SI_fig17.zip",
+      "size": 339956,
+      "checksum": "md5:743bb7aeeef8e874ee4fc753d85317a1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig17.zip/content"
+      }
+    },
+    {
+      "id": "47c3de11-6146-4b20-9550-4c79a13faf68",
+      "key": "SI_fig39.zip",
+      "size": 434306,
+      "checksum": "md5:8e38d0e1fcdb68e375b82b7dbcacbaed",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig39.zip/content"
+      }
+    },
+    {
+      "id": "464f2eea-ac12-4176-ad3e-3be3eb3c3cff",
+      "key": "SI_fig10.zip",
+      "size": 213248,
+      "checksum": "md5:9f8d5bb44463726d020c39e31b97bd77",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig10.zip/content"
+      }
+    },
+    {
+      "id": "8d9a0c1b-21e6-4781-9b55-72bf747b300a",
+      "key": "SI_fig29.zip",
+      "size": 322014,
+      "checksum": "md5:e44d872e6d6a1d63facdf39db6ffd039",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig29.zip/content"
+      }
+    },
+    {
+      "id": "d69278eb-2245-4d68-b307-b5df5a64b21b",
+      "key": "SI_fig34.zip",
+      "size": 2203442,
+      "checksum": "md5:b980fd359622f00844cbe093e858d59a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig34.zip/content"
+      }
+    },
+    {
+      "id": "28775484-6178-429c-91d5-9888c6fee289",
+      "key": "SI_fig32.zip",
+      "size": 12802254,
+      "checksum": "md5:ab0bc8972e19c4000c1ce53a890980f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig32.zip/content"
+      }
+    },
+    {
+      "id": "7934f637-0740-4584-978b-db6cd1bc60a3",
+      "key": "fig3.zip",
+      "size": 2710078017,
+      "checksum": "md5:8759f729036f80c76979e235e9e236bb",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/fig3.zip/content"
+      }
+    },
+    {
+      "id": "a6cafc34-7aaa-4e04-87c5-c6fc5df48c0c",
+      "key": "SI_fig3.zip",
+      "size": 938014,
+      "checksum": "md5:5a280654285dd8401aeb92fe5de5435c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig3.zip/content"
+      }
+    },
+    {
+      "id": "c6162592-6e8c-401a-bbf3-45970e71866b",
+      "key": "SI_fig38.zip",
+      "size": 244367,
+      "checksum": "md5:b2999142b8b3a679c6d577b327af800f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig38.zip/content"
+      }
+    },
+    {
+      "id": "9240d31b-4071-4b68-8d9d-05d8fbe57a62",
+      "key": "SI_fig31.zip",
+      "size": 173008,
+      "checksum": "md5:ee2708fb4cba3869fc217d57fc823c3f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig31.zip/content"
+      }
+    },
+    {
+      "id": "5ddc5ad5-9d19-48e0-95d1-5d943b4117c5",
+      "key": "SI_fig36.zip",
+      "size": 984684,
+      "checksum": "md5:22e8c99f7755c978b4fda35b783679a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig36.zip/content"
+      }
+    },
+    {
+      "id": "2ed80378-38f1-4792-b5e8-8b9ffbfe3f1c",
+      "key": "SI_fig30.zip",
+      "size": 461130,
+      "checksum": "md5:ed71405f2b094ea677d05659c1c043be",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig30.zip/content"
+      }
+    },
+    {
+      "id": "152b95ee-5266-4eee-b80a-16b4be61093c",
+      "key": "SI_fig25.zip",
+      "size": 439330,
+      "checksum": "md5:bb3e28ac0e62c078a25782de8bd78edd",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig25.zip/content"
+      }
+    },
+    {
+      "id": "0e2d7f3a-7a28-4b3a-b8dc-0cbafb8fcf03",
+      "key": "SI_fig8.zip",
+      "size": 2360360,
+      "checksum": "md5:23e550e5ecb3ed771416335533c9972d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig8.zip/content"
+      }
+    },
+    {
+      "id": "0b3c2cee-63e6-44cc-8c23-8ec31c42d941",
+      "key": "SI_fig18.zip",
+      "size": 257802,
+      "checksum": "md5:aa25bde708d625271f1c3211b989a116",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig18.zip/content"
+      }
+    },
+    {
+      "id": "c0c80fda-8e0e-489a-84a2-625b5ff11ee7",
+      "key": "SI_fig37.zip",
+      "size": 537246,
+      "checksum": "md5:c4aa9e4dd3cda48a2015fcef4ff1a535",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig37.zip/content"
+      }
+    },
+    {
+      "id": "928f77db-617a-42ce-a031-b3c50e8be13a",
+      "key": "SI_fig5.zip",
+      "size": 1792661,
+      "checksum": "md5:b754a7f48a2af7397362cc0b8be228e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig5.zip/content"
+      }
+    },
+    {
+      "id": "98b7280e-fb6c-4acb-9655-19b885986a11",
+      "key": "SI_fig24.zip",
+      "size": 96963,
+      "checksum": "md5:f3f5689f33244d592e525e8ba03d9fe4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig24.zip/content"
+      }
+    },
+    {
+      "id": "ab593f1c-4b47-4ec6-a065-faa4b75a2f2b",
+      "key": "SI_fig26.zip",
+      "size": 110340,
+      "checksum": "md5:a2292abb32667b75e191e8f36de9728f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig26.zip/content"
+      }
+    },
+    {
+      "id": "64d08484-5735-4f9b-816c-fad50be82122",
+      "key": "SI_fig13.zip",
+      "size": 5962748,
+      "checksum": "md5:b60026b86f537c05aed1726a4b7cb94f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig13.zip/content"
+      }
+    },
+    {
+      "id": "6f6b228c-6536-4e34-b6b3-e316d956186c",
+      "key": "SI_fig41.zip",
+      "size": 18910,
+      "checksum": "md5:927ed26301aea953e616fc48a8a378d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig41.zip/content"
+      }
+    },
+    {
+      "id": "75dc0fb1-81de-41a3-a48b-e48f38b964df",
+      "key": "SI_fig40.zip",
+      "size": 216179,
+      "checksum": "md5:974a810cb38dd8a0d4fb3f551e88a464",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig40.zip/content"
+      }
+    },
+    {
+      "id": "95d12864-5342-482d-8ed0-08bf55f89b58",
+      "key": "SI_fig21.zip",
+      "size": 12140336,
+      "checksum": "md5:0a5453ecf0dddd3397fdbfb0f3ce13c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig21.zip/content"
+      }
+    },
+    {
+      "id": "3ca513e4-7b97-4be1-8d3d-86ea7a6b7020",
+      "key": "SI_fig27.zip",
+      "size": 213318,
+      "checksum": "md5:b4b966541888b9cc00ea2c1ec4f76880",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig27.zip/content"
+      }
+    },
+    {
+      "id": "c3dab3e1-caac-4757-a45d-f858a38e1a65",
+      "key": "SI_fig12.zip",
+      "size": 62295,
+      "checksum": "md5:4fc0f86ac4b0cbab2a5acd791bde1618",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig12.zip/content"
+      }
+    },
+    {
+      "id": "645d343e-c47e-4b3b-9e49-7772f099c521",
+      "key": "SI_fig33.zip",
+      "size": 55686,
+      "checksum": "md5:8c0ae2e36a015e8cdb964071fab2121c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig33.zip/content"
+      }
+    },
+    {
+      "id": "d2392862-e353-4ae5-9f75-dc31e6bc3c79",
+      "key": "SI_fig9.zip",
+      "size": 205813,
+      "checksum": "md5:6e483e9286c5bfa45205ece9ecc07b2b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig9.zip/content"
+      }
+    },
+    {
+      "id": "6c0b9199-2868-439a-8d04-5cbea34304f0",
+      "key": "SI_fig15.zip",
+      "size": 9476457,
+      "checksum": "md5:6cc196413d43111c66889292ae56bc1c",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig15.zip/content"
+      }
+    },
+    {
+      "id": "7130f254-0fc7-4cd0-9a85-fc51f2d88624",
+      "key": "SI_fig7.zip",
+      "size": 913292,
+      "checksum": "md5:d2f0924a113b9ba895b015e4fe2c4445",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig7.zip/content"
+      }
+    },
+    {
+      "id": "d1e17b74-a039-44a4-997d-15aef8a0a4d3",
+      "key": "fig4.zip",
+      "size": 161773788,
+      "checksum": "md5:898b39a0a3524161237e0f961e765439",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/fig4.zip/content"
+      }
+    },
+    {
+      "id": "6b9ce3e3-6b1e-4514-97de-2e1ec7b1ae29",
+      "key": "SI_fig23.zip",
+      "size": 135378,
+      "checksum": "md5:86bae7ffc32cb8a423399f70858815fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig23.zip/content"
+      }
+    },
+    {
+      "id": "dd494078-adc2-45c7-aaea-683f86a6cac7",
+      "key": "SI_fig28.zip",
+      "size": 712133,
+      "checksum": "md5:c9cabd650f8925d90e73a681f5d8d61f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig28.zip/content"
+      }
+    },
+    {
+      "id": "0b6340e0-d6c1-41e3-b14a-0e036dc23b1f",
+      "key": "SI_fig11.zip",
+      "size": 292813,
+      "checksum": "md5:aa76807c468ae6bb4fdd0cad9940abb0",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig11.zip/content"
+      }
+    },
+    {
+      "id": "42fe62d1-d5ea-481b-aef3-f3c7a0449239",
+      "key": "SI_fig2.zip",
+      "size": 1282713,
+      "checksum": "md5:de3dfc2b87b206400ddc573c6112b359",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig2.zip/content"
+      }
+    },
+    {
+      "id": "f7ca862e-26bf-48ba-b0da-b7075c7a75dd",
+      "key": "SI_fig20.zip",
+      "size": 61168,
+      "checksum": "md5:9c5328165dac5a2412db12b5330ecbb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig20.zip/content"
+      }
+    },
+    {
+      "id": "f876066a-bac8-4164-aae8-aa27b4f8a9fd",
+      "key": "SI_fig19.zip",
+      "size": 106198,
+      "checksum": "md5:ac849b97f8cd944190265da230f3583f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/SI_fig19.zip/content"
+      }
+    },
+    {
+      "id": "e8b530e0-d2b4-43ef-9a02-92c8fe093d46",
+      "key": "fig5.zip",
+      "size": 310477840,
+      "checksum": "md5:4b35a6b45968783e2284eccdcc141ed6",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/fig5.zip/content"
+      }
+    },
+    {
+      "id": "e80b574c-01e1-427a-a3e4-f85f0b27d104",
+      "key": "fig2.zip",
+      "size": 4343425180,
+      "checksum": "md5:5cb01954f2735edf9489a160142e1b1e",
+      "links": {
+        "self": "https://zenodo.org/api/records/10778462/files/fig2.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "497376"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1048,
+    "unique_downloads": 1043,
+    "views": 107,
+    "unique_views": 92,
+    "version_downloads": 1048,
+    "version_unique_downloads": 1043,
+    "version_unique_views": 92,
+    "version_views": 107
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 44,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 7656607867,
+    "top_level_files": [
+      {
+        "name": "SI_fig16.zip",
+        "size": 52352726
+      },
+      {
+        "name": "SI_fig14.zip",
+        "size": 3202561
+      },
+      {
+        "name": "SI_fig35.zip",
+        "size": 231610
+      },
+      {
+        "name": "SI_fig22.zip",
+        "size": 12157844
+      },
+      {
+        "name": "SI_fig4.zip",
+        "size": 6269613
+      },
+      {
+        "name": "SI_fig6.zip",
+        "size": 72126
+      },
+      {
+        "name": "SI_fig17.zip",
+        "size": 339956
+      },
+      {
+        "name": "SI_fig39.zip",
+        "size": 434306
+      },
+      {
+        "name": "SI_fig10.zip",
+        "size": 213248
+      },
+      {
+        "name": "SI_fig29.zip",
+        "size": 322014
+      },
+      {
+        "name": "SI_fig34.zip",
+        "size": 2203442
+      },
+      {
+        "name": "SI_fig32.zip",
+        "size": 12802254
+      },
+      {
+        "name": "fig3.zip",
+        "size": 2710078017
+      },
+      {
+        "name": "SI_fig3.zip",
+        "size": 938014
+      },
+      {
+        "name": "SI_fig38.zip",
+        "size": 244367
+      },
+      {
+        "name": "SI_fig31.zip",
+        "size": 173008
+      },
+      {
+        "name": "SI_fig36.zip",
+        "size": 984684
+      },
+      {
+        "name": "SI_fig30.zip",
+        "size": 461130
+      },
+      {
+        "name": "SI_fig25.zip",
+        "size": 439330
+      },
+      {
+        "name": "SI_fig8.zip",
+        "size": 2360360
+      },
+      {
+        "name": "SI_fig18.zip",
+        "size": 257802
+      },
+      {
+        "name": "SI_fig37.zip",
+        "size": 537246
+      },
+      {
+        "name": "SI_fig5.zip",
+        "size": 1792661
+      },
+      {
+        "name": "SI_fig24.zip",
+        "size": 96963
+      },
+      {
+        "name": "SI_fig26.zip",
+        "size": 110340
+      },
+      {
+        "name": "SI_fig13.zip",
+        "size": 5962748
+      },
+      {
+        "name": "SI_fig41.zip",
+        "size": 18910
+      },
+      {
+        "name": "SI_fig40.zip",
+        "size": 216179
+      },
+      {
+        "name": "SI_fig21.zip",
+        "size": 12140336
+      },
+      {
+        "name": "SI_fig27.zip",
+        "size": 213318
+      },
+      {
+        "name": "SI_fig12.zip",
+        "size": 62295
+      },
+      {
+        "name": "SI_fig33.zip",
+        "size": 55686
+      },
+      {
+        "name": "SI_fig9.zip",
+        "size": 205813
+      },
+      {
+        "name": "SI_fig15.zip",
+        "size": 9476457
+      },
+      {
+        "name": "SI_fig7.zip",
+        "size": 913292
+      },
+      {
+        "name": "fig4.zip",
+        "size": 161773788
+      },
+      {
+        "name": "SI_fig23.zip",
+        "size": 135378
+      },
+      {
+        "name": "SI_fig28.zip",
+        "size": 712133
+      },
+      {
+        "name": "SI_fig11.zip",
+        "size": 292813
+      },
+      {
+        "name": "SI_fig2.zip",
+        "size": 1282713
+      },
+      {
+        "name": "SI_fig20.zip",
+        "size": 61168
+      },
+      {
+        "name": "SI_fig19.zip",
+        "size": 106198
+      },
+      {
+        "name": "fig5.zip",
+        "size": 310477840
+      },
+      {
+        "name": "fig2.zip",
+        "size": 4343425180
+      }
+    ],
+    "zip_contents": {
+      "si_fig16.zip": {
+        "total_files": 35,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 110000401,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig16/si_fig16.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig14.zip": {
+        "total_files": 11,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 6787810,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig14/si_fig14.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig35.zip": {
+        "total_files": 4,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 247669,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig35/si_fig35.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig22.zip": {
+        "total_files": 325,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 27483402,
+        "file_types": {
+          ".zip": 1,
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig22/si_fig22.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig4.zip": {
+        "total_files": 5,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 14358266,
+        "file_types": {
+          ".zip": 1,
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig4/si_fig4.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig6.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 83272,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig6/si_fig6.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig17.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 353123,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig17/si_fig17.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig39.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 446757,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig39/si_fig39.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig10.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 233642,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig10/si_fig10.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig29.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 331857,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig29/si_fig29.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig34.zip": {
+        "total_files": 15,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2378865,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig34/si_fig34.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig32.zip": {
+        "total_files": 325,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 20527576,
+        "file_types": {
+          ".zip": 1,
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig32/si_fig32.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "fig3.zip": {
+        "total_files": 281,
+        "total_directories": 71,
+        "total_uncompressed_bytes": 4850858407,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "si_fig3.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 973854,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig3/si_fig3.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig38.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 252940,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig38/si_fig38.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig31.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 246022,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig31/si_fig31.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig36.zip": {
+        "total_files": 12,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1385068,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig36/si_fig36.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig30.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 501776,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig30/si_fig30.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig25.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 456522,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig25/si_fig25.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig8.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 2406912,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig8/si_fig8.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig18.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 269666,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig18/si_fig18.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig37.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 556225,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig37/si_fig37.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig5.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1808349,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig5/si_fig5.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig24.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 100044,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig24/si_fig24.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig26.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 121744,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig26/si_fig26.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig13.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 13844938,
+        "file_types": {
+          ".zip": 1
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "si_fig40.zip": {
+        "total_files": 5,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 243398,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig40/si_fig40.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig21.zip": {
+        "total_files": 7,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 27988147,
+        "file_types": {
+          ".zip": 2,
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig21/si_fig21.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig27.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 241239,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig27/si_fig27.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig9.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 222268,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig9/si_fig9.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig15.zip": {
+        "total_files": 3,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 12168288,
+        "file_types": {
+          ".tif": 2,
+          ".png": 1
+        },
+        "imaging_file_count": 3,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig15/pss_mm.tif",
+          "si_fig15/pss_mm_broken.tif",
+          "si_fig15/si_fig15.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig11.zip": {
+        "total_files": 7,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 422546,
+        "file_types": {
+          ".tif": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig11/si_fig11.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig2.zip": {
+        "total_files": 2,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1318189,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig2/si_fig2.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "si_fig19.zip": {
+        "total_files": 1,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 130781,
+        "file_types": {
+          ".png": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "si_fig19/si_fig19.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "fig5.zip": {
+        "total_files": 106,
+        "total_directories": 10,
+        "total_uncompressed_bytes": 526916685,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "si_fig16/si_fig16.png",
+      "si_fig14/si_fig14.png",
+      "si_fig35/si_fig35.png",
+      "si_fig22/si_fig22.png",
+      "si_fig4/si_fig4.png",
+      "si_fig6/si_fig6.png",
+      "si_fig17/si_fig17.png",
+      "si_fig39/si_fig39.png",
+      "si_fig10/si_fig10.png",
+      "si_fig29/si_fig29.png",
+      "si_fig34/si_fig34.png",
+      "si_fig32/si_fig32.png",
+      "si_fig3/si_fig3.png",
+      "si_fig38/si_fig38.png",
+      "si_fig31/si_fig31.png",
+      "si_fig36/si_fig36.png",
+      "si_fig30/si_fig30.png",
+      "si_fig25/si_fig25.png",
+      "si_fig8/si_fig8.png",
+      "si_fig18/si_fig18.png",
+      "si_fig37/si_fig37.png",
+      "si_fig5/si_fig5.png",
+      "si_fig24/si_fig24.png",
+      "si_fig26/si_fig26.png",
+      "si_fig40/si_fig40.png",
+      "si_fig21/si_fig21.png",
+      "si_fig27/si_fig27.png",
+      "si_fig9/si_fig9.png",
+      "si_fig15/pss_mm.tif",
+      "si_fig15/pss_mm_broken.tif",
+      "si_fig15/si_fig15.png",
+      "si_fig11/si_fig11.tif",
+      "si_fig2/si_fig2.png",
+      "si_fig19/si_fig19.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:27.361373"
+}

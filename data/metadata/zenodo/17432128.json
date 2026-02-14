@@ -1,0 +1,199 @@
+{
+  "created": "2025-10-24T09:15:28.054183+00:00",
+  "modified": "2025-10-24T09:15:28.396708+00:00",
+  "id": 17432128,
+  "conceptrecid": "15050199",
+  "doi": "10.5281/zenodo.17432128",
+  "conceptdoi": "10.5281/zenodo.15050199",
+  "doi_url": "https://doi.org/10.5281/zenodo.17432128",
+  "metadata": {
+    "title": "PomerFish: A dataset for fishes across Pomerania freshwater waterbodies in-situ environments",
+    "doi": "10.5281/zenodo.17432128",
+    "publication_date": "2025-10-24",
+    "description": "<p><strong>Overview:</strong></p>\n<p>We established a novel dataset through underwater video surveillance across temperate freshwater habitats in the Pomeranian region of Central Europe, focusing on endangered Salmon and ecologically significant species. Researchers collected these videos between 2015 and 2024 using a GoPro Hero 5 camera model. The PomerFish dataset comprises two sub-datasets: PomerFishObj and PomerFishSeg. Our dataset features both bounding box and segmentation mask annotations, enabling its application in in-habitat monitoring and growth status evaluation of freshwater species, a capability surpassing existing datasets. For the annotations of the images, CVAT v2.13 open-source software was utilized.</p>\n<p><strong>Usage:</strong></p>\n<p>The entire dataset is packaged within a compressed archive file named PomerFish.rar. PomerFishObj cotains imges and a coco format json file. PomerFishSeg provides two distinct segmentation masks: (1) semantic segmentation masks (SegmentationClass), where each pixel is labeled with a categorical class, and (2) instance segmentation masks (SegmentationObject), which delineate individual object instances for counting. The sample of dataset (PomerFish_subset.rar) were provided for users to check the dataset structure. For easy PyTorch integration, we provide two notebook scripts: one for object detection (train_detection) and one for semantic segmentation (train_segmentation). These scripts include pre-processing, PyTorch dataloaders, and complete baselines using pre-trained YOLOv5 and deeplabv3_resnet50 models.</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Shi, Xiaohao",
+        "affiliation": "University of Szczecin",
+        "orcid": "0009-0006-2932-7965"
+      },
+      {
+        "name": "Tanwari, Kamran Anwar",
+        "affiliation": "University of Szczecin",
+        "orcid": "0000-0002-4811-2613"
+      },
+      {
+        "name": "Krepski, Tomasz",
+        "affiliation": "University of Szczecin",
+        "orcid": "0000-0003-1245-1362"
+      },
+      {
+        "name": "Shi, Zhe",
+        "affiliation": "Xi'an Polytechnic University"
+      },
+      {
+        "name": "Czerniawski, Robert",
+        "affiliation": "University of Szczecin",
+        "orcid": "0000-0001-7785-087X"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Furdyna, Artur",
+        "affiliation": null,
+        "type": "DataCollector",
+        "orcid": "0000-0001-5746-2802"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15050199"
+          }
+        }
+      ]
+    }
+  },
+  "title": "PomerFish: A dataset for fishes across Pomerania freshwater waterbodies in-situ environments",
+  "links": {
+    "self": "https://zenodo.org/api/records/17432128",
+    "self_html": "https://zenodo.org/records/17432128",
+    "preview_html": "https://zenodo.org/records/17432128?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17432128",
+    "self_doi": "https://doi.org/10.5281/zenodo.17432128",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17432128",
+    "reserve_doi": "https://zenodo.org/api/records/17432128/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15050199",
+    "parent_html": "https://zenodo.org/records/15050199",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15050199",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15050199",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17432128/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17432128/sequence/default",
+    "files": "https://zenodo.org/api/records/17432128/files",
+    "media_files": "https://zenodo.org/api/records/17432128/media-files",
+    "archive": "https://zenodo.org/api/records/17432128/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17432128/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17432128/versions/latest",
+    "latest_html": "https://zenodo.org/records/17432128/latest",
+    "versions": "https://zenodo.org/api/records/17432128/versions",
+    "draft": "https://zenodo.org/api/records/17432128/draft",
+    "access_links": "https://zenodo.org/api/records/17432128/access/links",
+    "access_grants": "https://zenodo.org/api/records/17432128/access/grants",
+    "access_users": "https://zenodo.org/api/records/17432128/access/users",
+    "access_request": "https://zenodo.org/api/records/17432128/access/request",
+    "access": "https://zenodo.org/api/records/17432128/access",
+    "communities": "https://zenodo.org/api/records/17432128/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17432128/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17432128/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17432128/file-modification",
+    "requests": "https://zenodo.org/api/records/17432128/requests"
+  },
+  "updated": "2025-10-24T09:15:28.396708+00:00",
+  "recid": "17432128",
+  "revision": 4,
+  "files": [
+    {
+      "id": "40d246d9-398b-4e25-9c47-15c498d14e2b",
+      "key": "train_detection.ipynb",
+      "size": 1667583,
+      "checksum": "md5:816fddcb9bb4dbbe0941d9fbc2c6cb81",
+      "links": {
+        "self": "https://zenodo.org/api/records/17432128/files/train_detection.ipynb/content"
+      }
+    },
+    {
+      "id": "029b7ffc-5604-46d1-a185-1364667474dd",
+      "key": "PomerFish_subset.rar",
+      "size": 28706873,
+      "checksum": "md5:db9b92a177c4ff2120a5453e11ac93c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/17432128/files/PomerFish_subset.rar/content"
+      }
+    },
+    {
+      "id": "b740b592-0834-437c-b569-bf8d90d20832",
+      "key": "PomerFish.rar",
+      "size": 25133399231,
+      "checksum": "md5:b9efa595e17b39f703a589a9bc263bca",
+      "links": {
+        "self": "https://zenodo.org/api/records/17432128/files/PomerFish.rar/content"
+      }
+    },
+    {
+      "id": "3701a30e-dc5b-4d7b-9afb-45ef8af4a748",
+      "key": "train_segmentation.ipynb",
+      "size": 1010122,
+      "checksum": "md5:90995f4c6453dcb642048ef760bfbf32",
+      "links": {
+        "self": "https://zenodo.org/api/records/17432128/files/train_segmentation.ipynb/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1285286"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 335,
+    "unique_downloads": 329,
+    "views": 281,
+    "unique_views": 245,
+    "version_downloads": 175,
+    "version_unique_downloads": 175,
+    "version_unique_views": 101,
+    "version_views": 114
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 25162106104,
+    "top_level_files": [
+      {
+        "name": "train_detection.ipynb",
+        "size": 1667583
+      },
+      {
+        "name": "PomerFish_subset.rar",
+        "size": 28706873
+      },
+      {
+        "name": "PomerFish.rar",
+        "size": 25133399231
+      },
+      {
+        "name": "train_segmentation.ipynb",
+        "size": 1010122
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:02.631540"
+}

@@ -1,0 +1,189 @@
+{
+  "created": "2025-01-28T11:12:34.404770+00:00",
+  "modified": "2025-01-28T11:12:34.603055+00:00",
+  "id": 14753987,
+  "conceptrecid": "14753986",
+  "doi": "10.5281/zenodo.14753987",
+  "conceptdoi": "10.5281/zenodo.14753986",
+  "doi_url": "https://doi.org/10.5281/zenodo.14753987",
+  "metadata": {
+    "title": "Metabolomics of ocular hypertensive rat optic nerve (with/without nicotinamide treatment) (Cimaglia, 2024)",
+    "doi": "10.5281/zenodo.14753987",
+    "publication_date": "2024",
+    "description": "<p>Raw metabolomics datasets from:</p>\n<p>Cimaglia G, Tribble JR, Votruba M, Williams PA, Morgan JE. Oral nicotinamide provides robust, dose-dependent structural and metabolic neuroprotection of retinal ganglion cells in experimental glaucoma. Acta Neuropathol Commun. 2024 Aug 23;12(1):137. doi: 10.1186/s40478-024-01850-8. PMID: 39180087; PMCID: PMC11342512.</p>\n<p>https://pubmed.ncbi.nlm.nih.gov/39180087/</p>\n<p>https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-024-01850-8</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cimaglia, Gloria",
+        "affiliation": "Karolinska Institutet",
+        "orcid": "0000-0001-7461-8979"
+      },
+      {
+        "name": "Williams, Pete",
+        "affiliation": "St Erik Eye Hospital",
+        "orcid": "0000-0001-6194-8397"
+      },
+      {
+        "name": "Tribble, James",
+        "affiliation": "Karolinska Institutet",
+        "orcid": "0000-0001-8301-7358"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available",
+        "description": "Manuscript published"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "glaucoma-omics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14753986"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Metabolomics of ocular hypertensive rat optic nerve (with/without nicotinamide treatment) (Cimaglia, 2024)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14753987",
+    "self_html": "https://zenodo.org/records/14753987",
+    "preview_html": "https://zenodo.org/records/14753987?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14753987",
+    "self_doi": "https://doi.org/10.5281/zenodo.14753987",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14753987",
+    "reserve_doi": "https://zenodo.org/api/records/14753987/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14753986",
+    "parent_html": "https://zenodo.org/records/14753986",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14753986",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14753986",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14753987/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14753987/sequence/default",
+    "files": "https://zenodo.org/api/records/14753987/files",
+    "media_files": "https://zenodo.org/api/records/14753987/media-files",
+    "archive": "https://zenodo.org/api/records/14753987/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14753987/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14753987/versions/latest",
+    "latest_html": "https://zenodo.org/records/14753987/latest",
+    "versions": "https://zenodo.org/api/records/14753987/versions",
+    "draft": "https://zenodo.org/api/records/14753987/draft",
+    "access_links": "https://zenodo.org/api/records/14753987/access/links",
+    "access_grants": "https://zenodo.org/api/records/14753987/access/grants",
+    "access_users": "https://zenodo.org/api/records/14753987/access/users",
+    "access_request": "https://zenodo.org/api/records/14753987/access/request",
+    "access": "https://zenodo.org/api/records/14753987/access",
+    "communities": "https://zenodo.org/api/records/14753987/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14753987/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14753987/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14753987/file-modification",
+    "requests": "https://zenodo.org/api/records/14753987/requests"
+  },
+  "updated": "2025-01-28T11:12:34.603055+00:00",
+  "recid": "14753987",
+  "revision": 4,
+  "files": [
+    {
+      "id": "65357bee-f25c-491c-9441-431b012f1019",
+      "key": "P0754_HILIC_211216.zip",
+      "size": 20456679910,
+      "checksum": "md5:89ddbfa94ec7ae8c5baa77fba8f881de",
+      "links": {
+        "self": "https://zenodo.org/api/records/14753987/files/P0754_HILIC_211216.zip/content"
+      }
+    },
+    {
+      "id": "8952ac63-fbaf-44db-9810-60d39d6a9293",
+      "key": "Supplementary_table.xlsx",
+      "size": 16843,
+      "checksum": "md5:8e468b9b13b0d8e4df1349c67bbe05fd",
+      "links": {
+        "self": "https://zenodo.org/api/records/14753987/files/Supplementary_table.xlsx/content"
+      }
+    },
+    {
+      "id": "ded750a4-0426-4f03-9359-53e6fbf4f22e",
+      "key": "Supplementary_dataset.xlsx",
+      "size": 68952,
+      "checksum": "md5:f8dcb9acdc101a3b6f198dccc755c3fa",
+      "links": {
+        "self": "https://zenodo.org/api/records/14753987/files/Supplementary_dataset.xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1252892"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 30,
+    "unique_downloads": 30,
+    "views": 26,
+    "unique_views": 20,
+    "version_downloads": 30,
+    "version_unique_downloads": 30,
+    "version_unique_views": 20,
+    "version_views": 26
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 20456679910,
+    "top_level_files": [
+      {
+        "name": "P0754_HILIC_211216.zip",
+        "size": 20456679910
+      },
+      {
+        "name": "Supplementary_table.xlsx",
+        "size": 16843
+      },
+      {
+        "name": "Supplementary_dataset.xlsx",
+        "size": 68952
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39180087/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-024-01850-8",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:24.688627"
+}

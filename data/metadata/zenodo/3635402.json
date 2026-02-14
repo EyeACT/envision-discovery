@@ -1,0 +1,164 @@
+{
+  "created": "2020-02-06T10:39:01.486476+00:00",
+  "modified": "2020-02-07T07:20:55.069937+00:00",
+  "id": 3635402,
+  "conceptrecid": "3635401",
+  "doi": "10.5281/zenodo.3635402",
+  "conceptdoi": "10.5281/zenodo.3635401",
+  "doi_url": "https://doi.org/10.5281/zenodo.3635402",
+  "metadata": {
+    "title": "Measurement of Absolute Retinal Blood Flow Using a Laser Doppler Velocimeter Combined with Adaptive Optics",
+    "doi": "10.5281/zenodo.3635402",
+    "publication_date": "2020-02-04",
+    "description": "<p><strong>Data set of measurements related to the following:</strong></p>\n\n<p><strong>Purpose:&nbsp;</strong>Development and validation of an absolute laser Doppler velocimeter (LDV) based on an adaptive optical fundus camera which provides simultaneously high definition images of the fundus vessels and absolute maximal red blood cells (RBCs) velocity in order to calculate the absolute retinal blood flow.</p>\n\n<p><strong>Methods:&nbsp;</strong>This new absolute laser Doppler velocimeter is combined with the adaptive optics fundus camera (rtx1, Imagine Eyes&copy;,Orsay, France) outside its optical wavefront correction path. A 4 seconds recording includes 40 images, each synchronized with two Doppler shift power spectra. Image analysis provides the vessel diameter close to the probing beam and the velocity of the RBCs in the vessels are extracted from the Doppler spectral analysis. Combination of those values gives an average of the absolute retinal blood flow. An in vitro experiment consisting of latex microspheres flowing in water through a glass-capillary to simulate a blood vessel and in vivo measurements on six healthy human retinal venous junctions were done to assess the device.</p>\n\n<p><strong>Results:&nbsp;</strong>In the in vitro experiment, the calculated flow varied between 1.75&nbsp;&mu;l/min and 25.9&nbsp;&mu;l/min and was highly correlated (r2&nbsp;= 0.995) with the imposed flow by a syringe pump. In the in vivo experiment, the error between the flow in the parent vessel and the sum of the flow in the daughter vessels was between&nbsp;&minus;25% and 17% (mean&plusmn;sd&nbsp;&minus;2&nbsp;&plusmn;&nbsp;17%). Retinal blood flow in the main temporal retinal veins of healthy subjects varied between 1.3&nbsp;&mu;L/min and 28.7&nbsp;&mu;L/min</p>\n\n<p><strong>Conclusion:&nbsp;</strong>This adaptive optics LDV prototype (aoLDV) allows the measurement of absolute retinal blood flow derived from the retinal vessel diameter and the maximum RBCs velocity in that vessel.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Geiser Martial",
+        "affiliation": "University of Applied Sciences of Western Switzerland",
+        "orcid": "0000-0002-1017-2872"
+      },
+      {
+        "name": "Truffer Frederic",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Strese Helene",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Ma\u00eetre Gilbert",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Amoos Serge",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Chappelet Marc-Antoine",
+        "affiliation": "Grenoble Alpes University, France"
+      },
+      {
+        "name": "Aptel Florent",
+        "affiliation": "Grenoble Alpes University"
+      },
+      {
+        "name": "Chiquet Christophe",
+        "affiliation": "Marc-Antoine"
+      }
+    ],
+    "keywords": [
+      "laser Doppler velocimetry, ocular blood flow"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3635401"
+          }
+        }
+      ]
+    },
+    "notes": "Data set consists of images done with the rtx1 and simultaneous Doppler spectra of two channel."
+  },
+  "title": "Measurement of Absolute Retinal Blood Flow Using a Laser Doppler Velocimeter Combined with Adaptive Optics",
+  "links": {
+    "self": "https://zenodo.org/api/records/3635402",
+    "self_html": "https://zenodo.org/records/3635402",
+    "preview_html": "https://zenodo.org/records/3635402?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3635402",
+    "self_doi": "https://doi.org/10.5281/zenodo.3635402",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3635402",
+    "reserve_doi": "https://zenodo.org/api/records/3635402/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3635401",
+    "parent_html": "https://zenodo.org/records/3635401",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3635401",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3635401",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3635402/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3635402/sequence/default",
+    "files": "https://zenodo.org/api/records/3635402/files",
+    "media_files": "https://zenodo.org/api/records/3635402/media-files",
+    "archive": "https://zenodo.org/api/records/3635402/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3635402/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3635402/versions/latest",
+    "latest_html": "https://zenodo.org/records/3635402/latest",
+    "versions": "https://zenodo.org/api/records/3635402/versions",
+    "draft": "https://zenodo.org/api/records/3635402/draft",
+    "access_links": "https://zenodo.org/api/records/3635402/access/links",
+    "access_grants": "https://zenodo.org/api/records/3635402/access/grants",
+    "access_users": "https://zenodo.org/api/records/3635402/access/users",
+    "access_request": "https://zenodo.org/api/records/3635402/access/request",
+    "access": "https://zenodo.org/api/records/3635402/access",
+    "communities": "https://zenodo.org/api/records/3635402/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3635402/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3635402/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3635402/file-modification",
+    "requests": "https://zenodo.org/api/records/3635402/requests"
+  },
+  "updated": "2020-02-07T07:20:55.069937+00:00",
+  "recid": "3635402",
+  "revision": 2,
+  "files": [
+    {
+      "id": "749fa791-aeb2-4934-8374-31aa0e019356",
+      "key": "Data4Publication.zip",
+      "size": 1407989337,
+      "checksum": "md5:8ff0592e4128e280b3e2adf57a90fd45",
+      "links": {
+        "self": "https://zenodo.org/api/records/3635402/files/Data4Publication.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90072"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 25,
+    "unique_downloads": 23,
+    "views": 248,
+    "unique_views": 226,
+    "version_downloads": 25,
+    "version_unique_downloads": 23,
+    "version_unique_views": 226,
+    "version_views": 248
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1407989337,
+    "top_level_files": [
+      {
+        "name": "Data4Publication.zip",
+        "size": 1407989337
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:51.789147"
+}

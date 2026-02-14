@@ -1,0 +1,322 @@
+{
+  "created": "2024-01-23T15:27:00.237993+00:00",
+  "modified": "2024-01-23T15:27:01.633579+00:00",
+  "id": 10548809,
+  "conceptrecid": "10548808",
+  "doi": "10.5281/zenodo.10548809",
+  "conceptdoi": "10.5281/zenodo.10548808",
+  "doi_url": "https://doi.org/10.5281/zenodo.10548809",
+  "metadata": {
+    "title": "Segmentation Uncertainty",
+    "doi": "10.5281/zenodo.10548809",
+    "publication_date": "2024-01-22",
+    "description": "<p>This data includes:&nbsp;</p>\n<ul>\n<li><strong>Torso.zip </strong>including torso geometry and electrode positions</li>\n<li><strong>vent-1..10.vtk </strong>the original segmentations corresponding to one single patient</li>\n<li><strong>shape-models.zip</strong> 261 shape models derived from the original segmentations<strong>&nbsp;</strong></li>\n<li><strong>StimProtocols</strong> coordinates of the stimulation sites</li>\n<li><strong>EikonalSim.zip&nbsp;</strong>eikonal simulations on shape models % stimProtocol</li>\n<li><strong>pseudoECGs_ShapeModels.zip </strong>computed body surface potentials for each shape model % stimProtocol</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zemzemi, Nejib",
+        "affiliation": "Inria Centre de recherche Bordeaux Sud-Ouest",
+        "orcid": "0000-0002-1212-8090"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "eu"
+      },
+      {
+        "id": "personalizeaf"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10548808"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Segmentation Uncertainty",
+  "links": {
+    "self": "https://zenodo.org/api/records/10548809",
+    "self_html": "https://zenodo.org/records/10548809",
+    "preview_html": "https://zenodo.org/records/10548809?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10548809",
+    "self_doi": "https://doi.org/10.5281/zenodo.10548809",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10548809",
+    "reserve_doi": "https://zenodo.org/api/records/10548809/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10548808",
+    "parent_html": "https://zenodo.org/records/10548808",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10548808",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10548808",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10548809/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10548809/sequence/default",
+    "files": "https://zenodo.org/api/records/10548809/files",
+    "media_files": "https://zenodo.org/api/records/10548809/media-files",
+    "archive": "https://zenodo.org/api/records/10548809/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10548809/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10548809/versions/latest",
+    "latest_html": "https://zenodo.org/records/10548809/latest",
+    "versions": "https://zenodo.org/api/records/10548809/versions",
+    "draft": "https://zenodo.org/api/records/10548809/draft",
+    "access_links": "https://zenodo.org/api/records/10548809/access/links",
+    "access_grants": "https://zenodo.org/api/records/10548809/access/grants",
+    "access_users": "https://zenodo.org/api/records/10548809/access/users",
+    "access_request": "https://zenodo.org/api/records/10548809/access/request",
+    "access": "https://zenodo.org/api/records/10548809/access",
+    "communities": "https://zenodo.org/api/records/10548809/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10548809/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10548809/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10548809/file-modification",
+    "requests": "https://zenodo.org/api/records/10548809/requests"
+  },
+  "updated": "2024-01-23T15:27:01.633579+00:00",
+  "recid": "10548809",
+  "revision": 4,
+  "files": [
+    {
+      "id": "476c4476-1432-4366-80d7-50d121902df1",
+      "key": "vent_3.obj",
+      "size": 153406,
+      "checksum": "md5:cf6f398043ef01028f24092c056cf548",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_3.obj/content"
+      }
+    },
+    {
+      "id": "0fff86fb-a6da-4184-ba3c-db9d3a8a7cf0",
+      "key": "vent_4.obj",
+      "size": 152087,
+      "checksum": "md5:9862d473a476fb5017dc4edb2014677d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_4.obj/content"
+      }
+    },
+    {
+      "id": "c372ddfe-83b4-41ff-b1f6-5100168f7413",
+      "key": "vent_9.obj",
+      "size": 153397,
+      "checksum": "md5:6bb8ef121d047c5001f6bf17cb013236",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_9.obj/content"
+      }
+    },
+    {
+      "id": "cb547469-d9f2-4836-8501-fd80716b7df5",
+      "key": "vent_1.obj",
+      "size": 138201,
+      "checksum": "md5:736ccab03a7e6255a34f8b0c0e4ff7fb",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_1.obj/content"
+      }
+    },
+    {
+      "id": "4dc486b4-d372-4755-b344-0a62d14251a8",
+      "key": "vent_5.obj",
+      "size": 133680,
+      "checksum": "md5:08ec962d10b869960a04f261bed398b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_5.obj/content"
+      }
+    },
+    {
+      "id": "bb1e4a31-af59-4501-91ad-bc0397feaa15",
+      "key": "Torso.zip",
+      "size": 27043,
+      "checksum": "md5:c222a59b67c056df55f34a519e13a053",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/Torso.zip/content"
+      }
+    },
+    {
+      "id": "ee6242d5-def5-4cf2-8c08-6a1467fe3eee",
+      "key": "shape_models.zip",
+      "size": 24437596,
+      "checksum": "md5:c85a25945ba5abcad910ebfc8b06234a",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/shape_models.zip/content"
+      }
+    },
+    {
+      "id": "aa8a1e64-0a1b-4766-bef5-9de52f1638ac",
+      "key": "vent_2.obj",
+      "size": 164973,
+      "checksum": "md5:469f29c662ce93b2ea5d1f1055af708f",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_2.obj/content"
+      }
+    },
+    {
+      "id": "45f7330e-fcea-49cd-80ce-b8abdd1d4395",
+      "key": "vent_8.obj",
+      "size": 148674,
+      "checksum": "md5:01b62d34fef23d0508c1042e39dd5856",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_8.obj/content"
+      }
+    },
+    {
+      "id": "3a9ce040-2b8a-4ff6-a06c-b77019ca716a",
+      "key": "vent_10.obj",
+      "size": 193461,
+      "checksum": "md5:b1cb4088e040ebdc0bc82e8fa8d4776d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_10.obj/content"
+      }
+    },
+    {
+      "id": "c1bc5952-59b1-42c0-9c2d-16abf5a41f92",
+      "key": "vent_6.obj",
+      "size": 136886,
+      "checksum": "md5:321c335db71e1b92edd5ad9423c1da85",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_6.obj/content"
+      }
+    },
+    {
+      "id": "a99c150c-b02e-4a75-af04-bff294269399",
+      "key": "vent_7.obj",
+      "size": 155910,
+      "checksum": "md5:becb84d46630c0cbc8d3f2cecefbf65d",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/vent_7.obj/content"
+      }
+    },
+    {
+      "id": "3f8bc1ed-6962-4859-baf8-af9bf3e3ffe7",
+      "key": "pseudoECGs_ShapeModels.zip",
+      "size": 604559360,
+      "checksum": "md5:20dff219164bf6524b82732b1d4198f4",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/pseudoECGs_ShapeModels.zip/content"
+      }
+    },
+    {
+      "id": "499ed10e-8caa-450d-aaea-2a4aa669c1bc",
+      "key": "StimProtocols",
+      "size": 236,
+      "checksum": "md5:e6587e52fe04ca64f3c9f756def172e2",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/StimProtocols/content"
+      }
+    },
+    {
+      "id": "78204317-7dba-4f7b-be36-68749497d821",
+      "key": "EikonalSim.zip",
+      "size": 24720347,
+      "checksum": "md5:a05f32246c814ec036cc68a160efd845",
+      "links": {
+        "self": "https://zenodo.org/api/records/10548809/files/EikonalSim.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "525986"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 357,
+    "unique_downloads": 356,
+    "views": 197,
+    "unique_views": 181,
+    "version_downloads": 357,
+    "version_unique_downloads": 356,
+    "version_unique_views": 181,
+    "version_views": 197
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 653744346,
+    "top_level_files": [
+      {
+        "name": "vent_3.obj",
+        "size": 153406
+      },
+      {
+        "name": "vent_4.obj",
+        "size": 152087
+      },
+      {
+        "name": "vent_9.obj",
+        "size": 153397
+      },
+      {
+        "name": "vent_1.obj",
+        "size": 138201
+      },
+      {
+        "name": "vent_5.obj",
+        "size": 133680
+      },
+      {
+        "name": "Torso.zip",
+        "size": 27043
+      },
+      {
+        "name": "shape_models.zip",
+        "size": 24437596
+      },
+      {
+        "name": "vent_2.obj",
+        "size": 164973
+      },
+      {
+        "name": "vent_8.obj",
+        "size": 148674
+      },
+      {
+        "name": "vent_10.obj",
+        "size": 193461
+      },
+      {
+        "name": "vent_6.obj",
+        "size": 136886
+      },
+      {
+        "name": "vent_7.obj",
+        "size": 155910
+      },
+      {
+        "name": "pseudoECGs_ShapeModels.zip",
+        "size": 604559360
+      },
+      {
+        "name": "StimProtocols",
+        "size": 236
+      },
+      {
+        "name": "EikonalSim.zip",
+        "size": 24720347
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:51.092388"
+}

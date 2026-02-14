@@ -1,0 +1,214 @@
+{
+  "created": "2021-06-16T23:02:45.328333+00:00",
+  "modified": "2022-06-04T15:52:16.912998+00:00",
+  "id": 4969418,
+  "conceptrecid": "4969417",
+  "doi": "10.5061/dryad.9s4mw6mgh",
+  "doi_url": "https://doi.org/10.5061/dryad.9s4mw6mgh",
+  "metadata": {
+    "title": "Data from: Early detection of encroaching woody Juniperus virginiana and its classification in multi-species forest using UAS imagery and semantic segmentation algorithms",
+    "doi": "10.5061/dryad.9s4mw6mgh",
+    "publication_date": "2021-06-16",
+    "description": "<p>Woody plant encroachment into grasslands ecosystems causes significantly ecological destruction\u00a0and economic losses.\u00a0Effective and efficient management largely benefits from accurate and timely detection of encroaching species at an early development stage. Recent advances in unmanned aircraft systems (UAS) enabled an easier access to ultra-high spatial resolution images at a centimeter level, together with the latest machine learning based image segmentation algorithms, making it possible to detect small-sized individuals of target species at early development stage and identify them when mixed with other species. However, few studies have investigated the optimal practical spatial resolution of early encroaching species detection. Hence, we investigated the performance of four popular semantic segmentation algorithms (decision tree, DT; random forest, RF; AlexNet; and ResNet) on a multi-species forest classification case with UAS-collected RGB images in original and down-sampled coarser spatial resolutions. The objective of this study was to explore the optimal segmentation algorithm and spatial resolution for eastern redcedar (<i>Juniperus virginiana</i>, ERC) early detection and its classification within a multi-species forest context. To be specific, firstly, we implemented and compared the performance of the four semantic segmentation algorithms with images in the\u00a0original spatial resolution (0.694 cm). The highest overall accuracy was 0.918 achieved by ResNet with a mean interaction over union at 85.0%. Secondly, we evaluated the performance of ResNet algorithm with images in down-sampled spatial resolutions (1 cm to 5 cm with 0.5 cm interval). When applied on the down-sampled images, ERC segmentation performance decreased with decreasing spatial resolution, especially for those images coarser than 3 cm spatial resolution. The UAS together with the state-of-the-art semantic segmentation algorithms provides a promising tool for early-stage detection and localization of ERC, and the development of effective management strategies for mixed-species forest management.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wang, Lin",
+        "affiliation": "University of Nebraska-Lincoln",
+        "orcid": "0000-0002-0034-1732"
+      },
+      {
+        "name": "Zhou, Yuzhen",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Hu, Qiao",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Tang, Zhenghong",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Ge, Yufeng",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Smith, Adam",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Awada, Tala",
+        "affiliation": "University of Nebraska-Lincoln"
+      },
+      {
+        "name": "Shi, Yeyin",
+        "affiliation": "University of Nebraska-Lincoln",
+        "orcid": "0000-0003-3964-2855"
+      }
+    ],
+    "keywords": [
+      "UAV",
+      "UAS",
+      "redcedar",
+      "woody plant encroachment",
+      "image classification"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.3390/rs13101975",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4969417"
+          }
+        }
+      ]
+    },
+    "notes": "<p>The following data is included in the dataset:</p>\n\n<p>(1) <strong>Raw_Images</strong>: 68 raw images (DJI_0xxx.png) and 4 cropped segments from the orthomosaic (DJI_990x.png) in\u00a0a size of 4608 by\u00a03456 pixels.</p>\n\n<p>(2) <strong>Label_Images</strong>: labelled images with\u00a0four classes, redcedar (pixel value as\u00a01), defoliation (pixel value as\u00a02), pine (pixel value as\u00a03), and others (pixel value as\u00a00)</p>\n\n<p>(3) <strong>Stitch_Image</strong>: stitched orthomosaic.</p>\n<p>Funding provided by: McIntire Stennis Fund*<br>Crossref Funder Registry ID: <br>Award Number: 1017851</p><p>Funding provided by: Hatch Act capacity funding program*<br>Crossref Funder Registry ID: <br>Award Number: 1011130</p><p>Funding provided by: National Institute of Food and Agriculture<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100005825<br>Award Number: 2018-67007-28529</p><p>Funding provided by: McIntire Stennis Fund<br>Crossref Funder Registry ID: <br>Award Number: 1017851</p><p>Funding provided by: Hatch Act capacity funding program<br>Crossref Funder Registry ID: <br>Award Number: 1011130</p>"
+  },
+  "title": "Data from: Early detection of encroaching woody Juniperus virginiana and its classification in multi-species forest using UAS imagery and semantic segmentation algorithms",
+  "links": {
+    "self": "https://zenodo.org/api/records/4969418",
+    "self_html": "https://zenodo.org/records/4969418",
+    "preview_html": "https://zenodo.org/records/4969418?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.9s4mw6mgh",
+    "self_doi": "https://doi.org/10.5061/dryad.9s4mw6mgh",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.9s4mw6mgh",
+    "reserve_doi": "https://zenodo.org/api/records/4969418/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4969417",
+    "parent_html": "https://zenodo.org/records/4969417",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4969418/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4969418/sequence/default",
+    "files": "https://zenodo.org/api/records/4969418/files",
+    "media_files": "https://zenodo.org/api/records/4969418/media-files",
+    "archive": "https://zenodo.org/api/records/4969418/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4969418/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4969418/versions/latest",
+    "latest_html": "https://zenodo.org/records/4969418/latest",
+    "versions": "https://zenodo.org/api/records/4969418/versions",
+    "draft": "https://zenodo.org/api/records/4969418/draft",
+    "access_links": "https://zenodo.org/api/records/4969418/access/links",
+    "access_grants": "https://zenodo.org/api/records/4969418/access/grants",
+    "access_users": "https://zenodo.org/api/records/4969418/access/users",
+    "access_request": "https://zenodo.org/api/records/4969418/access/request",
+    "access": "https://zenodo.org/api/records/4969418/access",
+    "communities": "https://zenodo.org/api/records/4969418/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4969418/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4969418/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4969418/file-modification",
+    "requests": "https://zenodo.org/api/records/4969418/requests"
+  },
+  "updated": "2022-06-04T15:52:16.912998+00:00",
+  "recid": "4969418",
+  "revision": 3,
+  "files": [
+    {
+      "id": "2f0e0954-b4fc-475f-bf9c-8d0120c786cc",
+      "key": "UAV_images_label_redcedar.zip",
+      "size": 2219097819,
+      "checksum": "md5:4a259efc2b34ae7c1b98c4e985ef70d3",
+      "links": {
+        "self": "https://zenodo.org/api/records/4969418/files/UAV_images_label_redcedar.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 54,
+    "unique_downloads": 31,
+    "views": 179,
+    "unique_views": 175,
+    "version_downloads": 54,
+    "version_unique_downloads": 31,
+    "version_unique_views": 175,
+    "version_views": 179
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2219097819,
+    "top_level_files": [
+      {
+        "name": "UAV_images_label_redcedar.zip",
+        "size": 2219097819
+      }
+    ],
+    "zip_contents": {
+      "uav_images_label_redcedar.zip": {
+        "total_files": 145,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 4800267435,
+        "file_types": {
+          ".png": 144,
+          ".tif": 1
+        },
+        "imaging_file_count": 145,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "label_images/label_204.png",
+          "label_images/label_205.png",
+          "label_images/label_216.png",
+          "label_images/label_222.png",
+          "label_images/label_223.png",
+          "label_images/label_273.png",
+          "label_images/label_274.png",
+          "label_images/label_275.png",
+          "label_images/label_276.png",
+          "label_images/label_277.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "label_images/label_204.png",
+      "label_images/label_205.png",
+      "label_images/label_216.png",
+      "label_images/label_222.png",
+      "label_images/label_223.png",
+      "label_images/label_273.png",
+      "label_images/label_274.png",
+      "label_images/label_275.png",
+      "label_images/label_276.png",
+      "label_images/label_277.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:49.226601"
+}

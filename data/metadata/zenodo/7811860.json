@@ -1,0 +1,165 @@
+{
+  "created": "2023-04-09T16:49:49.483268+00:00",
+  "modified": "2023-04-10T02:26:37.083158+00:00",
+  "id": 7811860,
+  "conceptrecid": "7811859",
+  "doi": "10.5281/zenodo.7811860",
+  "conceptdoi": "10.5281/zenodo.7811859",
+  "doi_url": "https://doi.org/10.5281/zenodo.7811860",
+  "metadata": {
+    "title": "rwave-1024 - Retinal Wave Dataset",
+    "doi": "10.5281/zenodo.7811860",
+    "publication_date": "2023-04-09",
+    "description": "<p>1024 classes of retinal waves, 1000 images per class.</p>\n\n<ul>\n\t<li>info.txt: Information regarding file structure and parameters.</li>\n\t<li>rwave-1024.tar.gz: images in class folders</li>\n</ul>\n\n<p>Generated using Retinal Wave Simulator&nbsp;https://github.com/BennyCa/Retinal-Wave-Simulator adapted from&nbsp;https://swindale.ecc.ubc.ca/home-page/software/retinal-wave-models/</p>\n\n<p>Used in project&nbsp;Retinal Waves for Pre-Training Artificial Neural Networks Mimicking Real Prenatal Development: https://github.com/BennyCa/ReWaRD</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cappell, Benjamin",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg"
+      }
+    ],
+    "keywords": [
+      "retinal wave",
+      "pre-training",
+      "non-natural images",
+      "image dataset"
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7811859"
+          }
+        }
+      ]
+    }
+  },
+  "title": "rwave-1024 - Retinal Wave Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/7811860",
+    "self_html": "https://zenodo.org/records/7811860",
+    "preview_html": "https://zenodo.org/records/7811860?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7811860",
+    "self_doi": "https://doi.org/10.5281/zenodo.7811860",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7811860",
+    "reserve_doi": "https://zenodo.org/api/records/7811860/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7811859",
+    "parent_html": "https://zenodo.org/records/7811859",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7811859",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7811859",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7811860/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7811860/sequence/default",
+    "files": "https://zenodo.org/api/records/7811860/files",
+    "media_files": "https://zenodo.org/api/records/7811860/media-files",
+    "archive": "https://zenodo.org/api/records/7811860/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7811860/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7811860/versions/latest",
+    "latest_html": "https://zenodo.org/records/7811860/latest",
+    "versions": "https://zenodo.org/api/records/7811860/versions",
+    "draft": "https://zenodo.org/api/records/7811860/draft",
+    "access_links": "https://zenodo.org/api/records/7811860/access/links",
+    "access_grants": "https://zenodo.org/api/records/7811860/access/grants",
+    "access_users": "https://zenodo.org/api/records/7811860/access/users",
+    "access_request": "https://zenodo.org/api/records/7811860/access/request",
+    "access": "https://zenodo.org/api/records/7811860/access",
+    "communities": "https://zenodo.org/api/records/7811860/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7811860/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7811860/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7811860/file-modification",
+    "requests": "https://zenodo.org/api/records/7811860/requests"
+  },
+  "updated": "2023-04-10T02:26:37.083158+00:00",
+  "recid": "7811860",
+  "revision": 2,
+  "files": [
+    {
+      "id": "8633a6f2-7284-4abf-b313-fbf9eb8132fb",
+      "key": "rwave-1024.tar.gz",
+      "size": 2201822962,
+      "checksum": "md5:7a34a051a34d32f63280cb16e781af73",
+      "links": {
+        "self": "https://zenodo.org/api/records/7811860/files/rwave-1024.tar.gz/content"
+      }
+    },
+    {
+      "id": "67734b3c-9317-4f40-8171-d182ad5b558f",
+      "key": "info.txt",
+      "size": 282,
+      "checksum": "md5:0fc30c4eff51983115a818201c96a4cb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7811860/files/info.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "524320"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 141,
+    "unique_downloads": 133,
+    "views": 362,
+    "unique_views": 341,
+    "version_downloads": 140,
+    "version_unique_downloads": 132,
+    "version_unique_views": 340,
+    "version_views": 361
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2201822962,
+    "top_level_files": [
+      {
+        "name": "rwave-1024.tar.gz",
+        "size": 2201822962
+      },
+      {
+        "name": "info.txt",
+        "size": 282
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/BennyCa/Retinal-Wave-Simulator",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://swindale.ecc.ubc.ca/home-page/software/retinal-wave-models/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/BennyCa/ReWaRD",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:55.175209"
+}

@@ -1,0 +1,347 @@
+{
+  "created": "2021-06-18T15:13:30.691026+00:00",
+  "modified": "2022-05-28T18:03:47.029257+00:00",
+  "id": 4985378,
+  "conceptrecid": "4985377",
+  "doi": "10.5061/dryad.kv3j7",
+  "doi_url": "https://doi.org/10.5061/dryad.kv3j7",
+  "metadata": {
+    "title": "Data from: Cambrian origin of the CYP27C1-mediated vitamin A1-to-A2 switch, a key mechanism of vertebrate sensory plasticity",
+    "doi": "10.5061/dryad.kv3j7",
+    "publication_date": "2017-06-19",
+    "description": "The spectral composition of ambient light varies across both space and time. Many species of jawed vertebrates adapt to this variation by tuning the sensitivity of their photoreceptors via the expression of CYP27C1, an enzyme that converts vitamin A1 into vitamin A2, thereby shifting the ratio of vitamin A1-based rhodopsin to red-shifted vitamin A2-based porphyropsin in the eye. Here, we show that the sea lamprey (Petromyzon marinus), a jawless vertebrate that diverged from jawed vertebrates during the Cambrian period (approx. 500\u2005Ma), dynamically shifts its photoreceptor spectral sensitivity via vitamin A1-to-A2 chromophore exchange as it transitions between photically divergent aquatic habitats. We further show that this shift correlates with high-level expression of the lamprey orthologue of CYP27C1, specifically in the retinal pigment epithelium as in jawed vertebrates. Our results suggest that the CYP27C1-mediated vitamin A1-to-A2 switch is an evolutionarily ancient mechanism of sensory plasticity that appeared not long after the origin of vertebrates.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Morshedian, Ala",
+        "affiliation": "University of California Los Angeles"
+      },
+      {
+        "name": "Toomey, Matthew B.",
+        "affiliation": "Washington University School of Medicine"
+      },
+      {
+        "name": "Pollock, Gabriel E.",
+        "affiliation": "University of California Los Angeles"
+      },
+      {
+        "name": "Frederiksen, Rikard",
+        "affiliation": "Boston University School of Medicine"
+      },
+      {
+        "name": "Enright, Jennifer M.",
+        "affiliation": "Washington University School of Medicine"
+      },
+      {
+        "name": "McCormick, Stephen D.",
+        "affiliation": "Washington University in St. Louis School of Medicine"
+      },
+      {
+        "name": "Cornwall, M. Carter",
+        "affiliation": "Boston University School of Medicine"
+      },
+      {
+        "name": "Fain, Gordon L.",
+        "affiliation": "University of California Los Angeles"
+      },
+      {
+        "name": "Corbo, Joseph C.",
+        "affiliation": "Washington University School of Medicine"
+      }
+    ],
+    "keywords": [
+      "visual ecology",
+      "Photoreceptor",
+      "Petromyzon marinus"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1098/rsos.170362",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4985377"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Lamprey_CYP27C1_qPCR<div class=\"o-metadata__file-description\">Data from qPCR analysis of Cyp27c1 expression in the retinal pigment epithelia of downstream juvenile and upstream migrant adult Petromyzon marinus.</div><div class=\"o-metadata__file-name\">Lamprey_qPCR.csv<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure 2A - rod responses<div class=\"o-metadata__file-description\">Mean responses of 13 rods to 20-ms 500-nm flashes given at t = 0 at the following intensities (in photons \u03bcm\u22122): 9, 40, 98, 366, 1055, and 2591.</div><div class=\"o-metadata__file-name\">Figure2A_rodresponses.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure2B - cone responses<div class=\"o-metadata__file-description\">Mean responses of 6 cones to 20-ms 600-nm flashes given at t = 0 at the following intensities (in photons \u03bcm\u22122): 78, 711, 2051, 5036, 1.91 \u00d7 10^4, 2.20 \u00d7 10^5, 6.71 \u00d7 10^5, and 6.96 \u00d7 10^5.</div><div class=\"o-metadata__file-name\">Figure2B_coneresponses.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure2C - response intensity curves<div class=\"o-metadata__file-description\">Normalized mean current response amplitudes (\u00b1 SE) as a function of flash intensity for rods and cones.  Data for both cell types were fitted with the Michaelis-Menton equation, r/rmax = I/(I + I\u00bd) where r/rmax is the normalized current amplitude, I is the flash intensity, and I\u00bd is the flash intensity producing a half-maximal response. Best-fitting values of I\u00bd were 52 photons \u03bcm\u22122 for rods and 3210 photons \u03bcm\u22122 for cones.</div><div class=\"o-metadata__file-name\">Figure2C_responseintensitycurves.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3A - MSP<div class=\"o-metadata__file-description\">Microspectrophotometric determinations of mean pigment absorbance (\u00b1 SE) normalized to absorbance at \u03bbmax, taken from 58 juvenile rods.</div><div class=\"o-metadata__file-name\">Figure3A_MSP.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3A - SSC plus fit<div class=\"o-metadata__file-description\">Suction-electrode recordings of 9 juvenile rods and best-fitting A1 visual-pigment nomograms.</div><div class=\"o-metadata__file-name\">Figure3A_SSCplusfit.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3B - MSP<div class=\"o-metadata__file-description\">Microspectrophotometric determinations of mean pigment absorbance (\u00b1 SE) normalized to absorbance at \u03bbmax, taken from 9 juvenile cones.</div><div class=\"o-metadata__file-name\">Figure3B_MSP.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3B - SSC plus fit<div class=\"o-metadata__file-description\">Suction-electrode recordings of 7 juvenile cones and best-fitting A1 visual-pigment nomograms.</div><div class=\"o-metadata__file-name\">Figure3B_SSCplusfit.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3C - MSP<div class=\"o-metadata__file-description\">microspectrophotometric determinations of mean pigment absorbance (\u00b1 SE) normalized to absorbance at \u03bbmax, taken from 70 adult rods.</div><div class=\"o-metadata__file-name\">Figure3C_MSP.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3C - SSC<div class=\"o-metadata__file-description\">Suction-electrode recordings of 13 adult rods and best-fitting A1 and A2 visual-pigment nomograms.</div><div class=\"o-metadata__file-name\">Figure3C_SSC.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3D - MSP<div class=\"o-metadata__file-description\">Microspectrophotometric determinations of mean pigment absorbance (\u00b1 SE) normalized to absorbance at \u03bbmax, taken from 23 adult cones.</div><div class=\"o-metadata__file-name\">Figure3D_MSP.dat<br></div></div><div class=\"o-metadata__file-usage-entry\">Figure3D_SSC<div class=\"o-metadata__file-description\">Suction-electrode recordings of 14 adult cones and best-fitting A1 and A2 visual-pigment nomograms.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Nanogram fitting scripts and data<div class=\"o-metadata__file-description\">This archive contains the R scripts, functions, and data used to fit A1 and A2-based opsin visual pigment templates to miscrospectrophotometric measures of lamprey rod and cone photoreceptor absorbance spectra.</div><div class=\"o-metadata__file-name\">Nanogram fitting.zip<br></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Cambrian origin of the CYP27C1-mediated vitamin A1-to-A2 switch, a key mechanism of vertebrate sensory plasticity",
+  "links": {
+    "self": "https://zenodo.org/api/records/4985378",
+    "self_html": "https://zenodo.org/records/4985378",
+    "preview_html": "https://zenodo.org/records/4985378?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.kv3j7",
+    "self_doi": "https://doi.org/10.5061/dryad.kv3j7",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.kv3j7",
+    "reserve_doi": "https://zenodo.org/api/records/4985378/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4985377",
+    "parent_html": "https://zenodo.org/records/4985377",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4985378/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4985378/sequence/default",
+    "files": "https://zenodo.org/api/records/4985378/files",
+    "media_files": "https://zenodo.org/api/records/4985378/media-files",
+    "archive": "https://zenodo.org/api/records/4985378/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4985378/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4985378/versions/latest",
+    "latest_html": "https://zenodo.org/records/4985378/latest",
+    "versions": "https://zenodo.org/api/records/4985378/versions",
+    "draft": "https://zenodo.org/api/records/4985378/draft",
+    "access_links": "https://zenodo.org/api/records/4985378/access/links",
+    "access_grants": "https://zenodo.org/api/records/4985378/access/grants",
+    "access_users": "https://zenodo.org/api/records/4985378/access/users",
+    "access_request": "https://zenodo.org/api/records/4985378/access/request",
+    "access": "https://zenodo.org/api/records/4985378/access",
+    "communities": "https://zenodo.org/api/records/4985378/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4985378/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4985378/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4985378/file-modification",
+    "requests": "https://zenodo.org/api/records/4985378/requests"
+  },
+  "updated": "2022-05-28T18:03:47.029257+00:00",
+  "recid": "4985378",
+  "revision": 3,
+  "files": [
+    {
+      "id": "5637a95e-b2fa-4564-a69f-80820a10d4d1",
+      "key": "Figure3C_SSC.dat",
+      "size": 31484,
+      "checksum": "md5:d8ffcc287e616288aac20ab2d4380ed8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3C_SSC.dat/content"
+      }
+    },
+    {
+      "id": "98ffdf1f-afc4-4e8c-b80d-387fc0d919ab",
+      "key": "Figure3A_SSCplusfit.dat",
+      "size": 21944,
+      "checksum": "md5:f5172306f63deccf62db58aaa13631a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3A_SSCplusfit.dat/content"
+      }
+    },
+    {
+      "id": "5670960b-b512-4926-8bff-5dc981462d91",
+      "key": "README_for_Nanogram fitting.txt",
+      "size": 534,
+      "checksum": "md5:fb6f5fed799ba7d009b9db1ff49134c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/README_for_Nanogram fitting.txt/content"
+      }
+    },
+    {
+      "id": "55b40518-a8b2-471f-93c7-17f52b0c4661",
+      "key": "Nanogram fitting.zip",
+      "size": 21908,
+      "checksum": "md5:4ea53e940abd5a91db74c544e117b1e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Nanogram fitting.zip/content"
+      }
+    },
+    {
+      "id": "4dfe266c-07c0-4666-9579-a48da578cfa0",
+      "key": "Figure3A_MSP.dat",
+      "size": 14376,
+      "checksum": "md5:654de86b41bb5e94260c7658a5e34de5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3A_MSP.dat/content"
+      }
+    },
+    {
+      "id": "c3714f8d-6545-4a9f-9d1a-cc9a0e97ff8d",
+      "key": "Figure2C_responseintensitycurves.dat",
+      "size": 1929,
+      "checksum": "md5:b3ae20fb295e6948f1e23370504a3b82",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure2C_responseintensitycurves.dat/content"
+      }
+    },
+    {
+      "id": "57d48469-ca8d-4c73-ab26-282d32f984d7",
+      "key": "Figure3B_MSP.dat",
+      "size": 14326,
+      "checksum": "md5:2e6c078e808d9334ee93c4e4a00f4de5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3B_MSP.dat/content"
+      }
+    },
+    {
+      "id": "64dfe67d-b786-4d14-883b-c7571ed752b1",
+      "key": "Lamprey_qPCR.csv",
+      "size": 2303,
+      "checksum": "md5:af29533c827ae6013db3dc9398783f54",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Lamprey_qPCR.csv/content"
+      }
+    },
+    {
+      "id": "c65da9e9-3650-494e-a0c5-5963ef4ead0d",
+      "key": "Figure3D_SSC.dat",
+      "size": 21709,
+      "checksum": "md5:fbb0cc5e00e8cf076a9cad0d37c10f90",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3D_SSC.dat/content"
+      }
+    },
+    {
+      "id": "bc5134d8-9a56-4395-bcc4-6d20b028f23b",
+      "key": "Figure3B_SSCplusfit.dat",
+      "size": 25618,
+      "checksum": "md5:fc46abfb18632d329d2a517ea13e6dd7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3B_SSCplusfit.dat/content"
+      }
+    },
+    {
+      "id": "18509dfa-fc50-4b08-b9ed-34559916a325",
+      "key": "Figure3D_MSP.dat",
+      "size": 15065,
+      "checksum": "md5:dfee6b422089fc6e85fd3ba388275b8e",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3D_MSP.dat/content"
+      }
+    },
+    {
+      "id": "182d7799-f4ad-43f8-ab77-0cdc7cc4df2b",
+      "key": "Figure3C_MSP.dat",
+      "size": 11814,
+      "checksum": "md5:e7931b794090a361f5db758e56291702",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure3C_MSP.dat/content"
+      }
+    },
+    {
+      "id": "294300bd-d0b7-4abd-a4cf-58de20801402",
+      "key": "Figure2A_rodresponses.dat",
+      "size": 105970,
+      "checksum": "md5:6457829d19a13623b5662469d2a8fbe1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure2A_rodresponses.dat/content"
+      }
+    },
+    {
+      "id": "4f2e3e6d-ddad-410f-971c-c4e8c2406fbf",
+      "key": "Figure2B_coneresponses.dat",
+      "size": 77594,
+      "checksum": "md5:df65adde0a073c7302c659b5d75f6f80",
+      "links": {
+        "self": "https://zenodo.org/api/records/4985378/files/Figure2B_coneresponses.dat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 205,
+    "unique_downloads": 205,
+    "views": 105,
+    "unique_views": 105,
+    "version_downloads": 205,
+    "version_unique_downloads": 205,
+    "version_unique_views": 105,
+    "version_views": 105
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 21908,
+    "top_level_files": [
+      {
+        "name": "Figure3C_SSC.dat",
+        "size": 31484
+      },
+      {
+        "name": "Figure3A_SSCplusfit.dat",
+        "size": 21944
+      },
+      {
+        "name": "README_for_Nanogram fitting.txt",
+        "size": 534
+      },
+      {
+        "name": "Nanogram fitting.zip",
+        "size": 21908
+      },
+      {
+        "name": "Figure3A_MSP.dat",
+        "size": 14376
+      },
+      {
+        "name": "Figure2C_responseintensitycurves.dat",
+        "size": 1929
+      },
+      {
+        "name": "Figure3B_MSP.dat",
+        "size": 14326
+      },
+      {
+        "name": "Lamprey_qPCR.csv",
+        "size": 2303
+      },
+      {
+        "name": "Figure3D_SSC.dat",
+        "size": 21709
+      },
+      {
+        "name": "Figure3B_SSCplusfit.dat",
+        "size": 25618
+      },
+      {
+        "name": "Figure3D_MSP.dat",
+        "size": 15065
+      },
+      {
+        "name": "Figure3C_MSP.dat",
+        "size": 11814
+      },
+      {
+        "name": "Figure2A_rodresponses.dat",
+        "size": 105970
+      },
+      {
+        "name": "Figure2B_coneresponses.dat",
+        "size": 77594
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:49.577568"
+}

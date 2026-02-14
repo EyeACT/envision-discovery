@@ -1,0 +1,145 @@
+{
+  "created": "2018-04-04T09:53:42.180465+00:00",
+  "modified": "2020-01-24T19:24:53.912254+00:00",
+  "id": 1209820,
+  "conceptrecid": "1209819",
+  "doi": "10.5281/zenodo.1209820",
+  "conceptdoi": "10.5281/zenodo.1209819",
+  "doi_url": "https://doi.org/10.5281/zenodo.1209820",
+  "metadata": {
+    "title": "R-Prox RIR samples Darmstadt June 2017",
+    "doi": "10.5281/zenodo.1209820",
+    "publication_date": "2018-03-29",
+    "description": "<p>This dataset contains Room Impulse Response (RIR) measurements that we collected for evaluating the R-Prox proximity verification system. The package contains the original RIR sample recordings, processed audio files after deconvolution with the original signal, further processed audio files where the parts exceeding the RIR have been cropped, and precomputed features in CSV files. All the audio files are&nbsp;16bit mono PCM Wave files.<br>\n<br>\nThe original.wav file is the generated excitation signal that was emitted in the rooms.<br>\nOther files follow the naming convention recorded_ROOM_RECORDER-ID_TIMESTAMP{_fullrir|_cutrir}.wav<br>\nThe files where .wav follows directly the timestamp are the original recordings; the ones with <em>fullrir</em> in the name are the original recording after deconvolution with original.wav; the ones with <em>cutrir</em> in their name are the cropped RIR samples.</p>\n\n<p>The CSV files contain extracted features like the RT60 value for the entire signal and for specific frequency ranges. An example of the extracted features of a single sample:</p>\n\n<pre><code>Filter\tBand\tRT60\tEDT\tD/R\tC10\tC35\tC50\tC80\n\t\t0.566\t0.401\t9.544\t-0.590\t5.064\t7.300\t11.096\nOct\t125Hz\t0.093\t1.195\t9.548\t-9.351\t-4.757\t-2.745\t-1.001\nOct\t250Hz\t0.430\t3.367\t9.552\t-11.705\t-8.236\t-6.218\t-4.841\nOct\t500Hz\t0.692\t0.809\t9.564\t-3.952\t-0.989\t0.377\t4.227\nOct\t1kHz\t0.640\t0.582\t9.559\t-1.836\t1.438\t3.581\t7.143\nOct\t2kHz\t0.636\t0.484\t9.543\t-0.357\t3.971\t5.744\t9.415\nOct\t4kHz\t0.589\t0.370\t9.549\t0.451\t6.333\t8.095\t11.789\nOct\t8kHz\t0.518\t0.398\t9.545\t-1.018\t4.701\t7.201\t11.088\nOct\t16kHz\t0.471\t0.318\t9.548\t-1.463\t5.970\t8.914\t13.408\n1/3\t125Hz\t0.042\t0.415\t9.605\t-2.504\t-0.749\t0.129\t22.719\n1/3\t160Hz\t0.122\t0.633\t9.573\t-2.150\t3.079\t4.293\t4.603\n1/3\t200Hz\t0.274\t2.361\t9.545\t-13.815\t-9.676\t-8.875\t-6.187\n1/3\t250Hz\t0.156\t2.175\t9.554\t-9.833\t-6.198\t-5.467\t-5.086\n1/3\t315Hz\t0.046\t0.572\t9.557\t-4.743\t-2.653\t3.075\t7.797\n1/3\t400Hz\t0.184\t0.859\t9.545\t-6.032\t-0.763\t3.208\t4.707\n1/3\t500Hz\t0.688\t0.976\t9.555\t-4.107\t-0.176\t1.401\t2.865\n1/3\t630Hz\t0.664\t0.805\t9.558\t-6.423\t-2.636\t-1.604\t3.992\n1/3\t800Hz\t0.672\t0.771\t9.546\t-3.799\t-1.284\t0.163\t4.211\n1/3\t1kHz\t0.620\t0.644\t9.546\t-3.718\t-0.355\t0.606\t4.326\n1/3\t1.3kHz\t0.632\t0.566\t9.551\t-3.745\t0.293\t3.464\t8.282\n1/3\t1.6kHz\t0.704\t0.520\t9.550\t-1.082\t3.188\t5.015\t7.854\n1/3\t2kHz\t0.643\t0.518\t9.554\t-0.331\t2.060\t5.214\t8.615\n1/3\t2.5kHz\t0.643\t0.516\t9.568\t-1.302\t4.395\t5.647\t8.990\n1/3\t3.2kHz\t0.589\t0.456\t9.546\t0.773\t4.569\t5.872\t10.156\n1/3\t4kHz\t0.586\t0.351\t9.549\t-0.148\t7.023\t8.817\t12.605\n1/3\t5kHz\t0.603\t0.435\t9.545\t-0.709\t5.325\t7.042\t10.348\n1/3\t6.3kHz\t0.567\t0.385\t9.546\t-2.436\t4.609\t6.797\t11.164\n1/3\t8kHz\t0.502\t0.414\t9.545\t-0.812\t4.478\t7.015\t10.773\n1/3\t10kHz\t0.438\t0.328\t9.554\t-1.899\t5.855\t8.598\t13.376\n1/3\t12.5kHz\t0.321\t0.237\t9.598\t-1.060\t8.030\t12.542\t17.905\n1/3\t16kHz\t0.541\t0.341\t9.546\t0.635\t6.372\t8.562\t11.948\n1/3\t20kHz\t0.539\t0.205\t9.587\t1.624\t9.700\t11.512\t13.696</code></pre>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Toivonen, Juhani",
+        "affiliation": "University of Helsinki",
+        "orcid": "0000-0001-7038-0991"
+      },
+      {
+        "name": "Truong, Hien",
+        "affiliation": "NEC Laboratories Europe",
+        "orcid": "0000-0002-5743-6943"
+      },
+      {
+        "name": "Nguyen, Thien",
+        "affiliation": "Technische Universitat Darmstadt"
+      }
+    ],
+    "keywords": [
+      "RIR",
+      "R-Prox"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-nc-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "1209819"
+          }
+        }
+      ]
+    }
+  },
+  "title": "R-Prox RIR samples Darmstadt June 2017",
+  "links": {
+    "self": "https://zenodo.org/api/records/1209820",
+    "self_html": "https://zenodo.org/records/1209820",
+    "preview_html": "https://zenodo.org/records/1209820?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.1209820",
+    "self_doi": "https://doi.org/10.5281/zenodo.1209820",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1209820",
+    "reserve_doi": "https://zenodo.org/api/records/1209820/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/1209819",
+    "parent_html": "https://zenodo.org/records/1209819",
+    "parent_doi": "https://doi.org/10.5281/zenodo.1209819",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.1209819",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:1209820/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:1209820/sequence/default",
+    "files": "https://zenodo.org/api/records/1209820/files",
+    "media_files": "https://zenodo.org/api/records/1209820/media-files",
+    "archive": "https://zenodo.org/api/records/1209820/files-archive",
+    "archive_media": "https://zenodo.org/api/records/1209820/media-files-archive",
+    "latest": "https://zenodo.org/api/records/1209820/versions/latest",
+    "latest_html": "https://zenodo.org/records/1209820/latest",
+    "versions": "https://zenodo.org/api/records/1209820/versions",
+    "draft": "https://zenodo.org/api/records/1209820/draft",
+    "access_links": "https://zenodo.org/api/records/1209820/access/links",
+    "access_grants": "https://zenodo.org/api/records/1209820/access/grants",
+    "access_users": "https://zenodo.org/api/records/1209820/access/users",
+    "access_request": "https://zenodo.org/api/records/1209820/access/request",
+    "access": "https://zenodo.org/api/records/1209820/access",
+    "communities": "https://zenodo.org/api/records/1209820/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/1209820/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/1209820/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/1209820/file-modification",
+    "requests": "https://zenodo.org/api/records/1209820/requests"
+  },
+  "updated": "2020-01-24T19:24:53.912254+00:00",
+  "recid": "1209820",
+  "revision": 5,
+  "files": [
+    {
+      "id": "2b5ce04f-1867-4f4d-8935-3b81d360aaae",
+      "key": "R-Prox RIR samples Darmstadt June 2017.zip",
+      "size": 457237691,
+      "checksum": "md5:5d6757361215189457c88b8c1bddeece",
+      "links": {
+        "self": "https://zenodo.org/api/records/1209820/files/R-Prox RIR samples Darmstadt June 2017.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "44098"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 86,
+    "unique_downloads": 77,
+    "views": 516,
+    "unique_views": 494,
+    "version_downloads": 86,
+    "version_unique_downloads": 77,
+    "version_unique_views": 494,
+    "version_views": 516
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 457237691,
+    "top_level_files": [
+      {
+        "name": "R-Prox RIR samples Darmstadt June 2017.zip",
+        "size": 457237691
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:54.332108"
+}

@@ -1,0 +1,164 @@
+{
+  "created": "2023-11-07T14:07:04.701572+00:00",
+  "modified": "2023-11-07T14:07:04.870739+00:00",
+  "id": 10078774,
+  "conceptrecid": "10078773",
+  "doi": "10.5281/zenodo.10078774",
+  "conceptdoi": "10.5281/zenodo.10078773",
+  "doi_url": "https://doi.org/10.5281/zenodo.10078774",
+  "metadata": {
+    "title": "Topic Model October 2023 (200 texts, 40 topics)",
+    "doi": "10.5281/zenodo.10078774",
+    "publication_date": "2023-11-07",
+    "description": "<p>Topic Model of the MiMoText roman18 corpus (Oct 2023)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Klee, Anne",
+        "affiliation": "Universit\u00e4t Trier"
+      },
+      {
+        "name": "R\u00f6ttgermann, Julia",
+        "affiliation": "Universit\u00e4t Trier"
+      }
+    ],
+    "keywords": [
+      "topic modeling",
+      "literature",
+      "enlightenment",
+      "novels",
+      "french"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/MiMoText/mmt_2023-10-12_16-46/tree/v0.1.0",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      }
+    ],
+    "version": "v0.1.0",
+    "language": "fra",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "mimotext-tcdh"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10078773"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Topic Model October 2023 (200 texts, 40 topics)",
+  "links": {
+    "self": "https://zenodo.org/api/records/10078774",
+    "self_html": "https://zenodo.org/records/10078774",
+    "preview_html": "https://zenodo.org/records/10078774?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10078774",
+    "self_doi": "https://doi.org/10.5281/zenodo.10078774",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10078774",
+    "reserve_doi": "https://zenodo.org/api/records/10078774/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10078773",
+    "parent_html": "https://zenodo.org/records/10078773",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10078773",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10078773",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10078774/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10078774/sequence/default",
+    "files": "https://zenodo.org/api/records/10078774/files",
+    "media_files": "https://zenodo.org/api/records/10078774/media-files",
+    "archive": "https://zenodo.org/api/records/10078774/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10078774/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10078774/versions/latest",
+    "latest_html": "https://zenodo.org/records/10078774/latest",
+    "versions": "https://zenodo.org/api/records/10078774/versions",
+    "draft": "https://zenodo.org/api/records/10078774/draft",
+    "access_links": "https://zenodo.org/api/records/10078774/access/links",
+    "access_grants": "https://zenodo.org/api/records/10078774/access/grants",
+    "access_users": "https://zenodo.org/api/records/10078774/access/users",
+    "access_request": "https://zenodo.org/api/records/10078774/access/request",
+    "access": "https://zenodo.org/api/records/10078774/access",
+    "communities": "https://zenodo.org/api/records/10078774/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10078774/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10078774/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10078774/file-modification",
+    "requests": "https://zenodo.org/api/records/10078774/requests"
+  },
+  "updated": "2023-11-07T14:07:04.870739+00:00",
+  "recid": "10078774",
+  "revision": 4,
+  "files": [
+    {
+      "id": "5391f5a1-964f-4b6e-b2be-9e5fba9296bf",
+      "key": "mmt_2023-10-12_16-46-0.1.0.zip",
+      "size": 154264707,
+      "checksum": "md5:2a8fd5f72c7a019330eb067129509ba1",
+      "links": {
+        "self": "https://zenodo.org/api/records/10078774/files/mmt_2023-10-12_16-46-0.1.0.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "153296"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 45,
+    "unique_downloads": 45,
+    "views": 202,
+    "unique_views": 194,
+    "version_downloads": 45,
+    "version_unique_downloads": 45,
+    "version_unique_views": 194,
+    "version_views": 202
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 154264707,
+    "top_level_files": [
+      {
+        "name": "mmt_2023-10-12_16-46-0.1.0.zip",
+        "size": 154264707
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/MiMoText/mmt_2023-10-12_16-46/tree/v0.1.0"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:56.473595"
+}

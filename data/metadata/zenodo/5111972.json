@@ -1,0 +1,161 @@
+{
+  "created": "2021-07-18T04:18:02.159945+00:00",
+  "modified": "2021-10-22T09:43:55.820088+00:00",
+  "id": 5111972,
+  "conceptrecid": "5075193",
+  "doi": "10.5281/zenodo.5111972",
+  "conceptdoi": "10.5281/zenodo.5075193",
+  "doi_url": "https://doi.org/10.5281/zenodo.5111972",
+  "metadata": {
+    "title": "OCTA image dataset with pixel-level mask annotation for FAZ segmentation",
+    "doi": "10.5281/zenodo.5111972",
+    "publication_date": "2021-07-06",
+    "description": "<p>This dataset is publish by the research &quot;<em>A Deep Learning-based Quality Assessment and Segmentation System with a Large-scale Benchmark Dataset for Optical Coherence Tomographic Angiography Image</em>&quot;</p>\n\n<p>Detail:</p>\n\n<p>This dataset is the pixel-level mask annotation for FAZ segmentation. 1,101 3 &times; 3 mm<sup>2</sup>&nbsp;sOCTA images chosen from gradable and best OCTA images randomly in subset sOCTA-3x3-10k, and 1,143 6&nbsp;&times; 6&nbsp;mm<sup>2</sup>dOCTA images were annotated by an experienced ophthalmologist.</p>\n\n<p>GitHub:&nbsp;<a href=\"https://github.com/shanzha09/COIPS\">https://github.com/shanzha09/COIPS</a></p>\n\n<p>These datasets are public available, if you use the dataset or our system in your research, please <strong>cite</strong> our paper:&nbsp;<em><code>A Deep Learning-based Quality Assessment and Segmentation System with a Large-scale Benchmark Dataset for Optical Coherence Tomographic Angiography Image</code></em>.</p>\n\n<p>arXiv:<a href=\"https://arxiv.org/abs/2107.10476v1\">https://arxiv.org/abs/2107.10476v1</a></p>",
+    "access_right": "restricted",
+    "creators": [
+      {
+        "name": "Yufei Wang",
+        "affiliation": "Key Laboratory of Bio-Resource and Eco-Environment of ministry of Education, College of Life Sciences, State Key Laboratory of Hydraulics and Mountain River Engineering, Sichuan University, Chengdu, Sichuan, 610064, China",
+        "orcid": "0000-0003-3016-6389"
+      },
+      {
+        "name": "Yiqing Shen",
+        "affiliation": "School of Mathematical Sciences, Shanghai Jiao Tong University, Shanghai, 200240, China"
+      },
+      {
+        "name": "Meng Yuan",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Jing Xu",
+        "affiliation": "Intelligent Computing Laboratory, International Graduate School, Tsinghua University, Shenzhen, Guangdong, 518055, China"
+      },
+      {
+        "name": "Bin Yang",
+        "affiliation": "Department of Ophthalmology, The Third People's Hospital of Zigong City, Zigong 643020, China"
+      },
+      {
+        "name": "Chi Liu",
+        "affiliation": "School of Computer Science, University Technology of Sydney, Ultimo NSW 2007, Australia"
+      },
+      {
+        "name": "Wenjia Cai",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Weijing Cheng",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Wei Wang",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      }
+    ],
+    "keywords": [
+      "Optical Coherence Tomography angiography",
+      "Foveal avascular zone segmentation",
+      "Deep learning"
+    ],
+    "version": "1.2",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5075193"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCTA image dataset with pixel-level mask annotation for FAZ segmentation",
+  "links": {
+    "self": "https://zenodo.org/api/records/5111972",
+    "self_html": "https://zenodo.org/records/5111972",
+    "preview_html": "https://zenodo.org/records/5111972?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5111972",
+    "self_doi": "https://doi.org/10.5281/zenodo.5111972",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5111972",
+    "reserve_doi": "https://zenodo.org/api/records/5111972/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5075193",
+    "parent_html": "https://zenodo.org/records/5075193",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5075193",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5075193",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5111972/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5111972/sequence/default",
+    "files": "https://zenodo.org/api/records/5111972/files",
+    "media_files": "https://zenodo.org/api/records/5111972/media-files",
+    "archive": "https://zenodo.org/api/records/5111972/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5111972/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5111972/versions/latest",
+    "latest_html": "https://zenodo.org/records/5111972/latest",
+    "versions": "https://zenodo.org/api/records/5111972/versions",
+    "draft": "https://zenodo.org/api/records/5111972/draft",
+    "access_links": "https://zenodo.org/api/records/5111972/access/links",
+    "access_grants": "https://zenodo.org/api/records/5111972/access/grants",
+    "access_users": "https://zenodo.org/api/records/5111972/access/users",
+    "access_request": "https://zenodo.org/api/records/5111972/access/request",
+    "access": "https://zenodo.org/api/records/5111972/access",
+    "communities": "https://zenodo.org/api/records/5111972/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5111972/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5111972/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5111972/file-modification",
+    "requests": "https://zenodo.org/api/records/5111972/requests"
+  },
+  "updated": "2021-10-22T09:43:55.820088+00:00",
+  "recid": "5111972",
+  "revision": 4,
+  "files": [],
+  "swh": null,
+  "owners": [
+    {
+      "id": "240479"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 458,
+    "unique_downloads": 362,
+    "views": 2658,
+    "unique_views": 2145,
+    "version_downloads": 36,
+    "version_unique_downloads": 25,
+    "version_unique_views": 1133,
+    "version_views": 1460
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/shanzha09/COIPS",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.10476v1",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:25.565818"
+}

@@ -1,0 +1,590 @@
+{
+  "created": "2023-02-02T17:46:46.580320+00:00",
+  "modified": "2024-07-12T18:14:05.020244+00:00",
+  "id": 7576894,
+  "conceptrecid": "7576893",
+  "doi": "10.5281/zenodo.7576894",
+  "conceptdoi": "10.5281/zenodo.7576893",
+  "doi_url": "https://doi.org/10.5281/zenodo.7576894",
+  "metadata": {
+    "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for OpenEarthMap/9-class segmentation of RGB 512x512 high-res. images",
+    "doi": "10.5281/zenodo.7576894",
+    "publication_date": "2023-01-27",
+    "description": "<p><em><strong>Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for OpenEarthMap/9-class segmentation of RGB 512x512 high-res. images</strong></em></p>\n\n<p>These Residual-UNet model data are based on the [OpenEarthMap dataset](https://open-earth-map.org/)</p>\n\n<p>Models have been created using Segmentation Gym* using the following dataset**:&nbsp;https://zenodo.org/record/7223446#.Y9gtWHbMIuV&nbsp;</p>\n\n<p>Image size used by model:&nbsp;&nbsp;512 x 512 x 3 pixels</p>\n\n<p>classes:<br>\n1. bareland<br>\n2. rangeland<br>\n3. development<br>\n4. road<br>\n5. tree<br>\n6. water<br>\n7. agricultural<br>\n8. building<br>\n9. nodata</p>\n\n<p>File descriptions</p>\n\n<p>For each model, there are 5 files with the same root name:</p>\n\n<p>1. &#39;.json&#39; config file: this is the file that was used by Segmentation Gym* to create the weights file. It contains instructions for how to make the model and the data it used, as well as instructions for how to use the model for prediction. It is a handy wee thing and mastering it means mastering the entire Doodleverse.</p>\n\n<p>2. &#39;.h5&#39; weights file: this is the file that was created by the Segmentation Gym* function `train_model.py`. It contains the trained model&#39;s parameter weights. It can called by the Segmentation Gym* function&nbsp;&nbsp;`seg_images_in_folder.py`. Models may be ensembled.</p>\n\n<p>3. &#39;_modelcard.json&#39; model card file: this is a json file containing fields that collectively describe the model origins, training choices, and dataset that the model is based upon. There is some redundancy between this file and the `config` file (described above) that contains the instructions for the model training and implementation. The model card file is not used by the program but is important metadata so it is important to keep with the other files that collectively make the model and is such is considered part of the model</p>\n\n<p>4. &#39;_model_history.npz&#39; model training history file: this numpy archive file contains numpy arrays describing the training and validation losses and metrics. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>5. &#39;.png&#39; model training loss and mean IoU plot: this png file contains plots of training and validation losses and mean IoU scores during model training. A subset of data inside the .npz file. It is created by the Segmentation Gym function `train_model.py`</p>\n\n<p>Additionally, BEST_MODEL.txt contains the name of the model with the best validation loss and mean IoU</p>\n\n<p>References<br>\n*Segmentation Gym: Buscombe, D., &amp; Goldstein, E. B. (2022). A reproducible and reusable pipeline for segmentation of geoscientific imagery. Earth and Space Science, 9, e2022EA002332. https://doi.org/10.1029/2022EA002332 See: https://github.com/Doodleverse/segmentation_gym</p>\n\n<p>**Xia, Yokoya, Adriano, &amp; Broni-Bediako. (2022). OpenEarthMap: A Benchmark Dataset for Global High-Resolution Land Cover Mapping [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7223446</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Buscombe, Daniel",
+        "affiliation": "Marda Science LLC",
+        "orcid": "0000-0001-6217-5584"
+      }
+    ],
+    "keywords": [
+      "image segmentation",
+      "The Doodleverse",
+      "UNet",
+      "Residual UNet",
+      "Deep learning",
+      "semantic segmentation",
+      "land use / land cover",
+      "Seg2Map",
+      "aerial / high-res."
+    ],
+    "version": "v1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7576893"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Doodleverse/Segmentation Zoo/Seg2Map Res-UNet models for OpenEarthMap/9-class segmentation of RGB 512x512 high-res. images",
+  "links": {
+    "self": "https://zenodo.org/api/records/7576894",
+    "self_html": "https://zenodo.org/records/7576894",
+    "preview_html": "https://zenodo.org/records/7576894?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7576894",
+    "self_doi": "https://doi.org/10.5281/zenodo.7576894",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576894",
+    "reserve_doi": "https://zenodo.org/api/records/7576894/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7576893",
+    "parent_html": "https://zenodo.org/records/7576893",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7576893",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576893",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7576894/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7576894/sequence/default",
+    "files": "https://zenodo.org/api/records/7576894/files",
+    "media_files": "https://zenodo.org/api/records/7576894/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7576894:OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7576894/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7576894/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7576894/versions/latest",
+    "latest_html": "https://zenodo.org/records/7576894/latest",
+    "versions": "https://zenodo.org/api/records/7576894/versions",
+    "draft": "https://zenodo.org/api/records/7576894/draft",
+    "access_links": "https://zenodo.org/api/records/7576894/access/links",
+    "access_grants": "https://zenodo.org/api/records/7576894/access/grants",
+    "access_users": "https://zenodo.org/api/records/7576894/access/users",
+    "access_request": "https://zenodo.org/api/records/7576894/access/request",
+    "access": "https://zenodo.org/api/records/7576894/access",
+    "communities": "https://zenodo.org/api/records/7576894/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7576894/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7576894/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7576894/file-modification",
+    "requests": "https://zenodo.org/api/records/7576894/requests"
+  },
+  "updated": "2024-07-12T18:14:05.020244+00:00",
+  "recid": "7576894",
+  "revision": 5,
+  "files": [
+    {
+      "id": "4f48c606-367b-4c95-9f91-2d775fec257e",
+      "key": "classes.txt",
+      "size": 75,
+      "checksum": "md5:5e1f819566627f3c8334c65fbd4528a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/classes.txt/content"
+      }
+    },
+    {
+      "id": "07e97943-89af-4cb0-b47c-11bbedfe5d5c",
+      "key": "OpenEarthMap_9class_RGB_512_v6.json",
+      "size": 967,
+      "checksum": "md5:6128da54a50f3db02882094aece62de4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v6.json/content"
+      }
+    },
+    {
+      "id": "de28d0f4-b169-47af-ba14-a7acea85f570",
+      "key": "OpenEarthMap_9class_RGB_512_v4.json",
+      "size": 970,
+      "checksum": "md5:dc6c6d2f208f73ff357e883b493b7191",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v4.json/content"
+      }
+    },
+    {
+      "id": "32617743-e7be-469b-b96a-71be89876e9c",
+      "key": "OpenEarthMap_9class_RGB_512_v5_modelcard.json",
+      "size": 2293,
+      "checksum": "md5:98da8cd7b365094827895da155d35915",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v5_modelcard.json/content"
+      }
+    },
+    {
+      "id": "40daf633-f952-445a-9908-9ede8cdaa30a",
+      "key": "OpenEarthMap_9class_RGB_512_v6_modelcard.json",
+      "size": 2293,
+      "checksum": "md5:5aadce56977cf79afab346f6b5e28d23",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v6_modelcard.json/content"
+      }
+    },
+    {
+      "id": "8239157d-2e6b-42d3-a3e1-e1c49a209958",
+      "key": "OpenEarthMap_9class_RGB_512_v2_model_history.npz",
+      "size": 3661,
+      "checksum": "md5:ce8f8c9c044bf5715412804e5f858dc7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v2_model_history.npz/content"
+      }
+    },
+    {
+      "id": "1aec344c-baa5-4937-87d9-de5555913f1b",
+      "key": "OpenEarthMap_9class_RGB_512_v2_trainhist_24.png",
+      "size": 221825,
+      "checksum": "md5:cc98e4a8feb064e9673d839a1e9949c6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v2_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "7375c3af-12a6-498d-82ee-398383d986d3",
+      "key": "OpenEarthMap_9class_RGB_512_v1_model_history.npz",
+      "size": 3589,
+      "checksum": "md5:b84c3b9253efda0ebd8a01352c412e8d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v1_model_history.npz/content"
+      }
+    },
+    {
+      "id": "ac5647b5-2dd7-4bd7-8afc-94a30f2927bf",
+      "key": "OpenEarthMap_9class_RGB_512_v4_modelcard.json",
+      "size": 2294,
+      "checksum": "md5:67a315750d7109e9cfd9e6d3be386b5b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v4_modelcard.json/content"
+      }
+    },
+    {
+      "id": "b45bfb4f-f1f9-47d4-a4a4-ad9c37d7b8fc",
+      "key": "readme.txt",
+      "size": 2786,
+      "checksum": "md5:df3d17f5170288d7b41f04917c58bf4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/readme.txt/content"
+      }
+    },
+    {
+      "id": "27b0d12a-747f-49a8-b766-652367073102",
+      "key": "OpenEarthMap_9class_RGB_512_v5.json",
+      "size": 969,
+      "checksum": "md5:27f468d502195057fdb885229617045f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v5.json/content"
+      }
+    },
+    {
+      "id": "d4d58663-8efb-46db-a85f-6b1566476ca8",
+      "key": "OpenEarthMap_9class_RGB_512_v5_fullmodel.h5",
+      "size": 69423736,
+      "checksum": "md5:f2d13a0cd1071141d54f7aec5d0dd7ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v5_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "fd249f0b-ee4b-4d95-90c8-af0a5f331a2d",
+      "key": "OpenEarthMap_9class_RGB_512_v1_fullmodel.h5",
+      "size": 69423744,
+      "checksum": "md5:5f093a33128580ac5f7bd8b66fe5b8d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v1_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "7a3aeae9-fdf8-4b70-a7e6-0d61c9899a19",
+      "key": "OpenEarthMap_9class_RGB_512_v3_model_history.npz",
+      "size": 3837,
+      "checksum": "md5:1e415a4fa59b93529cf51dac3e5c9a6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v3_model_history.npz/content"
+      }
+    },
+    {
+      "id": "6dc8b2ba-d555-4443-983d-723f92cb59f6",
+      "key": "OpenEarthMap_9class_RGB_512_v1.json",
+      "size": 970,
+      "checksum": "md5:7dcb9e80d00ea8edc3599c7c1473131c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v1.json/content"
+      }
+    },
+    {
+      "id": "a6d9bcd6-5741-4fb9-8af3-9074553de6c2",
+      "key": "OpenEarthMap_9class_RGB_512_v1_modelcard.json",
+      "size": 2294,
+      "checksum": "md5:c542b99423e32dd34f6f03fade56121c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v1_modelcard.json/content"
+      }
+    },
+    {
+      "id": "36794d87-de01-4069-a7e8-5434b695e33f",
+      "key": "BEST_MODEL.txt",
+      "size": 43,
+      "checksum": "md5:aa8331aacf8cccf5f208b22ca128bac0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/BEST_MODEL.txt/content"
+      }
+    },
+    {
+      "id": "b94abcb9-a20a-4582-9972-8a121ca6bfff",
+      "key": "OpenEarthMap_9class_RGB_512_v5_model_history.npz",
+      "size": 4355,
+      "checksum": "md5:8aa6a60146dc86eb0bc624d1d19eb4d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v5_model_history.npz/content"
+      }
+    },
+    {
+      "id": "04861c09-2bfb-4f30-b4b9-9f82ad4bc6ad",
+      "key": "OpenEarthMap_9class_RGB_512_v3_fullmodel.h5",
+      "size": 69423744,
+      "checksum": "md5:f3b5e2057989f1a8b9d1ab32e06c1777",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v3_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "083aef33-878e-4923-9cea-f786dcfa9b5e",
+      "key": "OpenEarthMap_9class_RGB_512_v2_modelcard.json",
+      "size": 2294,
+      "checksum": "md5:430d9734406effa76e3237ecca73ef25",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v2_modelcard.json/content"
+      }
+    },
+    {
+      "id": "790bc2ee-0fa3-4454-bd25-62b8e96fb82b",
+      "key": "OpenEarthMap_9class_RGB_512_v6_model_history.npz",
+      "size": 2901,
+      "checksum": "md5:3f49ffd61489b668452ba6f95a9dd9ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v6_model_history.npz/content"
+      }
+    },
+    {
+      "id": "b295ae90-6bcd-4019-89e7-3a0ae91b31df",
+      "key": "OpenEarthMap_9class_RGB_512_v4_model_history.npz",
+      "size": 4355,
+      "checksum": "md5:55746ca4080db07c8b5b69e9ad80734c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v4_model_history.npz/content"
+      }
+    },
+    {
+      "id": "07e768b1-c26d-4d2a-a65c-b20ef6994175",
+      "key": "OpenEarthMap_9class_RGB_512_v6_fullmodel.h5",
+      "size": 69407832,
+      "checksum": "md5:b4684f7417f587a277bd77c64d1c04ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v6_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "d5ae8540-b397-410e-b8b5-9c0044585a99",
+      "key": "OpenEarthMap_9class_RGB_512_v3.json",
+      "size": 970,
+      "checksum": "md5:8d89fd089a0965378e5648b3e491a4b4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v3.json/content"
+      }
+    },
+    {
+      "id": "a87c495c-59fb-490e-b58c-e3f2a8d09def",
+      "key": "OpenEarthMap_9class_RGB_512_v3_modelcard.json",
+      "size": 2294,
+      "checksum": "md5:302bece0f7aa984e8c8f44e59da76feb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v3_modelcard.json/content"
+      }
+    },
+    {
+      "id": "52d7a52f-a8c0-46b7-8916-c92dabefb3ae",
+      "key": "OpenEarthMap_9class_RGB_512_v2_fullmodel.h5",
+      "size": 69423744,
+      "checksum": "md5:ee467c9028c9889999a0e8cf748234f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v2_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "23e86fbb-0058-45d1-9eb9-a95c0faed789",
+      "key": "OpenEarthMap_9class_RGB_512_v2.json",
+      "size": 970,
+      "checksum": "md5:7251f86b109b8464c1ca17998aebb2f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v2.json/content"
+      }
+    },
+    {
+      "id": "5297a353-6e22-47f3-89b3-4bddc1c6c4a0",
+      "key": "OpenEarthMap_9class_RGB_512_v4_fullmodel.h5",
+      "size": 69423744,
+      "checksum": "md5:eb0a5909fa7de538f7a18cdbf1c4efba",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v4_fullmodel.h5/content"
+      }
+    },
+    {
+      "id": "69e7b016-5202-4708-984f-23df7510e57e",
+      "key": "OpenEarthMap_9class_RGB_512_v4_trainhist_24.png",
+      "size": 227452,
+      "checksum": "md5:89eafb55cbd1fa670463485c9f63e603",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v4_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "859bc942-7966-4be8-bc13-c3786a7d1a15",
+      "key": "OpenEarthMap_9class_RGB_512_v3_trainhist_24.png",
+      "size": 204757,
+      "checksum": "md5:4c9e8d512690ed4acf51042d518385e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v3_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "af0ce1ec-3b5f-4cce-86e9-e3ccd52b4f4c",
+      "key": "OpenEarthMap_9class_RGB_512_v6_trainhist_24.png",
+      "size": 243481,
+      "checksum": "md5:596463a5473648c54c8eb21e7656c4d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v6_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "07514c47-d2ad-468c-bf8e-7737929fa7cb",
+      "key": "OpenEarthMap_9class_RGB_512_v5_trainhist_24.png",
+      "size": 211295,
+      "checksum": "md5:4c1e60c5f1b28159f22b29fefc310827",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v5_trainhist_24.png/content"
+      }
+    },
+    {
+      "id": "3ab3bae3-26c6-40cb-9516-569010e27d03",
+      "key": "OpenEarthMap_9class_RGB_512_v1_trainhist_24.png",
+      "size": 211238,
+      "checksum": "md5:03346a1ec7a6f50ff0a9047976890779",
+      "links": {
+        "self": "https://zenodo.org/api/records/7576894/files/OpenEarthMap_9class_RGB_512_v1_trainhist_24.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "14405"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1272,
+    "unique_downloads": 1082,
+    "views": 185,
+    "unique_views": 172,
+    "version_downloads": 1267,
+    "version_unique_downloads": 1080,
+    "version_unique_views": 171,
+    "version_views": 184
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 18,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 417869290,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "classes.txt",
+        "size": 75
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v6.json",
+        "size": 967
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v4.json",
+        "size": 970
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v5_modelcard.json",
+        "size": 2293
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v6_modelcard.json",
+        "size": 2293
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v2_model_history.npz",
+        "size": 3661
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v2_trainhist_24.png",
+        "size": 221825
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v1_model_history.npz",
+        "size": 3589
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v4_modelcard.json",
+        "size": 2294
+      },
+      {
+        "name": "readme.txt",
+        "size": 2786
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v5.json",
+        "size": 969
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v5_fullmodel.h5",
+        "size": 69423736
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v1_fullmodel.h5",
+        "size": 69423744
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v3_model_history.npz",
+        "size": 3837
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v1.json",
+        "size": 970
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v1_modelcard.json",
+        "size": 2294
+      },
+      {
+        "name": "BEST_MODEL.txt",
+        "size": 43
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v5_model_history.npz",
+        "size": 4355
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v3_fullmodel.h5",
+        "size": 69423744
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v2_modelcard.json",
+        "size": 2294
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v6_model_history.npz",
+        "size": 2901
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v4_model_history.npz",
+        "size": 4355
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v6_fullmodel.h5",
+        "size": 69407832
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v3.json",
+        "size": 970
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v3_modelcard.json",
+        "size": 2294
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v2_fullmodel.h5",
+        "size": 69423744
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v2.json",
+        "size": 970
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v4_fullmodel.h5",
+        "size": 69423744
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v4_trainhist_24.png",
+        "size": 227452
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v3_trainhist_24.png",
+        "size": 204757
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v6_trainhist_24.png",
+        "size": 243481
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v5_trainhist_24.png",
+        "size": 211295
+      },
+      {
+        "name": "OpenEarthMap_9class_RGB_512_v1_trainhist_24.png",
+        "size": 211238
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://open-earth-map.org/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://zenodo.org/record/7223446#.Y9gtWHbMIuV",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022EA002332",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/Doodleverse/segmentation_gym",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.7223446",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.614407"
+}

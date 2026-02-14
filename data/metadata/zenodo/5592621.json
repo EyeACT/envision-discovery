@@ -1,0 +1,192 @@
+{
+  "created": "2021-10-22T14:05:10.679015+00:00",
+  "modified": "2021-10-23T01:48:53.520339+00:00",
+  "id": 5592621,
+  "conceptrecid": "5075428",
+  "doi": "10.5281/zenodo.5592621",
+  "conceptdoi": "10.5281/zenodo.5075428",
+  "doi_url": "https://doi.org/10.5281/zenodo.5592621",
+  "metadata": {
+    "title": "OCTA image dataset with label annotation for quality assessment",
+    "doi": "10.5281/zenodo.5592621",
+    "publication_date": "2021-07-06",
+    "description": "<p>This dataset is publish by the research &quot;<em>A Deep Learning-based Quality Assessment and Segmentation System with a Large-scale Benchmark Dataset for Optical Coherence Tomographic Angiography Image</em>&quot;</p>\n\n<p>Detail:</p>\n\n<p>OCTA image dataset with label annotation for quality assessment.&nbsp;sOCTA-3x3-10k: 10,480 3 &times; 3 mm<sup>2</sup> superficial vascular layer OCTA (sOCTA) images divided into three classes; sOCTA-6x6-14k: 14,042 6 &times; 6 mm<sup>2</sup> sOCTA images divided into three classes.&nbsp;</p>\n\n<p>GitHub:&nbsp;<a href=\"https://github.com/shanzha09/COIPS\">https://github.com/shanzha09/COIPS</a></p>\n\n<p>These datasets are public available, if you use the dataset or our system in your research, please <strong>cite</strong> our paper:&nbsp;<em><code>A Deep Learning-based Quality Assessment and Segmentation System with a Large-scale Benchmark Dataset for Optical Coherence Tomographic Angiography Image</code></em>.</p>\n\n<p>arXiv:<a href=\"https://arxiv.org/abs/2107.10476v1\">https://arxiv.org/abs/2107.10476v1</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Yufei wang",
+        "affiliation": "Key Laboratory of Bio-Resource and Eco-Environment of ministry of Education, College of Life Sciences, State Key Laboratory of Hydraulics and Mountain River Engineering, Sichuan University, Chengdu, Sichuan, 610064, China",
+        "orcid": "0000-0003-3016-6389"
+      },
+      {
+        "name": "Yiqing Shen",
+        "affiliation": "School of Mathematical Sciences, Shanghai Jiao Tong University, Shanghai, 200240, China"
+      },
+      {
+        "name": "Meng Yuan",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Jing Xu",
+        "affiliation": "Intelligent Computing Laboratory, International Graduate School, Tsinghua University, Shenzhen, Guangdong, 518055, China"
+      },
+      {
+        "name": "Bin Yang",
+        "affiliation": "Department of Ophthalmology, The Third People's Hospital of Zigong City, Zigong 643020, China"
+      },
+      {
+        "name": "Chi Liu",
+        "affiliation": "School of Computer Science, University Technology of Sydney, Ultimo NSW 2007, Australia"
+      },
+      {
+        "name": "Wenjia Cai",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Weijing Cheng",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      },
+      {
+        "name": "Wei Wang",
+        "affiliation": "State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen University, Guangzhou 510060, China"
+      }
+    ],
+    "keywords": [
+      "Optical Coherence Tomography angiography",
+      "Quality assessment",
+      "Deep learning"
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5075428"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCTA image dataset with label annotation for quality assessment",
+  "links": {
+    "self": "https://zenodo.org/api/records/5592621",
+    "self_html": "https://zenodo.org/records/5592621",
+    "preview_html": "https://zenodo.org/records/5592621?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5592621",
+    "self_doi": "https://doi.org/10.5281/zenodo.5592621",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5592621",
+    "reserve_doi": "https://zenodo.org/api/records/5592621/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5075428",
+    "parent_html": "https://zenodo.org/records/5075428",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5075428",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5075428",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5592621/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5592621/sequence/default",
+    "files": "https://zenodo.org/api/records/5592621/files",
+    "media_files": "https://zenodo.org/api/records/5592621/media-files",
+    "archive": "https://zenodo.org/api/records/5592621/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5592621/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5592621/versions/latest",
+    "latest_html": "https://zenodo.org/records/5592621/latest",
+    "versions": "https://zenodo.org/api/records/5592621/versions",
+    "draft": "https://zenodo.org/api/records/5592621/draft",
+    "access_links": "https://zenodo.org/api/records/5592621/access/links",
+    "access_grants": "https://zenodo.org/api/records/5592621/access/grants",
+    "access_users": "https://zenodo.org/api/records/5592621/access/users",
+    "access_request": "https://zenodo.org/api/records/5592621/access/request",
+    "access": "https://zenodo.org/api/records/5592621/access",
+    "communities": "https://zenodo.org/api/records/5592621/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5592621/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5592621/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5592621/file-modification",
+    "requests": "https://zenodo.org/api/records/5592621/requests"
+  },
+  "updated": "2021-10-23T01:48:53.520339+00:00",
+  "recid": "5592621",
+  "revision": 3,
+  "files": [
+    {
+      "id": "e0c0c225-5a67-467a-8541-04604c5fb95d",
+      "key": "quality_assessment.7z",
+      "size": 77867950,
+      "checksum": "md5:d9b70343caff3d9eadedbdd0679a8358",
+      "links": {
+        "self": "https://zenodo.org/api/records/5592621/files/quality_assessment.7z/content"
+      }
+    },
+    {
+      "id": "38cf5a36-1650-4302-be56-734cc6d08ca6",
+      "key": "readme.txt",
+      "size": 198,
+      "checksum": "md5:285537670432f2fd38e8cecab0e4504e",
+      "links": {
+        "self": "https://zenodo.org/api/records/5592621/files/readme.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "240479"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1061,
+    "unique_downloads": 635,
+    "views": 3514,
+    "unique_views": 2980,
+    "version_downloads": 529,
+    "version_unique_downloads": 384,
+    "version_unique_views": 1162,
+    "version_views": 1313
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 77867950,
+    "top_level_files": [
+      {
+        "name": "quality_assessment.7z",
+        "size": 77867950
+      },
+      {
+        "name": "readme.txt",
+        "size": 198
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/shanzha09/COIPS",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.10476v1",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:48.347289"
+}

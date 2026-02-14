@@ -1,0 +1,176 @@
+{
+  "created": "2025-03-18T14:34:26.240391+00:00",
+  "modified": "2025-03-18T14:34:26.531101+00:00",
+  "id": 15044377,
+  "conceptrecid": "5749640",
+  "doi": "10.5281/zenodo.15044377",
+  "conceptdoi": "10.5281/zenodo.5749640",
+  "doi_url": "https://doi.org/10.5281/zenodo.15044377",
+  "metadata": {
+    "title": "A Catalog of Natural Channelrhodopsins",
+    "doi": "10.5281/zenodo.15044377",
+    "publication_date": "2025-03-18",
+    "description": "<p>This repository is an appendix to the publication <a href=\"https://doi.org/10.1016/j.cub.2020.09.056\">[Rozenberg20](10.1016/j.cub.2020.09.056)</a>, \"Lateral Gene Transfer of Anion-Conducting Channelrhodopsins between Green Algae and Giant Viruses\", that is intended to keep the list of the channelrhodopsins (ChRs) presented there as a constantly updated resource that includes updates to the old records, addition of novel unpublished entries, entries from newly published experiments and corrections to the previously published sets.</p>\n<p>Most of the credit belongs to the projects that generated and assembled the data that ultimately contained the ChRs (especially, <a href=\"https://doi.org/10.1371/journal.pbio.1001889\">[MMETSP_Keeling14](10.1371/journal.pbio.1001889)</a> and <a href=\"https://doi.org/10.1038/s41586-019-1693-2\">[1KP_initiative19](10.1038/s41586-019-1693-2)</a>) and to the experimentalists who took the challenge of characterizing them. The catalog currently focuses mostly but not exclusively on proteins from cultured organisms.</p>\n<p>Although the format might eventually change, the current version of the catalog is composed of two xlsx spreadsheets:</p>\n<ul>\n<li>Channelrhodopsins_Original_List.xlsx that represents the original ChR list with additional metadata, but without changes to the sequences and additions and without changing the classification of the ChRs. This file will remain unchanged throughout releases. It contains the following fields:\n<ul>\n<li>ID - integer index</li>\n<li>Sequence name - unique name of the sequence</li>\n<li>Is outgroup (not ChR) - flag indicating whether the sequence is not a ChR (a small number of rhodopsins inherited from <a href=\"https://dx.doi.org/10.1038%2Fnmeth.2836\">[Klapoetke14](10.1038/nmeth.2836)</a> belonged to different families)</li>\n<li>Symbol - gene symbol, short alias</li>\n<li>Species - source species/strain</li>\n<li>Taxonomic group - taxonomic affiliation of the species</li>\n<li>ChR group - clade name, if empty indicates clades unknown back then</li>\n<li>Bioproject - NCBI bioproject for the sequence</li>\n<li>Sequence source - initiative/database/publication the gene nucleotide sequence was part of</li>\n<li>Activity - activity confirmed for the exact sequence (potentially, a shorter version or in rare cases an allelic variant thereof). In the original list, selectivity (cation/anion) was indicted for all ChRs with demonstrated channel activity even if selectivity could not be or was not assessed experimentally.</li>\n<li>Reference - publication(s) where the activity was demonstrated</li>\n<li>Full-length 98%-identity clustering:\n<ul>\n<li>Representative - representative sequence for the cluster with an identity of 98%</li>\n<li>Cluster - cluster number</li>\n<li>Identity - identity % to the reference</li>\n</ul>\n</li>\n<li>Rhodopsin-domain 100%-identity clustering:\n<ul>\n<li>Representative - representative sequence for the cluster with an identity of 100% after the 98%-identity clusters were aligned and trimmed to include only the rhodopsin domain</li>\n<li>Cluster - cluster number</li>\n</ul>\n</li>\n<li>Sequence - full protein sequence for the entry (this might be the complete sequence of the gene, partial sequence of the gene that was not recovered entirely in the assembly or sequence of a specific construct used for expression)</li>\n<li>Is partial sequence - flag indicating whether the rhodopsin domain is truncated</li>\n<li>Has indels - flag indicating whether the rhodopsin domain contains indels (unspliced introns in transcripts, gene annotation artifacts)</li>\n<li>Sequence completeness comment - comments about the nature of the indels</li>\n</ul>\n</li>\n<li>Channelrhodopsins_Updated_List.xlsx includes amended ChR sequences, manually added entries and novel expressed or otherwise published proteins. In this release all of the sequences with complete rhodopsin domains are assigned to a family (some families have only provisional names). The spreadsheet is structured differently from the first one and focuses more on the unique complete sequences by separating genes from constructs that are derived from them. The redundancy of the dataset was further reduced by combining identical sequences. Highly similar sequences are treated mostly separately. In some cases they have been downgraded to allelic or splice variants, but this is not yet consistent. There are now three sheets:\n<ul>\n<li>full_channelrhodopsins - full ChR sequences</li>\n<li>fragmented_channelrhodopsins - ChR sequences with incomplete rhodopsin domains</li>\n<li>not_channelrhodopsins - additional proteins that have been mentioned in ChR datasets that are not from the ChR family</li>\n</ul>\n</li>\n<li>The sheets have the following fields:\n<ul>\n<li>ID - integer index corresponding to the record (new records have IDs &gt;875).</li>\n<li>Sequence name - this is the chosen sequence name for the longest version of the sequence</li>\n<li>Version - sequence version. Sequences get updated and increment their versions in the following cases:\n<ul>\n<li>the correct start codon was identified</li>\n<li>a full sequence for the gene was found in an alternative database</li>\n<li>a full sequence for the gene has been obtained or corrected from the raw data</li>\n<li>gene annotation artifacts have been corrected manually based for the genomic sequence</li>\n<li>unspliced introns were found and removed</li>\n</ul>\n</li>\n<li>Reviewed - a somewhat arbitrary flag indicating whether the complete sequence has been manually reviewed</li>\n<li>Constructs - NCBI protein accessions of constructs overlapping with the gene indicating the overlapping region. Note that construct are allowed to overlap multiple full-length genes even from nominally different species.</li>\n<li>Symbol - short gene alias</li>\n<li>Species - species from which the longest representative sequence belongs</li>\n<li>Taxonomic group</li>\n<li>ChR group - ChR affiliation based on phylogeny</li>\n<li>ChR supergroup - ChR supergroup (A: ACRs and green algal CCRs, B: \"bacteriorhodopsin-like\" CCRs, D: the clade of dinoflagellate and related colpodellid ChRs)</li>\n<li>Bioproject - bioproject accession(s) for the data from which the sequence is derived</li>\n<li>Sequence source - one or multiple sources for the sequence, preference is given to earlier released publications</li>\n<li>Source type - the kind of source(s) (e.g. genome/transcriptome) the sequence comes from</li>\n<li>First mention - reference for the source where the gene was first indicated as a ChR. Notice that with highly similar sequences this is sometimes tricky.</li>\n<li>Currents - channeling activity. This differentiates between confirmed and unconfirmed selectivities: square brackets specify the likely but unconfirmed selectivity</li>\n<li>Cation selectivity - further details on selectivity of cation ChRs</li>\n<li>Currents reference</li>\n<li>Absorption maximum, nm</li>\n<li>Action maximum, nm</li>\n<li>Spectra references</li>\n<li>Spectra comment</li>\n<li>Representative sequence from [Rozenberg20] - representative highly similar sequence (this is inherited from the from the original file: full-length 98% clustering &gt; rhodopsin domain 100% clustering)</li>\n<li>Sequence - the amino acid sequence</li>\n<li>Superseded identical sequences - identical sequences included in the same record (with species/strain indicated if different)</li>\n<li>Splice variants - putative minor splice variants from the same species/strain</li>\n<li>Allelic variants - putative minor allelic variations from the same species/strain</li>\n<li>Superseded included sequences - shorter sequences included in the record</li>\n<li>Superseded incorrect sequences - other sequences that are different due to artifacts</li>\n<li>Version comments - brief version history</li>\n<li>Other comments</li>\n</ul>\n</li>\n</ul>\n<p>Starting from version 2.0, the repository also contains:</p>\n<ul>\n<li>Channelrhodopsins_Alphafold3_structures.zip - raw alphafold3 structures of all of the complete ChRs with retinal.</li>\n</ul>\n<p>This is work in progress, use with care. If a formal citation is needed, please cite <a href=\"https://doi.org/10.1016/j.cub.2020.09.056\">[Rozenberg20](10.1016/j.cub.2020.09.056)</a>, \"Lateral Gene Transfer of Anion-Conducting Channelrhodopsins between Green Algae and Giant Viruses\" and <a href=\"https://www.science.org/doi/10.1126/sciadv.add7729\">[Vierock22](10.1126/sciadv.add7729)</a>, \"WiChR, a highly potassium selective channelrhodopsin for low-light one- and two-photon inhibition of excitable cells\". For the most recent phylogeny of ChRs see <a href=\"https://doi.org/10.7554/eLife.90100.1\">[Oppermann23](10.7554/eLife.90100.1)</a>, \"Robust optogenetic inhibition with red-light-sensitive anion-conducting channelrhodopsins\", and <a href=\"https://github.com/BejaLab/ACRs\">https://github.com/BejaLab/ACRs</a>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Andrey Rozenberg",
+        "affiliation": "Technion \u2013 Israel Institute of Technology",
+        "orcid": "0000-0001-9534-2297"
+      }
+    ],
+    "keywords": [
+      "channelrhodopsins",
+      "retinal proteins",
+      "rhodopsins",
+      "ion channels",
+      "optogenetics"
+    ],
+    "version": "2.0",
+    "references": [
+      "Rozenberg A, Oppermann J, Wietek J, Fernandez Lahore RG, Sandaa RA, Bratbak G, Hegemann P, B\u00e9j\u00e0 O. Lateral Gene Transfer of Anion-Conducting Channelrhodopsins between Green Algae and Giant Viruses. Curr Biol. 2020 Dec 21;30(24):4910-4920.e5. doi: 10.1016/j.cub.2020.09.056.",
+      "Vierock J, Shiewer E, Grimm C, Rozenberg A, Chen IW, Tillert L, Castro Scalise AG, Casini M, Augustin S, Tanese D, Forget BC, Peyronnet R, Schneider-Warme F, Emiliani V, B\u00e9j\u00e0 O, Hegemann P. WiChR, a highly potassium-selective channelrhodopsin for low-light one- and two-photon inhibition of excitable cells. Sci Adv. 2022 Dec 9;8(49):eadd7729. doi: 10.1126/sciadv.add7729.",
+      "Oppermann J, Rozenberg A, Fabrin T, GonzalezCabrera C, B\u00e9j\u00e0 O, Prigge M, Hegemann P, Robust optogenetic inhibition with red-light-sensitive anion-conducting channelrhodopsins. eLife 2023 Sep 12;12:RP90100. doi: 10.7554/eLife.90100.1."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 12,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5749640"
+          }
+        }
+      ]
+    }
+  },
+  "title": "A Catalog of Natural Channelrhodopsins",
+  "links": {
+    "self": "https://zenodo.org/api/records/15044377",
+    "self_html": "https://zenodo.org/records/15044377",
+    "preview_html": "https://zenodo.org/records/15044377?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15044377",
+    "self_doi": "https://doi.org/10.5281/zenodo.15044377",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15044377",
+    "reserve_doi": "https://zenodo.org/api/records/15044377/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5749640",
+    "parent_html": "https://zenodo.org/records/5749640",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5749640",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5749640",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15044377/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15044377/sequence/default",
+    "files": "https://zenodo.org/api/records/15044377/files",
+    "media_files": "https://zenodo.org/api/records/15044377/media-files",
+    "archive": "https://zenodo.org/api/records/15044377/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15044377/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15044377/versions/latest",
+    "latest_html": "https://zenodo.org/records/15044377/latest",
+    "versions": "https://zenodo.org/api/records/15044377/versions",
+    "draft": "https://zenodo.org/api/records/15044377/draft",
+    "access_links": "https://zenodo.org/api/records/15044377/access/links",
+    "access_grants": "https://zenodo.org/api/records/15044377/access/grants",
+    "access_users": "https://zenodo.org/api/records/15044377/access/users",
+    "access_request": "https://zenodo.org/api/records/15044377/access/request",
+    "access": "https://zenodo.org/api/records/15044377/access",
+    "communities": "https://zenodo.org/api/records/15044377/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15044377/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15044377/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15044377/file-modification",
+    "requests": "https://zenodo.org/api/records/15044377/requests"
+  },
+  "updated": "2025-03-18T14:34:26.531101+00:00",
+  "recid": "15044377",
+  "revision": 4,
+  "files": [
+    {
+      "id": "7299f861-453b-421c-b3af-d216149e022f",
+      "key": "Channelrhodopsins_Alphafold3_structures.zip",
+      "size": 50832237,
+      "checksum": "md5:8a61bd93565867e38db35ba1062e5779",
+      "links": {
+        "self": "https://zenodo.org/api/records/15044377/files/Channelrhodopsins_Alphafold3_structures.zip/content"
+      }
+    },
+    {
+      "id": "280f7d55-29a6-49bc-b1c3-d210acdbc1da",
+      "key": "Channelrhodopsins_Original_List.xlsx",
+      "size": 185834,
+      "checksum": "md5:ec7be398f0ca65910ccb867b7d4e8382",
+      "links": {
+        "self": "https://zenodo.org/api/records/15044377/files/Channelrhodopsins_Original_List.xlsx/content"
+      }
+    },
+    {
+      "id": "989aa6a7-f022-48e3-b895-cbb39876ce4c",
+      "key": "Channelrhodopsins_Updated_List.xlsx",
+      "size": 981988,
+      "checksum": "md5:d94c48036b49f186ef06f56f11033672",
+      "links": {
+        "self": "https://zenodo.org/api/records/15044377/files/Channelrhodopsins_Updated_List.xlsx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "240149"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 826,
+    "unique_downloads": 762,
+    "views": 2473,
+    "unique_views": 2342,
+    "version_downloads": 152,
+    "version_unique_downloads": 142,
+    "version_unique_views": 150,
+    "version_views": 165
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 50832237,
+    "top_level_files": [
+      {
+        "name": "Channelrhodopsins_Alphafold3_structures.zip",
+        "size": 50832237
+      },
+      {
+        "name": "Channelrhodopsins_Original_List.xlsx",
+        "size": 185834
+      },
+      {
+        "name": "Channelrhodopsins_Updated_List.xlsx",
+        "size": 981988
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/BejaLab/ACRs",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:53.770919"
+}

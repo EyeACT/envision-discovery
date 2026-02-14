@@ -1,0 +1,196 @@
+{
+  "created": "2024-08-12T13:25:07.318412+00:00",
+  "modified": "2025-02-13T17:40:05.987429+00:00",
+  "id": 13305554,
+  "conceptrecid": "13235542",
+  "doi": "10.5281/zenodo.13305554",
+  "conceptdoi": "10.5281/zenodo.13235542",
+  "doi_url": "https://doi.org/10.5281/zenodo.13305554",
+  "metadata": {
+    "title": "User Generated Content (EOL v2): curation of media objects",
+    "doi": "10.5281/zenodo.13305554",
+    "publication_date": "2024-08-12",
+    "description": "trust, untrust, hide, set as exemplar\n<p></p>https://eol-jira.bibalex.org/browse/DATA-1731\nOct 24, 2018\nFor questions or use cases calling for large, multi-use aggregate data files, please visit the EOL Services forum at <p></p>http://discuss.eol.org/c/eol-services",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Encyclopedia of Life",
+        "affiliation": null
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Jen Hammock",
+        "affiliation": "Encyclopedia of Life",
+        "type": "ContactPerson"
+      }
+    ],
+    "keywords": [
+      "compilation",
+      "active"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://editors.eol.org/other_files/EOL_v2_files/user_object_curation.txt.zip",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      },
+      {
+        "type": "updated"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "notspecified"
+    },
+    "communities": [
+      {
+        "id": "eol"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13235542"
+          }
+        }
+      ]
+    }
+  },
+  "title": "User Generated Content (EOL v2): curation of media objects",
+  "links": {
+    "self": "https://zenodo.org/api/records/13305554",
+    "self_html": "https://zenodo.org/records/13305554",
+    "preview_html": "https://zenodo.org/records/13305554?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13305554",
+    "self_doi": "https://doi.org/10.5281/zenodo.13305554",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13305554",
+    "reserve_doi": "https://zenodo.org/api/records/13305554/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13235542",
+    "parent_html": "https://zenodo.org/records/13235542",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13235542",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13235542",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13305554/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13305554/sequence/default",
+    "files": "https://zenodo.org/api/records/13305554/files",
+    "media_files": "https://zenodo.org/api/records/13305554/media-files",
+    "archive": "https://zenodo.org/api/records/13305554/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13305554/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13305554/versions/latest",
+    "latest_html": "https://zenodo.org/records/13305554/latest",
+    "versions": "https://zenodo.org/api/records/13305554/versions",
+    "draft": "https://zenodo.org/api/records/13305554/draft",
+    "access_links": "https://zenodo.org/api/records/13305554/access/links",
+    "access_grants": "https://zenodo.org/api/records/13305554/access/grants",
+    "access_users": "https://zenodo.org/api/records/13305554/access/users",
+    "access_request": "https://zenodo.org/api/records/13305554/access/request",
+    "access": "https://zenodo.org/api/records/13305554/access",
+    "communities": "https://zenodo.org/api/records/13305554/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13305554/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13305554/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13305554/file-modification",
+    "requests": "https://zenodo.org/api/records/13305554/requests"
+  },
+  "updated": "2025-02-13T17:40:05.987429+00:00",
+  "recid": "13305554",
+  "revision": 10,
+  "files": [
+    {
+      "id": "81628a6f-6fe2-4d2c-8139-86570b49eed7",
+      "key": "13235543.dat",
+      "size": 2298,
+      "checksum": "md5:e0590065138f535cf9bad82e36eb6498",
+      "links": {
+        "self": "https://zenodo.org/api/records/13305554/files/13235543.dat/content"
+      }
+    },
+    {
+      "id": "eb53e3c6-71ba-4381-89d1-c47d52f3f122",
+      "key": "user_object_curation.txt.zip",
+      "size": 47477592,
+      "checksum": "md5:57457f6f5b45f29b518bf357fc4d6990",
+      "links": {
+        "self": "https://zenodo.org/api/records/13305554/files/user_object_curation.txt.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1158728"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 17,
+    "unique_downloads": 17,
+    "views": 72,
+    "unique_views": 62,
+    "version_downloads": 9,
+    "version_unique_downloads": 9,
+    "version_unique_views": 37,
+    "version_views": 43
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 47477592,
+    "top_level_files": [
+      {
+        "name": "13235543.dat",
+        "size": 2298
+      },
+      {
+        "name": "user_object_curation.txt.zip",
+        "size": 47477592
+      }
+    ],
+    "zip_contents": {
+      "user_object_curation.txt.zip": {
+        "total_files": 1,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 271750937,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://eol-jira.bibalex.org/browse/DATA-1731",
+      "type": "potential_download"
+    },
+    {
+      "url": "http://discuss.eol.org/c/eol-services",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:23.618072"
+}

@@ -1,0 +1,201 @@
+{
+  "created": "2021-06-17T19:55:28.638309+00:00",
+  "modified": "2022-05-28T03:37:21.909490+00:00",
+  "id": 4976473,
+  "conceptrecid": "4976472",
+  "doi": "10.5061/dryad.1f1rc",
+  "doi_url": "https://doi.org/10.5061/dryad.1f1rc",
+  "metadata": {
+    "title": "Data from: Error-robust modes of the retinal population code",
+    "doi": "10.5061/dryad.1f1rc",
+    "publication_date": "2017-10-18",
+    "description": "Across the nervous system, certain population spiking patterns are observed far more frequently than others. A hypothesis about this structure is that these collective activity patterns function as population codewords\u2013collective modes\u2013carrying information distinct from that of any single cell. We investigate this phenomenon in recordings of \u223c150 retinal ganglion cells, the retina's output. We develop a novel statistical model that decomposes the population response into modes; it predicts the distribution of spiking activity in the ganglion cell population with high accuracy. We found that the modes represent localized features of the visual stimulus that are distinct from the features represented by single neurons. Modes form clusters of activity states that are readily discriminated from one another. When we repeated the same visual stimulus, we found that the same mode was robustly elicited. These results suggest that retinal ganglion cells' collective signaling is endowed with a form of error-correcting code\u2013a principle that may hold in brain areas beyond retina.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Loback, Adrianna R.",
+        "affiliation": "Princeton University"
+      },
+      {
+        "name": "Tka\u010dik, Ga\u0161per",
+        "affiliation": "Institute of Science and Technology Austria"
+      },
+      {
+        "name": "Prentice, Jason S.",
+        "affiliation": "Princeton University"
+      },
+      {
+        "name": "Ioffe, Mark L.",
+        "affiliation": "Princeton University"
+      },
+      {
+        "name": "Berry II, Michael J.",
+        "affiliation": null
+      },
+      {
+        "name": "Marre, Olivier",
+        "affiliation": "Institut de la Vision"
+      },
+      {
+        "name": "Berry, Michael J.",
+        "affiliation": "Princeton University"
+      }
+    ],
+    "keywords": [
+      "Multielectrode array",
+      "retina",
+      "Retinal ganglion cell"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pcbi.1005148",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4976472"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Multi-electrode retinal ganglion cell population spiking data<div class=\"o-metadata__file-description\">The file contains spike time data from multi-electrode array recordings of salamander retinal ganglion cells under four stimulus conditions: a white noise checkerboard, a repeated natural movie, a non-repeated natural movie, and a bar exhibiting random one-dimensional motion. For each experiment, spike time data is provided in the file 'data.mat' and information necessary to reconstruct the stimulus and align to spike times is contained in 'aux_data' where relevant. All recordings were sampled at 10 kHz. Data is in Matlab .mat format.</div><div class=\"o-metadata__file-name\">error_robust_mode_data.zip<br></div></div><p>Funding provided by: National Science Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000001<br>Award Number: 1504977</p>"
+  },
+  "title": "Data from: Error-robust modes of the retinal population code",
+  "links": {
+    "self": "https://zenodo.org/api/records/4976473",
+    "self_html": "https://zenodo.org/records/4976473",
+    "preview_html": "https://zenodo.org/records/4976473?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.1f1rc",
+    "self_doi": "https://doi.org/10.5061/dryad.1f1rc",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.1f1rc",
+    "reserve_doi": "https://zenodo.org/api/records/4976473/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4976472",
+    "parent_html": "https://zenodo.org/records/4976472",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4976473/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4976473/sequence/default",
+    "files": "https://zenodo.org/api/records/4976473/files",
+    "media_files": "https://zenodo.org/api/records/4976473/media-files",
+    "archive": "https://zenodo.org/api/records/4976473/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4976473/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4976473/versions/latest",
+    "latest_html": "https://zenodo.org/records/4976473/latest",
+    "versions": "https://zenodo.org/api/records/4976473/versions",
+    "draft": "https://zenodo.org/api/records/4976473/draft",
+    "access_links": "https://zenodo.org/api/records/4976473/access/links",
+    "access_grants": "https://zenodo.org/api/records/4976473/access/grants",
+    "access_users": "https://zenodo.org/api/records/4976473/access/users",
+    "access_request": "https://zenodo.org/api/records/4976473/access/request",
+    "access": "https://zenodo.org/api/records/4976473/access",
+    "communities": "https://zenodo.org/api/records/4976473/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4976473/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4976473/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4976473/file-modification",
+    "requests": "https://zenodo.org/api/records/4976473/requests"
+  },
+  "updated": "2022-05-28T03:37:21.909490+00:00",
+  "recid": "4976473",
+  "revision": 3,
+  "files": [
+    {
+      "id": "6792b0f0-f4d1-4008-9552-7498a509f14c",
+      "key": "error_robust_mode_data.zip",
+      "size": 87524253,
+      "checksum": "md5:f34c92b51f2abcc3ff965500176ff9fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/4976473/files/error_robust_mode_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 18,
+    "unique_downloads": 17,
+    "views": 139,
+    "unique_views": 138,
+    "version_downloads": 18,
+    "version_unique_downloads": 17,
+    "version_unique_views": 132,
+    "version_views": 133
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 87524253,
+    "top_level_files": [
+      {
+        "name": "error_robust_mode_data.zip",
+        "size": 87524253
+      }
+    ],
+    "zip_contents": {
+      "error_robust_mode_data.zip": {
+        "total_files": 23,
+        "total_directories": 16,
+        "total_uncompressed_bytes": 106701914,
+        "file_types": {
+          ".mat": 8
+        },
+        "imaging_file_count": 8,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "mode_paper_data/randomly_moving_bar/data.mat",
+          "mode_paper_data/repeated_natural_movie/aux_data/frametimes.mat",
+          "mode_paper_data/repeated_natural_movie/data.mat",
+          "mode_paper_data/unique_natural_movie/data.mat",
+          "mode_paper_data/white_noise_checkerboard/aux_data/hmm_btas.mat",
+          "mode_paper_data/white_noise_checkerboard/aux_data/stas.mat",
+          "mode_paper_data/white_noise_checkerboard/aux_data/stim.mat",
+          "mode_paper_data/white_noise_checkerboard/data.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "mode_paper_data/randomly_moving_bar/data.mat",
+      "mode_paper_data/repeated_natural_movie/aux_data/frametimes.mat",
+      "mode_paper_data/repeated_natural_movie/data.mat",
+      "mode_paper_data/unique_natural_movie/data.mat",
+      "mode_paper_data/white_noise_checkerboard/aux_data/hmm_btas.mat",
+      "mode_paper_data/white_noise_checkerboard/aux_data/stas.mat",
+      "mode_paper_data/white_noise_checkerboard/aux_data/stim.mat",
+      "mode_paper_data/white_noise_checkerboard/data.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:29.812700"
+}

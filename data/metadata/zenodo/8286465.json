@@ -1,0 +1,212 @@
+{
+  "created": "2023-08-26T20:04:01.428768+00:00",
+  "modified": "2023-08-27T02:26:55.756725+00:00",
+  "id": 8286465,
+  "conceptrecid": "8286464",
+  "doi": "10.5281/zenodo.8286465",
+  "conceptdoi": "10.5281/zenodo.8286464",
+  "doi_url": "https://doi.org/10.5281/zenodo.8286465",
+  "metadata": {
+    "title": "SandyDuck 1997 timeseries",
+    "doi": "10.5281/zenodo.8286465",
+    "publication_date": "2023-08-26",
+    "description": "<p>Time series (2Hz) of waves and currents in 5 alongshore arrays from near the shoreline to 7 m water depth at the USACE Field Research Facility, Duck, NC, USA collected between Sep 1 and Oct 31 1997.</p>\n\n<p>The README describes the files with time series of pressure and velocity (2 Hz), the files with the X-Y-Z locations of the sensors, and provides links to the nearly daily bathymetric surveys and the incident (8-m water depth) wave conditions (frequency-directional spectra)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Elgar, Steve",
+        "affiliation": "Woods Hole Oceanographic Institution",
+        "orcid": "0000-0001-5034-7027"
+      },
+      {
+        "name": "Raubenheimer, Britt",
+        "affiliation": "Woods Hole Oceanographic Institution",
+        "orcid": "0000-0002-3741-4536"
+      }
+    ],
+    "keywords": [
+      "surfzone",
+      "waves",
+      "currents",
+      "bathymetry",
+      "SandyDuck"
+    ],
+    "version": "1",
+    "references": [
+      "Elgar, Steve, R.T. Guza, W.C. O'Reilly, B. Raubenheimer, and T.H.C. Herbers, 2001 Wave energy and direction observed near a pier, ASCE J. Waterway, Port, Coastal, and Ocean Engineering 127, 2-6.",
+      "Raubenheimer, B., R.T. Guza, and Steve Elgar, 2001 Field observations of wave-driven setdown and setup, J. Geophysical Research 106, 4629-4638.",
+      "Trowbridge, J. and Steve Elgar, 2001 Turbulence measurements in the surfzone, J. Physical Oceanography 31, 2403-2417",
+      "Ruessink, G., J. Miles, F. Feddersen, R.T. Guza, and Steve Elgar, 2001 Modeling the alongshore current on barred beaches, J. Geophysical Research 106, 22,451-22,463.",
+      "Herbers, T.H.C, Steve Elgar, N.A. Sarap, and R.T. Guza, 2002 Nonlinear dispersion of surface gravity waves in shallow water, J. Physical Oceanography 32, 1181-1193.",
+      "Sheremet, A., R.T. Guza, Steve Elgar, and T.H.C. Herbers, 2002 Observations of nearshore infragravity waves: Part 1: Seaward and shoreward propagating components, J. Geophysical Research 107, 3095, doi:10.1029/2001JC000970.",
+      "Herbers, T.H.C., Mark Orzech, Steve Elgar, and R.T. Guza, 2003 Shoaling transformation of wave frequency-directional spectra, J. Geophysical Research 108, 3013, doi:10.1029/2001JC001304",
+      "Noyes, T. James, R.T. Guza, Steve Elgar, and T.H.C. Herbers, 2004 Field observations of shear waves in the surf zone, J. Geophysical Research 109, doi:10.1029/2002JC001761.",
+      "Feddersen, F., R.T. Guza, and Steve Elgar, 2004 Inverse modeling of the one-dimensional setup and alongshore current in the nearshore, J. Physical Oceanography 34, 920-933",
+      "Noyes, T. James, R.T. Guza, F. Feddersen, Steve Elgar, and T.H.C. Herbers, 2005 Model-data comparisons of shear waves in the nearshore, J. Geophysical Research 110, C05019, doi:10.1029/2004JC002541",
+      "Henderson, Stephen, R.T. Guza, Steve Elgar, and T.H.C. Herbers, 2006 Refraction of surface gravity waves by shear waves, J. of Physical Oceanography, 36, 629-635",
+      "Apotsos, Alex, Britt Raubenheimer, Steve Elgar, and R.T. Guza, 2008 Testing and calibrating parametric wave transformation models on natural beaches, Coastal Engineering 55, 224-235 (doi:10.1016/j.coastaleng.2007.10.002)"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8286464"
+          }
+        }
+      ]
+    }
+  },
+  "title": "SandyDuck 1997 timeseries",
+  "links": {
+    "self": "https://zenodo.org/api/records/8286465",
+    "self_html": "https://zenodo.org/records/8286465",
+    "preview_html": "https://zenodo.org/records/8286465?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8286465",
+    "self_doi": "https://doi.org/10.5281/zenodo.8286465",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8286465",
+    "reserve_doi": "https://zenodo.org/api/records/8286465/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8286464",
+    "parent_html": "https://zenodo.org/records/8286464",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8286464",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8286464",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8286465/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8286465/sequence/default",
+    "files": "https://zenodo.org/api/records/8286465/files",
+    "media_files": "https://zenodo.org/api/records/8286465/media-files",
+    "archive": "https://zenodo.org/api/records/8286465/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8286465/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8286465/versions/latest",
+    "latest_html": "https://zenodo.org/records/8286465/latest",
+    "versions": "https://zenodo.org/api/records/8286465/versions",
+    "draft": "https://zenodo.org/api/records/8286465/draft",
+    "access_links": "https://zenodo.org/api/records/8286465/access/links",
+    "access_grants": "https://zenodo.org/api/records/8286465/access/grants",
+    "access_users": "https://zenodo.org/api/records/8286465/access/users",
+    "access_request": "https://zenodo.org/api/records/8286465/access/request",
+    "access": "https://zenodo.org/api/records/8286465/access",
+    "communities": "https://zenodo.org/api/records/8286465/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8286465/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8286465/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8286465/file-modification",
+    "requests": "https://zenodo.org/api/records/8286465/requests"
+  },
+  "updated": "2023-08-27T02:26:55.756725+00:00",
+  "recid": "8286465",
+  "revision": 2,
+  "files": [
+    {
+      "id": "be82310b-63a0-47fc-a904-ff26bec16570",
+      "key": "SandyDuck_Sep_timeseries.zip",
+      "size": 1857780021,
+      "checksum": "md5:7a2176bfb97aa0d9155828a3db2d39ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/8286465/files/SandyDuck_Sep_timeseries.zip/content"
+      }
+    },
+    {
+      "id": "8b22e049-4803-4085-9889-dca844959d3a",
+      "key": "SandyDuck_Oct_timeseries.zip",
+      "size": 1924651649,
+      "checksum": "md5:e7cd7c797e69ea250ca4cb75cf505fcf",
+      "links": {
+        "self": "https://zenodo.org/api/records/8286465/files/SandyDuck_Oct_timeseries.zip/content"
+      }
+    },
+    {
+      "id": "530346d6-f2fc-4ba5-93e1-9a1821f7c649",
+      "key": "SandyDuck_doffs.zip",
+      "size": 1095589,
+      "checksum": "md5:d5c13b17249b9ab08326f9b8cfd2c849",
+      "links": {
+        "self": "https://zenodo.org/api/records/8286465/files/SandyDuck_doffs.zip/content"
+      }
+    },
+    {
+      "id": "a641e821-8170-4459-b666-b63831940a40",
+      "key": "README_sduck.txt",
+      "size": 7028,
+      "checksum": "md5:a3721364567cd554b964ce0b589346fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/8286465/files/README_sduck.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "234441"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 141,
+    "unique_downloads": 139,
+    "views": 245,
+    "unique_views": 241,
+    "version_downloads": 141,
+    "version_unique_downloads": 139,
+    "version_unique_views": 241,
+    "version_views": 245
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 3783527259,
+    "top_level_files": [
+      {
+        "name": "SandyDuck_Sep_timeseries.zip",
+        "size": 1857780021
+      },
+      {
+        "name": "SandyDuck_Oct_timeseries.zip",
+        "size": 1924651649
+      },
+      {
+        "name": "SandyDuck_doffs.zip",
+        "size": 1095589
+      },
+      {
+        "name": "README_sduck.txt",
+        "size": 7028
+      }
+    ],
+    "zip_contents": {
+      "sandyduck_doffs.zip": {
+        "total_files": 484,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 6169274,
+        "file_types": {
+          ".gz": 1
+        },
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:06.200142"
+}

@@ -1,0 +1,222 @@
+{
+  "created": "2023-01-27T19:19:40.939672+00:00",
+  "modified": "2023-01-28T02:31:36.600841+00:00",
+  "id": 7577017,
+  "conceptrecid": "7576660",
+  "doi": "10.5281/zenodo.7577017",
+  "conceptdoi": "10.5281/zenodo.7576660",
+  "doi_url": "https://doi.org/10.5281/zenodo.7577017",
+  "metadata": {
+    "title": "Self-Supervised Maize Kernel Classification and Segmentation for Embryo Identification",
+    "doi": "10.5281/zenodo.7577017",
+    "publication_date": "2023-01-27",
+    "description": "<p>These are companion data and models of manuscript &quot;Self-Supervised Maize Kernel Classification and Segmentation for Embryo Identification&quot; that was submitted to Frontiers in Plant Science.</p>\n\n<p>The data is organized into three&nbsp;main folders: &#39;class_full_imgs&#39;, &#39;seg_full_imgs&#39;, and &#39;unlabeled&#39;.&nbsp;</p>\n\n<p>The &#39;class_full_imgs&#39; folder contains labeled data used to train the classification model, which is divided into train, validation, and test subfolders. Each of these subfolders contains &#39;oriented&#39; and &#39;non-oriented&#39; images.&nbsp;</p>\n\n<p>The &#39;seg_full_imgs&#39; folder contains labeled data used to train the segmentation model. The &#39;InputImages&#39; subfolder contains raw images, and the &#39;OutputImages&#39; subfolder contains the segmented images.&nbsp;</p>\n\n<p>The &#39;unlabeled&#39; folder contains images without any labels. These images were used for&nbsp;self-supervised pretraining of classification and segmentation models.</p>\n\n<p>The trained models can be found in Trained_models.zip. There are four zip files:<br>\n- &quot;simclr_pretrained_bb.zip&quot; contains the selected pretrained backbone trained via SimCLR.<br>\n- &quot;nnclr_pretrained_bb.zip&quot; contains the selected pretrained backbone trained via NNCLR.<br>\n- &quot;finetuned_classification&quot; contains classification models which have undergone end-to-end finetuning, split into supervised and self-supervision-pretrained models.<br>\n- &quot;segmentation&quot; contains image segmentation models, where the names refer to the pretraining method.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Dong, David",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Nagasubramanian, Koushik",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Wang, Ruidong",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Frei, Ursula",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Jubery, Talukder Z.",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Lubberstedt, Thomas",
+        "affiliation": "Iowa State University"
+      },
+      {
+        "name": "Ganapathysubramanian, Baskar",
+        "affiliation": "Iowa State University"
+      }
+    ],
+    "keywords": [
+      "Self-supervised training",
+      "Maize kernel",
+      "Embryo"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7576660"
+          }
+        }
+      ]
+    },
+    "notes": "This work was partially supported by the AI Institute for Resilient Agriculture (USDA-NIFA #2021-67021-35329), COALESCE: COntext Aware LEarning for Sustainable CybEr-Agricultural Systems (CPS Frontier # 1954556), and support from a PSI faculty fellowship."
+  },
+  "title": "Self-Supervised Maize Kernel Classification and Segmentation for Embryo Identification",
+  "links": {
+    "self": "https://zenodo.org/api/records/7577017",
+    "self_html": "https://zenodo.org/records/7577017",
+    "preview_html": "https://zenodo.org/records/7577017?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7577017",
+    "self_doi": "https://doi.org/10.5281/zenodo.7577017",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7577017",
+    "reserve_doi": "https://zenodo.org/api/records/7577017/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7576660",
+    "parent_html": "https://zenodo.org/records/7576660",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7576660",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7576660",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7577017/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7577017/sequence/default",
+    "files": "https://zenodo.org/api/records/7577017/files",
+    "media_files": "https://zenodo.org/api/records/7577017/media-files",
+    "archive": "https://zenodo.org/api/records/7577017/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7577017/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7577017/versions/latest",
+    "latest_html": "https://zenodo.org/records/7577017/latest",
+    "versions": "https://zenodo.org/api/records/7577017/versions",
+    "draft": "https://zenodo.org/api/records/7577017/draft",
+    "access_links": "https://zenodo.org/api/records/7577017/access/links",
+    "access_grants": "https://zenodo.org/api/records/7577017/access/grants",
+    "access_users": "https://zenodo.org/api/records/7577017/access/users",
+    "access_request": "https://zenodo.org/api/records/7577017/access/request",
+    "access": "https://zenodo.org/api/records/7577017/access",
+    "communities": "https://zenodo.org/api/records/7577017/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7577017/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7577017/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7577017/file-modification",
+    "requests": "https://zenodo.org/api/records/7577017/requests"
+  },
+  "updated": "2023-01-28T02:31:36.600841+00:00",
+  "recid": "7577017",
+  "revision": 2,
+  "files": [
+    {
+      "id": "935ab4f0-30a7-4485-9c4f-9230724ef26a",
+      "key": "Trained_models.zip",
+      "size": 1503630788,
+      "checksum": "md5:298e5f989e261e94dda5f75e34db330c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7577017/files/Trained_models.zip/content"
+      }
+    },
+    {
+      "id": "701af189-ce9f-43af-9185-9c7cc0ccc141",
+      "key": "unlabeled.zip",
+      "size": 1272252833,
+      "checksum": "md5:861abb11fbbda6afb39362f1e0ea17a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/7577017/files/unlabeled.zip/content"
+      }
+    },
+    {
+      "id": "67c71552-a762-41db-998e-5263d02a39df",
+      "key": "seg_full_imgs.zip",
+      "size": 47821455,
+      "checksum": "md5:c258931afadb777081bedd611ce8f8bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7577017/files/seg_full_imgs.zip/content"
+      }
+    },
+    {
+      "id": "356d5de0-782a-4c33-82c0-4cb5778172fb",
+      "key": "class_full_imgs.zip",
+      "size": 77687214,
+      "checksum": "md5:ba3caddc068aa147f2b6d3172888f963",
+      "links": {
+        "self": "https://zenodo.org/api/records/7577017/files/class_full_imgs.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "478104"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 388,
+    "unique_downloads": 366,
+    "views": 414,
+    "unique_views": 406,
+    "version_downloads": 289,
+    "version_unique_downloads": 267,
+    "version_unique_views": 203,
+    "version_views": 207
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 2901392290,
+    "top_level_files": [
+      {
+        "name": "Trained_models.zip",
+        "size": 1503630788
+      },
+      {
+        "name": "unlabeled.zip",
+        "size": 1272252833
+      },
+      {
+        "name": "seg_full_imgs.zip",
+        "size": 47821455
+      },
+      {
+        "name": "class_full_imgs.zip",
+        "size": 77687214
+      }
+    ],
+    "zip_contents": {
+      "trained_models.zip": {
+        "total_files": 70,
+        "total_directories": 15,
+        "total_uncompressed_bytes": 1730240330,
+        "file_types": {
+          ".png": 3,
+          ".zip": 2
+        },
+        "imaging_file_count": 3,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "models/segmentation/nnclr_unet_weights/loss_acc_dice.png",
+          "models/segmentation/imagenet_unet_weights/loss_acc_dice.png",
+          "models/segmentation/simclr_unet_weights/loss_acc_dice.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "models/segmentation/nnclr_unet_weights/loss_acc_dice.png",
+      "models/segmentation/imagenet_unet_weights/loss_acc_dice.png",
+      "models/segmentation/simclr_unet_weights/loss_acc_dice.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:50.247060"
+}

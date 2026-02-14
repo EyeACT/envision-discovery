@@ -1,0 +1,221 @@
+{
+  "created": "2025-02-25T18:59:49.037859+00:00",
+  "modified": "2025-02-25T18:59:49.206743+00:00",
+  "id": 14926762,
+  "conceptrecid": "12669651",
+  "doi": "10.5281/zenodo.14926762",
+  "conceptdoi": "10.5281/zenodo.12669651",
+  "doi_url": "https://doi.org/10.5281/zenodo.14926762",
+  "metadata": {
+    "title": "Dataset: FAIR AMD OCT Datasets Paper",
+    "doi": "10.5281/zenodo.14926762",
+    "publication_date": "2025-02-25",
+    "description": "<p>This is the dataset associated with the paper titled \"Publicly Available Imaging Datasets for Age-related Macular Degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reproducible (FAIR) Principles\". Age-related macular degeneration (AMD), a leading cause of vision loss among older adults, affects more than 200 million people worldwide. In this paper, We evaluated openly available AMD-related datasets containing optical coherence tomography (OCT) data against the FAIR principles. This is an archive of the repository that contains the data related to our evaluation. See this&nbsp;<a href=\"https://github.com/fairdataihub/FAIR-AMD-OCT-paper-inventory\">inventory</a> for all related resources, including the paper. This dataset is maintained from https://github.com/fairdataihub/FAIR-AMD-OCT-paper-dataset.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Gim, Nayoon",
+        "affiliation": "University of Washington"
+      },
+      {
+        "name": "Ferguson, Alina",
+        "affiliation": "University of Washington"
+      },
+      {
+        "name": "Blazes, Marian",
+        "affiliation": "University of Washington",
+        "orcid": "0000-0001-7401-5238"
+      },
+      {
+        "name": "Soundarajan, Sanjay",
+        "affiliation": "California Medical Innovations Institute",
+        "orcid": "0000-0002-7115-8767"
+      },
+      {
+        "name": "Gasimova, Aydan",
+        "affiliation": "California Medical Innovations Institute",
+        "orcid": "0009-0001-6902-097X"
+      },
+      {
+        "name": "Patel, Bhavesh",
+        "affiliation": "California Medical Innovations Institute",
+        "orcid": "0000-0002-0307-262X"
+      },
+      {
+        "name": "Lee, Cecilia",
+        "affiliation": "University of Washington",
+        "orcid": "0000-0003-1994-7213"
+      }
+    ],
+    "keywords": [
+      "FAIR",
+      "AMD",
+      "OCT",
+      "Imaging",
+      "Data"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/fairdataihub/FAIR-AMD-OCT-paper-inventory",
+        "relation": "isSupplementedBy",
+        "resource_type": "other",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.2.0",
+    "language": "eng",
+    "custom": {
+      "code:developmentStatus": {
+        "id": "inactive",
+        "title": {
+          "en": "Inactive"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "https://github.com/fairdataihub/FAIR-AMD-OCT-paper-dataset"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "fairdataihub"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12669651"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset: FAIR AMD OCT Datasets Paper",
+  "links": {
+    "self": "https://zenodo.org/api/records/14926762",
+    "self_html": "https://zenodo.org/records/14926762",
+    "preview_html": "https://zenodo.org/records/14926762?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14926762",
+    "self_doi": "https://doi.org/10.5281/zenodo.14926762",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14926762",
+    "reserve_doi": "https://zenodo.org/api/records/14926762/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12669651",
+    "parent_html": "https://zenodo.org/records/12669651",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12669651",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12669651",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14926762/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14926762/sequence/default",
+    "files": "https://zenodo.org/api/records/14926762/files",
+    "media_files": "https://zenodo.org/api/records/14926762/media-files",
+    "archive": "https://zenodo.org/api/records/14926762/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14926762/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14926762/versions/latest",
+    "latest_html": "https://zenodo.org/records/14926762/latest",
+    "versions": "https://zenodo.org/api/records/14926762/versions",
+    "draft": "https://zenodo.org/api/records/14926762/draft",
+    "access_links": "https://zenodo.org/api/records/14926762/access/links",
+    "access_grants": "https://zenodo.org/api/records/14926762/access/grants",
+    "access_users": "https://zenodo.org/api/records/14926762/access/users",
+    "access_request": "https://zenodo.org/api/records/14926762/access/request",
+    "access": "https://zenodo.org/api/records/14926762/access",
+    "communities": "https://zenodo.org/api/records/14926762/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14926762/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14926762/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14926762/file-modification",
+    "requests": "https://zenodo.org/api/records/14926762/requests"
+  },
+  "updated": "2025-02-25T18:59:49.206743+00:00",
+  "recid": "14926762",
+  "revision": 4,
+  "files": [
+    {
+      "id": "9a3676cd-6c3a-4d63-9c63-1078d7d713a6",
+      "key": "FAIR-AMD-OCT-paper-dataset-1.2.0.zip",
+      "size": 479497,
+      "checksum": "md5:53a9853df38ac2c8c043461881932cad",
+      "links": {
+        "self": "https://zenodo.org/api/records/14926762/files/FAIR-AMD-OCT-paper-dataset-1.2.0.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "68441"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 91,
+    "unique_downloads": 84,
+    "views": 358,
+    "unique_views": 301,
+    "version_downloads": 46,
+    "version_unique_downloads": 39,
+    "version_unique_views": 111,
+    "version_views": 143
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 479497,
+    "top_level_files": [
+      {
+        "name": "FAIR-AMD-OCT-paper-dataset-1.2.0.zip",
+        "size": 479497
+      }
+    ],
+    "zip_contents": {
+      "fair-amd-oct-paper-dataset-1.2.0.zip": {
+        "total_files": 10,
+        "total_directories": 3,
+        "total_uncompressed_bytes": 993678,
+        "file_types": {
+          ".png": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "fair-amd-oct-paper-dataset-1.2.0/derivative/supplementary-figure-1.png",
+          "fair-amd-oct-paper-dataset-1.2.0/derivative/supplementary-figure-2.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "fair-amd-oct-paper-dataset-1.2.0/derivative/supplementary-figure-1.png",
+      "fair-amd-oct-paper-dataset-1.2.0/derivative/supplementary-figure-2.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/fairdataihub/FAIR-AMD-OCT-paper-inventory"
+  ],
+  "_weblinks": [
+    {
+      "url": "https://github.com/fairdataihub/FAIR-AMD-OCT-paper-dataset",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:29.242461"
+}

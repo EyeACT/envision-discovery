@@ -1,0 +1,215 @@
+{
+  "created": "2024-03-19T15:26:12.753178+00:00",
+  "modified": "2024-04-15T08:01:18.224604+00:00",
+  "id": 10839556,
+  "conceptrecid": "10370472",
+  "doi": "10.5281/zenodo.10839556",
+  "conceptdoi": "10.5281/zenodo.10370472",
+  "doi_url": "https://doi.org/10.5281/zenodo.10839556",
+  "metadata": {
+    "title": "OCTDL: Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods",
+    "doi": "10.5281/zenodo.10839556",
+    "publication_date": "2024-03-19",
+    "description": "<p>Optical coherence tomography (OCT) is a non-invasive imaging technique that has extensive clinical applications in ophthalmology. OCT enables the visualization of the retinal layers, playing a vital role in the early detection and monitoring of retinal diseases. OCT uses the principle of light wave interference to create detailed images of the retinal microstructures, making it a valuable tool for diagnosing ocular conditions. Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods (OCTDL) comprising over 2000 OCT images labeled according to disease group and retinal pathology.</p>\n<p>The dataset consists of the following categories and images:<br>- Age-Related Macular Degeneration - 1231 images;<br>- Diabetic Macular Edema - 147 images;<br>- Epiretinal Membrane- 155 images;<br>- Normal - 332 images;<br>- Retinal Artery Occlusion - 22 images;<br>- Retinal Vein Occlusion - 101 images;<br>- Vitreomacular Interface Disease - 76 images.</p>\n<p>This dataset is published to provide researchers and developers with access to a large set of labeled images, which contributes to the development and improvement of algorithms for the automatic processing and analysis of OCT images for early diagnosis and monitoring of eye diseases. CSV file consists of file_name, disease, subcategory, condition, patient_id, eye, sex, year, image_width, and image_height. The dataset will be updated periodically.</p>\n<p>&nbsp;</p>\n<p>For more information and details about the dataset see:</p>\n<p>https://rdcu.be/dELrE</p>\n<p>https://arxiv.org/abs/2312.08255</p>\n<pre>@article{kulyabin2024octdl,\n  title={OCTDL: Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods},\n  author={Kulyabin, Mikhail and Zhdanov, Aleksei and Nikiforova, Anastasia and Stepichev, Andrey <br>          and Kuznetsova, Anna and Ronkin, Mikhail and Borisov, Vasilii and Bogachev, Alexander <br>          and Korotkich, Sergey and Constable, Paul A and Maier, Andreas},\n  journal={Scientific Data},\n  volume={11},\n  number={1},\n  pages={365},\n  year={2024},\n  publisher={Nature Publishing Group UK London},<br>  doi={https://doi.org/10.1038/s41597-024-03182-7}\n}\n</pre>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kulyabin, Mikhail",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg",
+        "orcid": "0009-0007-0440-030X"
+      },
+      {
+        "name": "Zhdanov, Aleksei",
+        "affiliation": "Ural Federal University",
+        "orcid": "0000-0003-4725-3681"
+      },
+      {
+        "name": "Nikiforova, Anastasia",
+        "affiliation": "Ural State Medical University",
+        "orcid": "0000-0001-6672-6726"
+      },
+      {
+        "name": "Stepichev, Andrey",
+        "affiliation": "Ural State Medical University"
+      },
+      {
+        "name": "Kuznetsova, Anna",
+        "affiliation": "Ural State Medical University"
+      },
+      {
+        "name": "Borisov, Vasilii",
+        "affiliation": "Ural Federal University",
+        "orcid": "0000-0003-0486-7552"
+      },
+      {
+        "name": "Ronkin, Mikhail",
+        "affiliation": "Ural Federal University",
+        "orcid": "0000-0001-5522-988X"
+      },
+      {
+        "name": "Bogachev, Alexander",
+        "affiliation": "Ural State Medical University"
+      },
+      {
+        "name": "Korotkich, Sergey",
+        "affiliation": "Ural State Medical University"
+      },
+      {
+        "name": "Maier, Andreas",
+        "affiliation": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg",
+        "orcid": "0000-0002-9550-5284"
+      }
+    ],
+    "keywords": [
+      "OCT",
+      "Deep Learning"
+    ],
+    "references": [
+      "https://doi.org/10.1038/s41597-024-03182-7"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/MikhailKulyabin/OCTDL"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "fau"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10370472"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCTDL: Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods",
+  "links": {
+    "self": "https://zenodo.org/api/records/10839556",
+    "self_html": "https://zenodo.org/records/10839556",
+    "preview_html": "https://zenodo.org/records/10839556?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10839556",
+    "self_doi": "https://doi.org/10.5281/zenodo.10839556",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10839556",
+    "reserve_doi": "https://zenodo.org/api/records/10839556/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10370472",
+    "parent_html": "https://zenodo.org/records/10370472",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10370472",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10370472",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10839556/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10839556/sequence/default",
+    "files": "https://zenodo.org/api/records/10839556/files",
+    "media_files": "https://zenodo.org/api/records/10839556/media-files",
+    "archive": "https://zenodo.org/api/records/10839556/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10839556/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10839556/versions/latest",
+    "latest_html": "https://zenodo.org/records/10839556/latest",
+    "versions": "https://zenodo.org/api/records/10839556/versions",
+    "draft": "https://zenodo.org/api/records/10839556/draft",
+    "access_links": "https://zenodo.org/api/records/10839556/access/links",
+    "access_grants": "https://zenodo.org/api/records/10839556/access/grants",
+    "access_users": "https://zenodo.org/api/records/10839556/access/users",
+    "access_request": "https://zenodo.org/api/records/10839556/access/request",
+    "access": "https://zenodo.org/api/records/10839556/access",
+    "communities": "https://zenodo.org/api/records/10839556/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10839556/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10839556/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10839556/file-modification",
+    "requests": "https://zenodo.org/api/records/10839556/requests"
+  },
+  "updated": "2024-04-15T08:01:18.224604+00:00",
+  "recid": "10839556",
+  "revision": 8,
+  "files": [
+    {
+      "id": "ac6985b5-b5db-477a-8b4a-0922c5cdb131",
+      "key": "OCTDL.zip",
+      "size": 398564236,
+      "checksum": "md5:dec9766fc916202c45a333c4f5a09576",
+      "links": {
+        "self": "https://zenodo.org/api/records/10839556/files/OCTDL.zip/content"
+      }
+    },
+    {
+      "id": "23278a83-bd06-4aaa-8054-d96b30f02b7b",
+      "key": "OCTDL_labels.csv",
+      "size": 109541,
+      "checksum": "md5:2fced789038c6ca83283066c2f8ad289",
+      "links": {
+        "self": "https://zenodo.org/api/records/10839556/files/OCTDL_labels.csv/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1041447"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 703,
+    "unique_downloads": 506,
+    "views": 587,
+    "unique_views": 537,
+    "version_downloads": 358,
+    "version_unique_downloads": 232,
+    "version_unique_views": 353,
+    "version_views": 378
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 398564236,
+    "top_level_files": [
+      {
+        "name": "OCTDL.zip",
+        "size": 398564236
+      },
+      {
+        "name": "OCTDL_labels.csv",
+        "size": 109541
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://rdcu.be/dELrE",
+      "type": "unknown"
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.08255",
+      "type": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41597-024-03182-7}",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:47.930665"
+}

@@ -1,0 +1,186 @@
+{
+  "created": "2020-05-18T13:32:14.046494+00:00",
+  "modified": "2020-05-18T20:20:22.235468+00:00",
+  "id": 3832094,
+  "conceptrecid": "3832093",
+  "doi": "10.5281/zenodo.3832094",
+  "conceptdoi": "10.5281/zenodo.3832093",
+  "doi_url": "https://doi.org/10.5281/zenodo.3832094",
+  "metadata": {
+    "title": "Measurement of Absolute Retinal Blood Flow Using a Laser Doppler Velocimeter Combined with Adaptive Optics",
+    "doi": "10.5281/zenodo.3832094",
+    "publication_date": "2020-05-18",
+    "description": "<p><strong>Purpose</strong>:&nbsp;Development and validation of an absolute laser Doppler velocimeter (LDV) based on an adaptive optical fundus camera which provides simultaneously high definition images of the fundus vessels and absolute maximal red blood cells (RBCs) velocity in order to calculate the absolute retinal blood flow.\\newline<br>\n<strong>Methods</strong>:&nbsp;This new absolute laser Doppler velocimeter is combined with the adaptive optics fundus camera (rtx1, Imagine Eyes$^\\copyright$,Orsay, France) outside its optical wavefront correction path. A 4 seconds recording includes 40 images, each synchronized with two Doppler shift power spectra. Image analysis provides the vessel diameter close to the probing beam and the velocity of the RBCs in the vessels are extracted from the Doppler spectral analysis. Combination of those values gives an average of the absolute retinal blood flow. An in vitro experiment consisting of latex microspheres flowing in water through a glass-capillary to simulate a blood vessel and in vivo measurements on six healthy humans were done to assess the device.\\newline<br>\n<strong>Results</strong>:&nbsp;In the in vitro experiment, the calculated flow varied between 1.75&micro;l/min and 25.9&micro;l/min and was highly correlated (r<sup>2</sup>= 0.995) with the imposed flow by a syringe pump.<br>\nIn the in vivo experiment, the error between the flow in the parent vessel and the sum of the flow in the daughter vessels was between -11%&nbsp;and 36%&nbsp;(mean&plusmn;sd 5.7&plusmn;18.5%). Retinal blood flow in the main temporal retinal veins of healthy subjects varied between 0.9&nbsp;&micro;L/min and 13.2&micro;L/min.</p>\n\n<p><strong>Conclusion</strong>:&nbsp;This adaptive optics LDV prototype (aoLDV) allows the measurement of absolute retinal blood flow derived from the retinal vessel diameter and the maximum RBCs velocity in that vessel.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Geiser Martial",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Truffer Frederic",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Chappelet Marc-Antoine",
+        "affiliation": "Department of Ophthalmology, University Hospital, Grenoble, France"
+      },
+      {
+        "name": "Maitre Gilbert",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Amoos Serge",
+        "affiliation": "University of Applied Sciences of Western Switzerland"
+      },
+      {
+        "name": "Aptel Florent",
+        "affiliation": "Department of Ophthalmology, University Hospital, Grenoble, France"
+      },
+      {
+        "name": "Chiquet Christophe",
+        "affiliation": "Department of Ophthalmology, University Hospital, Grenoble, France"
+      }
+    ],
+    "keywords": [
+      "laser Doppler velocimetry, retina vessel"
+    ],
+    "version": "2",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3832093"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Measurement of Absolute Retinal Blood Flow Using a Laser Doppler Velocimeter Combined with Adaptive Optics",
+  "links": {
+    "self": "https://zenodo.org/api/records/3832094",
+    "self_html": "https://zenodo.org/records/3832094",
+    "preview_html": "https://zenodo.org/records/3832094?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3832094",
+    "self_doi": "https://doi.org/10.5281/zenodo.3832094",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3832094",
+    "reserve_doi": "https://zenodo.org/api/records/3832094/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3832093",
+    "parent_html": "https://zenodo.org/records/3832093",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3832093",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3832093",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3832094/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3832094/sequence/default",
+    "files": "https://zenodo.org/api/records/3832094/files",
+    "media_files": "https://zenodo.org/api/records/3832094/media-files",
+    "archive": "https://zenodo.org/api/records/3832094/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3832094/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3832094/versions/latest",
+    "latest_html": "https://zenodo.org/records/3832094/latest",
+    "versions": "https://zenodo.org/api/records/3832094/versions",
+    "draft": "https://zenodo.org/api/records/3832094/draft",
+    "access_links": "https://zenodo.org/api/records/3832094/access/links",
+    "access_grants": "https://zenodo.org/api/records/3832094/access/grants",
+    "access_users": "https://zenodo.org/api/records/3832094/access/users",
+    "access_request": "https://zenodo.org/api/records/3832094/access/request",
+    "access": "https://zenodo.org/api/records/3832094/access",
+    "communities": "https://zenodo.org/api/records/3832094/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3832094/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3832094/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3832094/file-modification",
+    "requests": "https://zenodo.org/api/records/3832094/requests"
+  },
+  "updated": "2020-05-18T20:20:22.235468+00:00",
+  "recid": "3832094",
+  "revision": 2,
+  "files": [
+    {
+      "id": "161ada07-b9a7-4b27-b882-b26227a0b3ca",
+      "key": "subjects.zip",
+      "size": 1379351784,
+      "checksum": "md5:140e816526e73c3a2f8f8559f0677343",
+      "links": {
+        "self": "https://zenodo.org/api/records/3832094/files/subjects.zip/content"
+      }
+    },
+    {
+      "id": "2489162a-a64d-4ac7-ac87-669003e6dd9f",
+      "key": "Microspheres.zip",
+      "size": 7528311,
+      "checksum": "md5:7d99087326511248e3a4a61108488337",
+      "links": {
+        "self": "https://zenodo.org/api/records/3832094/files/Microspheres.zip/content"
+      }
+    },
+    {
+      "id": "e3319a85-9180-4f2f-bd75-164c4d1edb79",
+      "key": "Read me.txt",
+      "size": 534,
+      "checksum": "md5:3b3709bfa3c8debb0d8229636252c684",
+      "links": {
+        "self": "https://zenodo.org/api/records/3832094/files/Read me.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90072"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 104,
+    "unique_downloads": 86,
+    "views": 254,
+    "unique_views": 241,
+    "version_downloads": 101,
+    "version_unique_downloads": 85,
+    "version_unique_views": 236,
+    "version_views": 248
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1386880095,
+    "top_level_files": [
+      {
+        "name": "subjects.zip",
+        "size": 1379351784
+      },
+      {
+        "name": "Microspheres.zip",
+        "size": 7528311
+      },
+      {
+        "name": "Read me.txt",
+        "size": 534
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:54.931138"
+}

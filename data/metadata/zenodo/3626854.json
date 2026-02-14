@@ -1,0 +1,216 @@
+{
+  "created": "2020-01-24T14:34:09.779091+00:00",
+  "modified": "2020-01-24T19:26:26.844535+00:00",
+  "id": 3626854,
+  "conceptrecid": "3625995",
+  "doi": "10.5281/zenodo.3626854",
+  "conceptdoi": "10.5281/zenodo.3625995",
+  "doi_url": "https://doi.org/10.5281/zenodo.3626854",
+  "metadata": {
+    "title": "Self-supervised retinal thickness prediction enables deep learning from unlabeled data to boost classification of diabetic retinopathy",
+    "doi": "10.5281/zenodo.3626854",
+    "publication_date": "2020-01-23",
+    "description": "<p><strong>This data repository contains the OCT images and binary annotations for&nbsp;segmentation of retinal tissue using deep learning. To use, please refer to the Github repository&nbsp;</strong><a href=\"https://github.com/theislab/DeepRT\">https://github.com/theislab/DeepRT</a>.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>#######</strong></p>\n\n<p><strong>Access to large, annotated samples represents a considerable challenge for training accurate deep-learning models in medical imaging. While current leading-edge transfer learning from pre-trained models can help with cases lacking data, it limits design choices, and generally results in the use of unnecessarily large models. We propose a novel, self-supervised training scheme for obtaining high-quality, pre-trained networks from unlabeled, cross-modal medical imaging data, which will allow for creating accurate and efficient models. We demonstrate this by accurately predicting optical coherence tomography (OCT)-based retinal thickness measurements from simple infrared (IR) fundus images. Subsequently, learned representations outperformed advanced classifiers on a separate diabetic retinopathy classification task in a scenario of scarce training data. Our cross-modal, three-staged scheme effectively replaced 26,343 diabetic retinopathy annotations with 1,009 semantic segmentations on OCT and reached the same classification accuracy using only 25% of fundus images, without any drawbacks, since OCT is not required for predictions. We expect this concept will also apply to other multimodal clinical data-imaging, health records, and genomics data, and be applicable to corresponding sample-starved learning problems.</strong></p>\n\n<p><strong>#######</strong></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Holmberg, Olle",
+        "affiliation": "Helmholtz Zentrum, Munich, Germany",
+        "orcid": "0000-0001-5558-7628"
+      },
+      {
+        "name": "Niklas D. K\u00f6hler",
+        "affiliation": "Helmholtz Zentrum, Munich, Germany"
+      },
+      {
+        "name": "Thiago Martins",
+        "affiliation": "Federal University of Sao Paulo (UNIFESP), University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Jakob Siedlecki",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Tina Herold",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Leonie Keidel",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Ben Asani",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Johannes Schiefelbein",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Siegfried Priglinger",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Karsten U. Kortuem",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      },
+      {
+        "name": "Fabian J. Theis",
+        "affiliation": "University Eye Hospital Munich, Ludwig-Maximilian-University, Munich Germany"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3625995"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Self-supervised retinal thickness prediction enables deep learning from unlabeled data to boost classification of diabetic retinopathy",
+  "links": {
+    "self": "https://zenodo.org/api/records/3626854",
+    "self_html": "https://zenodo.org/records/3626854",
+    "preview_html": "https://zenodo.org/records/3626854?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3626854",
+    "self_doi": "https://doi.org/10.5281/zenodo.3626854",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3626854",
+    "reserve_doi": "https://zenodo.org/api/records/3626854/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3625995",
+    "parent_html": "https://zenodo.org/records/3625995",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3625995",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3625995",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3626854/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3626854/sequence/default",
+    "files": "https://zenodo.org/api/records/3626854/files",
+    "media_files": "https://zenodo.org/api/records/3626854/media-files",
+    "archive": "https://zenodo.org/api/records/3626854/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3626854/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3626854/versions/latest",
+    "latest_html": "https://zenodo.org/records/3626854/latest",
+    "versions": "https://zenodo.org/api/records/3626854/versions",
+    "draft": "https://zenodo.org/api/records/3626854/draft",
+    "access_links": "https://zenodo.org/api/records/3626854/access/links",
+    "access_grants": "https://zenodo.org/api/records/3626854/access/grants",
+    "access_users": "https://zenodo.org/api/records/3626854/access/users",
+    "access_request": "https://zenodo.org/api/records/3626854/access/request",
+    "access": "https://zenodo.org/api/records/3626854/access",
+    "communities": "https://zenodo.org/api/records/3626854/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3626854/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3626854/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3626854/file-modification",
+    "requests": "https://zenodo.org/api/records/3626854/requests"
+  },
+  "updated": "2020-01-24T19:26:26.844535+00:00",
+  "recid": "3626854",
+  "revision": 2,
+  "files": [
+    {
+      "id": "7933ff2a-063b-443f-a507-087da2561b2f",
+      "key": "thickness_segmentation_model.tar.gz",
+      "size": 120223702,
+      "checksum": "md5:3dcab743729ec4c7a58dae082dd2e1dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/3626854/files/thickness_segmentation_model.tar.gz/content"
+      }
+    },
+    {
+      "id": "1b8d12da-7fd3-406e-a0de-1699559a189d",
+      "key": "ssl_data_sample.tar.gz",
+      "size": 129460881,
+      "checksum": "md5:cfcd6e0ade03988cab7ff02d7c1c8445",
+      "links": {
+        "self": "https://zenodo.org/api/records/3626854/files/ssl_data_sample.tar.gz/content"
+      }
+    },
+    {
+      "id": "c83af1fe-c3c7-4317-a1fa-c0c543edd88b",
+      "key": "thickness_segmentation_data.tar.gz",
+      "size": 468429080,
+      "checksum": "md5:88390809d408d781df5fc37a2d8993c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/3626854/files/thickness_segmentation_data.tar.gz/content"
+      }
+    },
+    {
+      "id": "e9aabd8f-ffd2-4bd1-9ff1-25df45ca428b",
+      "key": "DeepRT_light.tar.gz",
+      "size": 119711219,
+      "checksum": "md5:3ce642b7770bd71853affe0008b4ae02",
+      "links": {
+        "self": "https://zenodo.org/api/records/3626854/files/DeepRT_light.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "88985"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1307,
+    "unique_downloads": 744,
+    "views": 1746,
+    "unique_views": 1639,
+    "version_downloads": 368,
+    "version_unique_downloads": 251,
+    "version_unique_views": 387,
+    "version_views": 412
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 837824882,
+    "top_level_files": [
+      {
+        "name": "thickness_segmentation_model.tar.gz",
+        "size": 120223702
+      },
+      {
+        "name": "ssl_data_sample.tar.gz",
+        "size": 129460881
+      },
+      {
+        "name": "thickness_segmentation_data.tar.gz",
+        "size": 468429080
+      },
+      {
+        "name": "DeepRT_light.tar.gz",
+        "size": 119711219
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/theislab/DeepRT",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:50.325325"
+}

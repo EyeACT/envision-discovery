@@ -1,0 +1,208 @@
+{
+  "created": "2023-10-05T19:59:04.532385+00:00",
+  "modified": "2023-10-06T02:26:57.777293+00:00",
+  "id": 8411859,
+  "conceptrecid": "8411858",
+  "doi": "10.5061/dryad.5x69p8d52",
+  "doi_url": "https://doi.org/10.5061/dryad.5x69p8d52",
+  "metadata": {
+    "title": "Data from: Awake responses suggest inefficient dense coding in the mouse retina",
+    "doi": "10.5061/dryad.5x69p8d52",
+    "publication_date": "2023-10-05",
+    "description": "<p><span>The structure and function of the vertebrate retina have been extensively studied across species with an isolated, <em>ex vivo</em> preparation. Retinal function <em>in vivo</em>, however, remains elusive, especially in awake animals. Here we performed single-unit extracellular recordings in the optic tract of head-fixed mice to compare the output of awake, anesthetized, and <em>ex vivo </em>retinas. While the visual response properties were overall similar across conditions, we found that awake retinal output had in general 1) faster kinetics with less variability in the response latencies; 2) a larger dynamic range; and 3) higher firing activity, by ~20 Hz on average, for both baseline and visually evoked responses. Our modeling analyses further showed that such awake response patterns convey comparable total information but less efficiently, and allow for a linear population decoder to perform significantly better than the anesthetized or <em>ex vivo</em> responses. These results highlight distinct retinal behavior in awake states, in particular suggesting that the retina employs dense coding <em>in vivo</em>, rather than sparse efficient coding as has been often assumed from<em> ex vivo</em> studies.</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Boissonnet, Tom",
+        "affiliation": "European Molecular Biology Laboratory",
+        "orcid": "0000-0002-3328-9467"
+      },
+      {
+        "name": "Tripodi, Matteo",
+        "affiliation": "European Molecular Biology Laboratory"
+      },
+      {
+        "name": "Asari, Hiroki",
+        "affiliation": "European Molecular Biology Laboratory",
+        "orcid": "0000-0003-3396-1935"
+      }
+    ],
+    "keywords": [
+      "Retinal ganglion cells",
+      "in vivo recordings",
+      "awake",
+      "Anesthesia",
+      "efficient coding"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.7554/eLife.78005",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8411858"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Funding provided by: European Molecular Biology Laboratory<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100013060<br>Award Number: </p>"
+  },
+  "title": "Data from: Awake responses suggest inefficient dense coding in the mouse retina",
+  "links": {
+    "self": "https://zenodo.org/api/records/8411859",
+    "self_html": "https://zenodo.org/records/8411859",
+    "preview_html": "https://zenodo.org/records/8411859?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.5x69p8d52",
+    "self_doi": "https://doi.org/10.5061/dryad.5x69p8d52",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.5x69p8d52",
+    "reserve_doi": "https://zenodo.org/api/records/8411859/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8411858",
+    "parent_html": "https://zenodo.org/records/8411858",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8411859/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8411859/sequence/default",
+    "files": "https://zenodo.org/api/records/8411859/files",
+    "media_files": "https://zenodo.org/api/records/8411859/media-files",
+    "archive": "https://zenodo.org/api/records/8411859/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8411859/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8411859/versions/latest",
+    "latest_html": "https://zenodo.org/records/8411859/latest",
+    "versions": "https://zenodo.org/api/records/8411859/versions",
+    "draft": "https://zenodo.org/api/records/8411859/draft",
+    "access_links": "https://zenodo.org/api/records/8411859/access/links",
+    "access_grants": "https://zenodo.org/api/records/8411859/access/grants",
+    "access_users": "https://zenodo.org/api/records/8411859/access/users",
+    "access_request": "https://zenodo.org/api/records/8411859/access/request",
+    "access": "https://zenodo.org/api/records/8411859/access",
+    "communities": "https://zenodo.org/api/records/8411859/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8411859/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8411859/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8411859/file-modification",
+    "requests": "https://zenodo.org/api/records/8411859/requests"
+  },
+  "updated": "2023-10-06T02:26:57.777293+00:00",
+  "recid": "8411859",
+  "revision": 2,
+  "files": [
+    {
+      "id": "01ac0e5f-fc5d-4be2-9e47-f7909f64d752",
+      "key": "README.md",
+      "size": 4755,
+      "checksum": "md5:0603b22ff11df81d5fd93010e1063643",
+      "links": {
+        "self": "https://zenodo.org/api/records/8411859/files/README.md/content"
+      }
+    },
+    {
+      "id": "01cc1b5f-d138-4808-8208-f7982d28577e",
+      "key": "Boissonnet_etal2023.zip",
+      "size": 4881267802,
+      "checksum": "md5:3827d584abb1bc129e31b0a7c81205ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/8411859/files/Boissonnet_etal2023.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 39,
+    "unique_downloads": 39,
+    "views": 128,
+    "unique_views": 127,
+    "version_downloads": 39,
+    "version_unique_downloads": 39,
+    "version_unique_views": 124,
+    "version_views": 125
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4881267802,
+    "top_level_files": [
+      {
+        "name": "README.md",
+        "size": 4755
+      },
+      {
+        "name": "Boissonnet_etal2023.zip",
+        "size": 4881267802
+      }
+    ],
+    "zip_contents": {
+      "boissonnet_etal2023.zip": {
+        "total_files": 153,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 5457720430,
+        "file_types": {
+          ".h5": 101,
+          ".mat": 24,
+          ".npy": 4
+        },
+        "imaging_file_count": 129,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "chirp_stim_trace/chirp_am_intensities.npy",
+          "chirp_stim_trace/chirp_am_old_intensities.npy",
+          "chirp_stim_trace/chirp_fe_intensities.npy",
+          "chirp_stim_trace/chirp_fm_old_intensities.npy",
+          "in_vitro_data/20130225-1.mat",
+          "in_vitro_data/20131120-1.mat",
+          "in_vitro_data/20140210-1.mat",
+          "in_vitro_data/20140210-2.mat",
+          "in_vitro_data/20140211-1.mat",
+          "in_vitro_data/20140221-1.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "chirp_stim_trace/chirp_am_intensities.npy",
+      "chirp_stim_trace/chirp_am_old_intensities.npy",
+      "chirp_stim_trace/chirp_fe_intensities.npy",
+      "chirp_stim_trace/chirp_fm_old_intensities.npy",
+      "in_vitro_data/20130225-1.mat",
+      "in_vitro_data/20131120-1.mat",
+      "in_vitro_data/20140210-1.mat",
+      "in_vitro_data/20140210-2.mat",
+      "in_vitro_data/20140211-1.mat",
+      "in_vitro_data/20140221-1.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:07.666577"
+}

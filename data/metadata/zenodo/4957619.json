@@ -1,0 +1,155 @@
+{
+  "created": "2021-06-15T14:17:11.006021+00:00",
+  "modified": "2022-05-30T19:58:47.342124+00:00",
+  "id": 4957619,
+  "conceptrecid": "4957618",
+  "doi": "10.5061/dryad.q6ft5",
+  "doi_url": "https://doi.org/10.5061/dryad.q6ft5",
+  "metadata": {
+    "title": "Data from: Development of machine learning models for diagnosis of glaucoma",
+    "doi": "10.5061/dryad.q6ft5",
+    "publication_date": "2018-05-05",
+    "description": "The study aimed to develop machine learning models that have strong prediction power and interpretability for diagnosis of glaucoma based on retinal nerve fiber layer (RNFL) thickness and visual field (VF). We collected various candidate features from the examination of retinal nerve fiber layer (RNFL) thickness and visual field (VF). We also developed synthesized features from original features. We then selected the best features proper for classification (diagnosis) through feature evaluation. We used 100 cases of data as a test dataset and 399 cases of data as a training and validation dataset. To develop the glaucoma prediction model, we considered four machine learning algorithms: C5.0, random forest (RF), support vector machine (SVM), and k-nearest neighbor (KNN). We repeatedly composed a learning model using the training dataset and evaluated it by using the validation dataset. Finally, we got the best learning model that produces the highest validation accuracy. We analyzed quality of the models using several measures. The random forest model shows best performance and C5.0, SVM, and KNN models show similar accuracy. In the random forest model, the classification accuracy is 0.98, sensitivity is 0.983, specificity is 0.975, and AUC is 0.979. The developed prediction models show high accuracy, sensitivity, specificity, and AUC in classifying among glaucoma and healthy eyes. It will be used for predicting glaucoma against unknown examination records. Clinicians may reference the prediction results and be able to make better decisions. We may combine multiple learning models to increase prediction accuracy. The C5.0 model includes decision rules for prediction. It can be used to explain the reasons for specific predictions.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kim, Seongjae",
+        "affiliation": "Gyeongsang National University"
+      },
+      {
+        "name": "Cho, Kyung Jin",
+        "affiliation": "Dankook University"
+      },
+      {
+        "name": "Oh, Sejong",
+        "affiliation": "Dankook University"
+      }
+    ],
+    "keywords": [
+      "cornea thickness",
+      "RNFL",
+      "glaucoma",
+      "ocular pressure"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pone.0177726",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4957618"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Glaucoma diagnosis<div class=\"o-metadata__file-description\">This file includes examination records of retinal nerve fiber layer (RNFL) thickness and visual field (VF) and others.</div><div class=\"o-metadata__file-name\">dataset.zip<br></div></div>"
+  },
+  "title": "Data from: Development of machine learning models for diagnosis of glaucoma",
+  "links": {
+    "self": "https://zenodo.org/api/records/4957619",
+    "self_html": "https://zenodo.org/records/4957619",
+    "preview_html": "https://zenodo.org/records/4957619?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.q6ft5",
+    "self_doi": "https://doi.org/10.5061/dryad.q6ft5",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.q6ft5",
+    "reserve_doi": "https://zenodo.org/api/records/4957619/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4957618",
+    "parent_html": "https://zenodo.org/records/4957618",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4957619/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4957619/sequence/default",
+    "files": "https://zenodo.org/api/records/4957619/files",
+    "media_files": "https://zenodo.org/api/records/4957619/media-files",
+    "archive": "https://zenodo.org/api/records/4957619/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4957619/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4957619/versions/latest",
+    "latest_html": "https://zenodo.org/records/4957619/latest",
+    "versions": "https://zenodo.org/api/records/4957619/versions",
+    "draft": "https://zenodo.org/api/records/4957619/draft",
+    "access_links": "https://zenodo.org/api/records/4957619/access/links",
+    "access_grants": "https://zenodo.org/api/records/4957619/access/grants",
+    "access_users": "https://zenodo.org/api/records/4957619/access/users",
+    "access_request": "https://zenodo.org/api/records/4957619/access/request",
+    "access": "https://zenodo.org/api/records/4957619/access",
+    "communities": "https://zenodo.org/api/records/4957619/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4957619/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4957619/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4957619/file-modification",
+    "requests": "https://zenodo.org/api/records/4957619/requests"
+  },
+  "updated": "2022-05-30T19:58:47.342124+00:00",
+  "recid": "4957619",
+  "revision": 3,
+  "files": [
+    {
+      "id": "d1b38101-1288-4b99-bc81-931658519863",
+      "key": "dataset.zip",
+      "size": 12461,
+      "checksum": "md5:290eb9445e14c4dd1198acdc8636543c",
+      "links": {
+        "self": "https://zenodo.org/api/records/4957619/files/dataset.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 39,
+    "unique_downloads": 39,
+    "views": 295,
+    "unique_views": 280,
+    "version_downloads": 39,
+    "version_unique_downloads": 39,
+    "version_unique_views": 280,
+    "version_views": 295
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 12461,
+    "top_level_files": [
+      {
+        "name": "dataset.zip",
+        "size": 12461
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:38.709213"
+}

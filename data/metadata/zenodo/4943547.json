@@ -1,0 +1,313 @@
+{
+  "created": "2021-07-13T17:18:13.782214+00:00",
+  "modified": "2024-07-19T01:28:02.214511+00:00",
+  "id": 4943547,
+  "conceptrecid": "4943546",
+  "doi": "10.5061/dryad.p2p7j6g",
+  "doi_url": "https://doi.org/10.5061/dryad.p2p7j6g",
+  "metadata": {
+    "title": "Data from: Uncertainty in geographic estimates of performance and fitness",
+    "doi": "10.5061/dryad.p2p7j6g",
+    "publication_date": "2019-05-31",
+    "description": "1.\tThermal performance curves (TPCs) have become key tools for predicting geographic distributions of performance by ectotherms. Such TPC-based predictions, however, may be sensitive to errors arising from diverse sources.\n2.\tWe analyzed potential errors that arise from common choices faced by biologists integrating TPCs with climate data by constructing case studies focusing on experimental sets of TPCs and simulating geographic patterns of mean performance. We first analyzed differences in geographic patterns of performance derived from two pairs of commonly used TPCs. Mean performance differed most (up to 30%) in regions with relatively constant mean temperatures similar to those at which the TPCs diverged the most. \n3.\tWe also analyzed the effects of thermal history by comparing geographic estimates derived from (1) a broad TPC based on short-term measurements of insect larvae (Manduca sexta) with a history of exposure to thermal variation versus (2) a narrow TPC based on long-term measurements of larvae held at constant temperatures. Estimated mean performance diverged by up to 40%, and differences were magnified in simulated future climates. \n4.\tFinally, to quantify geographic error arising from statistical error in fitted TPCs, we propose and illustrate a bootstrapping technique for establishing 95% prediction intervals on mean performance at each location (pixel). \n5.\tCollectively, our analyses indicate that error arising from several underappreciated sources can significantly affect the mean performance values derived from TPCs, and we suggest that the magnitudes of these errors should be estimated routinely in future studies.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Woods, H. Arthur",
+        "affiliation": "University of Montana"
+      },
+      {
+        "name": "Kingsolver, Joel G.",
+        "affiliation": "University of North Carolina"
+      },
+      {
+        "name": "Fey, Samuel B.",
+        "affiliation": "Reed College"
+      },
+      {
+        "name": "Vasseur, David A.",
+        "affiliation": "Yale University"
+      }
+    ],
+    "keywords": [
+      "climatic extremes",
+      "thermal performance curve"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1111/2041-210x.13035",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "locations": [
+      {
+        "place": "North America"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4943546"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Figure2_a_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 2a saved as geotiff.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure2_b_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 2b saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure2_d_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 2d saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure2_e_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 2e saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure3_a_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 3a saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure3_b_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 3b saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure3_d_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 3d saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure3_e_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 3e saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure4_a_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 4a saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure4_b_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 4b saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure4_d_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 4d saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Figure4_e_raster<div class=\"o-metadata__file-description\">Raster layer of data presented in Figure 4e saved as a geotiff</div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Uncertainty in geographic estimates of performance and fitness",
+  "links": {
+    "self": "https://zenodo.org/api/records/4943547",
+    "self_html": "https://zenodo.org/records/4943547",
+    "preview_html": "https://zenodo.org/records/4943547?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.p2p7j6g",
+    "self_doi": "https://doi.org/10.5061/dryad.p2p7j6g",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.p2p7j6g",
+    "reserve_doi": "https://zenodo.org/api/records/4943547/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4943546",
+    "parent_html": "https://zenodo.org/records/4943546",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4943547/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4943547/sequence/default",
+    "files": "https://zenodo.org/api/records/4943547/files",
+    "media_files": "https://zenodo.org/api/records/4943547/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:4943547:Figure4_e_raster.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/4943547/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4943547/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4943547/versions/latest",
+    "latest_html": "https://zenodo.org/records/4943547/latest",
+    "versions": "https://zenodo.org/api/records/4943547/versions",
+    "draft": "https://zenodo.org/api/records/4943547/draft",
+    "access_links": "https://zenodo.org/api/records/4943547/access/links",
+    "access_grants": "https://zenodo.org/api/records/4943547/access/grants",
+    "access_users": "https://zenodo.org/api/records/4943547/access/users",
+    "access_request": "https://zenodo.org/api/records/4943547/access/request",
+    "access": "https://zenodo.org/api/records/4943547/access",
+    "communities": "https://zenodo.org/api/records/4943547/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4943547/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4943547/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4943547/file-modification",
+    "requests": "https://zenodo.org/api/records/4943547/requests"
+  },
+  "updated": "2024-07-19T01:28:02.214511+00:00",
+  "recid": "4943547",
+  "revision": 6,
+  "files": [
+    {
+      "id": "05eb830d-d3d5-4d1b-9bfb-5a85686bfe01",
+      "key": "Figure4_e_raster.tif",
+      "size": 81046,
+      "checksum": "md5:9d3323e9e5c180044db07bfba4885fc1",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure4_e_raster.tif/content"
+      }
+    },
+    {
+      "id": "03d2db5d-e3ff-469e-83da-701498fa9cfa",
+      "key": "Figure4_b_raster.tif",
+      "size": 79918,
+      "checksum": "md5:5126ddb797a308b259cb959b507933ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure4_b_raster.tif/content"
+      }
+    },
+    {
+      "id": "b467f542-ec1d-48dc-aa1a-48c5cd4dcce9",
+      "key": "Figure4_a_raster.tif",
+      "size": 78854,
+      "checksum": "md5:2928c38c31d2237c93c36957a79f8c34",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure4_a_raster.tif/content"
+      }
+    },
+    {
+      "id": "f58dea33-e46c-4b85-beb2-c2da50ed4ff0",
+      "key": "Figure3_b_raster.tif",
+      "size": 79174,
+      "checksum": "md5:a075a6b5c6be53adaa73284cf30a97c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure3_b_raster.tif/content"
+      }
+    },
+    {
+      "id": "16fe6abc-281d-4143-a8ce-3e7fb0bb8fc7",
+      "key": "Figure3_a_raster.tif",
+      "size": 78822,
+      "checksum": "md5:d9ad28d4f8fdde1b7bc97c7b7488fbdf",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure3_a_raster.tif/content"
+      }
+    },
+    {
+      "id": "bb60fb45-fd6f-40f0-8c75-bf554e032c1c",
+      "key": "Figure4_d_raster.tif",
+      "size": 80128,
+      "checksum": "md5:842c6b9701968e9bfe60440e29da523d",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure4_d_raster.tif/content"
+      }
+    },
+    {
+      "id": "412649d3-506a-4027-a15d-5ec6bfc02934",
+      "key": "Figure3_e_raster.tif",
+      "size": 79889,
+      "checksum": "md5:1d0ecacd4a6784e5fb0f164c2c09bd42",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure3_e_raster.tif/content"
+      }
+    },
+    {
+      "id": "2610d70e-fa7c-4a50-b823-bad207e637ce",
+      "key": "Figure3_d_raster.tif",
+      "size": 79862,
+      "checksum": "md5:2f8283258c65166db53dee91813e3422",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure3_d_raster.tif/content"
+      }
+    },
+    {
+      "id": "4dce9fcc-fc93-45f6-8a53-5c9d84a1ca30",
+      "key": "Figure2_e_raster.tif",
+      "size": 81242,
+      "checksum": "md5:7920ff6f3e60c49f0753798956138832",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure2_e_raster.tif/content"
+      }
+    },
+    {
+      "id": "f22381f1-1225-4345-8873-0de3cfcfb913",
+      "key": "Figure2_b_raster.tif",
+      "size": 79509,
+      "checksum": "md5:81663c3f9a34f8c27f14ac4636f11a31",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure2_b_raster.tif/content"
+      }
+    },
+    {
+      "id": "accaebc2-ac56-4b6e-9c7d-6e87d14af5d9",
+      "key": "Figure2_a_raster.tif",
+      "size": 79254,
+      "checksum": "md5:89a4f45dbdc7b0a78ffb20f701ae62a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure2_a_raster.tif/content"
+      }
+    },
+    {
+      "id": "e6ab613b-15aa-4e95-a1ea-f0cfb1021246",
+      "key": "Figure2_d_raster.tif",
+      "size": 80415,
+      "checksum": "md5:003a1f8d5d956b1325ff909b802a66a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4943547/files/Figure2_d_raster.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 118,
+    "unique_downloads": 118,
+    "views": 164,
+    "unique_views": 164,
+    "version_downloads": 118,
+    "version_unique_downloads": 118,
+    "version_unique_views": 164,
+    "version_views": 164
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 12,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 958113,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Figure4_e_raster.tif",
+        "size": 81046
+      },
+      {
+        "name": "Figure4_b_raster.tif",
+        "size": 79918
+      },
+      {
+        "name": "Figure4_a_raster.tif",
+        "size": 78854
+      },
+      {
+        "name": "Figure3_b_raster.tif",
+        "size": 79174
+      },
+      {
+        "name": "Figure3_a_raster.tif",
+        "size": 78822
+      },
+      {
+        "name": "Figure4_d_raster.tif",
+        "size": 80128
+      },
+      {
+        "name": "Figure3_e_raster.tif",
+        "size": 79889
+      },
+      {
+        "name": "Figure3_d_raster.tif",
+        "size": 79862
+      },
+      {
+        "name": "Figure2_e_raster.tif",
+        "size": 81242
+      },
+      {
+        "name": "Figure2_b_raster.tif",
+        "size": 79509
+      },
+      {
+        "name": "Figure2_a_raster.tif",
+        "size": 79254
+      },
+      {
+        "name": "Figure2_d_raster.tif",
+        "size": 80415
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:59.129749"
+}

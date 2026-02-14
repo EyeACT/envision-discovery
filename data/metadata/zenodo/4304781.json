@@ -1,0 +1,181 @@
+{
+  "created": "2020-12-03T19:21:07.866846+00:00",
+  "modified": "2020-12-04T00:27:09.913922+00:00",
+  "id": 4304781,
+  "conceptrecid": "4304780",
+  "doi": "10.5281/zenodo.4304781",
+  "conceptdoi": "10.5281/zenodo.4304780",
+  "doi_url": "https://doi.org/10.5281/zenodo.4304781",
+  "metadata": {
+    "title": "High Resolution Fundus Image Database for Monomodal Single-Channel Image Registration of Thin Features",
+    "doi": "10.5281/zenodo.4304781",
+    "publication_date": "2020-12-03",
+    "description": "<p>A high resolution image database of 42 image pairs (related by elastic deformations) created from original images from the High Resolution Fundus Image Database.<br>\n<br>\nConsists of thin linear structures that lack sufficient overlap to pose a challenge for classic similarity measures based on overlapping pixels commonly used in image registration.</p>\n\n<p>The dataset contains the intensity grayscale images, as well as binary masks of the retinal area, and labels of the vessels, segmented by expert annotators.<br>\n&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Johan \u00d6fverstedt",
+        "affiliation": "Department of Information Technology, Uppsala University",
+        "orcid": "0000-0003-0253-9037"
+      }
+    ],
+    "version": "1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4304780"
+          }
+        }
+      ]
+    }
+  },
+  "title": "High Resolution Fundus Image Database for Monomodal Single-Channel Image Registration of Thin Features",
+  "links": {
+    "self": "https://zenodo.org/api/records/4304781",
+    "self_html": "https://zenodo.org/records/4304781",
+    "preview_html": "https://zenodo.org/records/4304781?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4304781",
+    "self_doi": "https://doi.org/10.5281/zenodo.4304781",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4304781",
+    "reserve_doi": "https://zenodo.org/api/records/4304781/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4304780",
+    "parent_html": "https://zenodo.org/records/4304780",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4304780",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4304780",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4304781/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4304781/sequence/default",
+    "files": "https://zenodo.org/api/records/4304781/files",
+    "media_files": "https://zenodo.org/api/records/4304781/media-files",
+    "archive": "https://zenodo.org/api/records/4304781/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4304781/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4304781/versions/latest",
+    "latest_html": "https://zenodo.org/records/4304781/latest",
+    "versions": "https://zenodo.org/api/records/4304781/versions",
+    "draft": "https://zenodo.org/api/records/4304781/draft",
+    "access_links": "https://zenodo.org/api/records/4304781/access/links",
+    "access_grants": "https://zenodo.org/api/records/4304781/access/grants",
+    "access_users": "https://zenodo.org/api/records/4304781/access/users",
+    "access_request": "https://zenodo.org/api/records/4304781/access/request",
+    "access": "https://zenodo.org/api/records/4304781/access",
+    "communities": "https://zenodo.org/api/records/4304781/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4304781/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4304781/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4304781/file-modification",
+    "requests": "https://zenodo.org/api/records/4304781/requests"
+  },
+  "updated": "2020-12-04T00:27:09.913922+00:00",
+  "recid": "4304781",
+  "revision": 3,
+  "files": [
+    {
+      "id": "b16a34ce-1427-4db7-883b-a814370eb7b5",
+      "key": "retinal_dataset.zip",
+      "size": 330153385,
+      "checksum": "md5:f42be8a3c60a0f0468752731e33b2e15",
+      "links": {
+        "self": "https://zenodo.org/api/records/4304781/files/retinal_dataset.zip/content"
+      }
+    },
+    {
+      "id": "86688719-a8e2-4844-a722-4f7558e882c4",
+      "key": "readme.txt",
+      "size": 606,
+      "checksum": "md5:21cdaaad88f88b36797f0507e45e5caf",
+      "links": {
+        "self": "https://zenodo.org/api/records/4304781/files/readme.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "166558"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 177,
+    "unique_downloads": 123,
+    "views": 535,
+    "unique_views": 511,
+    "version_downloads": 177,
+    "version_unique_downloads": 123,
+    "version_unique_views": 510,
+    "version_views": 534
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 330153385,
+    "top_level_files": [
+      {
+        "name": "retinal_dataset.zip",
+        "size": 330153385
+      },
+      {
+        "name": "readme.txt",
+        "size": 606
+      }
+    ],
+    "zip_contents": {
+      "retinal_dataset.zip": {
+        "total_files": 252,
+        "total_directories": 2,
+        "total_uncompressed_bytes": 3216437602,
+        "file_types": {
+          ".tif": 252
+        },
+        "imaging_file_count": 252,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "floating/mask_15.tif",
+          "floating/mask_23.tif",
+          "floating/labels_18.tif",
+          "floating/mask_38.tif",
+          "floating/mask_07.tif",
+          "floating/mask_39.tif",
+          "floating/mask_21.tif",
+          "floating/image_12.tif",
+          "floating/image_16.tif",
+          "floating/labels_34.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "floating/mask_15.tif",
+      "floating/mask_23.tif",
+      "floating/labels_18.tif",
+      "floating/mask_38.tif",
+      "floating/mask_07.tif",
+      "floating/mask_39.tif",
+      "floating/mask_21.tif",
+      "floating/image_12.tif",
+      "floating/image_16.tif",
+      "floating/labels_34.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:53.193785"
+}

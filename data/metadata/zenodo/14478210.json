@@ -1,0 +1,319 @@
+{
+  "created": "2025-01-30T19:01:17.066284+00:00",
+  "modified": "2025-09-16T22:21:03.588992+00:00",
+  "id": 14478210,
+  "conceptrecid": "14478209",
+  "doi": "10.5281/zenodo.14478210",
+  "conceptdoi": "10.5281/zenodo.14478209",
+  "doi_url": "https://doi.org/10.5281/zenodo.14478210",
+  "metadata": {
+    "title": "OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features",
+    "doi": "10.5281/zenodo.14478210",
+    "publication_date": "2025-01-30",
+    "description": "<p><strong>Objectives:</strong> The primary goal of this dataset is to enable the automated segmentation and quantification of atherosclerotic plaque features in OCT images. Cardiovascular disease, with atherosclerosis at its core, remains a global health challenge. Accurate identification of vulnerable plaques is crucial for preventing acute cardiovascular events such as myocardial infarction and stroke. OCT imaging provides high-resolution insights into plaque morphology but is often constrained by manual interpretation challenges. This dataset, curated with diverse annotations of key plaque morphological features, aims to facilitate the development and evaluation of machine learning models for precise plaque analysis. By advancing segmentation capabilities, this dataset contributes to improved diagnostics and therapeutic strategies in cardiovascular care.</p>\n<p><strong>Ethical Approval:</strong> The dataset complies with ethical standards, adhering to the Declaration of Helsinki. Ethical approval was granted by the Local Ethical Committee of the Research Institute for Complex Issues of Cardiovascular Diseases (Kemerovo, Russia) under protocol code 2022/06 (approved on June 30, 2022). All participants provided informed consent. Data collection involved patients aged 18 years or older, ensuring balanced gender representation and inclusion of various comorbid conditions for comprehensive clinical relevance (refer to <em>Table 1</em>).</p>\n<p><strong>Description:</strong> The dataset consists of OCT images acquired from 103 patients across two cardiovascular research centers. These images, collected over one year, represent a diverse array of imaging devices and patient demographics. The dataset includes 25,698 annotated slices, each capturing key plaque morphological features. These features include&nbsp;<em>lumen (LM)</em>, <em>fibrous cap (FC)</em>, <em>lipid core (LC)</em>, and <em>vasa vasorum (VV)</em>. The images vary in dimensions from 704 x 704 to 1024 x 1024 pixels, reflecting differences in anatomical characteristics and imaging conditions. Annotations were performed using <a href=\"https://supervisely.com/\" target=\"_blank\" rel=\"noopener\">Supervisely</a>, with meticulous double-verification processes to ensure accuracy.</p>\n<p><strong>Annotation Method:</strong> Two cardiologists annotated the dataset, identifying plaque features using binary masks. The annotations underwent a review and double-verification by a senior cardiologist and technical specialist, enhancing precision and consistency. The morphological features segmented include the vascular lumen, fibrous cap, lipid core, and vasa vasorum, each providing critical insights into plaque stability and cardiovascular risk.</p>\n<p><strong>Dataset Split:</strong> A 5-fold cross-validation technique was employed for dataset splitting, ensuring robust model evaluation while preventing data leakage. Approximately 80% of images were allocated for training in each fold, with the remaining 20% reserved for testing (refer to <em>Table 2</em>). This method allowed a balanced and comprehensive assessment of segmentation performance across the dataset.</p>\n<p><strong>Access to the Study:</strong> Further information about this study, including curated source code, dataset details, and trained models, can be accessed through the following repositories:</p>\n<ul>\n<li><strong>Source Code:</strong> <a href=\"https://github.com/ViacheslavDanilov/oct_segmentation\" target=\"_blank\" rel=\"noopener\">https://github.com/ViacheslavDanilov/oct_segmentation</a></li>\n<li><strong>Dataset:</strong> <a href=\"https://doi.org/10.5281/zenodo.14478209\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.5281/zenodo.14478209</a></li>\n<li><strong>Models:</strong> <a href=\"https://doi.org/10.5281/zenodo.14481678\" target=\"_blank\" rel=\"noopener\">https://doi.org/10.5281/zenodo.14481678</a></li>\n</ul>\n<p>&nbsp;</p>\n<p><strong><em>Table 1.</em></strong> <em>Baseline characteristics of patients included in the study.</em></p>\n<div>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Parameter</strong></p>\n</td>\n<td>\n<p><strong>Value</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Sex:</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Male, n (%)</p>\n</td>\n<td>\n<p>77 (74.7)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Female, n (%)</p>\n</td>\n<td>\n<p>26 (25.3)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Median Age, years [min &ndash; max]</p>\n</td>\n<td>\n<p>69 [43 &ndash; 83]</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Arterial hypertension, n (%)</p>\n</td>\n<td>\n<p>92 (89.3)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Diabetes Mellitus, n (%)</p>\n</td>\n<td>\n<p>22 (21.4)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Myocardial Infarction, n (%)</p>\n</td>\n<td>\n<p>22 (21.4)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Polyvascular Disease, n (%)</p>\n</td>\n<td>\n<p>29 (28.2)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Angina Pectoris:</p>\n</td>\n<td>\n<p>&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Silent ischemia, n (%)</p>\n</td>\n<td>\n<p>9 (8.7)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Functional class 1, n (%)</p>\n</td>\n<td>\n<p>24 (23.3)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Functional class 2, n (%)</p>\n</td>\n<td>\n<p>55 (53.4)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Functional class 3, n (%)</p>\n</td>\n<td>\n<p>15 (14.6)</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>\n<p><strong><em>Table 2.</em></strong> <em>Image and plaque morphological feature distributions across folds and subsets.</em></p>\n<div>\n<table>\n<tbody>\n<tr>\n<td><strong>Fold</strong></td>\n<td><strong>Subset</strong></td>\n<td><strong>LM</strong></td>\n<td><strong>FC</strong></td>\n<td><strong>LC</strong></td>\n<td><strong>VV</strong></td>\n<td><strong>Total objects</strong></td>\n<td><strong>Total images</strong></td>\n</tr>\n<tr>\n<td>1</td>\n<td>Train</td>\n<td>17264</td>\n<td>5610</td>\n<td>5576</td>\n<td>328</td>\n<td>28778</td>\n<td>16901</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Test</td>\n<td>4544</td>\n<td>1616</td>\n<td>1616</td>\n<td>122</td>\n<td>7898</td>\n<td>4492</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Train</td>\n<td>17554</td>\n<td>5709</td>\n<td>5690</td>\n<td>237</td>\n<td>29190</td>\n<td>17207</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Test</td>\n<td>4254</td>\n<td>1517</td>\n<td>1502</td>\n<td>213</td>\n<td>7486</td>\n<td>4186</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Train</td>\n<td>17220</td>\n<td>5600</td>\n<td>5565</td>\n<td>407</td>\n<td>28792</td>\n<td>16962</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Test</td>\n<td>4588</td>\n<td>1626</td>\n<td>1627</td>\n<td>43</td>\n<td>7884</td>\n<td>4431</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Train</td>\n<td>17813</td>\n<td>5724</td>\n<td>5686</td>\n<td>416</td>\n<td>29639</td>\n<td>17473</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Test</td>\n<td>3995</td>\n<td>1502</td>\n<td>1506</td>\n<td>34</td>\n<td>7037</td>\n<td>3920</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Train</td>\n<td>17381</td>\n<td>6261</td>\n<td>6251</td>\n<td>412</td>\n<td>30405</td>\n<td>17029</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Test</td>\n<td>4427</td>\n<td>965</td>\n<td>941</td>\n<td>38</td>\n<td>6371</td>\n<td>4364</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Danilov, Viacheslav",
+        "affiliation": "Pompeu Fabra University",
+        "orcid": "0000-0002-1413-1381"
+      },
+      {
+        "name": "Laptev, Vladislav",
+        "affiliation": "Siberian State Medical University",
+        "orcid": "0000-0001-8639-8889"
+      },
+      {
+        "name": "Klyshnikov, Kirill",
+        "affiliation": "Research Institute for Complex Issues of Cardiovascular Diseases",
+        "orcid": "0000-0003-3211-1250"
+      },
+      {
+        "name": "Ovcharenko, Evgeny",
+        "affiliation": "Research Institute for Complex Issues of Cardiovascular Diseases",
+        "orcid": "0000-0001-7477-3979"
+      },
+      {
+        "name": "Kochergin, Nikita",
+        "affiliation": "Research Institute for Complex Issues of Cardiovascular Diseases",
+        "orcid": "0000-0002-1534-264X"
+      }
+    ],
+    "keywords": [
+      "Atherosclerosis",
+      "Optical Coherence Tomography",
+      "Plaque Segmentation",
+      "Vulnerable Plaque",
+      "Cardiovascular Diagnostics",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.compbiomed.2025.111061",
+        "relation": "isPartOf",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/ViacheslavDanilov/oct_segmentation",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "10.1016/j.compbiomed.2025.111061"
+      },
+      {
+        "identifier": "https://www.sciencedirect.com/science/article/pii/S0010482525014131"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "23-75-10009",
+        "internal_id": "03y2gwe85::23-75-10009",
+        "funder": {
+          "name": "Russian Science Foundation"
+        },
+        "title": "Development of an automated deep learning system for detecting unstable plaques in optical coherence tomography",
+        "url": "https://rscf.ru/project/23-75-10009/"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14478209"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCT Dataset for Segmentation of Atherosclerotic Plaque Morphological Features",
+  "links": {
+    "self": "https://zenodo.org/api/records/14478210",
+    "self_html": "https://zenodo.org/records/14478210",
+    "preview_html": "https://zenodo.org/records/14478210?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14478210",
+    "self_doi": "https://doi.org/10.5281/zenodo.14478210",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14478210",
+    "reserve_doi": "https://zenodo.org/api/records/14478210/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14478209",
+    "parent_html": "https://zenodo.org/records/14478209",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14478209",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14478209",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14478210/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14478210/sequence/default",
+    "files": "https://zenodo.org/api/records/14478210/files",
+    "media_files": "https://zenodo.org/api/records/14478210/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14478210:Figure%201.%20Annotation%20methodology.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14478210/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14478210/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14478210/versions/latest",
+    "latest_html": "https://zenodo.org/records/14478210/latest",
+    "versions": "https://zenodo.org/api/records/14478210/versions",
+    "draft": "https://zenodo.org/api/records/14478210/draft",
+    "access_links": "https://zenodo.org/api/records/14478210/access/links",
+    "access_grants": "https://zenodo.org/api/records/14478210/access/grants",
+    "access_users": "https://zenodo.org/api/records/14478210/access/users",
+    "access_request": "https://zenodo.org/api/records/14478210/access/request",
+    "access": "https://zenodo.org/api/records/14478210/access",
+    "communities": "https://zenodo.org/api/records/14478210/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14478210/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14478210/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14478210/file-modification",
+    "requests": "https://zenodo.org/api/records/14478210/requests"
+  },
+  "updated": "2025-09-16T22:21:03.588992+00:00",
+  "recid": "14478210",
+  "revision": 6,
+  "files": [
+    {
+      "id": "fc5694e0-a2c5-48b9-b106-4e7989722f30",
+      "key": "fold_2.zip",
+      "size": 12112236765,
+      "checksum": "md5:8aa65b0d2008c287ca80fc4b1a219722",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/fold_2.zip/content"
+      }
+    },
+    {
+      "id": "575b99ea-bad0-4faa-800d-588c8d9fed8f",
+      "key": "interim.zip",
+      "size": 21488558461,
+      "checksum": "md5:3c3ae36b6c09dff946f146c149145374",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/interim.zip/content"
+      }
+    },
+    {
+      "id": "664dfbd9-a12f-491a-ab52-166d110f190d",
+      "key": "fold_1.zip",
+      "size": 12112239213,
+      "checksum": "md5:3bef0c0229de65a2cb618b18f97ac949",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/fold_1.zip/content"
+      }
+    },
+    {
+      "id": "ba4d36bc-3b28-484f-93ef-432c4e97d0f2",
+      "key": "metadata.csv",
+      "size": 26672225,
+      "checksum": "md5:a0f7700924eda6c70f0f546b35125d67",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/metadata.csv/content"
+      }
+    },
+    {
+      "id": "b202779f-1398-4f4f-b4a4-739919752a1b",
+      "key": "fold_3.zip",
+      "size": 12112238583,
+      "checksum": "md5:c53045ee5dd0c3c243d95253bfd4d0ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/fold_3.zip/content"
+      }
+    },
+    {
+      "id": "3e845a84-977d-4163-8c5d-3f7b2a70daf3",
+      "key": "fold_4.zip",
+      "size": 12112235973,
+      "checksum": "md5:af7dd83a88af4f9034db0d6b11f4a4ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/fold_4.zip/content"
+      }
+    },
+    {
+      "id": "0855f11a-fa03-48d0-913b-17abfc5affa3",
+      "key": "fold_5.zip",
+      "size": 12112237749,
+      "checksum": "md5:8c998cdddb40861b788dd84986c08252",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/fold_5.zip/content"
+      }
+    },
+    {
+      "id": "5cbdfafc-468f-46be-8e56-f87d6b307c31",
+      "key": "Figure 1. Annotation methodology.png",
+      "size": 1892987,
+      "checksum": "md5:7444d83e8adc6bce0d0f570248a44e37",
+      "links": {
+        "self": "https://zenodo.org/api/records/14478210/files/Figure 1. Annotation methodology.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "615047"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5058,
+    "unique_downloads": 1107,
+    "views": 1149,
+    "unique_views": 864,
+    "version_downloads": 5058,
+    "version_unique_downloads": 1107,
+    "version_unique_views": 864,
+    "version_views": 1149
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 6,
+    "genomics_count": 0,
+    "total_imaging_size": 1892987,
+    "total_archive_size": 82049746744,
+    "top_level_files": [
+      {
+        "name": "fold_2.zip",
+        "size": 12112236765
+      },
+      {
+        "name": "interim.zip",
+        "size": 21488558461
+      },
+      {
+        "name": "fold_1.zip",
+        "size": 12112239213
+      },
+      {
+        "name": "metadata.csv",
+        "size": 26672225
+      },
+      {
+        "name": "fold_3.zip",
+        "size": 12112238583
+      },
+      {
+        "name": "fold_4.zip",
+        "size": 12112235973
+      },
+      {
+        "name": "fold_5.zip",
+        "size": 12112237749
+      },
+      {
+        "name": "Figure 1. Annotation methodology.png",
+        "size": 1892987
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/ViacheslavDanilov/oct_segmentation",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.14478209",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.14481678",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:46.368418"
+}

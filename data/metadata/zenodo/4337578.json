@@ -1,0 +1,324 @@
+{
+  "created": "2021-01-21T11:47:07.956760+00:00",
+  "modified": "2021-01-21T12:27:20.415136+00:00",
+  "id": 4337578,
+  "conceptrecid": "4146889",
+  "doi": "10.5281/zenodo.4337578",
+  "conceptdoi": "10.5281/zenodo.4146889",
+  "doi_url": "https://doi.org/10.5281/zenodo.4337578",
+  "metadata": {
+    "title": "Webis-WebSeg-20-Algorithm-Segmentations",
+    "doi": "10.5281/zenodo.4337578",
+    "publication_date": "2021-01-20",
+    "description": "<p>This dataset contains the segmentations of five segmentation algorithms, one ensemble, and one baseline algorithm for the pages of the <a href=\"https://doi.org/10.5281/zenodo.3354902\">Webis-WebSeg-20</a> dataset. If you use this dataset in your research, please cite it using <a href=\"https://webis.de/publications.html?q=An+Empirical+Comparison+of+Web+Page+Segmentation+Algorithms\">this paper</a>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kiesel, Johannes",
+        "affiliation": "Bauhaus-Universit\u00e4t Weimar",
+        "orcid": "0000-0002-1617-6508"
+      },
+      {
+        "name": "Meyer, Lars",
+        "affiliation": "Bauhaus-Universit\u00e4t Weimar",
+        "orcid": "0000-0002-7280-808X"
+      },
+      {
+        "name": "Kneist, Florian",
+        "affiliation": "Bauhaus-Universit\u00e4t Weimar",
+        "orcid": "0000-0002-4111-662X"
+      },
+      {
+        "name": "Stein, Benno",
+        "affiliation": "Bauhaus-Universit\u00e4t Weimar",
+        "orcid": "0000-0001-9033-2217"
+      },
+      {
+        "name": "Potthast, Martin",
+        "affiliation": "Leipzig University",
+        "orcid": "0000-0003-2451-0665"
+      }
+    ],
+    "keywords": [
+      "web page segmentation",
+      "webpage segmentation",
+      "web"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.1002203",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.3354902",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://github.com/webis-de/ecir21-an-empirical-comparison-of-web-page-segmentation-algorithms",
+        "relation": "isSupplementedBy",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "webis.de/publications.html?q=An+Empirical+Comparison+of+Web+Page+Segmentation+Algorithms",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-conferencepaper",
+        "scheme": "handle"
+      }
+    ],
+    "version": "ecir21-final",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "43rd European Conference on IR Research",
+      "acronym": "ECIR'21",
+      "dates": "March 2021",
+      "url": "https://www.ecir2021.eu/"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "webis"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4146889"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Webis-WebSeg-20-Algorithm-Segmentations",
+  "links": {
+    "self": "https://zenodo.org/api/records/4337578",
+    "self_html": "https://zenodo.org/records/4337578",
+    "preview_html": "https://zenodo.org/records/4337578?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.4337578",
+    "self_doi": "https://doi.org/10.5281/zenodo.4337578",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4337578",
+    "reserve_doi": "https://zenodo.org/api/records/4337578/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4146889",
+    "parent_html": "https://zenodo.org/records/4146889",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4146889",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4146889",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4337578/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4337578/sequence/default",
+    "files": "https://zenodo.org/api/records/4337578/files",
+    "media_files": "https://zenodo.org/api/records/4337578/media-files",
+    "archive": "https://zenodo.org/api/records/4337578/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4337578/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4337578/versions/latest",
+    "latest_html": "https://zenodo.org/records/4337578/latest",
+    "versions": "https://zenodo.org/api/records/4337578/versions",
+    "draft": "https://zenodo.org/api/records/4337578/draft",
+    "access_links": "https://zenodo.org/api/records/4337578/access/links",
+    "access_grants": "https://zenodo.org/api/records/4337578/access/grants",
+    "access_users": "https://zenodo.org/api/records/4337578/access/users",
+    "access_request": "https://zenodo.org/api/records/4337578/access/request",
+    "access": "https://zenodo.org/api/records/4337578/access",
+    "communities": "https://zenodo.org/api/records/4337578/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4337578/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4337578/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4337578/file-modification",
+    "requests": "https://zenodo.org/api/records/4337578/requests"
+  },
+  "updated": "2021-01-21T12:27:20.415136+00:00",
+  "recid": "4337578",
+  "revision": 2,
+  "files": [
+    {
+      "id": "13b34e1f-263e-4804-b71e-5118f0133588",
+      "key": "webis-webseg-20-meier-models.zip",
+      "size": 54881253,
+      "checksum": "md5:b883348d0653813de8268bea4bfe3850",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/webis-webseg-20-meier-models.zip/content"
+      }
+    },
+    {
+      "id": "202ed953-e5a7-46cc-8145-03e0f16ee9d0",
+      "key": "README.txt",
+      "size": 2587,
+      "checksum": "md5:d1998d5be2f114e2d71168a760e0362c",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/README.txt/content"
+      }
+    },
+    {
+      "id": "626e50fb-fd6e-4f60-af36-419409341160",
+      "key": "num-segments.csv",
+      "size": 674,
+      "checksum": "md5:a422900a43070093f19d99cc53624485",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/num-segments.csv/content"
+      }
+    },
+    {
+      "id": "da2dced8-8ded-4da9-a8f9-a2a0c819f835",
+      "key": "webis-webseg-20-folds.txt",
+      "size": 76420,
+      "checksum": "md5:f66bdf51aa395fb919f48191547283f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/webis-webseg-20-folds.txt/content"
+      }
+    },
+    {
+      "id": "97e0a4bd-d10b-4334-b9c9-0eba733e8df1",
+      "key": "evaluation.csv",
+      "size": 7367,
+      "checksum": "md5:75cbcaaff51f0270f1a49aab704fdfe9",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/evaluation.csv/content"
+      }
+    },
+    {
+      "id": "1412aa09-f055-4195-9989-e4e3ae36f065",
+      "key": "webis-webseg-20-algorithm-segmentations.zip",
+      "size": 242479955,
+      "checksum": "md5:c82e21608c2b64c17365366ad50826d8",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/webis-webseg-20-algorithm-segmentations.zip/content"
+      }
+    },
+    {
+      "id": "72a8b8f9-1895-4d79-8e9f-ede386b2768e",
+      "key": "webis-webseg-20-4096px.zip",
+      "size": 7112125922,
+      "checksum": "md5:b6116271be33b74df42b6fd080554069",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/webis-webseg-20-4096px.zip/content"
+      }
+    },
+    {
+      "id": "eb0b96d3-65e0-4d11-967b-68606cce7ac7",
+      "key": "webis-webseg-20-algorithm-evaluations.zip",
+      "size": 30912673,
+      "checksum": "md5:63e51c4660640fcc2f76d2e460e07d81",
+      "links": {
+        "self": "https://zenodo.org/api/records/4337578/files/webis-webseg-20-algorithm-evaluations.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "65747"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 1376,
+    "unique_downloads": 961,
+    "views": 1131,
+    "unique_views": 1065,
+    "version_downloads": 1346,
+    "version_unique_downloads": 932,
+    "version_unique_views": 767,
+    "version_views": 829
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 7440399803,
+    "top_level_files": [
+      {
+        "name": "webis-webseg-20-meier-models.zip",
+        "size": 54881253
+      },
+      {
+        "name": "README.txt",
+        "size": 2587
+      },
+      {
+        "name": "num-segments.csv",
+        "size": 674
+      },
+      {
+        "name": "webis-webseg-20-folds.txt",
+        "size": 76420
+      },
+      {
+        "name": "evaluation.csv",
+        "size": 7367
+      },
+      {
+        "name": "webis-webseg-20-algorithm-segmentations.zip",
+        "size": 242479955
+      },
+      {
+        "name": "webis-webseg-20-4096px.zip",
+        "size": 7112125922
+      },
+      {
+        "name": "webis-webseg-20-algorithm-evaluations.zip",
+        "size": 30912673
+      }
+    ],
+    "zip_contents": {
+      "webis-webseg-20-meier-models.zip": {
+        "total_files": 20,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 85659824,
+        "file_types": {
+          ".h5": 10
+        },
+        "imaging_file_count": 10,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "webis-webseg-20-meier-models/model-fold9-weights.h5",
+          "webis-webseg-20-meier-models/model-fold0-weights.h5",
+          "webis-webseg-20-meier-models/model-fold2-weights.h5",
+          "webis-webseg-20-meier-models/model-fold3-weights.h5",
+          "webis-webseg-20-meier-models/model-fold6-weights.h5",
+          "webis-webseg-20-meier-models/model-fold4-weights.h5",
+          "webis-webseg-20-meier-models/model-fold1-weights.h5",
+          "webis-webseg-20-meier-models/model-fold7-weights.h5",
+          "webis-webseg-20-meier-models/model-fold8-weights.h5",
+          "webis-webseg-20-meier-models/model-fold5-weights.h5"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "webis-webseg-20-meier-models/model-fold9-weights.h5",
+      "webis-webseg-20-meier-models/model-fold0-weights.h5",
+      "webis-webseg-20-meier-models/model-fold2-weights.h5",
+      "webis-webseg-20-meier-models/model-fold3-weights.h5",
+      "webis-webseg-20-meier-models/model-fold6-weights.h5",
+      "webis-webseg-20-meier-models/model-fold4-weights.h5",
+      "webis-webseg-20-meier-models/model-fold1-weights.h5",
+      "webis-webseg-20-meier-models/model-fold7-weights.h5",
+      "webis-webseg-20-meier-models/model-fold8-weights.h5",
+      "webis-webseg-20-meier-models/model-fold5-weights.h5"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/webis-de/ecir21-an-empirical-comparison-of-web-page-segmentation-algorithms"
+  ],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:20.130473"
+}

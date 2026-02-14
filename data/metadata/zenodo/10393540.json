@@ -1,0 +1,254 @@
+{
+  "created": "2023-12-18T16:09:50.485800+00:00",
+  "modified": "2023-12-18T16:09:53.258397+00:00",
+  "id": 10393540,
+  "conceptrecid": "10393539",
+  "doi": "10.5281/zenodo.10393540",
+  "conceptdoi": "10.5281/zenodo.10393539",
+  "doi_url": "https://doi.org/10.5281/zenodo.10393540",
+  "metadata": {
+    "title": "Electromagnetic Sampling Calorimeter Shower Images",
+    "doi": "10.5281/zenodo.10393540",
+    "publication_date": "2023-12-16",
+    "description": "<p>We include two files: \"gamma_1.hdf5\" and \"gamma_2.hdf5\". The first file was used to train CaloFlow and the second file was used during evaluation. Each file has the following structure:</p>\n<p>energy &nbsp; &nbsp;Dataset {100000, 1}<br>layer_0 &nbsp; Dataset {100000, 3, 96}<br>layer_1 &nbsp; Dataset {100000, 12, 12}<br>layer_2 &nbsp; Dataset {100000, 12, 6}<br>overflow &nbsp;Dataset {100000, 3}</p>\n<p>Each file is contains 100,000 calorimeter showers originating from incoming photons with incident energies uniformly distributed in the range [1,100] GeV.</p>\n<p>The sampling calorimeter we built is segmented longitudinally into three layer with different depths and granularities. In units of mm, the three layers have the following (eta, phi, z) dimensions:<br>Layer 0: (5, 160, 90) | Layer 1: (40, 40, 347) | Layer 2: (80, 40, 43)</p>\n<p>In the hdf5 files, the `energy' entry specifies the incident energy of the incoming photon in units of GeV. `layer_0', `layer_1', and `layer_2' represents the energy deposited in each layer of the calorimeter in an image data format. Given the segmentation of each calorimeter layer, these images have dimensions 3x96 (in layer 0), 12x12 (in layer 1), and 12x6 (in layer 3). The `overflow` contains the amount of energy that was deposited outside of the calorimeter section we are considering.</p>\n<p>We also include the files containing signal showers used in the paper \"Anomaly detection with flow-based fast calorimeter simulators\". The signal showers originating from chi particles decaying at fixed displacements are included in \"files_fixed_disp.zip\", and the signal showers originating from chi particles with fixed decay lifetimes are included in \"files_fixed_lifetime.zip\".</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Krause, Claudius",
+        "affiliation": "Institute of High Energy Physics"
+      },
+      {
+        "name": "Nachman, Benjamin",
+        "affiliation": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "Pang, Ian",
+        "affiliation": "Rutgers, The State University of New Jersey"
+      },
+      {
+        "name": "Shih, David",
+        "affiliation": "Rutgers, The State University of New Jersey"
+      },
+      {
+        "name": "Zhu, Yunhao",
+        "affiliation": "Northeastern University"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10393539"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Electromagnetic Sampling Calorimeter Shower Images",
+  "links": {
+    "self": "https://zenodo.org/api/records/10393540",
+    "self_html": "https://zenodo.org/records/10393540",
+    "preview_html": "https://zenodo.org/records/10393540?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10393540",
+    "self_doi": "https://doi.org/10.5281/zenodo.10393540",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10393540",
+    "reserve_doi": "https://zenodo.org/api/records/10393540/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10393539",
+    "parent_html": "https://zenodo.org/records/10393539",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10393539",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10393539",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10393540/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10393540/sequence/default",
+    "files": "https://zenodo.org/api/records/10393540/files",
+    "media_files": "https://zenodo.org/api/records/10393540/media-files",
+    "archive": "https://zenodo.org/api/records/10393540/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10393540/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10393540/versions/latest",
+    "latest_html": "https://zenodo.org/records/10393540/latest",
+    "versions": "https://zenodo.org/api/records/10393540/versions",
+    "draft": "https://zenodo.org/api/records/10393540/draft",
+    "access_links": "https://zenodo.org/api/records/10393540/access/links",
+    "access_grants": "https://zenodo.org/api/records/10393540/access/grants",
+    "access_users": "https://zenodo.org/api/records/10393540/access/users",
+    "access_request": "https://zenodo.org/api/records/10393540/access/request",
+    "access": "https://zenodo.org/api/records/10393540/access",
+    "communities": "https://zenodo.org/api/records/10393540/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10393540/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10393540/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10393540/file-modification",
+    "requests": "https://zenodo.org/api/records/10393540/requests"
+  },
+  "updated": "2023-12-18T16:09:53.258397+00:00",
+  "recid": "10393540",
+  "revision": 4,
+  "files": [
+    {
+      "id": "15846004-7671-4849-a52e-b0b3c4001b21",
+      "key": "gamma_2.hdf5",
+      "size": 406404192,
+      "checksum": "md5:43717d0fa390a9a20bab90f6f4338472",
+      "links": {
+        "self": "https://zenodo.org/api/records/10393540/files/gamma_2.hdf5/content"
+      }
+    },
+    {
+      "id": "4f9f7d22-61d8-47fd-b782-67682d861dba",
+      "key": "gamma_1.hdf5",
+      "size": 406404192,
+      "checksum": "md5:db6ae86738f331d65e04f9358ebad466",
+      "links": {
+        "self": "https://zenodo.org/api/records/10393540/files/gamma_1.hdf5/content"
+      }
+    },
+    {
+      "id": "12d517a3-8feb-4ae5-995f-66b95e64aa2e",
+      "key": "files_fixed_lifetime.zip",
+      "size": 1636547510,
+      "checksum": "md5:255436bda4bb83d245a92691c5af581b",
+      "links": {
+        "self": "https://zenodo.org/api/records/10393540/files/files_fixed_lifetime.zip/content"
+      }
+    },
+    {
+      "id": "ed9171ad-62a5-411b-bdf2-38cf7be577ac",
+      "key": "files_fixed_disp.zip",
+      "size": 3994422167,
+      "checksum": "md5:04c2710dfca7eef34c0cc8f83a1984ce",
+      "links": {
+        "self": "https://zenodo.org/api/records/10393540/files/files_fixed_disp.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "598079"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 126,
+    "unique_downloads": 124,
+    "views": 85,
+    "unique_views": 78,
+    "version_downloads": 126,
+    "version_unique_downloads": 124,
+    "version_unique_views": 78,
+    "version_views": 85
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 812808384,
+    "total_archive_size": 5630969677,
+    "top_level_files": [
+      {
+        "name": "gamma_2.hdf5",
+        "size": 406404192
+      },
+      {
+        "name": "gamma_1.hdf5",
+        "size": 406404192
+      },
+      {
+        "name": "files_fixed_lifetime.zip",
+        "size": 1636547510
+      },
+      {
+        "name": "files_fixed_disp.zip",
+        "size": 3994422167
+      }
+    ],
+    "zip_contents": {
+      "files_fixed_lifetime.zip": {
+        "total_files": 12,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 4876849152,
+        "file_types": {
+          ".hdf5": 12
+        },
+        "imaging_file_count": 12,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "files_fixed_lifetime/lifetime_0.1ns_0.005gev.hdf5",
+          "files_fixed_lifetime/lifetime_1ns_0.5gev.hdf5",
+          "files_fixed_lifetime/lifetime_1ns_5gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.1ns_0.05gev.hdf5",
+          "files_fixed_lifetime/lifetime_1ns_0.005gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.1ns_0.5gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.01ns_0.5gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.01ns_0.005gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.01ns_0.05gev.hdf5",
+          "files_fixed_lifetime/lifetime_0.1ns_5gev.hdf5"
+        ],
+        "sample_genomics_files": []
+      },
+      "files_fixed_disp.zip": {
+        "total_files": 42,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 16256173948,
+        "file_types": {
+          ".hdf5": 40
+        },
+        "imaging_file_count": 40,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "files_fixed_disp/neg_24_5gev.hdf5",
+          "files_fixed_disp/pos_20_5gev.hdf5",
+          "files_fixed_disp/zero_5gev.hdf5",
+          "files_fixed_disp/neg_58_0.5gev.hdf5",
+          "files_fixed_disp/zero_0.5gev.hdf5",
+          "files_fixed_disp/zero_0.05gev.hdf5",
+          "files_fixed_disp/neg_24_0.05gev.hdf5",
+          "files_fixed_disp/neg_24_low.hdf5",
+          "files_fixed_disp/neg_58_5gev.hdf5",
+          "files_fixed_disp/neg_91_5gev.hdf5"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "files_fixed_lifetime/lifetime_0.1ns_0.005gev.hdf5",
+      "files_fixed_lifetime/lifetime_1ns_0.5gev.hdf5",
+      "files_fixed_lifetime/lifetime_1ns_5gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.1ns_0.05gev.hdf5",
+      "files_fixed_lifetime/lifetime_1ns_0.005gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.1ns_0.5gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.01ns_0.5gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.01ns_0.005gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.01ns_0.05gev.hdf5",
+      "files_fixed_lifetime/lifetime_0.1ns_5gev.hdf5",
+      "files_fixed_disp/neg_24_5gev.hdf5",
+      "files_fixed_disp/pos_20_5gev.hdf5",
+      "files_fixed_disp/zero_5gev.hdf5",
+      "files_fixed_disp/neg_58_0.5gev.hdf5",
+      "files_fixed_disp/zero_0.5gev.hdf5",
+      "files_fixed_disp/zero_0.05gev.hdf5",
+      "files_fixed_disp/neg_24_0.05gev.hdf5",
+      "files_fixed_disp/neg_24_low.hdf5",
+      "files_fixed_disp/neg_58_5gev.hdf5",
+      "files_fixed_disp/neg_91_5gev.hdf5"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:49.228745"
+}

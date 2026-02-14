@@ -1,0 +1,263 @@
+{
+  "created": "2022-06-13T11:32:37.661574+00:00",
+  "modified": "2023-02-03T17:04:25.923678+00:00",
+  "id": 6635685,
+  "conceptrecid": "6635684",
+  "doi": "10.5281/zenodo.6635685",
+  "conceptdoi": "10.5281/zenodo.6635684",
+  "doi_url": "https://doi.org/10.5281/zenodo.6635685",
+  "metadata": {
+    "title": "Comprehensive Automatic Processing and Analysis of Adaptive Optics Flood Illumination Retinal Images",
+    "doi": "10.5281/zenodo.6635685",
+    "publication_date": "2022-06-13",
+    "description": "<p>A collaborative research group has established this database to support AO-FIO image utilization and evaluation of photoreceptor detection.&nbsp;<br>\nPlease cite the following publication when using the database:</p>\n\n<p>Eva Valterova, Jan D. Unterlauft, Mike Francke, Toralf Kirsten, Radim Kolar, and Franziska G. Rauscher, &quot;Comprehensive automatic processing and analysis of adaptive optics flood illumination retinal images on healthy subjects,&quot; Biomed. Opt. Express&nbsp;<strong>14</strong>, 945-970 (2023)<br>\n<br>\nThe database can be utilized in connection with our application MATADOR for AO-FIO image registration and analysis, which is freely available on:</p>\n\n<p>https://github.com/evavalterova/MATADOR.git</p>\n\n<p>The database includes</p>\n\n<ul>\n\t<li>over 200 flood illumination adaptive optics images of 10 normal healthy subjects. Each folder includes 10 images of the right eye (denoted by OD) and 10 images of the left eye (denoted by OS) with their preliminary determined retinal position during image acquisition.</li>\n\t<li>foveal and peripheral patches. Each consists of 40 cropped regions from the set of 200 images. In each cropped region are manually labeled positions of photoreceptors by three evaluators.</li>\n\t<li>axial lengths of 10 subjects in &quot;.xlsx&quot; file<br>\n\t&nbsp;</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Valterova Eva",
+        "affiliation": "Brno University of Technology",
+        "orcid": "0000-0003-1162-1358"
+      },
+      {
+        "name": "Unterlauft D. Jan",
+        "affiliation": "Leipzig University"
+      },
+      {
+        "name": "Francke Mike",
+        "affiliation": "Leipzig University"
+      },
+      {
+        "name": "Kirsten Toralf",
+        "affiliation": "Leipzig University"
+      },
+      {
+        "name": "Kolar Radim",
+        "affiliation": "Brno University of Technology",
+        "orcid": "0000-0002-0469-6397"
+      },
+      {
+        "name": "Rauscher G. Franziska",
+        "affiliation": "Leipzig University",
+        "orcid": "0000-0003-0183-0340"
+      }
+    ],
+    "keywords": [
+      "adaptive optics",
+      "retinal imaging",
+      "flood illumination",
+      "retinal analysis",
+      "photoreceptor detection",
+      "manually labeled photoreceptors"
+    ],
+    "version": "1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6635684"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Comprehensive Automatic Processing and Analysis of Adaptive Optics Flood Illumination Retinal Images",
+  "links": {
+    "self": "https://zenodo.org/api/records/6635685",
+    "self_html": "https://zenodo.org/records/6635685",
+    "preview_html": "https://zenodo.org/records/6635685?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6635685",
+    "self_doi": "https://doi.org/10.5281/zenodo.6635685",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6635685",
+    "reserve_doi": "https://zenodo.org/api/records/6635685/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6635684",
+    "parent_html": "https://zenodo.org/records/6635684",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6635684",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6635684",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6635685/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6635685/sequence/default",
+    "files": "https://zenodo.org/api/records/6635685/files",
+    "media_files": "https://zenodo.org/api/records/6635685/media-files",
+    "archive": "https://zenodo.org/api/records/6635685/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6635685/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6635685/versions/latest",
+    "latest_html": "https://zenodo.org/records/6635685/latest",
+    "versions": "https://zenodo.org/api/records/6635685/versions",
+    "draft": "https://zenodo.org/api/records/6635685/draft",
+    "access_links": "https://zenodo.org/api/records/6635685/access/links",
+    "access_grants": "https://zenodo.org/api/records/6635685/access/grants",
+    "access_users": "https://zenodo.org/api/records/6635685/access/users",
+    "access_request": "https://zenodo.org/api/records/6635685/access/request",
+    "access": "https://zenodo.org/api/records/6635685/access",
+    "communities": "https://zenodo.org/api/records/6635685/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6635685/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6635685/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6635685/file-modification",
+    "requests": "https://zenodo.org/api/records/6635685/requests"
+  },
+  "updated": "2023-02-03T17:04:25.923678+00:00",
+  "recid": "6635685",
+  "revision": 4,
+  "files": [
+    {
+      "id": "bdc6a0b4-0e2d-4f34-ab33-ba888b1abfab",
+      "key": "Manual_labels.zip",
+      "size": 44690154,
+      "checksum": "md5:165248b9e1786148e7aea28bdec588b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6635685/files/Manual_labels.zip/content"
+      }
+    },
+    {
+      "id": "3b2a2211-211e-4ae5-8fc2-26dc25240b70",
+      "key": "Axial_length.xlsx",
+      "size": 9683,
+      "checksum": "md5:d3f81d5bb3d171b73dc33be66d3ee621",
+      "links": {
+        "self": "https://zenodo.org/api/records/6635685/files/Axial_length.xlsx/content"
+      }
+    },
+    {
+      "id": "b149cce3-9a65-47bc-abed-5a0852a8fb8f",
+      "key": "Normal_anonymized.zip",
+      "size": 1109199381,
+      "checksum": "md5:22e75ad4cbf274d1bc787394cc11518b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6635685/files/Normal_anonymized.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "359345"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 133,
+    "unique_downloads": 109,
+    "views": 458,
+    "unique_views": 429,
+    "version_downloads": 133,
+    "version_unique_downloads": 109,
+    "version_unique_views": 429,
+    "version_views": 458
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1153889535,
+    "top_level_files": [
+      {
+        "name": "Manual_labels.zip",
+        "size": 44690154
+      },
+      {
+        "name": "Axial_length.xlsx",
+        "size": 9683
+      },
+      {
+        "name": "Normal_anonymized.zip",
+        "size": 1109199381
+      }
+    ],
+    "zip_contents": {
+      "manual_labels.zip": {
+        "total_files": 560,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 46227719,
+        "file_types": {
+          ".png": 320
+        },
+        "imaging_file_count": 320,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "manual_labels/01/0101011_marked.png",
+          "manual_labels/01/0101013_marked.png",
+          "manual_labels/01/0101021_marked.png",
+          "manual_labels/01/0101023_marked.png",
+          "manual_labels/01/0102012_marked.png",
+          "manual_labels/01/0102014_marked.png",
+          "manual_labels/01/0102022_marked.png",
+          "manual_labels/01/0102024_marked.png",
+          "manual_labels/01/0103011_marked.png",
+          "manual_labels/01/0103013_marked.png"
+        ],
+        "sample_genomics_files": []
+      },
+      "normal_anonymized.zip": {
+        "total_files": 291,
+        "total_directories": 11,
+        "total_uncompressed_bytes": 1108963002,
+        "file_types": {
+          ".png": 281
+        },
+        "imaging_file_count": 281,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "normal_anonymized/1/od_20160307170650_x0.0t_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307170745_x2.0n_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307170809_x4.0n_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307170859_x2.0n_y0.0_z30.0.png",
+          "normal_anonymized/1/od_20160307170951_x2.0t_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307171032_x4.0t_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307171053_x6.0t_y0.0_z20.0.png",
+          "normal_anonymized/1/od_20160307171205_x0.0t_y2.0_z-40.0.png",
+          "normal_anonymized/1/od_20160307171241_x0.0t_y4.0_z-30.0.png",
+          "normal_anonymized/1/od_20160307171317_x0.0t_y-2.0_z-10.0.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "manual_labels/01/0101011_marked.png",
+      "manual_labels/01/0101013_marked.png",
+      "manual_labels/01/0101021_marked.png",
+      "manual_labels/01/0101023_marked.png",
+      "manual_labels/01/0102012_marked.png",
+      "manual_labels/01/0102014_marked.png",
+      "manual_labels/01/0102022_marked.png",
+      "manual_labels/01/0102024_marked.png",
+      "manual_labels/01/0103011_marked.png",
+      "manual_labels/01/0103013_marked.png",
+      "normal_anonymized/1/od_20160307170650_x0.0t_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307170745_x2.0n_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307170809_x4.0n_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307170859_x2.0n_y0.0_z30.0.png",
+      "normal_anonymized/1/od_20160307170951_x2.0t_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307171032_x4.0t_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307171053_x6.0t_y0.0_z20.0.png",
+      "normal_anonymized/1/od_20160307171205_x0.0t_y2.0_z-40.0.png",
+      "normal_anonymized/1/od_20160307171241_x0.0t_y4.0_z-30.0.png",
+      "normal_anonymized/1/od_20160307171317_x0.0t_y-2.0_z-10.0.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/evavalterova/MATADOR.git",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:30.391258"
+}

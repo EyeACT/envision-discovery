@@ -1,0 +1,184 @@
+{
+  "created": "2025-12-24T11:25:45.333588+00:00",
+  "modified": "2025-12-24T11:25:45.547551+00:00",
+  "id": 18037549,
+  "conceptrecid": "18037548",
+  "doi": "10.5281/zenodo.18037549",
+  "conceptdoi": "10.5281/zenodo.18037548",
+  "doi_url": "https://doi.org/10.5281/zenodo.18037549",
+  "metadata": {
+    "title": "MMFire",
+    "doi": "10.5281/zenodo.18037549",
+    "publication_date": "2025-12-24",
+    "description": "<p>MMFire is a wildfire spread dataset, with inputs provided by the LANDFIRE program [1,2], and outcomes simulated using the SimFire [3] software, which internally uses the Rothermel equations [4]. The dataset serves as a benchmark for ambiguous segmentation tasks. For each input condition describing a wildfire and environmental conditions, it contains eight different possible outcomes. For the simulator to produce different outcomes, we vary the wind direction between eight options (North, North-East, East, ... ), set as constant over the whole 64x64 pixel area.&nbsp;</p>\n<p>Please note that this dataset does not represent realistic wildfire spread. It is only meant as a tool to study ambiguous segmentation. The eight different outcomes per input are not a realistic approximation of future outcomes. However, since reality only provides us with a single outcome, we resort to simulations to be able to validate our methods.&nbsp;</p>\n<p>Since the relationship between input and outputs is a relatively simple computer program, be aware that models with enough capacity should be able to approximate this relationship very well.&nbsp;</p>\n<p>If you use this dataset, please cite the <a href=\"https://openreview.net/forum?id=E44d5hzEV0\">corresponding paper</a>:&nbsp;</p>\n<blockquote>\n<pre>@inproceedings{\ngerard2025wildfire,\ntitle={Wildfire Spread Scenarios: Increasing Sample Diversity of Segmentation Diffusion Models with Training-Free Methods},\nauthor={Sebastian Gerard and Josephine Sullivan},\nbooktitle={Northern Lights Deep Learning Conference 2026},\nyear={2025},\nurl={https://openreview.net/forum?id=E44d5hzEV0}\n}</pre>\n</blockquote>\n<p>[1] LANDFIRE. Anderson Fire Behavior Fuel Model (FBFM13) Layer. LANDFIRE 2.0.0. U.S. Department of the Interior, Geological<br>Survey, and U.S. Department of Agriculture, 2016. url: <a href=\"https://landfire.gov/\">https://landfire.gov/</a><br>[2] LANDFIRE. Elevation Layer. LANDFIRE 2.2.0. U.S. Department of the Interior, Geological Survey, and U.S. Department of Agriculture, 2020. url: <a href=\"https://landfire.gov/\">https://landfire.gov/</a><br>[3] &nbsp;Doyle, M., Threet, M., Dotter, M., Kempis, C., Tapley, A., &amp; Welsh, T. (2024). SimFire (Version 2.0.1) [Computer software]. <a href=\"https://github.com/mitrefireline/simfire\">https://github.com/mitrefireline/simfire</a><br>[4] R. C. Rothermel. &ldquo;A mathematical model for predicting fire spread in wildland fuels&rdquo;. In: Res. Pap. INT-115. Ogden, UT: U.S. Department of Agriculture, Intermountain Forest and Range Experiment Station. 40 p. 115 (1972). url: <a href=\"https://www.fs.usda.gov/research/treesearch/32533\">https://www.fs.usda.gov/research/treesearch/32533</a></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Gerard, Sebastian",
+        "affiliation": "KTH Royal Institute of Technology",
+        "orcid": "0000-0002-5329-8184"
+      },
+      {
+        "name": "Sullivan, Josephine",
+        "affiliation": "KTH Royal Institute of Technology",
+        "orcid": "0000-0003-2784-7300"
+      }
+    ],
+    "keywords": [
+      "wildfires",
+      "ambiguous segmentation"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/SebastianGer/wildfire-spread-scenarios"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "18037548"
+          }
+        }
+      ]
+    }
+  },
+  "title": "MMFire",
+  "links": {
+    "self": "https://zenodo.org/api/records/18037549",
+    "self_html": "https://zenodo.org/records/18037549",
+    "preview_html": "https://zenodo.org/records/18037549?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18037549",
+    "self_doi": "https://doi.org/10.5281/zenodo.18037549",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18037549",
+    "reserve_doi": "https://zenodo.org/api/records/18037549/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/18037548",
+    "parent_html": "https://zenodo.org/records/18037548",
+    "parent_doi": "https://doi.org/10.5281/zenodo.18037548",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18037548",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18037549/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18037549/sequence/default",
+    "files": "https://zenodo.org/api/records/18037549/files",
+    "media_files": "https://zenodo.org/api/records/18037549/media-files",
+    "archive": "https://zenodo.org/api/records/18037549/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18037549/media-files-archive",
+    "latest": "https://zenodo.org/api/records/18037549/versions/latest",
+    "latest_html": "https://zenodo.org/records/18037549/latest",
+    "versions": "https://zenodo.org/api/records/18037549/versions",
+    "draft": "https://zenodo.org/api/records/18037549/draft",
+    "access_links": "https://zenodo.org/api/records/18037549/access/links",
+    "access_grants": "https://zenodo.org/api/records/18037549/access/grants",
+    "access_users": "https://zenodo.org/api/records/18037549/access/users",
+    "access_request": "https://zenodo.org/api/records/18037549/access/request",
+    "access": "https://zenodo.org/api/records/18037549/access",
+    "communities": "https://zenodo.org/api/records/18037549/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18037549/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18037549/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18037549/file-modification",
+    "requests": "https://zenodo.org/api/records/18037549/requests"
+  },
+  "updated": "2025-12-24T11:25:45.547551+00:00",
+  "recid": "18037549",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f3fe08f8-aa60-44e6-abb4-451e1f8f32f7",
+      "key": "MMFire.zip",
+      "size": 439289304,
+      "checksum": "md5:a1ad97973a34e72b93baaf00f39b7a1d",
+      "links": {
+        "self": "https://zenodo.org/api/records/18037549/files/MMFire.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "562969"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 31,
+    "unique_views": 28,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 28,
+    "version_views": 31
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 439289304,
+    "top_level_files": [
+      {
+        "name": "MMFire.zip",
+        "size": 439289304
+      }
+    ],
+    "zip_contents": {
+      "mmfire.zip": {
+        "total_files": 2,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 4722524416,
+        "file_types": {
+          ".npy": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "x.npy",
+          "y.npy"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "x.npy",
+      "y.npy"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://openreview.net/forum?id=E44d5hzEV0}",
+      "type": "unknown"
+    },
+    {
+      "url": "https://landfire.gov/[2",
+      "type": "unknown"
+    },
+    {
+      "url": "https://landfire.gov/[3",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/mitrefireline/simfire[4",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://www.fs.usda.gov/research/treesearch/32533",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:54.455186"
+}

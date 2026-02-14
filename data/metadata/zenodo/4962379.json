@@ -1,0 +1,159 @@
+{
+  "created": "2021-06-16T03:06:41.957460+00:00",
+  "modified": "2022-05-31T06:01:45.519236+00:00",
+  "id": 4962379,
+  "conceptrecid": "4962378",
+  "doi": "10.5061/dryad.163mp",
+  "doi_url": "https://doi.org/10.5061/dryad.163mp",
+  "metadata": {
+    "title": "Data from: Rat retinal vasomotion assessed by laser speckle imaging",
+    "doi": "10.5061/dryad.163mp",
+    "publication_date": "2018-03-14",
+    "description": "Vasomotion is spontaneous or induced rhythmic changes in vascular tone or vessel diameter that lead to rhythmic changes in flow. While the vascular research community debates the physiological and pathophysiological consequence of vasomotion, there is a great need for experimental techniques that can address the role and dynamical properties of vasomotion in vivo. We apply laser speckle imaging  to study spontaneous and drug induced vasomotion in retinal network of anesthetized rats. The results reveal a wide variety of dynamical patterns. Wavelet-based analysis shows that (i) spontaneous vasomotion occurs in anesthetized animals and (ii) vasomotion can be initiated by systemic administration of the thromboxane analogue U-46619 and the nitric-oxide donor S-nitroso-acetylDL-penicillamine (SNAP). Although these drugs activate different cellular pathways responsible for vasomotion, our approach can track the dynamical changes they cause.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Neganova, Anastasiia Y.",
+        "affiliation": "University of Copenhagen"
+      },
+      {
+        "name": "Postnov, Dmitry D.",
+        "affiliation": "University of Copenhagen"
+      },
+      {
+        "name": "Sosnovtseva, Olga",
+        "affiliation": "University of Copenhagen"
+      },
+      {
+        "name": "Jacobsen, Jens Christian Brings",
+        "affiliation": "University of Copenhagen"
+      }
+    ],
+    "keywords": [
+      "laser speckle",
+      "rat",
+      "retina",
+      "vessels"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pone.0173805",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4962378"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Retinal laser speckle data<div class=\"o-metadata__file-description\">The data file contains 8 blocks each representing a single experiment. In each experiment (recordings from one retina), several vessels were analyzed. In each block each individual vessel is marked with r. The data block representing each individual vessel contains a time series termed \"lineTS\" giving the speckle signal value averaged over the pixels in the center line. In addition there is a time series termed \"vessel TS\" containing the speckle signal value averaged over the pixels in the segmented vessel. These are the most important data. In total the following data are available: \n\nAlpha - estimated angle of the vessel in image axis;\nD - estimated diameter normalized by angle (double precision);\nDleft - final estimation of the distance to the left vessel boundary from the center line;\nDp - estimated diameter in pixels, not normalized by angle (integer precision);\nDright - final estimation of the distance to the right vessel boundary from the center line;\nLineP - number of pixels in the center line;\nLineTS  - Speckle signal value averaged over the pixels in the center line;\nMaskLine - binary mask used to select pixels which belong to the center line;\nMaskVessel -  binary mask used to select pixels which belong to the vessel;\nProfile - average vessel profile in time;\nRleft - first estimation of the distance to the left vessel boundary from the center line;\nRright -first estimation of the distance to the right vessel boundary from the center line;\nVesselP - number of pixels in the recognized vessel segment;\nVesselTS - Speckle signal value averaged over the pixels in the segmented vessel;\nX1, X2, Y1, Y2 - coordinates of the segmentation region in the full -sized image.\n\nFor further information please contact the corresponding author of the related paper.</div><div class=\"o-metadata__file-name\">Retinal laser_speckle data.mat<br></div></div>"
+  },
+  "title": "Data from: Rat retinal vasomotion assessed by laser speckle imaging",
+  "links": {
+    "self": "https://zenodo.org/api/records/4962379",
+    "self_html": "https://zenodo.org/records/4962379",
+    "preview_html": "https://zenodo.org/records/4962379?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.163mp",
+    "self_doi": "https://doi.org/10.5061/dryad.163mp",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.163mp",
+    "reserve_doi": "https://zenodo.org/api/records/4962379/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4962378",
+    "parent_html": "https://zenodo.org/records/4962378",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4962379/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4962379/sequence/default",
+    "files": "https://zenodo.org/api/records/4962379/files",
+    "media_files": "https://zenodo.org/api/records/4962379/media-files",
+    "archive": "https://zenodo.org/api/records/4962379/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4962379/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4962379/versions/latest",
+    "latest_html": "https://zenodo.org/records/4962379/latest",
+    "versions": "https://zenodo.org/api/records/4962379/versions",
+    "draft": "https://zenodo.org/api/records/4962379/draft",
+    "access_links": "https://zenodo.org/api/records/4962379/access/links",
+    "access_grants": "https://zenodo.org/api/records/4962379/access/grants",
+    "access_users": "https://zenodo.org/api/records/4962379/access/users",
+    "access_request": "https://zenodo.org/api/records/4962379/access/request",
+    "access": "https://zenodo.org/api/records/4962379/access",
+    "communities": "https://zenodo.org/api/records/4962379/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4962379/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4962379/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4962379/file-modification",
+    "requests": "https://zenodo.org/api/records/4962379/requests"
+  },
+  "updated": "2022-05-31T06:01:45.519236+00:00",
+  "recid": "4962379",
+  "revision": 3,
+  "files": [
+    {
+      "id": "917ea027-fa31-4383-88e8-2fd56fe7cc37",
+      "key": "Retinal laser_speckle data.mat",
+      "size": 1111189442,
+      "checksum": "md5:0bea0453d87d1c1968dd9ffb7ff70c63",
+      "links": {
+        "self": "https://zenodo.org/api/records/4962379/files/Retinal laser_speckle data.mat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 24,
+    "unique_downloads": 24,
+    "views": 81,
+    "unique_views": 80,
+    "version_downloads": 23,
+    "version_unique_downloads": 23,
+    "version_unique_views": 78,
+    "version_views": 79
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 1111189442,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "Retinal laser_speckle data.mat",
+        "size": 1111189442
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:44.217275"
+}

@@ -1,0 +1,170 @@
+{
+  "created": "2019-03-08T09:24:43.144120+00:00",
+  "modified": "2020-01-24T19:24:56.038116+00:00",
+  "id": 2587475,
+  "conceptrecid": "2587474",
+  "doi": "10.5281/zenodo.2587475",
+  "conceptdoi": "10.5281/zenodo.2587474",
+  "doi_url": "https://doi.org/10.5281/zenodo.2587475",
+  "metadata": {
+    "title": "Twitter cascade datasets",
+    "doi": "10.5281/zenodo.2587475",
+    "publication_date": "2019-03-08",
+    "description": "<p>This repository contains a set of Twitter datasets containing metadata of tweets and retweets posted during specific events such as 2015 Nepal Earthquake, IPL 2018, 15-M movement in Spain and also tweets posted by celebrity such as Lady Gaga and her followers. The details of each dataset are as follows:</p>\n\n<p>&nbsp;</p>\n\n<p>1. 2015 Nepal Earthquake: This folder contains the list of follower IDs of a user per line in &quot;followers_network&quot;. The files &quot;timeseries.txt&quot; and &quot;userseries.txt&quot; contains the sorted timestamp of retweets and sorted sequence of retweeting users for a cascade, per line.</p>\n\n<p>&nbsp;</p>\n\n<p>2. IPL 2018: This folder contains sequence of inter-retweet time intervals for every cascade per line in the file &quot;cascade-intervals-IPL.txt&quot;.</p>\n\n<p>&nbsp;</p>\n\n<p>3. 15-M: This folder contains a .csv and .txt file containing tweet metadata for a tweet per line in the following format:</p>\n\n<p>idt;segs;hashtags;mentions</p>\n\n<p>where idt - tweet ID, segs - segment number of the tweet, hashtags - set of hashtags separated by whitespace that were used in the tweet text, mentions - IDs of users mentioned in the tweet text</p>\n\n<p>&nbsp;</p>\n\n<p>4. Lady Gaga: This folder contains metadata of tweets and retweets in the following format:</p>\n\n<p>User_Name<br>\nTweet_ID<br>\nTime<br>\nVia<br>\nretweet_from<br>\nreply_to_user&nbsp;&nbsp; &nbsp;reply_to_tweet(if not reply, just &quot;-1&quot;)<br>\ncontent<br>\nNumber_of_link_in_tweet<br>\ntype_of_link1&nbsp;&nbsp; &nbsp;link1<br>\ntype_of_link2&nbsp;&nbsp; &nbsp;link2<br>\ntype_of_link3&nbsp;&nbsp; &nbsp;link3<br>\n...<br>\n&nbsp;<br>\n&nbsp;<br>\nTweets were crawled for the users related to &quot;Lady Gaga&rdquo;, and randomly collected 10,000 of her followers from Jan1, 2010 to Oct, 2010 and from Oct 1, 2010 to Jan 15, 2010.</p>\n\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ayan Kumar Bhowmick",
+        "affiliation": "IIT Kharagpur"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "2587474"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Twitter cascade datasets",
+  "links": {
+    "self": "https://zenodo.org/api/records/2587475",
+    "self_html": "https://zenodo.org/records/2587475",
+    "preview_html": "https://zenodo.org/records/2587475?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.2587475",
+    "self_doi": "https://doi.org/10.5281/zenodo.2587475",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.2587475",
+    "reserve_doi": "https://zenodo.org/api/records/2587475/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/2587474",
+    "parent_html": "https://zenodo.org/records/2587474",
+    "parent_doi": "https://doi.org/10.5281/zenodo.2587474",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.2587474",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:2587475/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:2587475/sequence/default",
+    "files": "https://zenodo.org/api/records/2587475/files",
+    "media_files": "https://zenodo.org/api/records/2587475/media-files",
+    "archive": "https://zenodo.org/api/records/2587475/files-archive",
+    "archive_media": "https://zenodo.org/api/records/2587475/media-files-archive",
+    "latest": "https://zenodo.org/api/records/2587475/versions/latest",
+    "latest_html": "https://zenodo.org/records/2587475/latest",
+    "versions": "https://zenodo.org/api/records/2587475/versions",
+    "draft": "https://zenodo.org/api/records/2587475/draft",
+    "access_links": "https://zenodo.org/api/records/2587475/access/links",
+    "access_grants": "https://zenodo.org/api/records/2587475/access/grants",
+    "access_users": "https://zenodo.org/api/records/2587475/access/users",
+    "access_request": "https://zenodo.org/api/records/2587475/access/request",
+    "access": "https://zenodo.org/api/records/2587475/access",
+    "communities": "https://zenodo.org/api/records/2587475/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/2587475/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/2587475/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/2587475/file-modification",
+    "requests": "https://zenodo.org/api/records/2587475/requests"
+  },
+  "updated": "2020-01-24T19:24:56.038116+00:00",
+  "recid": "2587475",
+  "revision": 4,
+  "files": [
+    {
+      "id": "31c1dc73-9096-4bb4-8587-692403607132",
+      "key": "LadyGaga-2010.zip",
+      "size": 821752431,
+      "checksum": "md5:1ba66bc0aae745406839110ce92f7ccd",
+      "links": {
+        "self": "https://zenodo.org/api/records/2587475/files/LadyGaga-2010.zip/content"
+      }
+    },
+    {
+      "id": "591ac318-6f8c-4b5d-9a8c-a9227c9121fd",
+      "key": "Nepal_2015_earthquake.zip",
+      "size": 84161776,
+      "checksum": "md5:9347a039fc7b1389476c0a73015c23f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/2587475/files/Nepal_2015_earthquake.zip/content"
+      }
+    },
+    {
+      "id": "56f8456c-5374-4b87-97ea-fa38c45a4044",
+      "key": "15m.zip",
+      "size": 9631980,
+      "checksum": "md5:a63f87b98edc8a58103be7b9399f4c72",
+      "links": {
+        "self": "https://zenodo.org/api/records/2587475/files/15m.zip/content"
+      }
+    },
+    {
+      "id": "0b1f22f2-ff8e-47a7-8679-65ab9ac9f85f",
+      "key": "IPL2018.zip",
+      "size": 361887,
+      "checksum": "md5:7728176c19f93afae31df033810d4d07",
+      "links": {
+        "self": "https://zenodo.org/api/records/2587475/files/IPL2018.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "42807"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 486,
+    "unique_downloads": 265,
+    "views": 984,
+    "unique_views": 896,
+    "version_downloads": 486,
+    "version_unique_downloads": 265,
+    "version_unique_views": 895,
+    "version_views": 982
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 915908074,
+    "top_level_files": [
+      {
+        "name": "LadyGaga-2010.zip",
+        "size": 821752431
+      },
+      {
+        "name": "Nepal_2015_earthquake.zip",
+        "size": 84161776
+      },
+      {
+        "name": "15m.zip",
+        "size": 9631980
+      },
+      {
+        "name": "IPL2018.zip",
+        "size": 361887
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:37.332837"
+}

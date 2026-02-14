@@ -1,0 +1,435 @@
+{
+  "created": "2023-03-01T19:32:26.908213+00:00",
+  "modified": "2023-03-02T02:26:35.075697+00:00",
+  "id": 7689509,
+  "conceptrecid": "7689508",
+  "doi": "10.5281/zenodo.7689509",
+  "conceptdoi": "10.5281/zenodo.7689508",
+  "doi_url": "https://doi.org/10.5281/zenodo.7689509",
+  "metadata": {
+    "title": "Synthetic Nodules for Evaluation of 3D Deep Learning Segmentation Attribution",
+    "doi": "10.5281/zenodo.7689509",
+    "publication_date": "2023-03-01",
+    "description": "<p>Both the algorithm used to generate this dataset as well as the comprehensive evaluation metric for visual explanations are detailed in the paper &quot;Attribution of 3D Deep Learning Segmentation in Medical Imaging&quot;.</p>\n\n<p>This is a synthetic dataset developed to enable the comprehensive evaluation of visual explanation methods applied to deep learning segmentation predictions. The data provided here include 100 training and 100 testing volumes, binary segmentation labels for model training, and explanation segmentation labels for explanation evaluation.</p>\n\n<p>The intended workflow for this dataset is: 1) Train a deep learning segmentation model using the 100 training volumes and binary segmentation labels. 2) Use a method of visual explanation to explain the trained model&#39;s segmentation decisions on the 100 testing volumes. 3) Use the explanation labels to evaluate the generated explanations.</p>\n\n<p>&nbsp;</p>\n\n<p>The folders&nbsp;<em>imagesTr</em>&nbsp;and&nbsp;<em>imagesTs</em>&nbsp;contain the training and testing image volumes, respectively. A&nbsp;<em>dataset.json</em>&nbsp;file has also been generated for the images to enable training using the nnUNet pipeline.</p>\n\n<p>The folders <em>labelsTr</em> and <em>labelsTs</em> contain the training and testing binary segmentation labels. In both cases, 1 indicates foreground voxels (spiculated nodule) and 0 indicates background voxels.</p>\n\n<p>The folders <em>labelsTr_full</em> and <em>labelsTs_full</em> contain the training and testing explanation labels. In both cases, 1 indicates non-spiculated nodule, 2 indicates spiculation structure (discriminating background),&nbsp;3 indicates spiculated nodule body (segmentation foreground), and 0 indicates background.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Mullan, Sean",
+        "affiliation": "University of Iowa",
+        "orcid": "0000-0003-4832-4453"
+      },
+      {
+        "name": "Sonka, Milan",
+        "affiliation": "University of Iowa",
+        "orcid": "0000-0002-9613-9968"
+      }
+    ],
+    "keywords": [
+      "Explainable AI",
+      "Medical Imaging",
+      "Deep Learning",
+      "Segmentation",
+      "Attribution"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7689508"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Synthetic Nodules for Evaluation of 3D Deep Learning Segmentation Attribution",
+  "links": {
+    "self": "https://zenodo.org/api/records/7689509",
+    "self_html": "https://zenodo.org/records/7689509",
+    "preview_html": "https://zenodo.org/records/7689509?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7689509",
+    "self_doi": "https://doi.org/10.5281/zenodo.7689509",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7689509",
+    "reserve_doi": "https://zenodo.org/api/records/7689509/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7689508",
+    "parent_html": "https://zenodo.org/records/7689508",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7689508",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7689508",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7689509/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7689509/sequence/default",
+    "files": "https://zenodo.org/api/records/7689509/files",
+    "media_files": "https://zenodo.org/api/records/7689509/media-files",
+    "archive": "https://zenodo.org/api/records/7689509/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7689509/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7689509/versions/latest",
+    "latest_html": "https://zenodo.org/records/7689509/latest",
+    "versions": "https://zenodo.org/api/records/7689509/versions",
+    "draft": "https://zenodo.org/api/records/7689509/draft",
+    "access_links": "https://zenodo.org/api/records/7689509/access/links",
+    "access_grants": "https://zenodo.org/api/records/7689509/access/grants",
+    "access_users": "https://zenodo.org/api/records/7689509/access/users",
+    "access_request": "https://zenodo.org/api/records/7689509/access/request",
+    "access": "https://zenodo.org/api/records/7689509/access",
+    "communities": "https://zenodo.org/api/records/7689509/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7689509/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7689509/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7689509/file-modification",
+    "requests": "https://zenodo.org/api/records/7689509/requests"
+  },
+  "updated": "2023-03-02T02:26:35.075697+00:00",
+  "recid": "7689509",
+  "revision": 2,
+  "files": [
+    {
+      "id": "bf29c0af-22f6-4f3a-b58b-09ec999f1f6e",
+      "key": "imagesTr.zip",
+      "size": 771479949,
+      "checksum": "md5:d9ce740ad99e3e9e4d89713370260f0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/imagesTr.zip/content"
+      }
+    },
+    {
+      "id": "b0172a18-9c90-47c4-8818-ba39df62c0f5",
+      "key": "dataset.json",
+      "size": 16950,
+      "checksum": "md5:9da6f1eab276e46cf0b3e20506affc07",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/dataset.json/content"
+      }
+    },
+    {
+      "id": "931140c8-9e09-4704-b226-3361497181a2",
+      "key": "labelsTr_full.zip",
+      "size": 2925282,
+      "checksum": "md5:65bf03cfb19e55a2832d5504df3967ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/labelsTr_full.zip/content"
+      }
+    },
+    {
+      "id": "83c2c853-7e54-4bff-8296-5a5ae734e3fa",
+      "key": "README.txt",
+      "size": 1466,
+      "checksum": "md5:aaf8ae85d9c85a495ebaa2b8d0cc214a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/README.txt/content"
+      }
+    },
+    {
+      "id": "41a7273c-f37f-43b6-a2da-10aa41a055cc",
+      "key": "labelsTs_full.zip",
+      "size": 2919698,
+      "checksum": "md5:fd11fe4226e04d5c279480d28d2604b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/labelsTs_full.zip/content"
+      }
+    },
+    {
+      "id": "50889ba6-ab94-4331-81b4-402a319ec230",
+      "key": "labelsTr.zip",
+      "size": 1200222,
+      "checksum": "md5:8037d1a4f084160cfe082dbbc34e7e66",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/labelsTr.zip/content"
+      }
+    },
+    {
+      "id": "f2add434-5736-4055-bd1d-96611b7d8050",
+      "key": "labelsTs.zip",
+      "size": 1217666,
+      "checksum": "md5:625080e69dce0bdbefe4e117e831f8e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/labelsTs.zip/content"
+      }
+    },
+    {
+      "id": "d1fecc04-80ec-4191-b5bd-50c27ea55e31",
+      "key": "imagesTs.zip",
+      "size": 771579083,
+      "checksum": "md5:0a30905fd136536eced01543c63e6c22",
+      "links": {
+        "self": "https://zenodo.org/api/records/7689509/files/imagesTs.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "506562"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 402,
+    "unique_downloads": 243,
+    "views": 233,
+    "unique_views": 225,
+    "version_downloads": 402,
+    "version_unique_downloads": 243,
+    "version_unique_views": 224,
+    "version_views": 232
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 6,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1551321900,
+    "top_level_files": [
+      {
+        "name": "imagesTr.zip",
+        "size": 771479949
+      },
+      {
+        "name": "dataset.json",
+        "size": 16950
+      },
+      {
+        "name": "labelsTr_full.zip",
+        "size": 2925282
+      },
+      {
+        "name": "README.txt",
+        "size": 1466
+      },
+      {
+        "name": "labelsTs_full.zip",
+        "size": 2919698
+      },
+      {
+        "name": "labelsTr.zip",
+        "size": 1200222
+      },
+      {
+        "name": "labelsTs.zip",
+        "size": 1217666
+      },
+      {
+        "name": "imagesTs.zip",
+        "size": 771579083
+      }
+    ],
+    "zip_contents": {
+      "imagestr.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 771222459,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "imagestr/nodule_000_0000.nii.gz",
+          "imagestr/nodule_001_0000.nii.gz",
+          "imagestr/nodule_002_0000.nii.gz",
+          "imagestr/nodule_003_0000.nii.gz",
+          "imagestr/nodule_004_0000.nii.gz",
+          "imagestr/nodule_005_0000.nii.gz",
+          "imagestr/nodule_006_0000.nii.gz",
+          "imagestr/nodule_007_0000.nii.gz",
+          "imagestr/nodule_008_0000.nii.gz",
+          "imagestr/nodule_009_0000.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "labelstr_full.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3100518,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "labelstr_full/nodule_000.nii.gz",
+          "labelstr_full/nodule_001.nii.gz",
+          "labelstr_full/nodule_002.nii.gz",
+          "labelstr_full/nodule_003.nii.gz",
+          "labelstr_full/nodule_004.nii.gz",
+          "labelstr_full/nodule_005.nii.gz",
+          "labelstr_full/nodule_006.nii.gz",
+          "labelstr_full/nodule_007.nii.gz",
+          "labelstr_full/nodule_008.nii.gz",
+          "labelstr_full/nodule_009.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "labelsts_full.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 3097864,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "labelsts_full/nodule_100.nii.gz",
+          "labelsts_full/nodule_101.nii.gz",
+          "labelsts_full/nodule_102.nii.gz",
+          "labelsts_full/nodule_103.nii.gz",
+          "labelsts_full/nodule_104.nii.gz",
+          "labelsts_full/nodule_105.nii.gz",
+          "labelsts_full/nodule_106.nii.gz",
+          "labelsts_full/nodule_107.nii.gz",
+          "labelsts_full/nodule_108.nii.gz",
+          "labelsts_full/nodule_109.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "labelstr.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1357443,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "labelstr/nodule_000.nii.gz",
+          "labelstr/nodule_001.nii.gz",
+          "labelstr/nodule_002.nii.gz",
+          "labelstr/nodule_003.nii.gz",
+          "labelstr/nodule_004.nii.gz",
+          "labelstr/nodule_005.nii.gz",
+          "labelstr/nodule_006.nii.gz",
+          "labelstr/nodule_007.nii.gz",
+          "labelstr/nodule_008.nii.gz",
+          "labelstr/nodule_009.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "labelsts.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1375176,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "labelsts/nodule_100.nii.gz",
+          "labelsts/nodule_101.nii.gz",
+          "labelsts/nodule_102.nii.gz",
+          "labelsts/nodule_103.nii.gz",
+          "labelsts/nodule_104.nii.gz",
+          "labelsts/nodule_105.nii.gz",
+          "labelsts/nodule_106.nii.gz",
+          "labelsts/nodule_107.nii.gz",
+          "labelsts/nodule_108.nii.gz",
+          "labelsts/nodule_109.nii.gz"
+        ],
+        "sample_genomics_files": []
+      },
+      "imagests.zip": {
+        "total_files": 100,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 771321553,
+        "file_types": {
+          ".nii.gz": 100
+        },
+        "imaging_file_count": 100,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "imagests/nodule_100_0000.nii.gz",
+          "imagests/nodule_101_0000.nii.gz",
+          "imagests/nodule_102_0000.nii.gz",
+          "imagests/nodule_103_0000.nii.gz",
+          "imagests/nodule_104_0000.nii.gz",
+          "imagests/nodule_105_0000.nii.gz",
+          "imagests/nodule_106_0000.nii.gz",
+          "imagests/nodule_107_0000.nii.gz",
+          "imagests/nodule_108_0000.nii.gz",
+          "imagests/nodule_109_0000.nii.gz"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "imagestr/nodule_000_0000.nii.gz",
+      "imagestr/nodule_001_0000.nii.gz",
+      "imagestr/nodule_002_0000.nii.gz",
+      "imagestr/nodule_003_0000.nii.gz",
+      "imagestr/nodule_004_0000.nii.gz",
+      "imagestr/nodule_005_0000.nii.gz",
+      "imagestr/nodule_006_0000.nii.gz",
+      "imagestr/nodule_007_0000.nii.gz",
+      "imagestr/nodule_008_0000.nii.gz",
+      "imagestr/nodule_009_0000.nii.gz",
+      "labelstr_full/nodule_000.nii.gz",
+      "labelstr_full/nodule_001.nii.gz",
+      "labelstr_full/nodule_002.nii.gz",
+      "labelstr_full/nodule_003.nii.gz",
+      "labelstr_full/nodule_004.nii.gz",
+      "labelstr_full/nodule_005.nii.gz",
+      "labelstr_full/nodule_006.nii.gz",
+      "labelstr_full/nodule_007.nii.gz",
+      "labelstr_full/nodule_008.nii.gz",
+      "labelstr_full/nodule_009.nii.gz",
+      "labelsts_full/nodule_100.nii.gz",
+      "labelsts_full/nodule_101.nii.gz",
+      "labelsts_full/nodule_102.nii.gz",
+      "labelsts_full/nodule_103.nii.gz",
+      "labelsts_full/nodule_104.nii.gz",
+      "labelsts_full/nodule_105.nii.gz",
+      "labelsts_full/nodule_106.nii.gz",
+      "labelsts_full/nodule_107.nii.gz",
+      "labelsts_full/nodule_108.nii.gz",
+      "labelsts_full/nodule_109.nii.gz",
+      "labelstr/nodule_000.nii.gz",
+      "labelstr/nodule_001.nii.gz",
+      "labelstr/nodule_002.nii.gz",
+      "labelstr/nodule_003.nii.gz",
+      "labelstr/nodule_004.nii.gz",
+      "labelstr/nodule_005.nii.gz",
+      "labelstr/nodule_006.nii.gz",
+      "labelstr/nodule_007.nii.gz",
+      "labelstr/nodule_008.nii.gz",
+      "labelstr/nodule_009.nii.gz",
+      "labelsts/nodule_100.nii.gz",
+      "labelsts/nodule_101.nii.gz",
+      "labelsts/nodule_102.nii.gz",
+      "labelsts/nodule_103.nii.gz",
+      "labelsts/nodule_104.nii.gz",
+      "labelsts/nodule_105.nii.gz",
+      "labelsts/nodule_106.nii.gz",
+      "labelsts/nodule_107.nii.gz",
+      "labelsts/nodule_108.nii.gz",
+      "labelsts/nodule_109.nii.gz",
+      "imagests/nodule_100_0000.nii.gz",
+      "imagests/nodule_101_0000.nii.gz",
+      "imagests/nodule_102_0000.nii.gz",
+      "imagests/nodule_103_0000.nii.gz",
+      "imagests/nodule_104_0000.nii.gz",
+      "imagests/nodule_105_0000.nii.gz",
+      "imagests/nodule_106_0000.nii.gz",
+      "imagests/nodule_107_0000.nii.gz",
+      "imagests/nodule_108_0000.nii.gz",
+      "imagests/nodule_109_0000.nii.gz"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:11.847019"
+}

@@ -1,0 +1,169 @@
+{
+  "created": "2022-01-23T04:07:38.807949+00:00",
+  "modified": "2022-01-23T13:48:58.191130+00:00",
+  "id": 5893854,
+  "conceptrecid": "5514936",
+  "doi": "10.5281/zenodo.5893854",
+  "conceptdoi": "10.5281/zenodo.5514936",
+  "doi_url": "https://doi.org/10.5281/zenodo.5893854",
+  "metadata": {
+    "title": "Region-based Annotation Data of Fire Images for Intelligent Surveillance System",
+    "doi": "10.5281/zenodo.5893854",
+    "publication_date": "2022-01-23",
+    "description": "<p>This data presents&nbsp;fire segmentation&nbsp;annotation&nbsp;data on 12&nbsp;commonly used&nbsp;and&nbsp;publicly available&nbsp;&ldquo;VisiFire&nbsp;Dataset&rdquo;&nbsp;videos&nbsp;from&nbsp;<a href=\"http://signal.ee.bilkent.edu.tr/VisiFire/\">http://signal.ee.bilkent.edu.tr/VisiFire/</a>.&nbsp;This annotations dataset was obtained by per-frame, manual hand annotation over the fire region with 2,684&nbsp;total&nbsp;annotated frames.&nbsp;Since this&nbsp;annotation provides per-frame&nbsp;segmentation data,&nbsp;it offers a new&nbsp;and&nbsp;unique fire motion feature to the existing video, unlike other fire segmentation data that are collected from different still&nbsp;images.&nbsp;The&nbsp;annotations&nbsp;dataset&nbsp;also&nbsp;provides&nbsp;ground truth for segmentation task&nbsp;on videos.&nbsp;With segmentation task, it&nbsp;offers&nbsp;better insight on how well a machine learning model understood, not only detecting whether a fire is present, but also&nbsp;its&nbsp;exact location by calculating metrics such as Intersection over Union (IoU) with this annotations data.&nbsp;This&nbsp;annotations&nbsp;data&nbsp;is&nbsp;a&nbsp;tremendously useful&nbsp;addition&nbsp;to&nbsp;train, develop,&nbsp;and&nbsp;create&nbsp;a&nbsp;much better&nbsp;smart surveillance system&nbsp;for early detection&nbsp;in&nbsp;high-risk&nbsp;fire hotspots&nbsp;area.&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wahyono",
+        "affiliation": "Universitas Gadjah Mada"
+      },
+      {
+        "name": "Andi Dharmawan",
+        "affiliation": "Universitas Gadjah Mada"
+      },
+      {
+        "name": "Agus Harjoko",
+        "affiliation": "Universitas Gadjah Mada"
+      },
+      {
+        "name": "Chrystian",
+        "affiliation": "Universitas Gadjah Mada"
+      },
+      {
+        "name": "Faisal Dharma Adhinata",
+        "affiliation": "Institut Teknologi Telkom Purwokerto"
+      }
+    ],
+    "keywords": [
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Intelligent Surveillance System",
+      "Segmentation",
+      "Annotation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Chrysophyt/Region-based-Annotation-Data-of-Fire-Images/tree/v1.1",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "version": "v1.1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "other-open"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5514936"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Region-based Annotation Data of Fire Images for Intelligent Surveillance System",
+  "links": {
+    "self": "https://zenodo.org/api/records/5893854",
+    "self_html": "https://zenodo.org/records/5893854",
+    "preview_html": "https://zenodo.org/records/5893854?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5893854",
+    "self_doi": "https://doi.org/10.5281/zenodo.5893854",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5893854",
+    "reserve_doi": "https://zenodo.org/api/records/5893854/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5514936",
+    "parent_html": "https://zenodo.org/records/5514936",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5514936",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5514936",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5893854/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5893854/sequence/default",
+    "files": "https://zenodo.org/api/records/5893854/files",
+    "media_files": "https://zenodo.org/api/records/5893854/media-files",
+    "archive": "https://zenodo.org/api/records/5893854/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5893854/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5893854/versions/latest",
+    "latest_html": "https://zenodo.org/records/5893854/latest",
+    "versions": "https://zenodo.org/api/records/5893854/versions",
+    "draft": "https://zenodo.org/api/records/5893854/draft",
+    "access_links": "https://zenodo.org/api/records/5893854/access/links",
+    "access_grants": "https://zenodo.org/api/records/5893854/access/grants",
+    "access_users": "https://zenodo.org/api/records/5893854/access/users",
+    "access_request": "https://zenodo.org/api/records/5893854/access/request",
+    "access": "https://zenodo.org/api/records/5893854/access",
+    "communities": "https://zenodo.org/api/records/5893854/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5893854/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5893854/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5893854/file-modification",
+    "requests": "https://zenodo.org/api/records/5893854/requests"
+  },
+  "updated": "2022-01-23T13:48:58.191130+00:00",
+  "recid": "5893854",
+  "revision": 4,
+  "files": [
+    {
+      "id": "b015d26a-cfda-4534-af02-841ace373e84",
+      "key": "Chrysophyt/Region-based-Annotation-Data-of-Fire-Images-v1.1.zip",
+      "size": 17321773,
+      "checksum": "md5:248f5ecdc31e46991df039a6200e688f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5893854/files/Chrysophyt/Region-based-Annotation-Data-of-Fire-Images-v1.1.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "254056"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 437,
+    "unique_downloads": 399,
+    "views": 2395,
+    "unique_views": 2157,
+    "version_downloads": 376,
+    "version_unique_downloads": 340,
+    "version_unique_views": 1833,
+    "version_views": 2043
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 17321773,
+    "top_level_files": [
+      {
+        "name": "Chrysophyt/Region-based-Annotation-Data-of-Fire-Images-v1.1.zip",
+        "size": 17321773
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [
+    "https://github.com/Chrysophyt/Region-based-Annotation-Data-of-Fire-Images/tree/v1.1"
+  ],
+  "_weblinks": [
+    {
+      "url": "http://signal.ee.bilkent.edu.tr/VisiFire/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:22.702568"
+}

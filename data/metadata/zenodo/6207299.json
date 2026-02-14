@@ -1,0 +1,190 @@
+{
+  "created": "2022-02-21T17:06:42.896523+00:00",
+  "modified": "2022-06-05T14:06:40.373445+00:00",
+  "id": 6207299,
+  "conceptrecid": "6207298",
+  "doi": "10.5061/dryad.xsj3tx9gx",
+  "doi_url": "https://doi.org/10.5061/dryad.xsj3tx9gx",
+  "metadata": {
+    "title": "Datasets for neuronal imaging, extracellular recordings and behavioral rig code",
+    "doi": "10.5061/dryad.xsj3tx9gx",
+    "publication_date": "2022-02-21",
+    "description": "<p>Rod and cone photoreceptors degenerate in retinitis pigmentosa (RP). While downstream neurons survive, they undergo physiological changes, including accelerated spontaneous firing in retinal ganglion cells (RGCs). Retinoic acid (RA) is the molecular trigger of RGC hyperactivity, but whether this interferes with visual perception is unknown. Here we show that inhibiting RA synthesis with disulfiram, a deterrent of human alcohol abuse, improves behavioral image detection in vision-impaired mice. <i>In vivo</i> Ca<sup>2+</sup> imaging shows that disulfiram sharpens orientation-tuning of visual cortical neurons and strengthens fidelity of responses to natural scenes. An RA receptor inhibitor also reduces RGC hyperactivity, sharpens cortical representations, and improves image detection. These findings suggest that photoreceptor degeneration is not the only cause of vision loss in RP. RA-induced corruption of retinal information processing also degrades vision, pointing to RA synthesis and signaling inhibitors as potential therapeutic tools for improving sight in RP and other retinal degenerative disorders.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Telias, Michael",
+        "affiliation": "University of Rochester",
+        "orcid": "0000-0002-7632-6942"
+      },
+      {
+        "name": "Sit, Kevin",
+        "affiliation": "University of California, Santa Barbara*"
+      }
+    ],
+    "keywords": [
+      "Cellular neuroscience",
+      "Molecular neuroscience",
+      "Inner retina",
+      "retinal degeneration",
+      "Aceria nervisequa faginea (Nalepa 1920)",
+      "in vivo calcium imaging"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.6143291",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6207298"
+          }
+        }
+      ]
+    },
+    "notes": "<p>Please note that all the '.mat' files are to be used conjunctively with the provided matlab scripts. All data in the matfiles are stored in proprietary data formats that requires the accompanying matlab scripts to read them.</p>"
+  },
+  "title": "Datasets for neuronal imaging, extracellular recordings and behavioral rig code",
+  "links": {
+    "self": "https://zenodo.org/api/records/6207299",
+    "self_html": "https://zenodo.org/records/6207299",
+    "preview_html": "https://zenodo.org/records/6207299?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.xsj3tx9gx",
+    "self_doi": "https://doi.org/10.5061/dryad.xsj3tx9gx",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.xsj3tx9gx",
+    "reserve_doi": "https://zenodo.org/api/records/6207299/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6207298",
+    "parent_html": "https://zenodo.org/records/6207298",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6207299/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6207299/sequence/default",
+    "files": "https://zenodo.org/api/records/6207299/files",
+    "media_files": "https://zenodo.org/api/records/6207299/media-files",
+    "archive": "https://zenodo.org/api/records/6207299/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6207299/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6207299/versions/latest",
+    "latest_html": "https://zenodo.org/records/6207299/latest",
+    "versions": "https://zenodo.org/api/records/6207299/versions",
+    "draft": "https://zenodo.org/api/records/6207299/draft",
+    "access_links": "https://zenodo.org/api/records/6207299/access/links",
+    "access_grants": "https://zenodo.org/api/records/6207299/access/grants",
+    "access_users": "https://zenodo.org/api/records/6207299/access/users",
+    "access_request": "https://zenodo.org/api/records/6207299/access/request",
+    "access": "https://zenodo.org/api/records/6207299/access",
+    "communities": "https://zenodo.org/api/records/6207299/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6207299/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6207299/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6207299/file-modification",
+    "requests": "https://zenodo.org/api/records/6207299/requests"
+  },
+  "updated": "2022-06-05T14:06:40.373445+00:00",
+  "recid": "6207299",
+  "revision": 5,
+  "files": [
+    {
+      "id": "4cdd824f-76d2-490b-a27b-d8bde6347dd6",
+      "key": "README.txt",
+      "size": 1451,
+      "checksum": "md5:df61231e7d9d78bc4bad78339f8ce485",
+      "links": {
+        "self": "https://zenodo.org/api/records/6207299/files/README.txt/content"
+      }
+    },
+    {
+      "id": "e27abbd4-ec92-4cf5-bb73-07569cbafcbd",
+      "key": "FigureDatasets.zip",
+      "size": 1750872083,
+      "checksum": "md5:a0e0e4d8fd39db705fb07964e62feee9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6207299/files/FigureDatasets.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 25,
+    "unique_downloads": 22,
+    "views": 97,
+    "unique_views": 97,
+    "version_downloads": 25,
+    "version_unique_downloads": 22,
+    "version_unique_views": 97,
+    "version_views": 97
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1750872083,
+    "top_level_files": [
+      {
+        "name": "README.txt",
+        "size": 1451
+      },
+      {
+        "name": "FigureDatasets.zip",
+        "size": 1750872083
+      }
+    ],
+    "zip_contents": {
+      "figuredatasets.zip": {
+        "total_files": 8,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 1750889426,
+        "file_types": {
+          ".mat": 4
+        },
+        "imaging_file_count": 4,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "dataset_figure6.mat",
+          "dataset_figure7.mat",
+          "dataset_figure8a.mat",
+          "dataset_figure8b.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "dataset_figure6.mat",
+      "dataset_figure7.mat",
+      "dataset_figure8a.mat",
+      "dataset_figure8b.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:05.257299"
+}

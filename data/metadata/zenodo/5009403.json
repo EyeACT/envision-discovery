@@ -1,0 +1,185 @@
+{
+  "created": "2021-06-22T01:18:52.332587+00:00",
+  "modified": "2022-05-27T23:51:08.083924+00:00",
+  "id": 5009403,
+  "conceptrecid": "5009402",
+  "doi": "10.5061/dryad.4ch10",
+  "doi_url": "https://doi.org/10.5061/dryad.4ch10",
+  "metadata": {
+    "title": "Data from: Using matrix and tensor factorizations for the single-trial analysis of population spike trains",
+    "doi": "10.5061/dryad.4ch10",
+    "publication_date": "2017-10-13",
+    "description": "Advances in neuronal recording techniques are leading to ever larger numbers of simultaneously monitored neurons. This poses the important analytical challenge of how to capture compactly all sensory information that neural population codes carry in their spatial dimension (differences in stimulus tuning across neurons at different locations), in their temporal dimension (temporal neural response variations), or in their combination (temporally coordinated neural population firing). Here we investigate the utility of tensor factorizations of population spike trains along space and time. These factorizations decompose a dataset of single-trial population spike trains into spatial firing patterns (combinations of neurons firing together), temporal firing patterns (temporal activation of these groups of neurons) and trial-dependent activation coefficients (strength of recruitment of such neural patterns on each trial). We validated various factorization methods on simulated data and on populations of ganglion cells simultaneously recorded in the salamander retina. We found that single-trial tensor space-by-time decompositions provided low-dimensional data-robust representations of spike trains that capture efficiently both their spatial and temporal information about sensory stimuli. Tensor decompositions with orthogonality constraints were the most efficient in extracting sensory information, whereas non-negative tensor decompositions worked well even on non-independent and overlapping spike patterns, and retrieved informative firing patterns expressed by the same population in response to novel stimuli. Our method showed that populations of retinal ganglion cells carried information in their spike timing on the ten-milliseconds-scale about spatial details of natural images. This information could not be recovered from the spike counts of these cells. First-spike latencies carried the majority of information provided by the whole spike train about fine-scale image features, and supplied almost as much information about coarse natural image features as firing rates. Together, these results highlight the importance of spike timing, and particularly of first-spike latencies, in retinal coding.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Onken, Arno",
+        "affiliation": "Italian Institute of Technology"
+      },
+      {
+        "name": "Liu, Jian K.",
+        "affiliation": "Universit\u00e4tsmedizin G\u00f6ttingen"
+      },
+      {
+        "name": "Karunasekara, P. P. Chamanthi R.",
+        "affiliation": "University of Trento"
+      },
+      {
+        "name": "Delis, Ioannis",
+        "affiliation": "Columbia University"
+      },
+      {
+        "name": "Gollisch, Tim",
+        "affiliation": "Universit\u00e4tsmedizin G\u00f6ttingen"
+      },
+      {
+        "name": "Panzeri, Stefano",
+        "affiliation": "Italian Institute of Technology"
+      }
+    ],
+    "keywords": [
+      "factor analysis",
+      "independent component analysis",
+      "retinal ganglion cells",
+      "Ambystoma mexicanum",
+      "tensor factorization",
+      "natural stimuli",
+      "non-negative matrix factorization",
+      "principal component analysis",
+      "population coding"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pcbi.1005189",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5009402"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Retinal Data and Stimuli<div class=\"o-metadata__file-description\">This dataset contains the visual stimuli that were used for the retina recordings and also the spike trains and the\nreceptive fields of the recorded retinal ganglion cells.</div><div class=\"o-metadata__file-name\">RetinaDataFactorizationsOfPopulationSpikeTrains.zip<br></div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Using matrix and tensor factorizations for the single-trial analysis of population spike trains",
+  "links": {
+    "self": "https://zenodo.org/api/records/5009403",
+    "self_html": "https://zenodo.org/records/5009403",
+    "preview_html": "https://zenodo.org/records/5009403?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.4ch10",
+    "self_doi": "https://doi.org/10.5061/dryad.4ch10",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.4ch10",
+    "reserve_doi": "https://zenodo.org/api/records/5009403/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5009402",
+    "parent_html": "https://zenodo.org/records/5009402",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5009403/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5009403/sequence/default",
+    "files": "https://zenodo.org/api/records/5009403/files",
+    "media_files": "https://zenodo.org/api/records/5009403/media-files",
+    "archive": "https://zenodo.org/api/records/5009403/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5009403/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5009403/versions/latest",
+    "latest_html": "https://zenodo.org/records/5009403/latest",
+    "versions": "https://zenodo.org/api/records/5009403/versions",
+    "draft": "https://zenodo.org/api/records/5009403/draft",
+    "access_links": "https://zenodo.org/api/records/5009403/access/links",
+    "access_grants": "https://zenodo.org/api/records/5009403/access/grants",
+    "access_users": "https://zenodo.org/api/records/5009403/access/users",
+    "access_request": "https://zenodo.org/api/records/5009403/access/request",
+    "access": "https://zenodo.org/api/records/5009403/access",
+    "communities": "https://zenodo.org/api/records/5009403/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5009403/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5009403/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5009403/file-modification",
+    "requests": "https://zenodo.org/api/records/5009403/requests"
+  },
+  "updated": "2022-05-27T23:51:08.083924+00:00",
+  "recid": "5009403",
+  "revision": 3,
+  "files": [
+    {
+      "id": "d64abd99-5b25-4ea2-a10f-f695d8a79718",
+      "key": "RetinaDataFactorizationsOfPopulationSpikeTrains.zip",
+      "size": 273093066,
+      "checksum": "md5:82b8c8fe892830a98b53fa1a58a9270f",
+      "links": {
+        "self": "https://zenodo.org/api/records/5009403/files/RetinaDataFactorizationsOfPopulationSpikeTrains.zip/content"
+      }
+    },
+    {
+      "id": "0525bc48-c750-425e-96b9-26be19ffc6c7",
+      "key": "README_for_RetinaDataFactorizationsOfPopulationSpikeTrains.txt",
+      "size": 2614,
+      "checksum": "md5:76e9c8adba55052c0aa234a8f9f79288",
+      "links": {
+        "self": "https://zenodo.org/api/records/5009403/files/README_for_RetinaDataFactorizationsOfPopulationSpikeTrains.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 42,
+    "unique_downloads": 42,
+    "views": 130,
+    "unique_views": 129,
+    "version_downloads": 42,
+    "version_unique_downloads": 42,
+    "version_unique_views": 129,
+    "version_views": 130
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 273093066,
+    "top_level_files": [
+      {
+        "name": "RetinaDataFactorizationsOfPopulationSpikeTrains.zip",
+        "size": 273093066
+      },
+      {
+        "name": "README_for_RetinaDataFactorizationsOfPopulationSpikeTrains.txt",
+        "size": 2614
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:05.516647"
+}

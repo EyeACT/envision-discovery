@@ -1,0 +1,203 @@
+{
+  "created": "2022-07-18T11:05:05.910281+00:00",
+  "modified": "2022-07-19T01:49:54.829634+00:00",
+  "id": 6855602,
+  "conceptrecid": "6855601",
+  "doi": "10.5061/dryad.zpc866tb8",
+  "doi_url": "https://doi.org/10.5061/dryad.zpc866tb8",
+  "metadata": {
+    "title": "Accelerating ice loss from peripheral glaciers in North Greenland",
+    "doi": "10.5061/dryad.zpc866tb8",
+    "publication_date": "2022-07-18",
+    "description": "<p class=\"MsoNormal\"><span>In recent decades, Greenland's peripheral glaciers have experienced large-scale mass loss</span><span>, resulting in a substantia</span><span>l contribution to sea-level rise. Only 4% of Greenland's ice cover are small peripheral glaciers that are distinct from the ice sheet proper. Despite comprising this relatively small area, these small peripheral glaciers are responsible for 11% of the ice loss associated with Greenland's recent sea-level rise contribution. Using the satellite laser platforms ICESat and ICESat-2, we estimate that ice loss from these Greenland glaciers increased from 27\u00b16 Gt/yr (2003\u20132009) to 42\u00b16 Gt/yr (2018\u20132021).</span></p>\n<p class=\"MsoNormal\"><span>Here, we provide the laser altimetry assessment of </span><span>changing</span> <span>ice loss rates from Greenland peripheral glaciers that bridges both the ICESat and ICESat-2 periods of Feb 2003 \u2013 Dec 2021. We provide peripheral glaciers elevation changes including correction for firn compaction, elastic uplift rates from present-day mass changes, and long-term past ice changes (Glacial Isostatic Adjustment- GIA).</span></p>\n<p class=\"MsoNormal\"><span>We provide:</span></p>\n<p class=\"MsoNormal\"><span>(1) Mean elevation change rates of the Greenland peripheral glaciers during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021 obtained from ICESat and ICESat-2 data. The grid resolution is 500x500 meters.</span></p>\n<p class=\"MsoNormal\"><span>(2) Mean elastic uplift rates of the bedrock (in mm/yr) due to ice loss during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021.</span></p>\n<p class=\"MsoNormal\"><span>(3) Mean firn compaction rates in m/yr during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021.</span></p>\n<p class=\"MsoNormal\"><span>(4) Glacial Isostatic Adjustment- GIA rates in mm/yr from the GNET-GIA empirical model of Khan et al. (2016).</span></p>\n<p class=\"MsoNormal\"><span>(5) Time series of mean surface air temperature in degrees Celcius during May-September in north, northwest, southeast, southwest, and northwest Greenland from RACMO2.3p2.</span></p>\n<p class=\"MsoNormal\"><span>\u00a0</span></p>\n<p class=\"MsoNormal\"><span>\u00a0</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Khan, Shfaqat Abbas",
+        "affiliation": "Technical University of Denmark",
+        "orcid": "0000-0002-2689-8563"
+      },
+      {
+        "name": "Colgan, William",
+        "affiliation": "Geological Survey of Denmark and Greenland",
+        "orcid": "0000-0001-6334-1660"
+      },
+      {
+        "name": "Neumann, Thomas A.",
+        "affiliation": "Goddard Space Flight Center"
+      },
+      {
+        "name": "van den Broeke, Michiel R.",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0003-4662-7565"
+      },
+      {
+        "name": "Brunt, Kelly M.",
+        "affiliation": "Goddard Space Flight Center",
+        "orcid": "0000-0002-6462-6112"
+      },
+      {
+        "name": "No\u00ebl, Brice",
+        "affiliation": "Utrecht University",
+        "orcid": "0000-0002-7159-5369"
+      },
+      {
+        "name": "Bamber, Jonathan L.",
+        "affiliation": "University of Bristol",
+        "orcid": "0000-0002-2280-2819"
+      },
+      {
+        "name": "Hassan, Javed",
+        "affiliation": "Technical University of Denmark"
+      },
+      {
+        "name": "Bj\u00f8rk, Anders A.",
+        "affiliation": "University of Copenhagen"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1029/2022GL098915",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6855601"
+          }
+        }
+      ]
+    },
+    "notes": "<p><span>File List: </span><span>GRL_Khan_2022GL098915.zip</span></p>\n<p><span>This compressed file contains five directories:</span></p>\n<p><span>Directory 1 \"dhdt\": Description: Mean elevation change rates of the Greenland peripheral glaciers during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021</span></p>\n<p><span>Directory 2 \"elastic\" Description: Mean elastic uplift rates of the bedrock (in mm/yr) due to ice loss during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021.</span></p>\n<p><span>Directory 3 \"firn\" Description: Mean firn compaction rates in m/yr during, Feb 2003 - Oct 2009, Oct 2008 - Apr 2019, and Oct 2018 \u2013 Dec 2021.</span></p>\n<p><span>Directory 4 \"GIA\" Description: Glacial Isostatic Adjustment- GIA rates in mm/yr from the GNET-GIA empirical model of Khan et al. (2016).</span></p>\n<p><span>Directory 5 \"temp\" Description: Time series of mean surface air temperature in degrees Celcius during May-September in north, northwest, southeast, southwest, and northwest Greenland from RACMO2.3p2.</span></p><p>Funding provided by: Danmarks Frie Forskningsfond<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/501100004836<br>Award Number: 1026-00085B</p><p>Funding provided by: Villum Fonden<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100008398<br>Award Number: Project No. 40718</p>"
+  },
+  "title": "Accelerating ice loss from peripheral glaciers in North Greenland",
+  "links": {
+    "self": "https://zenodo.org/api/records/6855602",
+    "self_html": "https://zenodo.org/records/6855602",
+    "preview_html": "https://zenodo.org/records/6855602?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.zpc866tb8",
+    "self_doi": "https://doi.org/10.5061/dryad.zpc866tb8",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.zpc866tb8",
+    "reserve_doi": "https://zenodo.org/api/records/6855602/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6855601",
+    "parent_html": "https://zenodo.org/records/6855601",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6855602/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6855602/sequence/default",
+    "files": "https://zenodo.org/api/records/6855602/files",
+    "media_files": "https://zenodo.org/api/records/6855602/media-files",
+    "archive": "https://zenodo.org/api/records/6855602/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6855602/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6855602/versions/latest",
+    "latest_html": "https://zenodo.org/records/6855602/latest",
+    "versions": "https://zenodo.org/api/records/6855602/versions",
+    "draft": "https://zenodo.org/api/records/6855602/draft",
+    "access_links": "https://zenodo.org/api/records/6855602/access/links",
+    "access_grants": "https://zenodo.org/api/records/6855602/access/grants",
+    "access_users": "https://zenodo.org/api/records/6855602/access/users",
+    "access_request": "https://zenodo.org/api/records/6855602/access/request",
+    "access": "https://zenodo.org/api/records/6855602/access",
+    "communities": "https://zenodo.org/api/records/6855602/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6855602/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6855602/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6855602/file-modification",
+    "requests": "https://zenodo.org/api/records/6855602/requests"
+  },
+  "updated": "2022-07-19T01:49:54.829634+00:00",
+  "recid": "6855602",
+  "revision": 2,
+  "files": [
+    {
+      "id": "c63589ba-d0f5-43c4-90ce-be61c4e61817",
+      "key": "GRL_Khan_2022GL098915.zip",
+      "size": 21268171,
+      "checksum": "md5:b8e84addc6c695d1c6e8ad0a251939a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6855602/files/GRL_Khan_2022GL098915.zip/content"
+      }
+    },
+    {
+      "id": "b6e9a2df-5e90-45f6-9f6e-493c8ccb3fff",
+      "key": "README.txt",
+      "size": 5431,
+      "checksum": "md5:e18fa1db80dc99ed133ed568df53da3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6855602/files/README.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 60,
+    "unique_downloads": 59,
+    "views": 280,
+    "unique_views": 280,
+    "version_downloads": 60,
+    "version_unique_downloads": 59,
+    "version_unique_views": 280,
+    "version_views": 280
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 21268171,
+    "top_level_files": [
+      {
+        "name": "GRL_Khan_2022GL098915.zip",
+        "size": 21268171
+      },
+      {
+        "name": "README.txt",
+        "size": 5431
+      }
+    ],
+    "zip_contents": {
+      "grl_khan_2022gl098915.zip": {
+        "total_files": 12,
+        "total_directories": 5,
+        "total_uncompressed_bytes": 80781677,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:07.354456"
+}

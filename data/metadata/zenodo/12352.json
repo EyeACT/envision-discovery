@@ -1,0 +1,180 @@
+{
+  "created": "2014-10-23T08:13:50+00:00",
+  "modified": "2020-01-24T19:23:31.073722+00:00",
+  "id": 12352,
+  "conceptrecid": "606103",
+  "doi": "10.5281/zenodo.12352",
+  "conceptdoi": "",
+  "doi_url": "https://doi.org/10.5281/zenodo.12352",
+  "metadata": {
+    "title": "Mouse olfactory bulb intrinsic signal imaging for NNMF decomposition",
+    "doi": "10.5281/zenodo.12352",
+    "publication_date": "2014-10-20",
+    "description": "<p>This dataset supplements our recent paper about automatic image segmentation using Non-negative Matrix Factorisation (NMF):</p>\n\n<p>Jan Soelter, Jan Schumacher, Hartwig Spors, Michael Schmuker (2014). Automatic segmentation of odor maps in the mouse olfactory bulb using regularized non-negative matrix factorization. <em>NeuroImage</em> 98:279-288.</p>\n\n<p>http://dx.doi.org/10.1016/j.neuroimage.2014.04.041</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Soelter, Jan",
+        "affiliation": "Freie Universit\u00e4t Berlin"
+      },
+      {
+        "name": "Schumacher, Jan",
+        "affiliation": "MPI for Biophysics, Frankfurt/Main"
+      },
+      {
+        "name": "Spors, Hartwig",
+        "affiliation": "MPI for Biophysics, Frankfurt/Main"
+      },
+      {
+        "name": "Michael Schmuker",
+        "affiliation": "Freie Universit\u00e4t Berlin and Bernstein Center for Computational Neuroscience Berlin"
+      }
+    ],
+    "keywords": [
+      "Olfactory Bulb",
+      "Non-negative matrix factorisation",
+      "intrinsic signal imaging",
+      "image segmentation",
+      "decomposition methods"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.neuroimage.2014.04.041",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.12294",
+        "relation": "isSupplementTo",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Jan Soelter, Jan Schumacher, Hartwig Spors, Michael Schmuker (2014). Automatic segmentation of odor maps in the mouse olfactory bulb using regularized non-negative matrix factorization. NeuroImage  98:279-288. http://dx.doi.org/10.1016/j.neuroimage.2014.04.041 ."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "pages": "279-288",
+      "title": "Neuroimage",
+      "volume": "98"
+    },
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "communities": [
+      {
+        "id": "odorspaces"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "606103"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Mouse olfactory bulb intrinsic signal imaging for NNMF decomposition",
+  "links": {
+    "self": "https://zenodo.org/api/records/12352",
+    "self_html": "https://zenodo.org/records/12352",
+    "preview_html": "https://zenodo.org/records/12352?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12352",
+    "self_doi": "https://doi.org/10.5281/zenodo.12352",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12352",
+    "reserve_doi": "https://zenodo.org/api/records/12352/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/606103",
+    "parent_html": "https://zenodo.org/records/606103",
+    "parent_doi": "https://doi.org/",
+    "parent_doi_html": "https://zenodo.org/doi/",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12352/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12352/sequence/default",
+    "files": "https://zenodo.org/api/records/12352/files",
+    "media_files": "https://zenodo.org/api/records/12352/media-files",
+    "archive": "https://zenodo.org/api/records/12352/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12352/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12352/versions/latest",
+    "latest_html": "https://zenodo.org/records/12352/latest",
+    "versions": "https://zenodo.org/api/records/12352/versions",
+    "draft": "https://zenodo.org/api/records/12352/draft",
+    "access_links": "https://zenodo.org/api/records/12352/access/links",
+    "access_grants": "https://zenodo.org/api/records/12352/access/grants",
+    "access_users": "https://zenodo.org/api/records/12352/access/users",
+    "access_request": "https://zenodo.org/api/records/12352/access/request",
+    "access": "https://zenodo.org/api/records/12352/access",
+    "communities": "https://zenodo.org/api/records/12352/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12352/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12352/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12352/file-modification",
+    "requests": "https://zenodo.org/api/records/12352/requests"
+  },
+  "updated": "2020-01-24T19:23:31.073722+00:00",
+  "recid": "12352",
+  "revision": 10,
+  "files": [
+    {
+      "id": "9630333c-bb20-407b-98d5-80271ca404e1",
+      "key": "Soelter_et_al_Neuroimage2014.tar.gz",
+      "size": 947074334,
+      "checksum": "md5:91d6fd7e664518f32593427e17d69b78",
+      "links": {
+        "self": "https://zenodo.org/api/records/12352/files/Soelter_et_al_Neuroimage2014.tar.gz/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "6563"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 68,
+    "unique_downloads": 68,
+    "views": 606,
+    "unique_views": 596,
+    "version_downloads": 68,
+    "version_unique_downloads": 68,
+    "version_unique_views": 596,
+    "version_views": 606
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 947074334,
+    "top_level_files": [
+      {
+        "name": "Soelter_et_al_Neuroimage2014.tar.gz",
+        "size": 947074334
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://dx.doi.org/10.1016/j.neuroimage.2014.04.041",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:04.990211"
+}

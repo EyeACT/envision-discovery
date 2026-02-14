@@ -1,0 +1,530 @@
+{
+  "created": "2025-08-05T08:58:18.740892+00:00",
+  "modified": "2025-08-05T10:10:18.429733+00:00",
+  "id": 15961728,
+  "conceptrecid": "15961727",
+  "doi": "10.5281/zenodo.15961728",
+  "conceptdoi": "10.5281/zenodo.15961727",
+  "doi_url": "https://doi.org/10.5281/zenodo.15961728",
+  "metadata": {
+    "title": "Fast Calorimeter Simulation Challenge 2022 - Submissions Dataset 1 Photons",
+    "doi": "10.5281/zenodo.15961728",
+    "publication_date": "2025-06-01",
+    "description": "<div>\n<p>These are all the submitted samples to dataset 1 (photons) of the &ldquo;Fast Calorimeter Simulation Challenge 2022&rdquo;. They each consist of 121,000 calorimeter showers of photons with energies ranging from 256 MeV to 4.2 TeV.</p>\n<p>The training data (based on Geant4) can be found at&nbsp;<a href=\"https://doi.org/10.5281/zenodo.8099322\"> https://doi.org/10.5281/zenodo.8099322</a> the paper describing the results is available on <a href=\"https://arxiv.org/pdf/2410.21611\">arXiv:2410.21611</a>, and further details, in particular helper scripts to parse the data and calculate and visualize basic high-level physics features, are available at&nbsp;<a href=\"https://calochallenge.github.io/homepage/\">https://calochallenge.github.io/homepage/</a>.</p>\n<p>The subscripts in the file names corresponds to the individual submissions:&nbsp;</p>\n<table style=\"border-collapse: collapse; width: 100%; height: 196px;\"><colgroup><col style=\"width: 33.2703%;\"><col style=\"width: 33.2703%;\"><col style=\"width: 33.2703%;\"></colgroup>\n<tbody>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">ID number</td>\n<td style=\"height: 19.6px;\">Submission name</td>\n<td style=\"height: 19.6px;\">Original reference</td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_1</td>\n<td style=\"height: 19.6px;\">CaloDiffusion</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2308.03876\">arXiv:2308.03876</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_4</td>\n<td style=\"height: 19.6px;\">CaloINN</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2312.09290\">arXiv:2312.09290</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_7</td>\n<td style=\"height: 19.6px;\">Calo-VQ</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2405.06605\">arXiv:2405.06605</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_8</td>\n<td style=\"height: 19.6px;\">CaloScore</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2206.11898\">arXiv:2206.11898</a>, <a href=\"https://arxiv.org/abs/2308.03847\">arXiv:2308.03847</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_9</td>\n<td style=\"height: 19.6px;\">CaloScore distilled</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2206.11898\">arXiv:2206.11898</a>, <a href=\"https://arxiv.org/abs/2308.03847\">arXiv:2308.03847</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_10</td>\n<td style=\"height: 19.6px;\">CaloScore single-shot</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2206.11898\">arXiv:2206.11898</a>, <a href=\"https://arxiv.org/abs/2308.03847\">arXiv:2308.03847</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_11</td>\n<td style=\"height: 19.6px;\">CaloFlow teacher</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2210.14245\">arXiv:2210.14245</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_12</td>\n<td style=\"height: 19.6px;\">CaloFlow student</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2210.14245\">arXiv:2210.14245</a></td>\n</tr>\n<tr style=\"height: 19.6px;\">\n<td style=\"height: 19.6px;\">_16</td>\n<td style=\"height: 19.6px;\">CaloMan</td>\n<td style=\"height: 19.6px;\"><a href=\"https://arxiv.org/abs/2211.15380\">arXiv:2211.15380</a></td>\n</tr>\n<tr>\n<td>_17</td>\n<td>BoloGAN</td>\n<td><a href=\"https://cds.cern.ch/record/2746032\">ATL-SOFT-PUB-2020-006</a></td>\n</tr>\n<tr>\n<td>_25</td>\n<td>CaloShower2GAN</td>\n<td><a href=\"https://arxiv.org/abs/2309.06515\">arXiv:2309.06515</a></td>\n</tr>\n<tr>\n<td>_26</td>\n<td>CaloShower3GAN</td>\n<td><a href=\"https://arxiv.org/abs/2309.06515\">arXiv:2309.06515</a></td>\n</tr>\n<tr>\n<td>_27</td>\n<td>CaloVAE+INN</td>\n<td><a href=\"https://arxiv.org/abs/2312.09290\">arXiv:2312.09290</a></td>\n</tr>\n<tr>\n<td>_28</td>\n<td>CaloForest</td>\n<td><a href=\"https://arxiv.org/abs/2408.16046\">arXiv:2408.16046</a></td>\n</tr>\n<tr>\n<td>_29</td>\n<td>CaloGraph</td>\n<td><a href=\"https://arxiv.org/abs/2402.11575\">arxiv:2402.11575</a></td>\n</tr>\n</tbody>\n</table>\n<p>The samples here can be used to reproduce the results of <a href=\"https://arxiv.org/pdf/2410.21611\">arXiv:2410.21611</a> and as benchmarks for new models after the challenge concluded.&nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Faucci Giannelli, Michele",
+        "affiliation": "Chalmers University of Technology",
+        "orcid": "0000-0003-3731-820X"
+      },
+      {
+        "name": "Kasieczka, Gregor",
+        "affiliation": "Universit\u00e4t Hamburg",
+        "orcid": "0000-0003-3457-2755"
+      },
+      {
+        "name": "Krause, Claudius",
+        "affiliation": "Austrian Academy of Sciences",
+        "orcid": "0000-0003-0924-3036"
+      },
+      {
+        "name": "Nachman, Benjamin",
+        "affiliation": "SLAC National Accelerator Laboratory",
+        "orcid": "0000-0003-1024-0932"
+      },
+      {
+        "name": "Salamani, Dalila",
+        "affiliation": "University of Geneva",
+        "orcid": "0000-0002-8780-5885"
+      },
+      {
+        "name": "Shih, David",
+        "affiliation": "Rutgers, The State University of New Jersey",
+        "orcid": "0000-0003-3408-3871"
+      },
+      {
+        "name": "Zaborowska, Anna",
+        "affiliation": "European Organization for Nuclear Research",
+        "orcid": "0000-0001-6210-1921"
+      },
+      {
+        "name": "Amram, Oz",
+        "affiliation": "Fermi National Accelerator Laboratory",
+        "orcid": "0000-0002-3765-3123"
+      },
+      {
+        "name": "Caterini, Anthony",
+        "affiliation": "Layer 6 AI",
+        "orcid": "0000-0002-0758-9562"
+      },
+      {
+        "name": "Corchia, Federico Andrea Guillaume",
+        "affiliation": "Universit\u00e0 degli Studi di Bologna Dipartimento di Fisica e Astronomia 'Augusto Righi'",
+        "orcid": "0000-0002-1788-3204"
+      },
+      {
+        "name": "Cresswell, Jesse",
+        "affiliation": "Layer 6 AI",
+        "orcid": "0000-0002-9284-8804"
+      },
+      {
+        "name": "Dreyer, Etienne",
+        "affiliation": "Weizmann Institute of Science",
+        "orcid": "0000-0001-8955-9510"
+      },
+      {
+        "name": "Ernst, Florian",
+        "affiliation": "European Organization for Nuclear Research",
+        "orcid": "0009-0008-9363-6345"
+      },
+      {
+        "name": "Favaro, Luigi",
+        "affiliation": "Heidelberg University",
+        "orcid": "0000-0003-2421-7100"
+      },
+      {
+        "name": "Franchini, Matteo",
+        "affiliation": "Universita di Bologna",
+        "orcid": "0000-0002-4554-252X"
+      },
+      {
+        "name": "Gross, Eilam",
+        "affiliation": "Weizmann Institute of Science",
+        "orcid": "0000-0003-1244-9350"
+      },
+      {
+        "name": "Hsu, Shih-Chieh",
+        "affiliation": "University of Washington",
+        "orcid": "0000-0001-6214-8500"
+      },
+      {
+        "name": "Kim, Taewoo",
+        "affiliation": "Layer 6 AI",
+        "orcid": "0009-0007-2691-4301"
+      },
+      {
+        "name": "Kobylianskii, Dmitrii",
+        "affiliation": "Weizmann Institute of Science",
+        "orcid": "0009-0002-0070-5900"
+      },
+      {
+        "name": "Letizia, Marco",
+        "affiliation": "University of Genoa",
+        "orcid": "0000-0001-9641-4352"
+      },
+      {
+        "name": "Liu, Qibin",
+        "affiliation": "Shanghai Jiao Tong University",
+        "orcid": "0000-0001-5248-4391"
+      },
+      {
+        "name": "Liu, Xiulong",
+        "affiliation": "University of Washington",
+        "orcid": "0000-0001-8697-1489"
+      },
+      {
+        "name": "Loaiza-Ganem, Gabriel",
+        "affiliation": "Layer 6 AI"
+      },
+      {
+        "name": "Mikuni, Vinicius",
+        "affiliation": "National Energy Research Scientific Computing Center",
+        "orcid": "0000-0002-1579-2421"
+      },
+      {
+        "name": "Pang, Ian",
+        "affiliation": "Rutgers, The State University of New Jersey",
+        "orcid": "0000-0002-8225-7269"
+      },
+      {
+        "name": "Pedro, Kevin",
+        "affiliation": "Fermi National Accelerator Laboratory",
+        "orcid": "0000-0003-2260-9151"
+      },
+      {
+        "name": "Plehn, Tilman",
+        "affiliation": "Heidelberg University",
+        "orcid": "0000-0001-5660-7790"
+      },
+      {
+        "name": "Reyes-Gonz\u00e1lez, Humberto",
+        "affiliation": "University of Genoa",
+        "orcid": "0000-0003-3283-5208"
+      },
+      {
+        "name": "Rinaldi, Lorenzo",
+        "affiliation": "Universit\u00e0 degli Studi di Bologna Dipartimento di Fisica e Astronomia 'Augusto Righi'",
+        "orcid": "0000-0001-9608-9940"
+      },
+      {
+        "name": "Ross, Brendan Leigh",
+        "affiliation": "Layer 6 AI",
+        "orcid": "0000-0003-0670-2225"
+      },
+      {
+        "name": "Shimmin, Chase",
+        "affiliation": "Yale University",
+        "orcid": "0000-0002-2228-2251"
+      },
+      {
+        "name": "Shlizerman, Eli",
+        "affiliation": "University of Washington",
+        "orcid": "0000-0002-3136-4531"
+      },
+      {
+        "name": "Shu, Li",
+        "affiliation": "Shanghai Jiao Tong University"
+      },
+      {
+        "name": "Soybelman, Nathalie",
+        "affiliation": "Weizmann Institute of Science",
+        "orcid": "0000-0003-0209-0858"
+      },
+      {
+        "name": "Zhang, Rui",
+        "affiliation": "University of Wisconsin\u2013Madison",
+        "orcid": "0000-0002-8265-474X"
+      }
+    ],
+    "keywords": [
+      "CaloChallenge",
+      "Generative Model",
+      "Calorimeter Simulation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.8099322",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.15961924",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.15962050",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.15962527",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/CaloChallenge/homepage"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "alternate_identifiers": [
+      {
+        "identifier": "arXiv:2410.21611"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15961727"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Fast Calorimeter Simulation Challenge 2022 - Submissions Dataset 1 Photons",
+  "links": {
+    "self": "https://zenodo.org/api/records/15961728",
+    "self_html": "https://zenodo.org/records/15961728",
+    "preview_html": "https://zenodo.org/records/15961728?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15961728",
+    "self_doi": "https://doi.org/10.5281/zenodo.15961728",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15961728",
+    "reserve_doi": "https://zenodo.org/api/records/15961728/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15961727",
+    "parent_html": "https://zenodo.org/records/15961727",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15961727",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15961727",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15961728/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15961728/sequence/default",
+    "files": "https://zenodo.org/api/records/15961728/files",
+    "media_files": "https://zenodo.org/api/records/15961728/media-files",
+    "archive": "https://zenodo.org/api/records/15961728/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15961728/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15961728/versions/latest",
+    "latest_html": "https://zenodo.org/records/15961728/latest",
+    "versions": "https://zenodo.org/api/records/15961728/versions",
+    "draft": "https://zenodo.org/api/records/15961728/draft",
+    "access_links": "https://zenodo.org/api/records/15961728/access/links",
+    "access_grants": "https://zenodo.org/api/records/15961728/access/grants",
+    "access_users": "https://zenodo.org/api/records/15961728/access/users",
+    "access_request": "https://zenodo.org/api/records/15961728/access/request",
+    "access": "https://zenodo.org/api/records/15961728/access",
+    "communities": "https://zenodo.org/api/records/15961728/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15961728/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15961728/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15961728/file-modification",
+    "requests": "https://zenodo.org/api/records/15961728/requests"
+  },
+  "updated": "2025-08-05T10:10:18.429733+00:00",
+  "recid": "15961728",
+  "revision": 10,
+  "files": [
+    {
+      "id": "df54c07d-9160-4f67-af5d-26f1ca6d6233",
+      "key": "ds1-photons_28.hdf5",
+      "size": 153022489,
+      "checksum": "md5:ebd72b07ec7525142058d1d8de4ed6b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_28.hdf5/content"
+      }
+    },
+    {
+      "id": "cfd811df-8ac3-4ffd-8b83-693bf14e4ba6",
+      "key": "ds1-photons_11.hdf5",
+      "size": 118460872,
+      "checksum": "md5:a3706c62395b1e9379b318c29df163ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_11.hdf5/content"
+      }
+    },
+    {
+      "id": "2407c676-cb93-4372-9472-87dee4e034c1",
+      "key": "ds1-photons_10.hdf5",
+      "size": 125285343,
+      "checksum": "md5:7181399ec8e2b0947a3462f3fc579a47",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_10.hdf5/content"
+      }
+    },
+    {
+      "id": "6315a038-87a9-4848-969c-094866a72020",
+      "key": "ds1-photons_27.hdf5",
+      "size": 140080478,
+      "checksum": "md5:aacd96cb74a49c894018ae29c8c480b3",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_27.hdf5/content"
+      }
+    },
+    {
+      "id": "f0111bba-9306-42c8-9cb6-754cf84d69db",
+      "key": "ds1-photons_1.hdf5",
+      "size": 127711767,
+      "checksum": "md5:ae6d53cd4249a1ce6e0768b2a28fc173",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_1.hdf5/content"
+      }
+    },
+    {
+      "id": "bf0c2a44-a27e-4cb0-bfcc-e68e61ca9b6b",
+      "key": "ds1-photons_7.hdf5",
+      "size": 167013961,
+      "checksum": "md5:a1f374ddf895c297cf02e4f01535540c",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_7.hdf5/content"
+      }
+    },
+    {
+      "id": "dd5833d9-6a78-44d2-9170-9b8335f3a8aa",
+      "key": "ds1-photons_4.hdf5",
+      "size": 121423490,
+      "checksum": "md5:07aed78ade82db769d832fefc938fe24",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_4.hdf5/content"
+      }
+    },
+    {
+      "id": "05245462-962d-4bb6-8f70-0493c732302e",
+      "key": "ds1-photons_29.hdf5",
+      "size": 123035229,
+      "checksum": "md5:6d49918f8b01372cce635b85fddce80b",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_29.hdf5/content"
+      }
+    },
+    {
+      "id": "1dc801b6-9c19-4bed-b944-a7cf528d57a4",
+      "key": "ds1-photons_9.hdf5",
+      "size": 124266322,
+      "checksum": "md5:a0c2cd7c57326672c0c8e37eda4e43aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_9.hdf5/content"
+      }
+    },
+    {
+      "id": "64e057f6-37e0-4626-a847-0463d327f261",
+      "key": "ds1-photons_12.hdf5",
+      "size": 118893636,
+      "checksum": "md5:2785925412bd6bef7883d2120ad766ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_12.hdf5/content"
+      }
+    },
+    {
+      "id": "4c693816-3dcb-4008-8269-2c6e00ebda31",
+      "key": "ds1-photons_8.hdf5",
+      "size": 123656635,
+      "checksum": "md5:f6f3309f13c987aaa909012a878c0cf7",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_8.hdf5/content"
+      }
+    },
+    {
+      "id": "5066cf51-5d0d-4230-88a8-a6b787aa4d57",
+      "key": "ds1-photons_25.hdf5",
+      "size": 168866702,
+      "checksum": "md5:67b4f45f26839cf2368da63e82a0383e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_25.hdf5/content"
+      }
+    },
+    {
+      "id": "220209aa-3ff0-411c-9056-b2c5238239f9",
+      "key": "ds1-photons_26.hdf5",
+      "size": 168313596,
+      "checksum": "md5:1db9b6bcb7f4083d6d3d477985d6f3a6",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_26.hdf5/content"
+      }
+    },
+    {
+      "id": "10157da1-efdd-4aa2-88bc-b0a4ee1e6482",
+      "key": "ds1-photons_17.hdf5",
+      "size": 118745925,
+      "checksum": "md5:bf9fc7e0ffc1c368896375567596c45c",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_17.hdf5/content"
+      }
+    },
+    {
+      "id": "34e6d398-31fa-47b0-9371-fd95d37bb844",
+      "key": "ds1-photons_16.hdf5",
+      "size": 161803592,
+      "checksum": "md5:412097d3c5bc737578b21848c5cd42ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/15961728/files/ds1-photons_16.hdf5/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "293990"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 284,
+    "unique_downloads": 279,
+    "views": 80,
+    "unique_views": 67,
+    "version_downloads": 284,
+    "version_unique_downloads": 279,
+    "version_unique_views": 67,
+    "version_views": 80
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 15,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 2060580037,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "ds1-photons_28.hdf5",
+        "size": 153022489
+      },
+      {
+        "name": "ds1-photons_11.hdf5",
+        "size": 118460872
+      },
+      {
+        "name": "ds1-photons_10.hdf5",
+        "size": 125285343
+      },
+      {
+        "name": "ds1-photons_27.hdf5",
+        "size": 140080478
+      },
+      {
+        "name": "ds1-photons_1.hdf5",
+        "size": 127711767
+      },
+      {
+        "name": "ds1-photons_7.hdf5",
+        "size": 167013961
+      },
+      {
+        "name": "ds1-photons_4.hdf5",
+        "size": 121423490
+      },
+      {
+        "name": "ds1-photons_29.hdf5",
+        "size": 123035229
+      },
+      {
+        "name": "ds1-photons_9.hdf5",
+        "size": 124266322
+      },
+      {
+        "name": "ds1-photons_12.hdf5",
+        "size": 118893636
+      },
+      {
+        "name": "ds1-photons_8.hdf5",
+        "size": 123656635
+      },
+      {
+        "name": "ds1-photons_25.hdf5",
+        "size": 168866702
+      },
+      {
+        "name": "ds1-photons_26.hdf5",
+        "size": 168313596
+      },
+      {
+        "name": "ds1-photons_17.hdf5",
+        "size": 118745925
+      },
+      {
+        "name": "ds1-photons_16.hdf5",
+        "size": 161803592
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.8099322",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://calochallenge.github.io/homepage/",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:38.627942"
+}

@@ -1,0 +1,267 @@
+{
+  "created": "2023-07-11T15:08:46.141624+00:00",
+  "modified": "2024-04-09T09:04:56.294148+00:00",
+  "id": 8133486,
+  "conceptrecid": "8133485",
+  "doi": "10.5281/zenodo.8133486",
+  "conceptdoi": "10.5281/zenodo.8133485",
+  "doi_url": "https://doi.org/10.5281/zenodo.8133486",
+  "metadata": {
+    "title": "NEATmap: a high-efficiency deep learning approach for whole mouse brain neuronal activity trace mapping",
+    "doi": "10.5281/zenodo.8133486",
+    "publication_date": "2023-07-11",
+    "description": "<p>Here are some demo datasets for validating the NEATmap pipeline for high-efficiency whole brain c-Fos<sup>+</sup>&nbsp;cell automated segmentation and quantitative analysis, including:</p>\n<ol>\n<li>BrainImage_group.zip.001-007: Validation of NEATmap for automated segmentation and quantitative analysis of mouse whole-brain c-Fos activity images (in Forced Swimming Test).</li>\n<li>Segmentation_result.zip: Figure 1a, Supplementary Videos 1 and 2 show dual-channel brain slices and segmentation results. They can be merged using Imaris to validate the segmentation results of NEATmap.</li>\n<li>RawImage_example.zip:&nbsp;High-resolution 3D&nbsp;images of mouse brain slices showing c-Fos<sup>+</sup> cells&nbsp;in Figure 1e.</li>\n</ol>\n<p>Due to the total size of the mouse whole-brain image datasets (both raw and processed) included in all the tests exceeding 10 Terabytes, uploading it to a public data repository is impractical.&nbsp;In this work, we provide a dataset of dual-channel (c-Fos<sup>+</sup> channel and autofluorescence channel in forced swimming test experimental group) whole-brain images of mouse for the validation of NEATmap automated segmentation method.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zheng, Weijie",
+        "affiliation": null
+      }
+    ],
+    "references": [
+      "Zheng, Weijie, et al. \"NEATmap: a high-efficiency deep learning approach for whole mouse brain neuronal activity trace mapping.\" National Science Review (2024): nwae109."
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8133485"
+          }
+        }
+      ]
+    }
+  },
+  "title": "NEATmap: a high-efficiency deep learning approach for whole mouse brain neuronal activity trace mapping",
+  "links": {
+    "self": "https://zenodo.org/api/records/8133486",
+    "self_html": "https://zenodo.org/records/8133486",
+    "preview_html": "https://zenodo.org/records/8133486?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8133486",
+    "self_doi": "https://doi.org/10.5281/zenodo.8133486",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8133486",
+    "reserve_doi": "https://zenodo.org/api/records/8133486/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8133485",
+    "parent_html": "https://zenodo.org/records/8133485",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8133485",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8133485",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8133486/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8133486/sequence/default",
+    "files": "https://zenodo.org/api/records/8133486/files",
+    "media_files": "https://zenodo.org/api/records/8133486/media-files",
+    "archive": "https://zenodo.org/api/records/8133486/files-archive",
+    "archive_media": "https://zenodo.org/api/records/8133486/media-files-archive",
+    "latest": "https://zenodo.org/api/records/8133486/versions/latest",
+    "latest_html": "https://zenodo.org/records/8133486/latest",
+    "versions": "https://zenodo.org/api/records/8133486/versions",
+    "draft": "https://zenodo.org/api/records/8133486/draft",
+    "access_links": "https://zenodo.org/api/records/8133486/access/links",
+    "access_grants": "https://zenodo.org/api/records/8133486/access/grants",
+    "access_users": "https://zenodo.org/api/records/8133486/access/users",
+    "access_request": "https://zenodo.org/api/records/8133486/access/request",
+    "access": "https://zenodo.org/api/records/8133486/access",
+    "communities": "https://zenodo.org/api/records/8133486/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8133486/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8133486/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8133486/file-modification",
+    "requests": "https://zenodo.org/api/records/8133486/requests"
+  },
+  "updated": "2024-04-09T09:04:56.294148+00:00",
+  "recid": "8133486",
+  "revision": 16,
+  "files": [
+    {
+      "id": "1d49f735-ee0d-4b90-baf8-ff5c8dc891a2",
+      "key": "Segmentation_result.zip",
+      "size": 300670049,
+      "checksum": "md5:ea6b9acc264db52ba7d375687814cfd1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/Segmentation_result.zip/content"
+      }
+    },
+    {
+      "id": "ca68a644-48cb-4594-bd39-c8f5db4478e7",
+      "key": "BrainImage_group.zip.003",
+      "size": 1048576000,
+      "checksum": "md5:1dd9926976b3ca1f6817cef5d2ea0ee2",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.003/content"
+      }
+    },
+    {
+      "id": "8026058d-7c71-4e1d-939f-cbf0781570fd",
+      "key": "BrainImage_group.zip.004",
+      "size": 1048576000,
+      "checksum": "md5:05591c5aed9b151764d37336ed6e7bac",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.004/content"
+      }
+    },
+    {
+      "id": "f80c19fb-14e7-4eac-9cb0-d89cfe653a39",
+      "key": "BrainImage_group.zip.007",
+      "size": 683383738,
+      "checksum": "md5:fbc15ef3fa44242323aab27b15e5f076",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.007/content"
+      }
+    },
+    {
+      "id": "20298e01-a125-4962-9963-c806d1507328",
+      "key": "BrainImage_group.zip.005",
+      "size": 1048576000,
+      "checksum": "md5:084bca5683a9a49654eafb9d8a227774",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.005/content"
+      }
+    },
+    {
+      "id": "e6400fae-117b-4602-b6dc-1337c397a522",
+      "key": "BrainImage_group.zip.006",
+      "size": 1048576000,
+      "checksum": "md5:4897a993bf2c0dddc1be62274291b6a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.006/content"
+      }
+    },
+    {
+      "id": "301560e3-19d3-4902-bc11-c7fdbd4b925e",
+      "key": "BrainImage_group.zip.001",
+      "size": 1048576000,
+      "checksum": "md5:01f02413423916f467e718ba244f3801",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.001/content"
+      }
+    },
+    {
+      "id": "76310cdc-89a3-4ed0-92de-ab05c01b5565",
+      "key": "BrainImage_group.zip.002",
+      "size": 1048576000,
+      "checksum": "md5:633dee3bf9ab042e3a820e9f9e7f2b8f",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/BrainImage_group.zip.002/content"
+      }
+    },
+    {
+      "id": "1b5ca11c-db2f-4e54-8856-f3a5f35e06b3",
+      "key": "RawImage_example.zip",
+      "size": 19376072,
+      "checksum": "md5:7c1469873dbcdce8441e6d28548539c0",
+      "links": {
+        "self": "https://zenodo.org/api/records/8133486/files/RawImage_example.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "581509"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2531,
+    "unique_downloads": 1760,
+    "views": 915,
+    "unique_views": 813,
+    "version_downloads": 2531,
+    "version_unique_downloads": 1760,
+    "version_unique_views": 813,
+    "version_views": 915
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 320046121,
+    "top_level_files": [
+      {
+        "name": "Segmentation_result.zip",
+        "size": 300670049
+      },
+      {
+        "name": "BrainImage_group.zip.003",
+        "size": 1048576000
+      },
+      {
+        "name": "BrainImage_group.zip.004",
+        "size": 1048576000
+      },
+      {
+        "name": "BrainImage_group.zip.007",
+        "size": 683383738
+      },
+      {
+        "name": "BrainImage_group.zip.005",
+        "size": 1048576000
+      },
+      {
+        "name": "BrainImage_group.zip.006",
+        "size": 1048576000
+      },
+      {
+        "name": "BrainImage_group.zip.001",
+        "size": 1048576000
+      },
+      {
+        "name": "BrainImage_group.zip.002",
+        "size": 1048576000
+      },
+      {
+        "name": "RawImage_example.zip",
+        "size": 19376072
+      }
+    ],
+    "zip_contents": {
+      "segmentation_result.zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 312320722,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "rawimage_example.zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 129114596,
+        "file_types": {
+          ".tif": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "rawimage_merged_25.tif",
+          "rawimage_merged_26.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "rawimage_merged_25.tif",
+      "rawimage_merged_26.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:32.022442"
+}

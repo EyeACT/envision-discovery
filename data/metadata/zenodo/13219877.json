@@ -1,0 +1,210 @@
+{
+  "created": "2024-08-05T07:51:31.971575+00:00",
+  "modified": "2024-08-05T07:51:32.200781+00:00",
+  "id": 13219877,
+  "conceptrecid": "13219876",
+  "doi": "10.5281/zenodo.13219877",
+  "conceptdoi": "10.5281/zenodo.13219876",
+  "doi_url": "https://doi.org/10.5281/zenodo.13219877",
+  "metadata": {
+    "title": "bioimage.io upload: hpa/hpa-cell-image-segmentation-dataset",
+    "doi": "10.5281/zenodo.13219877",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=hpa/hpa-cell-image-segmentation-dataset\">View on bioimage.io</a> # HPA Cell Image Segmentation Dataset </p>\n<p>This dataset includes annotated cell images obtained from the Human Protein Atlas (http://www.proteinatlas.org), each image contains 4 channels (Microtubules, ER, Nuclei and Protein of Interest). The cells in each image are annotated with polygons and saved into GeoJSON format produced with Kaibu(https://kaibu.org) annotation tool.</p>\n<ul>\n<li>hpa_cell_segmentation_dataset_v2_512x512_4train_159test.zip is an example dataset for running a deep learning-based interactive annotation tools in ImJoy (https://github.com/imjoy-team/imjoy-interactive-segmentation).</li>\n<li>hpa_dataset_v2.zip is a full annotate image segmentation dataset</li>\n</ul>\n<p>Utility functions in Python for reading the GeoJSON annotation can be found here: https://github.com/imjoy-team/kaibu-utils/blob/main/kaibu_utils/<strong>init</strong>.py</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Jay Kaimal",
+        "affiliation": null
+      },
+      {
+        "name": "Peter Thul",
+        "affiliation": null
+      },
+      {
+        "name": "Hao Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Ouyang",
+        "affiliation": null
+      },
+      {
+        "name": "Emma Lundberg",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "fluorescence-light-microscopy",
+      "2D",
+      "cells",
+      "nuclei",
+      "semantic-segmentation",
+      "instance-segmentation"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13219876"
+          }
+        }
+      ]
+    },
+    "notes": "Annotated images from the Human Protein Atlas for cell segmentation\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: hpa/hpa-cell-image-segmentation-dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/13219877",
+    "self_html": "https://zenodo.org/records/13219877",
+    "preview_html": "https://zenodo.org/records/13219877?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13219877",
+    "self_doi": "https://doi.org/10.5281/zenodo.13219877",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219877",
+    "reserve_doi": "https://zenodo.org/api/records/13219877/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13219876",
+    "parent_html": "https://zenodo.org/records/13219876",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13219876",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219876",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13219877/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13219877/sequence/default",
+    "files": "https://zenodo.org/api/records/13219877/files",
+    "media_files": "https://zenodo.org/api/records/13219877/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13219877:hpaseg-cover.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13219877/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13219877/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13219877/versions/latest",
+    "latest_html": "https://zenodo.org/records/13219877/latest",
+    "versions": "https://zenodo.org/api/records/13219877/versions",
+    "draft": "https://zenodo.org/api/records/13219877/draft",
+    "access_links": "https://zenodo.org/api/records/13219877/access/links",
+    "access_grants": "https://zenodo.org/api/records/13219877/access/grants",
+    "access_users": "https://zenodo.org/api/records/13219877/access/users",
+    "access_request": "https://zenodo.org/api/records/13219877/access/request",
+    "access": "https://zenodo.org/api/records/13219877/access",
+    "communities": "https://zenodo.org/api/records/13219877/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13219877/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13219877/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13219877/file-modification",
+    "requests": "https://zenodo.org/api/records/13219877/requests"
+  },
+  "updated": "2024-08-05T07:51:32.200781+00:00",
+  "recid": "13219877",
+  "revision": 4,
+  "files": [
+    {
+      "id": "ea10a68a-5d25-47c8-9986-84cac0e51f57",
+      "key": "rdf.yaml",
+      "size": 1658,
+      "checksum": "md5:5a7e23aa7234a6355db53051c1d80f25",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219877/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "ebc04585-cecb-4427-9d09-2cfc9d4e28a5",
+      "key": "hpaseg-cover.png",
+      "size": 431152,
+      "checksum": "md5:e964689424bf57ab4d26946999a85222",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219877/files/hpaseg-cover.png/content"
+      }
+    },
+    {
+      "id": "9d350219-fdca-43d8-93a5-19937f57bc05",
+      "key": "hpa-cell-image-segmentation-dataset.md",
+      "size": 784,
+      "checksum": "md5:70022678f4483964c877a470a9ebace3",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219877/files/hpa-cell-image-segmentation-dataset.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 101,
+    "unique_downloads": 94,
+    "views": 185,
+    "unique_views": 149,
+    "version_downloads": 101,
+    "version_unique_downloads": 94,
+    "version_unique_views": 149,
+    "version_views": 185
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 431152,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "rdf.yaml",
+        "size": 1658
+      },
+      {
+        "name": "hpaseg-cover.png",
+        "size": 431152
+      },
+      {
+        "name": "hpa-cell-image-segmentation-dataset.md",
+        "size": 784
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "http://www.proteinatlas.org",
+      "type": "unknown"
+    },
+    {
+      "url": "https://kaibu.org",
+      "type": "unknown"
+    },
+    {
+      "url": "https://github.com/imjoy-team/imjoy-interactive-segmentation",
+      "type": "data_platform"
+    },
+    {
+      "url": "https://github.com/imjoy-team/kaibu-utils/blob/main/kaibu_utils/init.py",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:03.488991"
+}

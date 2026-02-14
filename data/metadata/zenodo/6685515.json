@@ -1,0 +1,3604 @@
+{
+  "created": "2022-06-22T14:46:22.999732+00:00",
+  "modified": "2022-06-23T13:51:53.954509+00:00",
+  "id": 6685515,
+  "conceptrecid": "6685514",
+  "doi": "10.5281/zenodo.6685515",
+  "conceptdoi": "10.5281/zenodo.6685514",
+  "doi_url": "https://doi.org/10.5281/zenodo.6685515",
+  "metadata": {
+    "title": "Natural color composites of VEN\u00b5s images over South Col Glacier",
+    "doi": "10.5281/zenodo.6685515",
+    "publication_date": "2022-06-22",
+    "description": "<p>This datasets contain images of South Col Glacier obtained from VEN&micro;s platform from 27 Nov 2017 to 30 Oct 2020. The images are shown on a UTM45\\WGS84 projection, and correspond to the band combination 7-4-3. The two stars show remarkable locations.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Brun, Fanny",
+        "affiliation": "IRD/IGE/Univ. Grenoble Alpes",
+        "orcid": "0000-0001-6607-0667"
+      }
+    ],
+    "keywords": [
+      "venus",
+      "images",
+      "south col glacier"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6685514"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Natural color composites of VEN\u00b5s images over South Col Glacier",
+  "links": {
+    "self": "https://zenodo.org/api/records/6685515",
+    "self_html": "https://zenodo.org/records/6685515",
+    "preview_html": "https://zenodo.org/records/6685515?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6685515",
+    "self_doi": "https://doi.org/10.5281/zenodo.6685515",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6685515",
+    "reserve_doi": "https://zenodo.org/api/records/6685515/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6685514",
+    "parent_html": "https://zenodo.org/records/6685514",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6685514",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6685514",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6685515/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6685515/sequence/default",
+    "files": "https://zenodo.org/api/records/6685515/files",
+    "media_files": "https://zenodo.org/api/records/6685515/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6685515:VENUS-XS_20191111.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6685515/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6685515/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6685515/versions/latest",
+    "latest_html": "https://zenodo.org/records/6685515/latest",
+    "versions": "https://zenodo.org/api/records/6685515/versions",
+    "draft": "https://zenodo.org/api/records/6685515/draft",
+    "access_links": "https://zenodo.org/api/records/6685515/access/links",
+    "access_grants": "https://zenodo.org/api/records/6685515/access/grants",
+    "access_users": "https://zenodo.org/api/records/6685515/access/users",
+    "access_request": "https://zenodo.org/api/records/6685515/access/request",
+    "access": "https://zenodo.org/api/records/6685515/access",
+    "communities": "https://zenodo.org/api/records/6685515/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6685515/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6685515/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6685515/file-modification",
+    "requests": "https://zenodo.org/api/records/6685515/requests"
+  },
+  "updated": "2022-06-23T13:51:53.954509+00:00",
+  "recid": "6685515",
+  "revision": 2,
+  "files": [
+    {
+      "id": "be72efd7-7e23-4282-a6cc-0d3376b6d744",
+      "key": "VENUS-XS_20191111.png",
+      "size": 214834,
+      "checksum": "md5:8e2b018963b8feeba9445be3d2f09520",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191111.png/content"
+      }
+    },
+    {
+      "id": "a58aea09-ae95-4727-8377-4a23a722f677",
+      "key": "VENUS-XS_20191113.png",
+      "size": 201348,
+      "checksum": "md5:264e187d9240c54105a536c13133a65f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191113.png/content"
+      }
+    },
+    {
+      "id": "15c7ab17-e73f-45e8-b1e6-bfa1ad823b34",
+      "key": "VENUS-XS_20191115.png",
+      "size": 154747,
+      "checksum": "md5:c352c91e2fbdc8d097c2109e93ed6a48",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191115.png/content"
+      }
+    },
+    {
+      "id": "84238067-18f4-4e7f-861a-3dd17b1fbcd9",
+      "key": "VENUS-XS_20191117.png",
+      "size": 214231,
+      "checksum": "md5:942ff8f71ab200a5b203d1ef383e4cc2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191117.png/content"
+      }
+    },
+    {
+      "id": "264dd0a4-3d3a-46fb-9bbe-1f7d216444c7",
+      "key": "VENUS-XS_20191119.png",
+      "size": 215741,
+      "checksum": "md5:5b3d9081754f8441877627951654db41",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191119.png/content"
+      }
+    },
+    {
+      "id": "27a8321a-4da5-4817-80f2-317ec7aa9d49",
+      "key": "VENUS-XS_20191223.png",
+      "size": 223097,
+      "checksum": "md5:494dce094611d48190c356682fe5d220",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191223.png/content"
+      }
+    },
+    {
+      "id": "61d83081-7e5d-498f-8831-24b22af20634",
+      "key": "VENUS-XS_20191121.png",
+      "size": 208983,
+      "checksum": "md5:bd41b28e39d7518add00ba3fa2cfaea1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191121.png/content"
+      }
+    },
+    {
+      "id": "8ca887b6-55bb-4d5c-9355-2db7504ac438",
+      "key": "VENUS-XS_20191123.png",
+      "size": 208742,
+      "checksum": "md5:01457de9330c225f7539ddefc175f361",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191123.png/content"
+      }
+    },
+    {
+      "id": "928f21ff-c8e8-4c91-a34e-14231786d844",
+      "key": "VENUS-XS_20191203.png",
+      "size": 219460,
+      "checksum": "md5:c57464e8780fc2252afd4f4e4e785c0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191203.png/content"
+      }
+    },
+    {
+      "id": "e49cd206-fd6e-4861-8992-65b2e41e9387",
+      "key": "VENUS-XS_20180301.png",
+      "size": 220832,
+      "checksum": "md5:3cb96e21876571a7ab696529bef17500",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180301.png/content"
+      }
+    },
+    {
+      "id": "6dad90e9-a8c0-4662-93f3-4ace1d3ea663",
+      "key": "VENUS-XS_20180303.png",
+      "size": 212033,
+      "checksum": "md5:a8439a0a8dbfe89699c5fbcc95d19544",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180303.png/content"
+      }
+    },
+    {
+      "id": "c6139bba-e5e2-4a2d-a300-286a4724f9c5",
+      "key": "VENUS-XS_20180420.png",
+      "size": 214657,
+      "checksum": "md5:53373d9992632d6baa58a14d1a3306dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180420.png/content"
+      }
+    },
+    {
+      "id": "409e2c69-9a80-4789-a69c-229e920b6a0f",
+      "key": "VENUS-XS_20180309.png",
+      "size": 210410,
+      "checksum": "md5:d2d87753e49a4ebfa261bfd86761b183",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180309.png/content"
+      }
+    },
+    {
+      "id": "4e8d6b15-ac65-4f69-a580-5de1661d16f9",
+      "key": "VENUS-XS_20180317.png",
+      "size": 210149,
+      "checksum": "md5:857f4f3fd3f6990a5279ac37a9c6d704",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180317.png/content"
+      }
+    },
+    {
+      "id": "6995020b-e969-4e4f-bd8f-0dd830a84386",
+      "key": "VENUS-XS_20180225.png",
+      "size": 193117,
+      "checksum": "md5:1a704ba4537031c1480cfc001490540f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180225.png/content"
+      }
+    },
+    {
+      "id": "107fe6b7-abd7-4e30-99d9-126999cbaf94",
+      "key": "VENUS-XS_20180223.png",
+      "size": 205896,
+      "checksum": "md5:ef17213a1f7d19297c6e4e6e26c6567f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180223.png/content"
+      }
+    },
+    {
+      "id": "041d5514-7e67-4eaa-9d5a-6af498641f8f",
+      "key": "VENUS-XS_20180221.png",
+      "size": 217944,
+      "checksum": "md5:87b07f4edea921bc7566886d0ea0122f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180221.png/content"
+      }
+    },
+    {
+      "id": "2158dcd1-bcda-45bb-a64e-cee5225d2982",
+      "key": "VENUS-XS_20180323.png",
+      "size": 221851,
+      "checksum": "md5:b8726cad4fe822aa58f2832524bd5c9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180323.png/content"
+      }
+    },
+    {
+      "id": "d553a87c-2d14-4841-ad0f-79054e0ca2e5",
+      "key": "VENUS-XS_20180217.png",
+      "size": 203222,
+      "checksum": "md5:17b0942c46fac3ab0080c161ca435740",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180217.png/content"
+      }
+    },
+    {
+      "id": "e53e79e9-67ce-4402-a243-33f5fac8ff54",
+      "key": "VENUS-XS_20180215.png",
+      "size": 219540,
+      "checksum": "md5:1d5437699c84346175c1e4e3f1fe2255",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180215.png/content"
+      }
+    },
+    {
+      "id": "38684bb3-6c66-4f7a-9299-ed7a61f751bc",
+      "key": "VENUS-XS_20180325.png",
+      "size": 225589,
+      "checksum": "md5:618e82c1f6ceea53a83167f6d2277ada",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180325.png/content"
+      }
+    },
+    {
+      "id": "53d80e29-7fa7-487f-a11a-f28c8b32749d",
+      "key": "VENUS-XS_20180211.png",
+      "size": 172801,
+      "checksum": "md5:169874057f6aa527e0b86866b32025d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180211.png/content"
+      }
+    },
+    {
+      "id": "05a63f38-1cd2-4ed0-958c-e0f434d85263",
+      "key": "VENUS-XS_20180209.png",
+      "size": 194510,
+      "checksum": "md5:b38aa7591c3883da7c5500f8b4bf4ea1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180209.png/content"
+      }
+    },
+    {
+      "id": "38e15e52-d42b-4439-a212-3c0d2e678760",
+      "key": "VENUS-XS_20180327.png",
+      "size": 223324,
+      "checksum": "md5:ebfe0a92765baca7ac4ee8af3474c5d0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180327.png/content"
+      }
+    },
+    {
+      "id": "346fc699-4bc4-46b2-a24e-009fb08e2a7a",
+      "key": "VENUS-XS_20180207.png",
+      "size": 164127,
+      "checksum": "md5:5743a86cada2eab66ee7d321df71fc90",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180207.png/content"
+      }
+    },
+    {
+      "id": "f651bd73-002f-4812-a4a0-827d8f3893ba",
+      "key": "VENUS-XS_20180205.png",
+      "size": 216722,
+      "checksum": "md5:c13091ca8764beb7f8fc089b08102cb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180205.png/content"
+      }
+    },
+    {
+      "id": "e50276f7-13f4-4a2b-920b-dfe3383ffbe6",
+      "key": "VENUS-XS_20180402.png",
+      "size": 200615,
+      "checksum": "md5:50b7cf5c98100b81813b36af7a33d94d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180402.png/content"
+      }
+    },
+    {
+      "id": "cf32b8b1-6031-4865-ae40-60332c1ff9a9",
+      "key": "VENUS-XS_20180408.png",
+      "size": 221106,
+      "checksum": "md5:5f5f37a32bf8c2c7c30504662236b407",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180408.png/content"
+      }
+    },
+    {
+      "id": "39cf9339-5bf2-4674-af59-450bd349a342",
+      "key": "VENUS-XS_20180414.png",
+      "size": 200825,
+      "checksum": "md5:48d44b1e34a5fed993feac054ff464cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180414.png/content"
+      }
+    },
+    {
+      "id": "f017c8e1-dc69-4935-8c7b-f61b7d3d34a8",
+      "key": "VENUS-XS_20180203.png",
+      "size": 218111,
+      "checksum": "md5:1534ab5cb5dcc07e68aba7fba9e3c6a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180203.png/content"
+      }
+    },
+    {
+      "id": "1fa8dda1-62c5-4430-806d-4b2dd290c052",
+      "key": "VENUS-XS_20180416.png",
+      "size": 205209,
+      "checksum": "md5:d34e33c3abccc67ac4026371a4a0af9b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180416.png/content"
+      }
+    },
+    {
+      "id": "9ee4e7fc-6fe7-440a-a5be-50e25bf41d3a",
+      "key": "VENUS-XS_20180201.png",
+      "size": 215644,
+      "checksum": "md5:f64f408eaa9e8e9433668d5f6c97e0f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180201.png/content"
+      }
+    },
+    {
+      "id": "d9a04d08-a8b1-43ef-b5e5-f2b6e6de504f",
+      "key": "VENUS-XS_20180130.png",
+      "size": 223775,
+      "checksum": "md5:f55ea47f457707afbe7febc49ae772e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180130.png/content"
+      }
+    },
+    {
+      "id": "4a613e63-ef71-4a93-87ad-168673cc8514",
+      "key": "VENUS-XS_20180418.png",
+      "size": 206322,
+      "checksum": "md5:fb8ab1140b4b6c63b407730ef7232134",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180418.png/content"
+      }
+    },
+    {
+      "id": "c64bdd84-0864-405a-9517-c0ae42c679e7",
+      "key": "VENUS-XS_20180128.png",
+      "size": 222872,
+      "checksum": "md5:c3a644f529a226aa130944364ef63c77",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180128.png/content"
+      }
+    },
+    {
+      "id": "55fdbd24-9942-4c57-ba92-7f06df480fb4",
+      "key": "VENUS-XS_20180126.png",
+      "size": 219358,
+      "checksum": "md5:9e82576c96c11fa8ef75921c3cc05286",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180126.png/content"
+      }
+    },
+    {
+      "id": "0e55a08c-9843-4188-9634-8370baec1e40",
+      "key": "VENUS-XS_20180422.png",
+      "size": 226633,
+      "checksum": "md5:1443a347a7cbbc96ced396e751e88a4e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180422.png/content"
+      }
+    },
+    {
+      "id": "c9d68f06-9cfd-4656-a818-8f41eeee371a",
+      "key": "VENUS-XS_20180424.png",
+      "size": 212198,
+      "checksum": "md5:bca414db73542ad3e1cb6cf70da0b5bc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180424.png/content"
+      }
+    },
+    {
+      "id": "ebfd70ee-9f53-4220-9836-d7685094eaca",
+      "key": "VENUS-XS_20171217.png",
+      "size": 218741,
+      "checksum": "md5:52d3fc81ce3f05684b8cab6aea4d0d32",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171217.png/content"
+      }
+    },
+    {
+      "id": "7ab3d3db-c034-4199-87f6-a1b9d187c0fa",
+      "key": "VENUS-XS_20171215.png",
+      "size": 218951,
+      "checksum": "md5:bde06ebf21b423899806437f987d3fb1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171215.png/content"
+      }
+    },
+    {
+      "id": "d98c53b8-28a5-476d-87f0-d2aa1c50d096",
+      "key": "VENUS-XS_20180219.png",
+      "size": 218525,
+      "checksum": "md5:95e4f6b047c68597afc3478a39b89792",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180219.png/content"
+      }
+    },
+    {
+      "id": "a357760a-cc4a-49d7-8156-df331eabf708",
+      "key": "VENUS-XS_20180502.png",
+      "size": 212431,
+      "checksum": "md5:3cfbc36ecd9d3a7fc8a35e6c7e62eb3a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180502.png/content"
+      }
+    },
+    {
+      "id": "865f3e5f-996a-4c5f-8fb1-07bf5677af64",
+      "key": "VENUS-XS_20171213.png",
+      "size": 215018,
+      "checksum": "md5:ef5e1de41bfe45cb0c005a5c295363db",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171213.png/content"
+      }
+    },
+    {
+      "id": "9474cfbd-47de-4701-9599-40f3314d8b51",
+      "key": "VENUS-XS_20171209.png",
+      "size": 218893,
+      "checksum": "md5:70c3003573d0c90242681a6f9ffb6e4d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171209.png/content"
+      }
+    },
+    {
+      "id": "31a0ad87-01d8-4da1-93b3-dcbf0b17d9f0",
+      "key": "VENUS-XS_20180506.png",
+      "size": 201032,
+      "checksum": "md5:e4697ea04efc1e26ca05b9eba0407ecf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180506.png/content"
+      }
+    },
+    {
+      "id": "789523fb-c352-4897-9fcf-2b932a29b046",
+      "key": "VENUS-XS_20180508.png",
+      "size": 226392,
+      "checksum": "md5:4aebe061bbb657be9b2c90a43763e78f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180508.png/content"
+      }
+    },
+    {
+      "id": "acda45ec-34f7-460f-a226-83e8f6e339d0",
+      "key": "VENUS-XS_20180518.png",
+      "size": 215669,
+      "checksum": "md5:9017b611f5fc5f814ab24213fa7a6e22",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180518.png/content"
+      }
+    },
+    {
+      "id": "36c97900-82cd-4daa-a7cb-4229b3bac177",
+      "key": "VENUS-XS_20180520.png",
+      "size": 227882,
+      "checksum": "md5:63307dd9803304383813767988988ca5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180520.png/content"
+      }
+    },
+    {
+      "id": "d337f109-7e71-4739-b716-9aecdee3994c",
+      "key": "VENUS-XS_20180522.png",
+      "size": 232381,
+      "checksum": "md5:bb64c40e5f417d9a39763023d0df370c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180522.png/content"
+      }
+    },
+    {
+      "id": "d0e0d13b-14f2-489f-9bd8-82fcafb12d92",
+      "key": "VENUS-XS_20201030.png",
+      "size": 214128,
+      "checksum": "md5:e32eb3bf4b81e06e015151790409245e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201030.png/content"
+      }
+    },
+    {
+      "id": "951ed7b7-f440-45c5-9dd7-cd6092fb7864",
+      "key": "VENUS-XS_20180528.png",
+      "size": 213934,
+      "checksum": "md5:2af7595156f7f3572db8bbb1a676d337",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180528.png/content"
+      }
+    },
+    {
+      "id": "ecb817ba-125b-49d4-9c55-5e2276e22611",
+      "key": "VENUS-XS_20180601.png",
+      "size": 214121,
+      "checksum": "md5:82d7e6b5331fa63ce86f9f90583c2e0a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180601.png/content"
+      }
+    },
+    {
+      "id": "d6e51b1b-743d-4853-9150-2f689be4fddb",
+      "key": "VENUS-XS_20180613.png",
+      "size": 212211,
+      "checksum": "md5:a60112ffca02970c2a8c4a1694566f05",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180613.png/content"
+      }
+    },
+    {
+      "id": "71721045-df93-40a1-ab88-59b1099d169a",
+      "key": "VENUS-XS_20201028.png",
+      "size": 214865,
+      "checksum": "md5:66698b69a73d074f19e224ad4cf60b0c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201028.png/content"
+      }
+    },
+    {
+      "id": "58ca7d7e-6f02-48a3-8d0b-38218acb0ade",
+      "key": "VENUS-XS_20201026.png",
+      "size": 211027,
+      "checksum": "md5:40d540e584a415292d8ccd46444e7dc6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201026.png/content"
+      }
+    },
+    {
+      "id": "ec816250-cdbb-4896-b5fc-ebfeac38c9b9",
+      "key": "VENUS-XS_20201024.png",
+      "size": 210575,
+      "checksum": "md5:4e6abbd8d6a82583e803299c6b3937e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201024.png/content"
+      }
+    },
+    {
+      "id": "516bd734-d812-43e9-afdc-065f28f5364a",
+      "key": "VENUS-XS_20180617.png",
+      "size": 215747,
+      "checksum": "md5:25d6e657d146142a6a90332f84a55699",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180617.png/content"
+      }
+    },
+    {
+      "id": "3ad72934-f6b7-4eb3-a7c1-dfb132ae7e76",
+      "key": "VENUS-XS_20180621.png",
+      "size": 218183,
+      "checksum": "md5:6c78032ac66eb2c512267512ac87c5d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180621.png/content"
+      }
+    },
+    {
+      "id": "624afded-5196-427f-8c45-bd8bcdbb4e40",
+      "key": "VENUS-XS_20180707.png",
+      "size": 209489,
+      "checksum": "md5:530511762eeaacbecb326a5b4baec62c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180707.png/content"
+      }
+    },
+    {
+      "id": "2e277ed4-7126-4e40-b693-e3744f0b2a7f",
+      "key": "VENUS-XS_20180808.png",
+      "size": 155218,
+      "checksum": "md5:3a2f7228219c35dd0b9a21f820af2a92",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180808.png/content"
+      }
+    },
+    {
+      "id": "1a4ec9cb-f205-4b0e-a6a2-af31c4c90a24",
+      "key": "VENUS-XS_20180816.png",
+      "size": 202139,
+      "checksum": "md5:269455136c865109f8dc1b6aa3ff9d7d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180816.png/content"
+      }
+    },
+    {
+      "id": "954bdcac-2e41-40fa-bfac-dd5c1b10275a",
+      "key": "VENUS-XS_20180818.png",
+      "size": 178166,
+      "checksum": "md5:292adabb9878a0b95b368d617a05a248",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180818.png/content"
+      }
+    },
+    {
+      "id": "81512bcc-50cf-417f-afe3-01b7b2762d0d",
+      "key": "VENUS-XS_20180905.png",
+      "size": 196376,
+      "checksum": "md5:6e6fe1053dd464f6e2582e3969889e2e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180905.png/content"
+      }
+    },
+    {
+      "id": "a426b726-d95d-430d-85e2-04db351a49c3",
+      "key": "VENUS-XS_20180907.png",
+      "size": 198739,
+      "checksum": "md5:8b756e6fb6b70c4ff2bb539228c95a39",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180907.png/content"
+      }
+    },
+    {
+      "id": "7d38993e-a85d-4e1f-856a-2c7a2ca63c5a",
+      "key": "VENUS-XS_20180909.png",
+      "size": 189560,
+      "checksum": "md5:3057b1aec274b9efb47764d98318740c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180909.png/content"
+      }
+    },
+    {
+      "id": "d31f7468-f40d-44c5-9b36-2cccf3e43442",
+      "key": "VENUS-XS_20180911.png",
+      "size": 193107,
+      "checksum": "md5:ed6a31a440dd2916b8cea04d8d493a5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180911.png/content"
+      }
+    },
+    {
+      "id": "e78d8f4e-5733-46c7-804c-15dff3d01586",
+      "key": "VENUS-XS_20180913.png",
+      "size": 194944,
+      "checksum": "md5:2a5f3604d4fccd153b736607e7768271",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20180913.png/content"
+      }
+    },
+    {
+      "id": "fff18041-dc41-427a-8b2c-6ee9ea988704",
+      "key": "VENUS-XS_20181009.png",
+      "size": 203503,
+      "checksum": "md5:9568eb8c5688187880b893b1d4711c11",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181009.png/content"
+      }
+    },
+    {
+      "id": "3901d4af-376e-4da1-b3c8-cb894db5c23a",
+      "key": "VENUS-XS_20201022.png",
+      "size": 202688,
+      "checksum": "md5:5ea52549ecb5f01d02fc2462ecb16392",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201022.png/content"
+      }
+    },
+    {
+      "id": "bfe589d7-e167-4b3a-9fe2-e73732a1d539",
+      "key": "VENUS-XS_20201020.png",
+      "size": 202970,
+      "checksum": "md5:fef22960180627de1e82284246309395",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201020.png/content"
+      }
+    },
+    {
+      "id": "c50201a1-3792-4d36-a4d0-641a42a53720",
+      "key": "VENUS-XS_20181011.png",
+      "size": 209066,
+      "checksum": "md5:044b7fa19846bd393e60d4a6cc969719",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181011.png/content"
+      }
+    },
+    {
+      "id": "d036eb25-288e-4fb2-bf1e-d6f2efaeab2e",
+      "key": "VENUS-XS_20181013.png",
+      "size": 210389,
+      "checksum": "md5:77b188075ec062fff6ef1a5f8bbdc033",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181013.png/content"
+      }
+    },
+    {
+      "id": "96fbf10c-bac5-4efd-a4d0-7060a202e82d",
+      "key": "VENUS-XS_20181017.png",
+      "size": 182358,
+      "checksum": "md5:565b9bbe75affdbd4f5a105cf7efa8a5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181017.png/content"
+      }
+    },
+    {
+      "id": "7f4cec99-3d5f-4be3-9322-8b7127582696",
+      "key": "VENUS-XS_20201018.png",
+      "size": 201983,
+      "checksum": "md5:3543362abe4887cc514e43b629308f31",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201018.png/content"
+      }
+    },
+    {
+      "id": "b1b51c05-f7e6-447f-a7db-830147ae1c91",
+      "key": "VENUS-XS_20201014.png",
+      "size": 199155,
+      "checksum": "md5:19ae3482c0c1e7c0312f2a4a165d136d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201014.png/content"
+      }
+    },
+    {
+      "id": "0856877f-a607-48a6-9baf-501b3bf87b58",
+      "key": "VENUS-XS_20181019.png",
+      "size": 200257,
+      "checksum": "md5:344eeef888dfa0e95dd2e0839620aff5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181019.png/content"
+      }
+    },
+    {
+      "id": "08faa390-406c-4952-addd-518390cb01ab",
+      "key": "VENUS-XS_20201012.png",
+      "size": 200225,
+      "checksum": "md5:dd7d029b530e2f3ff91ea6565679d197",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201012.png/content"
+      }
+    },
+    {
+      "id": "c3b4f18e-812e-46a1-b10a-18a119fec8a5",
+      "key": "VENUS-XS_20181021.png",
+      "size": 167621,
+      "checksum": "md5:38b3cfe596b9089f23d8e8bdaf4bf20b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181021.png/content"
+      }
+    },
+    {
+      "id": "ee276c31-4ead-49ea-a98d-dcf37e0ef0da",
+      "key": "VENUS-XS_20181023.png",
+      "size": 156735,
+      "checksum": "md5:54fbf287f1a65f0f07eb31202cca5658",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181023.png/content"
+      }
+    },
+    {
+      "id": "ec355b06-8d67-4f63-b60f-f9db5a036c8a",
+      "key": "VENUS-XS_20181025.png",
+      "size": 216139,
+      "checksum": "md5:440003ec42e99450ab116a9ff4107c68",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181025.png/content"
+      }
+    },
+    {
+      "id": "6ca20f78-bcbe-4d67-95e0-2d0ee41b0dc5",
+      "key": "VENUS-XS_20181027.png",
+      "size": 217296,
+      "checksum": "md5:10e61965eba2e37186caf64cf598703f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181027.png/content"
+      }
+    },
+    {
+      "id": "53ccf09f-b8b8-45dc-9695-e0bb14e0b75c",
+      "key": "VENUS-XS_20201010.png",
+      "size": 200155,
+      "checksum": "md5:f537acca1859a4520659e353b586027b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201010.png/content"
+      }
+    },
+    {
+      "id": "9a3a6b28-4c8d-4961-bc88-10197ee986f3",
+      "key": "VENUS-XS_20181029.png",
+      "size": 196845,
+      "checksum": "md5:26874bd784c3869cd1566dfa4f207d7b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181029.png/content"
+      }
+    },
+    {
+      "id": "e9f50015-6a77-4fb2-85b0-75e25b12668c",
+      "key": "VENUS-XS_20201008.png",
+      "size": 204027,
+      "checksum": "md5:244376c666a227d15dde56e5dbff9373",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201008.png/content"
+      }
+    },
+    {
+      "id": "287b4b8a-9541-4977-bdc8-ca11c23f5f0e",
+      "key": "VENUS-XS_20201006.png",
+      "size": 202329,
+      "checksum": "md5:8ed2c451dcba2c9cbfa2354ba3100dd5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201006.png/content"
+      }
+    },
+    {
+      "id": "788041c5-bf46-4cac-8acf-b6cfa3b8ade0",
+      "key": "VENUS-XS_20181031.png",
+      "size": 213748,
+      "checksum": "md5:0542eefba2578a933a9fef21657bc5ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181031.png/content"
+      }
+    },
+    {
+      "id": "f96a01e9-9635-40fb-aae5-b785f3200b8c",
+      "key": "VENUS-XS_20181102.png",
+      "size": 189732,
+      "checksum": "md5:38fca975e9063c22c433a3332915ede0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181102.png/content"
+      }
+    },
+    {
+      "id": "bf1262bc-75d4-4dd3-8341-7d7a4c5dafc3",
+      "key": "VENUS-XS_20201004.png",
+      "size": 197578,
+      "checksum": "md5:65f9a94dc4feda21487fd0c5fc667ea5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201004.png/content"
+      }
+    },
+    {
+      "id": "f0e811dc-eb70-4b6e-9279-b69f5775e50a",
+      "key": "VENUS-XS_20181104.png",
+      "size": 205591,
+      "checksum": "md5:25972a8608babbdfb7851c4572aa8484",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181104.png/content"
+      }
+    },
+    {
+      "id": "95b02900-c014-41cd-8922-a3cf5e126f01",
+      "key": "VENUS-XS_20181106.png",
+      "size": 216146,
+      "checksum": "md5:e7af79561c4af7cc3d11fd383bb78048",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181106.png/content"
+      }
+    },
+    {
+      "id": "0525e5aa-9aca-4990-afbf-7405c3a546a3",
+      "key": "VENUS-XS_20181108.png",
+      "size": 216415,
+      "checksum": "md5:517e996f773aa8c0ce675cfc3f740644",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181108.png/content"
+      }
+    },
+    {
+      "id": "c1515c43-7611-436d-a2dc-69c47cb78e6b",
+      "key": "VENUS-XS_20181110.png",
+      "size": 206920,
+      "checksum": "md5:40d461822fafd1475c5f1d4f6d469fb8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181110.png/content"
+      }
+    },
+    {
+      "id": "e8e11684-9a62-4c33-9189-1c361c8652d5",
+      "key": "VENUS-XS_20181112.png",
+      "size": 212544,
+      "checksum": "md5:b9c02c1947dfa8cd0e86ff0ebc43d377",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181112.png/content"
+      }
+    },
+    {
+      "id": "081b6c1e-09ac-4369-85fb-3f116ec09b97",
+      "key": "VENUS-XS_20181114.png",
+      "size": 200756,
+      "checksum": "md5:2f6179289eb3ec3d45284077c3bffb23",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181114.png/content"
+      }
+    },
+    {
+      "id": "314dcecc-daf7-483f-9e85-d9ea6a6586ae",
+      "key": "VENUS-XS_20181116.png",
+      "size": 213209,
+      "checksum": "md5:c460f316e783173cb795905b62d5967f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181116.png/content"
+      }
+    },
+    {
+      "id": "e25a34e8-1dc0-46bf-bf52-b8f679449ee4",
+      "key": "VENUS-XS_20181120.png",
+      "size": 213918,
+      "checksum": "md5:04eee94ee0786440e7f8378c500afd3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181120.png/content"
+      }
+    },
+    {
+      "id": "53b5b2c5-440f-42fd-a037-fd8af30ebe13",
+      "key": "VENUS-XS_20201002.png",
+      "size": 196334,
+      "checksum": "md5:d12feeccf6c24a890ee7ab8ac8c6e3d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20201002.png/content"
+      }
+    },
+    {
+      "id": "d24f9176-8d82-4767-b72d-4c19183b0ae0",
+      "key": "VENUS-XS_20181122.png",
+      "size": 215478,
+      "checksum": "md5:53de0ad144116dc85a4c8d023cc34bf0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181122.png/content"
+      }
+    },
+    {
+      "id": "80c632a2-4ac6-438e-9034-dff4cba516c7",
+      "key": "VENUS-XS_20181126.png",
+      "size": 217535,
+      "checksum": "md5:43f4e0773fed8ddd61fd236b84214793",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181126.png/content"
+      }
+    },
+    {
+      "id": "440aa422-761d-46fa-ad65-0614f74f006e",
+      "key": "VENUS-XS_20181128.png",
+      "size": 210190,
+      "checksum": "md5:08c3ef4535a2ffdcac6d158d295dbe12",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181128.png/content"
+      }
+    },
+    {
+      "id": "7a778079-1dae-4cd9-b90c-5a1fa275a8f0",
+      "key": "VENUS-XS_20181130.png",
+      "size": 214209,
+      "checksum": "md5:557ee2f98038e6081c0117ca8e24ab35",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181130.png/content"
+      }
+    },
+    {
+      "id": "040cb061-249a-4c9c-aacf-6edf86110066",
+      "key": "VENUS-XS_20181202.png",
+      "size": 216740,
+      "checksum": "md5:b3520f9cacef834fdbe1a680a906eb88",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181202.png/content"
+      }
+    },
+    {
+      "id": "58750cf1-0485-4fe1-83cc-a73d08484f04",
+      "key": "VENUS-XS_20181204.png",
+      "size": 213585,
+      "checksum": "md5:43a96d0aecee495ba7d8df42db862f11",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181204.png/content"
+      }
+    },
+    {
+      "id": "a03bcb28-2cfb-4995-bdb6-c52022bba03d",
+      "key": "VENUS-XS_20181206.png",
+      "size": 217363,
+      "checksum": "md5:0541784ca28333786a50e42fb0670afa",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181206.png/content"
+      }
+    },
+    {
+      "id": "121a0916-389d-43da-92c5-07d2844d6486",
+      "key": "VENUS-XS_20181208.png",
+      "size": 221034,
+      "checksum": "md5:5511abfad7242a758949940735c081c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181208.png/content"
+      }
+    },
+    {
+      "id": "2e97ffe7-8adb-4c63-9e72-8ad52939268e",
+      "key": "VENUS-XS_20181210.png",
+      "size": 216477,
+      "checksum": "md5:7bd5c98315cce37ae99db171060fb39f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181210.png/content"
+      }
+    },
+    {
+      "id": "acf79ae5-407d-477a-9a7e-1b1d70f51f70",
+      "key": "VENUS-XS_20181212.png",
+      "size": 201732,
+      "checksum": "md5:ad5acfdc96074b9cb371bc1be6e6cd6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181212.png/content"
+      }
+    },
+    {
+      "id": "ba3dd99c-ea56-4c91-9914-2c3210ee3ff1",
+      "key": "VENUS-XS_20181214.png",
+      "size": 216312,
+      "checksum": "md5:4f9efbbf58f905bb246e8eb34a85a004",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181214.png/content"
+      }
+    },
+    {
+      "id": "386b7fd6-769b-4ea2-a536-e3ad7f3ba4b6",
+      "key": "VENUS-XS_20181216.png",
+      "size": 221140,
+      "checksum": "md5:82b466c88a6c846148bcf6586674382d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181216.png/content"
+      }
+    },
+    {
+      "id": "f3cb6cd2-6dc7-4a97-b6fe-ab79a4200d2c",
+      "key": "VENUS-XS_20181220.png",
+      "size": 218644,
+      "checksum": "md5:bef4871b2d0e079a04835432b3d86765",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181220.png/content"
+      }
+    },
+    {
+      "id": "695babd6-cdd2-4a4e-bca6-cd4481b42b7d",
+      "key": "VENUS-XS_20181222.png",
+      "size": 219635,
+      "checksum": "md5:4d56f307c1a4ac968aae12cd2adfdd3c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181222.png/content"
+      }
+    },
+    {
+      "id": "cd22daab-b37d-48e6-a18e-1c798b587c6a",
+      "key": "VENUS-XS_20200930.png",
+      "size": 197451,
+      "checksum": "md5:6ee38835626d283ae17edbbca45cb918",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200930.png/content"
+      }
+    },
+    {
+      "id": "67fe7255-1ff2-42e0-b039-25b8795fe851",
+      "key": "VENUS-XS_20181224.png",
+      "size": 217419,
+      "checksum": "md5:e5ebf6e2e5f9d3a69e8eab3a930c0d6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181224.png/content"
+      }
+    },
+    {
+      "id": "977edf60-8566-486e-b02e-2e6ab21ea552",
+      "key": "VENUS-XS_20181226.png",
+      "size": 221132,
+      "checksum": "md5:15d601c6d13ae3e28837f18c2589d3e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181226.png/content"
+      }
+    },
+    {
+      "id": "6116d41c-123f-4757-b1df-5292b87bb135",
+      "key": "VENUS-XS_20181228.png",
+      "size": 211861,
+      "checksum": "md5:da8781f0b33967c17abbbbc4869ffc06",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181228.png/content"
+      }
+    },
+    {
+      "id": "e8f5a4cc-b53f-4882-a76b-89dca73ed671",
+      "key": "VENUS-XS_20181230.png",
+      "size": 221069,
+      "checksum": "md5:664449a6bd5960984abcda9093fe408e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20181230.png/content"
+      }
+    },
+    {
+      "id": "fc1bd80a-17e1-4212-9b27-d56e153c292c",
+      "key": "VENUS-XS_20190101.png",
+      "size": 216628,
+      "checksum": "md5:dd9f364dc6128d990dd0edf6ace45e7c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190101.png/content"
+      }
+    },
+    {
+      "id": "bcfdc2ea-6088-4ee5-bd49-a134b33acdd5",
+      "key": "VENUS-XS_20190103.png",
+      "size": 206245,
+      "checksum": "md5:ae7643b82fc9c3576bff50fc67c5e163",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190103.png/content"
+      }
+    },
+    {
+      "id": "1b853812-6027-4cbb-90cc-0818de5e42c0",
+      "key": "VENUS-XS_20190105.png",
+      "size": 173670,
+      "checksum": "md5:ba0182bef48edfdd039ca3b2fa22570c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190105.png/content"
+      }
+    },
+    {
+      "id": "7d63a7b6-f9c3-40c5-9403-4c53a4c406a6",
+      "key": "VENUS-XS_20190111.png",
+      "size": 199338,
+      "checksum": "md5:0a5caed091c9cdd6be51ee2b118a2800",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190111.png/content"
+      }
+    },
+    {
+      "id": "13e90144-157b-4aa6-92f4-1f97463f2890",
+      "key": "VENUS-XS_20190113.png",
+      "size": 211204,
+      "checksum": "md5:d9bc4666d9c9faee146e8383d129d2dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190113.png/content"
+      }
+    },
+    {
+      "id": "b68cd528-03af-4116-ac58-103ffaa2bffb",
+      "key": "VENUS-XS_20190115.png",
+      "size": 218803,
+      "checksum": "md5:6c6d95d19416e5027b87c741bb115336",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190115.png/content"
+      }
+    },
+    {
+      "id": "f62f2de2-b0e0-41cc-8e1d-c5e5acc56d28",
+      "key": "VENUS-XS_20200928.png",
+      "size": 197494,
+      "checksum": "md5:07626c0fc6a795f72da7985ff46e9166",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200928.png/content"
+      }
+    },
+    {
+      "id": "3e52c924-0533-4a38-85a0-9f904c525907",
+      "key": "VENUS-XS_20190119.png",
+      "size": 164011,
+      "checksum": "md5:20db0231bc4679041f6a22639b70baf8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190119.png/content"
+      }
+    },
+    {
+      "id": "bd8973ca-f01d-459f-b6aa-f4368cec7815",
+      "key": "VENUS-XS_20190121.png",
+      "size": 169032,
+      "checksum": "md5:64d0d657f2be9b4357b5c776dedc2e5e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190121.png/content"
+      }
+    },
+    {
+      "id": "5c259eb4-6081-48bf-833b-b2bd0c417405",
+      "key": "VENUS-XS_20190127.png",
+      "size": 205855,
+      "checksum": "md5:54635e54e047be5f19f651f385d69a9f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190127.png/content"
+      }
+    },
+    {
+      "id": "ba36d544-0c5e-4a62-8f82-57a4644a2c50",
+      "key": "VENUS-XS_20200926.png",
+      "size": 203310,
+      "checksum": "md5:250bf879477f68ec48ed9f738ebb4389",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200926.png/content"
+      }
+    },
+    {
+      "id": "3ed74cbc-894e-49a9-bdc6-b30f6dbd7bec",
+      "key": "VENUS-XS_20190202.png",
+      "size": 219875,
+      "checksum": "md5:5451453ffb1edd7dbfed4c995462c785",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190202.png/content"
+      }
+    },
+    {
+      "id": "55070c08-a24f-4991-86e9-03f08ea25231",
+      "key": "VENUS-XS_20200920.png",
+      "size": 191189,
+      "checksum": "md5:43ff8f5495fcc11dbc327656196c541c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200920.png/content"
+      }
+    },
+    {
+      "id": "6433fc4f-25a2-440f-956b-dcef3e9b2cba",
+      "key": "VENUS-XS_20200918.png",
+      "size": 193773,
+      "checksum": "md5:46a1030cc384e21e3b559160ef2e46e8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200918.png/content"
+      }
+    },
+    {
+      "id": "cc29f4a7-7f35-4749-b46b-d95c5a81096d",
+      "key": "VENUS-XS_20190206.png",
+      "size": 216597,
+      "checksum": "md5:fee68617a3adc1660179d04b2a7f432d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190206.png/content"
+      }
+    },
+    {
+      "id": "1e03c6e3-e61f-40c8-97b8-7b435370c846",
+      "key": "VENUS-XS_20200916.png",
+      "size": 194516,
+      "checksum": "md5:4f8f4bf5e9642e7680dd3e23d4b0a3b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200916.png/content"
+      }
+    },
+    {
+      "id": "a9f01e56-4046-4390-a02a-fc785a54bb69",
+      "key": "VENUS-XS_20200914.png",
+      "size": 190937,
+      "checksum": "md5:98cceda6ee01616651947599f015a313",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200914.png/content"
+      }
+    },
+    {
+      "id": "38bd5470-bd91-49fc-b187-a28fdc9a4926",
+      "key": "VENUS-XS_20200906.png",
+      "size": 192252,
+      "checksum": "md5:3f43e20edd0f1506ce006ed4ec955d4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200906.png/content"
+      }
+    },
+    {
+      "id": "49875ede-5e55-4976-83f0-95f95888b642",
+      "key": "VENUS-XS_20200904.png",
+      "size": 199038,
+      "checksum": "md5:708bbaa2a4554a4fd72deae697da1fc2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200904.png/content"
+      }
+    },
+    {
+      "id": "ae45ed1a-93cc-409c-a61a-c463d6e5d034",
+      "key": "VENUS-XS_20190210.png",
+      "size": 221718,
+      "checksum": "md5:920487a5519aa5a66fb51e6ee9235e21",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190210.png/content"
+      }
+    },
+    {
+      "id": "7449c5b1-987b-4b98-a540-32230a8e6ce0",
+      "key": "VENUS-XS_20200831.png",
+      "size": 183937,
+      "checksum": "md5:30022fd33033661c2fdaad57353eaeac",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200831.png/content"
+      }
+    },
+    {
+      "id": "8e1596e6-977e-4f90-916d-9bc75947a5ec",
+      "key": "VENUS-XS_20200829.png",
+      "size": 200056,
+      "checksum": "md5:fb7045d161a4c923efd71984fd723bee",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200829.png/content"
+      }
+    },
+    {
+      "id": "91a18a8d-b1b7-44a0-a943-4e7f3a474b77",
+      "key": "VENUS-XS_20190212.png",
+      "size": 161905,
+      "checksum": "md5:fa99785b7b4082b0fa8ebfd641b1dc69",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190212.png/content"
+      }
+    },
+    {
+      "id": "37e5b4c1-cc65-4b57-943f-07e7f1b345db",
+      "key": "VENUS-XS_20190216.png",
+      "size": 195052,
+      "checksum": "md5:895a2f5b2f5997c9ad7918db8cdb11ca",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190216.png/content"
+      }
+    },
+    {
+      "id": "6f688b32-88d8-49b4-89aa-f736bc38330f",
+      "key": "VENUS-XS_20190218.png",
+      "size": 199170,
+      "checksum": "md5:b63a6b2bcd7acfaa0b87f954c19f477e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190218.png/content"
+      }
+    },
+    {
+      "id": "f7efa8af-d084-4d30-81a8-0852418f7431",
+      "key": "VENUS-XS_20190220.png",
+      "size": 171093,
+      "checksum": "md5:a1741ffe24e2f7c0ceb174666e18c0a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190220.png/content"
+      }
+    },
+    {
+      "id": "e7603e44-e23c-482c-ba01-474bf27aced5",
+      "key": "VENUS-XS_20200827.png",
+      "size": 199335,
+      "checksum": "md5:76719423db853d91d98ef50572423cbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200827.png/content"
+      }
+    },
+    {
+      "id": "4629938e-babc-4382-847d-982bd2e7db65",
+      "key": "VENUS-XS_20190302.png",
+      "size": 164539,
+      "checksum": "md5:de4a1536b9f31ed9252ef6388e812c6b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190302.png/content"
+      }
+    },
+    {
+      "id": "9587f39c-7cfe-4cb7-b7ae-44857f1903fa",
+      "key": "VENUS-XS_20190304.png",
+      "size": 218784,
+      "checksum": "md5:ea696030d9ec520a18e3b7bbae65f51a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190304.png/content"
+      }
+    },
+    {
+      "id": "70b43ac3-4cbb-401d-be93-bb674b6f56e3",
+      "key": "VENUS-XS_20200819.png",
+      "size": 205993,
+      "checksum": "md5:67b404341c0ffd46de0e68f962609764",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200819.png/content"
+      }
+    },
+    {
+      "id": "74e7f93f-df1c-412f-be4a-9c7c194a8448",
+      "key": "VENUS-XS_20190306.png",
+      "size": 212042,
+      "checksum": "md5:99de7e74a7425a6b4b2375b0d33a5bbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190306.png/content"
+      }
+    },
+    {
+      "id": "4782727c-c881-4e90-afb5-621a103c5fa7",
+      "key": "VENUS-XS_20190308.png",
+      "size": 224332,
+      "checksum": "md5:0d30f1800be97f17aad814490fc2695f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190308.png/content"
+      }
+    },
+    {
+      "id": "db8f22b5-0b59-4bd4-9ae7-39499bca8e61",
+      "key": "VENUS-XS_20190312.png",
+      "size": 219688,
+      "checksum": "md5:5693364d16151091384410f49832a5f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190312.png/content"
+      }
+    },
+    {
+      "id": "d3cb0994-f83c-43ae-aff8-cf25cebb86b4",
+      "key": "VENUS-XS_20190316.png",
+      "size": 212102,
+      "checksum": "md5:ba77bcf0c14ee14cc39fc8a8b8798029",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190316.png/content"
+      }
+    },
+    {
+      "id": "eeac0bd3-9153-4abb-9a81-94056844ac03",
+      "key": "VENUS-XS_20190322.png",
+      "size": 210077,
+      "checksum": "md5:36f3f4b99258b3486f48f98b78e0c501",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190322.png/content"
+      }
+    },
+    {
+      "id": "0dfab92f-00f6-4a7d-b544-22b44375427e",
+      "key": "VENUS-XS_20190324.png",
+      "size": 218186,
+      "checksum": "md5:9a0ac58aefbe8d7949c4cd5a125e3a34",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190324.png/content"
+      }
+    },
+    {
+      "id": "e3e047af-5a99-43ad-b645-a17218df0eaa",
+      "key": "VENUS-XS_20200807.png",
+      "size": 203778,
+      "checksum": "md5:453d8d126e6628e16804e238fb86a621",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200807.png/content"
+      }
+    },
+    {
+      "id": "8dc09093-45c5-4718-9490-e771b8c9332a",
+      "key": "VENUS-XS_20190328.png",
+      "size": 224593,
+      "checksum": "md5:163921ab0a90f18ef40593928ae240eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190328.png/content"
+      }
+    },
+    {
+      "id": "cbe074d3-c1d5-4f0f-9c30-e4f28e911076",
+      "key": "VENUS-XS_20190330.png",
+      "size": 227233,
+      "checksum": "md5:789ce81e9f310551bf61401a83057a68",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190330.png/content"
+      }
+    },
+    {
+      "id": "eba9f3c9-98ee-4df3-ba20-8b981ec7bc51",
+      "key": "VENUS-XS_20190401.png",
+      "size": 203123,
+      "checksum": "md5:946c660f7001cb1658f464f3aa906fd0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190401.png/content"
+      }
+    },
+    {
+      "id": "40ec7ce0-eb6f-47e9-aa78-c19552da09f7",
+      "key": "VENUS-XS_20200608.png",
+      "size": 214314,
+      "checksum": "md5:fe04e252f1343223e408f285c4a7a714",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200608.png/content"
+      }
+    },
+    {
+      "id": "c2f4a070-1b13-45bc-be78-b3a466b11d9a",
+      "key": "VENUS-XS_20200602.png",
+      "size": 148582,
+      "checksum": "md5:c2c6a655e47c695c8ae08c261bb42ae8",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200602.png/content"
+      }
+    },
+    {
+      "id": "5a763dea-600f-4aef-b57e-2d417e0f8ffc",
+      "key": "VENUS-XS_20200523.png",
+      "size": 220278,
+      "checksum": "md5:ef283042697d0f8e119dcf3f051ad613",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200523.png/content"
+      }
+    },
+    {
+      "id": "029d0a70-2cad-49db-9db6-f8505a77a76e",
+      "key": "VENUS-XS_20200517.png",
+      "size": 223849,
+      "checksum": "md5:b93648f1a3dacd7402e664a650ad8aa7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200517.png/content"
+      }
+    },
+    {
+      "id": "ca038446-f559-4e36-a78f-b04eb487370c",
+      "key": "VENUS-XS_20200515.png",
+      "size": 224648,
+      "checksum": "md5:039226f51b38c221e5057649fcd51d3f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200515.png/content"
+      }
+    },
+    {
+      "id": "f4b91604-eb0a-437d-9aee-28375cffa6c5",
+      "key": "VENUS-XS_20190403.png",
+      "size": 164250,
+      "checksum": "md5:4f72497443b3a9e9d7762fee111696ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190403.png/content"
+      }
+    },
+    {
+      "id": "f588b7b5-3cdf-4189-a804-af1c9abc9ec5",
+      "key": "VENUS-XS_20200513.png",
+      "size": 221184,
+      "checksum": "md5:f6cfbaf01436afede29c1b777ef3858a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200513.png/content"
+      }
+    },
+    {
+      "id": "4cf073e8-27dd-41ab-9c2d-b3f2f0907b48",
+      "key": "VENUS-XS_20190405.png",
+      "size": 176437,
+      "checksum": "md5:d99f4aee34984c5079794e7ec60e3460",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190405.png/content"
+      }
+    },
+    {
+      "id": "ad86f7cf-253c-4362-9d36-57a45a00c730",
+      "key": "VENUS-XS_20200509.png",
+      "size": 221261,
+      "checksum": "md5:ea0cc3ff38b62c30764e00a6fcd37f32",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200509.png/content"
+      }
+    },
+    {
+      "id": "465f7ceb-abb2-4d09-a33f-4620368f7c3b",
+      "key": "VENUS-XS_20200505.png",
+      "size": 220160,
+      "checksum": "md5:d19b12e8c4cf99147d89563bb3f0e90a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200505.png/content"
+      }
+    },
+    {
+      "id": "1029c82b-fa33-4691-ade7-d4c85107db35",
+      "key": "VENUS-XS_20190411.png",
+      "size": 217825,
+      "checksum": "md5:63b69860e6752ea7488fe923576b51e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190411.png/content"
+      }
+    },
+    {
+      "id": "71c26b4f-1982-470d-98a1-3e34638a727b",
+      "key": "VENUS-XS_20200425.png",
+      "size": 212144,
+      "checksum": "md5:2f9e689c913287a514cc3877ac592c8d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200425.png/content"
+      }
+    },
+    {
+      "id": "0f9d6ae5-501a-4464-bd46-50d2c2f4e6fe",
+      "key": "VENUS-XS_20200419.png",
+      "size": 190490,
+      "checksum": "md5:1709802314ef609f876d669a1addfe41",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200419.png/content"
+      }
+    },
+    {
+      "id": "47bb8caf-e6ba-40b3-9660-8325fa35944c",
+      "key": "VENUS-XS_20190415.png",
+      "size": 175630,
+      "checksum": "md5:509383bc01dbee964a8e71aa9d16bc85",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190415.png/content"
+      }
+    },
+    {
+      "id": "62ba4cfd-b6d4-4154-9454-1ee736b5eb09",
+      "key": "VENUS-XS_20190419.png",
+      "size": 223957,
+      "checksum": "md5:be3f8382525344f76828660ebef8d7e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190419.png/content"
+      }
+    },
+    {
+      "id": "c2b94345-e3f9-453d-af1d-70050e0f5d39",
+      "key": "VENUS-XS_20200417.png",
+      "size": 181868,
+      "checksum": "md5:7bf07316706eea57fd816a32ec8ae840",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200417.png/content"
+      }
+    },
+    {
+      "id": "ac89ca4b-10f5-4fc6-baad-ce30533ce5e9",
+      "key": "VENUS-XS_20190423.png",
+      "size": 197310,
+      "checksum": "md5:23daf211b0ad7ea7b08c2f439754de69",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190423.png/content"
+      }
+    },
+    {
+      "id": "32606499-93cd-499c-b46b-259e15bae0f4",
+      "key": "VENUS-XS_20200415.png",
+      "size": 195492,
+      "checksum": "md5:ac6a4b41949dc753303010dcb03d3d8e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200415.png/content"
+      }
+    },
+    {
+      "id": "3b68549d-b0ce-4cbf-b11a-a13c26d74899",
+      "key": "VENUS-XS_20200413.png",
+      "size": 186547,
+      "checksum": "md5:03d4aa15e67fe28c0871bc1e86cb55fc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200413.png/content"
+      }
+    },
+    {
+      "id": "78f0dbc0-6687-43a5-8e17-6eed96393c81",
+      "key": "VENUS-XS_20200411.png",
+      "size": 201534,
+      "checksum": "md5:557cf4bd06ed30ee958e6f4442101beb",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200411.png/content"
+      }
+    },
+    {
+      "id": "d8fdc200-72af-48e6-a0e5-a37585b4292c",
+      "key": "VENUS-XS_20190425.png",
+      "size": 217694,
+      "checksum": "md5:8a735f82dd106b04a5078ed76fb8c309",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190425.png/content"
+      }
+    },
+    {
+      "id": "80fd0c3a-c35f-4ec4-95d5-f5073655a7b8",
+      "key": "VENUS-XS_20190427.png",
+      "size": 222903,
+      "checksum": "md5:6c5394e0b4acd6cdc99f7c2e8d4ec160",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190427.png/content"
+      }
+    },
+    {
+      "id": "1d32d19e-bce0-4345-88a4-160356d64b4e",
+      "key": "VENUS-XS_20190429.png",
+      "size": 227155,
+      "checksum": "md5:12cfff304d1832ce1a3cca040a561d61",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190429.png/content"
+      }
+    },
+    {
+      "id": "a73f18b9-724a-4cad-baa3-d664b7850d42",
+      "key": "VENUS-XS_20200409.png",
+      "size": 208536,
+      "checksum": "md5:764e0c8cf9f650d6607f868f8d094ada",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200409.png/content"
+      }
+    },
+    {
+      "id": "bda97e30-4268-4a0d-8feb-a15928566e4f",
+      "key": "VENUS-XS_20200407.png",
+      "size": 204242,
+      "checksum": "md5:f67a0e02ab7435696330a6a2ec196b30",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200407.png/content"
+      }
+    },
+    {
+      "id": "f1bed85f-7beb-46b0-9d01-67e67f5906a1",
+      "key": "VENUS-XS_20190501.png",
+      "size": 225748,
+      "checksum": "md5:78a62f722415ae69c04e2affb4cc780e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190501.png/content"
+      }
+    },
+    {
+      "id": "b198737e-513a-4ccc-bdc3-175243cf8b10",
+      "key": "VENUS-XS_20190505.png",
+      "size": 226563,
+      "checksum": "md5:a5a84685637f99ab4b7b1147e6056b0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190505.png/content"
+      }
+    },
+    {
+      "id": "45b977f9-60cd-4d6c-84e6-ccabfeb7f2fe",
+      "key": "VENUS-XS_20200405.png",
+      "size": 214237,
+      "checksum": "md5:6938317119ae5cdaa03d0df3aa1e9835",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200405.png/content"
+      }
+    },
+    {
+      "id": "2b89ab9b-c2ba-4d5d-a93a-7b3d99c1651f",
+      "key": "VENUS-XS_20190507.png",
+      "size": 226318,
+      "checksum": "md5:b9b6d3e6b5c68b38e9eaf5a5ba2bb85d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190507.png/content"
+      }
+    },
+    {
+      "id": "1ea98c02-2666-4278-a9d2-8e22ad22ea67",
+      "key": "VENUS-XS_20190509.png",
+      "size": 230743,
+      "checksum": "md5:6fb5fda1735162732c4e6307e240333e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190509.png/content"
+      }
+    },
+    {
+      "id": "401bcd9d-321b-4034-9868-d0642b4c69fd",
+      "key": "VENUS-XS_20190511.png",
+      "size": 170275,
+      "checksum": "md5:43bad0e2871320ad428620ad591e8cc2",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190511.png/content"
+      }
+    },
+    {
+      "id": "79efeaac-4413-4405-b8c4-fc227a0a967a",
+      "key": "VENUS-XS_20200403.png",
+      "size": 212980,
+      "checksum": "md5:36cb4ea6b299bb1874969f6ed72a3689",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200403.png/content"
+      }
+    },
+    {
+      "id": "c42a40d6-36a2-47a6-91f0-8cd38a5b255b",
+      "key": "VENUS-XS_20190515.png",
+      "size": 217720,
+      "checksum": "md5:8018ee717311d236144ace4ae2a3439e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190515.png/content"
+      }
+    },
+    {
+      "id": "948f2714-a6c9-4a43-9dc3-3598c0b26e92",
+      "key": "VENUS-XS_20200330.png",
+      "size": 223312,
+      "checksum": "md5:6fdc020014ed73f538566145c86dc33f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200330.png/content"
+      }
+    },
+    {
+      "id": "5a42fec7-c48d-42ec-82d6-254c456f36a2",
+      "key": "VENUS-XS_20190517.png",
+      "size": 210357,
+      "checksum": "md5:03241c2b864da10194453ee87bc97cba",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190517.png/content"
+      }
+    },
+    {
+      "id": "f8cebfb0-ca27-4d04-8530-cf12917c6737",
+      "key": "VENUS-XS_20200328.png",
+      "size": 153160,
+      "checksum": "md5:f7037887c0c74ebac0814dcbf7ac7709",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200328.png/content"
+      }
+    },
+    {
+      "id": "0510595a-72b0-47ce-9e61-46c7ef895055",
+      "key": "VENUS-XS_20190519.png",
+      "size": 210234,
+      "checksum": "md5:5a96a06c698207c6fc713ec562efdd90",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190519.png/content"
+      }
+    },
+    {
+      "id": "00045a76-4b0d-4ca1-ae3f-fc19c76a90ba",
+      "key": "VENUS-XS_20200326.png",
+      "size": 209737,
+      "checksum": "md5:7541598a8a7c0f04ff83aeef152a3273",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200326.png/content"
+      }
+    },
+    {
+      "id": "28ad6c33-1a1e-4168-81c5-880ed6c9e77b",
+      "key": "VENUS-XS_20190521.png",
+      "size": 215044,
+      "checksum": "md5:1d0945838e1c2e91f414b02c2d548776",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190521.png/content"
+      }
+    },
+    {
+      "id": "3f4aea45-d811-4b53-8250-a614e1bac5aa",
+      "key": "VENUS-XS_20200324.png",
+      "size": 217000,
+      "checksum": "md5:677a4a9900994d4966b9798320d4f620",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200324.png/content"
+      }
+    },
+    {
+      "id": "4fd5da13-2e09-4915-96f7-8a7b9e99af4a",
+      "key": "VENUS-XS_20200320.png",
+      "size": 197486,
+      "checksum": "md5:664a03af65e6e46150db1cf71bc841ea",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200320.png/content"
+      }
+    },
+    {
+      "id": "72acf36f-ce03-4039-b225-35c54543a629",
+      "key": "VENUS-XS_20191014.png",
+      "size": 204528,
+      "checksum": "md5:2674957efcccaa9c07c00df7a313bcbe",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191014.png/content"
+      }
+    },
+    {
+      "id": "d7446891-52f4-4f2c-b57f-15a2a4f0823a",
+      "key": "VENUS-XS_20190523.png",
+      "size": 204850,
+      "checksum": "md5:43fb06287f816063dc82fc0f8450cc09",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190523.png/content"
+      }
+    },
+    {
+      "id": "a0e692b1-eed7-4e22-86fc-4f8dc183395b",
+      "key": "VENUS-XS_20200318.png",
+      "size": 222863,
+      "checksum": "md5:5454ed4dcc38156fefe8bfa1c3cc2021",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200318.png/content"
+      }
+    },
+    {
+      "id": "cca68120-49ca-4175-a6c6-a88d94b0bc18",
+      "key": "VENUS-XS_20190525.png",
+      "size": 207131,
+      "checksum": "md5:f319ed9645af1397afa6f69b977277c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190525.png/content"
+      }
+    },
+    {
+      "id": "ac177355-41be-4bf9-aac5-0590841d9d0f",
+      "key": "VENUS-XS_20200316.png",
+      "size": 220089,
+      "checksum": "md5:020b8af75bb78f17b47825ef85c6c630",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200316.png/content"
+      }
+    },
+    {
+      "id": "d8ee324c-9407-4009-a649-c604265d90a2",
+      "key": "VENUS-XS_20190527.png",
+      "size": 210041,
+      "checksum": "md5:20b151734fe2462f17d413d8147eeb26",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190527.png/content"
+      }
+    },
+    {
+      "id": "f0a354c9-a1ac-473d-8e73-9ea713705e91",
+      "key": "VENUS-XS_20200312.png",
+      "size": 223556,
+      "checksum": "md5:d4438ba5abc2313a2b37a2a168ea8ec5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200312.png/content"
+      }
+    },
+    {
+      "id": "ee2cfa49-8825-4dbb-9d12-c097d7746e41",
+      "key": "VENUS-XS_20190604.png",
+      "size": 221491,
+      "checksum": "md5:6449ece40302dd783933757ff566ad63",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190604.png/content"
+      }
+    },
+    {
+      "id": "c3e8b775-8d5f-4cef-a5b7-8632bd7bec64",
+      "key": "VENUS-XS_20190606.png",
+      "size": 224325,
+      "checksum": "md5:ddfa8d8b4c744ed828c267998c927ae6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190606.png/content"
+      }
+    },
+    {
+      "id": "6f563a99-c9b1-4f8f-a6cf-07b1c837f3ea",
+      "key": "VENUS-XS_20200310.png",
+      "size": 155820,
+      "checksum": "md5:18531c7174fdce5c8a17249b792724a0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200310.png/content"
+      }
+    },
+    {
+      "id": "e377b93d-545d-4942-883b-d50411c673fa",
+      "key": "VENUS-XS_20190608.png",
+      "size": 226670,
+      "checksum": "md5:499747de0b349a2f1a860cb41930b132",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190608.png/content"
+      }
+    },
+    {
+      "id": "c528d04b-a9bd-4f00-b85c-1595e54f6b92",
+      "key": "VENUS-XS_20200308.png",
+      "size": 223637,
+      "checksum": "md5:8022d8f0a16274c754054a8ac3d1c710",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200308.png/content"
+      }
+    },
+    {
+      "id": "b2cccb46-22e7-46fe-990a-f2f9c58e2390",
+      "key": "VENUS-XS_20190610.png",
+      "size": 213453,
+      "checksum": "md5:ce50e9550d8b194314ef75c9e4f07352",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190610.png/content"
+      }
+    },
+    {
+      "id": "9367e1ea-6a70-41c4-94c8-0265b32f8551",
+      "key": "VENUS-XS_20200304.png",
+      "size": 215895,
+      "checksum": "md5:dfe20a81ed93db06823a52e88ce272ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200304.png/content"
+      }
+    },
+    {
+      "id": "573b3119-a9da-45d2-82ba-4263866da2ce",
+      "key": "VENUS-XS_20190612.png",
+      "size": 210523,
+      "checksum": "md5:64303d2f477c662df7049239599de61d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190612.png/content"
+      }
+    },
+    {
+      "id": "6b0b2761-2060-4759-af8b-0aac409c8a60",
+      "key": "VENUS-XS_20190614.png",
+      "size": 214954,
+      "checksum": "md5:4490ffaf86c2bfd347a4087db10fbbed",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190614.png/content"
+      }
+    },
+    {
+      "id": "072052b7-5452-48f5-bf68-d8b8fe32e8c8",
+      "key": "VENUS-XS_20200225.png",
+      "size": 218848,
+      "checksum": "md5:61a306eedce3166d20f622b4fb06f140",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200225.png/content"
+      }
+    },
+    {
+      "id": "f1516719-db68-41d5-bfa5-3046dc3fa0a2",
+      "key": "VENUS-XS_20190616.png",
+      "size": 228382,
+      "checksum": "md5:0baaa9a693807f2d38fd4e8dcc85a1ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190616.png/content"
+      }
+    },
+    {
+      "id": "ad155f18-ea8e-4e5b-857d-f4e6f8f2d15d",
+      "key": "VENUS-XS_20200223.png",
+      "size": 219419,
+      "checksum": "md5:c780daf9775e0fd1f88acca4b10b169c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200223.png/content"
+      }
+    },
+    {
+      "id": "4c6ac758-d168-4941-8c7d-7edc3723bbac",
+      "key": "VENUS-XS_20190630.png",
+      "size": 222282,
+      "checksum": "md5:d53a2391f82e759ca9cf89b7d42bd55b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190630.png/content"
+      }
+    },
+    {
+      "id": "773853f1-4dba-4fad-863a-0690c147fd1c",
+      "key": "VENUS-XS_20200219.png",
+      "size": 214887,
+      "checksum": "md5:750c2619f1d46a1201fae2561f17098d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200219.png/content"
+      }
+    },
+    {
+      "id": "a1937614-b2b1-448b-a2d4-37d38994de3a",
+      "key": "VENUS-XS_20200217.png",
+      "size": 220594,
+      "checksum": "md5:0ad95a353740b001e89143bddd390af6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200217.png/content"
+      }
+    },
+    {
+      "id": "0700eb5e-1cba-493d-b0b3-dad850ff9424",
+      "key": "VENUS-XS_20190702.png",
+      "size": 223344,
+      "checksum": "md5:95362b1bc06c668f8bdc56b7b1b5e672",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190702.png/content"
+      }
+    },
+    {
+      "id": "2aee2f81-41ae-4a61-abb5-51bb0ca04fec",
+      "key": "VENUS-XS_20200215.png",
+      "size": 220651,
+      "checksum": "md5:a37ee2da37591351d6d16f1eca97ecc9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200215.png/content"
+      }
+    },
+    {
+      "id": "1e88e2c8-ba17-4380-ba4d-a3cbd91e0e73",
+      "key": "VENUS-XS_20190704.png",
+      "size": 181525,
+      "checksum": "md5:7f67844fb3d6fd1c06fde5ffcf4ca77e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190704.png/content"
+      }
+    },
+    {
+      "id": "f6ac398e-348a-4208-b590-96d083694302",
+      "key": "VENUS-XS_20200213.png",
+      "size": 135020,
+      "checksum": "md5:11ed5033410521439fa83f4d567dab86",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200213.png/content"
+      }
+    },
+    {
+      "id": "e402c53a-280d-456f-9f2d-a087b58f7c45",
+      "key": "VENUS-XS_20200211.png",
+      "size": 216048,
+      "checksum": "md5:fe378e850df7f0b9fe6a2851028f37ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200211.png/content"
+      }
+    },
+    {
+      "id": "3e533211-76ec-45d2-8a55-9caf406f14c2",
+      "key": "VENUS-XS_20171207.png",
+      "size": 215931,
+      "checksum": "md5:9f7c8aa7fee90de70191c24464010e87",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171207.png/content"
+      }
+    },
+    {
+      "id": "3f9201fa-ce45-433d-9d0a-187880127a2a",
+      "key": "VENUS-XS_20171129.png",
+      "size": 211400,
+      "checksum": "md5:b8ab81853846bbbd5f2171c68d596453",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171129.png/content"
+      }
+    },
+    {
+      "id": "a64a89d7-32be-453f-823d-3f32e8b1317f",
+      "key": "VENUS-XS_20190807.png",
+      "size": 183393,
+      "checksum": "md5:da0059f59eefdf5cc46de3a4c69fad24",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190807.png/content"
+      }
+    },
+    {
+      "id": "d96743e5-1fbe-40da-9128-975cfb7971da",
+      "key": "VENUS-XS_20171127.png",
+      "size": 210652,
+      "checksum": "md5:c90d1110d2ecf7113e31e1af6e6a2800",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20171127.png/content"
+      }
+    },
+    {
+      "id": "52fa65ba-19cd-44aa-9ac7-795d52bc5d77",
+      "key": "VENUS-XS_20190821.png",
+      "size": 193858,
+      "checksum": "md5:26ceb0c90ae1a43663dd703b4829e53e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190821.png/content"
+      }
+    },
+    {
+      "id": "901fd8a0-766e-4f95-8e4e-a289bf07c3c2",
+      "key": "VENUS-XS_20190823.png",
+      "size": 199336,
+      "checksum": "md5:883ca91f2d7ec7112d75da96bbeb5644",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190823.png/content"
+      }
+    },
+    {
+      "id": "5989dcbc-ff78-45e9-b37c-f58f2898098a",
+      "key": "VENUS-XS_20200209.png",
+      "size": 220051,
+      "checksum": "md5:575a3a504345081b491d0d19003ad2dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200209.png/content"
+      }
+    },
+    {
+      "id": "bd84c9ec-993f-404a-80fa-9f700849fb19",
+      "key": "VENUS-XS_20190827.png",
+      "size": 190085,
+      "checksum": "md5:7610e59bfc931da1f4a48fe91962db46",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190827.png/content"
+      }
+    },
+    {
+      "id": "50cbb27d-944c-435b-a620-240857a30c77",
+      "key": "VENUS-XS_20190902.png",
+      "size": 182673,
+      "checksum": "md5:d94b7534146eb0e6d2b1af27360e392b",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190902.png/content"
+      }
+    },
+    {
+      "id": "9e40631e-806a-424f-b7e4-43715aeac54d",
+      "key": "VENUS-XS_20200106.png",
+      "size": 210312,
+      "checksum": "md5:acbf92a4a8f42e9a5eaf8227b6cbcd43",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200106.png/content"
+      }
+    },
+    {
+      "id": "dab2a4d5-7598-47eb-a6ef-6c5643bccd51",
+      "key": "VENUS-XS_20200104.png",
+      "size": 203449,
+      "checksum": "md5:36eec686a6408467608578cbff5f021f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200104.png/content"
+      }
+    },
+    {
+      "id": "59dcbe98-6120-4fd6-93f7-6a8ae8a98cca",
+      "key": "VENUS-XS_20190908.png",
+      "size": 199675,
+      "checksum": "md5:66613f333572d915edd598a86cf14858",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190908.png/content"
+      }
+    },
+    {
+      "id": "11e59f4c-5dec-4dbe-b6f5-0191bbaed846",
+      "key": "VENUS-XS_20190910.png",
+      "size": 186405,
+      "checksum": "md5:58222b62ee2a08f4cd3f68226306bbcc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190910.png/content"
+      }
+    },
+    {
+      "id": "42c56696-1bbb-4654-b360-51566ac07bf7",
+      "key": "VENUS-XS_20190914.png",
+      "size": 176682,
+      "checksum": "md5:ce7dbcae87f49174cf9cc243dd9e9ab1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190914.png/content"
+      }
+    },
+    {
+      "id": "3fab98e8-ba83-421e-b750-def3cabd3563",
+      "key": "VENUS-XS_20200102.png",
+      "size": 173413,
+      "checksum": "md5:a172c48d62a3dc28b448e20ffeeaf536",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20200102.png/content"
+      }
+    },
+    {
+      "id": "adfeb83a-b6a4-4356-a316-ba6dc435ba15",
+      "key": "VENUS-XS_20190920.png",
+      "size": 162596,
+      "checksum": "md5:519b02edb7b3dc216d6253babf37b96a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190920.png/content"
+      }
+    },
+    {
+      "id": "35b61dfd-1db0-4f3f-b818-6991aaad0717",
+      "key": "VENUS-XS_20190930.png",
+      "size": 185653,
+      "checksum": "md5:dd4bbcf07ecea0817fe17a2327a44d87",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20190930.png/content"
+      }
+    },
+    {
+      "id": "d5c6e6e2-8fa5-4d54-aef2-aff0ab6ae6a4",
+      "key": "VENUS-XS_20191002.png",
+      "size": 169882,
+      "checksum": "md5:d05f07c415a9a369a0e84bb537cafec7",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191002.png/content"
+      }
+    },
+    {
+      "id": "407a36f3-7e95-4d9d-9d07-c4b578a6f99a",
+      "key": "VENUS-XS_20191231.png",
+      "size": 207979,
+      "checksum": "md5:d9742e38c4d34379a8cbff00ac0ede00",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191231.png/content"
+      }
+    },
+    {
+      "id": "77fd839a-2801-4af2-b59c-4aca3e159214",
+      "key": "VENUS-XS_20191006.png",
+      "size": 193772,
+      "checksum": "md5:00a4694fa5056bb24671f6cd91e16736",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191006.png/content"
+      }
+    },
+    {
+      "id": "37ae02fa-4848-4e39-9316-320c0fb36c60",
+      "key": "VENUS-XS_20191008.png",
+      "size": 168030,
+      "checksum": "md5:b5ac673ff809c8f7db5fd46fb1538d31",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191008.png/content"
+      }
+    },
+    {
+      "id": "2ec69b1d-edcb-4084-b75a-a807da9b0e12",
+      "key": "VENUS-XS_20191010.png",
+      "size": 199848,
+      "checksum": "md5:56865d43cb7753ad23817361b7839d3e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191010.png/content"
+      }
+    },
+    {
+      "id": "5b60dcf4-e673-40d5-a28e-f36bf1df0986",
+      "key": "VENUS-XS_20191012.png",
+      "size": 201029,
+      "checksum": "md5:27026f1c4dd9d0d3e6f2a6651a1e2ecc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191012.png/content"
+      }
+    },
+    {
+      "id": "2a21c397-0eb3-418f-b63c-9c096717e4fe",
+      "key": "VENUS-XS_20191016.png",
+      "size": 203275,
+      "checksum": "md5:30880c2ea2a5cfaf9a5012fbf598f400",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191016.png/content"
+      }
+    },
+    {
+      "id": "b7e92315-91cf-47c1-96e7-890589d7cfff",
+      "key": "VENUS-XS_20191229.png",
+      "size": 222745,
+      "checksum": "md5:0b2f1fed7f525da8af587dda00ed43bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191229.png/content"
+      }
+    },
+    {
+      "id": "1fa482b3-55c0-4bf6-88f7-2b823fc857d5",
+      "key": "VENUS-XS_20191018.png",
+      "size": 155770,
+      "checksum": "md5:54dc42166dc0f7c6aea3b3a2f7dc5b22",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191018.png/content"
+      }
+    },
+    {
+      "id": "b5b3d941-5eab-4028-bd08-2c5c4a954285",
+      "key": "VENUS-XS_20191227.png",
+      "size": 218549,
+      "checksum": "md5:a1eabcc592e5acc1d25ebfe513890f01",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191227.png/content"
+      }
+    },
+    {
+      "id": "95c07920-7911-4c63-b1c5-6b04ce901014",
+      "key": "VENUS-XS_20191022.png",
+      "size": 201572,
+      "checksum": "md5:9dae344dd2b0b218e5ebd47f351438e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191022.png/content"
+      }
+    },
+    {
+      "id": "7f9ba5fd-add5-455e-beec-93501b2658da",
+      "key": "VENUS-XS_20191028.png",
+      "size": 222926,
+      "checksum": "md5:d802eeceb1343da0c1ca35857a91b35a",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191028.png/content"
+      }
+    },
+    {
+      "id": "35d29cf3-9497-4c7a-a69a-1329c55fecee",
+      "key": "VENUS-XS_20191225.png",
+      "size": 219556,
+      "checksum": "md5:3a0a279de166af64c04dafb2852afe5d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191225.png/content"
+      }
+    },
+    {
+      "id": "3a0ee032-b4f6-4721-b862-4e1dcf7d9864",
+      "key": "VENUS-XS_20191101.png",
+      "size": 206296,
+      "checksum": "md5:3a64c78d80e2aa137fd56b556e0ab45e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191101.png/content"
+      }
+    },
+    {
+      "id": "2506651b-ff72-467f-8600-634a3c39900b",
+      "key": "VENUS-XS_20191103.png",
+      "size": 163294,
+      "checksum": "md5:15527bc736a91ef39235502cad267040",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191103.png/content"
+      }
+    },
+    {
+      "id": "f406b652-f86c-4b4f-b43a-24d828c9d8d8",
+      "key": "VENUS-XS_20191105.png",
+      "size": 208169,
+      "checksum": "md5:f6d6e29170ecb709e7339f2856336e53",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191105.png/content"
+      }
+    },
+    {
+      "id": "de380ceb-e6d0-4d57-9614-43884a537895",
+      "key": "VENUS-XS_20191107.png",
+      "size": 194815,
+      "checksum": "md5:999e7b69bc7e67d9366bb40827208d19",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191107.png/content"
+      }
+    },
+    {
+      "id": "18682e80-24d3-4535-b35e-927d1999d6ba",
+      "key": "VENUS-XS_20191109.png",
+      "size": 215604,
+      "checksum": "md5:c75eb243525d102dddff3e54103cf355",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191109.png/content"
+      }
+    },
+    {
+      "id": "c5fe5ee3-be11-4621-94ed-8a4ed8084d5f",
+      "key": "VENUS-XS_20191219.png",
+      "size": 221043,
+      "checksum": "md5:10990a64d92ba8b346b513b481a05252",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191219.png/content"
+      }
+    },
+    {
+      "id": "7b9cdf0a-9a85-42d7-bde5-c09229020f69",
+      "key": "VENUS-XS_20191201.png",
+      "size": 129450,
+      "checksum": "md5:c2cf636162f4b3cdcb55c46413a72582",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191201.png/content"
+      }
+    },
+    {
+      "id": "9fc399ad-d0fb-4ac5-a320-81e3d5ce76b6",
+      "key": "VENUS-XS_20191211.png",
+      "size": 200529,
+      "checksum": "md5:454fc7d9cf164bd3451e98b51a662da1",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191211.png/content"
+      }
+    },
+    {
+      "id": "e66b31f5-cab9-409d-aa28-21a80bc62526",
+      "key": "VENUS-XS_20191209.png",
+      "size": 221336,
+      "checksum": "md5:72ad6f66d7f040a16891dd3f16951a1f",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191209.png/content"
+      }
+    },
+    {
+      "id": "97e57e90-ca7c-4454-afaf-a8dcae4b7c48",
+      "key": "VENUS-XS_20191207.png",
+      "size": 173540,
+      "checksum": "md5:9d2894cefab7b1eaeaf43b0d2cd11b8d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191207.png/content"
+      }
+    },
+    {
+      "id": "c156d7f2-35c2-4d59-bc9f-0e4761b7a038",
+      "key": "VENUS-XS_20191205.png",
+      "size": 224786,
+      "checksum": "md5:0f8ee1b66644b398e9b592447c460eea",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191205.png/content"
+      }
+    },
+    {
+      "id": "0f1c86ab-3082-4e22-aeda-e3c686e1d89a",
+      "key": "VENUS-XS_20191127.png",
+      "size": 191704,
+      "checksum": "md5:97ef033b1b3878a7b82060c17c082a70",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191127.png/content"
+      }
+    },
+    {
+      "id": "0b3d1c6d-e839-4800-afbf-ace78b29055a",
+      "key": "VENUS-XS_20191221.png",
+      "size": 176483,
+      "checksum": "md5:7a9717058516c80760684958a03e2527",
+      "links": {
+        "self": "https://zenodo.org/api/records/6685515/files/VENUS-XS_20191221.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "365232"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5863,
+    "unique_downloads": 5317,
+    "views": 205,
+    "unique_views": 201,
+    "version_downloads": 5863,
+    "version_unique_downloads": 5317,
+    "version_unique_views": 201,
+    "version_views": 205
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 267,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 54772736,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "VENUS-XS_20191111.png",
+        "size": 214834
+      },
+      {
+        "name": "VENUS-XS_20191113.png",
+        "size": 201348
+      },
+      {
+        "name": "VENUS-XS_20191115.png",
+        "size": 154747
+      },
+      {
+        "name": "VENUS-XS_20191117.png",
+        "size": 214231
+      },
+      {
+        "name": "VENUS-XS_20191119.png",
+        "size": 215741
+      },
+      {
+        "name": "VENUS-XS_20191223.png",
+        "size": 223097
+      },
+      {
+        "name": "VENUS-XS_20191121.png",
+        "size": 208983
+      },
+      {
+        "name": "VENUS-XS_20191123.png",
+        "size": 208742
+      },
+      {
+        "name": "VENUS-XS_20191203.png",
+        "size": 219460
+      },
+      {
+        "name": "VENUS-XS_20180301.png",
+        "size": 220832
+      },
+      {
+        "name": "VENUS-XS_20180303.png",
+        "size": 212033
+      },
+      {
+        "name": "VENUS-XS_20180420.png",
+        "size": 214657
+      },
+      {
+        "name": "VENUS-XS_20180309.png",
+        "size": 210410
+      },
+      {
+        "name": "VENUS-XS_20180317.png",
+        "size": 210149
+      },
+      {
+        "name": "VENUS-XS_20180225.png",
+        "size": 193117
+      },
+      {
+        "name": "VENUS-XS_20180223.png",
+        "size": 205896
+      },
+      {
+        "name": "VENUS-XS_20180221.png",
+        "size": 217944
+      },
+      {
+        "name": "VENUS-XS_20180323.png",
+        "size": 221851
+      },
+      {
+        "name": "VENUS-XS_20180217.png",
+        "size": 203222
+      },
+      {
+        "name": "VENUS-XS_20180215.png",
+        "size": 219540
+      },
+      {
+        "name": "VENUS-XS_20180325.png",
+        "size": 225589
+      },
+      {
+        "name": "VENUS-XS_20180211.png",
+        "size": 172801
+      },
+      {
+        "name": "VENUS-XS_20180209.png",
+        "size": 194510
+      },
+      {
+        "name": "VENUS-XS_20180327.png",
+        "size": 223324
+      },
+      {
+        "name": "VENUS-XS_20180207.png",
+        "size": 164127
+      },
+      {
+        "name": "VENUS-XS_20180205.png",
+        "size": 216722
+      },
+      {
+        "name": "VENUS-XS_20180402.png",
+        "size": 200615
+      },
+      {
+        "name": "VENUS-XS_20180408.png",
+        "size": 221106
+      },
+      {
+        "name": "VENUS-XS_20180414.png",
+        "size": 200825
+      },
+      {
+        "name": "VENUS-XS_20180203.png",
+        "size": 218111
+      },
+      {
+        "name": "VENUS-XS_20180416.png",
+        "size": 205209
+      },
+      {
+        "name": "VENUS-XS_20180201.png",
+        "size": 215644
+      },
+      {
+        "name": "VENUS-XS_20180130.png",
+        "size": 223775
+      },
+      {
+        "name": "VENUS-XS_20180418.png",
+        "size": 206322
+      },
+      {
+        "name": "VENUS-XS_20180128.png",
+        "size": 222872
+      },
+      {
+        "name": "VENUS-XS_20180126.png",
+        "size": 219358
+      },
+      {
+        "name": "VENUS-XS_20180422.png",
+        "size": 226633
+      },
+      {
+        "name": "VENUS-XS_20180424.png",
+        "size": 212198
+      },
+      {
+        "name": "VENUS-XS_20171217.png",
+        "size": 218741
+      },
+      {
+        "name": "VENUS-XS_20171215.png",
+        "size": 218951
+      },
+      {
+        "name": "VENUS-XS_20180219.png",
+        "size": 218525
+      },
+      {
+        "name": "VENUS-XS_20180502.png",
+        "size": 212431
+      },
+      {
+        "name": "VENUS-XS_20171213.png",
+        "size": 215018
+      },
+      {
+        "name": "VENUS-XS_20171209.png",
+        "size": 218893
+      },
+      {
+        "name": "VENUS-XS_20180506.png",
+        "size": 201032
+      },
+      {
+        "name": "VENUS-XS_20180508.png",
+        "size": 226392
+      },
+      {
+        "name": "VENUS-XS_20180518.png",
+        "size": 215669
+      },
+      {
+        "name": "VENUS-XS_20180520.png",
+        "size": 227882
+      },
+      {
+        "name": "VENUS-XS_20180522.png",
+        "size": 232381
+      },
+      {
+        "name": "VENUS-XS_20201030.png",
+        "size": 214128
+      },
+      {
+        "name": "VENUS-XS_20180528.png",
+        "size": 213934
+      },
+      {
+        "name": "VENUS-XS_20180601.png",
+        "size": 214121
+      },
+      {
+        "name": "VENUS-XS_20180613.png",
+        "size": 212211
+      },
+      {
+        "name": "VENUS-XS_20201028.png",
+        "size": 214865
+      },
+      {
+        "name": "VENUS-XS_20201026.png",
+        "size": 211027
+      },
+      {
+        "name": "VENUS-XS_20201024.png",
+        "size": 210575
+      },
+      {
+        "name": "VENUS-XS_20180617.png",
+        "size": 215747
+      },
+      {
+        "name": "VENUS-XS_20180621.png",
+        "size": 218183
+      },
+      {
+        "name": "VENUS-XS_20180707.png",
+        "size": 209489
+      },
+      {
+        "name": "VENUS-XS_20180808.png",
+        "size": 155218
+      },
+      {
+        "name": "VENUS-XS_20180816.png",
+        "size": 202139
+      },
+      {
+        "name": "VENUS-XS_20180818.png",
+        "size": 178166
+      },
+      {
+        "name": "VENUS-XS_20180905.png",
+        "size": 196376
+      },
+      {
+        "name": "VENUS-XS_20180907.png",
+        "size": 198739
+      },
+      {
+        "name": "VENUS-XS_20180909.png",
+        "size": 189560
+      },
+      {
+        "name": "VENUS-XS_20180911.png",
+        "size": 193107
+      },
+      {
+        "name": "VENUS-XS_20180913.png",
+        "size": 194944
+      },
+      {
+        "name": "VENUS-XS_20181009.png",
+        "size": 203503
+      },
+      {
+        "name": "VENUS-XS_20201022.png",
+        "size": 202688
+      },
+      {
+        "name": "VENUS-XS_20201020.png",
+        "size": 202970
+      },
+      {
+        "name": "VENUS-XS_20181011.png",
+        "size": 209066
+      },
+      {
+        "name": "VENUS-XS_20181013.png",
+        "size": 210389
+      },
+      {
+        "name": "VENUS-XS_20181017.png",
+        "size": 182358
+      },
+      {
+        "name": "VENUS-XS_20201018.png",
+        "size": 201983
+      },
+      {
+        "name": "VENUS-XS_20201014.png",
+        "size": 199155
+      },
+      {
+        "name": "VENUS-XS_20181019.png",
+        "size": 200257
+      },
+      {
+        "name": "VENUS-XS_20201012.png",
+        "size": 200225
+      },
+      {
+        "name": "VENUS-XS_20181021.png",
+        "size": 167621
+      },
+      {
+        "name": "VENUS-XS_20181023.png",
+        "size": 156735
+      },
+      {
+        "name": "VENUS-XS_20181025.png",
+        "size": 216139
+      },
+      {
+        "name": "VENUS-XS_20181027.png",
+        "size": 217296
+      },
+      {
+        "name": "VENUS-XS_20201010.png",
+        "size": 200155
+      },
+      {
+        "name": "VENUS-XS_20181029.png",
+        "size": 196845
+      },
+      {
+        "name": "VENUS-XS_20201008.png",
+        "size": 204027
+      },
+      {
+        "name": "VENUS-XS_20201006.png",
+        "size": 202329
+      },
+      {
+        "name": "VENUS-XS_20181031.png",
+        "size": 213748
+      },
+      {
+        "name": "VENUS-XS_20181102.png",
+        "size": 189732
+      },
+      {
+        "name": "VENUS-XS_20201004.png",
+        "size": 197578
+      },
+      {
+        "name": "VENUS-XS_20181104.png",
+        "size": 205591
+      },
+      {
+        "name": "VENUS-XS_20181106.png",
+        "size": 216146
+      },
+      {
+        "name": "VENUS-XS_20181108.png",
+        "size": 216415
+      },
+      {
+        "name": "VENUS-XS_20181110.png",
+        "size": 206920
+      },
+      {
+        "name": "VENUS-XS_20181112.png",
+        "size": 212544
+      },
+      {
+        "name": "VENUS-XS_20181114.png",
+        "size": 200756
+      },
+      {
+        "name": "VENUS-XS_20181116.png",
+        "size": 213209
+      },
+      {
+        "name": "VENUS-XS_20181120.png",
+        "size": 213918
+      },
+      {
+        "name": "VENUS-XS_20201002.png",
+        "size": 196334
+      },
+      {
+        "name": "VENUS-XS_20181122.png",
+        "size": 215478
+      },
+      {
+        "name": "VENUS-XS_20181126.png",
+        "size": 217535
+      },
+      {
+        "name": "VENUS-XS_20181128.png",
+        "size": 210190
+      },
+      {
+        "name": "VENUS-XS_20181130.png",
+        "size": 214209
+      },
+      {
+        "name": "VENUS-XS_20181202.png",
+        "size": 216740
+      },
+      {
+        "name": "VENUS-XS_20181204.png",
+        "size": 213585
+      },
+      {
+        "name": "VENUS-XS_20181206.png",
+        "size": 217363
+      },
+      {
+        "name": "VENUS-XS_20181208.png",
+        "size": 221034
+      },
+      {
+        "name": "VENUS-XS_20181210.png",
+        "size": 216477
+      },
+      {
+        "name": "VENUS-XS_20181212.png",
+        "size": 201732
+      },
+      {
+        "name": "VENUS-XS_20181214.png",
+        "size": 216312
+      },
+      {
+        "name": "VENUS-XS_20181216.png",
+        "size": 221140
+      },
+      {
+        "name": "VENUS-XS_20181220.png",
+        "size": 218644
+      },
+      {
+        "name": "VENUS-XS_20181222.png",
+        "size": 219635
+      },
+      {
+        "name": "VENUS-XS_20200930.png",
+        "size": 197451
+      },
+      {
+        "name": "VENUS-XS_20181224.png",
+        "size": 217419
+      },
+      {
+        "name": "VENUS-XS_20181226.png",
+        "size": 221132
+      },
+      {
+        "name": "VENUS-XS_20181228.png",
+        "size": 211861
+      },
+      {
+        "name": "VENUS-XS_20181230.png",
+        "size": 221069
+      },
+      {
+        "name": "VENUS-XS_20190101.png",
+        "size": 216628
+      },
+      {
+        "name": "VENUS-XS_20190103.png",
+        "size": 206245
+      },
+      {
+        "name": "VENUS-XS_20190105.png",
+        "size": 173670
+      },
+      {
+        "name": "VENUS-XS_20190111.png",
+        "size": 199338
+      },
+      {
+        "name": "VENUS-XS_20190113.png",
+        "size": 211204
+      },
+      {
+        "name": "VENUS-XS_20190115.png",
+        "size": 218803
+      },
+      {
+        "name": "VENUS-XS_20200928.png",
+        "size": 197494
+      },
+      {
+        "name": "VENUS-XS_20190119.png",
+        "size": 164011
+      },
+      {
+        "name": "VENUS-XS_20190121.png",
+        "size": 169032
+      },
+      {
+        "name": "VENUS-XS_20190127.png",
+        "size": 205855
+      },
+      {
+        "name": "VENUS-XS_20200926.png",
+        "size": 203310
+      },
+      {
+        "name": "VENUS-XS_20190202.png",
+        "size": 219875
+      },
+      {
+        "name": "VENUS-XS_20200920.png",
+        "size": 191189
+      },
+      {
+        "name": "VENUS-XS_20200918.png",
+        "size": 193773
+      },
+      {
+        "name": "VENUS-XS_20190206.png",
+        "size": 216597
+      },
+      {
+        "name": "VENUS-XS_20200916.png",
+        "size": 194516
+      },
+      {
+        "name": "VENUS-XS_20200914.png",
+        "size": 190937
+      },
+      {
+        "name": "VENUS-XS_20200906.png",
+        "size": 192252
+      },
+      {
+        "name": "VENUS-XS_20200904.png",
+        "size": 199038
+      },
+      {
+        "name": "VENUS-XS_20190210.png",
+        "size": 221718
+      },
+      {
+        "name": "VENUS-XS_20200831.png",
+        "size": 183937
+      },
+      {
+        "name": "VENUS-XS_20200829.png",
+        "size": 200056
+      },
+      {
+        "name": "VENUS-XS_20190212.png",
+        "size": 161905
+      },
+      {
+        "name": "VENUS-XS_20190216.png",
+        "size": 195052
+      },
+      {
+        "name": "VENUS-XS_20190218.png",
+        "size": 199170
+      },
+      {
+        "name": "VENUS-XS_20190220.png",
+        "size": 171093
+      },
+      {
+        "name": "VENUS-XS_20200827.png",
+        "size": 199335
+      },
+      {
+        "name": "VENUS-XS_20190302.png",
+        "size": 164539
+      },
+      {
+        "name": "VENUS-XS_20190304.png",
+        "size": 218784
+      },
+      {
+        "name": "VENUS-XS_20200819.png",
+        "size": 205993
+      },
+      {
+        "name": "VENUS-XS_20190306.png",
+        "size": 212042
+      },
+      {
+        "name": "VENUS-XS_20190308.png",
+        "size": 224332
+      },
+      {
+        "name": "VENUS-XS_20190312.png",
+        "size": 219688
+      },
+      {
+        "name": "VENUS-XS_20190316.png",
+        "size": 212102
+      },
+      {
+        "name": "VENUS-XS_20190322.png",
+        "size": 210077
+      },
+      {
+        "name": "VENUS-XS_20190324.png",
+        "size": 218186
+      },
+      {
+        "name": "VENUS-XS_20200807.png",
+        "size": 203778
+      },
+      {
+        "name": "VENUS-XS_20190328.png",
+        "size": 224593
+      },
+      {
+        "name": "VENUS-XS_20190330.png",
+        "size": 227233
+      },
+      {
+        "name": "VENUS-XS_20190401.png",
+        "size": 203123
+      },
+      {
+        "name": "VENUS-XS_20200608.png",
+        "size": 214314
+      },
+      {
+        "name": "VENUS-XS_20200602.png",
+        "size": 148582
+      },
+      {
+        "name": "VENUS-XS_20200523.png",
+        "size": 220278
+      },
+      {
+        "name": "VENUS-XS_20200517.png",
+        "size": 223849
+      },
+      {
+        "name": "VENUS-XS_20200515.png",
+        "size": 224648
+      },
+      {
+        "name": "VENUS-XS_20190403.png",
+        "size": 164250
+      },
+      {
+        "name": "VENUS-XS_20200513.png",
+        "size": 221184
+      },
+      {
+        "name": "VENUS-XS_20190405.png",
+        "size": 176437
+      },
+      {
+        "name": "VENUS-XS_20200509.png",
+        "size": 221261
+      },
+      {
+        "name": "VENUS-XS_20200505.png",
+        "size": 220160
+      },
+      {
+        "name": "VENUS-XS_20190411.png",
+        "size": 217825
+      },
+      {
+        "name": "VENUS-XS_20200425.png",
+        "size": 212144
+      },
+      {
+        "name": "VENUS-XS_20200419.png",
+        "size": 190490
+      },
+      {
+        "name": "VENUS-XS_20190415.png",
+        "size": 175630
+      },
+      {
+        "name": "VENUS-XS_20190419.png",
+        "size": 223957
+      },
+      {
+        "name": "VENUS-XS_20200417.png",
+        "size": 181868
+      },
+      {
+        "name": "VENUS-XS_20190423.png",
+        "size": 197310
+      },
+      {
+        "name": "VENUS-XS_20200415.png",
+        "size": 195492
+      },
+      {
+        "name": "VENUS-XS_20200413.png",
+        "size": 186547
+      },
+      {
+        "name": "VENUS-XS_20200411.png",
+        "size": 201534
+      },
+      {
+        "name": "VENUS-XS_20190425.png",
+        "size": 217694
+      },
+      {
+        "name": "VENUS-XS_20190427.png",
+        "size": 222903
+      },
+      {
+        "name": "VENUS-XS_20190429.png",
+        "size": 227155
+      },
+      {
+        "name": "VENUS-XS_20200409.png",
+        "size": 208536
+      },
+      {
+        "name": "VENUS-XS_20200407.png",
+        "size": 204242
+      },
+      {
+        "name": "VENUS-XS_20190501.png",
+        "size": 225748
+      },
+      {
+        "name": "VENUS-XS_20190505.png",
+        "size": 226563
+      },
+      {
+        "name": "VENUS-XS_20200405.png",
+        "size": 214237
+      },
+      {
+        "name": "VENUS-XS_20190507.png",
+        "size": 226318
+      },
+      {
+        "name": "VENUS-XS_20190509.png",
+        "size": 230743
+      },
+      {
+        "name": "VENUS-XS_20190511.png",
+        "size": 170275
+      },
+      {
+        "name": "VENUS-XS_20200403.png",
+        "size": 212980
+      },
+      {
+        "name": "VENUS-XS_20190515.png",
+        "size": 217720
+      },
+      {
+        "name": "VENUS-XS_20200330.png",
+        "size": 223312
+      },
+      {
+        "name": "VENUS-XS_20190517.png",
+        "size": 210357
+      },
+      {
+        "name": "VENUS-XS_20200328.png",
+        "size": 153160
+      },
+      {
+        "name": "VENUS-XS_20190519.png",
+        "size": 210234
+      },
+      {
+        "name": "VENUS-XS_20200326.png",
+        "size": 209737
+      },
+      {
+        "name": "VENUS-XS_20190521.png",
+        "size": 215044
+      },
+      {
+        "name": "VENUS-XS_20200324.png",
+        "size": 217000
+      },
+      {
+        "name": "VENUS-XS_20200320.png",
+        "size": 197486
+      },
+      {
+        "name": "VENUS-XS_20191014.png",
+        "size": 204528
+      },
+      {
+        "name": "VENUS-XS_20190523.png",
+        "size": 204850
+      },
+      {
+        "name": "VENUS-XS_20200318.png",
+        "size": 222863
+      },
+      {
+        "name": "VENUS-XS_20190525.png",
+        "size": 207131
+      },
+      {
+        "name": "VENUS-XS_20200316.png",
+        "size": 220089
+      },
+      {
+        "name": "VENUS-XS_20190527.png",
+        "size": 210041
+      },
+      {
+        "name": "VENUS-XS_20200312.png",
+        "size": 223556
+      },
+      {
+        "name": "VENUS-XS_20190604.png",
+        "size": 221491
+      },
+      {
+        "name": "VENUS-XS_20190606.png",
+        "size": 224325
+      },
+      {
+        "name": "VENUS-XS_20200310.png",
+        "size": 155820
+      },
+      {
+        "name": "VENUS-XS_20190608.png",
+        "size": 226670
+      },
+      {
+        "name": "VENUS-XS_20200308.png",
+        "size": 223637
+      },
+      {
+        "name": "VENUS-XS_20190610.png",
+        "size": 213453
+      },
+      {
+        "name": "VENUS-XS_20200304.png",
+        "size": 215895
+      },
+      {
+        "name": "VENUS-XS_20190612.png",
+        "size": 210523
+      },
+      {
+        "name": "VENUS-XS_20190614.png",
+        "size": 214954
+      },
+      {
+        "name": "VENUS-XS_20200225.png",
+        "size": 218848
+      },
+      {
+        "name": "VENUS-XS_20190616.png",
+        "size": 228382
+      },
+      {
+        "name": "VENUS-XS_20200223.png",
+        "size": 219419
+      },
+      {
+        "name": "VENUS-XS_20190630.png",
+        "size": 222282
+      },
+      {
+        "name": "VENUS-XS_20200219.png",
+        "size": 214887
+      },
+      {
+        "name": "VENUS-XS_20200217.png",
+        "size": 220594
+      },
+      {
+        "name": "VENUS-XS_20190702.png",
+        "size": 223344
+      },
+      {
+        "name": "VENUS-XS_20200215.png",
+        "size": 220651
+      },
+      {
+        "name": "VENUS-XS_20190704.png",
+        "size": 181525
+      },
+      {
+        "name": "VENUS-XS_20200213.png",
+        "size": 135020
+      },
+      {
+        "name": "VENUS-XS_20200211.png",
+        "size": 216048
+      },
+      {
+        "name": "VENUS-XS_20171207.png",
+        "size": 215931
+      },
+      {
+        "name": "VENUS-XS_20171129.png",
+        "size": 211400
+      },
+      {
+        "name": "VENUS-XS_20190807.png",
+        "size": 183393
+      },
+      {
+        "name": "VENUS-XS_20171127.png",
+        "size": 210652
+      },
+      {
+        "name": "VENUS-XS_20190821.png",
+        "size": 193858
+      },
+      {
+        "name": "VENUS-XS_20190823.png",
+        "size": 199336
+      },
+      {
+        "name": "VENUS-XS_20200209.png",
+        "size": 220051
+      },
+      {
+        "name": "VENUS-XS_20190827.png",
+        "size": 190085
+      },
+      {
+        "name": "VENUS-XS_20190902.png",
+        "size": 182673
+      },
+      {
+        "name": "VENUS-XS_20200106.png",
+        "size": 210312
+      },
+      {
+        "name": "VENUS-XS_20200104.png",
+        "size": 203449
+      },
+      {
+        "name": "VENUS-XS_20190908.png",
+        "size": 199675
+      },
+      {
+        "name": "VENUS-XS_20190910.png",
+        "size": 186405
+      },
+      {
+        "name": "VENUS-XS_20190914.png",
+        "size": 176682
+      },
+      {
+        "name": "VENUS-XS_20200102.png",
+        "size": 173413
+      },
+      {
+        "name": "VENUS-XS_20190920.png",
+        "size": 162596
+      },
+      {
+        "name": "VENUS-XS_20190930.png",
+        "size": 185653
+      },
+      {
+        "name": "VENUS-XS_20191002.png",
+        "size": 169882
+      },
+      {
+        "name": "VENUS-XS_20191231.png",
+        "size": 207979
+      },
+      {
+        "name": "VENUS-XS_20191006.png",
+        "size": 193772
+      },
+      {
+        "name": "VENUS-XS_20191008.png",
+        "size": 168030
+      },
+      {
+        "name": "VENUS-XS_20191010.png",
+        "size": 199848
+      },
+      {
+        "name": "VENUS-XS_20191012.png",
+        "size": 201029
+      },
+      {
+        "name": "VENUS-XS_20191016.png",
+        "size": 203275
+      },
+      {
+        "name": "VENUS-XS_20191229.png",
+        "size": 222745
+      },
+      {
+        "name": "VENUS-XS_20191018.png",
+        "size": 155770
+      },
+      {
+        "name": "VENUS-XS_20191227.png",
+        "size": 218549
+      },
+      {
+        "name": "VENUS-XS_20191022.png",
+        "size": 201572
+      },
+      {
+        "name": "VENUS-XS_20191028.png",
+        "size": 222926
+      },
+      {
+        "name": "VENUS-XS_20191225.png",
+        "size": 219556
+      },
+      {
+        "name": "VENUS-XS_20191101.png",
+        "size": 206296
+      },
+      {
+        "name": "VENUS-XS_20191103.png",
+        "size": 163294
+      },
+      {
+        "name": "VENUS-XS_20191105.png",
+        "size": 208169
+      },
+      {
+        "name": "VENUS-XS_20191107.png",
+        "size": 194815
+      },
+      {
+        "name": "VENUS-XS_20191109.png",
+        "size": 215604
+      },
+      {
+        "name": "VENUS-XS_20191219.png",
+        "size": 221043
+      },
+      {
+        "name": "VENUS-XS_20191201.png",
+        "size": 129450
+      },
+      {
+        "name": "VENUS-XS_20191211.png",
+        "size": 200529
+      },
+      {
+        "name": "VENUS-XS_20191209.png",
+        "size": 221336
+      },
+      {
+        "name": "VENUS-XS_20191207.png",
+        "size": 173540
+      },
+      {
+        "name": "VENUS-XS_20191205.png",
+        "size": 224786
+      },
+      {
+        "name": "VENUS-XS_20191127.png",
+        "size": 191704
+      },
+      {
+        "name": "VENUS-XS_20191221.png",
+        "size": 176483
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:11.951037"
+}

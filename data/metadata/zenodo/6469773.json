@@ -1,0 +1,459 @@
+{
+  "created": "2022-04-19T13:17:44.285355+00:00",
+  "modified": "2024-07-16T21:21:56.149140+00:00",
+  "id": 6469773,
+  "conceptrecid": "6469772",
+  "doi": "10.5281/zenodo.6469773",
+  "conceptdoi": "10.5281/zenodo.6469772",
+  "doi_url": "https://doi.org/10.5281/zenodo.6469773",
+  "metadata": {
+    "title": "Training dataset for \"A deep learned nanowire segmentation model using synthetic data augmentation\"",
+    "doi": "10.5281/zenodo.6469773",
+    "publication_date": "2022-04-19",
+    "description": "<p>This image dataset contains synthetic structure images used for training the deep-learning based nanowire segmentation model presented in our work &quot;A deep learned nanowire segmentation model using synthetic data augmentation&quot; to be published in <em>npj Computational materials. </em>Detailed information can be found in the corresponding article.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Lin, Binbin",
+        "affiliation": "Mechanics of Functional Materials Division, Institute of Materials Science Technische Universit\u00e4t Darmstadt 64287 Darmstadt Germany",
+        "orcid": "0000-0002-7013-283X"
+      },
+      {
+        "name": "Nima, Emami",
+        "affiliation": "Mechanics of Functional Materials Division, Institute of Materials Science Technische Universit\u00e4t Darmstadt 64287 Darmstadt Germany"
+      },
+      {
+        "name": "David, A. Santos",
+        "affiliation": "Department of ChemistryTexas A&M University, College Station, TX77843, USA"
+      },
+      {
+        "name": "Yuting, Luo",
+        "affiliation": "Department of ChemistryTexas A&M University, College Station, TX77843, USA"
+      },
+      {
+        "name": "Sarbajit, Banerjee",
+        "affiliation": "Department of ChemistryTexas A&M University, College Station, TX77843, USA"
+      },
+      {
+        "name": "Bai-Xiang, Xu",
+        "affiliation": "Mechanics of Functional Materials Division, Institute of Materials Science Technische Universit\u00e4t Darmstadt 64287 Darmstadt Germany"
+      }
+    ],
+    "keywords": [
+      "Instance segmentation",
+      "Nanowire",
+      "V2O5 particles",
+      "Mask R-CNN",
+      "Synthetic data augmentation"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "arXiv:2109.04429v2",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-preprint",
+        "scheme": "arxiv"
+      },
+      {
+        "identifier": "https://share.streamlit.io/linbinbin92/v2o5_app/V2O5_app.py",
+        "relation": "isSourceOf",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "title": "A deep learned nanowire segmentation model using synthetic data augmentation"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6469772"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Training dataset for \"A deep learned nanowire segmentation model using synthetic data augmentation\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/6469773",
+    "self_html": "https://zenodo.org/records/6469773",
+    "preview_html": "https://zenodo.org/records/6469773?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6469773",
+    "self_doi": "https://doi.org/10.5281/zenodo.6469773",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6469773",
+    "reserve_doi": "https://zenodo.org/api/records/6469773/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6469772",
+    "parent_html": "https://zenodo.org/records/6469772",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6469772",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6469772",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6469773/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6469773/sequence/default",
+    "files": "https://zenodo.org/api/records/6469773/files",
+    "media_files": "https://zenodo.org/api/records/6469773/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:6469773:image_0_mask_13.0.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/6469773/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6469773/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6469773/versions/latest",
+    "latest_html": "https://zenodo.org/records/6469773/latest",
+    "versions": "https://zenodo.org/api/records/6469773/versions",
+    "draft": "https://zenodo.org/api/records/6469773/draft",
+    "access_links": "https://zenodo.org/api/records/6469773/access/links",
+    "access_grants": "https://zenodo.org/api/records/6469773/access/grants",
+    "access_users": "https://zenodo.org/api/records/6469773/access/users",
+    "access_request": "https://zenodo.org/api/records/6469773/access/request",
+    "access": "https://zenodo.org/api/records/6469773/access",
+    "communities": "https://zenodo.org/api/records/6469773/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6469773/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6469773/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6469773/file-modification",
+    "requests": "https://zenodo.org/api/records/6469773/requests"
+  },
+  "updated": "2024-07-16T21:21:56.149140+00:00",
+  "recid": "6469773",
+  "revision": 6,
+  "files": [
+    {
+      "id": "0086c2fe-0727-4dfc-809c-e36d0144038f",
+      "key": "Train_1000.zip",
+      "size": 55092246,
+      "checksum": "md5:ba0f6c1896727295a84954a10cd8c8f9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/Train_1000.zip/content"
+      }
+    },
+    {
+      "id": "0124aa7d-1a97-46db-9887-e30bf49ca408",
+      "key": "image_0_mask_13.0.png",
+      "size": 2159,
+      "checksum": "md5:9241d25aa810d7a71766625f4956f01e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_13.0.png/content"
+      }
+    },
+    {
+      "id": "c2d52dca-9d29-4561-829d-121353a876dc",
+      "key": "image_0_mask_10.0.png",
+      "size": 2331,
+      "checksum": "md5:2003257221aab90143d9cfe0c94ffe6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_10.0.png/content"
+      }
+    },
+    {
+      "id": "0790624d-e8c4-41d2-b74d-35dafd7f5464",
+      "key": "image_0_mask_15.0.png",
+      "size": 3075,
+      "checksum": "md5:708945328d24cca7a67b177f685f46a9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_15.0.png/content"
+      }
+    },
+    {
+      "id": "8213a5c3-3465-416b-8886-d7ab7c3e2a8f",
+      "key": "image_0_mask_7.0.png",
+      "size": 2397,
+      "checksum": "md5:1e41978904acf2c06aeceb9dc61345e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_7.0.png/content"
+      }
+    },
+    {
+      "id": "adf7f52f-254f-4f84-a376-b199cbd15e19",
+      "key": "image_0_mask_16.0.png",
+      "size": 2315,
+      "checksum": "md5:5086e75057ba25e4413313b80d52cfed",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_16.0.png/content"
+      }
+    },
+    {
+      "id": "25cf3b40-e3b2-4e96-a916-d5c02bd8d396",
+      "key": "image_0_mask_6.0.png",
+      "size": 2451,
+      "checksum": "md5:6e624f52a0183eaf45da6d18c55fe234",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_6.0.png/content"
+      }
+    },
+    {
+      "id": "f178031e-3707-426c-adf2-0d7b1f2f5be0",
+      "key": "image_0_mask_14.0.png",
+      "size": 2434,
+      "checksum": "md5:37b61b3cc6e498a916e55f407f839ed6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_14.0.png/content"
+      }
+    },
+    {
+      "id": "09560564-dc33-44df-9d9e-652d566e6096",
+      "key": "image_0_mask_3.0.png",
+      "size": 2870,
+      "checksum": "md5:5e32ecdab7a05c37ca711ec1d904eef5",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_3.0.png/content"
+      }
+    },
+    {
+      "id": "fb0e9100-39f7-4a11-b784-f9e0dfd56024",
+      "key": "image_0_mask_2.0.png",
+      "size": 2284,
+      "checksum": "md5:6038ae03c088cc608af45b65c0d03a6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_2.0.png/content"
+      }
+    },
+    {
+      "id": "4cbb7000-fe9d-4108-802a-e58614168011",
+      "key": "image_0_mask_4.0.png",
+      "size": 2362,
+      "checksum": "md5:1548b5ef802fc74016e990a03df07933",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_4.0.png/content"
+      }
+    },
+    {
+      "id": "464a18b0-90ea-49ee-b03d-3abb200ed690",
+      "key": "image_0_mask_1.0.png",
+      "size": 2749,
+      "checksum": "md5:5e8cdbe55d6474a73570c8db643afe9c",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_1.0.png/content"
+      }
+    },
+    {
+      "id": "e4178841-e6c3-4065-a2f8-c135574197e4",
+      "key": "image_0_mask_19.0.png",
+      "size": 2317,
+      "checksum": "md5:bcbeb1ab6bd0801a4ffaba643a5f46f0",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_19.0.png/content"
+      }
+    },
+    {
+      "id": "4c8a4e97-7c31-44f2-98ff-258edacb0aa1",
+      "key": "image_0_mask_11.0.png",
+      "size": 2593,
+      "checksum": "md5:8379aa37a24ed416406019a1ded9a3ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_11.0.png/content"
+      }
+    },
+    {
+      "id": "f41e958b-34c5-4c9d-96b2-d646704acb6b",
+      "key": "image_0_mask_17.0.png",
+      "size": 2329,
+      "checksum": "md5:886453ab9eeb19df7cbece608ba549b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_17.0.png/content"
+      }
+    },
+    {
+      "id": "8a279f19-b0b2-4693-947a-16336d9cad1e",
+      "key": "image_0.png",
+      "size": 44710,
+      "checksum": "md5:d038b3736e2ef468432673757cdb62a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0.png/content"
+      }
+    },
+    {
+      "id": "f1995e41-3d75-4478-9856-ed049cf6ec48",
+      "key": "image_0_mask_12.0.png",
+      "size": 2516,
+      "checksum": "md5:b9ad9760e4db6a1e9dbb9253704e3c61",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_12.0.png/content"
+      }
+    },
+    {
+      "id": "4837efae-6721-43ca-a434-1f67a2354e35",
+      "key": "image_0_mask_20.0.png",
+      "size": 2226,
+      "checksum": "md5:f26471a6d6de0eb7a979fd821f906340",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_20.0.png/content"
+      }
+    },
+    {
+      "id": "ace06e1e-57f3-4295-b881-5d1444102d81",
+      "key": "image_0_mask_8.0.png",
+      "size": 2657,
+      "checksum": "md5:f22e50503775d5a54eb404627e89120e",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_8.0.png/content"
+      }
+    },
+    {
+      "id": "a9ddede4-7716-4724-8ffc-a823f312416c",
+      "key": "image_0_mask_18.0.png",
+      "size": 2196,
+      "checksum": "md5:ad6f4f28bac0addb29f502c31cf02b04",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_18.0.png/content"
+      }
+    },
+    {
+      "id": "32fd52f6-3afa-4486-99e5-f38d31fdc9ca",
+      "key": "image_0_mask_5.0.png",
+      "size": 2265,
+      "checksum": "md5:c1da6c10048bbed9cd3a77796a1188bc",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_5.0.png/content"
+      }
+    },
+    {
+      "id": "623f30c4-3b61-46a1-8855-31157eff5e0e",
+      "key": "image_0_mask_9.0.png",
+      "size": 2517,
+      "checksum": "md5:9aed6b00c2aa30070eb7cdc77d0255e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/6469773/files/image_0_mask_9.0.png/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "338804"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 497,
+    "unique_downloads": 480,
+    "views": 378,
+    "unique_views": 357,
+    "version_downloads": 497,
+    "version_unique_downloads": 480,
+    "version_unique_views": 357,
+    "version_views": 378
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 21,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 93753,
+    "total_archive_size": 55092246,
+    "top_level_files": [
+      {
+        "name": "Train_1000.zip",
+        "size": 55092246
+      },
+      {
+        "name": "image_0_mask_13.0.png",
+        "size": 2159
+      },
+      {
+        "name": "image_0_mask_10.0.png",
+        "size": 2331
+      },
+      {
+        "name": "image_0_mask_15.0.png",
+        "size": 3075
+      },
+      {
+        "name": "image_0_mask_7.0.png",
+        "size": 2397
+      },
+      {
+        "name": "image_0_mask_16.0.png",
+        "size": 2315
+      },
+      {
+        "name": "image_0_mask_6.0.png",
+        "size": 2451
+      },
+      {
+        "name": "image_0_mask_14.0.png",
+        "size": 2434
+      },
+      {
+        "name": "image_0_mask_3.0.png",
+        "size": 2870
+      },
+      {
+        "name": "image_0_mask_2.0.png",
+        "size": 2284
+      },
+      {
+        "name": "image_0_mask_4.0.png",
+        "size": 2362
+      },
+      {
+        "name": "image_0_mask_1.0.png",
+        "size": 2749
+      },
+      {
+        "name": "image_0_mask_19.0.png",
+        "size": 2317
+      },
+      {
+        "name": "image_0_mask_11.0.png",
+        "size": 2593
+      },
+      {
+        "name": "image_0_mask_17.0.png",
+        "size": 2329
+      },
+      {
+        "name": "image_0.png",
+        "size": 44710
+      },
+      {
+        "name": "image_0_mask_12.0.png",
+        "size": 2516
+      },
+      {
+        "name": "image_0_mask_20.0.png",
+        "size": 2226
+      },
+      {
+        "name": "image_0_mask_8.0.png",
+        "size": 2657
+      },
+      {
+        "name": "image_0_mask_18.0.png",
+        "size": 2196
+      },
+      {
+        "name": "image_0_mask_5.0.png",
+        "size": 2265
+      },
+      {
+        "name": "image_0_mask_9.0.png",
+        "size": 2517
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:13.181675"
+}

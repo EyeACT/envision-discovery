@@ -1,0 +1,166 @@
+{
+  "created": "2021-08-13T11:18:04.608584+00:00",
+  "modified": "2021-08-13T13:48:27.321700+00:00",
+  "id": 5193696,
+  "conceptrecid": "5167317",
+  "doi": "10.5281/zenodo.5193696",
+  "conceptdoi": "10.5281/zenodo.5167317",
+  "doi_url": "https://doi.org/10.5281/zenodo.5193696",
+  "metadata": {
+    "title": "Data Set for 'Self-Supervised Machine Learning for Live Cell Imagery Segmentation'",
+    "doi": "10.5281/zenodo.5193696",
+    "publication_date": "2021-08-08",
+    "description": "<p><strong>Self-supervised machine learning code and data for segmenting live cell imagery (Matlab)</strong></p>\n\n<p><em>Running the Code</em></p>\n\n<p>SSL_Demo_2.m : main program for self-supervised machine learning segmentation</p>\n\n<p>SSL_Declumping_2.m : main program for declumping application (applied to output of SSL_Demo_2.m)</p>\n\n<p>This Matlab code is designed to be used with time-resolved live cell microscopy images (tiffs) for the automated segmentation of cells from background.</p>\n\n<p>It is recommended you first run this code with its accompanying demo data (included in this package), keeping the current directory structure.</p>\n\n<p>Simply open SSL_Demo_2.m or SSL_Declumping_2.m in Matlab and hit Run.</p>\n\n<p><em>Code Methodology</em></p>\n\n<p>The principle of self-supervised machine learning is that you simply load your images and Run - no parameter tuning needed, no training imagery required.</p>\n\n<p>Run from start to finish, the SSL_Demo_2.m code uses consecutive pairs of images to generate training data of &#39;cells&#39; and &#39;background&#39; via dynamic feature vectors based on optical flow (unsupervised). These self-labeled pixels are then used to generate static feature vectors (entropy, gradient), which in turn are used to train a classifier model. The training data is updated every image in order to automatically adapt to temporal changes in cell morphologies or background illumination.</p>\n\n<p>The code was tested for high fidelity segmentation using five different modes of light microscopy: transmitted light, DIC, phase contrast, fluorescence and interference reflection microscopy.</p>\n\n<p>Six different cell lines were imaged to cover a range of morphologies and phenotypic dynamics using three cameras of differing resolutions.</p>\n\n<p>The associated manuscript for this work can be found here (although the latest version is under peer review as of this writing):&nbsp;</p>\n\n<p><a href=\"https://www.biorxiv.org/content/10.1101/2021.01.07.425773v1\">https://www.biorxiv.org/content/10.1101/2021.01.07.425773v1</a></p>\n\n<p>This code was tested on Matlab v2020a and v2021a using commercially available laptop computers running the Windows 10 operating system.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Michael C. Robitaille",
+        "affiliation": "Naval Research Laboratory"
+      },
+      {
+        "name": "Jeff M. Byers",
+        "affiliation": "Naval Research Laboratory"
+      },
+      {
+        "name": "Joseph A. Christodoulides",
+        "affiliation": "Naval Research Laboratory"
+      },
+      {
+        "name": "Marc P. Raphael",
+        "affiliation": "Naval Research Laboratory",
+        "orcid": "0000-0003-1794-5193"
+      }
+    ],
+    "keywords": [
+      "live cell imaging, segmentation, self-supervised, machine learning, machine vision"
+    ],
+    "version": "2.1",
+    "references": [
+      "Robitaille, Michael et al; Robust Optical Flow Algorithm for General, Label-free Cell Segmentation; doi: https://doi.org/10.1101/2020.10.26.355958",
+      "Robitaille, Michael, et al; A Self-Supervised Machine Learning Approach for Objective Live Cell Segmentation and Analysis; doi: https://doi.org/10.1101/2021.01.07.425773"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "computer-vision"
+      },
+      {
+        "id": "ai_ml"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5167317"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Data Set for 'Self-Supervised Machine Learning for Live Cell Imagery Segmentation'",
+  "links": {
+    "self": "https://zenodo.org/api/records/5193696",
+    "self_html": "https://zenodo.org/records/5193696",
+    "preview_html": "https://zenodo.org/records/5193696?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5193696",
+    "self_doi": "https://doi.org/10.5281/zenodo.5193696",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5193696",
+    "reserve_doi": "https://zenodo.org/api/records/5193696/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5167317",
+    "parent_html": "https://zenodo.org/records/5167317",
+    "parent_doi": "https://doi.org/10.5281/zenodo.5167317",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5167317",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5193696/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5193696/sequence/default",
+    "files": "https://zenodo.org/api/records/5193696/files",
+    "media_files": "https://zenodo.org/api/records/5193696/media-files",
+    "archive": "https://zenodo.org/api/records/5193696/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5193696/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5193696/versions/latest",
+    "latest_html": "https://zenodo.org/records/5193696/latest",
+    "versions": "https://zenodo.org/api/records/5193696/versions",
+    "draft": "https://zenodo.org/api/records/5193696/draft",
+    "access_links": "https://zenodo.org/api/records/5193696/access/links",
+    "access_grants": "https://zenodo.org/api/records/5193696/access/grants",
+    "access_users": "https://zenodo.org/api/records/5193696/access/users",
+    "access_request": "https://zenodo.org/api/records/5193696/access/request",
+    "access": "https://zenodo.org/api/records/5193696/access",
+    "communities": "https://zenodo.org/api/records/5193696/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5193696/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5193696/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5193696/file-modification",
+    "requests": "https://zenodo.org/api/records/5193696/requests"
+  },
+  "updated": "2021-08-13T13:48:27.321700+00:00",
+  "recid": "5193696",
+  "revision": 2,
+  "files": [
+    {
+      "id": "b346b65b-9c0b-4435-be9d-93b8406f9ed0",
+      "key": "SSL_Demo_Package (2).zip",
+      "size": 266460654,
+      "checksum": "md5:944b22dc2f13f26e6fb645d009e7c6d5",
+      "links": {
+        "self": "https://zenodo.org/api/records/5193696/files/SSL_Demo_Package (2).zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "246797"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 398,
+    "unique_downloads": 325,
+    "views": 774,
+    "unique_views": 752,
+    "version_downloads": 43,
+    "version_unique_downloads": 39,
+    "version_unique_views": 340,
+    "version_views": 350
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 266460654,
+    "top_level_files": [
+      {
+        "name": "SSL_Demo_Package (2).zip",
+        "size": 266460654
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2021.01.07.425773v1",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.913431"
+}

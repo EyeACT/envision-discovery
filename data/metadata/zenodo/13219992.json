@@ -1,0 +1,176 @@
+{
+  "created": "2024-08-05T07:59:16.722481+00:00",
+  "modified": "2024-08-05T07:59:16.991081+00:00",
+  "id": 13219992,
+  "conceptrecid": "13219991",
+  "doi": "10.5281/zenodo.13219992",
+  "conceptdoi": "10.5281/zenodo.13219991",
+  "doi_url": "https://doi.org/10.5281/zenodo.13219992",
+  "metadata": {
+    "title": "bioimage.io upload: ilastik/plantseg_root",
+    "doi": "10.5281/zenodo.13219992",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=ilastik/plantseg_root\">View on bioimage.io</a> # Arabidopsis Lateral Root Traning Data </p>\n<h1>Arabidopsis lateral root training data</h1>\n<p>Training data for cell segmentation in Arabidopsis lateral root from <a href=\"https://github.com/hci-unihd/plant-seg\">plantseg</a>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Constantin Pape",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "light-microscopy",
+      "arabidopsis",
+      "cells",
+      "instance-segmentation",
+      "3D"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13219991"
+          }
+        }
+      ]
+    },
+    "notes": "Training data for cell segmentation in Arabidopsis lateral root.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: ilastik/plantseg_root",
+  "links": {
+    "self": "https://zenodo.org/api/records/13219992",
+    "self_html": "https://zenodo.org/records/13219992",
+    "preview_html": "https://zenodo.org/records/13219992?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13219992",
+    "self_doi": "https://doi.org/10.5281/zenodo.13219992",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219992",
+    "reserve_doi": "https://zenodo.org/api/records/13219992/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13219991",
+    "parent_html": "https://zenodo.org/records/13219991",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13219991",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13219991",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13219992/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13219992/sequence/default",
+    "files": "https://zenodo.org/api/records/13219992/files",
+    "media_files": "https://zenodo.org/api/records/13219992/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13219992:plantseg_cover.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13219992/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13219992/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13219992/versions/latest",
+    "latest_html": "https://zenodo.org/records/13219992/latest",
+    "versions": "https://zenodo.org/api/records/13219992/versions",
+    "draft": "https://zenodo.org/api/records/13219992/draft",
+    "access_links": "https://zenodo.org/api/records/13219992/access/links",
+    "access_grants": "https://zenodo.org/api/records/13219992/access/grants",
+    "access_users": "https://zenodo.org/api/records/13219992/access/users",
+    "access_request": "https://zenodo.org/api/records/13219992/access/request",
+    "access": "https://zenodo.org/api/records/13219992/access",
+    "communities": "https://zenodo.org/api/records/13219992/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13219992/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13219992/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13219992/file-modification",
+    "requests": "https://zenodo.org/api/records/13219992/requests"
+  },
+  "updated": "2024-08-05T07:59:16.991081+00:00",
+  "recid": "13219992",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f5b79a7a-b60a-4e55-8b8f-254ab48a1e1d",
+      "key": "plantseg_root.md",
+      "size": 163,
+      "checksum": "md5:92670d21578138a740297c79f96fe473",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219992/files/plantseg_root.md/content"
+      }
+    },
+    {
+      "id": "f86c77ef-c7fb-4b09-b313-861c58ac4ee8",
+      "key": "rdf.yaml",
+      "size": 1448,
+      "checksum": "md5:51d0fcab70e243c028db10cd0f4b19ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219992/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "31f9dc2a-8f20-4166-acd6-a76f8e0cf708",
+      "key": "plantseg_cover.jpg",
+      "size": 159987,
+      "checksum": "md5:09ce7739741da1feb16b7997d82ca424",
+      "links": {
+        "self": "https://zenodo.org/api/records/13219992/files/plantseg_cover.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 25,
+    "unique_downloads": 25,
+    "views": 26,
+    "unique_views": 25,
+    "version_downloads": 25,
+    "version_unique_downloads": 25,
+    "version_unique_views": 25,
+    "version_views": 26
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 159987,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "plantseg_root.md",
+        "size": 163
+      },
+      {
+        "name": "rdf.yaml",
+        "size": 1448
+      },
+      {
+        "name": "plantseg_cover.jpg",
+        "size": 159987
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:06.480539"
+}

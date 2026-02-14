@@ -1,0 +1,895 @@
+{
+  "created": "2023-06-29T11:24:06.356900+00:00",
+  "modified": "2024-07-12T00:48:43.894828+00:00",
+  "id": 7974096,
+  "conceptrecid": "7974095",
+  "doi": "10.5281/zenodo.7974096",
+  "conceptdoi": "10.5281/zenodo.7974095",
+  "doi_url": "https://doi.org/10.5281/zenodo.7974096",
+  "metadata": {
+    "title": "Mammalian animal & human retinal organ culture as pre-clinical model to evaluate oxidative stress and antioxidant intraocular therapeutics",
+    "doi": "10.5281/zenodo.7974096",
+    "publication_date": "2023-06-29",
+    "description": "<p>Oxidative stress (OS) is involved in the pathogenesis of retinal neurodegenerative diseases like age-related macular degeneration (AMD) and diabetic retinopathy (DR) and an important target of therapeutic treatments. New therapeutics are tested in vivo despite limits in transferability and ethical concerns. Retina cultures using human tissue can deliver critical information and significantly reduce the number of animal experiments along with increased transferability. We cultured up to 32 retina samples derived from one eye, analyzed models&rsquo; quality, induced OS, and tested efficiency of antioxidative therapeutics. Bovine, porcine, rat, and human retinae were cultured in different experimental settings for 3-14&nbsp;d. OS was induced by high-glucose or hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) and treated by Scutellarin, pigment epithelium-derived factor (PEDF), and/or granulocyte macrophage-colony stimulating factor (GM-CSF). Tissue morphology, cell viability, inflammation, and glutathione level were determined. Retina samples showed only moderate necrosis (23.83&plusmn;5.05 increased to 27.00&plusmn;1.66 AU PI-staining over 14&nbsp;d) after 14 days in culture. OS was successfully induced (reduced ATP content of 288.3&plusmn;59.9 vs. 435.7&plusmn;166.8 nM ATP in controls); antioxidants reduced OS-induced apoptosis (from 124.20&plusmn;51.09 to 60.80&plusmn;319.66 cells/image after Scutellarin-treatment). Enhanced mammalian animal and human retina cultures allow reliable, highly transferable research on OS-triggered age-related diseases and pre-clinical testing during drug development.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Martina Kropp",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Mohit Mohit",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Cristina Ioana Leroy-Ciocanea",
+        "affiliation": "H\u00f4pital Priv\u00e9 La Louvi\u00e8re & Cabinet Ophtalmologie S\u00e9bastopol, Lille, France"
+      },
+      {
+        "name": "Laura Schwerm",
+        "affiliation": "Department of Ophthalmology, University Hospital Rheinisch-Westf\u00e4lische Technische Hochschule (RWTH) Aachen, Aachen, Germany"
+      },
+      {
+        "name": "Nina Harmening",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Thais Bascuas",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Eline De Clerck",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Andreas J. Kreis",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      },
+      {
+        "name": "Bojan Pajic",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland; Eye Clinic Orasis, Reinach; Dept. of Physics, University of Novi Sad, Serbia; Faculty of Medicine of the Military Medical Academy, University of Defense, Belgrade, Serbia"
+      },
+      {
+        "name": "Sandra Johnen",
+        "affiliation": "Department of Ophthalmology, University Hospital Rheinisch-Westf\u00e4lische Technische Hochschule (RWTH) Aachen, Aachen, Germany"
+      },
+      {
+        "name": "Gabriele Thumann",
+        "affiliation": "University of Geneva & University Hospitals of Geneva, Switzerland"
+      }
+    ],
+    "keywords": [
+      "retina organ culture",
+      "neuroretinal degenerative disease",
+      "age-related macular degeneration (AMD)",
+      "diabetic retinopathy (DR)",
+      "oxidative stress",
+      "antioxidant",
+      "Scutellarin",
+      "PEDF",
+      "GM-CSF",
+      "4R"
+    ],
+    "version": "V1.0.MK",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7974095"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Mammalian animal & human retinal organ culture as pre-clinical model to evaluate oxidative stress and antioxidant intraocular therapeutics",
+  "links": {
+    "self": "https://zenodo.org/api/records/7974096",
+    "self_html": "https://zenodo.org/records/7974096",
+    "preview_html": "https://zenodo.org/records/7974096?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7974096",
+    "self_doi": "https://doi.org/10.5281/zenodo.7974096",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7974096",
+    "reserve_doi": "https://zenodo.org/api/records/7974096/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7974095",
+    "parent_html": "https://zenodo.org/records/7974095",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7974095",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7974095",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7974096/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7974096/sequence/default",
+    "files": "https://zenodo.org/api/records/7974096/files",
+    "media_files": "https://zenodo.org/api/records/7974096/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:7974096:Retinae%20morphological%20degeneration%20scale%20definition.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/7974096/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7974096/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7974096/versions/latest",
+    "latest_html": "https://zenodo.org/records/7974096/latest",
+    "versions": "https://zenodo.org/api/records/7974096/versions",
+    "draft": "https://zenodo.org/api/records/7974096/draft",
+    "access_links": "https://zenodo.org/api/records/7974096/access/links",
+    "access_grants": "https://zenodo.org/api/records/7974096/access/grants",
+    "access_users": "https://zenodo.org/api/records/7974096/access/users",
+    "access_request": "https://zenodo.org/api/records/7974096/access/request",
+    "access": "https://zenodo.org/api/records/7974096/access",
+    "communities": "https://zenodo.org/api/records/7974096/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7974096/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7974096/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7974096/file-modification",
+    "requests": "https://zenodo.org/api/records/7974096/requests"
+  },
+  "updated": "2024-07-12T00:48:43.894828+00:00",
+  "recid": "7974096",
+  "revision": 5,
+  "files": [
+    {
+      "id": "7eaeecb7-84bd-4640-8fcc-450d82ccd3c8",
+      "key": "dynamic culture_Ames_21C.zip",
+      "size": 14432782,
+      "checksum": "md5:f2a1a34e917cbfcb1a37dfff04586320",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture_Ames_21C.zip/content"
+      }
+    },
+    {
+      "id": "d9f1e66b-a45a-4bdf-922f-38421ca04b1d",
+      "key": "hRetina_IF.zip",
+      "size": 1301872741,
+      "checksum": "md5:6c58c44752d1726b2c907fed5f198caa",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/hRetina_IF.zip/content"
+      }
+    },
+    {
+      "id": "71c27f16-4702-41b8-b7a2-e9712e57041d",
+      "key": "20230327_RetinaCulture_pRetina-hRetina_Models 5a-b.xlsx",
+      "size": 49569,
+      "checksum": "md5:7ab3b780d4d62f863b013ce1c3da035f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230327_RetinaCulture_pRetina-hRetina_Models 5a-b.xlsx/content"
+      }
+    },
+    {
+      "id": "c569e21d-36dc-4848-b92d-968d96129860",
+      "key": "20230528_RetinaCulture_dynamic culture_Medium.xlsx",
+      "size": 21111,
+      "checksum": "md5:67294bab576bbd1945502ef090166073",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_dynamic culture_Medium.xlsx/content"
+      }
+    },
+    {
+      "id": "7fdcdb34-d426-4db1-a234-3869894c30ab",
+      "key": "Retinae morphological degeneration scale definition.pdf",
+      "size": 623417,
+      "checksum": "md5:2ad08c8e4ee0a09e3fe170d2ac7fd665",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/Retinae morphological degeneration scale definition.pdf/content"
+      }
+    },
+    {
+      "id": "54bcf97b-e9cf-4e9e-9515-d38821fa927a",
+      "key": "pRetina_TUNEL.zip",
+      "size": 25655456,
+      "checksum": "md5:cd436d547e3990b82e3919fc0fbb2e35",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/pRetina_TUNEL.zip/content"
+      }
+    },
+    {
+      "id": "278dee10-c53e-42a4-9404-90827019a138",
+      "key": "pRetina_model5_HE.zip",
+      "size": 581086488,
+      "checksum": "md5:cdb98307151763c7a0d37d212ed5e78a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/pRetina_model5_HE.zip/content"
+      }
+    },
+    {
+      "id": "c7d52608-8ddc-4ab0-ab25-cb844c382b70",
+      "key": "20230528_RetinaCulture_rRetina_HE.pdf",
+      "size": 5733445,
+      "checksum": "md5:3e251e77be33601d501772a263d1fc4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_rRetina_HE.pdf/content"
+      }
+    },
+    {
+      "id": "92e6380a-8e1c-4638-9aa1-3a5602759b4a",
+      "key": "20230528_RetinaCulture_dynamic culture_PrepMethod.xlsx",
+      "size": 20884,
+      "checksum": "md5:0e52de7211f7aaf22ae6bafe02f3d3e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_dynamic culture_PrepMethod.xlsx/content"
+      }
+    },
+    {
+      "id": "0cabce73-a5db-4c26-b97c-59dd695de118",
+      "key": "dynamic culture+RPE.zip",
+      "size": 13186149,
+      "checksum": "md5:989e0eaafff98465ef25e52a96580e41",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture+RPE.zip/content"
+      }
+    },
+    {
+      "id": "0a5ab248-b77c-4b0d-a02d-28fb4b389f2e",
+      "key": "20230528_RetinaCulture_dynamic culture_Temperatur.xlsx",
+      "size": 21171,
+      "checksum": "md5:8ef6bdc675d7656c837356ae9b0857b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_dynamic culture_Temperatur.xlsx/content"
+      }
+    },
+    {
+      "id": "661e2aa0-0817-417a-a959-3da9c25e2ab4",
+      "key": "20230528_RetinaCulture_pRetina_degeneration score.pdf",
+      "size": 13501393,
+      "checksum": "md5:395bcbb7ecc82f69c2ee8e368566509f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_pRetina_degeneration score.pdf/content"
+      }
+    },
+    {
+      "id": "9a404475-75bd-4bbf-b736-82370c032efe",
+      "key": "hRetina_HE.zip",
+      "size": 309707122,
+      "checksum": "md5:f8096302953793a2e7815cab1020e96a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/hRetina_HE.zip/content"
+      }
+    },
+    {
+      "id": "95bd4143-0b26-466a-9ce1-5041e6569c19",
+      "key": "dynamic culture_DMEM_1d_37C.zip",
+      "size": 22586791,
+      "checksum": "md5:5be716384eecf4dec3c2031fe9dcf290",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture_DMEM_1d_37C.zip/content"
+      }
+    },
+    {
+      "id": "5feadcdf-efac-4e87-80eb-8735020e22dd",
+      "key": "20230528_RetinaCulture_rRetina_CytoTox-GSH.xlsx",
+      "size": 20852,
+      "checksum": "md5:9287fe754969d821fbe6ce8e2b2720cf",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_rRetina_CytoTox-GSH.xlsx/content"
+      }
+    },
+    {
+      "id": "13a52762-587b-436d-ad08-c71354403d06",
+      "key": "pRetina_HE.zip",
+      "size": 18981728,
+      "checksum": "md5:6a0693efb7064d549ea5cf6668681835",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/pRetina_HE.zip/content"
+      }
+    },
+    {
+      "id": "38b78f4d-f2db-4990-b7bf-861a93910541",
+      "key": "dynamic culture_Ames_1d_37C.zip",
+      "size": 68001129,
+      "checksum": "md5:3816295503be2c1029ab8139516e3427",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture_Ames_1d_37C.zip/content"
+      }
+    },
+    {
+      "id": "d25dcb5d-4e2f-4ed4-b55e-46e7ceb2a6e6",
+      "key": "20230528_RetinaCulture_pRetina_degeneration score.xlsx",
+      "size": 15041,
+      "checksum": "md5:5b9878462dc25370ef9eeb848222ec06",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_pRetina_degeneration score.xlsx/content"
+      }
+    },
+    {
+      "id": "0159c54b-cbf9-4272-8cd2-f2ed1d22c017",
+      "key": "dynamic culture_Ames_2d_37C.zip",
+      "size": 15500400,
+      "checksum": "md5:a87f3fcef0140b8f7217a5d4e12d6aed",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture_Ames_2d_37C.zip/content"
+      }
+    },
+    {
+      "id": "70da9a15-e674-4f6d-a6b7-46126670291a",
+      "key": "20230528_RetinaCulture_pRetina_Scutellarin_CellTiter.xlsx",
+      "size": 16639,
+      "checksum": "md5:92df6ae10d1907e6bdae8749eb5c3272",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_pRetina_Scutellarin_CellTiter.xlsx/content"
+      }
+    },
+    {
+      "id": "74609d3b-c08a-47bd-ae00-146b70461796",
+      "key": "20230528_RetinaCulture_pRetina_Scutellarin_TUNEL.xlsx",
+      "size": 19390,
+      "checksum": "md5:783598eaa1178f598f3e39bf9bbf51e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/20230528_RetinaCulture_pRetina_Scutellarin_TUNEL.xlsx/content"
+      }
+    },
+    {
+      "id": "00799472-a0ff-4a8d-8ed8-9804969fdc14",
+      "key": "pRetina_Flatmount_BF.zip",
+      "size": 35477084,
+      "checksum": "md5:bfe3ea5c8c2b259e568dbb108c0b3b68",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/pRetina_Flatmount_BF.zip/content"
+      }
+    },
+    {
+      "id": "37029a9e-fe0a-40e1-bf13-18b152008a07",
+      "key": "dynamic culture_Ames_3d_37C.zip",
+      "size": 11935603,
+      "checksum": "md5:b51e1a9a4ada04a200814d9fd0b0c0f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/dynamic culture_Ames_3d_37C.zip/content"
+      }
+    },
+    {
+      "id": "2eed1e9a-5842-48fb-8670-4e3d5361394f",
+      "key": "pRetina_model5_IF.zip",
+      "size": 3629975182,
+      "checksum": "md5:e0fd20e7a6c1168995ebccb8eac0669e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/pRetina_model5_IF.zip/content"
+      }
+    },
+    {
+      "id": "48ec79a7-ea22-4048-b4dd-044456aafc15",
+      "key": "fresh-control_dynamic culture.zip",
+      "size": 46582930,
+      "checksum": "md5:4c36329e2eac7268c4a0b69e2acbeb29",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/fresh-control_dynamic culture.zip/content"
+      }
+    },
+    {
+      "id": "f8105caf-8154-4c11-a9da-8a77188ef5a6",
+      "key": "cattle retina_2.jpg",
+      "size": 101189,
+      "checksum": "md5:9d0d0940bc879b9c0fc934a7e19038b2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/cattle retina_2.jpg/content"
+      }
+    },
+    {
+      "id": "70ec6156-0714-40e2-9923-8423ab04569c",
+      "key": "cattle retina_1.jpg",
+      "size": 92865,
+      "checksum": "md5:f990ee9c46a4f536faf9c812b27aab0b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7974096/files/cattle retina_1.jpg/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "329025"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 808,
+    "unique_downloads": 763,
+    "views": 157,
+    "unique_views": 149,
+    "version_downloads": 806,
+    "version_unique_downloads": 762,
+    "version_unique_views": 148,
+    "version_views": 156
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 2,
+    "archive_count": 14,
+    "genomics_count": 0,
+    "total_imaging_size": 194054,
+    "total_archive_size": 6094981585,
+    "top_level_files": [
+      {
+        "name": "dynamic culture_Ames_21C.zip",
+        "size": 14432782
+      },
+      {
+        "name": "hRetina_IF.zip",
+        "size": 1301872741
+      },
+      {
+        "name": "20230327_RetinaCulture_pRetina-hRetina_Models 5a-b.xlsx",
+        "size": 49569
+      },
+      {
+        "name": "20230528_RetinaCulture_dynamic culture_Medium.xlsx",
+        "size": 21111
+      },
+      {
+        "name": "Retinae morphological degeneration scale definition.pdf",
+        "size": 623417
+      },
+      {
+        "name": "pRetina_TUNEL.zip",
+        "size": 25655456
+      },
+      {
+        "name": "pRetina_model5_HE.zip",
+        "size": 581086488
+      },
+      {
+        "name": "20230528_RetinaCulture_rRetina_HE.pdf",
+        "size": 5733445
+      },
+      {
+        "name": "20230528_RetinaCulture_dynamic culture_PrepMethod.xlsx",
+        "size": 20884
+      },
+      {
+        "name": "dynamic culture+RPE.zip",
+        "size": 13186149
+      },
+      {
+        "name": "20230528_RetinaCulture_dynamic culture_Temperatur.xlsx",
+        "size": 21171
+      },
+      {
+        "name": "20230528_RetinaCulture_pRetina_degeneration score.pdf",
+        "size": 13501393
+      },
+      {
+        "name": "hRetina_HE.zip",
+        "size": 309707122
+      },
+      {
+        "name": "dynamic culture_DMEM_1d_37C.zip",
+        "size": 22586791
+      },
+      {
+        "name": "20230528_RetinaCulture_rRetina_CytoTox-GSH.xlsx",
+        "size": 20852
+      },
+      {
+        "name": "pRetina_HE.zip",
+        "size": 18981728
+      },
+      {
+        "name": "dynamic culture_Ames_1d_37C.zip",
+        "size": 68001129
+      },
+      {
+        "name": "20230528_RetinaCulture_pRetina_degeneration score.xlsx",
+        "size": 15041
+      },
+      {
+        "name": "dynamic culture_Ames_2d_37C.zip",
+        "size": 15500400
+      },
+      {
+        "name": "20230528_RetinaCulture_pRetina_Scutellarin_CellTiter.xlsx",
+        "size": 16639
+      },
+      {
+        "name": "20230528_RetinaCulture_pRetina_Scutellarin_TUNEL.xlsx",
+        "size": 19390
+      },
+      {
+        "name": "pRetina_Flatmount_BF.zip",
+        "size": 35477084
+      },
+      {
+        "name": "dynamic culture_Ames_3d_37C.zip",
+        "size": 11935603
+      },
+      {
+        "name": "pRetina_model5_IF.zip",
+        "size": 3629975182
+      },
+      {
+        "name": "fresh-control_dynamic culture.zip",
+        "size": 46582930
+      },
+      {
+        "name": "cattle retina_2.jpg",
+        "size": 101189
+      },
+      {
+        "name": "cattle retina_1.jpg",
+        "size": 92865
+      }
+    ],
+    "zip_contents": {
+      "dynamic culture_ames_21c.zip": {
+        "total_files": 23,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 14428224,
+        "file_types": {
+          ".jpg": 23
+        },
+        "imaging_file_count": 23,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nhamesrt/nh23042012amesrt40xot002a001.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a002.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a003.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a004.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a005.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a006.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a007.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a008.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a009.jpg",
+          "nhamesrt/nh23042012amesrt40xot002a010.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "pretina_model5_he.zip": {
+        "total_files": 141,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 794570814,
+        "file_types": {
+          ".bmp": 141
+        },
+        "imaging_file_count": 141,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s03_20211212.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s04_20220308.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s05_20220308.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s06_202207028.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s07_202207028.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s08_202207028.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s09_20220729.bmp",
+          "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s10_20220729.bmp",
+          "pretina_model5_he/002_bf_200x_d1_h&e_snf2019_wp3_procmin_s03_20211212.bmp",
+          "pretina_model5_he/002_bf_200x_d1_h&e_snf2019_wp3_procmin_s04_20220308.bmp"
+        ],
+        "sample_genomics_files": []
+      },
+      "dynamic culture+rpe.zip": {
+        "total_files": 19,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 13182105,
+        "file_types": {
+          ".jpg": 19
+        },
+        "imaging_file_count": 19,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b007.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b001.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b002.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b003.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b004.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b005.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b006.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b008.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b009.jpg",
+          "nh+rpe/nh23112012rpe+nhames37c1d40xot004b010.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "hretina_he.zip": {
+        "total_files": 78,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 439549812,
+        "file_types": {
+          ".bmp": 78
+        },
+        "imaging_file_count": 78,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "h&e/0011_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+          "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+          "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s02_20220404.bmp",
+          "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s03_20220729.bmp",
+          "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s04_20220729.bmp",
+          "h&e/0021_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+          "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+          "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s02_20220404.bmp",
+          "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s03_20220729.bmp",
+          "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s04_20220729.bmp"
+        ],
+        "sample_genomics_files": []
+      },
+      "dynamic culture_dmem_1d_37c.zip": {
+        "total_files": 36,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 22579307,
+        "file_types": {
+          ".jpg": 36
+        },
+        "imaging_file_count": 36,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a001.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a004.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a002.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a003.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a005.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a006.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a007.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a008.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a009.jpg",
+          "nhdmem1d37c/nh09012012dmem37c1d40xot001a010.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "pretina_he.zip": {
+        "total_files": 107,
+        "total_directories": 20,
+        "total_uncompressed_bytes": 19999638,
+        "file_types": {
+          ".jpg": 102
+        },
+        "imaging_file_count": 102,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "pretina_he/pretina_he_day0/4-07-16-j0-ret1-1.jpg",
+          "pretina_he/pretina_he_day0/4-07-16-j0-ret1-2.jpg",
+          "pretina_he/pretina_he_day0/4-07-16-j0-ret2-1 copie.jpg",
+          "pretina_he/pretina_he_day0/4-07-16-j0-ret2-1.jpg",
+          "pretina_he/pretina_he_day0/4-07-16-j0-ret2-2.jpg",
+          "pretina_he/pretina_he_day0/h&e-27-05-16-j0-21-ret1.jpg",
+          "pretina_he/pretina_he_day0/h&e-27-05-16-j0-21-ret2.jpg",
+          "pretina_he/pretina_he_day0/h&e-9-05-16-j0-21-ret1.jpg",
+          "pretina_he/pretina_he_day0/h&e-9-05-16-j0-21-ret2.jpg",
+          "pretina_he/pretina_he_day0/h&e-9-05-16-j0-ret1.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "dynamic culture_ames_1d_37c.zip": {
+        "total_files": 108,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 67978903,
+        "file_types": {
+          ".jpg": 108
+        },
+        "imaging_file_count": 108,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nhames1d37c/nh04042012ames37c40xot001a003.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a001.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a002.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a004.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a005.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a006.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a012.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a008.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a009.jpg",
+          "nhames1d37c/nh04042012ames37c40xot001a010.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "dynamic culture_ames_2d_37c.zip": {
+        "total_files": 25,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 15495260,
+        "file_types": {
+          ".jpg": 25
+        },
+        "imaging_file_count": 25,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nhames2d37c/nh13022012ames37c40xot001a001.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a002.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a003.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a004.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a005.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a007.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a006.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a008.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a009.jpg",
+          "nhames2d37c/nh13022012ames37c40xot001a010.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "pretina_flatmount_bf.zip": {
+        "total_files": 154,
+        "total_directories": 13,
+        "total_uncompressed_bytes": 35577101,
+        "file_types": {
+          ".jpg": 154
+        },
+        "imaging_file_count": 154,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf2x10.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf3x10.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf4x108.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf5x10.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx10.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx10wdapi.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx5.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf2x1016.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf3x1016.jpg",
+          "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf4x104.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "dynamic culture_ames_3d_37c.zip": {
+        "total_files": 19,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 11931663,
+        "file_types": {
+          ".jpg": 19
+        },
+        "imaging_file_count": 19,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "nhames3d37c/nh25042012ames37c40xot004a018.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b001.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b002.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b003.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b004.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b005.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b007.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b006.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b008.jpg",
+          "nhames3d37c/nh28032012ames37c40xot002b009.jpg"
+        ],
+        "sample_genomics_files": []
+      },
+      "fresh-control_dynamic culture.zip": {
+        "total_files": 75,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 46567574,
+        "file_types": {
+          ".jpg": 75
+        },
+        "imaging_file_count": 75,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "sofortfixation/nh04042012probe40xot001a001.jpg",
+          "sofortfixation/nh04042012probe40xot001a002.jpg",
+          "sofortfixation/nh04042012probe40xot001a003.jpg",
+          "sofortfixation/nh04042012probe40xot001a004.jpg",
+          "sofortfixation/nh04042012probe40xot001a005.jpg",
+          "sofortfixation/nh04042012probe40xot001a007.jpg",
+          "sofortfixation/nh04042012probe40xot001a006.jpg",
+          "sofortfixation/nh04042012probe40xot001a008.jpg",
+          "sofortfixation/nh04042012probe40xot001a010.jpg",
+          "sofortfixation/nh04042012probe40xot001a009.jpg"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "nhamesrt/nh23042012amesrt40xot002a001.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a002.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a003.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a004.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a005.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a006.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a007.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a008.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a009.jpg",
+      "nhamesrt/nh23042012amesrt40xot002a010.jpg",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s03_20211212.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s04_20220308.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s05_20220308.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s06_202207028.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s07_202207028.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s08_202207028.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s09_20220729.bmp",
+      "pretina_model5_he/001_bf_100x_d1_h&e_snf2019_wp3_procmin_s10_20220729.bmp",
+      "pretina_model5_he/002_bf_200x_d1_h&e_snf2019_wp3_procmin_s03_20211212.bmp",
+      "pretina_model5_he/002_bf_200x_d1_h&e_snf2019_wp3_procmin_s04_20220308.bmp",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b007.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b001.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b002.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b003.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b004.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b005.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b006.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b008.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b009.jpg",
+      "nh+rpe/nh23112012rpe+nhames37c1d40xot004b010.jpg",
+      "h&e/0011_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+      "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+      "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s02_20220404.bmp",
+      "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s03_20220729.bmp",
+      "h&e/001_bf_100x_d1_h&e_snf2019_wp3_hrocmin_s04_20220729.bmp",
+      "h&e/0021_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+      "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s01_20220404.bmp",
+      "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s02_20220404.bmp",
+      "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s03_20220729.bmp",
+      "h&e/002_bf_200x_d1_h&e_snf2019_wp3_hrocmin_s04_20220729.bmp",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a001.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a004.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a002.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a003.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a005.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a006.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a007.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a008.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a009.jpg",
+      "nhdmem1d37c/nh09012012dmem37c1d40xot001a010.jpg",
+      "pretina_he/pretina_he_day0/4-07-16-j0-ret1-1.jpg",
+      "pretina_he/pretina_he_day0/4-07-16-j0-ret1-2.jpg",
+      "pretina_he/pretina_he_day0/4-07-16-j0-ret2-1 copie.jpg",
+      "pretina_he/pretina_he_day0/4-07-16-j0-ret2-1.jpg",
+      "pretina_he/pretina_he_day0/4-07-16-j0-ret2-2.jpg",
+      "pretina_he/pretina_he_day0/h&e-27-05-16-j0-21-ret1.jpg",
+      "pretina_he/pretina_he_day0/h&e-27-05-16-j0-21-ret2.jpg",
+      "pretina_he/pretina_he_day0/h&e-9-05-16-j0-21-ret1.jpg",
+      "pretina_he/pretina_he_day0/h&e-9-05-16-j0-21-ret2.jpg",
+      "pretina_he/pretina_he_day0/h&e-9-05-16-j0-ret1.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a003.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a001.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a002.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a004.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a005.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a006.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a012.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a008.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a009.jpg",
+      "nhames1d37c/nh04042012ames37c40xot001a010.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a001.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a002.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a003.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a004.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a005.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a007.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a006.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a008.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a009.jpg",
+      "nhames2d37c/nh13022012ames37c40xot001a010.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf2x10.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf3x10.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf4x108.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bf5x10.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx10.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx10wdapi.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0bfx5.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf2x1016.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf3x1016.jpg",
+      "pretina_flatmount_bf/pretina_degenerationscore_day0/170516j0ret2bf4x104.jpg",
+      "nhames3d37c/nh25042012ames37c40xot004a018.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b001.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b002.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b003.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b004.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b005.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b007.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b006.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b008.jpg",
+      "nhames3d37c/nh28032012ames37c40xot002b009.jpg",
+      "sofortfixation/nh04042012probe40xot001a001.jpg",
+      "sofortfixation/nh04042012probe40xot001a002.jpg",
+      "sofortfixation/nh04042012probe40xot001a003.jpg",
+      "sofortfixation/nh04042012probe40xot001a004.jpg",
+      "sofortfixation/nh04042012probe40xot001a005.jpg",
+      "sofortfixation/nh04042012probe40xot001a007.jpg",
+      "sofortfixation/nh04042012probe40xot001a006.jpg",
+      "sofortfixation/nh04042012probe40xot001a008.jpg",
+      "sofortfixation/nh04042012probe40xot001a010.jpg",
+      "sofortfixation/nh04042012probe40xot001a009.jpg"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:39:13.397315"
+}

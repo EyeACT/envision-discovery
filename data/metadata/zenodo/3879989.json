@@ -1,0 +1,144 @@
+{
+  "created": "2020-06-05T21:11:07.831783+00:00",
+  "modified": "2020-06-05T22:18:24.428962+00:00",
+  "id": 3879989,
+  "conceptrecid": "3879988",
+  "doi": "10.5281/zenodo.3879989",
+  "conceptdoi": "10.5281/zenodo.3879988",
+  "doi_url": "https://doi.org/10.5281/zenodo.3879989",
+  "metadata": {
+    "title": "Face detection ensemble with methods using depth information to filter false positives",
+    "doi": "10.5281/zenodo.3879989",
+    "publication_date": "2020-06-05",
+    "description": "<p>%files (File.rar):<br>\n%ColorImageX.jpg is the color image<br>\n%SegImageX.jpg is the segmentation map&nbsp;<br>\n%SegImage2_X.jpg is the segmentation map obtained considering only Depth<br>\n%map</p>\n\n<p>%the .mat file<br>\n%DatasetFaceD{x}{1} depth map<br>\n%DatasetFaceD{x}{2} eyes coordinates<br>\n%DatasetFaceD{x}{3} calibration matrix, e.g used in face_dimension.m</p>\n\n<p>&nbsp;</p>\n\n<p>PS few images (7) used in the paper are no more available</p>\n\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Loris Nanni",
+        "affiliation": null
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3879988"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Face detection ensemble with methods using depth information to filter false positives",
+  "links": {
+    "self": "https://zenodo.org/api/records/3879989",
+    "self_html": "https://zenodo.org/records/3879989",
+    "preview_html": "https://zenodo.org/records/3879989?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3879989",
+    "self_doi": "https://doi.org/10.5281/zenodo.3879989",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3879989",
+    "reserve_doi": "https://zenodo.org/api/records/3879989/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3879988",
+    "parent_html": "https://zenodo.org/records/3879988",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3879988",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3879988",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3879989/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3879989/sequence/default",
+    "files": "https://zenodo.org/api/records/3879989/files",
+    "media_files": "https://zenodo.org/api/records/3879989/media-files",
+    "archive": "https://zenodo.org/api/records/3879989/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3879989/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3879989/versions/latest",
+    "latest_html": "https://zenodo.org/records/3879989/latest",
+    "versions": "https://zenodo.org/api/records/3879989/versions",
+    "draft": "https://zenodo.org/api/records/3879989/draft",
+    "access_links": "https://zenodo.org/api/records/3879989/access/links",
+    "access_grants": "https://zenodo.org/api/records/3879989/access/grants",
+    "access_users": "https://zenodo.org/api/records/3879989/access/users",
+    "access_request": "https://zenodo.org/api/records/3879989/access/request",
+    "access": "https://zenodo.org/api/records/3879989/access",
+    "communities": "https://zenodo.org/api/records/3879989/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3879989/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3879989/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3879989/file-modification",
+    "requests": "https://zenodo.org/api/records/3879989/requests"
+  },
+  "updated": "2020-06-05T22:18:24.428962+00:00",
+  "recid": "3879989",
+  "revision": 2,
+  "files": [
+    {
+      "id": "3009b0d8-7eda-4669-a26d-ee57d83e6e7b",
+      "key": "File.rar",
+      "size": 146499757,
+      "checksum": "md5:a54b19a84aa8403986762ee11acbf9d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/3879989/files/File.rar/content"
+      }
+    },
+    {
+      "id": "7b2bcb3d-1779-44a9-a6db-0f35032850bc",
+      "key": "DatasetFaceD.mat",
+      "size": 457451715,
+      "checksum": "md5:306bf7b1dac963dba7d24a0745a94538",
+      "links": {
+        "self": "https://zenodo.org/api/records/3879989/files/DatasetFaceD.mat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "62623"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 75,
+    "unique_downloads": 70,
+    "views": 212,
+    "unique_views": 202,
+    "version_downloads": 75,
+    "version_unique_downloads": 70,
+    "version_unique_views": 202,
+    "version_views": 212
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 457451715,
+    "total_archive_size": 146499757,
+    "top_level_files": [
+      {
+        "name": "File.rar",
+        "size": 146499757
+      },
+      {
+        "name": "DatasetFaceD.mat",
+        "size": 457451715
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:27.356877"
+}

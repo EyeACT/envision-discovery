@@ -1,0 +1,248 @@
+{
+  "created": "2024-12-08T08:28:37.422074+00:00",
+  "modified": "2024-12-08T08:28:37.677310+00:00",
+  "id": 14305302,
+  "conceptrecid": "14305301",
+  "doi": "10.5281/zenodo.14305302",
+  "conceptdoi": "10.5281/zenodo.14305301",
+  "doi_url": "https://doi.org/10.5281/zenodo.14305302",
+  "metadata": {
+    "title": "Dataset for Fetal Ultrasound Grand Challenge: Semi-Supervised Cervical Segmentation (ISBI 2025)",
+    "doi": "10.5281/zenodo.14305302",
+    "publication_date": "2024-12-08",
+    "description": "<p><span>Transvaginal ultrasound is the preferred method for visualizing the cervix in most patients, offering detailed insight into cervical anatomy and structure. Accurate segmentation of ultrasound (US) images of the cervical muscles is essential for analyzing deep muscle structures, assessing their function, and monitoring treatment protocols tailored to individual patients.</span></p>\n<p><u><span>T</span></u><span>he manual annotation of cervical structures in transvaginal ultrasound images is labor-intensive and time-consuming, limiting the availability of large labeled datasets required for robust machine learning models. In response to this challenge, semi supervised learning approaches have shown potential by leveraging both labeled and unlabeled data, enabling the extraction of useful information from unannotated cases. This method could reduce the need for extensive manual annotation while maintaining accuracy, thus accelerating the development of automated cervical image segmentation systems. The envisioned impact of this challenge is twofold: improving clinical decision-making through more accessible and accurate diagnostic tools and advancing machine learning techniques for medical image analysis, particularly in resource-constrained environments. </span></p>\n<p><span>We extend the MICCAI PSFHS 2023 Challenge and the MICCAI IUGC 2024 Challenge from fully supervised settings to a semi-supervised setting that focuses on how to use unlabeled data.</span></p>\n<p><span>Training/Validation/Test=500/90/300</span></p>\n<p><span>The dataset can be accessible after signing the data-sharing agreement and sending it to the organizer (<span>fugc.isbi25@gmail.com</span>).</span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Bai, Jieyun",
+        "affiliation": null,
+        "orcid": "0000-0002-2847-350X"
+      },
+      {
+        "name": "Yang, Ziduo",
+        "affiliation": null,
+        "orcid": "0000-0002-8195-2526"
+      },
+      {
+        "name": "Gan, Jie",
+        "affiliation": "University of Sydney"
+      },
+      {
+        "name": "Md. Kamrul, Hasan",
+        "affiliation": "Imperial College London"
+      },
+      {
+        "name": "Liang, Zhuonan",
+        "affiliation": "University of Sydney"
+      },
+      {
+        "name": "Cai, Weidong",
+        "affiliation": "University of Sydney"
+      },
+      {
+        "name": "Tao, Tan",
+        "affiliation": "The Netherlands and Macao Polytechnic University"
+      },
+      {
+        "name": "Jing, Ye",
+        "affiliation": "Monash University"
+      },
+      {
+        "name": "Mohammad, Yaqub",
+        "affiliation": "Mohamed bin Zayed University of Artificial Intelligence"
+      },
+      {
+        "name": "Dong, Ni",
+        "affiliation": "Shenzhen University"
+      },
+      {
+        "name": "Saad, Slimani",
+        "affiliation": "Hassan II University"
+      },
+      {
+        "name": "Benard, Ohene-Botwe",
+        "affiliation": "University of Ghana"
+      },
+      {
+        "name": "Campello, V\u00edctor Manuel",
+        "affiliation": "Universitat de Barcelona",
+        "orcid": "0000-0003-1727-983X"
+      },
+      {
+        "name": "Lekadir, Karim",
+        "affiliation": "Universitat de Barcelona",
+        "orcid": "0000-0002-9456-1612"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Bai, Jieyun",
+        "affiliation": "Jinan University",
+        "type": "DataManager",
+        "orcid": "0000-0002-2847-350X"
+      }
+    ],
+    "keywords": [
+      "Preterm birth",
+      "Cervix",
+      "Segmentation",
+      "fetal ultrasound",
+      "Semi-supervised learning",
+      "Challenge",
+      "ISBI"
+    ],
+    "dates": [
+      {
+        "type": "accepted",
+        "description": "ISBI 2025 Challenge"
+      }
+    ],
+    "version": "V0",
+    "references": [
+      "\uf0d8\tBai J, Zhou Z, Ou Z, et al. PSFHS challenge report: Pubic symphysis and fetal head segmentation from intrapartum ultrasound images[J]. Medical Image Analysis, 2025, 99: 103353. \uf0d8\tChen Z, Ou Z, Lu Y, et al. Direction-guided and multi-scale feature screening for fetal head\u2013pubic symphysis segmentation and angle of progression calculation[J]. Expert Systems with Applications, 2024, 245: 123096. \uf0d8\tLu Y, Zhi D, Zhou M, et al. Multitask deep neural network for the fully automatic measurement of the angle of progression[J]. Computational and Mathematical Methods in Medicine, 2022, 2022. \uf0d8\tLu Y, Zhou M, Zhi D, et al. The JNU-IFM dataset for segmenting pubic symphysis-fetal head[J]. Data in Brief, 2022, 41: 107904. \uf0d8\tBai J, Sun Z, Yu S, et al. A framework for computing angle of progression from transperineal ultrasound images for evaluating fetal head descent using a novel double branch network[J]. Frontiers in Physiology, 2022, 13: 2565. \uf0d8\tZhou Z, Lu Y, Bai J, et al. Segment Anything Model for fetal head-pubic symphysis segmentation in intrapartum ultrasound image analysis[J]. Expert Systems with Applications, 2024: 125699. \uf0d8\tJiang J, Wang H, Bai J, et al. Intrapartum Ultrasound Image Segmentation of Pubic Symphysis and Fetal Head Using Dual Student-Teacher Framework with CNN-ViT Collaborative Learning[C]//International Conference on Medical Image Computing and Computer-Assisted Intervention. Cham: Springer Nature Switzerland, 2024: 448-458. \uf0d8\tOu Z, Bai J, Chen Z, et al. RTSeg-Net: a lightweight network for real-time segmentation of fetal head and pubic symphysis from intrapartum ultrasound images[J]. Computers in biology and medicine, 2024, 175: 108501. \uf0d8\tQiu R, Zhou M, Bai J, et al. PSFHSP-Net: an efficient lightweight network for identifying pubic symphysis-fetal head standard plane from intrapartum ultrasound images[J]. Medical & Biological Engineering & Computing, 2024: 1-12. \uf0d8\tChen G, Bai J, Ou Z, et al. PSFHS: intrapartum ultrasound image dataset for AI-based segmentation of pubic symphysis and fetal head[J]. Scientific Data, 2024, 11(1): 436. \uf0d8\tChen Z, Lu Y, Long S, et al. Fetal head and pubic symphysis segmentation in intrapartum ultrasound image using a dual-path boundary-guided residual network[J]. IEEE Journal of Biomedical and Health Informatics, 2024. \uf0d8\tBai, J., Lekadir, K., Ni, D., Slimani, S., Campello, V. M., Ohene-Botwe, B., Lu, Y., Chen, G., Hou, H., Qiu, D., & Zhou, Z. (2024). Intrapartum Ultrasound Grand Challenge 2024. 27th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2024). Zenodo. https://doi.org/10.5281/zenodo.10979813 \uf0d8\tJieyun Bai, Zhanhong Ou, Yaosheng Lu, Dong Ni, Gaowen Chen, Gaowen Chen, Zhanhong Ou, Zhanhong Ou, Gaowen Chen, & Yaosheng Lu. (2023). Pubic Symphysis-Fetal Head Segmentation from Transperineal Ultrasound Images. International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI) 2023 (MICCAI 2023). Zenodo. https://doi.org/10.5281/zenodo.7861699"
+    ],
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://www.codabench.org/competitions/4781/"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "meeting": {
+      "title": "2025 IEEE International Symposium on Biomedical Imaging",
+      "acronym": "ISBI",
+      "dates": "14-17 April 2025",
+      "place": "Houston, TX, USA",
+      "url": "https://biomedicalimaging.org/2025/",
+      "session": "Challenges",
+      "session_part": "N/A"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14305301"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Dataset for Fetal Ultrasound Grand Challenge: Semi-Supervised Cervical Segmentation (ISBI 2025)",
+  "links": {
+    "self": "https://zenodo.org/api/records/14305302",
+    "self_html": "https://zenodo.org/records/14305302",
+    "preview_html": "https://zenodo.org/records/14305302?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14305302",
+    "self_doi": "https://doi.org/10.5281/zenodo.14305302",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14305302",
+    "reserve_doi": "https://zenodo.org/api/records/14305302/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14305301",
+    "parent_html": "https://zenodo.org/records/14305301",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14305301",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14305301",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14305302/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14305302/sequence/default",
+    "files": "https://zenodo.org/api/records/14305302/files",
+    "media_files": "https://zenodo.org/api/records/14305302/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14305302:AD.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14305302/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14305302/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14305302/versions/latest",
+    "latest_html": "https://zenodo.org/records/14305302/latest",
+    "versions": "https://zenodo.org/api/records/14305302/versions",
+    "draft": "https://zenodo.org/api/records/14305302/draft",
+    "access_links": "https://zenodo.org/api/records/14305302/access/links",
+    "access_grants": "https://zenodo.org/api/records/14305302/access/grants",
+    "access_users": "https://zenodo.org/api/records/14305302/access/users",
+    "access_request": "https://zenodo.org/api/records/14305302/access/request",
+    "access": "https://zenodo.org/api/records/14305302/access",
+    "communities": "https://zenodo.org/api/records/14305302/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14305302/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14305302/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14305302/file-modification",
+    "requests": "https://zenodo.org/api/records/14305302/requests"
+  },
+  "updated": "2024-12-08T08:28:37.677310+00:00",
+  "recid": "14305302",
+  "revision": 4,
+  "files": [
+    {
+      "id": "8e1d2bb0-26ba-483a-840b-34cf551d30c2",
+      "key": "AD.png",
+      "size": 3450662,
+      "checksum": "md5:b2685c4b056901c347ef8819add0b943",
+      "links": {
+        "self": "https://zenodo.org/api/records/14305302/files/AD.png/content"
+      }
+    },
+    {
+      "id": "ca87db3b-4a30-4a1a-8d26-c783df37086b",
+      "key": "Data-sharing Agreement_FUGC2025.docx",
+      "size": 16890,
+      "checksum": "md5:deac1fbce06ff9b144b2cb7e5f74f263",
+      "links": {
+        "self": "https://zenodo.org/api/records/14305302/files/Data-sharing Agreement_FUGC2025.docx/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "399976"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 229,
+    "unique_downloads": 222,
+    "views": 740,
+    "unique_views": 648,
+    "version_downloads": 229,
+    "version_unique_downloads": 222,
+    "version_unique_views": 648,
+    "version_views": 740
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 3450662,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "AD.png",
+        "size": 3450662
+      },
+      {
+        "name": "Data-sharing Agreement_FUGC2025.docx",
+        "size": 16890
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:43.949609"
+}

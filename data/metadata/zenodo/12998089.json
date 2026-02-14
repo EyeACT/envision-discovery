@@ -1,0 +1,947 @@
+{
+  "created": "2024-07-29T13:23:39.693007+00:00",
+  "modified": "2024-07-29T13:23:42.575349+00:00",
+  "id": 12998089,
+  "conceptrecid": "12998088",
+  "doi": "10.5281/zenodo.12998089",
+  "conceptdoi": "10.5281/zenodo.12998088",
+  "doi_url": "https://doi.org/10.5281/zenodo.12998089",
+  "metadata": {
+    "title": "Wallops SuperDARN data in netCDF format (2023-Oct)",
+    "doi": "10.5281/zenodo.12998089",
+    "publication_date": "2024-07-26",
+    "description": "<p>2023-Oct Wallops SuperDARN radar data in netCDF format. These files were produced using versions 2.5 and 3.0 of the public FitACF algorithm, using the AACGM v2 coordinate system. Cite this dataset if using our data in a publication.</p><p>The RST is available here:&nbsp;https://github.com/SuperDARN/rst</p><p>The research enabled by SuperDARN is due to the efforts of teams of scientists and engineers working in many countries to build and operate radars, process data and provide access, develop and improve data products, and assist users in interpretation. Users of SuperDARN data and data products are asked to acknowledge this support in presentations and publications. A brief statement on how to acknowledge use of SuperDARN data is provided below.</p><p>Users are also asked to consult with a SuperDARN PI prior to submission of work intended for publication. A listing of radars and PIs with contact information can be found here: (<a href=\"http://vt.superdarn.org/tiki-index.php?page=Radar+Overview\">SuperDARN Radar Overview</a>)</p><p><strong>Recommended form of acknowledgement for the use of SuperDARN data:</strong></p><p>'The authors acknowledge the use of SuperDARN data. SuperDARN is a collection of radars funded by national scientific funding agencies of Australia, Canada, China, France, Italy, Japan, Norway, South Africa, United Kingdom and the United States of America.'</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "SuperDARN, ionosphere, magnetosphere, convection, rst, fitacf, cfit, aeronomy, cedar, gem, radar"
+    ],
+    "version": "1.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "superdarn"
+      },
+      {
+        "id": "spacephysics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "12998088"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Wallops SuperDARN data in netCDF format (2023-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/12998089",
+    "self_html": "https://zenodo.org/records/12998089",
+    "preview_html": "https://zenodo.org/records/12998089?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.12998089",
+    "self_doi": "https://doi.org/10.5281/zenodo.12998089",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12998089",
+    "reserve_doi": "https://zenodo.org/api/records/12998089/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/12998088",
+    "parent_html": "https://zenodo.org/records/12998088",
+    "parent_doi": "https://doi.org/10.5281/zenodo.12998088",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.12998088",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12998089/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12998089/sequence/default",
+    "files": "https://zenodo.org/api/records/12998089/files",
+    "media_files": "https://zenodo.org/api/records/12998089/media-files",
+    "archive": "https://zenodo.org/api/records/12998089/files-archive",
+    "archive_media": "https://zenodo.org/api/records/12998089/media-files-archive",
+    "latest": "https://zenodo.org/api/records/12998089/versions/latest",
+    "latest_html": "https://zenodo.org/records/12998089/latest",
+    "versions": "https://zenodo.org/api/records/12998089/versions",
+    "draft": "https://zenodo.org/api/records/12998089/draft",
+    "access_links": "https://zenodo.org/api/records/12998089/access/links",
+    "access_grants": "https://zenodo.org/api/records/12998089/access/grants",
+    "access_users": "https://zenodo.org/api/records/12998089/access/users",
+    "access_request": "https://zenodo.org/api/records/12998089/access/request",
+    "access": "https://zenodo.org/api/records/12998089/access",
+    "communities": "https://zenodo.org/api/records/12998089/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/12998089/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/12998089/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/12998089/file-modification",
+    "requests": "https://zenodo.org/api/records/12998089/requests"
+  },
+  "updated": "2024-07-29T13:23:42.575349+00:00",
+  "recid": "12998089",
+  "revision": 4,
+  "files": [
+    {
+      "id": "96808055-1594-41e2-b6ce-d0078076c7fe",
+      "key": "20231009.wal.a.fitacf2.nc",
+      "size": 7599652,
+      "checksum": "md5:0ca5cfaa119d3ae08bbf6bc23d02b2ef",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231009.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "11d4f9b2-8ba3-45cf-abaf-91e1133e4f6d",
+      "key": "20231012.wal.a.fitacf2.nc",
+      "size": 6850612,
+      "checksum": "md5:7ec50dfb50face1158d257f983877eda",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231012.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "72eac102-6421-4246-9ef5-c484cb2fe249",
+      "key": "20231020.wal.a.fitacf2.nc",
+      "size": 2458692,
+      "checksum": "md5:eccfd6363a5d58dba5b36cd43e34319d",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231020.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "c2111141-c0ee-4d18-9fd6-db5688082c18",
+      "key": "20231018.wal.a.despeck.fitacf3.nc",
+      "size": 1864593,
+      "checksum": "md5:d0b6de37621254072d907c28202cd51f",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231018.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "3a9673c8-8c6d-4f6f-9edd-39862ed6a551",
+      "key": "20231031.wal.a.fitacf2.nc",
+      "size": 6292092,
+      "checksum": "md5:273f37ce013d92a79f8d31ea3fbbcf59",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231031.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "7662b042-b60a-4855-9185-d9fac341da11",
+      "key": "20231006.wal.a.despeck.fitacf3.nc",
+      "size": 2061033,
+      "checksum": "md5:23d349cbb0f69d5f40aab305d9fe0c4d",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231006.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "e3dc3ed4-2fa6-4360-b63a-34dfd1632b88",
+      "key": "20231017.wal.a.fitacf2.nc",
+      "size": 1837772,
+      "checksum": "md5:8e262f5442ac8b26d46c4a72a53421f3",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231017.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "6a2e336a-4956-4f7c-a7df-c8ba5cb213f1",
+      "key": "20231021.wal.a.fitacf2.nc",
+      "size": 2985972,
+      "checksum": "md5:682e42a1a1fc7614ffc4095577998e89",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231021.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "bef5cabb-aceb-4763-ad7f-7713ae1c96bf",
+      "key": "20231024.wal.a.fitacf2.nc",
+      "size": 1473252,
+      "checksum": "md5:8783c3a20dfc3063f58e0521c65a1c32",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231024.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "59a2c826-5b83-4917-914e-a8d809b8f79c",
+      "key": "20231030.wal.a.fitacf2.nc",
+      "size": 6983772,
+      "checksum": "md5:26e7135b8a15c76fbd0b77578d170775",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231030.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "c87d77b9-0470-472c-a7ae-afc3f65056c5",
+      "key": "20231005.wal.a.fitacf2.nc",
+      "size": 6599372,
+      "checksum": "md5:8fac8b50e969e9b1e727ff0f6ebfdac9",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231005.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "15bd5b92-a352-4218-a7a6-2d44c2fc5f4c",
+      "key": "20231019.wal.a.despeck.fitacf3.nc",
+      "size": 2356433,
+      "checksum": "md5:82126ad68fa6c1255a9254735f2c992d",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231019.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "a5c643ea-3f10-4350-817a-88a40f37d9ed",
+      "key": "20231007.wal.a.fitacf2.nc",
+      "size": 6949092,
+      "checksum": "md5:ad41b5cc3889949c2e6fef8374e09be9",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231007.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "9a5a00c0-88bd-4c4b-afbf-3064b1a8323b",
+      "key": "20231008.wal.a.despeck.fitacf3.nc",
+      "size": 2607953,
+      "checksum": "md5:5fac9a5ef126dbad52fcd2f263151060",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231008.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "02ea0242-6111-41d9-a478-c2819d281c3e",
+      "key": "20231018.wal.a.fitacf2.nc",
+      "size": 1979812,
+      "checksum": "md5:30b6c45db422ba46fb7e1e238eb398b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231018.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "6dd026e1-71d1-4988-b484-6c9b6cf68deb",
+      "key": "20231019.wal.a.fitacf2.nc",
+      "size": 2181812,
+      "checksum": "md5:8b0191471d31c4cd8b46e21d4d94cc29",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231019.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "b926de75-a35e-43ed-8abb-ec3e819275e1",
+      "key": "20231022.wal.a.despeck.fitacf3.nc",
+      "size": 2034033,
+      "checksum": "md5:597f66fa1cc43cf8c2db3afad76d70df",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231022.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "fa4059c5-665d-41df-a106-1a9c75e90ec3",
+      "key": "20231008.wal.a.fitacf2.nc",
+      "size": 7610172,
+      "checksum": "md5:ab242dbee4accdf1b9e93d32c7520a58",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231008.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "b2288ea1-dbd7-4e12-a43b-f06fc0ca7112",
+      "key": "20231014.wal.a.despeck.fitacf3.nc",
+      "size": 1349633,
+      "checksum": "md5:16fecc8cbe9292dac1f355ebb06df9d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231014.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "ec807843-f920-4f77-b65e-5eeb668c66a1",
+      "key": "20231005.wal.a.despeck.fitacf3.nc",
+      "size": 2165273,
+      "checksum": "md5:9c9effc4e163f87a77643ec0f3ea7d7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231005.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "0cc6f643-9191-47d0-ac1f-f02b178a4cba",
+      "key": "20231006.wal.a.fitacf2.nc",
+      "size": 6751372,
+      "checksum": "md5:ddbe9de98bc65526ce15e67f51d0279e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231006.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "d2e4433e-581a-4c9e-8044-b494993e7b1d",
+      "key": "20231004.wal.a.fitacf2.nc",
+      "size": 7544652,
+      "checksum": "md5:e8e60f320d24bd627b3bdae99763d70a",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231004.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "db49f8ca-75fb-4e0f-aa2c-be91a9b707a8",
+      "key": "20231003.wal.a.fitacf2.nc",
+      "size": 6453892,
+      "checksum": "md5:0c23c5870d64556cca6c399f0bb40265",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231003.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "2a987e08-753b-489d-9277-975dbb547b89",
+      "key": "20231004.wal.a.despeck.fitacf3.nc",
+      "size": 2109753,
+      "checksum": "md5:5a8a27640e53ff292d120d8f73c61597",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231004.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "7d2e7eeb-8db8-4a6e-b184-606efec9ec29",
+      "key": "20231031.wal.a.despeck.fitacf3.nc",
+      "size": 2868593,
+      "checksum": "md5:dcc160721bb5ccb471f6f6ca4b6105d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231031.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "e2d28a3e-2afa-45e8-a871-45b8d723aed6",
+      "key": "20231029.wal.a.despeck.fitacf3.nc",
+      "size": 5330673,
+      "checksum": "md5:9fe85ed60daa15c29531355766521b82",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231029.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "44136062-b496-4616-82c7-db384bffc616",
+      "key": "20231030.wal.a.despeck.fitacf3.nc",
+      "size": 4340433,
+      "checksum": "md5:2c6c351f82ed90b35e722918e293c5d9",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231030.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "445a66ec-2da6-4020-b18b-5c0203dbcbe0",
+      "key": "20231001.wal.a.despeck.fitacf3.nc",
+      "size": 2636953,
+      "checksum": "md5:4265d529dbd79739e391891855c74155",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231001.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "ce7677e0-ac19-4eb6-944b-f7c318f69fe4",
+      "key": "20231001.wal.a.fitacf2.nc",
+      "size": 6567732,
+      "checksum": "md5:6ce8e19be1edef8ad1ebda37073ae145",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231001.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "0636bc33-9450-4c99-8c4c-7592811633ca",
+      "key": "20231011.wal.a.fitacf2.nc",
+      "size": 7000372,
+      "checksum": "md5:7d59987e8cf31e0f3366bbd77b9cb100",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231011.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "e555dda6-f174-4c64-9a5f-cc0eb87c8498",
+      "key": "20231003.wal.a.despeck.fitacf3.nc",
+      "size": 2561393,
+      "checksum": "md5:3e4235eb46845fc90bad5114dadf0c04",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231003.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "14190298-4308-4f9d-b6d3-b678c7b1ac3d",
+      "key": "20231009.wal.a.despeck.fitacf3.nc",
+      "size": 2358353,
+      "checksum": "md5:41752fc8f4beabf6c719acec74681973",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231009.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "e530443a-2530-42c3-b89f-bf8d6c55a6fd",
+      "key": "20231014.wal.a.fitacf2.nc",
+      "size": 1475012,
+      "checksum": "md5:5cf5595f3d5d783a6d278cf8f8eede7e",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231014.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "8147a087-ed83-4bbe-a66f-5a382b5ad5df",
+      "key": "20231015.wal.a.despeck.fitacf3.nc",
+      "size": 837833,
+      "checksum": "md5:22f0f1d397c1901396372d4c65370c03",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231015.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "4d2b5609-e9c5-4e33-a973-a3bfe5d5556f",
+      "key": "20231002.wal.a.despeck.fitacf3.nc",
+      "size": 2065113,
+      "checksum": "md5:3ddd7b8c4c9db4bbec4fbfecce422caa",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231002.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "d73d8145-493b-4d4c-9369-b36ff7896224",
+      "key": "20231012.wal.a.despeck.fitacf3.nc",
+      "size": 1673273,
+      "checksum": "md5:0cbd133b8c231b57b2411f76393b1e66",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231012.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "f79cc05e-e4ec-40d0-8268-711695fca163",
+      "key": "20231013.wal.a.despeck.fitacf3.nc",
+      "size": 1200713,
+      "checksum": "md5:53c55a7c434fad8f6c5bfb97e68b5286",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231013.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "7def1103-a359-448e-8d85-a4b1a0550816",
+      "key": "20231017.wal.a.despeck.fitacf3.nc",
+      "size": 1628473,
+      "checksum": "md5:072f3d07f69e66bde1503e870a1b05b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231017.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "ea637764-7441-4c09-b466-2879998939cd",
+      "key": "20231002.wal.a.fitacf2.nc",
+      "size": 6800972,
+      "checksum": "md5:57647a43af6476a8dd8fce73e1f48ae0",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231002.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "4b4dd6c4-b919-43ea-bccb-9dbb284ed648",
+      "key": "20231011.wal.a.despeck.fitacf3.nc",
+      "size": 1952273,
+      "checksum": "md5:43577c19c5d37094eb0c5ed5aa75a257",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231011.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "908a87eb-63a4-4685-8dd2-5ecd35c530c6",
+      "key": "20231010.wal.a.despeck.fitacf3.nc",
+      "size": 2140753,
+      "checksum": "md5:8b7da16f9b90e3a75893e19beba125f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231010.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "e2d200fd-f1e2-48e4-b2ab-d3cbc2a9376d",
+      "key": "20231020.wal.a.despeck.fitacf3.nc",
+      "size": 3255913,
+      "checksum": "md5:af4050f5126bd35eec8c9d5f4bf5f3a8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231020.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "d58530e1-1dcf-49ec-8783-e89e617ed69e",
+      "key": "20231024.wal.a.despeck.fitacf3.nc",
+      "size": 2378313,
+      "checksum": "md5:f95135379fd210ae2e354ccd4b872f33",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231024.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "8c2b8442-8e28-454b-b421-fcd0e68b173a",
+      "key": "20231025.wal.a.despeck.fitacf3.nc",
+      "size": 2602313,
+      "checksum": "md5:e57a5ff701d24c990deb27ab48d1be3b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231025.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "39d019e7-5681-4a4c-a74a-015fb8d432f4",
+      "key": "20231015.wal.a.fitacf2.nc",
+      "size": 1169812,
+      "checksum": "md5:1e23baf1b143161b5c44ba44d9345a89",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231015.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "f2364a14-9fc1-49ef-b53b-0e7a58b120eb",
+      "key": "20231016.wal.a.despeck.fitacf3.nc",
+      "size": 1484433,
+      "checksum": "md5:60f50786e2185a93c7d26b936f6289c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231016.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "9ee42e47-dfec-49e9-8973-50b2be7f10c3",
+      "key": "20231016.wal.a.fitacf2.nc",
+      "size": 1788252,
+      "checksum": "md5:5329b76380ee13ff4b640c721575c6a1",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231016.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "55f32899-2804-480c-99e8-ec49110cdd54",
+      "key": "20231007.wal.a.despeck.fitacf3.nc",
+      "size": 2541833,
+      "checksum": "md5:f0bf00b914ee00072a00fa962728b24b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231007.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "f267273a-7d98-4475-9080-a027dd172b3f",
+      "key": "20231025.wal.a.fitacf2.nc",
+      "size": 6988572,
+      "checksum": "md5:c1a5ab74a2307f951a30e8c4584a8db8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231025.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "a1c6f605-cfce-434c-8333-990a318b9ee5",
+      "key": "20231026.wal.a.despeck.fitacf3.nc",
+      "size": 3139993,
+      "checksum": "md5:bdb1cb78deeba02d48a92f21963580f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231026.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "fa5c3b0c-1b22-4189-bcff-dcb1f5ac346f",
+      "key": "20231026.wal.a.fitacf2.nc",
+      "size": 7742732,
+      "checksum": "md5:ff8b0af21b99f5664f1e4c00ad7e1e39",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231026.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "c524713c-eb73-4515-867b-e86d5c655db4",
+      "key": "20231010.wal.a.fitacf2.nc",
+      "size": 7099172,
+      "checksum": "md5:30136daf5d85310b095cd135dd842964",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231010.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "03da7fe1-7385-48c6-8b07-9a1efc2d30d8",
+      "key": "20231013.wal.a.fitacf2.nc",
+      "size": 1159852,
+      "checksum": "md5:9af9e30d48be183293c513da2c55b541",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231013.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "0322ce1c-5d7b-44bf-be56-e6a48a416522",
+      "key": "20231027.wal.a.fitacf2.nc",
+      "size": 7544452,
+      "checksum": "md5:3d44b527b9646b3c4ea42ae3ef1d24f8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231027.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "cb8b9981-bdce-4d61-8dca-74a0c14d46de",
+      "key": "20231028.wal.a.despeck.fitacf3.nc",
+      "size": 4839833,
+      "checksum": "md5:8f15b4fbf75d0546ff1d2755b1604c5b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231028.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "6777c0b1-384c-4a31-acc0-95cad7d22297",
+      "key": "20231023.wal.a.despeck.fitacf3.nc",
+      "size": 1711273,
+      "checksum": "md5:beb1ceef25889999f581c27ef39d035b",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231023.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "3eab98b0-a8cc-407e-9139-4fcd26a17280",
+      "key": "20231021.wal.a.despeck.fitacf3.nc",
+      "size": 3109873,
+      "checksum": "md5:f12f14d874de8ce1627e1350e4cd8ad5",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231021.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "6dcbfcdf-0ce2-4529-aa7a-06a5115ee494",
+      "key": "20231028.wal.a.fitacf2.nc",
+      "size": 7285532,
+      "checksum": "md5:d823c97ea81448b59a323d014e330c79",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231028.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "3b55912b-55b0-42f0-8eb1-e201ddd922e9",
+      "key": "20231022.wal.a.fitacf2.nc",
+      "size": 1874132,
+      "checksum": "md5:0d430a31bcb01be1b86a373736d5fe62",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231022.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "cf2487f1-4e3f-403c-99c4-61ac3dbf7a83",
+      "key": "20231029.wal.a.fitacf2.nc",
+      "size": 7983972,
+      "checksum": "md5:e85eb57cad413da6eef93cb57cbade75",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231029.wal.a.fitacf2.nc/content"
+      }
+    },
+    {
+      "id": "94d1e0f0-17d5-4e9a-af84-6552934227da",
+      "key": "20231027.wal.a.despeck.fitacf3.nc",
+      "size": 4202193,
+      "checksum": "md5:121da1ad2fdd7d75cabecd56ec652564",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231027.wal.a.despeck.fitacf3.nc/content"
+      }
+    },
+    {
+      "id": "e96a71b0-ee2f-4558-a4d8-a0bff7e503f1",
+      "key": "20231023.wal.a.fitacf2.nc",
+      "size": 1549052,
+      "checksum": "md5:54996eb247127f0afac5ad88e01173b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/12998089/files/20231023.wal.a.fitacf2.nc/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "270414"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 718,
+    "unique_downloads": 718,
+    "views": 32,
+    "unique_views": 24,
+    "version_downloads": 718,
+    "version_unique_downloads": 718,
+    "version_unique_views": 24,
+    "version_views": 32
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "20231009.wal.a.fitacf2.nc",
+        "size": 7599652
+      },
+      {
+        "name": "20231012.wal.a.fitacf2.nc",
+        "size": 6850612
+      },
+      {
+        "name": "20231020.wal.a.fitacf2.nc",
+        "size": 2458692
+      },
+      {
+        "name": "20231018.wal.a.despeck.fitacf3.nc",
+        "size": 1864593
+      },
+      {
+        "name": "20231031.wal.a.fitacf2.nc",
+        "size": 6292092
+      },
+      {
+        "name": "20231006.wal.a.despeck.fitacf3.nc",
+        "size": 2061033
+      },
+      {
+        "name": "20231017.wal.a.fitacf2.nc",
+        "size": 1837772
+      },
+      {
+        "name": "20231021.wal.a.fitacf2.nc",
+        "size": 2985972
+      },
+      {
+        "name": "20231024.wal.a.fitacf2.nc",
+        "size": 1473252
+      },
+      {
+        "name": "20231030.wal.a.fitacf2.nc",
+        "size": 6983772
+      },
+      {
+        "name": "20231005.wal.a.fitacf2.nc",
+        "size": 6599372
+      },
+      {
+        "name": "20231019.wal.a.despeck.fitacf3.nc",
+        "size": 2356433
+      },
+      {
+        "name": "20231007.wal.a.fitacf2.nc",
+        "size": 6949092
+      },
+      {
+        "name": "20231008.wal.a.despeck.fitacf3.nc",
+        "size": 2607953
+      },
+      {
+        "name": "20231018.wal.a.fitacf2.nc",
+        "size": 1979812
+      },
+      {
+        "name": "20231019.wal.a.fitacf2.nc",
+        "size": 2181812
+      },
+      {
+        "name": "20231022.wal.a.despeck.fitacf3.nc",
+        "size": 2034033
+      },
+      {
+        "name": "20231008.wal.a.fitacf2.nc",
+        "size": 7610172
+      },
+      {
+        "name": "20231014.wal.a.despeck.fitacf3.nc",
+        "size": 1349633
+      },
+      {
+        "name": "20231005.wal.a.despeck.fitacf3.nc",
+        "size": 2165273
+      },
+      {
+        "name": "20231006.wal.a.fitacf2.nc",
+        "size": 6751372
+      },
+      {
+        "name": "20231004.wal.a.fitacf2.nc",
+        "size": 7544652
+      },
+      {
+        "name": "20231003.wal.a.fitacf2.nc",
+        "size": 6453892
+      },
+      {
+        "name": "20231004.wal.a.despeck.fitacf3.nc",
+        "size": 2109753
+      },
+      {
+        "name": "20231031.wal.a.despeck.fitacf3.nc",
+        "size": 2868593
+      },
+      {
+        "name": "20231029.wal.a.despeck.fitacf3.nc",
+        "size": 5330673
+      },
+      {
+        "name": "20231030.wal.a.despeck.fitacf3.nc",
+        "size": 4340433
+      },
+      {
+        "name": "20231001.wal.a.despeck.fitacf3.nc",
+        "size": 2636953
+      },
+      {
+        "name": "20231001.wal.a.fitacf2.nc",
+        "size": 6567732
+      },
+      {
+        "name": "20231011.wal.a.fitacf2.nc",
+        "size": 7000372
+      },
+      {
+        "name": "20231003.wal.a.despeck.fitacf3.nc",
+        "size": 2561393
+      },
+      {
+        "name": "20231009.wal.a.despeck.fitacf3.nc",
+        "size": 2358353
+      },
+      {
+        "name": "20231014.wal.a.fitacf2.nc",
+        "size": 1475012
+      },
+      {
+        "name": "20231015.wal.a.despeck.fitacf3.nc",
+        "size": 837833
+      },
+      {
+        "name": "20231002.wal.a.despeck.fitacf3.nc",
+        "size": 2065113
+      },
+      {
+        "name": "20231012.wal.a.despeck.fitacf3.nc",
+        "size": 1673273
+      },
+      {
+        "name": "20231013.wal.a.despeck.fitacf3.nc",
+        "size": 1200713
+      },
+      {
+        "name": "20231017.wal.a.despeck.fitacf3.nc",
+        "size": 1628473
+      },
+      {
+        "name": "20231002.wal.a.fitacf2.nc",
+        "size": 6800972
+      },
+      {
+        "name": "20231011.wal.a.despeck.fitacf3.nc",
+        "size": 1952273
+      },
+      {
+        "name": "20231010.wal.a.despeck.fitacf3.nc",
+        "size": 2140753
+      },
+      {
+        "name": "20231020.wal.a.despeck.fitacf3.nc",
+        "size": 3255913
+      },
+      {
+        "name": "20231024.wal.a.despeck.fitacf3.nc",
+        "size": 2378313
+      },
+      {
+        "name": "20231025.wal.a.despeck.fitacf3.nc",
+        "size": 2602313
+      },
+      {
+        "name": "20231015.wal.a.fitacf2.nc",
+        "size": 1169812
+      },
+      {
+        "name": "20231016.wal.a.despeck.fitacf3.nc",
+        "size": 1484433
+      },
+      {
+        "name": "20231016.wal.a.fitacf2.nc",
+        "size": 1788252
+      },
+      {
+        "name": "20231007.wal.a.despeck.fitacf3.nc",
+        "size": 2541833
+      },
+      {
+        "name": "20231025.wal.a.fitacf2.nc",
+        "size": 6988572
+      },
+      {
+        "name": "20231026.wal.a.despeck.fitacf3.nc",
+        "size": 3139993
+      },
+      {
+        "name": "20231026.wal.a.fitacf2.nc",
+        "size": 7742732
+      },
+      {
+        "name": "20231010.wal.a.fitacf2.nc",
+        "size": 7099172
+      },
+      {
+        "name": "20231013.wal.a.fitacf2.nc",
+        "size": 1159852
+      },
+      {
+        "name": "20231027.wal.a.fitacf2.nc",
+        "size": 7544452
+      },
+      {
+        "name": "20231028.wal.a.despeck.fitacf3.nc",
+        "size": 4839833
+      },
+      {
+        "name": "20231023.wal.a.despeck.fitacf3.nc",
+        "size": 1711273
+      },
+      {
+        "name": "20231021.wal.a.despeck.fitacf3.nc",
+        "size": 3109873
+      },
+      {
+        "name": "20231028.wal.a.fitacf2.nc",
+        "size": 7285532
+      },
+      {
+        "name": "20231022.wal.a.fitacf2.nc",
+        "size": 1874132
+      },
+      {
+        "name": "20231029.wal.a.fitacf2.nc",
+        "size": 7983972
+      },
+      {
+        "name": "20231027.wal.a.despeck.fitacf3.nc",
+        "size": 4202193
+      },
+      {
+        "name": "20231023.wal.a.fitacf2.nc",
+        "size": 1549052
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/SuperDARN/rstThe",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:30.316696"
+}

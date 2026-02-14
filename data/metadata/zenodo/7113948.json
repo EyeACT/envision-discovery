@@ -1,0 +1,178 @@
+{
+  "created": "2022-09-26T19:03:50.824981+00:00",
+  "modified": "2025-08-01T20:57:42.637705+00:00",
+  "id": 7113948,
+  "conceptrecid": "7113947",
+  "doi": "10.5281/zenodo.7113948",
+  "conceptdoi": "10.5281/zenodo.7113947",
+  "doi_url": "https://doi.org/10.5281/zenodo.7113948",
+  "metadata": {
+    "title": "OCT porcine kidney dataset for percutaneous nephrostomy guidance",
+    "doi": "10.5281/zenodo.7113948",
+    "publication_date": "2022-09-26",
+    "description": "<h2><strong>Code</strong>&nbsp;[<a href=\"https://github.com/thepanlab/FOCT_kidney\" target=\"_blank\" rel=\"noopener\">GitHub</a>]&nbsp;| <strong>Publication</strong>&nbsp;[<a href=\"https://doi.org/10.1364/BOE.421299\" target=\"_blank\" rel=\"noopener\">Biomedical Optics Express'21</a>]</h2>\n<h3>Abstract</h3>\n<p>Percutaneous renal access is the critical initial step in many medical settings. In order to obtain the best surgical outcome with minimum patient morbidity, an improved method for access to the renal calyx is needed. In our study, we built a forward-view optical coherence tomography (OCT) endoscopic system for percutaneous nephrostomy (PCN) guidance. Porcine kidneys were imaged in our experiment to demonstrate the feasibility of the imaging system. Three tissue types of porcine kidneys (renal cortex, medulla, and calyx) can be clearly distinguished due to the morphological and tissue differences from the OCT endoscopic images. To further improve the guidance efficacy and reduce the learning burden of the clinical doctors, a deep-learning-based computer aided diagnosis platform was developed to automatically classify the OCT images by the renal tissue types. Convolutional neural networks (CNN) were developed with labeled OCT images based on the ResNet34, MobileNetv2 and ResNet50 architectures. Nested cross-validation and testing was used to benchmark the classification performance with uncertainty quantification over 10 kidneys, which demonstrated robust performance over substantial biological variability among kidneys. ResNet50-based CNN models achieved an average classification accuracy of 82.6%&plusmn;3.0%. The classification precisions were 79%&plusmn;4% for cortex, 85%&plusmn;6% for medulla, and 91%&plusmn;5% for calyx and the classification recalls were 68%&plusmn;11% for cortex, 91%&plusmn;4% for medulla, and 89%&plusmn;3% for calyx. Interpretation of the CNN predictions showed the discriminative characteristics in the OCT images of the three renal tissue types. The results validated the technical feasibility of using this novel imaging platform to automatically recognize the images of renal tissue structures ahead of the PCN needle in PCN surgery.</p>\n<h3>Description</h3>\n<p>The dataset contains OCT images of 10 porcine kidneys from three tissues: cortex, medulla, and pelvis calyx. There is 1000 images per tissues/per kidney. More information about the dataset can be found in the paper:&nbsp;<a href=\"https://doi.org/10.1364/BOE.421299\">https://doi.org/10.1364/BOE.421299</a></p>\n<p>The repository that processed this dataset can be found at <a href=\"https://github.com/thepanlab/FOCT_kidney\">https://github.com/thepanlab/FOCT_kidney</a></p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chen Wang",
+        "affiliation": "University of Oklahoma"
+      },
+      {
+        "name": "Paul Calle",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0009-0000-1849-4481"
+      },
+      {
+        "name": "Qinggong Tang",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0000-0001-9499-5384"
+      },
+      {
+        "name": "Chongle Pan",
+        "affiliation": "University of Oklahoma"
+      }
+    ],
+    "keywords": [
+      "OCT",
+      "kidney",
+      "Porcine kidney",
+      "PCN",
+      "percutaneous nephrostomy"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1364/BOE.421299",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      }
+    ],
+    "references": [
+      "Chen Wang, Paul Calle, Nu Bao Tran Ton, Zuyuan Zhang, Feng Yan, Anthony M. Donaldson, Nathan A. Bradley, Zhongxin Yu, Kar-ming Fung, Chongle Pan, and Qinggong Tang, \"Deep-learning-aided forward optical coherence tomography endoscope for percutaneous nephrostomy guidance,\" Biomed. Opt. Express 12, 2404-2418 (2021)"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "4",
+      "pages": "2404-2418",
+      "title": "Biomedical Optics Express",
+      "volume": "12"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7113947"
+          }
+        }
+      ]
+    }
+  },
+  "title": "OCT porcine kidney dataset for percutaneous nephrostomy guidance",
+  "links": {
+    "self": "https://zenodo.org/api/records/7113948",
+    "self_html": "https://zenodo.org/records/7113948",
+    "preview_html": "https://zenodo.org/records/7113948?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7113948",
+    "self_doi": "https://doi.org/10.5281/zenodo.7113948",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7113948",
+    "reserve_doi": "https://zenodo.org/api/records/7113948/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7113947",
+    "parent_html": "https://zenodo.org/records/7113947",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7113947",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7113947",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7113948/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7113948/sequence/default",
+    "files": "https://zenodo.org/api/records/7113948/files",
+    "media_files": "https://zenodo.org/api/records/7113948/media-files",
+    "archive": "https://zenodo.org/api/records/7113948/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7113948/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7113948/versions/latest",
+    "latest_html": "https://zenodo.org/records/7113948/latest",
+    "versions": "https://zenodo.org/api/records/7113948/versions",
+    "draft": "https://zenodo.org/api/records/7113948/draft",
+    "access_links": "https://zenodo.org/api/records/7113948/access/links",
+    "access_grants": "https://zenodo.org/api/records/7113948/access/grants",
+    "access_users": "https://zenodo.org/api/records/7113948/access/users",
+    "access_request": "https://zenodo.org/api/records/7113948/access/request",
+    "access": "https://zenodo.org/api/records/7113948/access",
+    "communities": "https://zenodo.org/api/records/7113948/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7113948/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7113948/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7113948/file-modification",
+    "requests": "https://zenodo.org/api/records/7113948/requests"
+  },
+  "updated": "2025-08-01T20:57:42.637705+00:00",
+  "recid": "7113948",
+  "revision": 19,
+  "files": [
+    {
+      "id": "9c79946c-b76f-488f-86eb-518efd996bc5",
+      "key": "20201028_Kidney_images.zip",
+      "size": 657831303,
+      "checksum": "md5:4e1933d26687f465f31efe00ceafff25",
+      "links": {
+        "self": "https://zenodo.org/api/records/7113948/files/20201028_Kidney_images.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "232166"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 54,
+    "unique_downloads": 45,
+    "views": 211,
+    "unique_views": 184,
+    "version_downloads": 54,
+    "version_unique_downloads": 45,
+    "version_unique_views": 183,
+    "version_views": 210
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 657831303,
+    "top_level_files": [
+      {
+        "name": "20201028_Kidney_images.zip",
+        "size": 657831303
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1364/BOE.421299",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://github.com/thepanlab/FOCT_kidney",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:38.435171"
+}

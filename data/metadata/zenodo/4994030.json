@@ -1,0 +1,196 @@
+{
+  "created": "2021-06-19T16:50:23.854194+00:00",
+  "modified": "2022-06-01T19:49:30.003748+00:00",
+  "id": 4994030,
+  "conceptrecid": "4994029",
+  "doi": "10.5061/dryad.nh0fp1b",
+  "doi_url": "https://doi.org/10.5061/dryad.nh0fp1b",
+  "metadata": {
+    "title": "Data from: Human foveal cone photoreceptor topography and its dependence on eye length",
+    "doi": "10.5061/dryad.nh0fp1b",
+    "publication_date": "2019-08-05",
+    "description": "We provide the first measures of foveal cone density as a function of axial length in living eyes and discuss the physical and visual implications of our findings. We used a new generation Adaptive Optics Scanning Laser Ophthalmoscope to image cones at and near the fovea in 28 eyes of 16 subjects. Cone density and other metrics were computed in units of visual angle and linear retinal units. The foveal cone mosaic in longer eyes is expanded at the fovea, but not in proportion to eye length. Despite retinal stretching (decrease in cones/mm2), myopes generally have a higher angular sampling density (increase in cones/deg2) in and around the fovea compared to emmetropes, offering the potential for better visual acuity. Reports of deficits in best-corrected foveal vision in myopes compared to emmetropes cannot be explained by increased spacing between photoreceptors caused by retinal stretching during myopic progression.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Wang, Yiyi",
+        "affiliation": null
+      },
+      {
+        "name": "Bensaid, Nicolas",
+        "affiliation": null
+      },
+      {
+        "name": "Tiruveedhula, Pavan",
+        "affiliation": null
+      },
+      {
+        "name": "Ma, Jianqiang",
+        "affiliation": null
+      },
+      {
+        "name": "Ravikumar, Sowmya",
+        "affiliation": null
+      },
+      {
+        "name": "Roorda, Austin",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.7554/eLife.47148",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4994029"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">HUMAN_FOVEAL_CONES<div class=\"o-metadata__file-description\">This dataset contains high resolution images of the foveal region of 28 eyes of 16 subjects. The images are accompanied by text files listing all cone locations in pixels. There is a Matlab script that can be used to plot the cone locations on the corresponding image. There is a *.csv file listing the subject code, eye, retinal magnification factor (microns/degree) and image scale (pixels per degree).</div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Human foveal cone photoreceptor topography and its dependence on eye length",
+  "links": {
+    "self": "https://zenodo.org/api/records/4994030",
+    "self_html": "https://zenodo.org/records/4994030",
+    "preview_html": "https://zenodo.org/records/4994030?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.nh0fp1b",
+    "self_doi": "https://doi.org/10.5061/dryad.nh0fp1b",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.nh0fp1b",
+    "reserve_doi": "https://zenodo.org/api/records/4994030/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4994029",
+    "parent_html": "https://zenodo.org/records/4994029",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4994030/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4994030/sequence/default",
+    "files": "https://zenodo.org/api/records/4994030/files",
+    "media_files": "https://zenodo.org/api/records/4994030/media-files",
+    "archive": "https://zenodo.org/api/records/4994030/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4994030/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4994030/versions/latest",
+    "latest_html": "https://zenodo.org/records/4994030/latest",
+    "versions": "https://zenodo.org/api/records/4994030/versions",
+    "draft": "https://zenodo.org/api/records/4994030/draft",
+    "access_links": "https://zenodo.org/api/records/4994030/access/links",
+    "access_grants": "https://zenodo.org/api/records/4994030/access/grants",
+    "access_users": "https://zenodo.org/api/records/4994030/access/users",
+    "access_request": "https://zenodo.org/api/records/4994030/access/request",
+    "access": "https://zenodo.org/api/records/4994030/access",
+    "communities": "https://zenodo.org/api/records/4994030/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4994030/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4994030/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4994030/file-modification",
+    "requests": "https://zenodo.org/api/records/4994030/requests"
+  },
+  "updated": "2022-06-01T19:49:30.003748+00:00",
+  "recid": "4994030",
+  "revision": 3,
+  "files": [
+    {
+      "id": "4c0e7a02-2c3b-4f1b-a58e-414c6fb33e5b",
+      "key": "HUMAN_FOVEAL_CONES.zip",
+      "size": 33268162,
+      "checksum": "md5:21bf58579412dc1f7cd11abc50dee801",
+      "links": {
+        "self": "https://zenodo.org/api/records/4994030/files/HUMAN_FOVEAL_CONES.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 15,
+    "unique_downloads": 15,
+    "views": 36,
+    "unique_views": 36,
+    "version_downloads": 15,
+    "version_unique_downloads": 15,
+    "version_unique_views": 36,
+    "version_views": 36
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 33268162,
+    "top_level_files": [
+      {
+        "name": "HUMAN_FOVEAL_CONES.zip",
+        "size": 33268162
+      }
+    ],
+    "zip_contents": {
+      "human_foveal_cones.zip": {
+        "total_files": 58,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 44082810,
+        "file_types": {
+          ".tif": 28
+        },
+        "imaging_file_count": 28,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "human_foveal_cones/10003l.tif",
+          "human_foveal_cones/10003r.tif",
+          "human_foveal_cones/20114l.tif",
+          "human_foveal_cones/20114r.tif",
+          "human_foveal_cones/20124l.tif",
+          "human_foveal_cones/20124r.tif",
+          "human_foveal_cones/20138l.tif",
+          "human_foveal_cones/20138r.tif",
+          "human_foveal_cones/20143r.tif",
+          "human_foveal_cones/20147l.tif"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "human_foveal_cones/10003l.tif",
+      "human_foveal_cones/10003r.tif",
+      "human_foveal_cones/20114l.tif",
+      "human_foveal_cones/20114r.tif",
+      "human_foveal_cones/20124l.tif",
+      "human_foveal_cones/20124r.tif",
+      "human_foveal_cones/20138l.tif",
+      "human_foveal_cones/20138r.tif",
+      "human_foveal_cones/20143r.tif",
+      "human_foveal_cones/20147l.tif"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:01.479066"
+}

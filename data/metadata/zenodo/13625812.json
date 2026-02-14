@@ -1,0 +1,215 @@
+{
+  "created": "2024-09-07T11:06:09.635293+00:00",
+  "modified": "2024-09-07T11:06:09.824455+00:00",
+  "id": 13625812,
+  "conceptrecid": "13625811",
+  "doi": "10.5281/zenodo.13625812",
+  "conceptdoi": "10.5281/zenodo.13625811",
+  "doi_url": "https://doi.org/10.5281/zenodo.13625812",
+  "metadata": {
+    "title": "Multicenter normative data for mesopic microperimetry",
+    "doi": "10.5281/zenodo.13625812",
+    "publication_date": "2024-09-01",
+    "description": "<p>This record contains the analysis and underyling data presented in the manuscript Pfau et al. 'Multicenter normative data for mesopic microperimetry'.&nbsp;</p>\n<p><strong>Contents:</strong></p>\n<ul>\n<li><strong>2024-08-30_Multicenter-Normal-Data.csv</strong>:<strong> </strong>Newly published normal data for mesopic microperimetry</li>\n<li><strong>2024-08-30_Analysis.R</strong>: Analysis script</li>\n<li><strong>2024-08-30_Vignette-to-create-normal-data.R</strong>: Software example to create normative maps</li>\n</ul>\n<p>&nbsp;</p>\n<p>The subfolders <em>Figures</em> and <em>Tables</em> show the analysis results.</p>\n<p>The folder <em>Intermediary_Results</em> contains the results of the cross-validation folds to assess model perfromance.</p>\n<p>&nbsp;</p>\n<p>To run the analysis code in 2024-08-30_Analysis.R, the following data is needed in addition:</p>\n<blockquote>\n<p>Astle et al. Data Brief. 2016 Aug 4;9:673-675. doi: 10.1016/j.dib.2016.07.061</p>\n</blockquote>\n<p>&nbsp;</p>\n<p>The&nbsp;<strong>2024-08-30_Multicenter-Normal-Data.csv</strong> file with the data contains the following columns:</p>\n<ul>\n<li><strong>source: </strong>Describes the clinical site</li>\n<li><strong>MachineID: </strong>ID of the MAIA device used for data collection</li>\n<li><strong>ParticipantID: </strong>ID of the participant</li>\n<li><strong>EID: </strong>ID of the eye</li>\n<li><strong>eye: </strong>Laterality (either Right or Left)</li>\n<li><strong>sex:</strong> Sex (f for female, m for male)</li>\n<li><strong>age: </strong>Age in years</li>\n<li><strong>ExamID:</strong> ID of the exam</li>\n<li><strong>ExamBaselineID:</strong> ID of the corresponding baseline exam (-1 indicates that the exam itself is the baseline exam)</li>\n<li><strong>GridUsed:</strong> Name of the grid</li>\n<li><strong>falsepos:</strong> Rate of false positive responses to Heijl-Krakau stimulus presentations to the optic nerve head (blind spot)</li>\n<li><strong>bcea63_area_deg2:</strong> Fixation stability in terms of the bivariate contour ellipse area covering 63% of the fixation points (in square degree)</li>\n<li><strong>bcea95_area_deg2: </strong>Fixation stability in terms of the bivariate contour ellipse area covering 95% of the fixation points (in square degree)</li>\n<li><strong>pointID: </strong>ID of the test point</li>\n<li><strong>eccentricity:</strong> Eccentricity of the test point (in degree)</li>\n<li><strong>x_coord:</strong> X-coordinate of the test point (in degree), negative values are temporal to the fovea and positive values are nasal to the fovea (in retinal space)</li>\n<li><strong>y_coord:</strong>&nbsp;Y-coordinate<em>&nbsp;</em>of the test point (in degree), negative values are inferior to the fovea and positive values are superior to the fovea (in retinal space)</li>\n<li>sensitivity: Sensitivity at the test point (in dB)</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Pfau, Maximilian",
+        "affiliation": "University of Bonn",
+        "orcid": "0000-0001-9761-9640"
+      },
+      {
+        "name": "Jolly, Jasleen K",
+        "affiliation": "University of Oxford",
+        "orcid": "0000-0001-9878-4621"
+      },
+      {
+        "name": "Charng, Jason",
+        "affiliation": "University of Western Australia",
+        "orcid": "0000-0002-5778-6310"
+      },
+      {
+        "name": "von der Emde, Leon",
+        "affiliation": "University of Bonn",
+        "orcid": "0009-0009-2630-3732"
+      },
+      {
+        "name": "Mueller, Philipp L.",
+        "affiliation": "University of Bonn",
+        "orcid": "0000-0003-1680-0224"
+      },
+      {
+        "name": "Ansari, Georg",
+        "affiliation": "University of Basel",
+        "orcid": "0009-0008-4693-2061"
+      },
+      {
+        "name": "Pfau, Kristina",
+        "affiliation": "University of Bonn",
+        "orcid": "0000-0002-3642-3502"
+      },
+      {
+        "name": "Chen, Fred K.",
+        "affiliation": "University of Western Australia",
+        "orcid": "0000-0003-2809-9930"
+      },
+      {
+        "name": "Wu, Zhichao",
+        "affiliation": "University of Melbourne",
+        "orcid": "0000-0002-8623-6684"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2024.02.05.24302327",
+        "relation": "isDescribedBy",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13625811"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Multicenter normative data for mesopic microperimetry",
+  "links": {
+    "self": "https://zenodo.org/api/records/13625812",
+    "self_html": "https://zenodo.org/records/13625812",
+    "preview_html": "https://zenodo.org/records/13625812?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13625812",
+    "self_doi": "https://doi.org/10.5281/zenodo.13625812",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13625812",
+    "reserve_doi": "https://zenodo.org/api/records/13625812/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13625811",
+    "parent_html": "https://zenodo.org/records/13625811",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13625811",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13625811",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13625812/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13625812/sequence/default",
+    "files": "https://zenodo.org/api/records/13625812/files",
+    "media_files": "https://zenodo.org/api/records/13625812/media-files",
+    "archive": "https://zenodo.org/api/records/13625812/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13625812/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13625812/versions/latest",
+    "latest_html": "https://zenodo.org/records/13625812/latest",
+    "versions": "https://zenodo.org/api/records/13625812/versions",
+    "draft": "https://zenodo.org/api/records/13625812/draft",
+    "access_links": "https://zenodo.org/api/records/13625812/access/links",
+    "access_grants": "https://zenodo.org/api/records/13625812/access/grants",
+    "access_users": "https://zenodo.org/api/records/13625812/access/users",
+    "access_request": "https://zenodo.org/api/records/13625812/access/request",
+    "access": "https://zenodo.org/api/records/13625812/access",
+    "communities": "https://zenodo.org/api/records/13625812/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13625812/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13625812/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13625812/file-modification",
+    "requests": "https://zenodo.org/api/records/13625812/requests"
+  },
+  "updated": "2024-09-07T11:06:09.824455+00:00",
+  "recid": "13625812",
+  "revision": 4,
+  "files": [
+    {
+      "id": "9c4f08bb-ffed-42aa-aa26-996af9e8d89f",
+      "key": "Mesopic_Microperimetry_Normal_Data.zip",
+      "size": 50214201,
+      "checksum": "md5:136bf163a63d05488614b4f411d4504f",
+      "links": {
+        "self": "https://zenodo.org/api/records/13625812/files/Mesopic_Microperimetry_Normal_Data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "545156"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 69,
+    "unique_downloads": 66,
+    "views": 270,
+    "unique_views": 253,
+    "version_downloads": 69,
+    "version_unique_downloads": 66,
+    "version_unique_views": 253,
+    "version_views": 270
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 50214201,
+    "top_level_files": [
+      {
+        "name": "Mesopic_Microperimetry_Normal_Data.zip",
+        "size": 50214201
+      }
+    ],
+    "zip_contents": {
+      "mesopic_microperimetry_normal_data.zip": {
+        "total_files": 31,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 246835528,
+        "file_types": {
+          ".tiff": 10
+        },
+        "imaging_file_count": 10,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "figures/figure_1.tiff",
+          "figures/figure_3.tiff",
+          "figures/figure_4.tiff",
+          "figures/figure_5.tiff",
+          "figures/supplementaryfigure_s1.tiff",
+          "figures/supplementaryfigure_s2.tiff",
+          "figures/supplementaryfigure_s3.tiff",
+          "figures/supplementaryfigure_s4.tiff",
+          "figures/supplementaryfigure_s5.tiff",
+          "figures/supplementaryfigure_s6.tiff"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "figures/figure_1.tiff",
+      "figures/figure_3.tiff",
+      "figures/figure_4.tiff",
+      "figures/figure_5.tiff",
+      "figures/supplementaryfigure_s1.tiff",
+      "figures/supplementaryfigure_s2.tiff",
+      "figures/supplementaryfigure_s3.tiff",
+      "figures/supplementaryfigure_s4.tiff",
+      "figures/supplementaryfigure_s5.tiff",
+      "figures/supplementaryfigure_s6.tiff"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:23.355867"
+}

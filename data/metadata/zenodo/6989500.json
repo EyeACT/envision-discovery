@@ -1,0 +1,228 @@
+{
+  "created": "2022-08-13T19:42:54.305791+00:00",
+  "modified": "2022-08-14T20:43:23.902474+00:00",
+  "id": 6989500,
+  "conceptrecid": "6355704",
+  "doi": "10.5281/zenodo.6989500",
+  "conceptdoi": "10.5281/zenodo.6355704",
+  "doi_url": "https://doi.org/10.5281/zenodo.6989500",
+  "metadata": {
+    "title": "Microtubule edge detector training dataset",
+    "doi": "10.5281/zenodo.6989500",
+    "publication_date": "2022-03-15",
+    "description": "<p>Training data for training models for doing segmentation of edges of the Kymographs obtained by using the Multi Kymograph tool of Fiji. The images were acquired at the Kyushu university by Professor Daisuke INOUE and annotation of the data and training of the segmentation model was done by Varun Kapoor at Kapoorlabs in Paris.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Varun Kapoor, Daisuke INOUE",
+        "affiliation": "Kapoorlabs, Kyushu University",
+        "orcid": "0000-0001-5331-7966"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6355704"
+          }
+        }
+      ]
+    },
+    "notes": "Computational support provided by Jean Zay dynamic access grant: AD011013396 Monetary Support by Grant#: 2021-240715(5022) from Chan Zuckerberg Innitiative and Silicon Valley community foundation."
+  },
+  "title": "Microtubule edge detector training dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/6989500",
+    "self_html": "https://zenodo.org/records/6989500",
+    "preview_html": "https://zenodo.org/records/6989500?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.6989500",
+    "self_doi": "https://doi.org/10.5281/zenodo.6989500",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6989500",
+    "reserve_doi": "https://zenodo.org/api/records/6989500/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6355704",
+    "parent_html": "https://zenodo.org/records/6355704",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6355704",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6355704",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:6989500/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:6989500/sequence/default",
+    "files": "https://zenodo.org/api/records/6989500/files",
+    "media_files": "https://zenodo.org/api/records/6989500/media-files",
+    "archive": "https://zenodo.org/api/records/6989500/files-archive",
+    "archive_media": "https://zenodo.org/api/records/6989500/media-files-archive",
+    "latest": "https://zenodo.org/api/records/6989500/versions/latest",
+    "latest_html": "https://zenodo.org/records/6989500/latest",
+    "versions": "https://zenodo.org/api/records/6989500/versions",
+    "draft": "https://zenodo.org/api/records/6989500/draft",
+    "access_links": "https://zenodo.org/api/records/6989500/access/links",
+    "access_grants": "https://zenodo.org/api/records/6989500/access/grants",
+    "access_users": "https://zenodo.org/api/records/6989500/access/users",
+    "access_request": "https://zenodo.org/api/records/6989500/access/request",
+    "access": "https://zenodo.org/api/records/6989500/access",
+    "communities": "https://zenodo.org/api/records/6989500/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/6989500/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/6989500/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/6989500/file-modification",
+    "requests": "https://zenodo.org/api/records/6989500/requests"
+  },
+  "updated": "2022-08-14T20:43:23.902474+00:00",
+  "recid": "6989500",
+  "revision": 3,
+  "files": [
+    {
+      "id": "ee981e7d-5eae-4e7f-b12e-f1e71cd26534",
+      "key": "Microtubule_edgedetector_training.zip",
+      "size": 5902544,
+      "checksum": "md5:dc8cb31fd4407606e7fe76598f103674",
+      "links": {
+        "self": "https://zenodo.org/api/records/6989500/files/Microtubule_edgedetector_training.zip/content"
+      }
+    },
+    {
+      "id": "b68e57d6-f075-447f-95cd-0ad64a20f004",
+      "key": "microtubule_kymograph_segmentation.zip",
+      "size": 40341327,
+      "checksum": "md5:a42fcd4ba732734d36eda3dbbb3d5673",
+      "links": {
+        "self": "https://zenodo.org/api/records/6989500/files/microtubule_kymograph_segmentation.zip/content"
+      }
+    },
+    {
+      "id": "c632c57b-7440-4bac-9737-cf416ed6aa7f",
+      "key": "UNETkymo_mt_d3_f16_slim-20220813T194141Z-001.zip",
+      "size": 40749969,
+      "checksum": "md5:0353dc225596a29b616c58b990e1e489",
+      "links": {
+        "self": "https://zenodo.org/api/records/6989500/files/UNETkymo_mt_d3_f16_slim-20220813T194141Z-001.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "487298"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 312,
+    "unique_downloads": 291,
+    "views": 566,
+    "unique_views": 543,
+    "version_downloads": 88,
+    "version_unique_downloads": 85,
+    "version_unique_views": 172,
+    "version_views": 179
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 86993840,
+    "top_level_files": [
+      {
+        "name": "Microtubule_edgedetector_training.zip",
+        "size": 5902544
+      },
+      {
+        "name": "microtubule_kymograph_segmentation.zip",
+        "size": 40341327
+      },
+      {
+        "name": "UNETkymo_mt_d3_f16_slim-20220813T194141Z-001.zip",
+        "size": 40749969
+      }
+    ],
+    "zip_contents": {
+      "microtubule_edgedetector_training.zip": {
+        "total_files": 136,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 65315904,
+        "file_types": {
+          ".tif": 136
+        },
+        "imaging_file_count": 136,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "binary_mask/01_exp_2.tif",
+          "binary_mask/01_exp_3.tif",
+          "binary_mask/01_exp_4.tif",
+          "binary_mask/02_exp_1.tif",
+          "binary_mask/02_exp_2.tif",
+          "binary_mask/02_exp_3.tif",
+          "binary_mask/02_exp_4.tif",
+          "binary_mask/03_exp_1.tif",
+          "binary_mask/03_exp_2.tif",
+          "binary_mask/03_exp_3.tif"
+        ],
+        "sample_genomics_files": []
+      },
+      "microtubule_kymograph_segmentation.zip": {
+        "total_files": 3,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 43794126,
+        "file_types": {
+          ".h5": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "weights_best.h5",
+          "weights_last.h5"
+        ],
+        "sample_genomics_files": []
+      },
+      "unetkymo_mt_d3_f16_slim-20220813t194141z-001.zip": {
+        "total_files": 6,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 44619339,
+        "file_types": {
+          ".h5": 2
+        },
+        "imaging_file_count": 2,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "unetkymo_mt_d3_f16_slim/weights_last.h5",
+          "unetkymo_mt_d3_f16_slim/weights_best.h5"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "binary_mask/01_exp_2.tif",
+      "binary_mask/01_exp_3.tif",
+      "binary_mask/01_exp_4.tif",
+      "binary_mask/02_exp_1.tif",
+      "binary_mask/02_exp_2.tif",
+      "binary_mask/02_exp_3.tif",
+      "binary_mask/02_exp_4.tif",
+      "binary_mask/03_exp_1.tif",
+      "binary_mask/03_exp_2.tif",
+      "binary_mask/03_exp_3.tif",
+      "weights_best.h5",
+      "weights_last.h5",
+      "unetkymo_mt_d3_f16_slim/weights_last.h5",
+      "unetkymo_mt_d3_f16_slim/weights_best.h5"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:41:46.972805"
+}

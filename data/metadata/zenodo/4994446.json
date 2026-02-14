@@ -1,0 +1,253 @@
+{
+  "created": "2021-06-19T18:16:48.277442+00:00",
+  "modified": "2022-05-27T21:42:18.205369+00:00",
+  "id": 4994446,
+  "conceptrecid": "4994445",
+  "doi": "10.5061/dryad.5bc8vd7",
+  "doi_url": "https://doi.org/10.5061/dryad.5bc8vd7",
+  "metadata": {
+    "title": "Data from: Zebrafish differentially process colour across visual space to match natural scenes",
+    "doi": "10.5061/dryad.5bc8vd7",
+    "publication_date": "2019-05-01",
+    "description": "Animal eyes have evolved to process behaviorally important visual information, but how retinas deal with statistical asymmetries in visual space remains poorly understood. Using hyperspectral imaging in the field, in vivo 2-photon imaging of retinal neurons, and anatomy, here we show that larval zebrafish use a highly anisotropic retina to asymmetrically survey their natural visual world. First, different neurons dominate different parts of the eye and are linked to a systematic shift in inner retinal function: above the animal, there is little color in nature, and retinal circuits are largely achromatic. Conversely, the lower visual field and horizon are color rich and are predominately surveyed by chromatic and color-opponent circuits that are spectrally matched to the dominant chromatic axes in nature. Second, in the horizontal and lower visual field, bipolar cell terminals encoding achromatic and color-opponent visual features are systematically arranged into distinct layers of the inner retina. Third, above the frontal horizon, a high-gain UV system piggybacks onto retinal circuits, likely to support prey capture.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Zimmermann, Maxime J. Y.",
+        "affiliation": null
+      },
+      {
+        "name": "Nevala, Noora E.",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Yoshimatsu, Takeshi",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Osorio, Daniel",
+        "affiliation": "University of Sussex"
+      },
+      {
+        "name": "Nilsson, Dan-Eric",
+        "affiliation": "Lund University"
+      },
+      {
+        "name": "Berens, Philipp",
+        "affiliation": "University of T\u00fcbingen"
+      },
+      {
+        "name": "Baden, Tom",
+        "affiliation": "University of T\u00fcbingen"
+      },
+      {
+        "name": "Zimmermann, Maxime J.Y.",
+        "affiliation": "University of Sussex"
+      }
+    ],
+    "keywords": [
+      "natural scenes",
+      "Danio rerio",
+      "retina",
+      "Colour Vision"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1016/j.cub.2018.04.075",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "locations": [
+      {
+        "place": "West Begal India"
+      },
+      {
+        "place": "UK"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4994445"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Data Structure<div class=\"o-metadata__file-description\">List of all uploaded data and explanations</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Selected Figure panel data<div class=\"o-metadata__file-description\">Selected Figure panel data</div><div class=\"o-metadata__file-name\">Figure Arrangement.zip<br></div></div><div class=\"o-metadata__file-usage-entry\">Processed data<div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">Preprocessed data<div class=\"o-metadata__file-description\">Preprocessed traces (z-normalised) with timing and stimulus arrays for tetrachromatic noise stimulus</div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Zebrafish differentially process colour across visual space to match natural scenes",
+  "links": {
+    "self": "https://zenodo.org/api/records/4994446",
+    "self_html": "https://zenodo.org/records/4994446",
+    "preview_html": "https://zenodo.org/records/4994446?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.5bc8vd7",
+    "self_doi": "https://doi.org/10.5061/dryad.5bc8vd7",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.5bc8vd7",
+    "reserve_doi": "https://zenodo.org/api/records/4994446/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4994445",
+    "parent_html": "https://zenodo.org/records/4994445",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4994446/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4994446/sequence/default",
+    "files": "https://zenodo.org/api/records/4994446/files",
+    "media_files": "https://zenodo.org/api/records/4994446/media-files",
+    "archive": "https://zenodo.org/api/records/4994446/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4994446/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4994446/versions/latest",
+    "latest_html": "https://zenodo.org/records/4994446/latest",
+    "versions": "https://zenodo.org/api/records/4994446/versions",
+    "draft": "https://zenodo.org/api/records/4994446/draft",
+    "access_links": "https://zenodo.org/api/records/4994446/access/links",
+    "access_grants": "https://zenodo.org/api/records/4994446/access/grants",
+    "access_users": "https://zenodo.org/api/records/4994446/access/users",
+    "access_request": "https://zenodo.org/api/records/4994446/access/request",
+    "access": "https://zenodo.org/api/records/4994446/access",
+    "communities": "https://zenodo.org/api/records/4994446/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4994446/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4994446/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4994446/file-modification",
+    "requests": "https://zenodo.org/api/records/4994446/requests"
+  },
+  "updated": "2022-05-27T21:42:18.205369+00:00",
+  "recid": "4994446",
+  "revision": 3,
+  "files": [
+    {
+      "id": "51880207-64ae-40c6-8243-b62132db4809",
+      "key": "Preprocessed data.zip",
+      "size": 390443608,
+      "checksum": "md5:9e8b020656b43ca078bff12b95e2ccc0",
+      "links": {
+        "self": "https://zenodo.org/api/records/4994446/files/Preprocessed data.zip/content"
+      }
+    },
+    {
+      "id": "e8dd650d-3b60-41cd-9e2d-d66510d0d44e",
+      "key": "Processed data.zip",
+      "size": 162582685,
+      "checksum": "md5:152157b59d4a34ca1314cf221d84201b",
+      "links": {
+        "self": "https://zenodo.org/api/records/4994446/files/Processed data.zip/content"
+      }
+    },
+    {
+      "id": "1013ef52-bd38-4201-b81e-408f06a83a72",
+      "key": "Data Structure.docx",
+      "size": 17317,
+      "checksum": "md5:347d2591b6116cbff73d2f612d0b8d20",
+      "links": {
+        "self": "https://zenodo.org/api/records/4994446/files/Data Structure.docx/content"
+      }
+    },
+    {
+      "id": "de1f91ee-7dd7-4af8-892e-b8d39ae46736",
+      "key": "Figure Arrangement.zip",
+      "size": 155225,
+      "checksum": "md5:6dec2779158cce9cb126025ecc005cb7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4994446/files/Figure Arrangement.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 76,
+    "unique_downloads": 75,
+    "views": 121,
+    "unique_views": 119,
+    "version_downloads": 76,
+    "version_unique_downloads": 75,
+    "version_unique_views": 112,
+    "version_views": 114
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 553181518,
+    "top_level_files": [
+      {
+        "name": "Preprocessed data.zip",
+        "size": 390443608
+      },
+      {
+        "name": "Processed data.zip",
+        "size": 162582685
+      },
+      {
+        "name": "Data Structure.docx",
+        "size": 17317
+      },
+      {
+        "name": "Figure Arrangement.zip",
+        "size": 155225
+      }
+    ],
+    "zip_contents": {
+      "preprocessed data.zip": {
+        "total_files": 10,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 1085445224,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "processed data.zip": {
+        "total_files": 18,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 277648890,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      },
+      "figure arrangement.zip": {
+        "total_files": 4,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 241538,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:56.158869"
+}

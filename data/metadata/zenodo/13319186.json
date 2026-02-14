@@ -1,0 +1,182 @@
+{
+  "created": "2024-08-14T10:24:13.267940+00:00",
+  "modified": "2025-02-20T16:47:24.310773+00:00",
+  "id": 13319186,
+  "conceptrecid": "13319185",
+  "doi": "10.5281/zenodo.13319186",
+  "conceptdoi": "10.5281/zenodo.13319185",
+  "doi_url": "https://doi.org/10.5281/zenodo.13319186",
+  "metadata": {
+    "title": "Kristan, 2019",
+    "doi": "10.5281/zenodo.13319186",
+    "publication_date": "2024-08-14",
+    "description": "Kristan, W. 2019. Control of Locomotion in Annelids.  In: The Oxford Handbook of Invertebrate Neurobiology, Edited by John H. Byrne. Oxford University Press. Print Publication Date: Apr 2019, Online Publication Date: Oct 2018. \n <p></p>https://doi.org/10.1093/oxfordhb/9780190456757.013.22<p></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Encyclopedia of Life",
+        "affiliation": null
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Jen Hammock",
+        "affiliation": "Encyclopedia of Life",
+        "type": "DataManager",
+        "orcid": "0000-0002-9943-2342"
+      }
+    ],
+    "keywords": [
+      "traits",
+      "active",
+      "taxonomic inference"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://editors.eol.org/uploaded_resources/f04/048/kristan.zip",
+        "relation": "isSupplementTo",
+        "resource_type": "dataset",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://eol.org/resources/896",
+        "relation": "isSourceOf",
+        "resource_type": "dataset",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.1093/oxfordhb/9780190456757.013.22",
+        "relation": "references",
+        "resource_type": "publication",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "type": "created"
+      },
+      {
+        "type": "updated"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "notspecified"
+    },
+    "communities": [
+      {
+        "id": "eol"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13319185"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Kristan, 2019",
+  "links": {
+    "self": "https://zenodo.org/api/records/13319186",
+    "self_html": "https://zenodo.org/records/13319186",
+    "preview_html": "https://zenodo.org/records/13319186?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13319186",
+    "self_doi": "https://doi.org/10.5281/zenodo.13319186",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13319186",
+    "reserve_doi": "https://zenodo.org/api/records/13319186/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13319185",
+    "parent_html": "https://zenodo.org/records/13319185",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13319185",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13319185",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13319186/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13319186/sequence/default",
+    "files": "https://zenodo.org/api/records/13319186/files",
+    "media_files": "https://zenodo.org/api/records/13319186/media-files",
+    "archive": "https://zenodo.org/api/records/13319186/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13319186/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13319186/versions/latest",
+    "latest_html": "https://zenodo.org/records/13319186/latest",
+    "versions": "https://zenodo.org/api/records/13319186/versions",
+    "draft": "https://zenodo.org/api/records/13319186/draft",
+    "access_links": "https://zenodo.org/api/records/13319186/access/links",
+    "access_grants": "https://zenodo.org/api/records/13319186/access/grants",
+    "access_users": "https://zenodo.org/api/records/13319186/access/users",
+    "access_request": "https://zenodo.org/api/records/13319186/access/request",
+    "access": "https://zenodo.org/api/records/13319186/access",
+    "communities": "https://zenodo.org/api/records/13319186/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13319186/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13319186/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13319186/file-modification",
+    "requests": "https://zenodo.org/api/records/13319186/requests"
+  },
+  "updated": "2025-02-20T16:47:24.310773+00:00",
+  "recid": "13319186",
+  "revision": 21,
+  "files": [
+    {
+      "id": "05d06bd4-2391-42f0-95f7-fb586cb2416a",
+      "key": "kristan.zip",
+      "size": 4472,
+      "checksum": "md5:ea5fad55ec2126a02ca21e3418dc33c1",
+      "links": {
+        "self": "https://zenodo.org/api/records/13319186/files/kristan.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1158728"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 4,
+    "unique_downloads": 4,
+    "views": 26,
+    "unique_views": 22,
+    "version_downloads": 4,
+    "version_unique_downloads": 4,
+    "version_unique_views": 22,
+    "version_views": 26
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 4472,
+    "top_level_files": [
+      {
+        "name": "kristan.zip",
+        "size": 4472
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://doi.org/10.1093/oxfordhb/9780190456757.013.22",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:35:44.454755"
+}

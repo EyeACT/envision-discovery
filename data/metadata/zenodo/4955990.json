@@ -1,0 +1,406 @@
+{
+  "created": "2021-06-15T11:39:07.708082+00:00",
+  "modified": "2022-05-27T21:19:44.950616+00:00",
+  "id": 4955990,
+  "conceptrecid": "4955989",
+  "doi": "10.5061/dryad.246qg",
+  "doi_url": "https://doi.org/10.5061/dryad.246qg",
+  "metadata": {
+    "title": "Data from: Transformation of stimulus correlations by the retina",
+    "doi": "10.5061/dryad.246qg",
+    "publication_date": "2014-11-07",
+    "description": "Redundancies and correlations in the responses of sensory neurons may seem to waste neural resources, but they can also carry cues about structured stimuli and may help the brain to correct for response errors. To investigate the effect of stimulus structure on redundancy in retina, we measured simultaneous responses from populations of retinal ganglion cells presented with natural and artificial stimuli that varied greatly in correlation structure; these stimuli and recordings are publicly available online. Responding to spatio-temporally structured stimuli such as natural movies, pairs of ganglion cells were modestly more correlated than in response to white noise checkerboards, but they were much less correlated than predicted by a non-adapting functional model of retinal response. Meanwhile, responding to stimuli with purely spatial correlations, pairs of ganglion cells showed increased correlations consistent with a static, non-adapting receptive field and nonlinearity. We found that in response to spatio-temporally correlated stimuli, ganglion cells had faster temporal kernels and tended to have stronger surrounds. These properties of individual cells, along with gain changes that opposed changes in effective contrast at the ganglion cell input, largely explained the pattern of pairwise correlations across stimuli where receptive field measurements were possible.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Simmons, Kristina D.",
+        "affiliation": "University of Pennsylvania"
+      },
+      {
+        "name": "Prentice, Jason S.",
+        "affiliation": "Princeton University"
+      },
+      {
+        "name": "Tka\u010dik, Ga\u0161per",
+        "affiliation": "Institute of Science and Technology Austria"
+      },
+      {
+        "name": "Homann, Jan",
+        "affiliation": "University of Pennsylvania"
+      },
+      {
+        "name": "Yee, Heather K.",
+        "affiliation": "University of Chicago"
+      },
+      {
+        "name": "Palmer, Stephanie E.",
+        "affiliation": "University of Chicago"
+      },
+      {
+        "name": "Nelson, Philip C.",
+        "affiliation": "University of Pennsylvania"
+      },
+      {
+        "name": "Balasubramanian, Vijay",
+        "affiliation": "University of Pennsylvania"
+      }
+    ],
+    "keywords": [
+      "scale-invariant correlations",
+      "natural scenes",
+      "white noise",
+      "retina",
+      "contrast",
+      "efficient coding",
+      "receptive fields",
+      "full-field flicker",
+      "stimulus correlations",
+      "multi-electrode array"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1371/journal.pcbi.1003344",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4955989"
+          }
+        }
+      ]
+    },
+    "notes": "<div class=\"o-metadata__file-usage-entry\">Spike and Stimulus Timing Data<div class=\"o-metadata__file-name\">Data.zip<br></div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">FullFieldFlicker<div class=\"o-metadata__file-description\">Full-field flicker stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">LowContrastStimuli<div class=\"o-metadata__file-description\">Low-contrast white noise and multiscale stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">MultiscaleCorrNoise<div class=\"o-metadata__file-description\">Multiscale correlated (scale-invariant) stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">ExponentialCorrNoise<div class=\"o-metadata__file-description\">Exponentially correlated stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">NaturalStimuli<div class=\"o-metadata__file-description\">Natural movie and scrambled natural movie stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div><div class=\"o-metadata__file-usage-entry\">WhiteNoise<div class=\"o-metadata__file-description\">White noise checkerboard stimuli used in experiments.  See README.txt associated with Data.zip.</div><div class=\"o-metadata__file-name\"></div></div>"
+  },
+  "title": "Data from: Transformation of stimulus correlations by the retina",
+  "links": {
+    "self": "https://zenodo.org/api/records/4955990",
+    "self_html": "https://zenodo.org/records/4955990",
+    "preview_html": "https://zenodo.org/records/4955990?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.246qg",
+    "self_doi": "https://doi.org/10.5061/dryad.246qg",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.246qg",
+    "reserve_doi": "https://zenodo.org/api/records/4955990/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4955989",
+    "parent_html": "https://zenodo.org/records/4955989",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:4955990/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:4955990/sequence/default",
+    "files": "https://zenodo.org/api/records/4955990/files",
+    "media_files": "https://zenodo.org/api/records/4955990/media-files",
+    "archive": "https://zenodo.org/api/records/4955990/files-archive",
+    "archive_media": "https://zenodo.org/api/records/4955990/media-files-archive",
+    "latest": "https://zenodo.org/api/records/4955990/versions/latest",
+    "latest_html": "https://zenodo.org/records/4955990/latest",
+    "versions": "https://zenodo.org/api/records/4955990/versions",
+    "draft": "https://zenodo.org/api/records/4955990/draft",
+    "access_links": "https://zenodo.org/api/records/4955990/access/links",
+    "access_grants": "https://zenodo.org/api/records/4955990/access/grants",
+    "access_users": "https://zenodo.org/api/records/4955990/access/users",
+    "access_request": "https://zenodo.org/api/records/4955990/access/request",
+    "access": "https://zenodo.org/api/records/4955990/access",
+    "communities": "https://zenodo.org/api/records/4955990/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/4955990/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/4955990/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/4955990/file-modification",
+    "requests": "https://zenodo.org/api/records/4955990/requests"
+  },
+  "updated": "2022-05-27T21:19:44.950616+00:00",
+  "recid": "4955990",
+  "revision": 3,
+  "files": [
+    {
+      "id": "202ee7b7-184c-4cf0-93f0-08a083379dcc",
+      "key": "WhiteNoise.zip",
+      "size": 166810500,
+      "checksum": "md5:1642b0eeda57a27f492956448b0dbedd",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/WhiteNoise.zip/content"
+      }
+    },
+    {
+      "id": "ec4dc237-ca12-4c80-ad31-876f288d3b2c",
+      "key": "FullFieldFlicker.zip",
+      "size": 5956,
+      "checksum": "md5:e53ba7ad23fbe934cf35385408f0b896",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/FullFieldFlicker.zip/content"
+      }
+    },
+    {
+      "id": "4687c220-c39a-4c1b-84f5-3ef2c119a278",
+      "key": "LowContrastStimuli.zip",
+      "size": 56265595,
+      "checksum": "md5:fc8a112365f1e629c302becb0347deb6",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/LowContrastStimuli.zip/content"
+      }
+    },
+    {
+      "id": "7d508d70-d9c0-459e-9a5a-25bd27e07a75",
+      "key": "Data.zip",
+      "size": 87084058,
+      "checksum": "md5:9454a555fcb21fa8d8c95a7024c8dfc5",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/Data.zip/content"
+      }
+    },
+    {
+      "id": "2324cf28-9fd4-4bf5-bbf6-fe93f652bd62",
+      "key": "MultiscaleCorrNoise.zip",
+      "size": 67665844,
+      "checksum": "md5:b1af84469992d50d99c56986b6bb0d18",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/MultiscaleCorrNoise.zip/content"
+      }
+    },
+    {
+      "id": "4c649a11-859a-4afd-88fb-30e315a2d2a3",
+      "key": "README_for_Data.txt",
+      "size": 3780,
+      "checksum": "md5:6361480f66089e37e6a71e704fc08ce7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/README_for_Data.txt/content"
+      }
+    },
+    {
+      "id": "8d1cec67-36c1-4c73-be06-3eb5f114cd99",
+      "key": "ExponentialCorrNoise.zip",
+      "size": 94988482,
+      "checksum": "md5:d2ac16b86028aba496c20c5adbde36e7",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/ExponentialCorrNoise.zip/content"
+      }
+    },
+    {
+      "id": "dcf3304c-568a-4514-a9e9-6ff4e8194f4f",
+      "key": "NaturalStimuli.zip",
+      "size": 165723826,
+      "checksum": "md5:ca23d7b988ae580b54889eca71de5530",
+      "links": {
+        "self": "https://zenodo.org/api/records/4955990/files/NaturalStimuli.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 85,
+    "unique_downloads": 85,
+    "views": 116,
+    "unique_views": 116,
+    "version_downloads": 85,
+    "version_unique_downloads": 85,
+    "version_unique_views": 116,
+    "version_views": 116
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 7,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 638544261,
+    "top_level_files": [
+      {
+        "name": "WhiteNoise.zip",
+        "size": 166810500
+      },
+      {
+        "name": "FullFieldFlicker.zip",
+        "size": 5956
+      },
+      {
+        "name": "LowContrastStimuli.zip",
+        "size": 56265595
+      },
+      {
+        "name": "Data.zip",
+        "size": 87084058
+      },
+      {
+        "name": "MultiscaleCorrNoise.zip",
+        "size": 67665844
+      },
+      {
+        "name": "README_for_Data.txt",
+        "size": 3780
+      },
+      {
+        "name": "ExponentialCorrNoise.zip",
+        "size": 94988482
+      },
+      {
+        "name": "NaturalStimuli.zip",
+        "size": 165723826
+      }
+    ],
+    "zip_contents": {
+      "whitenoise.zip": {
+        "total_files": 36,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 167085972,
+        "file_types": {
+          ".mat": 36
+        },
+        "imaging_file_count": 36,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "whitenoise/white15_a.mat",
+          "whitenoise/white15_b.mat",
+          "whitenoise/white15_c.mat",
+          "whitenoise/white30_a.mat",
+          "whitenoise/white30_b.mat",
+          "whitenoise/white30_c.mat",
+          "whitenoise/white32_a.mat",
+          "whitenoise/white32_b.mat",
+          "whitenoise/white32_c.mat",
+          "whitenoise/white32_d.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "lowcontraststimuli.zip": {
+        "total_files": 12,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 56480921,
+        "file_types": {
+          ".mat": 12
+        },
+        "imaging_file_count": 12,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "lowcontraststimuli/lowcont_multiscale64_a.mat",
+          "lowcontraststimuli/lowcont_multiscale64_b.mat",
+          "lowcontraststimuli/lowcont_multiscale64_c.mat",
+          "lowcontraststimuli/lowcont_multiscale64_d.mat",
+          "lowcontraststimuli/lowcont_multiscale64_e.mat",
+          "lowcontraststimuli/lowcont_multiscale64_f.mat",
+          "lowcontraststimuli/lowcont_white64_a.mat",
+          "lowcontraststimuli/lowcont_white64_b.mat",
+          "lowcontraststimuli/lowcont_white64_c.mat",
+          "lowcontraststimuli/lowcont_white64_d.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "data.zip": {
+        "total_files": 42,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 87560887,
+        "file_types": {
+          ".mat": 42
+        },
+        "imaging_file_count": 42,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "data/data_02_16_12_t2.mat",
+          "data/data_02_16_12_t9.mat",
+          "data/data_02_18_10_t1.mat",
+          "data/data_02_26_12_t2.mat",
+          "data/data_02_26_12_t8.mat",
+          "data/data_03_04_12_t12.mat",
+          "data/data_03_04_12_t2.mat",
+          "data/data_03_04_12_t7.mat",
+          "data/data_03_13_12_t10.mat",
+          "data/data_03_13_12_t2.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "multiscalecorrnoise.zip": {
+        "total_files": 15,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 68090993,
+        "file_types": {
+          ".mat": 15
+        },
+        "imaging_file_count": 15,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "multiscalecorrnoise/multiscale64_a.mat",
+          "multiscalecorrnoise/multiscale64_b.mat",
+          "multiscalecorrnoise/multiscale64_c.mat",
+          "multiscalecorrnoise/multiscale64_d.mat",
+          "multiscalecorrnoise/multiscale64_e.mat",
+          "multiscalecorrnoise/multiscale64_f.mat",
+          "multiscalecorrnoise/multiscale64_g.mat",
+          "multiscalecorrnoise/multiscale64_h.mat",
+          "multiscalecorrnoise/multiscale64_i.mat",
+          "multiscalecorrnoise/multiscale64_j.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "whitenoise/white15_a.mat",
+      "whitenoise/white15_b.mat",
+      "whitenoise/white15_c.mat",
+      "whitenoise/white30_a.mat",
+      "whitenoise/white30_b.mat",
+      "whitenoise/white30_c.mat",
+      "whitenoise/white32_a.mat",
+      "whitenoise/white32_b.mat",
+      "whitenoise/white32_c.mat",
+      "whitenoise/white32_d.mat",
+      "lowcontraststimuli/lowcont_multiscale64_a.mat",
+      "lowcontraststimuli/lowcont_multiscale64_b.mat",
+      "lowcontraststimuli/lowcont_multiscale64_c.mat",
+      "lowcontraststimuli/lowcont_multiscale64_d.mat",
+      "lowcontraststimuli/lowcont_multiscale64_e.mat",
+      "lowcontraststimuli/lowcont_multiscale64_f.mat",
+      "lowcontraststimuli/lowcont_white64_a.mat",
+      "lowcontraststimuli/lowcont_white64_b.mat",
+      "lowcontraststimuli/lowcont_white64_c.mat",
+      "lowcontraststimuli/lowcont_white64_d.mat",
+      "data/data_02_16_12_t2.mat",
+      "data/data_02_16_12_t9.mat",
+      "data/data_02_18_10_t1.mat",
+      "data/data_02_26_12_t2.mat",
+      "data/data_02_26_12_t8.mat",
+      "data/data_03_04_12_t12.mat",
+      "data/data_03_04_12_t2.mat",
+      "data/data_03_04_12_t7.mat",
+      "data/data_03_13_12_t10.mat",
+      "data/data_03_13_12_t2.mat",
+      "multiscalecorrnoise/multiscale64_a.mat",
+      "multiscalecorrnoise/multiscale64_b.mat",
+      "multiscalecorrnoise/multiscale64_c.mat",
+      "multiscalecorrnoise/multiscale64_d.mat",
+      "multiscalecorrnoise/multiscale64_e.mat",
+      "multiscalecorrnoise/multiscale64_f.mat",
+      "multiscalecorrnoise/multiscale64_g.mat",
+      "multiscalecorrnoise/multiscale64_h.mat",
+      "multiscalecorrnoise/multiscale64_i.mat",
+      "multiscalecorrnoise/multiscale64_j.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:44.971033"
+}

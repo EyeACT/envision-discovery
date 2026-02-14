@@ -1,0 +1,204 @@
+{
+  "created": "2024-08-13T14:43:54.245240+00:00",
+  "modified": "2024-08-13T14:43:54.978435+00:00",
+  "id": 10913446,
+  "conceptrecid": "10913445",
+  "doi": "10.5281/zenodo.10913446",
+  "conceptdoi": "10.5281/zenodo.10913445",
+  "doi_url": "https://doi.org/10.5281/zenodo.10913446",
+  "metadata": {
+    "title": "Fiber and vessel dataset for segmentation and characterization",
+    "doi": "10.5281/zenodo.10913446",
+    "publication_date": "2024-05-03",
+    "description": "<p>This repository hosts a comprehensive collection of datasets used to develop an innovative deep learning model designed to enhance the segmentation and characterization of macerated fibers and vessel forms in microscopy images. Included in the deposit are raw images, alongside meticulously prepared training and validation datasets. We present an automated segmentation approach that utilizes the one-stage YOLOv8 model, which has been specifically adapted to process high-resolution microscopy images up to 32640 x 25920 pixels. Our model excels in cell detection and segmentation, demonstrating exceptional proficiency.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Qamar, Saqib",
+        "affiliation": "Ume\u00e5 University",
+        "orcid": "0000-0002-5980-5976"
+      },
+      {
+        "name": "Baba, Abu Imran",
+        "affiliation": "Ume\u00e5 Plant Science Centre"
+      },
+      {
+        "name": "Verger, St\u00e8phane",
+        "affiliation": "Ume\u00e5 University",
+        "orcid": "0000-0003-3643-3978"
+      },
+      {
+        "name": "Andersson, Magnus",
+        "affiliation": "Ume\u00e5 University",
+        "orcid": "0000-0002-9835-3263"
+      }
+    ],
+    "dates": [
+      {
+        "type": "submitted"
+      }
+    ],
+    "references": [
+      "Segmentation and Characterization of Macerated Fibers and Vessels Using Deep Learning, arXiv, https://doi.org/10.48550/arXiv.2401.169"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/sqbqamar/fiberseg",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10913445"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Fiber and vessel dataset for segmentation and characterization",
+  "links": {
+    "self": "https://zenodo.org/api/records/10913446",
+    "self_html": "https://zenodo.org/records/10913446",
+    "preview_html": "https://zenodo.org/records/10913446?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10913446",
+    "self_doi": "https://doi.org/10.5281/zenodo.10913446",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10913446",
+    "reserve_doi": "https://zenodo.org/api/records/10913446/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10913445",
+    "parent_html": "https://zenodo.org/records/10913445",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10913445",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10913445",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10913446/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10913446/sequence/default",
+    "files": "https://zenodo.org/api/records/10913446/files",
+    "media_files": "https://zenodo.org/api/records/10913446/media-files",
+    "archive": "https://zenodo.org/api/records/10913446/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10913446/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10913446/versions/latest",
+    "latest_html": "https://zenodo.org/records/10913446/latest",
+    "versions": "https://zenodo.org/api/records/10913446/versions",
+    "draft": "https://zenodo.org/api/records/10913446/draft",
+    "access_links": "https://zenodo.org/api/records/10913446/access/links",
+    "access_grants": "https://zenodo.org/api/records/10913446/access/grants",
+    "access_users": "https://zenodo.org/api/records/10913446/access/users",
+    "access_request": "https://zenodo.org/api/records/10913446/access/request",
+    "access": "https://zenodo.org/api/records/10913446/access",
+    "communities": "https://zenodo.org/api/records/10913446/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10913446/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10913446/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10913446/file-modification",
+    "requests": "https://zenodo.org/api/records/10913446/requests"
+  },
+  "updated": "2024-08-13T14:43:54.978435+00:00",
+  "recid": "10913446",
+  "revision": 4,
+  "files": [
+    {
+      "id": "9176f640-c4f2-4b17-9c19-02649c636e14",
+      "key": "T89_rawdata.zip",
+      "size": 407816559,
+      "checksum": "md5:13b9c4c9619f3a86a105d96f446fdffa",
+      "links": {
+        "self": "https://zenodo.org/api/records/10913446/files/T89_rawdata.zip/content"
+      }
+    },
+    {
+      "id": "61b92d10-f212-4fa0-9f76-3c005cd35120",
+      "key": "Validation_data.zip",
+      "size": 21842202,
+      "checksum": "md5:38892d3b9b0fd61a4c80e3d04e7f2a41",
+      "links": {
+        "self": "https://zenodo.org/api/records/10913446/files/Validation_data.zip/content"
+      }
+    },
+    {
+      "id": "ef92cff4-ffb9-410a-8772-6944193cd3cf",
+      "key": "GA20_rawdata.zip",
+      "size": 425266024,
+      "checksum": "md5:694645cbf23302d8f985f1eded0236a7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10913446/files/GA20_rawdata.zip/content"
+      }
+    },
+    {
+      "id": "8b7618c4-84ce-4a28-80d8-cb96608f02a3",
+      "key": "Training_data.zip",
+      "size": 186265091,
+      "checksum": "md5:f6726e119607b2fc9d21b949b7336af7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10913446/files/Training_data.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "606257"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 235,
+    "unique_downloads": 209,
+    "views": 197,
+    "unique_views": 185,
+    "version_downloads": 235,
+    "version_unique_downloads": 209,
+    "version_unique_views": 185,
+    "version_views": 197
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1041189876,
+    "top_level_files": [
+      {
+        "name": "T89_rawdata.zip",
+        "size": 407816559
+      },
+      {
+        "name": "Validation_data.zip",
+        "size": 21842202
+      },
+      {
+        "name": "GA20_rawdata.zip",
+        "size": 425266024
+      },
+      {
+        "name": "Training_data.zip",
+        "size": 186265091
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:57.773167"
+}

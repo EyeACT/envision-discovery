@@ -1,0 +1,151 @@
+{
+  "created": "2016-06-29T11:14:36+00:00",
+  "modified": "2020-01-24T19:24:59.426491+00:00",
+  "id": 56515,
+  "conceptrecid": "637715",
+  "doi": "10.5281/zenodo.56515",
+  "conceptdoi": "",
+  "doi_url": "https://doi.org/10.5281/zenodo.56515",
+  "metadata": {
+    "title": "Retinal status analysis method based on feature extraction and quantitative grading in OCT images",
+    "doi": "10.5281/zenodo.56515",
+    "publication_date": "2016-06-28",
+    "description": "<p>The raw database includes 200 retinal OCT&nbsp;images judged as normal by ophthalmologists and 100 images with various abnormalities. The software includes the main steps for retinal status analysis. The software was carried out in Matlab.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Fu Dongmei",
+        "affiliation": "University of Science and Technology Beijing"
+      },
+      {
+        "name": "Tong Hejun",
+        "affiliation": "University of Science and Technology Beijing"
+      }
+    ],
+    "keywords": [
+      "Retinal OCT images; Image processing; Morphological characterization; Feature quantification; Grade evaluation"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "637715"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Retinal status analysis method based on feature extraction and quantitative grading in OCT images",
+  "links": {
+    "self": "https://zenodo.org/api/records/56515",
+    "self_html": "https://zenodo.org/records/56515",
+    "preview_html": "https://zenodo.org/records/56515?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.56515",
+    "self_doi": "https://doi.org/10.5281/zenodo.56515",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.56515",
+    "reserve_doi": "https://zenodo.org/api/records/56515/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/637715",
+    "parent_html": "https://zenodo.org/records/637715",
+    "parent_doi": "https://doi.org/",
+    "parent_doi_html": "https://zenodo.org/doi/",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:56515/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:56515/sequence/default",
+    "files": "https://zenodo.org/api/records/56515/files",
+    "media_files": "https://zenodo.org/api/records/56515/media-files",
+    "archive": "https://zenodo.org/api/records/56515/files-archive",
+    "archive_media": "https://zenodo.org/api/records/56515/media-files-archive",
+    "latest": "https://zenodo.org/api/records/56515/versions/latest",
+    "latest_html": "https://zenodo.org/records/56515/latest",
+    "versions": "https://zenodo.org/api/records/56515/versions",
+    "draft": "https://zenodo.org/api/records/56515/draft",
+    "access_links": "https://zenodo.org/api/records/56515/access/links",
+    "access_grants": "https://zenodo.org/api/records/56515/access/grants",
+    "access_users": "https://zenodo.org/api/records/56515/access/users",
+    "access_request": "https://zenodo.org/api/records/56515/access/request",
+    "access": "https://zenodo.org/api/records/56515/access",
+    "communities": "https://zenodo.org/api/records/56515/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/56515/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/56515/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/56515/file-modification",
+    "requests": "https://zenodo.org/api/records/56515/requests"
+  },
+  "updated": "2020-01-24T19:24:59.426491+00:00",
+  "recid": "56515",
+  "revision": 9,
+  "files": [
+    {
+      "id": "a2e086f6-e349-400f-af91-64cc0bd1d2a9",
+      "key": "Available_software.rar",
+      "size": 4588606,
+      "checksum": "md5:0a29fbc61db2480e26a868cda5ff715f",
+      "links": {
+        "self": "https://zenodo.org/api/records/56515/files/Available_software.rar/content"
+      }
+    },
+    {
+      "id": "8dd42d11-46e4-4ed0-bb82-3969903b700d",
+      "key": "databases.rar",
+      "size": 176203377,
+      "checksum": "md5:72434920920a2e8df629cc6af6387e30",
+      "links": {
+        "self": "https://zenodo.org/api/records/56515/files/databases.rar/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "22847"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 194,
+    "unique_downloads": 172,
+    "views": 569,
+    "unique_views": 543,
+    "version_downloads": 194,
+    "version_unique_downloads": 172,
+    "version_unique_views": 540,
+    "version_views": 562
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 2,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 180791983,
+    "top_level_files": [
+      {
+        "name": "Available_software.rar",
+        "size": 4588606
+      },
+      {
+        "name": "databases.rar",
+        "size": 176203377
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:31:50.325686"
+}

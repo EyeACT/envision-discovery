@@ -1,0 +1,227 @@
+{
+  "created": "2020-01-26T14:32:47.369416+00:00",
+  "modified": "2020-01-27T06:43:37.973041+00:00",
+  "id": 3627901,
+  "conceptrecid": "3627900",
+  "doi": "10.5281/zenodo.3627901",
+  "conceptdoi": "10.5281/zenodo.3627900",
+  "doi_url": "https://doi.org/10.5281/zenodo.3627901",
+  "metadata": {
+    "title": "Dataset for DOI: 10.1109/LRA.2019.2927936. \"Multi-DoF Force Characterization of Soft Actuators\"",
+    "doi": "10.5281/zenodo.3627901",
+    "publication_date": "2020-01-26",
+    "description": "<p>This dataset contains the raw measurement data and MATLAB scripts for the following publication: S. Joshi and J. Paik, &quot;Multi-DoF Force Characterization of Soft Actuators,&quot; in&nbsp;<em>IEEE Robotics and Automation Letters</em>, vol. 4, no. 4, pp. 3679-3686, Oct. 2019.&nbsp;doi: 10.1109/LRA.2019.2927936</p>\n\n<p><br>\nThe .csv files contain measured values of soft actuator pressure, displacement and force output. The MATLAB scripts help to extract and plot this raw data.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Sagar Joshi",
+        "affiliation": "EPFL",
+        "orcid": "0000-0002-7795-7201"
+      },
+      {
+        "name": "Jamie Paik",
+        "affiliation": "EPFL",
+        "orcid": "0000-0003-3869-213X"
+      }
+    ],
+    "keywords": [
+      "Soft sensors and actuators, soft robot applications, force characterization"
+    ],
+    "version": "1",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "journal": {
+      "issue": "4",
+      "pages": "3679-3686",
+      "title": "IEEE Robotics and Automation Letters",
+      "volume": "4"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "epfl"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3627900"
+          }
+        }
+      ]
+    },
+    "notes": "Abstract of the publication:\u00a0\n\nSoft actuators provide highly adaptable actuator options for applications in wearable devices, grippers, and mobile robots due to their inherent compliance. However, this compliance causes soft actuators to have virtually infinite degrees of freedom (DoF) of motion and challenges the accurate prediction of their displacement and interaction forces. While several studies have characterized soft actuators either in blocked condition or in a specific range of motion, the testing conditions often do not match actual loading conditions, which leads to discrepancies between expected and observed mechanical behaviour. Here, we propose a novel multi-DoF experimental protocol for characterizing soft actuator interaction forces by considering three critical aspects-anchoring conditions, displacement boundary conditions, and actuation power. In order to conduct this multi-DoF characterization, we designed a novel reconfigurable robotic test platform for enforcing anchoring conditions and planar displacement boundary conditions, and measuring forces at multiple contact locations. Using this experimental protocol and setup, we dictated three loading conditions-pulling force, tip loading, and three-point bending-and analyzed the interaction forces of a soft bending actuator. Our results show that the three loading conditions produce distinct actuator behaviors. This validates the importance of loading conditions on soft actuator performance."
+  },
+  "title": "Dataset for DOI: 10.1109/LRA.2019.2927936. \"Multi-DoF Force Characterization of Soft Actuators\"",
+  "links": {
+    "self": "https://zenodo.org/api/records/3627901",
+    "self_html": "https://zenodo.org/records/3627901",
+    "preview_html": "https://zenodo.org/records/3627901?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3627901",
+    "self_doi": "https://doi.org/10.5281/zenodo.3627901",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3627901",
+    "reserve_doi": "https://zenodo.org/api/records/3627901/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3627900",
+    "parent_html": "https://zenodo.org/records/3627900",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3627900",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3627900",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3627901/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3627901/sequence/default",
+    "files": "https://zenodo.org/api/records/3627901/files",
+    "media_files": "https://zenodo.org/api/records/3627901/media-files",
+    "archive": "https://zenodo.org/api/records/3627901/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3627901/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3627901/versions/latest",
+    "latest_html": "https://zenodo.org/records/3627901/latest",
+    "versions": "https://zenodo.org/api/records/3627901/versions",
+    "draft": "https://zenodo.org/api/records/3627901/draft",
+    "access_links": "https://zenodo.org/api/records/3627901/access/links",
+    "access_grants": "https://zenodo.org/api/records/3627901/access/grants",
+    "access_users": "https://zenodo.org/api/records/3627901/access/users",
+    "access_request": "https://zenodo.org/api/records/3627901/access/request",
+    "access": "https://zenodo.org/api/records/3627901/access",
+    "communities": "https://zenodo.org/api/records/3627901/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3627901/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3627901/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3627901/file-modification",
+    "requests": "https://zenodo.org/api/records/3627901/requests"
+  },
+  "updated": "2020-01-27T06:43:37.973041+00:00",
+  "recid": "3627901",
+  "revision": 3,
+  "files": [
+    {
+      "id": "0ba15154-dcc0-48e2-933b-506beea70814",
+      "key": "Raw data - Three point bending.zip",
+      "size": 9588511,
+      "checksum": "md5:3c925721c6916f87a7f5441696cc47ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/3627901/files/Raw data - Three point bending.zip/content"
+      }
+    },
+    {
+      "id": "ae99bdb1-42c1-480e-be63-c9995ad00081",
+      "key": "Raw Data - Tip Force.zip",
+      "size": 8489347,
+      "checksum": "md5:29abaa1ddd261c804233e45249b03d5c",
+      "links": {
+        "self": "https://zenodo.org/api/records/3627901/files/Raw Data - Tip Force.zip/content"
+      }
+    },
+    {
+      "id": "12f8e90b-2af5-4a84-bb7b-8bdaad508e36",
+      "key": "Raw Data - Pulling Force.zip",
+      "size": 1522969,
+      "checksum": "md5:d370e86aa3333c9535e2b54889e8a300",
+      "links": {
+        "self": "https://zenodo.org/api/records/3627901/files/Raw Data - Pulling Force.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "89186"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 95,
+    "unique_downloads": 78,
+    "views": 381,
+    "unique_views": 368,
+    "version_downloads": 95,
+    "version_unique_downloads": 78,
+    "version_unique_views": 368,
+    "version_views": 381
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 19600827,
+    "top_level_files": [
+      {
+        "name": "Raw data - Three point bending.zip",
+        "size": 9588511
+      },
+      {
+        "name": "Raw Data - Tip Force.zip",
+        "size": 8489347
+      },
+      {
+        "name": "Raw Data - Pulling Force.zip",
+        "size": 1522969
+      }
+    ],
+    "zip_contents": {
+      "raw data - three point bending.zip": {
+        "total_files": 30,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 20756679,
+        "file_types": {
+          ".mat": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "alldata.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "raw data - tip force.zip": {
+        "total_files": 39,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 21222551,
+        "file_types": {
+          ".mat": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "alldata.mat"
+        ],
+        "sample_genomics_files": []
+      },
+      "raw data - pulling force.zip": {
+        "total_files": 33,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 3116218,
+        "file_types": {
+          ".mat": 1
+        },
+        "imaging_file_count": 1,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "new_pulling_data.mat"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "alldata.mat",
+      "alldata.mat",
+      "new_pulling_data.mat"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:52.445248"
+}

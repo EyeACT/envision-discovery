@@ -1,0 +1,549 @@
+{
+  "created": "2025-04-01T18:58:48.132366+00:00",
+  "modified": "2025-04-01T18:58:52.020913+00:00",
+  "id": 15116835,
+  "conceptrecid": "15116834",
+  "doi": "10.5281/zenodo.15116835",
+  "conceptdoi": "10.5281/zenodo.15116834",
+  "doi_url": "https://doi.org/10.5281/zenodo.15116835",
+  "metadata": {
+    "title": "Annual Crop & Land Cover Land Use (CLCLU) Dataset for the Middle Rio Grande (MRG) Region (1994\u20132024)",
+    "doi": "10.5281/zenodo.15116835",
+    "publication_date": "2025-04-01",
+    "description": "<p>This dataset presents the first long-term, scalable, and data-driven Crop and Land Cover Land Use (CLCLU) classification product for both the U.S. and Mexican sides of the Middle Rio Grande (MRG) region. Covering the years <strong>1994 to 2024</strong>, it was developed using multi-temporal optical satellite imagery, with crop-specific annotations and expert-informed land use categories to support transboundary environmental monitoring and agricultural policy efforts.</p>\n<p>Dual-month median composites (July &amp; December) derived from Landsat 5 and 8 imagery were utilized as inputs for a semantic segmentation model, the <strong>Multi-Attention Network (MANet)</strong>, employing a <strong>ResNeXt-101 encoder</strong>. The Crop Data Layer (CDL) served as the reference ground truth for model training and evaluation.</p>\n<p>To assess the accuracy and reliability of the dataset, cross-validation was performed against the National Land Cover Dataset (NLCD) and the MODIS Land Cover Product (MCD12Q1-UMD).</p>\n<p>The dataset maintains consistent <strong>30-meter spatial resolution</strong> and annual temporal granularity. The processing workflow includes data preprocessing, training and validation dataset construction, semantic segmentation, accuracy assessment, and inter-comparison with benchmark products.</p>\n<p>&nbsp;</p>\n<p>Each annual classified map consists of pixel-level land cover and crop type assignments. The pixel values correspond to the following CLCLU classes:</p>\n<div>\n<table>\n<tbody>\n<tr>\n<th><strong>Pixel Value</strong></th>\n<th><strong>Class Label</strong></th>\n</tr>\n</tbody>\n<tbody>\n<tr>\n<td>0</td>\n<td>Alfalfa/Hay</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Cotton</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Pecan</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Othercrops</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Forest/Shrublands</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Grassland/Barren</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Water bodies</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Developed</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Other/ background</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p><strong>Key Features</strong>:</p>\n<ul>\n<li>\n<p><strong>Temporal Coverage</strong>: 1994&ndash;2024</p>\n</li>\n<li>\n<p><strong>Spatial Resolution</strong>: 30 meters</p>\n</li>\n<li>\n<p><strong>Geographic Scope</strong>: U.S.&ndash;Mexico transboundary region along the Middle Rio Grande</p>\n</li>\n<li>\n<p><strong>Data Type</strong>: Annual raster classification maps (GeoTIFF format)</p>\n</li>\n<li>\n<p><strong>Use Cases</strong>: Agricultural monitoring, land use/land cover change analysis, transboundary resource planning, AI-based remote sensing applications</p>\n</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kumar, Saurav",
+        "affiliation": "Arizona State University",
+        "orcid": "0000-0002-9664-1667"
+      },
+      {
+        "name": "Ebrahimi, Saman",
+        "affiliation": "Arizona State University",
+        "orcid": "0000-0002-3383-5739"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/waterdmd/Semantic_segmentation_for_LCLUC.git",
+      "code:programmingLanguage": [
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ],
+      "code:developmentStatus": {
+        "id": "active",
+        "title": {
+          "en": "Active"
+        }
+      }
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "grants": [
+      {
+        "code": "80NSSC23K0507",
+        "internal_id": "027ka1x80::80NSSC23K0507",
+        "funder": {
+          "name": "National Aeronautics and Space Administration"
+        },
+        "title": "Exploring the Nexus between LCLUC, Socio-Economic Factors, and Water for a Vulnerable Arid US-Mexico Transboundary Region"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "15116834"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Annual Crop & Land Cover Land Use (CLCLU) Dataset for the Middle Rio Grande (MRG) Region (1994\u20132024)",
+  "links": {
+    "self": "https://zenodo.org/api/records/15116835",
+    "self_html": "https://zenodo.org/records/15116835",
+    "preview_html": "https://zenodo.org/records/15116835?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.15116835",
+    "self_doi": "https://doi.org/10.5281/zenodo.15116835",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15116835",
+    "reserve_doi": "https://zenodo.org/api/records/15116835/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/15116834",
+    "parent_html": "https://zenodo.org/records/15116834",
+    "parent_doi": "https://doi.org/10.5281/zenodo.15116834",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15116834",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15116835/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15116835/sequence/default",
+    "files": "https://zenodo.org/api/records/15116835/files",
+    "media_files": "https://zenodo.org/api/records/15116835/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:15116835:LCLUC_1994_predicted_final.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/15116835/files-archive",
+    "archive_media": "https://zenodo.org/api/records/15116835/media-files-archive",
+    "latest": "https://zenodo.org/api/records/15116835/versions/latest",
+    "latest_html": "https://zenodo.org/records/15116835/latest",
+    "versions": "https://zenodo.org/api/records/15116835/versions",
+    "draft": "https://zenodo.org/api/records/15116835/draft",
+    "access_links": "https://zenodo.org/api/records/15116835/access/links",
+    "access_grants": "https://zenodo.org/api/records/15116835/access/grants",
+    "access_users": "https://zenodo.org/api/records/15116835/access/users",
+    "access_request": "https://zenodo.org/api/records/15116835/access/request",
+    "access": "https://zenodo.org/api/records/15116835/access",
+    "communities": "https://zenodo.org/api/records/15116835/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/15116835/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/15116835/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/15116835/file-modification",
+    "requests": "https://zenodo.org/api/records/15116835/requests"
+  },
+  "updated": "2025-04-01T18:58:52.020913+00:00",
+  "recid": "15116835",
+  "revision": 4,
+  "files": [
+    {
+      "id": "129fb698-066c-4159-9ed7-55caf1a2f59d",
+      "key": "LCLUC_1994_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:1e063ad043b95f3ec7fb456b4ead8dfc",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1994_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "955426ed-1f45-4cfc-9623-59400a19fb36",
+      "key": "LCLUC_2009_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:88c63be50fe58b180a0e0d2b75d40a8e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2009_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "cddfb78c-604b-4eb1-9d30-b812b484f41b",
+      "key": "LCLUC_1999_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:ccacb0081301802c65fe10f8c9465abb",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1999_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "d74688e7-7fa5-4229-acf8-6c08e92bac7a",
+      "key": "LCLUC_1998_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:a19a5e046552959aabf2abe2789b30c9",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1998_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "66d60f75-5924-4ca2-8a42-861b51b8b51a",
+      "key": "LCLUC_2014_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:fd8cb6f774e363e069241ace318d55aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2014_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "c0dc3d56-2d6b-4f97-bb91-bcd936c7e0f7",
+      "key": "LCLUC_2023_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:2c6c3a0689b13adc2dc8a2d2039efcfc",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2023_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "f0dfef51-f776-45ce-a0e5-2c77a9a0ab08",
+      "key": "LCLUC_2013_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:db0b804fe0f6e20d0a851351b31ad200",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2013_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "e1cefceb-0d93-44fe-859e-8acfbe621a2a",
+      "key": "LCLUC_2002_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:7975f5d7cd8e5bf9fda872a8dbae4b6d",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2002_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "5ed3ebb6-8637-414c-8d45-fecc56476c2b",
+      "key": "LCLUC_1997_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:a6eb71eb0c3828757aafbfd0d3a89d53",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1997_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "a48f633f-7349-4c48-87a8-bddd258fa53c",
+      "key": "LCLUC_2021_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:2d346a6b178072fc1af7aea50252558e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2021_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "59d2bf74-faa6-4b46-a7b2-1bf7983096f1",
+      "key": "LCLUC_2000_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:57f8859ae7e51ad260125f172a6c28ad",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2000_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "5c7fed3b-500f-497c-a640-d68a9b72695c",
+      "key": "LCLUC_1995_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:feff20ce037e7e83ad44edd74497c60c",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1995_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "21e852a4-8678-4b5a-91d9-70576021bc41",
+      "key": "LCLUC_1996_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:9ea8a1da266c3efd20a8b6aeda60cb99",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_1996_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "e231a6a7-ffb0-4f85-ac02-4bcd8a8234f6",
+      "key": "LCLUC_2006_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:af1d14bf079ba6542f18f37f878377de",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2006_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "64031fa8-9d45-4084-a5b6-466d3e4df74f",
+      "key": "LCLUC_2001_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:3271e394f4d6cddab85d96aa52ebfec2",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2001_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "faa8204f-6af3-4f21-a3de-f841cc54bc82",
+      "key": "LCLUC_2003_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:276e770351c52757a9eb9cd26c354cb2",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2003_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "274f79fd-b01e-46b7-90f0-1047adb1b596",
+      "key": "LCLUC_2005_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:96338a83481a22944480da055a59fa46",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2005_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "7c62c0a6-ba8b-4b2e-9545-c8a8f7ae7727",
+      "key": "LCLUC_2007_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:381bd8a7a3c558028cf877ceb9832bba",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2007_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "91284450-cb63-4806-af1c-be8aa0d42565",
+      "key": "LCLUC_2008_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:15e596aafac3ba9b88591fb4bdd3c814",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2008_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "aa042c4b-c6ad-40e3-b5cc-e8fc0cb13128",
+      "key": "LCLUC_2011_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:a246814c2e54a88da715d9f444d822ee",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2011_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "3d9caf0f-e494-4c73-a210-0d730f52daac",
+      "key": "LCLUC_2016_predicted_final.tif",
+      "size": 917092062,
+      "checksum": "md5:243e4369f125a75ff40cc406b76db4eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2016_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "9ec9e9ff-84a4-46c9-9ef6-fcc4787a88ed",
+      "key": "LCLUC_2018_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:e58f7dc5ecf43579e78894587f565793",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2018_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "c0f5497b-bbe1-423d-8254-63fb6fe28a74",
+      "key": "LCLUC_2019_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:829b782804e05ad5968cf3f0f0bbca37",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2019_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "74a262a8-7922-444a-92cd-55ec3ed0e61d",
+      "key": "LCLUC_2017_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:d117150c702d0d96fc5e6682fb3ca6d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2017_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "a264b05e-1ab2-44cc-8b0e-d5d52f8c24fe",
+      "key": "LCLUC_2010_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:f733db505d99f663bd07a0107dcfcb9e",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2010_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "0b6cc1d6-0f3f-4d2e-a96a-9f141b334ebd",
+      "key": "LCLUC_2020_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:778472d2f405da3144548cff0b2ff0c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2020_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "148a728b-5e18-4aa8-b7c7-2dfb7f455861",
+      "key": "LCLUC_2015_predicted_final.tif",
+      "size": 917092062,
+      "checksum": "md5:7c46be5f661c5b178bde8133eb10e20b",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2015_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "2e596b72-2d89-4fe4-9256-32cdecd28eb4",
+      "key": "LCLUC_2022_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:a0bfe69febd675f6abe415f520ff7aea",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2022_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "941e9ae7-6bb9-4d77-91ee-1d6ea8b7bd1f",
+      "key": "LCLUC_2004_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:c252e612ac586eb11aefedb1adc335fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2004_predicted_final.tif/content"
+      }
+    },
+    {
+      "id": "5f07874a-3e6e-425f-84df-3ff55e027fbe",
+      "key": "LCLUC_2024_predicted_final.tif",
+      "size": 913607662,
+      "checksum": "md5:b90b6dc6e25ac604c1fe6036676ea972",
+      "links": {
+        "self": "https://zenodo.org/api/records/15116835/files/LCLUC_2024_predicted_final.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1286728"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 940,
+    "unique_downloads": 940,
+    "views": 180,
+    "unique_views": 147,
+    "version_downloads": 940,
+    "version_unique_downloads": 940,
+    "version_unique_views": 147,
+    "version_views": 180
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 30,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 27415198660,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "LCLUC_1994_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2009_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_1999_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_1998_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2014_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2023_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2013_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2002_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_1997_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2021_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2000_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_1995_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_1996_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2006_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2001_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2003_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2005_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2007_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2008_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2011_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2016_predicted_final.tif",
+        "size": 917092062
+      },
+      {
+        "name": "LCLUC_2018_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2019_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2017_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2010_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2020_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2015_predicted_final.tif",
+        "size": 917092062
+      },
+      {
+        "name": "LCLUC_2022_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2004_predicted_final.tif",
+        "size": 913607662
+      },
+      {
+        "name": "LCLUC_2024_predicted_final.tif",
+        "size": 913607662
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:21.637785"
+}

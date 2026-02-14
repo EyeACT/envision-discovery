@@ -1,0 +1,396 @@
+{
+  "created": "2023-02-28T02:33:00.821437+00:00",
+  "modified": "2023-03-01T02:27:08.977696+00:00",
+  "id": 7683399,
+  "conceptrecid": "7683398",
+  "doi": "10.7272/Q6RV0KZ3",
+  "doi_url": "https://doi.org/10.7272/Q6RV0KZ3",
+  "metadata": {
+    "title": "Asymmetric retinal direction tuning predicts optokinetic eye movements across stimulus conditions",
+    "doi": "10.7272/Q6RV0KZ3",
+    "publication_date": "2023-02-27",
+    "description": "<p>Across species, the optokinetic reflex (OKR) stabilizes vision during self-motion. OKR occurs when ON direction-selective retinal ganglion cells (oDSGCs) detect slow, global image motion on the retina. How oDSGC activity is integrated centrally to generate behavior remains unknown. Here, we discover mechanisms that contribute to motion encoding in vertically-tuned oDSGCs and leverage these findings to empirically define signal transformation between retinal output and vertical OKR behavior. We demonstrate that motion encoding in vertically-tuned oDSGCs is contrast-sensitive and asymmetric for oDSGC types that prefer opposite directions. These phenomena arise from the interplay between spike threshold nonlinearities and differences in synaptic input weights, including shifts in the balance of excitation and inhibition. In behaving mice, these neurophysiological observations, along with a central subtraction of oDSGC outputs, accurately predict the trajectories of vertical OKR across stimulus conditions. Thus, asymmetric tuning across competing sensory channels can critically shape behavior. Available here are the data associated with these findings.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Harris, Scott",
+        "affiliation": "University of California, San Francisco",
+        "orcid": "0000-0002-3567-4481"
+      },
+      {
+        "name": "Dunn, Felice",
+        "affiliation": "University of California, San Francisco"
+      }
+    ],
+    "keywords": [
+      "optokinetic nystagmus",
+      "accessory optic system",
+      "direction selective",
+      "retinal ganglion cells"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1101/2022.06.10.495717",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.7554/eLife.81780",
+        "relation": "isCitedBy",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.6961230",
+        "relation": "isDerivedFrom",
+        "scheme": "doi"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7683398"
+          }
+        }
+      ]
+    },
+    "notes": "<p>All data are .mat files and all code are .m files. Both can be accessed using <a href=\"https://www.mathworks.com/\" rel=\"noopener\">MATLAB,</a> <a href=\"https://octave.org/\">GNU Octave</a>, or various other open-source tools that can read structure data from .mat files. The Format files are .html and can be opened with any web browser. See the README.html file for more information on working with the datasets.</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: F31EY033225</p><p>Funding provided by: McKnight Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100005270<br>Award Number: </p><p>Funding provided by: Research to Prevent Blindness<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100001818<br>Award Number: </p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: R01EY029772</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: R01EY030136</p><p>Funding provided by: National Eye Institute<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000053<br>Award Number: P30EY002162</p>"
+  },
+  "title": "Asymmetric retinal direction tuning predicts optokinetic eye movements across stimulus conditions",
+  "links": {
+    "self": "https://zenodo.org/api/records/7683399",
+    "self_html": "https://zenodo.org/records/7683399",
+    "preview_html": "https://zenodo.org/records/7683399?preview=1",
+    "doi": "https://doi.org/10.7272/Q6RV0KZ3",
+    "self_doi": "https://doi.org/10.7272/Q6RV0KZ3",
+    "self_doi_html": "https://zenodo.org/doi/10.7272/Q6RV0KZ3",
+    "reserve_doi": "https://zenodo.org/api/records/7683399/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7683398",
+    "parent_html": "https://zenodo.org/records/7683398",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7683399/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7683399/sequence/default",
+    "files": "https://zenodo.org/api/records/7683399/files",
+    "media_files": "https://zenodo.org/api/records/7683399/media-files",
+    "archive": "https://zenodo.org/api/records/7683399/files-archive",
+    "archive_media": "https://zenodo.org/api/records/7683399/media-files-archive",
+    "latest": "https://zenodo.org/api/records/7683399/versions/latest",
+    "latest_html": "https://zenodo.org/records/7683399/latest",
+    "versions": "https://zenodo.org/api/records/7683399/versions",
+    "draft": "https://zenodo.org/api/records/7683399/draft",
+    "access_links": "https://zenodo.org/api/records/7683399/access/links",
+    "access_grants": "https://zenodo.org/api/records/7683399/access/grants",
+    "access_users": "https://zenodo.org/api/records/7683399/access/users",
+    "access_request": "https://zenodo.org/api/records/7683399/access/request",
+    "access": "https://zenodo.org/api/records/7683399/access",
+    "communities": "https://zenodo.org/api/records/7683399/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7683399/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7683399/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7683399/file-modification",
+    "requests": "https://zenodo.org/api/records/7683399/requests"
+  },
+  "updated": "2023-03-01T02:27:08.977696+00:00",
+  "recid": "7683399",
+  "revision": 2,
+  "files": [
+    {
+      "id": "fd20e9dc-6e6d-4314-a9d8-414b114e9a33",
+      "key": "CurrentClamp_Format.html",
+      "size": 4794,
+      "checksum": "md5:6a66ac2b655fd4f18a91208ad9ae7b4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/CurrentClamp_Format.html/content"
+      }
+    },
+    {
+      "id": "6b0a0483-6e04-434f-b608-78f342c6cb07",
+      "key": "Behavior_Format.html",
+      "size": 3579,
+      "checksum": "md5:d41a5bc990b87f42657e5ded4ae51998",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/Behavior_Format.html/content"
+      }
+    },
+    {
+      "id": "09af44bb-4188-4551-9d7b-cd156ddf463e",
+      "key": "VoltageClamp_Format.html",
+      "size": 4260,
+      "checksum": "md5:b08b5b141b55ee35f6aa10b1afd767eb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/VoltageClamp_Format.html/content"
+      }
+    },
+    {
+      "id": "eb46235a-1fd8-43ca-9629-6c955a58dc1c",
+      "key": "CellAttached_2P_Format.html",
+      "size": 3892,
+      "checksum": "md5:a6871271e3fcac25d6aeb176b3b48715",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/CellAttached_2P_Format.html/content"
+      }
+    },
+    {
+      "id": "47ba1fa8-f738-45d3-99be-78a22ad95267",
+      "key": "RetrogradeLabeling_Format.html",
+      "size": 1944,
+      "checksum": "md5:f9ba96dc3b6b3ed5fdb579ce0e41be0e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/RetrogradeLabeling_Format.html/content"
+      }
+    },
+    {
+      "id": "676039dd-782a-4744-8f2b-6a1385e3773b",
+      "key": "README.md",
+      "size": 5058,
+      "checksum": "md5:892da565b9641a0c55d37ecaa9b7f32e",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/README.md/content"
+      }
+    },
+    {
+      "id": "26b5e1b7-1b59-4a05-b737-37caaa232fcc",
+      "key": "README.html",
+      "size": 8906,
+      "checksum": "md5:87ac255577a3371c3b3c90b386895d9b",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/README.html/content"
+      }
+    },
+    {
+      "id": "afb8efca-dee9-4e59-a7fe-516ab11b3caf",
+      "key": "IncrementStimulus_Format.html",
+      "size": 3000,
+      "checksum": "md5:c52d99e5dcd4b6fbd252aee7e3968bc5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/IncrementStimulus_Format.html/content"
+      }
+    },
+    {
+      "id": "9caf3aed-7155-4d82-b271-30005b212b23",
+      "key": "HarrisAndDunn_VoltageClamp.mat",
+      "size": 354661457,
+      "checksum": "md5:0f08211e987471559ba7ae458b81e9f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_VoltageClamp.mat/content"
+      }
+    },
+    {
+      "id": "010577f3-f5ad-4ccd-9001-5de352d11825",
+      "key": "CellAttached_Format.html",
+      "size": 2950,
+      "checksum": "md5:c934294ac4b2333c3db1440ed10239ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/CellAttached_Format.html/content"
+      }
+    },
+    {
+      "id": "c4d68668-3e5e-4002-82e0-c315cda9739e",
+      "key": "HarrisAndDunn_Behavior.mat",
+      "size": 2449102,
+      "checksum": "md5:1d223dd7fcd10aa57b62246c21585548",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_Behavior.mat/content"
+      }
+    },
+    {
+      "id": "192ac3b5-10cd-487c-9050-ea8c3681d6a7",
+      "key": "HarrisAndDunn_CellAttached.mat",
+      "size": 1322436,
+      "checksum": "md5:2b5d48c4f0e2d77b3aab542461a94ac9",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_CellAttached.mat/content"
+      }
+    },
+    {
+      "id": "a0219558-3a2f-4b77-953b-39df81d9ae52",
+      "key": "HarrisAndDunn_CellAttached_2P.mat",
+      "size": 788175,
+      "checksum": "md5:b455a72f852775a01ed5ac9cd3ebc78f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_CellAttached_2P.mat/content"
+      }
+    },
+    {
+      "id": "0a307bef-8737-4e9f-8a0a-b872d83ea59c",
+      "key": "HarrisAndDunn_RetrogradeLabeling.mat",
+      "size": 210492,
+      "checksum": "md5:71e5f9bd05b06a94a2314de1be8d5869",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_RetrogradeLabeling.mat/content"
+      }
+    },
+    {
+      "id": "68e52a1a-85fe-4ba0-9983-7c226566e742",
+      "key": "HarrisAndDunn_IncrementStimulus.mat",
+      "size": 18973222,
+      "checksum": "md5:d82e499814aab58f865c681f0dd996b7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_IncrementStimulus.mat/content"
+      }
+    },
+    {
+      "id": "f38d063b-baa1-4387-b385-d32dff4965a9",
+      "key": "ConfocalImages_Format.html",
+      "size": 2337,
+      "checksum": "md5:f0313032ae3c86aea34d6d1b6802d5ac",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/ConfocalImages_Format.html/content"
+      }
+    },
+    {
+      "id": "b5b21c9a-d40f-46c6-922e-40fe94ccb8ad",
+      "key": "HarrisAndDunn_CurrentClamp.mat",
+      "size": 313711749,
+      "checksum": "md5:f623b768365ca523794121673aab6243",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_CurrentClamp.mat/content"
+      }
+    },
+    {
+      "id": "b1f9efc3-ccbe-4f74-9aac-968ac996584b",
+      "key": "HarrisAndDunn_ConfocalImages.mat",
+      "size": 121467,
+      "checksum": "md5:2d43b75a5dcfbea86c6de4f1305cd8c5",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_ConfocalImages.mat/content"
+      }
+    },
+    {
+      "id": "e09a593b-bef4-407a-a802-622d9c769f9f",
+      "key": "HarrisAndDunn_ConductanceModelParameters.mat",
+      "size": 377120,
+      "checksum": "md5:a9d544ff4243ff56c5421440902162bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/7683399/files/HarrisAndDunn_ConductanceModelParameters.mat/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 331,
+    "unique_downloads": 313,
+    "views": 126,
+    "unique_views": 126,
+    "version_downloads": 331,
+    "version_unique_downloads": 313,
+    "version_unique_views": 126,
+    "version_views": 126
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 9,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 692615220,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "CurrentClamp_Format.html",
+        "size": 4794
+      },
+      {
+        "name": "Behavior_Format.html",
+        "size": 3579
+      },
+      {
+        "name": "VoltageClamp_Format.html",
+        "size": 4260
+      },
+      {
+        "name": "CellAttached_2P_Format.html",
+        "size": 3892
+      },
+      {
+        "name": "RetrogradeLabeling_Format.html",
+        "size": 1944
+      },
+      {
+        "name": "README.md",
+        "size": 5058
+      },
+      {
+        "name": "README.html",
+        "size": 8906
+      },
+      {
+        "name": "IncrementStimulus_Format.html",
+        "size": 3000
+      },
+      {
+        "name": "HarrisAndDunn_VoltageClamp.mat",
+        "size": 354661457
+      },
+      {
+        "name": "CellAttached_Format.html",
+        "size": 2950
+      },
+      {
+        "name": "HarrisAndDunn_Behavior.mat",
+        "size": 2449102
+      },
+      {
+        "name": "HarrisAndDunn_CellAttached.mat",
+        "size": 1322436
+      },
+      {
+        "name": "HarrisAndDunn_CellAttached_2P.mat",
+        "size": 788175
+      },
+      {
+        "name": "HarrisAndDunn_RetrogradeLabeling.mat",
+        "size": 210492
+      },
+      {
+        "name": "HarrisAndDunn_IncrementStimulus.mat",
+        "size": 18973222
+      },
+      {
+        "name": "ConfocalImages_Format.html",
+        "size": 2337
+      },
+      {
+        "name": "HarrisAndDunn_CurrentClamp.mat",
+        "size": 313711749
+      },
+      {
+        "name": "HarrisAndDunn_ConfocalImages.mat",
+        "size": 121467
+      },
+      {
+        "name": "HarrisAndDunn_ConductanceModelParameters.mat",
+        "size": 377120
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:29.522154"
+}

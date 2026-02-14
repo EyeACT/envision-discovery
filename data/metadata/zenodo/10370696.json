@@ -1,0 +1,184 @@
+{
+  "created": "2025-01-30T13:19:38.037910+00:00",
+  "modified": "2025-01-30T13:19:38.343445+00:00",
+  "id": 10370696,
+  "conceptrecid": "10370695",
+  "doi": "10.5281/zenodo.10370696",
+  "conceptdoi": "10.5281/zenodo.10370695",
+  "doi_url": "https://doi.org/10.5281/zenodo.10370696",
+  "metadata": {
+    "title": "IS Seismic Data",
+    "doi": "10.5281/zenodo.10370696",
+    "publication_date": "2023-12-13",
+    "description": "<p>IS Seismic data used to detect Hamas's pre-attack motions on Oct. 7. Results published in the following paper:</p>\n<p>Asaf Inbal; Forensic Seismic Evidence for Precursory Mobilization in Gaza Leading to the October 7 Hamas Attack. The Seismic Record 2024;; 4 (4): 288&ndash;298.&nbsp;<a href=\"https://doi.org/10.1785/0320240018\">doi</a></p>\n<p>Dataset contents:</p>\n<ul>\n<li>Compressed tar.gz files contain data from the IS seismic network in mini-seed format</li>\n<li>resp.pyc: Python obspy inventory with instrument response in pickle format</li>\n</ul>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Inbal, Asaf",
+        "affiliation": "Tel Aviv University",
+        "orcid": "0000-0001-8848-7279"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "10370695"
+          }
+        }
+      ]
+    }
+  },
+  "title": "IS Seismic Data",
+  "links": {
+    "self": "https://zenodo.org/api/records/10370696",
+    "self_html": "https://zenodo.org/records/10370696",
+    "preview_html": "https://zenodo.org/records/10370696?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10370696",
+    "self_doi": "https://doi.org/10.5281/zenodo.10370696",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10370696",
+    "reserve_doi": "https://zenodo.org/api/records/10370696/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/10370695",
+    "parent_html": "https://zenodo.org/records/10370695",
+    "parent_doi": "https://doi.org/10.5281/zenodo.10370695",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10370695",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10370696/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10370696/sequence/default",
+    "files": "https://zenodo.org/api/records/10370696/files",
+    "media_files": "https://zenodo.org/api/records/10370696/media-files",
+    "archive": "https://zenodo.org/api/records/10370696/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10370696/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10370696/versions/latest",
+    "latest_html": "https://zenodo.org/records/10370696/latest",
+    "versions": "https://zenodo.org/api/records/10370696/versions",
+    "draft": "https://zenodo.org/api/records/10370696/draft",
+    "access_links": "https://zenodo.org/api/records/10370696/access/links",
+    "access_grants": "https://zenodo.org/api/records/10370696/access/grants",
+    "access_users": "https://zenodo.org/api/records/10370696/access/users",
+    "access_request": "https://zenodo.org/api/records/10370696/access/request",
+    "access": "https://zenodo.org/api/records/10370696/access",
+    "communities": "https://zenodo.org/api/records/10370696/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10370696/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10370696/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10370696/file-modification",
+    "requests": "https://zenodo.org/api/records/10370696/requests"
+  },
+  "updated": "2025-01-30T13:19:38.343445+00:00",
+  "recid": "10370696",
+  "revision": 4,
+  "files": [
+    {
+      "id": "89fab25d-1ccc-402d-8f09-a511b09cb77a",
+      "key": "KZIT.tar.gz",
+      "size": 4514504727,
+      "checksum": "md5:9abb882a89549095e9054296cd411528",
+      "links": {
+        "self": "https://zenodo.org/api/records/10370696/files/KZIT.tar.gz/content"
+      }
+    },
+    {
+      "id": "1606abd6-bfc0-4001-a34d-7055008c70a0",
+      "key": "AMAZ.tar.gz",
+      "size": 501036695,
+      "checksum": "md5:830fdacd8c044ae3f3ed22ef0bb84171",
+      "links": {
+        "self": "https://zenodo.org/api/records/10370696/files/AMAZ.tar.gz/content"
+      }
+    },
+    {
+      "id": "850dd233-f23e-45b1-aea0-36881ac14d82",
+      "key": "AMZNI.tar.gz",
+      "size": 113462086,
+      "checksum": "md5:d1debb1113f3e7c59c35292cd7f732be",
+      "links": {
+        "self": "https://zenodo.org/api/records/10370696/files/AMZNI.tar.gz/content"
+      }
+    },
+    {
+      "id": "64513fb7-b6b3-45a6-ae05-aa2d406f61e6",
+      "key": "YATR.tar.gz",
+      "size": 3111002098,
+      "checksum": "md5:55ddced9d1802ad1bff79dea5e7238bc",
+      "links": {
+        "self": "https://zenodo.org/api/records/10370696/files/YATR.tar.gz/content"
+      }
+    },
+    {
+      "id": "700967fc-2977-435b-b71b-522b84ad1a8f",
+      "key": "resp.pyc",
+      "size": 326087,
+      "checksum": "md5:2b46b796be2d925bf219654fa9d9a2b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/10370696/files/resp.pyc/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "558227"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 58,
+    "unique_downloads": 53,
+    "views": 33,
+    "unique_views": 25,
+    "version_downloads": 58,
+    "version_unique_downloads": 53,
+    "version_unique_views": 25,
+    "version_views": 33
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 4,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 8240005606,
+    "top_level_files": [
+      {
+        "name": "KZIT.tar.gz",
+        "size": 4514504727
+      },
+      {
+        "name": "AMAZ.tar.gz",
+        "size": 501036695
+      },
+      {
+        "name": "AMZNI.tar.gz",
+        "size": 113462086
+      },
+      {
+        "name": "YATR.tar.gz",
+        "size": 3111002098
+      },
+      {
+        "name": "resp.pyc",
+        "size": 326087
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:38:55.899413"
+}

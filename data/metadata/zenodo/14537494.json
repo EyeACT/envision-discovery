@@ -1,0 +1,236 @@
+{
+  "created": "2024-12-27T22:43:06.275978+00:00",
+  "modified": "2025-05-08T01:20:16.343259+00:00",
+  "id": 14537494,
+  "conceptrecid": "14537493",
+  "doi": "10.5281/zenodo.14537494",
+  "conceptdoi": "10.5281/zenodo.14537493",
+  "doi_url": "https://doi.org/10.5281/zenodo.14537494",
+  "metadata": {
+    "title": "Figure 4 - Premade Intermediate Files",
+    "doi": "10.5281/zenodo.14537494",
+    "publication_date": "2024-12-20",
+    "description": "<p><strong><em>These are premade intermediate files used in the Giotto Suite Manuscript Figure 4&nbsp;<a href=\"https://github.com/drieslab/Giotto_Suite_manuscript/blob/main/scripts/Figure_4.R\">scripts</a></em></strong></p>\n<p><strong>Contents:</strong></p>\n<p><code>segmentation_polygons.json</code> - {baysor 0.5.2} segmentation GeometryCollection</p>\n<p><code>cellpose.tiff</code> - {cellpose 3.1.0} segmentation mask</p>\n<p><code>stardist.tiff</code> - {stardist 0.9.1} segmentation mask</p>\n<p><code>mesmer.tiff</code> - {deepcell 0.12.10}, {deepcell-toolbox 0.12.1}, {deepcell-tracking 0.6.5} segmentation mask</p>\n<p><code>zoomext.csv</code> - extent information for a zoomed in ROI</p>\n<p><code>IF_cropped.tif</code>, <code>IF_cropped.tif.aux.xml</code> - Cropped ROI of IF image (used in segmentation)</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Giotto Maintainers",
+        "affiliation": null
+      },
+      {
+        "name": "Dries Lab",
+        "affiliation": null
+      }
+    ],
+    "references": [
+      "Janesick, A., Shelansky, R., Gottscho, A.D. et al. High resolution mapping of the tumor microenvironment using integrated single-cell, spatial and in situ analysis. Nat Commun 14, 8353 (2023). https://doi.org/10.1038/s41467-023-43458-x",
+      "Pachitariu, M., Stringer, C. Cellpose 2.0: how to train your own model. Nat Methods 19, 1634\u20131641 (2022). https://doi.org/10.1038/s41592-022-01663-4",
+      "Petukhov, V., Xu, R.J., Soldatov, R.A. et al. Cell segmentation in imaging-based spatial transcriptomics. Nat Biotechnol 40, 345\u2013354 (2022). https://doi.org/10.1038/s41587-021-01044-wPetukhov, V., Xu, R.J., Soldatov, R.A. et al. Cell segmentation in imaging-based spatial transcriptomics. Nat Biotechnol 40, 345\u2013354 (2022). https://doi.org/10.1038/s41587-021-01044-w",
+      "M. Weigert, U. Schmidt, R. Haase, K. Sugawara and G. Myers, \"Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy,\" 2020 IEEE Winter Conference on Applications of Computer Vision (WACV), Snowmass, CO, USA, 2020, pp. 3655-3662. http://dx.doi.org/10.1109/WACV45572.2020.9093435",
+      "Greenwald, N.F., Miller, G., Moen, E. et al. Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning. Nat Biotechnol 40, 555\u2013565 (2022). https://doi.org/10.1038/s41587-021-01094-0"
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/drieslab/Giotto_Suite_manuscript"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "giotto_suite"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14537493"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Figure 4 - Premade Intermediate Files",
+  "links": {
+    "self": "https://zenodo.org/api/records/14537494",
+    "self_html": "https://zenodo.org/records/14537494",
+    "preview_html": "https://zenodo.org/records/14537494?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14537494",
+    "self_doi": "https://doi.org/10.5281/zenodo.14537494",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14537494",
+    "reserve_doi": "https://zenodo.org/api/records/14537494/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14537493",
+    "parent_html": "https://zenodo.org/records/14537493",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14537493",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14537493",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14537494/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14537494/sequence/default",
+    "files": "https://zenodo.org/api/records/14537494/files",
+    "media_files": "https://zenodo.org/api/records/14537494/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:14537494:mesmer.tiff/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/14537494/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14537494/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14537494/versions/latest",
+    "latest_html": "https://zenodo.org/records/14537494/latest",
+    "versions": "https://zenodo.org/api/records/14537494/versions",
+    "draft": "https://zenodo.org/api/records/14537494/draft",
+    "access_links": "https://zenodo.org/api/records/14537494/access/links",
+    "access_grants": "https://zenodo.org/api/records/14537494/access/grants",
+    "access_users": "https://zenodo.org/api/records/14537494/access/users",
+    "access_request": "https://zenodo.org/api/records/14537494/access/request",
+    "access": "https://zenodo.org/api/records/14537494/access",
+    "communities": "https://zenodo.org/api/records/14537494/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14537494/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14537494/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14537494/file-modification",
+    "requests": "https://zenodo.org/api/records/14537494/requests"
+  },
+  "updated": "2025-05-08T01:20:16.343259+00:00",
+  "recid": "14537494",
+  "revision": 6,
+  "files": [
+    {
+      "id": "1f39b6c6-1120-4308-a59d-62652bbaa02a",
+      "key": "IF_cropped.tif.aux.xml",
+      "size": 912,
+      "checksum": "md5:0ff3f2aa7c7f6bf44d3909f2748c2627",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/IF_cropped.tif.aux.xml/content"
+      }
+    },
+    {
+      "id": "78c0d1e2-bbc8-4955-b2bd-96942444c4c9",
+      "key": "mesmer.tiff",
+      "size": 12705298,
+      "checksum": "md5:c680570f6cbc207c82eb3eac42cd4dc0",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/mesmer.tiff/content"
+      }
+    },
+    {
+      "id": "27e48b4f-5c6f-48c6-b89a-35cdd1b24ac0",
+      "key": "segmentation_polygons.json",
+      "size": 1088571486,
+      "checksum": "md5:2d760f9e3040da511f72235e9a7d3f6e",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/segmentation_polygons.json/content"
+      }
+    },
+    {
+      "id": "357f3e16-5757-48fe-bbe0-daa8416d8976",
+      "key": "zoomext.csv",
+      "size": 103,
+      "checksum": "md5:f0ad95475fe6d366edf332295460fee1",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/zoomext.csv/content"
+      }
+    },
+    {
+      "id": "53feff9b-2494-421c-a965-31f893718795",
+      "key": "cellpose.tiff",
+      "size": 11498905,
+      "checksum": "md5:fc4502864016d5610da2abfa17c1417f",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/cellpose.tiff/content"
+      }
+    },
+    {
+      "id": "37ca26ec-02db-4846-9f64-f6e9a267c061",
+      "key": "stardist.tiff",
+      "size": 7560559,
+      "checksum": "md5:12319620214e6cdc9264438616de4c3b",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/stardist.tiff/content"
+      }
+    },
+    {
+      "id": "a4c0d9d5-1772-48bd-bc02-8a57798ee067",
+      "key": "IF_cropped.tif",
+      "size": 72164879,
+      "checksum": "md5:62981052bb385ab382aff529a319f8d6",
+      "links": {
+        "self": "https://zenodo.org/api/records/14537494/files/IF_cropped.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1077953"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 268,
+    "unique_downloads": 238,
+    "views": 99,
+    "unique_views": 87,
+    "version_downloads": 268,
+    "version_unique_downloads": 238,
+    "version_unique_views": 87,
+    "version_views": 99
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 4,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 103929641,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "IF_cropped.tif.aux.xml",
+        "size": 912
+      },
+      {
+        "name": "mesmer.tiff",
+        "size": 12705298
+      },
+      {
+        "name": "segmentation_polygons.json",
+        "size": 1088571486
+      },
+      {
+        "name": "zoomext.csv",
+        "size": 103
+      },
+      {
+        "name": "cellpose.tiff",
+        "size": 11498905
+      },
+      {
+        "name": "stardist.tiff",
+        "size": 7560559
+      },
+      {
+        "name": "IF_cropped.tif",
+        "size": 72164879
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:07.407589"
+}

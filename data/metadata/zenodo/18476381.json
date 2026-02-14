@@ -1,0 +1,560 @@
+{
+  "created": "2026-02-04T03:22:36.409573+00:00",
+  "modified": "2026-02-04T03:22:38.121805+00:00",
+  "id": 18476381,
+  "conceptrecid": "6532890",
+  "doi": "10.5281/zenodo.18476381",
+  "conceptdoi": "10.5281/zenodo.6532890",
+  "doi_url": "https://doi.org/10.5281/zenodo.18476381",
+  "metadata": {
+    "title": "SuperDARN data in netCDF format (2011-Oct)",
+    "doi": "10.5281/zenodo.18476381",
+    "publication_date": "2026-02-04",
+    "description": "<p>2011-Oct SuperDARN radar data in netCDF format. These files were produced using version 3.0 of the public FitACF algorithm, using the AACGM v2 coordinate system. Cite this dataset if using our data in a publication.</p>\n\n<p>The RST is available here:&nbsp;https://github.com/SuperDARN/rst</p>\n\n<p>\nThe research enabled by SuperDARN is due to the efforts of teams of scientists and engineers working in many countries to build and operate radars, process data and provide access, develop and improve data products, and assist users in interpretation.\nUsers of SuperDARN data and data products are asked to acknowledge this support in presentations and publications.\nA brief statement on how to acknowledge use of SuperDARN data is provided below.\n</p>\n\n<p>\nUsers are also asked to consult with a SuperDARN PI prior to submission of work intended for publication.\nA listing of radars and PIs with contact information can be found here:\n(<a href=\"http://vt.superdarn.org/radars/\">SuperDARN Radar Overview</a>)\n</p>\n\n<p><strong>Recommended form of acknowledgement for the use of SuperDARN data:</strong></p>\n\n<p>\n'The authors acknowledge the use of SuperDARN data. SuperDARN is a collection of radars funded by national scientific funding agencies of Australia, Canada, China, France, Italy, Japan, Norway, South Africa, United Kingdom and the United States of America.'\n</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chartier, Alex T.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0002-4215-031X"
+      },
+      {
+        "name": "Wiker, Jordan R.",
+        "affiliation": "JHU/APL",
+        "orcid": "0000-0003-4707-5539"
+      }
+    ],
+    "keywords": [
+      "SuperDARN, ionosphere, magnetosphere, convection, rst, fitacf, cfit, aeronomy, cedar, gem, radar"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.20383/102.0451",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset",
+        "scheme": "doi"
+      }
+    ],
+    "version": "3.0",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "spacephysics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "6532890"
+          }
+        }
+      ]
+    }
+  },
+  "title": "SuperDARN data in netCDF format (2011-Oct)",
+  "links": {
+    "self": "https://zenodo.org/api/records/18476381",
+    "self_html": "https://zenodo.org/records/18476381",
+    "preview_html": "https://zenodo.org/records/18476381?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.18476381",
+    "self_doi": "https://doi.org/10.5281/zenodo.18476381",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18476381",
+    "reserve_doi": "https://zenodo.org/api/records/18476381/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/6532890",
+    "parent_html": "https://zenodo.org/records/6532890",
+    "parent_doi": "https://doi.org/10.5281/zenodo.6532890",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.6532890",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18476381/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18476381/sequence/default",
+    "files": "https://zenodo.org/api/records/18476381/files",
+    "media_files": "https://zenodo.org/api/records/18476381/media-files",
+    "archive": "https://zenodo.org/api/records/18476381/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18476381/media-files-archive",
+    "latest": "https://zenodo.org/api/records/18476381/versions/latest",
+    "latest_html": "https://zenodo.org/records/18476381/latest",
+    "versions": "https://zenodo.org/api/records/18476381/versions",
+    "draft": "https://zenodo.org/api/records/18476381/draft",
+    "access_links": "https://zenodo.org/api/records/18476381/access/links",
+    "access_grants": "https://zenodo.org/api/records/18476381/access/grants",
+    "access_users": "https://zenodo.org/api/records/18476381/access/users",
+    "access_request": "https://zenodo.org/api/records/18476381/access/request",
+    "access": "https://zenodo.org/api/records/18476381/access",
+    "communities": "https://zenodo.org/api/records/18476381/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18476381/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/18476381/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/18476381/file-modification",
+    "requests": "https://zenodo.org/api/records/18476381/requests"
+  },
+  "updated": "2026-02-04T03:22:38.121805+00:00",
+  "recid": "18476381",
+  "revision": 4,
+  "files": [
+    {
+      "id": "f2128085-e63b-42c0-9900-770b41d5b3ff",
+      "key": "20111011.nc.zip",
+      "size": 376998424,
+      "checksum": "md5:6d227a02114be445886b88b680dbe523",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111011.nc.zip/content"
+      }
+    },
+    {
+      "id": "314f81d9-1b9b-4881-8825-392d65036e91",
+      "key": "20111018.nc.zip",
+      "size": 474634164,
+      "checksum": "md5:12518591fc206cf1ba81bda4fed417c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111018.nc.zip/content"
+      }
+    },
+    {
+      "id": "03ddf672-bc51-4599-8ffa-eec0810044a5",
+      "key": "20111003.nc.zip",
+      "size": 322847563,
+      "checksum": "md5:8adad9c8bdfafb69fb72408274b58726",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111003.nc.zip/content"
+      }
+    },
+    {
+      "id": "08e952aa-0f27-4d92-84c1-aa9778583da4",
+      "key": "20111016.nc.zip",
+      "size": 439341914,
+      "checksum": "md5:768d9d0963c6ba9decc3326733d7cf67",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111016.nc.zip/content"
+      }
+    },
+    {
+      "id": "6cd29c59-1b1c-4127-834c-f800893312fd",
+      "key": "20111019.nc.zip",
+      "size": 390112989,
+      "checksum": "md5:df423d29e85549c71d6e813716fded53",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111019.nc.zip/content"
+      }
+    },
+    {
+      "id": "9dbfca6c-8a05-46d4-8f6d-768281ab1073",
+      "key": "20111004.nc.zip",
+      "size": 406859210,
+      "checksum": "md5:892addc5aebf2826c7898ada441b6559",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111004.nc.zip/content"
+      }
+    },
+    {
+      "id": "31ecc4b9-7556-418c-9cf0-1310f2ecbf00",
+      "key": "20111008.nc.zip",
+      "size": 383543681,
+      "checksum": "md5:d0bc22b979c2582589d6a149b6bb1737",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111008.nc.zip/content"
+      }
+    },
+    {
+      "id": "f42e7441-beeb-4098-922f-12425058224c",
+      "key": "20111020.nc.zip",
+      "size": 441568606,
+      "checksum": "md5:9f44f89509a1a4d0ce67deb154d6924d",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111020.nc.zip/content"
+      }
+    },
+    {
+      "id": "74e3b96b-6b28-407f-92a3-4d4833c96fda",
+      "key": "20111005.nc.zip",
+      "size": 339573988,
+      "checksum": "md5:0f4a7a25fc8eecce4ea286edfba3e268",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111005.nc.zip/content"
+      }
+    },
+    {
+      "id": "7a84e92a-2abe-4e42-afbc-c13e24c4e8bd",
+      "key": "20111006.nc.zip",
+      "size": 379819097,
+      "checksum": "md5:fac574897461408d70316a0bca6d401d",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111006.nc.zip/content"
+      }
+    },
+    {
+      "id": "b57b0c54-f674-4939-889c-d802815bd9cb",
+      "key": "20111022.nc.zip",
+      "size": 412208607,
+      "checksum": "md5:df186a737d9cc18ce4f6e342aaa511ae",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111022.nc.zip/content"
+      }
+    },
+    {
+      "id": "584c02c0-2488-48d3-b636-310147eb4942",
+      "key": "20111021.nc.zip",
+      "size": 400206015,
+      "checksum": "md5:a8a3710948ab98730625b1abd53916c3",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111021.nc.zip/content"
+      }
+    },
+    {
+      "id": "14619951-77a9-478f-99f2-3eea1bb3cbe4",
+      "key": "20111001.nc.zip",
+      "size": 307886242,
+      "checksum": "md5:6152bd5fed20eabbfaa8149546ad51f2",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111001.nc.zip/content"
+      }
+    },
+    {
+      "id": "41f05033-d3c9-4eea-9f01-0591515521aa",
+      "key": "20111002.nc.zip",
+      "size": 385523394,
+      "checksum": "md5:e0e1607535414efe1c93737e885c7548",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111002.nc.zip/content"
+      }
+    },
+    {
+      "id": "a13c9db1-f4c1-4a38-8777-feb602ba82e9",
+      "key": "20111007.nc.zip",
+      "size": 417628741,
+      "checksum": "md5:be4da211570edbc813fec9da01b79895",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111007.nc.zip/content"
+      }
+    },
+    {
+      "id": "ed64df49-cedc-40fa-9b18-9ff2821bab55",
+      "key": "20111009.nc.zip",
+      "size": 411923991,
+      "checksum": "md5:7de6150467292858b80c7c752a253f74",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111009.nc.zip/content"
+      }
+    },
+    {
+      "id": "391336eb-d65f-4f31-9c11-f59e8c4c1389",
+      "key": "20111010.nc.zip",
+      "size": 342467527,
+      "checksum": "md5:0e7b24d0fea5abdcf5fa249e8a476210",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111010.nc.zip/content"
+      }
+    },
+    {
+      "id": "b4f11334-7c5f-4495-874a-b9bd2f3e0f5f",
+      "key": "20111026.nc.zip",
+      "size": 333033550,
+      "checksum": "md5:20be170408f3f70e9bc9d1402cda78da",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111026.nc.zip/content"
+      }
+    },
+    {
+      "id": "1ceac2e4-7a90-4038-8c27-745c04be6de2",
+      "key": "20111031.nc.zip",
+      "size": 383439117,
+      "checksum": "md5:c7526bf380617a5da75fdf5a9e1097c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111031.nc.zip/content"
+      }
+    },
+    {
+      "id": "ac0feee7-ac7b-4c6d-a0fc-0266e0ebf4d4",
+      "key": "20111012.nc.zip",
+      "size": 400862279,
+      "checksum": "md5:329830799c75c4eb97fd423d99690538",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111012.nc.zip/content"
+      }
+    },
+    {
+      "id": "cf4fc357-90f3-4480-922a-07cea9d60b48",
+      "key": "20111013.nc.zip",
+      "size": 422199945,
+      "checksum": "md5:fda9f1ec493ce608c88116733cd44328",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111013.nc.zip/content"
+      }
+    },
+    {
+      "id": "2e767189-3ad2-4591-bfb5-3ddb24976d0c",
+      "key": "20111014.nc.zip",
+      "size": 449877038,
+      "checksum": "md5:b0d6c0721489bdc6d926361a98d7aa73",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111014.nc.zip/content"
+      }
+    },
+    {
+      "id": "783cf025-10a5-4dcb-912b-b67cd01fd416",
+      "key": "20111015.nc.zip",
+      "size": 459926129,
+      "checksum": "md5:b7ce922109e1828838cde2be84ac2c5e",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111015.nc.zip/content"
+      }
+    },
+    {
+      "id": "a867c0a1-1c24-4d01-801a-76bf6e2ab1a2",
+      "key": "20111017.nc.zip",
+      "size": 447105828,
+      "checksum": "md5:5f46ef98b601a6af4338c5332de6c3b0",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111017.nc.zip/content"
+      }
+    },
+    {
+      "id": "49736e51-84a8-43a9-9539-b9a880a44fbb",
+      "key": "20111023.nc.zip",
+      "size": 428078095,
+      "checksum": "md5:d6b5ce0cfc1f3ae0de93bb63ad3a88bd",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111023.nc.zip/content"
+      }
+    },
+    {
+      "id": "c5eb9224-ccbe-44c5-a8b5-51c43e549db2",
+      "key": "20111025.nc.zip",
+      "size": 289066192,
+      "checksum": "md5:ad1382706fe946bc6f1e16de52a9a609",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111025.nc.zip/content"
+      }
+    },
+    {
+      "id": "33b12a9c-6e4b-48a1-bc88-289165f72120",
+      "key": "20111024.nc.zip",
+      "size": 387525237,
+      "checksum": "md5:b6da094c4055cf1fd7857a3b90502b4f",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111024.nc.zip/content"
+      }
+    },
+    {
+      "id": "73fa509d-6a0c-4b66-9e02-1b94cd1061aa",
+      "key": "20111027.nc.zip",
+      "size": 396511038,
+      "checksum": "md5:14dc4d704be1740d65eb14ef0574ea41",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111027.nc.zip/content"
+      }
+    },
+    {
+      "id": "6f4b909a-a1de-4730-ac67-8e1708175be6",
+      "key": "20111028.nc.zip",
+      "size": 260603587,
+      "checksum": "md5:f2f73a3acd6dd27e8343498dcffd58e6",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111028.nc.zip/content"
+      }
+    },
+    {
+      "id": "63be7539-4a7f-42f4-ab43-51a086cf4a6f",
+      "key": "20111029.nc.zip",
+      "size": 391726742,
+      "checksum": "md5:b600d00184ef6d17880d23024851957f",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111029.nc.zip/content"
+      }
+    },
+    {
+      "id": "f6c670a1-a6a2-4d93-afda-aee24827ab34",
+      "key": "20111030.nc.zip",
+      "size": 360851280,
+      "checksum": "md5:5d2506bed82551a62faa3b9f41a855ba",
+      "links": {
+        "self": "https://zenodo.org/api/records/18476381/files/20111030.nc.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "270414"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 9081,
+    "unique_downloads": 8933,
+    "views": 154,
+    "unique_views": 149,
+    "version_downloads": 349,
+    "version_unique_downloads": 347,
+    "version_unique_views": 33,
+    "version_views": 34
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 31,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 12043950210,
+    "top_level_files": [
+      {
+        "name": "20111011.nc.zip",
+        "size": 376998424
+      },
+      {
+        "name": "20111018.nc.zip",
+        "size": 474634164
+      },
+      {
+        "name": "20111003.nc.zip",
+        "size": 322847563
+      },
+      {
+        "name": "20111016.nc.zip",
+        "size": 439341914
+      },
+      {
+        "name": "20111019.nc.zip",
+        "size": 390112989
+      },
+      {
+        "name": "20111004.nc.zip",
+        "size": 406859210
+      },
+      {
+        "name": "20111008.nc.zip",
+        "size": 383543681
+      },
+      {
+        "name": "20111020.nc.zip",
+        "size": 441568606
+      },
+      {
+        "name": "20111005.nc.zip",
+        "size": 339573988
+      },
+      {
+        "name": "20111006.nc.zip",
+        "size": 379819097
+      },
+      {
+        "name": "20111022.nc.zip",
+        "size": 412208607
+      },
+      {
+        "name": "20111021.nc.zip",
+        "size": 400206015
+      },
+      {
+        "name": "20111001.nc.zip",
+        "size": 307886242
+      },
+      {
+        "name": "20111002.nc.zip",
+        "size": 385523394
+      },
+      {
+        "name": "20111007.nc.zip",
+        "size": 417628741
+      },
+      {
+        "name": "20111009.nc.zip",
+        "size": 411923991
+      },
+      {
+        "name": "20111010.nc.zip",
+        "size": 342467527
+      },
+      {
+        "name": "20111026.nc.zip",
+        "size": 333033550
+      },
+      {
+        "name": "20111031.nc.zip",
+        "size": 383439117
+      },
+      {
+        "name": "20111012.nc.zip",
+        "size": 400862279
+      },
+      {
+        "name": "20111013.nc.zip",
+        "size": 422199945
+      },
+      {
+        "name": "20111014.nc.zip",
+        "size": 449877038
+      },
+      {
+        "name": "20111015.nc.zip",
+        "size": 459926129
+      },
+      {
+        "name": "20111017.nc.zip",
+        "size": 447105828
+      },
+      {
+        "name": "20111023.nc.zip",
+        "size": 428078095
+      },
+      {
+        "name": "20111025.nc.zip",
+        "size": 289066192
+      },
+      {
+        "name": "20111024.nc.zip",
+        "size": 387525237
+      },
+      {
+        "name": "20111027.nc.zip",
+        "size": 396511038
+      },
+      {
+        "name": "20111028.nc.zip",
+        "size": 260603587
+      },
+      {
+        "name": "20111029.nc.zip",
+        "size": 391726742
+      },
+      {
+        "name": "20111030.nc.zip",
+        "size": 360851280
+      }
+    ],
+    "zip_contents": {
+      "20111031.nc.zip": {
+        "total_files": 24,
+        "total_directories": 0,
+        "total_uncompressed_bytes": 384703280,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://github.com/SuperDARN/rst",
+      "type": "data_platform"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:37:46.228984"
+}

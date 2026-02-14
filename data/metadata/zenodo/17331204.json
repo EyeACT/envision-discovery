@@ -1,0 +1,211 @@
+{
+  "created": "2025-10-12T07:07:22.725167+00:00",
+  "modified": "2025-10-25T13:43:13.384247+00:00",
+  "id": 17331204,
+  "conceptrecid": "14185066",
+  "doi": "10.5281/zenodo.17331204",
+  "conceptdoi": "10.5281/zenodo.14185066",
+  "doi_url": "https://doi.org/10.5281/zenodo.17331204",
+  "metadata": {
+    "title": "Integrating time-series analysis and deep learning method to reconstruct the RTS dynamics in the Tibetan Plateau over  the past nearly four decades",
+    "doi": "10.5281/zenodo.17331204",
+    "publication_date": "2025-09-17",
+    "description": "<div>\n<pre># Remote Sensing Data Analysis and Object Detection Project<br><br>## Project Overview<br><br>This project is a comprehensive remote sensing data analysis toolkit that includes two core functional modules:<br><br>1. **Time Series Classification and Segmentation**: Utilizes LSTM models for time series data classification and Random Forest (RF) for time series segmentation, primarily used to analyze vegetation index (such as NDVI) trends.<br>2. **YOLO Object Detection**: Object detection functionality based on the YOLO model, used for object recognition and localization in remote sensing images.<br><br>## Installation Guide<br><br>### Requirements<br><br>- Python 3.7+<br>- Dependencies: numpy, matplotlib, joblib, tensorflow, ultralytics, opencv-python<br><br>### Installation Steps<br><br>1. Clone or download this project to your local machine, unzip data.zip<br>2. Install the required dependencies:<br><br>```bash<br>pip install numpy matplotlib joblib tensorflow ultralytics opencv-python<br>```<br><br>## Usage Instructions<br><br>### Time Series Classification and Segmentation<br><br>Use the `Time_series_classification_segmentation.py` script for time series data classification and segmentation:<br><br>```bash<br>python Time_series_classification_segmentation.py<br>```<br><br>This module will:<br>- Load the LSTM classification model to determine if an event exists<br>- If an event exists, load the Random Forest regressor to predict key time points<br>- Retrieve NDVI Z-scores from Zarr files and generate visualization results<br><br>### YOLO Object Detection<br><br>Use the `Yolo_objection_detection.py` script for object detection in remote sensing images:<br><br>```bash<br>python Yolo_objection_detection.py<br>```<br><br>By default, this script will:<br>- Load the pre-trained YOLO model<br>- Perform object detection on specified test images<br>- Display detection results with object annotations<br><br>## Project Structure<br><br>```<br>\u251c\u2500\u2500 README.txt                             # Project documentation<br>\u251c\u2500\u2500 Time_series_classification_segmentation.py  # Time series classification and segmentation module<br>\u251c\u2500\u2500 Yolo_objection_detection.py            # YOLO object detection module<br>\u251c\u2500\u2500 utils.py                               # Utility functions library<br>\u251c\u2500\u2500 models/                                # Model files directory<br>\u2502   \u251c\u2500\u2500 LSTM_time_series_classification.h5 # LSTM classification model<br>\u2502   \u251c\u2500\u2500 Yolo_object_detection.pt           # YOLO object detection model<br>\u2502   \u2514\u2500\u2500 time_series_segmentation.joblib    # Time series segmentation model<br>\u251c\u2500\u2500 results/                               # Results output directory<br>\u2502   \u251c\u2500\u2500 RTS.gpkg                           # Geographic package file<br>\u2502   \u251c\u2500\u2500 RTS_start_year.tif                 # Start year raster file<br>\u2502   \u2514\u2500\u2500 TSC_Model_predcition.tif           # Model prediction result raster file<br>\u251c\u2500\u2500 test_images/                           # Test images directory<br>\u2502   \u251c\u2500\u2500 25213.jpg<br>\u2502   \u251c\u2500\u2500 4145.jpg<br>\u2502   \u251c\u2500\u2500 4206.jpg<br>\u2502   \u2514\u2500\u2500 wechat_2025-08-07_165732_336.png<br>\u2514\u2500\u2500 vegetation_indices.zarr/               # Vegetation indices Zarr data storage<br>```<br><br>## Data Description<br><br>- `vegetation_indices.zarr`: Contains time series data for multiple vegetation indices, such as NDVI, ZRNDVI, etc.<br>- `test_images`: Contains sample images for testing YOLO object detection<br><br>### Results Files Description<br><br>The `results/RTS.gpkg` GeoPackage contains three files:<br><br>1. **RTS**: Retrogressive Thaw Slumps (RTSs) extracted by our algorithm. This dataset is also accompanied by a web-based visualization platform (<span lang=\"EN-US\"><a href=\"https://majiapei.github.io/Landsat_VHR_RTSs/\">https://majiapei.github.io/Landsat_VHR_RTSs/</a></span>), where users can view and compare our results with those derived from very high-resolution imagery<br><br>2. **RTS_contains_ALDS**: RTSs delineated by manual visual interpretation based on disturbed areas, containing approximately 7,000 RTSs. Note that this dataset may include some deep Active Layer Detachments (ALDs), as deep ALDs are very likely to develop into RTSs. According to Luo et al. (2022), about 98% of RTSs on the Qinghai-Tibet Plateau are formed from ALDs, and some studies suggest that deep ALDs are actually early-stage RTSs (Nesterova et al., 2024).<br><br>3. **Start_Year_map_from_1986**: A raster map showing the development of RTSs obtained using a time-series segmentation algorithm. The raster value + 1986 indicates the year when the vegetation in that pixel was disturbed (approximately representing the occurrence time of the RTS).<br><br>## Model Description<br><br>- `LSTM_time_series_classification.h5`: LSTM model for time series event classification<br>- `time_series_segmentation.joblib`: Random Forest model for time series segmentation<br>- `Yolo_object_detection.pt`: YOLO model for object detection<br><br>## References<br><br>- Luo, J., Niu, F., Lin, Z., Liu, M., Yin, G., Gao, Z., 2022. Inventory and frequency of retrogressive thaw slumps in permafrost region of the Qinghai&ndash;Tibet Plateau. Geophysical Research Letters, 49, e2022GL099829. https://doi.org/10.1029/2022GL099829<br><br>- Nesterova, N., Leibman, M., Kizyakov, A., Lantuit, H., Tarasevich, I., Nitze, I., Veremeeva, A., Grosse, G., 2024. Review article: Retrogressive thaw slump characteristics and terminology. The Cryosphere, 18, 4787&ndash;4810. https://doi.org/10.5194/tc-18-4787-2024<br><br>## Contact Information<br><br>For questions or suggestions, please contact the project maintainer.</pre>\n</div>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Ma, Jiapei",
+        "affiliation": null
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Ma, Jiapei",
+        "affiliation": null,
+        "type": "Producer"
+      }
+    ],
+    "dates": [
+      {
+        "type": "available"
+      },
+      {
+        "type": "available"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14185066"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Integrating time-series analysis and deep learning method to reconstruct the RTS dynamics in the Tibetan Plateau over  the past nearly four decades",
+  "links": {
+    "self": "https://zenodo.org/api/records/17331204",
+    "self_html": "https://zenodo.org/records/17331204",
+    "preview_html": "https://zenodo.org/records/17331204?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17331204",
+    "self_doi": "https://doi.org/10.5281/zenodo.17331204",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17331204",
+    "reserve_doi": "https://zenodo.org/api/records/17331204/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14185066",
+    "parent_html": "https://zenodo.org/records/14185066",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14185066",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14185066",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17331204/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17331204/sequence/default",
+    "files": "https://zenodo.org/api/records/17331204/files",
+    "media_files": "https://zenodo.org/api/records/17331204/media-files",
+    "archive": "https://zenodo.org/api/records/17331204/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17331204/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17331204/versions/latest",
+    "latest_html": "https://zenodo.org/records/17331204/latest",
+    "versions": "https://zenodo.org/api/records/17331204/versions",
+    "draft": "https://zenodo.org/api/records/17331204/draft",
+    "access_links": "https://zenodo.org/api/records/17331204/access/links",
+    "access_grants": "https://zenodo.org/api/records/17331204/access/grants",
+    "access_users": "https://zenodo.org/api/records/17331204/access/users",
+    "access_request": "https://zenodo.org/api/records/17331204/access/request",
+    "access": "https://zenodo.org/api/records/17331204/access",
+    "communities": "https://zenodo.org/api/records/17331204/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17331204/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17331204/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17331204/file-modification",
+    "requests": "https://zenodo.org/api/records/17331204/requests"
+  },
+  "updated": "2025-10-25T13:43:13.384247+00:00",
+  "recid": "17331204",
+  "revision": 6,
+  "files": [
+    {
+      "id": "06e2a42e-fb93-48b7-b5f9-fe3097c1f15a",
+      "key": "Time_series_classification_segmentation.py",
+      "size": 4815,
+      "checksum": "md5:4f79e7e9586a716066c9d2abd9d182ab",
+      "links": {
+        "self": "https://zenodo.org/api/records/17331204/files/Time_series_classification_segmentation.py/content"
+      }
+    },
+    {
+      "id": "3122907a-2c5a-4b05-8e18-bf519bf77a19",
+      "key": "Yolo_objection_detection.py",
+      "size": 1793,
+      "checksum": "md5:cb827940432c45bf56e962da5a38c83d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17331204/files/Yolo_objection_detection.py/content"
+      }
+    },
+    {
+      "id": "9e08e9ce-03f4-4a78-a156-ba025bd93ed9",
+      "key": "utils.py",
+      "size": 4761,
+      "checksum": "md5:d177dfe3fda20d0a440aa5d96bad853d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17331204/files/utils.py/content"
+      }
+    },
+    {
+      "id": "9d2c25a6-9865-4352-bec4-7125eda5bb65",
+      "key": "data.zip",
+      "size": 435122788,
+      "checksum": "md5:b4d97be65a3c94677fdcc981139654d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/17331204/files/data.zip/content"
+      }
+    },
+    {
+      "id": "ee9e54a4-b488-4c37-8f50-4b73a1eedad9",
+      "key": "README.txt",
+      "size": 5200,
+      "checksum": "md5:92123e1476b9f5372f3a5d4618af5326",
+      "links": {
+        "self": "https://zenodo.org/api/records/17331204/files/README.txt/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "434961"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 50,
+    "unique_downloads": 45,
+    "views": 99,
+    "unique_views": 85,
+    "version_downloads": 22,
+    "version_unique_downloads": 22,
+    "version_unique_views": 48,
+    "version_views": 55
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 435122788,
+    "top_level_files": [
+      {
+        "name": "Time_series_classification_segmentation.py",
+        "size": 4815
+      },
+      {
+        "name": "Yolo_objection_detection.py",
+        "size": 1793
+      },
+      {
+        "name": "utils.py",
+        "size": 4761
+      },
+      {
+        "name": "data.zip",
+        "size": 435122788
+      },
+      {
+        "name": "README.txt",
+        "size": 5200
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://majiapei.github.io/Landsat_VHR_RTSs/",
+      "type": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.1029/2022GL099829-",
+      "type": "doi_reference"
+    },
+    {
+      "url": "https://doi.org/10.5194/tc-18-4787-2024##",
+      "type": "doi_reference"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.109084"
+}

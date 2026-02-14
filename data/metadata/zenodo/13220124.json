@@ -1,0 +1,205 @@
+{
+  "created": "2024-08-05T08:02:05.708815+00:00",
+  "modified": "2024-08-05T08:02:06.248811+00:00",
+  "id": 13220124,
+  "conceptrecid": "13220123",
+  "doi": "10.5281/zenodo.13220124",
+  "conceptdoi": "10.5281/zenodo.13220123",
+  "doi_url": "https://doi.org/10.5281/zenodo.13220124",
+  "metadata": {
+    "title": "bioimage.io upload: ilastik/covid_if_training_data",
+    "doi": "10.5281/zenodo.13220124",
+    "publication_date": "2024-06-05",
+    "description": "<p><a href=\"\" title=\"https://bioimage.io/#/?id=ilastik/covid_if_training_data\">View on bioimage.io</a> # Covid-IF Training Data </p>\n<h1>Covid-IF Training Data</h1>\n<p>Training data for cell and nucleus segmentation as well as infected cell classification of Covid19 in immunofluorescence.\nThe images are taken with a high-throughput microscope and were used as training data to set up an IF based CoV19 antibody assay <a href=\"https://doi.org/10.1002/bies.202000257\">here</a>.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Constantin Pape",
+        "affiliation": null
+      }
+    ],
+    "keywords": [
+      "backup.bioimage.io",
+      "bioimage.io",
+      "bioimage.io:dataset",
+      "high-content-imaging",
+      "fluorescence-light-microscopy",
+      "2D",
+      "cells",
+      "nuclei",
+      "covid19",
+      "semantic-segmentation",
+      "instance-segmentation"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "13220123"
+          }
+        }
+      ]
+    },
+    "notes": "Training data for cell and nucleus segmentation as well as infection classification in IF data of Covid-19 infected cells.\n(Uploaded via https://bioimage.io)"
+  },
+  "title": "bioimage.io upload: ilastik/covid_if_training_data",
+  "links": {
+    "self": "https://zenodo.org/api/records/13220124",
+    "self_html": "https://zenodo.org/records/13220124",
+    "preview_html": "https://zenodo.org/records/13220124?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.13220124",
+    "self_doi": "https://doi.org/10.5281/zenodo.13220124",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13220124",
+    "reserve_doi": "https://zenodo.org/api/records/13220124/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/13220123",
+    "parent_html": "https://zenodo.org/records/13220123",
+    "parent_doi": "https://doi.org/10.5281/zenodo.13220123",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13220123",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:13220124/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:13220124/sequence/default",
+    "files": "https://zenodo.org/api/records/13220124/files",
+    "media_files": "https://zenodo.org/api/records/13220124/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:13220124:covid-if-cover1.jpg/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/13220124/files-archive",
+    "archive_media": "https://zenodo.org/api/records/13220124/media-files-archive",
+    "latest": "https://zenodo.org/api/records/13220124/versions/latest",
+    "latest_html": "https://zenodo.org/records/13220124/latest",
+    "versions": "https://zenodo.org/api/records/13220124/versions",
+    "draft": "https://zenodo.org/api/records/13220124/draft",
+    "access_links": "https://zenodo.org/api/records/13220124/access/links",
+    "access_grants": "https://zenodo.org/api/records/13220124/access/grants",
+    "access_users": "https://zenodo.org/api/records/13220124/access/users",
+    "access_request": "https://zenodo.org/api/records/13220124/access/request",
+    "access": "https://zenodo.org/api/records/13220124/access",
+    "communities": "https://zenodo.org/api/records/13220124/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/13220124/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/13220124/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/13220124/file-modification",
+    "requests": "https://zenodo.org/api/records/13220124/requests"
+  },
+  "updated": "2024-08-05T08:02:06.248811+00:00",
+  "recid": "13220124",
+  "revision": 4,
+  "files": [
+    {
+      "id": "4dfb256b-eaa8-41df-994c-8890689861a5",
+      "key": "rdf.yaml",
+      "size": 1625,
+      "checksum": "md5:238d322cd114767eee6cc71393d8d22c",
+      "links": {
+        "self": "https://zenodo.org/api/records/13220124/files/rdf.yaml/content"
+      }
+    },
+    {
+      "id": "5d61ca2f-20df-4dbd-9d3c-36822621f29b",
+      "key": "covid-if-cover1.jpg",
+      "size": 14055,
+      "checksum": "md5:033bbd798b8848635ed25b3516d6c38e",
+      "links": {
+        "self": "https://zenodo.org/api/records/13220124/files/covid-if-cover1.jpg/content"
+      }
+    },
+    {
+      "id": "c2ecfe0f-b465-49c0-ae42-74564c2587d4",
+      "key": "covid-if-cover2.jpg",
+      "size": 24193,
+      "checksum": "md5:6f94949fb5d1b9050fb34950d457eb38",
+      "links": {
+        "self": "https://zenodo.org/api/records/13220124/files/covid-if-cover2.jpg/content"
+      }
+    },
+    {
+      "id": "d849fabd-f1d5-4149-a312-459f1c8b84f9",
+      "key": "covid-if-cover0.jpg",
+      "size": 17740,
+      "checksum": "md5:8f5f47a40bd304f46bf7670bf0c08570",
+      "links": {
+        "self": "https://zenodo.org/api/records/13220124/files/covid-if-cover0.jpg/content"
+      }
+    },
+    {
+      "id": "ff609b58-eb91-4385-a20f-d71749f1f404",
+      "key": "covid-if.md",
+      "size": 323,
+      "checksum": "md5:aaead0ba99bd77e744a24941efa58096",
+      "links": {
+        "self": "https://zenodo.org/api/records/13220124/files/covid-if.md/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1000750"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 65,
+    "unique_downloads": 55,
+    "views": 53,
+    "unique_views": 41,
+    "version_downloads": 65,
+    "version_unique_downloads": 55,
+    "version_unique_views": 41,
+    "version_views": 53
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 3,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 55988,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "rdf.yaml",
+        "size": 1625
+      },
+      {
+        "name": "covid-if-cover1.jpg",
+        "size": 14055
+      },
+      {
+        "name": "covid-if-cover2.jpg",
+        "size": 24193
+      },
+      {
+        "name": "covid-if-cover0.jpg",
+        "size": 17740
+      },
+      {
+        "name": "covid-if.md",
+        "size": 323
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:15.875672"
+}

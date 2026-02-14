@@ -1,0 +1,174 @@
+{
+  "created": "2025-11-27T12:21:27.632017+00:00",
+  "modified": "2025-11-30T08:34:39.352138+00:00",
+  "id": 17735226,
+  "conceptrecid": "17735225",
+  "doi": "10.5281/zenodo.17735226",
+  "conceptdoi": "10.5281/zenodo.17735225",
+  "doi_url": "https://doi.org/10.5281/zenodo.17735226",
+  "metadata": {
+    "title": "Digital Elevation Model of Chalky Sound and neighbourhood, New Zealand",
+    "doi": "10.5281/zenodo.17735226",
+    "publication_date": "2025-11-27",
+    "description": "<p><span lang=\"EN-NZ\">Purpose: numerical modelling of tsunami</span></p>\n<p><span lang=\"EN-NZ\">For the purpose of studying the impact of the 25 March 2025 Puysegur tsunami in the southwest of New Zealand South Island, a high-resolution digital elevation model (DEM) of the central part of Fiordland covering Chalky Sound and its neighbourhood, including the location of the Puysegur tsunami gauge (PUYT), has been built using four different types of data. They include:</span></p>\n<p><span lang=\"EN-NZ\">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=\"EN-NZ\">NZ 8m Digital Elevation Model (LINZ, 2023)</span></p>\n<p><span lang=\"EN-NZ\">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=\"EN-NZ\">Depth contour polyline (Hydro, 1:4k - 1:22k, LINZ, 2023)</span></p>\n<p><span lang=\"EN-NZ\">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=\"EN-NZ\">Sounding points (Hydro, 1:90k - 1:350k, LINZ 2023), (Hydro, 1:22k - 1:90k, LINZ 2023), (Hydro, 1:4k - 1:22k, LINZ 2023)</span></p>\n<p><span lang=\"EN-NZ\">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang=\"EN-NZ\">Digitized and georeferenced nautical chart of Chalky and Preservation Inlets - South Port (LINZ, 2023), Breaksea Sound and Dusky Sound (LINZ, 2022), and Western Approaches to Foveaux Strait (LINZ 2022).</span></p>\n<p><span lang=\"EN-NZ\">The data showing the highest resolution has been kept in priority.</span></p>\n<p><span lang=\"EN-NZ\">The depth values in the sounding points and depth Contour Polyline datasets are vertically referred to LAT (Lowest Astronomical Tide). For tsunami modelling purposes, all bathymetric and topographic data must be referenced to the same known vertical reference (e.g., Mean Sea Level or MSL). To standardize the datasets, we apply a vertical correction of MSL-LAT which in this case equals -1.4 m (Standard port tidal levels provided by LINZ<a title=\"\" href=\"#_ftn1\" name=\"_ftnref1\"><span lang=\"EN-NZ\">[1]</span></a>).&nbsp; We consider that the 8 m resolution DEM from LINZ (2023) is referenced to MSL.</span></p>\n<p><span lang=\"EN-NZ\">The compilation of data has been interpolated to a regular spatial resolution 0.0001&deg; (~10 m). The data interpolation processes have been done using the kriging interpolation method. For more information about this method, see for example Oliver and Webster (1990).</span></p>\n<p>&nbsp;</p>\n<p><a title=\"\" href=\"#_ftnref1\" name=\"_ftn1\"><span lang=\"EN-NZ\"><span lang=\"EN-NZ\">[1]</span></span></a><span lang=\"EN-NZ\"> <a href=\"https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels\">https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels</a> </span></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Cazenave, Matteo",
+        "affiliation": "Universit\u00e9 Paul-Val\u00e9ry Montpellier",
+        "orcid": "0009-0002-7334-6558"
+      },
+      {
+        "name": "Roger, Jean",
+        "affiliation": "Earth Sciences New Zealand",
+        "orcid": "0000-0002-3078-9052"
+      }
+    ],
+    "references": [
+      "[LINZ] LAND and Information New Zealand (2023). New Zealand. Digital Elevation Model, 8m. https://data.linz.govt.nz/layer/51768-nz-8m-digital-elevation-model-2012/",
+      "[LINZ] LAND and Information New Zealand (2023). New Zealand. Depth contour polyline, (Hydro, 1:4k - 1:22k) https://data.linz.govt.nz/layer/50672-depth-contour-polyline-hydro-14k-122k/",
+      "[LINZ] LAND and Information New Zealand (2023). New Zealand. Sounding points, (Hydro, 1:90k - 1:350k) https://data.linz.govt.nz/layer/50506-sounding-points-hydro-190k-1350k/",
+      "[LINZ] LAND and Information New Zealand (2023). New Zealand. Sounding points, (Hydro, 1:22k - 1:90k) https://data.linz.govt.nz/layer/50866-sounding-points-hydro-122k-190k/",
+      "[LINZ] LAND and Information New Zealand (2023). New Zealand. Sounding points, (Hydro, 1:4k - 1:22k) https://data.linz.govt.nz/layer/50858-sounding-points-hydro-14k-122k/",
+      "[LINZ] LAND and Information New Zealand (2023). Chalky and Preservation Inlets - South Port. Nautical Chart NZ 7654, NZ765402, 1:25000.\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 https://data.linz.govt.nz/layer/51427-chart-nz-7654-chalky-and-preservation-inlets-south-port/",
+      "[LINZ] LAND and Information New Zealand (2022). Breaksea Sound and Dusky Sound. Nautical Chart NZ 7653, NZ765301, 1:60000. \u00a0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 https://data.linz.govt.nz/layer/51335-chart-nz-7653-breaksea-sound-and-dusky-sound/",
+      "[LINZ] LAND and Information New Zealand (2022). Western Approaches to Foveaux Strait. Nautical Chart NZ 76, NZ7601, 1:300000. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 https://data.linz.govt.nz/layer/51263-chart-nz-76-western-approaches-to-foveaux-strait/",
+      "Oliver, M. A. and Webster, R. 1990. Kriging: a method of interpolation for geographical information systems. International Journal of Geographical Information Systems. 4 (3), pp. 313-332. https://doi.org/10.1080/02693799008941549"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17735225"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Digital Elevation Model of Chalky Sound and neighbourhood, New Zealand",
+  "links": {
+    "self": "https://zenodo.org/api/records/17735226",
+    "self_html": "https://zenodo.org/records/17735226",
+    "preview_html": "https://zenodo.org/records/17735226?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17735226",
+    "self_doi": "https://doi.org/10.5281/zenodo.17735226",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17735226",
+    "reserve_doi": "https://zenodo.org/api/records/17735226/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17735225",
+    "parent_html": "https://zenodo.org/records/17735225",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17735225",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17735225",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17735226/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17735226/sequence/default",
+    "files": "https://zenodo.org/api/records/17735226/files",
+    "media_files": "https://zenodo.org/api/records/17735226/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17735226:DEM_Chalky.png/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/17735226/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17735226/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17735226/versions/latest",
+    "latest_html": "https://zenodo.org/records/17735226/latest",
+    "versions": "https://zenodo.org/api/records/17735226/versions",
+    "draft": "https://zenodo.org/api/records/17735226/draft",
+    "access_links": "https://zenodo.org/api/records/17735226/access/links",
+    "access_grants": "https://zenodo.org/api/records/17735226/access/grants",
+    "access_users": "https://zenodo.org/api/records/17735226/access/users",
+    "access_request": "https://zenodo.org/api/records/17735226/access/request",
+    "access": "https://zenodo.org/api/records/17735226/access",
+    "communities": "https://zenodo.org/api/records/17735226/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17735226/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17735226/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17735226/file-modification",
+    "requests": "https://zenodo.org/api/records/17735226/requests"
+  },
+  "updated": "2025-11-30T08:34:39.352138+00:00",
+  "recid": "17735226",
+  "revision": 16,
+  "files": [
+    {
+      "id": "5e956868-646b-4c03-bf49-d0b9ab4402ea",
+      "key": "DEM_Chalky.png",
+      "size": 429917,
+      "checksum": "md5:e5ad9a6f80f8d4441b70f91e72987864",
+      "links": {
+        "self": "https://zenodo.org/api/records/17735226/files/DEM_Chalky.png/content"
+      }
+    },
+    {
+      "id": "b77b2d58-5671-4dcf-8b23-40f69dc6f339",
+      "key": "DEM_Fiordland_Chalky_10m.asc",
+      "size": 746716527,
+      "checksum": "md5:fea581012c1fe9ffb3f5456552e5fb49",
+      "links": {
+        "self": "https://zenodo.org/api/records/17735226/files/DEM_Fiordland_Chalky_10m.asc/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1475369"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 3,
+    "unique_downloads": 3,
+    "views": 48,
+    "unique_views": 33,
+    "version_downloads": 3,
+    "version_unique_downloads": 3,
+    "version_unique_views": 33,
+    "version_views": 48
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 1,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 429917,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "DEM_Chalky.png",
+        "size": 429917
+      },
+      {
+        "name": "DEM_Fiordland_Chalky_10m.asc",
+        "size": 746716527
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [
+    {
+      "url": "https://www.linz.govt.nz/guidance/marine-information/tide-prediction-guidance/standard-port-tidal-levels",
+      "type": "unknown"
+    }
+  ],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:44.751469"
+}

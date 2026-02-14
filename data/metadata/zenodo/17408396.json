@@ -1,0 +1,792 @@
+{
+  "created": "2025-10-21T16:07:54.066744+00:00",
+  "modified": "2025-10-21T16:08:12.801392+00:00",
+  "id": 17408396,
+  "conceptrecid": "17408395",
+  "doi": "10.5281/zenodo.17408396",
+  "conceptdoi": "10.5281/zenodo.17408395",
+  "doi_url": "https://doi.org/10.5281/zenodo.17408396",
+  "metadata": {
+    "title": "The human fovea is relatively horizontally elongated in infantile nystagmus",
+    "doi": "10.5281/zenodo.17408396",
+    "publication_date": "2025-10-21",
+    "description": "<p>Numerical data associated with the manuscript, MATLAB code to identify the deepest foveal scan from a stack of foveal OCT images, and OCT images of the deepest scans from study participants.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Dunn, Matt James",
+        "affiliation": "Cardiff University",
+        "orcid": "0000-0002-0295-2182"
+      },
+      {
+        "name": "Thomas, Nikita",
+        "affiliation": "Cardiff University",
+        "orcid": "0000-0003-2493-2112"
+      }
+    ],
+    "custom": {
+      "code:programmingLanguage": [
+        {
+          "id": "matlab",
+          "title": {
+            "en": "MATLAB"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "17408395"
+          }
+        }
+      ]
+    }
+  },
+  "title": "The human fovea is relatively horizontally elongated in infantile nystagmus",
+  "links": {
+    "self": "https://zenodo.org/api/records/17408396",
+    "self_html": "https://zenodo.org/records/17408396",
+    "preview_html": "https://zenodo.org/records/17408396?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.17408396",
+    "self_doi": "https://doi.org/10.5281/zenodo.17408396",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17408396",
+    "reserve_doi": "https://zenodo.org/api/records/17408396/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/17408395",
+    "parent_html": "https://zenodo.org/records/17408395",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17408395",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17408395",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17408396/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17408396/sequence/default",
+    "files": "https://zenodo.org/api/records/17408396/files",
+    "media_files": "https://zenodo.org/api/records/17408396/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17408396:C024_Horizontal.tif/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/17408396/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17408396/media-files-archive",
+    "latest": "https://zenodo.org/api/records/17408396/versions/latest",
+    "latest_html": "https://zenodo.org/records/17408396/latest",
+    "versions": "https://zenodo.org/api/records/17408396/versions",
+    "draft": "https://zenodo.org/api/records/17408396/draft",
+    "access_links": "https://zenodo.org/api/records/17408396/access/links",
+    "access_grants": "https://zenodo.org/api/records/17408396/access/grants",
+    "access_users": "https://zenodo.org/api/records/17408396/access/users",
+    "access_request": "https://zenodo.org/api/records/17408396/access/request",
+    "access": "https://zenodo.org/api/records/17408396/access",
+    "communities": "https://zenodo.org/api/records/17408396/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17408396/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/17408396/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/17408396/file-modification",
+    "requests": "https://zenodo.org/api/records/17408396/requests"
+  },
+  "updated": "2025-10-21T16:08:12.801392+00:00",
+  "recid": "17408396",
+  "revision": 4,
+  "files": [
+    {
+      "id": "53ea8b46-eafc-42d2-84c6-d1ea5de9c482",
+      "key": "C024_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:81313040c46459abf45db19b7d18b40a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C024_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "4400dc56-2c0e-4bff-8d6a-cc1b51c3a499",
+      "key": "P025_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:84fa8f114d5c8f550745279a19399b82",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P025_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "cc2d5f3a-047c-41d3-8523-86fe80a5827c",
+      "key": "C006_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:b9b70905b800a4c21c254bd1c80e30db",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C006_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "b3920bdc-1397-4633-9c74-f761abd634a3",
+      "key": "C030_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:a82c9cad60dbf331e994f96dc8716423",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C030_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "329f5b56-66e1-4ad5-90b4-137aba4b3354",
+      "key": "P010_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:8c7c4c9711a27e95beeef4fc3b718f10",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P010_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "d174693c-17b0-4fee-90e8-6dc4d19bc94d",
+      "key": "C015_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:a3b1edb1dfa3011aa198b1a4107b1144",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C015_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "7cb728d5-3c52-4e63-b6bb-31ed4cc0ba82",
+      "key": "C019_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:67cef06d02ce8a6a6b3fd03aa3f6ad33",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C019_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "527bc038-1e47-4acb-9455-1d02eb059475",
+      "key": "P025_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:83a1920b57f281ac87374370211e8bbf",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P025_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "671f1589-00ca-4435-a9eb-2e756f48ac24",
+      "key": "C008_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:bb126982f9ce8ebea635f5c24180ee66",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C008_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "1ef72ba5-5aff-48c6-a4b1-0544f0f1b0e2",
+      "key": "P003_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:6742b7ddde029ebd53ba355cc8cb1268",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P003_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "9dea8514-4e44-4717-87bc-3bc572ce5fdd",
+      "key": "P013_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:12117352342b56d6bc1cf760cf75174b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P013_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "118c8f1e-0a8d-4e28-b144-26c8febf698f",
+      "key": "C015_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:3d76d6ee053c95d0df87c3a60d7c44e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C015_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "0906e53c-d0df-420c-9c2e-115511802325",
+      "key": "P011_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:be343fec34607619afefc56f4cc11962",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P011_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "7f350d0b-0bb6-4838-804f-dfb5b7185b53",
+      "key": "C008_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:61d5aad5461b9a0eb7da0cfd2678f749",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C008_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "7c3ddb6d-a11e-4d38-8a60-c0cae3c8489f",
+      "key": "C030_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:be1a267f89bddb2bda1281207bef5115",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C030_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "99ad7795-b2f0-4c79-9f76-e4ba5e2ec1f3",
+      "key": "P016_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:9dd357725e8dcec2d05291f0fa758d35",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P016_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "fd36fbeb-4d81-40c5-bce1-b99c4eefd586",
+      "key": "C003_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:83cf6ea4c30bb440472a3345402a865b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C003_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "aaeaf428-7fb2-45b6-bb3f-3006af239e31",
+      "key": "Data.xlsx",
+      "size": 18506,
+      "checksum": "md5:dccd905a118aa6c40e12741dde6f4c0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/Data.xlsx/content"
+      }
+    },
+    {
+      "id": "0286e56f-6b0b-4b1f-b741-72019bbd898e",
+      "key": "P028_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:7119594ef1e629b151898007d22a4a9e",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P028_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "2515c990-46f5-42ad-881e-143f2517d8e1",
+      "key": "P013_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:75eae65ca7c9db705539fd0e58c578aa",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P013_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "14d0f38c-24af-432d-8204-11285b21cb0e",
+      "key": "C007_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:13620746696b3e05d7a9df6775994ca2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C007_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "55ddee99-b7e9-46ac-a271-bd3489167645",
+      "key": "C027_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:c32af6320053e904b7bdb620a7d03a93",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C027_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "10769ebf-9933-427f-a401-a0e3762618a4",
+      "key": "C019_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:1f227cb22e96b2dae0a2a7e26c7e3db2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C019_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "8945fc8d-d78d-40c4-875b-3c669f44fd99",
+      "key": "P003_Horizontal.tif",
+      "size": 1048736,
+      "checksum": "md5:9f015c3a7abcdc9b7986fe4b3499b988",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P003_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "045e8223-dbd8-44c4-8708-ab10053132f4",
+      "key": "P037_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:8109d6e942fc6c3a412f8c6bd1c574b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P037_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "a68cf6a3-a891-4dca-9d62-ec31461f763a",
+      "key": "C006_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:8ddef2eeb6dd4c59c98d958591e0b47d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C006_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "d206a1cb-7f5e-42ca-ae0b-1398cd0724a4",
+      "key": "C029_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:e3bb29ffddf67723bbe32796c6a2b7bf",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C029_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "a4e76ce9-cdf1-4667-8364-73c89fb1a2c5",
+      "key": "P052_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:8df5015e800bac91a58acb0eb3e01d0f",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P052_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "7adcfb7e-b687-4501-92af-d2a095d14825",
+      "key": "deepest_scan_analysis.m",
+      "size": 19234,
+      "checksum": "md5:7b3cb8fb7f8a38609a7798c4d89a085c",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/deepest_scan_analysis.m/content"
+      }
+    },
+    {
+      "id": "f6c7ee97-2e4a-4ae6-a494-9ef9818a75ba",
+      "key": "C003_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:ceb32046e86660e7fdf58fd29e67958b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C003_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "c28bc001-c94d-4424-9988-1dd4b0dd43e7",
+      "key": "C001_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:87b0ac90d7c7e9002f78dc82e788fc3b",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C001_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "e45c41e5-9701-439c-ae8c-6240468e9502",
+      "key": "C027_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:a59c26d27ca6f02566219f259381c749",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C027_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "45d2f926-22a2-48b1-b8a9-55b7caef932f",
+      "key": "C009_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:0ead09d831c6d577a2bf2575a676af48",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C009_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "f513cf8c-7157-4edd-b272-ac65bc2871f3",
+      "key": "C009_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:1c554bb123dd0b66653e4d6365c4c2fe",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C009_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "29b8a68e-6474-42ca-8113-014dad9cb78a",
+      "key": "P010_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:1adfbc96b60218ef98df6c08b7ab12e5",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P010_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "aea367d5-87bd-487e-8e9e-efc32b4105f6",
+      "key": "C024_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:5824583b7a3e6c70fe8ecb2f28bebf8d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C024_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "84e8734f-b6e4-4bc6-9ef6-53001b2e12d1",
+      "key": "C029_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:90109b9aa4785ccf147fb22bae5d62e9",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C029_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "d103c4b2-7e94-4be8-b717-a325a4559528",
+      "key": "P011_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:2be5cd3dc4f8313a11584e57b399765c",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P011_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "9b7ab43c-cc97-4bbb-8f41-7456aadafeac",
+      "key": "P037_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:01f704b22fbb069904a0f66582da2d8a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P037_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "482efb73-aaaf-45c1-8789-25a0d59c1e29",
+      "key": "P028_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:8a28afd3a093f8407161c04e3371d7c4",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P028_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "93fd5fd3-63a6-4df4-b474-e9452f33b277",
+      "key": "P048_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:057c297d04ac045c8f395bc706de51c2",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P048_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "e381d526-c93f-4daf-a49d-612dbf76b4bd",
+      "key": "P048_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:574a393ebef04cf2c5e51c0f5c713990",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P048_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "22715209-1830-49e5-b1e0-2bfffb0b454a",
+      "key": "P052_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:7ca8fef9219facc5abc6a5d8ce4514b4",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P052_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "350c6a23-8817-4446-8de3-b14a69a01379",
+      "key": "C001_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:24c9d2f3d954a7adc92b5796c4aae10d",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C001_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "fa1ba89b-28af-4ad3-a1cf-4154555f3422",
+      "key": "P004_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:c3e89350ec57d29587cec71ae27ad122",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P004_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "e7e09904-5b3b-4df1-9252-5f4be448f1c8",
+      "key": "P004_Vertical.tif",
+      "size": 1048868,
+      "checksum": "md5:abfb40a16d02c23e3352bc07ce793f66",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P004_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "d6f5804b-3d44-413a-9158-153afe72a236",
+      "key": "P051_Horizontal.tif",
+      "size": 1048880,
+      "checksum": "md5:aef4372e34a9ab103c10ac381c54e54a",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P051_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "3afdf67f-b967-47f8-b89a-0121d0146268",
+      "key": "P016_Horizontal.tif",
+      "size": 1048872,
+      "checksum": "md5:e9d57bdd358579cffc1c53957a33d54c",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P016_Horizontal.tif/content"
+      }
+    },
+    {
+      "id": "ad92b2ba-9603-47f0-ab4d-31d2201a3458",
+      "key": "P051_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:bd48909d6f4e23a47ea529e76051d5dc",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/P051_Vertical.tif/content"
+      }
+    },
+    {
+      "id": "3b74b957-f371-4e0c-852e-65c93ecd7b7e",
+      "key": "C007_Vertical.tif",
+      "size": 1048876,
+      "checksum": "md5:505d91169ff06aa3dd39a142b892a192",
+      "links": {
+        "self": "https://zenodo.org/api/records/17408396/files/C007_Vertical.tif/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "1434479"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 53,
+    "unique_downloads": 53,
+    "views": 11,
+    "unique_views": 10,
+    "version_downloads": 53,
+    "version_unique_downloads": 53,
+    "version_unique_views": 10,
+    "version_views": 11
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": false,
+    "has_genomics_only": false,
+    "imaging_file_count": 48,
+    "archive_count": 0,
+    "genomics_count": 0,
+    "total_imaging_size": 50345856,
+    "total_archive_size": 0,
+    "top_level_files": [
+      {
+        "name": "C024_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P025_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C006_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C030_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "P010_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "C015_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C019_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "P025_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "C008_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "P003_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "P013_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C015_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P011_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C008_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C030_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "P016_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "C003_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "Data.xlsx",
+        "size": 18506
+      },
+      {
+        "name": "P028_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P013_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "C007_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C027_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C019_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "P003_Horizontal.tif",
+        "size": 1048736
+      },
+      {
+        "name": "P037_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "C006_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C029_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "P052_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "deepest_scan_analysis.m",
+        "size": 19234
+      },
+      {
+        "name": "C003_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C001_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C027_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "C009_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C009_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P010_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "C024_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C029_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "P011_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P037_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "P028_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "P048_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "P048_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P052_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "C001_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "P004_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "P004_Vertical.tif",
+        "size": 1048868
+      },
+      {
+        "name": "P051_Horizontal.tif",
+        "size": 1048880
+      },
+      {
+        "name": "P016_Horizontal.tif",
+        "size": 1048872
+      },
+      {
+        "name": "P051_Vertical.tif",
+        "size": 1048876
+      },
+      {
+        "name": "C007_Vertical.tif",
+        "size": 1048876
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:35.444767"
+}

@@ -1,0 +1,196 @@
+{
+  "created": "2025-08-28T12:46:55.725114+00:00",
+  "modified": "2025-08-28T12:46:58.481601+00:00",
+  "id": 14856516,
+  "conceptrecid": "14856515",
+  "doi": "10.5281/zenodo.14856516",
+  "conceptdoi": "10.5281/zenodo.14856515",
+  "doi_url": "https://doi.org/10.5281/zenodo.14856516",
+  "metadata": {
+    "title": "3D data of specimen MNHN.F.R50931",
+    "doi": "10.5281/zenodo.14856516",
+    "publication_date": "2025-02-12",
+    "description": "<p>This repository contains the 3D data of specimen MNHN.F.R50931 from the paper&nbsp;<em>Synchrotron X-ray tomography sheds light on the phylogenetic affinities of the enigmatic thylacocephalans with Pancrustacea.&nbsp;</em>This includes:</p>\n<ul>\n<li>Original tomographic datasets (MNHN_F_R50931_bis_0_pag.raw) of the specimen. Phase-contrast synchrotron X-ray microtomography was performed at the PSICH&Eacute; beamline of the SOLEIL synchrotron (Saint-Aubin, France). Each specimen was scanned with a voxel size of 11.139 &micro;m. The info file (MNHN_F_R50931_bis_0_pag.raw.info) contains the information concerning the dimension of the voxels.<br><br></li>\n<li>The segmentation files (mimics files). Segmentation was performed using Materialise Mimics innovation suite 24.0 (research edition). The original tomographic file was subdivided into three smaller subsets&nbsp; to keep the original resolution for segmentation, due to limited computational power. Segmentation was mostly achieved through manual segmentation of selected slices and interpolation between these slices. When possible, semi-automatic segmentation tools were used, in particular thresholding associated with region grow function to separate objects of similar attenuation.<br><br></li>\n<li>The triangle-mesh models of the specimen (STL files) resulting from the segmentation and the 3D rendering. Cleaning (<em>remove isolated pieces</em>, <em>remove duplicated faces</em> functions), reorientation (<em>re-orient all face coherently</em> function) and remeshing filters (<em>repair non Manifold edges</em>, <em>close holes </em>and <em>quadric edge collapse decimation </em>functions with preserve normal and topology checked) were applied.</li>\n</ul>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Laville, Thomas",
+        "affiliation": null,
+        "orcid": "0000-0001-9081-7150"
+      },
+      {
+        "name": "Forel, Marie-B\u00e9atrice",
+        "affiliation": "Centre de recherche en pal\u00e9ontologie - Paris"
+      },
+      {
+        "name": "King, Andrew",
+        "affiliation": "Synchrotron soleil"
+      },
+      {
+        "name": "Charbonnier, Sylvain",
+        "affiliation": "Centre de recherche en pal\u00e9ontologie - Paris"
+      }
+    ],
+    "keywords": [
+      "Euarthropoda",
+      "Jurassic",
+      "La Voulte Lagerst\u00e4tte",
+      "Pancrustacea",
+      "Synchrotron X-ray tomography",
+      "tagmatisation",
+      "appendages"
+    ],
+    "dates": [
+      {
+        "type": "submitted"
+      }
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "14856515"
+          }
+        }
+      ]
+    }
+  },
+  "title": "3D data of specimen MNHN.F.R50931",
+  "links": {
+    "self": "https://zenodo.org/api/records/14856516",
+    "self_html": "https://zenodo.org/records/14856516",
+    "preview_html": "https://zenodo.org/records/14856516?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.14856516",
+    "self_doi": "https://doi.org/10.5281/zenodo.14856516",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14856516",
+    "reserve_doi": "https://zenodo.org/api/records/14856516/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/14856515",
+    "parent_html": "https://zenodo.org/records/14856515",
+    "parent_doi": "https://doi.org/10.5281/zenodo.14856515",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.14856515",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:14856516/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:14856516/sequence/default",
+    "files": "https://zenodo.org/api/records/14856516/files",
+    "media_files": "https://zenodo.org/api/records/14856516/media-files",
+    "archive": "https://zenodo.org/api/records/14856516/files-archive",
+    "archive_media": "https://zenodo.org/api/records/14856516/media-files-archive",
+    "latest": "https://zenodo.org/api/records/14856516/versions/latest",
+    "latest_html": "https://zenodo.org/records/14856516/latest",
+    "versions": "https://zenodo.org/api/records/14856516/versions",
+    "draft": "https://zenodo.org/api/records/14856516/draft",
+    "access_links": "https://zenodo.org/api/records/14856516/access/links",
+    "access_grants": "https://zenodo.org/api/records/14856516/access/grants",
+    "access_users": "https://zenodo.org/api/records/14856516/access/users",
+    "access_request": "https://zenodo.org/api/records/14856516/access/request",
+    "access": "https://zenodo.org/api/records/14856516/access",
+    "communities": "https://zenodo.org/api/records/14856516/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/14856516/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/14856516/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/14856516/file-modification",
+    "requests": "https://zenodo.org/api/records/14856516/requests"
+  },
+  "updated": "2025-08-28T12:46:58.481601+00:00",
+  "recid": "14856516",
+  "revision": 4,
+  "files": [
+    {
+      "id": "d2b15d35-8085-485f-bb37-4a7ecae7cd46",
+      "key": "Mesh.zip",
+      "size": 517981003,
+      "checksum": "md5:b2d7b58b852f8945c996dccbda74cbcb",
+      "links": {
+        "self": "https://zenodo.org/api/records/14856516/files/Mesh.zip/content"
+      }
+    },
+    {
+      "id": "faa1dd73-33e3-4416-907c-011d784b5255",
+      "key": "Segmentation.zip",
+      "size": 5080281835,
+      "checksum": "md5:5a595ac3778597e3a37c1652df1a0d54",
+      "links": {
+        "self": "https://zenodo.org/api/records/14856516/files/Segmentation.zip/content"
+      }
+    },
+    {
+      "id": "2bdf257d-7a16-498d-9a84-c8d6493fc947",
+      "key": "Tomography.zip",
+      "size": 24110547634,
+      "checksum": "md5:2db1a5086bab4f42f672f6903d6454cc",
+      "links": {
+        "self": "https://zenodo.org/api/records/14856516/files/Tomography.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "112427"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 17,
+    "unique_downloads": 17,
+    "views": 24,
+    "unique_views": 21,
+    "version_downloads": 17,
+    "version_unique_downloads": 17,
+    "version_unique_views": 21,
+    "version_views": 24
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 3,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 29708810472,
+    "top_level_files": [
+      {
+        "name": "Mesh.zip",
+        "size": 517981003
+      },
+      {
+        "name": "Segmentation.zip",
+        "size": 5080281835
+      },
+      {
+        "name": "Tomography.zip",
+        "size": 24110547634
+      }
+    ],
+    "zip_contents": {
+      "mesh.zip": {
+        "total_files": 63,
+        "total_directories": 1,
+        "total_uncompressed_bytes": 1066116292,
+        "file_types": {},
+        "imaging_file_count": 0,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:23.646980"
+}

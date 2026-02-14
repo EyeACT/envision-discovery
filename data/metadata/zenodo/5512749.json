@@ -1,0 +1,200 @@
+{
+  "created": "2021-09-16T17:34:54.796585+00:00",
+  "modified": "2022-06-04T15:56:36.136020+00:00",
+  "id": 5512749,
+  "conceptrecid": "5512748",
+  "doi": "10.5061/dryad.jm63xsjb2",
+  "doi_url": "https://doi.org/10.5061/dryad.jm63xsjb2",
+  "metadata": {
+    "title": "MERFISH measurements in the mouse ileum",
+    "doi": "10.5061/dryad.jm63xsjb2",
+    "publication_date": "2021-09-16",
+    "description": "<p>Spatial transcriptomics protocols based on in situ\u00a0sequencing or multiplexed RNA fluorescent hybridization can reveal detailed tissue organization. However, distinguishing the boundaries of individual cells in such data is challenging, and can hamper downstream analysis. Current methods generally approximate cells positions using nuclei stains. We describe a segmentation method, Baysor, which optimizes 2D or 3D cell boundaries considering joint likelihood of transcriptional composition and cell morphology. While Baysor\u00a0can take into account segmentation based on co-stains, it can also perform segmentation based on the detected transcripts alone. To evaluate performance, we extend MERFISH to incorporate immuno-staining of cell boundaries. Using this and other benchmarks we show that Baysor\u00a0segmentation can in some cases nearly double the number of cells, while reducing segmentation artifacts. Importantly, we demonstrate that Baysor\u00a0performs well on data acquired using five different protocols, making it a useful general tool for analysis of imaging-based spatial transcriptomics.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Moffitt, Jeffrey",
+        "affiliation": "Boston Children's Hospital",
+        "orcid": "0000-0002-3836-3101"
+      },
+      {
+        "name": "Xu, Rosalind",
+        "affiliation": "Boston Children's Hospital"
+      },
+      {
+        "name": "Kharchenko, Peter",
+        "affiliation": "Harvard Medical School"
+      },
+      {
+        "name": "Petukhov, Viktor",
+        "affiliation": "Harvard Medical School"
+      },
+      {
+        "name": "Cadinu, Paolo",
+        "affiliation": "Boston Children's Hospital"
+      },
+      {
+        "name": "Soldatov, Ruslan",
+        "affiliation": "Harvard Medical School"
+      },
+      {
+        "name": "Khodosevich, Konstantin",
+        "affiliation": "University of Copenhagen"
+      }
+    ],
+    "keywords": [
+      "MERFISH",
+      "Fluorescence in situ hybridization",
+      "Ileum"
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-zero"
+    },
+    "communities": [
+      {
+        "id": "dryad"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "5512748"
+          }
+        }
+      ]
+    },
+    "notes": "<p>The provided data contain text files that describe the data organization and contents.\u00a0</p>\n\n<p>Models included in the directory\u00a0data_analysis/cellpose are\u00a0binary files created by and readable by the cellpose software (<a href=\"https://github.com/MouseLand/cellpose\">https://github.com/MouseLand/cellpose</a>).</p>\n<p>Funding provided by: National Institutes of Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000002<br>Award Number: P30 DK034854</p>"
+  },
+  "title": "MERFISH measurements in the mouse ileum",
+  "links": {
+    "self": "https://zenodo.org/api/records/5512749",
+    "self_html": "https://zenodo.org/records/5512749",
+    "preview_html": "https://zenodo.org/records/5512749?preview=1",
+    "doi": "https://doi.org/10.5061/dryad.jm63xsjb2",
+    "self_doi": "https://doi.org/10.5061/dryad.jm63xsjb2",
+    "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.jm63xsjb2",
+    "reserve_doi": "https://zenodo.org/api/records/5512749/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/5512748",
+    "parent_html": "https://zenodo.org/records/5512748",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5512749/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5512749/sequence/default",
+    "files": "https://zenodo.org/api/records/5512749/files",
+    "media_files": "https://zenodo.org/api/records/5512749/media-files",
+    "archive": "https://zenodo.org/api/records/5512749/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5512749/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5512749/versions/latest",
+    "latest_html": "https://zenodo.org/records/5512749/latest",
+    "versions": "https://zenodo.org/api/records/5512749/versions",
+    "draft": "https://zenodo.org/api/records/5512749/draft",
+    "access_links": "https://zenodo.org/api/records/5512749/access/links",
+    "access_grants": "https://zenodo.org/api/records/5512749/access/grants",
+    "access_users": "https://zenodo.org/api/records/5512749/access/users",
+    "access_request": "https://zenodo.org/api/records/5512749/access/request",
+    "access": "https://zenodo.org/api/records/5512749/access",
+    "communities": "https://zenodo.org/api/records/5512749/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5512749/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5512749/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5512749/file-modification",
+    "requests": "https://zenodo.org/api/records/5512749/requests"
+  },
+  "updated": "2022-06-04T15:56:36.136020+00:00",
+  "recid": "5512749",
+  "revision": 3,
+  "files": [
+    {
+      "id": "6d758faa-79ee-4e56-a402-8b2c7561335e",
+      "key": "data_release_baysor_merfish_gut.zip",
+      "size": 735805624,
+      "checksum": "md5:501a206666b5895e9182245dda8d4e60",
+      "links": {
+        "self": "https://zenodo.org/api/records/5512749/files/data_release_baysor_merfish_gut.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "90070"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 46,
+    "unique_downloads": 45,
+    "views": 572,
+    "unique_views": 544,
+    "version_downloads": 45,
+    "version_unique_downloads": 44,
+    "version_unique_views": 539,
+    "version_views": 567
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": true,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 735805624,
+    "top_level_files": [
+      {
+        "name": "data_release_baysor_merfish_gut.zip",
+        "size": 735805624
+      }
+    ],
+    "zip_contents": {
+      "data_release_baysor_merfish_gut.zip": {
+        "total_files": 42,
+        "total_directories": 20,
+        "total_uncompressed_bytes": 5383498599,
+        "file_types": {
+          ".tif": 8,
+          ".png": 4
+        },
+        "imaging_file_count": 12,
+        "genomics_file_count": 0,
+        "sample_imaging_files": [
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/results/cellpose_dapi.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/results/cellpose_membrane.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/dapi/dapi_fov226_z8.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/dapi/dapi_fov226_z8_masks.png",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov216_z2.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov216_z2_cellpose_masks.png",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov217_z9.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov217_z9_cellpose_masks.png",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov226_z4.tif",
+          "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov226_z4_cellpose_masks.png"
+        ],
+        "sample_genomics_files": []
+      }
+    },
+    "zip_imaging_files": [
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/results/cellpose_dapi.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/results/cellpose_membrane.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/dapi/dapi_fov226_z8.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/dapi/dapi_fov226_z8_masks.png",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov216_z2.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov216_z2_cellpose_masks.png",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov217_z9.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov217_z9_cellpose_masks.png",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov226_z4.tif",
+      "data_release_baysor_merfish_gut/data_analysis/cellpose/cell_boundaries/training/membrane/if_fov226_z4_cellpose_masks.png"
+    ],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:40:32.286894"
+}

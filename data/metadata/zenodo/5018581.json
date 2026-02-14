@@ -1,0 +1,160 @@
+{
+  "created": "2021-06-23T15:57:46.937271+00:00",
+  "modified": "2024-08-28T21:40:25.926881+00:00",
+  "id": 5018581,
+  "conceptrecid": "4891264",
+  "doi": "10.5281/zenodo.5018581",
+  "conceptdoi": "10.5281/zenodo.4891264",
+  "doi_url": "https://doi.org/10.5281/zenodo.5018581",
+  "metadata": {
+    "title": "Endoscopic OCT for epidural anesthesia",
+    "doi": "10.5281/zenodo.5018581",
+    "publication_date": "2021-06-23",
+    "description": "<h2><strong>Code</strong>&nbsp;[<a href=\"https://github.com/thepanlab/Endoscopic_OCT_Epidural\" target=\"_blank\" rel=\"noopener\">GitHub</a>]&nbsp;| <strong>Publication</strong>&nbsp;[<a href=\"https://doi.org/10.1038/s41598-022-12950-7\" target=\"_blank\" rel=\"noopener\">Scientific Reports'22</a>]</h2>\n<div>\n<h3><strong>Abstract</strong></h3>\n<div>\n<p>Epidural anesthesia requires injection of anesthetic into the epidural space in the spine. Accurate placement of the epidural needle is a major challenge. To address this, we developed a forward-view endoscopic optical coherence tomography (OCT) system for real-time imaging of the tissue in front of the needle tip during the puncture. We tested this OCT system in porcine backbones and developed a set of deep learning models to automatically process the imaging data for needle localization. A series of binary classification models were developed to recognize the five layers of the backbone, including fat, interspinous ligament, ligamentum flavum, epidural space, and spinal cord. The classification models provided an average classification accuracy of 96.65%. During puncture, it is important to maintain a safe distance between the needle tip and the dura mater. Regression models were developed to estimate that distance based on the OCT imaging data. Based on the Inception architecture, our models achieved a mean absolute percentage error of 3.05%&thinsp;&plusmn;&thinsp;0.55%. Overall, our results validated the technical feasibility of using this novel imaging strategy to automatically recognize different tissue structures and measure the distances ahead of the needle tip during the epidural needle placement.</p>\n<h3><strong>Description</strong></h3>\n</div>\n</div>\n<p>Epidural anesthesia is a method used to ease the pain of the patients. It is widely used in delivery and many other surgeries. However, there is a failure rate of around 20% due to the lack of needle guidance. Sometimes the needle is punctured too much, leading to some severe complications. Optical coherence tomography (OCT) is a novel technique widely used in medical imaging. It can provide imaging results of subsurface tissue with very high resolution (~several micrometers) in real time. In order to help the epidural anesthesia guidance, we built an OCT endoscope system to help image and recognize the tissue type in front of the needle during the puncture. We fabricated a gradient-index (GRIN) rod lens in front of the OCT scanner to expand the imaging distance, and make it possible to image the inner tissue of samples. To mimic the whole puncture process of the practical surgery, porcine back bones were utilized in our experiments and we inserted our OCT endoscope into five different tissue types: fat; interspinous ligament; ligamentum flavum; epidural space and spinal cord. OCT images of these types were obtained. Additionally, another dataset for epidural space is obtained in which, the distance to the spinal cord is annotated. We then used deep-learning models to perform classification for 1st dataset and regression for 2nd dataset.</p>\n<p>The dataset contains two folders:</p>\n<ul>\n<li>Epidural Classification: Inside each of the subfolders, the images are organized by subjects\n<ul>\n<li>Epidural: fat, flavum, ligament and spinal cord tissues</li>\n<li>Epidural_new_class: epidural space category (or Empty category)</li>\n</ul>\n</li>\n<li>Epidural Regression: Inside each of the subfolders, the images are organized by subjects and distance to spinal cord.</li>\n</ul>\n<p><strong>Changelog</strong></p>\n<p><a href=\"https://doi.org/10.5281/zenodo.5018581\">v2.0</a>: Regression data added</p>\n<p><a href=\"https://doi.org/10.5281/zenodo.4891265\">v1.0</a>: Classification data only</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Chen Wang",
+        "affiliation": "University of Oklahoma"
+      },
+      {
+        "name": "Qinggong Tang",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0000-0001-9499-5384"
+      },
+      {
+        "name": "Nu Bao Tran Ton",
+        "affiliation": "University of Oklahoma"
+      },
+      {
+        "name": "Paul Calle",
+        "affiliation": "University of Oklahoma",
+        "orcid": "0009-0000-1849-4481"
+      },
+      {
+        "name": "Justin Reynolds",
+        "affiliation": "University of Oklahoma"
+      },
+      {
+        "name": "Chongle Pan",
+        "affiliation": null,
+        "orcid": "0000-0003-2860-0334"
+      }
+    ],
+    "keywords": [
+      "Endoscopic OCT",
+      "Medical imaging",
+      "Epidural Anesthesia"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "4891264"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Endoscopic OCT for epidural anesthesia",
+  "links": {
+    "self": "https://zenodo.org/api/records/5018581",
+    "self_html": "https://zenodo.org/records/5018581",
+    "preview_html": "https://zenodo.org/records/5018581?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.5018581",
+    "self_doi": "https://doi.org/10.5281/zenodo.5018581",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.5018581",
+    "reserve_doi": "https://zenodo.org/api/records/5018581/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/4891264",
+    "parent_html": "https://zenodo.org/records/4891264",
+    "parent_doi": "https://doi.org/10.5281/zenodo.4891264",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.4891264",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:5018581/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:5018581/sequence/default",
+    "files": "https://zenodo.org/api/records/5018581/files",
+    "media_files": "https://zenodo.org/api/records/5018581/media-files",
+    "archive": "https://zenodo.org/api/records/5018581/files-archive",
+    "archive_media": "https://zenodo.org/api/records/5018581/media-files-archive",
+    "latest": "https://zenodo.org/api/records/5018581/versions/latest",
+    "latest_html": "https://zenodo.org/records/5018581/latest",
+    "versions": "https://zenodo.org/api/records/5018581/versions",
+    "draft": "https://zenodo.org/api/records/5018581/draft",
+    "access_links": "https://zenodo.org/api/records/5018581/access/links",
+    "access_grants": "https://zenodo.org/api/records/5018581/access/grants",
+    "access_users": "https://zenodo.org/api/records/5018581/access/users",
+    "access_request": "https://zenodo.org/api/records/5018581/access/request",
+    "access": "https://zenodo.org/api/records/5018581/access",
+    "communities": "https://zenodo.org/api/records/5018581/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/5018581/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/5018581/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/5018581/file-modification",
+    "requests": "https://zenodo.org/api/records/5018581/requests"
+  },
+  "updated": "2024-08-28T21:40:25.926881+00:00",
+  "recid": "5018581",
+  "revision": 13,
+  "files": [
+    {
+      "id": "1fb1b02b-edf3-4050-95d3-51170f5f4b37",
+      "key": "Epidural_organized.zip",
+      "size": 1262696530,
+      "checksum": "md5:5189091113973772825ae89fb323acdf",
+      "links": {
+        "self": "https://zenodo.org/api/records/5018581/files/Epidural_organized.zip/content"
+      }
+    }
+  ],
+  "swh": null,
+  "owners": [
+    {
+      "id": "232166"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 83,
+    "unique_downloads": 77,
+    "views": 698,
+    "unique_views": 624,
+    "version_downloads": 63,
+    "version_unique_downloads": 58,
+    "version_unique_views": 417,
+    "version_views": 460
+  },
+  "state": "done",
+  "submitted": true,
+  "_file_analysis": {
+    "has_imaging_files": false,
+    "has_archives": true,
+    "has_genomics_only": false,
+    "imaging_file_count": 0,
+    "archive_count": 1,
+    "genomics_count": 0,
+    "total_imaging_size": 0,
+    "total_archive_size": 1262696530,
+    "top_level_files": [
+      {
+        "name": "Epidural_organized.zip",
+        "size": 1262696530
+      }
+    ],
+    "zip_contents": {},
+    "zip_imaging_files": [],
+    "zip_genomics_files": []
+  },
+  "_dataset_links": [],
+  "_weblinks": [],
+  "_platform": "zenodo",
+  "_enriched_at": "2026-02-04T16:32:29.521470"
+}
