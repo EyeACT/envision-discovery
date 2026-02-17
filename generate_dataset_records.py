@@ -3,6 +3,7 @@ import os
 from typing import Callable
 from cuid2 import cuid_wrapper
 from datetime import datetime
+from markdownify import markdownify as md
 
 cuid_generator: Callable[[], str] = cuid_wrapper()
 
@@ -40,6 +41,10 @@ def generate_dataset_records():
             input_record = json.load(f)
 
             metadata = input_record["metadata"]
+
+            description = md(
+                metadata["description"] if "description" in metadata else ""
+            )
 
             creators = []
             for creator in metadata["creators"]:
@@ -97,22 +102,14 @@ def generate_dataset_records():
                 "title": (
                     metadata["title"] if "title" in metadata else "No title available"
                 ),
-                "description": (
-                    metadata["description"]
-                    if "description" in metadata
-                    else "No description available"
-                ),
+                "description": description,
                 "versionTitle": metadata["version"] if "version" in metadata else "1",
                 "studyTitle": (
                     metadata["studyTitle"] if "studyTitle" in metadata else ""
                 ),
                 "publishedMetadata": {
                     "studyDescription": {},
-                    "readme": (
-                        metadata["description"]
-                        if "description" in metadata
-                        else "No description available"
-                    ),
+                    "readme": description,
                     "datasetDescription": {
                         "schema": "https://schema.envisionportal.io/v0.2.0/study_description.json",
                         "identifier": {
@@ -169,11 +166,7 @@ def generate_dataset_records():
                         },
                         "description": [
                             {
-                                "descriptionValue": (
-                                    metadata["description"]
-                                    if "description" in metadata
-                                    else "No description available"
-                                ),
+                                "descriptionValue": description,
                                 "descriptionType": "Abstract",
                             }
                         ],
