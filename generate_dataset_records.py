@@ -25,6 +25,13 @@ def generate_dataset_records():
     with open(DATASET_RECORDS_FILE, "r", encoding="utf-8") as f:
         dataset_records = json.load(f)
 
+    for record in dataset_records:
+        record["PublishedDatasetRegistrationDetails"] = {
+            "datasetSource": "Unknown",
+            "extractionMethod": "Manual Registration",
+            "extractionVersion": "0.0.0",
+        }
+
     dataset_starting_id = len(dataset_records) + 1
 
     # Read the zenodo_eye_imaging.json file
@@ -219,6 +226,11 @@ def generate_dataset_records():
                 "external": True,
                 "externalUrl": record["url"],
                 "created": str(created_unix_timestamp),
+                "PublishedDatasetRegistrationDetails": {
+                    "datasetSource": "Zenodo",
+                    "extractionMethod": "Automatic Registration",
+                    "extractionVersion": "0.1.0",
+                },
                 # "created": "1707465600"
             }
 
