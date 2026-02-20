@@ -195,13 +195,7 @@ def generate_dataset_records():
                         ],
                         "publisher": {"publisherName": "Zenodo"},
                         "size": sizes,
-                        "fundingReference": [
-                            {
-                                "funderName": "",
-                                "awardNumber": {"awardNumberValue": "", "awardURI": ""},
-                                "awardTitle": "",
-                            }
-                        ],
+                        "fundingReference": [],
                         "format": [],
                     },
                     "datasetStructureDescription": {
