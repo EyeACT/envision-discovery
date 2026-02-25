@@ -18,7 +18,8 @@ import os
 from pathlib import Path
 from datetime import datetime
 import warnings
-warnings.filterwarnings('ignore')
+
+warnings.filterwarnings("ignore")
 
 import torch
 from setfit import SetFitModel, Trainer, TrainingArguments
@@ -540,27 +541,38 @@ def main():
     """Train and run the 4-class eye imaging classifier."""
     import csv
     from collections import Counter
-    
+
     # Configuration - edit for your environment
     BASE_DIR = Path(__file__).resolve().parent.parent
     # Use new clean scraped data (datasets only, with ZIP inspection)
     METADATA_DIR = BASE_DIR / "data" / "metadata" / "zenodo"
     OUTPUT_DIR = BASE_DIR / "models" / "setfit_v6"
     RESULTS_DIR = BASE_DIR / "results"
-    
+
     # GPU setup - use GPU with most free memory
     import subprocess
+
     try:
-        result = subprocess.run(['nvidia-smi', '--query-gpu=index,memory.free', '--format=csv,noheader,nounits'],
-                                capture_output=True, text=True)
-        gpus = [(int(line.split(',')[0]), int(line.split(',')[1])) for line in result.stdout.strip().split('\n')]
+        result = subprocess.run(
+            [
+                "nvidia-smi",
+                "--query-gpu=index,memory.free",
+                "--format=csv,noheader,nounits",
+            ],
+            capture_output=True,
+            text=True,
+        )
+        gpus = [
+            (int(line.split(",")[0]), int(line.split(",")[1]))
+            for line in result.stdout.strip().split("\n")
+        ]
         best_gpu = max(gpus, key=lambda x: x[1])[0]
         os.environ["CUDA_VISIBLE_DEVICES"] = str(best_gpu)
         print(f"Selected GPU {best_gpu} with most free memory")
     except:
         os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-    
+
     print("=" * 70)
     print("ENVISION: Eye Imaging Dataset Classifier (4-class)")
     print(f"Model: {MODEL_NAME}")
@@ -569,65 +581,63 @@ def main():
     if DEVICE == "cuda":
         print(f"GPU: {torch.cuda.get_device_name(0)}")
     print("=" * 70)
-    
+
     print(f"\nTraining examples:")
     print(f"  POSITIVE (eye imaging): {len(POSITIVE_EXAMPLES)}")
     print(f"  SOFTWARE (code/tools): {len(SOFTWARE_EXAMPLES)}")
     print(f"  EDGE_CASE (research): {len(EDGE_CASES)}")
     print(f"  NEGATIVE (unrelated): {len(NEGATIVE_EXAMPLES)}")
-    
+
     # Prepare dataset
     print(f"\nPreparing training dataset...")
     train_texts = POSITIVE_EXAMPLES + SOFTWARE_EXAMPLES + EDGE_CASES + NEGATIVE_EXAMPLES
     train_labels = (
-        [3] * len(POSITIVE_EXAMPLES) +
-        [2] * len(SOFTWARE_EXAMPLES) +
-        [1] * len(EDGE_CASES) +
-        [0] * len(NEGATIVE_EXAMPLES)
+        [3] * len(POSITIVE_EXAMPLES)
+        + [2] * len(SOFTWARE_EXAMPLES)
+        + [1] * len(EDGE_CASES)
+        + [0] * len(NEGATIVE_EXAMPLES)
     )
-    
-    train_dataset = Dataset.from_dict({
-        "text": train_texts,
-        "label": train_labels
-    })
+
+    train_dataset = Dataset.from_dict({"text": train_texts, "label": train_labels})
     print(f"Training dataset: {len(train_dataset)} examples")
-    
+
     # Check for --classify-only flag to skip training
     import sys
-    classify_only = '--classify-only' in sys.argv
-    
+
+    classify_only = "--classify-only" in sys.argv
+
     if classify_only and (OUTPUT_DIR / "model.safetensors").exists():
         # Load existing model
         print(f"\n{'='*70}")
         print(f"Loading existing model from {OUTPUT_DIR}")
         print("=" * 70)
-        
+
         # Workaround for SetFit bug with local model loading
         from sentence_transformers import SentenceTransformer
         import joblib
-        
+
         # Load the sentence transformer backbone
         st_model = SentenceTransformer(str(OUTPUT_DIR), trust_remote_code=True)
         st_model = st_model.to(DEVICE)
-        
+
         # Load the classification head
         model_head = joblib.load(OUTPUT_DIR / "model_head.pkl")
-        
+
         # Create a minimal wrapper for predictions
         class LoadedModel:
             def __init__(self, encoder, head, labels):
                 self.encoder = encoder
                 self.head = head
                 self.labels = labels
-            
+
             def predict(self, texts):
                 embeddings = self.encoder.encode(texts, convert_to_numpy=True)
                 return self.head.predict(embeddings)
-            
+
             def predict_proba(self, texts):
                 embeddings = self.encoder.encode(texts, convert_to_numpy=True)
                 return self.head.predict_proba(embeddings)
-        
+
         model = LoadedModel(st_model, model_head, LABELS)
         print("Model loaded successfully")
     else:
@@ -635,14 +645,14 @@ def main():
         print(f"\n{'='*70}")
         print(f"Training SetFit model with {MODEL_NAME}")
         print("=" * 70)
-        
+
         model = SetFitModel.from_pretrained(
             MODEL_NAME,
             labels=LABELS,
             device=DEVICE,
             trust_remote_code=True,
         )
-        
+
         args = TrainingArguments(
             output_dir=str(OUTPUT_DIR / "checkpoints"),
             batch_size=16,
@@ -651,124 +661,150 @@ def main():
             save_strategy="no",
             logging_steps=50,
         )
-        
+
         trainer = Trainer(
             model=model,
             args=args,
             train_dataset=train_dataset,
         )
-        
+
         print("Starting training...")
         trainer.train()
-        
+
         # Save model
         OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
         model.save_pretrained(str(OUTPUT_DIR))
         print(f"Model saved to: {OUTPUT_DIR}")
-    
+
     # Load and classify Zenodo records
     print(f"\n{'='*70}")
     print("Classifying Zenodo records")
     print("=" * 70)
-    
+
     # Eye imaging file formats
     # Standard image formats
-    IMG_EXTS = {'.jpg', '.jpeg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
+    IMG_EXTS = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".gif"}
     # Medical/scientific imaging formats (eye imaging specific)
     MEDICAL_EXTS = {
-        '.dcm', '.dicom',           # DICOM (standard medical)
-        '.nii', '.nii.gz',          # NIfTI (neuroimaging, OCT volumes)
-        '.mat',                      # MATLAB (common for OCT data)
-        '.h5', '.hdf5',             # HDF5 (large imaging datasets) - NOT h5ad
-        '.npy', '.npz',             # NumPy arrays
+        ".dcm",
+        ".dicom",  # DICOM (standard medical)
+        ".nii",
+        ".nii.gz",  # NIfTI (neuroimaging, OCT volumes)
+        ".mat",  # MATLAB (common for OCT data)
+        ".h5",
+        ".hdf5",  # HDF5 (large imaging datasets) - NOT h5ad
+        ".npy",
+        ".npz",  # NumPy arrays
         # OCT-specific formats
-        '.fds',                      # Topcon OCT
-        '.e2e',                      # Heidelberg OCT
-        '.vol',                      # Zeiss OCT volumes
-        '.img',                      # Generic imaging
-        '.oct',                      # Generic OCT
-        '.fda',                      # Optovue OCT
+        ".fds",  # Topcon OCT
+        ".e2e",  # Heidelberg OCT
+        ".vol",  # Zeiss OCT volumes
+        ".img",  # Generic imaging
+        ".oct",  # Generic OCT
+        ".fda",  # Optovue OCT
     }
     # Archive formats (may contain imaging data)
-    ARCH_EXTS = {'.zip', '.tar', '.gz', '.tar.gz', '.rar', '.7z'}
-    
+    ARCH_EXTS = {".zip", ".tar", ".gz", ".tar.gz", ".rar", ".7z"}
+
     # GWAS/Genomics file types to EXCLUDE (these are not eye imaging)
     GENOMICS_EXTS = {
-        '.fasta', '.fa', '.fna',    # DNA/RNA sequences
-        '.fastq', '.fq',            # Sequencing reads
-        '.fastq.gz', '.fq.gz',      # Compressed reads
-        '.h5ad',                     # AnnData (single-cell RNA-seq)
-        '.bam', '.sam', '.cram',    # Alignments
-        '.vcf', '.bcf', '.vcf.gz',  # Variants
-        '.bed', '.gtf', '.gff',     # Genomic annotations
-        '.gff3', '.bigwig', '.bw',  # More genomics
-        '.cel', '.idat',            # Microarray
-        '.loom',                     # Single-cell
+        ".fasta",
+        ".fa",
+        ".fna",  # DNA/RNA sequences
+        ".fastq",
+        ".fq",  # Sequencing reads
+        ".fastq.gz",
+        ".fq.gz",  # Compressed reads
+        ".h5ad",  # AnnData (single-cell RNA-seq)
+        ".bam",
+        ".sam",
+        ".cram",  # Alignments
+        ".vcf",
+        ".bcf",
+        ".vcf.gz",  # Variants
+        ".bed",
+        ".gtf",
+        ".gff",  # Genomic annotations
+        ".gff3",
+        ".bigwig",
+        ".bw",  # More genomics
+        ".cel",
+        ".idat",  # Microarray
+        ".loom",  # Single-cell
     }
-    
+
     ALL_DATA_EXTS = IMG_EXTS | MEDICAL_EXTS | ARCH_EXTS
-    
+
     # External dataset link patterns
     DATASET_LINK_PATTERNS = [
-        'kaggle.com', 'huggingface.co', 'github.com',
-        'drive.google.com', 'osf.io', 'datadryad.org', 'dryad.org',
-        'figshare.com', 'dataverse', 'openneuro.org',
-        'physionet.org', 'synapse.org', 'grand-challenge.org'
+        "kaggle.com",
+        "huggingface.co",
+        "github.com",
+        "drive.google.com",
+        "osf.io",
+        "datadryad.org",
+        "dryad.org",
+        "figshare.com",
+        "dataverse",
+        "openneuro.org",
+        "physionet.org",
+        "synapse.org",
+        "grand-challenge.org",
     ]
-    
+
     import re
     from html import unescape
-    
+
     def strip_html(text):
         """Remove HTML tags from text."""
         if not text:
             return ""
-        clean = re.sub('<[^<]+?>', ' ', text)
+        clean = re.sub("<[^<]+?>", " ", text)
         return unescape(clean).strip()
-    
+
     def extract_dataset_links(record):
         """Extract external dataset links from description and related identifiers."""
         links = []
-        
+
         # Check description for links
-        desc = record.get('metadata', {}).get('description', '')
+        desc = record.get("metadata", {}).get("description", "")
         if desc:
             # Find URLs in description
-            url_pattern = r'https?://[^\s<>"\']+|www\.[^\s<>"\']+' 
+            url_pattern = r'https?://[^\s<>"\']+|www\.[^\s<>"\']+'
             urls = re.findall(url_pattern, desc)
             for url in urls:
                 for pattern in DATASET_LINK_PATTERNS:
                     if pattern in url.lower():
                         links.append(url)
                         break
-        
+
         # Check related_identifiers
-        related = record.get('metadata', {}).get('related_identifiers', [])
+        related = record.get("metadata", {}).get("related_identifiers", [])
         for rel in related:
-            ident = rel.get('identifier', '')
+            ident = rel.get("identifier", "")
             if any(p in ident.lower() for p in DATASET_LINK_PATTERNS):
                 links.append(ident)
-        
+
         # Check custom _dataset_links field from scraper
-        custom_links = record.get('_dataset_links', [])
+        custom_links = record.get("_dataset_links", [])
         if custom_links:
             for link in custom_links:
                 if isinstance(link, str):
                     links.append(link)
                 elif isinstance(link, dict):
                     # Handle dict format like {"url": "...", "type": "..."}
-                    url = link.get('url', link.get('identifier', ''))
+                    url = link.get("url", link.get("identifier", ""))
                     if url:
                         links.append(str(url))
-        
+
         # Check _weblinks from scraper (data_platform type = GitHub, Kaggle, etc.)
-        weblinks = record.get('_weblinks', [])
+        weblinks = record.get("_weblinks", [])
         for wl in weblinks:
-            if isinstance(wl, dict) and wl.get('type') == 'data_platform':
-                url = wl.get('url', '')
+            if isinstance(wl, dict) and wl.get("type") == "data_platform":
+                url = wl.get("url", "")
                 if url:
                     links.append(str(url))
-        
+
         # Deduplicate - ensure all items are strings
         unique_links = []
         seen = set()
@@ -777,26 +813,26 @@ def main():
             if link_str and link_str not in seen:
                 seen.add(link_str)
                 unique_links.append(link_str)
-        
+
         return unique_links
-    
+
     def has_data_files_or_links(record):
         """Check if record has data files OR external dataset links.
         Excludes records that ONLY have genomics files (GWAS, RNA-seq, etc.)
         """
-        files = record.get('files', [])
+        files = record.get("files", [])
         has_imaging_files = False
         has_only_genomics = True
-        
+
         for f in files:
-            name = f.get('key', '').lower()
-            
+            name = f.get("key", "").lower()
+
             # Check for genomics files (to exclude)
             is_genomics = any(name.endswith(ext) for ext in GENOMICS_EXTS)
-            
+
             # Check for imaging/data files
             is_imaging = any(name.endswith(ext) for ext in ALL_DATA_EXTS)
-            
+
             if is_imaging and not is_genomics:
                 has_imaging_files = True
                 has_only_genomics = False
@@ -805,30 +841,30 @@ def main():
                 pass
             elif not is_genomics and is_imaging:
                 has_only_genomics = False
-        
+
         # Include if has imaging files (and not only genomics)
         if has_imaging_files:
             return True
-        
+
         # Check for external dataset links (still include these)
         if extract_dataset_links(record):
             return True
-        
+
         return False
-    
+
     def get_record_text(record):
         """Extract text for classification."""
-        title = record.get('metadata', {}).get('title', record.get('title', ''))
-        desc = strip_html(record.get('metadata', {}).get('description', ''))
-        keywords = record.get('metadata', {}).get('keywords', [])
+        title = record.get("metadata", {}).get("title", record.get("title", ""))
+        desc = strip_html(record.get("metadata", {}).get("description", ""))
+        keywords = record.get("metadata", {}).get("keywords", [])
         if isinstance(keywords, list):
-            keywords = ' '.join(keywords)
+            keywords = " ".join(keywords)
         return f"{title} {desc} {keywords}"
-    
+
     def get_file_details(record):
         """Extract detailed file information."""
-        files = record.get('files', [])
-        
+        files = record.get("files", [])
+
         file_names = []
         file_types = set()
         total_size = 0
@@ -836,15 +872,15 @@ def main():
         medical_count = 0
         archive_count = 0
         genomics_count = 0
-        
+
         for f in files:
-            name = f.get('key', '')
-            size = f.get('size', 0)
+            name = f.get("key", "")
+            size = f.get("size", 0)
             name_lower = name.lower()
-            
+
             file_names.append(name)
             total_size += size
-            
+
             # Check for genomics files first (to exclude from imaging counts)
             is_genomics = False
             for ext in sorted(GENOMICS_EXTS, key=len, reverse=True):
@@ -853,12 +889,14 @@ def main():
                     genomics_count += 1
                     is_genomics = True
                     break
-            
+
             if is_genomics:
                 continue
-            
+
             # Extract extension for imaging files
-            for ext in sorted(ALL_DATA_EXTS, key=len, reverse=True):  # Check longer exts first
+            for ext in sorted(
+                ALL_DATA_EXTS, key=len, reverse=True
+            ):  # Check longer exts first
                 if name_lower.endswith(ext):
                     file_types.add(ext)
                     if ext in IMG_EXTS:
@@ -868,141 +906,145 @@ def main():
                     elif ext in ARCH_EXTS:
                         archive_count += 1
                     break
-        
+
         return {
-            'file_names': file_names[:20],  # First 20 files
-            'file_types': sorted(file_types),
-            'file_count': len(files),
-            'img_count': img_count,
-            'medical_count': medical_count,
-            'archive_count': archive_count,
-            'genomics_count': genomics_count,
-            'total_size': total_size,
+            "file_names": file_names[:20],  # First 20 files
+            "file_types": sorted(file_types),
+            "file_count": len(files),
+            "img_count": img_count,
+            "medical_count": medical_count,
+            "archive_count": archive_count,
+            "genomics_count": genomics_count,
+            "total_size": total_size,
         }
-    
+
     def get_metadata_details(record):
         """Extract rich metadata."""
-        meta = record.get('metadata', {})
-        
+        meta = record.get("metadata", {})
+
         # Keywords
-        keywords = meta.get('keywords', [])
+        keywords = meta.get("keywords", [])
         if isinstance(keywords, str):
             keywords = [keywords]
-        
+
         # Description (truncated, HTML stripped)
-        desc = strip_html(meta.get('description', ''))[:500]
-        
+        desc = strip_html(meta.get("description", ""))[:500]
+
         # Related DOIs
         related_dois = []
-        for rel in meta.get('related_identifiers', []):
-            if rel.get('scheme') == 'doi':
-                related_dois.append(rel.get('identifier', ''))
-        
+        for rel in meta.get("related_identifiers", []):
+            if rel.get("scheme") == "doi":
+                related_dois.append(rel.get("identifier", ""))
+
         return {
-            'description': desc,
-            'keywords': keywords[:10],  # First 10 keywords
-            'access_right': meta.get('access_right', 'unknown'),
-            'license': meta.get('license', {}).get('id', 'unknown'),
-            'resource_type': meta.get('resource_type', {}).get('type', 'unknown'),
-            'doi': meta.get('doi', ''),
-            'related_dois': related_dois[:5],  # First 5 related DOIs
+            "description": desc,
+            "keywords": keywords[:10],  # First 10 keywords
+            "access_right": meta.get("access_right", "unknown"),
+            "license": meta.get("license", {}).get("id", "unknown"),
+            "resource_type": meta.get("resource_type", {}).get("type", "unknown"),
+            "doi": meta.get("doi", ""),
+            "related_dois": related_dois[:5],  # First 5 related DOIs
         }
-    
+
     # Load records (each file is a single record)
     records = []
     json_files = list(METADATA_DIR.glob("*.json"))
     print(f"Found {len(json_files):,} metadata files")
-    
+
     for json_file in sorted(json_files):
         try:
             with open(json_file) as f:
                 record = json.load(f)
             # Add zenodo_id from record
-            record['_zenodo_id'] = str(record.get('id', json_file.stem))
+            record["_zenodo_id"] = str(record.get("id", json_file.stem))
             if has_data_files_or_links(record):
                 records.append(record)
         except Exception as e:
             pass  # Skip malformed files
-    
+
     print(f"Loaded {len(records):,} records with data files or dataset links")
-    
+
     # Classify
     print("Classifying...")
     BATCH_SIZE = 16  # Reduced batch size to avoid OOM during classification
     all_results = []
-    
+
     for i in range(0, len(records), BATCH_SIZE):
-        batch_records = records[i:i+BATCH_SIZE]
+        batch_records = records[i : i + BATCH_SIZE]
         batch_texts = [get_record_text(r) for r in batch_records]
-        
+
         predictions = model.predict(batch_texts)
         probabilities = model.predict_proba(batch_texts)
-        
+
         for j, r in enumerate(batch_records):
             pred = predictions[j]
             probs = probabilities[j]
-            
+
             # Get detailed file info
             file_details = get_file_details(r)
             metadata_details = get_metadata_details(r)
             dataset_links = extract_dataset_links(r)
-            
+
             # Handle both string labels and integer predictions (including numpy types)
             import numpy as np
+
             if isinstance(pred, (int, float, np.integer)):
                 pred_int = int(pred)
             else:
-                pred_int = {"NEGATIVE": 0, "EDGE_CASE": 1, "EYE_SOFTWARE": 2, "EYE_IMAGING": 3}.get(str(pred), 0)
+                pred_int = {
+                    "NEGATIVE": 0,
+                    "EDGE_CASE": 1,
+                    "EYE_SOFTWARE": 2,
+                    "EYE_IMAGING": 3,
+                }.get(str(pred), 0)
             label = LABELS[pred_int]
-            
+
             result = {
                 # Identifiers
-                'zenodo_id': r['_zenodo_id'],
-                'doi': metadata_details['doi'],
-                'url': f"https://zenodo.org/records/{r['_zenodo_id']}",
-                
+                "zenodo_id": r["_zenodo_id"],
+                "doi": metadata_details["doi"],
+                "url": f"https://zenodo.org/records/{r['_zenodo_id']}",
                 # Classification
-                'label': label,
-                'confidence': float(max(probs)),
-                'prob_eye_imaging': float(probs[3]),
-                'prob_software': float(probs[2]),
-                'prob_edge': float(probs[1]),
-                'prob_negative': float(probs[0]),
-                
+                "label": label,
+                "confidence": float(max(probs)),
+                "prob_eye_imaging": float(probs[3]),
+                "prob_software": float(probs[2]),
+                "prob_edge": float(probs[1]),
+                "prob_negative": float(probs[0]),
                 # Metadata
-                'title': r.get('metadata', {}).get('title', '')[:200],
-                'description': metadata_details['description'],
-                'keywords': metadata_details['keywords'],
-                'access_right': metadata_details['access_right'],
-                'license': metadata_details['license'],
-                'resource_type': metadata_details['resource_type'],
-                
+                "title": r.get("metadata", {}).get("title", "")[:200],
+                "description": metadata_details["description"],
+                "keywords": metadata_details["keywords"],
+                "access_right": metadata_details["access_right"],
+                "license": metadata_details["license"],
+                "resource_type": metadata_details["resource_type"],
                 # File details
-                'file_types': file_details['file_types'],
-                'file_names': file_details['file_names'],
-                'file_count': file_details['file_count'],
-                'img_count': file_details['img_count'],
-                'medical_count': file_details['medical_count'],
-                'archive_count': file_details['archive_count'],
-                'genomics_count': file_details['genomics_count'],
-                'size_mb': round(file_details['total_size'] / (1024*1024), 1),
-                
+                "file_types": file_details["file_types"],
+                "file_names": file_details["file_names"],
+                "file_count": file_details["file_count"],
+                "img_count": file_details["img_count"],
+                "medical_count": file_details["medical_count"],
+                "archive_count": file_details["archive_count"],
+                "genomics_count": file_details["genomics_count"],
+                "size_mb": round(file_details["total_size"] / (1024 * 1024), 1),
                 # External links
-                'dataset_links': dataset_links,
-                'related_dois': metadata_details['related_dois'],
+                "dataset_links": dataset_links,
+                "related_dois": metadata_details["related_dois"],
             }
-            
+
             all_results.append(result)
-        
+
         if (i + BATCH_SIZE) % 500 == 0:
-            print(f"  Processed {min(i + BATCH_SIZE, len(records)):,} / {len(records):,}")
-    
+            print(
+                f"  Processed {min(i + BATCH_SIZE, len(records)):,} / {len(records):,}"
+            )
+
     # Analyze results
-    eye_imaging = [r for r in all_results if r['label'] == 'EYE_IMAGING']
-    software = [r for r in all_results if r['label'] == 'EYE_SOFTWARE']
-    edge_cases = [r for r in all_results if r['label'] == 'EDGE_CASE']
-    negative = [r for r in all_results if r['label'] == 'NEGATIVE']
-    
+    eye_imaging = [r for r in all_results if r["label"] == "EYE_IMAGING"]
+    software = [r for r in all_results if r["label"] == "EYE_SOFTWARE"]
+    edge_cases = [r for r in all_results if r["label"] == "EDGE_CASE"]
+    negative = [r for r in all_results if r["label"] == "NEGATIVE"]
+
     print(f"\n{'='*70}")
     print("CLASSIFICATION RESULTS")
     print("=" * 70)
@@ -1010,49 +1052,49 @@ def main():
     print(f"  EYE_SOFTWARE: {len(software):,}")
     print(f"  EDGE_CASE:    {len(edge_cases):,}")
     print(f"  NEGATIVE:     {len(negative):,}")
-    
+
     # Analyze file types in eye imaging results
     print(f"\n{'='*70}")
     print("FILE TYPE DISTRIBUTION (EYE_IMAGING)")
     print("=" * 70)
     type_counts = Counter()
     for r in eye_imaging:
-        for ft in r['file_types']:
+        for ft in r["file_types"]:
             type_counts[ft] += 1
     for ft, count in type_counts.most_common(15):
         print(f"  {ft}: {count:,}")
-    
+
     # Confidence distribution
     print(f"\n{'='*70}")
     print("CONFIDENCE DISTRIBUTION (EYE_IMAGING)")
     print("=" * 70)
-    high_conf = [r for r in eye_imaging if r['confidence'] >= 0.95]
-    med_conf = [r for r in eye_imaging if 0.80 <= r['confidence'] < 0.95]
-    low_conf = [r for r in eye_imaging if r['confidence'] < 0.80]
+    high_conf = [r for r in eye_imaging if r["confidence"] >= 0.95]
+    med_conf = [r for r in eye_imaging if 0.80 <= r["confidence"] < 0.95]
+    low_conf = [r for r in eye_imaging if r["confidence"] < 0.80]
     print(f"  High (≥0.95):    {len(high_conf):,}")
     print(f"  Medium (0.80-0.95): {len(med_conf):,}")
     print(f"  Lower (<0.80):   {len(low_conf):,}")
-    
+
     # Records with external links
-    with_links = [r for r in eye_imaging if r['dataset_links']]
+    with_links = [r for r in eye_imaging if r["dataset_links"]]
     print(f"\n  Records with external dataset links: {len(with_links):,}")
-    
+
     # Save results
     RESULTS_DIR.mkdir(exist_ok=True, parents=True)
-    
+
     # Sort by confidence, then size
-    eye_imaging.sort(key=lambda x: (-x['prob_eye_imaging'], -x['size_mb']))
-    software.sort(key=lambda x: (-x['confidence'], -x['size_mb']))
-    
-    with open(RESULTS_DIR / 'zenodo_eye_imaging.json', 'w') as f:
+    eye_imaging.sort(key=lambda x: (-x["prob_eye_imaging"], -x["size_mb"]))
+    software.sort(key=lambda x: (-x["confidence"], -x["size_mb"]))
+
+    with open(RESULTS_DIR / "zenodo_eye_imaging.json", "w") as f:
         json.dump(eye_imaging, f, indent=2)
-    
-    with open(RESULTS_DIR / 'zenodo_software.json', 'w') as f:
+
+    with open(RESULTS_DIR / "zenodo_software.json", "w") as f:
         json.dump(software, f, indent=2)
-    
-    with open(RESULTS_DIR / 'zenodo_all_results.json', 'w') as f:
+
+    with open(RESULTS_DIR / "zenodo_all_results.json", "w") as f:
         json.dump(all_results, f, indent=2)
-    
+
     print(f"\n{'='*70}")
     print("OUTPUT FILES")
     print("=" * 70)
