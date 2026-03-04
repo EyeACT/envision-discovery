@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "envision"
-version = "0.2.0"
-description = "Eye imaging dataset discovery and classification from Zenodo"
+version = "0.3.0"
+description = "Eye imaging dataset classifier using few-shot learning"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -43,11 +43,13 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/joneill/envision"
-Repository = "https://github.com/joneill/envision"
+Homepage = "https://github.com/EyeACT/envision-discovery"
+Repository = "https://github.com/EyeACT/envision-discovery"
 
 [project.scripts]
-envision-classify = "envision.classifier:main"
+envision-classify = "envision.cli:classify_cli"
+envision-pipeline = "envision.cli:pipeline_cli"
+envision-train = "envision.cli:train_cli"
 envision-scrape = "envision.scraper:main"
 
 [tool.setuptools.packages.find]
@@ -56,4 +58,3 @@ include = ["envision*"]
 
 [tool.setuptools.package-data]
 envision = ["*.json"]
-
