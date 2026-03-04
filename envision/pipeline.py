@@ -13,7 +13,7 @@ from datetime import datetime
 from html import unescape
 from pathlib import Path
 
-from .classifier import EyeImagingClassifier, LABELS
+from envision_classifier import EyeImagingClassifier, LABELS
 
 # ============================================================
 # File type constants for Zenodo record filtering
