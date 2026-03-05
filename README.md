@@ -1,163 +1,141 @@
-# ENVISION: Eye Imaging Dataset Classifier
+# ENVISION Discovery
 
-A 4-class eye imaging dataset classifier using SetFit few-shot learning. Given JSON metadata (title, description, keywords), ENVISION predicts whether a dataset contains eye imaging data and returns confidence scores.
+Eye imaging dataset discovery pipeline. Scrapes Zenodo for datasets, inspects ZIP contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
 
-## Quick Start
-
-```bash
-pip install git+https://github.com/EyeACT/envision-discovery.git
-```
-
-### Python API
-
-```python
-from envision import EyeImagingClassifier
-
-clf = EyeImagingClassifier()
-
-# Classify from text
-result = clf.classify("Retinal OCT dataset for diabetic retinopathy screening")
-# {'label': 'EYE_IMAGING', 'confidence': 0.999, 'probabilities': {...}}
-
-# Classify from metadata dict
-result = clf.classify({
-    "title": "Fundus photography dataset",
-    "description": "2000 retinal images with DR grading",
-    "keywords": ["fundus", "diabetic retinopathy"]
-})
-
-# Batch classification
-results = clf.classify_batch([
-    "OCTA images of diabetic macular edema",
-    "Cardiovascular IVOCT coronary artery dataset",
-    {"title": "Corneal topography maps", "description": "Keratoconus screening data"}
-])
-```
-
-### CLI
-
-```bash
-# Classify a text string
-envision-classify --text "Retinal OCT dataset for diabetic retinopathy"
-
-# Classify from JSON file
-envision-classify metadata.json
-
-# Classify from stdin
-echo '{"title": "Fundus images"}' | envision-classify
-```
-
-## Input / Output Format
-
-**Input**: A JSON object with any of these fields (or a plain text string):
-```json
-{
-  "title": "Dataset title",
-  "description": "Dataset description (HTML tags are stripped)",
-  "keywords": ["keyword1", "keyword2"]
-}
-```
-
-**Output**:
-```json
-{
-  "label": "EYE_IMAGING",
-  "confidence": 0.9998,
-  "probabilities": {
-    "EYE_IMAGING": 0.9998,
-    "EYE_SOFTWARE": 0.0001,
-    "EDGE_CASE": 0.0000,
-    "NEGATIVE": 0.0001
-  }
-}
-```
-
-## Classification Classes
-
-| Class | Label | Description |
-|-------|-------|-------------|
-| 3 | **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, etc.) |
-| 2 | **EYE_SOFTWARE** | Code, tools, models for eye imaging (no actual image data) |
-| 1 | **EDGE_CASE** | Eye research papers, reviews, non-imaging data |
-| 0 | **NEGATIVE** | Not eye-related |
-
-## Model Details
-
-- **Framework**: [SetFit](https://github.com/huggingface/setfit) — few-shot learning
-- **Backbone**: `Alibaba-NLP/gte-large-en-v1.5` (1024-dim, 8K context)
-- **Training**: 2 epochs, batch size 16, 452 curated examples
-
-| Class | Training Examples |
-|-------|------------------|
-| EYE_IMAGING | 99 |
-| EYE_SOFTWARE | 30 |
-| EDGE_CASE | 90 |
-| NEGATIVE | 233 |
-
-The negative set includes known false positive patterns: cardiovascular OCT (IVOCT), industrial OCT/CT, microscopy, taxonomy papers, acousto-optics, and robotics (hand-eye calibration).
-
-## Validation on Zenodo
-
-ENVISION was validated by classifying 515 scraped Zenodo dataset records:
-
-| Metric | Value |
-|--------|-------|
-| Total datasets classified | 514 (with data files) |
-| **Eye imaging datasets** | **120** |
-| Eye software/code | 66 |
-| Edge cases | 3 |
-| Negative | 325 |
-
-**Confidence**: 97.5% of EYE_IMAGING predictions at >= 0.95 confidence.
-
-## Zenodo Pipeline
-
-The full Zenodo scraping + classification pipeline is included for reproducibility:
-
-```bash
-# Run pipeline (train model + classify all Zenodo metadata)
-envision-pipeline
-
-# Classify only (skip training, use saved model)
-envision-pipeline --classify-only
-
-# Train a new model
-envision-train --output ./my_model
-```
-
-The pipeline reads per-record JSON files from `data/metadata/zenodo/`, classifies them, and writes results to `results/`.
-
-## Repository Structure
-
-```
-envision-discovery/
-├── envision/                  # Python package
-│   ├── __init__.py            # EyeImagingClassifier export
-│   ├── classifier.py          # EyeImagingClassifier + training data
-│   ├── pipeline.py            # Zenodo batch classification pipeline
-│   ├── cli.py                 # CLI entry points
-│   ├── scraper.py             # Zenodo metadata scraper
-│   └── scraper_v2.py          # Zenodo scraper with ZIP inspection
-├── models/                    # Trained SetFit models
-├── results/                   # Classification output
-├── data/                      # Scraped metadata
-├── pyproject.toml
-└── README.md
-```
+Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innovations Hub](https://fairdataihub.org).
 
 ## Installation
 
 ```bash
-# From GitHub
 pip install git+https://github.com/EyeACT/envision-discovery.git
-
-# Development
-git clone https://github.com/EyeACT/envision-discovery.git
-cd envision-discovery
-pip install -e .
 ```
 
-**Requirements**: Python >= 3.10, PyTorch >= 2.0, setfit >= 1.0
+Development:
+
+```bash
+git clone https://github.com/EyeACT/envision-discovery.git
+cd envision-discovery
+pip install -e ".[dev]"
+```
+
+**Requirements**: Python >= 3.10, [envision-classifier](https://github.com/EyeACT/envision-classifier) (installed automatically)
+
+## Usage
+
+### 1. Scrape datasets from Zenodo
+
+```bash
+# Scrape with ZIP inspection (default)
+envision-scrape --output ./data
+
+# Faster: skip ZIP inspection
+envision-scrape --output ./data --no-zip-inspect
+
+# Include all resource types (not just datasets)
+envision-scrape --output ./data --all-types
+```
+
+The scraper:
+- Searches Zenodo using 40+ ophthalmology-specific search terms
+- Filters for `resource_type=dataset` by default
+- Inspects ZIP file contents via HTTP Range requests (downloads only ~64KB per ZIP)
+- Detects external dataset links (GitHub, Kaggle, HuggingFace, etc.)
+- Excludes genomics-only records (GWAS, RNA-seq, etc.)
+- Resumes automatically — skips previously scraped records
+
+Output:
+```
+data/
+├── metadata/zenodo/        # Per-record JSON files (enriched with file analysis)
+│   ├── 8254022.json
+│   ├── 10537424.json
+│   └── ...
+└── scrape_summary.json     # Run statistics
+```
+
+### 2. Classify scraped records
+
+```bash
+# Classify all scraped metadata (downloads model from HuggingFace on first run)
+envision-pipeline
+
+# Use existing model without retraining
+envision-pipeline --classify-only
+
+# Custom paths
+envision-pipeline --metadata-dir ./data/metadata/zenodo --results-dir ./results
+```
+
+Output files in `results/`:
+
+| File | Description |
+|------|-------------|
+| `zenodo_eye_imaging.json` | Records classified as EYE_IMAGING, sorted by confidence |
+| `zenodo_software.json` | Records classified as EYE_SOFTWARE |
+| `zenodo_all_results.json` | All classified records |
+
+### Output format
+
+Each record in the results JSON:
+
+```json
+{
+  "zenodo_id": "8254022",
+  "doi": "10.5281/zenodo.8254022",
+  "url": "https://zenodo.org/records/8254022",
+  "label": "EYE_IMAGING",
+  "confidence": 0.9998,
+  "prob_eye_imaging": 0.9998,
+  "prob_software": 0.0000,
+  "prob_edge": 0.0000,
+  "prob_negative": 0.0000,
+  "title": "Dataset for PT-OCT ANN Project",
+  "description": "...",
+  "keywords": ["PT-OCT, ANN"],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "resource_type": "dataset",
+  "file_types": [".zip"],
+  "file_names": ["Data.zip"],
+  "file_count": 1,
+  "img_count": 0,
+  "medical_count": 0,
+  "archive_count": 1,
+  "genomics_count": 0,
+  "size_mb": 302.1,
+  "dataset_links": [],
+  "related_dois": []
+}
+```
+
+### Classification labels
+
+| Label | Description |
+|-------|-------------|
+| **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, etc.) |
+| **EYE_SOFTWARE** | Code, tools, models for eye imaging (no actual image data) |
+| **EDGE_CASE** | Eye research papers, reviews, non-imaging data |
+| **NEGATIVE** | Not eye-related |
+
+## Repository structure
+
+```
+envision-discovery/
+├── envision/
+│   ├── __init__.py         # Re-exports EyeImagingClassifier from envision-classifier
+│   ├── scraper.py          # Zenodo scraper with ZIP inspection
+│   ├── pipeline.py         # Batch classification pipeline
+│   └── cli.py              # CLI entry points
+├── data/                   # Scraped metadata (not committed)
+├── results/                # Classification output (not committed)
+├── pyproject.toml
+└── README.md
+```
+
+## Related repositories
+
+- [envision-classifier](https://github.com/EyeACT/envision-classifier) — The SetFit classifier package (`pip install envision-classifier`)
+- [Model weights on HuggingFace](https://huggingface.co/fairdataihub/envision-eye-imaging-classifier)
 
 ## License
 
