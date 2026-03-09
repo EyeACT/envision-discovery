@@ -7,15 +7,9 @@ Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innova
 ## Installation
 
 ```bash
-pip install git+https://github.com/EyeACT/envision-discovery.git
-```
-
-Development:
-
-```bash
 git clone https://github.com/EyeACT/envision-discovery.git
 cd envision-discovery
-pip install -e ".[dev]"
+pip install -e .
 ```
 
 **Requirements**: Python >= 3.10, [envision-classifier](https://github.com/EyeACT/envision-classifier) (installed automatically)
@@ -25,14 +19,13 @@ pip install -e ".[dev]"
 ### 1. Scrape datasets from Zenodo
 
 ```bash
-# Scrape with ZIP inspection (default)
-envision-scrape --output ./data
+python -m envision.scraper --output ./data
 
 # Faster: skip ZIP inspection
-envision-scrape --output ./data --no-zip-inspect
+python -m envision.scraper --output ./data --no-zip-inspect
 
 # Include all resource types (not just datasets)
-envision-scrape --output ./data --all-types
+python -m envision.scraper --output ./data --all-types
 ```
 
 The scraper:
@@ -56,17 +49,17 @@ data/
 ### 2. Classify scraped records
 
 ```bash
-# Classify using the trained model (default)
-envision-pipeline --classify-only
+# Classify using the trained model
+python -m envision --classify-only
 
 # Custom metadata and output paths
-envision-pipeline --classify-only --metadata-dir ./data/metadata/zenodo --results-dir ./results
+python -m envision --classify-only --metadata-dir ./data/metadata/zenodo --results-dir ./results
 
 # Multi-source classification
-envision-pipeline --classify-only --source figshare --results-dir ./results
+python -m envision --classify-only --source figshare --results-dir ./results
 
 # Export results in ADDF/DataCite schema (optional)
-envision-pipeline --classify-only --results-dir ./results --addf-output ./results/datacite
+python -m envision --classify-only --results-dir ./results --addf-output ./results/datacite
 ```
 
 Output files in `results/`:
@@ -126,9 +119,10 @@ Each record in the results JSON:
 envision-discovery/
 ├── envision/
 │   ├── __init__.py         # Re-exports EyeImagingClassifier from envision-classifier
+│   ├── __main__.py         # python -m envision entry point
 │   ├── scraper.py          # Zenodo scraper with ZIP inspection
 │   ├── pipeline.py         # Batch classification pipeline
-│   └── cli.py              # CLI entry points
+│   └── cli.py              # CLI argument parsing
 ├── data/                   # Scraped metadata (not committed)
 ├── results/                # Classification output (not committed)
 ├── pyproject.toml
