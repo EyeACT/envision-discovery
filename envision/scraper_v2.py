@@ -15,7 +15,6 @@ Part of the ENVISION project by the FAIR Data Innovations Hub.
 https://github.com/EyeACT/envision-discovery
 """
 
-import os
 import json
 import time
 import re
@@ -794,14 +793,14 @@ def main():
     """Main entry point."""
     import argparse
 
+    default_output_dir = Path.home() / "Downloads" / "envision-discovery" / "data"
+
     parser = argparse.ArgumentParser(description="ENVISION Zenodo Scraper")
     parser.add_argument(
         "--output",
         "-o",
         type=Path,
-        default=Path(
-            "/home/joneill/Nextcloud/vaults/jmind/calmi2/envision-discovery/data"
-        ),
+        default=default_output_dir,
         help="Output directory for scraped data",
     )
     parser.add_argument(
