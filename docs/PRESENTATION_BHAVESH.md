@@ -25,19 +25,19 @@
 
 | Component | Details |
 |-----------|---------|
-| Base Model | Alibaba-NLP/gte-large-en-v1.5 (1024-dim embeddings) |
+| Base Model | sentence-transformers/all-mpnet-base-v2 (768-dim embeddings) |
 | Framework | SetFit (sentence-transformers + contrastive learning) |
-| Training Data | 452 manually curated examples |
+| Training Data | 474 manually curated examples |
 | Classes | 4 (EYE_IMAGING, EYE_SOFTWARE, EDGE_CASE, NEGATIVE) |
 
 ### Training Data Distribution
 
 | Class | Examples | Description |
 |-------|----------|-------------|
-| EYE_IMAGING | 99 | Known benchmark datasets, clinical imaging |
-| EYE_SOFTWARE | 30 | Code repos, model weights, toolboxes |
-| EDGE_CASE | 90 | Papers, reviews, animal studies |
-| NEGATIVE | 233 | Non-eye data, false positive patterns |
+| EYE_IMAGING | 77 | Known benchmark datasets, clinical imaging |
+| EYE_SOFTWARE | 48 | Code repos, model weights, toolboxes |
+| EDGE_CASE | 79 | Papers, reviews, animal studies |
+| NEGATIVE | 270 | Non-eye data, false positive patterns |
 
 ---
 

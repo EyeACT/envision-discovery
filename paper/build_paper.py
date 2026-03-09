@@ -269,8 +269,8 @@ abstract = (
     'repositories with no centralized catalog, making discovery and reuse prohibitively difficult. '
     'Here we present Envision Discovery, a machine learning pipeline that automatically identifies '
     'eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot '
-    'classifier built on a large language embedding model (GTE-large, 1024-dimensional) trained on '
-    '452 curated examples to distinguish four classes: genuine eye imaging datasets, eye-related '
+    'classifier built on a large language embedding model (mpnet-base, 768-dimensional) trained on '
+    '474 curated examples to distinguish four classes: genuine eye imaging datasets, eye-related '
     'software, edge cases, and unrelated records. Applied to 30,439 metadata records harvested from '
     'Zenodo, the pipeline identified 120 candidate eye imaging datasets from 514 records containing '
     'data files, with 97.5% of positive predictions at high confidence (\u22650.95). Expert validation '
@@ -457,11 +457,10 @@ add_body(
 )
 
 add_body(
-    'The backbone model is Alibaba-NLP/gte-large-en-v1.5, a general text embedding model '
-    'producing 1024-dimensional representations with an 8,192-token context window. It uses 24 '
-    'transformer layers with 16 attention heads and Rotary Position Embeddings (RoPE) with NTK '
-    'scaling for long-context handling. The classification head is a logistic regression model '
-    'trained on the contrastively learned embeddings.'
+    'The backbone model is sentence-transformers/all-mpnet-base-v2, a general-purpose sentence embedding model '
+    'producing 768-dimensional representations. It uses 12 transformer layers with 12 attention '
+    'heads, based on the MPNet architecture (Song et al., 2020). The classification head is a '
+    'logistic regression model trained on the contrastively learned embeddings.'
 )
 
 doc.add_heading('2.4.2 Classification Schema', level=3)
@@ -502,7 +501,7 @@ add_body(
 doc.add_heading('2.4.3 Training Data', level=3)
 
 add_body(
-    'The training set consists of 452 manually curated examples (Table 2).',
+    'The training set consists of 474 manually curated examples (Table 2).',
     first_line_indent=0
 )
 
@@ -722,9 +721,9 @@ doc.add_heading('4.1 Automated Dataset Discovery as Infrastructure', level=2)
 add_body(
     'Envision Discovery demonstrates the feasibility of using few-shot machine learning to '
     'automate the identification of domain-specific datasets from generalist repositories. The '
-    '452-example training set\u2014small by typical machine learning standards\u2014proved sufficient to '
+    '474-example training set\u2014small by typical machine learning standards\u2014proved sufficient to '
     'learn discriminative features for ophthalmic imaging datasets when combined with the strong '
-    'pre-trained representations of GTE-large and the contrastive learning framework of SetFit. '
+    'pre-trained representations of mpnet-base and the contrastive learning framework of SetFit. '
     'This few-shot approach is particularly advantageous for specialized scientific domains where '
     'large labeled datasets are impractical to construct.'
 )
@@ -816,7 +815,7 @@ add_numbered(
     5, bold_prefix='Evolving repositories.'
 )
 add_numbered(
-    ' While 452 examples proved sufficient for the current task, performance on rare or novel '
+    ' While 474 examples proved sufficient for the current task, performance on rare or novel '
     'dataset types may be limited.',
     6, bold_prefix='Training set size.'
 )
