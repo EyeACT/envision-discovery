@@ -294,10 +294,13 @@ def run_pipeline(
     print(f"Timestamp: {datetime.now().isoformat()}")
     print("=" * 70)
 
-    # Load or train model
-    if classify_only and (model_dir / "model.safetensors").exists():
-        print(f"\nLoading existing model from {model_dir}")
+    # Load model
+    if (model_dir / "model.safetensors").exists():
+        print(f"\nLoading model from {model_dir}")
         classifier = EyeImagingClassifier(model_path=model_dir)
+    elif classify_only:
+        print("\nDownloading model from HuggingFace...")
+        classifier = EyeImagingClassifier()
     else:
         print("\nTraining new model...")
         classifier = EyeImagingClassifier.train(output_dir=model_dir)
