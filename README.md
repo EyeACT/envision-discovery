@@ -1,6 +1,6 @@
 # ENVISION Discovery
 
-Eye imaging dataset discovery pipeline. Scrapes Zenodo for datasets, inspects ZIP contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
+Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across scientific data repositories (Zenodo, Figshare, Dryad, OSF, DataCite), inspects ZIP contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
 
 Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innovations Hub](https://fairdataihub.org).
 
@@ -56,14 +56,17 @@ data/
 ### 2. Classify scraped records
 
 ```bash
-# Classify all scraped metadata (downloads model from HuggingFace on first run)
-envision-pipeline
-
-# Use existing model without retraining
+# Classify using the trained model (default)
 envision-pipeline --classify-only
 
-# Custom paths
-envision-pipeline --metadata-dir ./data/metadata/zenodo --results-dir ./results
+# Custom metadata and output paths
+envision-pipeline --classify-only --metadata-dir ./data/metadata/zenodo --results-dir ./results
+
+# Multi-source classification
+envision-pipeline --classify-only --source figshare --results-dir ./results
+
+# Export results in ADDF/DataCite schema (optional)
+envision-pipeline --classify-only --results-dir ./results --addf-output ./results/datacite
 ```
 
 Output files in `results/`:
