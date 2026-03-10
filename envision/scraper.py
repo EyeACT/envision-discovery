@@ -316,22 +316,34 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
 
             download_url = f.get("links", {}).get("self")
             if download_url:
+                size_mb = size / 1_000_000
+                logger.info(f"    Inspecting ZIP: {f.get('key', filename)} ({size_mb:.1f} MB) ...")
                 try:
                     zip_contents = ZipInspector.inspect_via_range(download_url, session)
                     if zip_contents:
                         summary = ZipInspector.summarize_contents(zip_contents)
                         analysis["zip_contents"][filename] = summary
 
-                        if summary.get("imaging_file_count", 0) > 0:
+                        img_count = summary.get("imaging_file_count", 0)
+                        gen_count = summary.get("genomics_file_count", 0)
+                        total_files = summary.get("total_files", 0)
+                        logger.info(
+                            f"    ZIP has {total_files} files: "
+                            f"{img_count} imaging, {gen_count} genomics"
+                        )
+
+                        if img_count > 0:
                             imaging_found = True
                             analysis["zip_imaging_files"].extend(
                                 summary.get("sample_imaging_files", [])
                             )
-                        if summary.get("genomics_file_count", 0) > 0:
+                        if gen_count > 0:
                             genomics_found = True
                             analysis["zip_genomics_files"].extend(
                                 summary.get("sample_genomics_files", [])
                             )
+                    else:
+                        logger.info(f"    Could not read ZIP central directory")
                 except Exception as e:
                     logger.debug(f"Could not inspect ZIP {filename}: {e}")
 
@@ -397,7 +409,9 @@ class ZenodoScraper:
                 except ValueError:
                     pass
             if self.seen_records:
-                logger.info(f"Resuming: {len(self.seen_records)} existing records")
+                logger.info(f"Resuming: {len(self.seen_records)} existing records already scraped — skipping those")
+            else:
+                logger.info("Starting fresh — no existing records found")
 
         self.stats = {
             "total_searched": 0,
@@ -429,6 +443,7 @@ class ZenodoScraper:
             params = {"q": full_query, "page": page, "size": per_page}
 
             try:
+                logger.info(f"  Fetching page {page} ...")
                 for attempt in range(3):
                     response = self.session.get(
                         self.SEARCH_URL, params=params, timeout=30
@@ -446,9 +461,11 @@ class ZenodoScraper:
 
                 hits = response.json().get("hits", {}).get("hits", [])
                 if not hits:
+                    logger.info("  No more results on this page, moving on")
                     break
 
-                for hit in hits:
+                logger.info(f"  Got {len(hits)} hits — processing ...")
+                for hit_idx, hit in enumerate(hits, 1):
                     record_id = hit.get("id")
                     if not record_id:
                         continue
@@ -459,16 +476,23 @@ class ZenodoScraper:
                     self.seen_records.add(record_id)
                     self.stats["total_searched"] += 1
 
+                    title = hit.get("metadata", {}).get("title", "Untitled")[:70]
+                    logger.info(f"  [{hit_idx}/{len(hits)}] {title!r} (id={record_id})")
+
                     enriched = self._enrich_record(hit, inspect_zips)
                     if self._should_keep(enriched):
                         records.append(enriched)
                         self._save_metadata(enriched)
                         self.stats["datasets_found"] += 1
+                        logger.info(f"    -> KEPT (total kept: {len(records)})")
+                    else:
+                        logger.info(f"    -> filtered out")
 
                 page += 1
                 time.sleep(2.0)
 
                 if len(hits) < per_page:
+                    logger.info("  Reached last page for this query")
                     break
 
             except Exception as e:
@@ -482,8 +506,11 @@ class ZenodoScraper:
         dataset_links = extract_dataset_links(record)
         if dataset_links:
             self.stats["with_dataset_links"] += 1
+            logger.info(f"    Found {len(dataset_links)} external dataset link(s)")
 
         weblinks = extract_weblinks_from_description(record)
+        if weblinks:
+            logger.info(f"    Found {len(weblinks)} weblink(s) in description")
 
         if inspect_zips:
             file_analysis = analyze_record_files(record, self.session)
@@ -564,9 +591,10 @@ def run_scrape(
 
     scraper = ZenodoScraper(output_dir)
     all_records = []
+    n_terms = len(SEARCH_TERMS)
 
     for i, term in enumerate(SEARCH_TERMS, 1):
-        logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}'")
+        logger.info(f"\n[{i}/{n_terms}] Searching: '{term}'")
 
         results = scraper.search(
             term,
@@ -577,7 +605,9 @@ def run_scrape(
 
         all_records.extend(results)
         logger.info(
-            f"  Found {len(results)} matching datasets (total: {len(all_records)})"
+            f"  Term done: {len(results)} new datasets kept "
+            f"(running total: {len(all_records)}) "
+            f"[{i}/{n_terms} terms complete]"
         )
         time.sleep(3.0)
 
