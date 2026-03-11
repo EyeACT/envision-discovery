@@ -24,6 +24,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set
+import argparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -42,37 +43,75 @@ logger = logging.getLogger(__name__)
 
 EYE_IMAGING_EXTS = {
     # Standard image formats
-    ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".gif",
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".tif",
+    ".tiff",
+    ".bmp",
+    ".gif",
     # Medical imaging formats
-    ".dcm", ".dicom", ".nii", ".nii.gz",
+    ".dcm",
+    ".dicom",
+    ".nii",
+    ".nii.gz",
     # MATLAB/scientific
-    ".mat", ".npy", ".npz", ".h5", ".hdf5",
+    ".mat",
+    ".npy",
+    ".npz",
+    ".h5",
+    ".hdf5",
     # OCT-specific formats
-    ".fds", ".e2e", ".vol", ".oct", ".fda", ".img",
+    ".fds",
+    ".e2e",
+    ".vol",
+    ".oct",
+    ".fda",
+    ".img",
 }
 
 ARCHIVE_EXTS = {".zip", ".tar", ".gz", ".tar.gz", ".rar", ".7z", ".tgz"}
 
 GENOMICS_EXTS = {
-    ".fasta", ".fa", ".fna",
-    ".fastq", ".fq", ".fastq.gz", ".fq.gz",
+    ".fasta",
+    ".fa",
+    ".fna",
+    ".fastq",
+    ".fq",
+    ".fastq.gz",
+    ".fq.gz",
     ".h5ad",
-    ".bam", ".sam", ".cram",
-    ".vcf", ".bcf", ".vcf.gz",
-    ".bed", ".gtf", ".gff", ".gff3",
-    ".bigwig", ".bw", ".wig",
-    ".cel", ".idat",
+    ".bam",
+    ".sam",
+    ".cram",
+    ".vcf",
+    ".bcf",
+    ".vcf.gz",
+    ".bed",
+    ".gtf",
+    ".gff",
+    ".gff3",
+    ".bigwig",
+    ".bw",
+    ".wig",
+    ".cel",
+    ".idat",
     ".loom",
-    ".mtx", ".mtx.gz",
+    ".mtx",
+    ".mtx.gz",
 }
 
 DATA_PLATFORMS = [
-    "github.com", "gitlab.com", "bitbucket.org",
+    "github.com",
+    "gitlab.com",
+    "bitbucket.org",
     "kaggle.com",
     "drive.google.com",
-    "huggingface.co", "hf.co",
+    "huggingface.co",
+    "hf.co",
     "osf.io",
-    "dryad", "datadryad.org",
+    "dryad",
+    "datadryad.org",
     "figshare.com",
     "dataverse",
     "mendeley.com/datasets",
@@ -88,6 +127,7 @@ DATA_PLATFORMS = [
 # =============================================================================
 # ZIP INSPECTOR
 # =============================================================================
+
 
 class ZipInspector:
     """Inspect ZIP file contents via HTTP Range requests without full download.
@@ -151,12 +191,14 @@ class ZipInspector:
                 except UnicodeDecodeError:
                     filename = name_bytes.decode("cp437", errors="replace")
 
-                files.append({
-                    "filename": filename,
-                    "compressed_size": compressed,
-                    "uncompressed_size": uncompressed,
-                    "is_directory": filename.endswith("/"),
-                })
+                files.append(
+                    {
+                        "filename": filename,
+                        "compressed_size": compressed,
+                        "uncompressed_size": uncompressed,
+                        "is_directory": filename.endswith("/"),
+                    }
+                )
                 pos += 46 + name_len + extra_len + comment_len
 
             return files
@@ -215,6 +257,7 @@ class ZipInspector:
 # LINK EXTRACTION
 # =============================================================================
 
+
 def extract_dataset_links(record: Dict) -> List[str]:
     """Extract external dataset links from related_identifiers."""
     links = set()
@@ -238,9 +281,14 @@ def extract_weblinks_from_description(record: Dict) -> List[Dict]:
         text = desc
 
     skip = {
-        "twitter.com", "facebook.com", "linkedin.com",
-        "youtube.com", "vimeo.com", "creativecommons.org",
-        "orcid.org", "scholar.google",
+        "twitter.com",
+        "facebook.com",
+        "linkedin.com",
+        "youtube.com",
+        "vimeo.com",
+        "creativecommons.org",
+        "orcid.org",
+        "scholar.google",
     }
 
     links = []
@@ -271,6 +319,7 @@ def extract_weblinks_from_description(record: Dict) -> List[Dict]:
 # =============================================================================
 # FILE ANALYSIS
 # =============================================================================
+
 
 def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
     """Analyze a record's files, including ZIP contents via Range requests."""
@@ -317,7 +366,9 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
             download_url = f.get("links", {}).get("self")
             if download_url:
                 size_mb = size / 1_000_000
-                logger.info(f"    Inspecting ZIP: {f.get('key', filename)} ({size_mb:.1f} MB) ...")
+                logger.info(
+                    "    Inspecting ZIP: %s (%.1f MB) ...", f.get("key", filename), size_mb
+                )
                 try:
                     zip_contents = ZipInspector.inspect_via_range(download_url, session)
                     if zip_contents:
@@ -328,8 +379,8 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
                         gen_count = summary.get("genomics_file_count", 0)
                         total_files = summary.get("total_files", 0)
                         logger.info(
-                            f"    ZIP has {total_files} files: "
-                            f"{img_count} imaging, {gen_count} genomics"
+                            "    ZIP has %d files: %d imaging, %d genomics",
+                            total_files, img_count, gen_count,
                         )
 
                         if img_count > 0:
@@ -343,9 +394,9 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
                                 summary.get("sample_genomics_files", [])
                             )
                     else:
-                        logger.info(f"    Could not read ZIP central directory")
+                        logger.info("    Could not read ZIP central directory")
                 except Exception as e:
-                    logger.debug(f"Could not inspect ZIP {filename}: {e}")
+                    logger.debug("Could not inspect ZIP %s: %s", filename, e)
 
         elif any(filename.endswith(ext) for ext in ARCHIVE_EXTS):
             analysis["has_archives"] = True
@@ -364,28 +415,59 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
 
 SEARCH_TERMS = [
     # Imaging modalities
-    "retinal OCT", "fundus photography", "optical coherence tomography eye",
-    "retinal imaging dataset", "fundus image dataset", "OCT dataset",
-    "macular OCT", "RNFL OCT", "OCT-A retina",
+    "retinal OCT",
+    "fundus photography",
+    "optical coherence tomography eye",
+    "retinal imaging dataset",
+    "fundus image dataset",
+    "OCT dataset",
+    "macular OCT",
+    "RNFL OCT",
+    "OCT-A retina",
     # Disease-specific
-    "diabetic retinopathy dataset", "glaucoma dataset", "AMD dataset",
-    "diabetic retinopathy fundus", "glaucoma OCT", "macular degeneration imaging",
-    "choroidal neovascularization OCT", "macular edema OCT",
+    "diabetic retinopathy dataset",
+    "glaucoma dataset",
+    "AMD dataset",
+    "diabetic retinopathy fundus",
+    "glaucoma OCT",
+    "macular degeneration imaging",
+    "choroidal neovascularization OCT",
+    "macular edema OCT",
     # Anatomy-specific
-    "retinal layer segmentation", "optic nerve head imaging",
-    "retinal vessel segmentation", "optic disc detection",
-    "foveal OCT", "macula imaging", "choroidal imaging",
+    "retinal layer segmentation",
+    "optic nerve head imaging",
+    "retinal vessel segmentation",
+    "optic disc detection",
+    "foveal OCT",
+    "macula imaging",
+    "choroidal imaging",
     # General
-    "ophthalmic imaging", "eye imaging data", "ophthalmology dataset",
-    "retina scan", "eye scan dataset", "ocular imaging",
+    "ophthalmic imaging",
+    "eye imaging data",
+    "ophthalmology dataset",
+    "retina scan",
+    "eye scan dataset",
+    "ocular imaging",
     # Equipment-specific
-    "Spectralis OCT", "Cirrus OCT", "Topcon OCT", "Heidelberg retina",
+    "Spectralis OCT",
+    "Cirrus OCT",
+    "Topcon OCT",
+    "Heidelberg retina",
     # Known benchmark datasets
-    "DRIVE retinal", "STARE retinal", "MESSIDOR", "IDRiD",
-    "REFUGE glaucoma", "CHASE_DB1", "EyePACS", "APTOS",
+    "DRIVE retinal",
+    "STARE retinal",
+    "MESSIDOR",
+    "IDRiD",
+    "REFUGE glaucoma",
+    "CHASE_DB1",
+    "EyePACS",
+    "APTOS",
     # Cornea / anterior segment
-    "corneal topography", "slit lamp imaging", "anterior segment OCT",
-    "meibography", "corneal imaging dataset",
+    "corneal topography",
+    "slit lamp imaging",
+    "anterior segment OCT",
+    "meibography",
+    "corneal imaging dataset",
 ]
 
 
@@ -409,7 +491,10 @@ class ZenodoScraper:
                 except ValueError:
                     pass
             if self.seen_records:
-                logger.info(f"Resuming: {len(self.seen_records)} existing records already scraped — skipping those")
+                logger.info(
+                    "Resuming: %d existing records already scraped — skipping those",
+                    len(self.seen_records),
+                )
             else:
                 logger.info("Starting fresh — no existing records found")
 
@@ -443,20 +528,20 @@ class ZenodoScraper:
             params = {"q": full_query, "page": page, "size": per_page}
 
             try:
-                logger.info(f"  Fetching page {page} ...")
+                logger.info("  Fetching page %d ...", page)
                 for attempt in range(3):
                     response = self.session.get(
                         self.SEARCH_URL, params=params, timeout=30
                     )
                     if response.status_code == 429:
-                        wait = 5 * (2 ** attempt)
-                        logger.warning(f"Rate limited, waiting {wait}s")
+                        wait = 5 * (2**attempt)
+                        logger.warning("Rate limited, waiting %ds", wait)
                         time.sleep(wait)
                         continue
                     response.raise_for_status()
                     break
                 else:
-                    logger.warning(f"Max retries exceeded for '{query}'")
+                    logger.warning("Max retries exceeded for '%s'", query)
                     break
 
                 hits = response.json().get("hits", {}).get("hits", [])
@@ -464,7 +549,7 @@ class ZenodoScraper:
                     logger.info("  No more results on this page, moving on")
                     break
 
-                logger.info(f"  Got {len(hits)} hits — processing ...")
+                logger.info("  Got %d hits — processing ...", len(hits))
                 for hit_idx, hit in enumerate(hits, 1):
                     record_id = hit.get("id")
                     if not record_id:
@@ -477,16 +562,16 @@ class ZenodoScraper:
                     self.stats["total_searched"] += 1
 
                     title = hit.get("metadata", {}).get("title", "Untitled")[:70]
-                    logger.info(f"  [{hit_idx}/{len(hits)}] {title!r} (id={record_id})")
+                    logger.info("  [%d/%d] %r (id=%s)", hit_idx, len(hits), title, record_id)
 
                     enriched = self._enrich_record(hit, inspect_zips)
                     if self._should_keep(enriched):
                         records.append(enriched)
                         self._save_metadata(enriched)
                         self.stats["datasets_found"] += 1
-                        logger.info(f"    -> KEPT (total kept: {len(records)})")
+                        logger.info("    -> KEPT (total kept: %d)", len(records))
                     else:
-                        logger.info(f"    -> filtered out")
+                        logger.info("    -> filtered out")
 
                 page += 1
                 time.sleep(2.0)
@@ -496,7 +581,7 @@ class ZenodoScraper:
                     break
 
             except Exception as e:
-                logger.warning(f"Search error for '{query}': {e}")
+                logger.warning("Search error for '%s': %s", query, e)
                 break
 
         return records
@@ -506,11 +591,11 @@ class ZenodoScraper:
         dataset_links = extract_dataset_links(record)
         if dataset_links:
             self.stats["with_dataset_links"] += 1
-            logger.info(f"    Found {len(dataset_links)} external dataset link(s)")
+            logger.info("    Found %d external dataset link(s)", len(dataset_links))
 
         weblinks = extract_weblinks_from_description(record)
         if weblinks:
-            logger.info(f"    Found {len(weblinks)} weblink(s) in description")
+            logger.info("    Found %d weblink(s) in description", len(weblinks))
 
         if inspect_zips:
             file_analysis = analyze_record_files(record, self.session)
@@ -544,8 +629,8 @@ class ZenodoScraper:
 
         weblinks = record.get("_weblinks", [])
         if any(
-            l.get("type") in ["data_platform", "archive_download", "direct_file"]
-            for l in weblinks
+            link.get("type") in ["data_platform", "archive_download", "direct_file"]
+            for link in weblinks
         ):
             return True
 
@@ -558,7 +643,7 @@ class ZenodoScraper:
         """Save enriched record metadata to JSON."""
         record_id = record.get("id")
         filepath = self.metadata_dir / f"{record_id}.json"
-        with open(filepath, "w") as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             json.dump(record, f, indent=2)
 
     def print_stats(self):
@@ -567,12 +652,13 @@ class ZenodoScraper:
         logger.info("SCRAPING STATISTICS")
         logger.info("=" * 60)
         for key, value in self.stats.items():
-            logger.info(f"  {key}: {value:,}")
+            logger.info("  %s: %s", key, f"{value:,}")
 
 
 # =============================================================================
 # ENTRY POINT
 # =============================================================================
+
 
 def run_scrape(
     output_dir: Path,
@@ -584,17 +670,17 @@ def run_scrape(
     logger.info("=" * 70)
     logger.info("ENVISION Dataset Scraper")
     logger.info("=" * 70)
-    logger.info(f"Output: {output_dir}")
-    logger.info(f"Datasets only: {datasets_only}")
-    logger.info(f"ZIP inspection: {inspect_zips}")
-    logger.info(f"Search terms: {len(SEARCH_TERMS)}")
+    logger.info("Output: %s", output_dir)
+    logger.info("Datasets only: %s", datasets_only)
+    logger.info("ZIP inspection: %s", inspect_zips)
+    logger.info("Search terms: %d", len(SEARCH_TERMS))
 
     scraper = ZenodoScraper(output_dir)
     all_records = []
     n_terms = len(SEARCH_TERMS)
 
     for i, term in enumerate(SEARCH_TERMS, 1):
-        logger.info(f"\n[{i}/{n_terms}] Searching: '{term}'")
+        logger.info("\n[%d/%d] Searching: '%s'", i, n_terms, term)
 
         results = scraper.search(
             term,
@@ -605,9 +691,8 @@ def run_scrape(
 
         all_records.extend(results)
         logger.info(
-            f"  Term done: {len(results)} new datasets kept "
-            f"(running total: {len(all_records)}) "
-            f"[{i}/{n_terms} terms complete]"
+            "  Term done: %d new datasets kept (running total: %d) [%d/%d terms complete]",
+            len(results), len(all_records), i, n_terms,
         )
         time.sleep(3.0)
 
@@ -617,7 +702,7 @@ def run_scrape(
         "total_records": len(all_records),
         "search_terms_used": len(SEARCH_TERMS),
     }
-    with open(output_dir / "scrape_summary.json", "w") as f:
+    with open(output_dir / "scrape_summary.json", "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
 
     scraper.print_stats()
@@ -626,23 +711,29 @@ def run_scrape(
 
 def main():
     """CLI entry point."""
-    import argparse
 
     parser = argparse.ArgumentParser(description="ENVISION Dataset Scraper")
     parser.add_argument(
-        "--output", "-o", type=Path, default=Path.cwd() / "data",
+        "--output",
+        "-o",
+        type=Path,
+        default=Path.cwd() / "data",
         help="Output directory for scraped data",
     )
     parser.add_argument(
-        "--all-types", action="store_true",
+        "--all-types",
+        action="store_true",
         help="Include all resource types, not just datasets",
     )
     parser.add_argument(
-        "--no-zip-inspect", action="store_true",
+        "--no-zip-inspect",
+        action="store_true",
         help="Skip ZIP content inspection (faster but less info)",
     )
     parser.add_argument(
-        "--max-per-query", type=int, default=500,
+        "--max-per-query",
+        type=int,
+        default=500,
         help="Maximum results per search term",
     )
 
