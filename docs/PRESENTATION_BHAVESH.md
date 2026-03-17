@@ -28,7 +28,7 @@
 | Base Model | sentence-transformers/all-mpnet-base-v2 (768-dim embeddings) |
 | Framework | SetFit (sentence-transformers + contrastive learning) |
 | Training Data | 474 manually curated examples |
-| Classes | 4 (EYE_IMAGING, EYE_SOFTWARE, EDGE_CASE, NEGATIVE) |
+| Classes | 4 (EYE_IMAGING, EYE_SOFTWARE, OTHER_EYE_DATA, NEGATIVE) |
 
 ### Training Data Distribution
 
@@ -36,7 +36,7 @@
 |-------|----------|-------------|
 | EYE_IMAGING | 77 | Known benchmark datasets, clinical imaging |
 | EYE_SOFTWARE | 48 | Code repos, model weights, toolboxes |
-| EDGE_CASE | 79 | Papers, reviews, animal studies |
+| OTHER_EYE_DATA | 79 | Papers, reviews, animal studies |
 | NEGATIVE | 270 | Non-eye data, false positive patterns |
 
 ---

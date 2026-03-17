@@ -11,7 +11,7 @@
 
 ## Abstract
 
-Eye imaging datasets—including optical coherence tomography (OCT), fundus photography, and OCT angiography (OCTA)—are essential resources for developing artificial intelligence (AI) tools in ophthalmology. However, these datasets are scattered across generalist repositories with no centralized catalog, making discovery and reuse prohibitively difficult. Here we present Envision Discovery, a machine learning pipeline that automatically identifies eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot classifier built on a sentence embedding model (mpnet-base, 768-dimensional) trained on 474 curated examples to distinguish four classes: genuine eye imaging datasets, eye-related software, edge cases, and unrelated records. Applied to 30,439 metadata records harvested from Zenodo, the pipeline identified 127 candidate eye imaging datasets from 515 records containing data files, with high confidence across positive predictions. Expert validation by [N] ophthalmology specialists across [N] independent batches confirmed a precision of [XX]% for high-confidence predictions. All identified datasets are registered on the Envision Portal (https://envisionportal.org), providing researchers with a single entry point for discovering publicly available ophthalmic imaging data. The classifier, pipeline code, and trained model are openly available at https://github.com/EyeACT/envision-discovery.
+Eye imaging datasets—including optical coherence tomography (OCT), fundus photography, and OCT angiography (OCTA)—are essential resources for developing artificial intelligence (AI) tools in ophthalmology. However, these datasets are scattered across generalist repositories with no centralized catalog, making discovery and reuse prohibitively difficult. Here we present Envision Discovery, a machine learning pipeline that automatically identifies eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot classifier built on a sentence embedding model (mpnet-base, 768-dimensional) trained on 474 curated examples to distinguish four classes: genuine eye imaging datasets, eye-related software, other eye datas, and unrelated records. Applied to 30,439 metadata records harvested from Zenodo, the pipeline identified 127 candidate eye imaging datasets from 515 records containing data files, with high confidence across positive predictions. Expert validation by [N] ophthalmology specialists across [N] independent batches confirmed a precision of [XX]% for high-confidence predictions. All identified datasets are registered on the Envision Portal (https://envisionportal.org), providing researchers with a single entry point for discovering publicly available ophthalmic imaging data. The classifier, pipeline code, and trained model are openly available at https://github.com/EyeACT/envision-discovery.
 
 **Keywords:** eye imaging, dataset discovery, machine learning, FAIR data, ophthalmology, OCT, fundus photography, SetFit, few-shot learning
 
@@ -79,10 +79,10 @@ Records are classified into four mutually exclusive categories:
 |-------|-------|-------------|
 | 3 | **EYE_IMAGING** | Contains actual ophthalmic imaging data (e.g., OCT scans, fundus photographs, OCTA images, corneal imaging, slit-lamp photographs) |
 | 2 | **EYE_SOFTWARE** | Code, tools, or pre-trained models related to eye imaging analysis, but no actual image data |
-| 1 | **EDGE_CASE** | Related to eye or vision research but not imaging datasets (e.g., genetics/GWAS, electrophysiology, eye tracking, animal models) |
+| 1 | **OTHER_EYE_DATA** | Related to eye or vision research but not imaging datasets (e.g., genetics/GWAS, electrophysiology, eye tracking, animal models) |
 | 0 | **NEGATIVE** | Unrelated to eye or vision research |
 
-This four-class schema was designed to address specific false-positive patterns observed during development. For example, cardiovascular OCT (intravascular OCT of coronary arteries), industrial OCT (semiconductor inspection), and dental OCT are classified as NEGATIVE despite sharing terminology with ophthalmic OCT. Software repositories containing eye imaging analysis tools but no image data are common on Zenodo and are captured by the EYE_SOFTWARE class. GWAS studies referencing retinal phenotypes and electrophysiology studies (ERG, VEP) are captured as EDGE_CASE.
+This four-class schema was designed to address specific false-positive patterns observed during development. For example, cardiovascular OCT (intravascular OCT of coronary arteries), industrial OCT (semiconductor inspection), and dental OCT are classified as NEGATIVE despite sharing terminology with ophthalmic OCT. Software repositories containing eye imaging analysis tools but no image data are common on Zenodo and are captured by the EYE_SOFTWARE class. GWAS studies referencing retinal phenotypes and electrophysiology studies (ERG, VEP) are captured as OTHER_EYE_DATA.
 
 #### 2.4.3 Training Data
 
@@ -92,7 +92,7 @@ The training set consists of 474 manually curated examples:
 |-------|-------|------------|------------------------|
 | EYE_IMAGING | 77 | 16.2% | IDRiD, REFUGE, RFMiD, OLIVES, Rotterdam EyePACS, retinal vessel segmentation datasets |
 | EYE_SOFTWARE | 48 | 10.1% | GitHub repositories, segmentation model weights, Python/MATLAB packages, ImageJ plugins |
-| EDGE_CASE | 79 | 16.7% | DR detection review papers, glaucoma ML literature, GWAS meta-analyses, zebrafish/Drosophila eye development, eye tracking, eye metabolomics |
+| OTHER_EYE_DATA | 79 | 16.7% | DR detection review papers, glaucoma ML literature, GWAS meta-analyses, zebrafish/Drosophila eye development, eye tracking, eye metabolomics |
 | NEGATIVE | 270 | 57.0% | Climate data, COVID genomics, face recognition (LFW), cardiac imaging, brain MRI, MNIST, robotics, taxonomy papers |
 
 Training examples were curated to cover known confounding patterns, with particular attention to negative examples that share superficial similarity with eye imaging (e.g., intravascular OCT, hand-eye calibration in robotics, taxonomy papers with figure references). The model was trained for 2 epochs with a batch size of 16.
@@ -113,7 +113,7 @@ Each validator is presented with dataset records including:
 - File types contained in the record
 - Link to the original Zenodo record
 
-For each record, validators assign one of the four classification labels (Eye Imaging, Eye Software, Edge Case, Not Related) and a confidence score from 0 to 5 indicating their certainty in the assessment.
+For each record, validators assign one of the four classification labels (Eye Imaging, Eye Software, Other Eye Data, Not Related) and a confidence score from 0 to 5 indicating their certainty in the assessment.
 
 #### 2.5.2 Validation Batches
 
@@ -143,16 +143,16 @@ Of the 515 filtered records, the classifier produced the following distribution:
 |-------|-------|------------|
 | NEGATIVE | 332 | 64.5% |
 | EYE_IMAGING | 127 | 24.7% |
-| EDGE_CASE | 32 | 6.2% |
+| OTHER_EYE_DATA | 32 | 6.2% |
 | EYE_SOFTWARE | 24 | 4.7% |
 
-The 127 EYE_IMAGING predictions showed high confidence across the board, with the classifier demonstrating well-separated class boundaries. The mpnet-base backbone also produced a more balanced distribution across the non-negative classes compared to previous iterations, correctly distinguishing more edge cases and separating software from imaging datasets.
+The 127 EYE_IMAGING predictions showed high confidence across the board, with the classifier demonstrating well-separated class boundaries. The mpnet-base backbone also produced a more balanced distribution across the non-negative classes compared to previous iterations, correctly distinguishing more other eye datas and separating software from imaging datasets.
 
 The identified eye imaging datasets span a total volume of approximately 489.4 GB, with individual datasets ranging from a few megabytes (segmentation benchmarks) to 37.7 GB (Human Developing Retina Atlas). Represented modalities include OCT, OCTA, fundus photography, corneal imaging, and slit-lamp photography.
 
 ### 3.3 Preliminary Spot-Check Validation
 
-A spot-check validation of 33 randomly sampled records across all classes was conducted (Table 1). Of 33 records evaluated, 29 (87.9%) were correctly classified, yielding a spot-check macro F1 of 0.828. Per-class spot-check F1 scores were: EYE_IMAGING 0.947, EDGE_CASE 0.889, NEGATIVE 0.903, and EYE_SOFTWARE 0.571 (lowest due to small sample size).
+A spot-check validation of 33 randomly sampled records across all classes was conducted (Table 1). Of 33 records evaluated, 29 (87.9%) were correctly classified, yielding a spot-check macro F1 of 0.828. Per-class spot-check F1 scores were: EYE_IMAGING 0.947, OTHER_EYE_DATA 0.889, NEGATIVE 0.903, and EYE_SOFTWARE 0.571 (lowest due to small sample size).
 
 [**Table 1.** Spot-check validation of the top 20 high-confidence EYE_IMAGING predictions. Includes Zenodo ID, title, dataset size, confidence score, and validation status.]
 
@@ -169,7 +169,7 @@ In addition to the spot-check, a held-out test set evaluation yielded accuracy o
 | Class | Spot-Check F1 | Test Set F1 |
 |-------|--------------|-------------|
 | EYE_IMAGING | 0.947 | ~0.95 |
-| EDGE_CASE | 0.889 | ~0.90 |
+| OTHER_EYE_DATA | 0.889 | ~0.90 |
 | NEGATIVE | 0.903 | ~0.95 |
 | EYE_SOFTWARE | 0.571 | ~0.80 |
 
@@ -193,7 +193,7 @@ In addition to the spot-check, a held-out test set evaluation yielded accuracy o
 
 Envision Discovery demonstrates the feasibility of using few-shot machine learning to automate the identification of domain-specific datasets from generalist repositories. The 474-example training set—small by typical machine learning standards—proved sufficient to learn discriminative features for ophthalmic imaging datasets when combined with the strong pre-trained representations of mpnet-base and the contrastive learning framework of SetFit. This few-shot approach is particularly advantageous for specialized scientific domains where large labeled datasets are impractical to construct.
 
-The four-class schema proved essential for practical deployment. A binary (eye imaging vs. not) classifier would conflate software tools, edge cases, and truly unrelated records into a single negative class, reducing interpretability and making it difficult to identify improvement targets. The EYE_SOFTWARE class, in particular, captures a distinct category (4.7% of filtered records) that is relevant to the eye imaging community but should not be presented as imaging data.
+The four-class schema proved essential for practical deployment. A binary (eye imaging vs. not) classifier would conflate software tools, other eye datas, and truly unrelated records into a single negative class, reducing interpretability and making it difficult to identify improvement targets. The EYE_SOFTWARE class, in particular, captures a distinct category (4.7% of filtered records) that is relevant to the eye imaging community but should not be presented as imaging data.
 
 ### 4.2 Confidence-Based Triaging
 

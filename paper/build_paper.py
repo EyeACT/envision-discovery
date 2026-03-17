@@ -271,7 +271,7 @@ abstract = (
     'eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot '
     'classifier built on a large language embedding model (mpnet-base, 768-dimensional) trained on '
     '474 curated examples to distinguish four classes: genuine eye imaging datasets, eye-related '
-    'software, edge cases, and unrelated records. Applied to 30,439 metadata records harvested from '
+    'software, other eye datas, and unrelated records. Applied to 30,439 metadata records harvested from '
     'Zenodo, the pipeline identified 120 candidate eye imaging datasets from 514 records containing '
     'data files, with 97.5% of positive predictions at high confidence (\u22650.95). Expert validation '
     'by [N] ophthalmology specialists across [N] independent batches confirmed a precision of [XX]% '
@@ -477,7 +477,7 @@ add_table(
     rows=[
         ['3', 'EYE_IMAGING', 'Contains actual ophthalmic imaging data (e.g., OCT scans, fundus photographs, OCTA images, corneal imaging, slit-lamp photographs)'],
         ['2', 'EYE_SOFTWARE', 'Code, tools, or pre-trained models related to eye imaging analysis, but no actual image data'],
-        ['1', 'EDGE_CASE', 'Related to eye or vision research but not imaging datasets (e.g., genetics/GWAS, electrophysiology, eye tracking, animal models)'],
+        ['1', 'OTHER_EYE_DATA', 'Related to eye or vision research but not imaging datasets (e.g., genetics/GWAS, electrophysiology, eye tracking, animal models)'],
         ['0', 'NEGATIVE', 'Unrelated to eye or vision research'],
     ],
     col_widths=[0.6, 1.3, 4.6]
@@ -495,7 +495,7 @@ add_body(
     'sharing terminology with ophthalmic OCT. Software repositories containing eye imaging analysis '
     'tools but no image data are common on Zenodo and are captured by the EYE_SOFTWARE class. GWAS '
     'studies referencing retinal phenotypes and electrophysiology studies (ERG, VEP) are captured '
-    'as EDGE_CASE.'
+    'as OTHER_EYE_DATA.'
 )
 
 doc.add_heading('2.4.3 Training Data', level=3)
@@ -512,7 +512,7 @@ add_table(
     rows=[
         ['EYE_IMAGING', '99', '21.9%', 'IDRiD, REFUGE, RFMiD, OLIVES, Rotterdam EyePACS, retinal vessel segmentation datasets'],
         ['EYE_SOFTWARE', '30', '6.6%', 'GitHub repositories, segmentation model weights, Python/MATLAB packages, ImageJ plugins'],
-        ['EDGE_CASE', '90', '19.9%', 'DR detection review papers, glaucoma ML literature, GWAS meta-analyses, zebrafish/Drosophila eye development, eye tracking'],
+        ['OTHER_EYE_DATA', '90', '19.9%', 'DR detection review papers, glaucoma ML literature, GWAS meta-analyses, zebrafish/Drosophila eye development, eye tracking'],
         ['NEGATIVE', '233', '51.5%', 'Climate data, COVID genomics, face recognition (LFW), cardiac imaging, brain MRI, MNIST, robotics, taxonomy papers'],
     ],
     col_widths=[1.1, 0.6, 0.8, 4.0]
@@ -554,7 +554,7 @@ add_body(
     'Each validator is presented with dataset records including the dataset title, a brief '
     'description or abstract, the file types contained in the record, and a link to the original '
     'Zenodo record. For each record, validators assign one of the four classification labels (Eye '
-    'Imaging, Eye Software, Edge Case, Not Related) and a confidence score from 0 to 5 indicating '
+    'Imaging, Eye Software, Other Eye Data, Not Related) and a confidence score from 0 to 5 indicating '
     'their certainty in the assessment.'
 )
 
@@ -622,7 +622,7 @@ add_table(
         ['NEGATIVE', '325', '63.2%'],
         ['EYE_IMAGING', '120', '23.3%'],
         ['EYE_SOFTWARE', '66', '12.8%'],
-        ['EDGE_CASE', '3', '0.6%'],
+        ['OTHER_EYE_DATA', '3', '0.6%'],
     ],
     col_widths=[2.0, 1.5, 1.5]
 )
@@ -730,7 +730,7 @@ add_body(
 
 add_body(
     'The four-class schema proved essential for practical deployment. A binary (eye imaging vs. '
-    'not) classifier would conflate software tools, edge cases, and truly unrelated records into '
+    'not) classifier would conflate software tools, other eye datas, and truly unrelated records into '
     'a single negative class, reducing interpretability and making it difficult to identify '
     'improvement targets. The EYE_SOFTWARE class, in particular, captures a substantial category '
     '(12.8% of filtered records) that is relevant to the eye imaging community but should not be '
