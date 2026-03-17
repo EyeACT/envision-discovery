@@ -167,7 +167,11 @@ def get_record_text(record):
 
 
 def get_file_details(record):
-    """Extract detailed file information from a Zenodo record."""
+    """Extract detailed file information from a Zenodo record.
+
+    Includes file types found inside ZIP archives via HTTP Range inspection
+    (stored in _file_analysis.zip_contents by the scraper).
+    """
     files = record.get('files', [])
 
     file_names = []
@@ -210,6 +214,14 @@ def get_file_details(record):
                     archive_count += 1
                 break
 
+    # Extract file types from inside ZIP archives (from scraper's Range inspection)
+    zip_file_types = {}
+    file_analysis = record.get('_file_analysis', {})
+    zip_contents = file_analysis.get('zip_contents', {})
+    for zip_name, zip_data in zip_contents.items():
+        for ext, count in zip_data.get('file_types', {}).items():
+            zip_file_types[ext] = zip_file_types.get(ext, 0) + count
+
     return {
         'file_names': file_names[:20],
         'file_types': sorted(file_types),
@@ -219,6 +231,7 @@ def get_file_details(record):
         'archive_count': archive_count,
         'genomics_count': genomics_count,
         'total_size': total_size,
+        'zip_file_types': zip_file_types,
     }
 
 
@@ -356,7 +369,7 @@ def _run_metadata_pipeline(
             "confidence": cls_result["confidence"],
             "prob_eye_imaging": probs["EYE_IMAGING"],
             "prob_software": probs["EYE_SOFTWARE"],
-            "prob_edge": probs["EDGE_CASE"],
+            "prob_other_eye": probs["OTHER_EYE_DATA"],
             "prob_negative": probs["NEGATIVE"],
             "title": meta.title[:200],
             "description": meta.description[:500],
@@ -476,7 +489,7 @@ def _run_zenodo_legacy_pipeline(
                 'confidence': cls_result['confidence'],
                 'prob_eye_imaging': probs['EYE_IMAGING'],
                 'prob_software': probs['EYE_SOFTWARE'],
-                'prob_edge': probs['EDGE_CASE'],
+                'prob_other_eye': probs['OTHER_EYE_DATA'],
                 'prob_negative': probs['NEGATIVE'],
                 'title': r.get('metadata', {}).get('title', '')[:200],
                 'description': metadata_details['description'],
@@ -492,6 +505,7 @@ def _run_zenodo_legacy_pipeline(
                 'archive_count': file_details['archive_count'],
                 'genomics_count': file_details['genomics_count'],
                 'size_mb': round(file_details['total_size'] / (1024*1024), 1),
+                'zip_file_types': file_details['zip_file_types'],
                 'dataset_links': dataset_links,
                 'related_dois': metadata_details['related_dois'],
             }
@@ -547,7 +561,7 @@ def _run_zenodo_legacy_pipeline(
                     'probabilities': {
                         'EYE_IMAGING': r['prob_eye_imaging'],
                         'EYE_SOFTWARE': r['prob_software'],
-                        'EDGE_CASE': r['prob_edge'],
+                        'OTHER_EYE_DATA': r['prob_other_eye'],
                         'NEGATIVE': r['prob_negative'],
                     },
                 }
@@ -564,7 +578,7 @@ def _print_analysis(all_results: list[dict]):
     """Print classification analysis summary."""
     eye_imaging = [r for r in all_results if r['label'] == 'EYE_IMAGING']
     software = [r for r in all_results if r['label'] == 'EYE_SOFTWARE']
-    edge_cases = [r for r in all_results if r['label'] == 'EDGE_CASE']
+    other_eye = [r for r in all_results if r['label'] == 'OTHER_EYE_DATA']
     negative = [r for r in all_results if r['label'] == 'NEGATIVE']
 
     print(f"\n{'='*70}")
@@ -572,7 +586,7 @@ def _print_analysis(all_results: list[dict]):
     print("=" * 70)
     print(f"  EYE_IMAGING:  {len(eye_imaging):,}")
     print(f"  EYE_SOFTWARE: {len(software):,}")
-    print(f"  EDGE_CASE:    {len(edge_cases):,}")
+    print(f"  OTHER_EYE_DATA:    {len(other_eye):,}")
     print(f"  NEGATIVE:     {len(negative):,}")
 
     # File type distribution

@@ -95,7 +95,7 @@ def create_docx():
         [
             ["EYE_IMAGING", "120", "Ophthalmic imaging datasets"],
             ["EYE_SOFTWARE", "66", "Code/tools for eye imaging"],
-            ["EDGE_CASE", "3", "Ambiguous / borderline records"],
+            ["OTHER_EYE_DATA", "3", "Ambiguous / borderline records"],
             ["NEGATIVE", "325", "Not eye-related"],
             ["Total", "514", "All classified Zenodo records"],
         ]
@@ -132,7 +132,7 @@ def create_docx():
         [
             ["EYE_IMAGING", "120", "ALL 120", "Exhaustive — validate every record"],
             ["EYE_SOFTWARE", "66", "ALL 66", "Exhaustive — validate every record"],
-            ["EDGE_CASE", "3", "ALL 3", "Exhaustive"],
+            ["OTHER_EYE_DATA", "3", "ALL 3", "Exhaustive"],
             ["NEGATIVE", "325", "60", "Stratified random: 20 high-conf, 20 medium, 20 lowest-conf"],
             ["Total", "514", "249", "48% of full corpus"],
         ]
@@ -167,7 +167,7 @@ def create_docx():
         [
             ["EYE_IMAGING", "3", "Contains actual ophthalmic imaging data (OCT, fundus, OCTA, corneal, slit-lamp, etc.) with at least one downloadable data file"],
             ["EYE_SOFTWARE", "2", "Code, models, or tools for eye imaging analysis — no actual imaging data"],
-            ["EDGE_CASE", "1", "Eye-related but not imaging data (GWAS, electrophysiology, reviews, animal non-imaging)"],
+            ["OTHER_EYE_DATA", "1", "Eye-related but not imaging data (GWAS, electrophysiology, reviews, animal non-imaging)"],
             ["NEGATIVE", "0", "Not related to eye/vision research at all"],
         ]
     )
@@ -198,7 +198,7 @@ def create_docx():
     add_bullet(doc, "Column E: File types detected")
     add_bullet(doc, "Column F: File count")
     add_bullet(doc, "Column G: Size (MB)")
-    add_bullet(doc, "Column H: Reviewer label — data-validated dropdown (EYE_IMAGING / EYE_SOFTWARE / EDGE_CASE / NEGATIVE)")
+    add_bullet(doc, "Column H: Reviewer label — data-validated dropdown (EYE_IMAGING / EYE_SOFTWARE / OTHER_EYE_DATA / NEGATIVE)")
     add_bullet(doc, "Column I: Confidence (1–5 scale) — how certain the reviewer is")
     add_bullet(doc, "Column J: Notes — free text for difficult cases")
 
@@ -336,7 +336,7 @@ def create_xlsx():
     sw = json.loads((RESULTS_DIR / "zenodo_software.json").read_text())
     all_results = json.loads((RESULTS_DIR / "zenodo_all_results.json").read_text())
 
-    edge = [r for r in all_results if r["label"] == "EDGE_CASE"]
+    edge = [r for r in all_results if r["label"] == "OTHER_EYE_DATA"]
     neg = [r for r in all_results if r["label"] == "NEGATIVE"]
 
     neg_sorted = sorted(neg, key=lambda r: r["confidence"])
@@ -359,7 +359,7 @@ def create_xlsx():
     for r in sw:
         records.append({**r, "_source": "EYE_SOFTWARE"})
     for r in edge:
-        records.append({**r, "_source": "EDGE_CASE"})
+        records.append({**r, "_source": "OTHER_EYE_DATA"})
     for r in neg_sample:
         records.append({**r, "_source": "NEGATIVE (sampled)"})
 
@@ -388,7 +388,7 @@ def create_xlsx():
         ("4. In Column H, select your classification from the dropdown:", None),
         ("   - EYE_IMAGING: Contains actual ophthalmic imaging data (OCT, fundus, OCTA, corneal, etc.)", None),
         ("   - EYE_SOFTWARE: Code/models/tools for eye imaging — no actual data files", None),
-        ("   - EDGE_CASE: Eye-related but not imaging (GWAS, genetics, electrophysiology, reviews)", None),
+        ("   - OTHER_EYE_DATA: Eye-related but not imaging (GWAS, genetics, electrophysiology, reviews)", None),
         ("   - NEGATIVE: Not related to eye/vision research", None),
         ("5. In Column I, rate your confidence (1=uncertain, 5=certain)", None),
         ("6. In Column J, add notes for difficult or ambiguous records", None),
@@ -477,7 +477,7 @@ def create_xlsx():
 
     label_dv = DataValidation(
         type="list",
-        formula1='"EYE_IMAGING,EYE_SOFTWARE,EDGE_CASE,NEGATIVE"',
+        formula1='"EYE_IMAGING,EYE_SOFTWARE,OTHER_EYE_DATA,NEGATIVE"',
         allow_blank=True,
     )
     label_dv.error = "Please select a valid label"
@@ -506,7 +506,7 @@ def create_xlsx():
     ws_sum.cell(row=1, column=1, value="Validation Summary").font = Font(size=14, bold=True, color="1F4E79")
     ws_sum.cell(row=3, column=1, value="Label")
     ws_sum.cell(row=3, column=2, value="Count")
-    for i, label in enumerate(["EYE_IMAGING", "EYE_SOFTWARE", "EDGE_CASE", "NEGATIVE", "(blank)"], 4):
+    for i, label in enumerate(["EYE_IMAGING", "EYE_SOFTWARE", "OTHER_EYE_DATA", "NEGATIVE", "(blank)"], 4):
         ws_sum.cell(row=i, column=1, value=label)
         if label == "(blank)":
             ws_sum.cell(row=i, column=2).value = f'=COUNTBLANK(Validation!H2:H{len(records)+1})'

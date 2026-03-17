@@ -138,7 +138,7 @@ class ADDFExporter:
         resource_type_value = {
             "EYE_IMAGING": "Eye Imaging Dataset",
             "EYE_SOFTWARE": "Eye Imaging Software",
-            "EDGE_CASE": "Eye Research Data",
+            "OTHER_EYE_DATA": "Eye Research Data",
             "NEGATIVE": "Dataset",
         }.get(label, "Dataset")
 

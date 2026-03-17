@@ -47,7 +47,7 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
   "prediction": 3,
   "label": "EYE_IMAGING",
   "prob_negative": 0.0000381,
-  "prob_edge": 0.0000383,
+  "prob_other_eye": 0.0000383,
   "prob_software": 0.0000385,
   "prob_eye_imaging": 0.9998850,
   "confidence": 0.9998850,
@@ -67,7 +67,7 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 | `prediction` | int | Class index (0=NEG, 1=EDGE, 2=SW, 3=EYE) |
 | `label` | string | Human-readable class name |
 | `prob_negative` | float | Probability of NEGATIVE class |
-| `prob_edge` | float | Probability of EDGE_CASE class |
+| `prob_other_eye` | float | Probability of OTHER_EYE_DATA class |
 | `prob_software` | float | Probability of EYE_SOFTWARE class |
 | `prob_eye_imaging` | float | Probability of EYE_IMAGING class |
 | `confidence` | float | Max probability (same as prob for predicted class) |
@@ -91,7 +91,7 @@ CREATE TABLE discovered_datasets (
     confidence DECIMAL(10, 8) NOT NULL,
     prob_eye_imaging DECIMAL(10, 8),
     prob_software DECIMAL(10, 8),
-    prob_edge DECIMAL(10, 8),
+    prob_other_eye DECIMAL(10, 8),
     prob_negative DECIMAL(10, 8),
     img_file_count INTEGER DEFAULT 0,
     archive_count INTEGER DEFAULT 0,
@@ -237,7 +237,7 @@ To get only new records since last scrape:
 - Industrial OCT/CT applications
 - "Hand-eye calibration" robotics datasets
 
-### Edge Cases to Monitor
+### Borderline Cases to Monitor
 
 - GWAS studies with "retinal" phenotypes (genetic, not imaging)
 - Electrophysiology (MEA, ERG) - borderline relevant
@@ -284,7 +284,7 @@ def import_results(json_path, db_connection):
         cursor.execute("""
             INSERT INTO discovered_datasets 
             (zenodo_id, title, url, label, confidence, 
-             prob_eye_imaging, prob_software, prob_edge, prob_negative,
+             prob_eye_imaging, prob_software, prob_other_eye, prob_negative,
              img_file_count, archive_count, size_mb, source)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'zenodo')
             ON CONFLICT (zenodo_id) DO UPDATE SET
@@ -293,7 +293,7 @@ def import_results(json_path, db_connection):
         """, (
             r['zenodo_id'], r['title'], r['url'], r['label'],
             r['confidence'], r['prob_eye_imaging'], r['prob_software'],
-            r['prob_edge'], r['prob_negative'],
+            r['prob_other_eye'], r['prob_negative'],
             r['img_files'], r['archives'], r['size_mb']
         ))
     

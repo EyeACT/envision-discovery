@@ -23,7 +23,7 @@ Uses `sentence-transformers/all-mpnet-base-v2` as backbone with 4-class classifi
 
 - **EYE_IMAGING (3)**: Actual ophthalmic imaging datasets (fundus, OCT, OCTA, cornea)
 - **EYE_SOFTWARE (2)**: Code, tools, models for eye imaging
-- **EDGE_CASE (1)**: Eye research papers, reviews, non-imaging data
+- **OTHER_EYE_DATA (1)**: Eye research papers, reviews, non-imaging data
 - **NEGATIVE (0)**: Not eye-related
 
 ## Results on Zenodo
@@ -34,7 +34,7 @@ Tested on 514 Zenodo datasets (filtered to `resource_type=dataset` only):
 |-------|-------|
 | EYE_IMAGING | 127 |
 | EYE_SOFTWARE | 24 |
-| EDGE_CASE | 32 |
+| OTHER_EYE_DATA | 32 |
 | NEGATIVE | 331 |
 
 ### Confidence Distribution (EYE_IMAGING)
@@ -52,7 +52,7 @@ Tested on 514 Zenodo datasets (filtered to `resource_type=dataset` only):
 | Accuracy | 0.937 | 0.879 (29/33) |
 | Macro F1 | 0.902 | 0.828 |
 
-Per-class spot-check F1: EYE_IMAGING=0.947, EDGE_CASE=0.889, NEGATIVE=0.903, EYE_SOFTWARE=0.571
+Per-class spot-check F1: EYE_IMAGING=0.947, OTHER_EYE_DATA=0.889, NEGATIVE=0.903, EYE_SOFTWARE=0.571
 
 ### Data Pipeline
 
@@ -63,7 +63,7 @@ Per-class spot-check F1: EYE_IMAGING=0.947, EDGE_CASE=0.889, NEGATIVE=0.903, EYE
 ## Training
 
 - **Base model**: sentence-transformers/all-mpnet-base-v2 (768-dimensional)
-- **Examples**: 474 (77 EYE_IMAGING, 48 EYE_SOFTWARE, 79 EDGE_CASE, 270 NEGATIVE)
+- **Examples**: 474 (77 EYE_IMAGING, 48 EYE_SOFTWARE, 79 OTHER_EYE_DATA, 270 NEGATIVE)
 - **Epochs**: 2
 - **Batch Size**: 16
 

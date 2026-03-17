@@ -1,3 +1,6 @@
+# envision-classifier is a separate repo (pip installed as a dependency)
+envision-classifier/
+
 # Models (too large for git)
 models/
 *.safetensors
@@ -60,5 +63,3 @@ nohup.out
 # OS
 .DS_Store
 Thumbs.db
-data/metadata/zenodo/
-.env

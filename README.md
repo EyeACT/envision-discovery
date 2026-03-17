@@ -29,7 +29,7 @@ python -m envision.scraper --output ./data --all-types
 ```
 
 The scraper:
-- Searches Zenodo using 40+ ophthalmology-specific search terms
+- Searches Zenodo using 47 ophthalmology-specific search terms across 7 categories (imaging modalities, diseases, anatomy, general ophthalmic, equipment/vendors, benchmark datasets, cornea/anterior segment — see [search terms](docs/SEARCH_TERMS.md))
 - Filters for `resource_type=dataset` by default
 - Inspects ZIP file contents via HTTP Range requests (downloads only ~64KB per ZIP)
 - Detects external dataset links (GitHub, Kaggle, HuggingFace, etc.)
@@ -83,7 +83,7 @@ Each record in the results JSON:
   "confidence": 0.9998,
   "prob_eye_imaging": 0.9998,
   "prob_software": 0.0000,
-  "prob_edge": 0.0000,
+  "prob_other_eye": 0.0000,
   "prob_negative": 0.0000,
   "title": "Dataset for PT-OCT ANN Project",
   "description": "...",
@@ -110,8 +110,21 @@ Each record in the results JSON:
 |-------|-------------|
 | **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, etc.) |
 | **EYE_SOFTWARE** | Code, tools, models for eye imaging (no actual image data) |
-| **EDGE_CASE** | Eye research papers, reviews, non-imaging data |
+| **OTHER_EYE_DATA** | Eye research papers, reviews, non-imaging data |
 | **NEGATIVE** | Not eye-related |
+
+## Current Results (Zenodo)
+
+From 515 Zenodo dataset records with data files (scraped from ~30,400 total records):
+
+| Class | Count |
+|-------|-------|
+| EYE_IMAGING | 120 |
+| EYE_SOFTWARE | 66 |
+| OTHER_EYE_DATA | 3 |
+| NEGATIVE | 325 |
+
+Classification is metadata-only (titles, descriptions, keywords, and file types inspected inside archives via HTTP Range requests) — no dataset files are downloaded. Multi-source support (Figshare, Dryad, OSF, DataCite) is implemented and will expand coverage.
 
 ## Repository structure
 
