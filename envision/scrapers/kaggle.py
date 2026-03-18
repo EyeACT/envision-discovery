@@ -27,17 +27,29 @@ logger = logging.getLogger(__name__)
 API_BASE = "https://www.kaggle.com/api/v1"
 
 
-def _load_credentials() -> tuple[str, str] | None:
-    """Load Kaggle API credentials from env vars or ~/.kaggle/kaggle.json.
+def _load_credentials() -> dict | None:
+    """Load Kaggle API credentials.
 
-    Returns (username, key) tuple or None if not found.
+    Supports three methods (checked in order):
+      1. KAGGLE_API_TOKEN env var (new-style bearer token, starts with KGAT_)
+      2. KAGGLE_USERNAME + KAGGLE_KEY env vars (legacy basic auth)
+      3. ~/.kaggle/kaggle.json file (legacy basic auth)
+
+    Returns dict with either {"bearer": token} or {"basic": (user, key)},
+    or None if no credentials found.
     """
     import os
 
+    # New-style API token (Bearer auth)
+    api_token = os.environ.get("KAGGLE_API_TOKEN")
+    if api_token:
+        return {"bearer": api_token}
+
+    # Legacy username + key (Basic auth)
     username = os.environ.get("KAGGLE_USERNAME")
     key = os.environ.get("KAGGLE_KEY")
     if username and key:
-        return username, key
+        return {"basic": (username, key)}
 
     kaggle_json = Path.home() / ".kaggle" / "kaggle.json"
     if kaggle_json.exists():
@@ -46,14 +58,14 @@ def _load_credentials() -> tuple[str, str] | None:
             username = creds.get("username")
             key = creds.get("key")
             if username and key:
-                return username, key
+                return {"basic": (username, key)}
         except (json.JSONDecodeError, KeyError) as e:
             logger.warning(f"Failed to parse {kaggle_json}: {e}")
 
     logger.warning(
-        "Kaggle credentials not found. Set KAGGLE_USERNAME and KAGGLE_KEY "
-        "environment variables, or create ~/.kaggle/kaggle.json with "
-        '{"username": "...", "key": "..."}.'
+        "Kaggle credentials not found. Set KAGGLE_API_TOKEN env var "
+        "(new-style token starting with KGAT_), or KAGGLE_USERNAME + "
+        "KAGGLE_KEY, or create ~/.kaggle/kaggle.json."
     )
     return None
 
@@ -68,8 +80,10 @@ class KaggleScraper:
         self.output_dir = Path(output_dir) if output_dir else None
 
         creds = _load_credentials()
-        if creds:
-            self.session.auth = (creds[0], creds[1])
+        if creds and "bearer" in creds:
+            self.session.headers.update({"Authorization": f"Bearer {creds['bearer']}"})
+        elif creds and "basic" in creds:
+            self.session.auth = creds["basic"]
         else:
             logger.warning("KaggleScraper initialised without API credentials")
 
@@ -90,16 +104,30 @@ class KaggleScraper:
                 "filetype": "all",
             }
 
-            try:
-                resp = self.session.get(
-                    f"{API_BASE}/datasets/list",
-                    params=params,
-                    timeout=30,
-                )
-                resp.raise_for_status()
-                datasets = resp.json()
-            except Exception as e:
-                logger.warning(f"Kaggle search error for '{query}': {e}")
+            for attempt in range(3):
+                try:
+                    resp = self.session.get(
+                        f"{API_BASE}/datasets/list",
+                        params=params,
+                        timeout=30,
+                    )
+                    resp.raise_for_status()
+                    datasets = resp.json()
+                    break
+                except requests.exceptions.HTTPError as e:
+                    if e.response is not None and e.response.status_code in (429, 403):
+                        wait = 10 * (2 ** attempt)  # 10s, 20s, 40s
+                        logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
+                        time.sleep(wait)
+                        continue
+                    logger.warning(f"Kaggle search error for '{query}': {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"Kaggle search error for '{query}': {e}")
+                    break
+            else:
+                # All retries exhausted
+                logger.warning(f"Kaggle gave up after 3 retries for '{query}'")
                 break
 
             if not datasets:
@@ -140,7 +168,7 @@ class KaggleScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(2.0)
+            time.sleep(5.0)
         return all_results
 
     def _dataset_to_metadata(

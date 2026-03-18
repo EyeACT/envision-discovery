@@ -47,16 +47,30 @@ class DryadScraper:
         per_page = 25
 
         while len(results) < max_results:
-            try:
-                resp = self.session.get(
-                    f"{API_BASE}/search",
-                    params={"q": query, "page": page, "per_page": per_page},
-                    timeout=30,
-                )
-                resp.raise_for_status()
-                data = resp.json()
-            except Exception as e:
-                logger.warning(f"Dryad search error for '{query}': {e}")
+            for attempt in range(3):
+                try:
+                    resp = self.session.get(
+                        f"{API_BASE}/search",
+                        params={"q": query, "page": page, "per_page": per_page},
+                        timeout=30,
+                    )
+                    resp.raise_for_status()
+                    data = resp.json()
+                    break
+                except requests.exceptions.HTTPError as e:
+                    if e.response is not None and e.response.status_code in (429, 403):
+                        wait = 10 * (2 ** attempt)  # 10s, 20s, 40s
+                        logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
+                        time.sleep(wait)
+                        continue
+                    logger.warning(f"Dryad search error for '{query}': {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"Dryad search error for '{query}': {e}")
+                    break
+            else:
+                # All retries exhausted
+                logger.warning(f"Dryad gave up after 3 retries for '{query}'")
                 break
 
             datasets = data.get("_embedded", {}).get("stash:datasets", [])
@@ -98,7 +112,7 @@ class DryadScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(2.0)
+            time.sleep(5.0)
         return all_results
 
     def _get_files(self, doi: str, version_id: str | None = None) -> list[dict]:

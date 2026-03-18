@@ -27,25 +27,18 @@ def pipeline_cli():
                        help='Max results per search query (default: 100)')
     parser.add_argument('--no-zip-inspect', action='store_true',
                        help='Skip ZIP content inspection (faster)')
+    parser.add_argument('--dedup', action='store_true',
+                       help='Run cross-source duplicate detection after classification')
+    parser.add_argument('--dedup-threshold', type=float, default=0.92,
+                       help='Cosine similarity threshold for dedup (default: 0.92)')
 
     args = parser.parse_args()
-
-    if args.source == 'zenodo' and not args.addf_output:
-        # Backward-compatible Zenodo-only path
-        from .pipeline import run_zenodo_pipeline
-        run_zenodo_pipeline(
-            classify_only=args.classify_only,
-            metadata_dir=args.metadata_dir,
-            results_dir=args.results_dir,
-        )
-    else:
-        _run_multi_source(args)
+    _run_multi_source(args)
 
 
 def _run_multi_source(args):
     """Run multi-source pipeline with scraping + classification + optional ADDF."""
     from .pipeline import run_pipeline
-    from .metadata import DatasetMetadata
 
     sources = (
         ['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei']
@@ -54,36 +47,22 @@ def _run_multi_source(args):
     )
 
     for source in sources:
-        print(f"\n{'#'*70}")
-        print(f"# Source: {source.upper()}")
-        print(f"{'#'*70}")
+        print(f"\n{'#'*70}", flush=True)
+        print(f"# Source: {source.upper()}", flush=True)
+        print(f"{'#'*70}", flush=True)
 
         metadata_records = None
 
         if source == 'zenodo':
-            # Use legacy JSON-based path if metadata-dir provided
-            if args.metadata_dir:
-                run_pipeline(
-                    source='zenodo',
-                    classify_only=args.classify_only,
-                    metadata_dir=args.metadata_dir,
-                    results_dir=args.results_dir,
-                    addf_output_dir=args.addf_output,
-                )
-                continue
-            else:
-                # Scrape fresh
-                from .scraper import ZenodoScraper, run_scrape
-                from pathlib import Path
-
-                data_dir = Path(args.results_dir).parent / 'data' if args.results_dir else Path.cwd() / 'data'
-                records = run_scrape(
-                    output_dir=data_dir,
-                    inspect_zips=not args.no_zip_inspect,
-                    max_per_query=args.max_per_query,
-                )
-                scraper = ZenodoScraper(data_dir, resume=False)
-                metadata_records = scraper.to_metadata_batch(records)
+            # Zenodo uses legacy JSON-based path (pre-scraped metadata)
+            run_pipeline(
+                source='zenodo',
+                classify_only=args.classify_only,
+                metadata_dir=args.metadata_dir,
+                results_dir=args.results_dir,
+                addf_output_dir=args.addf_output,
+            )
+            continue
 
         elif source == 'figshare':
             from .scrapers.figshare import FigshareScraper
@@ -126,3 +105,14 @@ def _run_multi_source(args):
                 results_dir=args.results_dir,
                 addf_output_dir=args.addf_output,
             )
+
+    # Cross-source deduplication
+    if args.dedup and args.source == 'all':
+        from pathlib import Path
+        results_dir = args.results_dir or 'results'
+        print(f"\n{'#'*70}", flush=True)
+        print("# CROSS-SOURCE DEDUPLICATION", flush=True)
+        print(f"{'#'*70}", flush=True)
+        from .dedup import run_dedup
+        duplicates = run_dedup(results_dir, threshold=args.dedup_threshold)
+        print(f"  Found {len(duplicates)} potential duplicate pairs", flush=True)

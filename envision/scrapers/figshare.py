@@ -55,16 +55,30 @@ class FigshareScraper:
                 "page_size": page_size,
             }
 
-            try:
-                resp = self.session.post(
-                    f"{API_BASE}/articles/search",
-                    json=payload,
-                    timeout=30,
-                )
-                resp.raise_for_status()
-                articles = resp.json()
-            except Exception as e:
-                logger.warning(f"Figshare search error for '{query}': {e}")
+            for attempt in range(3):
+                try:
+                    resp = self.session.post(
+                        f"{API_BASE}/articles/search",
+                        json=payload,
+                        timeout=30,
+                    )
+                    resp.raise_for_status()
+                    articles = resp.json()
+                    break
+                except requests.exceptions.HTTPError as e:
+                    if e.response is not None and e.response.status_code in (429, 403):
+                        wait = 10 * (2 ** attempt)  # 10s, 20s, 40s
+                        logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
+                        time.sleep(wait)
+                        continue
+                    logger.warning(f"Figshare search error for '{query}': {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"Figshare search error for '{query}': {e}")
+                    break
+            else:
+                # All retries exhausted
+                logger.warning(f"Figshare gave up after 3 retries for '{query}'")
                 break
 
             if not articles:
@@ -104,7 +118,7 @@ class FigshareScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(2.0)
+            time.sleep(5.0)
         return all_results
 
     def _article_to_metadata(

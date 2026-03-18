@@ -24,6 +24,8 @@ PUBLISHER_MAP = {
     "dryad": "Dryad Digital Repository",
     "osf": "Open Science Framework",
     "datacite": "DataCite",
+    "kaggle": "Kaggle",
+    "nei": "National Eye Institute (NIH)",
 }
 
 # Extension to MIME type mapping for common eye imaging formats
