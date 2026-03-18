@@ -54,19 +54,36 @@ class OSFScraper:
         results = []
         url = f"{API_BASE}/nodes/"
         params = {
-            "filter[title]": query,
-            "filter[category]": "data",
+            "filter[title][contains]": query,
+            "filter[public]": "true",
             "page[size]": 10,
         }
 
         while url and len(results) < max_results:
-            try:
-                resp = self.session.get(url, params=params, timeout=30)
-                self._rate_limit()
-                resp.raise_for_status()
-                data = resp.json()
-            except Exception as e:
-                logger.warning(f"OSF search error for '{query}': {e}")
+            data = None
+            for attempt in range(3):
+                try:
+                    resp = self.session.get(url, params=params, timeout=30)
+                    self._rate_limit()
+                    resp.raise_for_status()
+                    data = resp.json()
+                    break
+                except requests.exceptions.HTTPError as e:
+                    if e.response is not None and e.response.status_code in (429, 403):
+                        wait = 30 * (2 ** attempt)  # 30s, 60s, 120s (OSF is slow)
+                        logger.warning(f"OSF rate limited ({e.response.status_code}), waiting {wait}s...")
+                        time.sleep(wait)
+                        continue
+                    logger.warning(f"OSF search error for '{query}': {e}")
+                    break
+                except Exception as e:
+                    logger.warning(f"OSF search error for '{query}': {e}")
+                    break
+            else:
+                logger.warning(f"OSF gave up after 3 retries for '{query}'")
+                break
+
+            if data is None:
                 break
 
             nodes = data.get("data", [])
