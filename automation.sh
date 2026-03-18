@@ -12,6 +12,8 @@ echo "Step 0a: Resetting local changes and pulling latest code..."
 git reset --hard
 git pull
 
+chmod +x automation.sh
+
 # Delete the output files and folders
 echo "Step 0b: Cleaning up old data..."
 rm -rf ./data/metadata/zenodo/*
