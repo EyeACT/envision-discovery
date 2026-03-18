@@ -104,6 +104,7 @@ class KaggleScraper:
                 "filetype": "all",
             }
 
+            datasets = None
             for attempt in range(3):
                 try:
                     resp = self.session.get(
@@ -116,7 +117,7 @@ class KaggleScraper:
                     break
                 except requests.exceptions.HTTPError as e:
                     if e.response is not None and e.response.status_code in (429, 403):
-                        wait = 10 * (2 ** attempt)  # 10s, 20s, 40s
+                        wait = 60 * (2 ** attempt)  # 10s, 20s, 40s
                         logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
                         time.sleep(wait)
                         continue
@@ -168,7 +169,7 @@ class KaggleScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(5.0)
+            time.sleep(30.0)
         return all_results
 
     def _dataset_to_metadata(
