@@ -20,7 +20,7 @@ def pipeline_cli():
     parser.add_argument('--metadata-dir', help='Directory with metadata JSON files')
     parser.add_argument('--results-dir', help='Output directory for results')
     parser.add_argument('--source', default='zenodo',
-                       choices=['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'all'],
+                       choices=['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei', 'all'],
                        help='Data source to scrape and classify (default: zenodo)')
     parser.add_argument('--addf-output', help='Directory for ADDF schema export')
     parser.add_argument('--max-per-query', type=int, default=100,
@@ -48,7 +48,7 @@ def _run_multi_source(args):
     from .metadata import DatasetMetadata
 
     sources = (
-        ['zenodo', 'figshare', 'dryad', 'osf', 'datacite']
+        ['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei']
         if args.source == 'all'
         else [args.source]
     )
@@ -94,7 +94,8 @@ def _run_multi_source(args):
         elif source == 'dryad':
             from .scrapers.dryad import DryadScraper
             scraper = DryadScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query)
+            metadata_records = scraper.scrape(max_per_query=args.max_per_query,
+                                              inspect_zips=not args.no_zip_inspect)
 
         elif source == 'osf':
             from .scrapers.osf import OSFScraper
@@ -104,6 +105,17 @@ def _run_multi_source(args):
         elif source == 'datacite':
             from .scrapers.datacite import DataCiteScraper
             scraper = DataCiteScraper()
+            metadata_records = scraper.scrape(max_per_query=args.max_per_query)
+
+        elif source == 'kaggle':
+            from .scrapers.kaggle import KaggleScraper
+            scraper = KaggleScraper()
+            metadata_records = scraper.scrape(max_per_query=args.max_per_query,
+                                              inspect_zips=not args.no_zip_inspect)
+
+        elif source == 'nei':
+            from .scrapers.nei import NEIScraper
+            scraper = NEIScraper()
             metadata_records = scraper.scrape(max_per_query=args.max_per_query)
 
         if metadata_records:

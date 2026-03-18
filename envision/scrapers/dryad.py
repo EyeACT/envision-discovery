@@ -18,6 +18,7 @@ from ..scraper import (
     ARCHIVE_EXTS,
     GENOMICS_EXTS,
     SEARCH_TERMS,
+    ZipInspector,
 )
 
 logger = logging.getLogger(__name__)
@@ -38,6 +39,7 @@ class DryadScraper:
         self,
         query: str,
         max_results: int = 100,
+        inspect_zips: bool = False,
     ) -> list[DatasetMetadata]:
         """Search Dryad for datasets matching query."""
         results = []
@@ -67,7 +69,7 @@ class DryadScraper:
                     continue
                 self.seen_ids.add(ds_id)
 
-                meta = self._dataset_to_metadata(ds)
+                meta = self._dataset_to_metadata(ds, inspect_zips)
                 if meta:
                     results.append(meta)
 
@@ -84,6 +86,7 @@ class DryadScraper:
         self,
         search_terms: list[str] | None = None,
         max_per_query: int = 100,
+        inspect_zips: bool = False,
     ) -> list[DatasetMetadata]:
         """Run full scrape using all search terms."""
         if search_terms is None:
@@ -92,7 +95,7 @@ class DryadScraper:
         all_results = []
         for i, term in enumerate(search_terms, 1):
             logger.info(f"[{i}/{len(search_terms)}] Dryad: '{term}'")
-            results = self.search(term, max_results=max_per_query)
+            results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
             time.sleep(2.0)
@@ -125,7 +128,9 @@ class DryadScraper:
             logger.debug(f"Could not fetch Dryad files for {doi}: {e}")
             return []
 
-    def _dataset_to_metadata(self, ds: dict) -> DatasetMetadata | None:
+    def _dataset_to_metadata(
+        self, ds: dict, inspect_zips: bool = False
+    ) -> DatasetMetadata | None:
         """Convert a Dryad dataset to DatasetMetadata."""
         doi = ds.get("identifier", "")
 
@@ -138,6 +143,7 @@ class DryadScraper:
         medical_count = 0
         archive_count = 0
         genomics_count = 0
+        zip_contents: list[str] = []
 
         for f in files:
             name_lower = f.get("path", "").lower()
@@ -160,6 +166,22 @@ class DryadScraper:
                     elif ext in GENOMICS_EXTS:
                         genomics_count += 1
                     break
+
+            # ZIP inspection
+            if inspect_zips and name_lower.endswith(".zip"):
+                download_url = f.get("download_url")
+                if download_url:
+                    try:
+                        contents = ZipInspector.inspect_via_range(
+                            download_url, self.session
+                        )
+                        if contents:
+                            summary = ZipInspector.summarize_contents(contents)
+                            zip_contents.extend(
+                                summary.get("sample_imaging_files", [])
+                            )
+                    except Exception:
+                        pass
 
         # Description
         abstract = ds.get("abstract", "")
@@ -211,7 +233,7 @@ class DryadScraper:
             medical_count=medical_count,
             archive_count=archive_count,
             genomics_count=genomics_count,
-            zip_contents=[],
+            zip_contents=zip_contents,
             access_type="open",
             license=license_name,
             creators=creators,
