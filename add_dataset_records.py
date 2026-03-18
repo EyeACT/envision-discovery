@@ -246,8 +246,6 @@ def add_dataset_records_to_database():
         except requests.exceptions.RequestException as e:
             print(f"[ERROR] Failed to add '{record['title']}': {e}")
 
-        break
-
 
 if __name__ == "__main__":
     generate_dataset_records()
