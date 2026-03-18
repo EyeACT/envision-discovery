@@ -22,11 +22,16 @@ https://github.com/EyeACT/envision-discovery
 
 ### Result Files
 
-| File | Description | Records |
-|------|-------------|---------|
-| `results/zenodo_eye_imaging.json` | Eye imaging datasets | 524 |
-| `results/zenodo_software.json` | Software/code repos | 1,150 |
-| `results/zenodo_all_results.json` | All classified records | 9,448 |
+All sources use the same unified JSON schema. Files are named `{source}_eye_imaging.json`, `{source}_software.json`, `{source}_all_results.json`.
+
+| Source | EYE_IMAGING | All Records |
+|--------|-------------|-------------|
+| `results/zenodo_*.json` | 127 | 514 |
+| `results/figshare_*.json` | 1,343 | 2,000 |
+| `results/dryad_*.json` | 52 | 89 |
+| `results/kaggle_*.json` | 254 | 732 |
+| `results/nei_*.json` | 687 | 1,662 |
+| `results/datacite_*.json` | 1,212 | 1,836 |
 
 ### HuggingFace Model
 ```
@@ -37,23 +42,36 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 
 ## 2. JSON Schema
 
-### Eye Imaging Record Structure
+### Unified Record Structure (all sources)
 
 ```json
 {
-  "zenodo_id": "10866349",
-  "title": "Human Developing Retina Atlas (Intermediate Data Object)",
+  "source": "zenodo",
+  "source_id": "10866349",
+  "doi": "10.5281/zenodo.10866349",
   "url": "https://zenodo.org/records/10866349",
-  "prediction": 3,
   "label": "EYE_IMAGING",
-  "prob_negative": 0.0000381,
-  "prob_other_eye": 0.0000383,
-  "prob_software": 0.0000385,
-  "prob_eye_imaging": 0.9998850,
-  "confidence": 0.9998850,
-  "img_files": 0,
-  "archives": 1,
-  "size_mb": 37748.1
+  "confidence": 0.9998,
+  "prob_eye_imaging": 0.9998,
+  "prob_software": 0.0000,
+  "prob_other_eye": 0.0000,
+  "prob_negative": 0.0000,
+  "title": "Human Developing Retina Atlas",
+  "description": "...",
+  "keywords": ["retina", "OCT"],
+  "access_type": "open",
+  "license": "cc-by-4.0",
+  "file_types": [".zip"],
+  "file_names": ["Data.zip"],
+  "file_count": 1,
+  "img_count": 0,
+  "medical_count": 0,
+  "archive_count": 1,
+  "genomics_count": 0,
+  "size_mb": 37748.1,
+  "zip_file_types": {".tif": 450},
+  "external_links": [],
+  "related_dois": []
 }
 ```
 
@@ -61,19 +79,32 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `zenodo_id` | string | Unique Zenodo record identifier |
-| `title` | string | Dataset title from metadata |
-| `url` | string | Direct link to Zenodo record |
-| `prediction` | int | Class index (0=NEG, 1=EDGE, 2=SW, 3=EYE) |
-| `label` | string | Human-readable class name |
-| `prob_negative` | float | Probability of NEGATIVE class |
-| `prob_other_eye` | float | Probability of OTHER_EYE_DATA class |
-| `prob_software` | float | Probability of EYE_SOFTWARE class |
+| `source` | string | Platform: zenodo, figshare, dryad, kaggle, nei, datacite |
+| `source_id` | string | Platform-specific unique identifier |
+| `doi` | string | DOI if available, null otherwise |
+| `url` | string | Direct link to record on source platform |
+| `label` | string | Classification: EYE_IMAGING, EYE_SOFTWARE, OTHER_EYE_DATA, NEGATIVE |
+| `confidence` | float | Max class probability |
 | `prob_eye_imaging` | float | Probability of EYE_IMAGING class |
-| `confidence` | float | Max probability (same as prob for predicted class) |
-| `img_files` | int | Count of image files (.dcm, .nii, .jpg, etc.) |
-| `archives` | int | Count of archive files (.zip, .tar, .gz) |
-| `size_mb` | float | Total file size in megabytes |
+| `prob_software` | float | Probability of EYE_SOFTWARE class |
+| `prob_other_eye` | float | Probability of OTHER_EYE_DATA class |
+| `prob_negative` | float | Probability of NEGATIVE class |
+| `title` | string | Dataset title |
+| `description` | string | Abstract/description (HTML stripped, max 500 chars) |
+| `keywords` | list | Tags/keywords (max 10) |
+| `access_type` | string | Access level: open, embargoed, restricted |
+| `license` | string | License identifier |
+| `file_types` | list | Top-level file extensions |
+| `file_names` | list | Top-level file names (max 20) |
+| `file_count` | int | Total file count |
+| `img_count` | int | Standard image files (.jpg, .png, .tif, etc.) |
+| `medical_count` | int | Medical imaging files (.dcm, .nii, .mat, etc.) |
+| `archive_count` | int | Archive files (.zip, .tar, etc.) |
+| `genomics_count` | int | Genomics files (excluded from eye imaging) |
+| `size_mb` | float | Total size in megabytes |
+| `zip_file_types` | object | File types found inside ZIP archives (ext → count) |
+| `external_links` | list | URLs to external dataset platforms |
+| `related_dois` | list | Related DOI identifiers |
 
 ---
 

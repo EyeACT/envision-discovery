@@ -384,7 +384,9 @@ def _run_metadata_pipeline(
             "archive_count": meta.archive_count,
             "genomics_count": meta.genomics_count,
             "size_mb": meta.size_mb,
+            "zip_file_types": {},
             "external_links": meta.external_links[:10],
+            "related_dois": [],
         }
         all_results.append(result)
 
@@ -482,7 +484,8 @@ def _run_zenodo_legacy_pipeline(
             dataset_links = extract_dataset_links(r)
 
             result = {
-                'zenodo_id': r['_zenodo_id'],
+                'source': 'zenodo',
+                'source_id': r['_zenodo_id'],
                 'doi': metadata_details['doi'],
                 'url': f"https://zenodo.org/records/{r['_zenodo_id']}",
                 'label': cls_result['label'],
@@ -494,9 +497,8 @@ def _run_zenodo_legacy_pipeline(
                 'title': r.get('metadata', {}).get('title', '')[:200],
                 'description': metadata_details['description'],
                 'keywords': metadata_details['keywords'],
-                'access_right': metadata_details['access_right'],
+                'access_type': metadata_details['access_right'],
                 'license': metadata_details['license'],
-                'resource_type': metadata_details['resource_type'],
                 'file_types': file_details['file_types'],
                 'file_names': file_details['file_names'],
                 'file_count': file_details['file_count'],
@@ -506,7 +508,7 @@ def _run_zenodo_legacy_pipeline(
                 'genomics_count': file_details['genomics_count'],
                 'size_mb': round(file_details['total_size'] / (1024*1024), 1),
                 'zip_file_types': file_details['zip_file_types'],
-                'dataset_links': dataset_links,
+                'external_links': dataset_links,
                 'related_dois': metadata_details['related_dois'],
             }
             all_results.append(result)
