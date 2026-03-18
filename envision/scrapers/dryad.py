@@ -47,6 +47,7 @@ class DryadScraper:
         per_page = 25
 
         while len(results) < max_results:
+            datasets = None
             for attempt in range(3):
                 try:
                     resp = self.session.get(
@@ -59,7 +60,7 @@ class DryadScraper:
                     break
                 except requests.exceptions.HTTPError as e:
                     if e.response is not None and e.response.status_code in (429, 403):
-                        wait = 10 * (2 ** attempt)  # 10s, 20s, 40s
+                        wait = 60 * (2 ** attempt)  # 10s, 20s, 40s
                         logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
                         time.sleep(wait)
                         continue
@@ -74,7 +75,7 @@ class DryadScraper:
                 break
 
             datasets = data.get("_embedded", {}).get("stash:datasets", [])
-            if not datasets:
+            if datasets is None or not datasets:
                 break
 
             for ds in datasets:
@@ -112,7 +113,7 @@ class DryadScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(5.0)
+            time.sleep(30.0)
         return all_results
 
     def _get_files(self, doi: str, version_id: str | None = None) -> list[dict]:
