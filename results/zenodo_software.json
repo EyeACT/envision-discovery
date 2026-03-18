@@ -1,6 +1,7 @@
 [
   {
-    "zenodo_id": "10390573",
+    "source": "zenodo",
+    "source_id": "10390573",
     "doi": "10.5281/zenodo.10390573",
     "url": "https://zenodo.org/records/10390573",
     "label": "EYE_SOFTWARE",
@@ -12,9 +13,8 @@
     "title": "FastSurferVINN Checkpoints",
     "description": "Training checkpoints for FastSurferVINN (https://github.com/Deep-MI/FastSurfer) - please cite the paper when using this resource (https://doi.org/10.1016/j.neuroimage.2022.118933).",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "apache2.0",
-    "resource_type": "dataset",
     "file_types": [],
     "file_names": [
       "aparc_vinn_coronal_v2.0.0.pkl",
@@ -34,14 +34,15 @@
     "genomics_count": 0,
     "size_mb": 181.5,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/Deep-MI/FastSurfer)",
       "https://github.com/Deep-MI/FastSurfer"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "17657914",
+    "source": "zenodo",
+    "source_id": "17657914",
     "doi": "10.5281/zenodo.17657914",
     "url": "https://zenodo.org/records/17657914",
     "label": "EYE_SOFTWARE",
@@ -53,9 +54,8 @@
     "title": "Flexible corneal neurotechnology reveals in-vivo pathological retinal oscillations in retinitis pigmentosa mouse models and patients as a biomarker of functional remodeling during retinal degeneration",
     "description": "This record contains the dataset used in the article:\"Litvin, D. et al. Flexible corneal neurotechnology reveals in-vivo pathological retinal oscillations in retinitis pigmentosa mouse models and patients as a biomarker of functional remodeling during retinal degeneration\". \n The Data.zip folder contains input data for PSD analysis, cycle-by-cycle (CBC) analyis and multi-metric (MM) anaylsis. for each analysis, it contains also expected results. \n The Analysis code is currently available here: h",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-nc-nd-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -73,13 +73,14 @@
     "zip_file_types": {
       ".jpg": 1
     },
-    "dataset_links": [
+    "external_links": [
       "https://github.com/lne-lab/rsERG"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "10148752",
+    "source": "zenodo",
+    "source_id": "10148752",
     "doi": "10.5281/zenodo.10148752",
     "url": "https://zenodo.org/records/10148752",
     "label": "EYE_SOFTWARE",
@@ -97,9 +98,8 @@
       "Artificial Neural Network",
       "fine-tuning"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".tar"
     ],
@@ -132,14 +132,15 @@
     "genomics_count": 0,
     "size_mb": 7469.0,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/BennyCa/ReWaRD",
       "https://github.com/hirokatsukataoka16/FractalDB-Pretrained-ResNet-PyTorch"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "13941470",
+    "source": "zenodo",
+    "source_id": "13941470",
     "doi": "10.5281/zenodo.13941470",
     "url": "https://zenodo.org/records/13941470",
     "label": "EYE_SOFTWARE",
@@ -157,9 +158,8 @@
       "MSD",
       "agroeconomic model"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-sa-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -192,13 +192,14 @@
     "genomics_count": 0,
     "size_mb": 1254.0,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": [
       "10.21105/joss.06388"
     ]
   },
   {
-    "zenodo_id": "14537494",
+    "source": "zenodo",
+    "source_id": "14537494",
     "doi": "10.5281/zenodo.14537494",
     "url": "https://zenodo.org/records/14537494",
     "label": "EYE_SOFTWARE",
@@ -210,9 +211,8 @@
     "title": "Figure 4 - Premade Intermediate Files",
     "description": "These are premade intermediate files used in the Giotto Suite Manuscript Figure 4\u00a0 scripts    \n  Contents:  \n  segmentation_polygons.json  - {baysor 0.5.2} segmentation GeometryCollection \n  cellpose.tiff  - {cellpose 3.1.0} segmentation mask \n  stardist.tiff  - {stardist 0.9.1} segmentation mask \n  mesmer.tiff  - {deepcell 0.12.10}, {deepcell-toolbox 0.12.1}, {deepcell-tracking 0.6.5} segmentation mask \n  zoomext.csv  - extent information for a zoomed in ROI \n  IF_cropped.tif ,  IF_cropped.tif.",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".tif",
       ".tiff"
@@ -233,13 +233,14 @@
     "genomics_count": 0,
     "size_mb": 1137.3,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/drieslab/Giotto_Suite_manuscript/blob/main/scripts/Figure_4.R"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "10203750",
+    "source": "zenodo",
+    "source_id": "10203750",
     "doi": "10.5281/zenodo.10203750",
     "url": "https://zenodo.org/records/10203750",
     "label": "EYE_SOFTWARE",
@@ -251,9 +252,8 @@
     "title": "Large Spots DeepMIB project, synthetic dataset for testing 2D semantic segmentation",
     "description": "A complete DeepMIB project with a synthetic dataset generated for quick tests of semantic segmentation approaches. The dataset includes a trained DeepLabV3-Resnet18 network for detection of large spots on a black background.\u00a0  The network can be opened by loading \"2D_LargeSpots_2cl_DeepLabV3.mibCfg\" file by    MIB->Menu->Tools->Deep learning segmentation->Options tab->Config files->Load\u00a0   Drag and drop of the config file into DeepMIB window   Microscopy Image Browser:  https://mib.helsinki.fi",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".png",
       ".zip"
@@ -271,11 +271,12 @@
     "zip_file_types": {
       ".tif": 24
     },
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "15288631",
+    "source": "zenodo",
+    "source_id": "15288631",
     "doi": "10.5281/zenodo.15288631",
     "url": "https://zenodo.org/records/15288631",
     "label": "EYE_SOFTWARE",
@@ -287,9 +288,8 @@
     "title": "exported-nlsm-octrees",
     "description": "Contains exported octrees (.oct) and visualization files (.pvtu) for both NLSM-A and NLSM-B cases, generated by Dendro-GR. \n Relates to Figures 10, 11, 12 & 13 in AMRaCut paper.",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".tar.gz"
     ],
@@ -303,11 +303,12 @@
     "genomics_count": 0,
     "size_mb": 264.0,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "7811860",
+    "source": "zenodo",
+    "source_id": "7811860",
     "doi": "10.5281/zenodo.7811860",
     "url": "https://zenodo.org/records/7811860",
     "label": "EYE_SOFTWARE",
@@ -324,9 +325,8 @@
       "non-natural images",
       "image dataset"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".tar.gz"
     ],
@@ -341,14 +341,15 @@
     "genomics_count": 0,
     "size_mb": 2099.8,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/BennyCa/Retinal-Wave-Simulator",
       "https://github.com/BennyCa/ReWaRD"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "7779499",
+    "source": "zenodo",
+    "source_id": "7779499",
     "doi": "10.5281/zenodo.7779499",
     "url": "https://zenodo.org/records/7779499",
     "label": "EYE_SOFTWARE",
@@ -365,9 +366,8 @@
       "non-natural images",
       "image dataset"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".tar.gz",
       ".zip"
@@ -383,14 +383,15 @@
     "genomics_count": 0,
     "size_mb": 11515.7,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/BennyCa/Retinal-Wave-Simulator",
       "https://github.com/BennyCa/ReWaRD"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "4185955",
+    "source": "zenodo",
+    "source_id": "4185955",
     "doi": "10.5281/zenodo.4185955",
     "url": "https://zenodo.org/records/4185955",
     "label": "EYE_SOFTWARE",
@@ -402,9 +403,8 @@
     "title": "Data for \"Bayesian inference for biophysical neuron models enables stimulus optimization for retinal neuroprosthetics\"",
     "description": "Experimental and precomputed data for the paper \"Bayesian inference for biophysical neuron models enables stimulus optimization for retinal neuroprosthetics\"\u00a0by Oesterle et al. 2020 (DOI:\u00a0 10.7554/eLife.54997 ). \n\n The cone bipolar cell data has been described and\u00a0published in the paper \"Inhibition decorrelates visual feature representations in the inner retina\" by\u00a0Franke et al. 2017 (DOI:\u00a0 10.1038/nature21394 ).\u00a0 \n\n This data is both a supplement to the Oesterle et al. paper and the code for th",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -418,7 +418,7 @@
     "genomics_count": 0,
     "size_mb": 12989.3,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "http://github.com/berenslab/CBC_inference",
       "https://github.com/berenslab/CBC_inference"
     ],
@@ -427,7 +427,8 @@
     ]
   },
   {
-    "zenodo_id": "12779552",
+    "source": "zenodo",
+    "source_id": "12779552",
     "doi": "10.5281/zenodo.12779552",
     "url": "https://zenodo.org/records/12779552",
     "label": "EYE_SOFTWARE",
@@ -439,9 +440,8 @@
     "title": "Fundus vessel phenotypes",
     "description": "Related publication (2024):  https://www.nature.com/articles/s41467-024-52334-1  \n  Sumstat column information  \n \n beta: refers to the effect of having an extra copy of A2 \n af: frequency of A2 \n A2 is not necessarily the minor allele \n The sumstats are curated bgenie output. official bgenie manual: https://jmarchini.org/bgenie/#output-file-options \n \n  Label map  (maps names used in the paper to the sumstat labels) \n tif_dict = { 'A temporal angle': 'mean_angle_taa', 'V temporal angle': 'mean_",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "gpl-3.0-or-later",
-    "resource_type": "dataset",
     "file_types": [
       ".tar.gz"
     ],
@@ -455,11 +455,12 @@
     "genomics_count": 0,
     "size_mb": 8422.8,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "5084941",
+    "source": "zenodo",
+    "source_id": "5084941",
     "doi": "10.5281/zenodo.5084941",
     "url": "https://zenodo.org/records/5084941",
     "label": "EYE_SOFTWARE",
@@ -476,9 +477,8 @@
       "neural circuit modeling",
       "gap junction"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -492,11 +492,12 @@
     "genomics_count": 0,
     "size_mb": 113.0,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "8125822",
+    "source": "zenodo",
+    "source_id": "8125822",
     "doi": "10.48550/arXiv.2305.11019",
     "url": "https://zenodo.org/records/8125822",
     "label": "EYE_SOFTWARE",
@@ -512,9 +513,8 @@
       "audio visual segmentation",
       "dataset"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -533,14 +533,15 @@
     "genomics_count": 0,
     "size_mb": 17765.1,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/jinxiang-liu/anno-free-AVS](https://github.com/jinxiang-liu/anno-free-AVS).",
       "https://github.com/jinxiang-liu/anno-free-AVS"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "11471122",
+    "source": "zenodo",
+    "source_id": "11471122",
     "doi": "10.5281/zenodo.11471122",
     "url": "https://zenodo.org/records/11471122",
     "label": "EYE_SOFTWARE",
@@ -552,9 +553,8 @@
     "title": "Planteome/CO_345-brachiaria-traits: CO_345-brachiaria-traits ontology",
     "description": "Brachiaria (forages) ontology TD v5 - Version Oct 2016",
     "keywords": [],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -568,13 +568,14 @@
     "genomics_count": 0,
     "size_mb": 0.0,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/Planteome/CO_345-brachiaria-traits/tree/v1.0"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "7631354",
+    "source": "zenodo",
+    "source_id": "7631354",
     "doi": "10.5281/zenodo.7631354",
     "url": "https://zenodo.org/records/7631354",
     "label": "EYE_SOFTWARE",
@@ -594,9 +595,8 @@
       "aerial imagery",
       "hurricane"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -619,7 +619,7 @@
     "genomics_count": 0,
     "size_mb": 86.9,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/Doodleverse/segmentation_gym"
     ],
     "related_dois": [
@@ -628,7 +628,8 @@
     ]
   },
   {
-    "zenodo_id": "5030552",
+    "source": "zenodo",
+    "source_id": "5030552",
     "doi": "10.5061/dryad.fqz612jpc",
     "url": "https://zenodo.org/records/5030552",
     "label": "EYE_SOFTWARE",
@@ -644,9 +645,8 @@
       "image analysis",
       "glomeruli"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-zero",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -660,11 +660,12 @@
     "genomics_count": 0,
     "size_mb": 40634.2,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "7576898",
+    "source": "zenodo",
+    "source_id": "7576898",
     "doi": "10.5281/zenodo.7576898",
     "url": "https://zenodo.org/records/7576898",
     "label": "EYE_SOFTWARE",
@@ -686,9 +687,8 @@
       "Seg2Map",
       "aerial / high-res."
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -723,7 +723,7 @@
     "genomics_count": 0,
     "size_mb": 398.6,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset)",
       "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset",
       "https://github.com/Doodleverse/segmentation_gym"
@@ -731,7 +731,8 @@
     "related_dois": []
   },
   {
-    "zenodo_id": "7576894",
+    "source": "zenodo",
+    "source_id": "7576894",
     "doi": "10.5281/zenodo.7576894",
     "url": "https://zenodo.org/records/7576894",
     "label": "EYE_SOFTWARE",
@@ -753,9 +754,8 @@
       "Seg2Map",
       "aerial / high-res."
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -790,13 +790,14 @@
     "genomics_count": 0,
     "size_mb": 398.5,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/Doodleverse/segmentation_gym"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "10258100",
+    "source": "zenodo",
+    "source_id": "10258100",
     "doi": "10.5281/zenodo.10258100",
     "url": "https://zenodo.org/records/10258100",
     "label": "EYE_SOFTWARE",
@@ -814,9 +815,8 @@
       "cGAN",
       "pix-to-pix"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "mit-license",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -830,13 +830,14 @@
     "genomics_count": 0,
     "size_mb": 7797.6,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/bhaskarachintada/DLTNode.git"
     ],
     "related_dois": []
   },
   {
-    "zenodo_id": "8186508",
+    "source": "zenodo",
+    "source_id": "8186508",
     "doi": "10.5281/zenodo.8186508",
     "url": "https://zenodo.org/records/8186508",
     "label": "EYE_SOFTWARE",
@@ -850,9 +851,8 @@
     "keywords": [
       "MIC-MAQ, segmentation, nuclei, cell, dataset, fluorescence, brighfield"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".zip"
     ],
@@ -868,11 +868,12 @@
     "zip_file_types": {
       ".tif": 8
     },
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": []
   },
   {
-    "zenodo_id": "7566797",
+    "source": "zenodo",
+    "source_id": "7566797",
     "doi": "10.5281/zenodo.7566797",
     "url": "https://zenodo.org/records/7566797",
     "label": "EYE_SOFTWARE",
@@ -894,9 +895,8 @@
       "land use / land cover",
       "Seg2Map"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -931,7 +931,7 @@
     "genomics_count": 0,
     "size_mb": 638.3,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021)",
       "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021",
       "https://github.com/Doodleverse/segmentation_gym"
@@ -939,7 +939,8 @@
     "related_dois": []
   },
   {
-    "zenodo_id": "7566810",
+    "source": "zenodo",
+    "source_id": "7566810",
     "doi": "10.5281/zenodo.7566810",
     "url": "https://zenodo.org/records/7566810",
     "label": "EYE_SOFTWARE",
@@ -961,9 +962,8 @@
       "land use / land cover",
       "Seg2Map"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -999,7 +999,7 @@
     "genomics_count": 0,
     "size_mb": 952.8,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021)",
       "https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021",
       "https://github.com/Doodleverse/segmentation_gym"
@@ -1007,7 +1007,8 @@
     "related_dois": []
   },
   {
-    "zenodo_id": "8213427",
+    "source": "zenodo",
+    "source_id": "8213427",
     "doi": "10.5281/zenodo.8213427",
     "url": "https://zenodo.org/records/8213427",
     "label": "EYE_SOFTWARE",
@@ -1026,9 +1027,8 @@
       "shoreline",
       "sediment"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".h5",
       ".npz",
@@ -1063,7 +1063,7 @@
     "genomics_count": 0,
     "size_mb": 44.0,
     "zip_file_types": {},
-    "dataset_links": [
+    "external_links": [
       "https://github.com/Doodleverse/segmentation_gym"
     ],
     "related_dois": [
@@ -1072,7 +1072,8 @@
     ]
   },
   {
-    "zenodo_id": "4059559",
+    "source": "zenodo",
+    "source_id": "4059559",
     "doi": "10.5281/zenodo.4059559",
     "url": "https://zenodo.org/records/4059559",
     "label": "EYE_SOFTWARE",
@@ -1086,9 +1087,8 @@
     "keywords": [
       "optical coherence tomography, Arabidopsis, leaf thickness, segmentation"
     ],
-    "access_right": "open",
+    "access_type": "open",
     "license": "cc-by-4.0",
-    "resource_type": "dataset",
     "file_types": [
       ".npy"
     ],
@@ -1109,7 +1109,7 @@
     "genomics_count": 0,
     "size_mb": 526.7,
     "zip_file_types": {},
-    "dataset_links": [],
+    "external_links": [],
     "related_dois": [
       "10.1364/AO.408384"
     ]
