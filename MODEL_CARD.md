@@ -13,46 +13,35 @@ tags:
 
 # Envision Eye Imaging Classifier
 
-SetFit few-shot classifier for identifying eye imaging datasets from scientific metadata.
+SetFit binary classifier for identifying eye imaging datasets from scientific metadata.
 
 **Developed by**: FAIR Data Innovations Hub in collaboration with the EyeACT Study
 
 ## Model Description
 
-Uses `sentence-transformers/all-mpnet-base-v2` as backbone with 4-class classification:
+Uses `sentence-transformers/all-mpnet-base-v2` as backbone with binary classification:
 
-- **EYE_IMAGING (3)**: Actual ophthalmic imaging datasets (fundus, OCT, OCTA, cornea)
-- **EYE_SOFTWARE (2)**: Code, tools, models for eye imaging
-- **OTHER_EYE_DATA (1)**: Eye research papers, reviews, non-imaging data
-- **NEGATIVE (0)**: Not eye-related
+- **EYE_IMAGING (1)**: Actual ophthalmic imaging datasets (fundus, OCT, OCTA, cornea)
+- **NEGATIVE (0)**: Everything else (software, non-imaging eye data, unrelated)
 
 ## Results on Zenodo
 
-Tested on 514 Zenodo datasets (filtered to `resource_type=dataset` only):
+Tested on 515 Zenodo datasets (filtered to `resource_type=dataset` only):
 
 | Class | Count |
 |-------|-------|
-| EYE_IMAGING | 127 |
-| EYE_SOFTWARE | 24 |
-| OTHER_EYE_DATA | 32 |
-| NEGATIVE | 331 |
+| EYE_IMAGING | 60 |
+| NEGATIVE | 455 |
 
-### Confidence Distribution (EYE_IMAGING)
-
-| Confidence | Count | % |
-|------------|-------|---|
-| High (>=0.95) | 49 | 38.6% |
-| Medium (0.80-0.95) | 70 | 55.1% |
-| Lower (<0.80) | 8 | 6.3% |
+The previous 4-class model flagged 127 records as EYE_IMAGING; the binary model is more precise, reducing this to 60.
 
 ### Validation Metrics
 
 | Metric | Held-out Test | Spot-check (33 records) |
 |--------|--------------|------------------------|
-| Accuracy | 0.937 | 0.879 (29/33) |
-| Macro F1 | 0.902 | 0.828 |
-
-Per-class spot-check F1: EYE_IMAGING=0.947, OTHER_EYE_DATA=0.889, NEGATIVE=0.903, EYE_SOFTWARE=0.571
+| Accuracy | 0.961 | 0.909 (30/33) |
+| Macro F1 | 0.954 | — |
+| EYE_IMAGING F1 | 0.936 (P=0.911, R=0.962) | 0.824 |
 
 ### Data Pipeline
 
@@ -63,7 +52,7 @@ Per-class spot-check F1: EYE_IMAGING=0.947, OTHER_EYE_DATA=0.889, NEGATIVE=0.903
 ## Training
 
 - **Base model**: sentence-transformers/all-mpnet-base-v2 (768-dimensional)
-- **Examples**: 474 (77 EYE_IMAGING, 48 EYE_SOFTWARE, 79 OTHER_EYE_DATA, 270 NEGATIVE)
+- **Examples**: 891 (262 EYE_IMAGING, 629 NEGATIVE) from multi-repository sources (Zenodo, Figshare, Dryad, Kaggle, NEI)
 - **Epochs**: 2
 - **Batch Size**: 16
 

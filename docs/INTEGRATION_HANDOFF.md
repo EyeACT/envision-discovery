@@ -22,16 +22,16 @@ https://github.com/EyeACT/envision-discovery
 
 ### Result Files
 
-All sources use the same unified JSON schema. Files are named `{source}_eye_imaging.json`, `{source}_software.json`, `{source}_all_results.json`.
+All sources use the same unified JSON schema. Files are named `{source}_eye_imaging.json`, `{source}_negative.json`, `{source}_all_results.json`. The classifier uses a binary schema: EYE_IMAGING (actual eye imaging data) vs. NEGATIVE (everything else).
 
 | Source | EYE_IMAGING | All Records |
 |--------|-------------|-------------|
-| `results/zenodo_*.json` | 127 | 514 |
-| `results/figshare_*.json` | 1,343 | 2,000 |
-| `results/dryad_*.json` | 52 | 89 |
-| `results/kaggle_*.json` | 254 | 732 |
-| `results/nei_*.json` | 687 | 1,662 |
-| `results/datacite_*.json` | 1,212 | 1,836 |
+| `results/zenodo_*.json` | 60 | 515 |
+| `results/figshare_*.json` | TBD | TBD |
+| `results/dryad_*.json` | TBD | TBD |
+| `results/kaggle_*.json` | TBD | TBD |
+| `results/nei_*.json` | TBD | TBD |
+| `results/datacite_*.json` | TBD | TBD |
 
 ### HuggingFace Model
 ```
@@ -53,9 +53,7 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
   "label": "EYE_IMAGING",
   "confidence": 0.9998,
   "prob_eye_imaging": 0.9998,
-  "prob_software": 0.0000,
-  "prob_other_eye": 0.0000,
-  "prob_negative": 0.0000,
+  "prob_negative": 0.0002,
   "title": "Human Developing Retina Atlas",
   "description": "...",
   "keywords": ["retina", "OCT"],
@@ -83,11 +81,9 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 | `source_id` | string | Platform-specific unique identifier |
 | `doi` | string | DOI if available, null otherwise |
 | `url` | string | Direct link to record on source platform |
-| `label` | string | Classification: EYE_IMAGING, EYE_SOFTWARE, OTHER_EYE_DATA, NEGATIVE |
+| `label` | string | Classification: EYE_IMAGING or NEGATIVE |
 | `confidence` | float | Max class probability |
 | `prob_eye_imaging` | float | Probability of EYE_IMAGING class |
-| `prob_software` | float | Probability of EYE_SOFTWARE class |
-| `prob_other_eye` | float | Probability of OTHER_EYE_DATA class |
 | `prob_negative` | float | Probability of NEGATIVE class |
 | `title` | string | Dataset title |
 | `description` | string | Abstract/description (HTML stripped, max 500 chars) |
@@ -121,8 +117,6 @@ CREATE TABLE discovered_datasets (
     label VARCHAR(50) NOT NULL,
     confidence DECIMAL(10, 8) NOT NULL,
     prob_eye_imaging DECIMAL(10, 8),
-    prob_software DECIMAL(10, 8),
-    prob_other_eye DECIMAL(10, 8),
     prob_negative DECIMAL(10, 8),
     img_file_count INTEGER DEFAULT 0,
     archive_count INTEGER DEFAULT 0,
@@ -179,7 +173,7 @@ ORDER BY confidence DESC;
 ### GET /api/datasets
 
 Query parameters:
-- `label` - Filter by class (EYE_IMAGING, EYE_SOFTWARE, etc.)
+- `label` - Filter by class (EYE_IMAGING or NEGATIVE)
 - `min_confidence` - Minimum confidence threshold
 - `validation_status` - Filter by validation state
 - `limit` / `offset` - Pagination
@@ -270,9 +264,10 @@ To get only new records since last scrape:
 
 ### Borderline Cases to Monitor
 
-- GWAS studies with "retinal" phenotypes (genetic, not imaging)
-- Electrophysiology (MEA, ERG) - borderline relevant
-- Code repos that also contain sample data
+- GWAS studies with "retinal" phenotypes (genetic, not imaging) -- classified as NEGATIVE
+- Electrophysiology (MEA, ERG) -- classified as NEGATIVE
+- Code repos that also contain sample data -- classified as NEGATIVE
+- Multi-modal repositories where eye imaging is a minor component
 
 ---
 
@@ -292,7 +287,7 @@ To get only new records since last scrape:
 - [ ] Clone repository: `git clone https://github.com/EyeACT/envision-discovery.git`
 - [ ] Review JSON schema in `results/zenodo_eye_imaging.json`
 - [ ] Create database table with suggested schema
-- [ ] Import 524 eye imaging records
+- [ ] Import 60 eye imaging records (from Zenodo; additional sources TBD)
 - [ ] Set up confidence tier filtering
 - [ ] Implement validation status tracking
 - [ ] Schedule monthly re-classification job
@@ -313,18 +308,17 @@ def import_results(json_path, db_connection):
     
     for r in records:
         cursor.execute("""
-            INSERT INTO discovered_datasets 
-            (zenodo_id, title, url, label, confidence, 
-             prob_eye_imaging, prob_software, prob_other_eye, prob_negative,
+            INSERT INTO discovered_datasets
+            (zenodo_id, title, url, label, confidence,
+             prob_eye_imaging, prob_negative,
              img_file_count, archive_count, size_mb, source)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'zenodo')
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'zenodo')
             ON CONFLICT (zenodo_id) DO UPDATE SET
                 confidence = EXCLUDED.confidence,
                 updated_at = CURRENT_TIMESTAMP
         """, (
             r['zenodo_id'], r['title'], r['url'], r['label'],
-            r['confidence'], r['prob_eye_imaging'], r['prob_software'],
-            r['prob_other_eye'], r['prob_negative'],
+            r['confidence'], r['prob_eye_imaging'], r['prob_negative'],
             r['img_files'], r['archives'], r['size_mb']
         ))
     

@@ -108,10 +108,8 @@ Each record in the results JSON:
 
 | Label | Description |
 |-------|-------------|
-| **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, etc.) |
-| **EYE_SOFTWARE** | Code, tools, models for eye imaging (no actual image data) |
-| **OTHER_EYE_DATA** | Eye research papers, reviews, non-imaging data |
-| **NEGATIVE** | Not eye-related |
+| **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, slit-lamp, anterior segment) |
+| **NEGATIVE** | Everything else (non-eye data, software/code, eye-adjacent non-imaging, non-eye medical imaging) |
 
 ## Current Results (Zenodo)
 
@@ -119,10 +117,8 @@ From 515 Zenodo dataset records with data files (scraped from ~30,400 total reco
 
 | Class | Count |
 |-------|-------|
-| EYE_IMAGING | 120 |
-| EYE_SOFTWARE | 66 |
-| OTHER_EYE_DATA | 3 |
-| NEGATIVE | 325 |
+| EYE_IMAGING | 60 |
+| NEGATIVE | 455 |
 
 Classification is metadata-only (titles, descriptions, keywords, and file types inspected inside archives via HTTP Range requests) — no dataset files are downloaded. Multi-source support (Figshare, Dryad, OSF, DataCite) is implemented and will expand coverage.
 

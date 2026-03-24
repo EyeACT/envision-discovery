@@ -27,17 +27,15 @@
 |-----------|---------|
 | Base Model | sentence-transformers/all-mpnet-base-v2 (768-dim embeddings) |
 | Framework | SetFit (sentence-transformers + contrastive learning) |
-| Training Data | 474 manually curated examples |
-| Classes | 4 (EYE_IMAGING, EYE_SOFTWARE, OTHER_EYE_DATA, NEGATIVE) |
+| Training Data | 891 curated examples from multiple repositories |
+| Classes | 2 (EYE_IMAGING vs. NEGATIVE) |
 
 ### Training Data Distribution
 
 | Class | Examples | Description |
 |-------|----------|-------------|
-| EYE_IMAGING | 77 | Known benchmark datasets, clinical imaging |
-| EYE_SOFTWARE | 48 | Code repos, model weights, toolboxes |
-| OTHER_EYE_DATA | 79 | Papers, reviews, animal studies |
-| NEGATIVE | 270 | Non-eye data, false positive patterns |
+| EYE_IMAGING | 262 | Known benchmark datasets, clinical imaging collections |
+| NEGATIVE | 629 | Software/code, other eye data (genetics, tracking), non-eye data, false positive patterns |
 
 ---
 
@@ -62,39 +60,38 @@ Records must contain:
 
 ## Slide 4: Results Summary
 
+### Zenodo Classification (Binary: EYE_IMAGING vs. NEGATIVE)
+
 | Metric | Value |
 |--------|-------|
 | Total Zenodo records scraped | 30,439 |
-| Records with data files | 9,448 |
-| **Eye imaging datasets** | **524** |
-| Eye software/code | 1,150 |
-| Edge cases | 99 |
-| Negative | 7,675 |
+| Records with data files | 515 |
+| **EYE_IMAGING** | **60** |
+| **NEGATIVE** | **455** |
 
-### Confidence Distribution (EYE_IMAGING)
+Previous 4-class model identified 127; binary model identifies 60 with improved precision (fewer false positives).
 
-| Confidence Level | Count | Notes |
-|-----------------|-------|-------|
-| High (≥0.95) | 485 | Strong candidates for inclusion |
-| Medium (0.80-0.95) | 20 | Likely eye imaging |
-| Lower (<0.80) | 19 | Manual review recommended |
+### Validation Performance
+
+| Metric | Value |
+|--------|-------|
+| Held-out test accuracy | 0.961 |
+| Held-out test macro F1 | 0.954 |
+| Held-out EYE_IMAGING F1 | 0.936 |
+| Spot check (33 records) | 30/33 correct |
+| Spot check EYE_IMAGING F1 | 0.824 |
 
 ---
 
-## Slide 5: Validation Results
+## Slide 5: Spot-Check Validation
 
-### Manual Spot Check: Top 20 High-Confidence Datasets
+### Manual Spot Check: 33 Randomly Sampled Records
 
-| Status | Count | Percentage |
-|--------|-------|------------|
-| ✅ Confirmed Valid | 14 | 70% |
-| ⚠️ Needs Further Review | 3 | 15% |
-| ☐ Pending Verification | 3 | 15% |
-| ❌ False Positive | 0 | 0% |
+- 30 of 33 records correctly classified (90.9%)
+- EYE_IMAGING F1 = 0.824
+- Errors were primarily borderline cases (e.g., software with sample data)
 
-**Preliminary Precision**: ~82-85% on high-confidence predictions
-
-### Notable Discoveries
+### Notable Discoveries Among 60 EYE_IMAGING Datasets
 
 - **Human Developing Retina Atlas**: 65+ GB across 3 records
 - **Corneal OCT collections**: 70+ GB across multiple studies
@@ -121,13 +118,15 @@ Records must contain:
 
 ## Slide 7: Known Limitations
 
-### False Positive Patterns (Mitigated in Training)
+### False Positive Patterns (All Classified as NEGATIVE)
 
 - Cardiovascular OCT (intravascular, coronary)
 - Taxonomy papers ("FIGURES 1-10...")
 - Industrial OCT/CT (materials, art conservation)
 - Non-ophthalmic medical imaging
 - Robotics ("hand-eye calibration")
+- Eye-related software without actual imaging data
+- Genetics/GWAS studies referencing retinal phenotypes
 
 ### Current Constraints
 

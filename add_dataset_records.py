@@ -1,8 +1,10 @@
 import json
 import os
+import re
 from typing import Callable
 from cuid2 import cuid_wrapper
 from datetime import datetime
+from html import unescape
 import requests
 from markdownify import markdownify as md
 from dotenv import load_dotenv
@@ -13,196 +15,241 @@ cuid_generator: Callable[[], str] = cuid_wrapper()
 
 # --- Configuration ---
 DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
-ZENODO_EYE_IMAGING_FILE = "results/zenodo_eye_imaging.json"
+
+# All repository sources and their eye_imaging result files
+SOURCES = {
+    "zenodo": "results/zenodo_eye_imaging.json",
+    "datacite": "results/datacite_eye_imaging.json",
+    "figshare": "results/figshare_eye_imaging.json",
+    "kaggle": "results/kaggle_eye_imaging.json",
+    "dryad": "results/dryad_eye_imaging.json",
+    "nei": "results/nei_eye_imaging.json",
+}
+
+# Metadata directories (pre-fetched per-record JSON, if available)
+METADATA_DIRS = {
+    "zenodo": "data/metadata/zenodo",
+    "figshare": "data/metadata/figshare",
+}
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
 API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:3000")
 
 
-def generate_dataset_records():
-    """Read Zenodo eye-imaging records and write normalised dataset records to disk."""
-    dataset_records = []
+def _clean_html(text):
+    """Strip HTML tags and unescape entities."""
+    if not text:
+        return ""
+    clean = re.sub("<[^<]+?>", " ", text)
+    return unescape(clean).strip()
 
-    # Start fresh — remove any previously generated output file
-    if os.path.exists(DATASET_RECORDS_OUTPUT_FILE):
-        os.remove(DATASET_RECORDS_OUTPUT_FILE)
 
-    dataset_starting_id = 1
+def _build_record_from_result(record, source):
+    """Build a portal-schema dataset record from a classifier result entry."""
+    title = record.get("title", "No title available")
+    description = record.get("description", "")
+    if description:
+        description = md(_clean_html(description)) if "<" in description else description
+    doi = record.get("doi", "")
+    url = record.get("url", "")
+    keywords = record.get("keywords", [])
+    if isinstance(keywords, str):
+        keywords = [k.strip() for k in keywords.split(",") if k.strip()]
+    subjects = [{"subjectValue": kw} for kw in keywords]
 
-    # Load the filtered Zenodo eye-imaging result set
-    with open(ZENODO_EYE_IMAGING_FILE, "r", encoding="utf-8") as f:
-        zenodo_eye_imaging = json.load(f)
+    # Try to get richer metadata from pre-fetched files
+    source_id = record.get("source_id", record.get("zenodo_id", ""))
+    metadata_dir = METADATA_DIRS.get(source)
+    creators = []
+    publication_date = ""
+    publication_year = ""
+    license_name = "No license available"
+    sizes = [f"{record.get('size_mb', 0)} MB"]
 
-    for record in zenodo_eye_imaging:
-        zenodo_id = record["zenodo_id"]
-
-        # Each Zenodo record has a pre-fetched metadata file on disk
-        input_file_path = f"data/metadata/zenodo/{zenodo_id}.json"
-
-        with open(input_file_path, "r", encoding="utf-8") as f:
-            input_record = json.load(f)
-
-        metadata = input_record["metadata"]
-
-        # Convert HTML description to Markdown
-        description = md(metadata.get("description", ""))
-
-        # Map Zenodo creator objects to the portal schema
-        creators = []
-        for creator in metadata.get("creators", []):
-            creators.append(
-                {
-                    "creatorName": creator["name"],
+    if metadata_dir and source_id:
+        meta_path = os.path.join(metadata_dir, f"{source_id}.json")
+        if os.path.exists(meta_path):
+            with open(meta_path, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+            m = meta.get("metadata", meta)
+            for creator in m.get("creators", []):
+                creators.append({
+                    "creatorName": creator.get("name", ""),
                     "nameType": "Personal",
                     "affiliation": [
                         {"affiliationName": creator.get("affiliation", "")}
                     ],
-                }
-            )
+                })
+            publication_date = m.get("publication_date", "")
+            publication_year = publication_date.split("-")[0] if publication_date else ""
+            if "license" in m and isinstance(m["license"], dict):
+                license_name = m["license"].get("name", license_name)
+            if not description and m.get("description"):
+                description = md(_clean_html(m["description"]))
 
-        publication_date = metadata.get("publication_date", "")
-        publication_year = publication_date.split("-")[0] if publication_date else ""
+    # If no creators from metadata, use what's in the result
+    if not creators and record.get("creators"):
+        for c in record["creators"]:
+            if isinstance(c, dict):
+                creators.append({
+                    "creatorName": c.get("name", str(c)),
+                    "nameType": "Personal",
+                    "affiliation": [],
+                })
+            else:
+                creators.append({
+                    "creatorName": str(c),
+                    "nameType": "Personal",
+                    "affiliation": [],
+                })
 
-        # Keywords become subjects in the portal schema
-        subjects = [{"subjectValue": kw} for kw in metadata.get("keywords", [])]
-
-        # Size in MB from the result set, converted to a human-readable string
-        sizes = [
-            f"{record['size_mb']} MB" if "size_mb" in record else "No size available"
-        ]
-
-        # Parse the ISO 8601 creation timestamp from Zenodo into a Unix timestamp
-        created_raw = input_record.get(
-            "created", datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        )
-        if isinstance(created_raw, str) and "T" in created_raw:
+    # Timestamp
+    created_raw = record.get("created", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    if isinstance(created_raw, str) and "T" in created_raw:
+        try:
             created_dt = datetime.fromisoformat(created_raw.replace("Z", "+00:00"))
-        else:
-            created_dt = datetime.strptime(created_raw, "%Y-%m-%d %H:%M:%S")
-        created_unix_timestamp = int(created_dt.timestamp())
+        except ValueError:
+            created_dt = datetime.now()
+    else:
+        try:
+            created_dt = datetime.strptime(str(created_raw), "%Y-%m-%d %H:%M:%S")
+        except (ValueError, TypeError):
+            created_dt = datetime.now()
+    created_unix_timestamp = int(created_dt.timestamp())
 
-        dataset_id = cuid_generator()
+    dataset_id = cuid_generator()
 
-        dataset_record = {
-            "id": dataset_starting_id,
-            "canonicalId": dataset_id,
-            "datasetId": dataset_id,
-            "doi": metadata.get("doi", ""),
-            "title": metadata.get("title", "No title available"),
-            "description": description,
-            "versionTitle": metadata.get("version", "1"),
-            "studyTitle": metadata.get("studyTitle", ""),
-            "publishedMetadata": {
-                "studyDescription": {},
-                "readme": description,
-                "datasetDescription": {
-                    "schema": "https://schema.envisionportal.io/v0.2.0/study_description.json",
-                    "identifier": {
-                        "identifierValue": metadata.get("doi", ""),
-                        "identifierType": "DOI",
-                    },
-                    "title": [{"titleValue": metadata.get("title", "")}],
-                    "version": metadata.get("version", "1"),
-                    "creator": creators,
-                    "publicationYear": publication_year,
-                    "date": [
-                        {
-                            "dateValue": publication_date,
-                            "dateType": "Available",
-                            "dateInformation": "Date dataset made available on Zenodo",
-                        }
-                    ],
-                    "resourceType": {
-                        "resourceTypeValue": (
-                            metadata["resource_type"]["title"]
-                            if "resource_type" in metadata
-                            and "title" in metadata["resource_type"]
-                            else "No resource type available"
-                        ),
-                        "resourceTypeGeneral": "Dataset",
-                    },
-                    "datasetDeIdentLevel": {
-                        "deIdentType": "NoDeIdentification",
-                        "deIdentDirect": False,
-                        "deIdentHIPAA": False,
-                        "deIdentDates": False,
-                        "deIdentNonarr": False,
-                        "deIdentKAnon": False,
-                        "deIdentDetails": "No de-identification details available",
-                    },
-                    "datasetConsent": {
-                        "consentType": "ConsentSpecifiedNotElsewhereCategorised",
-                        "consentNoncommercial": False,
-                        "consentGeogRestrict": False,
-                        "consentResearchType": False,
-                        "consentGeneticOnly": False,
-                        "consentNoMethods": False,
-                        "consentsDetails": "",
-                    },
-                    "description": [
-                        {
-                            "descriptionValue": description,
-                            "descriptionType": "Abstract",
-                        }
-                    ],
-                    "language": "en",
-                    "relatedIdentifier": [],
-                    "subject": subjects,
-                    "managingOrganization": {"name": ""},
-                    "accessType": "PublicOnScreenAccessAndDownload",
-                    "accessDetails": {"description": ""},
-                    "rights": [
-                        {
-                            "rightsName": (
-                                metadata["license"]["name"]
-                                if "license" in metadata
-                                and "name" in metadata["license"]
-                                else "No license available"
-                            ),
-                        }
-                    ],
-                    "publisher": {"publisherName": "Zenodo"},
-                    "size": sizes,
-                    "fundingReference": [],
-                    "format": [],
+    return {
+        "canonicalId": dataset_id,
+        "datasetId": dataset_id,
+        "doi": doi,
+        "title": title,
+        "description": description,
+        "versionTitle": record.get("version", "1"),
+        "studyTitle": "",
+        "publishedMetadata": {
+            "studyDescription": {},
+            "readme": description,
+            "datasetDescription": {
+                "schema": "https://schema.envisionportal.io/v0.2.0/study_description.json",
+                "identifier": {
+                    "identifierValue": doi,
+                    "identifierType": "DOI",
                 },
-                "datasetStructureDescription": {
-                    "schema": "https://schema.aireadi.org/v0.1.1/dataset_structure_description.json",
-                    "directoryList": [],
-                    "metadataFileList": [],
+                "title": [{"titleValue": title}],
+                "version": record.get("version", "1"),
+                "creator": creators,
+                "publicationYear": publication_year,
+                "date": [
+                    {
+                        "dateValue": publication_date,
+                        "dateType": "Available",
+                        "dateInformation": f"Date dataset made available on {source.capitalize()}",
+                    }
+                ] if publication_date else [],
+                "resourceType": {
+                    "resourceTypeValue": "Dataset",
+                    "resourceTypeGeneral": "Dataset",
                 },
-                "healthsheet": {},
+                "datasetDeIdentLevel": {
+                    "deIdentType": "NoDeIdentification",
+                    "deIdentDirect": False,
+                    "deIdentHIPAA": False,
+                    "deIdentDates": False,
+                    "deIdentNonarr": False,
+                    "deIdentKAnon": False,
+                    "deIdentDetails": "No de-identification details available",
+                },
+                "datasetConsent": {
+                    "consentType": "ConsentSpecifiedNotElsewhereCategorised",
+                    "consentNoncommercial": False,
+                    "consentGeogRestrict": False,
+                    "consentResearchType": False,
+                    "consentGeneticOnly": False,
+                    "consentNoMethods": False,
+                    "consentsDetails": "",
+                },
+                "description": [
+                    {
+                        "descriptionValue": description,
+                        "descriptionType": "Abstract",
+                    }
+                ],
+                "language": "en",
+                "relatedIdentifier": [],
+                "subject": subjects,
+                "managingOrganization": {"name": ""},
+                "accessType": "PublicOnScreenAccessAndDownload",
+                "accessDetails": {"description": ""},
+                "rights": [{"rightsName": license_name}],
+                "publisher": {"publisherName": source.capitalize()},
+                "size": sizes,
+                "fundingReference": [],
+                "format": [],
             },
-            "files": [],
-            "data": {
-                # Convert MB to bytes for the portal schema
-                "size": (
-                    int(record["size_mb"] * 1024 * 1024) if "size_mb" in record else 0
-                ),
-                "fileCount": 0,
-                "viewCount": 0,
-                "labelingMethod": "",
-                "validationInfo": "",
+            "datasetStructureDescription": {
+                "schema": "https://schema.aireadi.org/v0.1.1/dataset_structure_description.json",
+                "directoryList": [],
+                "metadataFileList": [],
             },
-            "external": True,
-            "externalUrl": record["url"],
-            "created": str(created_unix_timestamp),
-            "PublishedDatasetRegistrationDetails": {
-                "datasetSource": "Zenodo",
-                "extractionMethod": "Automatic Registration",
-                "extractionVersion": "0.1.0",
-            },
-        }
+            "healthsheet": {},
+        },
+        "files": [],
+        "data": {
+            "size": int(record.get("size_mb", 0) * 1024 * 1024),
+            "fileCount": record.get("file_count", 0),
+            "viewCount": 0,
+            "labelingMethod": "",
+            "validationInfo": "",
+        },
+        "external": True,
+        "externalUrl": url,
+        "created": str(created_unix_timestamp),
+        "PublishedDatasetRegistrationDetails": {
+            "datasetSource": source.capitalize(),
+            "extractionMethod": "Automatic Registration",
+            "extractionVersion": "0.2.0",
+        },
+    }
 
-        dataset_records.append(dataset_record)
-        dataset_starting_id += 1
+
+def generate_dataset_records():
+    """Read eye-imaging records from all sources and write normalised dataset records."""
+    dataset_records = []
+
+    if os.path.exists(DATASET_RECORDS_OUTPUT_FILE):
+        os.remove(DATASET_RECORDS_OUTPUT_FILE)
+
+    seen_dois = set()
+
+    for source, result_file in SOURCES.items():
+        if not os.path.exists(result_file):
+            print(f"  Skipping {source}: {result_file} not found")
+            continue
+
+        with open(result_file, "r", encoding="utf-8") as f:
+            records = json.load(f)
+
+        source_count = 0
+        for record in records:
+            # Deduplicate by DOI across sources
+            doi = record.get("doi", "")
+            if doi and doi in seen_dois:
+                continue
+            if doi:
+                seen_dois.add(doi)
+
+            dataset_record = _build_record_from_result(record, source)
+            dataset_record["id"] = len(dataset_records) + 1
+            dataset_records.append(dataset_record)
+            source_count += 1
+
+        print(f"  {source}: {source_count} records (from {len(records)} eye_imaging)")
 
     with open(DATASET_RECORDS_OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(dataset_records, f, indent=4)
 
-    print(
-        f"Generated {len(dataset_records)} dataset records → {DATASET_RECORDS_OUTPUT_FILE}"
-    )
+    print(f"\nGenerated {len(dataset_records)} dataset records -> {DATASET_RECORDS_OUTPUT_FILE}")
 
 
 def add_dataset_records_to_database():
@@ -214,6 +261,8 @@ def add_dataset_records_to_database():
     with open(DATASET_RECORDS_OUTPUT_FILE, "r", encoding="utf-8") as f:
         dataset_records = json.load(f)
 
+    success = 0
+    failed = 0
     for record in dataset_records:
         payload = {
             "title": record["title"],
@@ -242,9 +291,12 @@ def add_dataset_records_to_database():
                 timeout=30,
             )
             response.raise_for_status()
-            print(f"[{response.status_code}] Added: {record['title']}")
+            success += 1
         except requests.exceptions.RequestException as e:
-            print(f"[ERROR] Failed to add '{record['title']}': {e}")
+            print(f"  [ERROR] Failed to add '{record['title'][:60]}': {e}")
+            failed += 1
+
+    print(f"\nPosted {success} records ({failed} failed)")
 
 
 if __name__ == "__main__":

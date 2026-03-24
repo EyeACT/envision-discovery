@@ -11,7 +11,7 @@ from pathlib import Path
 from huggingface_hub import HfApi, create_repo
 
 # Configuration
-MODEL_DIR = Path(__file__).parent / "models" / "setfit_v7"
+MODEL_DIR = Path(__file__).parent / "models" / "setfit"
 MODEL_CARD = Path(__file__).parent / "MODEL_CARD.md"
 # Official FAIR Data Innovations Hub repository
 REPO_ID = "fairdataihub/envision-eye-imaging-classifier"
