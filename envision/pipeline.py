@@ -298,7 +298,7 @@ def run_pipeline(
         results_dir = Path(results_dir)
 
     if model_dir is None:
-        model_dir = BASE_DIR / "models" / "setfit_v7"
+        model_dir = BASE_DIR / "models" / "setfit"
     else:
         model_dir = Path(model_dir)
 
@@ -443,7 +443,7 @@ def _run_zenodo_legacy_pipeline(
     else:
         metadata_dir = Path(metadata_dir)
 
-    output_dir = base_dir / "models" / "setfit_v7"
+    output_dir = base_dir / "models" / "setfit"
 
     print(f"\n{'='*70}")
     print("Classifying Zenodo records")

@@ -17,7 +17,9 @@ chmod +x automation.sh
 # Delete the output files and folders
 echo "Step 0b: Cleaning up old data..."
 rm -rf ./data/metadata/zenodo/*
-rm -rf results/*
+rm -rf ./data/metadata/figshare/*
+rm -rf results/*.json
+rm -rf results/addf/*
 
 # Activate virtual environment and reinstall dependencies
 echo "Step 0c: Activating virtual environment and installing dependencies..."
@@ -26,16 +28,16 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Scrape data from repositories
-echo "Step 1: Scraping data..."
+# Scrape data from all repositories
+echo "Step 1: Scraping data from all repositories..."
 python3 -m envision.scraper --output ./data
 
-# Classify datasets
+# Classify datasets (binary: EYE_IMAGING vs NEGATIVE)
 echo "Step 2: Classifying datasets..."
 python3 -m envision --classify-only
 
-# Add dataset records
-echo "Step 3: Adding dataset records..."
+# Generate dataset records and post to portal
+echo "Step 3: Adding dataset records to portal..."
 python3 add_dataset_records.py
 
 echo "Pipeline completed successfully!"
