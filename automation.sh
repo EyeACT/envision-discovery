@@ -21,6 +21,7 @@ rm -rf results/*
 
 # Activate virtual environment and reinstall dependencies
 echo "Step 0c: Activating virtual environment and installing dependencies..."
+python3 -m venv .venv 
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
