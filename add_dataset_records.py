@@ -49,7 +49,9 @@ def _build_record_from_result(record, source):
     title = record.get("title", "No title available")
     description = record.get("description", "")
     if description:
-        description = md(_clean_html(description)) if "<" in description else description
+        description = (
+            md(_clean_html(description)) if "<" in description else description
+        )
     doi = record.get("doi", "")
     url = record.get("url", "")
     keywords = record.get("keywords", [])
@@ -73,15 +75,19 @@ def _build_record_from_result(record, source):
                 meta = json.load(f)
             m = meta.get("metadata", meta)
             for creator in m.get("creators", []):
-                creators.append({
-                    "creatorName": creator.get("name", ""),
-                    "nameType": "Personal",
-                    "affiliation": [
-                        {"affiliationName": creator.get("affiliation", "")}
-                    ],
-                })
+                creators.append(
+                    {
+                        "creatorName": creator.get("name", ""),
+                        "nameType": "Personal",
+                        "affiliation": [
+                            {"affiliationName": creator.get("affiliation", "")}
+                        ],
+                    }
+                )
             publication_date = m.get("publication_date", "")
-            publication_year = publication_date.split("-")[0] if publication_date else ""
+            publication_year = (
+                publication_date.split("-")[0] if publication_date else ""
+            )
             if "license" in m and isinstance(m["license"], dict):
                 license_name = m["license"].get("name", license_name)
             if not description and m.get("description"):
@@ -91,17 +97,21 @@ def _build_record_from_result(record, source):
     if not creators and record.get("creators"):
         for c in record["creators"]:
             if isinstance(c, dict):
-                creators.append({
-                    "creatorName": c.get("name", str(c)),
-                    "nameType": "Personal",
-                    "affiliation": [],
-                })
+                creators.append(
+                    {
+                        "creatorName": c.get("name", str(c)),
+                        "nameType": "Personal",
+                        "affiliation": [],
+                    }
+                )
             else:
-                creators.append({
-                    "creatorName": str(c),
-                    "nameType": "Personal",
-                    "affiliation": [],
-                })
+                creators.append(
+                    {
+                        "creatorName": str(c),
+                        "nameType": "Personal",
+                        "affiliation": [],
+                    }
+                )
 
     # Timestamp
     created_raw = record.get("created", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -140,13 +150,17 @@ def _build_record_from_result(record, source):
                 "version": record.get("version", "1"),
                 "creator": creators,
                 "publicationYear": publication_year,
-                "date": [
-                    {
-                        "dateValue": publication_date,
-                        "dateType": "Available",
-                        "dateInformation": f"Date dataset made available on {source.capitalize()}",
-                    }
-                ] if publication_date else [],
+                "date": (
+                    [
+                        {
+                            "dateValue": publication_date,
+                            "dateType": "Available",
+                            "dateInformation": f"Date dataset made available on {source.capitalize()}",
+                        }
+                    ]
+                    if publication_date
+                    else []
+                ),
                 "resourceType": {
                     "resourceTypeValue": "Dataset",
                     "resourceTypeGeneral": "Dataset",
@@ -234,9 +248,10 @@ def generate_dataset_records():
         for record in records:
             # Deduplicate by DOI across sources
             doi = record.get("doi", "")
-            if doi and doi in seen_dois:
-                continue
+            doi = doi.lower() if isinstance(doi, str) else ""
             if doi:
+                if doi in seen_dois:
+                    continue
                 seen_dois.add(doi)
 
             dataset_record = _build_record_from_result(record, source)
@@ -249,7 +264,9 @@ def generate_dataset_records():
     with open(DATASET_RECORDS_OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(dataset_records, f, indent=4)
 
-    print(f"\nGenerated {len(dataset_records)} dataset records -> {DATASET_RECORDS_OUTPUT_FILE}")
+    print(
+        f"\nGenerated {len(dataset_records)} dataset records -> {DATASET_RECORDS_OUTPUT_FILE}"
+    )
 
 
 def add_dataset_records_to_database():
