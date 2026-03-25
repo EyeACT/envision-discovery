@@ -80,7 +80,7 @@ class FigshareScraper:
                     results.append(meta)
 
             page += 1
-            time.sleep(1.0)
+            time.sleep(3.0)  # Figshare is aggressive with rate limits
 
             if len(articles) < page_size:
                 break
