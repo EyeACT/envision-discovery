@@ -28,13 +28,10 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Scrape data from all repositories
-echo "Step 1: Scraping data from all repositories..."
-python3 -m envision.scraper --output ./data
-
-# Classify datasets (binary: EYE_IMAGING vs NEGATIVE)
-echo "Step 2: Classifying datasets..."
-python3 -m envision --classify-only
+# Scrape and classify all repositories
+# Uses the unified CLI which runs all 6 scrapers + classification
+echo "Step 1: Scraping and classifying all repositories..."
+python3 -m envision --source all --classify-only
 
 # Generate dataset records and post to portal
 echo "Step 3: Adding dataset records to portal..."
