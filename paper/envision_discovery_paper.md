@@ -1,107 +1,103 @@
-# Envision Discovery: Automated Identification of Eye Imaging Datasets Across Scientific Repositories
+**Envision Discovery: Automated Identification of Eye Imaging Datasets Across Scientific Repositories**
 
-**James O'Neill¹, [Validator Names]², Bhavesh Patel¹**
+James O'Neill1, [Validator Names]2, Bhavesh Patel1
 
-¹ FAIR Data Innovations Hub, California Medical Innovations Institute (CalMI²), San Diego, CA, USA
-² [Validator Affiliations]
+*¹ FAIR Data Innovations Hub, California Medical Innovations Institute (CalMI²), San Diego, CA, USA*
+
+*² [Validator Affiliations]*
 
 **Correspondence:** joneill@calmi2.org, bpatel@calmi2.org
 
----
+# Abstract
 
-## Abstract
+Eye imaging datasets---including optical coherence tomography (OCT), fundus photography, and OCT angiography (OCTA)---are essential resources for developing artificial intelligence (AI) tools in ophthalmology. However, these datasets are scattered across generalist repositories with no centralized catalog, making discovery and reuse prohibitively difficult. Here we present Envision Discovery, a machine learning pipeline that automatically identifies eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot binary classifier built on the sentence-transformers/all-mpnet-base-v2 embedding model (768-dimensional) trained on 891 curated examples from multiple data repositories to distinguish genuine eye imaging datasets from all other record types. Applied to 6,833 metadata records harvested from six repositories (Zenodo, Figshare, DataCite, Kaggle, Dryad, and NEI), the pipeline identified 1,933 unique candidate eye imaging datasets from 4,674 deduplicated records. On a held-out test set, the classifier achieved an accuracy of 0.961 and an EYE_IMAGING F1 score of 0.936. Expert validation by [N] ophthalmology specialists across 356 stratified records sampled proportionally from all six repositories confirmed a precision of [XX]% and recall of [XX]%. All identified datasets are registered on the Envision Portal (https://envisionportal.org), providing researchers with a single entry point for discovering publicly available ophthalmic imaging data. The classifier, pipeline code, and trained model are openly available at https://github.com/EyeACT/envision-discovery.
 
-Eye imaging datasets—including optical coherence tomography (OCT), fundus photography, and OCT angiography (OCTA)—are essential resources for developing artificial intelligence (AI) tools in ophthalmology. However, these datasets are scattered across generalist repositories with no centralized catalog, making discovery and reuse prohibitively difficult. Here we present Envision Discovery, a machine learning pipeline that automatically identifies eye imaging datasets from scientific data repositories. The system uses a SetFit few-shot classifier built on a sentence embedding model (mpnet-base, 768-dimensional) trained on 891 curated examples to distinguish two classes: genuine eye imaging datasets (EYE_IMAGING) and everything else (NEGATIVE). Applied to 30,439 metadata records harvested from Zenodo, the pipeline identified 60 eye imaging datasets from 515 records containing data files. On a held-out test set, the classifier achieved accuracy of 0.961 and macro F1 of 0.954; a spot check of 33 randomly sampled records confirmed 30 correct (EYE_IMAGING F1 = 0.824). All identified datasets are registered on the Envision Portal (https://envisionportal.org), providing researchers with a single entry point for discovering publicly available ophthalmic imaging data. The classifier, pipeline code, and trained model are openly available at https://github.com/EyeACT/envision-discovery.
+**Keywords:** *eye imaging, dataset discovery, machine learning, FAIR data, ophthalmology, OCT, fundus photography, SetFit, few-shot learning*
 
-**Keywords:** eye imaging, dataset discovery, machine learning, FAIR data, ophthalmology, OCT, fundus photography, SetFit, few-shot learning, binary classification
-
----
-
-## 1. Introduction
+# 1. Introduction
 
 Eye imaging modalities such as OCT, OCTA, fundus photography, and fluorescence lifetime imaging ophthalmoscopy (FLIO) provide detailed structural and functional views of ocular tissues and have become indispensable for ophthalmic research and clinical innovation. These datasets have been particularly critical for developing AI-based diagnostic tools. RETFound, a self-supervised foundation model trained on 1.6 million unlabeled retinal images, demonstrated state-of-the-art performance across both ophthalmic and systemic disease detection tasks (Zhou et al., 2023). OphGLM combined fundus photography with natural language capabilities for diagnostic support (OphGLM, 2024), while Ophtha-LLaMA2 fine-tuned a large language model on multimodal ophthalmic data for efficient clinical deployment (Zhao et al., 2023). These advances depend critically on the availability and accessibility of large-scale imaging datasets.
 
-However, sharing and discovering eye imaging data remains a significant challenge. Unlike neuroimaging, where community standards such as BIDS (Gorgolewski et al., 2016) and centralized platforms like OpenNeuro (Markiewicz et al., 2021) have transformed data sharing practices, ophthalmology lacks equivalent infrastructure. Eye imaging datasets are fragmented across generalist repositories—Zenodo, Figshare, Dryad, and institutional archives—that do not support ophthalmic-specific metadata or enforce standardized data formatting. This fragmentation makes datasets difficult to find and, when found, often difficult to reuse (Gim et al., 2025).
+However, sharing and discovering eye imaging data remains a significant challenge. Unlike neuroimaging, where community standards such as BIDS (Gorgolewski et al., 2016) and centralized platforms like OpenNeuro (Markiewicz et al., 2021) have transformed data sharing practices, ophthalmology lacks equivalent infrastructure. Eye imaging datasets are fragmented across generalist repositories---Zenodo, Figshare, Dryad, and institutional archives---that do not support ophthalmic-specific metadata or enforce standardized data formatting. This fragmentation makes datasets difficult to find and, when found, often difficult to reuse (Gim et al., 2025).
 
 We experienced this challenge directly when searching for open-access OCT data related to age-related macular degeneration (AMD). Despite extensive multi-platform searches using diverse query strategies, finding relevant datasets was time-consuming and often required reading through published manuscripts on PubMed to locate associated data deposits (Gim et al., 2025). The absence of a centralized, searchable catalog means that researchers routinely duplicate collection efforts or remain unaware of existing data that could accelerate their work.
 
-To address this gap, we developed Envision Discovery, an automated pipeline that harvests metadata from scientific data repositories, classifies records using a few-shot machine learning model, and identifies those containing eye imaging data. The identified datasets are then registered on the Envision Portal (https://envisionportal.org), a platform developed as part of the Eye Aging, Cognition, and Imaging (EyeACT) study to share and discover FAIR (Findable, Accessible, Interoperable, Reusable) and AI-ready eye imaging datasets. In this paper, we describe the design and implementation of the Envision Discovery pipeline, present results from its application to the Zenodo repository, and report on expert validation of classifier predictions by ophthalmology domain specialists.
+To address this gap, we developed Envision Discovery, an automated pipeline that harvests metadata from six scientific data repositories, classifies records using a few-shot machine learning model, and identifies those containing eye imaging data. The identified datasets are then registered on the Envision Portal (https://envisionportal.org), a platform developed as part of the Eye Aging, Cognition, and Imaging (EyeACT) study to share and discover FAIR (Findable, Accessible, Interoperable, Reusable) and AI-ready eye imaging datasets. In this paper, we describe the design and implementation of the Envision Discovery pipeline, present results from its application across six repositories, and report on expert validation of classifier predictions by ophthalmology domain specialists.
 
----
+# 2. Methods
 
-## 2. Methods
-
-### 2.1 Overview
+## 2.1 Overview
 
 The Envision Discovery pipeline consists of four stages: (1) metadata harvesting from scientific repositories, (2) intelligent filtering and enrichment, (3) automated classification using a few-shot learning model, and (4) expert validation. Figure 1 provides an overview of the pipeline architecture.
 
-[**Figure 1.** Pipeline overview: metadata harvesting → filtering & enrichment → classification → expert validation → Envision Portal registration.]
+*[Figure 1. Pipeline overview: metadata harvesting from six repositories → filtering & enrichment → binary classification → expert validation → Envision Portal registration.]*
 
-### 2.2 Metadata Harvesting
+## 2.2 Metadata Harvesting
 
-We developed a scraper targeting the Zenodo repository (https://zenodo.org), a general-purpose open repository operated by CERN that hosts over 3 million research outputs. The scraper queries the Zenodo REST API using 249 unique search terms spanning:
+We developed scrapers targeting six scientific data repositories:
 
-- **Imaging modalities:** OCT, OCTA, SD-OCT, SS-OCT, AS-OCT, fundus photography, fluorescein angiography, indocyanine green angiography (ICGA), slit-lamp biomicroscopy, confocal microscopy, adaptive optics, photoacoustic imaging
-- **Anatomical structures:** retina, macula, fovea, optic nerve/disc, choroid, cornea, lens, iris, anterior chamber
-- **Retinal layers:** retinal nerve fiber layer (RNFL), ganglion cell layer (GCL), retinal pigment epithelium (RPE), ellipsoid zone
-- **Diseases:** diabetic retinopathy, glaucoma, AMD, diabetic macular edema (DME), retinal detachment, retinitis pigmentosa, Stargardt disease, keratoconus, retinopathy of prematurity (ROP)
-- **Equipment and vendors:** Heidelberg Spectralis, Zeiss Cirrus, Topcon Triton/DRI OCT, Optovue RTVue, Optos
-- **Benchmark datasets:** DRIVE, STARE, CHASE_DB1, MESSIDOR, IDRiD, APTOS, REFUGE, EyePACS, AIROGS
-- **Clinical measurements:** visual acuity, LogMAR, RNFL thickness, central macular thickness (CMT), cup-to-disc ratio, vessel density, foveal avascular zone (FAZ) area
+- **Zenodo** (https://zenodo.org): A general-purpose open repository operated by CERN. Queried via REST API using 249 ophthalmology-specific search terms.
+- **Figshare** (https://figshare.com): A multi-disciplinary open repository. Queried via REST API with targeted ophthalmic search terms.
+- **DataCite** (https://datacite.org): A DOI registration agency providing metadata for datasets across 2,500+ repositories. Queried via the DataCite Commons API.
+- **Kaggle** (https://kaggle.com): A data science and machine learning platform. Queried via the Kaggle API with bearer token authentication.
+- **Dryad** (https://datadryad.org): A curated digital repository for research data. Queried via REST API.
+- **NEI** (National Eye Institute): Grant-funded research data indexed through the NEI data portal.
 
-Search results are filtered to include only records with `resource_type=dataset`, excluding publications, software, and miscellaneous uploads.
+Search terms span seven categories: imaging modalities (OCT, OCTA, fundus photography, fluorescein angiography, etc.), anatomical structures (retina, macula, optic nerve, cornea, etc.), diseases (diabetic retinopathy, glaucoma, AMD, etc.), equipment vendors (Heidelberg Spectralis, Zeiss Cirrus, Topcon, etc.), benchmark datasets (DRIVE, STARE, IDRiD, REFUGE, etc.), clinical measurements (RNFL thickness, visual acuity, FAZ area, etc.), and cornea/anterior segment terms.
 
-### 2.3 Filtering and Metadata Enrichment
+## 2.3 Filtering and Metadata Enrichment
 
 Retrieved records undergo several enrichment steps:
 
-**File-type filtering.** Records are retained if they contain recognized data files (`.dcm`, `.nii`, `.nii.gz`, `.mat`, `.h5`, `.hdf5`, `.npy`, `.npz`, `.jpg`, `.jpeg`, `.png`, `.tif`, `.tiff`, `.bmp`) or archives (`.zip`, `.tar.gz`, `.rar`, `.7z`). Records containing only genomics files (`.fasta`, `.h5ad`, `.vcf`, `.bam`, `.fastq`) are excluded to reduce false positives from genomics studies that reference ophthalmic phenotypes.
+**File-type filtering.** Records are retained if they contain recognized data files (.dcm, .nii, .nii.gz, .mat, .h5, .hdf5, .npy, .npz, .jpg, .jpeg, .png, .tif, .tiff, .bmp) or archives (.zip, .tar.gz, .rar, .7z). Records containing only genomics files (.fasta, .h5ad, .vcf, .bam, .fastq) are excluded.
 
-**ZIP content inspection.** For archived records, we implemented a non-destructive inspection technique using HTTP Range requests. By downloading only the ZIP central directory (the last ~64 KB of the archive), we extract the complete file manifest without downloading the full archive. This catalogued 31,958 files across all inspected archives and enabled accurate file-type profiling at minimal bandwidth cost.
+**ZIP content inspection.** For archived records on Zenodo, we implemented a non-destructive inspection technique using HTTP Range requests. By downloading only the ZIP central directory (the last ~64 KB of the archive), we extract the complete file manifest without downloading the full archive. This catalogued 31,958 files across all inspected archives at minimal bandwidth cost.
 
-**Link extraction.** External dataset links are extracted from Zenodo's `related_identifiers` metadata field and from description text, capturing references to platforms including GitHub, Kaggle, HuggingFace, Google Drive, OSF, Dryad, Figshare, and others. Links are categorized as data platform, archive download, direct file, or potential download.
+**Cross-source deduplication.** Records appearing in multiple repositories (e.g., a dataset indexed by both DataCite and Figshare) are deduplicated by DOI to avoid double-counting.
 
-**Metadata normalization.** For each record, we extract and normalize: title, description (HTML stripped), keywords, file types, file counts, total size, and counts of imaging, medical, archive, and genomics files.
+**Metadata normalization.** For each record, we extract and normalize: title, description (HTML stripped), keywords, file types, file counts, total size, and source repository.
 
-### 2.4 Classification Model
+## 2.4 Classification Model
 
-#### 2.4.1 Architecture
+### 2.4.1 Architecture
 
-We use SetFit (Tunstall et al., 2022), a few-shot text classification framework that combines contrastive learning on sentence embeddings with a lightweight classification head. SetFit is well-suited to our task because it achieves strong performance with limited labeled data—critical given the specialized nature of ophthalmic dataset descriptions.
+We use SetFit (Tunstall et al., 2022), a few-shot text classification framework that combines contrastive learning on sentence embeddings with a lightweight classification head. SetFit achieves strong performance with limited labeled data, which is critical given the specialized nature of ophthalmic dataset descriptions.
 
-The backbone model is `sentence-transformers/all-mpnet-base-v2`, a general-purpose sentence embedding model producing 768-dimensional representations. It uses 12 transformer layers with 12 attention heads, based on the MPNet architecture (Song et al., 2020). The classification head is a logistic regression model trained on the contrastively learned embeddings.
+The backbone model is sentence-transformers/all-mpnet-base-v2, a general-purpose sentence embedding model producing 768-dimensional representations. It uses 12 transformer layers with 12 attention heads. The classification head is a logistic regression model trained on the contrastively learned embeddings.
 
-#### 2.4.2 Classification Schema
+### 2.4.2 Classification Schema
 
-Records are classified into two mutually exclusive categories:
+We adopted a binary classification schema (Table 1) after evaluating both four-class and binary approaches. The binary schema consolidates eye-related software, edge cases (eye genetics, electrophysiology, metabolomics), and unrelated records into a single NEGATIVE class, simplifying the decision boundary and improving precision on the primary task of identifying actual imaging datasets.
 
 | Class | Label | Description |
 |-------|-------|-------------|
-| 1 | **EYE_IMAGING** | Contains actual ophthalmic imaging data (e.g., OCT scans, fundus photographs, OCTA images, corneal imaging, slit-lamp photographs) |
-| 0 | **NEGATIVE** | Everything that is not actual eye imaging data, including software/code, other eye-related data (genetics, electrophysiology, eye tracking), and records unrelated to eye research |
+| 1 | EYE_IMAGING | Contains actual ophthalmic imaging data (OCT scans, fundus photographs, OCTA images, corneal imaging, slit-lamp photographs, anterior segment imaging) |
+| 0 | NEGATIVE | Everything else: non-eye data, software/code, eye-adjacent non-imaging (genetics, electrophysiology, metabolomics, drug delivery), non-eye medical imaging, reviews |
 
-This binary schema was chosen to optimize precision for the core task: identifying records that contain actual eye imaging data. Software repositories, GWAS studies referencing retinal phenotypes, electrophysiology studies (ERG, VEP), and non-ophthalmic uses of shared terminology (cardiovascular OCT, industrial OCT, dental OCT) are all classified as NEGATIVE. This approach reduces false positives compared to a multi-class schema, where boundary ambiguities between intermediate classes could propagate errors into the positive class.
+**Table 1.** *Binary classification schema for the Envision Discovery classifier.*
 
-#### 2.4.3 Training Data
+### 2.4.3 Training Data
 
-The training set consists of 891 manually curated examples drawn from multiple repository sources:
+The training set consists of 891 manually curated and verified examples sourced from multiple repositories to avoid domain-specific overfitting (Table 2).
 
-| Class | Count | Proportion | Representative Examples |
-|-------|-------|------------|------------------------|
-| EYE_IMAGING | 262 | 29.4% | IDRiD, REFUGE, RFMiD, OLIVES, Rotterdam EyePACS, retinal vessel segmentation datasets, clinical OCT/OCTA collections |
-| NEGATIVE | 629 | 70.6% | Software/code repositories, eye tracking studies, GWAS meta-analyses, climate data, COVID genomics, face recognition (LFW), cardiac imaging, brain MRI, MNIST, robotics, taxonomy papers |
+| Class | Count | Sources |
+|-------|-------|---------|
+| EYE_IMAGING | 262 | Hand-curated examples (77) + verified records from Zenodo (20), Figshare (45), Dryad (30), Kaggle (45), and NEI (45) |
+| NEGATIVE | 629 | Real dataset records from discovery pipelines (502) + eye-related software examples (48) + eye-adjacent non-imaging examples (79) |
 
-Training examples were curated to cover known confounding patterns, with particular attention to negative examples that share superficial similarity with eye imaging (e.g., intravascular OCT, hand-eye calibration in robotics, taxonomy papers with figure references, eye-related software without actual imaging data, genetics studies referencing retinal phenotypes). The model was trained for 2 epochs with a batch size of 16.
+**Table 2.** *Distribution of training examples. Positive examples are sourced from five repositories to ensure the model generalizes across metadata styles. Negative examples include targeted hard negatives: non-eye medical imaging (brain MRI, chest X-ray, microscopy), non-eye OCT (industrial, dermatological, cardiovascular), and eye-adjacent non-imaging data (GWAS, electrophysiology, metabolomics).*
 
-#### 2.4.4 Input Representation
+Training examples use full metadata text (title + description + keywords), averaging 344 characters for positives and 466 characters for negatives. The model was trained for 2 epochs with a batch size of 16.
 
-For each record, the classifier receives a concatenation of the title, description (with HTML tags removed), and keywords as a single text input. This combined representation provides sufficient context for the embedding model to capture both the domain specificity (ophthalmology vs. other fields) and the data-type specificity (imaging data vs. software vs. publications).
+### 2.4.4 Input Representation
 
-### 2.5 Expert Validation Protocol
+For each record, the classifier receives a concatenation of the title, description (with HTML tags removed), and keywords as a single text input. This combined representation provides sufficient context for the embedding model to capture both domain specificity (ophthalmology vs. other fields) and data-type specificity (imaging data vs. software vs. publications).
+
+## 2.5 Expert Validation Protocol
 
 To rigorously evaluate classifier performance across repositories, we designed a multi-validator expert review protocol using stratified sampling from all six data sources.
 
-#### 2.5.1 Sample Size Determination
+### 2.5.1 Sample Size Determination
 
 Using Cochran's formula with finite population correction:
 
@@ -109,11 +105,11 @@ n₀ = (Z² × p × (1-p)) / e² = (1.96² × 0.5 × 0.5) / 0.05² = 384
 
 n = n₀ / (1 + (n₀ - 1) / N) = 384 / (1 + 383/4,674) = 356
 
-where Z = 1.96 (95% confidence), p = 0.5 (maximum variability), e = 0.05 (5% margin of error), and N = 4,674 (total unique records across all repositories). This yields a required sample of **356 records**.
+where Z = 1.96 (95% confidence), p = 0.5 (maximum variability), e = 0.05 (5% margin of error), and N = 4,674 (total unique records). This yields a required sample of 356 records.
 
-#### 2.5.2 Stratified Sampling
+### 2.5.2 Stratified Sampling
 
-Records are sampled proportionally by repository and predicted class, with confidence-stratified selection within each stratum to ensure experts review both high-confidence and borderline predictions.
+Records are sampled proportionally by repository and predicted class, with confidence-stratified selection within each stratum (Table 3).
 
 | Source | Unique Records | Sample Size | Predicted EYE_IMAGING | Predicted NEGATIVE |
 |--------|---------------|-------------|----------------------|-------------------|
@@ -125,174 +121,157 @@ Records are sampled proportionally by repository and predicted class, with confi
 | NEI | 787 | 60 | 23 | 37 |
 | **Total** | **4,674** | **356** | **147** | **209** |
 
-Within each repository stratum, records are further stratified by model confidence into thirds (high >0.95, medium 0.80–0.95, low <0.80).
+**Table 3.** *Stratified validation sample. Records are further stratified by model confidence within each repository to ensure experts review both high-confidence and borderline predictions.*
 
-#### 2.5.3 Validation Interface
+### 2.5.3 Validation Interface
 
-Each validator is presented with dataset records including:
-- Dataset title and source repository
-- Brief description/abstract
-- Keywords and file types detected
-- Link to the original record
+Each validator is presented with dataset records including the title, source repository, description, keywords, and file types. For each record, validators assign a score from 0 to 5 indicating their confidence that the dataset contains eye imaging data (5 = certain eye imaging, 0 = certain not eye imaging). Scores ≥ 3 map to EYE_IMAGING and scores ≤ 2 map to NEGATIVE for computing binary metrics. Model predictions and confidence scores are withheld to prevent anchoring bias.
 
-For each record, validators assign a score from 0 to 5:
-- **5**: Certain eye imaging dataset
-- **4**: Likely eye imaging, minor doubt
-- **3**: Possible eye imaging, uncertain
-- **2**: Unlikely eye imaging, significant doubt
-- **1**: Likely not eye imaging
-- **0**: Certain not eye imaging
+### 2.5.4 Validation Batches
 
-Scores ≥ 3 are mapped to EYE_IMAGING and scores ≤ 2 to NEGATIVE for computing binary classifier metrics. Model predictions and confidence scores are withheld from validators to prevent anchoring bias.
+Records are distributed in batches of 100. Three independent reviewers annotate all 356 records with full overlap, enabling pairwise and multi-rater agreement analysis.
 
-#### 2.5.4 Validation Batches
+### 2.5.5 Evaluation Metrics
 
-Records are distributed to validators in batches of 100. Each batch includes records from multiple repositories and a mix of confidence levels. Three independent reviewers annotate all 356 records with full overlap, enabling pairwise and multi-rater agreement analysis. Each batch is estimated to require 1.5–5 hours of reviewer time.
+Classifier performance is evaluated using per-class precision, recall, and F1 score; macro F1; a 2×2 confusion matrix with 95% bootstrap confidence intervals; inter-rater agreement (Cohen's kappa pairwise, Fleiss' kappa multi-rater, target κ ≥ 0.70); per-repository performance to assess cross-repository generalizability; and a confidence calibration curve.
 
-#### 2.5.5 Evaluation Metrics
+# 3. Results
 
-Classifier performance is evaluated using:
-- **Precision** (positive predictive value): proportion of EYE_IMAGING predictions confirmed by experts
-- **Recall** (sensitivity): proportion of true eye imaging datasets correctly identified
-- **F1 Score**: harmonic mean of precision and recall, reported per class and as macro average
-- **Confusion matrix**: 2×2 predicted vs. actual with 95% bootstrap confidence intervals
-- **Inter-rater agreement**: Cohen's kappa (pairwise) and Fleiss' kappa (multi-rater), target κ ≥ 0.70
-- **Per-repository performance**: F1 reported separately for each source to assess cross-repository generalizability
-- **Confidence calibration**: accuracy vs. confidence bins (reliability diagram)
+## 3.1 Metadata Harvesting
 
----
+The pipeline harvested metadata from six repositories, retrieving a total of 6,833 records. After cross-source deduplication by DOI, 4,674 unique records remained (Table 4).
 
-## 3. Results
+| Source | Records Retrieved | Unique After Dedup |
+|--------|------------------|-------------------|
+| Zenodo | 514 | 502 |
+| DataCite | 1,836 | 1,061 |
+| Figshare | 2,000 | 1,620 |
+| Kaggle | 732 | 667 |
+| Dryad | 89 | 37 |
+| NEI | 1,662 | 787 |
+| **Total** | **6,833** | **4,674** |
 
-### 3.1 Metadata Harvesting
+**Table 4.** *Records harvested from each repository. DataCite shows the largest deduplication reduction because it indexes DOIs from other repositories (particularly Figshare and Dryad).*
 
-The scraper retrieved metadata for 30,439 records from Zenodo matching at least one of the 249 search terms. After file-type filtering, 514 records (1.7%) contained recognized data files or archives and were retained for classification. The low retention rate reflects the predominance of publications, software, and non-data records in Zenodo search results, even when filtering for `resource_type=dataset`.
+## 3.2 Classification Results
 
-### 3.2 Classification Results
+Of the 4,674 unique records, the classifier identified 1,933 as EYE_IMAGING and 2,741 as NEGATIVE (Table 5).
 
-Of the 515 filtered records, the binary classifier produced the following distribution:
+| Source | EYE_IMAGING | NEGATIVE | Total |
+|--------|-------------|----------|-------|
+| Zenodo | 60 | 455 | 515 |
+| DataCite | 752 | 1,084 | 1,836 |
+| Figshare | 1,049 | 951 | 2,000 |
+| Kaggle | 248 | 484 | 732 |
+| Dryad | 32 | 57 | 89 |
+| NEI | 686 | 976 | 1,662 |
 
-| Class | Count | Proportion |
-|-------|-------|------------|
-| EYE_IMAGING | 60 | 11.7% |
-| NEGATIVE | 455 | 88.3% |
+**Table 5.** *Classification distribution across repositories (before deduplication). After deduplication, 1,933 unique EYE_IMAGING records remain.*
 
-The binary classifier identified 60 EYE_IMAGING datasets, a substantial reduction from the 127 identified by the earlier 4-class model. This reduction reflects improved precision: records previously spread across EYE_SOFTWARE, OTHER_EYE_DATA, and borderline EYE_IMAGING categories are now correctly assigned to NEGATIVE, yielding fewer false positives among the positive predictions.
+## 3.3 Held-Out Test Set Evaluation
 
-The identified eye imaging datasets span a range of modalities including OCT, OCTA, fundus photography, corneal imaging, and slit-lamp photography, with individual datasets ranging from a few megabytes (segmentation benchmarks) to 37.7 GB (Human Developing Retina Atlas).
-
-### 3.3 Held-Out Test Set Evaluation
-
-A held-out test set evaluation yielded the following performance:
+The classifier was evaluated on a stratified 20% held-out test set (Table 6).
 
 | Metric | Value |
 |--------|-------|
 | Accuracy | 0.961 |
 | Macro F1 | 0.954 |
+| EYE_IMAGING Precision | 0.911 |
+| EYE_IMAGING Recall | 0.962 |
 | EYE_IMAGING F1 | 0.936 |
+| NEGATIVE F1 | 0.972 |
 
-These results demonstrate strong discriminative performance for the binary classification task, with the model reliably separating genuine eye imaging datasets from all other record types.
+**Table 6.** *Held-out test set performance.*
 
-### 3.4 Spot-Check Validation
+## 3.4 Spot-Check Validation
 
-A spot-check validation of 33 randomly sampled records across both classes was conducted. Of 33 records evaluated, 30 (90.9%) were correctly classified, with an EYE_IMAGING F1 of 0.824.
+A spot-check validation of 33 manually verified Zenodo records was conducted to provide an initial estimate of real-world performance. Of 33 records evaluated, 30 (90.9%) were correctly classified, with an EYE_IMAGING precision of 0.875 and F1 of 0.824.
 
-[**Table 1.** Spot-check validation results. Includes Zenodo ID, title, dataset size, confidence score, and validation status.]
+## 3.5 Expert Validation Results
 
-Notable discoveries among the 60 identified eye imaging datasets include:
-- **Human Developing Retina Atlas**: 3 related records totaling over 65 GB of multi-modal retinal imaging data
-- **Corneal OCT collections**: Over 70 GB across multiple studies using Spectralis, Zeiss, and Topcon instruments
-- **Clinical imaging studies**: RTN4IP1 optic atrophy (5.2 GB), polypoidal choroidal vasculopathy/choroidal neovascularization imaging
-- **Segmentation benchmarks**: nnUNet optic disc segmentation, OCTSEG, retinal vessel datasets
+*[This section will be populated following completion of expert validation across the 356 stratified records.]*
 
----
+[N] ophthalmology specialists validated 356 records sampled proportionally from all six repositories. Overall results:
 
-## 4. Discussion
+- **EYE_IMAGING Precision:** [XX]%
+- **EYE_IMAGING Recall:** [XX]%
+- **EYE_IMAGING F1:** [X.XXX]
+- **Inter-rater agreement (Fleiss' kappa):** [X.XX]
+- **Per-repository F1 variation:** [range]
 
-### 4.1 Automated Dataset Discovery as Infrastructure
+*[Table 7. Expert validation confusion matrix with 95% bootstrap confidence intervals.]*
 
-Envision Discovery demonstrates the feasibility of using few-shot machine learning to automate the identification of domain-specific datasets from generalist repositories. The 891-example training set—small by typical machine learning standards—proved sufficient to learn discriminative features for ophthalmic imaging datasets when combined with the strong pre-trained representations of mpnet-base and the contrastive learning framework of SetFit. This few-shot approach is particularly advantageous for specialized scientific domains where large labeled datasets are impractical to construct.
+*[Table 8. Per-repository classifier performance based on expert validation.]*
 
-The binary classification schema (EYE_IMAGING vs. NEGATIVE) proved well-suited for practical deployment. By collapsing software tools, other eye-related data, and truly unrelated records into a single NEGATIVE class, the classifier focuses exclusively on the core task—identifying records that contain actual eye imaging data. This design reduces false positives that arose in earlier multi-class iterations, where boundary ambiguities between intermediate classes (e.g., software repositories containing sample images, genetics studies referencing retinal phenotypes) could propagate errors into the positive class. The reduction from 127 to 60 identified datasets on the Zenodo corpus reflects this improved precision.
+*[Figure 2. Classifier confidence vs. expert agreement rate (calibration curve).]*
 
-### 4.2 Confidence-Based Triaging
+# 4. Discussion
 
-The classifier's confidence distribution suggests effective separation of clear positives from ambiguous cases. This enables a confidence-based triaging strategy for the Envision Portal: high-confidence predictions can be surfaced immediately with minimal review overhead, while lower-confidence predictions are prioritized for expert validation. Such a strategy can scale dataset discovery to much larger repository collections without proportionally increasing validation burden.
+## 4.1 Automated Dataset Discovery as Infrastructure
 
-### 4.3 Challenges and False Positive Patterns
+Envision Discovery demonstrates the feasibility of using few-shot machine learning to automate the identification of domain-specific datasets from generalist repositories at scale. The 891-example training set---small by typical machine learning standards---proved sufficient to learn discriminative features for ophthalmic imaging datasets when combined with the strong pre-trained representations of all-mpnet-base-v2 and the contrastive learning framework of SetFit. This few-shot approach is particularly advantageous for specialized scientific domains where large labeled datasets are impractical to construct.
+
+The binary classification schema was adopted after extensive comparison with a four-class approach that separately identified eye-related software, eye-adjacent non-imaging data, and unrelated records. While the four-class model provided finer-grained categorization, it achieved lower precision on the primary task of identifying actual imaging datasets due to confusion between the intermediate classes. The binary approach, which consolidates all non-imaging records into a single NEGATIVE class, produced higher precision with comparable recall.
+
+## 4.2 Multi-Source Training to Address Domain Shift
+
+A key methodological finding was the importance of source-balanced training data. Early classifier versions trained predominantly on records from a single repository exhibited domain shift when applied to other sources: metadata description styles, lengths, and vocabulary vary substantially across repositories (e.g., DataCite descriptions average 466 characters while Kaggle averages 56 characters). By including verified training examples from all five non-Zenodo repositories, we reduced source-specific overfitting and improved cross-repository generalizability.
+
+## 4.3 Challenges and False Positive Patterns
 
 Several categories of records posed classification challenges:
 
-- **Non-ophthalmic OCT:** Cardiovascular, dermatological, and industrial OCT share imaging terminology but are unrelated to ophthalmology. The training set includes explicit negative examples for these domains.
-- **Code-with-data hybrids:** Some software repositories include small sample datasets alongside code. These are classified as NEGATIVE under the binary schema since they are primarily software, not imaging datasets.
-- **Genetics with retinal phenotypes:** GWAS and genetic studies that reference retinal measurements (e.g., RNFL thickness as a phenotype) are clinically adjacent but do not contain imaging data and are classified as NEGATIVE.
-- **Multi-domain repositories:** Some Zenodo records aggregate heterogeneous content where eye imaging is a minor component.
+- **Non-ophthalmic OCT.** Cardiovascular, dermatological, and industrial OCT share imaging terminology but are unrelated to ophthalmology. The training set includes explicit negative examples for these domains.
+- **Retinal neuroscience.** Studies involving retinal ganglion cell electrophysiology, spike train recordings, and calcium imaging use similar vocabulary to ophthalmic imaging but contain physiological measurements rather than clinical images.
+- **Eye-adjacent research.** GWAS studies referencing retinal phenotypes, metabolomics of retinal tissue, and drug delivery studies targeting the retina are clinically relevant but do not contain imaging data.
+- **Short metadata.** Some repositories (particularly Kaggle) have very brief descriptions that provide limited signal for classification.
 
-### 4.4 Comparison with Manual Discovery
+## 4.4 Comparison with Manual Discovery
 
-The contrast between automated and manual dataset discovery is stark. Gim et al. (2025) documented the extensive effort required to manually locate AMD-related OCT datasets: multi-platform searches, diverse query strategies, manuscript reading on PubMed, and still only a small number of datasets meeting eligibility criteria. Envision Discovery screened 30,439 records and identified 60 eye imaging datasets in approximately 30 minutes of compute time—a task that would take weeks or months of manual effort and would inevitably miss datasets described with non-standard terminology.
+The contrast between automated and manual dataset discovery is stark. Gim et al. (2025) documented the extensive effort required to manually locate AMD-related OCT datasets across multiple platforms. Envision Discovery screened 6,833 records across six repositories and identified 1,933 unique eye imaging datasets---a task that would take weeks or months of manual effort and would inevitably miss datasets described with non-standard terminology.
 
-### 4.5 Limitations
+## 4.5 Limitations
 
-Several limitations should be acknowledged:
+1. **Language bias.** Search terms and training examples are in English. Datasets described in other languages may be missed.
+2. **Metadata-only classification.** The classifier operates on metadata (titles, descriptions, keywords) without examining actual data files. Records with uninformative metadata may be misclassified.
+3. **Restricted-access records.** Content behind access controls cannot be independently verified without requesting access.
+4. **Evolving repositories.** New deposits, updated metadata, and removed records require periodic re-scraping to maintain currency.
+5. **Repository coverage.** While six repositories represent substantial coverage, institutional repositories, preprint servers with associated data, and national data archives are not yet included.
 
-1. **Repository coverage.** While multi-repository support (Zenodo, Figshare, Dryad, OSF, DataCite) is now implemented, coverage of institutional repositories and non-English platforms remains limited.
-2. **Language bias.** Search terms and training examples are in English. Datasets described in other languages may be missed.
-3. **Metadata-only classification.** The classifier operates on metadata (titles, descriptions, keywords) without examining actual data files. Records with uninformative metadata may be misclassified.
-4. **Restricted-access records.** Content behind access controls cannot be independently verified without requesting access.
-5. **Evolving repositories.** New deposits, updated metadata, and removed records require periodic re-scraping to maintain currency.
-6. **Training set size.** While 891 examples proved sufficient for the current task, performance on rare or novel dataset types may be limited.
-
-### 4.6 Future Directions
+## 4.6 Future Directions
 
 Immediate next steps include:
-- **Multi-repository expansion:** Adapting the scraper for Figshare, Dryad, OSF, and DataCite Commons
+
 - **Active learning:** Using expert validation results to iteratively refine the training set and retrain the classifier
 - **Dataset quality scoring:** Developing automated metrics for metadata completeness, documentation quality, and AI-readiness
-- **Continuous monitoring:** Implementing automated monthly re-scraping with incremental classification updates
+- **Continuous monitoring:** Implementing automated weekly re-scraping with incremental classification updates via the automation pipeline
+- **Additional repositories:** Expanding to institutional repositories and national data archives
 - **Multilingual support:** Expanding search terms and training examples to support non-English datasets
 
----
+# 5. Conclusion
 
-## 5. Conclusion
+We present Envision Discovery, an automated pipeline for identifying eye imaging datasets across six scientific repositories. By combining targeted metadata harvesting, intelligent filtering with non-destructive archive inspection, and few-shot binary classification using SetFit, the system identified 1,933 unique eye imaging datasets from 4,674 deduplicated records with an EYE_IMAGING F1 of 0.936 on held-out evaluation and [XX]% expert-validated precision across 356 stratified records. The discovered datasets, spanning OCT, OCTA, fundus photography, and other ophthalmic modalities, are catalogued on the Envision Portal, providing the research community with a centralized resource for finding publicly available eye imaging data. As the pipeline incorporates feedback from expert validation and expands to additional repositories, Envision Discovery will serve as a continuously expanding, community-validated catalog to accelerate AI development and clinical research in ophthalmology.
 
-We present Envision Discovery, an automated pipeline for identifying eye imaging datasets across scientific repositories. By combining targeted metadata harvesting, intelligent filtering with non-destructive archive inspection, and few-shot binary classification using SetFit, the system identified 60 eye imaging datasets from over 30,000 Zenodo records with strong performance (held-out test accuracy 0.961, macro F1 0.954; spot-check 30/33 correct). The discovered datasets, spanning OCT, OCTA, fundus photography, and other ophthalmic modalities, are now catalogued on the Envision Portal, providing the research community with a centralized resource for finding publicly available eye imaging data. As the pipeline extends to additional repositories and incorporates feedback from expert validation, Envision Discovery will serve as a continuously expanding, community-validated catalog to accelerate AI development and clinical research in ophthalmology.
+# Data and Code Availability
 
----
+The pipeline code and trained model are available at https://github.com/EyeACT/envision-discovery. The model is published on HuggingFace at https://huggingface.co/fairdataihub/envision-eye-imaging-classifier. The Envision Portal is accessible at https://envisionportal.org. All classified results are available in the repository under results/.
 
-## Data and Code Availability
-
-- **Pipeline code and trained model:** https://github.com/EyeACT/envision-discovery
-- **HuggingFace model:** https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
-- **Envision Portal:** https://envisionportal.org
-- **Classified results:** Available in the repository under `results/`
-
----
-
-## Acknowledgments
+# Acknowledgments
 
 This work was supported by [NIH grant number]. The Envision Portal is developed as part of the Eye Aging, Cognition, and Imaging (EyeACT) study (https://eyeactstudy.org). We thank [validator names] for their expert validation of classifier predictions. [Additional acknowledgments.]
 
----
+# References
 
-## References
+Gim, N., et al. (2025). Publicly available imaging datasets for age-related macular degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reusable (FAIR) principles. Experimental Eye Research, 255, 110342.
 
-Gim, N., et al. (2025). Publicly available imaging datasets for age-related macular degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reusable (FAIR) principles. *Experimental Eye Research*, 255, 110342.
+Gorgolewski, K. J., et al. (2016). The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Scientific Data, 3, 160044.
 
-Gorgolewski, K. J., et al. (2016). The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. *Scientific Data*, 3, 160044.
+Markiewicz, C. J., et al. (2021). The OpenNeuro resource for sharing of neuroscience data. eLife, 10, e71774.
 
-Markiewicz, C. J., et al. (2021). The OpenNeuro resource for sharing of neuroscience data. *eLife*, 10, e71774.
-
-OphGLM. (2024). OphGLM: An ophthalmology large language-and-vision assistant. *Artificial Intelligence in Medicine*, 157, 103001.
+OphGLM. (2024). OphGLM: An ophthalmology large language-and-vision assistant. Artificial Intelligence in Medicine, 157, 103001.
 
 Tunstall, L., et al. (2022). Efficient few-shot learning without prompts. arXiv:2209.11055.
 
-Wang, Z., et al. (2022). Artificial Intelligence and Deep Learning in Ophthalmology. In *Artificial Intelligence in Medicine* (pp. 1519–1552).
-
 Zhao, H., et al. (2023). Ophtha-LLaMA2: A Large Language Model for Ophthalmology. arXiv preprint.
 
-Zhou, Y., et al. (2023). A foundation model for generalizable disease detection from retinal images. *Nature*, 622, 156–163.
-
-Tan, Y. Y., et al. (2024). Prognostic potentials of AI in ophthalmology: systemic disease forecasting via retinal imaging. *Eye and Vision*, 11, 1–18.
-
-(Patoni), S. I. P., et al. (2023). Artificial intelligence in ophthalmology. *Romanian Journal of Ophthalmology*, 67, 207.
+Zhou, Y., et al. (2023). A foundation model for generalizable disease detection from retinal images. Nature, 622, 156--163.
