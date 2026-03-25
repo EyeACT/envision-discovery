@@ -18,9 +18,9 @@ from ..scraper import (
     ARCHIVE_EXTS,
     GENOMICS_EXTS,
     SEARCH_TERMS,
-    ZipInspector,
     extract_weblinks_from_description,
 )
+from ..utils import request_with_backoff, ArchiveInspector
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +40,7 @@ class FigshareScraper:
         self,
         query: str,
         max_results: int = 100,
-        inspect_zips: bool = False,
+        inspect_zips: bool = True,
     ) -> list[DatasetMetadata]:
         """Search Figshare for datasets matching query."""
         results = []
@@ -55,32 +55,16 @@ class FigshareScraper:
                 "page_size": page_size,
             }
 
-            articles = None
-            for attempt in range(3):
-                try:
-                    resp = self.session.post(
-                        f"{API_BASE}/articles/search",
-                        json=payload,
-                        timeout=30,
-                    )
-                    resp.raise_for_status()
-                    articles = resp.json()
-                    break
-                except requests.exceptions.HTTPError as e:
-                    if e.response is not None and e.response.status_code in (429, 403):
-                        wait = 60 * (2 ** attempt)  # 10s, 20s, 40s
-                        logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
-                        time.sleep(wait)
-                        continue
-                    logger.warning(f"Figshare search error for '{query}': {e}")
-                    break
-                except Exception as e:
-                    logger.warning(f"Figshare search error for '{query}': {e}")
-                    break
-            else:
-                # All retries exhausted
-                logger.warning(f"Figshare gave up after 3 retries for '{query}'")
+            resp = request_with_backoff(
+                self.session,
+                "post",
+                f"{API_BASE}/articles/search",
+                json=payload,
+            )
+            if resp is None:
+                logger.warning(f"Figshare search failed for '{query}' after retries")
                 break
+            articles = resp.json()
 
             if not articles:
                 break
@@ -107,7 +91,7 @@ class FigshareScraper:
         self,
         search_terms: list[str] | None = None,
         max_per_query: int = 100,
-        inspect_zips: bool = False,
+        inspect_zips: bool = True,
     ) -> list[DatasetMetadata]:
         """Run full scrape using all search terms."""
         if search_terms is None:
@@ -128,12 +112,13 @@ class FigshareScraper:
         """Convert a Figshare article to DatasetMetadata."""
         # Fetch full article details for file list
         article_id = article.get("id")
-        try:
-            resp = self.session.get(f"{API_BASE}/articles/{article_id}", timeout=30)
-            resp.raise_for_status()
+        resp = request_with_backoff(
+            self.session, "get", f"{API_BASE}/articles/{article_id}"
+        )
+        if resp is not None:
             detail = resp.json()
-        except Exception as e:
-            logger.debug(f"Could not fetch Figshare article {article_id}: {e}")
+        else:
+            logger.debug(f"Could not fetch Figshare article {article_id} after retries")
             detail = article
 
         files = detail.get("files", [])
@@ -168,18 +153,18 @@ class FigshareScraper:
                         genomics_count += 1
                     break
 
-            # ZIP inspection
-            if inspect_zips and name_lower.endswith(".zip"):
+            # Archive inspection (ZIP, TAR, TAR.GZ)
+            if inspect_zips and any(name_lower.endswith(ext) for ext in (".zip", ".tar", ".tar.gz", ".tgz")):
                 download_url = f.get("download_url")
                 if download_url:
                     try:
-                        contents = ZipInspector.inspect_via_range(
-                            download_url, self.session
+                        contents = ArchiveInspector.inspect_archive(
+                            download_url, f.get("name", ""), self.session
                         )
                         if contents:
-                            summary = ZipInspector.summarize_contents(contents)
+                            summary = ArchiveInspector.summarize_contents(contents)
                             zip_contents.extend(
-                                summary.get("sample_imaging_files", [])
+                                summary.get("imaging_files", [])
                             )
                     except Exception:
                         pass
