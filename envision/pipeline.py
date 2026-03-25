@@ -367,10 +367,8 @@ def _run_metadata_pipeline(
             "url": meta.url,
             "label": cls_result["label"],
             "confidence": cls_result["confidence"],
-            "prob_eye_imaging": probs["EYE_IMAGING"],
-            "prob_software": probs["EYE_SOFTWARE"],
-            "prob_other_eye": probs["OTHER_EYE_DATA"],
-            "prob_negative": probs["NEGATIVE"],
+            "prob_eye_imaging": probs.get("EYE_IMAGING", 0),
+            "prob_negative": probs.get("NEGATIVE", 0),
             "title": meta.title[:200],
             "description": meta.description[:500],
             "keywords": meta.keywords[:10],
@@ -390,7 +388,7 @@ def _run_metadata_pipeline(
         }
         all_results.append(result)
 
-        if cls_result["label"] in ("EYE_IMAGING", "EYE_SOFTWARE"):
+        if cls_result["label"] == "EYE_IMAGING":
             addf_records.append((meta, cls_result))
 
     # Analyze
@@ -400,23 +398,17 @@ def _run_metadata_pipeline(
     results_dir.mkdir(exist_ok=True, parents=True)
 
     eye_imaging = [r for r in all_results if r["label"] == "EYE_IMAGING"]
-    software = [r for r in all_results if r["label"] == "EYE_SOFTWARE"]
 
-    eye_imaging.sort(key=lambda x: (-x["prob_eye_imaging"], -x["size_mb"]))
-    software.sort(key=lambda x: (-x["confidence"], -x["size_mb"]))
+    eye_imaging.sort(key=lambda x: (-x["prob_eye_imaging"], -x.get("size_mb", 0)))
 
     with open(results_dir / f"{source}_eye_imaging.json", "w") as f:
         json.dump(eye_imaging, f, indent=2)
-
-    with open(results_dir / f"{source}_software.json", "w") as f:
-        json.dump(software, f, indent=2)
 
     with open(results_dir / f"{source}_all_results.json", "w") as f:
         json.dump(all_results, f, indent=2)
 
     print(f"\n  Results: {results_dir}")
     print(f"    - {source}_eye_imaging.json ({len(eye_imaging):,} records)")
-    print(f"    - {source}_software.json ({len(software):,} records)")
     print(f"    - {source}_all_results.json ({len(all_results):,} records)")
 
     # ADDF export
