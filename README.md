@@ -66,9 +66,8 @@ Output files in `results/`:
 
 | File | Description |
 |------|-------------|
-| `zenodo_eye_imaging.json` | Records classified as EYE_IMAGING, sorted by confidence |
-| `zenodo_software.json` | Records classified as EYE_SOFTWARE |
-| `zenodo_all_results.json` | All classified records |
+| `{source}_eye_imaging.json` | Records classified as EYE_IMAGING, sorted by confidence |
+| `{source}_all_results.json` | All classified records with binary labels |
 
 ### Output format
 
@@ -82,9 +81,7 @@ Each record in the results JSON:
   "label": "EYE_IMAGING",
   "confidence": 0.9998,
   "prob_eye_imaging": 0.9998,
-  "prob_software": 0.0000,
-  "prob_other_eye": 0.0000,
-  "prob_negative": 0.0000,
+  "prob_negative": 0.0002,
   "title": "Dataset for PT-OCT ANN Project",
   "description": "...",
   "keywords": ["PT-OCT, ANN"],
