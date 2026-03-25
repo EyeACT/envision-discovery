@@ -29,6 +29,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from .metadata import DatasetMetadata
+from .utils import request_with_backoff, ArchiveInspector, EYE_IMAGING_EXTS as UTILS_IMAGING_EXTS, GENOMICS_EXTS as UTILS_GENOMICS_EXTS, ARCHIVE_EXTS as UTILS_ARCHIVE_EXTS
 
 logging.basicConfig(
     level=logging.INFO,
@@ -311,7 +312,7 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
             genomics_found = True
             analysis["genomics_count"] += 1
 
-        if filename.endswith(".zip"):
+        if filename.endswith(".zip") or filename.endswith((".tar.gz", ".tgz", ".tar")):
             analysis["has_archives"] = True
             analysis["archive_count"] += 1
             analysis["total_archive_size"] += size
@@ -319,23 +320,23 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
             download_url = f.get("links", {}).get("self")
             if download_url:
                 try:
-                    zip_contents = ZipInspector.inspect_via_range(download_url, session)
-                    if zip_contents:
-                        summary = ZipInspector.summarize_contents(zip_contents)
+                    archive_files = ArchiveInspector.inspect_archive(download_url, filename, session)
+                    if archive_files:
+                        summary = ArchiveInspector.summarize_contents(archive_files)
                         analysis["zip_contents"][filename] = summary
 
                         if summary.get("imaging_file_count", 0) > 0:
                             imaging_found = True
                             analysis["zip_imaging_files"].extend(
-                                summary.get("sample_imaging_files", [])
+                                summary.get("imaging_files", [])
                             )
                         if summary.get("genomics_file_count", 0) > 0:
                             genomics_found = True
                             analysis["zip_genomics_files"].extend(
-                                summary.get("sample_genomics_files", [])
+                                summary.get("genomics_files", [])
                             )
                 except Exception as e:
-                    logger.debug(f"Could not inspect ZIP {filename}: {e}")
+                    logger.debug(f"Could not inspect archive {filename}: {e}")
 
         elif any(filename.endswith(ext) for ext in ARCHIVE_EXTS):
             analysis["has_archives"] = True
@@ -431,19 +432,8 @@ class ZenodoScraper:
             params = {"q": full_query, "page": page, "size": per_page}
 
             try:
-                for attempt in range(3):
-                    response = self.session.get(
-                        self.SEARCH_URL, params=params, timeout=30
-                    )
-                    if response.status_code == 429:
-                        wait = 5 * (2 ** attempt)
-                        logger.warning(f"Rate limited, waiting {wait}s")
-                        time.sleep(wait)
-                        continue
-                    response.raise_for_status()
-                    break
-                else:
-                    logger.warning(f"Max retries exceeded for '{query}'")
+                response = request_with_backoff(self.session, "get", self.SEARCH_URL, params=params)
+                if response is None:
                     break
 
                 hits = response.json().get("hits", {}).get("hits", [])

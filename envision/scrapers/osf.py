@@ -20,6 +20,7 @@ from ..scraper import (
     GENOMICS_EXTS,
     SEARCH_TERMS,
 )
+from ..utils import request_with_backoff, ArchiveInspector
 
 logger = logging.getLogger(__name__)
 
@@ -34,16 +35,6 @@ class OSFScraper:
         self.session.headers.update({"Accept": "application/json"})
         self.seen_ids: set[str] = set()
         self.output_dir = Path(output_dir) if output_dir else None
-        self._request_count = 0
-
-    def _rate_limit(self):
-        """Respect OSF's 100 req/hr unauthenticated limit."""
-        self._request_count += 1
-        if self._request_count % 80 == 0:
-            logger.info("OSF rate limit pause (80 requests made)...")
-            time.sleep(60)
-        else:
-            time.sleep(2.0)
 
     def search(
         self,
@@ -60,31 +51,13 @@ class OSFScraper:
         }
 
         while url and len(results) < max_results:
-            data = None
-            for attempt in range(3):
-                try:
-                    resp = self.session.get(url, params=params, timeout=30)
-                    self._rate_limit()
-                    resp.raise_for_status()
-                    data = resp.json()
-                    break
-                except requests.exceptions.HTTPError as e:
-                    if e.response is not None and e.response.status_code in (429, 403):
-                        wait = 30 * (2 ** attempt)  # 30s, 60s, 120s (OSF is slow)
-                        logger.warning(f"OSF rate limited ({e.response.status_code}), waiting {wait}s...")
-                        time.sleep(wait)
-                        continue
-                    logger.warning(f"OSF search error for '{query}': {e}")
-                    break
-                except Exception as e:
-                    logger.warning(f"OSF search error for '{query}': {e}")
-                    break
-            else:
-                logger.warning(f"OSF gave up after 3 retries for '{query}'")
+            resp = request_with_backoff(
+                self.session, "get", url, params=params,
+            )
+            if resp is None:
                 break
-
-            if data is None:
-                break
+            data = resp.json()
+            time.sleep(2.0)  # polite inter-request delay
 
             nodes = data.get("data", [])
             if not nodes:
@@ -126,18 +99,18 @@ class OSFScraper:
 
     def _get_files(self, node_id: str) -> list[dict]:
         """Fetch file list for an OSF node's osfstorage."""
+        resp = request_with_backoff(
+            self.session, "get",
+            f"{API_BASE}/nodes/{node_id}/files/osfstorage/",
+            params={"page[size]": 100},
+        )
+        if resp is None:
+            return []
+        time.sleep(2.0)  # polite inter-request delay
         try:
-            resp = self.session.get(
-                f"{API_BASE}/nodes/{node_id}/files/osfstorage/",
-                params={"page[size]": 100},
-                timeout=30,
-            )
-            self._rate_limit()
-            resp.raise_for_status()
-            data = resp.json()
-            return data.get("data", [])
+            return resp.json().get("data", [])
         except Exception as e:
-            logger.debug(f"Could not fetch OSF files for {node_id}: {e}")
+            logger.debug(f"Could not parse OSF files for {node_id}: {e}")
             return []
 
     def _node_to_metadata(self, node: dict) -> DatasetMetadata | None:

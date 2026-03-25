@@ -19,8 +19,8 @@ from ..scraper import (
     ARCHIVE_EXTS,
     GENOMICS_EXTS,
     SEARCH_TERMS,
-    ZipInspector,
 )
+from ..utils import request_with_backoff, ArchiveInspector
 
 logger = logging.getLogger(__name__)
 
@@ -91,7 +91,7 @@ class KaggleScraper:
         self,
         query: str,
         max_results: int = 100,
-        inspect_zips: bool = False,
+        inspect_zips: bool = True,
     ) -> list[DatasetMetadata]:
         """Search Kaggle for datasets matching query."""
         results = []
@@ -104,32 +104,12 @@ class KaggleScraper:
                 "filetype": "all",
             }
 
-            datasets = None
-            for attempt in range(3):
-                try:
-                    resp = self.session.get(
-                        f"{API_BASE}/datasets/list",
-                        params=params,
-                        timeout=30,
-                    )
-                    resp.raise_for_status()
-                    datasets = resp.json()
-                    break
-                except requests.exceptions.HTTPError as e:
-                    if e.response is not None and e.response.status_code in (429, 403):
-                        wait = 60 * (2 ** attempt)  # 10s, 20s, 40s
-                        logger.warning(f"Rate limited ({e.response.status_code}), waiting {wait}s...")
-                        time.sleep(wait)
-                        continue
-                    logger.warning(f"Kaggle search error for '{query}': {e}")
-                    break
-                except Exception as e:
-                    logger.warning(f"Kaggle search error for '{query}': {e}")
-                    break
-            else:
-                # All retries exhausted
-                logger.warning(f"Kaggle gave up after 3 retries for '{query}'")
+            resp = request_with_backoff(
+                self.session, "get", f"{API_BASE}/datasets/list", params=params,
+            )
+            if resp is None:
                 break
+            datasets = resp.json()
 
             if not datasets:
                 break
@@ -157,7 +137,7 @@ class KaggleScraper:
         self,
         search_terms: list[str] | None = None,
         max_per_query: int = 100,
-        inspect_zips: bool = False,
+        inspect_zips: bool = True,
     ) -> list[DatasetMetadata]:
         """Run full scrape using all search terms."""
         if search_terms is None:
@@ -169,7 +149,6 @@ class KaggleScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(30.0)
         return all_results
 
     def _dataset_to_metadata(
@@ -227,20 +206,20 @@ class KaggleScraper:
                         genomics_count += 1
                     break
 
-            # ZIP inspection
-            if inspect_zips and name_lower.endswith(".zip"):
+            # Archive inspection (ZIP and TAR)
+            if inspect_zips and any(name_lower.endswith(ext) for ext in ARCHIVE_EXTS):
                 download_url = (
                     f"https://www.kaggle.com/api/v1/datasets/download/"
                     f"{owner_slug}/{dataset_slug}/{f.get('name', '')}"
                 )
                 try:
-                    contents = ZipInspector.inspect_via_range(
-                        download_url, self.session
+                    contents = ArchiveInspector.inspect_archive(
+                        download_url, f.get("name", ""), self.session
                     )
                     if contents:
-                        summary = ZipInspector.summarize_contents(contents)
+                        summary = ArchiveInspector.summarize_contents(contents)
                         zip_contents.extend(
-                            summary.get("sample_imaging_files", [])
+                            summary.get("imaging_files", [])
                         )
                 except Exception:
                     pass

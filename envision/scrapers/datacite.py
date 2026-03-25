@@ -15,6 +15,7 @@ import requests
 
 from ..metadata import DatasetMetadata
 from ..scraper import SEARCH_TERMS
+from ..utils import request_with_backoff, ArchiveInspector
 
 logger = logging.getLogger(__name__)
 
@@ -41,22 +42,21 @@ class DataCiteScraper:
         page_size = 25
 
         while len(results) < max_results:
-            try:
-                resp = self.session.get(
-                    API_BASE,
-                    params={
-                        "query": query,
-                        "resource-type-id": "dataset",
-                        "page[size]": page_size,
-                        "page[number]": page_number,
-                    },
-                    timeout=30,
-                )
-                resp.raise_for_status()
-                data = resp.json()
-            except Exception as e:
-                logger.warning(f"DataCite search error for '{query}': {e}")
+            resp = request_with_backoff(
+                self.session,
+                "get",
+                API_BASE,
+                params={
+                    "query": query,
+                    "resource-type-id": "dataset",
+                    "page[size]": page_size,
+                    "page[number]": page_number,
+                },
+            )
+            if resp is None:
+                logger.warning(f"DataCite search failed for '{query}' after retries")
                 break
+            data = resp.json()
 
             items = data.get("data", [])
             if not items:
