@@ -10,6 +10,12 @@ import argparse
 import json
 import re
 from html import unescape
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 from pathlib import Path
 
 
