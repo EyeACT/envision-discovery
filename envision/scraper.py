@@ -355,7 +355,7 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
 SEARCH_TERMS = [
     # Imaging modalities
     "retinal OCT", "fundus photography", "optical coherence tomography eye",
-    "retinal imaging dataset", "fundus image dataset", "OCT dataset",
+    "retinal imaging dataset", "fundus image dataset", "ophthalmic OCT dataset",
     "macular OCT", "RNFL OCT", "OCT-A retina",
     # Disease-specific
     "diabetic retinopathy dataset", "glaucoma dataset", "AMD dataset",
