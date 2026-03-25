@@ -111,14 +111,19 @@ Each record in the results JSON:
 | **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, slit-lamp, anterior segment) |
 | **NEGATIVE** | Everything else (non-eye data, software/code, eye-adjacent non-imaging, non-eye medical imaging) |
 
-## Current Results (Zenodo)
+## Current Results
 
-From 515 Zenodo dataset records with data files (scraped from ~30,400 total records):
+From 4,674 unique records across six repositories (Zenodo, Figshare, DataCite, Kaggle, Dryad, NEI):
 
-| Class | Count |
-|-------|-------|
-| EYE_IMAGING | 60 |
-| NEGATIVE | 455 |
+| Source | EYE_IMAGING | NEGATIVE | Total |
+|--------|-------------|----------|-------|
+| Zenodo | 60 | 455 | 515 |
+| DataCite | 752 | 1,084 | 1,836 |
+| Figshare | 1,049 | 951 | 2,000 |
+| Kaggle | 248 | 484 | 732 |
+| Dryad | 32 | 57 | 89 |
+| NEI | 686 | 976 | 1,662 |
+| **Unique (deduped)** | **1,933** | **2,741** | **4,674** |
 
 Classification is metadata-only (titles, descriptions, keywords, and file types inspected inside archives via HTTP Range requests) — no dataset files are downloaded. Multi-source support (Figshare, Dryad, OSF, DataCite) is implemented and will expand coverage.
 
