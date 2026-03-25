@@ -29,7 +29,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from .metadata import DatasetMetadata
-from .utils import request_with_backoff, ArchiveInspector, EYE_IMAGING_EXTS as UTILS_IMAGING_EXTS, GENOMICS_EXTS as UTILS_GENOMICS_EXTS, ARCHIVE_EXTS as UTILS_ARCHIVE_EXTS
+from .utils import request_with_backoff, ArchiveInspector, PaginatedSearch, EYE_IMAGING_EXTS as UTILS_IMAGING_EXTS, GENOMICS_EXTS as UTILS_GENOMICS_EXTS, ARCHIVE_EXTS as UTILS_ARCHIVE_EXTS
 
 logging.basicConfig(
     level=logging.INFO,
@@ -412,6 +412,23 @@ class ZenodoScraper:
             "skipped_existing": 0,
         }
 
+    def get_count(self, query: str, datasets_only: bool = True,
+                   start_date: str = None, end_date: str = None) -> int:
+        """Get total result count for a query without fetching records."""
+        full_query = query
+        if datasets_only:
+            full_query = f"({query}) AND resource_type.type:dataset"
+        if start_date and end_date:
+            full_query += f" AND created:[{start_date} TO {end_date}]"
+
+        resp = request_with_backoff(
+            self.session, "get", self.SEARCH_URL,
+            params={"q": full_query, "size": 1},
+        )
+        if resp is None:
+            return 0
+        return resp.json().get("hits", {}).get("total", 0)
+
     def search(
         self,
         query: str,
@@ -685,15 +702,46 @@ def run_scrape(
     scraper = ZenodoScraper(output_dir)
     all_records = []
 
-    for i, term in enumerate(SEARCH_TERMS, 1):
-        logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}'")
+    # Set up paginated search for queries that exceed API limits
+    def count_fn(query, start_date, end_date):
+        return scraper.get_count(query, datasets_only=datasets_only,
+                                 start_date=start_date, end_date=end_date)
 
-        results = scraper.search(
-            term,
-            max_results=max_per_query,
+    def fetch_fn(query, start_date, end_date, max_results):
+        date_clause = f" AND created:[{start_date} TO {end_date}]"
+        return scraper.search(
+            query + date_clause,
+            max_results=max_results,
             datasets_only=datasets_only,
             inspect_zips=inspect_zips,
         )
+
+    paginator = PaginatedSearch(
+        count_fn=count_fn,
+        fetch_fn=fetch_fn,
+        api_max=max_per_query,
+        date_format="%Y/%m/%d",
+    )
+
+    for i, term in enumerate(SEARCH_TERMS, 1):
+        logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}'")
+
+        # Check count first — use pagination if exceeds max_per_query
+        total_count = scraper.get_count(term, datasets_only=datasets_only)
+
+        if total_count > max_per_query:
+            logger.info(
+                f"  Total results ({total_count}) exceeds cap ({max_per_query}), "
+                f"using date-range pagination"
+            )
+            results = paginator.search(term, "2010/01/01", "2026/12/31")
+        else:
+            results = scraper.search(
+                term,
+                max_results=max_per_query,
+                datasets_only=datasets_only,
+                inspect_zips=inspect_zips,
+            )
 
         all_records.extend(results)
         logger.info(
