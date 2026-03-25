@@ -524,8 +524,11 @@ class ZenodoScraper:
         ):
             return True
 
-        if analysis.get("has_archives"):
-            return True
+        # Only keep archives if ZIP inspection found imaging files inside
+        if analysis.get("has_archives") and analysis.get("zip_contents"):
+            for zip_summary in analysis["zip_contents"].values():
+                if zip_summary.get("imaging_file_count", 0) > 0:
+                    return True
 
         return False
 
