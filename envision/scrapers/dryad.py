@@ -124,7 +124,7 @@ class DryadScraper:
             return []
 
     def _dataset_to_metadata(
-        self, ds: dict, inspect_zips: bool = False
+        self, ds: dict, inspect_zips: bool = True
     ) -> DatasetMetadata | None:
         """Convert a Dryad dataset to DatasetMetadata."""
         doi = ds.get("identifier", "")
