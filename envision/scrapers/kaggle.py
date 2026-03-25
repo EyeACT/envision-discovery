@@ -152,7 +152,7 @@ class KaggleScraper:
         return all_results
 
     def _dataset_to_metadata(
-        self, dataset: dict, inspect_zips: bool = False
+        self, dataset: dict, inspect_zips: bool = True
     ) -> DatasetMetadata | None:
         """Convert a Kaggle dataset to DatasetMetadata."""
         ref = dataset.get("ref", "")

@@ -107,7 +107,7 @@ class FigshareScraper:
         return all_results
 
     def _article_to_metadata(
-        self, article: dict, inspect_zips: bool = False
+        self, article: dict, inspect_zips: bool = True
     ) -> DatasetMetadata | None:
         """Convert a Figshare article to DatasetMetadata."""
         # Fetch full article details for file list
