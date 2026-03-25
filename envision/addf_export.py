@@ -137,16 +137,11 @@ class ADDFExporter:
 
         # Resource type
         label = classification.get("label", "EYE_IMAGING")
-        resource_type_value = {
-            "EYE_IMAGING": "Eye Imaging Dataset",
-            "EYE_SOFTWARE": "Eye Imaging Software",
-            "OTHER_EYE_DATA": "Eye Research Data",
-            "NEGATIVE": "Dataset",
-        }.get(label, "Dataset")
+        resource_type_value = "Eye Imaging Dataset" if label == "EYE_IMAGING" else "Dataset"
 
         resource_type = {
             "resourceTypeValue": resource_type_value,
-            "resourceTypeGeneral": "Dataset" if label != "EYE_SOFTWARE" else "Software",
+            "resourceTypeGeneral": "Dataset",
         }
 
         # Description
@@ -180,7 +175,7 @@ class ADDFExporter:
                 subject.append(entry)
 
         # Add classification label as subject
-        if label in ("EYE_IMAGING", "EYE_SOFTWARE"):
+        if label == "EYE_IMAGING":
             subject.append({"subjectValue": "Eye Imaging"})
             subject.append({
                 "subjectValue": "Ophthalmology",
