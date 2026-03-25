@@ -326,10 +326,9 @@ def run_pipeline(
             classifier, metadata_records, source, results_dir, addf_output_dir
         )
 
-    # Legacy Zenodo path
-    return _run_zenodo_legacy_pipeline(
-        classifier, metadata_dir, results_dir, addf_output_dir, BASE_DIR
-    )
+    # No metadata_records provided — nothing to classify
+    print("No metadata records provided. Run with a scraper source.")
+    return []
 
 
 def _run_metadata_pipeline(
@@ -422,165 +421,15 @@ def _run_metadata_pipeline(
     return all_results
 
 
-def _run_zenodo_legacy_pipeline(
-    classifier: EyeImagingClassifier,
-    metadata_dir: str | Path | None,
-    results_dir: Path,
-    addf_output_dir: str | Path | None,
-    base_dir: Path,
-):
-    """Legacy Zenodo pipeline — backward compatible with original format."""
-    if metadata_dir is None:
-        metadata_dir = base_dir / "data" / "metadata" / "zenodo"
-    else:
-        metadata_dir = Path(metadata_dir)
-
-    output_dir = base_dir / "models" / "setfit"
-
-    print(f"\n{'='*70}")
-    print("Classifying Zenodo records")
-    print("=" * 70)
-
-    records = []
-    json_files = list(metadata_dir.glob("*.json"))
-    print(f"Found {len(json_files):,} metadata files")
-
-    for json_file in sorted(json_files):
-        try:
-            with open(json_file) as f:
-                record = json.load(f)
-            record['_zenodo_id'] = str(record.get('id', json_file.stem))
-            if has_data_files_or_links(record):
-                records.append(record)
-        except Exception:
-            pass
-
-    print(f"Loaded {len(records):,} records with data files or dataset links")
-
-    # Classify in batches
-    print("Classifying...")
-    BATCH_SIZE = 16
-    all_results = []
-
-    for i in range(0, len(records), BATCH_SIZE):
-        batch_records = records[i:i+BATCH_SIZE]
-        batch_texts = [get_record_text(r) for r in batch_records]
-        batch_classifications = classifier.classify_batch(batch_texts, batch_size=BATCH_SIZE)
-
-        for j, r in enumerate(batch_records):
-            cls_result = batch_classifications[j]
-            probs = cls_result['probabilities']
-
-            file_details = get_file_details(r)
-            metadata_details = get_metadata_details(r)
-            dataset_links = extract_dataset_links(r)
-
-            result = {
-                'source': 'zenodo',
-                'source_id': r['_zenodo_id'],
-                'doi': metadata_details['doi'],
-                'url': f"https://zenodo.org/records/{r['_zenodo_id']}",
-                'label': cls_result['label'],
-                'confidence': cls_result['confidence'],
-                'prob_eye_imaging': probs['EYE_IMAGING'],
-                'prob_software': probs['EYE_SOFTWARE'],
-                'prob_other_eye': probs['OTHER_EYE_DATA'],
-                'prob_negative': probs['NEGATIVE'],
-                'title': r.get('metadata', {}).get('title', '')[:200],
-                'description': metadata_details['description'],
-                'keywords': metadata_details['keywords'],
-                'access_type': metadata_details['access_right'],
-                'license': metadata_details['license'],
-                'file_types': file_details['file_types'],
-                'file_names': file_details['file_names'],
-                'file_count': file_details['file_count'],
-                'img_count': file_details['img_count'],
-                'medical_count': file_details['medical_count'],
-                'archive_count': file_details['archive_count'],
-                'genomics_count': file_details['genomics_count'],
-                'size_mb': round(file_details['total_size'] / (1024*1024), 1),
-                'zip_file_types': file_details['zip_file_types'],
-                'external_links': dataset_links,
-                'related_dois': metadata_details['related_dois'],
-            }
-            all_results.append(result)
-
-        if (i + BATCH_SIZE) % 500 == 0:
-            print(f"  Processed {min(i + BATCH_SIZE, len(records)):,} / {len(records):,}")
-
-    # Analyze
-    _print_analysis(all_results)
-
-    # Save results (backward-compatible filenames)
-    results_dir.mkdir(exist_ok=True, parents=True)
-
-    eye_imaging = [r for r in all_results if r['label'] == 'EYE_IMAGING']
-    software = [r for r in all_results if r['label'] == 'EYE_SOFTWARE']
-
-    eye_imaging.sort(key=lambda x: (-x['prob_eye_imaging'], -x['size_mb']))
-    software.sort(key=lambda x: (-x['confidence'], -x['size_mb']))
-
-    with open(results_dir / 'zenodo_eye_imaging.json', 'w') as f:
-        json.dump(eye_imaging, f, indent=2)
-
-    with open(results_dir / 'zenodo_software.json', 'w') as f:
-        json.dump(software, f, indent=2)
-
-    with open(results_dir / 'zenodo_all_results.json', 'w') as f:
-        json.dump(all_results, f, indent=2)
-
-    print(f"\n{'='*70}")
-    print("OUTPUT FILES")
-    print("=" * 70)
-    print(f"  Results: {results_dir}")
-    print(f"    - zenodo_eye_imaging.json ({len(eye_imaging):,} records)")
-    print(f"    - zenodo_software.json ({len(software):,} records)")
-    print(f"    - zenodo_all_results.json ({len(all_results):,} records)")
-    print(f"  Model: {output_dir}")
-    print(f"\nTimestamp: {datetime.now().isoformat()}")
-
-    # ADDF export (if requested)
-    if addf_output_dir:
-        from .addf_export import ADDFExporter
-        from .scraper import _to_metadata
-
-        addf_output_dir = Path(addf_output_dir)
-        addf_records = []
-        for r, record in zip(all_results, records):
-            if r['label'] in ('EYE_IMAGING', 'EYE_SOFTWARE'):
-                meta = _to_metadata(record)
-                cls_result = {
-                    'label': r['label'],
-                    'confidence': r['confidence'],
-                    'probabilities': {
-                        'EYE_IMAGING': r['prob_eye_imaging'],
-                        'EYE_SOFTWARE': r['prob_software'],
-                        'OTHER_EYE_DATA': r['prob_other_eye'],
-                        'NEGATIVE': r['prob_negative'],
-                    },
-                }
-                addf_records.append((meta, cls_result))
-
-        if addf_records:
-            paths = ADDFExporter.export_batch(addf_records, addf_output_dir)
-            print(f"\n  ADDF export: {len(paths)} records to {addf_output_dir}")
-
-    return all_results
-
-
 def _print_analysis(all_results: list[dict]):
     """Print classification analysis summary."""
     eye_imaging = [r for r in all_results if r['label'] == 'EYE_IMAGING']
-    software = [r for r in all_results if r['label'] == 'EYE_SOFTWARE']
-    other_eye = [r for r in all_results if r['label'] == 'OTHER_EYE_DATA']
     negative = [r for r in all_results if r['label'] == 'NEGATIVE']
 
     print(f"\n{'='*70}")
     print("CLASSIFICATION RESULTS")
     print("=" * 70)
     print(f"  EYE_IMAGING:  {len(eye_imaging):,}")
-    print(f"  EYE_SOFTWARE: {len(software):,}")
-    print(f"  OTHER_EYE_DATA:    {len(other_eye):,}")
     print(f"  NEGATIVE:     {len(negative):,}")
 
     # File type distribution
@@ -610,27 +459,3 @@ def _print_analysis(all_results: list[dict]):
     print(f"\n  Records with external dataset links: {len(with_links):,}")
 
 
-# ============================================================
-# Backward-compatible entry point
-# ============================================================
-
-def run_zenodo_pipeline(classify_only=None, metadata_dir=None, results_dir=None):
-    """Run the full Zenodo classification pipeline (backward compatible).
-
-    Args:
-        classify_only: If True, load existing model instead of training.
-                      Defaults to checking --classify-only in sys.argv.
-        metadata_dir: Directory containing Zenodo metadata JSON files.
-        results_dir: Directory to save results.
-    """
-    import sys
-
-    if classify_only is None:
-        classify_only = '--classify-only' in sys.argv
-
-    return run_pipeline(
-        source="zenodo",
-        classify_only=classify_only,
-        metadata_dir=metadata_dir,
-        results_dir=results_dir,
-    )
