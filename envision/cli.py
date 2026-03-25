@@ -7,6 +7,10 @@ Supports multi-source scraping, classification, and ADDF export.
 """
 
 import argparse
+import json
+import re
+from html import unescape
+from pathlib import Path
 
 
 def pipeline_cli():
@@ -36,6 +40,88 @@ def pipeline_cli():
     _run_multi_source(args)
 
 
+def _zenodo_json_to_metadata(metadata_dir: Path):
+    """Convert scraped Zenodo JSON files to DatasetMetadata objects.
+
+    Bridges the Zenodo scraper (saves raw JSON) with the unified pipeline
+    (expects DatasetMetadata). All other scrapers return DatasetMetadata
+    directly; this adapter makes Zenodo consistent.
+    """
+    from .metadata import DatasetMetadata
+
+    records = []
+    for jf in sorted(metadata_dir.glob("*.json")):
+        try:
+            with open(jf) as f:
+                raw = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        meta = raw.get("metadata", raw)
+        zenodo_id = str(raw.get("id", jf.stem))
+
+        title = meta.get("title", "")
+        desc = meta.get("description", "")
+        if desc:
+            desc = unescape(re.sub("<[^<]+?>", " ", desc)).strip()
+
+        keywords = meta.get("keywords", [])
+        if isinstance(keywords, str):
+            keywords = [k.strip() for k in keywords.split(",")]
+
+        files = raw.get("files", [])
+        file_names = [f.get("key", "") for f in files]
+        file_types = set()
+        img_count = archive_count = genomics_count = 0
+        total_size = 0
+
+        for f_info in files:
+            fname = f_info.get("key", "").lower()
+            size = f_info.get("size", 0)
+            total_size += size
+            ext = "." + fname.rsplit(".", 1)[-1] if "." in fname else ""
+            file_types.add(ext)
+
+        analysis = raw.get("_file_analysis", {})
+        img_count = analysis.get("imaging_file_count", 0)
+        archive_count = analysis.get("archive_count", 0)
+        genomics_count = analysis.get("genomics_count", 0)
+
+        creators = []
+        for c in meta.get("creators", []):
+            creators.append({
+                "creatorName": c.get("name", ""),
+                "nameType": "Personal",
+            })
+
+        doi = meta.get("doi", raw.get("doi", ""))
+
+        records.append(DatasetMetadata(
+            source="zenodo",
+            source_id=zenodo_id,
+            doi=doi,
+            url=f"https://zenodo.org/records/{zenodo_id}",
+            title=title,
+            description=desc,
+            keywords=keywords,
+            file_names=file_names,
+            file_types=file_types,
+            file_count=len(files),
+            total_size_bytes=total_size,
+            img_count=img_count,
+            archive_count=archive_count,
+            genomics_count=genomics_count,
+            zip_contents=list(analysis.get("zip_contents", {}).keys()),
+            access_type=meta.get("access_right"),
+            license=meta.get("license", {}).get("id") if isinstance(meta.get("license"), dict) else None,
+            creators=creators,
+            publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
+            external_links=[l.get("url", "") for l in raw.get("_weblinks", [])],
+        ))
+
+    return records
+
+
 def _run_multi_source(args):
     """Run multi-source pipeline with scraping + classification + optional ADDF."""
     from .pipeline import run_pipeline
@@ -54,15 +140,15 @@ def _run_multi_source(args):
         metadata_records = None
 
         if source == 'zenodo':
-            # Zenodo uses legacy JSON-based path (pre-scraped metadata)
-            run_pipeline(
-                source='zenodo',
-                classify_only=args.classify_only,
-                metadata_dir=args.metadata_dir,
-                results_dir=args.results_dir,
-                addf_output_dir=args.addf_output,
+            from .scraper import run_scrape
+            output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
+            run_scrape(
+                output_dir=output_dir,
+                datasets_only=True,
+                inspect_zips=not args.no_zip_inspect,
             )
-            continue
+            zenodo_dir = output_dir / "metadata" / "zenodo"
+            metadata_records = _zenodo_json_to_metadata(zenodo_dir)
 
         elif source == 'figshare':
             from .scrapers.figshare import FigshareScraper
@@ -108,7 +194,6 @@ def _run_multi_source(args):
 
     # Cross-source deduplication
     if args.dedup and args.source == 'all':
-        from pathlib import Path
         results_dir = args.results_dir or 'results'
         print(f"\n{'#'*70}", flush=True)
         print("# CROSS-SOURCE DEDUPLICATION", flush=True)

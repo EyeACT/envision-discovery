@@ -31,7 +31,7 @@ pip install -r requirements.txt
 # Scrape and classify all repositories
 # Uses the unified CLI which runs all 6 scrapers + classification
 echo "Step 1: Scraping and classifying all repositories..."
-python3 -m envision --source all --classify-only
+python3 -m envision --source all
 
 # Generate dataset records and post to portal
 echo "Step 3: Adding dataset records to portal..."
