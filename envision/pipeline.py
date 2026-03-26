@@ -345,13 +345,29 @@ def _run_metadata_pipeline(
 
     # Classify in batches
     BATCH_SIZE = 16
+    print(f"  Preparing texts from {len(metadata_records):,} records...")
     texts = [m.to_classifier_text() for m in metadata_records]
+    print(f"  Texts ready. Classifying in batches of {BATCH_SIZE}...")
+
+    try:
+        import psutil
+        mem = psutil.virtual_memory()
+        print(f"  Memory: {mem.used / 1024**3:.1f}GB used / {mem.total / 1024**3:.1f}GB total ({mem.percent}%)")
+    except ImportError:
+        pass
+
     all_classifications = []
     for i in range(0, len(texts), BATCH_SIZE):
         batch = texts[i : i + BATCH_SIZE]
         all_classifications.extend(classifier.classify_batch(batch, batch_size=BATCH_SIZE))
-        if (i + BATCH_SIZE) % 500 == 0:
-            print(f"  Processed {min(i + BATCH_SIZE, len(texts)):,} / {len(texts):,}")
+        processed = min(i + BATCH_SIZE, len(texts))
+        if processed % 100 == 0 or processed == len(texts):
+            try:
+                import psutil
+                mem = psutil.virtual_memory()
+                print(f"  Classified {processed:,} / {len(texts):,} | Mem: {mem.used / 1024**3:.1f}GB/{mem.total / 1024**3:.1f}GB ({mem.percent}%)")
+            except ImportError:
+                print(f"  Classified {processed:,} / {len(texts):,}")
 
     # Build results
     all_results = []

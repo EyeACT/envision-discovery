@@ -105,7 +105,8 @@ def request_with_backoff(
             if response.status_code >= 500:
                 delay = min(base_delay * (2 ** attempt), max_delay)
                 logger.warning(
-                    f"Server error ({response.status_code}), "
+                    f"Server error ({response.status_code}) on {url}, "
+                    f"params={kwargs.get('params', {})}, "
                     f"retrying in {delay:.0f}s (attempt {attempt + 1}/{max_retries})"
                 )
                 time.sleep(delay)
@@ -325,7 +326,7 @@ class PaginatedSearch:
             fetch_fn=my_fetch_function,    # (query, start, end, max_results) -> list
             api_max=10000,                 # max results the API can return
         )
-        all_results = paginator.search("retinal OCT", "2010/01/01", "2026/12/31")
+        all_results = paginator.search("retinal OCT", "2010-01-01", "2026-12-31")
     """
 
     def __init__(
@@ -333,7 +334,7 @@ class PaginatedSearch:
         count_fn: Callable,
         fetch_fn: Callable,
         api_max: int = 10000,
-        date_format: str = "%Y/%m/%d",
+        date_format: str = "%Y-%m-%d",
     ):
         """
         Args:
