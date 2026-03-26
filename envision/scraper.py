@@ -720,7 +720,7 @@ def run_scrape(
         count_fn=count_fn,
         fetch_fn=fetch_fn,
         api_max=max_per_query,
-        date_format="%Y/%m/%d",
+        date_format="%Y-%m-%d",
     )
 
     for i, term in enumerate(SEARCH_TERMS, 1):
@@ -734,7 +734,7 @@ def run_scrape(
                 f"  Total results ({total_count}) exceeds cap ({max_per_query}), "
                 f"using date-range pagination"
             )
-            results = paginator.search(term, "2010/01/01", "2026/12/31")
+            results = paginator.search(term, "2010-01-01", "2026-12-31")
         else:
             results = scraper.search(
                 term,
