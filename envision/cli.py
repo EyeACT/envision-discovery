@@ -27,6 +27,10 @@ def pipeline_cli():
     )
     parser.add_argument('--classify-only', action='store_true',
                        help='Load existing model instead of training')
+    parser.add_argument('--scrape-only', action='store_true',
+                       help='Run scrapers only, skip classification')
+    parser.add_argument('--skip-scrape', action='store_true',
+                       help='Skip scraping, classify existing data only')
     parser.add_argument('--metadata-dir', help='Directory with metadata JSON files')
     parser.add_argument('--results-dir', help='Output directory for results')
     parser.add_argument('--source', default='zenodo',
@@ -130,7 +134,8 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
 
 def _run_multi_source(args):
     """Run multi-source pipeline with scraping + classification + optional ADDF."""
-    from .pipeline import run_pipeline
+    import sys
+    import traceback
 
     sources = (
         ['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei']
@@ -143,63 +148,56 @@ def _run_multi_source(args):
         print(f"# Source: {source.upper()}", flush=True)
         print(f"{'#'*70}", flush=True)
 
-        metadata_records = None
+        try:
+            metadata_records = None
 
-        if source == 'zenodo':
-            from .scraper import run_scrape
-            output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
-            run_scrape(
-                output_dir=output_dir,
-                datasets_only=True,
-                inspect_zips=not args.no_zip_inspect,
-            )
-            zenodo_dir = output_dir / "metadata" / "zenodo"
-            metadata_records = _zenodo_json_to_metadata(zenodo_dir)
+            # ── Scrape phase ─────────────────────────────────────────
+            if not args.skip_scrape:
+                metadata_records = _scrape_source(source, args)
 
-        elif source == 'figshare':
-            from .scrapers.figshare import FigshareScraper
-            scraper = FigshareScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query,
-                                              inspect_zips=not args.no_zip_inspect)
+            # For Zenodo with --skip-scrape: load from existing JSON files
+            if args.skip_scrape and source == 'zenodo':
+                output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
+                zenodo_dir = output_dir / "metadata" / "zenodo"
+                json_count = len(list(zenodo_dir.glob("*.json")))
+                print(f"  Loading {json_count:,} existing Zenodo metadata files...", flush=True)
+                metadata_records = _zenodo_json_to_metadata(zenodo_dir)
+                print(f"  Loaded {len(metadata_records):,} records", flush=True)
 
-        elif source == 'dryad':
-            from .scrapers.dryad import DryadScraper
-            scraper = DryadScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query,
-                                              inspect_zips=not args.no_zip_inspect)
+            elif args.skip_scrape and source != 'zenodo':
+                print(f"  Skipping {source} (--skip-scrape only loads Zenodo from disk)", flush=True)
+                continue
 
-        elif source == 'osf':
-            from .scrapers.osf import OSFScraper
-            scraper = OSFScraper()
-            metadata_records = scraper.scrape(max_per_query=min(args.max_per_query, 50))
+            if args.scrape_only:
+                if metadata_records:
+                    print(f"  Scraped {len(metadata_records):,} records (--scrape-only, skipping classification)", flush=True)
+                continue
 
-        elif source == 'datacite':
-            from .scrapers.datacite import DataCiteScraper
-            scraper = DataCiteScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query)
+            # ── Classify phase ───────────────────────────────────────
+            if metadata_records:
+                from .pipeline import run_pipeline
+                print(f"  Classifying {len(metadata_records):,} records...", flush=True)
+                sys.stdout.flush()
+                run_pipeline(
+                    metadata_records=metadata_records,
+                    source=source,
+                    classify_only=args.classify_only,
+                    results_dir=args.results_dir,
+                    addf_output_dir=args.addf_output,
+                )
+            else:
+                print(f"  No records to classify for {source}", flush=True)
 
-        elif source == 'kaggle':
-            from .scrapers.kaggle import KaggleScraper
-            scraper = KaggleScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query,
-                                              inspect_zips=not args.no_zip_inspect)
-
-        elif source == 'nei':
-            from .scrapers.nei import NEIScraper
-            scraper = NEIScraper()
-            metadata_records = scraper.scrape(max_per_query=args.max_per_query)
-
-        if metadata_records:
-            run_pipeline(
-                metadata_records=metadata_records,
-                source=source,
-                classify_only=args.classify_only,
-                results_dir=args.results_dir,
-                addf_output_dir=args.addf_output,
-            )
+        except Exception as e:
+            print(f"\n  ERROR processing {source}: {e}", flush=True)
+            traceback.print_exc()
+            sys.stdout.flush()
+            sys.stderr.flush()
+            # Continue with next source rather than crashing entirely
+            continue
 
     # Cross-source deduplication
-    if args.dedup and args.source == 'all':
+    if args.dedup and args.source == 'all' and not args.scrape_only:
         results_dir = args.results_dir or 'results'
         print(f"\n{'#'*70}", flush=True)
         print("# CROSS-SOURCE DEDUPLICATION", flush=True)
@@ -207,3 +205,52 @@ def _run_multi_source(args):
         from .dedup import run_dedup
         duplicates = run_dedup(results_dir, threshold=args.dedup_threshold)
         print(f"  Found {len(duplicates)} potential duplicate pairs", flush=True)
+
+
+def _scrape_source(source: str, args):
+    """Run the scraper for a given source and return DatasetMetadata records."""
+    if source == 'zenodo':
+        from .scraper import run_scrape
+        output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
+        run_scrape(
+            output_dir=output_dir,
+            datasets_only=True,
+            inspect_zips=not args.no_zip_inspect,
+        )
+        zenodo_dir = output_dir / "metadata" / "zenodo"
+        return _zenodo_json_to_metadata(zenodo_dir)
+
+    elif source == 'figshare':
+        from .scrapers.figshare import FigshareScraper
+        scraper = FigshareScraper()
+        return scraper.scrape(max_per_query=args.max_per_query,
+                              inspect_zips=not args.no_zip_inspect)
+
+    elif source == 'dryad':
+        from .scrapers.dryad import DryadScraper
+        scraper = DryadScraper()
+        return scraper.scrape(max_per_query=args.max_per_query,
+                              inspect_zips=not args.no_zip_inspect)
+
+    elif source == 'osf':
+        from .scrapers.osf import OSFScraper
+        scraper = OSFScraper()
+        return scraper.scrape(max_per_query=min(args.max_per_query, 50))
+
+    elif source == 'datacite':
+        from .scrapers.datacite import DataCiteScraper
+        scraper = DataCiteScraper()
+        return scraper.scrape(max_per_query=args.max_per_query)
+
+    elif source == 'kaggle':
+        from .scrapers.kaggle import KaggleScraper
+        scraper = KaggleScraper()
+        return scraper.scrape(max_per_query=args.max_per_query,
+                              inspect_zips=not args.no_zip_inspect)
+
+    elif source == 'nei':
+        from .scrapers.nei import NEIScraper
+        scraper = NEIScraper()
+        return scraper.scrape(max_per_query=args.max_per_query)
+
+    return None
