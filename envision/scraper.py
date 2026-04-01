@@ -380,6 +380,29 @@ SEARCH_TERMS = [
 ]
 
 
+def _build_zenodo_query(term: str) -> str:
+    """Convert a human-readable search term into an AND-required Elasticsearch query.
+
+    Zenodo's Elasticsearch treats multi-word queries as OR by default, so
+    "retinal OCT" matches any record with "retinal" OR "OCT" (~1,300 results).
+    This rewrites terms to use the + (required) operator so every word must
+    be present, and adds -October for standalone "OCT" to avoid date matches.
+
+    Single-word terms are left unchanged.
+    """
+    words = term.split()
+    if len(words) == 1:
+        return term
+
+    parts = []
+    for word in words:
+        if re.match(r"^OCT$", word):
+            parts.append("+OCT -October")
+        else:
+            parts.append(f"+{word}")
+    return " ".join(parts)
+
+
 class ZenodoScraper:
     """Scrape Zenodo for eye imaging datasets with ZIP inspection."""
 
@@ -724,20 +747,21 @@ def run_scrape(
     )
 
     for i, term in enumerate(SEARCH_TERMS, 1):
-        logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}'")
+        query = _build_zenodo_query(term)
+        logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}' -> q='{query}'")
 
         # Check count first — use pagination if exceeds max_per_query
-        total_count = scraper.get_count(term, datasets_only=datasets_only)
+        total_count = scraper.get_count(query, datasets_only=datasets_only)
 
         if total_count > max_per_query:
             logger.info(
                 f"  Total results ({total_count}) exceeds cap ({max_per_query}), "
                 f"using date-range pagination"
             )
-            results = paginator.search(term, "2010-01-01", "2026-12-31")
+            results = paginator.search(query, "2010-01-01", "2026-12-31")
         else:
             results = scraper.search(
-                term,
+                query,
                 max_results=max_per_query,
                 datasets_only=datasets_only,
                 inspect_zips=inspect_zips,
