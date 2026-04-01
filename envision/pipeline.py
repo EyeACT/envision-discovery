@@ -302,23 +302,25 @@ def run_pipeline(
     else:
         model_dir = Path(model_dir)
 
-    print("=" * 70)
-    print(f"ENVISION: Eye Imaging Dataset Classifier ({source})")
-    print(f"Timestamp: {datetime.now().isoformat()}")
-    print("=" * 70)
+    import sys
+
+    print("=" * 70, flush=True)
+    print(f"ENVISION: Eye Imaging Dataset Classifier ({source})", flush=True)
+    print(f"Timestamp: {datetime.now().isoformat()}", flush=True)
+    print("=" * 70, flush=True)
 
     # Load model
     if (model_dir / "model.safetensors").exists():
-        print(f"\nLoading model from {model_dir}")
+        print(f"\nLoading model from {model_dir}", flush=True)
         classifier = EyeImagingClassifier(model_path=model_dir)
     elif classify_only:
-        print("\nDownloading model from HuggingFace...")
+        print("\nDownloading model from HuggingFace...", flush=True)
         classifier = EyeImagingClassifier()
     else:
-        print("\nTraining new model...")
+        print("\nTraining new model...", flush=True)
         classifier = EyeImagingClassifier.train(output_dir=model_dir)
 
-    print(f"Device: {classifier._device}")
+    print(f"Device: {classifier._device}", flush=True)
 
     # If DatasetMetadata provided, use the new path
     if metadata_records is not None:
@@ -339,35 +341,42 @@ def _run_metadata_pipeline(
     addf_output_dir: str | Path | None,
 ):
     """Classify DatasetMetadata records from any source."""
-    print(f"\n{'='*70}")
-    print(f"Classifying {len(metadata_records)} {source} records")
-    print("=" * 70)
+    import sys
+
+    print(f"\n{'='*70}", flush=True)
+    print(f"Classifying {len(metadata_records):,} {source} records", flush=True)
+    print("=" * 70, flush=True)
+
+    def _log_memory(prefix=""):
+        try:
+            import psutil
+            mem = psutil.virtual_memory()
+            print(f"  {prefix}Memory: {mem.used / 1024**3:.1f}GB used / {mem.total / 1024**3:.1f}GB total ({mem.percent}%)", flush=True)
+        except ImportError:
+            pass
+
+    _log_memory("Before text prep | ")
 
     # Classify in batches
     BATCH_SIZE = 16
-    print(f"  Preparing texts from {len(metadata_records):,} records...")
+    print(f"  Preparing texts from {len(metadata_records):,} records...", flush=True)
     texts = [m.to_classifier_text() for m in metadata_records]
-    print(f"  Texts ready. Classifying in batches of {BATCH_SIZE}...")
-
-    try:
-        import psutil
-        mem = psutil.virtual_memory()
-        print(f"  Memory: {mem.used / 1024**3:.1f}GB used / {mem.total / 1024**3:.1f}GB total ({mem.percent}%)")
-    except ImportError:
-        pass
+    print(f"  Texts ready ({len(texts):,}). Classifying in batches of {BATCH_SIZE}...", flush=True)
+    _log_memory("After text prep | ")
+    sys.stdout.flush()
 
     all_classifications = []
     for i in range(0, len(texts), BATCH_SIZE):
         batch = texts[i : i + BATCH_SIZE]
-        all_classifications.extend(classifier.classify_batch(batch, batch_size=BATCH_SIZE))
+        try:
+            all_classifications.extend(classifier.classify_batch(batch, batch_size=BATCH_SIZE))
+        except Exception as e:
+            print(f"\n  CRASH at batch {i}-{i+BATCH_SIZE}: {e}", flush=True)
+            _log_memory("At crash | ")
+            raise
         processed = min(i + BATCH_SIZE, len(texts))
         if processed % 100 == 0 or processed == len(texts):
-            try:
-                import psutil
-                mem = psutil.virtual_memory()
-                print(f"  Classified {processed:,} / {len(texts):,} | Mem: {mem.used / 1024**3:.1f}GB/{mem.total / 1024**3:.1f}GB ({mem.percent}%)")
-            except ImportError:
-                print(f"  Classified {processed:,} / {len(texts):,}")
+            _log_memory(f"Classified {processed:,} / {len(texts):,} | ")
 
     # Build results
     all_results = []

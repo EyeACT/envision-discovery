@@ -1,40 +1,61 @@
 #!/bin/bash
 
-# Weekly cron job - run with: 0 0 * * 0 /path/to/automation.sh
-# (Runs every Sunday at midnight)
+# ENVISION Discovery Pipeline
+# ===========================
+# Run the full pipeline:     ./automation.sh
+# Run only the scraper:      ./automation.sh scrape
+# Run only the classifier:   ./automation.sh classify
+# Run only the portal post:  ./automation.sh post
+#
+# Weekly cron job: 0 0 * * 0 /path/to/automation.sh
 
 set -e
 
-echo "Starting automated envision discovery pipeline..."
+STEP="${1:-all}"
 
-# Reset git and pull latest changes
+# ── Setup (always runs) ─────────────────────────────────────────────
+echo "=== ENVISION Pipeline (step: $STEP) ==="
+
 echo "Step 0a: Resetting local changes and pulling latest code..."
 git reset --hard
 git pull
-
 chmod +x automation.sh
 
-# Delete the output files and folders
-echo "Step 0b: Cleaning up old data..."
-rm -rf ./data/metadata/zenodo/*
-rm -rf ./data/metadata/figshare/*
-rm -rf results/*.json
-rm -rf results/addf/*
-
-# Activate virtual environment and reinstall dependencies
-echo "Step 0c: Activating virtual environment and installing dependencies..."
-python3 -m venv .venv 
+echo "Step 0b: Activating virtual environment and installing dependencies..."
+python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
+# IMPORTANT: Reinstall local package so python3 -m envision uses latest code
+pip install -e . --no-deps
 
-# Scrape and classify all repositories
-# Uses the unified CLI which runs all 6 scrapers + classification
-echo "Step 1: Scraping and classifying all repositories..."
-python3 -m envision --source all
+# ── Scrape ───────────────────────────────────────────────────────────
+if [ "$STEP" = "all" ] || [ "$STEP" = "scrape" ]; then
+    echo ""
+    echo "=== Step 1: Cleaning old data ==="
+    rm -rf ./data/metadata/zenodo/*
+    rm -rf ./data/metadata/figshare/*
+    rm -rf results/*.json
+    rm -rf results/addf/*
 
-# Generate dataset records and post to portal
-echo "Step 3: Adding dataset records to portal..."
-python3 add_dataset_records.py
+    echo ""
+    echo "=== Step 2: Scraping all repositories ==="
+    python3 -m envision --source all --scrape-only
+fi
 
-echo "Pipeline completed successfully!"
+# ── Classify ─────────────────────────────────────────────────────────
+if [ "$STEP" = "all" ] || [ "$STEP" = "classify" ]; then
+    echo ""
+    echo "=== Step 3: Classifying all repositories ==="
+    python3 -m envision --source all --skip-scrape
+fi
+
+# ── Post to portal ───────────────────────────────────────────────────
+if [ "$STEP" = "all" ] || [ "$STEP" = "post" ]; then
+    echo ""
+    echo "=== Step 4: Adding dataset records to portal ==="
+    python3 add_dataset_records.py
+fi
+
+echo ""
+echo "=== Pipeline completed (step: $STEP) ==="
