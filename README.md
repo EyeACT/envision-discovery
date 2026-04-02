@@ -1,6 +1,6 @@
 # ENVISION Discovery
 
-Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across scientific data repositories (Zenodo, Figshare, Dryad, OSF, DataCite), inspects ZIP contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
+Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across 7 scientific data repositories (Zenodo, Figshare, Dryad, OSF, DataCite, Kaggle, NEI), inspects ZIP/TAR contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
 
 Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innovations Hub](https://fairdataihub.org).
 
@@ -9,6 +9,7 @@ Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innova
 ```bash
 git clone https://github.com/EyeACT/envision-discovery.git
 cd envision-discovery
+pip install -r requirements.txt
 pip install -e .
 ```
 
@@ -16,51 +17,50 @@ pip install -e .
 
 ## Usage
 
-### 1. Scrape datasets from Zenodo
+### Automated pipeline
 
 ```bash
+# Full pipeline: scrape all repos → classify → post to portal
+./automation.sh
+
+# Run steps independently
+./automation.sh scrape      # Scrape only (skip classification)
+./automation.sh classify    # Classify existing data (skip scraping)
+./automation.sh post        # Post results to portal only
+```
+
+### CLI
+
+```bash
+# Scrape and classify all 7 repositories
+python -m envision --source all
+
+# Single repository
+python -m envision --source dryad
+
+# Scrape only (no classification)
+python -m envision --source all --scrape-only
+
+# Classify existing data (no scraping)
+python -m envision --source all --skip-scrape
+
+# Zenodo standalone scraper
 python -m envision.scraper --output ./data
-
-# Faster: skip ZIP inspection
-python -m envision.scraper --output ./data --no-zip-inspect
-
-# Include all resource types (not just datasets)
-python -m envision.scraper --output ./data --all-types
 ```
 
-The scraper:
-- Searches Zenodo using 47 ophthalmology-specific search terms across 7 categories (imaging modalities, diseases, anatomy, general ophthalmic, equipment/vendors, benchmark datasets, cornea/anterior segment — see [search terms](docs/SEARCH_TERMS.md))
-- Filters for `resource_type=dataset` by default
-- Inspects ZIP file contents via HTTP Range requests (downloads only ~64KB per ZIP)
-- Detects external dataset links (GitHub, Kaggle, HuggingFace, etc.)
-- Excludes genomics-only records (GWAS, RNA-seq, etc.)
-- Resumes automatically — skips previously scraped records
+### Scrapers
 
-Output:
-```
-data/
-├── metadata/zenodo/        # Per-record JSON files (enriched with file analysis)
-│   ├── 8254022.json
-│   ├── 10537424.json
-│   └── ...
-└── scrape_summary.json     # Run statistics
-```
+All scrapers use shared search terms, exponential backoff, and archive inspection:
 
-### 2. Classify scraped records
-
-```bash
-# Classify using the trained model
-python -m envision --classify-only
-
-# Custom metadata and output paths
-python -m envision --classify-only --metadata-dir ./data/metadata/zenodo --results-dir ./results
-
-# Multi-source classification
-python -m envision --classify-only --source figshare --results-dir ./results
-
-# Export results in ADDF/DataCite schema (optional)
-python -m envision --classify-only --results-dir ./results --addf-output ./results/datacite
-```
+| Source | API | Archive Inspection | Notes |
+|--------|-----|-------------------|-------|
+| **Zenodo** | REST + Elasticsearch | ZIP, TAR | AND-required queries, date-range pagination |
+| **DataCite** | REST | N/A (metadata only) | Indexes DOIs across repositories |
+| **Figshare** | REST (POST) | ZIP, TAR | 3s inter-request delay |
+| **Kaggle** | REST | ZIP, TAR | Requires API token |
+| **Dryad** | REST | ZIP, TAR | Small corpus (~89 eye records) |
+| **NEI** | NIH RePORTER (POST) | N/A (grants) | Eye-specific by definition |
+| **OSF** | REST v2 search | ZIP, TAR | Optional token for higher rate limits |
 
 Output files in `results/`:
 
@@ -131,11 +131,22 @@ envision-discovery/
 ├── envision/
 │   ├── __init__.py         # Re-exports EyeImagingClassifier from envision-classifier
 │   ├── __main__.py         # python -m envision entry point
-│   ├── scraper.py          # Zenodo scraper with ZIP inspection
+│   ├── cli.py              # CLI argument parsing (--source, --skip-scrape, etc.)
+│   ├── scraper.py          # Zenodo scraper with ZIP inspection + AND queries
 │   ├── pipeline.py         # Batch classification pipeline
-│   └── cli.py              # CLI argument parsing
+│   ├── metadata.py         # DatasetMetadata dataclass (shared across scrapers)
+│   ├── utils.py            # Shared utilities (backoff, archive inspector, pagination)
+│   └── scrapers/           # Per-source scrapers
+│       ├── datacite.py
+│       ├── figshare.py
+│       ├── kaggle.py
+│       ├── dryad.py
+│       ├── nei.py
+│       └── osf.py
+├── automation.sh           # Weekly cron — scrape/classify/post (run steps independently)
 ├── data/                   # Scraped metadata (not committed)
 ├── results/                # Classification output (not committed)
+├── .env.example            # API tokens template (OSF, Kaggle, Portal)
 ├── pyproject.toml
 └── README.md
 ```
