@@ -1,6 +1,6 @@
 # Core dependencies (matches pyproject.toml)
 # For full install: pip install -e .
-envision-classifier
+envision-classifier>=0.3.2
 pandas>=2.0.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
