@@ -47,7 +47,7 @@ fi
 if [ "$STEP" = "all" ] || [ "$STEP" = "classify" ]; then
     echo ""
     echo "=== Step 3: Classifying all repositories ==="
-    python3 -m envision --source all --skip-scrape
+    python3 -m envision --source all --skip-scrape --classify-only
 fi
 
 # ── Post to portal ───────────────────────────────────────────────────

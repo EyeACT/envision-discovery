@@ -47,6 +47,9 @@ def pipeline_cli():
                        help='Cosine similarity threshold for dedup (default: 0.92)')
 
     args = parser.parse_args()
+    # --skip-scrape always implies --classify-only (no training from scraped data)
+    if args.skip_scrape:
+        args.classify_only = True
     _run_multi_source(args)
 
 
