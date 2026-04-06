@@ -25,7 +25,7 @@ echo "Step 0b: Activating virtual environment and installing dependencies..."
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements.txt --upgrade
 # IMPORTANT: Reinstall local package so python3 -m envision uses latest code
 pip install -e . --no-deps
 
