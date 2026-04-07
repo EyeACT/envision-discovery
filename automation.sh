@@ -33,11 +33,11 @@ pip install -e . --no-deps
 if [ "$STEP" = "all" ] || [ "$STEP" = "scrape" ]; then
     echo ""
     echo "=== Step 1: Cleaning old data ==="
-    rm -rf ./data/metadata/zenodo/*
-    rm -rf ./data/metadata/figshare/*
-    rm -rf ./data/scraped/*
-    rm -rf results/*.json
-    rm -rf results/addf/*
+    find ./data/metadata/zenodo -mindepth 1 -delete
+    find ./data/metadata/figshare -mindepth 1 -delete
+    find ./data/scraped -mindepth 1 -delete
+    find ./results -maxdepth 1 -type f -name "*.json" -delete
+    find ./results/addf -mindepth 1 -delete
 
     echo ""
     echo "=== Step 2: Scraping all repositories ==="
