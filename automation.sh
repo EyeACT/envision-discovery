@@ -21,8 +21,6 @@ git reset --hard
 git pull
 chmod +x automation.sh
 
-rm -rf .venv
-
 echo "Step 0b: Activating virtual environment and installing dependencies..."
 python3 -m venv .venv
 source .venv/bin/activate
