@@ -31,15 +31,14 @@ pip install -e . --no-deps
 if [ "$STEP" = "all" ] || [ "$STEP" = "scrape" ]; then
     echo ""
     echo "=== Cleaning old data ==="
-    rm -rf ./data/metadata/zenodo/*
-    rm -rf ./data/metadata/figshare/*
-    rm -rf ./data/metadata/datacite/*
-    rm -rf ./data/metadata/kaggle/*
-    rm -rf ./data/metadata/dryad/*
-    rm -rf ./data/metadata/nei/*
-    rm -rf ./data/metadata/osf/*
-    rm -rf results/*.json
-    rm -rf results/addf/*
+    rm -rf ./data/metadata/zenodo
+    rm -rf ./data/metadata/figshare
+    rm -rf ./data/metadata/datacite
+    rm -rf ./data/metadata/kaggle
+    rm -rf ./data/metadata/dryad
+    rm -rf ./data/metadata/nei
+    rm -rf ./data/metadata/osf
+    rm -rf ./results/addf
 
     echo ""
     echo "=== Scraping all repositories ==="
