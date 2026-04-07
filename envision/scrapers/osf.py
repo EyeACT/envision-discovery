@@ -60,9 +60,17 @@ class OSFScraper:
             logger.info(f"Resuming: {len(self.seen_ids)} existing OSF records")
 
     def _request(self, method, url_or_endpoint, **kwargs):
-        """Make a rate-limited OSF API request."""
+        """Make a rate-limited OSF API request.
+
+        Uses max_retries=10 instead of unlimited because OSF rate limits
+        reset on a fixed hourly window — retrying beyond ~10 attempts
+        (with exponential backoff) means the window hasn't reset and
+        further retries are pointless.
+        """
         time.sleep(self.REQUEST_DELAY)
-        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
+        return request_with_backoff(
+            self.session, method, url_or_endpoint, max_retries=10, **kwargs
+        )
 
     def search(
         self,
@@ -162,8 +170,9 @@ class OSFScraper:
         if not isinstance(keywords, list):
             keywords = []
 
-        # Fetch files
-        files_data = self._get_files(item_id, item_type)
+        # Skip file fetching — OSF rate limits are too strict (100 req/hr)
+        # and the classifier only needs title + description + tags.
+        # File details would cost 1-3 API calls per record.
         file_names = []
         file_types: set[str] = set()
         total_size = 0
@@ -172,42 +181,6 @@ class OSFScraper:
         archive_count = 0
         genomics_count = 0
         zip_contents = []
-
-        for f in files_data:
-            f_attrs = f.get("attributes", {})
-            name = f_attrs.get("name", "")
-            size = f_attrs.get("size") or 0
-            file_names.append(name)
-            total_size += size
-
-            name_lower = name.lower()
-            for ext in sorted(
-                EYE_IMAGING_EXTS | ARCHIVE_EXTS | GENOMICS_EXTS,
-                key=len, reverse=True,
-            ):
-                if name_lower.endswith(ext):
-                    file_types.add(ext)
-                    if ext in EYE_IMAGING_EXTS:
-                        if ext in {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".gif"}:
-                            img_count += 1
-                        else:
-                            medical_count += 1
-                    elif ext in ARCHIVE_EXTS:
-                        archive_count += 1
-                        # Try to inspect archive contents
-                        download_url = f.get("links", {}).get("download")
-                        if download_url:
-                            contents = ArchiveInspector.inspect_archive(
-                                download_url, name, self.session
-                            )
-                            if contents:
-                                summary = ArchiveInspector.summarize_contents(contents)
-                                if summary.get("imaging_file_count", 0) > 0:
-                                    img_count += summary["imaging_file_count"]
-                                zip_contents.extend(contents[:20])
-                    elif ext in GENOMICS_EXTS:
-                        genomics_count += 1
-                    break
 
         # Dates
         date_created = attrs.get("date_created", "")
