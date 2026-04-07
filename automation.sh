@@ -35,6 +35,7 @@ if [ "$STEP" = "all" ] || [ "$STEP" = "scrape" ]; then
     echo "=== Step 1: Cleaning old data ==="
     rm -rf ./data/metadata/zenodo/*
     rm -rf ./data/metadata/figshare/*
+    rm -rf ./data/scraped/*
     rm -rf results/*.json
     rm -rf results/addf/*
 

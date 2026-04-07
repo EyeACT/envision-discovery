@@ -135,6 +135,51 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
     return records
 
 
+def _save_scraped(records, source, data_dir):
+    """Save scraped DatasetMetadata to disk so --skip-scrape can reload."""
+    from dataclasses import asdict
+    path = data_dir / f"{source}_scraped.json"
+    serialized = []
+    for r in records:
+        d = asdict(r)
+        d['file_types'] = sorted(d['file_types'])  # set -> list for JSON
+        serialized.append(d)
+    with open(path, 'w') as f:
+        json.dump(serialized, f)
+    print(f"  Saved {len(records):,} records to {path}", flush=True)
+
+
+def _load_scraped(source, data_dir, args):
+    """Load previously scraped DatasetMetadata from disk."""
+    from .metadata import DatasetMetadata
+
+    # Check for the unified scraped JSON first
+    path = data_dir / f"{source}_scraped.json"
+    if path.exists():
+        with open(path) as f:
+            raw = json.load(f)
+        records = []
+        for d in raw:
+            d['file_types'] = set(d.get('file_types', []))
+            records.append(DatasetMetadata(**d))
+        print(f"  Loaded {len(records):,} {source} records from {path}", flush=True)
+        return records
+
+    # Fallback: Zenodo per-record JSON files
+    if source == 'zenodo':
+        output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
+        zenodo_dir = output_dir / "metadata" / "zenodo"
+        if zenodo_dir.exists():
+            json_count = len(list(zenodo_dir.glob("*.json")))
+            if json_count > 0:
+                print(f"  Loading {json_count:,} existing Zenodo metadata files...", flush=True)
+                records = _zenodo_json_to_metadata(zenodo_dir)
+                print(f"  Loaded {len(records):,} records", flush=True)
+                return records
+
+    return None
+
+
 def _run_multi_source(args):
     """Run multi-source pipeline with scraping + classification + optional ADDF."""
     import sys
@@ -145,6 +190,9 @@ def _run_multi_source(args):
         if args.source == 'all'
         else [args.source]
     )
+
+    scraped_data_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data" / "scraped"
+    scraped_data_dir.mkdir(parents=True, exist_ok=True)
 
     for source in sources:
         print(f"\n{'#'*70}", flush=True)
@@ -157,19 +205,16 @@ def _run_multi_source(args):
             # ── Scrape phase ─────────────────────────────────────────
             if not args.skip_scrape:
                 metadata_records = _scrape_source(source, args)
+                # Save scraped data to disk so --skip-scrape can reload it
+                if metadata_records:
+                    _save_scraped(metadata_records, source, scraped_data_dir)
 
-            # For Zenodo with --skip-scrape: load from existing JSON files
-            if args.skip_scrape and source == 'zenodo':
-                output_dir = Path(args.metadata_dir) if args.metadata_dir else Path.cwd() / "data"
-                zenodo_dir = output_dir / "metadata" / "zenodo"
-                json_count = len(list(zenodo_dir.glob("*.json")))
-                print(f"  Loading {json_count:,} existing Zenodo metadata files...", flush=True)
-                metadata_records = _zenodo_json_to_metadata(zenodo_dir)
-                print(f"  Loaded {len(metadata_records):,} records", flush=True)
-
-            elif args.skip_scrape and source != 'zenodo':
-                print(f"  Skipping {source} (--skip-scrape only loads Zenodo from disk)", flush=True)
-                continue
+            # ── Load from disk (--skip-scrape) ───────────────────────
+            if args.skip_scrape:
+                metadata_records = _load_scraped(source, scraped_data_dir, args)
+                if metadata_records is None:
+                    print(f"  No cached data for {source}. Run without --skip-scrape first.", flush=True)
+                    continue
 
             if args.scrape_only:
                 if metadata_records:
