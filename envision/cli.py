@@ -33,9 +33,9 @@ def pipeline_cli():
                        help='Skip scraping, classify existing data only')
     parser.add_argument('--metadata-dir', help='Directory with metadata JSON files')
     parser.add_argument('--results-dir', help='Output directory for results')
-    parser.add_argument('--source', default='zenodo',
+    parser.add_argument('--source', default='all',
                        choices=['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei', 'all'],
-                       help='Data source to scrape and classify (default: zenodo)')
+                       help='Data source to scrape and classify (default: all)')
     parser.add_argument('--addf-output', help='Directory for ADDF schema export')
     parser.add_argument('--max-per-query', type=int, default=100,
                        help='Max results per search query (default: 100)')
