@@ -3,11 +3,19 @@ ENVISION Discovery: Unified Dataset Metadata
 
 Provides a source-agnostic DatasetMetadata dataclass for representing
 dataset records from Zenodo, Figshare, Dryad, OSF, DataCite, etc.
+
+Every scraper saves per-record JSON files to data/metadata/{source}/.
+This module handles serialization, deserialization, and resume.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+import json
+import logging
+from dataclasses import asdict, dataclass, field
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -64,3 +72,44 @@ class DatasetMetadata:
     def size_mb(self) -> float:
         """Total size in megabytes."""
         return round(self.total_size_bytes / (1024 * 1024), 1)
+
+    def save(self, metadata_dir: Path):
+        """Save this record as JSON to metadata_dir/{source_id}.json."""
+        metadata_dir.mkdir(parents=True, exist_ok=True)
+        safe_id = str(self.source_id).replace("/", "_")
+        path = metadata_dir / f"{safe_id}.json"
+        d = asdict(self)
+        d["file_types"] = sorted(d["file_types"])  # set → list for JSON
+        with open(path, "w") as f:
+            json.dump(d, f, indent=2)
+
+    @classmethod
+    def load(cls, path: Path) -> DatasetMetadata:
+        """Load a DatasetMetadata from a JSON file."""
+        with open(path) as f:
+            d = json.load(f)
+        d["file_types"] = set(d.get("file_types", []))
+        return cls(**d)
+
+    @staticmethod
+    def load_dir(metadata_dir: Path) -> list[DatasetMetadata]:
+        """Load all records from a metadata directory."""
+        records = []
+        if not metadata_dir.exists():
+            return records
+        for jf in sorted(metadata_dir.glob("*.json")):
+            try:
+                records.append(DatasetMetadata.load(jf))
+            except Exception as e:
+                logger.warning(f"Failed to load {jf}: {e}")
+        return records
+
+    @staticmethod
+    def existing_ids(metadata_dir: Path) -> set[str]:
+        """Get source_ids of already-scraped records for resume."""
+        ids = set()
+        if not metadata_dir.exists():
+            return ids
+        for jf in metadata_dir.glob("*.json"):
+            ids.add(jf.stem)
+        return ids

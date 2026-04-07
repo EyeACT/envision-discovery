@@ -47,8 +47,11 @@ class FigshareScraper:
             self.session.headers["Authorization"] = f"token {token}"
             self.REQUEST_DELAY = 0.3  # faster with auth
             logger.info("Figshare: using API token (higher rate limits)")
-        self.seen_ids: set[int] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "figshare"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_ids = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_ids:
+            logger.info(f"Resuming: {len(self.seen_ids)} existing Figshare records")
 
     def _request(self, method, endpoint, **kwargs):
         """Make a rate-limited Figshare API request."""
@@ -86,13 +89,14 @@ class FigshareScraper:
                 break
 
             for article in articles:
-                article_id = article.get("id")
+                article_id = str(article.get("id", ""))
                 if not article_id or article_id in self.seen_ids:
                     continue
                 self.seen_ids.add(article_id)
 
                 meta = self._article_to_metadata(article, inspect_zips)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             page += 1

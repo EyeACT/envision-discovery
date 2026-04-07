@@ -45,14 +45,24 @@ class NEIScraper:
     not datasets directly. The classifier will determine relevance.
     """
 
+    REQUEST_DELAY = 1.5  # seconds between every API call (proactive)
+
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({
             "Accept": "application/json",
             "Content-Type": "application/json",
         })
-        self.seen_project_nums: set[str] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "nei"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_project_nums = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_project_nums:
+            logger.info(f"Resuming: {len(self.seen_project_nums)} existing NEI records")
+
+    def _request(self, method, url_or_endpoint, **kwargs):
+        """Make a rate-limited NIH RePORTER API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
 
     def search(
         self,
@@ -86,8 +96,8 @@ class NEIScraper:
                 "limit": limit,
             }
 
-            resp = request_with_backoff(
-                self.session, "post", API_BASE, json=payload,
+            resp = self._request(
+                "post", API_BASE, json=payload,
             )
             if resp is None:
                 break
@@ -98,13 +108,14 @@ class NEIScraper:
                 break
 
             for project in projects:
-                project_num = project.get("project_num")
+                project_num = str(project.get("project_num", ""))
                 if not project_num or project_num in self.seen_project_nums:
                     continue
                 self.seen_project_nums.add(project_num)
 
                 meta = self._project_to_metadata(project)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             total = data.get("meta", {}).get("total", 0)
@@ -112,8 +123,6 @@ class NEIScraper:
 
             if offset >= total:
                 break
-
-            time.sleep(1.5)
 
         return results
 
@@ -140,7 +149,6 @@ class NEIScraper:
             results = self.search(term, max_results=max_per_query)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(2.0)
         return all_results
 
     def _project_to_metadata(self, project: dict) -> DatasetMetadata | None:

@@ -29,11 +29,21 @@ API_BASE = "https://datadryad.org/api/v2"
 class DryadScraper:
     """Scrape Dryad for eye imaging datasets."""
 
+    REQUEST_DELAY = 1.5  # seconds between every API call (proactive)
+
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
-        self.seen_ids: set[str] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "dryad"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_ids = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_ids:
+            logger.info(f"Resuming: {len(self.seen_ids)} existing Dryad records")
+
+    def _request(self, method, url_or_endpoint, **kwargs):
+        """Make a rate-limited Dryad API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
 
     def search(
         self,
@@ -47,8 +57,8 @@ class DryadScraper:
         per_page = 25
 
         while len(results) < max_results:
-            resp = request_with_backoff(
-                self.session, "get", f"{API_BASE}/search",
+            resp = self._request(
+                "get", f"{API_BASE}/search",
                 params={"q": query, "page": page, "per_page": per_page},
             )
             if resp is None:
@@ -60,13 +70,15 @@ class DryadScraper:
                 break
 
             for ds in datasets:
-                ds_id = ds.get("identifier")
-                if not ds_id or ds_id in self.seen_ids:
+                ds_id = str(ds.get("identifier", ""))
+                safe_id = ds_id.replace("/", "_")
+                if not ds_id or safe_id in self.seen_ids:
                     continue
-                self.seen_ids.add(ds_id)
+                self.seen_ids.add(safe_id)
 
                 meta = self._dataset_to_metadata(ds, inspect_zips)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             total_pages = data.get("total_pages", 1)
@@ -74,7 +86,6 @@ class DryadScraper:
                 break
 
             page += 1
-            time.sleep(1.5)
 
         return results
 
@@ -101,11 +112,13 @@ class DryadScraper:
         try:
             # Try to get the latest version's files
             encoded_doi = doi.replace("/", "%2F")
-            resp = self.session.get(
+            resp = self._request(
+                "get",
                 f"{API_BASE}/datasets/{encoded_doi}/versions",
                 timeout=30,
             )
-            resp.raise_for_status()
+            if resp is None:
+                return []
             versions = resp.json().get("_embedded", {}).get("stash:versions", [])
             if not versions:
                 return []
@@ -113,11 +126,13 @@ class DryadScraper:
             latest = versions[-1]
             version_num = latest.get("versionNumber", 1)
 
-            files_resp = self.session.get(
+            files_resp = self._request(
+                "get",
                 f"{API_BASE}/datasets/{encoded_doi}/versions/{version_num}/files",
                 timeout=30,
             )
-            files_resp.raise_for_status()
+            if files_resp is None:
+                return []
             return files_resp.json().get("_embedded", {}).get("stash:files", [])
         except Exception as e:
             logger.debug(f"Could not fetch Dryad files for {doi}: {e}")
