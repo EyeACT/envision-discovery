@@ -118,9 +118,10 @@ def request_with_backoff(
                     break
                 continue
 
-            # Other non-200 status: return as-is (client error, not retryable)
-            response.raise_for_status()
-            return response
+            # 4xx client errors (except 429/403 handled above) are not retryable
+            if 400 <= response.status_code < 500:
+                logger.debug(f"Client error {response.status_code} on {url}, skipping")
+                return None
 
         except requests.exceptions.Timeout:
             delay = min(base_delay * (2 ** attempt), max_delay)

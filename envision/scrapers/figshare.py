@@ -45,7 +45,7 @@ class FigshareScraper:
         token = os.environ.get("FIGSHARE_ACCESS_TOKEN")
         if token:
             self.session.headers["Authorization"] = f"token {token}"
-            self.REQUEST_DELAY = 0.3  # faster with auth
+            self.REQUEST_DELAY = 0.5  # slightly faster with auth
             logger.info("Figshare: using API token (higher rate limits)")
         self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "figshare"
         self.metadata_dir.mkdir(parents=True, exist_ok=True)
