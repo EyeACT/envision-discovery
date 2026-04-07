@@ -25,11 +25,21 @@ API_BASE = "https://api.datacite.org/dois"
 class DataCiteScraper:
     """Meta-search DataCite for eye imaging datasets across 2,500+ repos."""
 
+    REQUEST_DELAY = 1.0  # seconds between every API call (proactive)
+
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
-        self.seen_dois: set[str] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "datacite"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_dois = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_dois:
+            logger.info(f"Resuming: {len(self.seen_dois)} existing DataCite records")
+
+    def _request(self, method, url_or_endpoint, **kwargs):
+        """Make a rate-limited DataCite API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
 
     def search(
         self,
@@ -42,8 +52,7 @@ class DataCiteScraper:
         page_size = 25
 
         while len(results) < max_results:
-            resp = request_with_backoff(
-                self.session,
+            resp = self._request(
                 "get",
                 API_BASE,
                 params={
@@ -64,12 +73,14 @@ class DataCiteScraper:
 
             for item in items:
                 doi = item.get("id", "")
-                if not doi or doi in self.seen_dois:
+                safe_id = doi.replace("/", "_")
+                if not doi or safe_id in self.seen_dois:
                     continue
-                self.seen_dois.add(doi)
+                self.seen_dois.add(safe_id)
 
                 meta = self._item_to_metadata(item)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             # Check pagination
@@ -78,7 +89,6 @@ class DataCiteScraper:
                 break
 
             page_number += 1
-            time.sleep(1.0)
 
         return results
 
@@ -97,7 +107,6 @@ class DataCiteScraper:
             results = self.search(term, max_results=max_per_query)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(2.0)
         return all_results
 
     def _item_to_metadata(self, item: dict) -> DatasetMetadata | None:

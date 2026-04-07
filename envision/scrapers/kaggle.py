@@ -73,11 +73,16 @@ def _load_credentials() -> dict | None:
 class KaggleScraper:
     """Scrape Kaggle for eye imaging datasets."""
 
+    REQUEST_DELAY = 1.0  # seconds between every API call (proactive)
+
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
-        self.seen_refs: set[str] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "kaggle"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_refs = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_refs:
+            logger.info(f"Resuming: {len(self.seen_refs)} existing Kaggle records")
 
         creds = _load_credentials()
         if creds and "bearer" in creds:
@@ -86,6 +91,11 @@ class KaggleScraper:
             self.session.auth = creds["basic"]
         else:
             logger.warning("KaggleScraper initialised without API credentials")
+
+    def _request(self, method, url_or_endpoint, **kwargs):
+        """Make a rate-limited Kaggle API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
 
     def search(
         self,
@@ -104,8 +114,8 @@ class KaggleScraper:
                 "filetype": "all",
             }
 
-            resp = request_with_backoff(
-                self.session, "get", f"{API_BASE}/datasets/list", params=params,
+            resp = self._request(
+                "get", f"{API_BASE}/datasets/list", params=params,
             )
             if resp is None:
                 break
@@ -115,17 +125,18 @@ class KaggleScraper:
                 break
 
             for dataset in datasets:
-                ref = dataset.get("ref")
-                if not ref or ref in self.seen_refs:
+                ref = dataset.get("ref", "")
+                safe_id = ref.replace("/", "_")
+                if not ref or safe_id in self.seen_refs:
                     continue
-                self.seen_refs.add(ref)
+                self.seen_refs.add(safe_id)
 
                 meta = self._dataset_to_metadata(dataset, inspect_zips)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             page += 1
-            time.sleep(1.0)
 
             # Kaggle returns 20 results per page by default
             if len(datasets) < 20:
@@ -165,13 +176,16 @@ class KaggleScraper:
         # Fetch file listing via the view endpoint
         files = []
         try:
-            resp = self.session.get(
+            resp = self._request(
+                "get",
                 f"{API_BASE}/datasets/view/{owner_slug}/{dataset_slug}",
                 timeout=30,
             )
-            resp.raise_for_status()
-            detail = resp.json()
-            files = detail.get("files", [])
+            if resp is None:
+                detail = dataset
+            else:
+                detail = resp.json()
+                files = detail.get("files", [])
         except Exception as e:
             logger.debug(f"Could not fetch Kaggle dataset files for {ref}: {e}")
             detail = dataset

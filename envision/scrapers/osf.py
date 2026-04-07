@@ -39,6 +39,8 @@ API_BASE = "https://api.osf.io/v2"
 class OSFScraper:
     """Scrape OSF for eye imaging datasets."""
 
+    REQUEST_DELAY = 2.0  # seconds between every API call (proactive)
+
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
@@ -51,8 +53,16 @@ class OSFScraper:
         else:
             logger.info("OSF: Unauthenticated (100 req/hr). Set OSF_TOKEN for higher limits.")
 
-        self.seen_ids: set[str] = set()
-        self.output_dir = Path(output_dir) if output_dir else None
+        self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "osf"
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
+        self.seen_ids = DatasetMetadata.existing_ids(self.metadata_dir)
+        if self.seen_ids:
+            logger.info(f"Resuming: {len(self.seen_ids)} existing OSF records")
+
+    def _request(self, method, url_or_endpoint, **kwargs):
+        """Make a rate-limited OSF API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(self.session, method, url_or_endpoint, **kwargs)
 
     def search(
         self,
@@ -68,7 +78,7 @@ class OSFScraper:
         }
 
         while url and len(results) < max_results:
-            resp = request_with_backoff(self.session, "get", url, params=params)
+            resp = self._request("get", url, params=params)
             if resp is None:
                 break
 
@@ -93,12 +103,12 @@ class OSFScraper:
 
                 meta = self._item_to_metadata(item)
                 if meta:
+                    meta.save(self.metadata_dir)
                     results.append(meta)
 
             # Pagination — use next link
             url = data.get("links", {}).get("next")
             params = {}  # next URL has params embedded
-            time.sleep(2.0)
 
         return results
 
@@ -117,20 +127,18 @@ class OSFScraper:
             results = self.search(term, max_results=max_per_query)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(3.0)
         return all_results
 
     def _get_files(self, item_id: str, item_type: str) -> list[dict]:
         """Fetch file list for an OSF node or registration."""
         endpoint = "registrations" if item_type == "registrations" else "nodes"
-        resp = request_with_backoff(
-            self.session, "get",
+        resp = self._request(
+            "get",
             f"{API_BASE}/{endpoint}/{item_id}/files/osfstorage/",
             params={"page[size]": 100},
         )
         if resp is None:
             return []
-        time.sleep(1.5)
         try:
             return resp.json().get("data", [])
         except Exception:
