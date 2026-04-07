@@ -310,7 +310,22 @@ def run_pipeline(
     print("=" * 70, flush=True)
 
     # Load model
+    local_model_valid = False
     if (model_dir / "model.safetensors").exists():
+        # Verify local model has correct number of classes
+        try:
+            import joblib
+            head = joblib.load(model_dir / "model_head.pkl")
+            n_classes = len(head.classes_)
+            if n_classes == len(LABELS):
+                local_model_valid = True
+            else:
+                print(f"\nWARNING: Local model at {model_dir} has {n_classes} classes "
+                      f"but expected {len(LABELS)}. Ignoring stale local model.", flush=True)
+        except Exception:
+            pass
+
+    if local_model_valid:
         print(f"\nLoading model from {model_dir}", flush=True)
         classifier = EyeImagingClassifier(model_path=model_dir)
     elif classify_only:
