@@ -69,7 +69,7 @@ Records must contain:
 | **EYE_IMAGING** | **60** |
 | **NEGATIVE** | **455** |
 
-Previous 4-class model identified 127; binary model identifies 60 with improved precision (fewer false positives).
+Binary classifier (EYE_IMAGING vs. NEGATIVE) identifies 60 eye imaging datasets with high precision.
 
 ### Validation Performance
 

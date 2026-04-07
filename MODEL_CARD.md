@@ -33,7 +33,7 @@ Tested on 515 Zenodo datasets (filtered to `resource_type=dataset` only):
 | EYE_IMAGING | 60 |
 | NEGATIVE | 455 |
 
-The previous 4-class model flagged 127 records as EYE_IMAGING; the binary model is more precise, reducing this to 60.
+The binary classifier identifies records containing actual eye imaging data, filtering out software, non-imaging eye research, and unrelated domains.
 
 ### Validation Metrics
 
