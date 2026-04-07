@@ -108,9 +108,8 @@ class DryadScraper:
         return all_results
 
     def _get_files(self, doi: str, version_id: str | None = None) -> list[dict]:
-        """Fetch file list for a dataset version."""
+        """Fetch file list for the latest version of a dataset."""
         try:
-            # Try to get the latest version's files
             encoded_doi = doi.replace("/", "%2F")
             resp = self._request(
                 "get",
@@ -123,12 +122,18 @@ class DryadScraper:
             if not versions:
                 return []
 
+            # Use the HATEOAS link from the latest version — the versionNumber
+            # is a display number, not a path parameter
             latest = versions[-1]
-            version_num = latest.get("versionNumber", 1)
+            files_href = (latest.get("_links", {})
+                          .get("stash:files", {})
+                          .get("href"))
+            if not files_href:
+                return []
 
             files_resp = self._request(
                 "get",
-                f"{API_BASE}/datasets/{encoded_doi}/versions/{version_num}/files",
+                f"https://datadryad.org{files_href}",
                 timeout=30,
             )
             if files_resp is None:
