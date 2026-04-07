@@ -20,12 +20,12 @@ pip install -e .
 ### Automated pipeline
 
 ```bash
-# Full pipeline: scrape all repos → classify → post to portal
+# Full pipeline: scrape all repos -> classify -> post to portal
 ./automation.sh
 
 # Run steps independently
-./automation.sh scrape      # Scrape only (skip classification)
-./automation.sh classify    # Classify existing data (skip scraping)
+./automation.sh scrape      # Scrape only (saves to data/metadata/{source}/)
+./automation.sh classify    # Classify existing data (loads from data/metadata/)
 ./automation.sh post        # Post results to portal only
 ```
 
@@ -33,49 +33,53 @@ pip install -e .
 
 ```bash
 # Scrape and classify all 7 repositories
-python -m envision --source all
+python -m envision
 
 # Single repository
 python -m envision --source dryad
 
-# Scrape only (no classification)
-python -m envision --source all --scrape-only
+# Scrape only (saves per-record JSON, no classification)
+python -m envision --scrape-only
 
-# Classify existing data (no scraping)
-python -m envision --source all --skip-scrape
-
-# Zenodo standalone scraper
-python -m envision.scraper --output ./data
+# Classify existing data (loads from data/metadata/, no scraping)
+python -m envision --skip-scrape --results-dir ./results
 ```
 
 ### Scrapers
 
-All scrapers use shared search terms, exponential backoff, and archive inspection:
+All 7 scrapers follow the same pattern:
+- Save per-record JSON to `data/metadata/{source}/` as they scrape
+- Resume automatically on restart (skip already-scraped records)
+- Proactive rate limiting (delay before every API call) + unlimited exponential backoff retries
+- Shared search terms across 47 ophthalmology-specific queries
 
-| Source | API | Archive Inspection | Notes |
-|--------|-----|-------------------|-------|
-| **Zenodo** | REST + Elasticsearch | ZIP, TAR | AND-required queries, date-range pagination |
-| **DataCite** | REST | N/A (metadata only) | Indexes DOIs across repositories |
-| **Figshare** | REST (POST) | ZIP, TAR | 3s inter-request delay |
-| **Kaggle** | REST | ZIP, TAR | Requires API token |
-| **Dryad** | REST | ZIP, TAR | Small corpus (~89 eye records) |
-| **NEI** | NIH RePORTER (POST) | N/A (grants) | Eye-specific by definition |
-| **OSF** | REST v2 search | ZIP, TAR | Optional token for higher rate limits |
+| Source | API | Rate Limit | Archive Inspection | Notes |
+|--------|-----|-----------|-------------------|-------|
+| **Zenodo** | REST + Elasticsearch | 2s/req | ZIP, TAR | AND-required queries, date-range pagination |
+| **Figshare** | REST (POST) | 1s (0.3s with token) | ZIP, TAR | Set `FIGSHARE_ACCESS_TOKEN` in `.env` |
+| **DataCite** | REST | 1s/req | N/A (metadata only) | Indexes DOIs across repositories |
+| **Kaggle** | REST | 1s/req | ZIP, TAR | Requires `KAGGLE_API_TOKEN` |
+| **Dryad** | REST | 1.5s/req | ZIP, TAR | Small corpus |
+| **NEI** | NIH RePORTER (POST) | 1.5s/req | N/A (grants) | Eye-specific by definition |
+| **OSF** | REST v2 search | 2s/req | ZIP, TAR | Set `OSF_TOKEN` in `.env` for higher limits |
 
-Output files in `results/`:
+### Output
+
+Each scraper saves per-record JSON to `data/metadata/{source}/{source_id}.json`.
+
+Classification results go to `results/`:
 
 | File | Description |
 |------|-------------|
 | `{source}_eye_imaging.json` | Records classified as EYE_IMAGING, sorted by confidence |
 | `{source}_all_results.json` | All classified records with binary labels |
 
-### Output format
-
-Each record in the results JSON:
+Each classified record:
 
 ```json
 {
-  "zenodo_id": "8254022",
+  "source": "zenodo",
+  "source_id": "8254022",
   "doi": "10.5281/zenodo.8254022",
   "url": "https://zenodo.org/records/8254022",
   "label": "EYE_IMAGING",
@@ -84,10 +88,9 @@ Each record in the results JSON:
   "prob_negative": 0.0002,
   "title": "Dataset for PT-OCT ANN Project",
   "description": "...",
-  "keywords": ["PT-OCT, ANN"],
-  "access_right": "open",
+  "keywords": ["PT-OCT", "ANN"],
+  "access_type": "open",
   "license": "cc-by-4.0",
-  "resource_type": "dataset",
   "file_types": [".zip"],
   "file_names": ["Data.zip"],
   "file_count": 1,
@@ -96,7 +99,7 @@ Each record in the results JSON:
   "archive_count": 1,
   "genomics_count": 0,
   "size_mb": 302.1,
-  "dataset_links": [],
+  "external_links": [],
   "related_dois": []
 }
 ```
@@ -108,22 +111,6 @@ Each record in the results JSON:
 | **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, slit-lamp, anterior segment) |
 | **NEGATIVE** | Everything else (non-eye data, software/code, eye-adjacent non-imaging, non-eye medical imaging) |
 
-## Current Results
-
-From 4,674 unique records across six repositories (Zenodo, Figshare, DataCite, Kaggle, Dryad, NEI):
-
-| Source | EYE_IMAGING | NEGATIVE | Total |
-|--------|-------------|----------|-------|
-| Zenodo | 60 | 455 | 515 |
-| DataCite | 752 | 1,084 | 1,836 |
-| Figshare | 1,049 | 951 | 2,000 |
-| Kaggle | 248 | 484 | 732 |
-| Dryad | 32 | 57 | 89 |
-| NEI | 686 | 976 | 1,662 |
-| **Unique (deduped)** | **1,933** | **2,741** | **4,674** |
-
-Classification is metadata-only (titles, descriptions, keywords, and file types inspected inside archives via HTTP Range requests) — no dataset files are downloaded. Multi-source support (Figshare, Dryad, OSF, DataCite) is implemented and will expand coverage.
-
 ## Repository structure
 
 ```
@@ -131,12 +118,12 @@ envision-discovery/
 ├── envision/
 │   ├── __init__.py         # Re-exports EyeImagingClassifier from envision-classifier
 │   ├── __main__.py         # python -m envision entry point
-│   ├── cli.py              # CLI argument parsing (--source, --skip-scrape, etc.)
+│   ├── cli.py              # CLI (--source, --skip-scrape, --scrape-only)
 │   ├── scraper.py          # Zenodo scraper with ZIP inspection + AND queries
-│   ├── pipeline.py         # Batch classification pipeline
-│   ├── metadata.py         # DatasetMetadata dataclass (shared across scrapers)
+│   ├── pipeline.py         # Classification pipeline (downloads model from HuggingFace)
+│   ├── metadata.py         # DatasetMetadata dataclass (save/load/resume)
 │   ├── utils.py            # Shared utilities (backoff, archive inspector, pagination)
-│   └── scrapers/           # Per-source scrapers
+│   └── scrapers/           # Per-source scrapers (all save to data/metadata/{source}/)
 │       ├── datacite.py
 │       ├── figshare.py
 │       ├── kaggle.py
@@ -144,9 +131,17 @@ envision-discovery/
 │       ├── nei.py
 │       └── osf.py
 ├── automation.sh           # Weekly cron — scrape/classify/post (run steps independently)
-├── data/                   # Scraped metadata (not committed)
+├── data/
+│   └── metadata/           # Per-record JSON files per source (not committed)
+│       ├── zenodo/
+│       ├── figshare/
+│       ├── datacite/
+│       ├── kaggle/
+│       ├── dryad/
+│       ├── nei/
+│       └── osf/
 ├── results/                # Classification output (not committed)
-├── .env.example            # API tokens template (OSF, Kaggle, Portal)
+├── .env.example            # API tokens template (Figshare, OSF, Kaggle, Portal)
 ├── pyproject.toml
 └── README.md
 ```
