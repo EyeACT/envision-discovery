@@ -53,13 +53,14 @@ def request_with_backoff(
     session: requests.Session,
     method: str,
     url: str,
-    max_retries: int = 5,
+    max_retries: int = 0,
     base_delay: float = 2.0,
-    max_delay: float = 120.0,
+    max_delay: float = 300.0,
     **kwargs,
 ) -> Optional[requests.Response]:
     """Make an HTTP request with exponential backoff on rate limits and errors.
 
+    Retries indefinitely by default (max_retries=0 means unlimited).
     Handles 429, 403, 5xx responses and connection errors with increasing
     delays: base_delay * 2^attempt, capped at max_delay.
 
@@ -67,17 +68,18 @@ def request_with_backoff(
         session: requests.Session to use.
         method: HTTP method ("get" or "post").
         url: Request URL.
-        max_retries: Maximum retry attempts.
+        max_retries: Maximum retry attempts. 0 = unlimited (never give up).
         base_delay: Initial delay in seconds.
         max_delay: Maximum delay cap in seconds.
         **kwargs: Passed to session.request (params, json, timeout, etc.)
 
     Returns:
-        Response object, or None if all retries exhausted.
+        Response object, or None if max_retries > 0 and all retries exhausted.
     """
     kwargs.setdefault("timeout", 30)
 
-    for attempt in range(max_retries):
+    attempt = 0
+    while True:
         try:
             response = session.request(method, url, **kwargs)
 
@@ -85,7 +87,6 @@ def request_with_backoff(
                 return response
 
             if response.status_code in (429, 403):
-                # Check for Retry-After header
                 retry_after = response.headers.get("Retry-After")
                 if retry_after:
                     try:
@@ -97,19 +98,24 @@ def request_with_backoff(
 
                 logger.warning(
                     f"Rate limited ({response.status_code}), "
-                    f"waiting {delay:.0f}s (attempt {attempt + 1}/{max_retries})"
+                    f"waiting {delay:.0f}s (attempt {attempt + 1})"
                 )
                 time.sleep(delay)
+                attempt += 1
+                if max_retries > 0 and attempt >= max_retries:
+                    break
                 continue
 
             if response.status_code >= 500:
                 delay = min(base_delay * (2 ** attempt), max_delay)
                 logger.warning(
                     f"Server error ({response.status_code}) on {url}, "
-                    f"params={kwargs.get('params', {})}, "
-                    f"retrying in {delay:.0f}s (attempt {attempt + 1}/{max_retries})"
+                    f"retrying in {delay:.0f}s (attempt {attempt + 1})"
                 )
                 time.sleep(delay)
+                attempt += 1
+                if max_retries > 0 and attempt >= max_retries:
+                    break
                 continue
 
             # Other non-200 status: return as-is (client error, not retryable)
@@ -119,28 +125,33 @@ def request_with_backoff(
         except requests.exceptions.Timeout:
             delay = min(base_delay * (2 ** attempt), max_delay)
             logger.warning(
-                f"Timeout on {url}, retrying in {delay:.0f}s "
-                f"(attempt {attempt + 1}/{max_retries})"
+                f"Timeout on {url}, retrying in {delay:.0f}s (attempt {attempt + 1})"
             )
             time.sleep(delay)
+            attempt += 1
+            if max_retries > 0 and attempt >= max_retries:
+                break
 
         except requests.exceptions.ConnectionError:
             delay = min(base_delay * (2 ** attempt), max_delay)
             logger.warning(
-                f"Connection error on {url}, retrying in {delay:.0f}s "
-                f"(attempt {attempt + 1}/{max_retries})"
+                f"Connection error on {url}, retrying in {delay:.0f}s (attempt {attempt + 1})"
             )
             time.sleep(delay)
+            attempt += 1
+            if max_retries > 0 and attempt >= max_retries:
+                break
 
         except requests.exceptions.RequestException as e:
-            logger.warning(f"Request error on {url}: {e}")
-            if attempt < max_retries - 1:
-                delay = min(base_delay * (2 ** attempt), max_delay)
-                time.sleep(delay)
-            else:
-                return None
+            delay = min(base_delay * (2 ** attempt), max_delay)
+            logger.warning(f"Request error on {url}: {e}, retrying in {delay:.0f}s (attempt {attempt + 1})")
+            time.sleep(delay)
+            attempt += 1
+            if max_retries > 0 and attempt >= max_retries:
+                break
 
-    logger.error(f"All {max_retries} retries exhausted for {url}")
+    if max_retries > 0:
+        logger.error(f"All {max_retries} retries exhausted for {url}")
     return None
 
 

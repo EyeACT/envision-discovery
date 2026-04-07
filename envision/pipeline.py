@@ -1,411 +1,90 @@
 #!/usr/bin/env python3
 """
-ENVISION: Multi-Source Classification Pipeline
+ENVISION: Classification Pipeline
 
-Batch classification pipeline for dataset metadata records.
-Supports Zenodo (legacy) and DatasetMetadata (multi-source) inputs.
-Uses EyeImagingClassifier to classify scraped eye imaging datasets.
-Exports results as JSON and optionally as ADDF schema files.
+Takes DatasetMetadata records, classifies them with EyeImagingClassifier,
+and writes results to disk. This module has one job: classify.
+It does not scrape, does not load from disk, does not decide sources.
 """
 
 import json
-import re
+import sys
 from collections import Counter
 from datetime import datetime
-from html import unescape
 from pathlib import Path
 
-from envision_classifier import EyeImagingClassifier, LABELS
+from envision_classifier import EyeImagingClassifier
 
 from .metadata import DatasetMetadata
 
-# ============================================================
-# File type constants for Zenodo record filtering
-# ============================================================
-
-# Standard image formats
-IMG_EXTS = {'.jpg', '.jpeg', '.png', '.tif', '.tiff', '.bmp', '.gif'}
-
-# Medical/scientific imaging formats (eye imaging specific)
-MEDICAL_EXTS = {
-    '.dcm', '.dicom',           # DICOM (standard medical)
-    '.nii', '.nii.gz',          # NIfTI (neuroimaging, OCT volumes)
-    '.mat',                      # MATLAB (common for OCT data)
-    '.h5', '.hdf5',             # HDF5 (large imaging datasets) - NOT h5ad
-    '.npy', '.npz',             # NumPy arrays
-    # OCT-specific formats
-    '.fds',                      # Topcon OCT
-    '.e2e',                      # Heidelberg OCT
-    '.vol',                      # Zeiss OCT volumes
-    '.img',                      # Generic imaging
-    '.oct',                      # Generic OCT
-    '.fda',                      # Optovue OCT
-}
-
-# Archive formats (may contain imaging data)
-ARCH_EXTS = {'.zip', '.tar', '.gz', '.tar.gz', '.rar', '.7z'}
-
-# GWAS/Genomics file types to EXCLUDE (these are not eye imaging)
-GENOMICS_EXTS = {
-    '.fasta', '.fa', '.fna',    # DNA/RNA sequences
-    '.fastq', '.fq',            # Sequencing reads
-    '.fastq.gz', '.fq.gz',      # Compressed reads
-    '.h5ad',                     # AnnData (single-cell RNA-seq)
-    '.bam', '.sam', '.cram',    # Alignments
-    '.vcf', '.bcf', '.vcf.gz',  # Variants
-    '.bed', '.gtf', '.gff',     # Genomic annotations
-    '.gff3', '.bigwig', '.bw',  # More genomics
-    '.cel', '.idat',            # Microarray
-    '.loom',                     # Single-cell
-}
-
-ALL_DATA_EXTS = IMG_EXTS | MEDICAL_EXTS | ARCH_EXTS
-
-# External dataset link patterns
-DATASET_LINK_PATTERNS = [
-    'kaggle.com', 'huggingface.co', 'github.com',
-    'drive.google.com', 'osf.io', 'datadryad.org', 'dryad.org',
-    'figshare.com', 'dataverse', 'openneuro.org',
-    'physionet.org', 'synapse.org', 'grand-challenge.org'
-]
-
-
-def extract_dataset_links(record):
-    """Extract external dataset links from description and related identifiers."""
-    links = []
-
-    # Check description for links
-    desc = record.get('metadata', {}).get('description', '')
-    if desc:
-        url_pattern = r'https?://[^\s<>"\']+|www\.[^\s<>"\']+'
-        urls = re.findall(url_pattern, desc)
-        for url in urls:
-            for pattern in DATASET_LINK_PATTERNS:
-                if pattern in url.lower():
-                    links.append(url)
-                    break
-
-    # Check related_identifiers
-    related = record.get('metadata', {}).get('related_identifiers', [])
-    for rel in related:
-        ident = rel.get('identifier', '')
-        if any(p in ident.lower() for p in DATASET_LINK_PATTERNS):
-            links.append(ident)
-
-    # Check custom _dataset_links field from scraper
-    custom_links = record.get('_dataset_links', [])
-    if custom_links:
-        for link in custom_links:
-            if isinstance(link, str):
-                links.append(link)
-            elif isinstance(link, dict):
-                url = link.get('url', link.get('identifier', ''))
-                if url:
-                    links.append(str(url))
-
-    # Check _weblinks from scraper (data_platform type = GitHub, Kaggle, etc.)
-    weblinks = record.get('_weblinks', [])
-    for wl in weblinks:
-        if isinstance(wl, dict) and wl.get('type') == 'data_platform':
-            url = wl.get('url', '')
-            if url:
-                links.append(str(url))
-
-    # Deduplicate
-    unique_links = []
-    seen = set()
-    for link in links:
-        link_str = str(link) if not isinstance(link, str) else link
-        if link_str and link_str not in seen:
-            seen.add(link_str)
-            unique_links.append(link_str)
-
-    return unique_links
-
-
-def has_data_files_or_links(record):
-    """Check if record has data files OR external dataset links.
-    Excludes records that ONLY have genomics files (GWAS, RNA-seq, etc.)
-    """
-    files = record.get('files', [])
-    has_imaging_files = False
-    has_only_genomics = True
-
-    for f in files:
-        name = f.get('key', '').lower()
-
-        is_genomics = any(name.endswith(ext) for ext in GENOMICS_EXTS)
-        is_imaging = any(name.endswith(ext) for ext in ALL_DATA_EXTS)
-
-        if is_imaging and not is_genomics:
-            has_imaging_files = True
-            has_only_genomics = False
-        elif is_imaging and is_genomics:
-            pass
-        elif not is_genomics and is_imaging:
-            has_only_genomics = False
-
-    if has_imaging_files:
-        return True
-
-    if extract_dataset_links(record):
-        return True
-
-    return False
-
-
-def get_record_text(record):
-    """Extract text for classification from a Zenodo record."""
-    title = record.get('metadata', {}).get('title', record.get('title', ''))
-    desc = EyeImagingClassifier.strip_html(
-        record.get('metadata', {}).get('description', '')
-    )
-    keywords = record.get('metadata', {}).get('keywords', [])
-    if isinstance(keywords, list):
-        keywords = ' '.join(keywords)
-    return f"{title} {desc} {keywords}"
-
-
-def get_file_details(record):
-    """Extract detailed file information from a Zenodo record.
-
-    Includes file types found inside ZIP archives via HTTP Range inspection
-    (stored in _file_analysis.zip_contents by the scraper).
-    """
-    files = record.get('files', [])
-
-    file_names = []
-    file_types = set()
-    total_size = 0
-    img_count = 0
-    medical_count = 0
-    archive_count = 0
-    genomics_count = 0
-
-    for f in files:
-        name = f.get('key', '')
-        size = f.get('size', 0)
-        name_lower = name.lower()
-
-        file_names.append(name)
-        total_size += size
-
-        # Check for genomics files first
-        is_genomics = False
-        for ext in sorted(GENOMICS_EXTS, key=len, reverse=True):
-            if name_lower.endswith(ext):
-                file_types.add(ext)
-                genomics_count += 1
-                is_genomics = True
-                break
-
-        if is_genomics:
-            continue
-
-        # Extract extension for imaging files
-        for ext in sorted(ALL_DATA_EXTS, key=len, reverse=True):
-            if name_lower.endswith(ext):
-                file_types.add(ext)
-                if ext in IMG_EXTS:
-                    img_count += 1
-                elif ext in MEDICAL_EXTS:
-                    medical_count += 1
-                elif ext in ARCH_EXTS:
-                    archive_count += 1
-                break
-
-    # Extract file types from inside ZIP archives (from scraper's Range inspection)
-    zip_file_types = {}
-    file_analysis = record.get('_file_analysis', {})
-    zip_contents = file_analysis.get('zip_contents', {})
-    for zip_name, zip_data in zip_contents.items():
-        for ext, count in zip_data.get('file_types', {}).items():
-            zip_file_types[ext] = zip_file_types.get(ext, 0) + count
-
-    return {
-        'file_names': file_names[:20],
-        'file_types': sorted(file_types),
-        'file_count': len(files),
-        'img_count': img_count,
-        'medical_count': medical_count,
-        'archive_count': archive_count,
-        'genomics_count': genomics_count,
-        'total_size': total_size,
-        'zip_file_types': zip_file_types,
-    }
-
-
-def get_metadata_details(record):
-    """Extract rich metadata from a Zenodo record."""
-    meta = record.get('metadata', {})
-
-    keywords = meta.get('keywords', [])
-    if isinstance(keywords, str):
-        keywords = [keywords]
-
-    desc = EyeImagingClassifier.strip_html(meta.get('description', ''))[:500]
-
-    related_dois = []
-    for rel in meta.get('related_identifiers', []):
-        if rel.get('scheme') == 'doi':
-            related_dois.append(rel.get('identifier', ''))
-
-    return {
-        'description': desc,
-        'keywords': keywords[:10],
-        'access_right': meta.get('access_right', 'unknown'),
-        'license': meta.get('license', {}).get('id', 'unknown'),
-        'resource_type': meta.get('resource_type', {}).get('type', 'unknown'),
-        'doi': meta.get('doi', ''),
-        'related_dois': related_dois[:5],
-    }
-
-
-# ============================================================
-# Multi-source pipeline (new)
-# ============================================================
 
 def run_pipeline(
-    metadata_records: list[DatasetMetadata] | None = None,
-    source: str = "zenodo",
-    classify_only: bool = True,
-    metadata_dir: str | Path | None = None,
-    results_dir: str | Path | None = None,
-    addf_output_dir: str | Path | None = None,
-    model_dir: str | Path | None = None,
-):
-    """Run the generalized classification pipeline.
-
-    Supports both DatasetMetadata objects (from any source) and
-    legacy Zenodo JSON files (backward compatible).
-
-    Args:
-        metadata_records: Pre-built DatasetMetadata list. If None, loads
-            from metadata_dir (Zenodo JSON files for backward compat).
-        source: Source name for output file naming.
-        classify_only: If True, load existing model instead of training.
-        metadata_dir: Directory containing Zenodo metadata JSON files
-            (used only when metadata_records is None).
-        results_dir: Directory to save results JSON files.
-        addf_output_dir: If set, export ADDF schema files here.
-        model_dir: Path to the trained model directory.
-    """
-    BASE_DIR = Path(__file__).resolve().parent.parent
-
-    if results_dir is None:
-        results_dir = BASE_DIR / "results"
-    else:
-        results_dir = Path(results_dir)
-
-    if model_dir is None:
-        model_dir = BASE_DIR / "models" / "setfit"
-    else:
-        model_dir = Path(model_dir)
-
-    import sys
-
-    print("=" * 70, flush=True)
-    print(f"ENVISION: Eye Imaging Dataset Classifier ({source})", flush=True)
-    print(f"Timestamp: {datetime.now().isoformat()}", flush=True)
-    print("=" * 70, flush=True)
-
-    # Load model
-    local_model_valid = False
-    if (model_dir / "model.safetensors").exists():
-        # Verify local model has correct number of classes
-        try:
-            import joblib
-            head = joblib.load(model_dir / "model_head.pkl")
-            n_classes = len(head.classes_)
-            if n_classes == len(LABELS):
-                local_model_valid = True
-            else:
-                print(f"\nWARNING: Local model at {model_dir} has {n_classes} classes "
-                      f"but expected {len(LABELS)}. Ignoring stale local model.", flush=True)
-        except Exception:
-            pass
-
-    if local_model_valid:
-        print(f"\nLoading model from {model_dir}", flush=True)
-        classifier = EyeImagingClassifier(model_path=model_dir)
-    elif classify_only:
-        print("\nDownloading model from HuggingFace...", flush=True)
-        classifier = EyeImagingClassifier()
-    else:
-        print("\nTraining new model...", flush=True)
-        classifier = EyeImagingClassifier.train(output_dir=model_dir)
-
-    print(f"Device: {classifier._device}", flush=True)
-
-    # If DatasetMetadata provided, use the new path
-    if metadata_records is not None:
-        return _run_metadata_pipeline(
-            classifier, metadata_records, source, results_dir, addf_output_dir
-        )
-
-    # No metadata_records provided — nothing to classify
-    print("No metadata records provided. Run with a scraper source.")
-    return []
-
-
-def _run_metadata_pipeline(
-    classifier: EyeImagingClassifier,
     metadata_records: list[DatasetMetadata],
     source: str,
-    results_dir: Path,
-    addf_output_dir: str | Path | None,
+    results_dir: str | Path | None = None,
+    addf_output_dir: str | Path | None = None,
+    **kwargs,
 ):
-    """Classify DatasetMetadata records from any source."""
-    import sys
+    """Classify records and save results.
+
+    Args:
+        metadata_records: Records to classify.
+        source: Source name for output filenames.
+        results_dir: Output directory. Defaults to ./results.
+        addf_output_dir: Optional ADDF export directory.
+    """
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    results_dir = Path(results_dir) if results_dir else BASE_DIR / "results"
 
     print(f"\n{'='*70}", flush=True)
     print(f"Classifying {len(metadata_records):,} {source} records", flush=True)
+    print(f"Timestamp: {datetime.now().isoformat()}", flush=True)
     print("=" * 70, flush=True)
 
-    def _log_memory(prefix=""):
-        try:
-            import psutil
-            mem = psutil.virtual_memory()
-            print(f"  {prefix}Memory: {mem.used / 1024**3:.1f}GB used / {mem.total / 1024**3:.1f}GB total ({mem.percent}%)", flush=True)
-        except ImportError:
-            pass
+    # ── Load classifier ──────────────────────────────────────────────
+    classifier = _load_classifier()
+    print(f"Device: {classifier._device}", flush=True)
 
-    _log_memory("Before text prep | ")
-
-    # Classify in batches
-    BATCH_SIZE = 16
-    print(f"  Preparing texts from {len(metadata_records):,} records...", flush=True)
+    # ── Classify ─────────────────────────────────────────────────────
     texts = [m.to_classifier_text() for m in metadata_records]
-    print(f"  Texts ready ({len(texts):,}). Classifying in batches of {BATCH_SIZE}...", flush=True)
-    _log_memory("After text prep | ")
+    print(f"  Classifying {len(texts):,} texts...", flush=True)
     sys.stdout.flush()
 
-    all_classifications = []
-    for i in range(0, len(texts), BATCH_SIZE):
-        batch = texts[i : i + BATCH_SIZE]
-        try:
-            all_classifications.extend(classifier.classify_batch(batch, batch_size=BATCH_SIZE))
-        except Exception as e:
-            print(f"\n  CRASH at batch {i}-{i+BATCH_SIZE}: {e}", flush=True)
-            _log_memory("At crash | ")
-            raise
-        processed = min(i + BATCH_SIZE, len(texts))
-        if processed % 100 == 0 or processed == len(texts):
-            _log_memory(f"Classified {processed:,} / {len(texts):,} | ")
+    classifications = classifier.classify_batch(texts, batch_size=16)
 
-    # Build results
+    # ── Build + save results ─────────────────────────────────────────
+    all_results, addf_records = _build_results(metadata_records, classifications)
+    _save_results(all_results, source, results_dir)
+    _print_summary(all_results)
+
+    if addf_output_dir and addf_records:
+        from .addf_export import ADDFExporter
+        addf_output_dir = Path(addf_output_dir)
+        paths = ADDFExporter.export_batch(addf_records, addf_output_dir)
+        print(f"  ADDF export: {len(paths)} records → {addf_output_dir}", flush=True)
+
+    return all_results
+
+
+def _load_classifier():
+    """Load the classifier from HuggingFace (cached locally after first download)."""
+    return EyeImagingClassifier()
+
+
+def _build_results(metadata_records, classifications):
+    """Pair metadata with classification results."""
     all_results = []
-    addf_records = []  # for ADDF export
+    addf_records = []
 
-    for meta, cls_result in zip(metadata_records, all_classifications):
-        probs = cls_result["probabilities"]
+    for meta, cls in zip(metadata_records, classifications):
+        probs = cls["probabilities"]
         result = {
             "source": meta.source,
             "source_id": meta.source_id,
             "doi": meta.doi,
             "url": meta.url,
-            "label": cls_result["label"],
-            "confidence": cls_result["confidence"],
+            "label": cls["label"],
+            "confidence": cls["confidence"],
             "prob_eye_imaging": probs.get("EYE_IMAGING", 0),
             "prob_negative": probs.get("NEGATIVE", 0),
             "title": meta.title[:200],
@@ -426,76 +105,48 @@ def _run_metadata_pipeline(
             "related_dois": [],
         }
         all_results.append(result)
+        if cls["label"] == "EYE_IMAGING":
+            addf_records.append((meta, cls))
 
-        if cls_result["label"] == "EYE_IMAGING":
-            addf_records.append((meta, cls_result))
+    return all_results, addf_records
 
-    # Analyze
-    _print_analysis(all_results)
 
-    # Save results
+def _save_results(all_results, source, results_dir):
+    """Write classification results to disk."""
     results_dir.mkdir(exist_ok=True, parents=True)
 
-    eye_imaging = [r for r in all_results if r["label"] == "EYE_IMAGING"]
-
-    eye_imaging.sort(key=lambda x: (-x["prob_eye_imaging"], -x.get("size_mb", 0)))
+    eye_imaging = sorted(
+        [r for r in all_results if r["label"] == "EYE_IMAGING"],
+        key=lambda x: (-x["prob_eye_imaging"], -x.get("size_mb", 0)),
+    )
 
     with open(results_dir / f"{source}_eye_imaging.json", "w") as f:
         json.dump(eye_imaging, f, indent=2)
-
     with open(results_dir / f"{source}_all_results.json", "w") as f:
         json.dump(all_results, f, indent=2)
 
-    print(f"\n  Results: {results_dir}")
-    print(f"    - {source}_eye_imaging.json ({len(eye_imaging):,} records)")
-    print(f"    - {source}_all_results.json ({len(all_results):,} records)")
-
-    # ADDF export
-    if addf_output_dir and addf_records:
-        from .addf_export import ADDFExporter
-
-        addf_output_dir = Path(addf_output_dir)
-        paths = ADDFExporter.export_batch(addf_records, addf_output_dir)
-        print(f"\n  ADDF export: {len(paths)} records to {addf_output_dir}")
-
-    return all_results
+    print(f"  Results → {results_dir}/", flush=True)
+    print(f"    {source}_eye_imaging.json  ({len(eye_imaging):,} records)", flush=True)
+    print(f"    {source}_all_results.json  ({len(all_results):,} records)", flush=True)
 
 
-def _print_analysis(all_results: list[dict]):
-    """Print classification analysis summary."""
-    eye_imaging = [r for r in all_results if r['label'] == 'EYE_IMAGING']
-    negative = [r for r in all_results if r['label'] == 'NEGATIVE']
+def _print_summary(all_results):
+    """Print classification summary."""
+    eye = [r for r in all_results if r["label"] == "EYE_IMAGING"]
+    neg = [r for r in all_results if r["label"] == "NEGATIVE"]
 
-    print(f"\n{'='*70}")
-    print("CLASSIFICATION RESULTS")
-    print("=" * 70)
-    print(f"  EYE_IMAGING:  {len(eye_imaging):,}")
-    print(f"  NEGATIVE:     {len(negative):,}")
+    print(f"\n  EYE_IMAGING: {len(eye):,}  |  NEGATIVE: {len(neg):,}", flush=True)
 
-    # File type distribution
-    print(f"\n{'='*70}")
-    print("FILE TYPE DISTRIBUTION (EYE_IMAGING)")
-    print("=" * 70)
-    type_counts = Counter()
-    for r in eye_imaging:
-        for ft in r.get('file_types', []):
-            type_counts[ft] += 1
-    for ft, count in type_counts.most_common(15):
-        print(f"  {ft}: {count:,}")
+    if eye:
+        high = sum(1 for r in eye if r["confidence"] >= 0.95)
+        med = sum(1 for r in eye if 0.80 <= r["confidence"] < 0.95)
+        low = sum(1 for r in eye if r["confidence"] < 0.80)
+        print(f"  Confidence: {high} high (>=0.95), {med} medium, {low} low", flush=True)
 
-    # Confidence distribution
-    print(f"\n{'='*70}")
-    print("CONFIDENCE DISTRIBUTION (EYE_IMAGING)")
-    print("=" * 70)
-    high_conf = [r for r in eye_imaging if r['confidence'] >= 0.95]
-    med_conf = [r for r in eye_imaging if 0.80 <= r['confidence'] < 0.95]
-    low_conf = [r for r in eye_imaging if r['confidence'] < 0.80]
-    print(f"  High (>=0.95):    {len(high_conf):,}")
-    print(f"  Medium (0.80-0.95): {len(med_conf):,}")
-    print(f"  Lower (<0.80):   {len(low_conf):,}")
-
-    link_key = 'dataset_links' if 'dataset_links' in (all_results[0] if all_results else {}) else 'external_links'
-    with_links = [r for r in eye_imaging if r.get(link_key)]
-    print(f"\n  Records with external dataset links: {len(with_links):,}")
-
-
+        types = Counter()
+        for r in eye:
+            for ft in r.get("file_types", []):
+                types[ft] += 1
+        if types:
+            top = ", ".join(f"{ft}({n})" for ft, n in types.most_common(5))
+            print(f"  Top file types: {top}", flush=True)

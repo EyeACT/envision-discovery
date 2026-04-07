@@ -28,13 +28,34 @@ API_BASE = "https://api.figshare.com/v2"
 
 
 class FigshareScraper:
-    """Scrape Figshare for eye imaging datasets."""
+    """Scrape Figshare for eye imaging datasets.
+
+    Uses proactive rate limiting (delay before every request) to avoid
+    triggering Figshare's aggressive 403 rate limiter. Supports optional
+    API token via FIGSHARE_ACCESS_TOKEN env var for higher limits.
+    """
+
+    # Figshare rate limits: ~100 req/hr unauthenticated, higher with token
+    REQUEST_DELAY = 1.0  # seconds between every API call (proactive)
 
     def __init__(self, output_dir: Optional[Path] = None):
+        import os
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
+        token = os.environ.get("FIGSHARE_ACCESS_TOKEN")
+        if token:
+            self.session.headers["Authorization"] = f"token {token}"
+            self.REQUEST_DELAY = 0.3  # faster with auth
+            logger.info("Figshare: using API token (higher rate limits)")
         self.seen_ids: set[int] = set()
         self.output_dir = Path(output_dir) if output_dir else None
+
+    def _request(self, method, endpoint, **kwargs):
+        """Make a rate-limited Figshare API request."""
+        time.sleep(self.REQUEST_DELAY)
+        return request_with_backoff(
+            self.session, method, f"{API_BASE}/{endpoint}", **kwargs
+        )
 
     def search(
         self,
@@ -45,7 +66,7 @@ class FigshareScraper:
         """Search Figshare for datasets matching query."""
         results = []
         page = 1
-        page_size = 25
+        page_size = 100
 
         while len(results) < max_results:
             payload = {
@@ -55,14 +76,9 @@ class FigshareScraper:
                 "page_size": page_size,
             }
 
-            resp = request_with_backoff(
-                self.session,
-                "post",
-                f"{API_BASE}/articles/search",
-                json=payload,
-            )
+            resp = self._request("post", "articles/search", json=payload)
             if resp is None:
-                logger.warning(f"Figshare search failed for '{query}' after retries")
+                logger.warning(f"Figshare search failed for '{query}'")
                 break
             articles = resp.json()
 
@@ -80,7 +96,6 @@ class FigshareScraper:
                     results.append(meta)
 
             page += 1
-            time.sleep(3.0)  # Figshare is aggressive with rate limits
 
             if len(articles) < page_size:
                 break
@@ -103,7 +118,6 @@ class FigshareScraper:
             results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
-            time.sleep(30.0)
         return all_results
 
     def _article_to_metadata(
@@ -112,9 +126,7 @@ class FigshareScraper:
         """Convert a Figshare article to DatasetMetadata."""
         # Fetch full article details for file list
         article_id = article.get("id")
-        resp = request_with_backoff(
-            self.session, "get", f"{API_BASE}/articles/{article_id}"
-        )
+        resp = self._request("get", f"articles/{article_id}")
         if resp is not None:
             detail = resp.json()
         else:
