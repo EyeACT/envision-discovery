@@ -37,21 +37,35 @@ API_BASE = "https://api.osf.io/v2"
 
 
 class OSFScraper:
-    """Scrape OSF for eye imaging datasets."""
+    """Scrape OSF for eye imaging datasets.
 
-    REQUEST_DELAY = 2.0  # seconds between every API call (proactive)
+    OSF rate limits:
+      - Unauthenticated: 100 requests/hour (hard hourly window)
+      - Authenticated (OSF_TOKEN): ~10,000 requests/day
+
+    This scraper tracks request count and pauses at the hourly limit
+    until the window resets, rather than hammering 403s for hours.
+    """
+
+    REQUEST_DELAY = 2.0   # seconds between every API call (proactive)
+    HOURLY_LIMIT = 95     # stay under 100/hr with a safety margin
+    HOURLY_LIMIT_AUTH = 400  # ~10K/day = ~400/hr with margin
 
     def __init__(self, output_dir: Optional[Path] = None):
         self.session = requests.Session()
         self.session.headers.update({"Accept": "application/json"})
 
-        # Use token if available for higher rate limits
         token = os.environ.get("OSF_TOKEN")
         if token:
             self.session.headers.update({"Authorization": f"Bearer {token}"})
-            logger.info("OSF: Using authenticated session (10,000 req/day)")
+            self._rate_limit = self.HOURLY_LIMIT_AUTH
+            logger.info(f"OSF: Authenticated (~{self._rate_limit} req/hr)")
         else:
-            logger.info("OSF: Unauthenticated (100 req/hr). Set OSF_TOKEN for higher limits.")
+            self._rate_limit = self.HOURLY_LIMIT
+            logger.info(f"OSF: Unauthenticated ({self._rate_limit} req/hr). Set OSF_TOKEN for more.")
+
+        self._request_count = 0
+        self._window_start = time.time()
 
         self.metadata_dir = (Path(output_dir) if output_dir else Path.cwd() / "data") / "metadata" / "osf"
         self.metadata_dir.mkdir(parents=True, exist_ok=True)
@@ -60,16 +74,29 @@ class OSFScraper:
             logger.info(f"Resuming: {len(self.seen_ids)} existing OSF records")
 
     def _request(self, method, url_or_endpoint, **kwargs):
-        """Make a rate-limited OSF API request.
+        """Make a rate-limited OSF API request, respecting the hourly window."""
+        # Check if we've hit the hourly limit
+        elapsed = time.time() - self._window_start
+        if self._request_count >= self._rate_limit:
+            wait = max(0, 3600 - elapsed) + 5  # wait until window resets + buffer
+            if wait > 0:
+                logger.info(
+                    f"  OSF: {self._request_count} requests in {elapsed/60:.0f}min, "
+                    f"pausing {wait/60:.1f}min until hourly window resets"
+                )
+                time.sleep(wait)
+            self._request_count = 0
+            self._window_start = time.time()
 
-        Uses max_retries=10 instead of unlimited because OSF rate limits
-        reset on a fixed hourly window — retrying beyond ~10 attempts
-        (with exponential backoff) means the window hasn't reset and
-        further retries are pointless.
-        """
+        # Reset window if an hour has passed
+        if elapsed >= 3600:
+            self._request_count = 0
+            self._window_start = time.time()
+
         time.sleep(self.REQUEST_DELAY)
+        self._request_count += 1
         return request_with_backoff(
-            self.session, method, url_or_endpoint, max_retries=10, **kwargs
+            self.session, method, url_or_endpoint, max_retries=5, **kwargs
         )
 
     def search(
