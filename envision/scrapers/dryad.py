@@ -197,10 +197,12 @@ class DryadScraper:
                             download_url, f.get("path", ""), self.session
                         )
                         if contents:
+                            zip_contents.extend(contents[:50])
+                            for zf in contents:
+                                if "." in zf:
+                                    file_types.add("." + zf.rsplit(".", 1)[-1].lower())
                             summary = ArchiveInspector.summarize_contents(contents)
-                            zip_contents.extend(
-                                summary.get("imaging_files", [])
-                            )
+                            img_count += summary.get("imaging_file_count", 0)
                     except Exception:
                         pass
 
