@@ -151,6 +151,10 @@ class FigshareScraper:
             name_lower = f.get("name", "").lower()
             total_size += f.get("size", 0)
 
+            if "." in name_lower:
+                raw_ext = "." + name_lower.rsplit(".", 1)[-1]
+                file_types.add(raw_ext)
+
             for ext in sorted(
                 EYE_IMAGING_EXTS | ARCHIVE_EXTS | GENOMICS_EXTS,
                 key=len,

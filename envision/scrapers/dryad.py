@@ -164,13 +164,19 @@ class DryadScraper:
             name_lower = f.get("path", "").lower()
             total_size += f.get("size", 0)
 
+            # Always extract the file extension
+            if "." in name_lower:
+                raw_ext = "." + name_lower.rsplit(".", 1)[-1]
+                file_types.add(raw_ext)
+
+            # Categorize known extensions
             for ext in sorted(
                 EYE_IMAGING_EXTS | ARCHIVE_EXTS | GENOMICS_EXTS,
                 key=len,
                 reverse=True,
             ):
                 if name_lower.endswith(ext):
-                    file_types.add(ext)
+                    file_types.add(ext)  # add compound ext too (e.g. .tar.gz)
                     if ext in EYE_IMAGING_EXTS:
                         if ext in {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".gif"}:
                             img_count += 1
