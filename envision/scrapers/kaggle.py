@@ -202,6 +202,10 @@ class KaggleScraper:
         for f in files:
             name_lower = f.get("name", "").lower()
 
+            if "." in name_lower:
+                raw_ext = "." + name_lower.rsplit(".", 1)[-1]
+                file_types.add(raw_ext)
+
             for ext in sorted(
                 EYE_IMAGING_EXTS | ARCHIVE_EXTS | GENOMICS_EXTS,
                 key=len,
