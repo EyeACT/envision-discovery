@@ -159,10 +159,23 @@ class DryadScraper:
         archive_count = 0
         genomics_count = 0
         zip_contents: list[str] = []
+        download_files: list[dict] = []
 
         for f in files:
             name_lower = f.get("path", "").lower()
             total_size += f.get("size", 0)
+
+            f_url = f.get("download_url") or f.get("_links", {}).get("stash:download", {}).get("href")
+            if f_url and not f_url.startswith("http"):
+                f_url = f"https://datadryad.org{f_url}"
+            if f_url:
+                download_files.append({
+                    "name": f.get("path", ""),
+                    "size_bytes": f.get("size", 0),
+                    "url": f_url,
+                    "file_id": f.get("id") or f.get("fileId"),
+                    "checksum": f.get("digest") or f.get("md5"),
+                })
 
             # Always extract the file extension
             if "." in name_lower:
@@ -264,4 +277,5 @@ class DryadScraper:
             dates=[{"dateValue": pub_date, "dateType": "Available"}] if pub_date else [],
             related_identifiers=related,
             external_links=[],
+            files=download_files,
         )

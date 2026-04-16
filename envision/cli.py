@@ -97,6 +97,7 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
         file_names = [f.get("key", "") for f in files]
         file_types = set()
         total_size = 0
+        download_files = []
 
         for f_info in files:
             fname = f_info.get("key", "").lower()
@@ -104,6 +105,15 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
             total_size += size
             ext = "." + fname.rsplit(".", 1)[-1] if "." in fname else ""
             file_types.add(ext)
+            url = f_info.get("links", {}).get("self", "")
+            if url:
+                download_files.append({
+                    "name": f_info.get("key", ""),
+                    "size_bytes": size,
+                    "url": url,
+                    "file_id": f_info.get("id"),
+                    "checksum": f_info.get("checksum"),
+                })
 
         analysis = raw.get("_file_analysis", {})
 
@@ -135,6 +145,7 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
             creators=creators,
             publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
             external_links=[l.get("url", "") for l in raw.get("_weblinks", [])],
+            files=download_files,
         ))
 
     return records
@@ -200,6 +211,14 @@ def pipeline_cli():
                        help='Run cross-source duplicate detection')
     parser.add_argument('--dedup-threshold', type=float, default=0.92,
                        help='Cosine similarity threshold for dedup (default: 0.92)')
+    parser.add_argument('--download', action='store_true',
+                       help='After classification, download files for records labelled '
+                            'EYE_IMAGING (gated by --download-threshold). Writes to '
+                            '{--download-dir}/{source}/{source_id}/. See docs/downloading.md.')
+    parser.add_argument('--download-threshold', type=float, default=0.80,
+                       help='Min EYE_IMAGING probability required to download (default: 0.80)')
+    parser.add_argument('--download-dir',
+                       help='Base dir for downloaded files (default: ./data/downloads)')
 
     args = parser.parse_args()
     _run_pipeline(args)
@@ -245,6 +264,25 @@ def _run_pipeline(args):
                 results_dir=args.results_dir,
                 addf_output_dir=args.addf_output,
             )
+
+            # ── Step 3: Download (optional, gated by classification) ────
+            if args.download:
+                from .downloader import run_download
+                results_dir = Path(args.results_dir) if args.results_dir else Path.cwd() / "results"
+                eye_file = results_dir / f"{source}_eye_imaging.json"
+                if not eye_file.exists():
+                    print(f"  No {eye_file.name} — skipping download", flush=True)
+                else:
+                    with open(eye_file) as f:
+                        eye_imaging_results = json.load(f)
+                    download_dir = Path(args.download_dir) if args.download_dir else data_dir / "downloads"
+                    run_download(
+                        source=source,
+                        metadata_records=records,
+                        eye_imaging_results=eye_imaging_results,
+                        download_dir=download_dir,
+                        confidence_threshold=args.download_threshold,
+                    )
 
         except Exception as e:
             print(f"\n  ERROR [{source}]: {e}", flush=True)
