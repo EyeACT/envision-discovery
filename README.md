@@ -43,6 +43,29 @@ python -m envision --scrape-only
 
 # Classify existing data (loads from data/metadata/, no scraping)
 python -m envision --skip-scrape --results-dir ./results
+
+# Classify + download files for records labelled EYE_IMAGING
+python -m envision --source zenodo --skip-scrape --download
+
+# Download across all sources at a tighter confidence gate
+python -m envision --source all --download --download-threshold 0.95
+```
+
+Files are **only** downloaded after a record is classified as EYE_IMAGING with
+confidence ≥ `--download-threshold` (default 0.80). They land in
+`data/downloads/{source}/{source_id}/` alongside a per-record `manifest.json`.
+See [docs/downloading.md](docs/downloading.md).
+
+### Turning downloads into training-ready trees
+
+That's a separate tool — [envision-eye-actionable](https://github.com/EyeACT/envision-eye-actionable).
+It reads this repo's `data/downloads/{source}/{id}/` layout by default and
+produces HuggingFace-loadable ADDF v0.1.0 trees at `data/actionable/{source}/{id}/`.
+
+```bash
+pip install envision-eye-actionable
+envision-conform --source zenodo                  # conforms every downloaded record
+envision-conform --source zenodo --source-id 4521044   # one record
 ```
 
 ### Scrapers
@@ -118,9 +141,11 @@ envision-discovery/
 ├── envision/
 │   ├── __init__.py         # Re-exports EyeImagingClassifier from envision-classifier
 │   ├── __main__.py         # python -m envision entry point
-│   ├── cli.py              # CLI (--source, --skip-scrape, --scrape-only)
+│   ├── cli.py              # CLI (--source, --skip-scrape, --scrape-only, --download)
 │   ├── scraper.py          # Zenodo scraper with ZIP inspection + AND queries
 │   ├── pipeline.py         # Classification pipeline (downloads model from HuggingFace)
+│   ├── downloader.py       # Post-classification file downloader (gated by EYE_IMAGING)
+│   ├── addf_export.py      # ADDF metadata export (dataset_description + structure_description from the scrape)
 │   ├── metadata.py         # DatasetMetadata dataclass (save/load/resume)
 │   ├── utils.py            # Shared utilities (backoff, archive inspector, pagination)
 │   └── scrapers/           # Per-source scrapers (all save to data/metadata/{source}/)
@@ -148,6 +173,7 @@ envision-discovery/
 
 ## Related repositories
 
+- [envision-eye-actionable](https://github.com/EyeACT/envision-eye-actionable) — turns this repo's downloads into HuggingFace-loadable ADDF v0.1.0 trees
 - [envision-classifier](https://github.com/EyeACT/envision-classifier) — The SetFit classifier package (`pip install envision-classifier`)
 - [Model weights on HuggingFace](https://huggingface.co/fairdataihub/envision-eye-imaging-classifier)
 

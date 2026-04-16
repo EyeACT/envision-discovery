@@ -48,6 +48,13 @@ class DatasetMetadata:
     genomics_count: int = 0
     zip_contents: list[str] = field(default_factory=list)
 
+    # Downloadable file manifest. Each entry:
+    #   {"name": str, "size_bytes": int, "url": str,
+    #    "file_id": str | None, "checksum": str | None}
+    # Populated by scrapers when the source API exposes direct download links.
+    # Consumed by envision.downloader when --download is passed.
+    files: list[dict] = field(default_factory=list)
+
     # Access & rights
     access_type: str | None = None
     license: str | None = None

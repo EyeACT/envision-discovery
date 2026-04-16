@@ -244,4 +244,5 @@ class OSFScraper:
             dates=dates,
             related_identifiers=[],
             external_links=[],
+            files=[],  # OSF files not fetched at scrape time (rate-limited); see downloader OSF path
         )

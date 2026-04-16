@@ -146,10 +146,21 @@ class FigshareScraper:
         archive_count = 0
         genomics_count = 0
         zip_contents: list[str] = []
+        download_files: list[dict] = []
 
         for f in files:
             name_lower = f.get("name", "").lower()
             total_size += f.get("size", 0)
+
+            f_url = f.get("download_url")
+            if f_url:
+                download_files.append({
+                    "name": f.get("name", ""),
+                    "size_bytes": f.get("size", 0),
+                    "url": f_url,
+                    "file_id": f.get("id"),
+                    "checksum": f.get("computed_md5") or f.get("supplied_md5"),
+                })
 
             if "." in name_lower:
                 raw_ext = "." + name_lower.rsplit(".", 1)[-1]
@@ -249,4 +260,5 @@ class FigshareScraper:
             dates=[{"dateValue": pub_date, "dateType": "Available"}] if pub_date else [],
             related_identifiers=[],
             external_links=[],
+            files=download_files,
         )

@@ -198,6 +198,19 @@ class KaggleScraper:
         archive_count = 0
         genomics_count = 0
         zip_contents: list[str] = []
+        download_files: list[dict] = []
+
+        # Whole-dataset archive endpoint (Kaggle serves all files as a single ZIP)
+        dataset_archive_url = (
+            f"{API_BASE}/datasets/download/{owner_slug}/{dataset_slug}"
+        )
+        download_files.append({
+            "name": f"{dataset_slug}.zip",
+            "size_bytes": total_size,
+            "url": dataset_archive_url,
+            "file_id": ref,
+            "checksum": None,
+        })
 
         for f in files:
             name_lower = f.get("name", "").lower()
@@ -296,4 +309,5 @@ class KaggleScraper:
             dates=[],
             related_identifiers=[],
             external_links=[],
+            files=download_files,
         )
