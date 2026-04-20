@@ -9,11 +9,8 @@ models/
 *.pt
 *.pth
 
-# Data (too large for git)  
-data/*
-!data/metadata/
-data/metadata/*
-!data/metadata/zenodo/
+# Data (scraped metadata is too large for git; keep it local)
+data/
 
 # Results - tracked (small enough to share)
 # results/
