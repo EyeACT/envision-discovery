@@ -315,7 +315,9 @@ def add_dataset_records_to_database():
         }
 
         try:
-            print(f"  Posting '{record['title'][:60]}'...")
+            print(
+                f"  Posting '{record['title'][:60]}'... for Date Created: {record['created']}"
+            )
             response = requests.post(
                 endpoint,
                 headers={"x-api-key": f"{API_KEY}"},
