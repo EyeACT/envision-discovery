@@ -74,26 +74,31 @@ def _build_record_from_result(record, source):
             with open(meta_path, "r", encoding="utf-8") as f:
                 meta = json.load(f)
             m = meta.get("metadata", meta)
-            for creator in m.get("creators", []):
-                creators.append(
-                    {
-                        "creatorName": creator.get("name", ""),
-                        "nameType": "Personal",
-                        "affiliation": [
-                            {"affiliationName": creator.get("affiliation", "")}
-                        ],
-                    }
-                )
-            publication_date = m.get("publication_date", "")
+            creators.extend(
+                {
+                    "creatorName": c.get("creatorName", c.get("name", "")),
+                    "nameType": c.get("nameType", "Personal"),
+                    "affiliation": [
+                        {"affiliationName": a} if isinstance(a, str) else a
+                        for a in (c.get("affiliation") or [])
+                    ],
+                }
+                for c in (m.get("creators") or meta.get("creators", []))
+            )
+            publication_date = m.get("publication_date", "") or meta.get(
+                "publication_date", ""
+            )
             if not publication_date:
-                for d in m.get("dates", []):
+                for d in m.get("dates", []) or meta.get("dates", []):
                     if isinstance(d, dict) and d.get("dateValue"):
                         publication_date = d["dateValue"].split("T")[0]
                         break
             publication_year = (
                 publication_date.split("-")[0]
                 if publication_date
-                else str(m.get("publication_year", ""))
+                else str(
+                    m.get("publication_year", "") or meta.get("publication_year", "")
+                )
             )
             if "license" in m and isinstance(m["license"], dict):
                 license_name = m["license"].get("name", license_name)
@@ -162,7 +167,9 @@ def _build_record_from_result(record, source):
                         {
                             "dateValue": publication_date,
                             "dateType": "Available",
-                            "dateInformation": f"Date dataset made available on {source.capitalize()}",
+                            "dateInformation": (
+                                f"Date dataset made available on {source.capitalize()}"
+                            ),
                         }
                     ]
                     if publication_date
@@ -308,6 +315,7 @@ def add_dataset_records_to_database():
         }
 
         try:
+            print(f"  Posting '{record['title'][:60]}'...")
             response = requests.post(
                 endpoint,
                 headers={"x-api-key": f"{API_KEY}"},
