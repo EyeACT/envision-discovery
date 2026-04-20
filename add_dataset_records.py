@@ -93,6 +93,8 @@ def _build_record_from_result(record, source):
                     if isinstance(d, dict) and d.get("dateValue"):
                         publication_date = d["dateValue"].split("T")[0]
                         break
+            if not publication_date and meta.get("created"):
+                publication_date = meta["created"].split("T")[0]
             publication_year = (
                 publication_date.split("-")[0]
                 if publication_date
