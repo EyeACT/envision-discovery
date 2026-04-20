@@ -85,8 +85,15 @@ def _build_record_from_result(record, source):
                     }
                 )
             publication_date = m.get("publication_date", "")
+            if not publication_date:
+                for d in m.get("dates", []):
+                    if isinstance(d, dict) and d.get("dateValue"):
+                        publication_date = d["dateValue"].split("T")[0]
+                        break
             publication_year = (
-                publication_date.split("-")[0] if publication_date else ""
+                publication_date.split("-")[0]
+                if publication_date
+                else str(m.get("publication_year", ""))
             )
             if "license" in m and isinstance(m["license"], dict):
                 license_name = m["license"].get("name", license_name)
