@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes the development of a non-contact, non-invasive clinical tool based on Optical Coherence Tomography and Elastography (OCE) to map the geometry and elastic moduli of the cornea for diagnosing keratoconus (KC) progression and evaluating corneal collagen crosslinking (CXL) surgery outcomes. The tool will be optimized for in vivo elasticity measurements in KC patients using a slit-lamp based platform and OCT topography. The dataset will include baseline elastic properties in rabbit cornea pre- and post-CXL, as well as in healthy volunteers, to determine diagnostic criteria for KC and compare moduli in KC patients longitudinally pre- and post-CXL to those in normal subjects.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "57ae05ef06539d9200483697a1faa72b1ce8358afbd8fc387488561305f4ff21",
+  "input_chars": 3153,
+  "summary_chars": 700,
+  "input_mpnet_tokens": 706,
+  "summary_mpnet_tokens": 161,
+  "generation_seconds": 14.88
+}

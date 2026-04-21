@@ -1,0 +1,12 @@
+{
+  "summary": "MARA is a next-generation Android malware detection framework that transforms fragmented static and behavioral signals into coherent, human-understandable malicious behavior chains using a unified perception–reasoning–action pipeline. It introduces Behavior-Centric Evidence Structuring (BCES) to reorganize heterogeneous Android artifacts into a structured, behavior-oriented evidence space and Multi-Stage Behavior Reasoning (BCMR) to perform progressive reasoning using a Large Language Model (LLM). MARA delivers high detection accuracy and strong interpretability, outperforming traditional static detectors and recent LLM-based malware analysis frameworks.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "7c5b884ef16d96b15304fd3770bd5c58a85bb5f3ae18aa8fb5beb2688abbeef6",
+  "input_chars": 2738,
+  "summary_chars": 662,
+  "input_mpnet_tokens": 543,
+  "summary_mpnet_tokens": 128,
+  "generation_seconds": 12.2
+}

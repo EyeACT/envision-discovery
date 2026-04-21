@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset is based on an existing electronic health records (EHR) database, the Duke Glaucoma Registry, and aims to develop an automated pre-screening framework for psychosocial distress (anxiety, depression) in glaucoma patients. The framework will use predictive modeling to identify high-risk patients, allowing for targeted administration of a distress survey and limiting assessment to those who need it. The study will also explore the acceptability of distress screening in a glaucoma clinic and refine a behavioral intervention to improve coping skills for distress in patients with glaucoma.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "229eaf80571449709699421eab80691e3be1401a160c189b20f8980c3dcb614f",
+  "input_chars": 3221,
+  "summary_chars": 603,
+  "input_mpnet_tokens": 655,
+  "summary_mpnet_tokens": 123,
+  "generation_seconds": 10.5
+}

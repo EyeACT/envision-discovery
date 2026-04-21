@@ -1,0 +1,12 @@
+{
+  "summary": "The HND dataset consists of simulation X-ray CT images from 486 patients with head and neck cancers, acquired using a SIEMENS CT scanner with standardized pixel spacing and resolution, and manually annotated by senior oncologists with 30 organs-at-risk (OARs) delineated slice by slice. The dataset was divided into three subsets for training, validation, and testing, with 341, 97, and 48 cases, respectively. The annotations were reviewed and revised by an oncology expert to ensure accuracy and reliability, adhering to RTOG contouring guidelines.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "d1a7674f15bd060171e5c11a79e4351002d4a1996455790a3539539af087fa1b",
+  "input_chars": 2652,
+  "summary_chars": 550,
+  "input_mpnet_tokens": 653,
+  "summary_mpnet_tokens": 125,
+  "generation_seconds": 7.04
+}

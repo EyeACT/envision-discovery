@@ -1,0 +1,12 @@
+{
+  "summary": "The ACCORD Eye Study is an ancillary study to the ACCORD Trial, evaluating the effects of intensive glycemic control, blood pressure lowering, and lipid therapy on diabetic retinopathy in patients with type 2 diabetes. The study used fundus photography of 7 stereoscopic fields to assess diabetic retinopathy progression in 4065 patients over 4 years, with results showing that intensive glycemic control reduced the risk of progression by 33% compared to standard therapy. The study also found that intensive lipid therapy with fenofibrate reduced the risk of progression by 36% compared to placebo, but this benefit did not persist at 10-year follow-up.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "0e684f142e84160d7fb047d7bcada63b95950667602561c7db012540b11e457d",
+  "input_chars": 5009,
+  "summary_chars": 655,
+  "input_mpnet_tokens": 1238,
+  "summary_mpnet_tokens": 142,
+  "generation_seconds": 14.37
+}

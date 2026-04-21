@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes a study on cone-rod dystrophy (CORD) caused by pathogenic variants in the CFAP410 gene. A 6-year-old boy with decreased vision underwent ocular examinations, including fundus imaging, SS-OCT, and systemic X-ray checks, and was found to have macular staphyloma and thinning of the outer retina. The study identified two heterozygous missense pathogenic variants, c.319 T > C and c.347 C > T, in exon 4 of the CFAP410 gene, which affected cell cycle, protein stability, and ubiquitination levels in HEK293T cells.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "8e2d9e094481f52058b171affb426d99f2e160dc2cdefc22a257aa9357a83309",
+  "input_chars": 1875,
+  "summary_chars": 534,
+  "input_mpnet_tokens": 461,
+  "summary_mpnet_tokens": 148,
+  "generation_seconds": 12.06
+}

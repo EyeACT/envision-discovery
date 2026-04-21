@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset is based on a study using a prototype high-speed swept-source OCT system to develop a new structural parameter, retinal surface contour variability (RSCV), which detects early glaucoma by analyzing the spatial frequency of inner limit membrane (ILM) contour. The study aims to adapt this approach to a standard commercial clinical spectral-domain OCT system and validate it using a large clinical database from the Advanced Imaging for Glaucoma (AIG) study, which includes data from 788 participants (249 perimetric glaucoma, 394 glaucoma suspect/pre-perimetric glaucoma, and 145 normal participants) followed for an average of 5 years. The dataset will be used to optimize the automatic algorithm for RSCV, improve diagnosis of early glaucoma by combining RSCV, nerve fiber layer (NFL), and macular ganglion cell complex (GCC) parameters, and predict glaucoma conversion using RSCV.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "ee5bdc526d9a81fc31cc20d0d8de369c223f0e36c2e5a891f2cdc3e3cccc07ac",
+  "input_chars": 2986,
+  "summary_chars": 896,
+  "input_mpnet_tokens": 683,
+  "summary_mpnet_tokens": 218,
+  "generation_seconds": 17.31
+}

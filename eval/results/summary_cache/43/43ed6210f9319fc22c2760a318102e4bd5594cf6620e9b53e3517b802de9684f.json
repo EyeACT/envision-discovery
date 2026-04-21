@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes a research project aiming to improve retinal prostheses for patients with outer retinal degeneration. Current retinal prostheses have limitations, including low spatial resolution and temporal control, which result in low-quality artificial vision. The proposed project will investigate intraretinal electrodes positioned within the inner nuclear layer to overcome these limitations, with the goal of achieving 20/160 vision, and will involve measuring RGC responses, optimizing multichannel intraretinal stimulation, and verifying long-term functionality and biocompatibility of a high-density carbon fiber array.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "4fcaf3b29220839a98fd7df9930516d078e52806365c966de552047a33d0d528",
+  "input_chars": 3297,
+  "summary_chars": 637,
+  "input_mpnet_tokens": 656,
+  "summary_mpnet_tokens": 128,
+  "generation_seconds": 11.74
+}

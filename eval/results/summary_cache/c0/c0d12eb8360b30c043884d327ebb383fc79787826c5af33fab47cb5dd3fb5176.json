@@ -1,0 +1,12 @@
+{
+  "summary": "The HaN-Seg dataset contains anonymized head and neck images of 42 patients obtained from CT and T1-weighted MR imaging for radiotherapy planning, along with reference segmentations of 30 organs-at-risk (OARs) in the form of binary segmentation masks for CT images. The dataset is used to promote the development of automated techniques for OAR segmentation in the head and neck region from CT images that exploit information from multiple imaging modalities, including CT and MR. The challenge involves segmenting up to 30 OARs from CT images in a test set of 14 images, given the availability of a training set with 42 CT and MR images and reference segmentation masks.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "2a742777e4d7cc10169d88a5b5c88e45b946e8b230bfd1990df342e7a6501897",
+  "input_chars": 2678,
+  "summary_chars": 671,
+  "input_mpnet_tokens": 756,
+  "summary_mpnet_tokens": 145,
+  "generation_seconds": 12.56
+}

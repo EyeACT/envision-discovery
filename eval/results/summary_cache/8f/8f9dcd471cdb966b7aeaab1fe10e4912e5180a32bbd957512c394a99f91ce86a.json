@@ -1,0 +1,12 @@
+{
+  "summary": "This study analyzed gene expression and methylation data from 80 and 49 samples, respectively, to identify epigenetics-related differentially expressed genes associated with atherosclerosis subtypes. Weighted correlation network analysis and co-expression analysis were used to identify core genes involved in atherosclerosis development, revealing 32 mRNAs and seven lncRNAs. The study found that these genes were strongly related to inflammation and axon guidance, and a classifier based on these genes differentiated between atherosclerotic subtypes with high accuracy, with an area under the curve of 0.858 and 0.812 in two independent cohorts.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "045a6bc36e41cc3fb91dd0869e6dc7b0f12bf46cdcc714c2c7682f66c8600a0c",
+  "input_chars": 2646,
+  "summary_chars": 648,
+  "input_mpnet_tokens": 629,
+  "summary_mpnet_tokens": 139,
+  "generation_seconds": 11.82
+}

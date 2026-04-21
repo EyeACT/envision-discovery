@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset is a prospective collection of pediatric retinal images and corresponding clinical data, aimed at evaluating the effectiveness of autonomous artificial intelligence (AI) in diabetic retinopathy (DR) screening among youth with diabetes. The dataset will be used to assess the impact of AI on DR screening rates, disparities in access to screening, and cost-effectiveness in the healthcare system. The images will be collected using a non-mydriatic fundus camera, and the dataset will be used to inform future research and improve care for underserved minority and low-income youth.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e7fdb304a653f7da0efbfb7265fbfb3bf3ff19df04743c6efcf627d6aa5e546c",
+  "input_chars": 2555,
+  "summary_chars": 593,
+  "input_mpnet_tokens": 529,
+  "summary_mpnet_tokens": 124,
+  "generation_seconds": 10.09
+}

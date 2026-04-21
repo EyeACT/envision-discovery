@@ -1,0 +1,12 @@
+{
+  "summary": "This study investigated the role of intercellular communication in the retinal pigment epithelium (RPE)/choroid, a key ocular tissue, within the context of aging, senescence, and age-related macular degeneration (AMD). The analysis of publicly available scRNA-seq and microarray datasets from human donors with and without AMD identified age-regulated ligand and receptor genes, as well as cellular senescence scores, which were found to be positively correlated with age in bulk samples. The study revealed that VEGF-, BMP-, and tenascin-mediated pathways supported strong cell-cell interactions between RPE cells, fibroblasts, and choroidal endothelial cells, with predominant ligands upregulated and receptors downregulated with age.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "d9eb926634133d9e340341a0b8b709fdb8f0031a9341576d08a469830749228d",
+  "input_chars": 2148,
+  "summary_chars": 736,
+  "input_mpnet_tokens": 461,
+  "summary_mpnet_tokens": 174,
+  "generation_seconds": 13.89
+}

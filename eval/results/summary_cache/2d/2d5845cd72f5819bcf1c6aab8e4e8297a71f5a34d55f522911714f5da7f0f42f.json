@@ -1,0 +1,12 @@
+{
+  "summary": "The National Health and Nutrition Examination Surveys (NHANES) is a program assessing the health and nutritional status of adults and children in the United States through personal interviews and physical examinations. The surveys, conducted by the National Center for Health Statistics, examine a nationally representative sample of approximately 5,000 persons each year, with a focus on various health and nutrition measurements. Data collection includes blood samples, physical examinations, and interviews on risk factors such as smoking, alcohol consumption, and dietary intake, as well as information on chronic conditions, reproductive health, and vision.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "fb777e99b6f75ac3cf1636608253bbc49b76d1e5e7dd0a3b928eda2123ffbf24",
+  "input_chars": 5455,
+  "summary_chars": 662,
+  "input_mpnet_tokens": 1078,
+  "summary_mpnet_tokens": 113,
+  "generation_seconds": 10.23
+}

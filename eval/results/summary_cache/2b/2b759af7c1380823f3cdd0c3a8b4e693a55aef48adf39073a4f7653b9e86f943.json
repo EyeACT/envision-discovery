@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset involves the development of a novel ultrasound imaging technique for visualizing blood flow in the optic nerve head (ONH) and retrobulbar circulation, which are key areas affected in glaucoma. The technique utilizes high-frequency ultrasonic 2D arrays and a fully configurable ultrasound imaging system to provide high-resolution microvessel blood flow imaging. The dataset aims to fabricate and integrate the 2D array, implement 3D plane-wave imaging, and develop a 3D super-resolution ultrasound microvessel imaging algorithm using flow phantoms and in vivo rabbit eye imaging.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "736b97d82428b47f72828ba38a8a1d7127db6b2ce59de035b5ccce6594db52f0",
+  "input_chars": 3384,
+  "summary_chars": 592,
+  "input_mpnet_tokens": 715,
+  "summary_mpnet_tokens": 122,
+  "generation_seconds": 7.82
+}

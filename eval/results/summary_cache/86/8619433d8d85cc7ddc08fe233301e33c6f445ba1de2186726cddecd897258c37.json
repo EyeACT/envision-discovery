@@ -1,0 +1,12 @@
+{
+  "summary": "This study investigated retinal vascular characteristics in type 1 diabetes mellitus (T1DM) patients using optical coherence tomography angiography (OCTA). A deep learning model was used to segment retinal arteries and veins on OCTA images, calculating metrics such as vessel density (VD) in different zones of the macula. The results showed that T1DM patients with non-proliferative diabetic retinopathy (NPDR) had significantly lower VD in each zone compared to control and non-DR groups, with early damage observed in the inferior parafoveal vein and superior parafoveal artery. In patients without DR, the arterial VD of the inferior parafovea increased with disease duration.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "9a54a6fea9ed5c9b33e02981c23ec132e7fa9334460e5bb50586bf7b0f0b70ed",
+  "input_chars": 2181,
+  "summary_chars": 680,
+  "input_mpnet_tokens": 549,
+  "summary_mpnet_tokens": 157,
+  "generation_seconds": 8.38
+}

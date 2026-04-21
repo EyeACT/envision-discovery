@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes a novel approach to restore vision in patients with inherited retinal diseases (IRD) using a virus to express a light-sensitive protein in specific retinal neurons, making them light-sensitive. The approach utilizes a common neuronal receptor modified to add a light-receptive function to remaining light-insensitive retinal neurons, compensating for photoreceptor degeneration and restoring light responsiveness to the retina. The receptor can be activated by either retinal or a synthetic chemical photoswitch delivered by intravitreal injection, allowing the cells to respond to light and send information to the brain to restore vision. This approach aims to overcome limitations of previous methods, including low light sensitivity and slow response times, by leveraging the natural amplification properties of GPCR signaling and a combinatorial approach using multiple optical sensor molecules.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e15d9bd85b284a41cfe01396dd40b2932eb9ff541de67bff4d849d6c85575974",
+  "input_chars": 2769,
+  "summary_chars": 923,
+  "input_mpnet_tokens": 573,
+  "summary_mpnet_tokens": 186,
+  "generation_seconds": 14.58
+}

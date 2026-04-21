@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of 8,151 spectral-domain optical coherence tomography (SDOCT) volumetric scans from 3,609 eyes, collected in a tertiary eye hospital in Hong Kong and external testing datasets from eye centres in Hong Kong, the United States, and Singapore. The scans were labelled as glaucomatous optic neuropathy (GON) based on retinal nerve fibre layer thinning and myopic features (MF) based on peripapillary atrophy, optic disc tilting, or fundus tessellation. The dataset was used to develop and evaluate a multi-task three-dimensional deep learning model for simultaneous detection of GON and MF.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "1a5f5a45d757161fbb93638e336034d0c98e14ccc30cdc2cf8bbbaee1f1cd6be",
+  "input_chars": 2302,
+  "summary_chars": 608,
+  "input_mpnet_tokens": 561,
+  "summary_mpnet_tokens": 151,
+  "generation_seconds": 12.44
+}

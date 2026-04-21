@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes a study comparing dosimetric differences between intraoperative radiotherapy (IORT), pre-operative single-fraction stereotactic radiosurgery (SRS), and post-operative external beam radiotherapy (EBRT) in glioblastoma treatment. Imaging series of previously treated patients were analyzed using pre-operative MRIs and planning CT scans to create target volumes for SRS and IORT. The study evaluated differences in target coverage, brain volume receiving 12 Gy or more, and doses to organs-at-risk, including the brain, optic nerves, and retina.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "28a52b1a4ca56bf554957c409a6bf7cd62a875b58354f1c3f6cd0a99fbf4d360",
+  "input_chars": 1999,
+  "summary_chars": 566,
+  "input_mpnet_tokens": 582,
+  "summary_mpnet_tokens": 128,
+  "generation_seconds": 10.17
+}

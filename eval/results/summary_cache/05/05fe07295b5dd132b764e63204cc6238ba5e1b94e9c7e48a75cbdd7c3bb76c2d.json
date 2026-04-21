@@ -1,0 +1,12 @@
+{
+  "summary": "This study aims to improve polygenic risk scores (PRS) for glaucoma by developing and testing PRS models on a diverse cohort of participants from the All of Us Research Program. The study will leverage whole genome sequencing data and an innovative tool that annotates variants according to their regulatory activity in eye tissues to enhance the predictive accuracy of trans-ancestry PRS models. Additionally, the study will analyze a multitude of data types, including clinical data, healthcare access, and social determinants of health, to better understand gene-environment interactions in glaucoma.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "dd13e0bfdbfb850e435aecf2d41c02156d6b3e1607d70c067e9773317f93a19f",
+  "input_chars": 2580,
+  "summary_chars": 603,
+  "input_mpnet_tokens": 517,
+  "summary_mpnet_tokens": 121,
+  "generation_seconds": 10.06
+}

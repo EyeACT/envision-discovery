@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset involves the study of age-related macular degeneration (AMD), a leading cause of blindness in the elderly population, through genome-wide association studies (GWAS) and statistical methods. The dataset includes imaging data from various sources, such as the Age-Related Eye Disease Study (AREDS) and the University of Michigan AMD study, as well as demographic, clinical, and genetic information from over 4,000 eligible samples. The dataset aims to develop and validate statistical models for predicting AMD occurrence and progression, identify disease-susceptibility loci in African Americans, and develop methods for rare variant association tests in families.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "6f3537099b8594e766ebcba5c7ab581513929ad0cc848aec8d23d02dabedfdc8",
+  "input_chars": 3135,
+  "summary_chars": 676,
+  "input_mpnet_tokens": 609,
+  "summary_mpnet_tokens": 139,
+  "generation_seconds": 11.87
+}

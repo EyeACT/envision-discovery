@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains 36,161 observations and 43 variables from the 2024 Nigeria Demographic and Health Survey (NDHS), including socio-demographic characteristics, reproductive history, and COVID-19-related knowledge and symptoms. The primary outcome variable is COVID-19 vaccine uptake, coded as a binary indicator. The dataset was preprocessed using data cleaning, handling missing data, feature engineering, and categorical encoding to enhance predictive performance for supervised machine learning models.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "01c7424866b16502a0be55501abaead84c94ace04d3255642c942238fc7a56c7",
+  "input_chars": 3503,
+  "summary_chars": 509,
+  "input_mpnet_tokens": 683,
+  "summary_mpnet_tokens": 101,
+  "generation_seconds": 8.52
+}

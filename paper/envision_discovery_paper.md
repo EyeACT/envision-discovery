@@ -93,6 +93,36 @@ Training examples use full metadata text (title + description + keywords), avera
 
 For each record, the classifier receives a concatenation of the title, description (with HTML tags removed), and keywords as a single text input. This combined representation provides sufficient context for the embedding model to capture both domain specificity (ophthalmology vs. other fields) and data-type specificity (imaging data vs. software vs. publications).
 
+### 2.4.5 Description Summarization for Over-Length Records
+
+MPNet's 512-token context window cannot accommodate all records in our corpus. In the 356-record stratified expert-validation sample, 77 records (21.6%) exceed this budget once title, description, and keywords are concatenated; across the full 4,674-record corpus, approximately the same proportion is over-budget. Handling these records requires a principled choice, because length-blind truncation throws away the segments most likely to contain the discriminative signals (imaging modality, anatomical focus, study subjects) — these are typically introduced in the methods or study-design paragraphs that follow a lengthy clinical or scientific background.
+
+We considered three strategies and adopted the third.
+
+**Strategy 1: Long-context backbone.** We benchmarked six embedding backbones against MPNet on a held-out 92-record spot-check set drawn from the Zenodo corpus (Table 3), including two long-context models from the ModernBERT family (Warner et al., 2024; 8,192-token context) and three additional 512-token models for comparison. Long-context backbones did not improve accuracy: ModernBERT-large scored 83/92, ModernBERT-base 79/92, and Snowflake-arctic-embed-l-v2.0 77/92 — all below MPNet's 84–85/92. In addition, ModernBERT-large requires approximately 3.6× the parameter count (395M vs 110M) and correspondingly more inference VRAM. Adopting a long-context backbone would have traded measurable task accuracy for a nominal context-window advantage while increasing deployment cost. We therefore retained MPNet.
+
+| Backbone | Context | Params | Spot-check (n=92) |
+|---|---|---|---|
+| mixedbread-ai/mxbai-embed-large-v1 | 512 | 335M | 86 |
+| MPNet + cosine warmup | 512 | 110M | 85 |
+| MPNet (baseline, deployed) | 512 | 110M | 84 |
+| lightonai/modernbert-embed-large | 8192 | 395M | 83 |
+| intfloat/e5-large-v2 | 512 | 335M | 82 |
+| nomic-ai/modernbert-embed-base | 8192 | 149M | 79 |
+| Snowflake/snowflake-arctic-embed-l-v2.0 | 8192 | 567M | 77 |
+
+**Table 3.** *Backbone comparison on a 92-record held-out spot-check set. Long-context models (ModernBERT-base, ModernBERT-large, Snowflake-arctic-embed-l-v2.0, all 8,192-token context) all scored below MPNet's 512-token deployment, motivating a preprocessing-based rather than architecture-based solution to record length.*
+
+**Strategy 2: Truncation.** Hard-truncating over-length descriptions at 512 tokens systematically discards the methods- and data-describing paragraphs we rely on for classification. In an earlier deployment of our pipeline, a pre-tokenization character slice inadvertently reduced all inputs to approximately 100 tokens (≈512 characters in English, below the tokenizer's 512-token budget); we diagnosed and corrected this artifact, which on long records is the strategy-2 failure mode in its extreme form.
+
+**Strategy 3: Task-scoped LLM summarization (adopted).** For any record whose combined title+description+keywords exceeds 512 MPNet tokens, the description is replaced with a 2–4 sentence abstractive summary produced by Llama-3.1-8B-Poster-Extraction (FAIR Data Innovations Hub), an instruction-tuned variant of Llama-3.1-8B we host via HuggingFace. The model is loaded with bitsandbytes 4-bit NF4 quantization (Dettmers et al., 2023) and bf16 compute, resident in approximately 6 GB of GPU memory. The summarization prompt is scoped to the classification task: it instructs the model to preserve imaging modalities (OCT, OCTA, fundus, slit-lamp, MRI, etc.), anatomical structures (retina, cornea, optic nerve, etc.), data formats (images, tables, code, segmentation masks), and study subjects (human, animal, phantom), while dropping author biographies, funding boilerplate, and bibliography fragments. The original description is retained verbatim in a sibling field (`description_original`) for auditing; a per-record metadata block records the model identifier, prompt version, quantization configuration, a SHA-256 of the input, and the MPNet token counts before and after.
+
+**Reproducibility.** The pipeline uses greedy decoding (`do_sample=False`), so output is a deterministic function of input, model weights, prompt, and CUDA kernel selection. Before any production generation, a fixed warmup string is summarized three times back-to-back and the SHA-256 of each output is compared; generation proceeds only if all three hashes are identical. This self-check is required because driver or kernel-selection drift can silently introduce non-determinism on a nominally greedy pipeline. A disk cache keyed on SHA-256 of (input text, model identifier, prompt version, quantization configuration) guarantees that any cached summary was produced with exactly the configuration in the key, and that no input is re-summarized across runs. The cache is committed to the repository alongside the classification corpus.
+
+**Train/test consistency.** The same summarization gate is applied to the training corpus prior to classifier fitting. Records that are summarized at inference time are drawn from the same distribution as records that were summarized at training time, so the preprocessing step itself introduces no train/test shift. We report classifier performance after this preprocessing step in Section 3.X.
+
+**Validity instrumentation.** We report three validity checks alongside the main performance results: (a) per-record audit by an ophthalmology-literate reviewer on a random subset of 30 summaries, scored for factual fidelity (no hallucinated modality, anatomy, or subject); (b) hallucination-rate estimate across the 77 summarized records in the validation set; and (c) an A/B comparison of classifier performance on the held-out test set with original-description input versus summarized input, reported as per-class ΔF1.
+
 ## 2.5 Expert Validation Protocol
 
 To rigorously evaluate classifier performance across repositories, we designed a multi-validator expert review protocol using stratified sampling from all six data sources.

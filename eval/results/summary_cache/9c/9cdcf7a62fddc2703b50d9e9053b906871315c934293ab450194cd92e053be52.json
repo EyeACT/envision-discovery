@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains preprocessed image patches of capsid structures, categorized into seven classes: full capsid, partially full capsid, empty capsid, aggregation, ice, broken capsid, and background. The patches are stored in a compressed folder (All_Patches_resized.zip) and accompanied by a labeled CSV file (names_labels_df.csv.zip) containing 94,830 instances with corresponding class labels. The images are named according to their dataset, original image ID, and annotation ID, and were randomly sampled and balanced for training and testing.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e9269866079acd1c33e26b1a2d2bf6a9123c6e1e247abf8ff41fcc958f3af894",
+  "input_chars": 1930,
+  "summary_chars": 550,
+  "input_mpnet_tokens": 502,
+  "summary_mpnet_tokens": 127,
+  "generation_seconds": 10.23
+}

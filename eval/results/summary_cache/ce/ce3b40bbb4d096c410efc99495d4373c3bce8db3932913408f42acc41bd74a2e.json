@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes the association of genetic and environmental factors in Korean patients with exudative age-related macular degeneration (AMD), including its subtypes, polypoidal choroidal vasculopathy (PCV) and typical choroidal neovascularization (CNV). Full ophthalmologic examinations, including fluorescein angiography, indocyanine green angiography, and optical coherence tomography (OCT), were performed on 314 patients and 395 control subjects. Genetic association and logistic regression analyses were conducted on 86 SNPs from 31 candidate genes, identifying ARMS2/HTRA1 as a significant genetic risk factor for exudative AMD and its subtypes.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "31320d0a88b169ac84d24b4665c909a73978ba6e7b716b0724e677437a4d451f",
+  "input_chars": 2629,
+  "summary_chars": 659,
+  "input_mpnet_tokens": 668,
+  "summary_mpnet_tokens": 156,
+  "generation_seconds": 14.42
+}

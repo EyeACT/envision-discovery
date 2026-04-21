@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of three simultaneous EEG-fMRI datasets collected from the same group of subjects in three conditions: resting-state, a sparse event-related task with auditory cues followed by a deep breath, and a sparse event-related task with auditory cues followed by a button response. The dataset includes anatomical (T1w) and functional MRI images in raw nifti format, EEG data in minimally-preprocessed.mat files, and peripheral physiology data (PPG, Respiratory) trimmed to the start and end of the fMRI scans. The EEG data has been preprocessed using the BrainVision Analyzer software, correcting for gradient artifacts and ballistocardiogram artifacts.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "958b3ece7b1d1d2a14af904a9534f5480e0dea07b41a9584ca86c87d8ef38016",
+  "input_chars": 2000,
+  "summary_chars": 668,
+  "input_mpnet_tokens": 472,
+  "summary_mpnet_tokens": 152,
+  "generation_seconds": 11.94
+}

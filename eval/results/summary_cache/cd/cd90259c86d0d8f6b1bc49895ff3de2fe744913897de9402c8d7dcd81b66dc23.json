@@ -1,0 +1,12 @@
+{
+  "summary": "This project aims to develop robust machine learning models for diabetic retinopathy (DR) classification and prediction of proliferative DR progression using optical coherence tomography angiography (OCTA) data from multiple institutions. The study will establish a distributed federated learning framework to train models without sharing patient data, using data cohorts from Stanford University, University of Illinois Chicago, and National Taiwan University. The framework will integrate adaptive domain alignment and enhanced data representation learning capability to improve model accuracy, and will be validated on new longitudinal data from UIC and NTU.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "525a6c8dd2aa6e4c8f6ad432a10e5784a420cea4da258260a81d50790fa7f51c",
+  "input_chars": 3248,
+  "summary_chars": 661,
+  "input_mpnet_tokens": 636,
+  "summary_mpnet_tokens": 119,
+  "generation_seconds": 9.87
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This study explores the use of optical coherence tomography (OCT) and OCT angiography (OCTA) as a non-invasive solution to differentiate Alzheimer's disease (AD), mild cognitive impairment (MCI), and healthy controls (HCs). Retinal parameters extracted from OCT/OCTA examinations were analyzed in 357 participants, revealing significant microvascular density reductions around the fovea in MCI and AD compared to HCs, as well as age-related thickness parameter associations with HCs' old age. Significant thickness/volume reductions in Inner_Retina and Full_Retina layers were also linked to AD and MCI groups.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "8d22b9e9b58e7ac8b3c46a6be526880455763fc7e7baf58f491e69335c536c00",
+  "input_chars": 2000,
+  "summary_chars": 610,
+  "input_mpnet_tokens": 480,
+  "summary_mpnet_tokens": 138,
+  "generation_seconds": 11.98
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset involves the development of imaging techniques, including SPLM and IPOL, to study the optic nerve head (ONH) in glaucoma. The techniques provide micron-scale information on the architecture of the ONH, including collagen fiber alignment and crimp, and allow for the measurement of local mechanical properties under controlled load. The dataset aims to investigate the relationship between ONH biomechanical sensitivity to intraocular pressure (IOP), age, and tissue architecture, with a focus on identifying regions susceptible to damage in early glaucoma.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "34ef5223bbca044fbeb8d57335bdcf8c4a66b83a0b076326651c54253a5b2cc8",
+  "input_chars": 3283,
+  "summary_chars": 569,
+  "input_mpnet_tokens": 701,
+  "summary_mpnet_tokens": 123,
+  "generation_seconds": 9.96
+}

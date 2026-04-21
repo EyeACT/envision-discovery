@@ -1,0 +1,12 @@
+{
+  "summary": "This study aimed to develop and validate an interpretable machine learning model to detect vision-threatening diabetic retinopathy (VTDR) among patients with diabetic retinopathy (DR) using retrospective clinical data from electronic medical records. The dataset consisted of 1,124 patients, with a 36.9% prevalence of VTDR, and was used to train and evaluate eight machine learning models, with the Support Vector Machine (SVM) model demonstrating superior performance. The SVM model achieved an AUC of 0.879, accuracy of 0.837, and F1 score of 0.756, and was interpreted using Shapley Additive Explanations (SHAP).",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "0fef302df7f6c15ac6f163fa767c8089402a5f3580c3f24420ad345a1e71aa74",
+  "input_chars": 2000,
+  "summary_chars": 616,
+  "input_mpnet_tokens": 452,
+  "summary_mpnet_tokens": 143,
+  "generation_seconds": 12.25
+}

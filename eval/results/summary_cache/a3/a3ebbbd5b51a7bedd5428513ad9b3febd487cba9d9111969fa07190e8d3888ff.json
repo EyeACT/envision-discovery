@@ -1,0 +1,12 @@
+{
+  "summary": "This study developed machine learning models for diagnosing Parkinson's disease using structural MRI features from the brain, specifically from cerebellar, subcortical, and cortical regions. The models were trained on a dataset of 60 patients with Parkinson's disease and 56 normal controls, and then validated on an independent dataset of 69 patients with Parkinson's disease and 71 normal controls. The most discriminating features selected included measures of cerebellar, subcortical, and cortical structures, such as thickness, volume, and asymmetry indices.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "b38ccfc7ec767f5922dcb5ef93ceb6a10e4669238d9a0fee43d6a59963ca5736",
+  "input_chars": 2000,
+  "summary_chars": 563,
+  "input_mpnet_tokens": 463,
+  "summary_mpnet_tokens": 121,
+  "generation_seconds": 9.96
+}

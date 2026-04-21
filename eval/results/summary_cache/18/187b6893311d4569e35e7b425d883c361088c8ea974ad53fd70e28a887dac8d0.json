@@ -1,0 +1,12 @@
+{
+  "summary": "The Brazilian Multilabel Ophthalmological Dataset (BRSET) comprises 16,266 color fundus retinal photos from 8,524 Brazilian patients, including sociodemographic information and labeled images for anatomical features, quality control, and pathologies. The dataset includes images from two camera models (Canon CR2 and Nikon NF5050) and contains information on diabetic retinopathy, optic disc, blood vessels, and macula abnormalities. A ConvNext model was trained and evaluated on BRSET for four prediction tasks, including diabetic retinopathy diagnosis, diabetes diagnosis, and sex classification, achieving high performance metrics such as AUC and F1-score.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "5e6ce2fdeb014e50d30eaf84ee42878b9810b2cd5134172279c050fa768d3766",
+  "input_chars": 2448,
+  "summary_chars": 659,
+  "input_mpnet_tokens": 566,
+  "summary_mpnet_tokens": 148,
+  "generation_seconds": 11.82
+}

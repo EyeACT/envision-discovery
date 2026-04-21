@@ -1,0 +1,12 @@
+{
+  "summary": "Simulated discharge time-series data for the River Kent at Sedgwick were generated using the Dynamic TOPMODEL, incorporating observed rainfall data and a Digital Elevation Model (DEM) representing 'Enhanced Hillslope Storage' features. The baseline simulations were derived from 10,000 model runs, with 67 acceptable simulations selected based on prescribed criteria. The dataset includes two sets of simulations: baseline and with the addition of 'Enhanced Hillslope Storage' features, representing a Natural Flood Management intervention.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "4b014e2d94b814a3c213a8011e779532c9dd0874e531445e4b90d8d7b56817f9",
+  "input_chars": 2402,
+  "summary_chars": 540,
+  "input_mpnet_tokens": 596,
+  "summary_mpnet_tokens": 101,
+  "generation_seconds": 8.99
+}

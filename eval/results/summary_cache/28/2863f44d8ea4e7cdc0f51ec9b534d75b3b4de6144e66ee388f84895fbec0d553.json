@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes a long-term follow-up study of three patients with Doyne honeycomb retinal dystrophy (DHRD) who underwent nanosecond laser treatment (2RT) in one or both eyes. The patients underwent regular examinations, including spectral domain optical coherence tomography (OCT), central perimetry, and electroretinograms, at baseline and up to 30 months post-treatment. The study found improvements or stabilization in some retinal function parameters, including visual acuity, perimetric sensitivity, and electroretinogram amplitude, without significant structural changes in OCT central macular thickness and retinal structure.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "ea7cd8b82c9d8446d05b530856c737ba886b19fdd1f2b55bde9322bd7df59561",
+  "input_chars": 2031,
+  "summary_chars": 640,
+  "input_mpnet_tokens": 489,
+  "summary_mpnet_tokens": 140,
+  "generation_seconds": 10.46
+}

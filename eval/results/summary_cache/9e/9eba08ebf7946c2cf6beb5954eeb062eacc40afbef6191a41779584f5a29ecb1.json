@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains preliminary data for the AWARE2.0 model, organized into two groups: stochastic and prospective. The stochastic group includes data used to generate uncertainty parametrizations for discharge-related input variables, Monte Carlo simulation results, and uncertainty distributions expressed as parametric functions. The prospective group includes ActAvail and CF data used to calculate model-specific climate-prospective and fully prospective ensemble results, as well as ensemble means and spatiotemporally aggregated CFs.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "875cf528f8f80279cafc75b3782d23667e5cd45b90da13bcdc309a13c733ab8d",
+  "input_chars": 2794,
+  "summary_chars": 542,
+  "input_mpnet_tokens": 721,
+  "summary_mpnet_tokens": 104,
+  "generation_seconds": 8.88
+}

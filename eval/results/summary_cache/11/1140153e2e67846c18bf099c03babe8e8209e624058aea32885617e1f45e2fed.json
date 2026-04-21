@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset describes the development of a multimodal VIS-OCT platform for retinal imaging, incorporating two novel technologies: quantitative fundus autofluorescence (FAF) or VIS-OCT-FAF, and retinal nerve fiber layer (RNFL) spectral contrast OCT or DUAL-OCT-RNFL. The platform will utilize a VIS-OCT centered at 480 nm, a NIR-OCT centered at 840 nm, and a FAF detection module, with a reference target to normalize raw data and obtain absolute FAF intensity and quantitative RNFL spectral reflectance. The dataset includes studies in phantom models, albino and pigmented rats, and human subjects, including normal individuals and patients with early dry AMD, Stargardt's disease, and glaucoma.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e6d8bbc869302c076f47789a050a5ffe83d5d70c6ca17b27158c46e3a404991a",
+  "input_chars": 3174,
+  "summary_chars": 696,
+  "input_mpnet_tokens": 726,
+  "summary_mpnet_tokens": 167,
+  "generation_seconds": 14.26
+}

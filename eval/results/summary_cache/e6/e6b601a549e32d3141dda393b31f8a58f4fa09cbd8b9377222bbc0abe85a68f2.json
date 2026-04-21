@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset aims to develop a risk-stratification system for microbial keratitis (MK), a debilitating infectious corneal disease, by quantifying dynamic morphologic and clinical features using image and electronic health record (EHR) analyses. The proposed research will utilize existing clinical equipment to develop objective image analysis tools and evaluate MK treatment efficacy using morphologic image analysis and clinical features from prospective surveys. The expected outcomes include characterized databases of MK images and linked clinical data, quantified MK features across a spectrum of clinical presentations, and a novel risk stratification model and scoring system.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "57048895a381814ee28102aa07cc9ae08734cd6fe646cc4e32f79daa08713daa",
+  "input_chars": 3053,
+  "summary_chars": 684,
+  "input_mpnet_tokens": 617,
+  "summary_mpnet_tokens": 129,
+  "generation_seconds": 10.31
+}
