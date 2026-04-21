@@ -19,17 +19,18 @@ DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
 # All repository sources and their eye_imaging result files
 SOURCES = {
     "zenodo": "results/zenodo_eye_imaging.json",
-    "datacite": "results/datacite_eye_imaging.json",
+    # "datacite": "results/datacite_eye_imaging.json",
     "figshare": "results/figshare_eye_imaging.json",
-    "kaggle": "results/kaggle_eye_imaging.json",
+    # "kaggle": "results/kaggle_eye_imaging.json",
     "dryad": "results/dryad_eye_imaging.json",
-    "nei": "results/nei_eye_imaging.json",
+    # "nei": "results/nei_eye_imaging.json",
 }
 
 # Metadata directories (pre-fetched per-record JSON, if available)
 METADATA_DIRS = {
     "zenodo": "data/metadata/zenodo",
     "figshare": "data/metadata/figshare",
+    "dryad": "data/metadata/dryad",
 }
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
@@ -61,6 +62,11 @@ def _build_record_from_result(record, source):
 
     # Try to get richer metadata from pre-fetched files
     source_id = record.get("source_id", record.get("zenodo_id", ""))
+
+    # if dryad is in the source_id, convert the / to _ to match the filename format in the metadata directory
+    if source == "dryad" and "/" in source_id:
+        source_id = source_id.replace("/", "_")
+
     metadata_dir = METADATA_DIRS.get(source)
     creators = []
     publication_date = ""
@@ -95,6 +101,10 @@ def _build_record_from_result(record, source):
                         break
             if not publication_date and meta.get("created"):
                 publication_date = meta["created"].split("T")[0]
+
+            print(
+                f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
+            )
             publication_year = (
                 publication_date.split("-")[0]
                 if publication_date
@@ -128,17 +138,28 @@ def _build_record_from_result(record, source):
                 )
 
     # Timestamp
-    created_raw = record.get("created", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    created_raw = publication_date or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(
+        f"    Using publication date: {publication_date} for source_id: {source_id} (source: {source}) {created_raw}"
+    )
+
     if isinstance(created_raw, str) and "T" in created_raw:
         try:
             created_dt = datetime.fromisoformat(created_raw.replace("Z", "+00:00"))
         except ValueError:
             created_dt = datetime.now()
     else:
-        try:
-            created_dt = datetime.strptime(str(created_raw), "%Y-%m-%d %H:%M:%S")
-        except (ValueError, TypeError):
+        for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+            try:
+                created_dt = datetime.strptime(str(created_raw), fmt)
+                break
+            except (ValueError, TypeError):
+                pass
+        else:
             created_dt = datetime.now()
+    print(
+        f"    Parsed created datetime: {created_dt} from raw value: {created_raw} for source_id: {source_id} (source: {source})"
+    )
     created_unix_timestamp = int(created_dt.timestamp())
 
     dataset_id = cuid_generator()

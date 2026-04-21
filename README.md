@@ -4,13 +4,22 @@ Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across 7 
 
 Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innovations Hub](https://fairdataihub.org).
 
-## Installation
+## Quick Start
+
+This project uses [mise](https://mise.jdx.dev) to manage tool versions (Python 3.12, uv) and [uv](https://docs.astral.sh/uv/) for dependency management.
+
+### Prerequisites
+
+Install mise by following the [mise installation guide](https://mise.jdx.dev/getting-started.html).
+
+### Install dependencies
 
 ```bash
-git clone https://github.com/EyeACT/envision-discovery.git
-cd envision-discovery
-pip install -r requirements.txt
-pip install -e .
+# Install Python 3.12 and uv (as specified in mise.toml)
+mise install
+
+# Install project dependencies
+uv pip install -r requirements.txt
 ```
 
 **Requirements**: Python >= 3.10, [envision-classifier](https://github.com/EyeACT/envision-classifier) (installed automatically)
@@ -71,20 +80,21 @@ envision-conform --source zenodo --source-id 4521044   # one record
 ### Scrapers
 
 All 7 scrapers follow the same pattern:
+
 - Save per-record JSON to `data/metadata/{source}/` as they scrape
 - Resume automatically on restart (skip already-scraped records)
 - Proactive rate limiting (delay before every API call) + unlimited exponential backoff retries
 - Shared search terms across 47 ophthalmology-specific queries
 
-| Source | API | Rate Limit | Archive Inspection | Notes |
-|--------|-----|-----------|-------------------|-------|
-| **Zenodo** | REST + Elasticsearch | 2s/req | ZIP, TAR | AND-required queries, date-range pagination |
-| **Figshare** | REST (POST) | 1s (0.3s with token) | ZIP, TAR | Set `FIGSHARE_ACCESS_TOKEN` in `.env` |
-| **DataCite** | REST | 1s/req | N/A (metadata only) | Indexes DOIs across repositories |
-| **Kaggle** | REST | 1s/req | ZIP, TAR | Requires `KAGGLE_API_TOKEN` |
-| **Dryad** | REST | 1.5s/req | ZIP, TAR | Small corpus |
-| **NEI** | NIH RePORTER (POST) | 1.5s/req | N/A (grants) | Eye-specific by definition |
-| **OSF** | REST v2 search | 2s/req | ZIP, TAR | Set `OSF_TOKEN` in `.env` for higher limits |
+| Source       | API                  | Rate Limit           | Archive Inspection  | Notes                                       |
+| ------------ | -------------------- | -------------------- | ------------------- | ------------------------------------------- |
+| **Zenodo**   | REST + Elasticsearch | 2s/req               | ZIP, TAR            | AND-required queries, date-range pagination |
+| **Figshare** | REST (POST)          | 1s (0.3s with token) | ZIP, TAR            | Set `FIGSHARE_ACCESS_TOKEN` in `.env`       |
+| **DataCite** | REST                 | 1s/req               | N/A (metadata only) | Indexes DOIs across repositories            |
+| **Kaggle**   | REST                 | 1s/req               | ZIP, TAR            | Requires `KAGGLE_API_TOKEN`                 |
+| **Dryad**    | REST                 | 1.5s/req             | ZIP, TAR            | Small corpus                                |
+| **NEI**      | NIH RePORTER (POST)  | 1.5s/req             | N/A (grants)        | Eye-specific by definition                  |
+| **OSF**      | REST v2 search       | 2s/req               | ZIP, TAR            | Set `OSF_TOKEN` in `.env` for higher limits |
 
 ### Output
 
@@ -92,10 +102,10 @@ Each scraper saves per-record JSON to `data/metadata/{source}/{source_id}.json`.
 
 Classification results go to `results/`:
 
-| File | Description |
-|------|-------------|
+| File                        | Description                                             |
+| --------------------------- | ------------------------------------------------------- |
 | `{source}_eye_imaging.json` | Records classified as EYE_IMAGING, sorted by confidence |
-| `{source}_all_results.json` | All classified records with binary labels |
+| `{source}_all_results.json` | All classified records with binary labels               |
 
 Each classified record:
 
@@ -129,10 +139,10 @@ Each classified record:
 
 ### Classification labels
 
-| Label | Description |
-|-------|-------------|
-| **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, slit-lamp, anterior segment) |
-| **NEGATIVE** | Everything else (non-eye data, software/code, eye-adjacent non-imaging, non-eye medical imaging) |
+| Label           | Description                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| **EYE_IMAGING** | Actual eye imaging datasets (fundus, OCT, OCTA, cornea, slit-lamp, anterior segment)             |
+| **NEGATIVE**    | Everything else (non-eye data, software/code, eye-adjacent non-imaging, non-eye medical imaging) |
 
 ## Repository structure
 
