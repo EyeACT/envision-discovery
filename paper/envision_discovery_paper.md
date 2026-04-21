@@ -121,11 +121,11 @@ We considered three strategies and adopted the third.
 
 **Train/test consistency.** The same summarization gate is applied to the training corpus prior to classifier fitting. Empirically, no training example in any of the four class lists (EYE_IMAGING, EYE_SOFTWARE, OTHER_EYE_DATA, NEGATIVE; 891 total) exceeds the 512-token budget — the training corpus was curated as short, high-signal examples with a maximum of 236 MPNet tokens and a mean of 70 tokens. The gate therefore triggers only on the tail of longer real-world records encountered at inference; no retrain is required to accommodate the preprocessing step. This is a feature of the curated training set: because training examples are already short, the deployed model has never been exposed to input-distribution shift from the summarization operation.
 
-**Validity results.** We ran three validity checks on the 77 summarized records in the expert-validation sample; all three support the information-preservation claim:
+**Validity results.** We ran three validity checks. The hallucination and expert-audit checks support the information-preservation claim at the surface-semantic level; the classifier A/B check, together with the labeled evaluation in Section 3.4, surfaces a genuine limitation of the current summarization prompt on hard-negative inputs.
 
-1. *Whitelist-based hallucination check.* Each summary was scanned for mentions of 84 imaging-modality, anatomy, study-subject, and data-format terms from a fixed whitelist, and each claimed term was checked against the original description with synonym-class equivalences for common abbreviation-expansion pairs (MRI ↔ magnetic resonance imaging, OCT ↔ optical coherence tomography, ONH ↔ optic nerve head, etc.). Across 77 summaries and 215 total whitelist claims, **0 unsupported claims** were detected (0% record-level, 0% claim-level hallucination rate). This is a coarse check that cannot detect synonym-level drift; the expert audit below provides the complementary rigorous measurement.
+1. *Whitelist-based hallucination check.* Each summary was scanned for mentions of 84 imaging-modality, anatomy, study-subject, and data-format terms from a fixed whitelist, and each claimed term was checked against the original description with synonym-class equivalences for common abbreviation-expansion pairs (MRI ↔ magnetic resonance imaging, OCT ↔ optical coherence tomography, ONH ↔ optic nerve head, etc.). Across 77 summaries and 215 total whitelist claims, **0 unsupported claims** were detected (0% record-level, 0% claim-level hallucination rate). This is a coarse check that cannot detect synonym-level drift or omissions of disambiguating context; the classifier A/B check below captures one concrete failure of the latter kind.
 
-2. *Classifier A/B on preserved task signal.* The deployed classifier was applied to all 77 records twice — once with the original full-length description and once with the summary — using the same title and keywords in both arms. Label agreement between the two arms was **90.9% (70/77)**; mean confidence change was +0.019 (the summary arm was slightly more confident on average). Manual inspection of the 2 EYE_IMAGING → NEGATIVE flips found that both represented corrections rather than regressions: one was a brain-MRI-for-Parkinson's-disease record that should never have been classified EYE_IMAGING, and the other was an NEI center-core-grant record describing research infrastructure rather than a dataset. The 5 NEGATIVE → EYE_IMAGING flips (all with high post-summary confidence, 0.94–0.98) are released in `eval/results/ab_summarization_results.json` for case-level inspection.
+2. *Classifier A/B on preserved task signal.* The deployed classifier was applied to all 77 records twice — once with the original full-length description and once with the summary — using the same title and keywords in both arms. Label agreement between the two arms was **90.9% (70/77)**; mean confidence change was +0.019. Case-level inspection of the seven flips reveals a two-sided mix: at least two EYE_IMAGING → NEGATIVE flips are corrections (a brain-MRI-for-Parkinson's-disease dataset and an NEI center-core-grant record; see Section 3.5), while at least three flips in the labeled spot-check set (Section 3.4) are regressions on non-ocular OCT records, where summarization preserved the modality term "OCT" but compressed away the non-ocular application context. The 90.9% agreement rate therefore *bounds* both the correction rate and the regression rate; the expert validation protocol (Section 2.5) will provide the signed contribution. We release all four sets of per-record predictions at `eval/results/ab_summarization_results.json` and `eval/results/ab_backbone_results.json` for case-level inspection.
 
 3. *Expert audit.* A stratified random sample of 30 summaries (proportionally drawn across sources: 14 NEI, 11 Figshare, 4 DataCite, 1 Zenodo; seed = 42) was prepared as a CSV at `eval/results/summary_fidelity_audit_n30.csv` for review by an ophthalmology-literate annotator. Each row shows the original description and summary side-by-side and requests a fidelity score on a three-point scale (1 = faithful, 0 = minor paraphrase, −1 = hallucination or critical information dropped), plus free-text notes.
 
@@ -221,9 +221,51 @@ The classifier was evaluated on a stratified 20% held-out test set (Table 6).
 
 ## 3.4 Spot-Check Validation
 
-A spot-check validation of 33 manually verified Zenodo records was conducted to provide an initial estimate of real-world performance. Of 33 records evaluated, 30 (90.9%) were correctly classified, with an EYE_IMAGING precision of 0.875 and F1 of 0.824.
+An expanded spot-check set of 92 manually verified Zenodo records (15 EYE_IMAGING, 77 NEGATIVE) was used to benchmark the deployed classifier under realistic input conditions. Of these 92 records, 61 were available in the local metadata mirror at evaluation time (15 EYE_IMAGING, 46 NEGATIVE); the remaining 31 records (all NEGATIVE) were retired from the source repository between scrape and evaluation. Seventeen of the 61 records (27.9%) exceeded MPNet's 512-token budget in their joined (title + description + keywords) representation, making them the natural test of how each handling strategy performs on long inputs.
 
-## 3.5 Expert Validation Results
+We evaluated four configurations on these 61 labeled records — a 2×2 design over backbone (MPNet vs. ModernBERT-large, the best-scoring long-context alternative from the backbone comparison in Section 2.4.5) and input representation (original description vs. LLM summary). The "original" arms pass the full text to the tokenizer, which truncates at the backbone's native context length (384 tokens for the deployed MPNet SentenceTransformer, 8,192 for ModernBERT-large). The "summary" arms replace the description of long records with the Llama-generated summary described in Section 2.4.5 before tokenization; short records pass through unchanged. Results are reported in Table 7.
+
+| Configuration | Accuracy | Macro F1 | EYE_IMAGING F1 | NEGATIVE F1 |
+|---|---|---|---|---|
+| **MPNet, original text** (deployed) | **0.836** | **0.803** | **0.722** | **0.885** |
+| MPNet, summarized long records | 0.787 | 0.755 | 0.667 | 0.843 |
+| ModernBERT-large, original text | 0.705 | 0.673 | 0.571 | 0.775 |
+| ModernBERT-large, summarized long records | 0.689 | 0.665 | 0.578 | 0.753 |
+
+**Table 7.** *Spot-check performance (n=61 labeled records) across backbone × input-representation. MPNet with tokenizer-truncated original text achieves the highest macro F1; the LLM summarization step slightly reduces accuracy on this set, and the long-context ModernBERT backbone underperforms MPNet despite having no context-window constraint.*
+
+Restricting to the 17 records that exceeded 512 MPNet tokens (the subset where preprocessing decisions actually matter, Table 8) sharpens the finding.
+
+| Configuration | Accuracy | Macro F1 | EYE_IMAGING F1 |
+|---|---|---|---|
+| **MPNet, original text** (deployed) | **0.941** | **0.933** | **0.909** |
+| MPNet, summarized | 0.765 | 0.757 | 0.714 |
+| ModernBERT-large, original text | 0.882 | 0.837 | 0.750 |
+| ModernBERT-large, summarized | 0.824 | 0.798 | 0.727 |
+
+**Table 8.** *Long-records subset of the spot-check (n=17, >512 MPNet tokens). Tokenizer-truncated MPNet remains the strongest configuration; neither backbone swap nor LLM summarization improves on it in this evaluation.*
+
+On this labeled set, the LLM summarization step — which we developed explicitly to handle over-length inputs — does not deliver measurable improvement and in fact costs approximately three correct predictions out of 17 long records (a ~17-percentage-point drop in accuracy on the long subset). Case-level inspection identifies a consistent failure mode: all three regressions are *non-ocular optical coherence tomography (OCT)* records — a well-known hard-negative class in this domain, including "endoscopic OCT for epidural anesthesia," "wavenumber-dependent dynamic light scattering OCT," and "sub-diffusion flow velocimetry with OCT." The summarization prompt (Section 2.4.5) was scoped to preserve imaging modality but not application context; when the summarizer faithfully retains "OCT" while compressing the surrounding 1,000–2,000-token description into 100–200 tokens, the non-ocular disambiguating context (e.g., "epidural anesthesia") is lost. The MPNet tokenizer-truncated "original" arm, which sees the first ~1,500 characters of the description, retains that context and classifies correctly.
+
+This is a meaningful finding for deployment: the char-level truncation bug we diagnosed and corrected on 2026-04-20 — which had reduced effective input to ~100 tokens — was the critical performance regression. Once that bug is fixed, MPNet's native tokenizer truncation (to ~384 tokens) appears sufficient for this task, and additional abstractive preprocessing trades interpretability against a small accuracy loss on hard-negative long inputs. We release both the summarization pipeline and the empirical tradeoff data; downstream users can choose which pre-classifier text representation to deploy.
+
+## 3.5 Summarization Behavior on Unlabeled Production-Scale Inputs
+
+On the 77 long records in the expert-validation sample (no consensus ground-truth labels; drawn proportionally from NEI, Figshare, DataCite, Dryad, and Zenodo), we ran the same four configurations and report inter-configuration agreement rather than accuracy.
+
+| Comparison | Label agreement |
+|---|---|
+| MPNet original vs. MPNet summary | 0.909 (70/77) |
+| ModernBERT original vs. ModernBERT summary | 0.805 (62/77) |
+| MPNet original vs. ModernBERT original | 0.766 (59/77) |
+| MPNet summary vs. ModernBERT original | 0.779 (60/77) |
+| MPNet summary vs. ModernBERT summary | 0.792 (61/77) |
+
+**Table 9.** *Pairwise label agreement on 77 long expert-validation records. The two MPNet arms agree 90.9% of the time; cross-backbone agreement is substantially lower (~77-80%), suggesting MPNet and ModernBERT-large have meaningfully different decision boundaries on long, real-world inputs.*
+
+Manual case-level inspection of the seven MPNet original → summary flips in this sample found a mix of corrections and regressions: at least two flips toward NEGATIVE were corrections (a brain-MRI-for-Parkinson's dataset misclassified as EYE_IMAGING on the original text but correctly flipped to NEGATIVE after summarization; an NEI center-core-grant describing research infrastructure rather than a dataset), consistent with the hypothesis that summarization can improve predictions when the original text contains distracting background material. However, the labeled-test-set failure mode from Section 3.4 (non-ocular OCT) establishes that the same mechanism can also discard disambiguating context. Without labels for the 77-record sample we cannot decompose the 9% disagreement rate into corrections vs. regressions; the ongoing expert-validation protocol (Section 2.5) will provide that ground truth.
+
+## 3.6 Expert Validation Results
 
 *[This section will be populated following completion of expert validation across the 356 stratified records.]*
 

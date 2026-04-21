@@ -1,0 +1,12 @@
+{
+  "summary": "data and code from a study on plant-pathogen dynamics using label-free optical coherence tomography (OCT). The data is organized into four zip folders: Experiment 1, Experiment 2, OtherData, and example_Bscan_dynamicOCT. Experiment 1 includes dynamic OCT images, contrast optimization data, and segmentation data, while Experiment 2 contains dynamic OCT images, segmentation data, and timelapse data. OtherData includes z-stacks of dynamic OCT images for various plant species and nematodes. The dataset also includes scripts to generate figures and perform statistical tests. The data is stored in various formats, including.tif,.npy, and.csv files.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "9fd175b19b3f5673c66bb48858c75cfecfd1b56a9c3bd3b8cc8a1afe79f25043",
+  "input_chars": 9101,
+  "summary_chars": 650,
+  "input_mpnet_tokens": 3019,
+  "summary_mpnet_tokens": 148,
+  "generation_seconds": 12.68
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset was created to aid in the accurate placement of epidural anesthesia needles using a forward-view endoscopic optical coherence tomography (OCT) system. The system was tested in porcine backbones and used to develop deep learning models for binary classification of five tissue layers (fat, interspinous ligament, ligamentum flavum, epidural space, and spinal cord) with an average accuracy of 96.65%. Additionally, regression models were developed to estimate the safe distance between the needle tip and the dura mater with a mean absolute percentage error of 3.05%.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "c2196a11a0c9c3a381b10613cddcab19c13029828ebca68c764c18d0595e555b",
+  "input_chars": 3740,
+  "summary_chars": 579,
+  "input_mpnet_tokens": 1033,
+  "summary_mpnet_tokens": 128,
+  "generation_seconds": 11.16
+}

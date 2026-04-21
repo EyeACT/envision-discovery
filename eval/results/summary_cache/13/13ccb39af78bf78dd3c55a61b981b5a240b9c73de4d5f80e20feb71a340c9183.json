@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains raw data and analysis routines for sub-diffusion flow velocimetry using number fluctuation optical coherence tomography (OCT). The data includes 1D and 2D measurements of diffusion, focus calibration, and flow profiles for different discharge rates, with sampling rates of 5.5 kHz and time series lengths of 31,000 points. The data is analyzed using Python scripts, including Beam Shape.py, Doppler Angle.py, Flow Profile.py, and Number Density.py, which are used to determine beam waist, Doppler angle, flow profiles, and particle number density, respectively.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "c62726a1b32a0968bea52c517a76d29a344e31767ce53d65de14ef74cfa9879f",
+  "input_chars": 5639,
+  "summary_chars": 583,
+  "input_mpnet_tokens": 1752,
+  "summary_mpnet_tokens": 136,
+  "generation_seconds": 11.17
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains raw measurement files and analysis routines for wavenumber-dependent dynamic light scattering optical coherence tomography (OCT) measurements of collective and self-diffusion. The data was collected using both a custom-built OCT system and the Thorlabs OCT system, with measurements taken on concentrated and dilute suspensions of various samples, including Kostrosöl 10050, Levasil CS50-28, and mixed samples. The data is stored in various file formats, including.mat and.oct files, and is accompanied by Python scripts for analysis, including modules for reading and importing spectra from raw Thorlabs OCT files and performing data processing.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "bd3adba5a3824ac2e558b5ea732a99ff097e10fcdf48de76062b94db7c08cdb2",
+  "input_chars": 5217,
+  "summary_chars": 668,
+  "input_mpnet_tokens": 1920,
+  "summary_mpnet_tokens": 138,
+  "generation_seconds": 11.89
+}

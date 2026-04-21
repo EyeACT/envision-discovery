@@ -1,0 +1,154 @@
+{
+  "spot_check": {
+    "n": 61,
+    "n_long": 17,
+    "all_records_metrics": {
+      "mpnet_original": {
+        "accuracy": 0.8361,
+        "macro_f1": 0.803,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.95,
+            "recall": 0.8261,
+            "f1": 0.8837
+          },
+          "EYE_IMAGING": {
+            "precision": 0.619,
+            "recall": 0.8667,
+            "f1": 0.7222
+          }
+        }
+      },
+      "mpnet_summary": {
+        "accuracy": 0.7869,
+        "macro_f1": 0.755,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.9459,
+            "recall": 0.7609,
+            "f1": 0.8434
+          },
+          "EYE_IMAGING": {
+            "precision": 0.5417,
+            "recall": 0.8667,
+            "f1": 0.6667
+          }
+        }
+      },
+      "modernbert_original": {
+        "accuracy": 0.7049,
+        "macro_f1": 0.6732,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.9118,
+            "recall": 0.6739,
+            "f1": 0.775
+          },
+          "EYE_IMAGING": {
+            "precision": 0.4444,
+            "recall": 0.8,
+            "f1": 0.5714
+          }
+        }
+      },
+      "modernbert_summary": {
+        "accuracy": 0.6885,
+        "macro_f1": 0.6655,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.9355,
+            "recall": 0.6304,
+            "f1": 0.7532
+          },
+          "EYE_IMAGING": {
+            "precision": 0.4333,
+            "recall": 0.8667,
+            "f1": 0.5778
+          }
+        }
+      }
+    },
+    "long_records_only_metrics": {
+      "mpnet_original": {
+        "accuracy": 0.9412,
+        "macro_f1": 0.9328,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 1.0,
+            "recall": 0.9167,
+            "f1": 0.9565
+          },
+          "EYE_IMAGING": {
+            "precision": 0.8333,
+            "recall": 1.0,
+            "f1": 0.9091
+          }
+        }
+      },
+      "mpnet_summary": {
+        "accuracy": 0.7647,
+        "macro_f1": 0.7571,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1": 0.8
+          },
+          "EYE_IMAGING": {
+            "precision": 0.5556,
+            "recall": 1.0,
+            "f1": 0.7143
+          }
+        }
+      },
+      "modernbert_original": {
+        "accuracy": 0.8824,
+        "macro_f1": 0.8365,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.8571,
+            "recall": 1.0,
+            "f1": 0.9231
+          },
+          "EYE_IMAGING": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75
+          }
+        }
+      },
+      "modernbert_summary": {
+        "accuracy": 0.8235,
+        "macro_f1": 0.7984,
+        "per_class": {
+          "NEGATIVE": {
+            "precision": 0.9091,
+            "recall": 0.8333,
+            "f1": 0.8696
+          },
+          "EYE_IMAGING": {
+            "precision": 0.6667,
+            "recall": 0.8,
+            "f1": 0.7273
+          }
+        }
+      }
+    }
+  },
+  "long_validation": {
+    "n": 77,
+    "pairwise_agreement": {
+      "mpnet_orig_vs_mpnet_summ": 0.9091,
+      "mbert_orig_vs_mbert_summ": 0.8052,
+      "mpnet_orig_vs_mbert_orig": 0.7662,
+      "mpnet_summ_vs_mbert_orig": 0.7792,
+      "mpnet_summ_vs_mbert_summ": 0.7922
+    },
+    "mean_confidence": {
+      "mpnet_original": 0.9543,
+      "mpnet_summary": 0.9733,
+      "modernbert_original": 0.9442,
+      "modernbert_summary": 0.9866
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of 71 OCTA images of the superficial capillary plexus from 10 patients, captured using the Topcon DRI OCT Triton device, covering an area of 6x6 mm with a resolution of 320x320 pixels. The images were obtained in a real-world clinical setting and may contain noise or motion artifacts. The dataset is used to evaluate a method for generating high-resolution wide-field OCTA mosaics from overlapping scans, which is implemented in the accompanying code repository.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "86cc49a0b609da4818fe5df0b36a4a8c71e14370211f4b344ab458dc4a5e836a",
+  "input_chars": 3949,
+  "summary_chars": 485,
+  "input_mpnet_tokens": 1051,
+  "summary_mpnet_tokens": 107,
+  "generation_seconds": 9.65
+}

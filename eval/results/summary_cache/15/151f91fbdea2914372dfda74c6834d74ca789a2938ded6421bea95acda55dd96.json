@@ -1,0 +1,12 @@
+{
+  "summary": "The Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods (OCTDL) comprises over 2000 OCT images labeled according to disease group and retinal pathology, including categories such as Age-Related Macular Degeneration, Diabetic Macular Edema, and Retinal Artery Occlusion. The dataset is designed to facilitate the development and improvement of algorithms for the automatic processing and analysis of OCT images for early diagnosis and monitoring of eye diseases. The dataset is available in a CSV file format, containing information such as file name, disease, subcategory, condition, patient ID, eye, sex, year, image width, and image height.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e727f3a3299e2f054023ea98b0f3632208bbf88ea9a6c57dbf4f6c32db1d556a",
+  "input_chars": 2178,
+  "summary_chars": 665,
+  "input_mpnet_tokens": 622,
+  "summary_mpnet_tokens": 143,
+  "generation_seconds": 11.78
+}

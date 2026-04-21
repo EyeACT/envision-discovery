@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset, UTHealth - Fundus and Synthetic OCT-A Dataset (UT-FSOCTA), contains 112 subjects with fundus images and en-face OCT-A images, which have been manually aligned for training medical imaging machine learning pipelines. The dataset includes 45 degree macula centered fundus images acquired using an OptoVue iVue fundus camera, en-face OCT-A images of the superficial capillary plexus acquired using an OptoVue Avanti OCT camera, and synthetic OCT-A images generated using a custom conditional generative adversarial network. The dataset also includes vessel segmentations from two recent algorithms, SA-Unet and IterNet, and is available in various directories, including fov45, cropped, and synthetic_octa.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "34146a658a95d857cced45a32e96e66fb4bb270f4b5e99aff7f4a76f36e2b49b",
+  "input_chars": 7540,
+  "summary_chars": 717,
+  "input_mpnet_tokens": 2275,
+  "summary_mpnet_tokens": 171,
+  "generation_seconds": 13.49
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of various objects and files related to brain organoid and retinal organoid experiments, including ATAC, protein, and RNA data, as well as phospho-seq and multiome data. The objects include full_object.rds, rna_object.rds, multiome_object.rds, and retina.rds, which can be imported into Signac/Seurat using specific lines of code. The dataset also includes fragment files and index files for each object, such as fullobject_fragments.tsv.gz and retina_fragments.tsv.gz.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "3c04dec29c7fb15832bbb102439cabed32709b9bd1bc633bb882b8dfa911befa",
+  "input_chars": 3280,
+  "summary_chars": 491,
+  "input_mpnet_tokens": 1172,
+  "summary_mpnet_tokens": 137,
+  "generation_seconds": 10.11
+}

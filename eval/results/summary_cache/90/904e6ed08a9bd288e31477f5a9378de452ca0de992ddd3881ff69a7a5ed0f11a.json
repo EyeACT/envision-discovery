@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of processed 3D and 2D OCT (Optical Coherence Tomography) data from a leaf, including segmentation masks, en-face images, and refractive index calculations. The data is stored in NumPy files (.npy) and requires conversion from uint16 to double for further processing. The dataset is used to generate figures 2, 4, 5, and 7 in a publication, with scripts provided to reproduce these figures.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "1b6f826be5bc1ec38765bc5b5f6159d0c3a4d839c596270dab9c01c3169eb07e",
+  "input_chars": 3075,
+  "summary_chars": 412,
+  "input_mpnet_tokens": 1168,
+  "summary_mpnet_tokens": 96,
+  "generation_seconds": 8.59
+}

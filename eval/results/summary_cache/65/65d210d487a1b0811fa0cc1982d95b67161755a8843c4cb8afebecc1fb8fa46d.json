@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains files to reproduce the findings of a study on phase maps, including QuPath segmentation phase maps, AMICS software montages, and TIMA phase maps. The dataset includes various sub-folders containing images, tables, and code, such as QuPath segmentation phase maps, AMICS software montages, and TIMA phase maps, as well as scripts for generating phase maps and re-stitching AMICS software montages. The dataset is organized in a hierarchical structure with sub-folders containing data related to different experiments and imaging modalities, including SEM backscattered electron (BSE) imaging mode.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "f147d98d79c68ef4f7b74b0ff20854dc90783615e24e22d442b7cd174f27e57b",
+  "input_chars": 10170,
+  "summary_chars": 618,
+  "input_mpnet_tokens": 4138,
+  "summary_mpnet_tokens": 135,
+  "generation_seconds": 11.72
+}

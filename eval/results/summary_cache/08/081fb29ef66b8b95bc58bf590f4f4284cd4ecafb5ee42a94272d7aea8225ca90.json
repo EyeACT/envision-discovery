@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains 3000 OCT images of porcine kidneys from three tissue types: cortex, medulla, and calyx, with 1000 images per tissue per kidney. The images were obtained using a forward-view optical coherence tomography (OCT) endoscopic system for percutaneous nephrostomy (PCN) guidance. A deep-learning-based computer-aided diagnosis platform was developed to automatically classify the OCT images by renal tissue types, achieving an average classification accuracy of 82.6% with ResNet50-based convolutional neural networks (CNN).",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "9f7f5e03504b6500546e4fad2bc5385532029feaa8989f2fe623367716448b8d",
+  "input_chars": 2704,
+  "summary_chars": 538,
+  "input_mpnet_tokens": 783,
+  "summary_mpnet_tokens": 124,
+  "generation_seconds": 10.14
+}
