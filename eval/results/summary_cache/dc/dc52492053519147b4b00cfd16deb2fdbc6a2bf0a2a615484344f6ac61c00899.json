@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains three models for estimating the Foveal Avascular Zone (FAZ) area from OCT B-scan images: Model 1 predicts FAZ length from images, Model 2 predicts FAZ area from length measurements, and Model 3 converts FAZ area from pixels to square millimeters. The dataset includes 1,146 OCT B-scan images (128 × 128 pixels) with corresponding FAZ length or area measurements in pixels, provided in BMP format and a CSV file. The dataset is used for training and evaluating machine learning algorithms to estimate FAZ area from OCT images.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "a395ff55bc04ff2b505b9ad9d3bbfee7fba0e2127b973a1b3840c39111acde62",
+  "input_chars": 2521,
+  "summary_chars": 547,
+  "input_mpnet_tokens": 671,
+  "summary_mpnet_tokens": 127,
+  "generation_seconds": 10.88
+}

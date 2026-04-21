@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset involves a genome-wide association study (GWAS) to identify genetic variants associated with diabetic retinopathy (DR) in African American and Caucasian populations. The study combines existing genotyping data from individuals with type 2 diabetes and DR, incorporating admixture association and covariate modeling to increase power. The analysis will be replicated in additional populations, including South Asians and East Asians, and fine-mapped using cross-population meta-analysis of HapMap and 1000 Genomes variants.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "15c5a0157b055f2823805852b2eb0583f33b28dbfd43086dc2fe1fdfeeaafaac",
+  "input_chars": 3027,
+  "summary_chars": 535,
+  "input_mpnet_tokens": 609,
+  "summary_mpnet_tokens": 111,
+  "generation_seconds": 8.95
+}

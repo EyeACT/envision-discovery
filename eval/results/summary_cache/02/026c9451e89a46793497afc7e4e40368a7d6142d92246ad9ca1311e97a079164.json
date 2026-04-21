@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains processed data from mouse visual cortex experiments, including tables describing the properties of somas and spines during different viewing conditions, as well as additional files for tracking spine properties and performing bootstrap analysis. The data is organized into subfolders by mouse, day, cell, and field of view (FOV), with each FOV containing.xml,.csv, and.zip files for time-series data, voltage recordings, and ROI coordinates, respectively. The data was used to create the tables in the provided.mat files, which were used for plotting figures in a related paper.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "e53a6ce0b692b0ec78b47ac3db86053b725bd422600f6d8b89790d2181eb53ca",
+  "input_chars": 2346,
+  "summary_chars": 600,
+  "input_mpnet_tokens": 536,
+  "summary_mpnet_tokens": 126,
+  "generation_seconds": 10.66
+}

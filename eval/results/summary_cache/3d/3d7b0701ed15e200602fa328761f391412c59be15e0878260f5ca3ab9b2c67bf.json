@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset is based on a cross-sectional study of 62,217 participants from the Tongren Health Care Study, where diabetic retinopathy (DR) was assessed using color fundus photographs. The study found associations between DR and chronic kidney disease (CKD) in patients with type 2 diabetes (DT2), with 12.8% of DT2 patients having DR and 13.3% having CKD. The study also identified factors independently associated with the presence of CKD, including older age, higher body mass index, higher serum triglycerides, and lower blood glucose.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "b9bbf5ebd99e9484e6556f9f2c04a6a1891c7cbe7fb084a04d70ade467f8f4d7",
+  "input_chars": 1744,
+  "summary_chars": 539,
+  "input_mpnet_tokens": 513,
+  "summary_mpnet_tokens": 124,
+  "generation_seconds": 10.63
+}

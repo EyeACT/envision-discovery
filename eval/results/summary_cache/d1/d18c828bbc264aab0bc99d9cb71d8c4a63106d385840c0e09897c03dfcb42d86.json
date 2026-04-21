@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of 2473 first-treated eyes and 493 second-treated eyes with neovascular age-related macular degeneration (AMD) from the Moorfields Eye Hospital AMD Database, analyzed using a deep learning algorithm to segment features such as neurosensory retina, drusen, and subretinal fluid from optical coherence tomography (OCT) scans. The dataset includes volumes of segmented features, central subfield thickness, and correlations between volumes, with comparisons between first and second eyes, by visual acuity, and by race/ethnicity. The data highlights differences between first and second-treated eyes, with increasing age, and between ethnicities, and will be made publicly available for replication and future investigation.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "af24c334e739a43bb04115451d960801fec635e8c6b0e4ce27faf63430ad220e",
+  "input_chars": 2326,
+  "summary_chars": 743,
+  "input_mpnet_tokens": 538,
+  "summary_mpnet_tokens": 159,
+  "generation_seconds": 13.46
+}

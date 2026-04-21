@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains aggregated property market insights from Zoopla Live, a UK property listings aggregator, covering 27,000,000 homes and up to 1,000,000 property listings across the UK since 2017. The data is collected daily and processed yearly, with each year spanning 18 months, and is available through the Urban Big Data Centre's API. The dataset includes information on housing data in Great Britain, with access to current property listings and the option to request additional daily data.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "9b29a100dc73d7fad24769ff26314c459c9990b360d868c5d2c67b69fd787e5c",
+  "input_chars": 2305,
+  "summary_chars": 500,
+  "input_mpnet_tokens": 515,
+  "summary_mpnet_tokens": 102,
+  "generation_seconds": 9.08
+}

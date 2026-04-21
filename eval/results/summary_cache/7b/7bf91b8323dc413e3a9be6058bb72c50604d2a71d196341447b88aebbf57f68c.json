@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset contains a high-resolution visual record of a single jade object (Specimen ID: EANJ_FACE_22) with images captured using a full-frame digital camera and 90 mm macro lens, including multi-angle overall views, macro images, and a scale-reference image. The dataset includes 7 image files in JPEG format, with approximate reference measurements of length (8.2 cm), width (7.9 cm), thickness (2.2 cm), and weight (236 g). The dataset is intended for non-invasive visual observation, comparative image-based analysis, and referential use in academic research.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "9229a5e5372879bd1505859e8f9f72601d81be6d8a2b058dc1a8825c2e9bb87d",
+  "input_chars": 2917,
+  "summary_chars": 566,
+  "input_mpnet_tokens": 581,
+  "summary_mpnet_tokens": 136,
+  "generation_seconds": 11.13
+}
