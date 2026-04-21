@@ -48,6 +48,14 @@ def _clean_html(text):
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = record.get("title", "No title available")
+
+    # if title is empty or only whitespace, ignore this record by returning None
+    if not title or title.isspace():
+        print(
+            f"  Skipping record with empty title for source_id: {record.get('source_id', '')} (source: {source})"
+        )
+        return None
+
     description = record.get("description", "")
     if description:
         description = (
@@ -292,6 +300,10 @@ def generate_dataset_records():
                 seen_dois.add(doi)
 
             dataset_record = _build_record_from_result(record, source)
+
+            if dataset_record is None:
+                continue
+
             dataset_record["id"] = len(dataset_records) + 1
             dataset_records.append(dataset_record)
             source_count += 1
