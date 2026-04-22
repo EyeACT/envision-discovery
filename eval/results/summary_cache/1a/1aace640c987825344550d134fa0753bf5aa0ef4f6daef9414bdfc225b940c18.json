@@ -1,0 +1,12 @@
+{
+  "summary": "This study analyzed retinal biomarkers from optical coherence tomography (OCT) and OCT angiography (OCTA) to differentiate Alzheimer's disease (AD), mild cognitive impairment (MCI), and healthy controls (HCs). Significant microvascular density (VD) reductions around the fovea were linked with MCI and AD compared to HCs, while age-related analysis associated thickness parameters with HCs' old age. The study found significant thickness/volume reductions in Inner_Retina and Full_Retina layers, and significant average and inferior peripapillary RNFL thinning in AD and MCI groups.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "36c47032c1561db11234fc314bb4d1b92aa8ebbf2e74ced9c61efe016cd760f8",
+  "input_chars": 2503,
+  "summary_chars": 582,
+  "input_mpnet_tokens": 563,
+  "summary_mpnet_tokens": 138,
+  "generation_seconds": 7.84
+}

@@ -259,7 +259,7 @@ class DryadScraper:
             doi=doi if doi.startswith("doi:") or "/" in doi else None,
             url=f"https://datadryad.org/stash/dataset/{doi}",
             title=ds.get("title", ""),
-            description=abstract[:2000],
+            description=abstract[:10_000],
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,

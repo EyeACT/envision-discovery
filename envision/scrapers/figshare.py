@@ -242,7 +242,7 @@ class FigshareScraper:
             doi=doi,
             url=detail.get("url_public_html", f"https://figshare.com/articles/dataset/{article_id}"),
             title=detail.get("title", ""),
-            description=description[:2000],
+            description=description[:10_000],
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,

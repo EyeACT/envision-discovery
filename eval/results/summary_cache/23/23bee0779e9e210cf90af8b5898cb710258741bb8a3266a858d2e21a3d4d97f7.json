@@ -1,0 +1,12 @@
+{
+  "summary": "This study evaluates the sensitivity and specificity of flavoprotein fluorescence (FPF) in differentiating between healthy and diseased eyes in four leading causes of visual impairment: retinal vein occlusion, diabetic retinopathy, chronic exudative age-related macular degeneration, and central serous retinopathy. A total of 88 eyes were imaged non-invasively using a fundus camera, and FPF intensity was recorded from 520 to 540 nm. The results show that FPF is highly sensitive for detecting disease, particularly in exudative AMD subjects, and is moderately correlated with visual acuity.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "6b7379fdec2b82107f2dc962a786462efb7ce4c207b47bddbc611a02425a008f",
+  "input_chars": 3219,
+  "summary_chars": 593,
+  "input_mpnet_tokens": 764,
+  "summary_mpnet_tokens": 137,
+  "generation_seconds": 11.84
+}

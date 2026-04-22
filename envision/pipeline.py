@@ -45,6 +45,10 @@ def run_pipeline(
     classifier = _load_classifier()
     print(f"Device: {classifier._device}", flush=True)
 
+    # ── Sanitize text fields (strip HTML, fix mojibake, normalize unicode) ──
+    for m in metadata_records:
+        m.sanitize()
+
     # ── Classify ─────────────────────────────────────────────────────
     texts = [m.to_classifier_text() for m in metadata_records]
     print(f"  Classifying {len(texts):,} texts...", flush=True)
@@ -88,7 +92,13 @@ def _build_results(metadata_records, classifications):
             "prob_eye_imaging": probs.get("EYE_IMAGING", 0),
             "prob_negative": probs.get("NEGATIVE", 0),
             "title": meta.title[:200],
-            "description": meta.description[:500],
+            # No aggressive truncation on description: downstream consumers
+            # (portal UI, expert validation, paper figures) need the full
+            # text. Classifier input truncation happens separately in the
+            # classifier's tokenizer (MAX_TOKENS=512 tokens, not chars).
+            # The 10 KB safety cap prevents pathological inputs from
+            # bloating the results JSON.
+            "description": meta.description[:10_000],
             "keywords": meta.keywords[:10],
             "access_type": meta.access_type,
             "license": meta.license,

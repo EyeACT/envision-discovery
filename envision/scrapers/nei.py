@@ -212,7 +212,7 @@ class NEIScraper:
             doi=None,
             url=url,
             title=project.get("project_title", "") or "",
-            description=abstract[:2000],
+            description=abstract[:10_000],
             keywords=keywords,
             file_names=[],
             file_types=set(),

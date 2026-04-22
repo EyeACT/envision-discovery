@@ -187,7 +187,7 @@ class DataCiteScraper:
             doi=doi,
             url=url,
             title=title,
-            description=description[:2000],
+            description=description[:10_000],
             keywords=keywords,
             file_names=[],  # DataCite doesn't have file listings
             file_types=file_types,

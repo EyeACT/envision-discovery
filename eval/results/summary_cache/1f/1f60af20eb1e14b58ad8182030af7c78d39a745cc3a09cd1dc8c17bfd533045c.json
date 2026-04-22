@@ -1,0 +1,12 @@
+{
+  "summary": "This dataset consists of three simultaneous EEG-fMRI datasets from 11, 6, and 12 healthy, right-handed participants, respectively, collected in three conditions: resting-state, respiration task, and reaction time task. Anatomical (T1w) and functional MRI images are provided in raw nifti format, while EEG and peripheral physiology (PPG, Respiratory) data are available in minimally-preprocessed form in.mat files. The dataset includes 15 resting-state scans, 9 respiration task scans, and 12 reaction time task scans, with detailed MRI/EEG acquisition parameters provided.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "319729528db7e57c1e4e31bf1ae1aeea04fb946012039109805474b1ab4eea15",
+  "input_chars": 4951,
+  "summary_chars": 573,
+  "input_mpnet_tokens": 1124,
+  "summary_mpnet_tokens": 132,
+  "generation_seconds": 8.9
+}

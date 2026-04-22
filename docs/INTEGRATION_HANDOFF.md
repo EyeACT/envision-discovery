@@ -86,7 +86,7 @@ https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
 | `prob_eye_imaging` | float | Probability of EYE_IMAGING class |
 | `prob_negative` | float | Probability of NEGATIVE class |
 | `title` | string | Dataset title |
-| `description` | string | Abstract/description (HTML stripped, max 500 chars) |
+| `description` | string | Abstract/description (HTML stripped; max 10 KB safety cap) |
 | `keywords` | list | Tags/keywords (max 10) |
 | `access_type` | string | Access level: open, embargoed, restricted |
 | `license` | string | License identifier |

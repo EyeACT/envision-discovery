@@ -1,0 +1,12 @@
+{
+  "summary": "This study developed machine learning models for diagnosing Parkinson's disease (PD) using structural magnetic resonance imaging (MRI) features from the brain. The models were trained on 60 PD patients and 56 normal controls, and validated on 69 PD patients and 71 controls from the Parkinson's Progression Markers Initiative dataset. The most discriminating features were selected from cerebellar, subcortical, and cortical regions, and a combined model showed the highest diagnostic performance and clinical net benefit.",
+  "model_id": "fairdataihub/Llama-3.1-8B-Poster-Extraction",
+  "prompt_version": "v1",
+  "quant_config": "nf4-bf16-doublequant",
+  "input_sha256": "86429a241fe6261ed19d07886db0ee02106dbbe1de0c9b5df8b8c048483fa908",
+  "input_chars": 2497,
+  "summary_chars": 522,
+  "input_mpnet_tokens": 565,
+  "summary_mpnet_tokens": 104,
+  "generation_seconds": 9.05
+}

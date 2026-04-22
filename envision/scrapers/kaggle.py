@@ -291,7 +291,7 @@ class KaggleScraper:
             doi=None,
             url=url,
             title=dataset.get("title", ""),
-            description=description[:2000],
+            description=description[:10_000],
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,
