@@ -230,7 +230,7 @@ class OSFScraper:
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,
-            file_count=len(files_data),
+            file_count=0,
             total_size_bytes=total_size,
             img_count=img_count,
             medical_count=medical_count,
