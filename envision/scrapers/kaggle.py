@@ -162,6 +162,52 @@ class KaggleScraper:
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
         return all_results
 
+    def _list_files_via_remote_zip(
+        self, owner_slug: str, dataset_slug: str
+    ) -> tuple[list[str], int]:
+        """Return (filenames, total_size_bytes) for a Kaggle dataset.
+
+        Kaggle's ``/datasets/view/`` endpoint returns an empty ``files`` list
+        (verified 2026-04-24). The whole-dataset download endpoint redirects
+        to a signed Google Cloud Storage URL that supports Range requests,
+        so we resolve the redirect and read the ZIP central directory
+        remotely to extract the full file listing without downloading
+        gigabytes of data. Returns ([], 0) on any failure.
+        """
+        try:
+            from remotezip import RemoteZip
+        except ImportError:
+            logger.warning(
+                "remotezip not installed; Kaggle file_types will be empty. "
+                "pip install remotezip"
+            )
+            return [], 0
+
+        url = f"{API_BASE}/datasets/download/{owner_slug}/{dataset_slug}"
+        try:
+            time.sleep(self.REQUEST_DELAY)
+            r = self.session.get(
+                url, stream=True, allow_redirects=True, timeout=30,
+            )
+            if r.status_code != 200:
+                r.close()
+                return [], 0
+            final_url = r.url
+            size = int(r.headers.get("Content-Length") or 0)
+            r.close()
+            if size == 0:
+                return [], 0
+
+            with RemoteZip(final_url, session=self.session) as zf:
+                names = [
+                    info.filename for info in zf.infolist()
+                    if not info.is_dir()
+                ]
+            return names, size
+        except Exception as e:
+            logger.debug(f"Kaggle ZIP inspect failed for {owner_slug}/{dataset_slug}: {e}")
+            return [], 0
+
     def _dataset_to_metadata(
         self, dataset: dict, inspect_zips: bool = True
     ) -> DatasetMetadata | None:
@@ -173,34 +219,24 @@ class KaggleScraper:
             return None
         owner_slug, dataset_slug = parts
 
-        # Fetch file listing via the view endpoint
-        files = []
-        try:
-            resp = self._request(
-                "get",
-                f"{API_BASE}/datasets/view/{owner_slug}/{dataset_slug}",
-                timeout=30,
-            )
-            if resp is None:
-                detail = dataset
-            else:
-                detail = resp.json()
-                files = detail.get("files", [])
-        except Exception as e:
-            logger.debug(f"Could not fetch Kaggle dataset files for {ref}: {e}")
-            detail = dataset
+        # Kaggle's /datasets/view/ returns an empty files list; read the
+        # whole-dataset ZIP's central directory instead.
+        file_names, zip_total_size = self._list_files_via_remote_zip(
+            owner_slug, dataset_slug
+        )
+        # Prefer the actual archive size from Content-Length; fall back
+        # to the search-result totalBytes if the archive probe failed.
+        total_size = zip_total_size or (dataset.get("totalBytes", 0) or 0)
 
-        file_names = [f.get("name", "") for f in files]
         file_types: set[str] = set()
-        total_size = dataset.get("totalBytes", 0) or 0
         img_count = 0
         medical_count = 0
         archive_count = 0
         genomics_count = 0
-        zip_contents: list[str] = []
+        zip_contents: list[str] = list(file_names[:50])
         download_files: list[dict] = []
 
-        # Whole-dataset archive endpoint (Kaggle serves all files as a single ZIP)
+        # Whole-dataset archive endpoint (Kaggle serves all files as one ZIP)
         dataset_archive_url = (
             f"{API_BASE}/datasets/download/{owner_slug}/{dataset_slug}"
         )
@@ -212,9 +248,8 @@ class KaggleScraper:
             "checksum": None,
         })
 
-        for f in files:
-            name_lower = f.get("name", "").lower()
-
+        for name in file_names:
+            name_lower = name.lower()
             if "." in name_lower:
                 raw_ext = "." + name_lower.rsplit(".", 1)[-1]
                 file_types.add(raw_ext)
@@ -236,26 +271,6 @@ class KaggleScraper:
                     elif ext in GENOMICS_EXTS:
                         genomics_count += 1
                     break
-
-            # Archive inspection (ZIP and TAR)
-            if inspect_zips and any(name_lower.endswith(ext) for ext in ARCHIVE_EXTS):
-                download_url = (
-                    f"https://www.kaggle.com/api/v1/datasets/download/"
-                    f"{owner_slug}/{dataset_slug}/{f.get('name', '')}"
-                )
-                try:
-                    contents = ArchiveInspector.inspect_archive(
-                        download_url, f.get("name", ""), self.session
-                    )
-                    if contents:
-                        zip_contents.extend(contents[:50])
-                        for zf in contents:
-                            if "." in zf:
-                                file_types.add("." + zf.rsplit(".", 1)[-1].lower())
-                        summary = ArchiveInspector.summarize_contents(contents)
-                        img_count += summary.get("imaging_file_count", 0)
-                except Exception:
-                    pass
 
         # Description (subtitle serves as short description)
         description = dataset.get("subtitle", "")
@@ -295,7 +310,7 @@ class KaggleScraper:
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,
-            file_count=len(files),
+            file_count=len(file_names),
             total_size_bytes=total_size,
             img_count=img_count,
             medical_count=medical_count,
