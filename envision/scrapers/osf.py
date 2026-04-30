@@ -179,6 +179,91 @@ class OSFScraper:
         except Exception:
             return []
 
+    def _list_files_recursive(
+        self, node_id: str, item_type: str = "nodes",
+        max_depth: int = 2, max_calls: int = 6,
+    ) -> list[tuple[str, int]]:
+        """Walk the OSF storage tree for one node/registration and return
+        ``[(filename, size_bytes), ...]``.
+
+        Budgeted breadth-first traversal: at most ``max_calls`` API hits per
+        record, descending at most ``max_depth`` levels. Entries we don't
+        reach within budget are silently skipped — the goal is good-enough
+        file_types coverage given OSF's 100/400 req-hour cap, not a perfect
+        listing.
+        """
+        endpoint = "registrations" if item_type == "registrations" else "nodes"
+        start_url = f"{API_BASE}/{endpoint}/{node_id}/files/osfstorage/"
+        queue: list[tuple[str, int]] = [(start_url, 0)]
+        files: list[tuple[str, int]] = []
+        calls_used = 0
+
+        while queue and calls_used < max_calls:
+            url, depth = queue.pop(0)
+            resp = self._request(
+                "get", url, params={"page[size]": 100},
+            )
+            calls_used += 1
+            if resp is None or resp.status_code != 200:
+                continue
+            try:
+                data = resp.json().get("data", [])
+            except Exception:
+                continue
+            for entry in data:
+                a = entry.get("attributes", {}) or {}
+                kind = a.get("kind")
+                name = a.get("name") or ""
+                if kind == "file":
+                    files.append((name, a.get("size") or 0))
+                elif kind == "folder" and depth < max_depth:
+                    rel = (
+                        entry.get("relationships", {})
+                        .get("files", {}).get("links", {})
+                        .get("related", {}).get("href")
+                    )
+                    if rel:
+                        queue.append((rel, depth + 1))
+        return files
+
+    def _files_to_counts(self, file_entries: list[tuple[str, int]]) -> dict:
+        """Categorize a list of (name, size) tuples into the file-field
+        counters used by DatasetMetadata."""
+        file_types: set[str] = set()
+        img_count = 0
+        medical_count = 0
+        archive_count = 0
+        genomics_count = 0
+
+        for name, _ in file_entries:
+            name_lower = name.lower()
+            if "." in name_lower:
+                file_types.add("." + name_lower.rsplit(".", 1)[-1])
+            for ext in sorted(
+                EYE_IMAGING_EXTS | ARCHIVE_EXTS | GENOMICS_EXTS,
+                key=len, reverse=True,
+            ):
+                if name_lower.endswith(ext):
+                    file_types.add(ext)
+                    if ext in EYE_IMAGING_EXTS:
+                        if ext in {".jpg", ".jpeg", ".png", ".tif",
+                                   ".tiff", ".bmp", ".gif"}:
+                            img_count += 1
+                        else:
+                            medical_count += 1
+                    elif ext in ARCHIVE_EXTS:
+                        archive_count += 1
+                    elif ext in GENOMICS_EXTS:
+                        genomics_count += 1
+                    break
+        return {
+            "file_types": file_types,
+            "img_count": img_count,
+            "medical_count": medical_count,
+            "archive_count": archive_count,
+            "genomics_count": genomics_count,
+        }
+
     def _item_to_metadata(self, item: dict) -> DatasetMetadata | None:
         """Convert an OSF search result to DatasetMetadata."""
         attrs = item.get("attributes", {})
@@ -197,17 +282,19 @@ class OSFScraper:
         if not isinstance(keywords, list):
             keywords = []
 
-        # Skip file fetching — OSF rate limits are too strict (100 req/hr)
-        # and the classifier only needs title + description + tags.
-        # File details would cost 1-3 API calls per record.
-        file_names = []
-        file_types: set[str] = set()
-        total_size = 0
-        img_count = 0
-        medical_count = 0
-        archive_count = 0
-        genomics_count = 0
-        zip_contents = []
+        # Budgeted recursive file listing (≤6 API calls per record, depth ≤2).
+        # We previously skipped this entirely because OSF unauth is 100 req/hr;
+        # with an OSF_TOKEN it's ~400 req/hr which makes the budget workable.
+        file_entries = self._list_files_recursive(item_id, item_type=item_type)
+        file_names = [n for n, _ in file_entries]
+        total_size = sum(s for _, s in file_entries)
+        counts = self._files_to_counts(file_entries)
+        file_types = counts["file_types"]
+        img_count = counts["img_count"]
+        medical_count = counts["medical_count"]
+        archive_count = counts["archive_count"]
+        genomics_count = counts["genomics_count"]
+        zip_contents: list[str] = []
 
         # Dates
         date_created = attrs.get("date_created", "")
@@ -230,7 +317,7 @@ class OSFScraper:
             keywords=keywords,
             file_names=file_names[:50],
             file_types=file_types,
-            file_count=0,
+            file_count=len(file_entries),
             total_size_bytes=total_size,
             img_count=img_count,
             medical_count=medical_count,
