@@ -20,18 +20,23 @@ DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
 # All repository sources and their eye_imaging result files
 SOURCES = {
     "zenodo": "results/zenodo_eye_imaging.json",
-    # "datacite": "results/datacite_eye_imaging.json",
+    "datacite": "results/datacite_eye_imaging.json",
     "figshare": "results/figshare_eye_imaging.json",
-    # "kaggle": "results/kaggle_eye_imaging.json",
+    "kaggle": "results/kaggle_eye_imaging.json",
     "dryad": "results/dryad_eye_imaging.json",
-    # "nei": "results/nei_eye_imaging.json",
+    "nei": "results/nei_eye_imaging.json",
+    "osf": "results/osf_eye_imaging.json",
 }
 
 # Metadata directories (pre-fetched per-record JSON, if available)
 METADATA_DIRS = {
     "zenodo": "data/metadata/zenodo",
+    "datacite": "data/metadata/datacite",
     "figshare": "data/metadata/figshare",
+    "kaggle": "data/metadata/kaggle",
     "dryad": "data/metadata/dryad",
+    "nei": "data/metadata/nei",
+    "osf": "data/metadata/osf",
 }
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
@@ -80,7 +85,17 @@ def _build_record_from_result(record, source):
     url = record.get("url", "")
     keywords = record.get("keywords", [])
     if isinstance(keywords, str):
-        keywords = [k.strip() for k in keywords.split(",") if k.strip()]
+        keywords = [keywords]
+    # Flatten any single-string entries using angle-bracket encoding: "<kw1><kw2>..."
+    parsed_keywords = []
+    for kw in keywords:
+        if isinstance(kw, str) and kw.startswith("<") and "><" in kw:
+            parsed_keywords.extend(re.findall(r"<([^<>]+)>", kw))
+        elif isinstance(kw, str):
+            parsed_keywords.extend([k.strip() for k in kw.split(",") if k.strip()])
+        else:
+            parsed_keywords.append(kw)
+    keywords = parsed_keywords
     subjects = [{"subjectValue": kw} for kw in keywords]
 
     # Try to get richer metadata from pre-fetched files
