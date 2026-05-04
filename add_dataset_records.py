@@ -45,6 +45,24 @@ def _clean_html(text):
     return unescape(clean).strip()
 
 
+def _build_affiliation_list(value):
+    """Return affiliation as a list of dictionary entries."""
+    if isinstance(value, str):
+        items = [value]
+    elif isinstance(value, dict):
+        items = value # in this instance iterate through dictionary keys and assume they are affiliation names
+    elif isinstance(value, list):
+        items = value
+    else:
+        items = []
+
+    return [
+        {"affiliationName": a} if isinstance(a, str) else a
+        for a in items
+        if a
+    ]
+
+
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = record.get("title", "No title available")
@@ -92,10 +110,7 @@ def _build_record_from_result(record, source):
                 {
                     "creatorName": c.get("creatorName", c.get("name", "")),
                     "nameType": c.get("nameType", "Personal"),
-                    "affiliation": [
-                        {"affiliationName": a} if isinstance(a, str) else a
-                        for a in (c.get("affiliation") or [])
-                    ],
+                    "affiliation": _build_affiliation_list(c.get("affiliation")),
                 }
                 for c in (m.get("creators") or meta.get("creators", []))
             )
