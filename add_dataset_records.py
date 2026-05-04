@@ -8,6 +8,7 @@ from html import unescape
 import requests
 from markdownify import markdownify as md
 from dotenv import load_dotenv
+import contextlib
 
 load_dotenv()
 
@@ -50,17 +51,13 @@ def _build_affiliation_list(value):
     if isinstance(value, str):
         items = [value]
     elif isinstance(value, dict):
-        items = value # in this instance iterate through dictionary keys and assume they are affiliation names
+        items = value  # in this instance iterate through dictionary keys and assume they are affiliation names
     elif isinstance(value, list):
         items = value
     else:
         items = []
 
-    return [
-        {"affiliationName": a} if isinstance(a, str) else a
-        for a in items
-        if a
-    ]
+    return [{"affiliationName": a} if isinstance(a, str) else a for a in items if a]
 
 
 def _build_record_from_result(record, source):
@@ -173,11 +170,9 @@ def _build_record_from_result(record, source):
             created_dt = datetime.now()
     else:
         for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
-            try:
+            with contextlib.suppress(ValueError, TypeError):
                 created_dt = datetime.strptime(str(created_raw), fmt)
                 break
-            except (ValueError, TypeError):
-                pass
         else:
             created_dt = datetime.now()
     print(
