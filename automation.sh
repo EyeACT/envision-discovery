@@ -16,7 +16,6 @@ echo "=== ENVISION Pipeline (step: $STEP) ==="
 
 # ── Setup ────────────────────────────────────────────────────────────
 echo "Pulling latest code..."
-git reset --hard
 git pull
 chmod +x automation.sh
 
