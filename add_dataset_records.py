@@ -93,7 +93,7 @@ def _extract_iso_date(value):
 
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
-    title = record.get("title", "No title available")
+    title = _clean_html(record.get("title", "No title available"))
 
     # if title is empty or only whitespace, ignore this record by returning None
     if not title or title.isspace():
