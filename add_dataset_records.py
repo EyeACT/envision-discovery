@@ -130,7 +130,6 @@ def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = _clean_html(record.get("title", "No title available"))
 
-
     # if title is empty or only whitespace, ignore this record by returning None
     if not title or title.isspace():
         print(
@@ -179,8 +178,6 @@ def _build_record_from_result(record, source):
     metadata_created_raw = ""
     metadata_modified_raw = ""
 
-
-
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
 
@@ -211,13 +208,21 @@ def _build_record_from_result(record, source):
                 publication_date_source = "publication_date"
 
             if not publication_date:
-                for d in m.get("dates", []) or meta.get("dates", []):
+                dates_list = m.get("dates", []) or meta.get("dates", [])
+                _dates_fallback = None
+                for d in dates_list:
                     if isinstance(d, dict) and d.get("dateValue"):
                         candidate = _extract_iso_date(d["dateValue"])
                         if candidate:
-                            publication_date = candidate
-                            publication_date_source = "dates"
-                            break
+                            if d.get("dateType") == "StartDate":
+                                publication_date = candidate
+                                publication_date_source = "dates[StartDate]"
+                                break
+                            elif _dates_fallback is None:
+                                _dates_fallback = candidate
+                if not publication_date and _dates_fallback:
+                    publication_date = _dates_fallback
+                    publication_date_source = "dates"
             if not publication_date:
                 publication_date = _extract_iso_date(metadata_created_raw)
                 if publication_date:
@@ -230,6 +235,7 @@ def _build_record_from_result(record, source):
             print(
                 f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
             )
+
             publication_year = (
                 publication_date.split("-")[0]
                 if publication_date
@@ -237,9 +243,11 @@ def _build_record_from_result(record, source):
                     m.get("publication_year", "") or meta.get("publication_year", "")
                 )
             )
-            
+
             if "license" in m and isinstance(m["license"], dict):
-                license_name = m["license"].get("name") or m["license"].get("id") or license_name
+                license_name = (
+                    m["license"].get("name") or m["license"].get("id") or license_name
+                )
             if "license" in m and isinstance(m["license"], str):
                 license_name = m["license"] or license_name
 
