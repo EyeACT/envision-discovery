@@ -14,6 +14,41 @@ load_dotenv()
 
 cuid_generator: Callable[[], str] = cuid_wrapper()
 
+# const fileSchema: z.ZodType = z.lazy(() =>
+#   z.array(
+#     z.union([
+#       z.object({
+#         label: z.string(),
+#         children: z.array(fileSchema),
+#       }),
+#       z.object({
+#         name: z.string(),
+#       }),
+#     ]),
+#   ),
+# );
+
+# const datasetSchema = z.object({
+#   title: z.string(),
+#   created: z.string(),
+#   data: z.any(),
+#   datasetId: z.string(),
+#   canonicalId: z.string(),
+#   description: z.string(),
+#   doi: z.string().optional(),
+#   externalUrl: z.string(),
+#   files: fileSchema,
+#   publishedMetadata: z.any(),
+#   studyTitle: z.string(),
+#   updated: z.string(),
+#   versionTitle: z.string(),
+#   PublishedDatasetRegistrationDetails: z.object({
+#     datasetSource: z.string(),
+#     extractionMethod: z.string(),
+#     extractionVersion: z.string(),
+#   }),
+# });
+
 # --- Configuration ---
 DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
 
@@ -419,19 +454,19 @@ def add_dataset_records_to_database():
     failed = 0
     for record in dataset_records:
         payload = {
-            "title": record["title"],
+            "title": record["title"] or "No title available",
             "datasetId": record["datasetId"],
             "canonicalId": record["canonicalId"],
-            "created": record["created"],
+            "created": str(record["created"]),
             "data": record["data"],
-            "description": record["description"],
-            "doi": record["doi"],
-            "externalUrl": record["externalUrl"],
-            "files": record["files"],
+            "description": record.get("description") or "",
+            "doi": record["doi"] or None,
+            "externalUrl": record.get("externalUrl") or "",
+            "files": record.get("files") or [],
             "publishedMetadata": record["publishedMetadata"],
-            "studyTitle": record["studyTitle"],
-            "updated": record["created"],
-            "versionTitle": record["versionTitle"],
+            "studyTitle": record.get("studyTitle") or "",
+            "updated": str(record["created"]),
+            "versionTitle": str(record.get("versionTitle") or "1"),
             "PublishedDatasetRegistrationDetails": record[
                 "PublishedDatasetRegistrationDetails"
             ],
