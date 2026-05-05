@@ -130,6 +130,7 @@ def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = _clean_html(record.get("title", "No title available"))
 
+
     # if title is empty or only whitespace, ignore this record by returning None
     if not title or title.isspace():
         print(
@@ -162,11 +163,13 @@ def _build_record_from_result(record, source):
     # Try to get richer metadata from pre-fetched files
     source_id = record.get("source_id", record.get("zenodo_id", ""))
 
-    # if dryad is in the source_id, convert the / to _ to match the filename format in the metadata directory
-    if source == "dryad" and "/" in source_id:
+    sources_requiring_transformation = ["dryad", "kaggle", "datacite"]
+
+    # if dryad, kaggle, or datacite is in the source_id, convert the / to _ to match the filename format in the metadata directory
+    if source in sources_requiring_transformation and "/" in source_id:
         source_id = source_id.replace("/", "_")
 
-    metadata_dir = METADATA_DIRS.get(source)
+    metadata_dir = os.path.normpath(METADATA_DIRS.get(source))
     creators = []
     publication_date = ""
     publication_date_source = ""
@@ -175,6 +178,8 @@ def _build_record_from_result(record, source):
     sizes = [f"{record.get('size_mb', 0)} MB"]
     metadata_created_raw = ""
     metadata_modified_raw = ""
+
+
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
@@ -232,8 +237,12 @@ def _build_record_from_result(record, source):
                     m.get("publication_year", "") or meta.get("publication_year", "")
                 )
             )
+            
             if "license" in m and isinstance(m["license"], dict):
-                license_name = m["license"].get("name", license_name)
+                license_name = m["license"].get("name") or m["license"].get("id") or license_name
+            if "license" in m and isinstance(m["license"], str):
+                license_name = m["license"] or license_name
+
             if not description and m.get("description"):
                 description = md(_clean_html(m["description"]))
 
