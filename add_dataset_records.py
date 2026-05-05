@@ -143,7 +143,13 @@ def _build_record_from_result(record, source):
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
-        if os.path.exists(meta_path):
+
+        if not os.path.exists(meta_path):
+            print(
+                f"  Skipping record: metadata file not found for source_id: {source_id} (source: {source}) at expected path: {meta_path}"
+            )
+            return None
+        else:
             with open(meta_path, "r", encoding="utf-8") as f:
                 meta = json.load(f)
             m = meta.get("metadata", meta)
