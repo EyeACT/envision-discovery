@@ -8,10 +8,46 @@ from html import unescape
 import requests
 from markdownify import markdownify as md
 from dotenv import load_dotenv
+import contextlib
 
 load_dotenv()
 
 cuid_generator: Callable[[], str] = cuid_wrapper()
+
+# const fileSchema: z.ZodType = z.lazy(() =>
+#   z.array(
+#     z.union([
+#       z.object({
+#         label: z.string(),
+#         children: z.array(fileSchema),
+#       }),
+#       z.object({
+#         name: z.string(),
+#       }),
+#     ]),
+#   ),
+# );
+
+# const datasetSchema = z.object({
+#   title: z.string(),
+#   created: z.string(),
+#   data: z.any(),
+#   datasetId: z.string(),
+#   canonicalId: z.string(),
+#   description: z.string(),
+#   doi: z.string().optional(),
+#   externalUrl: z.string(),
+#   files: fileSchema,
+#   publishedMetadata: z.any(),
+#   studyTitle: z.string(),
+#   updated: z.string(),
+#   versionTitle: z.string(),
+#   PublishedDatasetRegistrationDetails: z.object({
+#     datasetSource: z.string(),
+#     extractionMethod: z.string(),
+#     extractionVersion: z.string(),
+#   }),
+# });
 
 # --- Configuration ---
 DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
@@ -24,16 +60,18 @@ SOURCES = {
     "kaggle": "results/kaggle_eye_imaging.json",
     "dryad": "results/dryad_eye_imaging.json",
     "nei": "results/nei_eye_imaging.json",
+    "osf": "results/osf_eye_imaging.json",
 }
 
 # Metadata directories (pre-fetched per-record JSON, if available)
 METADATA_DIRS = {
     "zenodo": "data/metadata/zenodo",
+    "datacite": "data/metadata/datacite",
     "figshare": "data/metadata/figshare",
+    "kaggle": "data/metadata/kaggle",
     "dryad": "data/metadata/dryad",
     "nei": "data/metadata/nei",
-    "kaggle": "data/metadata/kaggle",
-    "datacite": "data/metadata/datacite",
+    "osf": "data/metadata/osf",
 }
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
@@ -48,9 +86,49 @@ def _clean_html(text):
     return unescape(clean).strip()
 
 
+def _build_affiliation_list(value):
+    """Return affiliation as a list of dictionary entries."""
+    if isinstance(value, str):
+        items = [value]
+    elif isinstance(value, dict):
+        items = value  # in this instance iterate through dictionary keys and assume they are affiliation names
+    elif isinstance(value, list):
+        items = value
+    else:
+        items = []
+
+    return [{"affiliationName": a} if isinstance(a, str) else a for a in items if a]
+
+
+def _extract_iso_date(value):
+    """Return YYYY-MM-DD when value contains a parseable date; otherwise empty string."""
+    if value is None:
+        return ""
+
+    raw = str(value).strip()
+    if not raw:
+        return ""
+
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
+        return raw
+
+    # Treat year-only values (e.g. "2023") as incomplete for this field.
+    if re.fullmatch(r"\d{4}", raw):
+        return ""
+
+    with contextlib.suppress(ValueError):
+        return datetime.fromisoformat(raw.replace("Z", "+00:00")).date().isoformat()
+
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y/%m/%d"):
+        with contextlib.suppress(ValueError):
+            return datetime.strptime(raw, fmt).date().isoformat()
+
+    return ""
+
+
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
-    title = record.get("title", "No title available")
+    title = _clean_html(record.get("title", "No title available"))
 
 
     # if title is empty or only whitespace, ignore this record by returning None
@@ -69,7 +147,17 @@ def _build_record_from_result(record, source):
     url = record.get("url", "")
     keywords = record.get("keywords", [])
     if isinstance(keywords, str):
-        keywords = [k.strip() for k in keywords.split(",") if k.strip()]
+        keywords = [keywords]
+    # Flatten any single-string entries using angle-bracket encoding: "<kw1><kw2>..."
+    parsed_keywords = []
+    for kw in keywords:
+        if isinstance(kw, str) and kw.startswith("<") and "><" in kw:
+            parsed_keywords.extend(re.findall(r"<([^<>]+)>", kw))
+        elif isinstance(kw, str):
+            parsed_keywords.extend([k.strip() for k in kw.split(",") if k.strip()])
+        else:
+            parsed_keywords.append(kw)
+    keywords = parsed_keywords
     subjects = [{"subjectValue": kw} for kw in keywords]
 
     # Try to get richer metadata from pre-fetched files
@@ -84,15 +172,24 @@ def _build_record_from_result(record, source):
     metadata_dir = os.path.normpath(METADATA_DIRS.get(source))
     creators = []
     publication_date = ""
+    publication_date_source = ""
     publication_year = ""
     license_name = "No license available"
     sizes = [f"{record.get('size_mb', 0)} MB"]
+    metadata_created_raw = ""
+    metadata_modified_raw = ""
 
 
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
-        if os.path.exists(meta_path):
+
+        if not os.path.exists(meta_path):
+            print(
+                f"  Skipping record: metadata file not found for source_id: {source_id} (source: {source}) at expected path: {meta_path}"
+            )
+            return None
+        else:
             with open(meta_path, "r", encoding="utf-8") as f:
                 meta = json.load(f)
             m = meta.get("metadata", meta)
@@ -100,23 +197,35 @@ def _build_record_from_result(record, source):
                 {
                     "creatorName": c.get("creatorName", c.get("name", "")),
                     "nameType": c.get("nameType", "Personal"),
-                    "affiliation": [
-                        {"affiliationName": a} if isinstance(a, str) else a
-                        for a in (c.get("affiliation") or [])
-                    ],
+                    "affiliation": _build_affiliation_list(c.get("affiliation")),
                 }
                 for c in (m.get("creators") or meta.get("creators", []))
             )
-            publication_date = m.get("publication_date", "") or meta.get(
-                "publication_date", ""
+            metadata_created_raw = meta.get("created", "")
+            metadata_modified_raw = meta.get("modified", "")
+
+            publication_date = _extract_iso_date(
+                m.get("publication_date", "") or meta.get("publication_date", "")
             )
+            if publication_date:
+                publication_date_source = "publication_date"
+
             if not publication_date:
                 for d in m.get("dates", []) or meta.get("dates", []):
                     if isinstance(d, dict) and d.get("dateValue"):
-                        publication_date = d["dateValue"].split("T")[0]
-                        break
-            if not publication_date and meta.get("created"):
-                publication_date = meta["created"].split("T")[0]
+                        candidate = _extract_iso_date(d["dateValue"])
+                        if candidate:
+                            publication_date = candidate
+                            publication_date_source = "dates"
+                            break
+            if not publication_date:
+                publication_date = _extract_iso_date(metadata_created_raw)
+                if publication_date:
+                    publication_date_source = "created"
+            if not publication_date:
+                publication_date = _extract_iso_date(metadata_modified_raw)
+                if publication_date:
+                    publication_date_source = "modified"
 
             print(
                 f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
@@ -158,7 +267,20 @@ def _build_record_from_result(record, source):
                 )
 
     # Timestamp
-    created_raw = publication_date or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if publication_date_source in {"created", "modified"}:
+        created_raw = (
+            metadata_created_raw
+            or metadata_modified_raw
+            or publication_date
+            or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
+    else:
+        created_raw = (
+            publication_date
+            or metadata_created_raw
+            or metadata_modified_raw
+            or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
     print(
         f"    Using publication date: {publication_date} for source_id: {source_id} (source: {source}) {created_raw}"
     )
@@ -170,11 +292,9 @@ def _build_record_from_result(record, source):
             created_dt = datetime.now()
     else:
         for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
-            try:
+            with contextlib.suppress(ValueError, TypeError):
                 created_dt = datetime.strptime(str(created_raw), fmt)
                 break
-            except (ValueError, TypeError):
-                pass
         else:
             created_dt = datetime.now()
     print(
@@ -343,19 +463,19 @@ def add_dataset_records_to_database():
     failed = 0
     for record in dataset_records:
         payload = {
-            "title": record["title"],
+            "title": record["title"] or "No title available",
             "datasetId": record["datasetId"],
             "canonicalId": record["canonicalId"],
-            "created": record["created"],
+            "created": str(record["created"]),
             "data": record["data"],
-            "description": record["description"],
-            "doi": record["doi"],
-            "externalUrl": record["externalUrl"],
-            "files": record["files"],
+            "description": record.get("description") or "",
+            "doi": record["doi"] or None,
+            "externalUrl": record.get("externalUrl") or "",
+            "files": record.get("files") or [],
             "publishedMetadata": record["publishedMetadata"],
-            "studyTitle": record["studyTitle"],
-            "updated": record["created"],
-            "versionTitle": record["versionTitle"],
+            "studyTitle": record.get("studyTitle") or "",
+            "updated": str(record["created"]),
+            "versionTitle": str(record.get("versionTitle") or "1"),
             "PublishedDatasetRegistrationDetails": record[
                 "PublishedDatasetRegistrationDetails"
             ],
