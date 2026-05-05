@@ -19,11 +19,11 @@ DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
 # All repository sources and their eye_imaging result files
 SOURCES = {
     "zenodo": "results/zenodo_eye_imaging.json",
-    # "datacite": "results/datacite_eye_imaging.json",
+    "datacite": "results/datacite_eye_imaging.json",
     "figshare": "results/figshare_eye_imaging.json",
-    # "kaggle": "results/kaggle_eye_imaging.json",
+    "kaggle": "results/kaggle_eye_imaging.json",
     "dryad": "results/dryad_eye_imaging.json",
-    # "nei": "results/nei_eye_imaging.json",
+    "nei": "results/nei_eye_imaging.json",
 }
 
 # Metadata directories (pre-fetched per-record JSON, if available)
@@ -31,6 +31,9 @@ METADATA_DIRS = {
     "zenodo": "data/metadata/zenodo",
     "figshare": "data/metadata/figshare",
     "dryad": "data/metadata/dryad",
+    "nei": "data/metadata/nei",
+    "kaggle": "data/metadata/kaggle",
+    "datacite": "data/metadata/datacite",
 }
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
@@ -48,6 +51,7 @@ def _clean_html(text):
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = record.get("title", "No title available")
+
 
     # if title is empty or only whitespace, ignore this record by returning None
     if not title or title.isspace():
@@ -71,16 +75,20 @@ def _build_record_from_result(record, source):
     # Try to get richer metadata from pre-fetched files
     source_id = record.get("source_id", record.get("zenodo_id", ""))
 
-    # if dryad is in the source_id, convert the / to _ to match the filename format in the metadata directory
-    if source == "dryad" and "/" in source_id:
+    sources_requiring_transformation = ["dryad", "kaggle", "datacite"]
+
+    # if dryad, kaggle, or datacite is in the source_id, convert the / to _ to match the filename format in the metadata directory
+    if source in sources_requiring_transformation and "/" in source_id:
         source_id = source_id.replace("/", "_")
 
-    metadata_dir = METADATA_DIRS.get(source)
+    metadata_dir = os.path.normpath(METADATA_DIRS.get(source))
     creators = []
     publication_date = ""
     publication_year = ""
     license_name = "No license available"
     sizes = [f"{record.get('size_mb', 0)} MB"]
+
+
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
@@ -120,8 +128,12 @@ def _build_record_from_result(record, source):
                     m.get("publication_year", "") or meta.get("publication_year", "")
                 )
             )
+            
             if "license" in m and isinstance(m["license"], dict):
-                license_name = m["license"].get("name", license_name)
+                license_name = m["license"].get("name") or m["license"].get("id") or license_name
+            if "license" in m and isinstance(m["license"], str):
+                license_name = m["license"] or license_name
+
             if not description and m.get("description"):
                 description = md(_clean_html(m["description"]))
 
