@@ -65,6 +65,32 @@ def _build_affiliation_list(value):
     return [{"affiliationName": a} if isinstance(a, str) else a for a in items if a]
 
 
+def _extract_iso_date(value):
+    """Return YYYY-MM-DD when value contains a parseable date; otherwise empty string."""
+    if value is None:
+        return ""
+
+    raw = str(value).strip()
+    if not raw:
+        return ""
+
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
+        return raw
+
+    # Treat year-only values (e.g. "2023") as incomplete for this field.
+    if re.fullmatch(r"\d{4}", raw):
+        return ""
+
+    with contextlib.suppress(ValueError):
+        return datetime.fromisoformat(raw.replace("Z", "+00:00")).date().isoformat()
+
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y/%m/%d"):
+        with contextlib.suppress(ValueError):
+            return datetime.strptime(raw, fmt).date().isoformat()
+
+    return ""
+
+
 def _build_record_from_result(record, source):
     """Build a portal-schema dataset record from a classifier result entry."""
     title = record.get("title", "No title available")
@@ -108,9 +134,12 @@ def _build_record_from_result(record, source):
     metadata_dir = METADATA_DIRS.get(source)
     creators = []
     publication_date = ""
+    publication_date_source = ""
     publication_year = ""
     license_name = "No license available"
     sizes = [f"{record.get('size_mb', 0)} MB"]
+    metadata_created_raw = ""
+    metadata_modified_raw = ""
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
@@ -126,16 +155,31 @@ def _build_record_from_result(record, source):
                 }
                 for c in (m.get("creators") or meta.get("creators", []))
             )
-            publication_date = m.get("publication_date", "") or meta.get(
-                "publication_date", ""
+            metadata_created_raw = meta.get("created", "")
+            metadata_modified_raw = meta.get("modified", "")
+
+            publication_date = _extract_iso_date(
+                m.get("publication_date", "") or meta.get("publication_date", "")
             )
+            if publication_date:
+                publication_date_source = "publication_date"
+
             if not publication_date:
                 for d in m.get("dates", []) or meta.get("dates", []):
                     if isinstance(d, dict) and d.get("dateValue"):
-                        publication_date = d["dateValue"].split("T")[0]
-                        break
-            if not publication_date and meta.get("created"):
-                publication_date = meta["created"].split("T")[0]
+                        candidate = _extract_iso_date(d["dateValue"])
+                        if candidate:
+                            publication_date = candidate
+                            publication_date_source = "dates"
+                            break
+            if not publication_date:
+                publication_date = _extract_iso_date(metadata_created_raw)
+                if publication_date:
+                    publication_date_source = "created"
+            if not publication_date:
+                publication_date = _extract_iso_date(metadata_modified_raw)
+                if publication_date:
+                    publication_date_source = "modified"
 
             print(
                 f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
@@ -173,7 +217,20 @@ def _build_record_from_result(record, source):
                 )
 
     # Timestamp
-    created_raw = publication_date or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if publication_date_source in {"created", "modified"}:
+        created_raw = (
+            metadata_created_raw
+            or metadata_modified_raw
+            or publication_date
+            or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
+    else:
+        created_raw = (
+            publication_date
+            or metadata_created_raw
+            or metadata_modified_raw
+            or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        )
     print(
         f"    Using publication date: {publication_date} for source_id: {source_id} (source: {source}) {created_raw}"
     )
