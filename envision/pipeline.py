@@ -46,8 +46,9 @@ def run_pipeline(
     print(f"Device: {classifier._device}", flush=True)
 
     # ── Sanitize text fields (strip HTML, fix mojibake, normalize unicode) ──
-    for m in metadata_records:
-        m.sanitize()
+    # TODO: please fix
+    # for m in metadata_records:
+    #     m.sanitize()
 
     # ── Classify ─────────────────────────────────────────────────────
     texts = [m.to_classifier_text() for m in metadata_records]
@@ -63,6 +64,7 @@ def run_pipeline(
 
     if addf_output_dir and addf_records:
         from .addf_export import ADDFExporter
+
         addf_output_dir = Path(addf_output_dir)
         paths = ADDFExporter.export_batch(addf_records, addf_output_dir)
         print(f"  ADDF export: {len(paths)} records → {addf_output_dir}", flush=True)
@@ -151,7 +153,9 @@ def _print_summary(all_results):
         high = sum(1 for r in eye if r["confidence"] >= 0.95)
         med = sum(1 for r in eye if 0.80 <= r["confidence"] < 0.95)
         low = sum(1 for r in eye if r["confidence"] < 0.80)
-        print(f"  Confidence: {high} high (>=0.95), {med} medium, {low} low", flush=True)
+        print(
+            f"  Confidence: {high} high (>=0.95), {med} medium, {low} low", flush=True
+        )
 
         types = Counter()
         for r in eye:
