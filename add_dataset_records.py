@@ -460,7 +460,7 @@ def add_dataset_records_to_database():
             "created": str(record["created"]),
             "data": record["data"],
             "description": record.get("description") or "",
-            "doi": record["doi"] or None,
+            "doi": record["doi"] or "",
             "externalUrl": record.get("externalUrl") or "",
             "files": record.get("files") or [],
             "publishedMetadata": record["publishedMetadata"],
