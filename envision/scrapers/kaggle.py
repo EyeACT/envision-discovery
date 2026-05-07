@@ -124,12 +124,18 @@ class KaggleScraper:
             if not datasets:
                 break
 
+
+            
+
+
+
             for dataset in datasets:
                 ref = dataset.get("ref", "")
                 safe_id = ref.replace("/", "_")
                 if not ref or safe_id in self.seen_refs:
                     continue
                 self.seen_refs.add(safe_id)
+
 
                 meta = self._dataset_to_metadata(dataset, inspect_zips)
                 if meta:
@@ -218,6 +224,15 @@ class KaggleScraper:
             logger.debug(f"Invalid Kaggle dataset ref: {ref}")
             return None
         owner_slug, dataset_slug = parts
+
+        # Get the creationDate for the latest version (which is what we are pulling) or lastUpdated if no versions (equivalent to versions[0]["creationDate"])
+        resp = self._request("get", f"{API_BASE}/datasets/view/{owner_slug}/{dataset_slug}")
+        data = resp.json()
+        # NOTE: We can get the creation date for the very first version if we want that. But for now grab latest version date since that is what we scrape (updates produce new version on Kaggle).
+        date = None
+        if "lastUpdated" in data:
+            date = data["lastUpdated"]
+
 
         # Kaggle's /datasets/view/ returns an empty files list; read the
         # whole-dataset ZIP's central directory instead.
@@ -321,7 +336,7 @@ class KaggleScraper:
             license=license_name,
             creators=creators,
             publication_year=None,
-            dates=[],
+            dates=[{"dateValue": date, "dateType": "Created"}] if date else [],
             related_identifiers=[],
             external_links=[],
             files=download_files,
