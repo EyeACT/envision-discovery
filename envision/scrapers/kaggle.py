@@ -225,13 +225,20 @@ class KaggleScraper:
             return None
         owner_slug, dataset_slug = parts
 
-        # Get the creationDate for the latest version (which is what we are pulling) or lastUpdated if no versions (equivalent to versions[0]["creationDate"])
-        resp = self._request("get", f"{API_BASE}/datasets/view/{owner_slug}/{dataset_slug}")
-        data = resp.json()
-        # NOTE: We can get the creation date for the very first version if we want that. But for now grab latest version date since that is what we scrape (updates produce new version on Kaggle).
         date = None
-        if "lastUpdated" in data:
-            date = data["lastUpdated"]
+
+        try:
+            # Get the creationDate for the latest version (which is what we are pulling) or lastUpdated if no versions (equivalent to versions[0]["creationDate"])
+            resp = self._request("get", f"{API_BASE}/datasets/view/{owner_slug}/{dataset_slug}")
+            data = resp.json()
+            
+            # NOTE: We can get the creation date for the very first version if we want that. But for now grab latest version date since that is what we scrape (updates produce new version on Kaggle).
+            date = None
+            if "lastUpdated" in data:
+                date = data["lastUpdated"]
+        except Exception as e:
+            logger.debug(f"Failed to get Kaggle dataset date details for {ref}: {e}")
+
 
 
         # Kaggle's /datasets/view/ returns an empty files list; read the
