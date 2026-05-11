@@ -146,6 +146,9 @@ class DataCiteScraper:
                 "dateValue": d.get("date", ""),
                 "dateType": d.get("dateType", "Other"),
             })
+        registered = attrs.get("registered")
+        created = attrs.get("created")
+
 
         pub_year = str(attrs.get("publicationYear", ""))
 
@@ -205,4 +208,6 @@ class DataCiteScraper:
             dates=dates,
             related_identifiers=related,
             external_links=[],
+            registered=registered
+            created=created
         )
