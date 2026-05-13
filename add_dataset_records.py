@@ -518,4 +518,4 @@ def add_dataset_records_to_database():
 
 if __name__ == "__main__":
     generate_dataset_records()
-    add_dataset_records_to_database()
+    # add_dataset_records_to_database()

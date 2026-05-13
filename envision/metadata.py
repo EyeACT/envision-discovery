@@ -62,6 +62,8 @@ class DatasetMetadata:
     # Provenance
     creators: list[dict] = field(default_factory=list)
     publication_year: str | None = None
+    registered: str | None = None
+    created: str | None = None
     dates: list[dict] = field(default_factory=list)
 
     # Links

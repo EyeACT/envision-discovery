@@ -208,6 +208,6 @@ class DataCiteScraper:
             dates=dates,
             related_identifiers=related,
             external_links=[],
-            registered=registered
+            registered=registered,
             created=created
         )
