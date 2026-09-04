@@ -878,7 +878,7 @@ doc.add_heading('Data and Code Availability', level=1)
 add_body(
     'The pipeline code and trained model are available at '
     'https://github.com/EyeACT/envision-discovery. The model is published on HuggingFace at '
-    'https://huggingface.co/fairdataihub/envision-eye-imaging-classifier. The Envision Portal is '
+    'https://huggingface.co/fairdataihub/envision-eye-imaging-classifier-by-metadata. The Envision Portal is '
     'accessible at https://envisionportal.org. All classified results are available in the '
     'repository under results/.',
     first_line_indent=0

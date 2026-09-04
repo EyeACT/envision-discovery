@@ -185,7 +185,7 @@ envision-discovery/
 
 - [envision-eye-actionable](https://github.com/EyeACT/envision-eye-actionable) — turns this repo's downloads into HuggingFace-loadable ADDF v0.1.0 trees
 - [envision-classifier](https://github.com/EyeACT/envision-classifier) — The SetFit classifier package (`pip install envision-classifier`)
-- [Model weights on HuggingFace](https://huggingface.co/fairdataihub/envision-eye-imaging-classifier)
+- [Model weights on HuggingFace](https://huggingface.co/fairdataihub/envision-eye-imaging-classifier-by-metadata)
 
 ## License
 

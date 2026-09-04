@@ -14,7 +14,7 @@ from huggingface_hub import HfApi, create_repo
 MODEL_DIR = Path(__file__).parent / "models" / "setfit"
 MODEL_CARD = Path(__file__).parent / "MODEL_CARD.md"
 # Official FAIR Data Innovations Hub repository
-REPO_ID = "fairdataihub/envision-eye-imaging-classifier"
+REPO_ID = "fairdataihub/envision-eye-imaging-classifier-by-metadata"
 
 def main():
     print(f"Uploading model to {REPO_ID}")

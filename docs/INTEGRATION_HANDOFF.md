@@ -35,7 +35,7 @@ All sources use the same unified JSON schema. Files are named `{source}_eye_imag
 
 ### HuggingFace Model
 ```
-https://huggingface.co/fairdataihub/envision-eye-imaging-classifier
+https://huggingface.co/fairdataihub/envision-eye-imaging-classifier-by-metadata
 ```
 
 ---

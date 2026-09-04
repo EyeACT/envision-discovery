@@ -185,7 +185,7 @@ A record qualifies for classification if it has:
 | Resource | Link |
 |----------|------|
 | GitHub Repository | https://github.com/EyeACT/envision-discovery |
-| HuggingFace Model | https://huggingface.co/fairdataihub/envision-eye-imaging-classifier |
+| HuggingFace Model | https://huggingface.co/fairdataihub/envision-eye-imaging-classifier-by-metadata |
 | Results JSON | `results/zenodo_eye_imaging.json` |
 | Validation Doc | `docs/SPOT_CHECK_VALIDATION.md` |
 

@@ -62,7 +62,7 @@ The binary classifier identifies records containing actual eye imaging data, fil
 from sentence_transformers import SentenceTransformer
 import joblib
 
-model = SentenceTransformer("fairdataihub/envision-eye-imaging-classifier", trust_remote_code=True)
+model = SentenceTransformer("fairdataihub/envision-eye-imaging-classifier-by-metadata", trust_remote_code=True)
 head = joblib.load("model_head.pkl")
 
 embeddings = model.encode(["Retinal OCT dataset for diabetic retinopathy"])
