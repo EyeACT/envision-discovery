@@ -83,8 +83,11 @@ All 7 scrapers follow the same pattern:
 
 - Save per-record JSON to `data/metadata/{source}/` as they scrape
 - Resume automatically on restart (skip already-scraped records)
-- Proactive rate limiting (delay before every API call) + unlimited exponential backoff retries
+- Proactive rate limiting (delay before every API call) + exponential backoff: 429 is retried until the rate limit clears, while 403, 5xx and network errors get a bounded number of retries and are then recorded as failures instead of hanging the run
 - Shared search terms across 47 ophthalmology-specific queries
+- Zenodo writes `data/scrape_query_report.json`: per search term the reported total, hits paged through, records kept, and a status of `ok`, `capped` (hits left unread, e.g. the 10,000 result API cap) or `error` (a request failed), plus every failed request. Check it before trusting a scrape as complete.
+- Zenodo archives that cannot be listed (a ZIP central directory over 64 MB, a server that ignores Range, a failed request after retries, or a `.rar`/`.7z`) no longer make a record look image-free: the record is kept, its `_file_analysis.uninspectable_archives` names the archives, and the query report counts such records per term (`kept_uninspectable`). Archive HEAD and Range requests are retried on 429 and 5xx.
+- Resume only skips records already on disk; it does not re-check them against the current queries or filters. Clear `data/metadata/zenodo/` when the queries or keep rules change.
 
 | Source       | API                  | Rate Limit           | Archive Inspection  | Notes                                       |
 | ------------ | -------------------- | -------------------- | ------------------- | ------------------------------------------- |

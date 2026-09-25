@@ -71,8 +71,6 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
     This converts them to the same DatasetMetadata format all other
     scrapers produce natively.
     """
-    from .metadata import DatasetMetadata
-
     records = []
     for jf in sorted(metadata_dir.glob("*.json")):
         try:
@@ -80,75 +78,141 @@ def _zenodo_json_to_metadata(metadata_dir: Path):
                 raw = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
-
-        meta = raw.get("metadata", raw)
-        zenodo_id = str(raw.get("id", jf.stem))
-
-        title = meta.get("title", "")
-        desc = meta.get("description", "")
-        if desc:
-            desc = unescape(re.sub("<[^<]+?>", " ", desc)).strip()
-
-        keywords = meta.get("keywords", [])
-        if isinstance(keywords, str):
-            keywords = [k.strip() for k in keywords.split(",")]
-
-        files = raw.get("files", [])
-        file_names = [f.get("key", "") for f in files]
-        file_types = set()
-        total_size = 0
-        download_files = []
-
-        for f_info in files:
-            fname = f_info.get("key", "").lower()
-            size = f_info.get("size", 0)
-            total_size += size
-            ext = "." + fname.rsplit(".", 1)[-1] if "." in fname else ""
-            file_types.add(ext)
-            url = f_info.get("links", {}).get("self", "")
-            if url:
-                download_files.append({
-                    "name": f_info.get("key", ""),
-                    "size_bytes": size,
-                    "url": url,
-                    "file_id": f_info.get("id"),
-                    "checksum": f_info.get("checksum"),
-                })
-
-        analysis = raw.get("_file_analysis", {})
-
-        creators = []
-        for c in meta.get("creators", []):
-            creators.append({
-                "creatorName": c.get("name", ""),
-                "nameType": "Personal",
-            })
-
-        records.append(DatasetMetadata(
-            source="zenodo",
-            source_id=zenodo_id,
-            doi=meta.get("doi", raw.get("doi", "")),
-            url=f"https://zenodo.org/records/{zenodo_id}",
-            title=title,
-            description=desc,
-            keywords=keywords,
-            file_names=file_names,
-            file_types=file_types,
-            file_count=len(files),
-            total_size_bytes=total_size,
-            img_count=analysis.get("imaging_file_count", 0),
-            archive_count=analysis.get("archive_count", 0),
-            genomics_count=analysis.get("genomics_count", 0),
-            zip_contents=list(analysis.get("zip_contents", {}).keys()),
-            access_type=meta.get("access_right"),
-            license=meta.get("license", {}).get("id") if isinstance(meta.get("license"), dict) else None,
-            creators=creators,
-            publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
-            external_links=[l.get("url", "") for l in raw.get("_weblinks", [])],
-            files=download_files,
-        ))
+        records.append(zenodo_record_to_metadata(raw, default_id=jf.stem))
 
     return records
+
+
+def _ext(name: str) -> str:
+    """Lower-case extension of a file name, with compound .nii.gz etc."""
+    from .utils import ARCHIVE_EXTS, EYE_IMAGING_EXTS, GENOMICS_EXTS
+
+    base = name.lower().rsplit("/", 1)[-1]
+    for ext in sorted(EYE_IMAGING_EXTS | GENOMICS_EXTS | ARCHIVE_EXTS, key=len, reverse=True):
+        if ext.count(".") > 1 and base.endswith(ext):
+            return ext
+    return "." + base.rsplit(".", 1)[-1] if "." in base else ""
+
+
+# Imaging-capable formats that are not plain pictures (volumes, arrays,
+# vendor OCT exports). Counted as medical_count, not img_count.
+MEDICAL_EXTS = {
+    ".dcm", ".dicom", ".nii", ".nii.gz", ".mat", ".h5", ".hdf5", ".npy", ".npz",
+    ".mha", ".mhd", ".nrrd", ".e2e", ".fds", ".fda", ".oct", ".img", ".vol",
+}
+
+
+def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
+    """Convert one raw Zenodo API record (as saved by the scraper) to DatasetMetadata.
+
+    File counts come from the record's own file list so every record gets
+    img/medical/archive/genomics counts, whether or not the scraper ran
+    ZIP inspection. Archive members found by that inspection are added to
+    zip_contents / zip_file_types and to img_count.
+    """
+    from .metadata import DatasetMetadata
+    from .utils import ARCHIVE_EXTS, EYE_IMAGING_EXTS, GENOMICS_EXTS
+
+    meta = raw.get("metadata", raw)
+    zenodo_id = str(raw.get("id", default_id))
+
+    title = meta.get("title", "")
+    desc = meta.get("description", "")
+    if desc:
+        desc = unescape(re.sub("<[^<]+?>", " ", desc)).strip()
+
+    keywords = meta.get("keywords", [])
+    if isinstance(keywords, str):
+        keywords = [k.strip() for k in keywords.split(",")]
+
+    files = raw.get("files", []) or []
+    file_names = [f.get("key", "") for f in files]
+    file_types = set()
+    total_size = 0
+    download_files = []
+    img_count = medical_count = archive_count = genomics_count = 0
+
+    for f_info in files:
+        name = f_info.get("key", "")
+        size = f_info.get("size", 0) or 0
+        total_size += size
+        ext = _ext(name)
+        file_types.add(ext)
+        if ext in GENOMICS_EXTS:
+            genomics_count += 1
+        elif ext in ARCHIVE_EXTS:
+            archive_count += 1
+        elif ext in MEDICAL_EXTS:
+            medical_count += 1
+        elif ext in EYE_IMAGING_EXTS:
+            img_count += 1
+        url = f_info.get("links", {}).get("self", "")
+        if url:
+            download_files.append({
+                "name": name,
+                "size_bytes": size,
+                "url": url,
+                "file_id": f_info.get("id"),
+                "checksum": f_info.get("checksum"),
+            })
+
+    # Archive members seen by the scraper's Range inspection. Both the
+    # current ArchiveInspector summary and the older ZipInspector summary
+    # carry per-extension counts under "file_types" and sample names.
+    analysis = raw.get("_file_analysis", {}) or {}
+    zip_contents: list[str] = []
+    zip_file_types: dict[str, int] = {}
+    for summary in (analysis.get("zip_contents") or {}).values():
+        if not isinstance(summary, dict):
+            continue
+        for key in ("imaging_files", "sample_imaging_files", "genomics_files",
+                    "sample_genomics_files"):
+            zip_contents.extend(summary.get(key) or [])
+        for ext, n in (summary.get("file_types") or {}).items():
+            zip_file_types[ext] = zip_file_types.get(ext, 0) + int(n)
+        img_count += int(summary.get("imaging_file_count", 0) or 0)
+    zip_contents = list(dict.fromkeys(zip_contents))
+
+    creators = []
+    for c in meta.get("creators", []):
+        creators.append({
+            "creatorName": c.get("name", ""),
+            "nameType": "Personal",
+        })
+
+    # External links: data-platform URLs from related identifiers and from
+    # the description, the same rule the scraper uses to keep a record.
+    weblinks = raw.get("_weblinks", []) or []
+    platform_urls = [w.get("url", "") for w in weblinks
+                     if isinstance(w, dict) and w.get("type") == "data_platform"]
+    external_links = list(dict.fromkeys(list(raw.get("_dataset_links", []) or []) + platform_urls))
+
+    return DatasetMetadata(
+        source="zenodo",
+        source_id=zenodo_id,
+        doi=meta.get("doi", raw.get("doi", "")),
+        url=f"https://zenodo.org/records/{zenodo_id}",
+        title=title,
+        description=desc,
+        keywords=keywords,
+        file_names=file_names,
+        file_types=file_types,
+        file_count=len(files),
+        total_size_bytes=total_size,
+        img_count=img_count,
+        medical_count=medical_count,
+        archive_count=archive_count,
+        genomics_count=genomics_count,
+        zip_contents=zip_contents,
+        zip_file_types=zip_file_types,
+        access_type=meta.get("access_right"),
+        license=meta.get("license", {}).get("id") if isinstance(meta.get("license"), dict) else None,
+        creators=creators,
+        publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
+        related_identifiers=meta.get("related_identifiers", []) or [],
+        external_links=external_links,
+        files=download_files,
+    )
 
 
 # ── Per-source scraper dispatch ─────────────────────────────────────

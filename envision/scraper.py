@@ -28,7 +28,6 @@ from typing import Dict, List, Optional, Set
 import requests
 from bs4 import BeautifulSoup
 
-from .metadata import DatasetMetadata
 from .utils import request_with_backoff, ArchiveInspector, PaginatedSearch, EYE_IMAGING_EXTS as UTILS_IMAGING_EXTS, GENOMICS_EXTS as UTILS_GENOMICS_EXTS, ARCHIVE_EXTS as UTILS_ARCHIVE_EXTS
 
 logging.basicConfig(
@@ -55,6 +54,8 @@ EYE_IMAGING_EXTS = {
 }
 
 ARCHIVE_EXTS = {".zip", ".tar", ".gz", ".tar.gz", ".rar", ".7z", ".tgz"}
+# archives that hold many files and that ArchiveInspector cannot list
+MULTI_FILE_ARCHIVE_EXTS = (".rar", ".7z")
 
 GENOMICS_EXTS = {
     ".fasta", ".fa", ".fna",
@@ -292,6 +293,11 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
         "zip_contents": {},
         "zip_imaging_files": [],
         "zip_genomics_files": [],
+        # Multi-file archives whose member list could not be read (listing
+        # failed, e.g. a ZIP central directory over max_cd_bytes, a server
+        # that ignores Range, or a format we cannot list such as .rar/.7z).
+        # "Not listed" is not "no imaging inside": _should_keep keeps these.
+        "uninspectable_archives": [],
     }
 
     imaging_found = False
@@ -318,9 +324,11 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
             analysis["total_archive_size"] += size
 
             download_url = f.get("links", {}).get("self")
+            listed = False
             if download_url:
                 try:
                     archive_files = ArchiveInspector.inspect_archive(download_url, filename, session)
+                    listed = archive_files is not None
                     if archive_files:
                         summary = ArchiveInspector.summarize_contents(archive_files)
                         analysis["zip_contents"][filename] = summary
@@ -337,11 +345,20 @@ def analyze_record_files(record: Dict, session: requests.Session) -> Dict:
                             )
                 except Exception as e:
                     logger.debug(f"Could not inspect archive {filename}: {e}")
+            if not listed:
+                analysis["uninspectable_archives"].append(
+                    {"name": f.get("key", ""), "size": size,
+                     "reason": "listing failed" if download_url else "no download link"})
 
         elif any(filename.endswith(ext) for ext in ARCHIVE_EXTS):
             analysis["has_archives"] = True
             analysis["archive_count"] += 1
             analysis["total_archive_size"] += size
+            if filename.endswith(MULTI_FILE_ARCHIVE_EXTS):
+                # .rar / .7z: no Range lister; a single-file .gz is not
+                # listed here because its name already says what it holds
+                analysis["uninspectable_archives"].append(
+                    {"name": f.get("key", ""), "size": size, "reason": "format not listable"})
 
     analysis["has_imaging_files"] = imaging_found
     analysis["has_genomics_only"] = genomics_found and not imaging_found
@@ -407,6 +424,10 @@ class ZenodoScraper:
     """Scrape Zenodo for eye imaging datasets with ZIP inspection."""
 
     SEARCH_URL = "https://zenodo.org/api/records/"
+    # Zenodo's search API refuses to page past this many hits per query
+    # (page * size > 10,000 returns HTTP 400). Queries above it must be
+    # split (run_scrape does this by creation date).
+    MAX_API_RESULTS = 10_000
 
     def __init__(self, output_dir: Path, resume: bool = True):
         self.session = requests.Session()
@@ -433,11 +454,21 @@ class ZenodoScraper:
             "with_genomics_only": 0,
             "zips_inspected": 0,
             "skipped_existing": 0,
+            "kept_uninspectable_archive": 0,
         }
+        # Failed HTTP requests (filled by request_with_backoff) and one
+        # entry per search() call; run_scrape turns these into
+        # scrape_query_report.json.
+        self.failures: List[Dict] = []
+        self.searches: List[Dict] = []
 
     def get_count(self, query: str, datasets_only: bool = True,
-                   start_date: str = None, end_date: str = None) -> int:
-        """Get total result count for a query without fetching records."""
+                   start_date: str = None, end_date: str = None) -> Optional[int]:
+        """Get total result count for a query without fetching records.
+
+        Returns None (not 0) when the request fails, so callers can tell a
+        failed count from an empty result.
+        """
         full_query = query
         if datasets_only:
             full_query = f"({query}) AND resource_type.type:dataset"
@@ -447,10 +478,16 @@ class ZenodoScraper:
         resp = request_with_backoff(
             self.session, "get", self.SEARCH_URL,
             params={"q": full_query, "size": 1},
+            failures=self.failures,
         )
         if resp is None:
-            return 0
-        return resp.json().get("hits", {}).get("total", 0)
+            return None
+        try:
+            return int(resp.json().get("hits", {}).get("total", 0))
+        except (ValueError, TypeError) as e:
+            self.failures.append({"url": self.SEARCH_URL, "params": {"q": full_query},
+                                  "status": resp.status_code, "error": f"bad JSON: {e}"})
+            return None
 
     def search(
         self,
@@ -459,26 +496,57 @@ class ZenodoScraper:
         datasets_only: bool = True,
         inspect_zips: bool = True,
     ) -> List[Dict]:
-        """Search Zenodo, enrich records, and filter for eye imaging datasets."""
+        """Search Zenodo, enrich records, and filter for eye imaging datasets.
+
+        Every call appends a summary to self.searches with the reported
+        total, the hits actually paged through, and a status: "ok",
+        "capped" (stopped by max_results or the API result cap while hits
+        remained) or "error" (a page request failed; details are in
+        self.failures). Before, a failed page or an exception ended the loop
+        silently and looked exactly like a query with no more results.
+        """
         records = []
         page = 1
         per_page = 25
+        full_query = query
+        if datasets_only:
+            full_query = f"({query}) AND resource_type.type:dataset"
+        entry = {"query": full_query, "total": None, "hits_seen": 0,
+                 "kept": 0, "kept_uninspectable": 0, "status": "ok", "error": None}
+        self.searches.append(entry)
 
-        while len(records) < max_results:
-            full_query = query
-            if datasets_only:
-                full_query = f"({query}) AND resource_type.type:dataset"
+        while True:
+            if len(records) >= max_results:
+                if entry["total"] is not None and entry["hits_seen"] < entry["total"]:
+                    entry["status"] = "capped"
+                break
+            if (page - 1) * per_page >= self.MAX_API_RESULTS:
+                entry["status"] = "capped"
+                logger.warning(
+                    f"  Query hit the Zenodo {self.MAX_API_RESULTS:,} result cap: {full_query}"
+                )
+                break
 
             params = {"q": full_query, "page": page, "size": per_page}
 
             try:
-                response = request_with_backoff(self.session, "get", self.SEARCH_URL, params=params)
+                n_fail = len(self.failures)
+                response = request_with_backoff(
+                    self.session, "get", self.SEARCH_URL, params=params,
+                    failures=self.failures,
+                )
                 if response is None:
+                    entry["status"] = "error"
+                    entry["error"] = (self.failures[n_fail:] or [{}])[-1]
                     break
 
-                hits = response.json().get("hits", {}).get("hits", [])
+                payload = response.json().get("hits", {})
+                if entry["total"] is None:
+                    entry["total"] = payload.get("total")
+                hits = payload.get("hits", [])
                 if not hits:
                     break
+                entry["hits_seen"] += len(hits)
 
                 for hit in hits:
                     record_id = hit.get("id")
@@ -496,6 +564,10 @@ class ZenodoScraper:
                         records.append(enriched)
                         self._save_metadata(enriched)
                         self.stats["datasets_found"] += 1
+                        entry["kept"] += 1
+                        if self._keep_reason(enriched) == "uninspectable_archive":
+                            self.stats["kept_uninspectable_archive"] += 1
+                            entry["kept_uninspectable"] += 1
 
                 page += 1
                 time.sleep(2.0)
@@ -505,6 +577,8 @@ class ZenodoScraper:
 
             except Exception as e:
                 logger.warning(f"Search error for '{query}': {e}")
+                entry["status"] = "error"
+                entry["error"] = f"{type(e).__name__}: {e}"[:300]
                 break
 
         return records
@@ -538,29 +612,39 @@ class ZenodoScraper:
 
     def _should_keep(self, record: Dict) -> bool:
         """Keep record if it likely contains eye imaging data."""
+        return self._keep_reason(record) is not None
+
+    @staticmethod
+    def _keep_reason(record: Dict) -> Optional[str]:
+        """Why a record is kept, or None when it is dropped."""
         analysis = record.get("_file_analysis", {})
 
         if analysis.get("has_genomics_only"):
-            return False
+            return None
         if analysis.get("has_imaging_files"):
-            return True
+            return "imaging_files"
         if record.get("_dataset_links"):
-            return True
+            return "dataset_links"
 
         weblinks = record.get("_weblinks", [])
         if any(
             l.get("type") in ["data_platform", "archive_download", "direct_file"]
             for l in weblinks
         ):
-            return True
+            return "weblinks"
 
-        # Only keep archives if ZIP inspection found imaging files inside
+        # Archives: kept when inspection found imaging files inside ...
         if analysis.get("has_archives") and analysis.get("zip_contents"):
             for zip_summary in analysis["zip_contents"].values():
                 if zip_summary.get("imaging_file_count", 0) > 0:
-                    return True
+                    return "imaging_in_archive"
+        # ... or when an archive could not be listed at all: an unreadable
+        # listing says nothing about the contents (before, such records were
+        # dropped silently, e.g. SYN-OCT.zip with a 108 MB central directory)
+        if analysis.get("uninspectable_archives"):
+            return "uninspectable_archive"
 
-        return False
+        return None
 
     def _save_metadata(self, record: Dict):
         """Save enriched record metadata to JSON."""
@@ -576,131 +660,6 @@ class ZenodoScraper:
         logger.info("=" * 60)
         for key, value in self.stats.items():
             logger.info(f"  {key}: {value:,}")
-
-
-# =============================================================================
-# METADATA CONVERSION
-# =============================================================================
-
-def _to_metadata(record: dict) -> DatasetMetadata:
-    """Convert a raw Zenodo JSON record to DatasetMetadata."""
-    meta = record.get("metadata", {})
-
-    # --- Strip HTML from description ---
-    raw_desc = meta.get("description", "")
-    try:
-        description = BeautifulSoup(raw_desc, "html.parser").get_text(separator=" ")
-    except Exception:
-        description = raw_desc
-
-    # --- File inventory ---
-    files = record.get("files", [])
-    file_names = []
-    file_types: set[str] = set()
-    total_size = 0
-    img_count = 0
-    medical_count = 0
-    archive_count = 0
-    genomics_count = 0
-
-    for f in files:
-        name = f.get("key", "")
-        size = f.get("size", 0)
-        name_lower = name.lower()
-
-        file_names.append(name)
-        total_size += size
-
-        # Check genomics first (to exclude)
-        is_genomics = False
-        for ext in sorted(GENOMICS_EXTS, key=len, reverse=True):
-            if name_lower.endswith(ext):
-                file_types.add(ext)
-                genomics_count += 1
-                is_genomics = True
-                break
-        if is_genomics:
-            continue
-
-        # Check known extensions
-        all_exts = EYE_IMAGING_EXTS | ARCHIVE_EXTS
-        for ext in sorted(all_exts, key=len, reverse=True):
-            if name_lower.endswith(ext):
-                file_types.add(ext)
-                if ext in ARCHIVE_EXTS:
-                    archive_count += 1
-                elif ext in {
-                    ".dcm", ".dicom", ".nii", ".nii.gz",
-                    ".mat", ".h5", ".hdf5", ".npy", ".npz",
-                    ".fds", ".e2e", ".vol", ".oct", ".fda", ".img",
-                }:
-                    medical_count += 1
-                else:
-                    img_count += 1
-                break
-
-    # --- ZIP contents (imaging files found inside ZIPs by scraper) ---
-    file_analysis = record.get("_file_analysis", {})
-    zip_contents = file_analysis.get("zip_imaging_files", [])
-
-    # --- Keywords ---
-    keywords = meta.get("keywords", [])
-    if isinstance(keywords, str):
-        keywords = [keywords]
-
-    # --- Creators ---
-    creators = [
-        {"creatorName": c.get("name", ""), "nameType": "Personal"}
-        for c in meta.get("creators", [])
-    ]
-
-    # --- Publication date ---
-    pub_date = meta.get("publication_date", "")
-    publication_year = pub_date[:4] if pub_date else None
-
-    # --- Dates ---
-    dates = []
-    if pub_date:
-        dates.append({"dateValue": pub_date, "dateType": "Available"})
-
-    # --- Related identifiers ---
-    related_identifiers = meta.get("related_identifiers", [])
-
-    # --- External links ---
-    dataset_links = record.get("_dataset_links", [])
-    weblinks = record.get("_weblinks", [])
-    # Include data_platform weblinks as external links
-    platform_urls = [
-        w["url"] for w in weblinks
-        if isinstance(w, dict) and w.get("type") == "data_platform"
-    ]
-    external_links = list(dict.fromkeys(dataset_links + platform_urls))
-
-    return DatasetMetadata(
-        source="zenodo",
-        source_id=str(record.get("id", "")),
-        doi=meta.get("doi"),
-        url=f"https://zenodo.org/records/{record['id']}",
-        title=meta.get("title", ""),
-        description=description,
-        keywords=keywords,
-        file_names=file_names[:20],
-        file_types=file_types,
-        file_count=len(files),
-        total_size_bytes=total_size,
-        img_count=img_count,
-        medical_count=medical_count,
-        archive_count=archive_count,
-        genomics_count=genomics_count,
-        zip_contents=zip_contents,
-        access_type=meta.get("access_right", "open"),
-        license=meta.get("license", {}).get("id", ""),
-        creators=creators,
-        publication_year=publication_year,
-        dates=dates,
-        related_identifiers=related_identifiers,
-        external_links=external_links,
-    )
 
 
 # =============================================================================
@@ -746,19 +705,34 @@ def run_scrape(
         date_format="%Y-%m-%d",
     )
 
+    # Upper bound for date slicing is today, not a hard-coded year, so
+    # records created after a fixed end date are not silently excluded.
+    end_date = datetime.now().strftime("%Y-%m-%d")
+    term_report = []
+
     for i, term in enumerate(SEARCH_TERMS, 1):
         query = _build_zenodo_query(term)
         logger.info(f"\n[{i}/{len(SEARCH_TERMS)}] Searching: '{term}' -> q='{query}'")
+        n_searches = len(scraper.searches)
+        n_problems = len(paginator.problems)
 
         # Check count first — use pagination if exceeds max_per_query
         total_count = scraper.get_count(query, datasets_only=datasets_only)
 
-        if total_count > max_per_query:
+        if total_count is None:
+            logger.warning(f"  Count request failed for '{term}', searching without a count")
+            results = scraper.search(
+                query,
+                max_results=max_per_query,
+                datasets_only=datasets_only,
+                inspect_zips=inspect_zips,
+            )
+        elif total_count > max_per_query:
             logger.info(
                 f"  Total results ({total_count}) exceeds cap ({max_per_query}), "
                 f"using date-range pagination"
             )
-            results = paginator.search(query, "2010-01-01", "2026-12-31")
+            results = paginator.search(query, "2010-01-01", end_date)
         else:
             results = scraper.search(
                 query,
@@ -768,22 +742,73 @@ def run_scrape(
             )
 
         all_records.extend(results)
+        term_report.append(_term_status(
+            term, query, total_count,
+            scraper.searches[n_searches:], paginator.problems[n_problems:],
+        ))
         logger.info(
             f"  Found {len(results)} matching datasets (total: {len(all_records)})"
+            f" [{term_report[-1]['status']}]"
         )
         time.sleep(3.0)
 
+    problems = [t for t in term_report if t["status"] != "ok"]
     summary = {
         "timestamp": datetime.now().isoformat(),
         "stats": scraper.stats,
         "total_records": len(all_records),
         "search_terms_used": len(SEARCH_TERMS),
+        "terms_with_problems": len(problems),
+        "failed_requests": len(scraper.failures),
+        "kept_uninspectable_archive": scraper.stats["kept_uninspectable_archive"],
     }
     with open(output_dir / "scrape_summary.json", "w") as f:
         json.dump(summary, f, indent=2)
+    with open(output_dir / "scrape_query_report.json", "w") as f:
+        json.dump({"terms": term_report, "failed_requests": scraper.failures}, f, indent=2)
 
+    for t in problems:
+        logger.warning(
+            f"  {t['status'].upper()}: '{t['term']}' total={t['total']} "
+            f"hits_seen={t['hits_seen']} ({len(t['slice_problems'])} bad date slices)"
+        )
+    logger.info(
+        f"Query report: {len(problems)} term(s) capped or errored, "
+        f"{len(scraper.failures)} failed request(s) -> "
+        f"{output_dir / 'scrape_query_report.json'}"
+    )
+
+    if scraper.stats["kept_uninspectable_archive"]:
+        logger.warning(
+            f"{scraper.stats['kept_uninspectable_archive']} record(s) kept only because an "
+            f"archive could not be listed (see _file_analysis.uninspectable_archives)"
+        )
     scraper.print_stats()
     return all_records
+
+
+def _term_status(term: str, query: str, total: Optional[int],
+                 searches: List[Dict], slice_problems: List[Dict]) -> Dict:
+    """Summarise one search term: did we page through everything it matched?
+
+    status is "error" if the count or any page request failed, "capped" if
+    any search or date slice stopped with hits remaining, else "ok".
+    """
+    statuses = {s["status"] for s in searches} | {p["status"] for p in slice_problems}
+    if total is None:
+        statuses.add("error")
+    status = "error" if "error" in statuses else "capped" if "capped" in statuses else "ok"
+    return {
+        "term": term,
+        "query": query,
+        "total": total,
+        "hits_seen": sum(s["hits_seen"] for s in searches),
+        "kept": sum(s["kept"] for s in searches),
+        "kept_uninspectable": sum(s.get("kept_uninspectable", 0) for s in searches),
+        "status": status,
+        "searches": searches,
+        "slice_problems": slice_problems,
+    }
 
 
 def main():

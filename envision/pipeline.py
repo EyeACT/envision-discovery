@@ -112,15 +112,49 @@ def _build_results(metadata_records, classifications):
             "archive_count": meta.archive_count,
             "genomics_count": meta.genomics_count,
             "size_mb": meta.size_mb,
-            "zip_file_types": {},
+            "zip_file_types": _zip_file_types(meta),
             "external_links": meta.external_links[:10],
-            "related_dois": [],
+            "related_dois": _related_dois(meta),
         }
         all_results.append(result)
         if cls["label"] == "EYE_IMAGING":
             addf_records.append((meta, cls))
 
     return all_results, addf_records
+
+
+def _zip_file_types(meta) -> dict:
+    """Extension counts for files inside archives.
+
+    Uses the scraper's per-extension counts when it recorded them, else
+    counts the extensions of the archive member names it kept. This field
+    used to be hard-coded to {} for every record.
+    """
+    counts = dict(getattr(meta, "zip_file_types", None) or {})
+    if not counts:
+        for name in meta.zip_contents or []:
+            base = str(name).lower().rsplit("/", 1)[-1]
+            if "." in base:
+                ext = "." + base.rsplit(".", 1)[-1]
+                counts[ext] = counts.get(ext, 0) + 1
+    return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
+
+
+def _related_dois(meta) -> list:
+    """DOIs from related_identifiers (was hard-coded to [])."""
+    dois = []
+    for rel in meta.related_identifiers or []:
+        if not isinstance(rel, dict):
+            continue
+        ident = str(rel.get("identifier") or rel.get("relatedIdentifier") or "").strip()
+        scheme = str(rel.get("scheme") or rel.get("relatedIdentifierType") or "").lower()
+        low = ident.lower()
+        if scheme == "doi" or low.startswith("10.") or "doi.org/10." in low:
+            if "doi.org/" in low:
+                ident = ident[low.index("doi.org/") + len("doi.org/"):]
+            if ident and ident not in dois:
+                dois.append(ident)
+    return dois[:20]
 
 
 def _save_results(all_results, source, results_dir):

@@ -46,7 +46,11 @@ class DatasetMetadata:
     medical_count: int = 0
     archive_count: int = 0
     genomics_count: int = 0
-    zip_contents: list[str] = field(default_factory=list)
+    zip_contents: list[str] = field(default_factory=list)  # member names inside archives
+    # extension -> member count inside archives. Scrapers that only keep a
+    # sample of member names may leave this empty; pipeline._build_results
+    # then derives it from zip_contents.
+    zip_file_types: dict[str, int] = field(default_factory=dict)
 
     # Downloadable file manifest. Each entry:
     #   {"name": str, "size_bytes": int, "url": str,
