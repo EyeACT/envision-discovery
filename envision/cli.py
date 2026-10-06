@@ -219,7 +219,9 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
 
 def _scrape_source(source, args):
     """Run one scraper. Returns list[DatasetMetadata]."""
-    mpq = args.max_per_query
+    # Figshare has no default cap (None); the other sources keep 100.
+    fs_mpq = args.max_per_query
+    mpq = args.max_per_query or 100
     zips = not args.no_zip_inspect
 
     if source == 'zenodo':
@@ -229,7 +231,7 @@ def _scrape_source(source, args):
         return _zenodo_json_to_metadata(output_dir / "metadata" / "zenodo")
 
     scrapers = {
-        'figshare': ('.scrapers.figshare', 'FigshareScraper', dict(max_per_query=mpq, inspect_zips=zips)),
+        'figshare': ('.scrapers.figshare', 'FigshareScraper', dict(max_per_query=fs_mpq, inspect_zips=zips)),
         'dryad':    ('.scrapers.dryad',    'DryadScraper',    dict(max_per_query=mpq, inspect_zips=zips)),
         'osf':      ('.scrapers.osf',      'OSFScraper',      dict(max_per_query=min(mpq, 50))),
         'datacite': ('.scrapers.datacite', 'DataCiteScraper', dict(max_per_query=mpq)),
@@ -267,8 +269,8 @@ def pipeline_cli():
                        help='Output directory for classification results')
     parser.add_argument('--addf-output',
                        help='Directory for ADDF schema export')
-    parser.add_argument('--max-per-query', type=int, default=100,
-                       help='Max results per search query (default: 100)')
+    parser.add_argument('--max-per-query', type=int, default=None,
+                       help='Max results per search query (default: 100; Figshare: no cap)')
     parser.add_argument('--no-zip-inspect', action='store_true',
                        help='Skip ZIP content inspection (faster)')
     parser.add_argument('--dedup', action='store_true',

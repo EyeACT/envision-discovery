@@ -87,12 +87,13 @@ All 7 scrapers follow the same pattern:
 - Shared search terms across 47 ophthalmology-specific queries
 - Zenodo writes `data/scrape_query_report.json`: per search term the reported total, hits paged through, records kept, and a status of `ok`, `capped` (hits left unread, e.g. the 10,000 result API cap) or `error` (a request failed), plus every failed request. Check it before trusting a scrape as complete.
 - Zenodo archives that cannot be listed (a ZIP central directory over 64 MB, a server that ignores Range, a failed request after retries, or a `.rar`/`.7z`) no longer make a record look image-free: the record is kept, its `_file_analysis.uninspectable_archives` names the archives, and the query report counts such records per term (`kept_uninspectable`). Archive HEAD and Range requests are retried on 429 and 5xx.
+- Figshare searches figures, media, datasets and filesets (item types 1 to 4) with no per-term cap: bare words must all match, as on Zenodo, and pages follow the `X-Cursor` header past Figshare's 10,000 offset cap. `--max-per-query N` still caps it when asked. For a full keyword pull with per-term counts and file listings, use `envision/scrapers/figshare_full.py` (see `docs/figshare_pull.md`).
 - Resume only skips records already on disk; it does not re-check them against the current queries or filters. Clear `data/metadata/zenodo/` when the queries or keep rules change.
 
 | Source       | API                  | Rate Limit           | Archive Inspection  | Notes                                       |
 | ------------ | -------------------- | -------------------- | ------------------- | ------------------------------------------- |
 | **Zenodo**   | REST + Elasticsearch | 2s/req               | ZIP, TAR            | AND-required queries, date-range pagination |
-| **Figshare** | REST (POST)          | 1s (0.3s with token) | ZIP, TAR            | Set `FIGSHARE_ACCESS_TOKEN` in `.env`       |
+| **Figshare** | REST (POST)          | 1s (0.3s with token) | ZIP, TAR            | Set `FIGSHARE_ACCESS_TOKEN` in `.env`; cursor paging, no cap |
 | **DataCite** | REST                 | 1s/req               | N/A (metadata only) | Indexes DOIs across repositories            |
 | **Kaggle**   | REST                 | 1s/req               | ZIP, TAR            | Requires `KAGGLE_API_TOKEN`                 |
 | **Dryad**    | REST                 | 1.5s/req             | ZIP, TAR            | Small corpus                                |

@@ -25,6 +25,24 @@ from ..utils import request_with_backoff, ArchiveInspector
 logger = logging.getLogger(__name__)
 
 API_BASE = "https://api.figshare.com/v2"
+PAGE_SIZE = 1000
+
+# Item types searched (defined_type): figure, media, dataset, fileset. These
+# can hold image files; journal contributions, theses and software are left out.
+ITEM_TYPES = (1, 2, 3, 4)
+
+
+def _access_type(detail: dict) -> str:
+    """open, embargoed, confidential, metadata_only or download_disabled."""
+    if detail.get("is_confidential"):
+        return "confidential"
+    if detail.get("is_embargoed"):
+        return "embargoed"
+    if detail.get("is_metadata_record"):
+        return "metadata_only"
+    if detail.get("download_disabled"):
+        return "download_disabled"
+    return "open"
 
 
 class FigshareScraper:
@@ -63,63 +81,67 @@ class FigshareScraper:
     def search(
         self,
         query: str,
-        max_results: int = 100,
+        max_results: int | None = None,
         inspect_zips: bool = True,
+        item_types: tuple[int, ...] = ITEM_TYPES,
     ) -> list[DatasetMetadata]:
-        """Search Figshare for datasets matching query."""
+        """Search Figshare for items matching query, one item type at a time.
+
+        Bare words in search_for must all match (Figshare's default). Pages
+        follow the X-Cursor response header, which goes past the 10,000
+        offset cap of page/page_size paging. max_results None means no cap.
+        """
         results = []
-        page = 1
-        page_size = 100
+        for item_type in item_types:
+            cursor = None
+            while max_results is None or len(results) < max_results:
+                payload = {
+                    "search_for": query,
+                    "item_type": item_type,
+                    "page_size": PAGE_SIZE,
+                }
+                headers = {"X-Cursor": cursor} if cursor else None
+                resp = self._request("post", "articles/search", json=payload, headers=headers)
+                if resp is None:
+                    logger.warning(f"Figshare search failed for '{query}' (item_type {item_type})")
+                    break
+                articles = resp.json()
+                if not articles:
+                    break
 
-        while len(results) < max_results:
-            payload = {
-                "search_for": query,
-                "item_type": 3,  # datasets only
-                "page": page,
-                "page_size": page_size,
-            }
+                for article in articles:
+                    article_id = str(article.get("id", ""))
+                    if not article_id or article_id in self.seen_ids:
+                        continue
+                    self.seen_ids.add(article_id)
 
-            resp = self._request("post", "articles/search", json=payload)
-            if resp is None:
-                logger.warning(f"Figshare search failed for '{query}'")
-                break
-            articles = resp.json()
+                    meta = self._article_to_metadata(article, inspect_zips)
+                    if meta:
+                        meta.save(self.metadata_dir)
+                        results.append(meta)
+                    if max_results is not None and len(results) >= max_results:
+                        break
 
-            if not articles:
-                break
-
-            for article in articles:
-                article_id = str(article.get("id", ""))
-                if not article_id or article_id in self.seen_ids:
-                    continue
-                self.seen_ids.add(article_id)
-
-                meta = self._article_to_metadata(article, inspect_zips)
-                if meta:
-                    meta.save(self.metadata_dir)
-                    results.append(meta)
-
-            page += 1
-
-            if len(articles) < page_size:
-                break
+                cursor = resp.headers.get("X-Cursor")
+                if len(articles) < PAGE_SIZE or not cursor:
+                    break
 
         return results
 
     def scrape(
         self,
         search_terms: list[str] | None = None,
-        max_per_query: int = 100,
+        max_per_query: int | None = None,
         inspect_zips: bool = True,
     ) -> list[DatasetMetadata]:
-        """Run full scrape using all search terms."""
+        """Run full scrape using all search terms (max_per_query None or 0: no cap)."""
         if search_terms is None:
             search_terms = SEARCH_TERMS
 
         all_results = []
         for i, term in enumerate(search_terms, 1):
             logger.info(f"[{i}/{len(search_terms)}] Figshare: '{term}'")
-            results = self.search(term, max_results=max_per_query, inspect_zips=inspect_zips)
+            results = self.search(term, max_results=max_per_query or None, inspect_zips=inspect_zips)
             all_results.extend(results)
             logger.info(f"  Found {len(results)} (total: {len(all_results)})")
         return all_results
@@ -253,7 +275,7 @@ class FigshareScraper:
             archive_count=archive_count,
             genomics_count=genomics_count,
             zip_contents=zip_contents,
-            access_type="open" if not detail.get("is_embargoed") else "embargoed",
+            access_type=_access_type(detail),
             license=license_name,
             creators=creators,
             publication_year=pub_year,
