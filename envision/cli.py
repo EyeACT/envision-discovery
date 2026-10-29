@@ -187,11 +187,29 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
                      if isinstance(w, dict) and w.get("type") == "data_platform"]
     external_links = list(dict.fromkeys(list(raw.get("_dataset_links", []) or []) + platform_urls))
 
+    # Access requests. Zenodo's API puts a links.access_request endpoint on
+    # every record (it is templated), so access_right is the signal: a
+    # restricted record takes requests on its record page (approval is at
+    # the owner's discretion), an embargoed one opens by itself on
+    # embargo_date, open and closed records have nothing to request.
+    record_url = f"https://zenodo.org/records/{zenodo_id}"
+    access_right = meta.get("access_right")
+    access_conditions = meta.get("access_conditions") or None
+    if access_conditions:
+        access_conditions = unescape(re.sub("<[^<]+?>", " ", access_conditions)).strip() or None
+    access_request = None
+    access_request_url = None
+    if access_right == "restricted":
+        access_request = True
+        access_request_url = record_url
+    elif access_right in ("open", "embargoed", "closed"):
+        access_request = False
+
     return DatasetMetadata(
         source="zenodo",
         source_id=zenodo_id,
         doi=meta.get("doi", raw.get("doi", "")),
-        url=f"https://zenodo.org/records/{zenodo_id}",
+        url=record_url,
         title=title,
         description=desc,
         keywords=keywords,
@@ -205,8 +223,12 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
         genomics_count=genomics_count,
         zip_contents=zip_contents,
         zip_file_types=zip_file_types,
-        access_type=meta.get("access_right"),
+        access_type=access_right,
         license=meta.get("license", {}).get("id") if isinstance(meta.get("license"), dict) else None,
+        access_request=access_request,
+        access_request_url=access_request_url,
+        access_conditions=access_conditions,
+        embargo_until=meta.get("embargo_date") or None,
         creators=creators,
         publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
         related_identifiers=meta.get("related_identifiers", []) or [],

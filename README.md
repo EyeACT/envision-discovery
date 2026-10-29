@@ -127,6 +127,10 @@ Each classified record:
   "description": "...",
   "keywords": ["PT-OCT", "ANN"],
   "access_type": "open",
+  "access_request": false,
+  "access_request_url": null,
+  "access_conditions": null,
+  "embargo_until": null,
   "license": "cc-by-4.0",
   "file_types": [".zip"],
   "file_names": ["Data.zip"],
@@ -140,6 +144,18 @@ Each classified record:
   "related_dois": []
 }
 ```
+
+Data access requests: every record carries four fields that say whether
+non-open data can be asked for. `access_request` is `true` when the
+repository offers a route to request the data (a Zenodo restricted record's
+request form, a confidential or metadata-only Figshare item's author
+contact, a private OSF node), `false` when the record is open or opens by
+itself, and `null` when the source API does not say (DataCite, NIH
+RePORTER). `access_request_url` is the page where the request is made,
+`access_conditions` the depositor's stated conditions or reason, and
+`embargo_until` the date an embargo lifts. These are filled during the
+scrape; for Zenodo they are also derived from already-saved raw records,
+so existing scrapes gain the fields without re-scraping.
 
 ### Classification labels
 

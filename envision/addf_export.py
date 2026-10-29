@@ -193,6 +193,10 @@ class ADDFExporter:
             "embargoed": "PublicOnScreenAccess",
             "restricted": "RestrictedAccess",
             "closed": "RestrictedAccess",
+            # Figshare access types
+            "confidential": "RestrictedAccess",
+            "metadata_only": "RestrictedAccess",
+            "download_disabled": "RestrictedAccess",
         }
         access_type = access_type_map.get(meta.access_type, "PublicOnScreenAccess")
 
