@@ -83,6 +83,64 @@ OPHTHALMIC_MESH = {
     "octa": {"code": "D041623", "term": "Tomography, Optical Coherence"},
 }
 
+# Values the CDS allows for date[].dateType. Anything else becomes "Other".
+CDS_DATE_TYPES = {
+    "Accepted", "Available", "Copyrighted", "Collected", "Created", "Issued",
+    "Submitted", "Updated", "Valid", "Withdrawn", "ControlledAccessInForce", "Other",
+}
+
+# Source vocabularies that do not line up with the CDS list. NEI gives grant
+# start and end dates, DataCite gives Coverage.
+DATE_TYPE_ALIASES = {
+    "startdate": "Collected",
+    "enddate": "Collected",
+    "coverage": "Valid",
+    "publication_date": "Issued",
+    "created": "Created",
+    "issued": "Issued",
+    "updated": "Updated",
+    "submitted": "Submitted",
+    "available": "Available",
+    "accepted": "Accepted",
+}
+
+# Values the CDS allows for relatedIdentifier[].relationType.
+CDS_RELATION_TYPES = {
+    "IsCitedBy", "Cites", "IsSupplementTo", "IsSupplementedBy", "IsContinuedBy",
+    "Continues", "Describes", "IsDescribedBy", "HasMetadata", "IsMetadataFor",
+    "HasVersion", "IsVersionOf", "IsNewVersionOf", "IsPreviousVersionOf",
+    "IsPartOf", "HasPart", "IsPublishedIn", "IsReferencedBy", "References",
+    "IsDocumentedBy", "Documents", "IsCompiledBy", "Compiles", "IsVariantFormOf",
+    "IsOriginalFormOf", "IsIdenticalTo", "IsReviewedBy", "Reviews",
+    "IsDerivedFrom", "IsSourceOf", "IsRequiredBy", "Requires", "Obsoletes",
+    "IsObsoletedBy", "IsCollectedBy", "Collects",
+}
+
+# Dryad uses its own relation vocabulary.
+RELATION_TYPE_ALIASES = {
+    "primary_article": "IsSupplementTo",
+    "preprint": "IsSupplementTo",
+    "article": "IsSupplementTo",
+    "software": "IsSupplementedBy",
+    "dataset": "IsSupplementedBy",
+    "supplemental_information": "IsSupplementedBy",
+}
+
+
+def _cds_date_type(value: str) -> str:
+    """Coerce a source date type onto the CDS controlled list."""
+    if value in CDS_DATE_TYPES:
+        return value
+    return DATE_TYPE_ALIASES.get(str(value).strip().lower(), "Other")
+
+
+def _cds_relation_type(value: str) -> str:
+    """Coerce a source relation type onto the CDS controlled list."""
+    if value in CDS_RELATION_TYPES:
+        return value
+    return RELATION_TYPE_ALIASES.get(str(value).strip().lower(), "References")
+
+
 # Modality detection from file extensions
 MODALITY_MAP = {
     ".dcm": {"name": "retinal_imaging", "term": "Retinal Imaging", "ncit": "C168215"},
@@ -174,25 +232,31 @@ class ADDFExporter:
 
                 subject.append(entry)
 
-        # Add classification label as subject
+        # Add classification label as subject. These go through the same dedupe
+        # set as the keywords, since subject has uniqueItems and a dataset
+        # tagged "Ophthalmology" upstream would otherwise get it twice.
         if label == "EYE_IMAGING":
-            subject.append({"subjectValue": "Eye Imaging"})
-            subject.append({
-                "subjectValue": "Ophthalmology",
-                "subjectIdentifier": {
-                    "classificationCode": "D009885",
-                    "subjectScheme": "Medical Subject Headings (MeSH)",
-                    "schemeURI": "https://meshb.nlm.nih.gov/",
-                    "valueURI": "https://meshb.nlm.nih.gov/record/ui?ui=D009885",
-                },
-            })
+            if "Eye Imaging" not in seen_subjects:
+                seen_subjects.add("Eye Imaging")
+                subject.append({"subjectValue": "Eye Imaging"})
+            if "Ophthalmology" not in seen_subjects:
+                seen_subjects.add("Ophthalmology")
+                subject.append({
+                    "subjectValue": "Ophthalmology",
+                    "subjectIdentifier": {
+                        "classificationCode": "D009885",
+                        "subjectScheme": "Medical Subject Headings (MeSH)",
+                        "schemeURI": "https://meshb.nlm.nih.gov/",
+                        "valueURI": "https://meshb.nlm.nih.gov/record/ui?ui=D009885",
+                    },
+                })
 
         # Access type
         access_type_map = {
             "open": "PublicOnScreenAccess",
             "embargoed": "PublicOnScreenAccess",
-            "restricted": "RestrictedAccess",
-            "closed": "RestrictedAccess",
+            "restricted": "RestrictedDownload",
+            "closed": "NonPublicAccessNoDetails",
         }
         access_type = access_type_map.get(meta.access_type, "PublicOnScreenAccess")
 
@@ -228,17 +292,27 @@ class ADDFExporter:
 
         # Related identifiers
         related_identifiers = []
+        seen_related = set()
         for rel in meta.related_identifiers:
+            value = (rel.get("relatedIdentifierValue") or "").strip()
+            if not value:
+                # relatedIdentifierValue has minLength 1, and an entry with no
+                # identifier in it says nothing anyway.
+                continue
+            if value in seen_related:
+                # relatedIdentifier has uniqueItems, and some sources list the
+                # same DOI more than once.
+                continue
+            seen_related.add(value)
             related_identifiers.append({
-                "relatedIdentifierValue": rel.get("relatedIdentifierValue", ""),
+                "relatedIdentifierValue": value,
                 "relatedIdentifierType": rel.get("relatedIdentifierType", "URL"),
-                "relationType": rel.get("relationType", "References"),
+                "relationType": _cds_relation_type(rel.get("relationType", "References")),
                 "resourceTypeGeneral": "Other",
             })
         for link in meta.external_links:
-            if isinstance(link, str) and link not in {
-                r.get("relatedIdentifierValue") for r in related_identifiers
-            }:
+            if isinstance(link, str) and link.strip() and link not in seen_related:
+                seen_related.add(link)
                 related_identifiers.append({
                     "relatedIdentifierValue": link,
                     "relatedIdentifierType": "URL",
@@ -249,9 +323,12 @@ class ADDFExporter:
         # Dates
         date_list = []
         for d in meta.dates:
+            value = (d.get("dateValue") or "").strip()
+            if not value:
+                continue
             date_list.append({
-                "dateValue": d.get("dateValue", ""),
-                "dateType": d.get("dateType", "Other"),
+                "dateValue": value,
+                "dateType": _cds_date_type(d.get("dateType", "Other")),
             })
 
         # Build the document
@@ -260,8 +337,6 @@ class ADDFExporter:
             "identifier": identifier,
             "title": title,
             "creator": creator,
-            "publicationYear": meta.publication_year or "",
-            "date": date_list,
             "resourceType": resource_type,
             "description": description,
             "language": "en",
@@ -272,6 +347,18 @@ class ADDFExporter:
             "size": size,
             "format": format_list,
         }
+
+        # publicationYear is a four character string, so an empty one is not a
+        # valid answer. Kaggle has no publication year at all, which is where
+        # the empty values were coming from.
+        year = (meta.publication_year or "").strip()
+        if len(year) == 4 and year.isdigit():
+            doc["publicationYear"] = year
+
+        # date has minItems 1, so an empty list fails. Omitting the key is the
+        # honest way to say we have no dates.
+        if date_list:
+            doc["date"] = date_list
 
         if related_identifiers:
             doc["relatedIdentifier"] = related_identifiers
