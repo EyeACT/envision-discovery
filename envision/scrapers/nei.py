@@ -225,6 +225,9 @@ class NEIScraper:
             zip_contents=[],
             access_type="unknown",
             license=None,
+            # NIH RePORTER rows are funded projects, not data records; the
+            # API says nothing about whether or where data can be requested.
+            access_request=None,
             creators=creators,
             publication_year=pub_year,
             dates=dates,

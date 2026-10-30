@@ -272,6 +272,7 @@ class DryadScraper:
             zip_contents=zip_contents,
             access_type="open",
             license=license_name,
+            access_request=False,  # published Dryad data is open (CC0)
             creators=creators,
             publication_year=pub_year,
             dates=[{"dateValue": pub_date, "dateType": "Available"}] if pub_date else [],

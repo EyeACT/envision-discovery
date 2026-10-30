@@ -405,3 +405,68 @@ def test_archive_listing_gives_up_after_max_tries(monkeypatch):
     sess = FlakySession(_zip_bytes(10), 99)
     assert ArchiveInspector.inspect_zip_via_range("u", sess) is None
     assert len(slept) == ArchiveInspector.max_tries - 1
+
+
+# ------------------------------------------------- access request fields
+
+def test_adapter_open_record_has_no_request_route():
+    m = zenodo_record_to_metadata(RAW)
+    assert m.access_type == "open"
+    assert m.access_request is False
+    assert m.access_request_url is None
+    assert m.access_conditions is None and m.embargo_until is None
+
+
+def test_adapter_restricted_record_takes_requests():
+    import copy
+    raw = copy.deepcopy(RAW)
+    raw["metadata"]["access_right"] = "restricted"
+    raw["metadata"]["access_conditions"] = "<p>Clinical use only</p>"
+    m = zenodo_record_to_metadata(raw)
+    assert m.access_type == "restricted"
+    assert m.access_request is True
+    assert m.access_request_url == "https://zenodo.org/records/42"
+    assert m.access_conditions == "Clinical use only"
+
+
+def test_adapter_embargoed_record_reports_lift_date():
+    import copy
+    raw = copy.deepcopy(RAW)
+    raw["metadata"]["access_right"] = "embargoed"
+    raw["metadata"]["embargo_date"] = "2027-01-01"
+    m = zenodo_record_to_metadata(raw)
+    assert m.access_request is False
+    assert m.embargo_until == "2027-01-01"
+
+
+def test_figshare_access_fields():
+    from envision.scrapers.figshare import _access_fields
+    open_detail = {"id": 1, "url_public_html": "https://figshare.com/articles/dataset/x/1"}
+    assert _access_fields(open_detail) == {
+        "access_request": False, "access_request_url": None,
+        "access_conditions": None, "embargo_until": None}
+    conf = {"id": 2, "url_public_html": "u2", "is_confidential": True,
+            "confidential_reason": "<b>Patient privacy</b>"}
+    f = _access_fields(conf)
+    assert f["access_request"] is True and f["access_request_url"] == "u2"
+    assert f["access_conditions"] == "Patient privacy"
+    emb = {"id": 3, "is_embargoed": True, "embargo_date": "2026-12-31",
+           "embargo_title": "File embargo"}
+    f = _access_fields(emb)
+    assert f["access_request"] is False and f["embargo_until"] == "2026-12-31"
+    assert f["access_conditions"] == "File embargo"
+
+
+def test_old_metadata_json_loads_with_default_access_fields(tmp_path):
+    import json
+
+    from envision.metadata import DatasetMetadata
+    m = DatasetMetadata(source="zenodo", source_id="7")
+    m.save(tmp_path)
+    p = tmp_path / "7.json"
+    d = json.loads(p.read_text())
+    for k in ("access_request", "access_request_url", "access_conditions", "embargo_until"):
+        d.pop(k)
+    p.write_text(json.dumps(d))
+    loaded = DatasetMetadata.load(p)
+    assert loaded.access_request is None and loaded.embargo_until is None
