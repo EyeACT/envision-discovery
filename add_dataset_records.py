@@ -10,6 +10,9 @@ from markdownify import markdownify as md
 from dotenv import load_dotenv
 import contextlib
 
+from envision.cli import zenodo_record_to_metadata
+from envision.metadata import DatasetMetadata
+
 load_dotenv()
 
 cuid_generator: Callable[[], str] = cuid_wrapper()
@@ -46,7 +49,19 @@ cuid_generator: Callable[[], str] = cuid_wrapper()
 #     datasetSource: z.string(),
 #     extractionMethod: z.string(),
 #     extractionVersion: z.string(),
+#     requiresAccessRequest: z.boolean().nullish(),
+#     accessRequestUrl: z.string().nullish(),
+#     accessConditions: z.string().nullish(),
+#     embargoUntil: z.string().nullish(),
 #   }),
+#   modalities: z.array(z.object({
+#     modality: z.string(),
+#     label: z.string(),
+#     fileCount: z.number().int().nonnegative().nullable(),
+#     fileExtensions: z.array(z.string()).default([]),
+#     detectionMethod: z.string(),
+#     fileCountComplete: z.boolean().default(true),
+#   })).optional(),
 # });
 
 # --- Configuration ---
@@ -74,8 +89,23 @@ METADATA_DIRS = {
     "osf": "data/metadata/osf",
 }
 
+# Repository access_type -> ADDF accessType
+ACCESS_TYPE_MAP = {
+    "open": "PublicOnScreenAccessAndDownload",
+    "embargoed": "PublicOnScreenAccess",
+    "restricted": "RestrictedAccess",
+    "closed": "RestrictedAccess",
+    # Figshare access types
+    "confidential": "RestrictedAccess",
+    "metadata_only": "RestrictedAccess",
+    "download_disabled": "RestrictedAccess",
+}
+
 API_KEY = os.getenv("EXTERNAL_API_KEY")
-API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:3000")
+SITES = {
+    "staging": os.getenv("STAGING_API_BASE_URL", ""),
+    "production": os.getenv("PRODUCTION_API_BASE_URL", ""),
+}
 
 
 def _clean_html(text):
@@ -124,6 +154,39 @@ def _extract_iso_date(value):
             return datetime.strptime(raw, fmt).date().isoformat()
 
     return ""
+
+
+def _load_metadata_object(meta, source, source_id):
+    """Load a saved metadata file as DatasetMetadata (Zenodo files are raw API records)."""
+    try:
+        if "source" in meta and "source_id" in meta:
+            d = dict(meta)
+            d["file_types"] = set(d.get("file_types") or [])
+            known = DatasetMetadata.__dataclass_fields__
+            return DatasetMetadata(**{k: v for k, v in d.items() if k in known})
+        if source == "zenodo":
+            return zenodo_record_to_metadata(meta, default_id=source_id)
+    except Exception as e:
+        print(f"    Could not parse metadata for {source_id} ({source}): {e}")
+    return None
+
+
+def _access_fields(record, meta_obj):
+    """Access fields from the result row, falling back to the metadata."""
+    keys = (
+        "access_type",
+        "access_request",
+        "access_request_url",
+        "access_conditions",
+        "embargo_until",
+    )
+    out = {}
+    for k in keys:
+        if k in record:
+            out[k] = record.get(k)
+        else:
+            out[k] = getattr(meta_obj, k, None) if meta_obj is not None else None
+    return out
 
 
 def _build_record_from_result(record, source):
@@ -178,6 +241,7 @@ def _build_record_from_result(record, source):
     metadata_created_raw = ""
     metadata_modified_raw = ""
     metadata_registered_raw = ""
+    meta_obj = None
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
@@ -190,6 +254,7 @@ def _build_record_from_result(record, source):
         else:
             with open(meta_path, "r", encoding="utf-8") as f:
                 meta = json.load(f)
+            meta_obj = _load_metadata_object(meta, source, source_id)
             m = meta.get("metadata", meta)
             creators.extend(
                 {
@@ -237,7 +302,6 @@ def _build_record_from_result(record, source):
                 publication_date = _extract_iso_date(metadata_modified_raw)
                 if publication_date:
                     publication_date_source = "modified"
-
 
             print(
                 f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
@@ -320,6 +384,11 @@ def _build_record_from_result(record, source):
 
     dataset_id = cuid_generator()
 
+    access = _access_fields(record, meta_obj)
+    access_type = ACCESS_TYPE_MAP.get(
+        access["access_type"], "PublicOnScreenAccessAndDownload"
+    )
+
     return {
         "canonicalId": dataset_id,
         "datasetId": dataset_id,
@@ -386,8 +455,8 @@ def _build_record_from_result(record, source):
                 "relatedIdentifier": [],
                 "subject": subjects,
                 "managingOrganization": {"name": ""},
-                "accessType": "PublicOnScreenAccessAndDownload",
-                "accessDetails": {"description": ""},
+                "accessType": access_type,
+                "accessDetails": {"description": access["access_conditions"] or ""},
                 "rights": [{"rightsName": license_name}],
                 "publisher": {"publisherName": source.capitalize()},
                 "size": sizes,
@@ -416,6 +485,10 @@ def _build_record_from_result(record, source):
             "datasetSource": source.capitalize(),
             "extractionMethod": "Automatic Registration",
             "extractionVersion": "0.2.0",
+            "requiresAccessRequest": access["access_request"],
+            "accessRequestUrl": access["access_request_url"],
+            "accessConditions": access["access_conditions"],
+            "embargoUntil": access["embargo_until"],
         },
     }
 
@@ -467,16 +540,24 @@ def generate_dataset_records():
 
 
 def add_dataset_records_to_database():
-    """POST each generated dataset record to the portal API."""
-    endpoint = f"{API_BASE_URL}/api/discover/dataset/external"
+    """POST each generated dataset record to every configured portal site."""
+    endpoints = {
+        name: f"{url.rstrip('/')}/api/discover/dataset/external"
+        for name, url in SITES.items()
+        if url
+    }
+    if not endpoints:
+        print("No sites configured: set STAGING_API_BASE_URL and/or PRODUCTION_API_BASE_URL")
+        return
 
-    print(f"Posting records to {endpoint}")
+    for name, endpoint in endpoints.items():
+        print(f"Posting records to {name}: {endpoint}")
 
     with open(DATASET_RECORDS_OUTPUT_FILE, "r", encoding="utf-8") as f:
         dataset_records = json.load(f)
 
-    success = 0
-    failed = 0
+    success = dict.fromkeys(endpoints, 0)
+    failed = dict.fromkeys(endpoints, 0)
     for record in dataset_records:
         payload = {
             "title": record["title"] or "No title available",
@@ -497,23 +578,28 @@ def add_dataset_records_to_database():
             ],
         }
 
-        try:
-            print(
-                f"  Posting '{record['title'][:60]}'... for Date Created: {record['created']}"
-            )
-            response = requests.post(
-                endpoint,
-                headers={"x-api-key": f"{API_KEY}"},
-                json=payload,
-                timeout=30,
-            )
-            response.raise_for_status()
-            success += 1
-        except requests.exceptions.RequestException as e:
-            print(f"  [ERROR] Failed to add '{record['title'][:60]}': {e}")
-            failed += 1
+        print(
+            f"  Posting '{record['title'][:60]}'... for Date Created: {record['created']}"
+        )
+        for name, endpoint in endpoints.items():
+            try:
+                response = requests.post(
+                    endpoint,
+                    headers={"x-api-key": f"{API_KEY}"},
+                    json=payload,
+                    timeout=30,
+                )
+                response.raise_for_status()
+                success[name] += 1
+            except requests.exceptions.RequestException as e:
+                print(f"  [ERROR] {name}: failed to add '{record['title'][:60]}': {e}")
+                if e.response is not None and e.response.text:
+                    print(f"    Response: {e.response.text[:2000]}")
+                failed[name] += 1
 
-    print(f"\nPosted {success} records ({failed} failed)")
+    print()
+    for name in endpoints:
+        print(f"{name}: posted {success[name]} records ({failed[name]} failed)")
 
 
 if __name__ == "__main__":

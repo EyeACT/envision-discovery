@@ -1,0 +1,1003 @@
+generator client {
+    provider        = "prisma-client"
+    previewFeatures = ["strictUndefinedChecks"]
+    output          = "../shared/generated/"
+    engineType      = "client"
+}
+
+// generator kysely {
+//   provider = "prisma-kysely"
+
+//   output   = "../types"
+//   fileName = "kysely.ts"
+// }
+
+datasource db {
+    provider = "postgresql"
+}
+
+model User {
+    id String @id @default(cuid(2))
+
+    givenName  String @default("")
+    familyName String @default("")
+
+    emailAddress String @unique
+    password     String
+
+    emailVerified                 Boolean   @default(false)
+    emailVerifiedAt               DateTime?
+    emailVerificationToken        String?   @unique
+    emailVerificationTokenExpires DateTime?
+
+    created DateTime @default(now())
+    updated DateTime @updatedAt
+
+    Notification      Notification[]
+    DatasetMember     DatasetMember[]
+    DatasetInvitation DatasetInvitation[]
+
+    ControlledDatasetRequest ControlledDatasetRequest[]
+    DatasetRequest           DatasetRequest[]
+
+    @@index([emailAddress])
+}
+
+model platformInvitation {
+    id String @id @default(cuid(2))
+
+    emailAddress String
+
+    invitationToken        String?   @unique
+    invitationTokenExpires DateTime?
+    invitationAccepted     Boolean?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model Notification {
+    id String @id @default(cuid(2))
+
+    title String  @default("")
+    body  String  @default("")
+    type  String  @default("info")
+    url   String  @default("")
+    read  Boolean @default(false)
+
+    userId String
+    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model Dataset {
+    id String @id @default(cuid(2))
+
+    title       String
+    description String
+    type        String
+
+    imageUrl String @default("https://picsum.photos/400")
+
+    canonicalId String  @default(cuid(2)) // Used to identify different versions of the same dataset
+    version     String? // Used to identify different versions of the same dataset
+
+    doi         String? // Optional since the doi is not assigned until the dataset is published
+    publishedId Int? // Optional since the publishedId is not assigned until the dataset is published
+
+    status String @default("draft") // draft | published
+
+    lockedAt DateTime? // Set when publishing is requested. Edits and upload SAS are blocked while set
+
+    deletedAt DateTime? // Set when a draft version is deleted. The dataset is hidden and its data is kept until the purge
+    purgedAt  DateTime? // Set when a deleted draft's data has been removed from storage
+
+    changelog String @default("")
+    readme    String @default("")
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    DatasetRequest DatasetRequest[]
+
+    DatasetMember           DatasetMember[]
+    DatasetInvitation       DatasetInvitation[]
+    DatasetPublishingStatus DatasetPublishingStatus?
+
+    DatasetAccess               DatasetAccess?
+    DatasetAlternateIdentifier  DatasetAlternateIdentifier[]
+    DatasetConsent              DatasetConsent?
+    DatasetContributor          DatasetContributor[]
+    DatasetDate                 DatasetDate[]
+    DatasetDeIdentLevel         DatasetDeIdentLevel?
+    DatasetDescription          DatasetDescription[]
+    DatasetFunder               DatasetFunder[]
+    DatasetHealthsheet          DatasetHealthsheet?
+    DatasetManagingOrganization DatasetManagingOrganization?
+    DatasetOther                DatasetOther?
+    DatasetRelatedIdentifier    DatasetRelatedIdentifier[]
+    DatasetRights               DatasetRights?
+    DatasetSubject              DatasetSubject[]
+    DatasetTitle                DatasetTitle[]
+
+    StudyDescription      StudyDescription?
+    StudyStatus           StudyStatus?
+    StudySponsors         StudySponsors?
+    StudyOversight        StudyOversight?
+    StudyDesign           StudyDesign?
+    StudyEligibility      StudyEligibility?
+    StudyIdentification   StudyIdentification[]
+    StudyCollaborators    StudyCollaborators[]
+    StudyConditions       StudyConditions[]
+    StudyKeywords         StudyKeywords[]
+    StudyArm              StudyArm[]
+    StudyIntervention     StudyIntervention[]
+    StudyCentralContact   StudyCentralContact[]
+    StudyOverallOfficials StudyOverallOfficials[]
+    StudyLocation         StudyLocation[]
+
+    ControlledDatasetRequest ControlledDatasetRequest[]
+
+    DatasetSupportingDocument DatasetSupportingDocument[]
+
+    Task Task[]
+}
+
+model DatasetSupportingDocument {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    storagePath   String @default("")
+    sanitizedName String @default("")
+    originalName  String @default("")
+    documentType  String @default("")
+    mimeType      String @default("")
+    size          BigInt @default(0)
+
+    created DateTime @default(now())
+}
+
+model DatasetMember {
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    userId String
+    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    owner Boolean @default(false)
+    role  String  @default("viewer") // owner | admin | editor | viewer
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    @@id([datasetId, userId])
+}
+
+enum InvitationStatuses {
+    ACCEPTED
+    REJECTED
+    RESCINDED
+    NORESPONSE
+}
+
+model DatasetInvitation {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    userId String? // for users with  accounts
+    user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    status InvitationStatuses @default(NORESPONSE)
+
+    emailAddress String? // for users with no accounts
+
+    invitationExpires DateTime @default(now())
+    invitationToken   String?  @unique
+
+    role String @default("viewer") // owner | admin | editor | viewer
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    @@unique([datasetId, userId])
+    @@unique([datasetId, emailAddress])
+}
+
+model StudyDescription {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    briefSummary        String @default("")
+    detailedDescription String @default("")
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyStatus {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    overallStatus String?
+    whyStopped    String?
+
+    startDate     DateTime?
+    startDateType String?
+
+    completionDate     DateTime?
+    completionDateType String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudySponsors {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    responsiblePartyType                                       String?
+    responsiblePartyInvestigatorGivenName                      String?
+    responsiblePartyInvestigatorFamilyName                     String?
+    responsiblePartyInvestigatorTitle                          String?
+    responsiblePartyInvestigatorIdentifierScheme               String?
+    responsiblePartyInvestigatorIdentifierValue                String?
+    responsiblePartyInvestigatorAffiliationName                String?
+    responsiblePartyInvestigatorAffiliationIdentifier          String?
+    responsiblePartyInvestigatorAffiliationIdentifierScheme    String?
+    responsiblePartyInvestigatorAffiliationIdentifierSchemeUri String?
+
+    leadSponsorName                String?
+    leadSponsorIdentifier          String?
+    leadSponsorIdentifierScheme    String?
+    leadSponsorIdentifierSchemeUri String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyOversight {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    fdaRegulatedDrug         String?
+    fdaRegulatedDevice       String?
+    humanSubjectReviewStatus String?
+    hasDmc                   String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyDesign {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    studyType String?
+
+    allocation                   String?
+    interventionModel            String?
+    interventionModelDescription String?
+    primaryPurpose               String?
+    masking                      String?
+    maskingDescription           String?
+    whoMaskedList                String[]
+
+    phaseList String[]
+
+    enrollmentCount Int?
+    enrollmentType  String?
+
+    numberOfArms Int?
+
+    oberservationalModelList String[]
+    timePerspectiveList      String[]
+
+    bioSpecRetention   String?
+    bioSpecDescription String?
+
+    targetDuration     Int?
+    targetDurationUnit String?
+
+    isPatientRegistry String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyEligibility {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    sex               String?
+    genderBased       String?
+    genderDescription String?
+
+    minimumAgeValue Int?
+    minimumAgeUnit  String?
+
+    maximumAgeValue Int?
+    maximumAgeUnit  String?
+
+    healthyVolunteers String?
+
+    inclusionCriteria String[]
+    exclusionCriteria String[]
+
+    studyPopulation String
+    samplingMethod  String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyIdentification {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    identifier       String
+    identifierType   String?
+    identifierDomain String?
+    identifierLink   String
+    isSecondary      Boolean @default(false)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyCollaborators {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    name       String
+    identifier String
+    scheme     String
+    schemeUri  String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyConditions {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    name               String
+    classificationCode String
+    scheme             String
+    schemeUri          String
+    conditionUri       String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyKeywords {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    name               String
+    classificationCode String
+    scheme             String
+    schemeUri          String
+    keywordUri         String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyArm {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    label       String
+    type        String?
+    description String
+
+    interventionList String[]
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyIntervention {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    type        String?
+    name        String
+    description String
+
+    otherNameList String[]
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyCentralContact {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    givenName  String
+    familyName String
+
+    degree String
+
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    affiliation                    String
+    affiliationIdentifier          String
+    affiliationIdentifierScheme    String
+    affiliationIdentifierSchemeUri String
+
+    phone    String
+    phoneExt String
+
+    emailAddress String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyOverallOfficials {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    givenName  String
+    familyName String
+
+    degree String
+    role   String
+
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    affiliation                    String
+    affiliationIdentifier          String
+    affiliationIdentifierScheme    String
+    affiliationIdentifierSchemeUri String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model StudyLocation {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    facility            String
+    status              String?
+    city                String
+    state               String
+    zip                 String
+    country             String
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    updated                  DateTime                   @updatedAt
+    created                  DateTime                   @default(now())
+    StudyLocationContactList StudyLocationContactList[]
+}
+
+model StudyLocationContactList {
+    id String @id @default(cuid(2))
+
+    locationId String
+    location   StudyLocation @relation(fields: [locationId], references: [id])
+
+    givenName  String
+    familyName String
+
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    role String
+
+    phone    String
+    phoneExt String
+
+    emailAddress String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetAccess {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    type           String
+    description    String
+    url            String
+    urlLastChecked DateTime?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetAlternateIdentifier {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    identifier String
+    type       String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetConsent {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    type          String
+    noncommercial Boolean
+    geogRestrict  Boolean
+    researchType  Boolean
+    geneticOnly   Boolean
+    noMethods     Boolean
+    details       String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetContributor {
+    id String @id @default(cuid(2))
+
+    familyName              String?
+    givenName               String
+    nameType                String?
+    nameIdentifier          String
+    nameIdentifierScheme    String
+    nameIdentifierSchemeUri String
+
+    creator Boolean
+
+    contributorType String?
+    affiliations    Json
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetDate {
+    id String @id @default(cuid(2))
+
+    date DateTime?
+    type String?
+
+    information String @default("")
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetDeIdentLevel {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    type    String?
+    direct  Boolean
+    hipaa   Boolean
+    dates   Boolean
+    nonarr  Boolean
+    kAnon   Boolean
+    details String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetDescription {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    description String
+    type        String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetFunder {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    name                String
+    identifier          String
+    identifierType      String
+    identifierSchemeUri String
+
+    awardNumber String
+    awardUri    String
+    awardTitle  String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetHealthsheet {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    motivation    Json
+    composition   Json
+    collection    Json
+    preprocessing Json
+    uses          Json
+    distribution  Json
+    maintenance   Json
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetManagingOrganization {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    name                String
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetOther {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    resourceTypeName  String
+    resourceType      String
+    language          String?
+    size              String[]
+    format            String[]
+    standardsFollowed String
+    acknowledgement   String
+
+    labelingMethod String?
+    validationInfo String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetRelatedIdentifier {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    identifier     String
+    identifierType String?
+
+    relationType          String?
+    relatedMetadataScheme String
+
+    schemeUri  String
+    schemeType String
+
+    resourceType String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetRights {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    rights              String
+    uri                 String
+    identifier          String
+    identifierScheme    String
+    identifierSchemeUri String
+
+    licenseText String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetSubject {
+    id String @id @default(cuid(2))
+
+    subject            String
+    scheme             String
+    schemeUri          String
+    valueUri           String
+    classificationCode String
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetTitle {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    title String
+    type  String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model DatasetPublishingStatus {
+    id String @id @default(cuid(2))
+
+    datasetId String  @unique
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    status Int @default(0) // -1: failed, 0: not started, ...
+
+    comment           String @default("")
+    currentFileNumber Int    @default(0)
+    fileCount         Int    @default(0)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+// Background work picked up by scripts/process-task-queue.ts
+model Task {
+    id String @id @default(cuid(2))
+
+    type   String // publish-dataset | rebuild-frozen-data | purge-draft
+    status String @default("pending") // pending | running | completed | failed
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    payload Json @default("{}") // Task-specific input, written when the task is queued
+
+    runAfter DateTime @default(now()) // The task is not picked up before this time
+    attempts Int      @default(0)
+    error    String   @default("") // Last failure message
+
+    startedAt   DateTime?
+    heartbeatAt DateTime? // Refreshed while running. A stale one means the runner stopped mid-task
+    completedAt DateTime?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    @@index([status, runAfter])
+}
+
+model PublishedDataset {
+    id Int @id @default(autoincrement())
+
+    // This field isn't attached because it can be deleted from the source side.
+    // TODO: datasetId might need to be unique
+    datasetId   String?
+    canonicalId String?
+
+    doi String?
+
+    title       String
+    description String
+
+    versionTitle String
+    studyTitle   String
+
+    public Boolean @default(false) // Access level picked when publishing. false = controlled, so each request needs owner approval
+
+    // Keep track of the status of the publishing process (used to show the progress bar or badge on the portal)
+    status      String  @default("") // "moving-dataset-to-published-storage" | "ready"
+    containerId String? @unique
+
+    publishedMetadata Json
+    files             Json
+    data              Json
+
+    automated   Boolean @default(false) // Whether the dataset was published through an automated process (e.g. zenodo sync) or manually by a user through the portal
+    external    Boolean @default(false)
+    externalUrl String?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    DatasetRequest DatasetRequest[]
+
+    PublishedDatasetRegistrationDetails PublishedDatasetRegistrationDetails?
+    PublishedDatasetModality            PublishedDatasetModality[]
+}
+
+model PublishedDatasetModality {
+    id String @id @default(cuid(2))
+
+    publishedDatasetId Int
+    publishedDataset   PublishedDataset @relation(fields: [publishedDatasetId], references: [id], onDelete: Cascade)
+
+    modality String // e.g. "oct", "fundus_photography"
+    label    String
+
+    fileCount         Int? // null = unknown
+    fileCountComplete Boolean  @default(true)
+    fileExtensions    String[] @default([])
+    detectionMethod   String
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    @@unique([publishedDatasetId, modality])
+    @@index([modality])
+}
+
+model PublishedDatasetRegistrationDetails {
+    // A table to store where we registered the dataset from. Mainly used for external datasets.
+    id String @id @default(cuid(2))
+
+    publishedDatasetId Int              @unique
+    publishedDataset   PublishedDataset @relation(fields: [publishedDatasetId], references: [id], onDelete: Cascade)
+
+    datasetSource     String // "zenodo" | "pubmed" | ...
+    extractionMethod  String // "manual" | "ep-extraction-script" | ...
+    extractionVersion String? // "1.0.0" | 
+
+    requiresAccessRequest Boolean?
+    accessRequestUrl      String?
+    accessConditions      String?
+    embargoUntil          DateTime?
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+}
+
+model ControlledDatasetRequest {
+    id String @id @default(cuid(2))
+
+    datasetId String
+    dataset   Dataset @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+
+    updated DateTime @updatedAt
+    created DateTime @default(now())
+
+    DatasetRequest DatasetRequest?
+
+    User   User?   @relation(fields: [userId], references: [id])
+    userId String?
+}
+
+model DatasetRequest {
+    id String @id @default(cuid(2))
+
+    // This is used to link the request to the controlled dataset request if the dataset is controlled
+    isControlledDatasetRequest Boolean                   @default(false)
+    controlledDatasetRequestId String?                   @unique
+    controlledDatasetRequest   ControlledDatasetRequest? @relation(fields: [controlledDatasetRequestId], references: [id], onDelete: Cascade)
+
+    givenName    String
+    familyName   String
+    emailAddress String
+    affiliation  String
+
+    reasonForAccess String
+
+    status  String @default("pending")
+    comment String @default("")
+
+    created DateTime @default(now())
+    updated DateTime @updatedAt
+
+    userId String?
+    user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+    DatasetRequestDetails DatasetRequestDetails[]
+
+    Dataset   Dataset? @relation(fields: [datasetId], references: [id], onDelete: SetNull)
+    datasetId String?
+
+    PublishedDataset   PublishedDataset @relation(fields: [publishedDatasetId], references: [id], onDelete: Cascade)
+    publishedDatasetId Int
+}
+
+model DatasetRequestDetails {
+    id String @id @default(cuid(2))
+
+    datasetRequestId String
+    datasetRequest   DatasetRequest @relation(fields: [datasetRequestId], references: [id], onDelete: Cascade)
+
+    unsignedDataUseAgreement        String? // link to unsigned data use agreement
+    requesterSignedDataUseAgreement String? // link to requester signed data use agreement
+    submitterSignedDataUseAgreement String? // link to submitter signed data use agreement
+    signedDataUseAgreement          String? // link to signed data use agreement
+
+    status String @default("pending") // pending | approved | rejected | expired
+
+    invalidatedOn DateTime? // when the data owner wants to invalidate the request
+    expiresAt     DateTime?
+
+    created DateTime @default(now())
+    updated DateTime @updatedAt
+}
+
+model ContactMessage {
+    id String @id @default(cuid(2))
+
+    name      String
+    email     String
+    subject   String
+    message   String
+    status    String  @default("unread") // unread | read | replied
+    ipAddress String?
+    userAgent String?
+
+    created DateTime @default(now())
+    updated DateTime @updatedAt
+}
