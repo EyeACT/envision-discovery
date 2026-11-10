@@ -1,6 +1,6 @@
 # ENVISION Discovery
 
-Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across 7 scientific data repositories (Zenodo, Figshare, Dryad, OSF, DataCite, Kaggle, NEI), inspects ZIP/TAR contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
+Eye imaging dataset discovery pipeline. Discovers eye imaging datasets across 6 scientific data repositories (Zenodo, Figshare, Dryad, OSF, DataCite, Kaggle), inspects ZIP/TAR contents via HTTP Range requests, and classifies records using [envision-classifier](https://github.com/EyeACT/envision-classifier).
 
 Part of the [EyeACT](https://github.com/EyeACT) project by the [FAIR Data Innovations Hub](https://fairdataihub.org).
 
@@ -97,7 +97,7 @@ All 7 scrapers follow the same pattern:
 | **DataCite** | REST                 | 1s/req               | N/A (metadata only) | Indexes DOIs across repositories            |
 | **Kaggle**   | REST                 | 1s/req               | ZIP, TAR            | Requires `KAGGLE_API_TOKEN`                 |
 | **Dryad**    | REST                 | 1.5s/req             | ZIP, TAR            | Small corpus                                |
-| **NEI**      | NIH RePORTER (POST)  | 1.5s/req             | N/A (grants)        | Eye-specific by definition                  |
+| **NEI**      | NIH RePORTER (POST)  | 1.5s/req             | N/A (grants)        | **Disabled** in the CLI (grants, not datasets) |
 | **OSF**      | REST v2 search       | 2s/req               | ZIP, TAR            | Set `OSF_TOKEN` in `.env` for higher limits |
 
 ### Output
