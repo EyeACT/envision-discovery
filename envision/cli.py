@@ -19,14 +19,18 @@ from pathlib import Path
 
 try:
     from dotenv import load_dotenv
+
     load_dotenv()
 except ImportError:
     pass
 
-ALL_SOURCES = ['zenodo', 'figshare', 'dryad', 'osf', 'datacite', 'kaggle', 'nei']
+# NEI (NIH RePORTER) is disabled: it indexes grants, not datasets. The scraper
+# module (envision/scrapers/nei.py) is kept; add "nei" back here to re-enable.
+ALL_SOURCES = ["zenodo", "figshare", "dryad", "osf", "datacite", "kaggle"]
 
 
 # ── Disk I/O for scraped data ───────────────────────────────────────
+
 
 def _load_scraped(source, data_dir):
     """Load records from data/metadata/{source}/.
@@ -56,13 +60,17 @@ def _load_scraped(source, data_dir):
     if source == "zenodo":
         records = _zenodo_json_to_metadata(metadata_dir)
         if records:
-            print(f"  Loaded {len(records):,} records ← {metadata_dir}/ (raw Zenodo format)", flush=True)
+            print(
+                f"  Loaded {len(records):,} records ← {metadata_dir}/ (raw Zenodo format)",
+                flush=True,
+            )
             return records
 
     return None
 
 
 # ── Zenodo adapter ──────────────────────────────────────────────────
+
 
 def _zenodo_json_to_metadata(metadata_dir: Path):
     """Convert Zenodo per-record JSON files to DatasetMetadata objects.
@@ -88,7 +96,9 @@ def _ext(name: str) -> str:
     from .utils import ARCHIVE_EXTS, EYE_IMAGING_EXTS, GENOMICS_EXTS
 
     base = name.lower().rsplit("/", 1)[-1]
-    for ext in sorted(EYE_IMAGING_EXTS | GENOMICS_EXTS | ARCHIVE_EXTS, key=len, reverse=True):
+    for ext in sorted(
+        EYE_IMAGING_EXTS | GENOMICS_EXTS | ARCHIVE_EXTS, key=len, reverse=True
+    ):
         if ext.count(".") > 1 and base.endswith(ext):
             return ext
     return "." + base.rsplit(".", 1)[-1] if "." in base else ""
@@ -97,8 +107,24 @@ def _ext(name: str) -> str:
 # Imaging-capable formats that are not plain pictures (volumes, arrays,
 # vendor OCT exports). Counted as medical_count, not img_count.
 MEDICAL_EXTS = {
-    ".dcm", ".dicom", ".nii", ".nii.gz", ".mat", ".h5", ".hdf5", ".npy", ".npz",
-    ".mha", ".mhd", ".nrrd", ".e2e", ".fds", ".fda", ".oct", ".img", ".vol",
+    ".dcm",
+    ".dicom",
+    ".nii",
+    ".nii.gz",
+    ".mat",
+    ".h5",
+    ".hdf5",
+    ".npy",
+    ".npz",
+    ".mha",
+    ".mhd",
+    ".nrrd",
+    ".e2e",
+    ".fds",
+    ".fda",
+    ".oct",
+    ".img",
+    ".vol",
 }
 
 
@@ -148,13 +174,15 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
             img_count += 1
         url = f_info.get("links", {}).get("self", "")
         if url:
-            download_files.append({
-                "name": name,
-                "size_bytes": size,
-                "url": url,
-                "file_id": f_info.get("id"),
-                "checksum": f_info.get("checksum"),
-            })
+            download_files.append(
+                {
+                    "name": name,
+                    "size_bytes": size,
+                    "url": url,
+                    "file_id": f_info.get("id"),
+                    "checksum": f_info.get("checksum"),
+                }
+            )
 
     # Archive members seen by the scraper's Range inspection. Both the
     # current ArchiveInspector summary and the older ZipInspector summary
@@ -165,8 +193,12 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
     for summary in (analysis.get("zip_contents") or {}).values():
         if not isinstance(summary, dict):
             continue
-        for key in ("imaging_files", "sample_imaging_files", "genomics_files",
-                    "sample_genomics_files"):
+        for key in (
+            "imaging_files",
+            "sample_imaging_files",
+            "genomics_files",
+            "sample_genomics_files",
+        ):
             zip_contents.extend(summary.get(key) or [])
         for ext, n in (summary.get("file_types") or {}).items():
             zip_file_types[ext] = zip_file_types.get(ext, 0) + int(n)
@@ -175,17 +207,24 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
 
     creators = []
     for c in meta.get("creators", []):
-        creators.append({
-            "creatorName": c.get("name", ""),
-            "nameType": "Personal",
-        })
+        creators.append(
+            {
+                "creatorName": c.get("name", ""),
+                "nameType": "Personal",
+            }
+        )
 
     # External links: data-platform URLs from related identifiers and from
     # the description, the same rule the scraper uses to keep a record.
     weblinks = raw.get("_weblinks", []) or []
-    platform_urls = [w.get("url", "") for w in weblinks
-                     if isinstance(w, dict) and w.get("type") == "data_platform"]
-    external_links = list(dict.fromkeys(list(raw.get("_dataset_links", []) or []) + platform_urls))
+    platform_urls = [
+        w.get("url", "")
+        for w in weblinks
+        if isinstance(w, dict) and w.get("type") == "data_platform"
+    ]
+    external_links = list(
+        dict.fromkeys(list(raw.get("_dataset_links", []) or []) + platform_urls)
+    )
 
     # Access requests. Zenodo's API puts a links.access_request endpoint on
     # every record (it is templated), so access_right is the signal: a
@@ -230,7 +269,11 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
         access_conditions=access_conditions,
         embargo_until=meta.get("embargo_date") or None,
         creators=creators,
-        publication_year=meta.get("publication_date", "")[:4] if meta.get("publication_date") else None,
+        publication_year=(
+            meta.get("publication_date", "")[:4]
+            if meta.get("publication_date")
+            else None
+        ),
         related_identifiers=meta.get("related_identifiers", []) or [],
         external_links=external_links,
         files=download_files,
@@ -239,6 +282,7 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
 
 # ── Per-source scraper dispatch ─────────────────────────────────────
 
+
 def _scrape_source(source, args):
     """Run one scraper. Returns list[DatasetMetadata]."""
     # Figshare has no default cap (None); the other sources keep 100.
@@ -246,19 +290,31 @@ def _scrape_source(source, args):
     mpq = args.max_per_query or 100
     zips = not args.no_zip_inspect
 
-    if source == 'zenodo':
+    if source == "zenodo":
         from .scraper import run_scrape
+
         output_dir = Path.cwd() / "data"
         run_scrape(output_dir=output_dir, datasets_only=True, inspect_zips=zips)
         return _zenodo_json_to_metadata(output_dir / "metadata" / "zenodo")
 
     scrapers = {
-        'figshare': ('.scrapers.figshare', 'FigshareScraper', dict(max_per_query=fs_mpq, inspect_zips=zips)),
-        'dryad':    ('.scrapers.dryad',    'DryadScraper',    dict(max_per_query=mpq, inspect_zips=zips)),
-        'osf':      ('.scrapers.osf',      'OSFScraper',      dict(max_per_query=min(mpq, 50))),
-        'datacite': ('.scrapers.datacite', 'DataCiteScraper', dict(max_per_query=mpq)),
-        'kaggle':   ('.scrapers.kaggle',   'KaggleScraper',   dict(max_per_query=mpq, inspect_zips=zips)),
-        'nei':      ('.scrapers.nei',      'NEIScraper',      dict(max_per_query=mpq)),
+        "figshare": (
+            ".scrapers.figshare",
+            "FigshareScraper",
+            dict(max_per_query=fs_mpq, inspect_zips=zips),
+        ),
+        "dryad": (
+            ".scrapers.dryad",
+            "DryadScraper",
+            dict(max_per_query=mpq, inspect_zips=zips),
+        ),
+        "osf": (".scrapers.osf", "OSFScraper", dict(max_per_query=min(mpq, 50))),
+        "datacite": (".scrapers.datacite", "DataCiteScraper", dict(max_per_query=mpq)),
+        "kaggle": (
+            ".scrapers.kaggle",
+            "KaggleScraper",
+            dict(max_per_query=mpq, inspect_zips=zips),
+        ),
     }
 
     if source not in scrapers:
@@ -267,46 +323,78 @@ def _scrape_source(source, args):
 
     module_path, class_name, kwargs = scrapers[source]
     import importlib
-    mod = importlib.import_module(module_path, package='envision')
+
+    mod = importlib.import_module(module_path, package="envision")
     scraper_cls = getattr(mod, class_name)
     return scraper_cls().scrape(**kwargs)
 
 
 # ── Main pipeline ───────────────────────────────────────────────────
 
+
 def pipeline_cli():
     """Entry point for python3 -m envision."""
     parser = argparse.ArgumentParser(
-        prog='envision',
-        description='ENVISION: Eye imaging dataset discovery pipeline',
+        prog="envision",
+        description="ENVISION: Eye imaging dataset discovery pipeline",
     )
-    parser.add_argument('--source', default='all',
-                       choices=ALL_SOURCES + ['all'],
-                       help='Source to process (default: all)')
-    parser.add_argument('--scrape-only', action='store_true',
-                       help='Scrape and save to disk, skip classification')
-    parser.add_argument('--skip-scrape', action='store_true',
-                       help='Classify from previously scraped data on disk')
-    parser.add_argument('--results-dir',
-                       help='Output directory for classification results')
-    parser.add_argument('--addf-output',
-                       help='Directory for ADDF schema export')
-    parser.add_argument('--max-per-query', type=int, default=None,
-                       help='Max results per search query (default: 100; Figshare: no cap)')
-    parser.add_argument('--no-zip-inspect', action='store_true',
-                       help='Skip ZIP content inspection (faster)')
-    parser.add_argument('--dedup', action='store_true',
-                       help='Run cross-source duplicate detection')
-    parser.add_argument('--dedup-threshold', type=float, default=0.92,
-                       help='Cosine similarity threshold for dedup (default: 0.92)')
-    parser.add_argument('--download', action='store_true',
-                       help='After classification, download files for records labelled '
-                            'EYE_IMAGING (gated by --download-threshold). Writes to '
-                            '{--download-dir}/{source}/{source_id}/. See docs/downloading.md.')
-    parser.add_argument('--download-threshold', type=float, default=0.80,
-                       help='Min EYE_IMAGING probability required to download (default: 0.80)')
-    parser.add_argument('--download-dir',
-                       help='Base dir for downloaded files (default: ./data/downloads)')
+    parser.add_argument(
+        "--source",
+        default="all",
+        choices=ALL_SOURCES + ["all"],
+        help="Source to process (default: all)",
+    )
+    parser.add_argument(
+        "--scrape-only",
+        action="store_true",
+        help="Scrape and save to disk, skip classification",
+    )
+    parser.add_argument(
+        "--skip-scrape",
+        action="store_true",
+        help="Classify from previously scraped data on disk",
+    )
+    parser.add_argument(
+        "--results-dir", help="Output directory for classification results"
+    )
+    parser.add_argument("--addf-output", help="Directory for ADDF schema export")
+    parser.add_argument(
+        "--max-per-query",
+        type=int,
+        default=None,
+        help="Max results per search query (default: 100; Figshare: no cap)",
+    )
+    parser.add_argument(
+        "--no-zip-inspect",
+        action="store_true",
+        help="Skip ZIP content inspection (faster)",
+    )
+    parser.add_argument(
+        "--dedup", action="store_true", help="Run cross-source duplicate detection"
+    )
+    parser.add_argument(
+        "--dedup-threshold",
+        type=float,
+        default=0.92,
+        help="Cosine similarity threshold for dedup (default: 0.92)",
+    )
+    parser.add_argument(
+        "--download",
+        action="store_true",
+        help="After classification, download files for records labelled "
+        "EYE_IMAGING (gated by --download-threshold). Writes to "
+        "{--download-dir}/{source}/{source_id}/. See docs/downloading.md.",
+    )
+    parser.add_argument(
+        "--download-threshold",
+        type=float,
+        default=0.80,
+        help="Min EYE_IMAGING probability required to download (default: 0.80)",
+    )
+    parser.add_argument(
+        "--download-dir",
+        help="Base dir for downloaded files (default: ./data/downloads)",
+    )
 
     args = parser.parse_args()
     _run_pipeline(args)
@@ -317,7 +405,7 @@ def _run_pipeline(args):
     import sys
     import traceback
 
-    sources = ALL_SOURCES if args.source == 'all' else [args.source]
+    sources = ALL_SOURCES if args.source == "all" else [args.source]
     data_dir = Path.cwd() / "data"
 
     for source in sources:
@@ -342,10 +430,14 @@ def _run_pipeline(args):
                 records = _load_scraped(source, data_dir)
 
             if records is None:
-                print(f"  No data for {source}. Run without --skip-scrape first.", flush=True)
+                print(
+                    f"  No data for {source}. Run without --skip-scrape first.",
+                    flush=True,
+                )
                 continue
 
             from .pipeline import run_pipeline
+
             run_pipeline(
                 metadata_records=records,
                 source=source,
@@ -356,14 +448,23 @@ def _run_pipeline(args):
             # ── Step 3: Download (optional, gated by classification) ────
             if args.download:
                 from .downloader import run_download
-                results_dir = Path(args.results_dir) if args.results_dir else Path.cwd() / "results"
+
+                results_dir = (
+                    Path(args.results_dir)
+                    if args.results_dir
+                    else Path.cwd() / "results"
+                )
                 eye_file = results_dir / f"{source}_eye_imaging.json"
                 if not eye_file.exists():
                     print(f"  No {eye_file.name} — skipping download", flush=True)
                 else:
                     with open(eye_file) as f:
                         eye_imaging_results = json.load(f)
-                    download_dir = Path(args.download_dir) if args.download_dir else data_dir / "downloads"
+                    download_dir = (
+                        Path(args.download_dir)
+                        if args.download_dir
+                        else data_dir / "downloads"
+                    )
                     run_download(
                         source=source,
                         metadata_records=records,
@@ -380,13 +481,14 @@ def _run_pipeline(args):
             continue
 
     # Cross-source dedup
-    if args.dedup and args.source == 'all' and not args.scrape_only:
-        results_dir = args.results_dir or 'results'
+    if args.dedup and args.source == "all" and not args.scrape_only:
+        results_dir = args.results_dir or "results"
         print(f"\n{'#'*70}", flush=True)
         print("# CROSS-SOURCE DEDUPLICATION", flush=True)
         print(f"{'#'*70}", flush=True)
         try:
             from .dedup import run_dedup
+
             duplicates = run_dedup(results_dir, threshold=args.dedup_threshold)
             print(f"  Found {len(duplicates)} duplicate pairs", flush=True)
         except Exception as e:
