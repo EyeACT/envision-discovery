@@ -6,6 +6,7 @@ API docs: https://docs.figshare.com/
 """
 
 import logging
+import re
 import time
 from pathlib import Path
 from typing import Optional
@@ -43,6 +44,32 @@ def _access_type(detail: dict) -> str:
     if detail.get("download_disabled"):
         return "download_disabled"
     return "open"
+
+
+def _access_fields(detail: dict) -> dict:
+    """access_request / access_request_url / access_conditions / embargo_until.
+
+    Figshare has no built-in request workflow, so for confidential,
+    metadata-only and download-disabled items the request route is the
+    article page (contact the authors); the reason fields the depositor
+    filled in become access_conditions. Embargoed items open by themselves
+    on embargo_date.
+    """
+    url = detail.get("url_public_html") or f"https://figshare.com/articles/dataset/{detail.get('id')}"
+    kind = _access_type(detail)
+    conditions = (detail.get("confidential_reason") or detail.get("metadata_reason")
+                  or detail.get("embargo_reason") or detail.get("embargo_title") or None)
+    if conditions:
+        conditions = re.sub("<[^<]+?>", " ", str(conditions)).strip() or None
+    if kind in ("confidential", "metadata_only", "download_disabled"):
+        return {"access_request": True, "access_request_url": url,
+                "access_conditions": conditions, "embargo_until": None}
+    if kind == "embargoed":
+        return {"access_request": False, "access_request_url": None,
+                "access_conditions": conditions,
+                "embargo_until": detail.get("embargo_date") or None}
+    return {"access_request": False, "access_request_url": None,
+            "access_conditions": None, "embargo_until": None}
 
 
 class FigshareScraper:
@@ -277,6 +304,7 @@ class FigshareScraper:
             zip_contents=zip_contents,
             access_type=_access_type(detail),
             license=license_name,
+            **_access_fields(detail),
             creators=creators,
             publication_year=pub_year,
             dates=[{"dateValue": pub_date, "dateType": "Available"}] if pub_date else [],

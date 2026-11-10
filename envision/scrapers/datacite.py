@@ -198,7 +198,11 @@ class DataCiteScraper:
             archive_count=0,
             genomics_count=0,
             zip_contents=[],
-            access_type=attrs.get("schemaVersion"),  # not directly available
+            # DataCite metadata has no access-status field (the old code put
+            # schemaVersion here by mistake) and no request workflow, so both
+            # stay unknown.
+            access_type=None,
+            access_request=None,
             license=license_name,
             creators=creators,
             publication_year=pub_year if pub_year else None,

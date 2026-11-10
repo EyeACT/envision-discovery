@@ -326,6 +326,9 @@ class OSFScraper:
             zip_contents=zip_contents,
             access_type="open" if attrs.get("public", True) else "restricted",
             license=None,
+            # Private OSF nodes take access requests on the node page.
+            access_request=False if attrs.get("public", True) else True,
+            access_request_url=None if attrs.get("public", True) else f"https://osf.io/{item_id}/",
             creators=[],
             publication_year=pub_year,
             dates=dates,

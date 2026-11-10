@@ -336,6 +336,7 @@ class KaggleScraper:
             zip_contents=zip_contents,
             access_type="open",
             license=license_name,
+            access_request=False,  # listed Kaggle datasets are publicly downloadable
             creators=creators,
             publication_year=None,
             dates=[{"dateValue": date, "dateType": "Created"}] if date else [],

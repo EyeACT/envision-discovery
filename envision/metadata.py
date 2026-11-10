@@ -62,6 +62,17 @@ class DatasetMetadata:
     # Access & rights
     access_type: str | None = None
     license: str | None = None
+    # Data access requests, for records whose files are not openly
+    # downloadable. access_request is True when the repository offers a
+    # route to ask for the data (request form, author contact), False when
+    # the record is open or will open on its own, and None when the source
+    # API does not say either way. access_request_url is the page where a
+    # request is made, access_conditions the stated conditions or reason
+    # (HTML-stripped), embargo_until the date an embargo lifts.
+    access_request: bool | None = None
+    access_request_url: str | None = None
+    access_conditions: str | None = None
+    embargo_until: str | None = None
 
     # Provenance
     creators: list[dict] = field(default_factory=list)

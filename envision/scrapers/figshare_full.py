@@ -387,6 +387,15 @@ def to_record(a: dict, hit: dict) -> dict:
         "license": lic.get("name") if isinstance(lic, dict) else (str(lic) if lic else None),
         "license_url": lic.get("url") if isinstance(lic, dict) else None,
         "access_type": access_type(a),
+        # Data access requests: confidential, metadata-only and
+        # download-disabled items are requested from the authors via the
+        # article page; embargoed items open by themselves on embargo_date.
+        "access_request": access_type(a) in ("confidential", "metadata_only", "download_disabled"),
+        "access_request_url": (a.get("url_public_html") or f"https://figshare.com/articles/{a.get('id')}")
+        if access_type(a) in ("confidential", "metadata_only", "download_disabled") else None,
+        "access_conditions": _text(str(a.get("confidential_reason") or a.get("metadata_reason")
+                                       or a.get("embargo_reason") or a.get("embargo_title") or "")) or None,
+        "embargo_until": a.get("embargo_date") if a.get("is_embargoed") else None,
         "is_embargoed": bool(a.get("is_embargoed")),
         "embargo_type": a.get("embargo_type"),
         "embargo_date": a.get("embargo_date"),

@@ -255,8 +255,12 @@ class ADDFExporter:
         access_type_map = {
             "open": "PublicOnScreenAccess",
             "embargoed": "PublicOnScreenAccess",
-            "restricted": "RestrictedDownload",
-            "closed": "NonPublicAccessNoDetails",
+            "restricted": "RestrictedAccess",
+            "closed": "RestrictedAccess",
+            # Figshare access types
+            "confidential": "RestrictedAccess",
+            "metadata_only": "RestrictedAccess",
+            "download_disabled": "RestrictedAccess",
         }
         access_type = access_type_map.get(meta.access_type, "PublicOnScreenAccess")
 
