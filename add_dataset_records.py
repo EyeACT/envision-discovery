@@ -177,6 +177,7 @@ def _build_record_from_result(record, source):
     sizes = [f"{record.get('size_mb', 0)} MB"]
     metadata_created_raw = ""
     metadata_modified_raw = ""
+    metadata_registered_raw = ""
 
     if metadata_dir and source_id:
         meta_path = os.path.join(metadata_dir, f"{source_id}.json")
@@ -200,6 +201,7 @@ def _build_record_from_result(record, source):
             )
             metadata_created_raw = meta.get("created", "")
             metadata_modified_raw = meta.get("modified", "")
+            metadata_registered_raw = meta.get("registered", "")
 
             publication_date = _extract_iso_date(
                 m.get("publication_date", "") or meta.get("publication_date", "")
@@ -224,6 +226,10 @@ def _build_record_from_result(record, source):
                     publication_date = _dates_fallback
                     publication_date_source = "dates"
             if not publication_date:
+                publication_date = _extract_iso_date(metadata_registered_raw)
+                if publication_date:
+                    publication_date_source = "registered"
+            if not publication_date:
                 publication_date = _extract_iso_date(metadata_created_raw)
                 if publication_date:
                     publication_date_source = "created"
@@ -231,6 +237,7 @@ def _build_record_from_result(record, source):
                 publication_date = _extract_iso_date(metadata_modified_raw)
                 if publication_date:
                     publication_date_source = "modified"
+
 
             print(
                 f"    Extracted publication date: {publication_date} from metadata for source_id: {source_id} (source: {source})"
@@ -275,9 +282,10 @@ def _build_record_from_result(record, source):
                 )
 
     # Timestamp
-    if publication_date_source in {"created", "modified"}:
+    if publication_date_source in {"created", "modified", "registered"}:
         created_raw = (
-            metadata_created_raw
+            metadata_registered_raw
+            or metadata_created_raw
             or metadata_modified_raw
             or publication_date
             or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
