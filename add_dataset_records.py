@@ -67,14 +67,15 @@ cuid_generator: Callable[[], str] = cuid_wrapper()
 # --- Configuration ---
 DATASET_RECORDS_OUTPUT_FILE = "data/datasetRecord.json"
 
-# All repository sources and their eye_imaging result files
+# All repository sources and their eye_imaging result files.
+# NEI (NIH RePORTER) is disabled, matching envision/cli.py: it indexes grants,
+# not datasets, so old results/nei_eye_imaging.json must not be posted.
 SOURCES = {
     "zenodo": "results/zenodo_eye_imaging.json",
     "datacite": "results/datacite_eye_imaging.json",
     "figshare": "results/figshare_eye_imaging.json",
     "kaggle": "results/kaggle_eye_imaging.json",
     "dryad": "results/dryad_eye_imaging.json",
-    "nei": "results/nei_eye_imaging.json",
     "osf": "results/osf_eye_imaging.json",
 }
 
@@ -85,7 +86,6 @@ METADATA_DIRS = {
     "figshare": "data/metadata/figshare",
     "kaggle": "data/metadata/kaggle",
     "dryad": "data/metadata/dryad",
-    "nei": "data/metadata/nei",
     "osf": "data/metadata/osf",
 }
 
