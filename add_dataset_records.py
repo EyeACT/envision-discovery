@@ -12,6 +12,7 @@ import contextlib
 
 from envision.cli import zenodo_record_to_metadata
 from envision.metadata import DatasetMetadata
+from envision.utils import CDS_ACCESS_TYPE, CDS_ACCESS_TYPE_DEFAULT
 
 load_dotenv()
 
@@ -89,17 +90,20 @@ METADATA_DIRS = {
     "osf": "data/metadata/osf",
 }
 
-# Repository access_type -> ADDF accessType
-ACCESS_TYPE_MAP = {
-    "open": "PublicOnScreenAccessAndDownload",
-    "embargoed": "PublicOnScreenAccess",
-    "restricted": "RestrictedAccess",
-    "closed": "RestrictedAccess",
-    # Figshare access types
-    "confidential": "RestrictedAccess",
-    "metadata_only": "RestrictedAccess",
-    "download_disabled": "RestrictedAccess",
-}
+def _access_details(access):
+    """CDS accessDetails: description is required (minLength 1) whenever the
+    dataset is not plainly open; url points at the request page."""
+    parts = []
+    if access.get("access_conditions"):
+        parts.append(access["access_conditions"])
+    if access.get("embargo_until"):
+        parts.append(f"Embargoed until {access['embargo_until']}.")
+    if access.get("access_request") and not parts:
+        parts.append("Access is granted by the depositor on request.")
+    details = {"description": " ".join(parts)}
+    if access.get("access_request_url"):
+        details["url"] = access["access_request_url"]
+    return details
 
 API_KEY = os.getenv("EXTERNAL_API_KEY")
 SITES = {
@@ -385,9 +389,7 @@ def _build_record_from_result(record, source):
     dataset_id = cuid_generator()
 
     access = _access_fields(record, meta_obj)
-    access_type = ACCESS_TYPE_MAP.get(
-        access["access_type"], "PublicOnScreenAccessAndDownload"
-    )
+    access_type = CDS_ACCESS_TYPE.get(access["access_type"], CDS_ACCESS_TYPE_DEFAULT)
 
     return {
         "canonicalId": dataset_id,
@@ -456,7 +458,7 @@ def _build_record_from_result(record, source):
                 "subject": subjects,
                 "managingOrganization": {"name": ""},
                 "accessType": access_type,
-                "accessDetails": {"description": access["access_conditions"] or ""},
+                "accessDetails": _access_details(access),
                 "rights": [{"rightsName": license_name}],
                 "publisher": {"publisherName": source.capitalize()},
                 "size": sizes,

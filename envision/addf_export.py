@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 
 from .metadata import DatasetMetadata
+from .utils import CDS_ACCESS_TYPE, CDS_ACCESS_TYPE_DEFAULT
 
 SCHEMA_BASE = "https://schema.aireadi.org/v0.1.0"
 
@@ -252,17 +253,7 @@ class ADDFExporter:
                 })
 
         # Access type
-        access_type_map = {
-            "open": "PublicOnScreenAccess",
-            "embargoed": "PublicOnScreenAccess",
-            "restricted": "RestrictedAccess",
-            "closed": "RestrictedAccess",
-            # Figshare access types
-            "confidential": "RestrictedAccess",
-            "metadata_only": "RestrictedAccess",
-            "download_disabled": "RestrictedAccess",
-        }
-        access_type = access_type_map.get(meta.access_type, "PublicOnScreenAccess")
+        access_type = CDS_ACCESS_TYPE.get(meta.access_type, CDS_ACCESS_TYPE_DEFAULT)
 
         # Rights
         rights = []

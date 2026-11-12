@@ -455,6 +455,7 @@ class ZenodoScraper:
             "zips_inspected": 0,
             "skipped_existing": 0,
             "kept_uninspectable_archive": 0,
+            "kept_files_not_public": 0,
         }
         # Failed HTTP requests (filled by request_with_backoff) and one
         # entry per search() call; run_scrape turns these into
@@ -565,9 +566,12 @@ class ZenodoScraper:
                         self._save_metadata(enriched)
                         self.stats["datasets_found"] += 1
                         entry["kept"] += 1
-                        if self._keep_reason(enriched) == "uninspectable_archive":
+                        reason = self._keep_reason(enriched)
+                        if reason == "uninspectable_archive":
                             self.stats["kept_uninspectable_archive"] += 1
                             entry["kept_uninspectable"] += 1
+                        elif reason == "files_not_public":
+                            self.stats["kept_files_not_public"] += 1
 
                 page += 1
                 time.sleep(2.0)
@@ -602,6 +606,14 @@ class ZenodoScraper:
         else:
             file_analysis = {"has_imaging_files": False, "has_archives": False}
 
+        # Non-open records: the owner's request settings and conditions text
+        # are only in the InvenioRDM JSON (parent.access.settings), not in the
+        # legacy record JSON the search returns.
+        if (record.get("metadata") or {}).get("access_right") in ("restricted", "embargoed", "closed"):
+            settings = self._access_settings(record.get("id"))
+            if settings is not None:
+                record["_access_settings"] = settings
+
         record["_file_analysis"] = file_analysis
         record["_dataset_links"] = dataset_links
         record["_weblinks"] = weblinks
@@ -609,6 +621,22 @@ class ZenodoScraper:
         record["_enriched_at"] = datetime.now().isoformat()
 
         return record
+
+    def _access_settings(self, record_id) -> Optional[Dict]:
+        """parent.access.settings from the InvenioRDM record JSON, or None."""
+        if not record_id:
+            return None
+        resp = request_with_backoff(
+            self.session, "get", f"https://zenodo.org/api/records/{record_id}",
+            headers={"Accept": "application/vnd.inveniordm.v1+json"},
+            failures=self.failures, timeout=60,
+        )
+        if resp is None:
+            return None
+        try:
+            return ((resp.json().get("parent") or {}).get("access") or {}).get("settings")
+        except ValueError:
+            return None
 
     def _should_keep(self, record: Dict) -> bool:
         """Keep record if it likely contains eye imaging data."""
@@ -643,6 +671,15 @@ class ZenodoScraper:
         # dropped silently, e.g. SYN-OCT.zip with a 108 MB central directory)
         if analysis.get("uninspectable_archives"):
             return "uninspectable_archive"
+
+        # Restricted, embargoed and closed records hide their file list from
+        # the public API, so none of the file-based reasons above can fire and
+        # every such record used to be dropped here, including requestable eye
+        # datasets such as CNVSeg (13895504). Keep them on metadata alone; the
+        # metadata classifier still decides whether they are eye imaging.
+        access_right = (record.get("metadata") or {}).get("access_right")
+        if access_right in ("restricted", "embargoed", "closed") and not record.get("files"):
+            return "files_not_public"
 
         return None
 
