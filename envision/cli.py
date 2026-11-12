@@ -233,14 +233,26 @@ def zenodo_record_to_metadata(raw: dict, default_id: str = ""):
     # embargo_date, open and closed records have nothing to request.
     record_url = f"https://zenodo.org/records/{zenodo_id}"
     access_right = meta.get("access_right")
-    access_conditions = meta.get("access_conditions") or None
+    # The legacy record JSON leaves access_conditions empty on current
+    # records; the owner's request settings and conditions text live in the
+    # InvenioRDM record's parent.access.settings, which the scraper saves as
+    # _access_settings for non-open records.
+    settings = raw.get("_access_settings") or {}
+    access_conditions = (meta.get("access_conditions")
+                         or settings.get("accept_conditions_text") or None)
     if access_conditions:
-        access_conditions = unescape(re.sub("<[^<]+?>", " ", access_conditions)).strip() or None
+        access_conditions = unescape(re.sub("<[^<]+?>", " ", access_conditions))
+        access_conditions = re.sub(r"\s+", " ", access_conditions).strip() or None
     access_request = None
     access_request_url = None
     if access_right == "restricted":
         access_request = True
         access_request_url = record_url
+        if settings and not (settings.get("allow_user_requests")
+                             or settings.get("allow_guest_requests")):
+            note = ("The owner does not take access requests through Zenodo; "
+                    "contact the depositor.")
+            access_conditions = f"{access_conditions} {note}" if access_conditions else note
     elif access_right in ("open", "embargoed", "closed"):
         access_request = False
 

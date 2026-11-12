@@ -44,6 +44,24 @@ GENOMICS_EXTS = {
 
 ARCHIVE_EXTS = {".zip", ".tar", ".gz", ".tar.gz", ".rar", ".7z", ".tgz"}
 
+# Repository access_type -> CDS dataset_description accessType. Values must
+# come from the CDS controlled list, which the portal's share form also uses
+# ("RestrictedAccess" is not on it). Same mapping as envision-eye-actionable's
+# survey export.
+CDS_ACCESS_TYPE = {
+    "open": "PublicOnScreenAccessAndDownload",
+    # files open on embargo_until and are not viewable before then
+    "embargoed": "Other",
+    # Zenodo request form, approved by the owner per request
+    "restricted": "CaseByCaseDownload",
+    "closed": "NonPublicAccessNoDetails",
+    # Figshare: no built-in request workflow, the depositor is contacted
+    "confidential": "CaseByCaseDownload",
+    "metadata_only": "CaseByCaseDownload",
+    "download_disabled": "CaseByCaseDownload",
+}
+CDS_ACCESS_TYPE_DEFAULT = "PublicOnScreenAccessAndDownload"
+
 
 # ============================================================
 # Exponential backoff HTTP request
